@@ -6,7 +6,9 @@
            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:variable name="title">
-    <xsl:call-template name="spes-title" />
+    <xsl:call-template name="spes-title">
+      <xsl:with-param name="parm-edn-structure" select="$edn-structure" tunnel="yes"/>
+    </xsl:call-template>
   </xsl:variable>
 
   <kiln:parent>

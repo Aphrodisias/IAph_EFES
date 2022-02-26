@@ -96,9 +96,18 @@
             <xsl:element name="span">
                <xsl:attribute name="class">reversed</xsl:attribute>
                <xsl:attribute name="title">reversed: <xsl:value-of select="."/>
-               </xsl:attribute> ((<xsl:apply-templates/>)) </xsl:element>
+               </xsl:attribute>((<xsl:apply-templates/>))</xsl:element>
          </xsl:when>
          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+         <!-- @rend='inverted'                                                   -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <xsl:when test="@rend='inverted'">
+             <xsl:element name="span">
+                <xsl:attribute name="class">inverted</xsl:attribute>
+                <xsl:attribute name="title">inverted: <xsl:value-of select="."/>
+                </xsl:attribute>((<xsl:apply-templates/>))</xsl:element>
+          </xsl:when>
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
          <!-- @rend='small'                                                      -->
          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
          <xsl:when test="@rend='small'">
