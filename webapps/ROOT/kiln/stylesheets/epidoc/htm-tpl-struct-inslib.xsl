@@ -455,7 +455,7 @@
       </head>
       <body>
         <h1>
-          <xsl:apply-templates select="$title"/>
+          <xsl:value-of select="$title"/>
         </h1>
         <xsl:call-template name="inslib-body-structure" />
       </body>
