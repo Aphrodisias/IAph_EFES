@@ -8,6 +8,7 @@
 
    <xsl:template match="t:hi">
        <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
+       <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
        <xsl:choose>
          <!-- No html code needed for these -->
          <xsl:when
@@ -62,6 +63,9 @@
                <xsl:choose>
                   <xsl:when test="$parm-leiden-style=('petrae','iospe')">
                      <xsl:attribute name="class">petraeligature</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="$parm-edn-structure = 'inslib'">
+                     <xsl:attribute name="class">inslibligature</xsl:attribute>
                   </xsl:when>
                   <xsl:otherwise>
                      <xsl:attribute name="class">ligature</xsl:attribute>
