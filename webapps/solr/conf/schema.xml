@@ -182,10 +182,20 @@
    <!-- Concordance fields. -->
    <field name="concordance_bibliography_ref" stored="true" indexed="true"
           multiValued="false" required="false" type="string" />
+   <field name="concordance_bibliography_type" stored="true" indexed="true" 
+     multiValued="false" required="false" type="string" />
    <field name="concordance_bibliography_cited_range" stored="true"
           indexed="true" multiValued="false" required="false" type="string" />
+   <field name="concordance_bibliography_date" stored="true"
+     indexed="true" multiValued="false" required="false" type="string" />
    <field name="concordance_bibliography_item" stored="true" indexed="false"
           multiValued="true" required="false" type="string" />
+
+   <field name="concordance_bibliography_short" stored="true" indexed="false"
+     multiValued="false" required="false" type="string" />
+   <!-- the following field is needed to display just one entry for each bibliographic reference in the bibl. list -->
+   <field name="concordance_bibliography_listed" stored="true"
+     indexed="true" multiValued="false" required="false" type="string" />
 
    <!-- catchall field, containing all other searchable text fields
         (implemented via copyField further on in this schema -->

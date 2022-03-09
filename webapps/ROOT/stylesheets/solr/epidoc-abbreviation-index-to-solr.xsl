@@ -4,7 +4,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <!-- This XSLT transforms a set of EpiDoc documents into a Solr
-       index document representing an index of symbols in those
+       index document representing an index of abbreviations in those
        documents. -->
 
     <xsl:import href="epidoc-index-utils.xsl" />

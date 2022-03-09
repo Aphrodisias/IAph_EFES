@@ -24,11 +24,29 @@
   
   <xsl:template match="doc" mode="bibl-list">  
     <xsl:variable name="bibl-id" select="str[@name='concordance_bibliography_ref']" />
-        <li>
-          <a href="{kiln:url-for-match('local-concordance-bibliography-item', ($language, $bibl-id), 0)}">
-            <xsl:apply-templates mode="short-citation" select="id($bibl-id)" />
-          </a>: <xsl:apply-templates mode="full-citation" select="id($bibl-id)" />
-        </li>
+        <xsl:choose>
+          <!-- the following condition ensures that each bibliographic reference is displayed just once in the bibl. list -->
+      <xsl:when test="str[@name='concordance_bibliography_listed']">
+            <tr>
+          <td><xsl:value-of select="str[@name='concordance_bibliography_date']"/></td>
+          <td>
+              <xsl:choose>
+                <xsl:when test="str[@name='concordance_bibliography_cited_range']">
+                  <a href="{kiln:url-for-match('local-concordance-bibliography-item', ($language, $bibl-id), 0)}">
+                    <xsl:apply-templates mode="short-citation" select="id($bibl-id)"/>
+                  </a>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:apply-templates mode="short-citation" select="id($bibl-id)"/>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:text>: </xsl:text>
+              <xsl:apply-templates mode="full-citation" select="id($bibl-id)" />
+          </td>
+        </tr>
+          </xsl:when>
+        <xsl:otherwise/>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="str[@name='concordance_bibliography_cited_range']">
@@ -55,7 +73,28 @@
   </xsl:template>
 
   <xsl:template match="tei:bibl[@xml:id]" mode="short-citation">
-    <strong><xsl:value-of select="tei:bibl[@type='abbrev']"/></strong>
+    <strong>
+      <xsl:choose>
+        <xsl:when test="tei:bibl[@type='abbrev']">
+          <xsl:apply-templates select="tei:bibl[@type='abbrev'][1]"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:choose>
+            <xsl:when test="ancestor::tei:div[@xml:id='authored_editions']">
+              <xsl:for-each select="descendant::tei:name[@type='surname'][not(parent::*/preceding-sibling::tei:title)]">
+                <xsl:value-of select="."/>
+                <xsl:if test="position()!=last()"> – </xsl:if>
+              </xsl:for-each>
+              <xsl:if test="descendant::tei:date/text()"><xsl:text> </xsl:text>
+                <xsl:value-of select="descendant::tei:date"/></xsl:if>
+            </xsl:when>
+            <xsl:when test="ancestor::tei:div[@xml:id='series_collections']">
+              <i><xsl:value-of select="@xml:id"/></i>
+            </xsl:when>
+          </xsl:choose>
+        </xsl:otherwise>
+      </xsl:choose>
+    </strong>
     <!--<xsl:choose>
       <xsl:when test="tei:editor">
         <xsl:value-of select="tei:editor[1]" />
@@ -77,7 +116,58 @@
   </xsl:template>
   
   <xsl:template match="tei:ref[@target]">
-    <a target="_blank"><xsl:attribute name="href"><xsl:value-of select="@target" /></xsl:attribute><xsl:value-of select="." /></a>
+    <a target="_blank" href="{@target}"><xsl:value-of select="." /></a>
+  </xsl:template>
+  
+  <xsl:template match="tei:ptr[@target]">
+    <xsl:choose>
+      <xsl:when test="starts-with(@target, 'http')">
+        <a target="_blank" href="{@target}"><xsl:value-of select="@target" /></a>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="id">
+          <xsl:choose>
+            <xsl:when test="contains(@target, '#')">
+              <xsl:value-of select="substring-after(@target, '#')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="@target"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="bibl" select="ancestor::tei:TEI//tei:bibl[@xml:id=$id]"/>
+        <a target="_blank" href="../../concordance/bibliography/{$id}.html">
+          <xsl:choose>
+            <xsl:when test="$bibl">
+              <xsl:choose>
+                <xsl:when test="$bibl//tei:bibl[@type='abbrev']">
+                  <xsl:apply-templates select="$bibl//tei:bibl[@type='abbrev'][1]"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:choose>
+                    <xsl:when test="$bibl[ancestor::tei:div[@xml:id='authored_editions']]">
+                      <xsl:for-each select="$bibl//tei:name[@type='surname'][not(parent::*/preceding-sibling::tei:title)]">
+                        <xsl:value-of select="."/>
+                        <xsl:if test="position()!=last()"> – </xsl:if>
+                      </xsl:for-each>
+                      <xsl:if test="$bibl//tei:date/text()"><xsl:text> </xsl:text>
+                        <xsl:value-of select="$bibl//tei:date"/></xsl:if>
+                    </xsl:when>
+                    <xsl:when test="$bibl[ancestor::tei:div[@xml:id='series_collections']]">
+                      <i><xsl:value-of select="$bibl/@xml:id"/></i>
+                    </xsl:when>
+                  </xsl:choose>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="upper-case(substring($id, 1, 1))" />
+              <xsl:value-of select="substring($id, 2)" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </a>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   
   <!--<xsl:template match="tei:author">
