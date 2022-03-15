@@ -27,7 +27,7 @@
           <field name="index_item_name">
             <xsl:value-of select="@ref" />
           </field>
-          <field name="index_ethnic">
+          <field name="index_item_type">
             <xsl:choose>
               <xsl:when test="@type='ethnic'"><xsl:text>Ethnic</xsl:text></xsl:when>
               <xsl:otherwise><xsl:text>Toponym</xsl:text></xsl:otherwise>

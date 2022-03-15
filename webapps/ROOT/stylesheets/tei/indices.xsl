@@ -40,9 +40,8 @@
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
       <xsl:apply-templates select="str[@name='index_numeral_value']"/>
       <xsl:apply-templates select="arr[@name='language_code']"/>
-      <xsl:apply-templates select="str[@name='index_institution_type']" />
-      <xsl:apply-templates select="str[@name='index_institution_role']" />
-      <xsl:apply-templates select="str[@name='index_ethnic']" />
+      <xsl:apply-templates select="str[@name='index_item_type']" />
+      <xsl:apply-templates select="str[@name='index_item_role']" />
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
     </tr>
   </xsl:template>
@@ -85,19 +84,13 @@
     </td>
   </xsl:template>
   
-  <xsl:template match="str[@name='index_institution_type']">
+  <xsl:template match="str[@name='index_item_type']">
     <td>
       <xsl:value-of select="."/>
     </td>
   </xsl:template>
   
-  <xsl:template match="str[@name='index_institution_role']">
-    <td>
-      <xsl:value-of select="."/>
-    </td>
-  </xsl:template>
-  
-  <xsl:template match="str[@name='index_ethnic']">
+  <xsl:template match="str[@name='index_item_role']">
     <td>
       <xsl:value-of select="."/>
     </td>

@@ -27,10 +27,10 @@
           <field name="index_item_name">
             <xsl:value-of select="@key" />
           </field>
-          <field name="index_institution_type">
+          <field name="index_item_type">
             <xsl:value-of select="@type" />
           </field>
-          <field name="index_institution_role">
+          <field name="index_item_role">
             <xsl:value-of select="@role" />
           </field>
           <xsl:apply-templates select="current-group()" />
