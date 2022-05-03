@@ -1,102 +1,180 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130006" n="iAph1015 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for  Pyrrhos son of Pyrrhos</title>
-   </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Posthumous honours for  Pyrrhos son of Pyrrhos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130006</idno>
+            <idno type="IAph2007">iAph130006</idno>
+            <idno type="JMR2004">iAph1015</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two pieces from the left side of a <material key="marmor">white marble</material>
+                              <objectType cert="low" key="statue base">statue base</objectType> shaft apparently without moulding. a: lines 1-13, (<width unit="metre">0.29</width>   × <height unit="metre">0.65</height>   × <depth>0.14</depth>), upper left corner complete; b: lines 11-27, (<width unit="metre">0.29</width>   × <height unit="metre">0.80</height>   × <depth>0.12</depth>), left edge survives in part, although much chipped.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro"> Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025-0.03</height>. Ligatures: <foreign xml:lang="grc">ΗΜ</foreign>, l.18; <foreign xml:lang="grc">ΗΝ</foreign>, ll.23, 24; <foreign xml:lang="grc">ΝΜ</foreign>, l.25; <foreign xml:lang="grc">ΜΗ</foreign>, l.27-</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown, <rs type="monuList" cert="low">Necropolis, North</rs>
+                     </origPlace>
+                     <origDate notBefore="0167"
+                               notAfter="0233"
+                               precision="medium"
+                               evidence="lettering nomenclature">Late second/early third century A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>, family history, )</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North</rs>: fallen from the wall, north of the Stadium</provenance>
+                  <provenance type="observed" when="1985">Findspot (1985)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); a: MAMA; b: Gaudin's squeeze; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-04" who="cmr">DONE</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-06-20" who="#GB">Entered JMR's corrections</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_T_16.jpg">
+            <desc>Fragment a (1973)</desc>
+         </graphic>
+         <graphic url="73_W_08.jpg">
+            <desc>Fragment b (1973)</desc>
+         </graphic>
+         <graphic url="85_E_14.jpg">
+            <desc>Fragments a &amp; b (1985)</desc>
+         </graphic>
+         <graphic url="85_E_16.jpg">
+            <desc>Fragments a &amp; b (1985)</desc>
+         </graphic>
+         <graphic url="K_III_10.jpg">
+            <desc>Kubitschek notebook III, 10</desc>
+         </graphic>
+         <graphic url="K_III_13.jpg">
+            <desc>Kubitschek notebook III, 13</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" sample="complete" org="uniform" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-04</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change><change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-  
-  <change><date>2005-06-20</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Entered JMR's corrections</item></change><change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
-
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two pieces from the left side of a <rs type="material" key="marmor">white marble</rs> <rs reg="statue base" type="objectType" cert="low">statue base</rs> shaft apparently without moulding. a: lines 1-13, (<measure type="length" unit="metre" dim="width">0.29</measure>   × <measure type="length" unit="metre" dim="height">0.65</measure>   × <measure type="depth" dim="depth">0.14</measure>), upper left corner complete; b: lines 11-27, (<measure type="length" unit="metre" dim="width">0.29</measure>   × <measure type="length" unit="metre" dim="height">0.80</measure>   × <measure type="depth" dim="depth">0.12</measure>), left edge survives in part, although much chipped.</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro"> Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.025-0.03</measure>. Ligatures: <foreign lang="grc">ΗΜ</foreign>, l.18; <foreign lang="grc">ΗΝ</foreign>, ll.23, 24; <foreign lang="grc">ΝΜ</foreign>, l.25; <foreign lang="grc">ΜΗ</foreign>, l.27-</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notBefore="0167" notAfter="0233" exact="none">Late second/early third century A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>, family history, )</p>  </div>
-
-<div lang="grc" type="edition" sample="complete" org="uniform" n="text">
-<head lang="en">Edition</head>
 
 
-<ab><lb n="0"/><gap dim="top" extent="unknown" reason="lost" unit="line" id="ia1015gap01"/><certainty target="ia1015gap01" locus="#gi" assertedValue="space" degree="low"/><lb n="1"/><w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w>  <w lemma="βουλή">βουλὴ</w>  <supplied reason="lost"><w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w></supplied>  <w lemma="δῆμος"><supplied reason="lost">δῆ</supplied><lb n="2" type="worddiv"/>μος</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ἡ</w>  <w lemma="γερουσία"><supplied reason="lost">γερουσί</supplied><lb n="3" type="worddiv"/>α</w>  <w lemma="τιμάω">ἐτείμη<supplied reason="lost">σαν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ταῖς</supplied></w>  <lb n="4"/><w lemma="πρῶτος">πρώταις</w>  <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <w lemma="μέγας"><supplied reason="lost" cert="low">μεγίσ</supplied><lb n="5" type="worddiv"/><supplied reason="lost">τ</supplied>αις</w>  <w lemma="τιμή">τειμ<unclear reason="damage">α</unclear><supplied reason="lost">ῖς</supplied></w>    <supplied reason="lost" cert="low"><space unit="character" extent="unknown" dim="horizontal"/></supplied>  <lb n="6"/><persName reg="Πύρρος  Πύρρου  Ζήνωνος  Πύρρου  Παπίας" full="yes" type="aphrodisian"><name reg="Πύρρος"><unclear reason="damage">Π</unclear>ύρρον</name>  <persName reg="Πύρρος  Ζήνωνος  Πύρρου" full="yes" type="aphrodisian"><name reg="Πύρρος">Π<supplied reason="lost">ύρρου</supplied></name> <supplied reason="lost"><w lemma="ὁ">τοῦ</w></supplied>  <lb n="7"/><persName reg="Ζήνων  Πύρρου" full="yes" type="aphrodisian"><name reg="Ζήνων">Ζήνωνο<supplied reason="lost">ς</supplied></name> <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <persName reg="Πύρρος" full="yes" type="aphrodisian"><name reg="Πύρρος"><supplied reason="lost">Πύρ</supplied><lb n="8" type="worddiv"/><supplied reason="lost">ρ</supplied>ου</name></persName></persName></persName>  <name reg="Παπίας">Παπία<supplied reason="lost">ν</supplied></name></persName>  <w lemma="γένος"><supplied reason="lost">γένους</supplied></w>  <lb n="9"/><w lemma="πρῶτος">πρώτου</w>  <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <w lemma="ἔνδοξος"><supplied reason="lost">ἐνδόξου</supplied></w>  <lb n="10"/><w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w>  <w lemma="ὁ">τὰς</w>  <w lemma="μέγας">μ<unclear reason="damage">ε</unclear><supplied reason="lost">γίστας</supplied>  </w> <w lemma="λειτουργία"><supplied reason="lost">λι</supplied><lb n="11" type="worddiv"/>τουργί<supplied reason="lost">ας</supplied></w>  <w lemma="λειτουργέω"><supplied reason="lost">λελιτουρ</supplied><lb n="12" type="worddiv"/><supplied reason="lost">γ</supplied>ηκ<unclear reason="damage">ό</unclear><supplied reason="lost">τος</supplied></w>  <w lemma="ζάω">ζήσαν<lb n="13" type="worddiv"/><supplied reason="lost">τ</supplied>α</w>  <w lemma="ἐν">ἐν</w>  <w lemma="παιδεία">πα<supplied reason="lost">ιδείᾳ</supplied></w><lb n="14"/><w lemma="σωφροσύνη"><supplied reason="lost">σ</supplied><unclear reason="damage">ω</unclear>φροσύ<unclear reason="damage">ν</unclear><supplied reason="lost">ῃ</supplied></w>  <w lemma="τελευτάω"><supplied reason="lost">τελευ</supplied>  <lb n="15" type="worddiv"/><supplied reason="lost">τ</supplied>ήσαντα</w>  <supplied reason="lost"><w lemma="ἔτι">ἐτὶ</w>  <w lemma="νέος">νέον</w></supplied><lb n="16"/><w lemma="ὅς">οὗ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ἡ</w>  <w lemma="οὐσία">οὐ<supplied reason="lost">σία</supplied></w>  <w lemma="πᾶς"><supplied reason="lost">πᾶσα</supplied></w>  <lb n="17"/><w lemma="ἔρχομαι">ἐλήλυθεν</w>  <supplied reason="lost"><w lemma="εἰς">εἰς</w>  <w lemma="ὁ">τὸν</w></supplied>  <lb n="18"/><w lemma="δῆμος">δῆμον</w>  <w lemma="εἰς">εἰς</w>  <w lemma="αἰώνιος"><supplied reason="lost">αἰωνί</supplied><lb n="19" type="worddiv"/>ους</w>  <w lemma="γυμνασιαρχία">γυμ<supplied reason="lost">νασιαρχί</supplied><lb n="20" type="worddiv"/><w>ας</w></w>  <w lemma="καί">καὶ</w>  <w lemma="στεφανηφορία">στεφ<supplied reason="lost">ανηφορί</supplied><lb n="21" type="worddiv"/><supplied reason="lost">ας</supplied></w>  <w lemma="κατά">κατὰ</w>  <w lemma="ὁ">τὴν</w>    <w lemma="γίγνομαι">γενο<supplied reason="lost">μένην</supplied></w><lb n="22"/><w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <w lemma="πατήρ">πατρὸ<supplied reason="lost">ς</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">αὐτοῦ</supplied></w>  <w lemma="διαθήκη"><supplied reason="lost">δια</supplied><lb n="23" type="worddiv"/>  θήκην</w>  <g type="stop"/>  <w lemma="ὁ">τὴν</w>  <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w>  <w lemma="ἀναθήκη"><supplied reason="lost">ἀναθή</supplied><lb n="24" type="worddiv"/><supplied reason="lost">κη</supplied>ν</w>  <w lemma="οὗτος">ταύτην</w>  <w lemma="ἀνίστημι">ἀ<supplied reason="lost">νέστησεν</supplied></w>  <lb n="25"/><persName reg="Τάτιον  Μενίππου  Μενίππου" full="yes" type="aphrodisian"><name reg="Τάτιον"><supplied reason="lost">Τ</supplied>άτιον</name>  <persName reg="Μενίππος  Μενίππου" full="yes" type="aphrodisian"><name type="        " reg="Μένιππος">Μενίπ<supplied reason="lost">που</supplied></name> <w lemma="ὁ">τοῦ</w>  <persName reg="Μενίππος" full="yes" type="aphrodisian"><name type="        " reg="Μένιππος"><supplied reason="lost">Με</supplied><lb n="26" type="worddiv"/>νίππου</name> <w lemma="τετρακίς">τετ<supplied reason="lost">ράκις</supplied></w>  <persName reg="Δημήτριος" full="yes" type="aphrodisian"><name reg="Δημήτριος"><supplied reason="lost">Δημη</supplied><lb n="27" type="worddiv"/>τρίου</name></persName></persName></persName></persName> <w lemma="ὁ">ἡ</w>  <w lemma="μήτηρ">μήτ<supplied reason="lost">ηρ</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">αὐτοῦ</supplied></w><lb n="27a"/><gap extent="unknown" dim="bottom" reason="lost" unit="line" id="ia1015-gap01"/><certainty target="ia1015-gap01" locus="#gi" degree="low" assertedValue="space"/></ab></div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); a: MAMA; b: Gaudin's squeeze; publications.</p>
-</div>
-
-<div type="apparatus"><head>Apparatus</head><p>The supplements, where not self evident, are based on the text of <xref type="inscription" n="1016" href="130005">13.5</xref> (=MAMA 482) which honours this honorand's brother.</p><p>l. 5, <foreign lang="grc"><supplied reason="lost" cert="low">Γάϊον</supplied></foreign>, MAMA, without justification; since nothing is needed and a <foreign lang="la">vacat</foreign> seems more probable (giving prominence to the honorand's name).</p><p>l. 11, Reinach gives nothing after <foreign lang="grc">λι/τουργίας</foreign>, did not see that his b. l. 1 fits here and proposed for his b. l. 2, <foreign lang="grc"><supplied reason="lost">συνεκτικ</supplied>ότος <supplied reason="lost">τὴν πόλιν</supplied></foreign>, wrongly.</p><p>ll. 12, 13, <foreign lang="grc"><supplied reason="lost">ὑπὲρ τῆς</supplied> <lb/> <supplied reason="lost">π</supplied><unclear reason="damage">ατ</unclear><supplied reason="lost">ρίδος</supplied></foreign>, MAMA, wrongly.</p><p>ll. 15/16, <foreign lang="grc"><supplied reason="lost" cert="low">πρὸ μοῖρας</supplied></foreign>, Reinach, but <xref type="inscription" n="1016" href="130005">13.5</xref> (=MAMA 482) l. 15 suggests differently.</p><p>l. 22/23, <foreign lang="grc">τὴν <supplied reason="lost">δὲ</supplied><lb/><gap reason="lost" unit="character" extent="4" dim="internal"/>ν ταύτην</foreign>, Reinach.</p></div><div type="translation">
-<head>Translation</head>
-<p>The Council and the People and the Gerousia honoured with the first and greatest honours Pyrrhos Papias son of Pyrrhos the son of Zenon son of Pyrrhos, of a first and honoured family and one which has undertaken the most important liturgies.  He lived as a boy discreetly, and died while still a youth; his whole property came to the People  to provide gymnasiarchies and stephanephoriates in perpetuity in accordance with the existing will of his father. This monument was set up by Tation daughter of Menippos son of Menippos, fourth of that name from Demetrios, his mother.</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>It is now clear that two brothers were honoured, here and in <xref type="inscription" n="1016" href="130005">13.5</xref> (=MAMA 482), in very much the same terms and perhaps left their property to the city for similar purposes. There is an initial problem that if the family connections are correctly interpreted both this man and his father (<xref type="inscription" n="363" href="130007">13.7</xref>)had the second name Papias. The normal practice seems to have been for the son to take a second name when his first was the same as that of a living father (or, perhaps grandfather); for both to have two names in common seems likely to increase the chances of confusion. Reinach observed that in our inscriptions the father was not always given the second name (not in fact in this text where the son has it, although he has it in his own text and in that of the other son Demetrios). It is not impossible that there has been a mason's error in this text.</p><p>Nothing is known at present of the mother's family.</p><p>For comment on the family and the funding see on <xref type="inscription" n="363" href="130007">13.7</xref> (=CIG 2775).</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Walls, North</rs>: fallen from the wall, north of the Stadium</rs> <rs type="origLocation">Unknown, <rs type="monuList" cert="low">Necropolis, North</rs></rs>. <rs type="lastLocation">Findspot (1985)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Both parts recorded but not published by Kubitschek (a. K.III.10, Abklatsch 2a; b. III.13, Abklatsch 1d);  recorded as separate texts by Gaudin (92e and 92h);  a recorded by the MAMA expedition; both parts recorded and joined by the NYU expedition in 1973.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>a published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 140-41  no. <biblScope>72</biblScope></bibl>;   by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <biblScope>481</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257201">322</biblScope></bibl>b published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906,140-141   no. <biblScope>74</biblScope></bibl>, whence Laum, no 114,  <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257460">580</biblScope></bibl></p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs"><head>Photographs</head><p><figure href="73_T_16"><figDesc>Fragment a (1973)</figDesc></figure><figure href="73_W_08"><figDesc>Fragment b (1973)</figDesc></figure><figure href="85_E_14"><figDesc>Fragments a &amp; b (1985)</figDesc></figure><figure href="85_E_16"><figDesc>Fragments a &amp; b (1985)</figDesc></figure></p></div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p><figure href="K_III_10"><figDesc>Kubitschek notebook III, 10</figDesc></figure><figure href="K_III_13"><figDesc>Kubitschek notebook III, 13</figDesc></figure></p>
-</div></body>
-</text>
-
+<ab><lb n="0"/><gap reason="lost" unit="line" id="ia1015gap01" extent="unknown"/><certainty target="ia1015gap01" locus="#gi" assertedValue="space" degree="low"/><lb n="1"/><w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w>  <w lemma="βουλή">βουλὴ</w>  <supplied reason="lost"><w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w></supplied>  <w lemma="δῆμος"><supplied reason="lost">δῆ</supplied><lb n="2" break="no"/>μος</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ἡ</w>  <w lemma="γερουσία"><supplied reason="lost">γερουσί</supplied><lb n="3" break="no"/>α</w>  <w lemma="τιμάω">ἐτείμη<supplied reason="lost">σαν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ταῖς</supplied></w>  <lb n="4"/><w lemma="πρῶτος">πρώταις</w>  <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <w lemma="μέγας"><supplied reason="lost" cert="low">μεγίσ</supplied><lb n="5" break="no"/><supplied reason="lost">τ</supplied>αις</w>  <w lemma="τιμή">τειμ<unclear reason="damage">α</unclear><supplied reason="lost">ῖς</supplied></w>    <supplied reason="lost" cert="low"><space unit="character" extent="unknown" dim="horizontal"/></supplied>  <lb n="6"/><persName nymRef="#Πύρρος  Πύρρου  Ζήνωνος  Πύρρου  Παπίας" type="attested"><name nymRef="#Πύρρος"><unclear reason="damage">Π</unclear>ύρρον</name>  <persName nymRef="#Πύρρος  Ζήνωνος  Πύρρου" type="attested"><name nymRef="#Πύρρος">Π<supplied reason="lost">ύρρου</supplied></name> <supplied reason="lost"><w lemma="ὁ">τοῦ</w></supplied>  <lb n="7"/><persName nymRef="#Ζήνων  Πύρρου" type="attested"><name nymRef="#Ζήνων">Ζήνωνο<supplied reason="lost">ς</supplied></name> <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <persName nymRef="#Πύρρος" type="attested"><name nymRef="#Πύρρος"><supplied reason="lost">Πύρ</supplied><lb n="8" break="no"/><supplied reason="lost">ρ</supplied>ου</name></persName></persName></persName>  <name nymRef="#Παπίας">Παπία<supplied reason="lost">ν</supplied></name></persName>  <w lemma="γένος"><supplied reason="lost">γένους</supplied></w>  <lb n="9"/><w lemma="πρῶτος">πρώτου</w>  <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <w lemma="ἔνδοξος"><supplied reason="lost">ἐνδόξου</supplied></w>  <lb n="10"/><w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w>  <w lemma="ὁ">τὰς</w>  <w lemma="μέγας">μ<unclear reason="damage">ε</unclear><supplied reason="lost">γίστας</supplied>  </w> <w lemma="λειτουργία"><supplied reason="lost">λι</supplied><lb n="11" break="no"/>τουργί<supplied reason="lost">ας</supplied></w>  <w lemma="λειτουργέω"><supplied reason="lost">λελιτουρ</supplied><lb n="12" break="no"/><supplied reason="lost">γ</supplied>ηκ<unclear reason="damage">ό</unclear><supplied reason="lost">τος</supplied></w>  <w lemma="ζάω">ζήσαν<lb n="13" break="no"/><supplied reason="lost">τ</supplied>α</w>  <w lemma="ἐν">ἐν</w>  <w lemma="παιδεία">πα<supplied reason="lost">ιδείᾳ</supplied></w><lb n="14"/><w lemma="σωφροσύνη"><supplied reason="lost">σ</supplied><unclear reason="damage">ω</unclear>φροσύ<unclear reason="damage">ν</unclear><supplied reason="lost">ῃ</supplied></w>  <w lemma="τελευτάω"><supplied reason="lost">τελευ</supplied>  <lb n="15" break="no"/><supplied reason="lost">τ</supplied>ήσαντα</w>  <supplied reason="lost"><w lemma="ἔτι">ἐτὶ</w>  <w lemma="νέος">νέον</w></supplied><lb n="16"/><w lemma="ὅς">οὗ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ἡ</w>  <w lemma="οὐσία">οὐ<supplied reason="lost">σία</supplied></w>  <w lemma="πᾶς"><supplied reason="lost">πᾶσα</supplied></w>  <lb n="17"/><w lemma="ἔρχομαι">ἐλήλυθεν</w>  <supplied reason="lost"><w lemma="εἰς">εἰς</w>  <w lemma="ὁ">τὸν</w></supplied>  <lb n="18"/><w lemma="δῆμος">δῆμον</w>  <w lemma="εἰς">εἰς</w>  <w lemma="αἰώνιος"><supplied reason="lost">αἰωνί</supplied><lb n="19" break="no"/>ους</w>  <w lemma="γυμνασιαρχία">γυμ<supplied reason="lost">νασιαρχί</supplied><lb n="20" break="no"/><w>ας</w></w>  <w lemma="καί">καὶ</w>  <w lemma="στεφανηφορία">στεφ<supplied reason="lost">ανηφορί</supplied><lb n="21" break="no"/><supplied reason="lost">ας</supplied></w>  <w lemma="κατά">κατὰ</w>  <w lemma="ὁ">τὴν</w>    <w lemma="γίγνομαι">γενο<supplied reason="lost">μένην</supplied></w><lb n="22"/><w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <w lemma="πατήρ">πατρὸ<supplied reason="lost">ς</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">αὐτοῦ</supplied></w>  <w lemma="διαθήκη"><supplied reason="lost">δια</supplied><lb n="23" break="no"/>  θήκην</w>  <g ref="#stop"/>  <w lemma="ὁ">τὴν</w>  <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w>  <w lemma="ἀναθήκη"><supplied reason="lost">ἀναθή</supplied><lb n="24" break="no"/><supplied reason="lost">κη</supplied>ν</w>  <w lemma="οὗτος">ταύτην</w>  <w lemma="ἀνίστημι">ἀ<supplied reason="lost">νέστησεν</supplied></w>  <lb n="25"/><persName nymRef="#Τάτιον  Μενίππου  Μενίππου" type="attested"><name nymRef="#Τάτιον"><supplied reason="lost">Τ</supplied>άτιον</name>  <persName nymRef="#Μενίππος  Μενίππου" type="attested"><name nymRef="#Μένιππος">Μενίπ<supplied reason="lost">που</supplied></name> <w lemma="ὁ">τοῦ</w>  <persName nymRef="#Μενίππος" type="attested"><name nymRef="#Μένιππος"><supplied reason="lost">Με</supplied><lb n="26" break="no"/>νίππου</name> <w lemma="τετρακίς">τετ<supplied reason="lost">ράκις</supplied></w>  <persName nymRef="#Δημήτριος" type="attested"><name nymRef="#Δημήτριος"><supplied reason="lost">Δημη</supplied><lb n="27" break="no"/>τρίου</name></persName></persName></persName></persName> <w lemma="ὁ">ἡ</w>  <w lemma="μήτηρ">μήτ<supplied reason="lost">ηρ</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">αὐτοῦ</supplied></w><lb n="27a"/><gap reason="lost" unit="line" id="ia1015-gap01" extent="unknown"/><certainty target="ia1015-gap01" locus="#gi" degree="low" assertedValue="space"/></ab></div>
+         <div type="apparatus">
+            <p>The supplements, where not self evident, are based on the text of <ref type="inscription" n="1016" target="130005.xml"/> (=MAMA 482) which honours this honorand's brother.</p>
+            <p>l. 5, <foreign xml:lang="grc">
+                  <supplied reason="lost" cert="low">Γάϊον</supplied>
+               </foreign>, MAMA, without justification; since nothing is needed and a <foreign xml:lang="la">vacat</foreign> seems more probable (giving prominence to the honorand's name).</p>
+            <p>l. 11, Reinach gives nothing after <foreign xml:lang="grc">λι/τουργίας</foreign>, did not see that his b. l. 1 fits here and proposed for his b. l. 2, <foreign xml:lang="grc">
+                  <supplied reason="lost">συνεκτικ</supplied>ότος <supplied reason="lost">τὴν πόλιν</supplied>
+               </foreign>, wrongly.</p>
+            <p>ll. 12, 13, <foreign xml:lang="grc">
+                  <supplied reason="lost">ὑπὲρ τῆς</supplied>
+                  <lb/>
+                  <supplied reason="lost">π</supplied>
+                  <unclear reason="damage">ατ</unclear>
+                  <supplied reason="lost">ρίδος</supplied>
+               </foreign>, MAMA, wrongly.</p>
+            <p>ll. 15/16, <foreign xml:lang="grc">
+                  <supplied reason="lost" cert="low">πρὸ μοῖρας</supplied>
+               </foreign>, Reinach, but <ref type="inscription" n="1016" target="130005.xml"/> (=MAMA 482) l. 15 suggests differently.</p>
+            <p>l. 22/23, <foreign xml:lang="grc">τὴν <supplied reason="lost">δὲ</supplied>
+                  <lb/>
+                  <gap reason="lost" unit="character" quantity="4"/>ν ταύτην</foreign>, Reinach.</p>
+         </div>
+         <div type="translation">
+            <p>The Council and the People and the Gerousia honoured with the first and greatest honours Pyrrhos Papias son of Pyrrhos the son of Zenon son of Pyrrhos, of a first and honoured family and one which has undertaken the most important liturgies.  He lived as a boy discreetly, and died while still a youth; his whole property came to the People  to provide gymnasiarchies and stephanephoriates in perpetuity in accordance with the existing will of his father. This monument was set up by Tation daughter of Menippos son of Menippos, fourth of that name from Demetrios, his mother.</p>
+         </div>
+         <div type="commentary">
+            <p>It is now clear that two brothers were honoured, here and in <ref type="inscription" n="1016" target="130005.xml"/> (=MAMA 482), in very much the same terms and perhaps left their property to the city for similar purposes. There is an initial problem that if the family connections are correctly interpreted both this man and his father (<ref type="inscription" n="363" target="130007.xml"/>)had the second name Papias. The normal practice seems to have been for the son to take a second name when his first was the same as that of a living father (or, perhaps grandfather); for both to have two names in common seems likely to increase the chances of confusion. Reinach observed that in our inscriptions the father was not always given the second name (not in fact in this text where the son has it, although he has it in his own text and in that of the other son Demetrios). It is not impossible that there has been a mason's error in this text.</p>
+            <p>Nothing is known at present of the mother's family.</p>
+            <p>For comment on the family and the funding see on <ref type="inscription" n="363" target="130007.xml"/> (=CIG 2775).</p>
+         </div>
+         <div type="bibliography">
+            <p>a published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 140-41  no. <citedRange>72</citedRange>
+               </bibl>;   by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <citedRange>481</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257201">322</citedRange>
+               </bibl>b published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906,140-141   no. <citedRange>74</citedRange>
+               </bibl>, whence Laum, no 114,  <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257460">580</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

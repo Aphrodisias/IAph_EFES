@@ -1,96 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110004" n="iAph0355 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
- <title level="m"><rs type="textType">Honours</rs> for Panphilos Krokion</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Panphilos Krokion</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110004</idno>
+            <idno type="IAph2007">iAph110004</idno>
+            <idno type="JMR2004">iAph0355</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Plain <material key="marmor">white marble</material>
+                              <objectType>base</objectType>, weathered (<width unit="metre">0.42</width> × <height unit="metre">0.66</height> × <depth unit="metre">0.39</depth>), with holes in the top for attachment of a capital.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs>  on the lower fascia (<width unit="metre">0.51</width> × <height unit="metre">0.10</height>). The main text containing the decision must have been inscribed on a base below.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025-0.03</height>; circle for stop.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering">     Probably first century A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, Village</rs>: re-used north-east of the Tetrapylon, west of the Water Channel</provenance>
+                  <provenance type="observed" when="1980">Findspot (1980)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-27" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-05-31" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_T_12.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="80_G_21.jpg">
+            <desc>Monument (1980)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-04-27</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2005-05-31</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Plain <rs type="material" key="marmor">white marble</rs> <rs type="objectType">base</rs>, weathered (<measure type="length" unit="metre" dim="width">0.42</measure> × <measure type="length" unit="metre" dim="height">0.66</measure> × <measure type="length" unit="metre" dim="depth">0.39</measure>), with holes in the top for attachment of a capital.</p>
+<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή"><unclear reason="damage">β</unclear>ουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δ<supplied reason="lost">ῆ</supplied><lb n="2" break="no"/>μος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">οἱ</w> <w lemma="νέος">νέ<unclear reason="damage">οι</unclear></w><lb n="3"/> <w lemma="τιμάω">ἐτείμησαν</w> <space extent="unknown" unit="character" dim="horizontal"/>  <g ref="#stop"/><lb n="4"/><persName nymRef="#Πάνφιλος  Ἀρτέμωνος  Κροκίων" type="attested"><name nymRef="#Πάνφιλος">Πάνφιλον</name>  <persName type="attested"><name nymRef="#Ἀρτέμων">Ἀρτέ<lb n="5" break="no"/>  <unclear reason="damage">μ</unclear>ωνος</name></persName>  <name nymRef="#Κροκίων">Κροκίων<supplied reason="lost">α</supplied></name></persName><lb n="6"/><w lemma="ζάω"><unclear reason="damage">ζ</unclear>ήσαν<unclear reason="damage">τ</unclear>α</w>  <w lemma="καλός"><unclear reason="damage">κ</unclear><supplied reason="lost">αλῶς</supplied></w><lb n="7"/><w lemma="καί">καὶ</w>  <w lemma="κόσμιος">κοσ<unclear reason="damage">μ</unclear>ίω<supplied reason="lost">ς</supplied></w><gap reason="lost" unit="character" quantity="3"/><lb n="8"/><persName nymRef="#Ἀρτέμων  Ἀρτέμωνος  Βάκχιος" type="attested"><name nymRef="#Ἀρτέμων">Ἀρτέμων</name>  <persName nymRef="#Ἀρτέμων" type="attested"><name nymRef="#Ἀρτέμων"><unclear reason="damage">Ἀ</unclear>ρ<supplied reason="lost">τέμω</supplied><lb n="9" break="no"/>νος</name></persName>  <name nymRef="#Βάκχιος">Βάκχιος</name></persName>  <persName type="attested"><name nymRef="#Κροκίων">Κ<unclear reason="damage">ρο</unclear><supplied reason="lost">κί</supplied><lb n="10" break="no"/>ωνα</name></persName>  <w lemma="ὁ">τὸν</w>  <w lemma="ἀδελφός">ἀδελ<supplied reason="lost">φόν</supplied></w><lb n="10a"/>      <space unit="line" extent="1" dim="horizontal"/></ab> 
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs>  on the lower fascia (<measure dim="width" type="length" unit="metre">0.51</measure> × <measure dim="height" type="length" unit="metre">0.10</measure>). The main text containing the decision must have been inscribed on a base below.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.025-0.03</measure>; circle for stop.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>     Probably <date exact="none" notAfter="0100" notBefore="0001" cert="low">first century A.D.</date> (<rs type="criteria">lettering</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή"><unclear reason="damage">β</unclear>ουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δ<supplied reason="lost">ῆ</supplied><lb n="2" type="worddiv"/>μος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">οἱ</w> <w lemma="νέος">νέ<unclear reason="damage">οι</unclear></w><lb n="3"/> <w lemma="τιμάω">ἐτείμησαν</w> <space extent="unknown" unit="character" dim="horizontal"/>  <g type="stop"/><lb n="4"/><persName reg="Πάνφιλος  Ἀρτέμωνος  Κροκίων" full="yes" type="aphrodisian"><name reg="Πάνφιλος">Πάνφιλον</name>  <persName type="aphrodisian"><name reg="Ἀρτέμων">Ἀρτέ<lb n="5" type="worddiv"/>  <unclear reason="damage">μ</unclear>ωνος</name></persName>  <name type=" " reg="Κροκίων">Κροκίων<supplied reason="lost">α</supplied></name></persName><lb n="6"/><w lemma="ζάω"><unclear reason="damage">ζ</unclear>ήσαν<unclear reason="damage">τ</unclear>α</w>  <w lemma="καλός"><unclear reason="damage">κ</unclear><supplied reason="lost">αλῶς</supplied></w><lb n="7"/><w lemma="καί">καὶ</w>  <w lemma="κόσμιος">κοσ<unclear reason="damage">μ</unclear>ίω<supplied reason="lost">ς</supplied></w><gap dim="right" extent="3" reason="lost" unit="character"/><lb n="8"/><persName reg="Ἀρτέμων  Ἀρτέμωνος  Βάκχιος" full="yes" type="aphrodisian"><name reg="Ἀρτέμων">Ἀρτέμων</name>  <persName reg="Ἀρτέμων" full="yes" type="aphrodisian"><name type=" " reg="Ἀρτέμων"><unclear reason="damage">Ἀ</unclear>ρ<supplied reason="lost">τέμω</supplied><lb n="9" type="worddiv"/>νος</name></persName>  <name reg="Βάκχιος">Βάκχιος</name></persName>  <persName type="aphrodisian"><name reg="Κροκίων">Κ<unclear reason="damage">ρο</unclear><supplied reason="lost">κί</supplied><lb n="10" type="worddiv"/>ωνα</name></persName>  <w lemma="ὁ">τὸν</w>  <w lemma="ἀδελφός">ἀδελ<supplied reason="lost">φόν</supplied></w><lb n="10a"/>      <space unit="line" extent="1" dim="horizontal"/></ab> 
-</div>
-
-
-
-<div type="translation">
-<head>Translation</head>
-<p>The Council and the People and the Young Men honoured Panphilos Krokion son of Artemon who lived honourably and with due order. Artemon Bacchios son of Artemon <supplied reason="subaudible">set up</supplied> Krokion his brother.</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>cf. <xref type="inscription" n="1018" href="120308">12.308</xref> (=MAMA 484).</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p>Found: <rs type="found"><rs type="monuList">City, Village</rs>: re-used north-east of the Tetrapylon, west of the Water Channel</rs>. Original location: <rs type="origLocation">Unknown</rs>. Last recorded: <rs type="lastLocation">Findspot (1980)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record"><head>History of Recording</head>
-<p>Recorded by the NYU expedition (<rs type="siteNo">Village 2</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs"><head>Photographs</head><p><figure href="73_T_12"><figDesc>Face (1973)</figDesc></figure><figure href="80_G_21"><figDesc>Monument (1980)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="translation">
+            <p>The Council and the People and the Young Men honoured Panphilos Krokion son of Artemon who lived honourably and with due order. Artemon Bacchios son of Artemon <supplied reason="subaudible">set up</supplied> Krokion his brother.</p>
+         </div>
+         <div type="commentary">
+            <p>cf. <ref type="inscription" n="1018" target="120308.xml"/> (=MAMA 484).</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

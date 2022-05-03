@@ -1,89 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020001" n="iAph1926 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Text with <rs type="textType">names</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr2003">Reynolds and Isik (<date>2007</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-31</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> building <rs type="objectType">block</rs>s.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>On the face of the walls.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Painted graffiti. a is upside down.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>Undateable</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_block" n="a"><ab n="b"><lb n="1"/> <persName type="aphrodisian"><name reg="Πρόβατος"><w lemma="πρόβατον">Προβάτο<supplied reason="lost">υ</supplied></w></name></persName></ab></div><div type="textpart_block" n="b"><ab n="b"><lb n="1"/> <persName type="aphrodisian"><name reg="Πρόβατος"><w lemma="πρόβατον">Προβάτου</w></name></persName></ab></div><div type="textpart_block" n="c"><ab n="b"><lb n="1"/> <persName type="aphrodisian"><name reg="Πρόβατος"><w lemma="προβατός">ΠΡΟΒΑΒΑΤΟΥ</w></name></persName></ab></div><div type="textpart_block" n="d"><ab n="b"><lb n="1"/> <persName type="aphrodisian"><name reg="Πρόβατος"><w lemma="πρόβατον">Προβ<supplied reason="lost">ά</supplied>το<supplied reason="lost">υ</supplied></w></name></persName></ab></div><div type="textpart_block" n="e"><ab n="b"><lb n="1"/> <persName type="aphrodisian"><name reg="Πρόβατος"><w lemma="πρόβατον">Π<supplied reason="lost">ρ</supplied>ο<supplied reason="lost" cert="low">βάτου</supplied></w></name></persName></ab></div></div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Text with names</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020001</idno>
+            <idno type="IAph2007">iAph020001</idno>
+            <idno type="JMR2004">iAph1926</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material> building <objectType>block</objectType>s.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>On the face of the walls.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Painted graffiti. a is upside down.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate>Undateable</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon</rs>, on the north face of the outer walls</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds, 1967).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-31" who="cmr">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_D_06.jpg">
+            <desc>Face (1976)</desc>
+         </graphic>
+         <graphic url="76_D_07.jpg">
+            <desc>Face (1976)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="apparatus">
-            <head>Apparatus</head>
+<div n="a" type="textpart" subtype="block"><ab n="b"><lb n="1"/> <persName type="attested"><name nymRef="#Πρόβατος"><w lemma="πρόβατον">Προβάτο<supplied reason="lost">υ</supplied></w></name></persName></ab></div><div n="b" type="textpart" subtype="block"><ab n="b"><lb n="1"/> <persName type="attested"><name nymRef="#Πρόβατος"><w lemma="πρόβατον">Προβάτου</w></name></persName></ab></div><div n="c" type="textpart" subtype="block"><ab n="b"><lb n="1"/> <persName type="attested"><name nymRef="#Πρόβατος"><w lemma="προβατός">ΠΡΟΒΑΒΑΤΟΥ</w></name></persName></ab></div><div n="d" type="textpart" subtype="block"><ab n="b"><lb n="1"/> <persName type="attested"><name nymRef="#Πρόβατος"><w lemma="πρόβατον">Προβ<supplied reason="lost">ά</supplied>το<supplied reason="lost">υ</supplied></w></name></persName></ab></div><div n="e" type="textpart" subtype="block"><ab n="b"><lb n="1"/> <persName type="attested"><name nymRef="#Πρόβατος"><w lemma="πρόβατον">Π<supplied reason="lost">ρ</supplied>ο<supplied reason="lost" cert="low">βάτου</supplied></w></name></persName></ab></div></div>
+         <div type="apparatus">
             <p>Illegible traces of paint appear on several more blocks, as well as occasional single letters some of which were cut and not painted.</p>
-            
          </div>
          <div type="translation" n="a">
-<head>Translation</head>
-<p>? Of Probatos</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The position of <title>a</title> shows that these texts were not intended for display here, and were presumably covered with plaster when the building was in use. The genitive case seems clear from <title>b</title> and <title>c</title>, so that it is plausible to take them as ownership marks of some kind - perhaps giving the name of a quarry owner or of the quarryman who cut them; this suggestion obviously raises unsolved problems relating to ancient systems for keeping a tally of work completed. If it is the case that this is a name it is, obviously, a Latin one transliterated into Greek; a number of such names were used at Aphrodisias, but I do not know of any other instance of this one.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Findspot</rs>
-<rs type="found"><rs type="monuList">Bouleuterion/Odeon</rs>, on the north face of the outer walls</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, 1967).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p><bibl n="jmr2003">Reynolds, 'Inscriptions of the Bouleuterion/Odeon' in Ratté, forthcoming.</bibl></p>
-</div><div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="76_D_06"><figDesc>Face (1976)</figDesc></figure><figure href="76_D_07"><figDesc>Face (1976)</figDesc></figure></p></div>
-
-      
-
-      
-
-    </body></text>
+            <p>? Of Probatos</p>
+         </div>
+         <div type="commentary">
+            <p>The position of <title>a</title> shows that these texts were not intended for display here, and were presumably covered with plaster when the building was in use. The genitive case seems clear from <title>b</title> and <title>c</title>, so that it is plausible to take them as ownership marks of some kind - perhaps giving the name of a quarry owner or of the quarryman who cut them; this suggestion obviously raises unsolved problems relating to ancient systems for keeping a tally of work completed. If it is the case that this is a name it is, obviously, a Latin one transliterated into Greek; a number of such names were used at Aphrodisias, but I do not know of any other instance of this one.</p>
+         </div>
+         <div type="bibliography">
+            <p>
+               <bibl n="jmr2003">Reynolds, 'Inscriptions of the Bouleuterion/Odeon' in Ratté, forthcoming.</bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

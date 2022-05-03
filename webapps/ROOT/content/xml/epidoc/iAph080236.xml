@@ -1,77 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080236" n="iAph1284 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs>  for <rs type="textType" reg="imperial">Domitian</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-18</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours  for Domitian</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080236</idno>
+            <idno type="IAph2007">iAph080236</idno>
+            <idno type="JMR2004">iAph1284</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>67.282</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>statue base</objectType> (<width unit="metre">0.60</width> × <height unit="metre">0.46</height> × <depth unit="metre">0.78</depth>) with moulding above and below. There are holes on the top surface for the attachment of the statue, which has its own semi-circular base. The moulding is chipped on a edges; and a round hole has been cut in the centre of the front face.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the upper moulding (lines 1-2) and on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lightly-cut, with marked but not exaggerated seriphs; l.1, <height unit="metre">0.025</height>; ll. 2, f, ave. <height unit="metre">0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0084" notAfter="0096" evidence="reign, titulature">
+A.D. early 84-96
+(<rs type="criteria">reign, titulature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: section V.</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-18" who="cmr">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_K_36.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">statue base</rs> (<measure type="length" unit="metre" dim="width">0.60</measure> × <measure type="length" unit="metre" dim="height">0.46</measure> × <measure type="length" unit="metre" dim="depth">0.78</measure>) with moulding above and below. There are holes on the top surface for the attachment of the statue, which has its own semi-circular base. The moulding is chipped on a edges; and a round hole has been cut in the centre of the front face.</p></div><div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the upper moulding (lines 1-2) and on the face.</p>
+<ab><lb n="1"/><persName type="emperor"><w lemma="αὐτοκράτωρ"><supplied reason="lost">α</supplied>ὐτοκρ<supplied reason="lost">ά</supplied>τ<supplied reason="lost">ορα</supplied></w>  <name nymRef="#Καῖσαρ">Καί<supplied reason="lost">σαρα</supplied></name>    <lb n="2"/><name nymRef="#Δομιτιανός">Δομιτιανὸν</name>  <w lemma="σεβαστός">Σεβαστὸν</w>  <lb n="3"/><name nymRef="#Γερμανικός">Γερμανικὸν</name></persName>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="καθιερόω">καθι<lb n="4" break="no"/>έρωσεν</w>  <w lemma="ἐπιμελέω">ἐπιμεληθέντος</w>  <lb n="5"/><persName type="attested"><name nymRef="#Διογένης">Διογένου</name>  <w lemma="ὁ">τ<supplied reason="lost">ο</supplied>ῦ</w>  <persName type="attested"><name nymRef="#Εὐκλῆς">Εὐκλέους</name>  <lb n="6"/><w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Διογένης">Διογένου</name></persName></persName></persName>  <g ref="#scroll"/></ab>
 </div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Lightly-cut, with marked but not exaggerated seriphs; l.1, <measure dim="height" type="length" unit="metre">0.025</measure>; ll. 2, f, ave. <measure dim="height" type="length" unit="metre">0.03</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0084" notAfter="0096" exact="both">A.D. early 84-96</date>
-(<rs type="criteria">reign, titulature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><persName type="emperor" full="yes"><w lemma="αὐτοκράτωρ"><supplied reason="lost">α</supplied>ὐτοκρ<supplied reason="lost">ά</supplied>τ<supplied reason="lost">ορα</supplied></w>  <name reg="Καῖσαρ">Καί<supplied reason="lost">σαρα</supplied></name>    <lb n="2"/><name reg="Δομιτιανός">Δομιτιανὸν</name>  <w lemma="σεβαστός">Σεβαστὸν</w>  <lb n="3"/><name reg="Γερμανικός">Γερμανικὸν</name></persName>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="καθιερόω">καθι<lb n="4" type="worddiv"/>έρωσεν</w>  <w lemma="ἐπιμελέω">ἐπιμεληθέντος</w>  <lb n="5"/><persName type="aphrodisian" full="yes"><name reg="Διογένης">Διογένου</name>  <w lemma="ὁ">τ<supplied reason="lost">ο</supplied>ῦ</w>  <persName type="aphrodisian" full="yes"><name reg="Εὐκλῆς">Εὐκλέους</name>  <lb n="6"/><w lemma="ὁ">τοῦ</w>  <persName type="aphrodisian" full="yes"><name reg="Διογένης">Διογένου</name></persName></persName></persName>  <g type="scroll"/></ab>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p>Imperator Caesar Domitianus Augustus, conqueror of the Germans. The People dedicated (his statue); Diogenes son of Eukles the son of Diogenes took responsibility.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Two dedications of statues of Domitian (this and <xref type="iAph">1313</xref> =75.143) have been found at Aphrodisias; neither has suffered <term lang="la">damnatio</term>. Aphrodisias also dedicated to Domitian at Ephesus. For the discussion see Reynolds, loc. cit.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: section V.</rs>
-<rs type="origLocation">Unknown</rs><rs type="lastLocation">Museum</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1967 (<rs type="invNo">67.282</rs>; SBI <rs type="sbi">150</rs>) with the statue.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl type="primary" n="erim1973"><author>Reynolds</author> with the publication of the statue by Erim in <title level="m">Opusc. Rom.</title>, 9, 1973, <biblScope>135-142</biblScope></bibl>, and in <bibl n="ktejmr1979">Inan-Rosenbaum, <title level="m">Porträtplastik</title> 91, no. <biblScope>38</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1982.1099</biblScope></bibl>, <bibl n="seg">SEG <biblScope>1985.1082</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257085">206</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_K_36"><figDesc>Face (1978)</figDesc></figure></p><p>KTE67.17.1,2, 72.25.9</p>
-</div></body></text>
+         <div type="translation">
+            <p>Imperator Caesar Domitianus Augustus, conqueror of the Germans. The People dedicated (his statue); Diogenes son of Eukles the son of Diogenes took responsibility.</p>
+         </div>
+         <div type="commentary">
+            <p>Two dedications of statues of Domitian (this and <ref type="iAph" target=".xml"/> =75.143) have been found at Aphrodisias; neither has suffered <term xml:lang="la">damnatio</term>. Aphrodisias also dedicated to Domitian at Ephesus. For the discussion see Reynolds, loc. cit.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="primary" n="erim1973">
+                  <author>Reynolds</author> with the publication of the statue by Erim in <title level="m">Opusc. Rom.</title>, 9, 1973, <citedRange>135-142</citedRange>
+               </bibl>, and in <bibl n="ktejmr1979">Inan-Rosenbaum, <title level="m">Porträtplastik</title> 91, no. <citedRange>38</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1099</citedRange>
+               </bibl>, <bibl n="seg">SEG <citedRange>1985.1082</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257085">206</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

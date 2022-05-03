@@ -1,81 +1,132 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130147" n="iAph1487 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType" reg="funerary">Sarcophagus</rs> of  [...] and his wife [...] daughter of Menandros</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr2003">Reynolds and Isik (<date>2007</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-06</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> garland <rs type="objectType">sarcophagus</rs> <measure type="length" unit="metre" dim="width">2.23</measure>   × <measure type="length" unit="metre" dim="height">1.01</measure>   × <measure type="length" unit="metre" dim="depth">1.09</measure>. For description see <bibl>Isik 99</bibl>.
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sarcophagus of  [...] and his wife [...] daughter of Menandros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130147</idno>
+            <idno type="IAph2007">iAph130147</idno>
+            <idno type="JMR2004">iAph1487</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material> garland <objectType>sarcophagus</objectType>
+                              <width unit="metre">2.23</width>   × <height unit="metre">1.01</height>   × <depth unit="metre">1.09</depth>. For description see <bibl>Isik 99</bibl>.
 </p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> along the upper edge (l.1) and in the <rs type="decoration">tabella</rs> and its upper and lower mouldings. The text must have begun on the lid.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p> Neat examples of the second-to-fourth-century style, 0.0225-0.0275. Ligatured ΜΗ (l.17), ΜΗΝ (l.16), ΝΤ (l.13), ΤΗ (ll.3, 12, 13). Star for denarius. Unconventional spellings in ll.1, 4, 9, 11.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
- Perhaps <date notBefore="0168" notAfter="0250" exact="none" cert="low">late second to first half of the third century</date>
- (<rs type="criteria">lettering</rs>, <rs type="criteria">spelling</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Φοῖβος">Φοίβου</name> <w lemma="φύσις">φύσι</w> <w lemma="δέ">δὲ</w> <persName type="aphrodisian"><name reg="Μένανδρος">Μενάνδρου</name>  <measure value="2">β</measure> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀγαθόπους">Ἀγαθόποδος</name>  <name>Μα<gap reason="lost" extent="10" unit="character"/></name></persName></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐκ">ἐξ</w> <w lemma="αὐτός">αὐ<lb n="2" type="worddiv"/>τῶν</w>  <w lemma="γίγνομαι"><supplied reason="lost">γεγόμενα</supplied></w>  <w lemma="τέκνον"><supplied reason="lost">τέκν</supplied>α</w> <w lemma="ἕτερος">ἕτερος</w> <lb n="3"/> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="θάπτω">ταφή<lb n="4" type="worddiv"/>σετε</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="παρά">παρὰ</w> <w lemma="οὗτος">ταῦτά</w> <lb n="5"/> <w lemma="τις">τι</w> <w lemma="ποιέω">ποιήσας</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀ<lb n="6" type="worddiv"/>σεβ<unclear reason="damage">ὴς</unclear></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ἐπάρατος"><supplied reason="lost">ἐ</supplied><unclear reason="damage">πάρ</unclear>ατος</w>  <lb n="7"/><w lemma="καί">κ<unclear reason="damage">αὶ</unclear></w>  <w lemma="τυμβωρύχος"><unclear reason="damage">τυμβω</unclear>ρύχος</w> <w lemma="καί">καὶ</w> <lb n="8"/> <w lemma="προσαποτίνω">προσαποτεισάτω</w> <w lemma="εἰς">εἰς</w> <lb n="9"/> <w lemma="ὁ">τὸ</w> <w lemma="ἵερος">εἱερώτατον</w> <w lemma="ταμεῖον">ταμεῖ<lb n="10" type="worddiv"/>ον</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <w lemma="τρισχίλιοι">τρισχίλια</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <lb n="11"/> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσσθω</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκ<lb n="12" type="worddiv"/>δικήσαντος</w> <w lemma="οὗτος">ταύτης</w> <lb n="13"/> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀντίγραφον">ἀντίγρα<lb n="14" type="worddiv"/>φον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <lb n="15"/> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στε<lb n="16" type="worddiv"/>φανηφόρου</w>  <unclear reason="damage">τὸ</unclear> <num value="11">ια</num> <persName type="aphrodisian"><name reg="Ἀτταλίς">Ἀτταλίδος</name>  <lb n="17"/> <w lemma="ὁ">τῆς</w> <g type="bird"/>  <persName type="aphrodisian"><name reg="Μενεκράτης">Μενεκράτους</name></persName></persName> <w lemma="μείς">μηνὸς</w> <g type="genius"/>  <lb n="18"/><g type="scroll"/> <w lemma="πέμπτος">πέμπτου</w> <g type="leaf"/>  </ab>
-</div>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> along the upper edge (l.1) and in the <rs type="decoration">tabella</rs> and its upper and lower mouldings. The text must have begun on the lid.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote> Neat examples of the second-to-fourth-century style, 0.0225-0.0275. Ligatured ΜΗ (l.17), ΜΗΝ (l.16), ΝΤ (l.13), ΤΗ (ll.3, 12, 13). Star for denarius. Unconventional spellings in ll.1, 4, 9, 11.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0168"
+                               notAfter="0250"
+                               precision="medium"
+                               evidence="lettering spelling">
+ Perhaps late second to first half of the third century
+ (<rs type="criteria">lettering</rs>, <rs type="criteria">spelling</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east</rs>: in a field south of the Eymir-Tabae road, with <ref type="inscription" n="1580" target="130112.xml"/>, <ref type="inscription" n="1503" target="130153.xml"/> (= MAMA 576, 586)</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publication; notebooks; MAMA squeeze;Isik  photograph.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-06" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_V_03.jpg">
+            <desc>Kubitschek notebook V, 3</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>[? The sarcophagus belongs to name and his wife, adoptive daughter of name, son] of Phoibos, natural daughter of Menandros, second of the name after Agathopous Ma[ ..c. 10 ..] and their surviving children. No one else shall bury in the sarcophagus since whoever has acted contrary to this is to be considered sacrilegious, accursed and a tomb-breaker, and furthermore is to pay to the sacred treasury (at Rome) 3000 denarii, of which one third is to belong to the prosecutor. A copy of this inscribed text was deposited in the civic archive in the eleventh stephanephorate of Attalis, daughter of Menekrates, fifth month.</p>
+<ab><lb n="1"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Φοῖβος">Φοίβου</name> <w lemma="φύσις">φύσι</w> <w lemma="δέ">δὲ</w> <persName type="attested"><name nymRef="#Μένανδρος">Μενάνδρου</name>  <measure value="2">β</measure> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀγαθόπους">Ἀγαθόποδος</name>  <name>Μα<gap reason="lost" unit="character" quantity="10"/></name></persName></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐκ">ἐξ</w> <w lemma="αὐτός">αὐ<lb n="2" break="no"/>τῶν</w>  <w lemma="γίγνομαι"><supplied reason="lost">γεγόμενα</supplied></w>  <w lemma="τέκνον"><supplied reason="lost">τέκν</supplied>α</w> <w lemma="ἕτερος">ἕτερος</w> <lb n="3"/> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="θάπτω">ταφή<lb n="4" break="no"/>σετε</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="παρά">παρὰ</w> <w lemma="οὗτος">ταῦτά</w> <lb n="5"/> <w lemma="τις">τι</w> <w lemma="ποιέω">ποιήσας</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀ<lb n="6" break="no"/>σεβ<unclear reason="damage">ὴς</unclear></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ἐπάρατος"><supplied reason="lost">ἐ</supplied><unclear reason="damage">πάρ</unclear>ατος</w>  <lb n="7"/><w lemma="καί">κ<unclear reason="damage">αὶ</unclear></w>  <w lemma="τυμβωρύχος"><unclear reason="damage">τυμβω</unclear>ρύχος</w> <w lemma="καί">καὶ</w> <lb n="8"/> <w lemma="προσαποτίνω">προσαποτεισάτω</w> <w lemma="εἰς">εἰς</w> <lb n="9"/> <w lemma="ὁ">τὸ</w> <w lemma="ἵερος">εἱερώτατον</w> <w lemma="ταμεῖον">ταμεῖ<lb n="10" break="no"/>ον</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <w lemma="τρισχίλιοι">τρισχίλια</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <lb n="11"/> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσσθω</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκ<lb n="12" break="no"/>δικήσαντος</w> <w lemma="οὗτος">ταύτης</w> <lb n="13"/> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀντίγραφον">ἀντίγρα<lb n="14" break="no"/>φον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <lb n="15"/> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στε<lb n="16" break="no"/>φανηφόρου</w>  <unclear reason="damage">τὸ</unclear> <num value="11">ια</num> <persName type="attested"><name nymRef="#Ἀτταλίς">Ἀτταλίδος</name>  <lb n="17"/> <w lemma="ὁ">τῆς</w> <g ref="#bird"/>  <persName type="attested"><name nymRef="#Μενεκράτης">Μενεκράτους</name></persName></persName> <w lemma="μείς">μηνὸς</w> <g ref="#genius"/>  <lb n="18"/><g ref="#scroll"/> <w lemma="πέμπτος">πέμπτου</w> <g ref="#leaf"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>αὐτῶν in ll.1-2 shows that a man and wife jointly owned the sarcophagus; the length of her genealogy might suggest a family of high social status, but does not prove it (see Introduction); too little survives of the names to show whether the family had Roman citizenship. For the stephanephoros see no. 84 (her sixteenth tenure).</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Necropolis, North-east</rs>: in a field south of the Eymir-Tabae road, with <xref type="inscription" n="1580" href="130112">13.112</xref>, <xref type="inscription" n="1503" href="130153">13.153</xref> (= MAMA 576, 586)</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publication; notebooks; MAMA squeeze;Isik  photograph.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Kubitschek (KV.3, Abklatsch 110); by the MAMA expedition; by the NYU expedition (Isik).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from the MAMA records, with consultation also of Kubitschek's papers, <bibl n="MAMA8">J.M.R.Cormack, MAMA 8. <biblScope>553</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257427">547</biblScope>
-</bibl>; <bibl n="jmr2003">Reynolds and Isik <biblScope>99</biblScope>, with photograph</bibl>.</p>
-</div><div n="transcriptions" type="figure"><head>Representations</head><p><figure href="K_V_03"><figDesc>Kubitschek notebook V, 3</figDesc></figure></p></div></body></text>
+         <div type="translation">
+            <p>[? The sarcophagus belongs to name and his wife, adoptive daughter of name, son] of Phoibos, natural daughter of Menandros, second of the name after Agathopous Ma[ ..c. 10 ..] and their surviving children. No one else shall bury in the sarcophagus since whoever has acted contrary to this is to be considered sacrilegious, accursed and a tomb-breaker, and furthermore is to pay to the sacred treasury (at Rome) 3000 denarii, of which one third is to belong to the prosecutor. A copy of this inscribed text was deposited in the civic archive in the eleventh stephanephorate of Attalis, daughter of Menekrates, fifth month.</p>
+         </div>
+         <div type="commentary">
+            <p>αὐτῶν in ll.1-2 shows that a man and wife jointly owned the sarcophagus; the length of her genealogy might suggest a family of high social status, but does not prove it (see Introduction); too little survives of the names to show whether the family had Roman citizenship. For the stephanephoros see no. 84 (her sixteenth tenure).</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from the MAMA records, with consultation also of Kubitschek's papers, <bibl n="MAMA8">J.M.R.Cormack, MAMA 8. <citedRange>553</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257427">547</citedRange>
+               </bibl>; <bibl n="jmr2003">Reynolds and Isik <citedRange>99</citedRange>, with photograph</bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,100 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120018" n="iAph1047 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for anonymous</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for anonymous</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120018</idno>
+            <idno type="IAph2007">iAph120018</idno>
+            <idno type="JMR2004">iAph1047</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragement from the right side of a<material> white marble</material>
+                              <objectType key="block">statue base</objectType> without moulding (<width unit="metre">0.18</width>   × <height unit="metre">0.52</height>   × <depth>0.14</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height>0.02-0.0225</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">Second to third centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North</rs>: fallen from the  wall north of the Stadium</provenance>
+                  <provenance type="observed" when="1968">Findspot (1968)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; Preliminary transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="JMR_1_1968_010.jpg">
+            <desc>Face (1968)</desc>
+         </graphic>
+         <graphic url="JMR_1_1968_012.jpg">
+            <desc>Face (1968)</desc>
+         </graphic>
+         <graphic url="K_III_10.jpg">
+            <desc>Kubitschek notebook III, 10</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<text>
-<body>
 
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Fragement from the right side of a<rs type="material"> white marble</rs> <rs type="objectType" reg="block">statue base</rs> without moulding (<measure type="length" unit="metre" dim="width">0.18</measure>   × <measure type="length" unit="metre" dim="height">0.52</measure>   × <measure type="depth" dim="depth">0.14</measure>).</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure type="length" dim="none">0.02-0.0225</measure></p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="0"/><gap dim="top" extent="unknown" reason="lost" unit="line"/><lb n="1"/><w><gap dim="left" extent="11" reason="lost" unit="character"/><unclear reason="damage">α</unclear>ντα</w>  <lb n="2"/><w><gap dim="left" extent="11" reason="lost" unit="character"/>φερον</w>  <lb n="3"/><gap dim="left" extent="9" reason="lost" unit="character"/>  <w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w>  <w lemma="πλεῖστος">πλεῖσ<lb n="4" type="worddiv"/><supplied reason="lost">τα</supplied></w>  <gap extent="6" reason="lost" unit="character"/>    <w lemma="παρέχω"><supplied reason="lost">πα</supplied>ρασχό<lb n="5" type="worddiv"/><supplied reason="lost">μενον</supplied></w>  <w><gap dim="left" extent="6" reason="lost" unit="character"/>ως</w>  <w lemma="πᾶς">παν  <lb n="6" type="worddiv"/></w><w><gap dim="left" extent="11" reason="lost" unit="character"/>ενον</w>  <space extent="1" unit="character" dim="horizontal"/><lb n="7"/><gap dim="left" extent="8" reason="lost" unit="character"/>  <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="πᾶς">παντὶ</w>  <lb n="8"/><w lemma="χρήσιμος"><supplied reason="lost">χρήσιμον</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῇ</w>  <w lemma="πόλις">πόλει</w>  <lb n="9"/><w><gap dim="left" extent="11" reason="lost" unit="character"/>αι</w>  <w lemma="ὁ">τῶν</w>  <space extent="1" unit="character" dim="horizontal"/><lb n="10"/><gap dim="left" extent="11" reason="lost" unit="character"/> <w lemma="νομοθε-">νο<unclear reason="damage">μ</unclear>οθε<lb n="11" type="worddiv"/><gap dim="left" extent="11" reason="lost" unit="character"/></w>  <w lemma="χωρίον">χωρία</w>  <lb n="12"/><gap dim="left" extent="11" reason="lost" unit="character"/>  <w lemma="τιμή">τειμὰς</w>  <lb n="13"/><w><gap dim="left" extent="11" reason="lost" unit="character"/><unclear reason="damage">α</unclear>στος</w>  <lb n="14"/><w><gap dim="left" extent="11" reason="lost" unit="character"/>τος</w>  <w lemma="αὐτός">αὐ<lb n="14a" type="worddiv"/><supplied reason="lost" cert="low"><space extent="6" unit="character" dim="horizontal"/></supplied>      <supplied reason="lost">τος</supplied></w>  <space extent="6" unit="character" dim="horizontal"/><lb n="14b"/>                        <space extent="1" unit="line" dim="horizontal"/></ab></div>
-
-
-
-<div type="apparatus"><head>Apparatus</head><p>ll. 7-8, <foreign lang="grc"><gap extent="5" reason="lost" unit="character"/> <supplied reason="lost">ἐν</supplied> παντὶ<lb/> <supplied reason="lost">καιρῷ χρήσιμον τ</supplied>ῇ πόλει</foreign>,  cj. MAMA</p><p>l. 10,  <foreign lang="grc">ΝΟΡΙΟΘ</foreign>  Reinach (lecture certaine);  <foreign lang="grc"><gap reason="lost" dim="left"/>ν ὁριοθε<supplied reason="lost">σίαν</supplied></foreign> MAMA
-</p></div><div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p></div>
-
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, North</rs>: fallen from the  wall north of the Stadium</rs> <rs type="origLocation">Unknown</rs><rs type="lastLocation">Findspot (1968)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; Preliminary transcription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Kubitschek (KIII.10, Abklatsch 4); recorded by Gaudin (no squeeze number); by the MAMA expedition;  by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 215, no. <biblScope>104</biblScope></bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA  8, no. <biblScope>526</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257241">363</biblScope></bibl>.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="JMR_1_1968_010"><figDesc>Face (1968)</figDesc></figure><figure href="JMR_1_1968_012"><figDesc>Face (1968)</figDesc></figure></p></div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p><figure href="K_III_10"><figDesc>Kubitschek notebook III, 10</figDesc></figure></p>
-</div></body>
-</text>
-
+<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/><lb n="1"/><w><gap reason="lost" unit="character" quantity="11"/><unclear reason="damage">α</unclear>ντα</w>  <lb n="2"/><w><gap reason="lost" unit="character" quantity="11"/>φερον</w>  <lb n="3"/><gap reason="lost" unit="character" quantity="9"/>  <w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w>  <w lemma="πλεῖστος">πλεῖσ<lb n="4" break="no"/><supplied reason="lost">τα</supplied></w>  <gap reason="lost" unit="character" quantity="6"/>    <w lemma="παρέχω"><supplied reason="lost">πα</supplied>ρασχό<lb n="5" break="no"/><supplied reason="lost">μενον</supplied></w>  <w><gap reason="lost" unit="character" quantity="6"/>ως</w>  <w lemma="πᾶς">παν  <lb n="6" break="no"/></w><w><gap reason="lost" unit="character" quantity="11"/>ενον</w>  <space extent="1" unit="character" dim="horizontal"/><lb n="7"/><gap reason="lost" unit="character" quantity="8"/>  <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="πᾶς">παντὶ</w>  <lb n="8"/><w lemma="χρήσιμος"><supplied reason="lost">χρήσιμον</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῇ</w>  <w lemma="πόλις">πόλει</w>  <lb n="9"/><w><gap reason="lost" unit="character" quantity="11"/>αι</w>  <w lemma="ὁ">τῶν</w>  <space extent="1" unit="character" dim="horizontal"/><lb n="10"/><gap reason="lost" unit="character" quantity="11"/> <w lemma="νομοθε-">νο<unclear reason="damage">μ</unclear>οθε<lb n="11" break="no"/><gap reason="lost" unit="character" quantity="11"/></w>  <w lemma="χωρίον">χωρία</w>  <lb n="12"/><gap reason="lost" unit="character" quantity="11"/>  <w lemma="τιμή">τειμὰς</w>  <lb n="13"/><w><gap reason="lost" unit="character" quantity="11"/><unclear reason="damage">α</unclear>στος</w>  <lb n="14"/><w><gap reason="lost" unit="character" quantity="11"/>τος</w>  <w lemma="αὐτός">αὐ<lb n="14a" break="no"/><supplied reason="lost" cert="low"><space extent="6" unit="character" dim="horizontal"/></supplied>      <supplied reason="lost">τος</supplied></w>  <space extent="6" unit="character" dim="horizontal"/><lb n="14b"/>                        <space extent="1" unit="line" dim="horizontal"/></ab></div>
+         <div type="apparatus">
+            <p>ll. 7-8, <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" quantity="5"/>
+                  <supplied reason="lost">ἐν</supplied> παντὶ<lb/>
+                  <supplied reason="lost">καιρῷ χρήσιμον τ</supplied>ῇ πόλει</foreign>,  cj. MAMA</p>
+            <p>l. 10,  <foreign xml:lang="grc">ΝΟΡΙΟΘ</foreign>  Reinach (lecture certaine);  <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>ν ὁριοθε<supplied reason="lost">σίαν</supplied>
+               </foreign> MAMA
+</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 215, no. <citedRange>104</citedRange>
+               </bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA  8, no. <citedRange>526</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257241">363</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

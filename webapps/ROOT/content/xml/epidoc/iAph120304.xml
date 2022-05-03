@@ -1,87 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120304" n="iAph1105 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building dedication</rs> to Zeus</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building dedication to Zeus</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120304</idno>
+            <idno type="IAph2007">iAph120304</idno>
+            <idno type="JMR2004">iAph1105</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>92.3</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment of <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> from a Doric entablature (<width unit="metre">0.42</width> × <height unit="metre">0.375</height> × <depth unit="metre">0.245</depth>). The left side, although damaged, is probably an original edge.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the exposed face; the text must have begun on preceding blocks.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Heights uneven, l.1 <height unit="metre">0.044-0.05</height>, l.2 <height unit="metre">0.04-0.06</height>; drawn freehand, and cut with trenches of uneven depth.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <seg cert="low">Temple of Zeus Nineudios</seg>
+                     </origPlace>
+                     <origDate notBefore="-0100" notAfter="-0036" evidence="lettering">
+First century  B.C., probably triumviral, but possibly earlier (<rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs>: recorded by K&amp;R near <ref type="inscription" n="1286" target="110104.xml"/> (=P&amp;H 10); on a pile of loose stones on top of the wall, eastern stretch, a little south of the current entrance to the site</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="92_A_01.jpg">
+            <desc>Face (1992)</desc>
+         </graphic>
+         <graphic url="92_A_35.jpg">
+            <desc>Face (1992)</desc>
+         </graphic>
+         <graphic url="92_A_36.jpg">
+            <desc>Face (1992)</desc>
+         </graphic>
+         <graphic url="K_III_36.jpg">
+            <desc>Kubitschek notebook III, 36</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Fragment of <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> from a Doric entablature (<measure type="length" unit="metre" dim="width">0.42</measure> × <measure type="length" unit="metre" dim="height">0.375</measure> × <measure type="length" unit="metre" dim="depth">0.245</measure>). The left side, although damaged, is probably an original edge.</p>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/>  <supplied reason="lost" cert="low"><note rend="italic" place="not  specified" xml:lang=""/></supplied>    <w lemma="ὁ">τὸ</w>  <w lemma="ἐπιστύλιον">ἐπισ<unclear reason="damage">τ</unclear><supplied reason="lost">ύλιον</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/>                  <gap reason="lost" unit="character" extent="unknown"/>  <persName type="divine"><supplied reason="lost" cert="low">Διὶ</supplied>  <placeName><name>Νινευδίῳ</name></placeName></persName>    <gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the exposed face; the text must have begun on preceding blocks.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Heights uneven, l.1 <measure type="length" unit="metre" dim="height">0.044-0.05</measure>, l.2 <measure type="length" unit="metre" dim="height">0.04-0.06</measure>; drawn freehand, and cut with trenches of uneven depth.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="-0100" notAfter="-0036">First century  B.C.</date>, probably triumviral, but possibly earlier (<rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap dim="left" extent="unknown" reason="lost" unit="character"/>  <supplied reason="lost" cert="low"><note rend="italic" place="not  specified" anchored="yes">name</note></supplied>    <w lemma="ὁ">τὸ</w>  <w lemma="ἐπιστύλιον">ἐπισ<unclear reason="damage">τ</unclear><supplied reason="lost">ύλιον</supplied></w>  <gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/>                  <gap dim="left" extent="unknown" reason="lost" unit="character"/>  <persName type="divine" full="yes"><supplied reason="lost" cert="low">Διὶ</supplied>  <placeName><name>Νινευδίῳ</name></placeName></persName>    <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); publications.</p>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l.1, perhaps <foreign lang="grc">τὸ ἐπισ<unclear reason="damage">τ</unclear><supplied reason="lost" cert="low">ύλιον καὶ τὸν ἐπ' αὐτοῦ κόσμον</supplied></foreign>; cf. e.g. <xref type="inscription" n="1127" href="120505">12.505</xref> (=MAMA 439), but the parallel is not exact.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>. . . ?built/dedicated] the epistyle [ and the decoration on it? . .? . . dedicated to Zeus] Nineudios [ . . .</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The inscription which was seen with this (now largely lost: see under <xref type="inscription" n="1286" href="110104">11.104</xref> =P&amp;H 10) recorded three dedications, perhaps of Julio-Claudian date, made by Dionysios son of Papylos and grandson of Papylos, priest of Zeus Nineudios, almost certainly dedicated to that god; and the two stones together are obviously spoil from the dismantlement of his presumed temple.</p><p>For the cult title see Robert, who suggests it is to be connected with the legends of Ninos and Ninoe.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
- <rs type="found"><rs type="monuList">Walls, East (south part)</rs>: recorded by K&amp;R near <xref type="inscription" n="1286" href="110104">11.104</xref> (=P&amp;H 10); on a pile of loose stones on top of the wall, eastern stretch, a little south of the current entrance to the site</rs>.
-<rs type="origLocation"><seg cert="low">Temple of Zeus Nineudios</seg></rs> <rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Kubitschek (K.III.36, Abklatsch 96); recorded by the NYU expedition in 1992 (<rs type="invNo">92.3</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>published from Kubitschek's notes by <bibl type="primary" n="cormack1964"><author>Cormack</author>, <title level="m">ABSA</title> 59 (1964), 22 no. <biblScope>19</biblScope></bibl>, whence <bibl n="robert1966">L. Robert, <title level="m">AntClass</title> (1966), 394</bibl> , <bibl n="be"><title>BE</title> <biblScope>1967.548</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257014">135</biblScope></bibl>; mentioned by <bibl><author>M-H Gates</author>, <title level="j">AJA</title> 98 (1994), 267-68</bibl>, whence <bibl n="be">BullEp <biblScope>1995.78</biblScope></bibl>, and published by <bibl n="rrrs1993"><author>R.R.R. Smith</author>, <title level="j">Kazi Sonuçlari Toplantasi</title> 15,2 (1993), 355 and 368</bibl>, whence <bibl n="be">BullEp <biblScope>1996.385</biblScope></bibl>, <bibl n="seg">SEG <biblScope>1994.864</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="92_A_01"><figDesc>Face (1992)</figDesc></figure><figure href="92_A_35"><figDesc>Face (1992)</figDesc></figure><figure href="92_A_36"><figDesc>Face (1992)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p><figure href="K_III_36"><figDesc>Kubitschek notebook III, 36</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l.1, perhaps <foreign xml:lang="grc">τὸ ἐπισ<unclear reason="damage">τ</unclear>
+                  <supplied reason="lost" cert="low">ύλιον καὶ τὸν ἐπ' αὐτοῦ κόσμον</supplied>
+               </foreign>; cf. e.g. <ref type="inscription" n="1127" target="120505.xml"/> (=MAMA 439), but the parallel is not exact.</p>
+         </div>
+         <div type="translation">
+            <p>. . . ?built/dedicated] the epistyle [ and the decoration on it? . .? . . dedicated to Zeus] Nineudios [ . . .</p>
+         </div>
+         <div type="commentary">
+            <p>The inscription which was seen with this (now largely lost: see under <ref type="inscription" n="1286" target="110104.xml"/> =P&amp;H 10) recorded three dedications, perhaps of Julio-Claudian date, made by Dionysios son of Papylos and grandson of Papylos, priest of Zeus Nineudios, almost certainly dedicated to that god; and the two stones together are obviously spoil from the dismantlement of his presumed temple.</p>
+            <p>For the cult title see Robert, who suggests it is to be connected with the legends of Ninos and Ninoe.</p>
+         </div>
+         <div type="bibliography">
+            <p>published from Kubitschek's notes by <bibl type="primary" n="cormack1964">
+                  <author>Cormack</author>, <title level="m">ABSA</title> 59 (1964), 22 no. <citedRange>19</citedRange>
+               </bibl>, whence <bibl n="robert1966">L. Robert, <title level="m">AntClass</title> (1966), 394</bibl> , <bibl n="be">
+                  <title>BE</title>
+                  <citedRange>1967.548</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257014">135</citedRange>
+               </bibl>; mentioned by <bibl>
+                  <author>M-H Gates</author>, <title level="j">AJA</title> 98 (1994), 267-68</bibl>, whence <bibl n="be">BullEp <citedRange>1995.78</citedRange>
+               </bibl>, and published by <bibl n="rrrs1993">
+                  <author>R.R.R. Smith</author>, <title level="j">Kazi Sonuçlari Toplantasi</title> 15,2 (1993), 355 and 368</bibl>, whence <bibl n="be">BullEp <citedRange>1996.385</citedRange>
+               </bibl>, <bibl n="seg">SEG <citedRange>1994.864</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

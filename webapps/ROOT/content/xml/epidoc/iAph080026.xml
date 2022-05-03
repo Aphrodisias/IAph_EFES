@@ -1,93 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080026" n="iAph0507 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title>Triumviral <rs type="textType">decree</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-03-27</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-03-15</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Seven fragments of <rs type="material">white marble</rs> <rs type="objectType">block</rs>s from the archive wall: column 1, lowest register. a (<measure dim="width" type="length" unit="metre">0.97</measure> x <measure dim="height" type="length" unit="metre">1.06</measure> including the dado, x depth not measurable) damaged at the left side. b reassembled from three pieces (<measure dim="width" type="length" unit="metre">0.81</measure> x <measure dim="height" type="length" unit="metre">1.06</measure> including the dado x <measure dim="depth" type="length" unit="metre">0.40</measure>). c two small fragments fitting onto the damaged surface of b. d. fragment of a block (<measure dim="width" type="length" unit="metre">0.81</measure> x <measure dim="height" type="length" unit="metre">0.29</measure> x <measure dim="depth" type="length" unit="metre"> 0.55</measure>). </p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Triumviral decree</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080026</idno>
+            <idno type="IAph2007">iAph080026</idno>
+            <idno type="JMR2004">iAph0507</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>75.187</idno>
+                  <idno>75.141</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Seven fragments of <material>white marble</material>
+                              <objectType>block</objectType>s from the archive wall: column 1, lowest register. a (<width unit="metre">0.97</width> x <height unit="metre">1.06</height> including the dado, x depth not measurable) damaged at the left side. b reassembled from three pieces (<width unit="metre">0.81</width> x <height unit="metre">1.06</height> including the dado x <depth unit="metre">0.40</depth>). c two small fragments fitting onto the damaged surface of b. d. fragment of a block (<width unit="metre">0.81</width> x <height unit="metre">0.29</height> x <depth unit="metre"> 0.55</depth>). </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed immediately above the dado. a contains the right ends of the lines. b contains the left ends of ll.3-11. c contains parts of ll.3-11. d contains part of l.1, below part of document 508, ll.90-95.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second to third centuries A.D.; ave <height unit="metre">0.02</height>, rather more lightly cut than those of document <ref type="inscription" n="508" target="080027.xml"/>. Ligatures: ΜΕ, ΜΗ l.4, ΤΗ l. 5. No apices or diairesis marks.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Theatre</rs>, Archive wall</origPlace>
+                     <origDate notBefore="-0039"
+                               notAfter="-0038"
+                               precision="medium"
+                               evidence="lettering context prosopography">
+ Inscription: Second to third centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">context</rs>).
+Document, 39/38 B.C. (<rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">a in the <rs type="monuList">Theatre</rs>, on the Archive Wall; b, c and d reused in the <rs type="monuList">Walls, West</rs>.</provenance>
+                  <provenance type="observed">a in findspot; b, c and d in Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-27" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-15" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_M_18A.jpg">
+            <desc>b, below <ref type="inscription" n="508" target="080027.xml"/>, in situ (1977)</desc>
+         </graphic>
+         <graphic url="75_K_23A.jpg">
+            <desc>Lines 1-3, fragment (1975)</desc>
+         </graphic>
+         <graphic url="75_K_06A.jpg">
+            <desc>Lines 3-11, left end (1975)</desc>
+         </graphic>
+         <graphic url="75_K_05A.jpg">
+            <desc>Lines 3-11, centre left (1975)</desc>
+         </graphic>
+         <graphic url="77_Y_23.jpg">
+            <desc>c: Lines 3-11, assembled (1977)</desc>
+         </graphic>
+         <graphic url="77_M_10A.jpg">
+            <desc>Lines 1-10,  right end, below <ref type="inscription" n="508" target="080027.xml"/> in situ (1977)</desc>
+         </graphic>
+         <graphic url="HUMS003679.jpg">
+            <desc>Archive Wall view (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/><persName type="emperor"><name nymRef="#Γάϊος"><supplied reason="lost">Γάϊος</supplied></name>  <name nymRef="#Καῖσαρ"><supplied reason="lost">Καῖσαρ</supplied></name>  <w lemma="σεβαστός"><supplied reason="lost">Σ</supplied>εβαστὸς</w>  <w lemma="αὐτοκράτωρ">αὐτοκ<supplied reason="lost">ρ</supplied>άτωρ</w>,  <name nymRef="#Μᾶρκος"><supplied reason="lost">Μᾶρκος</supplied></name>  <name nymRef="#Ἀντώνιος"><supplied reason="lost">Ἀντώνιος</supplied></name>  <w lemma="αὐτοκράτωρ"><supplied reason="lost" cert="low">αὐτοκράτωρ</supplied></w></persName>  <w lemma="τρεῖς"><supplied reason="lost">τριῶν</supplied></w>  <w lemma="ἀνήρ"><supplied reason="lost">ἀνδρῶν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῶν</supplied></w>  <w lemma="δημόσιος"><supplied reason="lost">δημ</supplied>οσίων</w> <w lemma="πρᾶγμα">πραγμάτων</w> vac <w lemma="διάταξις">διατάξεως</w> <w lemma="λέγω">λέγουσιν</w> <space extent="3" unit="character"/>  <lb n="2"/><w lemma="ἐπεί"><supplied reason="lost">ἐπειδὴ</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῖς</supplied></w>  <w lemma="ἔμπροσθεν"><supplied reason="lost">ἔμπροσθεν</supplied></w>  <w lemma="χρόνος"><supplied reason="lost">χρόνοις</supplied></w>  <w lemma="ἀεί"><supplied reason="lost">ἀεὶ</supplied></w>  <w lemma="διατελέω"><supplied reason="lost">διετέλουν</supplied></w>  <w lemma="περί"><supplied reason="lost">περὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <w lemma="δῆμος"><supplied reason="lost">δήμου</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <placeName nymRef="#Ῥωμαῖος"><supplied reason="lost">Ῥωμαίων</supplied></placeName>  <w lemma="ἡγεμονία"><supplied reason="lost">ἡγε</supplied>μονίας</w> <w lemma="πλεῖστος">πλείστην</w> <w lemma="σπουδή">σπουδὴν</w> <w lemma="εἰσφέρω">εἰσφερόμενοι</w> <w lemma="καί"><unclear reason="damage">κ</unclear><unclear reason="damage">α</unclear>ὶ</w>  <lb n="3"/><w lemma="μάλιστα"><unclear reason="damage">μ</unclear><supplied reason="lost">ά</supplied><unclear reason="damage">λ</unclear><unclear reason="damage">ι</unclear><unclear reason="damage">σ</unclear>τα</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἡμέτερος">ἡμετέροις</w> <w lemma="μέρος">μέρεσι<supplied reason="lost">ν</supplied></w>  <w lemma="προσγίγνομαι"><unclear reason="damage">π</unclear><unclear reason="damage">ρ</unclear><unclear reason="damage">ο</unclear><supplied reason="lost" cert="low">σγενόμενοι</supplied></w>  <gap reason="lost" unit="character" precision="low" quantity="17"/>   <placeName nymRef="#Ῥόδιος"><supplied reason="lost">Ῥόδιοι</supplied></placeName>  <placeName nymRef="#Λύκιος"><supplied reason="lost">Λύκιοι</supplied></placeName>  <placeName nymRef="#Ταρσεύς"><supplied reason="lost">Τα</supplied>ρσεῖς</placeName> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w> <placeName nymRef="#Λαοδικεύς">Λαοδικεῖς</placeName> <w lemma="ἔτι">ἔτι</w> <w lemma="δέ">δὲ</w> <placeName>Πλαρασεῖς</placeName> <w lemma="καί">καὶ</w> <space extent="2"/> <lb n="4"/> <placeName nymRef="#Ἀφροδεισιεύς">Ἀφροδεισιεῖς</placeName> <w lemma="ἀθεμίτως">ἀθεμίτως</w> <orig n="unresolved">μεταβασ<unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" precision="low" quantity="40"/> <w lemma="ὑπέρ"><supplied reason="lost">ὑ</supplied>πέρ</w> <w lemma="τε">τε</w> <w lemma="ὁ">τῶν</w> <w lemma="δημόσιος">δημοσίων</w> <w lemma="καί">καὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="καλός">καλλί<lb n="5" break="no"/> στης</w> <w lemma="γίγνομαι">γενόμενοι</w> <w lemma="γνώμη">γνώμης</w> <w lemma="πᾶς">πάντα</w> <w lemma="κίνδυνος">κ<supplied reason="lost">ίν</supplied>δ<unclear reason="damage">υ</unclear><supplied reason="lost">νον</supplied></w>  <w lemma="ἀναδέχομαι"><supplied reason="lost" cert="low">ἀνεδέχοντο</supplied></w>  <w><supplied reason="lost">δι’</supplied></w>  <w lemma="ὅπερ"><supplied reason="lost" cert="low">ὅπερ</supplied></w>  <gap reason="lost" unit="character" precision="low" quantity="20"/> <orig n="unresolved">ουπαιανοσ</orig> <w lemma="πᾶς">παντὶ</w> <w lemma="τρόπος">τρόπῳ</w> <w lemma="καί">καὶ</w> <w lemma="σπουδή">σπουδῇ</w> <w lemma="βοηθέω">βοήθηαν</w> <lb n="7"/> <w lemma="πλεῖστος">πλείστην</w> <w lemma="ὀφείλω">ὀφείλομεν</w> <w lemma="παρέχω">παρέχειν</w> <gap reason="lost" unit="character" extent="unknown"/> <orig n="unresolved">τηι</orig> ̣<gap reason="lost" unit="character" precision="low" quantity="40"/> <w lemma="καθίστημι"><supplied reason="lost">κ</supplied>αθισταν</w> <w lemma="μετά">μετὰ</w> <w lemma="πλεῖστος">πλείστης</w> <w lemma="προθυμία">προθυμίας</w> <w lemma="ἐπιθυμέω">ἐπιθυμοῦμεν</w> <lb n="8"/><w lemma="ὅπως"><supplied reason="lost">ὅ</supplied>πως</w> <w lemma="μή">μὴ</w> <w lemma="μόνος">μόνον</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="εἰμί">ὧν</w> <w lemma="προσδέω">προσε<unclear reason="damage">δ</unclear><supplied reason="lost" cert="low">έοντο</supplied></w>  <gap reason="lost" unit="character" precision="low" quantity="35"/> <w lemma="χρῆμα"><supplied reason="lost">χρημάτ</supplied><unclear reason="damage">ω</unclear>ν</w>? <w lemma="ὁ">τῶν</w> <w lemma="ἀπόλλυμι">ἀπολωλότων</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τῶν</w> <w lemma="προγίγνομαι">προγεγο<lb n="9" break="no"/><supplied reason="lost">νό</supplied>των</w> <w lemma="φιλάνθρωπος">φιλανθρώπων</w> <w lemma="ὁ">τὰς</w> <w lemma="ὀφείλω">ὀφειλο<supplied reason="lost">μένας</supplied></w>  <w lemma="χάρις"><supplied reason="lost" cert="low">χάριτας</supplied></w>  <w lemma="ἀνταποδίδωμι"><supplied reason="lost">ἀνταποδίδωμεν</supplied></w>  <gap reason="lost" unit="character" precision="low" quantity="20"/> <w lemma="καλός"><supplied reason="lost">κα</supplied>λῶς</w> <w lemma="ἔχω">ἔχον</w> <w lemma="εἰμί">ἐστὶν</w> <w lemma="μή">μὴ</w> <w lemma="πρός">πρὸς</w> <placeName nymRef="#Ῥόδιος">Ῥόδιον</placeName> <placeName nymRef="#Λύκιος">Λύκιον</placeName> <placeName nymRef="#Λαοδικεύς">Λαοδικῆ</placeName> <placeName nymRef="#Πλαρασεύς">Πλα<lb n="10" break="no"/><supplied reason="lost">ρ</supplied><unclear reason="damage">α</unclear>σῆ</placeName> <w lemma="καί">καὶ</w> <placeName nymRef="#Ἀφροδεισιεύς">Ἀφροδεισιῆ</placeName> <placeName nymRef="#Ταρσεύς">Ταρσῆ</placeName> <w lemma="ἐλεύθερος">ἐλεύθερο<unclear reason="damage">ν</unclear></w>  <gap reason="lost" unit="character" precision="low" quantity="40"/> <w lemma="ἐξουσία"><supplied reason="lost">ἐ</supplied>ξουσίαν</w> <w lemma="γίγνομαι">γεγονότων</w> <w lemma="ἤδη">ἤδη</w> <w lemma="ποτε">ποτὲ</w> <space unit="character" extent="1"/> <orig n="unresolved">ουαιρεσαειτων</orig> <w lemma="ἀπό">ἀπὸ</w> <lb n="11"/>  <w lemma="ἐκεῖνος">ἐκείνου</w> <w lemma="ὁ">τοῦ</w> <w lemma="χρόνος">χρόνου</w> <w lemma="ὁ">τοῦ</w> <w lemma="μετά">μετὰ</w> <persName type="attested"><name nymRef="#Μᾶρκος">Μᾶρκον</name></persName> <orig n="unresolved"><unclear reason="damage">λ</unclear></orig><gap reason="lost" unit="character" precision="low" quantity="35"/> <w lemma="ἐπιγίγνομαι"><supplied reason="lost" cert="low">ἐπιγεγ</supplied>ονότας</w> <w>ἐφ’</w> <w lemma="ὅς">ἥν</w> <w lemma="ποτε">ποτε</w> <w lemma="πόλις">πόλιν</w> <w lemma="πολέμιος">πολεμίοις</w> <w lemma="στρατόπεδον">στρατοπέδῳ</w> <lb n="13"/> <w lemma="ἐπέρχομαι">ἐπῆλθον</w> <w lemma="ὅς">ὃς</w> <w lemma="ἐάν">ἂν</w> <w lemma="οὗτος">τούτων</w> <w lemma="μή">μὴ</w> <w lemma="ποιέω">ποήσῃ</w> <w lemma="ἐκ">ἐ<unclear reason="damage">κ</unclear><gap reason="lost" unit="character" extent="unknown"/></w>  <gap reason="lost" unit="character" precision="low" quantity="40"/> <w><gap reason="lost" unit="character" extent="unknown"/>μων</w> <w lemma="ἐπιφέρω">ἐπενηνοχέναι</w> <w lemma="καί">καὶ</w> <supplied reason="omitted">ὃς</supplied> <w lemma="ἐάν">ἂν</w> <w lemma="οὗτος">τούτου</w>  <w lemma="κατηγορέω">κατηγορήσῃ</w><lb n="14"/>  <space extent="3" unit="character"/>  <gap reason="lost" unit="character" precision="low" quantity="40"/> <w><gap reason="lost" unit="character" extent="unknown"/>ων</w> <w lemma="δίδωμι">δώσομεν</w> <space extent="3" unit="character"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed immediately above the dado. a contains the right ends of the lines. b contains the left ends of ll.3-11. c contains parts of ll.3-11. d contains part of l.1, below part of document 508, ll.90-95.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Second to third centuries A.D.; ave <measure type="length" unit="metre" dim="height">0.02</measure>, rather more lightly cut than those of document <xref type="inscription" n="508" href="080027">8.27</xref>. Ligatures: ΜΕ, ΜΗ l.4, ΤΗ l. 5. No apices or diairesis marks.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
- Inscription: <date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">context</rs>).
-Document, <date notAfter="-0038" notBefore="-0039">39/38 B.C.</date> (<rs type="criteria">prosopography</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><persName type="emperor"><name reg="Γάϊος"><supplied reason="lost">Γάϊος</supplied></name>  <name reg="Καῖσαρ"><supplied reason="lost">Καῖσαρ</supplied></name>  <w lemma="σεβαστός"><supplied reason="lost">Σ</supplied>εβαστὸς</w>  <w lemma="αὐτοκράτωρ">αὐτοκ<supplied reason="lost">ρ</supplied>άτωρ</w>,  <name reg="Μᾶρκος"><supplied reason="lost">Μᾶρκος</supplied></name>  <name reg="Ἀντώνιος"><supplied reason="lost">Ἀντώνιος</supplied></name>  <w lemma="αὐτοκράτωρ"><supplied reason="lost" cert="low">αὐτοκράτωρ</supplied></w></persName>  <w lemma="τρεῖς"><supplied reason="lost">τριῶν</supplied></w>  <w lemma="ἀνήρ"><supplied reason="lost">ἀνδρῶν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῶν</supplied></w>  <w lemma="δημόσιος"><supplied reason="lost">δημ</supplied>οσίων</w> <w lemma="πρᾶγμα">πραγμάτων</w> vac <w lemma="διάταξις">διατάξεως</w> <w lemma="λέγω">λέγουσιν</w> <space extent="3" unit="character"/>  <lb n="2"/><w lemma="ἐπεί"><supplied reason="lost">ἐπειδὴ</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῖς</supplied></w>  <w lemma="ἔμπροσθεν"><supplied reason="lost">ἔμπροσθεν</supplied></w>  <w lemma="χρόνος"><supplied reason="lost">χρόνοις</supplied></w>  <w lemma="ἀεί"><supplied reason="lost">ἀεὶ</supplied></w>  <w lemma="διατελέω"><supplied reason="lost">διετέλουν</supplied></w>  <w lemma="περί"><supplied reason="lost">περὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <w lemma="δῆμος"><supplied reason="lost">δήμου</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <placeName type="ethnic" reg="Ῥωμαῖος"><supplied reason="lost">Ῥωμαίων</supplied></placeName>  <w lemma="ἡγεμονία"><supplied reason="lost">ἡγε</supplied>μονίας</w> <w lemma="πλεῖστος">πλείστην</w> <w lemma="σπουδή">σπουδὴν</w> <w lemma="εἰσφέρω">εἰσφερόμενοι</w> <w lemma="καί"><unclear reason="damage">κ</unclear><unclear reason="damage">α</unclear>ὶ</w>  <lb n="3"/><w lemma="μάλιστα"><unclear reason="damage">μ</unclear><supplied reason="lost">ά</supplied><unclear reason="damage">λ</unclear><unclear reason="damage">ι</unclear><unclear reason="damage">σ</unclear>τα</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἡμέτερος">ἡμετέροις</w> <w lemma="μέρος">μέρεσι<supplied reason="lost">ν</supplied></w>  <w lemma="προσγίγνομαι"><unclear reason="damage">π</unclear><unclear reason="damage">ρ</unclear><unclear reason="damage">ο</unclear><supplied reason="lost" cert="low">σγενόμενοι</supplied></w>  <gap reason="lost" extent="17" unit="character" precision="circa"/>   <placeName type="ethnic" reg="Ῥόδιος"><supplied reason="lost">Ῥόδιοι</supplied></placeName>  <placeName type="ethnic" reg="Λύκιος"><supplied reason="lost">Λύκιοι</supplied></placeName>  <placeName type="ethnic" reg="Ταρσεύς"><supplied reason="lost">Τα</supplied>ρσεῖς</placeName> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w> <placeName type="ethnic" reg="Λαοδικεύς">Λαοδικεῖς</placeName> <w lemma="ἔτι">ἔτι</w> <w lemma="δέ">δὲ</w> <placeName type="ethnic">Πλαρασεῖς</placeName> <w lemma="καί">καὶ</w> <space extent="2"/> <lb n="4"/> <placeName type="ethnic" reg="Ἀφροδεισιεύς">Ἀφροδεισιεῖς</placeName> <w lemma="ἀθεμίτως">ἀθεμίτως</w> <orig n="unresolved">μεταβασ<unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="40" unit="character" precision="circa"/> <w lemma="ὑπέρ"><supplied reason="lost">ὑ</supplied>πέρ</w> <w lemma="τε">τε</w> <w lemma="ὁ">τῶν</w> <w lemma="δημόσιος">δημοσίων</w> <w lemma="καί">καὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="καλός">καλλί<lb type="worddiv" n="5"/> στης</w> <w lemma="γίγνομαι">γενόμενοι</w> <w lemma="γνώμη">γνώμης</w> <w lemma="πᾶς">πάντα</w> <w lemma="κίνδυνος">κ<supplied reason="lost">ίν</supplied>δ<unclear reason="damage">υ</unclear><supplied reason="lost">νον</supplied></w>  <w lemma="ἀναδέχομαι"><supplied reason="lost" cert="low">ἀνεδέχοντο</supplied></w>  <w><supplied reason="lost">δι’</supplied></w>  <w lemma="ὅπερ"><supplied reason="lost" cert="low">ὅπερ</supplied></w>  <gap reason="lost" extent="20" unit="character" precision="circa"/> <orig n="unresolved">ουπαιανοσ</orig> <w lemma="πᾶς">παντὶ</w> <w lemma="τρόπος">τρόπῳ</w> <w lemma="καί">καὶ</w> <w lemma="σπουδή">σπουδῇ</w> <w lemma="βοηθέω">βοήθηαν</w> <lb n="7"/> <w lemma="πλεῖστος">πλείστην</w> <w lemma="ὀφείλω">ὀφείλομεν</w> <w lemma="παρέχω">παρέχειν</w> <gap reason="lost" extent="unknown" unit="character"/> <orig n="unresolved">τηι</orig> ̣<gap reason="lost" extent="40" unit="character" precision="circa"/> <w lemma="καθίστημι"><supplied reason="lost">κ</supplied>αθισταν</w> <w lemma="μετά">μετὰ</w> <w lemma="πλεῖστος">πλείστης</w> <w lemma="προθυμία">προθυμίας</w> <w lemma="ἐπιθυμέω">ἐπιθυμοῦμεν</w> <lb n="8"/><w lemma="ὅπως"><supplied reason="lost">ὅ</supplied>πως</w> <w lemma="μή">μὴ</w> <w lemma="μόνος">μόνον</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="εἰμί">ὧν</w> <w lemma="προσδέω">προσε<unclear reason="damage">δ</unclear><supplied reason="lost" cert="low">έοντο</supplied></w>  <gap reason="lost" extent="35" unit="character" precision="circa"/> <w lemma="χρῆμα"><supplied reason="lost">χρημάτ</supplied><unclear reason="damage">ω</unclear>ν</w>? <w lemma="ὁ">τῶν</w> <w lemma="ἀπόλλυμι">ἀπολωλότων</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τῶν</w> <w lemma="προγίγνομαι">προγεγο<lb type="worddiv" n="9"/><supplied reason="lost">νό</supplied>των</w> <w lemma="φιλάνθρωπος">φιλανθρώπων</w> <w lemma="ὁ">τὰς</w> <w lemma="ὀφείλω">ὀφειλο<supplied reason="lost">μένας</supplied></w>  <w lemma="χάρις"><supplied reason="lost" cert="low">χάριτας</supplied></w>  <w lemma="ἀνταποδίδωμι"><supplied reason="lost">ἀνταποδίδωμεν</supplied></w>  <gap reason="lost" extent="20" unit="character" precision="circa"/> <w lemma="καλός"><supplied reason="lost">κα</supplied>λῶς</w> <w lemma="ἔχω">ἔχον</w> <w lemma="εἰμί">ἐστὶν</w> <w lemma="μή">μὴ</w> <w lemma="πρός">πρὸς</w> <placeName type="ethnic" reg="Ῥόδιος">Ῥόδιον</placeName> <placeName type="ethnic" reg="Λύκιος">Λύκιον</placeName> <placeName type="ethnic" reg="Λαοδικεύς">Λαοδικῆ</placeName> <placeName type="ethnic" reg="Πλαρασεύς">Πλα<lb type="worddiv" n="10"/><supplied reason="lost">ρ</supplied><unclear reason="damage">α</unclear>σῆ</placeName> <w lemma="καί">καὶ</w> <placeName type="ethnic" reg="Ἀφροδεισιεύς">Ἀφροδεισιῆ</placeName> <placeName type="ethnic" reg="Ταρσεύς">Ταρσῆ</placeName> <w lemma="ἐλεύθερος">ἐλεύθερο<unclear reason="damage">ν</unclear></w>  <gap reason="lost" extent="40" unit="character" precision="circa"/> <w lemma="ἐξουσία"><supplied reason="lost">ἐ</supplied>ξουσίαν</w> <w lemma="γίγνομαι">γεγονότων</w> <w lemma="ἤδη">ἤδη</w> <w lemma="ποτε">ποτὲ</w> <space unit="character" extent="1"/> <orig n="unresolved">ουαιρεσαειτων</orig> <w lemma="ἀπό">ἀπὸ</w> <lb n="11"/>  <w lemma="ἐκεῖνος">ἐκείνου</w> <w lemma="ὁ">τοῦ</w> <w lemma="χρόνος">χρόνου</w> <w lemma="ὁ">τοῦ</w> <w lemma="μετά">μετὰ</w> <persName type="aphrodisian"><name reg="Μᾶρκος">Μᾶρκον</name></persName> <orig n="unresolved"><unclear reason="damage">λ</unclear></orig><gap reason="lost" extent="35" unit="character" precision="circa"/> <w lemma="ἐπιγίγνομαι"><supplied reason="lost" cert="low">ἐπιγεγ</supplied>ονότας</w> <w>ἐφ’</w> <w lemma="ὅς">ἥν</w> <w lemma="ποτε">ποτε</w> <w lemma="πόλις">πόλιν</w> <w lemma="πολέμιος">πολεμίοις</w> <w lemma="στρατόπεδον">στρατοπέδῳ</w> <lb n="13"/> <w lemma="ἐπέρχομαι">ἐπῆλθον</w> <w lemma="ὅς">ὃς</w> <w lemma="ἐάν">ἂν</w> <w lemma="οὗτος">τούτων</w> <w lemma="μή">μὴ</w> <w lemma="ποιέω">ποήσῃ</w> <w lemma="ἐκ">ἐ<unclear reason="damage">κ</unclear><gap extent="unknown" reason="lost" unit="character"/></w>  <gap reason="lost" extent="40" unit="character" precision="circa"/> <w><gap reason="lost" extent="unknown" unit="character"/>μων</w> <w lemma="ἐπιφέρω">ἐπενηνοχέναι</w> <w lemma="καί">καὶ</w> <supplied reason="omitted">ὃς</supplied> <w lemma="ἐάν">ἂν</w> <w lemma="οὗτος">τούτου</w>  <w lemma="κατηγορέω">κατηγορήσῃ</w><lb n="14"/>  <space extent="3" unit="character"/>  <gap reason="lost" extent="40" unit="character" precision="circa"/> <w><gap reason="lost" extent="unknown" unit="character"/>ων</w> <w lemma="δίδωμι">δώσομεν</w> <space extent="3" unit="character"/></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>1. 7. Of the last surviving letter before the break there is only a horizontal base meeting a slanting stroke to the left ; the angle seems more like that of Δ than of Σ. Of the first surviving letter after the break there is some slight trace suggesting the serif on the right horizontal of Ω.</p>
-<p>l. 9. Before the break the two uprights interpreted as Ν are followed by a letter of which only a horizontal base survives, Δ, Ε, Ζ, Ξ, or Σ.</p>
-<p>1. 10. Before the break the stone shows unmistakable signs of a triangular letter without a base-line, Α or Λ ; the photograph is less clear.</p>
-<p>l. 11. The cutter wrote Θ for Ο.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>[Caius Caesar] Augustus, imperator, [Marcus Antonius, imperator, triumviri] Reipublicae Constituendae, announce:</p>
-<p>[? Since in former times too the Rhodians, Lykians, Ta]rsians and Laodikeians, and also the Plarasans and Aphrodisians, [always] showed the greatest zeal [for the] empire [of the Roman People] and [being] especially [attached] to our party [.. ? ..] they [have been] unlawfully [.. ? .. ? when], holding the most noble principles, [? they undertook] every risk on behalf of the respublica and ourselves; [for which reason .. ? ..] we ought to provide the most abundant aid in every way and with all zeal [.. ? .. ? for the sake of Apollo] Paean (Medicus), we desire, with the greatest eagerness, [? to restore them] in order that [? we may pay the debt of gratitude] due not only for those things which [.. ? .. being things] destroyed, but also for their former good services [to us .. ? .. it is] proper that [no one shall have] the power [to .. ? ..] against a Rhodian, Lykian, Plarasan and Aphrodisian, Tarsian [.. ? ..] a freeborn person in respect of [.. ? ..] which have occurred already in the past [.. ? ..] from the time when Marcus [.. ? .. those who ? assaulted] each city which they attacked ? with hostile armies. Whoever fails to observe ? any of these injunctions [.. ? ..] ? to have brought a charge [.. ? ..] and to whomsoever informs against him we will give [.. ? ..].</p>
-<p>The translation assumes some of the controversial restorations proposed.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See <title>Aphrodisias and Rome</title>, 49-54.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found">a in the <rs type="monuList">Theatre</rs>, on the Archive Wall; b, c and d reused in the <rs type="monuList">Walls, West</rs>.</rs>
-<rs type="origLocation"><rs type="monuList">Theatre</rs>, Archive wall</rs>
-<rs type="lastLocation">a in findspot; b, c and d in Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition, a in 1967; b, c and d in 1975 (inventory numbers, c <rs type="invNo">75.187</rs>, d <rs type="invNo">75.141</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl type="primary" n="jmr1982"><author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <biblScope>7</biblScope></bibl>whence <bibl n="be">BE <biblScope>1983.369</biblScope></bibl>, <bibl n="anep">AnnEpig <biblScope>1984, 861</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>  <biblScope n="256952">74</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_M_18A"><figDesc>b, below <xref type="inscription" n="508" href="080027">8.27</xref>, in situ (1977)</figDesc></figure><figure href="75_K_23A"><figDesc>Lines 1-3, fragment (1975)</figDesc></figure><figure href="75_K_06A"><figDesc>Lines 3-11, left end (1975)</figDesc></figure><figure href="75_K_05A"><figDesc>Lines 3-11, centre left (1975)</figDesc></figure><figure href="77_Y_23"><figDesc>c: Lines 3-11, assembled (1977)</figDesc></figure><figure href="77_M_10A"><figDesc>Lines 1-10,  right end, below <xref type="inscription" n="508" href="080027">8.27</xref> in situ (1977)</figDesc></figure><figure href="HUMS003679"><figDesc>Archive Wall view (1994)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>1. 7. Of the last surviving letter before the break there is only a horizontal base meeting a slanting stroke to the left ; the angle seems more like that of Δ than of Σ. Of the first surviving letter after the break there is some slight trace suggesting the serif on the right horizontal of Ω.</p>
+            <p>l. 9. Before the break the two uprights interpreted as Ν are followed by a letter of which only a horizontal base survives, Δ, Ε, Ζ, Ξ, or Σ.</p>
+            <p>1. 10. Before the break the stone shows unmistakable signs of a triangular letter without a base-line, Α or Λ ; the photograph is less clear.</p>
+            <p>l. 11. The cutter wrote Θ for Ο.</p>
+         </div>
+         <div type="translation">
+            <p>[Caius Caesar] Augustus, imperator, [Marcus Antonius, imperator, triumviri] Reipublicae Constituendae, announce:</p>
+            <p>[? Since in former times too the Rhodians, Lykians, Ta]rsians and Laodikeians, and also the Plarasans and Aphrodisians, [always] showed the greatest zeal [for the] empire [of the Roman People] and [being] especially [attached] to our party [.. ? ..] they [have been] unlawfully [.. ? .. ? when], holding the most noble principles, [? they undertook] every risk on behalf of the respublica and ourselves; [for which reason .. ? ..] we ought to provide the most abundant aid in every way and with all zeal [.. ? .. ? for the sake of Apollo] Paean (Medicus), we desire, with the greatest eagerness, [? to restore them] in order that [? we may pay the debt of gratitude] due not only for those things which [.. ? .. being things] destroyed, but also for their former good services [to us .. ? .. it is] proper that [no one shall have] the power [to .. ? ..] against a Rhodian, Lykian, Plarasan and Aphrodisian, Tarsian [.. ? ..] a freeborn person in respect of [.. ? ..] which have occurred already in the past [.. ? ..] from the time when Marcus [.. ? .. those who ? assaulted] each city which they attacked ? with hostile armies. Whoever fails to observe ? any of these injunctions [.. ? ..] ? to have brought a charge [.. ? ..] and to whomsoever informs against him we will give [.. ? ..].</p>
+            <p>The translation assumes some of the controversial restorations proposed.</p>
+         </div>
+         <div type="commentary">
+            <p>See <title>Aphrodisias and Rome</title>, 49-54.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="primary" n="jmr1982">
+                  <author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <citedRange>7</citedRange>
+               </bibl>whence <bibl n="be">BE <citedRange>1983.369</citedRange>
+               </bibl>, <bibl n="anep">AnnEpig <citedRange>1984, 861</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256952">74</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

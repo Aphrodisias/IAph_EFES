@@ -1,83 +1,127 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130003" n="iAph1600 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType" reg="curse"><rs type="textType">Funerary</rs></rs> text for Antiochos and Antonia</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>No description; <rs type="objectType" cert="low">sarcophagus</rs>.</p>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary text for Antiochos and Antonia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130003</idno>
+            <idno type="IAph2007">iAph130003</idno>
+            <idno type="JMR2004">iAph1600</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description; <objectType cert="low">sarcophagus</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> No description.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.028</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown, probably <rs type="monuList" cert="low">Necropolis, North</rs>
+                     </origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="nomenclature prosopography"> Probably second century A.D. (<rs type="criteria">nomenclature</rs>, <rs type="criteria">prosopography</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east</rs>: 'Route d'Ishikler, 400m de la porte Nord' <term xml:lang="la">i.e.</term> North-east Gate (Gaudin)</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publication; Gaudin's squeeze (red book 46v).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> No description.</p>
-</div>
 
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.028</measure>.</p>
+<ab><lb n="0"/><supplied reason="lost"><w lemma="ὁ">ἡ </w><w lemma="σορός">σορὸς</w> <note place="not  specified" xml:lang=""/></supplied> <gap reason="lost" unit="character" extent="unknown"/>  <w lemma="εἰμί"><supplied reason="lost">ἐστὶν</supplied></w><lb n="1"/><persName type="attested"><name nymRef="#Ἀντίοχος">Ἀντι<supplied reason="omitted">ό</supplied>χου</name></persName> <w lemma="ἐν">ἐν</w> <w lemma="ὅς">ᾗ</w> <w lemma="σορός">σορῷ</w> <w lemma="κηδεύω">κηδευθήσονται</w> <persName nymRef="#Ἀντίοχος" type="attested"><name nymRef="#Ἀντίοχος">Ἀν<supplied reason="lost">τίο</supplied>χος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="προγράφω">προγεγραμμένος</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀντωνία">Ἀν<lb n="2" break="no"/>τωνία</name>  <name nymRef="#Δαμοκράτεια">Δαμοκράτεια</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="γυνή">γυνὴ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <persName nymRef="#Ἀντίοχος  Ἀντιόχου" type="attested"><name nymRef="#Ἀντίοχος">Ἀντίοχος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="υἱός">υἱὸς</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ἕτερος">ἕτερος</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐ<lb n="3" break="no"/>δεὶς</w> <w lemma="ἔχω">ἕξει</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="θάπτω">θάψαι</w> <w lemma="τις">τινὰ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="τις">τινὰ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἐνθάπτω">ἐ<supplied reason="lost">ν</supplied>τ<supplied reason="lost">α</supplied>φέντων</w>  <lb n="4"/> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="ἐπιχειρέω">ἐπιχειρήσας</w> <w lemma="τοιοῦτος">τοιοῦτό</w> <w lemma="τις">τι</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσεβὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> <w lemma="τυμβωρύχος">τυμβωρύ<lb n="5" break="no"/>χος</w> <w lemma="καί">καὶ</w> <w lemma="ἀποτίνω">ἀποτεισάτω</w> <w lemma="ὁ">τῇ</w> <w lemma="κράτιστος">κρατίστῃ</w> <w lemma="βουλή">βουλῇ</w> <w lemma="ἀργύριον">ἀ<supplied reason="lost">ργ</supplied>υρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w>  <num value="2500">βφ</num> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσ<lb n="6" break="no"/>ται</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσαντος</w> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">ταῖς</w> <w lemma="εἰσώστη">εἰσώσταις</w> <w lemma="κηδεύω">κηδευθήσονται</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <lb n="7"/> <w lemma="ὁ">ὁ</w> <persName type="attested"><name nymRef="#Ἀντίοχος">Ἀντίοχος</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀντίοχος">Ἀντίοχος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="υἱός">υἱὸς</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="βούλομαι">βουληθῶσ<supplied reason="omitted">ι</supplied>ν</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="οὗτος">ταύτης</w> <lb n="8"/> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <persName nymRef="#Διογένης Κλαυδίου  Ἑρμείου Δομετείνου" type="attested"><name nymRef="#Διογένης">Διογένους</name>  <lb n="9"/> <w lemma="υἱός">υἱοῦ</w> <persName nymRef="#Τίτος  Κλαύδιος  Ἕρμειος  Δομέτεινος" type="attested"><name nymRef="#Τίτος"><supplied reason="lost"><expan><abbr>Τί</abbr><ex>του</ex></expan></supplied></name>  <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name>  <name nymRef="#Ἑρμίας">Ἑρμείου</name>  <name nymRef="#Δομετῖνος">Δομετείνου</name></persName></persName> <w lemma="μείς"><expan><abbr>μ</abbr><ex>ηνὸς</ex></expan></w>  <num value="3">γ</num></ab>
 </div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p> Probably <date notAfter="0200" notBefore="0101" exact="none">second century A.D.</date> (<rs type="criteria">nomenclature</rs>, <rs type="criteria">prosopography</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="0"/><supplied reason="lost"><w lemma="ὁ">ἡ </w><w lemma="σορός">σορὸς</w> <note place="not  specified" anchored="yes">κτλ</note></supplied> <gap reason="lost" unit="character" extent="unknown"/>  <w lemma="εἰμί"><supplied reason="lost">ἐστὶν</supplied></w><lb n="1"/><persName type="aphrodisian"><name reg="Ἀντίοχος">Ἀντι<supplied reason="omitted">ό</supplied>χου</name></persName> <w lemma="ἐν">ἐν</w> <w lemma="ὅς">ᾗ</w> <w lemma="σορός">σορῷ</w> <w lemma="κηδεύω">κηδευθήσονται</w> <persName reg="Ἀντίοχος" full="yes" type="aphrodisian"><name reg="Ἀντίοχος">Ἀν<supplied reason="lost">τίο</supplied>χος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="προγράφω">προγεγραμμένος</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian" full="yes"><name reg="Ἀντωνία" type="        ">Ἀν<lb n="2" type="worddiv"/>τωνία</name>  <name reg="Δαμοκράτεια">Δαμοκράτεια</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="γυνή">γυνὴ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <persName reg="Ἀντίοχος  Ἀντιόχου" full="yes" type="aphrodisian"><name reg="Ἀντίοχος">Ἀντίοχος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="υἱός">υἱὸς</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ἕτερος">ἕτερος</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐ<lb n="3" type="worddiv"/>δεὶς</w> <w lemma="ἔχω">ἕξει</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="θάπτω">θάψαι</w> <w lemma="τις">τινὰ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="τις">τινὰ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἐνθάπτω">ἐ<supplied reason="lost">ν</supplied>τ<supplied reason="lost">α</supplied>φέντων</w>  <lb n="4"/> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="ἐπιχειρέω">ἐπιχειρήσας</w> <w lemma="τοιοῦτος">τοιοῦτό</w> <w lemma="τις">τι</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσεβὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> <w lemma="τυμβωρύχος">τυμβωρύ<lb n="5" type="worddiv"/>χος</w> <w lemma="καί">καὶ</w> <w lemma="ἀποτίνω">ἀποτεισάτω</w> <w lemma="ὁ">τῇ</w> <w lemma="κράτιστος">κρατίστῃ</w> <w lemma="βουλή">βουλῇ</w> <w lemma="ἀργύριον">ἀ<supplied reason="lost">ργ</supplied>υρίου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w>  <num value="2500">βφ</num> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσ<lb n="6" type="worddiv"/>ται</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσαντος</w> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">ταῖς</w> <w lemma="εἰσώστη">εἰσώσταις</w> <w lemma="κηδεύω">κηδευθήσονται</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <lb n="7"/> <w lemma="ὁ">ὁ</w> <persName type="aphrodisian"><name reg="Ἀντίοχος">Ἀντίοχος</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀντίοχος">Ἀντίοχος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="υἱός">υἱὸς</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="βούλομαι">βουληθῶσ<supplied reason="omitted">ι</supplied>ν</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="οὗτος">ταύτης</w> <lb n="8"/> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <persName reg="Διογένης Κλαυδίου  Ἑρμείου Δομετείνου" full="yes" type="aphrodisian"><name reg="Διογένης">Διογένους</name>  <lb n="9"/> <w lemma="υἱός">υἱοῦ</w> <persName reg="Τίτος  Κλαύδιος  Ἕρμειος  Δομέτεινος" full="yes" type="aphrodisian"><name reg="Τίτος" type="praenomen"><supplied reason="lost"><expan><abbr>Τί</abbr><supplied reason="abbreviation">του</supplied></expan></supplied></name>  <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name>  <name reg="Ἑρμίας">Ἑρμείου</name>  <name type="  " reg="Δομετῖνος">Δομετείνου</name></persName></persName> <w lemma="μείς"><expan><abbr>μ</abbr><supplied reason="abbreviation">ηνὸς</supplied></expan></w>  <num value="3">γ</num></ab>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p><supplied reason="lost">The sarcophagus ..?.. is</supplied> <supplied reason="subaudible">the property</supplied> of Antiochos, in which sarcophagus Antiochos shall be buried and Antonia Damokrateia his wife and Antiochos their son. No one else shall have the right to bury anyone in it or to remove any of the bodies placed in it since he who has undertaken anything of the kind is to be impious and accursed and a tomb-breaker and to pay the most powerful council 2500 denarii, a third of which shall belong to the prosecutor. In the subsidiary chambers there shall be buried those whom Antiochos and his son wish. A copy of this inscription was deposited in the property-archive when Diogenes son of T. Claudius Hermeias Dometinos was stephanephorus, in the third month.</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>...</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Necropolis, North-east</rs>: 'Route d'Ishikler, 400m de la porte Nord' <term lang="la">i.e.</term> North-east Gate (Gaudin)</rs>.  <rs type="origLocation">Unknown, probably <rs type="monuList" cert="low">Necropolis, North</rs></rs>. <rs type="lastLocation">Findspot</rs>.</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publication; Gaudin's squeeze (red book 46v).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Gaudin (175); not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Gaudin's squeeze by <bibl n="reinach">Reinach, REG 19, 1906, 260-261, no. <biblScope>154</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257297">419</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>No photograph</p>
-</div></body></text>
+         <div type="translation">
+            <p>
+               <supplied reason="lost">The sarcophagus ..?.. is</supplied>
+               <supplied reason="subaudible">the property</supplied> of Antiochos, in which sarcophagus Antiochos shall be buried and Antonia Damokrateia his wife and Antiochos their son. No one else shall have the right to bury anyone in it or to remove any of the bodies placed in it since he who has undertaken anything of the kind is to be impious and accursed and a tomb-breaker and to pay the most powerful council 2500 denarii, a third of which shall belong to the prosecutor. In the subsidiary chambers there shall be buried those whom Antiochos and his son wish. A copy of this inscription was deposited in the property-archive when Diogenes son of T. Claudius Hermeias Dometinos was stephanephorus, in the third month.</p>
+         </div>
+         <div type="commentary">
+            <p>...</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Gaudin's squeeze by <bibl n="reinach">Reinach, REG 19, 1906, 260-261, no. <citedRange>154</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257297">419</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

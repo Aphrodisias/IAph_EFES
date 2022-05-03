@@ -1,84 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120323" n="iAph1793 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Claudia Antonia Tatiane</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor>, <date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Claudia Antonia Tatiane</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120323</idno>
+            <idno type="IAph2007">iAph120323</idno>
+            <idno type="JMR2004">iAph1793</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>statue base</objectType> shaft (<height unit="metre">0.87</height> x <width unit="metre"> 0.38</width> x <depth unit="metre"> 0.08</depth>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <w>Inscribed</w> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.05</height>; ll. 17-21 in a smaller hand. Ligatures: <foreign xml:lang="grc">ΤΗΝ</foreign> ll. 5, <seg cert="low">14</seg>, <foreign xml:lang="grc">ΗΝ</foreign> l. 11. Circle for abbreviation marks, l. 20</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0168"
+                               notAfter="0212"
+                               precision="medium"
+                               evidence="nomenclature">
+Late second to third centuries A.D. but (cf. <ref type="inscription" n="1596" target="121004.xml"/>) probably before 212
+(<rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs>: 'In the E. wall', Fellows; 'from the east side', 'propius a muro, ubi plagam orientalem spectat', Bailie.</provenance>
+                  <provenance type="observed" when="1893">Findspot (1893)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Wood; Deering; Kubitschek; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Wood_14_45v.jpg">
+            <desc>Wood notebook 14, page 45v</desc>
+         </graphic>
+         <graphic url="Deering_06.jpg">
+            <desc>Deering notebook, page 6</desc>
+         </graphic>
+         <graphic url="K_III_29.jpg">
+            <desc>Kubitschek notebook III, 29</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p><rs type="material">White marble</rs> <rs type="objectType">statue base</rs> shaft (<measure dim="height" type="length" unit="metre">0.87</measure> x <measure dim="width" type="length" unit="metre"> 0.38</measure> x <measure dim="depth" type="length" unit="metre"> 0.08</measure>)</p>
+<ab><lb n="1"/> <persName type="attested"><name nymRef="#Κλαυδία">Κλαυδίαν</name> <lb n="2"/> <name nymRef="#Ἀντωνία">Ἀντωνίαν</name> <lb n="3"/> <name nymRef="#Τατιανή">Τατιανὴν</name></persName> <lb n="4"/> <w lemma="ὁ">τὴν</w> <w lemma="κράτιστος">κρατίσ<lb n="5" break="no"/><hi rend="ligature">την</hi></w>  <w lemma="ἀνεψιά">ἀνεψι<lb n="6" break="no"/>ὰν</w>  <persName type="attested"><name nymRef="#Κλαύδιος">Κλαυδί<lb n="7" break="no"/>ων</name>  <name nymRef="#Διογένης">Διογέ<lb n="8" break="no"/>νους</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἄτταλος">Ἀτ<lb n="9" break="no"/>τάλου</name></persName>  <w lemma="συνκλητικός">συν<lb n="10" break="no"/>κλητικῶν</w>  <lb n="11"/> <w lemma="ὁ">τ<hi rend="ligature">ὴν</hi></w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶ<lb n="12" break="no"/>σιν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="πρόγονος">προ<lb n="13" break="no"/>γόνων</w>  <w lemma="εὐεργέτης">εὐ<lb n="14" break="no"/>εργέ<hi rend="ligature">την</hi></w> <w lemma="ὁ">τῆς</w> <lb n="15"/>  <w lemma="πόλις">πόλεως</w> <lb n="15a"/>  <space extent="1" unit="line" dim="vertical"/>  <lb n="16"/> <w lemma="ὁ">της</w> <w lemma="ἀνάστασις">ἀναστά<lb n="17" break="no"/>σεως</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδρίας">ἀν<lb n="18" break="no"/>δριάντος</w>  <w lemma="ἐπιμελέω">ἐπι<lb n="19" break="no"/>μεληθέντος</w>  <lb n="20"/> <persName type="attested"><name nymRef="#Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name> <g ref="#stop"/> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name> <g ref="#stop"/>  <name nymRef="#Καπιτωλῖνος">Κα<lb n="21" break="no"/>πετωλείνου</name></persName>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><w>Inscribed</w> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.05</measure>; ll. 17-21 in a smaller hand. Ligatures: <foreign lang="grc">ΤΗΝ</foreign> ll. 5, <seg cert="low">14</seg>, <foreign lang="grc">ΗΝ</foreign> l. 11. Circle for abbreviation marks, l. 20</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0212" notBefore="0168" exact="none">Late second to third centuries A.D. but (cf. <xref type="inscription" n="1596" href="121004">12.1004</xref>) probably before 212</date>
-(<rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <persName type="aphrodisian"><name reg="Κλαυδία">Κλαυδίαν</name> <lb n="2"/> <name reg="Ἀντωνία">Ἀντωνίαν</name> <lb n="3"/> <name reg="Τατιανή">Τατιανὴν</name></persName> <lb n="4"/> <w lemma="ὁ">τὴν</w> <w lemma="κράτιστος">κρατίσ<lb n="5" type="worddiv"/><hi rend="ligature">την</hi></w>  <w lemma="ἀνεψιά">ἀνεψι<lb n="6" type="worddiv"/>ὰν</w>  <persName type="aphrodisian"><name reg="Κλαύδιος">Κλαυδί<lb n="7" type="worddiv"/>ων</name>  <name reg="Διογένης">Διογέ<lb n="8" type="worddiv"/>νους</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἄτταλος">Ἀτ<lb n="9" type="worddiv"/>τάλου</name></persName>  <w lemma="συνκλητικός">συν<lb n="10" type="worddiv"/>κλητικῶν</w>  <lb n="11"/> <w lemma="ὁ">τ<hi rend="ligature">ὴν</hi></w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶ<lb n="12" type="worddiv"/>σιν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="πρόγονος">προ<lb n="13" type="worddiv"/>γόνων</w>  <w lemma="εὐεργέτης">εὐ<lb n="14" type="worddiv"/>εργέ<hi rend="ligature">την</hi></w> <w lemma="ὁ">τῆς</w> <lb n="15"/>  <w lemma="πόλις">πόλεως</w> <lb n="15a"/>  <space extent="1" unit="line" dim="vertical"/>  <lb n="16"/> <w lemma="ὁ">της</w> <w lemma="ἀνάστασις">ἀναστά<lb n="17" type="worddiv"/>σεως</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδρίας">ἀν<lb n="18" type="worddiv"/>δριάντος</w>  <w lemma="ἐπιμελέω">ἐπι<lb n="19" type="worddiv"/>μεληθέντος</w>  <lb n="20"/> <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen"><expan><abbr>Τι</abbr><supplied reason="abbreviation">βερίου</supplied></expan></name> <g type="stop"/> <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name> <g type="stop"/>  <name reg="Καπιτωλῖνος">Κα<lb n="21" type="worddiv"/>πετωλείνου</name></persName>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 14,  <foreign lang="grc">ΕΡΓΕΤΙΝ</foreign> Deering, Fellows, Waddington: <foreign lang="grc">ΕΡΓΕΤΗΝ</foreign> (<foreign lang="grc">ΤΗΝ</foreign> in ligature) Wood. ll. 20-21 omitted by Wood, partially read by Fellows, more fully by Loew, completely by Deering.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Claudia Antonia Tatiana, <term lang="la">e(gregia) f(emina)</term>, cousin of the Claudii Diogenes and Attalos, senatorials, on all occasions following family tradition in being a benefactress of the city. Ti(berius) Cl(audius) Kapitoleinos undertook the charge of erecting the statue.</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>For Tatiane see the commentary on her second statue, <xref type="inscription" n="1723" href="020013">2.13</xref>, for which Tibertius Claudius Kapitoleinos was also responsible. For his son see <xref type="inscription" n="1794" href="120324">12.324</xref>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, East (south part)</rs>: 'In the E. wall', Fellows; 'from the east side', 'propius a muro, ubi plagam orientalem spectat', Bailie.</rs>
-<rs type="lastLocation">Findspot (1893)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Wood; Deering; Kubitschek; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Wood (14, f45v); by Deering (f.6, no. 24bis); by Fellows; by Loew; by Bailie (<title>Researches</title> 47-8); by Falkener; by Waddington in 1850; by Kubitschek (K.III 29a). Not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by<bibl n="leake1843"> Leake, from Deering, <biblScope>10</biblScope></bibl>; by <bibl n="fellows1841">Fellows, no. <biblScope>38</biblScope></bibl>, whence <bibl n="CIGIIc">CIG <biblScope>2819b</biblScope></bibl>; by <bibl n="bailie1846">Bailie <biblScope>58</biblScope></bibl>; noted by <bibl n="franz1847">Franz, from Loew, <biblScope>a.4</biblScope></bibl>; noted, with no modifications, by <bibl n="henzen1852">Henzen, from Falkener, <biblScope>4</biblScope></bibl>; by <bibl n="LBW">Waddington, LBW <biblScope>1597</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257168">289</biblScope>
-</bibl>.</p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Wood_14_45v"><figDesc>Wood notebook 14, page 45v</figDesc></figure><figure href="Deering_06"><figDesc>Deering notebook, page 6</figDesc></figure><figure href="K_III_29"><figDesc>Kubitschek notebook III, 29</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>l. 14,  <foreign xml:lang="grc">ΕΡΓΕΤΙΝ</foreign> Deering, Fellows, Waddington: <foreign xml:lang="grc">ΕΡΓΕΤΗΝ</foreign> (<foreign xml:lang="grc">ΤΗΝ</foreign> in ligature) Wood. ll. 20-21 omitted by Wood, partially read by Fellows, more fully by Loew, completely by Deering.</p>
+         </div>
+         <div type="translation">
+            <p>Claudia Antonia Tatiana, <term xml:lang="la">e(gregia) f(emina)</term>, cousin of the Claudii Diogenes and Attalos, senatorials, on all occasions following family tradition in being a benefactress of the city. Ti(berius) Cl(audius) Kapitoleinos undertook the charge of erecting the statue.</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>For Tatiane see the commentary on her second statue, <ref type="inscription" n="1723" target="020013.xml"/>, for which Tibertius Claudius Kapitoleinos was also responsible. For his son see <ref type="inscription" n="1794" target="120324.xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by<bibl n="leake1843"> Leake, from Deering, <citedRange>10</citedRange>
+               </bibl>; by <bibl n="fellows1841">Fellows, no. <citedRange>38</citedRange>
+               </bibl>, whence <bibl n="CIGIIc">CIG <citedRange>2819b</citedRange>
+               </bibl>; by <bibl n="bailie1846">Bailie <citedRange>58</citedRange>
+               </bibl>; noted by <bibl n="franz1847">Franz, from Loew, <citedRange>a.4</citedRange>
+               </bibl>; noted, with no modifications, by <bibl n="henzen1852">Henzen, from Falkener, <citedRange>4</citedRange>
+               </bibl>; by <bibl n="LBW">Waddington, LBW <citedRange>1597</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257168">289</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

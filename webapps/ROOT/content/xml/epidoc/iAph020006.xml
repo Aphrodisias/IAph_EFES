@@ -1,113 +1,186 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020006" n="iAph0599 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Seat inscriptions</rs>, Odeon block B</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-<textClass><keywords><term><rs type="textType" key="cetera">jewish</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-03-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Odeon, <rs type="objectType">seat</rs>.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the seats: Row 5.i: across two seats. Row 8: On one seat. All others on the front rim of the seats.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Row 5.i: well cut, <measure type="length" unit="metre" dim="height">0.075-0.09</measure>, square. Row 8: irregular, <measure type="length" unit="metre" dim="height">0.05 (omicron) - 0.07</measure>; lunate. All others <measure type="length" unit="metre" dim="height">0.05-0.07</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date exact="none" notAfter="0600" notBefore="0101">Second-sixth century A.D.</date> (<rs type="criteria">context</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="1"><ab>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Seat inscriptions, Odeon block B</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020006</idno>
+            <idno type="IAph2007">iAph020006</idno>
+            <idno type="JMR2004">iAph0599</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Odeon, <objectType>seat</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the seats: Row 5.i: across two seats. Row 8: On one seat. All others on the front rim of the seats.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Row 5.i: well cut, <height unit="metre">0.075-0.09</height>, square. Row 8: irregular, <height unit="metre">0.05 (omicron) - 0.07</height>; lunate. All others <height unit="metre">0.05-0.07</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="context">
+Second-sixth century A.D. (<rs type="criteria">context</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon</rs>: seats, block B.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <rs type="textType" key="cetera">jewish</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds, Roueché, Pitt).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-24" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="91_E_20A.jpg">
+            <desc>View, Blocks B and A (1991)</desc>
+         </graphic>
+         <graphic url="85_F_52.jpg">
+            <desc>Row 4.i (1985)</desc>
+         </graphic>
+         <graphic url="85_F_54.jpg">
+            <desc>Row 4.ii (1985)</desc>
+         </graphic>
+         <graphic url="85_F_56.jpg">
+            <desc>Row 4.iii (1985)</desc>
+         </graphic>
+         <graphic url="72_B_03A.jpg">
+            <desc>Row 5.i (1972)</desc>
+         </graphic>
+         <graphic url="85_F_28.jpg">
+            <desc>Row 5.iv (1985)</desc>
+         </graphic>
+         <graphic url="85_F_30.jpg">
+            <desc>Row 5.v (1985)</desc>
+         </graphic>
+         <graphic url="85_F_36.jpg">
+            <desc>Row 6.i (1985)</desc>
+         </graphic>
+         <graphic url="85_F_34.jpg">
+            <desc>Row 6.ii (1985)</desc>
+         </graphic>
+         <graphic url="85_F_38.jpg">
+            <desc>Row 6.ii (1985)</desc>
+         </graphic>
+         <graphic url="85_F_40.jpg">
+            <desc>Row 6.ii (1985)</desc>
+         </graphic>
+         <graphic url="85_F_42.jpg">
+            <desc>Row 6.ii (1985)</desc>
+         </graphic>
+         <graphic url="85_F_50.jpg">
+            <desc>Row 7.i (1985)</desc>
+         </graphic>
+         <graphic url="85_F_48.jpg">
+            <desc>Row 7.ii (1985)</desc>
+         </graphic>
+         <graphic url="85_F_44.jpg">
+            <desc>Row 7.iii (1985)</desc>
+         </graphic>
+         <graphic url="72_A_26A.jpg">
+            <desc>Row 8 (1972)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="1" type="textpart" subtype="section"><ab>
 <lb n="1"/>
 
-<orig n="unresolved">γο</orig></ab></div><div type="textpart_section" n="4"><div type="textpart_column" n="i"><ab><lb n="1"/>
+<orig n="unresolved">γο</orig></ab></div><div n="4" type="textpart" subtype="section"><div n="i" type="textpart" subtype="column"><ab><lb n="1"/>
 
-<orig n="unresolved">ζη</orig></ab></div><div type="textpart_column" n="ii"><ab> <lb n="1"/>
+<orig n="unresolved">ζη</orig></ab></div><div n="ii" type="textpart" subtype="column"><ab> <lb n="1"/>
 <orig n="unresolved">αρ<unclear reason="damage">α</unclear>η</orig> 
-</ab></div><div type="textpart_column" n="iii"><ab><lb n="1"/>
+</ab></div><div n="iii" type="textpart" subtype="column"><ab><lb n="1"/>
 
-<orig n="unresolved">ζη</orig></ab></div></div><div type="textpart_section" n="5"><div type="textpart_column" n="i"><ab><lb n="1"/>
-<w lemma="τόπος">τόπο<lb n="2" type="worddiv"/>ς</w> <w lemma="νεώτερος">νεοτέρω<supplied reason="lost">ν</supplied></w></ab></div><div type="textpart_column" n="ii"><ab><lb n="1"/>
+<orig n="unresolved">ζη</orig></ab></div></div><div n="5" type="textpart" subtype="section"><div n="i" type="textpart" subtype="column"><ab><lb n="1"/>
+<w lemma="τόπος">τόπο<lb n="2" break="no"/>ς</w> <w lemma="νεώτερος">νεοτέρω<supplied reason="lost">ν</supplied></w></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="1"/>
 
-<orig n="unresolved">ερ</orig></ab></div><div type="textpart_column" n="iii"><ab><lb n="1"/>
-<orig n="unresolved">ηρ</orig></ab></div><div type="textpart_column" n="iv"><ab><lb n="1"/>
+<orig n="unresolved">ερ</orig></ab></div><div n="iii" type="textpart" subtype="column"><ab><lb n="1"/>
+<orig n="unresolved">ηρ</orig></ab></div><div n="iv" type="textpart" subtype="column"><ab><lb n="1"/>
 
-<orig n="unresolved">ζη</orig></ab><ab/></div><div type="textpart_column" n="v"><ab><lb n="1"/>
-<orig n="unresolved">αδρ</orig></ab></div></div><div type="textpart_section" n="6"><div type="textpart_column" n="i"><ab><lb n="1"/>
+<orig n="unresolved">ζη</orig></ab><ab/></div><div n="v" type="textpart" subtype="column"><ab><lb n="1"/>
+<orig n="unresolved">αδρ</orig></ab></div></div><div n="6" type="textpart" subtype="section"><div n="i" type="textpart" subtype="column"><ab><lb n="1"/>
 
-<orig n="unresolved">ηρ<unclear reason="damage">ι</unclear></orig> <g type="stop"/> <orig n="unresolved">ηρι</orig></ab></div><div type="textpart_column" n="ii"><ab><lb n="1"/>
-<orig n="unresolved">αδρ</orig> <orig n="unresolved">αδρ</orig> <orig n="unresolved">αδρ</orig> <orig n="unresolved">αδρ</orig></ab></div></div><div type="textpart_section" n="7"><div type="textpart_column" n="i"><ab><lb n="1"/>
-<orig n="unresolved">αδρ</orig></ab></div><div type="textpart_column" n="ii"><ab><lb n="1"/>
+<orig n="unresolved">ηρ<unclear reason="damage">ι</unclear></orig> <g ref="#stop"/> <orig n="unresolved">ηρι</orig></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="1"/>
+<orig n="unresolved">αδρ</orig> <orig n="unresolved">αδρ</orig> <orig n="unresolved">αδρ</orig> <orig n="unresolved">αδρ</orig></ab></div></div><div n="7" type="textpart" subtype="section"><div n="i" type="textpart" subtype="column"><ab><lb n="1"/>
+<orig n="unresolved">αδρ</orig></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="1"/>
 
-<orig n="unresolved">αλε</orig> <g type="stop"/>  <orig n="unresolved">αλε</orig></ab></div><div type="textpart_column" n="iii"><ab><lb n="1"/>
-<orig n="unresolved">ηρα</orig></ab></div></div><div type="textpart_section" n="8"><ab><lb n="1"/>
-<w lemma="τόπος">τόπος</w> <placeName type="ethnic" reg="Ἑβραῖος"><unclear reason="damage">Ἑβ</unclear><unclear reason="damage">ρ</unclear>έων</placeName></ab>
+<orig n="unresolved">αλε</orig> <g ref="#stop"/>  <orig n="unresolved">αλε</orig></ab></div><div n="iii" type="textpart" subtype="column"><ab><lb n="1"/>
+<orig n="unresolved">ηρα</orig></ab></div></div><div n="8" type="textpart" subtype="section"><ab><lb n="1"/>
+<w lemma="τόπος">τόπος</w> <placeName nymRef="#Ἑβραῖος"><unclear reason="damage">Ἑβ</unclear><unclear reason="damage">ρ</unclear>έων</placeName></ab>
 </div></div>
-<div type="apparatus" n="none">
-<head>Apparatus</head>
-<p> ...</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Row 5.i: Place of younger men (neoteroi)</p><p>Row 8: Place of Jews</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See <title>Performers and Partisans</title>, 47.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Bouleuterion/Odeon</rs>: seats, block B.</rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Findspot</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, Roueché, Pitt).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Row 5.i cited, <bibl n="cameron1976">Alan Cameron, Circus Factions, 79</bibl>; published by <bibl n="ALA">Roueché, ALA <biblScope>180. i</biblScope></bibl>. Row 8 cited, <bibl n="cameron1976">Alan Cameron, Circus Factions, 79</bibl>; published, <bibl n="JandG">Reynolds-Tannenbaum, <title>Jews and Godfearers</title>, Appendix, <biblScope>1b</biblScope></bibl>; published by  <bibl n="ALA">Roueché, <title>ALA</title> <biblScope>180.ii</biblScope></bibl>. All published by <bibl n="PPA">Roueché, PPA <biblScope>47.2.B</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="91_E_20A"><figDesc>View, Blocks B and A (1991)</figDesc></figure><figure href="85_F_52"><figDesc>Row 4.i (1985)</figDesc></figure><figure href="85_F_54"><figDesc>Row 4.ii (1985)</figDesc></figure><figure href="85_F_56"><figDesc>Row 4.iii (1985)</figDesc></figure><figure href="72_B_03A"><figDesc>Row 5.i (1972)</figDesc></figure><figure href="85_F_28"><figDesc>Row 5.iv (1985)</figDesc></figure><figure href="85_F_30"><figDesc>Row 5.v (1985)</figDesc></figure><figure href="85_F_36"><figDesc>Row 6.i (1985)</figDesc></figure><figure href="85_F_34"><figDesc>Row 6.ii (1985)</figDesc></figure><figure href="85_F_38"><figDesc>Row 6.ii (1985)</figDesc></figure><figure href="85_F_40"><figDesc>Row 6.ii (1985)</figDesc></figure><figure href="85_F_42"><figDesc>Row 6.ii (1985)</figDesc></figure><figure href="85_F_50"><figDesc>Row 7.i (1985)</figDesc></figure><figure href="85_F_48"><figDesc>Row 7.ii (1985)</figDesc></figure><figure href="85_F_44"><figDesc>Row 7.iii (1985)</figDesc></figure><figure href="72_A_26A"><figDesc>Row 8 (1972)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus" n="none">
+            <p> ...</p>
+         </div>
+         <div type="translation">
+            <p>Row 5.i: Place of younger men (neoteroi)</p>
+            <p>Row 8: Place of Jews</p>
+         </div>
+         <div type="commentary">
+            <p>See <title>Performers and Partisans</title>, 47.</p>
+         </div>
+         <div type="bibliography">
+            <p>Row 5.i cited, <bibl n="cameron1976">Alan Cameron, Circus Factions, 79</bibl>; published by <bibl n="ALA">Roueché, ALA <citedRange>180. i</citedRange>
+               </bibl>. Row 8 cited, <bibl n="cameron1976">Alan Cameron, Circus Factions, 79</bibl>; published, <bibl n="JandG">Reynolds-Tannenbaum, <title>Jews and Godfearers</title>, Appendix, <citedRange>1b</citedRange>
+               </bibl>; published by  <bibl n="ALA">Roueché, <title>ALA</title>
+                  <citedRange>180.ii</citedRange>
+               </bibl>. All published by <bibl n="PPA">Roueché, PPA <citedRange>47.2.B</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

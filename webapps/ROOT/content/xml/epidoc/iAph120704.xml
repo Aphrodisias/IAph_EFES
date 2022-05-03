@@ -1,252 +1,321 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120704" n="iAph1507 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Consolatory <rs type="textType">decree</rs></rs> for three brothers</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-08</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two adjoining <rs type="material" key="marmor">white marble</rs> blocks: i, to left <measure type="length" unit="metre" dim="width">1.90</measure>   × <measure type="length" unit="metre" dim="height">0.85</measure> x depth not measurable; ii (to right) <measure type="length" unit="metre" dim="width">1.42</measure>   × <measure type="length" unit="metre" dim="height">0.85</measure> x depth not measurable.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> in three recessed panels, <measure dim="width" type="length" unit="metre">0.80</measure>, <measure dim="width" type="length" unit="metre">0.79</measure> and <measure dim="width" type="length" unit="metre">0.80</measure>; a and b on block i, c on block ii. The blocks are complete on all sides; the texts must therefore have begun on blocks above.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>a and b, <measure type="length" unit="metre" dim="height">0.015</measure>-<measure type="length" unit="metre" dim="height">0.02</measure>; c <measure type="length" unit="metre" dim="height">0.025</measure>.Ligatures: a: ΗΝ, l.5, ΗΝΜΗ l.12. b: ΗΝ l.4 (twice), l.10, l.13; ΗΜ l. 4, l.9; ΜΝΗΜ l.13; ΜΕ l.15; ΜΗ l.17. c: ΝΕ l.4; ΝΚ l.4; ΗΝ l.8, l.12, l.14; ΜΝΗΜ l.15; ΜΒ l.19; ΜΗ, l.23.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0001">First to third centuries A.D.</date>
-(<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="a"><ab><lb n="0"/><gap extent="unknown" reason="lost" dim="top" unit="line"/><lb n="1"/>
-<gap extent="1" reason="lost" unit="character"/><app type="previouslyread">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Consolatory decree for three brothers</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120704</idno>
+            <idno type="IAph2007">iAph120704</idno>
+            <idno type="JMR2004">iAph1507</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two adjoining <material key="marmor">white marble</material> blocks: i, to left <width unit="metre">1.90</width>   × <height unit="metre">0.85</height> x depth not measurable; ii (to right) <width unit="metre">1.42</width>   × <height unit="metre">0.85</height> x depth not measurable.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in three recessed panels, <width unit="metre">0.80</width>, <width unit="metre">0.79</width> and <width unit="metre">0.80</width>; a and b on block i, c on block ii. The blocks are complete on all sides; the texts must therefore have begun on blocks above.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a and b, <height unit="metre">0.015</height>-<height unit="metre">0.02</height>; c <height unit="metre">0.025</height>.Ligatures: a: ΗΝ, l.5, ΗΝΜΗ l.12. b: ΗΝ l.4 (twice), l.10, l.13; ΗΜ l. 4, l.9; ΜΝΗΜ l.13; ΜΕ l.15; ΜΗ l.17. c: ΝΕ l.4; ΝΚ l.4; ΗΝ l.8, l.12, l.14; ΜΝΗΜ l.15; ΜΒ l.19; ΜΗ, l.23.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0300" evidence="lettering">
+First to third centuries A.D.
+(<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (west part)</rs>: between <ref type="inscription" n="1134" target="120703.xml"/> and  <ref type="inscription" n="1006" target="120707.xml"/> (=MAMA 445, 467)</provenance>
+                  <provenance type="observed" when="1977">Findspot (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Beard); notebooks; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-08" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_S_25.jpg">
+            <desc>a (1973)</desc>
+         </graphic>
+         <graphic url="73_S_26.jpg">
+            <desc>b (1973)</desc>
+         </graphic>
+         <graphic url="73_S_27.jpg">
+            <desc>c (1973)</desc>
+         </graphic>
+         <graphic url="Deering_15.jpg">
+            <desc>Deering notebook 15</desc>
+         </graphic>
+         <graphic url="Deering_15v.jpg">
+            <desc>Deering notebook 15v</desc>
+         </graphic>
+         <graphic url="Deering_16.jpg">
+            <desc>Deering notebook 16</desc>
+         </graphic>
+         <graphic url="K_V_06.jpg">
+            <desc>Kubitschek notebook V, 6</desc>
+         </graphic>
+         <graphic url="Deering_14v.jpg">
+            <desc>Deering notebook 14v</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="a" type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/><lb n="1"/>
+<gap reason="lost" unit="character" quantity="1"/><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="2" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="2"/>
 </rdg>
 <rdg resp="previous"><unclear reason="damage">ως</unclear>
 </rdg>
 </app> <w lemma="καί"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="3" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="3"/>
 </rdg>
 <rdg resp="previous">καὶ
 </rdg>
 </app></w> <w lemma="ἀνελλιπῶς"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="9" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="9"/>
 </rdg>
 <rdg resp="previous">
 ἀνελλιπῶς</rdg>
 </app></w> <w lemma="πλεῖστος"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="7" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="7"/>
 </rdg>
 <rdg resp="previous">πλεῖστα
 </rdg>
 </app></w> <w lemma="παρά"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="3" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="3"/>
 </rdg>
 <rdg resp="previous">
 παρ</rdg>
-</app><unclear reason="damage">εσχ</unclear>η<lb type="worddiv" n="2"/>
+</app><unclear reason="damage">εσχ</unclear>η<lb n="2" break="no"/>
 <supplied reason="lost">μ</supplied>ένον</w> <w lemma="ὁ"><unclear reason="damage">τῇ</unclear></w> <w lemma="πατρίς"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="1" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="1"/>
 </rdg>
 <rdg resp="previous">π
 </rdg>
 </app>α<unclear reason="damage">τρ</unclear>ίδι</w> <w lemma="φέρω">φ<supplied reason="lost">έ</supplied><unclear reason="damage">ρ</unclear>ε<unclear reason="damage">ιν</unclear></w> <w lemma="ἀνθρώπινος"><unclear reason="damage">ἀνθρ</unclear>ωπίνως</w><lb n="3"/>
 <w lemma="ὁ"><unclear reason="damage">τ</unclear>ὴν</w> <w lemma="συμβαίνω">συνβεβηκυῖαν</w> <w lemma="συμφορά">συνφορὰν</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τῷ</w><lb n="4"/>
-<w lemma="τέκνον">τέκνῳ</w> <w lemma="αὐτός">αὐτοῦ</w> <g type="stop"/> <w lemma="δοκέω">δεδόχθαι</w> <w lemma="ὁ">τῇ</w> <w lemma="βουλή">βουλῇ</w> <w lemma="καί">καὶ</w><lb n="5"/>
-<w lemma="ὁ">τῷ</w> <w lemma="δῆμος">δήμῳ</w> <w lemma="τιμάω">τετειμῆσθαι</w> <w lemma="μέν">μὲν</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήν<app type="previouslyread">
+<w lemma="τέκνον">τέκνῳ</w> <w lemma="αὐτός">αὐτοῦ</w> <g ref="#stop"/> <w lemma="δοκέω">δεδόχθαι</w> <w lemma="ὁ">τῇ</w> <w lemma="βουλή">βουλῇ</w> <w lemma="καί">καὶ</w><lb n="5"/>
+<w lemma="ὁ">τῷ</w> <w lemma="δῆμος">δήμῳ</w> <w lemma="τιμάω">τετειμῆσθαι</w> <w lemma="μέν">μὲν</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήν<app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="1" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="1"/>
 </rdg>
 <rdg resp="previous">ω
 </rdg>
 </app>να</name><lb n="6"/>
-<persName type="aphrodisian"><name reg="Καλλίας">Καλλίου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Εὔδαμος">Εὐδάμου</name></persName></persName></persName></persName><lb n="7"/>
+<persName type="attested"><name nymRef="#Καλλίας">Καλλίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὐδάμου</name></persName></persName></persName></persName><lb n="7"/>
 <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλλακχότα</w> <w lemma="ἀνατίθημι">ἀνατεθῆναι</w> <w lemma="δέ">δὲ</w><lb n="8"/>
 <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <w lemma="ἀνδριάς">ἀνδριάντας</w> <w lemma="καί">καὶ</w> <w lemma="ἄγαλμα">ἀγάλματα</w><lb n="9"/>
-<w lemma="καί">καὶ</w> <w lemma="εἰκών">εἰκόνας</w> <w lemma="ἐν">ἐν</w> <w lemma="ἱερός">ἱεροῖς</w> <w lemma="ἤ">ἢ</w> <w lemma="δημόσιος">δημοσίοις</w> <w lemma="τόπος">τό<lb type="worddiv" n="10"/>
-ποις</w> <w lemma="ὑπό">ὑπὸ</w> <persName type="aphrodisian"><name reg="Καλλίας">Καλλίου</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="πατήρ">πατρὸς</w> <w lemma="αὐτός">αὐτοῦ</w><lb n="11"/>
-<w lemma="παραμυθέομαι">παραμεμυθῆσθαι</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀπφία">Ἀπφίαν</name> <persName type="aphrodisian"><name reg="Εὔδαμος">Εὐ<lb type="worddiv" n="12"/>
-δάμου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Μητρόδωρος" type="        ">Μητροδώρου</name></persName></persName></persName> <w lemma="ὁ">τὴν</w> <w lemma="μήτηρ">μη<lb type="worddiv" n="13"/>
-τέρα</w> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name></persName> <g type="scroll"/> <g type="leaf"/> <g type="star"/> <g type="leaf"/> <g type="leaf"/><lb n="14"/>
+<w lemma="καί">καὶ</w> <w lemma="εἰκών">εἰκόνας</w> <w lemma="ἐν">ἐν</w> <w lemma="ἱερός">ἱεροῖς</w> <w lemma="ἤ">ἢ</w> <w lemma="δημόσιος">δημοσίοις</w> <w lemma="τόπος">τό<lb n="10" break="no"/>
+ποις</w> <w lemma="ὑπό">ὑπὸ</w> <persName type="attested"><name nymRef="#Καλλίας">Καλλίου</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="πατήρ">πατρὸς</w> <w lemma="αὐτός">αὐτοῦ</w><lb n="11"/>
+<w lemma="παραμυθέομαι">παραμεμυθῆσθαι</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀπφία">Ἀπφίαν</name> <persName type="attested"><name nymRef="#Εὔδαμος">Εὐ<lb n="12" break="no"/>
+δάμου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μητρόδωρος">Μητροδώρου</name></persName></persName></persName> <w lemma="ὁ">τὴν</w> <w lemma="μήτηρ">μη<lb n="13" break="no"/>
+τέρα</w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name></persName> <g ref="#scroll"/> <g ref="#leaf"/> <g ref="#star"/> <g ref="#leaf"/> <g ref="#leaf"/><lb n="14"/>
 <space unit="line" dim="vertical"/></ab>
-</div><div type="textpart_section" n="b"><ab><lb n="0"/><gap extent="unknown" dim="top" reason="lost" unit="line"/><lb n="1"/>
+</div><div n="b" type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/><lb n="1"/>
 <w lemma="καί"><unclear reason="damage">καὶ</unclear></w> <w lemma="μεταλλάζω"><unclear reason="damage">μ</unclear>ε<unclear reason="damage">τη</unclear><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="8" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="8"/>
 </rdg>
 <rdg resp="previous">
 λλακχότα</rdg>
 </app></w> <w lemma="καί"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="3" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="3"/>
 </rdg>
 <rdg resp="previous">καὶ
 </rdg>
 </app></w> <w><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="8" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="8"/>
 </rdg>
 <rdg resp="previous">στεφανῶσ
 </rdg>
-</app>θ<unclear reason="damage">α</unclear>ι</w> <g type="scroll"/><lb n="2"/>
-<persName type="aphrodisian"><name reg="Καλλίας">Καλλίαν</name> <w lemma="υἱός">υ<app type="previouslyread">
+</app>θ<unclear reason="damage">α</unclear>ι</w> <g ref="#scroll"/><lb n="2"/>
+<persName type="attested"><name nymRef="#Καλλίας">Καλλίαν</name> <w lemma="υἱός">υ<app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="1" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="1"/>
 </rdg>
 <rdg resp="previous">
 ἱ</rdg>
-</app><unclear reason="damage">ὸν</unclear></w> <persName type="aphrodisian"><name reg="Καλλίας">Κ<app type="previouslyread">
+</app><unclear reason="damage">ὸν</unclear></w> <persName type="attested"><name nymRef="#Καλλίας">Κ<app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="6" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="6"/>
 </rdg>
 <rdg resp="previous">
 αλλίου</rdg>
 </app></name> <w lemma="ὁ"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="3" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="3"/>
 </rdg>
 <rdg resp="previous">τοῦ
 </rdg>
-</app></w> <persName type="aphrodisian"><name reg="Ζήνων"><app type="previouslyread">
+</app></w> <persName type="attested"><name nymRef="#Ζήνων"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="1" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="1"/>
 </rdg>
 <rdg resp="previous">Ζ
 </rdg>
 </app>ήνωνος</name> <w lemma="ὁ">τοῦ</w><lb n="3"/>
-<persName type="aphrodisian"><name reg="Εὔδαμος">Εὐδάμου</name></persName></persName></persName></persName> <w lemma="νεανίας">νεανίαν</w> <w lemma="καλός">καλὸν</w> <w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθὸν</w><lb n="4"/>
+<persName type="attested"><name nymRef="#Εὔδαμος">Εὐδάμου</name></persName></persName></persName></persName> <w lemma="νεανίας">νεανίαν</w> <w lemma="καλός">καλὸν</w> <w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθὸν</w><lb n="4"/>
 <w lemma="ὁ">τὴν</w> <w lemma="ἀναστροφή">ἀναστροφὴν</w> <w lemma="ποιέω">πεποιημένον</w> <w lemma="ἐνάρετος">ἐνάρετον</w><lb n="5"/>
-<w lemma="καί">καὶ</w> <w lemma="πᾶς">παντὸς</w> <w lemma="ἔπαινος">ἐπαίνου</w> <w lemma="ἄξιος">ἀξίαν</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλλίσ<lb type="worddiv" n="6"/>
+<w lemma="καί">καὶ</w> <w lemma="πᾶς">παντὸς</w> <w lemma="ἔπαινος">ἐπαίνου</w> <w lemma="ἄξιος">ἀξίαν</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλλίσ<lb n="6" break="no"/>
 ταις</w> <w lemma="καί">καὶ</w> <w lemma="μέγας">μεγίσταις</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="ἀνατίθημι">ἀνατεθῆναι</w><lb n="7"/>
 <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <w lemma="ἀνδριάς">ἀνδριάντας</w> <w lemma="καί">καὶ</w> <w lemma="ἄγαλμα">ἀγάλματα</w><lb n="8"/>
-<w lemma="καί">καὶ</w> <w lemma="εἰκών">εἰκόνας</w> <w lemma="γραπτός">γραπτὰς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὅπλον">ὅπλοις</w> <w lemma="ἐπίχρυσος">ἐπιχρύ<lb type="worddiv" n="9"/>
+<w lemma="καί">καὶ</w> <w lemma="εἰκών">εἰκόνας</w> <w lemma="γραπτός">γραπτὰς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὅπλον">ὅπλοις</w> <w lemma="ἐπίχρυσος">ἐπιχρύ<lb n="9" break="no"/>
 σοις</w> <w lemma="ἐν">ἐν</w> <w lemma="ἱερός">ἱεροῖς</w> <w lemma="καί">καὶ</w> <w lemma="δημόσιος">δημοσίοις</w> <w lemma="τόπος">τόποις</w> <w lemma="ἐπί">ἐφ'</w> <w lemma="εἰμί">ὧν</w><lb n="10"/>
-<w lemma="καί">καὶ</w> <w lemma="ἐπιγράφω">ἐπιγραφῆναι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="ἄξιος">ἀξίας</w> <w lemma="καί">καὶ</w> <w lemma="πρέπω">πρεπού<lb type="worddiv" n="11"/>
+<w lemma="καί">καὶ</w> <w lemma="ἐπιγράφω">ἐπιγραφῆναι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="ἄξιος">ἀξίας</w> <w lemma="καί">καὶ</w> <w lemma="πρέπω">πρεπού<lb n="11" break="no"/>
 σας</w> <w lemma="καί">καὶ</w> <w lemma="ἀναλογέω">ἀναλογούσας</w> <w lemma="ὁ">τῷ</w> <w lemma="γένος">γένει</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="περί">περὶ</w><lb n="12"/>
-<w lemma="ὁ">τὸν</w> <w lemma="βίος">βίον</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἀναστροφή">ἀναστροφῇ</w> <w lemma="τιμή">τειμὰς</w> <w lemma="ἐπιγράφω">ἐπι<lb type="worddiv" n="13"/>
-γραφῆναι</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τοῦ</w> <w lemma="μνημεῖον">μνημείου</w> <w lemma="ἐν">ἐν</w> <w>ᾧ</w> <w lemma="θάπτω">τέ<lb type="worddiv" n="14"/>
-θαπται</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνων</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="ἀδελφός">ἀδελφὸς</w> <w lemma="αὐτός">αὐτοῦ</w> <g type="scroll"/><lb n="15"/>
-<w lemma="ὁ">τὰς</w> <w lemma="ἄξιος">ἀξίας</w> <w lemma="ἐπιγραφή">ἐπιγραφὰς</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="παραμυθέομαι">παραμεμυθῆσ<lb type="worddiv" n="16"/>
-θαι</w> <w lemma="δέ">δὲ</w> <persName type="aphrodisian"><name reg="Καλλίας">Καλλίαν</name> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Εὔδαμος">Εὐδάμου</name></persName></persName></persName><lb n="17"/>
-<w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀπφία">Ἀπφίαν</name> <persName type="aphrodisian"><name reg="Εὔδαμος">Εὐδάμου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Μητρόδωρος" type="        ">Μητροδώρου</name></persName></persName></persName> <g type="leaf"/><lb n="18"/>
-<w lemma="ὁ">τοὺς</w> <w lemma="γονεύς">γονεῖς</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Εὔδαμος">Εὔδαμον</name> <persName type="aphrodisian"><name reg="Καλλίας">Καλλί<lb type="worddiv" n="19"/>
-ου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name></persName></persName></persName> <w lemma="ὁ">τὸν</w> <w lemma="ἀδελφός">ἀδελφὸν</w> <w lemma="αὐτός">αὐτοῦ</w> <g type="scroll"/><lb n="20"/>
+<w lemma="ὁ">τὸν</w> <w lemma="βίος">βίον</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἀναστροφή">ἀναστροφῇ</w> <w lemma="τιμή">τειμὰς</w> <w lemma="ἐπιγράφω">ἐπι<lb n="13" break="no"/>
+γραφῆναι</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τοῦ</w> <w lemma="μνημεῖον">μνημείου</w> <w lemma="ἐν">ἐν</w> <w>ᾧ</w> <w lemma="θάπτω">τέ<lb n="14" break="no"/>
+θαπται</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνων</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="ἀδελφός">ἀδελφὸς</w> <w lemma="αὐτός">αὐτοῦ</w> <g ref="#scroll"/><lb n="15"/>
+<w lemma="ὁ">τὰς</w> <w lemma="ἄξιος">ἀξίας</w> <w lemma="ἐπιγραφή">ἐπιγραφὰς</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="παραμυθέομαι">παραμεμυθῆσ<lb n="16" break="no"/>
+θαι</w> <w lemma="δέ">δὲ</w> <persName type="attested"><name nymRef="#Καλλίας">Καλλίαν</name> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὐδάμου</name></persName></persName></persName><lb n="17"/>
+<w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀπφία">Ἀπφίαν</name> <persName type="attested"><name nymRef="#Εὔδαμος">Εὐδάμου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μητρόδωρος">Μητροδώρου</name></persName></persName></persName> <g ref="#leaf"/><lb n="18"/>
+<w lemma="ὁ">τοὺς</w> <w lemma="γονεύς">γονεῖς</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὔδαμον</name> <persName type="attested"><name nymRef="#Καλλίας">Καλλί<lb n="19" break="no"/>
+ου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name></persName></persName></persName> <w lemma="ὁ">τὸν</w> <w lemma="ἀδελφός">ἀδελφὸν</w> <w lemma="αὐτός">αὐτοῦ</w> <g ref="#scroll"/><lb n="20"/>
 <w lemma="φέρω">φέρειν</w> <w lemma="ἀνθρώπινος">ἀνθρωπίνως</w> <w lemma="ὁ">τὸ</w> <w lemma="συμβαίνω">συνβεβηκὸς</w><lb n="21"/>
-<g type="scroll"/> <w lemma="ἀτύχημα">ἀτύχημα</w> <g type="scroll"/></ab></div><div type="textpart_section" n="c"><ab><lb n="0"/><gap extent="unknown" dim="top" reason="lost" unit="line"/><lb n="1"/><gap extent="3" dim="left" reason="lost" unit="character"/> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="μεταλλάζω"><supplied reason="lost">με</supplied><lb type="worddiv" n="1"/>
+<g ref="#scroll"/> <w lemma="ἀτύχημα">ἀτύχημα</w> <g ref="#scroll"/></ab></div><div n="c" type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/><lb n="1"/><gap reason="lost" unit="character" quantity="3"/> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="μεταλλάζω"><supplied reason="lost">με</supplied><lb n="1" break="no"/>
 <unclear reason="damage">τη</unclear><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="8" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="8"/>
 </rdg>
 <rdg resp="previous">
 λλακχότα</rdg>
 </app></w> <w lemma="δοκέω"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="4" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="4"/>
 </rdg>
 <rdg resp="previous">δεδό
 </rdg>
 </app>χθαι</w> <w lemma="ὁ">τῇ</w> <w lemma="βουλή">βουλῇ</w> <w lemma="καί">καὶ</w><lb n="2"/>
 <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">δή<app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="2" reason="lost" unit="character"/></rdg>
+<gap reason="lost" unit="character" quantity="2"/></rdg>
 <rdg resp="previous">μῳ
 </rdg>
 </app></w> <w lemma="τιμάω"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="3" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="3"/>
 </rdg>
 <rdg resp="previous">
 τετ</rdg>
-</app><unclear reason="damage">ε</unclear>ιμῆσθαι</w> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλλακ<lb type="worddiv" n="3"/>
-χότα</w> <persName type="aphrodisian"><name reg="Εὔδαμος">Εὔδαμον</name> <persName type="aphrodisian"><name reg="Καλλίας">Καλλίου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνω<g type="scroll"/><lb n="4"/>
-νος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Εὔδαμος">Εὐδάμου</name></persName></persName></persName></persName> <w lemma="νεανίας">νεανίαν</w> <w lemma="καλός">καλὸν</w><lb n="5"/>
-<w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθὸν</w> <w lemma="ζάω">ζήσαντα</w> <w lemma="κόσμιος">κοσμίως</w> <w lemma="καί">καὶ</w> <w lemma="σώφρων">σω<lb type="worddiv" n="6"/>
+</app><unclear reason="damage">ε</unclear>ιμῆσθαι</w> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλλακ<lb n="3" break="no"/>
+χότα</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὔδαμον</name> <persName type="attested"><name nymRef="#Καλλίας">Καλλίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνω<g ref="#scroll"/><lb n="4"/>
+νος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὐδάμου</name></persName></persName></persName></persName> <w lemma="νεανίας">νεανίαν</w> <w lemma="καλός">καλὸν</w><lb n="5"/>
+<w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθὸν</w> <w lemma="ζάω">ζήσαντα</w> <w lemma="κόσμιος">κοσμίως</w> <w lemma="καί">καὶ</w> <w lemma="σώφρων">σω<lb n="6" break="no"/>
 φρόνως</w> <w lemma="καί">καὶ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑπόδειγμα</w> <w lemma="ἀρετή">ἀρετῆς</w><lb n="7"/>
-<w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλλίσταις</w> <w lemma="καί">καὶ</w> <w lemma="μέγας">μεγίσταις</w> <w lemma="καί">καὶ</w> <w lemma="ἄξιος">ἀξί<lb type="worddiv" n="8"/>αις</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="ἀνατίθημι">ἀνατεθῆναι</w> <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w><lb n="9"/>
-<w lemma="εἰκών">εἰκόνας</w> <w lemma="γραπτός">γραπτὰς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὅπλον">ὅπλοις</w> <w lemma="ἐπίχρυσος">ἐπιχρύ<lb type="worddiv" n="10"/>
+<w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλλίσταις</w> <w lemma="καί">καὶ</w> <w lemma="μέγας">μεγίσταις</w> <w lemma="καί">καὶ</w> <w lemma="ἄξιος">ἀξί<lb n="8" break="no"/>αις</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="ἀνατίθημι">ἀνατεθῆναι</w> <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w><lb n="9"/>
+<w lemma="εἰκών">εἰκόνας</w> <w lemma="γραπτός">γραπτὰς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὅπλον">ὅπλοις</w> <w lemma="ἐπίχρυσος">ἐπιχρύ<lb n="10" break="no"/>
 σοις</w> <w lemma="καί">καὶ</w> <w lemma="ἀνδριάς">ἀνδριάντας </w><w lemma="καί">καὶ</w> <w lemma="ἄγαλμα">ἀγάλματα</w><lb n="11"/>
-<w lemma="ἐν">ἐν</w> <w lemma="ἱερός">ἱεροῖς</w> <w lemma="καί">καὶ</w> <w lemma="δημόσιος">δημοσίοις</w> <w lemma="τόπος">τόποις</w> <w lemma="ἐπί">ἐ<lb type="worddiv" n="12"/>
-φ' </w><w lemma="εἰμί">ὧν</w> <w lemma="καί">καὶ</w> <w lemma="ἐπιγράφω">ἐπιγραφῆναι</w> <w lemma="ὁ">τὰς</w> <w lemma="ἄξιος">ἀξίας</w> <w lemma="καί">καὶ</w> <w lemma="ἀναλογέω">ἀ<lb type="worddiv" n="13"/>
+<w lemma="ἐν">ἐν</w> <w lemma="ἱερός">ἱεροῖς</w> <w lemma="καί">καὶ</w> <w lemma="δημόσιος">δημοσίοις</w> <w lemma="τόπος">τόποις</w> <w lemma="ἐπί">ἐ<lb n="12" break="no"/>
+φ' </w><w lemma="εἰμί">ὧν</w> <w lemma="καί">καὶ</w> <w lemma="ἐπιγράφω">ἐπιγραφῆναι</w> <w lemma="ὁ">τὰς</w> <w lemma="ἄξιος">ἀξίας</w> <w lemma="καί">καὶ</w> <w lemma="ἀναλογέω">ἀ<lb n="13" break="no"/>
 ναλογούσας</w> <w lemma="ὁ">τῷ</w> <w lemma="γένος">γένει</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="τιμή">τειμὰς</w><lb n="14"/>
 <w lemma="ἐπιγράφω">ἐπιγραφῆναι</w> <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ὁ">τὰς</w> <w lemma="τιμή">τειμὰς</w><lb n="15"/>
-<w lemma="καί">καὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ"><unclear reason="damage">τ</unclear>οῦ</w> <w lemma="μνημεῖον">μνημείου</w> <w lemma="ἐν">ἐν</w> <w>ᾧ</w> <w lemma="κηδεύω">κεκήδευ<g type="scroll"/><lb type="worddiv" n="16"/>
-ται</w> <w lemma="παραμυθέομαι">π<unclear reason="damage">αρα</unclear>μεμυθῆσθαι</w> <w lemma="δέ"><unclear reason="damage">δ</unclear>ὲ</w> <persName type="aphrodisian"><name reg="Καλλίας">Καλλίαν</name> <persName type="aphrodisian"><name reg="Ζήνων">Ζή<lb type="worddiv" n="17"/>
-νωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Εὔδαμος">Ε<unclear reason="damage">ὐδ</unclear>άμου</name></persName></persName></persName> <w lemma="καί">καὶ </w> <persName type="aphrodisian"><name reg="Ἀπφία">Ἀπφίαν</name><persName type="aphrodisian"> <name reg="Εὔδαμος">Εὐδά<lb type="worddiv" n="18"/>
-μου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Μητρόδωρος" type="        "><unclear reason="damage">Μη</unclear>τ<unclear reason="damage">ρ</unclear>οδώρου</name></persName></persName></persName> <w lemma="ὁ">τοὺς</w> <w lemma="γονεύς">γονεῖς</w> <w lemma="αὐτός">αὐ<lb type="worddiv" n="19"/>
-τοῦ</w> <w lemma="φέρω"><unclear reason="damage">φ</unclear>έρειν</w> <w lemma="ἀνθρώπινος">ἀνθρωπίνως</w> <w lemma="ὁ">τὰς</w> <w lemma="συμβαίνω">συμβεβη<lb type="worddiv" n="20"/>
-κυίας</w> <w lemma="αὐτός">αὐ<unclear reason="damage">το</unclear>ῖ<unclear reason="damage">ς</unclear></w> <w lemma="συμφορά"><unclear reason="damage">συ</unclear>μφορὰς</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τοῖς</w> <w lemma="τέκνον">τέ<lb type="worddiv" n="20"/>
-κνο<supplied reason="lost">ις</supplied></w> <w lemma="αὐτός"><supplied reason="lost">αὐτῶ</supplied>ν</w> <w lemma="ὁ">τὸ</w> <w lemma="δέ">δὲ</w> <w lemma="ψήφισμα">ψήφισμα</w> <w lemma="ἐπιδίδωμι">ἐπιδε<lb type="worddiv" n="21"/>
-δόσθα<supplied reason="lost">ι</supplied></w> <w lemma="εἰσηγέομαι"><supplied reason="lost">εἰσ</supplied><unclear reason="damage">ηγη</unclear>σαμένου</w> <persName type="aphrodisian"><name reg="Μητρόδωρος" type="        ">Μητροδώ<g type="leaf"/><lb type="worddiv" n="22"/>
-ρου</name> <name>τοῦ</name> <persName type="aphrodisian"><name reg="Μητρόδωρος" type="        ">Μητροδώρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονυσίδης">Διονυσίδου</name></persName></persName></persName></ab></div></div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Letters seen only by earlier visitors are highlighted</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, South (west part)</rs>: between <xref type="inscription" n="1134" href="120703">12.703</xref> and  <xref type="inscription" n="1006" href="120707">12.707</xref> (=MAMA 445, 467)</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot (1977)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Beard); notebooks; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>a-c copied by Deering (15-16, no. 47); copied by Fellows. b copied by Kubitschek (KV.6); c (lines 11-23) copied by Doublet and Deschamps. All recorded by the MAMA expedition; by the NYU expedition in 1977 (MB).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="fellows1841">Fellows, a, no. <biblScope>24</biblScope>; b nos. <biblScope>25</biblScope>, <biblScope>26</biblScope>; c no. <biblScope>27</biblScope></bibl>, whence <bibl n="CIGIIc">CIG <biblScope>2775b</biblScope>, <biblScope>2775c</biblScope>, <biblScope>2775d</biblScope></bibl> Published by <bibl n="leake1843">Leake from Deering, no. <biblScope>20a</biblScope>, <biblScope>20b</biblScope>, <biblScope>20c</biblScope></bibl>, whence <bibl n="bailie1846">Bailie nos. <biblScope>52</biblScope>, <biblScope>53</biblScope>, <biblScope>54</biblScope></bibl>; b by <bibl n="texier1839">Texier no. <biblScope>1</biblScope></bibl>; c corrected by <bibl n="dd1890">Doublet &amp; Deschamps <biblScope>13</biblScope></bibl>; a-c, whence <bibl n="buresch1894">Buresch, RhMus. 49 (1894), 424-60</bibl>, whence <bibl>L. Robert, EE 19-20</bibl>. Published by <bibl n="MAMA8">Cormack from the MAMA records, MAMA <biblScope>412</biblScope></bibl>, whence <bibl n="hell13">Hellenica 13, 49, 181</bibl>; <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="256899">21</biblScope>
-</bibl>
-</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_S_25"><figDesc>a (1973)</figDesc></figure><figure href="73_S_26"><figDesc>b (1973)</figDesc></figure><figure href="73_S_27"><figDesc>c (1973)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Deering_15"><figDesc>Deering notebook 15</figDesc></figure><figure href="Deering_15v"><figDesc>Deering notebook 15v</figDesc></figure><figure href="Deering_16"><figDesc>Deering notebook 16</figDesc></figure><figure href="K_V_06"><figDesc>Kubitschek notebook V, 6</figDesc></figure></p></div><div n="transcriptions" type="figure"><head>Representations</head><p><figure href="Deering_14v"><figDesc>Deering notebook 14v</figDesc></figure></p></div></body></text>
+<w lemma="καί">καὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ"><unclear reason="damage">τ</unclear>οῦ</w> <w lemma="μνημεῖον">μνημείου</w> <w lemma="ἐν">ἐν</w> <w>ᾧ</w> <w lemma="κηδεύω">κεκήδευ<g ref="#scroll"/><lb n="16" break="no"/>
+ται</w> <w lemma="παραμυθέομαι">π<unclear reason="damage">αρα</unclear>μεμυθῆσθαι</w> <w lemma="δέ"><unclear reason="damage">δ</unclear>ὲ</w> <persName type="attested"><name nymRef="#Καλλίας">Καλλίαν</name> <persName type="attested"><name nymRef="#Ζήνων">Ζή<lb n="17" break="no"/>
+νωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔδαμος">Ε<unclear reason="damage">ὐδ</unclear>άμου</name></persName></persName></persName> <w lemma="καί">καὶ </w> <persName type="attested"><name nymRef="#Ἀπφία">Ἀπφίαν</name><persName type="attested"> <name nymRef="#Εὔδαμος">Εὐδά<lb n="18" break="no"/>
+μου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μητρόδωρος"><unclear reason="damage">Μη</unclear>τ<unclear reason="damage">ρ</unclear>οδώρου</name></persName></persName></persName> <w lemma="ὁ">τοὺς</w> <w lemma="γονεύς">γονεῖς</w> <w lemma="αὐτός">αὐ<lb n="19" break="no"/>
+τοῦ</w> <w lemma="φέρω"><unclear reason="damage">φ</unclear>έρειν</w> <w lemma="ἀνθρώπινος">ἀνθρωπίνως</w> <w lemma="ὁ">τὰς</w> <w lemma="συμβαίνω">συμβεβη<lb n="20" break="no"/>
+κυίας</w> <w lemma="αὐτός">αὐ<unclear reason="damage">το</unclear>ῖ<unclear reason="damage">ς</unclear></w> <w lemma="συμφορά"><unclear reason="damage">συ</unclear>μφορὰς</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τοῖς</w> <w lemma="τέκνον">τέ<lb n="20" break="no"/>
+κνο<supplied reason="lost">ις</supplied></w> <w lemma="αὐτός"><supplied reason="lost">αὐτῶ</supplied>ν</w> <w lemma="ὁ">τὸ</w> <w lemma="δέ">δὲ</w> <w lemma="ψήφισμα">ψήφισμα</w> <w lemma="ἐπιδίδωμι">ἐπιδε<lb n="21" break="no"/>
+δόσθα<supplied reason="lost">ι</supplied></w> <w lemma="εἰσηγέομαι"><supplied reason="lost">εἰσ</supplied><unclear reason="damage">ηγη</unclear>σαμένου</w> <persName type="attested"><name nymRef="#Μητρόδωρος">Μητροδώ<g ref="#leaf"/><lb n="22" break="no"/>
+ρου</name> <name>τοῦ</name> <persName type="attested"><name nymRef="#Μητρόδωρος">Μητροδώρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονυσίδης">Διονυσίδου</name></persName></persName></persName></ab></div></div>
+         <div type="apparatus">
+            <p>Letters seen only by earlier visitors are highlighted</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="fellows1841">Fellows, a, no. <citedRange>24</citedRange>; b nos. <citedRange>25</citedRange>, <citedRange>26</citedRange>; c no. <citedRange>27</citedRange>
+               </bibl>, whence <bibl n="CIGIIc">CIG <citedRange>2775b</citedRange>, <citedRange>2775c</citedRange>, <citedRange>2775d</citedRange>
+               </bibl> Published by <bibl n="leake1843">Leake from Deering, no. <citedRange>20a</citedRange>, <citedRange>20b</citedRange>, <citedRange>20c</citedRange>
+               </bibl>, whence <bibl n="bailie1846">Bailie nos. <citedRange>52</citedRange>, <citedRange>53</citedRange>, <citedRange>54</citedRange>
+               </bibl>; b by <bibl n="texier1839">Texier no. <citedRange>1</citedRange>
+               </bibl>; c corrected by <bibl n="dd1890">Doublet &amp; Deschamps <citedRange>13</citedRange>
+               </bibl>; a-c, whence <bibl n="buresch1894">Buresch, RhMus. 49 (1894), 424-60</bibl>, whence <bibl>L. Robert, EE 19-20</bibl>. Published by <bibl n="MAMA8">Cormack from the MAMA records, MAMA <citedRange>412</citedRange>
+               </bibl>, whence <bibl n="hell13">Hellenica 13, 49, 181</bibl>; <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256899">21</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

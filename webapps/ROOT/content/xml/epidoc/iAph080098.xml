@@ -1,108 +1,129 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080098" n="iAph1897 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">List</rs> of Muses</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-03-27</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> doric <rs type="objectType">half-column</rs>,  supporting stage architrave</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>On the east face. a: Bottom line at <measure dim="height" type="length" unit="metre">1.53</measure> above ground level; there is a square hole, apparently intended to hold a beam, immediately above the text. The text has been erased, but it is possible to make out all the letters. b: Below a, <measure dim="height" type="length" unit="metre">1.375</measure> above floor. The first word is deeply and clearly cut, with a square sigma, the remaining letters were lightly cut, and a shallow cross was later cut over them; apparently unfinished; immediately below there are traces of red paint.. c: Below b, at <measure dim="height" type="length" unit="metre">0.48</measure> above floor. ll. 1 and 2 very lightly cut; l. 3 deep cut.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>a: more thinly cut than Column 1, and less regularly aligned, but still elegant, elegant forms, av. <measure type="length" unit="metre" dim="height">0.03</measure>. b: av. <measure type="length" unit="metre" dim="height">0.04</measure>. c: in a more irregular hand. <measure type="length" unit="metre" dim="height">0.02</measure> (omicron)-<measure type="length" unit="metre" dim="height">0.03</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date notAfter="0500" notBefore="0201" precision="circa"> Third to fifth centuries A.D.</date>
-(<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section"><ab>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>List of Muses</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080098</idno>
+            <idno type="IAph2007">iAph080098</idno>
+            <idno type="JMR2004">iAph1897</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material> doric <objectType>half-column</objectType>,  supporting stage architrave</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>On the east face. a: Bottom line at <height unit="metre">1.53</height> above ground level; there is a square hole, apparently intended to hold a beam, immediately above the text. The text has been erased, but it is possible to make out all the letters. b: Below a, <height unit="metre">1.375</height> above floor. The first word is deeply and clearly cut, with a square sigma, the remaining letters were lightly cut, and a shallow cross was later cut over them; apparently unfinished; immediately below there are traces of red paint.. c: Below b, at <height unit="metre">0.48</height> above floor. ll. 1 and 2 very lightly cut; l. 3 deep cut.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a: more thinly cut than Column 1, and less regularly aligned, but still elegant, elegant forms, av. <height unit="metre">0.03</height>. b: av. <height unit="metre">0.04</height>. c: in a more irregular hand. <height unit="metre">0.02</height> (omicron)-<height unit="metre">0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0201" notAfter="0500" evidence="context lettering"> Third to fifth centuries A.D.
+(<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs> stage, portico across stage: second column from south.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>Transcription (Reynolds, Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-27" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="HUMS003465.jpg">
+            <desc>View of stage columns (1985)</desc>
+         </graphic>
+         <graphic url="76_H_14.jpg">
+            <desc>East face, a and b (1976)</desc>
+         </graphic>
+         <graphic url="76_H_15.jpg">
+            <desc>East face, b and c (1976)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div type="textpart" subtype="section"><ab>
 <lb n="1"/>
 
-<persName type="divine"><name reg="Κλιώ">Κλι<unclear reason="damage">ώ</unclear></name></persName> 
+<persName type="divine"><name nymRef="#Κλιώ">Κλι<unclear reason="damage">ώ</unclear></name></persName> 
 <lb n="2"/>
-<persName type="divine"><name reg="Εὐτέρπη"><unclear reason="damage">Ε</unclear>ὐ<unclear reason="damage">τέρ</unclear>πη</name></persName> 
+<persName type="divine"><name nymRef="#Εὐτέρπη"><unclear reason="damage">Ε</unclear>ὐ<unclear reason="damage">τέρ</unclear>πη</name></persName> 
 <lb n="3"/>
-<persName type="divine"><name reg="Θαλία"><unclear reason="damage">Θαλία</unclear></name></persName> 
+<persName type="divine"><name nymRef="#Θαλία"><unclear reason="damage">Θαλία</unclear></name></persName> 
 <lb n="4"/>
-<persName type="divine"><name reg="Ἐρατώ">Ἐρατώ</name></persName> 
+<persName type="divine"><name nymRef="#Ἐρατώ">Ἐρατώ</name></persName> 
 <lb n="5"/>
-<persName type="divine"><name reg="Πολυμνία">Πολυμνία</name></persName> 
+<persName type="divine"><name nymRef="#Πολυμνία">Πολυμνία</name></persName> 
 <lb n="6"/>
-<persName type="divine"><name reg="Μελπομένη">Μελ<unclear reason="damage">π</unclear>ο<unclear reason="damage">μέν</unclear>η</name></persName> <lb n="7"/><persName type="divine"><name reg="Τερψικόρη">Τερψι<unclear>κ</unclear>όρη</name></persName> 
-<note>sic</note><lb n="8"/>
-<persName type="divine"><name reg="Οὐρανία">Ο<unclear reason="damage">ὐ</unclear>ρανία</name></persName> 
+<persName type="divine"><name nymRef="#Μελπομένη">Μελ<unclear reason="damage">π</unclear>ο<unclear reason="damage">μέν</unclear>η</name></persName> <lb n="7"/><persName type="divine"><name nymRef="#Τερψικόρη">Τερψι<unclear>κ</unclear>όρη</name></persName> 
+<note xml:lang=""/><lb n="8"/>
+<persName type="divine"><name nymRef="#Οὐρανία">Ο<unclear reason="damage">ὐ</unclear>ρανία</name></persName> 
 <lb n="9"/>
-<persName type="divine"><name reg="Καλλιόπη">Καλλιόπη</name></persName> <g type="leaf"/> 
-</ab></div><div type="textpart_section"><ab><lb n="1"/>
-<w lemma="πᾶς">πᾶσα</w> <w lemma="νίκη">νίκη</w> <orig n="unresolved"><unclear>τι</unclear></orig> <space extent="3"/> </ab></div><div type="textpart_section"><ab><lb n="1"/>
-<orig n="unresolved">ν</orig> <lb n="2"/><orig n="unresolved">ηαα</orig><lb n="3"/><w lemma="τόπος"><expan><abbr>τόπο</abbr><supplied reason="abbreviation">ς</supplied></expan></w></ab></div>
+<persName type="divine"><name nymRef="#Καλλιόπη">Καλλιόπη</name></persName> <g ref="#leaf"/> 
+</ab></div><div type="textpart" subtype="section"><ab><lb n="1"/>
+<w lemma="πᾶς">πᾶσα</w> <w lemma="νίκη">νίκη</w> <orig n="unresolved"><unclear>τι</unclear></orig> <space extent="3"/> </ab></div><div type="textpart" subtype="section"><ab><lb n="1"/>
+<orig n="unresolved">ν</orig> <lb n="2"/><orig n="unresolved">ηαα</orig><lb n="3"/><w lemma="τόπος"><expan><abbr>τόπο</abbr><ex>ς</ex></expan></w></ab></div>
 </div>
-
-<div type="translation">
-<head>Translation</head>
-<p>a: Klio, Euterpe, Thalia, Erato, Polymnia, Melpomene, Terpsichore, Ourania, Kalliope.</p>
-<p>b: All victory [ ? to . . .</p>
-<p>c: Place [ . . .</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of a series of inscriptions on the columns supporting the architrave on the stage (which carries <xref type="inscription" n="536" href="080001">8.1</xref>): <xref type="inscription" n="1896" href="080089">8.89</xref>, <xref type="inscription" n="1897" href="080098">8.98</xref>, <xref type="inscription" n="1900" href="080090">8.90</xref>, <xref type="inscription" n="1903" href="080091">8.91</xref>, <xref type="inscription" n="1909" href="080092">8.92</xref>, <xref type="inscription" n="1910" href="080093">8.93</xref>, <xref type="inscription" n="1911" href="080094">8.94</xref>, <xref type="inscription" n="1912" href="080095">8.95</xref>, <xref type="inscription" n="1914" href="080096">8.96</xref>, <xref type="inscription" n="1915" href="080097">8.97</xref> . All the inscriptions are on the stage side of the columns, and were presumably only visible to those using the stage. See <bibl n="PPA">Roueché, <title>PPA</title>, Chapter III</bibl>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs> stage, portico across stage: second column from south.</rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Findspot</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, Roueché)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="PPA">Roueché, <title>PPA</title> <biblScope>6.2</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="HUMS003465"><figDesc>View of stage columns (1985)</figDesc></figure><figure href="76_H_14"><figDesc>East face, a and b (1976)</figDesc></figure><figure href="76_H_15"><figDesc>East face, b and c (1976)</figDesc></figure>  </p>
-</div></body></text>
+         <div type="translation">
+            <p>a: Klio, Euterpe, Thalia, Erato, Polymnia, Melpomene, Terpsichore, Ourania, Kalliope.</p>
+            <p>b: All victory [ ? to . . .</p>
+            <p>c: Place [ . . .</p>
+         </div>
+         <div type="commentary">
+            <p>One of a series of inscriptions on the columns supporting the architrave on the stage (which carries <ref type="inscription" n="536" target="080001.xml"/>): <ref type="inscription" n="1896" target="080089.xml"/>, <ref type="inscription" n="1897" target="080098.xml"/>, <ref type="inscription" n="1900" target="080090.xml"/>, <ref type="inscription" n="1903" target="080091.xml"/>, <ref type="inscription" n="1909" target="080092.xml"/>, <ref type="inscription" n="1910" target="080093.xml"/>, <ref type="inscription" n="1911" target="080094.xml"/>, <ref type="inscription" n="1912" target="080095.xml"/>, <ref type="inscription" n="1914" target="080096.xml"/>, <ref type="inscription" n="1915" target="080097.xml"/> . All the inscriptions are on the stage side of the columns, and were presumably only visible to those using the stage. See <bibl n="PPA">Roueché, <title>PPA</title>, Chapter III</bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="PPA">Roueché, <title>PPA</title>
+                  <citedRange>6.2</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,124 +1,161 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150345" n="iAph0151 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType" reg="funerary">Epitaph</rs> of <seg cert="low">M. Aur. Leontius Auchenios</seg> and M. Aur. Papaios Polychronios</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-29</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-27</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p><rs type="material" key="marmor">White marble</rs> <rs type="decoration">garland</rs> <rs type="objectType">sarcophagus</rs>. See <bibl><author>Isik</author> 176</bibl> for a full
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph of <seg cert="low">M. Aur. Leontius Auchenios</seg> and M. Aur. Papaios Polychronios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150345</idno>
+            <idno type="IAph2007">iAph150345</idno>
+            <idno type="JMR2004">iAph0151</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <rs type="decoration">garland</rs>
+                              <objectType>sarcophagus</objectType>. See <bibl>
+                                 <author>Isik</author> 176</bibl> for a full
 description.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on the <term lang="la">tabella</term> (<measure type="length" unit="metre" dim="height">0.195</measure> × <measure type="length" unit="metre" dim="width">0.345</measure>) from which a
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the <term xml:lang="la">tabella</term> (<height unit="metre">0.195</height> × <width unit="metre">0.345</width>) from which a
 previous inscription has been erased. Line 1 on the upper moulding,
 lines 2 ff. inscribed within the panel; lines 3-6, 9-12 impinge on the
-right moulding. Very worn.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Irregular and poorly formed, <measure type="length" unit="metre" dim="height">0.01-0.015</measure>; cursive <term>alpha</term>, <term>omega</term>
-and <term>mu</term> used sporadically, square <term>sigma</term>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0333" exact="none" notBefore="0268">Late third/early fourth century</date> (titles).</p>
-      </div>
-
-      <div type="edition" lang="grc">
-        <head lang="en">Edition</head>
+right moulding. Very worn.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Irregular and poorly formed, <height unit="metre">0.01-0.015</height>; cursive <term>alpha</term>, <term>omega</term>
+and <term>mu</term> used sporadically, square <term>sigma</term>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0268" notAfter="0333" precision="medium">Late third/early fourth century (titles).</origDate>
+                  </origin>
+                  <provenance type="found">Stray find.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-27" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-29" who="#CMR">tagged and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_A_12.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+         <graphic url="78_A_13.jpg">
+            <desc>Detail (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		  <ab>
 			<lb n="1"/> <w lemma="ὁ">Ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="περικεῖμαι">πε<unclear reason="damage">ρικίμ</unclear>ε
-			<lb n="2" type="worddiv"/><unclear reason="damage">ν</unclear>ος</w> <w lemma="τόπος">τό<unclear reason="damage">π</unclear>ος</w> <w lemma="οὗτος">τού
-			<lb n="3" type="worddiv"/>τ<unclear reason="damage">ω</unclear></w> <w lemma="μνημεῖον">μνημείῳ</w> <w lemma="εἰμί">ἐ
-			<lb n="4" type="worddiv"/>στὶν</w> <persName key="auchenius1" type="aphrodisian" full="yes"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name> <persName type="aphrodisian" key="leontius1" full="yes"><name reg="Λεόντιος">Λεοντ
-			<lb n="5" type="worddiv"/>ήου</name></persName> <name reg="Αὐχένιος">Αὐχενίου</name></persName>
+			<lb n="2" break="no"/><unclear reason="damage">ν</unclear>ος</w> <w lemma="τόπος">τό<unclear reason="damage">π</unclear>ος</w> <w lemma="οὗτος">τού
+			<lb n="3" break="no"/>τ<unclear reason="damage">ω</unclear></w> <w lemma="μνημεῖον">μνημείῳ</w> <w lemma="εἰμί">ἐ
+			<lb n="4" break="no"/>στὶν</w> <persName key="auchenius1" type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name> <persName key="leontius1" type="attested"><name nymRef="#Λεόντιος">Λεοντ
+			<lb n="5" break="no"/>ήου</name></persName> <name nymRef="#Αὐχένιος">Αὐχενίου</name></persName>
 			<lb n="6"/><rs type="profession" key="teacher"><w lemma="διδάσκαλος">διδασκάλου</w></rs>
 			<lb n="7"/><w lemma="φίλος">φίλων</w> <w lemma="καί">καὶ</w>
-			<lb n="8"/><persName type="aphrodisian" key="polychronius1" full="yes"><persName key="marcus1" type="aphrodisian" full="yes"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name></persName>  <persName key="papaeus1" type="aphrodisian" full="yes"><name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name> <name reg="Παπαῖος">Παπα
-			<lb n="9" type="worddiv"/><sic n="superfluous">α</sic>ίου</name></persName> <name reg="Πολυχρόνιος">Πολυχ<unclear reason="damage">ρ</unclear><supplied reason="lost">ο</supplied>
-			<lb n="10" type="worddiv"/>νίου</name></persName> <rs key="steward" type="profession"><w lemma="διοικητής">διοικη
-			<lb n="11" type="worddiv"/>τοῦ</w></rs> <persName key="papias1" type="aphrodisian" full="yes"><name reg="Παπίας">Παπίου</name></persName> <rs key="curiales" type="subject"><w lemma="πολιτεύομαι">πο
-			<lb n="12" type="worddiv"/>λιτευομένου</w></rs>.		
-		  </ab></div>	
- 
-      <div type="translation">
-        <head>Translation</head>
-        <ab>The sarcophagus, and the area surrounding this memorial,
+			<lb n="8"/><persName key="polychronius1" type="attested"><persName key="marcus1" type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name></persName>  <persName key="papaeus1" type="attested"><name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name> <name nymRef="#Παπαῖος">Παπα
+			<lb n="9" break="no"/><sic n="superfluous">α</sic>ίου</name></persName> <name nymRef="#Πολυχρόνιος">Πολυχ<unclear reason="damage">ρ</unclear><supplied reason="lost">ο</supplied>
+			<lb n="10" break="no"/>νίου</name></persName> <rs key="steward" type="profession"><w lemma="διοικητής">διοικη
+			<lb n="11" break="no"/>τοῦ</w></rs> <persName key="papias1" type="attested"><name nymRef="#Παπίας">Παπίου</name></persName> <rs key="curiales" type="subject"><w lemma="πολιτεύομαι">πο
+			<lb n="12" break="no"/>λιτευομένου</w></rs>.		
+		  </ab></div>
+         <div type="translation">
+            <ab>The sarcophagus, and the area surrounding this memorial,
 is (the property of) M. Aurelius Leontius Auchenios, teacher of
 friends, and M. Aurelius Papaios Polychronios, steward of Papias,
-<term lang="la">curialis</term>.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>The principal indication of date is the title of Papias'
-master; see discussion at <xref type="eAla-text" n="IX.11">IX.11</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found">Stray find.</rs>. Original location: <rs type="origLocation">Unknown.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU expedition (Museum 48).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias
-in Late Antiquity</title> no. <biblScope>151</biblScope></bibl>, whence cited, but with the wrong
-text, at <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257332">454</biblScope></bibl>; by <bibl type="hbi" n="jmr2003"><author>Reynolds</author>, in <author>F. Isik</author>, <title level="m">Garland Sarcophagi</title>, <biblScope>176</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcriptions (Reynolds, Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="78_A_12"><figDesc>Face (1978)</figDesc></figure><figure href="78_A_13"><figDesc>Detail (1978)</figDesc></figure></p></div>
-
-    
-
-      
-
-    </body>
-  </text>
+<term xml:lang="la">curialis</term>.</ab>
+         </div>
+         <div type="commentary">
+            <p>The principal indication of date is the title of Papias'
+master; see discussion at <ref type="eAla-text" n="IX.11" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias
+in Late Antiquity</title> no. <citedRange>151</citedRange>
+               </bibl>, whence cited, but with the wrong
+text, at <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257332">454</citedRange>
+               </bibl>; by <bibl type="hbi" n="jmr2003">
+                  <author>Reynolds</author>, in <author>F. Isik</author>, <title level="m">Garland Sarcophagi</title>, <citedRange>176</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

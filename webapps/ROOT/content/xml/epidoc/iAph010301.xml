@@ -1,123 +1,188 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010301" n="iAph0189 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">i. <rs type="textType">Letter</rs> from a Roman official <seg cert="low">(a curator)</seg>  to Aphrodisias. ii <rs type="textType">Place inscription</rs> of Kyriakos, trouser-maker</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-06</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-06-02</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-29</date><respStmt><name>CMR</name></respStmt><item>tagged, lemmatised and corrected</item></change><change><date>2004-02-28</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Two fragments from a <rs type="material">white marble</rs> <rs type="objectType">door post</rs> from the right side of a door, 1. fragment with right side surviving (<measure type="length" unit="metre" dim="width">0.15</measure> x <measure type="length" unit="metre" dim="height">0.19</measure> x <measure type="length" unit="metre" dim="depth">0.07</measure>). 2. larger fragment ( <measure dim="height" type="length" unit="metre">1.34</measure> ×  <measure dim="width" type="length" unit="metre">0.42</measure> × <measure dim="depth" type="length" unit="metre">0.42</measure>) broken above and below and damaged on the surface.</p>
-</div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>i. Letter from a Roman official <seg cert="low">(a curator)</seg>  to Aphrodisias. ii Place inscription of Kyriakos, trouser-maker</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010301</idno>
+            <idno type="IAph2007">iAph010301</idno>
+            <idno type="JMR2004">iAph0189</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two fragments from a <material>white marble</material>
+                              <objectType>door post</objectType> from the right side of a door, 1. fragment with right side surviving (<width unit="metre">0.15</width> x <height unit="metre">0.19</height> x <depth unit="metre">0.07</depth>). 2. larger fragment ( <height unit="metre">1.34</height> ×  <width unit="metre">0.42</width> × <depth unit="metre">0.42</depth>) broken above and below and damaged on the surface.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i a: <rs type="execution" ref="scalpro">inscribed</rs> on a projecting area of 1; b (inscribed area <width unit="metre">0.26</width>, H. <height unit="metre">0.30</height>) is inscribed on 2, and  ii. is inscribed some <height>10 cm</height> lower down.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. a: ll.1, 3-5, <height unit="metre">0.015</height>; l.2, <height unit="metre">0.01</height>; dots on either side of Α in l.1, and Ε in l.2, between S and E in l.3. b: <height unit="metre">0.008</height>; dots for stops in ll 7, 10. Ligatures: ΗΝ ll 9, 10, ΗΝ ll. 11, 12. ii. Lightly cut and sprawling, <height unit="metre">0.03-0.05</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0400"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering location content">i. Second century A.D. (<rs type="criteria">lettering</rs>); ii. Fifth to sixth centuries A.D. (<rs type="criteria">location</rs>, <rs type="criteria">content</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church, North Temenos Building</rs>: a found loose near the Tetrapylon; b: ‘aux premiers propylées, axe du temple’ (Gaudin), found during investigation of the east
+wall.</provenance>
+                  <provenance type="observed" when="1988">Museum (1988)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-28" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-06" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-29" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="88_A_16A.jpg">
+            <desc>Fragment i.a (1988)</desc>
+         </graphic>
+         <graphic url="88_A_17A.jpg">
+            <desc>Fragment i.a (1988)</desc>
+         </graphic>
+         <graphic url="81_G_07.jpg">
+            <desc>Fragments i.b and ii (1981)</desc>
+         </graphic>
+         <graphic url="81_G_08.jpg">
+            <desc>Fragment ii (1981)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
         
-      <p>i a: <rs type="execution" key="scalpro">inscribed</rs> on a projecting area of 1; b (inscribed area <measure dim="width" type="length" unit="metre">0.26</measure>, H. <measure dim="height" type="length" unit="metre">0.30</measure>) is inscribed on 2, and  ii. is inscribed some <measure value="0.1" type="length" dim="none">10 cm</measure> lower down.</p>
-</div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>i. a: ll.1, 3-5, <measure type="length" unit="metre" dim="height">0.015</measure>; l.2, <measure type="length" unit="metre" dim="height">0.01</measure>; dots on either side of Α in l.1, and Ε in l.2, between S and E in l.3. b: <measure type="length" unit="metre" dim="height">0.008</measure>; dots for stops in ll 7, 10. Ligatures: ΗΝ ll 9, 10, ΗΝ ll. 11, 12. ii. Lightly cut and sprawling, <measure type="length" unit="metre" dim="height">0.03-0.05</measure>.</p>
-      </div>
-
-      <div n="date" type="description">
-        <head>Date</head><p>i. <date notBefore="0101" notAfter="0200" exact="none">Second century A.D.</date> (<rs type="criteria">lettering</rs>); ii. <date notAfter="0600" notBefore="0400">Fifth to sixth centuries A.D.</date> (<rs type="criteria">location</rs>, <rs type="criteria">content</rs>)</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
-		<div type="textpart_section" n="i"><div type="textpart_section" n="a"><ab>
-		  <lb n="0"/> <gap reason="lost" extent="unknown" unit="character" dim="top"/>  <lb n="1"/>
-		  <gap reason="lost" extent="unknown" unit="character" dim="left"/> <w lemma="διά">διὰ</w> <orig n="unresolved">το</orig> <lb n="2"/>
-		  <placeName type="ethnic" reg="Ἀφροδεισιεύς"><supplied reason="lost" cert="low">Ἀφροδει</supplied>σιεις</placeName> <orig n="unresolved">επη</orig> <lb n="3"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/>εντας</w> <orig n="unresolved">ε</orig> <lb n="4"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">οσ</orig> <w>λογισ<lb type="worddiv" n="5"/><gap reason="lost" extent="unknown" unit="character" dim="left"/></w><orig n="unresolved">ν</orig> <w lemma="ὄνομα">ὀνομα</w> <lb n="6"/><gap reason="lost" extent="unknown" unit="character" dim="left"/> <num value="3">γ</num> <space extent="3" unit="character"/>  <lb n="6a"/><gap reason="lost" extent="unknown" unit="character" dim="bottom"/>   </ab></div><div type="textpart_section" n="b"><ab><lb n="0"/><gap reason="lost" extent="unknown" unit="character" dim="top"/>  <lb n="1"/>
-		  <gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ε</unclear>ν<unclear reason="damage">ο</unclear></orig><gap reason="lost" extent="1" unit="character"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">α</unclear>τακο</orig>  <lb n="3"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/>αν</w>  <w lemma="ὑπέρ">ὑπὲ<unclear reason="damage">ρ</unclear></w>  <lb n="4"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">επωνε<unclear reason="damage">τ</unclear></orig>  <lb n="5"/>
-		  <gap reason="lost" extent="6" unit="character" precision="circa"/><orig n="unresolved"><unclear reason="damage">ε</unclear>δε<unclear reason="damage">ε</unclear></orig><gap reason="lost" extent="2" unit="character"/><orig n="unresolved"><unclear reason="damage">ασ</unclear>τα</orig> <w lemma="μετά">μετὰ</w> <lb n="6"/><w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear reason="damage">ῆς</unclear></w>  <w lemma="σύ"><unclear reason="damage">σ</unclear>οι</w>  <w lemma="προσήκω">προση<unclear reason="damage">κ</unclear>ούση<unclear reason="damage">ς</unclear></w>  <w lemma="ἐπιμέλεια">ἐπ<unclear reason="damage">ι</unclear>  <lb type="worddiv" n="7"/>
-		    <unclear reason="damage">με</unclear>λείας</w>  <g type="stop"/> <w lemma="ἅμα">ἅμα</w> <w lemma="προνοέω">πρ<unclear reason="damage">ο</unclear>νο<unclear reason="damage">ο</unclear>ύμε  <lb type="worddiv" n="8"/>νος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῦ</w> <w lemma="ὁ">τὰ</w> <w lemma="ὀφείλω">ὀφειλόμεν<unclear reason="damage">α</unclear></w>  <lb n="9"/><w lemma="ὁ"><unclear reason="damage">τ</unclear>ῶν</w> <w lemma="χρῆμα">χρημάτων</w> <w lemma="εἰσπράσσω">εἰσπράττεσ<lb type="worddiv" n="10"/><unclear reason="damage">θ</unclear>αι</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <g type="stop"/> <w lemma="κατάπεμπω">κατεπεμψά <lb type="worddiv" n="11"/><unclear reason="damage">μην</unclear></w>  <w lemma="δέ"><unclear reason="damage">δ</unclear>έ</w> <w lemma="σύ">σοι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w>παρ’</w> <w lemma="ἐγώ">ἡμῶν</w> <lb n="12"/><w lemma="ἐντολή"><unclear reason="damage">ἐν</unclear><supplied reason="lost">το</supplied><unclear reason="damage">λ</unclear>ὰς</w>  <w lemma="ἵνα"><unclear reason="damage">ἵ</unclear>να</w>  <w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἡμέτερος">ἡμετέ <lb type="worddiv" n="13"/>ραν</w>  <w lemma="συμβουλή"><supplied reason="lost">συ</supplied><unclear reason="damage">μβ</unclear>ου<unclear reason="damage">λὴν</unclear></w>  <w lemma="ἐν"><unclear reason="damage">ἐ</unclear><unclear reason="damage">ν</unclear></w>  <w lemma="ὁ">το<unclear reason="damage">ῖς</unclear></w> <w lemma="πράσσω">πρα <lb type="worddiv" n="14"/><supplied reason="lost">χθ</supplied><unclear reason="damage">η</unclear>σομένοις</w>  <w lemma="ἔχω">ἔχ<supplied reason="lost">ῃ</supplied><unclear reason="damage">ς</unclear></w>  <w lemma="ῥώννυμι">ἔρρω<unclear reason="damage">σ</unclear>ο</w></ab></div></div><div type="textpart_section"><ab>
-			<lb n="1"/><g type="cross"/> <g type="cross"/> <g type="cross"/>
+		<div n="i" type="textpart" subtype="section"><div n="a" type="textpart" subtype="section"><ab>
+		  <lb n="0"/> <gap reason="lost" unit="character" extent="unknown"/>  <lb n="1"/>
+		  <gap reason="lost" unit="character" extent="unknown"/> <w lemma="διά">διὰ</w> <orig n="unresolved">το</orig> <lb n="2"/>
+		  <placeName nymRef="#Ἀφροδεισιεύς"><supplied reason="lost" cert="low">Ἀφροδει</supplied>σιεις</placeName> <orig n="unresolved">επη</orig> <lb n="3"/><w><gap reason="lost" unit="character" extent="unknown"/>εντας</w> <orig n="unresolved">ε</orig> <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">οσ</orig> <w>λογισ<lb n="5" break="no"/><gap reason="lost" unit="character" extent="unknown"/></w><orig n="unresolved">ν</orig> <w lemma="ὄνομα">ὀνομα</w> <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/> <num value="3">γ</num> <space extent="3" unit="character"/>  <lb n="6a"/><gap reason="lost" unit="character" extent="unknown"/>   </ab></div><div n="b" type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="character" extent="unknown"/>  <lb n="1"/>
+		  <gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ε</unclear>ν<unclear reason="damage">ο</unclear></orig><gap reason="lost" unit="character" quantity="1"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">α</unclear>τακο</orig>  <lb n="3"/><w><gap reason="lost" unit="character" extent="unknown"/>αν</w>  <w lemma="ὑπέρ">ὑπὲ<unclear reason="damage">ρ</unclear></w>  <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">επωνε<unclear reason="damage">τ</unclear></orig>  <lb n="5"/>
+		  <gap reason="lost" unit="character" precision="low" quantity="6"/><orig n="unresolved"><unclear reason="damage">ε</unclear>δε<unclear reason="damage">ε</unclear></orig><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved"><unclear reason="damage">ασ</unclear>τα</orig> <w lemma="μετά">μετὰ</w> <lb n="6"/><w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear reason="damage">ῆς</unclear></w>  <w lemma="σύ"><unclear reason="damage">σ</unclear>οι</w>  <w lemma="προσήκω">προση<unclear reason="damage">κ</unclear>ούση<unclear reason="damage">ς</unclear></w>  <w lemma="ἐπιμέλεια">ἐπ<unclear reason="damage">ι</unclear>  <lb n="7" break="no"/>
+		    <unclear reason="damage">με</unclear>λείας</w>  <g ref="#stop"/> <w lemma="ἅμα">ἅμα</w> <w lemma="προνοέω">πρ<unclear reason="damage">ο</unclear>νο<unclear reason="damage">ο</unclear>ύμε  <lb n="8" break="no"/>νος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῦ</w> <w lemma="ὁ">τὰ</w> <w lemma="ὀφείλω">ὀφειλόμεν<unclear reason="damage">α</unclear></w>  <lb n="9"/><w lemma="ὁ"><unclear reason="damage">τ</unclear>ῶν</w> <w lemma="χρῆμα">χρημάτων</w> <w lemma="εἰσπράσσω">εἰσπράττεσ<lb n="10" break="no"/><unclear reason="damage">θ</unclear>αι</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <g ref="#stop"/> <w lemma="κατάπεμπω">κατεπεμψά <lb n="11" break="no"/><unclear reason="damage">μην</unclear></w>  <w lemma="δέ"><unclear reason="damage">δ</unclear>έ</w> <w lemma="σύ">σοι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w>παρ’</w> <w lemma="ἐγώ">ἡμῶν</w> <lb n="12"/><w lemma="ἐντολή"><unclear reason="damage">ἐν</unclear><supplied reason="lost">το</supplied><unclear reason="damage">λ</unclear>ὰς</w>  <w lemma="ἵνα"><unclear reason="damage">ἵ</unclear>να</w>  <w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἡμέτερος">ἡμετέ <lb n="13" break="no"/>ραν</w>  <w lemma="συμβουλή"><supplied reason="lost">συ</supplied><unclear reason="damage">μβ</unclear>ου<unclear reason="damage">λὴν</unclear></w>  <w lemma="ἐν"><unclear reason="damage">ἐ</unclear><unclear reason="damage">ν</unclear></w>  <w lemma="ὁ">το<unclear reason="damage">ῖς</unclear></w> <w lemma="πράσσω">πρα <lb n="14" break="no"/><supplied reason="lost">χθ</supplied><unclear reason="damage">η</unclear>σομένοις</w>  <w lemma="ἔχω">ἔχ<supplied reason="lost">ῃ</supplied><unclear reason="damage">ς</unclear></w>  <w lemma="ῥώννυμι">ἔρρω<unclear reason="damage">σ</unclear>ο</w></ab></div></div><div type="textpart" subtype="section"><ab>
+			<lb n="1"/><g ref="#cross"/> <g ref="#cross"/> <g ref="#cross"/>
 			<lb n="2"/> <w lemma="τόπος">τόπος</w>  
-			<lb n="3"/> <persName key="cyriacus3" type="aphrodisian" reg="Κυριακός" full="yes"><name reg="Κυριακός">Κυριακοῦ</name></persName> 
+			<lb n="3"/> <persName key="cyriacus3" nymRef="#Κυριακός" type="attested"><name nymRef="#Κυριακός">Κυριακοῦ</name></persName> 
 			<lb n="4"/> <rs type="profession" key="bracarius"><w lemma="βρακάριος">βρακαρίου</w></rs></ab></div> 
       </div>
-
-      <div type="apparatus">
-<head>Apparatus</head>
-<p>i. The surface has deteriorated since recorded by Gaudin.</p>
-<p>b. l. 2, <foreign lang="grc"><supplied reason="lost">κ</supplied>ατακο</foreign>, Reinach</p>
-<p>l. 4, <foreign lang="grc"><gap reason="lost" extent="unknown" unit="character"/>επωνε<supplied reason="lost">ι</supplied></foreign>, Reinach</p>
-<p>l. 5, <foreign lang="grc"><gap reason="lost" extent="unknown" unit="character"/>εδει , ας τά</foreign>, Reinach</p>
-<p>l. 6,<foreign lang="grc">τ<supplied reason="lost">η</supplied>σ</foreign>, Reinach</p>
-<p>l. 7,<foreign lang="grc"><supplied reason="lost">μ</supplied>ελειας</foreign>, Reinach</p>
-<p>l. 11, <foreign lang="grc">μεν</foreign>, Reinach</p>
-</div>
-<div type="translation">
-        <head>Translation</head><p>i. a: [ . . .] because of? [ . . .?Aphrodi]sians [ . . .] curat[?or . . . ] name [ . . .] decree [ . . .]</p>
-<p>i. b: ...] with the care that befits you. At the same time taking thought too for the collection of the moneys that are owing to the city, I have also sent you instructions from us ?in order that you may have our advice in the matters to be managed. Farewell.</p><p>ii. Place of Kyriakos, trouser-maker.</p>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>i. See <bibl n="jmr1982">Reynolds,<title> Aphrodisias and Rome</title>, 178</bibl>. a does not add very much, but confirms the suggestion that a curator <term lang="grc-Latn">rei publicae</term> was involved.</p><p>ii: See discussion at <xref type="eAla-text" n="XI.5">XI.5</xref> and  <xref type="eAla-text" n="XI.9">XI.9</xref> .</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p><rs type="found"><rs type="monuList">Temple/Church, North Temenos Building</rs>: a found loose near the Tetrapylon; b: ‘aux premiers propylées, axe du temple’ (Gaudin), found during investigation of the east
-wall.</rs>. <rs type="origLocation">Unknown.</rs>.  <rs type="lastLocation">Museum (1988)</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>i. b and ii  recorded by Gaudin (168, 167) and by the NYU expedition in 1970, and a further fragment, a, in 1988 (<rs type="siteNo">88.e</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>i. a not previously published. i.b published by <bibl type="hbi" n="reinach"><author>Reinach</author>, no. <biblScope>3</biblScope></bibl> <bibl n="jmr1982"><author>Reynolds</author>, <title>Aphrodisias &amp; Rome</title>, doc. <biblScope>50</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1982.1097</biblScope></bibl>, <bibl n="be">BE <biblScope>1983.391</biblScope></bibl>,<bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>  <biblScope n="256928">50</biblScope>
-</bibl>. ii. Published by <bibl type="hbi" n="reinach"><author>Reinach</author>, no. <biblScope>219</biblScope></bibl>, from Gaudin, whence
-<bibl type="hbi" n="IGC"><author>Grégoire</author>, <title level="m">IGC</title> <biblScope>262</biblScope></bibl>; by <bibl type="hbi" n="ALA"><author>Roueché</author>,
-<title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>189</biblScope> and plate xli</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>
-<biblScope n="257567">680</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcriptions (Reynolds, Roueché); publications.</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        
-<p><figure href="88_A_16A"><figDesc>Fragment i.a (1988)</figDesc></figure><figure href="88_A_17A"><figDesc>Fragment i.a (1988)</figDesc></figure><figure href="81_G_07"><figDesc>Fragments i.b and ii (1981)</figDesc></figure><figure href="81_G_08"><figDesc>Fragment ii (1981)</figDesc></figure></p></div>
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <p>i. The surface has deteriorated since recorded by Gaudin.</p>
+            <p>b. l. 2, <foreign xml:lang="grc">
+                  <supplied reason="lost">κ</supplied>ατακο</foreign>, Reinach</p>
+            <p>l. 4, <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>επωνε<supplied reason="lost">ι</supplied>
+               </foreign>, Reinach</p>
+            <p>l. 5, <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>εδει , ας τά</foreign>, Reinach</p>
+            <p>l. 6,<foreign xml:lang="grc">τ<supplied reason="lost">η</supplied>σ</foreign>, Reinach</p>
+            <p>l. 7,<foreign xml:lang="grc">
+                  <supplied reason="lost">μ</supplied>ελειας</foreign>, Reinach</p>
+            <p>l. 11, <foreign xml:lang="grc">μεν</foreign>, Reinach</p>
+         </div>
+         <div type="translation">
+            <p>i. a: [ . . .] because of? [ . . .?Aphrodi]sians [ . . .] curat[?or . . . ] name [ . . .] decree [ . . .]</p>
+            <p>i. b: ...] with the care that befits you. At the same time taking thought too for the collection of the moneys that are owing to the city, I have also sent you instructions from us ?in order that you may have our advice in the matters to be managed. Farewell.</p>
+            <p>ii. Place of Kyriakos, trouser-maker.</p>
+         </div>
+         <div type="commentary">
+            <p>i. See <bibl n="jmr1982">Reynolds,<title> Aphrodisias and Rome</title>, 178</bibl>. a does not add very much, but confirms the suggestion that a curator <term xml:lang="grc-Latn">rei publicae</term> was involved.</p>
+            <p>ii: See discussion at <ref type="eAla-text" n="XI.5" target=".xml"/> and  <ref type="eAla-text" n="XI.9" target=".xml"/> .</p>
+         </div>
+         <div type="bibliography">
+            <p>i. a not previously published. i.b published by <bibl type="hbi" n="reinach">
+                  <author>Reinach</author>, no. <citedRange>3</citedRange>
+               </bibl>
+               <bibl n="jmr1982">
+                  <author>Reynolds</author>, <title>Aphrodisias &amp; Rome</title>, doc. <citedRange>50</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1097</citedRange>
+               </bibl>, <bibl n="be">BE <citedRange>1983.391</citedRange>
+               </bibl>,<bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256928">50</citedRange>
+               </bibl>. ii. Published by <bibl type="hbi" n="reinach">
+                  <author>Reinach</author>, no. <citedRange>219</citedRange>
+               </bibl>, from Gaudin, whence
+<bibl type="hbi" n="IGC">
+                  <author>Grégoire</author>, <title level="m">IGC</title>
+                  <citedRange>262</citedRange>
+               </bibl>; by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>,
+<title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>189</citedRange> and plate xli</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257567">680</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

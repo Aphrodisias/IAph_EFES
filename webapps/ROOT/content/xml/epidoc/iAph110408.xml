@@ -1,88 +1,127 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110408" n="iAph1612 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for anonymous</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-05</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Fragment from a <rs type="material">white marble</rs> <rs type="objectType">statue base capital</rs> (H. <measure dim="height" type="length" unit="metre">0.22</measure>, W. <measure dim="width" type="length" unit="metre">0.60</measure>, D. <measure dim="depth" type="length" unit="metre">0.76</measure>) with moulding on at least 3 sides. Reichel describes it as 'Pilasterkapitell', but the measurements do no bear this out.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on two fasciae of the moulding.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Standard second to third century forms; <measure type="length" unit="metre" dim="height">0.02</measure>. Ligature: ΗΜ, l.2</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0100"> Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμ<unclear reason="damage">ο</unclear><supplied reason="lost">ς</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/> <w lemma="τιμάω">ἐτείμησαν</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλ<supplied reason="lost">λίσταις</supplied></w>  <w lemma="τιμή"><supplied reason="lost">τειμαῖς</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for anonymous</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110408</idno>
+            <idno type="IAph2007">iAph110408</idno>
+            <idno type="JMR2004">iAph1612</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment from a <material>white marble</material>
+                              <objectType>statue base capital</objectType> (H. <height unit="metre">0.22</height>, W. <width unit="metre">0.60</width>, D. <depth unit="metre">0.76</depth>) with moulding on at least 3 sides. Reichel describes it as 'Pilasterkapitell', but the measurements do no bear this out.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on two fasciae of the moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard second to third century forms; <height unit="metre">0.02</height>. Ligature: ΗΜ, l.2</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0100" notAfter="0300" evidence="lettering">
+ Second to third centuries A.D. (<rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">City, South-west</rs>: 'Südmauer innen, im Felde'</provenance>
+                  <provenance type="observed" when="1893">Findspot (1893)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Notebook; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-05" who="cmr">DONE</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="R_I_40.jpg">
+            <desc>Reichel I, 40</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>The Council and the People [ ? and ....] honoured with the finest [ honours] [...]</p>
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμ<unclear reason="damage">ο</unclear><supplied reason="lost">ς</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/> <w lemma="τιμάω">ἐτείμησαν</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλ<supplied reason="lost">λίσταις</supplied></w>  <w lemma="τιμή"><supplied reason="lost">τειμαῖς</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The opening formula of an honorific text.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList" cert="low">City, South-west</rs>: 'Südmauer innen, im Felde'</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot (1893)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Notebook; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Reichel (R. i.40; Abklatsch 57); not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Reichel's copy by <bibl n="cormack1964">Cormack, ABSA 59 (1964), <biblScope>43</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257255">377</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="none">
-<head>Photographs</head>
-<p>None</p>
-</div><div type="figure" n="photographs">
-<head>Representations</head>
-<p> <figure href="R_I_40"><figDesc>Reichel I, 40</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>The Council and the People [ ? and ....] honoured with the finest [ honours] [...]</p>
+         </div>
+         <div type="commentary">
+            <p>The opening formula of an honorific text.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Reichel's copy by <bibl n="cormack1964">Cormack, ABSA 59 (1964), <citedRange>43</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257255">377</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

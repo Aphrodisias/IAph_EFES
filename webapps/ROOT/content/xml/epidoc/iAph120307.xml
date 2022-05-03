@@ -1,101 +1,149 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120307" n="iAph1014 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Posthumous<rs type="textType"> honours</rs></rs> for  Dionysios son of Artemidoros</title>
-   </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Posthumous honours for  Dionysios son of Artemidoros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120307</idno>
+            <idno type="IAph2007">iAph120307</idno>
+            <idno type="JMR2004">iAph1014</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType key="base">statue base</objectType> without moulding, with lower part still buried(<height>0.57</height>   × <height>0.86</height> measurable x <height>0.47</height>); damaged along the upper edge since the eighteenth century</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro"> Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025–0.035</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering">First century A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs>:  just north of the South-east gate, north of <ref type="inscription" n="1031" target="120325.xml"/> (=MAMA 501), <ref type="inscription" n="1308" target="120326.xml"/> (=451)</provenance>
+                  <provenance type="observed" when="1973">Findspot (1973)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; Sherard papers; Deering; Gaudin's squeeze; Preliminary transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_W_00B.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="73_X_02A.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="Deering_02.jpg">
+            <desc>Deering page 2</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-  
-  <change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
+<ab><lb n="1"/><app type="previouslyread"><rdg resp="previous"><w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w><w lemma="δῆμος"> δῆμος</w></rdg><rdg resp="autopsy"><gap reason="lost" unit="line" quantity="1"/></rdg></app><lb n="2"/><w lemma="τιμάω"><app type="previouslyread"><rdg resp="previous">ἐ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app>τ<unclear reason="damage">ε</unclear>ι<unclear reason="damage">μησ</unclear>εν</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλ<unclear reason="damage">λ</unclear><app type="previouslyread"><rdg resp="previous">ίσ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="2"/></rdg></app><lb n="3" break="no"/>ταις</w> <w lemma="τιμή">τειμαῖς</w> <persName nymRef="#Διονύσιος  Ἀρτεμιδώρου  Μενίππου  Διονυσίου  Δημητρίου" type="attested"><name nymRef="#Διονύσιος">Διον<unclear reason="damage">ύ</unclear><lb n="4" break="no"/>σιον</name> <persName nymRef="#Ἀρτεμίδωρος  Μενίππου  Διονυσίου  Δημητρίου" type="attested"><name nymRef="#Ἀρτεμίδωρος">Ἀρτεμιδώρ<unclear reason="damage">ο</unclear><app type="previouslyread"><rdg resp="previous">υ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app></name>  <lb n="5"/> <w lemma="ὁ">τοῦ</w> <persName nymRef="#Μένιππος  Διονυσίου  Δημητρίου" type="attested"><name nymRef="#Μένιππος">Μενίππου</name> <w lemma="ὁ">το<app type="previouslyread"><rdg resp="previous">ῦ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app></w><lb n="6"/><persName nymRef="#Διονύσιος  Δημητρίου" type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name> <w lemma="ὁ">τοῦ</w> <persName nymRef="#Δημήτριος" type="attested"><name nymRef="#Δημήτριος">Δη<lb n="7" break="no"/>μητρίου</name></persName></persName> </persName></persName></persName> <w lemma="ζάω">ζήσαντα</w> <lb n="8"/> <w lemma="κόσμιος">κοσμίως</w> <w lemma="καί">καὶ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὅς">ᾑ</w> <del status="unremarkable"><gap reason="lost" unit="character" extent="unknown"/></del><lb n="9"/> <w lemma="ὑπόδειγμα">ὑπόδειγμα</w> <w lemma="ἀρετή">ἀρετῆς</w> <lb n="9a"/><space unit="line" dim="vertical"/></ab>
 
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType" reg="base">statue base</rs> without moulding, with lower part still buried(<measure type="length" dim="none">0.57</measure>   × <measure type="length" dim="none">0.86</measure> measurable x <measure type="depth" dim="none">0.47</measure>); damaged along the upper edge since the eighteenth century</p>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro"> Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.025–0.035</measure></p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notAfter="0100" notBefore="0001" exact="none">First century A.D.</date> (<rs type="criteria">lettering</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><app type="previouslyread"><rdg resp="previous"><w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w><w lemma="δῆμος"> δῆμος</w></rdg><rdg resp="autopsy"><gap reason="lost" unit="line" extent="1" dim="top"/></rdg></app><lb n="2"/><w lemma="τιμάω"><app type="previouslyread"><rdg resp="previous">ἐ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" extent="1" dim="left"/></rdg></app>τ<unclear reason="damage">ε</unclear>ι<unclear reason="damage">μησ</unclear>εν</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλ<unclear reason="damage">λ</unclear><app type="previouslyread"><rdg resp="previous">ίσ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" extent="2" dim="right"/></rdg></app><lb n="3" type="worddiv"/>ταις</w> <w lemma="τιμή">τειμαῖς</w> <persName reg="Διονύσιος  Ἀρτεμιδώρου  Μενίππου  Διονυσίου  Δημητρίου" full="yes" type="aphrodisian"><name reg="Διονύσιος">Διον<unclear reason="damage">ύ</unclear><lb n="4" type="worddiv"/>σιον</name> <persName reg="Ἀρτεμίδωρος  Μενίππου  Διονυσίου  Δημητρίου" full="yes" type="aphrodisian"><name reg="Ἀρτεμίδωρος">Ἀρτεμιδώρ<unclear reason="damage">ο</unclear><app type="previouslyread"><rdg resp="previous">υ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" extent="1" dim="right"/></rdg></app></name>  <lb n="5"/> <w lemma="ὁ">τοῦ</w> <persName reg="Μένιππος  Διονυσίου  Δημητρίου" full="yes" type="aphrodisian"><name type="        " reg="Μένιππος">Μενίππου</name> <w lemma="ὁ">το<app type="previouslyread"><rdg resp="previous">ῦ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" extent="1" dim="right"/></rdg></app></w><lb n="6"/><persName reg="Διονύσιος  Δημητρίου" full="yes" type="aphrodisian"><name reg="Διονύσιος">Διονυσίου</name> <w lemma="ὁ">τοῦ</w> <persName reg="Δημήτριος" full="yes" type="aphrodisian"><name reg="Δημήτριος">Δη<lb n="7" type="worddiv"/>μητρίου</name></persName></persName> </persName></persName></persName> <w lemma="ζάω">ζήσαντα</w> <lb n="8"/> <w lemma="κόσμιος">κοσμίως</w> <w lemma="καί">καὶ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὅς">ᾑ</w> <del status="unremarkable"><gap reason="lost" unit="character" extent="unknown" dim="right"/></del><lb n="9"/> <w lemma="ὑπόδειγμα">ὑπόδειγμα</w> <w lemma="ἀρετή">ἀρετῆς</w> <lb n="9a"/><space unit="line" dim="vertical"/></ab>
-
-</div>
-
-
-
-<div type="apparatus"><head>Apparatus</head><p>The whole of line 1, the first and last letters of line 2, and the final letters of lines 4 and 5 were read by Sherard and party , Deering and Waddington, but could no longer be read by 1934.</p><p>At the end of l.8 an area was thoroughly erased
-</p></div><div type="translation">
-<head>Translation</head>
-<p>The Council and the People  honoured with the finest honours Dionysios son of Artemidoros son of Menippos son of Dionysios the son of Demetrios, who lived a well-ordered life and one with a view to a ?demonstration of virtue.</p></div>
-
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, East (south part)</rs>:  just north of the South-east gate, north of <xref type="inscription" n="1031" href="120325">12.325</xref> (=MAMA 501), <xref type="inscription" n="1308" href="120326">12.326</xref> (=451)</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot (1973)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; Sherard papers; Deering; Gaudin's squeeze; Preliminary transcription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied in 1705 by Sherard (10101, 16) and by Picenini (10102, 27v, and from Tisser 76v) and by Sherard in 1716 (10101, 121); by Deering (7); by Fellows; ? by Bailie; by Waddington; by K&amp;R (R.I.17v, mention); recorded by the MAMA expedition; recorded by the NYU expedition in 1973.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh from Sherard papers, CIG <biblScope>2769</biblScope></bibl>; by <bibl n="fellows1841">Fellows, Acct. 325, no. <biblScope>33</biblScope></bibl>, whence <bibl n="CIGIIc">CIG p. 1109</bibl>, ?<bibl n="bailie1846">Bailie, Fasc. ii 36, no. <biblScope>62</biblScope></bibl>; by <bibl n="LBW">Waddington, LBW <biblScope>1608</biblScope></bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <biblScope>480</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257151">272</biblScope></bibl></p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs"><head>Photographs</head><p><figure href="73_W_00B"><figDesc>Face (1973)</figDesc></figure><figure href="73_X_02A"><figDesc>Face (1973)</figDesc></figure></p></div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Deering_02"><figDesc>Deering page 2</figDesc></figure></p></div></body>
-</text>
-
+         <div type="apparatus">
+            <p>The whole of line 1, the first and last letters of line 2, and the final letters of lines 4 and 5 were read by Sherard and party , Deering and Waddington, but could no longer be read by 1934.</p>
+            <p>At the end of l.8 an area was thoroughly erased
+</p>
+         </div>
+         <div type="translation">
+            <p>The Council and the People  honoured with the finest honours Dionysios son of Artemidoros son of Menippos son of Dionysios the son of Demetrios, who lived a well-ordered life and one with a view to a ?demonstration of virtue.</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh from Sherard papers, CIG <citedRange>2769</citedRange>
+               </bibl>; by <bibl n="fellows1841">Fellows, Acct. 325, no. <citedRange>33</citedRange>
+               </bibl>, whence <bibl n="CIGIIc">CIG p. 1109</bibl>, ?<bibl n="bailie1846">Bailie, Fasc. ii 36, no. <citedRange>62</citedRange>
+               </bibl>; by <bibl n="LBW">Waddington, LBW <citedRange>1608</citedRange>
+               </bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <citedRange>480</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257151">272</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

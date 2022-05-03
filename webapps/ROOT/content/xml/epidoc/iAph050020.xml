@@ -1,106 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050020" n="iAph0049 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><seg cert="low"><rs type="textType" reg="building inscription">Building works</rs></seg> in the Hadrianic Baths </title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-01-25</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A fragment of <rs type="material" key="marmor">white marble</rs> <rs type="objectType">revetment</rs> panel with upper and lower edges (<measure type="length" unit="metre" dim="width">0.26</measure> × <measure type="length" unit="metre" dim="height">0.21</measure> × <measure type="length" unit="metre" dim="depth">0.04</measure>); there are traces of cement on the face from subsequent re-use.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> in two lines on the face.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>l.1, <measure type="length" unit="metre" dim="height">0.07</measure>, l.2, <measure type="length" unit="metre" dim="height">0.065</measure>; triangular trenches; ornate.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0301" notAfter="0600">Fourth/fifth/sixth century</date> (<rs type="criteria">lettering</rs>)</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Building works</seg> in the Hadrianic Baths </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050020</idno>
+            <idno type="IAph2007">iAph050020</idno>
+            <idno type="JMR2004">iAph0049</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>63.356</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A fragment of <material key="marmor">white marble</material>
+                              <objectType>revetment</objectType> panel with upper and lower edges (<width unit="metre">0.26</width> × <height unit="metre">0.21</height> × <depth unit="metre">0.04</depth>); there are traces of cement on the face from subsequent re-use.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in two lines on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>l.1, <height unit="metre">0.07</height>, l.2, <height unit="metre">0.065</height>; triangular trenches; ornate.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace/>
+                     <origDate notBefore="0301"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering">Fourth/fifth/sixth century (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="HadrBath">Hadrianic Baths</rs>: north-west area, trench 1.</provenance>
+                  <provenance type="observed" when="1977">Museum (1977).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-25" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">tagged and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_D_35A.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<ab>
-		<lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">λ</unclear>ιω<unclear reason="damage">ν</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/>
-		<lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">τρη</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/>
+		<lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">λ</unclear>ιω<unclear reason="damage">ν</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		<lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">τρη</orig><gap reason="lost" unit="character" extent="unknown"/>
 		</ab>
 		</div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <note place="not specified" anchored="yes">No words determinable.</note>
-      </div><div type="commentary">
-        <head>Commentary</head>
-		<p>See discussion at <xref type="eAla-text" n="IV.37">IV.37</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="HadrBath">Hadrianic Baths</rs>: north-west area, trench 1.</rs>. Original location: <rs key="HadrBath" type="monuList" cert="low">Hadrianic Baths</rs>. Last recorded location: <rs type="lastLocation">Museum (1977).</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition in <date value="1963" notBefore="1963" notAfter="1963" exact="both">1963</date> (<rs type="invNo">63.356</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>49</biblScope> and plate xii</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257479">598</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcriptions (Reynolds, Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="77_D_35A"><figDesc>Face (1977)</figDesc></figure></p></div>
-
-      
-
-      
-
-    </body>
-  </text>
+         <div type="translation">
+            <note place="not specified" xml:lang=""/>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="IV.37" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>49</citedRange> and plate xii</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257479">598</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

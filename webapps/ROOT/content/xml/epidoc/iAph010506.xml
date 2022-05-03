@@ -1,110 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010506" n="iAph0208 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType">Place inscription</rs> of mydrostasia</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-06-02</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change>
-  <date>2003-08-30</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged, lemmatised and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">masonry block</rs> (W. <measure type="length" unit="metre" dim="width">0.71</measure>, H. <measure type="length" unit="metre" dim="height">0.25</measure>, depth not
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Place inscription of mydrostasia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010506</idno>
+            <idno type="IAph2007">iAph010506</idno>
+            <idno type="JMR2004">iAph0208</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>masonry block</objectType> (W. <width unit="metre">0.71</width>, H. <height unit="metre">0.25</height>, depth not
 measurable).</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>Cut on the face.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p><measure type="length" unit="metre" dim="height">0.035</measure>.</p>
-      </div>
-
-      <div n="date" type="description">
-        <head>Date</head><p><date notAfter="0900" notBefore="0401" cert="low">Fifth-tenth century A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">content</rs>)</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
-        <ab><lb n="1"/><g type="cross"/> <w lemma="τόπος"><expan><abbr>τό</abbr><supplied reason="abbreviation">πος</supplied></expan></w> <w lemma="μυδροστασία">μυδροστα<lb n="2" type="worddiv"/>σίας</w> <g type="cross"/></ab>
-      </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p><foreign lang="grc"><expan><abbr>τό</abbr><supplied reason="abbreviation">πος</supplied></expan> τῆς</foreign> Roueché, <title level="m">ALA</title> (from an inadequate photograph).</p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>Place of the <seg cert="low">forge</seg>.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head><p>See discussion at <xref type="eAla-text" n="XI.16">XI.16</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="Tetrapylon">Tetrapylon</rs> street: reused in a low course of the east wall
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Cut on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.035</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0401" notAfter="0900" evidence="lettering content">Fifth-tenth century A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">content</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Tetrapylon">Tetrapylon</rs> street: reused in a low course of the east wall
 of the portico on the east side of the street, south of the
-Tetrapylon.</rs>. Original location: <rs type="origLocation">Unknown.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU excavation in <date value="1992" notBefore="1992" notAfter="1992" exact="both">1988</date>.</p>
-      </div><div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>208</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257586">699</biblScope></bibl>.</p>
+Tetrapylon.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription from photograph (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-30" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
         
+        <ab><lb n="1"/><g ref="#cross"/> <w lemma="τόπος"><expan><abbr>τό</abbr><ex>πος</ex></expan></w> <w lemma="μυδροστασία">μυδροστα<lb n="2" break="no"/>σίας</w> <g ref="#cross"/></ab>
       </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription from photograph (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p>No image.</p>
-      </div>
-
-    
-
-      
-
+         <div type="apparatus">
+            <p>
+               <foreign xml:lang="grc">
+                  <expan>
+                     <abbr>τό</abbr>
+                     <ex>πος</ex>
+                  </expan> τῆς</foreign> Roueché, <title level="m">ALA</title> (from an inadequate photograph).</p>
+         </div>
+         <div type="translation">
+            <ab>Place of the <seg cert="low">forge</seg>.</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="XI.16" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>208</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257586">699</citedRange>
+               </bibl>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

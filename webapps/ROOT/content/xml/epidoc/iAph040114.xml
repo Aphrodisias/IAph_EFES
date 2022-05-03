@@ -1,83 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph040114" n="iAph1242 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Sundial</rs> <rs type="textType">dedication</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-03-19</date><respStmt><name>GB</name></respStmt><item>DONE</item></change>
-<change><date>2007-01-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Lower part of a <rs type="material">white marble</rs> <rs type="objectType">sundial</rs>, (<measure type="length" unit="metre" dim="width">0.32</measure>   × <measure type="length" unit="metre" dim="height">0.35</measure>   × <measure type="length" unit="metre" dim="depth">0.21</measure>), broken across the dial.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the lowest fascia of the moulding below.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>informal, Second to third centuries A.D. standard forms; scroll for abbreviation; <measure type="length" unit="metre" dim="height">0.015</measure>-2.0.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <persName type="aphrodisian"><name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αύδιος</supplied></expan></name> <name>Δ<gap reason="lost" extent="unknown" unit="character" dim="right"/></name></persName></ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sundial dedication</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph040114</idno>
+            <idno type="IAph2007">iAph040114</idno>
+            <idno type="JMR2004">iAph1242</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>92.53</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower part of a <material>white marble</material>
+                              <objectType>sundial</objectType>, (<width unit="metre">0.32</width>   × <height unit="metre">0.35</height>   × <depth unit="metre">0.21</depth>), broken across the dial.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the lowest fascia of the moulding below.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>informal, Second to third centuries A.D. standard forms; scroll for abbreviation; <height unit="metre">0.015</height>-2.0.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+Second to third centuries A.D. (<rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">South Agora</rs>: in spoils dump to the East of the Agora Gate</provenance>
+                  <provenance type="observed" when="1992">Museum (1992)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-03-19" who="GB">DONE</change>
+         <change when="2007-01-24" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="92_B_12.jpg">
+            <desc>Face (1992)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>Cl(audius) D[...]</p>
+<ab><lb n="1"/> <persName type="attested"><name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιος</ex></expan></name> <name>Δ<gap reason="lost" unit="character" extent="unknown"/></name></persName></ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>This sundial resembles a Severan one said to have come from Aphrodisias and now in the Selcuk Museum.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">South Agora</rs>: in spoils dump to the East of the Agora Gate</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1992)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1992 (<rs type="invNo">92.53</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>cited by <bibl>M-H Gates, AJA 98 (1994), <biblScope>267</biblScope> and fig. 11</bibl>, whence <bibl n="be">BullEp <biblScope>1995.136</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="92_B_12"><figDesc>Face (1992)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>Cl(audius) D[...]</p>
+         </div>
+         <div type="commentary">
+            <p>This sundial resembles a Severan one said to have come from Aphrodisias and now in the Selcuk Museum.</p>
+         </div>
+         <div type="bibliography">
+            <p>cited by <bibl>M-H Gates, AJA 98 (1994), <citedRange>267</citedRange> and fig. 11</bibl>, whence <bibl n="be">BullEp <citedRange>1995.136</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

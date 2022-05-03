@@ -1,84 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120525" n="iAph1552 ">
- <teiHeader>
-  <fileDesc>
-   <titleStmt>
-    <title level="m"><rs type="textType">Funerary</rs> inscription for Zenon son of Zenon ... son of
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for Zenon son of Zenon ... son of
      Kallias</title>
-    </titleStmt>
-   <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-   <sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-  </fileDesc>
-  <profileDesc>
-   <langUsage>
-    <language id="en">English</language>
-    <language id="fr">French</language>
-    <language id="de">German</language>
-    <language id="grc">Ancient Greek</language>
-    <language id="grc-Latn">Transliterated Greek</language>
-    <language id="el">Modern Greek</language>
-    <language id="it">Italian</language>
-    <language id="la">Latin</language>
-    <language id="es">Spanish</language>
-    <language id="tr">Turkish</language>
-   </langUsage>
-   <textClass>
-    <keywords>
-     <term>
-      <geogName type="ancientRegion" key="Asia">Asia</geogName>
-     </term>
-     <term>
-      <geogName type="modernCountry" key="TR">Turkey</geogName>
-     </term>
-     <term>
-      <placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName>
-     </term>
-     <term>
-      <placeName type="modernFindspot" key="Geyre">Geyre</placeName>
-     </term>
-    </keywords>
-   </textClass>
-  </profileDesc>
-  <revisionDesc>
-   <change>
-    <date/>
-    <respStmt>
-     <name>GB</name>
-    </respStmt>
-    <item>hand tidied</item>
-   </change>
-   <change>
-    <date>2005-12-13</date>
-    <respStmt>
-     <name>Elliott Hall</name>
-    </respStmt>
-    <item>Batch converted Word2XML</item>
-   </change>
-  </revisionDesc>
- </teiHeader>
- <text>
-  <body>
-   <div type="description" n="monument" sample="complete" org="uniform">
-    <head>Description of Monument</head>
-    <p><rs type="material" key="marmor">White marble</rs> block (<measure dim="width" type="length" unit="metre">1.51</measure> x <measure dim="height" type="length" unit="metre">0.74</measure>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120525</idno>
+            <idno type="IAph2007">iAph120525</idno>
+            <idno type="JMR2004">iAph1552</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material> block (<width unit="metre">1.51</width> x <height unit="metre">0.74</height>
      x depth not measurable).</p>
-   </div>
-   <div type="description" n="text" sample="complete" org="uniform">
-    <head>Description of Text</head>
-    <p>Inscribed on the face. </p>
-   </div>
-   <div type="description" n="letters" sample="complete" org="uniform">
-    <head>Letters</head>
-    <p>
-     <measure dim="height" type="length" unit="metre">0.025-0.03</measure>
-    </p>
-   </div>
-   <div type="description" n="date" sample="complete" org="uniform">
-    <head>Date</head>
-    <p>
-     <date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p>
-   </div>
-   <div type="edition" lang="grc">
-    <head lang="en">Edition</head>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on the face. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025-0.03</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+     Second to third centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South-east</rs>: stretch south east of the east
+      gate, between <ref type="inscription" n="397" target="120520.xml"/>, <ref type="inscription" n="1281" target="120514.xml"/>, <ref type="inscription" n="1282" target="120515.xml"/> (MAMA 502 and 434, 447).</provenance>
+                  <provenance type="observed" when="1973">Findspot (1973)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="&#xA;-----Elliott-Hall&#xA;----">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="&#xA;-----GB&#xA;----">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_S_33.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="73_X_11A.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+    
     <ab><lb n="1"/>
      <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>
      <w lemma="σορός">
@@ -98,46 +133,46 @@
      <lb n="2"/><w lemma="εἰμί">
       <supplied reason="lost">εἰσιν</supplied>
      </w>
-     <persName type="aphrodisian"><name><supplied reason="lost">Μεν</supplied><gap extent="6" reason="lost" unit="character"/></name></persName>
+     <persName type="attested"><name><supplied reason="lost">Μεν</supplied><gap reason="lost" unit="character" quantity="6"/></name></persName>
      <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>
-     <persName type="aphrodisian">
-      <name reg="Ζήνων"><supplied reason="lost">Ζ</supplied>ήνωνος</name>
+     <persName type="attested">
+      <name nymRef="#Ζήνων"><supplied reason="lost">Ζ</supplied>ήνωνος</name>
       <w lemma="ὁ">τῶν</w>
-      <persName type="aphrodisian">
-       <name reg="Ζήνων">Ζήνωνος</name>
+      <persName type="attested">
+       <name nymRef="#Ζήνων">Ζήνωνος</name>
        <w lemma="ὁ">τοῦ</w>
        <lb n="3"/>
-       <persName type="aphrodisian"><gap reason="lost" extent="8" unit="character"/>
+       <persName type="attested"><gap reason="lost" unit="character" quantity="8"/>
         <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>
-        <persName type="aphrodisian"><name reg="Ζήνων"><supplied reason="lost">Ζ</supplied>ήνωνος</name>
+        <persName type="attested"><name nymRef="#Ζήνων"><supplied reason="lost">Ζ</supplied>ήνωνος</name>
          <w lemma="ὁ">τοῦ</w>
-         <persName type="aphrodisian"><name reg="Καλλίας">Καλλίου</name></persName></persName></persName></persName></persName>
+         <persName type="attested"><name nymRef="#Καλλίας">Καλλίου</name></persName></persName></persName></persName></persName>
      <w lemma="εἰς">εἰς</w>
      <w lemma="ὅς">ἣν</w>
-     <w lemma="σορός">σο<lb n="4" type="worddiv"/><supplied reason="lost">ρὸν</supplied></w>
+     <w lemma="σορός">σο<lb n="4" break="no"/><supplied reason="lost">ρὸν</supplied></w>
      <w lemma="μηδείς">
       <supplied reason="lost">μηδενὶ</supplied>
      </w>
      <w lemma="ἔξεστι"><supplied reason="lost">ἐξέ</supplied>σται</w>
      <w lemma="ἐνθάπτω">ἐνταφῆναι</w>
      <w lemma="ἕτερος">ἑτέρῳ</w>
-     <w lemma="χωρίς">χωρὶς</w> <persName type="aphrodisian"><name>Με<lb n="5" type="worddiv"/><supplied reason="lost">ν</supplied>
-     <gap reason="lost" extent="6" unit="character"/></name></persName>
+     <w lemma="χωρίς">χωρὶς</w> <persName type="attested"><name>Με<lb n="5" break="no"/><supplied reason="lost">ν</supplied>
+     <gap reason="lost" unit="character" quantity="6"/></name></persName>
      <w lemma="καί">
       <supplied reason="lost">καὶ</supplied>
      </w>
-     <persName type="aphrodisian">
-      <name reg="Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνος</name>
+     <persName type="attested">
+      <name nymRef="#Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνος</name>
      </persName>
      <w lemma="ὁ">τῶν</w>
      <w lemma="προγράφω">προγεγραμμένων</w>
      <w lemma="καί">καὶ</w>
-     <lb n="6"/><gap reason="lost" extent="10" unit="character"/>
-     <persName type="aphrodisian">
-      <name reg="Ἄδραστος"><supplied reason="lost">Ἀ</supplied>δράστου</name>
+     <lb n="6"/><gap reason="lost" unit="character" quantity="10"/>
+     <persName type="attested">
+      <name nymRef="#Ἄδραστος"><supplied reason="lost">Ἀ</supplied>δράστου</name>
       <w lemma="ὁ">τῆς</w>
-      <persName type="aphrodisian">
-       <name reg="Ζήνων">Ζήνωνος</name>
+      <persName type="attested">
+       <name nymRef="#Ζήνων">Ζήνωνος</name>
       </persName>
      </persName>
      <w lemma="γυνή">γυναικὸς</w>
@@ -165,11 +200,11 @@
      <w lemma="ὅς">οὓς</w>
      <w lemma="ἐάν">ἂν</w>
      <w lemma="αὐτός">αὐτοὶ</w>
-     <w lemma="βούλομαι">βουληθῶ<lb n="9" type="worddiv"/><supplied reason="lost">σιν</supplied></w>
+     <w lemma="βούλομαι">βουληθῶ<lb n="9" break="no"/><supplied reason="lost">σιν</supplied></w>
      <w lemma="ἐνθάπτω"><supplied reason="lost">ἐνταφῆν</supplied>αι</w>, <w lemma="ἕτερος">ἕτερος</w>
      <w lemma="δέ">δὲ</w>
      <w lemma="οὐδείς">οὐδεὶς </w><w lemma="ἔχω">ἕξει</w>
-     <w lemma="ἐξουσία">ἐξου<lb n="10" type="worddiv"/>
+     <w lemma="ἐξουσία">ἐξου<lb n="10" break="no"/>
       <supplied reason="lost">σίαν</supplied></w>
      <w lemma="θάπτω">
       <supplied reason="lost">θάψαι</supplied>
@@ -211,15 +246,15 @@
       <w lemma="δηνάριον">
        <expan>
         <abbr>
-         <orig>
-          <g type="denarius"/>
-         </orig>
-        </abbr><supplied reason="abbreviation">δηνάρια</supplied>
+         <am>
+          <g ref="#denarius"/>
+         </am>
+        </abbr><ex>δηνάρια</ex>
        </expan>
       </w>
      </supplied>
      <num>
-      <gap reason="lost" extent="1" unit="character"/>
+      <gap reason="lost" unit="character" quantity="1"/>
      </num>
      <w lemma="οὗτος"><supplied reason="lost">ταύτης</supplied></w>
      <supplied reason="lost">τῆς</supplied>
@@ -236,74 +271,46 @@
      <w lemma="στεφανηφόρος">στεφανηφόρου</w>
      <w lemma="ὁ">τὸ</w>
      <num value="9">θ</num>
-     <persName type="aphrodisian">
-      <name reg="Ἀτταλίς">Ἀτ<lb n="15" type="worddiv"/><supplied reason="lost">ταλίδος</supplied></name>
+     <persName type="attested">
+      <name nymRef="#Ἀτταλίς">Ἀτ<lb n="15" break="no"/><supplied reason="lost">ταλίδος</supplied></name>
       <w lemma="ὁ">
        <supplied reason="lost">τῆς</supplied>
       </w>
-      <persName type="aphrodisian">
-       <name reg="Μενεκράτης"><supplied reason="lost">Μεν</supplied>εκράτους</name>
+      <persName type="attested">
+       <name nymRef="#Μενεκράτης"><supplied reason="lost">Μεν</supplied>εκράτους</name>
       </persName>
-      <name reg="Ἄπφιος">Ἀπφίου</name>
+      <name nymRef="#Ἄπφιος">Ἀπφίου</name>
      </persName> <w lemma="ἡρωίς">ἡρωΐδος</w>, <w lemma="μείς">μηνὸς</w> 
-     <lb n="15a"/><gap reason="lost" extent="13" unit="character"/>
+     <lb n="15a"/><gap reason="lost" unit="character" quantity="13"/>
      <space extent="3" unit="character" dim="horizontal"/>
      <rs type="month">
       <w lemma="Κλαυδιῆος">Κλ<unclear reason="damage">αυδ</unclear>ιήου</w>
      </rs>
-     <g type="leaf"/>
+     <g ref="#leaf"/>
     </ab>
    </div>
-   <div type="apparatus" sample="complete" org="uniform">
-    <head>Apparatus</head>
-    <p/>
-   </div>
-   <div type="translation" sample="complete" org="uniform">
-    <head>Translation</head>
-    <p>No translation yet (2007)</p>
-   </div>
-   <div type="commentary" sample="complete" org="uniform">
-    <head>Commentary</head>
-    <p>No commentary yet (2007)</p>
-   </div>
-   <div type="history" n="locations" sample="complete" org="uniform">
-    <head>Locations</head>
-    <p>
-     <rs type="origLocation">Unknown</rs>
-     <rs type="found"><rs type="monuList">Walls, South-east</rs>: stretch south east of the east
-      gate, between <xref type="inscription" n="397" href="120520">12.520</xref>, <xref type="inscription" n="1281" href="120514">12.514</xref>, <xref type="inscription" n="1282" href="120515">12.515</xref> (MAMA 502 and 434, 447).</rs>
-     <rs type="lastLocation">Findspot (1973)</rs>
-    </p>
-   </div>
-   <div type="history" n="text-constituted-from" sample="complete" org="uniform">
-    <head>Text Constituted From</head>
-    <p>Preliminary transcription (Reynolds); publications.</p>
-   </div>
-   <div type="history" n="record" sample="complete" org="uniform">
-    <head>History of Recording</head>
-    <p>Recorded by Gaudin (77); by the MAMA expedition; by the NYU expedition</p>
-   </div>
-   <div type="bibliography" sample="complete" org="uniform">
-    <head>Bibliography</head>
-    <p><bibl n="reinach">Reinach, REG 19, 1906, 272-274, no. <biblScope>168</biblScope></bibl>; by
+         <div type="apparatus" sample="complete" org="uniform">
+            <p/>
+         </div>
+         <div type="translation" sample="complete" org="uniform">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div type="commentary" sample="complete" org="uniform">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography" sample="complete" org="uniform">
+            <p>
+               <bibl n="reinach">Reinach, REG 19, 1906, 272-274, no. <citedRange>168</citedRange>
+               </bibl>; by
       <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no.
-     <biblScope>556a</biblScope></bibl>, whence <bibl n="PHI">
-      <author>McCabe</author>
-      <title level="m">PHI Aphrodisias</title>
-      <biblScope n="257422">542</biblScope>
-     </bibl></p>
-   </div>
-   <div type="figure" n="photographs" sample="complete" org="uniform">
-    <head>Photographs</head>
-    <p>
-     <figure href="73_S_33">
-      <figDesc>Face (1973)</figDesc>
-     </figure>
-     <figure href="73_X_11A">
-      <figDesc>Face (1973)</figDesc>
-     </figure>
-    </p>
-   </div>
-  </body>
- </text>
+     <citedRange>556a</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257422">542</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

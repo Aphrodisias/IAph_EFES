@@ -1,100 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120308" n="iAph1018 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for  Adrastos son of Nikotimos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Posthumous honours for  Adrastos son of Nikotimos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120308</idno>
+            <idno type="IAph2007">iAph120308</idno>
+            <idno type="JMR2004">iAph1018</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType key="base">base</objectType> without moulding (<width unit="metre">0.54</width> × <height unit="metre">1.095</height> × <depth>0.54</depth>) chipped above, and damaged at the lower right side.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>l.1, <height unit="metre">0.0275</height>; ll. 2 ff., <height unit="metre">0.015–0.0175</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="prosopography">First century A.D. (<rs type="criteria">prosopography</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs>: fallen, in  the stretch just north of the South-east Gate, east of <ref type="inscription" n="1031" target="120325.xml"/> , <ref type="inscription" n="1308" target="120326.xml"/>.</provenance>
+                  <provenance type="observed" when="1973">Findspot (1973)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); Publications; Deering; Gaudin's squeeze.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-28" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_W_01.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="Deering_04v.jpg">
+            <desc>Deering notebook, page 4v</desc>
+         </graphic>
+         <graphic url="Deering_05.jpg">
+            <desc>Deering notebook, page 5</desc>
+         </graphic>
+         <graphic url="gaudin_0063.jpg">
+            <desc>Gaudin squeeze </desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-28</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-  
-  <change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType" reg="base">base</rs> without moulding (<measure type="length" unit="metre" dim="width">0.54</measure> × <measure type="length" unit="metre" dim="height">1.095</measure> × <measure type="depth" dim="depth">0.54</measure>) chipped above, and damaged at the lower right side.</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> <rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p>l.1, <measure dim="height" type="length" unit="metre">0.0275</measure>; ll. 2 ff., <measure dim="height" type="length" unit="metre">0.015–0.0175</measure>.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notAfter="0100" notBefore="0001" exact="none">First century A.D.</date> (<rs type="criteria">prosopography</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><space extent="5" unit="character" dim="horizontal"/>  <w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">ο</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="1"/></rdg></app>ἱ</w>  <w lemma="νέος">νέοι</w>    <space extent="5" unit="character" dim="horizontal"/><lb n="2"/><w lemma="τιμάω"><supplied reason="lost">ἐτεί</supplied><unclear reason="damage">μ</unclear>ησαν</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλλίσταις</w> <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="μέγας">μεγίσταις</w> <w lemma="καί">καὶ</w> <w lemma="πρῶτος">πρώταις</w> <w lemma="τιμή">τειμαῖς</w> <lb n="4"/> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἄδραστον</name> <persName type="aphrodisian"><name reg="Νεικότειμος">Νεικοτείμου</name> <w lemma="ὁ"> τοῦ</w><lb n="5"/> <persName type="aphrodisian"><name reg="Ἀρτεμίδωρος">Ἀρτεμιδώρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name> <name reg="Ἱέραξ">Ἱέρακος</name></persName></persName></persName></persName> <lb n="6"/> <w lemma="υἱός">υἱὸν</w> <w lemma="νέος">νέων</w> <w lemma="ἀνήρ">ἄνδρα</w> <w lemma="μέγας">μέγαν</w> <w lemma="φιλόπατρις">φιλόπατριν</w> <lb n="7"/> <w lemma="καί">καὶ</w> <w lemma="φιλοπολίτης">φιλοπολείτην</w> <w lemma="καί">καὶ</w> <w lemma="εὐεργέτης">εὐεργέτην</w> <w lemma="καί">καὶ</w> <lb n="8"/> <w lemma="κτίστης">κτίστην</w> <w lemma="γίγνομαι">γεγονότα</w> <w lemma="διά">διὰ</w> <w lemma="πρόγονος">προγόνων</w> <lb n="9"/> <w lemma="ὁ">τοῦ</w> <w lemma="δῆμος">δήμου</w> <w lemma="ἀρχιερατεύω">ἀρχιερατεύσαντα</w><w lemma="ὁ"> τῶν</w><lb n="10"/> <w lemma="σεβαστός">Σεβαστῶν</w> <w lemma="γυμνασιαρχέω">γυμνασιαρχήσαντα</w> <w lemma="δίς">δὶς</w> <lb n="11"/> <w lemma="δρακτόν">δρακτοῖς</w> <w lemma="ἔλαιον">ἐλαίοις</w> <w lemma="επίρυτος">ἐπιρύτοις</w> <w lemma="ἀνελλιπῶς">ἀν<app type="previouslyread"><rdg resp="previous">ε<unclear reason="damage">λ</unclear></rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="2"/></rdg></app><lb n="12" type="worddiv"/>λιπῶς</w> <w lemma="στεφανηφορέω">στεφανηφορήσαντα</w> <w lemma="δίς">δίς</w> <lb n="13"/> <w lemma="ἀγωνοθετέω">ἀγωνοθετήσαντα</w> <w lemma="τρίς">τρίς</w> <w lemma="ἀγορανομέω">ἀγορ<app type="previouslyread"><rdg resp="previous">α</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="1"/></rdg></app><lb n="14" type="worddiv"/><unclear reason="undefined">ν</unclear>ομήσαντα</w> <w lemma="τετρακίς">τετράκις</w> <w lemma="κτίστης">κτίστην</w> <lb n="15"/><w lemma="πρεσβεύω"><unclear reason="damage">π</unclear>ρεσβεύσαντα</w> <w lemma="πλεονάκις">πλεονάκις</w> <w lemma="ὑπέρ"><app type="previouslyread"><rdg resp="previous">ὑπὲρ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app></w>  <lb n="16"/><w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">τ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app>ῆς</w> <w lemma="πατρίς">πατρίδος</w> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="ἔκδικος">ἔ<app type="previouslyread"><rdg resp="previous">κδι</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="3"/></rdg></app><lb n="17" type="worddiv"/><unclear reason="damage">κ</unclear>ον</w> <w lemma="δημόσιος">δημοσίων</w> <w lemma="πρᾶγμα">πραγμάτων</w> <w lemma="ποιέω"><app type="previouslyread"><rdg resp="previous">πε</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="2"/></rdg></app><lb n="18" type="worddiv"/>ποιημένον</w> <w lemma="ἑστίασις">ἑστιάσεις</w> <w lemma="καί">καὶ</w> <w lemma="ἐπίδοσις">ἐπ<app type="previouslyread"><rdg resp="previous">ιδό</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="3"/></rdg></app><lb n="19" type="worddiv"/>σεις</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="πολυτελής">πολυτελε<app type="previouslyread"><rdg resp="previous">ῖς</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="2"/></rdg></app></w>  <w lemma="διά"><app type="previouslyread"><rdg resp="previous">διά</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="3"/></rdg></app></w><lb n="20"/> <w lemma="τε">τε</w> <w lemma="ὁ">τὴν</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <w lemma="διηνεκή">διη<app type="previouslyread"><rdg resp="previous">νεκῆ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app></w><lb n="21"/><w lemma="εὔνοια"><app type="previouslyread"><rdg resp="previous">ε</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app>ὔνοιαν</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τοὺ<unclear reason="damage">ς</unclear></w>  <w lemma="νέος"><app type="previouslyread"><rdg resp="previous">νέ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="2"/></rdg></app><lb n="22" type="worddiv"/>ους</w> <w lemma="φιλάγαθος">φιλάγαθον</w> <w lemma="διάθεσις">διάθεσιν</w> <w lemma="ζάω">ζῶντ<app type="previouslyread"><rdg resp="previous">α</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app></w>  <lb n="23"/><space extent="2" unit="character" dim="horizontal"/> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑπόδειγμα</w> <w lemma="ἀρετή">ἀρετ<app type="previouslyread"><rdg resp="previous">ῆς</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app></w><lb n="24"/><w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">τ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="1"/></rdg></app>ὴν</w> <w lemma="δέ">δὲ</w> <w lemma="ἀνάθεσις">ἀνάθεσιν</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἄγαλμα">ἀγάλματο<app type="previouslyread"><rdg resp="previous">ς</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app>    </w><w lemma="ποιέω"><app type="previouslyread"><rdg resp="previous">πε</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app><lb n="25" type="worddiv"/><app type="previouslyread"><rdg resp="previous">π</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="1"/></rdg></app>οιῆσθαι</w> <w lemma="ὁ">τοὺς</w> <w lemma="νέος">νέους</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="ἐπιμελέω"><app type="previouslyread"><rdg resp="previous">ἐπι</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app><lb n="26" type="worddiv"/>μεληθέντος</w>  <persName type="aphrodisian" full="yes"><name reg="Ἑρμογένης">Ἑρμογένους</name> <w lemma="ὁ">το<supplied reason="lost">ῦ</supplied></w> <persName type="aphrodisian"><name reg="Ὑψικλῆς">Ὑψ<app type="previouslyread"><rdg resp="previous">ι<unclear reason="damage">κ</unclear>λέους</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app>  </name></persName></persName><lb n="27"/><w lemma="φύσις">φύσε<supplied reason="lost">ι</supplied></w> <w lemma="δέ">δὲ</w> <persName type="aphrodisian" full="yes"><name reg="Ἑρμῆς">Ἑρμοῦ</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="γραμματεύς">γραμματ<unclear reason="damage">εω</unclear><app type="previouslyread"><rdg resp="previous">ς</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app></w>  <w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">τῶν</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app></w>  <lb n="28"/> <w lemma="νέος">νέων</w> <w lemma="ἐργεπιστατέω">ἐργεπιστατήσαντος</w> <persName type="aphrodisian" full="yes"><name reg="Πάνφιλος">Πα<unclear reason="damage">ν</unclear><app type="previouslyread"><rdg resp="previous">φίλου</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" extent="4"/></rdg></app></name>  <lb n="29"/><space extent="2" unit="character" dim="horizontal"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name type=" " reg="Ἀρτέμων">Ἀρτέμωνος</name>  <name type=" " reg="Κροκίων">Κροκίωνος</name></persName></persName></ab></div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); Publications; Deering; Gaudin's squeeze.</p>
-</div>
-
-<div type="apparatus"><head>Apparatus</head><p>Letters read by Deering at the beginning of lines 16, 24 and 25, and the ends of lines 11, 13 and 15 onwards were no longer visible by 1934, and few more have become illegible: letters recorded by Deering but no longer legible are highlighted.</p></div><div type="translation">
-<head>Translation</head>
-<p>The neoi honoured with the finest, greatest and foremost honours Adrastos, son of Neikoteimos Hierax, the son of Artemidoros the son of Zenon, Son of the Neoi, a great man who loved his fatherland and his city, both a benefactor and a founder of the People through the tradition of his ancestors. He was high priest of the emperors, gymnasiarch twice, providing a continuous and abundant flow of olive oil, stephanephoros twice, contest-president three times, market overseer four times, a founder; he acted as  ambassador for his fatherland on many occasions. He was an advocate of the affairs of the people and gave costly feasts and contributions from his own funds because of the constant good will he bore to the fatherland and because of his kindly disposition toward the neoi. He lived as a model of excellence.</p><p>The erection of the statue was undertaken by the Neoi from their own funds, under the supervision of Hermogenes, son of Hypsikles, by birth son of Hermes, the secretary of the Neoi, and the management of Pamphilos Krokion, son of Artemon.</p><p>(Translated Smith, modified Roueché)</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>See the discussion by Smith, loc. cit.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Walls, East (south part)</rs>: fallen, in  the stretch just north of the South-east Gate, east of <xref type="inscription" n="1031" href="120325">12.325</xref> , <xref type="inscription" n="1308" href="120326">12.326</xref>.</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot (1973)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Deering (4v-5, no. 18);  by Gaudin (162); by the MAMA expedition; by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p><bibl n="leake1843">Leake, from Deering, TRSL 1843, 235 and 290-291, no. <biblScope>6</biblScope></bibl> whence <bibl n="LBW">Waddington, LBW <biblScope>1602a</biblScope></bibl>, <bibl n="liermann1889">Liermann 101-102, no. <biblScope>19</biblScope></bibl>; mentioned by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 113-114, no. <biblScope>33</biblScope></bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <biblScope>484</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257101">222</biblScope></bibl>. Published  by <bibl n="rrrs2006"> <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, p.22.</bibl></p>
- </div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_W_01"><figDesc>Face (1973)</figDesc></figure></p></div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Deering_04v"><figDesc>Deering notebook, page 4v</figDesc></figure><figure href="Deering_05"><figDesc>Deering notebook, page 5</figDesc></figure><figure href="gaudin_0063"><figDesc>Gaudin squeeze </figDesc></figure></p></div></body>
-</text>
-
+<ab><lb n="1"/><space extent="5" unit="character" dim="horizontal"/>  <w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">ο</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="1"/></rdg></app>ἱ</w>  <w lemma="νέος">νέοι</w>    <space extent="5" unit="character" dim="horizontal"/><lb n="2"/><w lemma="τιμάω"><supplied reason="lost">ἐτεί</supplied><unclear reason="damage">μ</unclear>ησαν</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλλίσταις</w> <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="μέγας">μεγίσταις</w> <w lemma="καί">καὶ</w> <w lemma="πρῶτος">πρώταις</w> <w lemma="τιμή">τειμαῖς</w> <lb n="4"/> <persName type="attested"><name nymRef="#Ἄδραστος">Ἄδραστον</name> <persName type="attested"><name nymRef="#Νεικότειμος">Νεικοτείμου</name> <w lemma="ὁ"> τοῦ</w><lb n="5"/> <persName type="attested"><name nymRef="#Ἀρτεμίδωρος">Ἀρτεμιδώρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name> <name nymRef="#Ἱέραξ">Ἱέρακος</name></persName></persName></persName></persName> <lb n="6"/> <w lemma="υἱός">υἱὸν</w> <w lemma="νέος">νέων</w> <w lemma="ἀνήρ">ἄνδρα</w> <w lemma="μέγας">μέγαν</w> <w lemma="φιλόπατρις">φιλόπατριν</w> <lb n="7"/> <w lemma="καί">καὶ</w> <w lemma="φιλοπολίτης">φιλοπολείτην</w> <w lemma="καί">καὶ</w> <w lemma="εὐεργέτης">εὐεργέτην</w> <w lemma="καί">καὶ</w> <lb n="8"/> <w lemma="κτίστης">κτίστην</w> <w lemma="γίγνομαι">γεγονότα</w> <w lemma="διά">διὰ</w> <w lemma="πρόγονος">προγόνων</w> <lb n="9"/> <w lemma="ὁ">τοῦ</w> <w lemma="δῆμος">δήμου</w> <w lemma="ἀρχιερατεύω">ἀρχιερατεύσαντα</w><w lemma="ὁ"> τῶν</w><lb n="10"/> <w lemma="σεβαστός">Σεβαστῶν</w> <w lemma="γυμνασιαρχέω">γυμνασιαρχήσαντα</w> <w lemma="δίς">δὶς</w> <lb n="11"/> <w lemma="δρακτόν">δρακτοῖς</w> <w lemma="ἔλαιον">ἐλαίοις</w> <w lemma="επίρυτος">ἐπιρύτοις</w> <w lemma="ἀνελλιπῶς">ἀν<app type="previouslyread"><rdg resp="previous">ε<unclear reason="damage">λ</unclear></rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="2"/></rdg></app><lb n="12" break="no"/>λιπῶς</w> <w lemma="στεφανηφορέω">στεφανηφορήσαντα</w> <w lemma="δίς">δίς</w> <lb n="13"/> <w lemma="ἀγωνοθετέω">ἀγωνοθετήσαντα</w> <w lemma="τρίς">τρίς</w> <w lemma="ἀγορανομέω">ἀγορ<app type="previouslyread"><rdg resp="previous">α</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="1"/></rdg></app><lb n="14" break="no"/><unclear reason="undefined">ν</unclear>ομήσαντα</w> <w lemma="τετρακίς">τετράκις</w> <w lemma="κτίστης">κτίστην</w> <lb n="15"/><w lemma="πρεσβεύω"><unclear reason="damage">π</unclear>ρεσβεύσαντα</w> <w lemma="πλεονάκις">πλεονάκις</w> <w lemma="ὑπέρ"><app type="previouslyread"><rdg resp="previous">ὑπὲρ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app></w>  <lb n="16"/><w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">τ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app>ῆς</w> <w lemma="πατρίς">πατρίδος</w> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="ἔκδικος">ἔ<app type="previouslyread"><rdg resp="previous">κδι</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="3"/></rdg></app><lb n="17" break="no"/><unclear reason="damage">κ</unclear>ον</w> <w lemma="δημόσιος">δημοσίων</w> <w lemma="πρᾶγμα">πραγμάτων</w> <w lemma="ποιέω"><app type="previouslyread"><rdg resp="previous">πε</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="2"/></rdg></app><lb n="18" break="no"/>ποιημένον</w> <w lemma="ἑστίασις">ἑστιάσεις</w> <w lemma="καί">καὶ</w> <w lemma="ἐπίδοσις">ἐπ<app type="previouslyread"><rdg resp="previous">ιδό</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="3"/></rdg></app><lb n="19" break="no"/>σεις</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="πολυτελής">πολυτελε<app type="previouslyread"><rdg resp="previous">ῖς</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="2"/></rdg></app></w>  <w lemma="διά"><app type="previouslyread"><rdg resp="previous">διά</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="3"/></rdg></app></w><lb n="20"/> <w lemma="τε">τε</w> <w lemma="ὁ">τὴν</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <w lemma="διηνεκή">διη<app type="previouslyread"><rdg resp="previous">νεκῆ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app></w><lb n="21"/><w lemma="εὔνοια"><app type="previouslyread"><rdg resp="previous">ε</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app>ὔνοιαν</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τοὺ<unclear reason="damage">ς</unclear></w>  <w lemma="νέος"><app type="previouslyread"><rdg resp="previous">νέ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="2"/></rdg></app><lb n="22" break="no"/>ους</w> <w lemma="φιλάγαθος">φιλάγαθον</w> <w lemma="διάθεσις">διάθεσιν</w> <w lemma="ζάω">ζῶντ<app type="previouslyread"><rdg resp="previous">α</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app></w>  <lb n="23"/><space extent="2" unit="character" dim="horizontal"/> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑπόδειγμα</w> <w lemma="ἀρετή">ἀρετ<app type="previouslyread"><rdg resp="previous">ῆς</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app></w><lb n="24"/><w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">τ</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="1"/></rdg></app>ὴν</w> <w lemma="δέ">δὲ</w> <w lemma="ἀνάθεσις">ἀνάθεσιν</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἄγαλμα">ἀγάλματο<app type="previouslyread"><rdg resp="previous">ς</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app>    </w><w lemma="ποιέω"><app type="previouslyread"><rdg resp="previous">πε</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app><lb n="25" break="no"/><app type="previouslyread"><rdg resp="previous">π</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="1"/></rdg></app>οιῆσθαι</w> <w lemma="ὁ">τοὺς</w> <w lemma="νέος">νέους</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="ἐπιμελέω"><app type="previouslyread"><rdg resp="previous">ἐπι</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app><lb n="26" break="no"/>μεληθέντος</w>  <persName type="attested"><name nymRef="#Ἑρμογένης">Ἑρμογένους</name> <w lemma="ὁ">το<supplied reason="lost">ῦ</supplied></w> <persName type="attested"><name nymRef="#Ὑψικλῆς">Ὑψ<app type="previouslyread"><rdg resp="previous">ι<unclear reason="damage">κ</unclear>λέους</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app>  </name></persName></persName><lb n="27"/><w lemma="φύσις">φύσε<supplied reason="lost">ι</supplied></w> <w lemma="δέ">δὲ</w> <persName type="attested"><name nymRef="#Ἑρμῆς">Ἑρμοῦ</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="γραμματεύς">γραμματ<unclear reason="damage">εω</unclear><app type="previouslyread"><rdg resp="previous">ς</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app></w>  <w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">τῶν</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app></w>  <lb n="28"/> <w lemma="νέος">νέων</w> <w lemma="ἐργεπιστατέω">ἐργεπιστατήσαντος</w> <persName type="attested"><name nymRef="#Πάνφιλος">Πα<unclear reason="damage">ν</unclear><app type="previouslyread"><rdg resp="previous">φίλου</rdg><rdg resp="autopsy"><gap unit="character" reason="lost" quantity="4"/></rdg></app></name>  <lb n="29"/><space extent="2" unit="character" dim="horizontal"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀρτέμων">Ἀρτέμωνος</name>  <name nymRef="#Κροκίων">Κροκίωνος</name></persName></persName></ab></div>
+         <div type="apparatus">
+            <p>Letters read by Deering at the beginning of lines 16, 24 and 25, and the ends of lines 11, 13 and 15 onwards were no longer visible by 1934, and few more have become illegible: letters recorded by Deering but no longer legible are highlighted.</p>
+         </div>
+         <div type="translation">
+            <p>The neoi honoured with the finest, greatest and foremost honours Adrastos, son of Neikoteimos Hierax, the son of Artemidoros the son of Zenon, Son of the Neoi, a great man who loved his fatherland and his city, both a benefactor and a founder of the People through the tradition of his ancestors. He was high priest of the emperors, gymnasiarch twice, providing a continuous and abundant flow of olive oil, stephanephoros twice, contest-president three times, market overseer four times, a founder; he acted as  ambassador for his fatherland on many occasions. He was an advocate of the affairs of the people and gave costly feasts and contributions from his own funds because of the constant good will he bore to the fatherland and because of his kindly disposition toward the neoi. He lived as a model of excellence.</p>
+            <p>The erection of the statue was undertaken by the Neoi from their own funds, under the supervision of Hermogenes, son of Hypsikles, by birth son of Hermes, the secretary of the Neoi, and the management of Pamphilos Krokion, son of Artemon.</p>
+            <p>(Translated Smith, modified Roueché)</p>
+         </div>
+         <div type="commentary">
+            <p>See the discussion by Smith, loc. cit.</p>
+         </div>
+         <div type="bibliography">
+            <p>
+               <bibl n="leake1843">Leake, from Deering, TRSL 1843, 235 and 290-291, no. <citedRange>6</citedRange>
+               </bibl> whence <bibl n="LBW">Waddington, LBW <citedRange>1602a</citedRange>
+               </bibl>, <bibl n="liermann1889">Liermann 101-102, no. <citedRange>19</citedRange>
+               </bibl>; mentioned by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 113-114, no. <citedRange>33</citedRange>
+               </bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <citedRange>484</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257101">222</citedRange>
+               </bibl>. Published  by <bibl n="rrrs2006">
+                  <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, p.22.</bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

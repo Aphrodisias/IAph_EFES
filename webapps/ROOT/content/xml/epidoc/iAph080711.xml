@@ -1,83 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080711" n="iAph1404 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> fragment for Kapitoleinos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-05</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Piece from the top of a <rs type="material">white marble</rs> block (<measure type="length" unit="metre" dim="width">0.27</measure>   × <measure type="length" unit="metre" dim="height">0.20</measure>   × <measure type="length" unit="metre" dim="depth">0.09</measure>). The face slopes backwards at the top; it is probably, therefore, part of a <rs type="objectType">sarcophagus</rs> front. </p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary fragment for Kapitoleinos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080711</idno>
+            <idno type="IAph2007">iAph080711</idno>
+            <idno type="JMR2004">iAph1404</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>74.166</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Piece from the top of a <material>white marble</material> block (<width unit="metre">0.27</width>   × <height unit="metre">0.20</height>   × <depth unit="metre">0.09</depth>). The face slopes backwards at the top; it is probably, therefore, part of a <objectType>sarcophagus</objectType> front. </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the  face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>ll.1-2, <height unit="metre">0.018</height>; ll.3, 5-8, <height unit="metre">0.02</height>; l.4, <height unit="metre">0.02-0.023</height>; l.9 not measurable.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201" notAfter="0300">Third century A.D. (lettering)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre Baths</rs>: 'S. Aula Thermale, Stratum I, at <measure dim="height" type="length" unit="metre">-1.10</measure>'</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-05" who="cmr">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_T_24A.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><space extent="1" unit="character" dim="horizontal"/> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τ<supplied reason="lost">-</supplied></w>      <gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><space extent="1" unit="character" dim="horizontal"/> <w lemma="ὁ">τῇ</w> <w lemma="εἷς">μίᾳ</w> <w lemma="κηδεύω">κ<unclear reason="damage">ε</unclear><supplied reason="lost">κηδ-</supplied><gap reason="lost" unit="character" extent="unknown"/></w>  <lb n="3"/><supplied reason="lost">  ἐν</supplied><supplied reason="lost">δὲ</supplied>  <supplied reason="lost">τῇ</supplied> <w lemma="ἕτερος">ἑτέρᾳ</w> <w lemma="κηδεύω">κηδευ<unclear reason="damage">θ</unclear><supplied reason="lost">ήσονται</supplied></w>  <lb n="4"/><supplied reason="lost">οὓς</supplied>  <supplied reason="lost">ἂν</supplied>  <w lemma="διατάσσω"><supplied reason="lost">διατά</supplied>ξηται</w> <w lemma="ὁ">ὁ</w> <persName type="attested"><name nymRef="#Καπιτωλῖνος">Καπιτω<supplied reason="lost" cert="low">λεῖνος</supplied></name></persName>    <lb n="5"/><supplied reason="lost">ἐν</supplied> <supplied reason="lost">δὲ</supplied>  <supplied reason="lost">ταῖς</supplied> <w lemma="εἰσώστη"><supplied reason="lost">εἰσωσ</supplied>ταις</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἕτερος">ἕτ<supplied reason="lost">ερος</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ι</unclear>αι</orig> <w lemma="χωρίς">χωρὶς</w> <w lemma="ὅς">οὗ</w> <w lemma="ἐάν">ἂ<supplied reason="lost">ν</supplied></w>  <supplied reason="lost">βουληθῆ</supplied>  <supplied reason="lost">αὐτός</supplied>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="7"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w>  <w lemma="ὑπεύθυνος">ὑπεύθυν<unclear reason="damage">ο</unclear><supplied reason="lost">ς</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="8"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="οὗτος">ταύτης</w>  <w lemma="ὁ">τῆ<supplied reason="lost">ς ἐπιγραφῆς</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="9"/><gap reason="lost" unit="character" extent="unknown"/><supplied reason="lost">ἐπ</supplied><unclear reason="damage">ὶ στε</unclear><supplied reason="lost">φανηφόρου</supplied><gap reason="lost" unit="character" extent="unknown"/>  <lb n="9a"/><gap reason="lost" unit="character" extent="unknown"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the  face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>ll.1-2, <measure dim="height" type="length" unit="metre">0.018</measure>; ll.3, 5-8, <measure dim="height" type="length" unit="metre">0.02</measure>; l.4, <measure dim="height" type="length" unit="metre">0.02-0.023</measure>; l.9 not measurable.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date cert="low" notAfter="0300" notBefore="0201">Third century A.D.</date> (lettering)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="unknown" unit="character" dim="left"/><space extent="1" unit="character" dim="horizontal"/> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τ<supplied reason="lost">-</supplied></w>      <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><space extent="1" unit="character" dim="horizontal"/> <w lemma="ὁ">τῇ</w> <w lemma="εἷς">μίᾳ</w> <w lemma="κηδεύω">κ<unclear reason="damage">ε</unclear><supplied reason="lost">κηδ-</supplied><gap reason="lost" extent="unknown" unit="character" dim="right"/></w>  <lb n="3"/><supplied reason="lost">  ἐν</supplied><supplied reason="lost">δὲ</supplied>  <supplied reason="lost">τῇ</supplied> <w lemma="ἕτερος">ἑτέρᾳ</w> <w lemma="κηδεύω">κηδευ<unclear reason="damage">θ</unclear><supplied reason="lost">ήσονται</supplied></w>  <lb n="4"/><supplied reason="lost">οὓς</supplied>  <supplied reason="lost">ἂν</supplied>  <w lemma="διατάσσω"><supplied reason="lost">διατά</supplied>ξηται</w> <w lemma="ὁ">ὁ</w> <persName type="aphrodisian"><name reg="Καπιτωλῖνος">Καπιτω<supplied reason="lost" cert="low">λεῖνος</supplied></name></persName>    <lb n="5"/><supplied reason="lost">ἐν</supplied> <supplied reason="lost">δὲ</supplied>  <supplied reason="lost">ταῖς</supplied> <w lemma="εἰσώστη"><supplied reason="lost">εἰσωσ</supplied>ταις</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἕτερος">ἕτ<supplied reason="lost">ερος</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="6"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ι</unclear>αι</orig> <w lemma="χωρίς">χωρὶς</w> <w lemma="ὅς">οὗ</w> <w lemma="ἐάν">ἂ<supplied reason="lost">ν</supplied></w>  <supplied reason="lost">βουληθῆ</supplied>  <supplied reason="lost">αὐτός</supplied>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="7"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w>  <w lemma="ὑπεύθυνος">ὑπεύθυν<unclear reason="damage">ο</unclear><supplied reason="lost">ς</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="8"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><w lemma="οὗτος">ταύτης</w>  <w lemma="ὁ">τῆ<supplied reason="lost">ς ἐπιγραφῆς</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="9"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><supplied reason="lost">ἐπ</supplied><unclear reason="damage">ὶ στε</unclear><supplied reason="lost">φανηφόρου</supplied><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="9a"/><gap reason="lost" extent="unknown" unit="character" dim="bottom"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 7,  cf. <xref type="inscription" n="1591" href="120526">12.526</xref> (MAMA 577), <xref type="inscription" n="1462" href="150245">15.245</xref> (=CIG 2824)</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p> <gap extent="unknown" reason="lost" unit="character"/> in the [ . . .  in ]one ?has been buried  <gap extent="unknown" reason="lost" unit="character"/> in the other will be buried   [ . . . whomever] Kapitoleinos may determine. [In the burial] niches no one else  <gap extent="unknown" reason="lost" unit="character"/> except whover he [may wish . . . ] and subject  [ . . .  a copy of ] this inscription [was desposited in the property -archive when so and so was] ste[phanephoros  . . . ]   </p>
-</div>
-<div type="commentary" n="none">
-<head>Commentary</head>
-<p>No useful comment.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre Baths</rs>: 'S. Aula Thermale, Stratum I, at <measure dim="height" type="length" unit="metre">-1.10</measure>'</rs>
-<rs type="lastLocation">Museum (1977)</rs>
-<rs type="origLocation">Unknown</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1974 (<rs type="invNo">74.166</rs>).</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_T_24A"><figDesc>Face (1977)</figDesc></figure></p><p>KTE</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 7,  cf. <ref type="inscription" n="1591" target="120526.xml"/> (MAMA 577), <ref type="inscription" n="1462" target="150245.xml"/> (=CIG 2824)</p>
+         </div>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/> in the [ . . .  in ]one ?has been buried  <gap reason="lost" unit="character" extent="unknown"/> in the other will be buried   [ . . . whomever] Kapitoleinos may determine. [In the burial] niches no one else  <gap reason="lost" unit="character" extent="unknown"/> except whover he [may wish . . . ] and subject  [ . . .  a copy of ] this inscription [was desposited in the property -archive when so and so was] ste[phanephoros  . . . ]   </p>
+         </div>
+         <div type="commentary" n="none">
+            <p>No useful comment.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

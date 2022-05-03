@@ -1,86 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120632" n="iAph1700 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> fragment</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Large <rs type="material">white marble</rs> <rs type="objectType">crowning block</rs> moulded on three sides <measure type="length" unit="metre" dim="width">1.59</measure>  × <measure type="length" unit="metre" dim="height">0.29</measure>  × <measure type="length" unit="metre" dim="depth">1.06</measure>.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the front moulding; the text must have continued on the face of 
-the monument which this feature crowned.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>l.1, <measure dim="height" type="length" unit="metre">0.028</measure>, l.2, <measure dim="height" type="length" unit="metre">0.025</measure>; ligature: <foreign lang="grc">ΤΕ</foreign>, l.1.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">αἱ</w> <w lemma="ὑπόκειμαι">ὑποκείμεναι</w> <w lemma="ἰσώστη">ἰσῶσται</w> <w lemma="τέσσαρες"><hi rend="ligature">τέ</hi>σσαρες</w> <w lemma="κατασκευάζω">κα<lb n="2" type="worddiv"/>τεσκευασμέναι</w> <w lemma="εἰμί">εἰσὶν</w> <w lemma="ὑπό">ὑπὸ</w> <persName type="aphrodisian"><name reg="Αὐρήλιος">Αὐρηλ<supplied reason="lost">ί-</supplied></name></persName>  <gap reason="lost" extent="3" unit="character"/></ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary fragment</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120632</idno>
+            <idno type="IAph2007">iAph120632</idno>
+            <idno type="JMR2004">iAph1700</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Large <material>white marble</material>
+                              <objectType>crowning block</objectType> moulded on three sides <width unit="metre">1.59</width>  × <height unit="metre">0.29</height>  × <depth unit="metre">1.06</depth>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the front moulding; the text must have continued on the face of 
+the monument which this feature crowned.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>l.1, <height unit="metre">0.028</height>, l.2, <height unit="metre">0.025</height>; ligature: <foreign xml:lang="grc">ΤΕ</foreign>, l.1.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+Second to third centuries A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, south (east part)</rs>: in excavation of south wall</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); Squeeze in Cambridge, Box 12, 45.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-30" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="83_D_14A.jpg">
+            <desc>Left end (1983)</desc>
+         </graphic>
+         <graphic url="83_D_15A.jpg">
+            <desc>Right end (1983)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l.2: Αὐρηλ [ίου or -ίας. or possibly ίων. </p>
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">αἱ</w> <w lemma="ὑπόκειμαι">ὑποκείμεναι</w> <w lemma="ἰσώστη">ἰσῶσται</w> <w lemma="τέσσαρες"><hi rend="ligature">τέ</hi>σσαρες</w> <w lemma="κατασκευάζω">κα<lb n="2" break="no"/>τεσκευασμέναι</w> <w lemma="εἰμί">εἰσὶν</w> <w lemma="ὑπό">ὑπὸ</w> <persName type="attested"><name nymRef="#Αὐρήλιος">Αὐρηλ<supplied reason="lost">ί-</supplied></name></persName>  <gap reason="lost" unit="character" quantity="3"/></ab>
 </div>
-<div type="translation">
-<head>Translation</head>
-<p>The sarcophagus and the four burial niches lying belowwereprepared by Aurel[ius or Aureiai or just possibly the Aurelii   . . . ]</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p> The tomb appears to have comprised a sarcophagus standing on a structure which contained four subsidiary burial-places.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, south (east part)</rs>: in excavation of south wall</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); Squeeze in Cambridge, Box 12, 45.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1976 (<rs type="siteNo">Walls 147</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="83_D_14A"><figDesc>Left end (1983)</figDesc></figure><figure href="83_D_15A"><figDesc>Right end (1983)</figDesc></figure></p><p>[[KTE75.48.1-3]]</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l.2: Αὐρηλ [ίου or -ίας. or possibly ίων. </p>
+         </div>
+         <div type="translation">
+            <p>The sarcophagus and the four burial niches lying belowwereprepared by Aurel[ius or Aureiai or just possibly the Aurelii   . . . ]</p>
+         </div>
+         <div type="commentary">
+            <p> The tomb appears to have comprised a sarcophagus standing on a structure which contained four subsidiary burial-places.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

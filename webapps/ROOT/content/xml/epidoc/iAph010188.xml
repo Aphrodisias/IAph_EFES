@@ -1,83 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010188" n="iAph1326 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> formula from sarcophagus fragment</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr2003">Reynolds and Isik (<date>2007</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Part of the front of a <rs type="material" key="marmor">white marble</rs> garland <rs type="objectType">sarcophagus</rs>, broken at either side and below: see <bibl>Isik 75</bibl> for fuller description.
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary formula from sarcophagus fragment</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010188</idno>
+            <idno type="IAph2007">iAph010188</idno>
+            <idno type="JMR2004">iAph1326</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>62.378</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Part of the front of a <material key="marmor">white marble</material> garland <objectType>sarcophagus</objectType>, broken at either side and below: see <bibl>Isik 75</bibl> for fuller description.
 </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> along the upper edge (surviving width of inscription, <width unit="metre">0.70</width>). In the second line the cutter has had to avoid elements of the decorative relief. The full text muxt have begun on the lid, and finished on the lower moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>, neatly cut</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0234"
+                               notAfter="0267"
+                               precision="medium"
+                               evidence="lettering spelling">Probably
+middle third century
+ (<rs type="criteria">lettering</rs>, <rs type="criteria">spelling</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>: T.Aph. XVI</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_BB_05.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/>  <supplied reason="lost">ἑτερος</supplied>  <supplied reason="lost">δὲ</supplied>  <supplied reason="lost">οὐδεὶς</supplied>  <supplied reason="lost">ἕξει</supplied>  <supplied reason="lost">ἐξουσίαν</supplied>  <w lemma="ἐνθάπτω"><supplied reason="lost">ἐν</supplied>θάψαι</w> <w lemma="τις">τινα</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἀποτίνω">ἀποτ<unclear reason="damage">ε</unclear><supplied reason="lost">ίσει</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="εἰμί"><supplied reason="lost">ὧν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear reason="damage">ὸ</unclear></w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔστω</w> <space extent="11" unit="character" dim="horizontal"/> <w lemma="ὁ">τοῦ</w> <space extent="2" unit="character" dim="horizontal"/>  <w lemma="ἐκδικέω">ἐ<unclear reason="damage">γ</unclear><supplied reason="lost">δικήσαντος</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> along the upper edge (surviving width of inscription, <measure dim="width" type="length" unit="metre">0.70</measure>). In the second line the cutter has had to avoid elements of the decorative relief. The full text muxt have begun on the lid, and finished on the lower moulding.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02</measure>, neatly cut</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>Probably
-<date notBefore="0234" notAfter="0267" exact="none">middle third century</date>
- (<rs type="criteria">lettering</rs>, <rs type="criteria">spelling</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="unknown" unit="character" dim="left"/>  <supplied reason="lost">ἑτερος</supplied>  <supplied reason="lost">δὲ</supplied>  <supplied reason="lost">οὐδεὶς</supplied>  <supplied reason="lost">ἕξει</supplied>  <supplied reason="lost">ἐξουσίαν</supplied>  <w lemma="ἐνθάπτω"><supplied reason="lost">ἐν</supplied>θάψαι</w> <w lemma="τις">τινα</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἀποτίνω">ἀποτ<unclear reason="damage">ε</unclear><supplied reason="lost">ίσει</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="εἰμί"><supplied reason="lost">ὧν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear reason="damage">ὸ</unclear></w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔστω</w> <space extent="11" unit="character" dim="horizontal"/> <w lemma="ὁ">τοῦ</w> <space extent="2" unit="character" dim="horizontal"/>  <w lemma="ἐκδικέω">ἐ<unclear reason="damage">γ</unclear><supplied reason="lost">δικήσαντος</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/></ab>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p><gap reason="lost" extent="unknown" unit="character" dim="left"/> <supplied reason="lost">no-one else shall have the right</supplied> to bury anyone (in the sarcophagus) or to remove anyone (from it) since (if he does) he will pay <gap reason="lost" extent="unknown" unit="character" dim="left"/> of which the third part is to belong to the prosecutor <gap reason="lost" extent="unknown" unit="character" dim="left"/></p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Part of a funerary curse in the standard form.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Temple/Church</rs>: T.Aph. XVI</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1962 (<rs type="invNo">62.378</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="jmr2003">Isik and Reynolds, no. <biblScope>75</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_BB_05"><figDesc>Face (1977)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost">no-one else shall have the right</supplied> to bury anyone (in the sarcophagus) or to remove anyone (from it) since (if he does) he will pay <gap reason="lost" unit="character" extent="unknown"/> of which the third part is to belong to the prosecutor <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>Part of a funerary curse in the standard form.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="jmr2003">Isik and Reynolds, no. <citedRange>75</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

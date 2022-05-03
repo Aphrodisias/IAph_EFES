@@ -1,102 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080012" n="iAph0706 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Graffiti</rs> on Theatre stage</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
- <textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-03-23</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Paving blocks of stage.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Roughly <rs type="execution" key="scalpro">cut</rs> on the surface of the stage.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>b: a careless cursive hand, <measure type="length" unit="metre" dim="height">0.04- 0.07</measure>. d lunate, <measure type="length" unit="metre" dim="height">0.05-0.06</measure>. r: letters very worn, <measure type="length" unit="metre" dim="height">0.03</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0600" exact="none">First to sixth centuries A.D.</date> (<rs type="criteria">context</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="a"><note>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Graffiti on Theatre stage</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080012</idno>
+            <idno type="IAph2007">iAph080012</idno>
+            <idno type="JMR2004">iAph0706</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Paving blocks of stage.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Roughly <rs type="execution" ref="scalpro">cut</rs> on the surface of the stage.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>b: a careless cursive hand, <height unit="metre">0.04- 0.07</height>. d lunate, <height unit="metre">0.05-0.06</height>. r: letters very worn, <height unit="metre">0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="context">
+First to sixth centuries A.D. (<rs type="criteria">context</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: stage surface, blocks at front of stage</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Τranscription (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-23" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_G_07.jpg">
+            <desc>b (1976)</desc>
+         </graphic>
+         <graphic url="83_E_07.jpg">
+            <desc>c (1983)</desc>
+         </graphic>
+         <graphic url="83_E_06.jpg">
+            <desc>c (1983)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-Design of a gameboard.</note></div><div type="textpart_section" n="b"><ab><note>A crudely drawn face.</note> 
+<div n="a" type="textpart" subtype="section"><note xml:lang=""/></div><div n="b" type="textpart" subtype="section"><ab><note xml:lang=""/> 
 <lb n="1"/>
- <orig n="unresolved">κ</orig> <space extent="3" unit="character"/> <persName type="aphrodisian"><name reg="Κλεμψιλιος">Κ<unclear reason="damage">λ</unclear>εμ<unclear reason="damage">ψ</unclear><unclear reason="damage">ι</unclear>λιος</name></persName></ab></div><div type="textpart_section" n="c"><note>Sketch of a tight-rope walker. 
-</note></div><div type="textpart_section" n="d"><ab> 
+ <orig n="unresolved">κ</orig> <space extent="3" unit="character"/> <persName type="attested"><name nymRef="#Κλεμψιλιος">Κ<unclear reason="damage">λ</unclear>εμ<unclear reason="damage">ψ</unclear><unclear reason="damage">ι</unclear>λιος</name></persName></ab></div><div n="c" type="textpart" subtype="section"><note xml:lang=""/></div><div n="d" type="textpart" subtype="section"><ab> 
 <lb n="1"/>
 <w lemma="τόπος">τόπος</w> 
 <lb n="2"/>
-<persName type="aphrodisian"><name reg="Θεοδόσιος"><abbr>Θε<unclear reason="damage">ο</unclear><unclear reason="damage">δ</unclear>οσ</abbr></name></persName> <note>hole</note> 
-</ab></div><div type="textpart_section" n="e"><ab>
+<persName type="attested"><name nymRef="#Θεοδόσιος"><abbr>Θε<unclear reason="damage">ο</unclear><unclear reason="damage">δ</unclear>οσ</abbr></name></persName> <note xml:lang=""/> 
+</ab></div><div n="e" type="textpart" subtype="section"><ab>
 <lb n="1"/>
-<w lemma="τόπος">τόπος</w> <persName type="aphrodisian"><name>Ἀρου<gap extent="unknown" dim="right" reason="lost" unit="character"/></name></persName></ab></div>
+<w lemma="τόπος">τόπος</w> <persName type="attested"><name>Ἀρου<gap reason="lost" unit="character" extent="unknown"/></name></persName></ab></div>
 </div>
-<div type="apparatus" n="none">
-<head>Apparatus</head>
-<p> ...</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>d. Place of Theodos[(ios). . </p><p>e. Place of ?Arourios and [? . . .</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See bibliography.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: stage surface, blocks at front of stage</rs>: a. On the second block from the south; b, with text above, and c on the fourth block. d on the fifth block. e. On the ninth block, at right angles to the edge of the stage.
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Findspot</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Τranscription (Reynolds, Roueché).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="PPA">Roueché, <title>PPA</title> <biblScope>8</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="76_G_07"><figDesc>b (1976)</figDesc></figure><figure href="83_E_07"><figDesc>c (1983)</figDesc></figure><figure href="83_E_06"><figDesc>c (1983)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus" n="none">
+            <p> ...</p>
+         </div>
+         <div type="translation">
+            <p>d. Place of Theodos[(ios). . </p>
+            <p>e. Place of ?Arourios and [? . . .</p>
+         </div>
+         <div type="commentary">
+            <p>See bibliography.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="PPA">Roueché, <title>PPA</title>
+                  <citedRange>8</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

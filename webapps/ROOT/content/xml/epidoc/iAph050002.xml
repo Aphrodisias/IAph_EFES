@@ -1,83 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050002" n="iAph1110 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Column <rs type="textType">dedication</rs> to Demos by Artemon son of Adrastos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Column dedication to Demos by Artemon son of Adrastos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050002</idno>
+            <idno type="IAph2007">iAph050002</idno>
+            <idno type="JMR2004">iAph1110</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>88.18</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Four <material key="marmor">blue marble</material>
+                              <objectType>column</objectType>s; i. Broken above and below (<dim type="diameter">0.48</dim>); ii. Broken above, moulding survives below (<height unit="metre">c. 0.83</height>); surface damaged. iii. Fragment broken on all sides (<width unit="metre">0.40</width> × <height unit="metre">0.355</height>); iv. broken column drum of <material key="marmor">blueish white marble</material> (<dim type="diameter">0.46</dim>; total height not reliably measurable).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>ii. Inscribed just above (c. 0.07) moulding; iv. inscribed at about 1.60 from base of column.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Neat capitals with restrained seriphs, <height unit="metre">0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>, on the north side of the 'Salle au vingt colonnes', at the south east corner of the east court of the <rs type="monuList">Hadrianic baths</rs>.</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="monument lettering">
+Second century A.D.
+(<rs type="criteria">monument</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">i : <rs type="monuList">South Agora</rs>, north portico; ii and iii: <rs type="monuList">Hadrianic Baths</rs>, 'Salle au vingt colonnes'; iv <rs type="monuList">Tetrastoon</rs>, reused in the south colonnade.</provenance>
+                  <provenance type="observed">i and iii,  Museum; ii and iv, Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="85_G_15.jpg">
+            <desc>i. Column (1985)</desc>
+         </graphic>
+         <graphic url="85_G_14.jpg">
+            <desc>i. Text (1985)</desc>
+         </graphic>
+         <graphic url="88_E_19A.jpg">
+            <desc>ii. Text (1988)</desc>
+         </graphic>
+         <graphic url="88_E_03A.jpg">
+            <desc>iii. Fragment (1988)</desc>
+         </graphic>
+         <graphic url="78_H_12.jpg">
+            <desc>iv. Text (1978)</desc>
+         </graphic>
+         <graphic url="78_H_13.jpg">
+            <desc>iv. Text (1978)</desc>
+         </graphic>
+         <graphic url="Boulanger_A_07.jpg">
+            <desc>Boulanger, notebook A, page 7</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Four <rs type="material" key="marmor">blue marble</rs> <rs type="objectType">column</rs>s; i. Broken above and below (<measure dim="diameter">0.48</measure>); ii. Broken above, moulding survives below (<measure type="length" unit="metre" dim="height">c. 0.83</measure>); surface damaged. iii. Fragment broken on all sides (<measure type="length" unit="metre" dim="width">0.40</measure> × <measure type="length" unit="metre" dim="height">0.355</measure>); iv. broken column drum of <rs type="material" key="marmor">blueish white marble</rs> (<measure dim="diameter">0.46</measure>; total height not reliably measurable).</p>
-</div><div type="description" n="text"><head>Description of Text</head><p>ii. Inscribed just above (c. 0.07) moulding; iv. inscribed at about 1.60 from base of column.</p></div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Neat capitals with restrained seriphs, <measure precision="circa" type="length" unit="metre" dim="height">0.03</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0200" exact="none">Second century A.D.</date>
-(<rs type="criteria">monument</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
 
 
-<div type="textpart_section" n="i"><ab><lb n="1"/><persName type="aphrodisian" full="yes"><name reg="Ἀρτέμων">Ἀρτέμω<supplied reason="lost">ν</supplied></name>  <persName type="aphrodisian"><name reg="Ἄδραστος"><supplied reason="lost">Ἀδ</supplied>ράστο<supplied reason="lost">υ</supplied></name><lb n="2"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυ<supplied reason="lost">σ</supplied>ίου</name>  <w lemma="ὁ">το<supplied reason="lost">ῦ</supplied></w><lb n="3"/><persName type="aphrodisian"><name reg="Δινόμαχος">Δινο<supplied reason="lost">μ</supplied><unclear reason="damage">ά</unclear>χου</name></persName></persName></persName></persName>  <w lemma="ὁ">τ<unclear reason="damage">οὺ</unclear>ς</w><lb n="4"/> <w lemma="ἕξ">ἓξ</w> <w lemma="κίων">κε<unclear reason="damage">ί</unclear><supplied reason="lost">ο</supplied><unclear reason="damage">να</unclear>ς</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w><lb n="5"/> <w lemma="ἴδιος">ἰδίων</w> <w lemma="ἀνατίθημι"><supplied reason="lost">ἀνέθηκε</supplied></w><lb n="6"/> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος"><supplied reason="lost">Δήμ</supplied>ῳ</w>  <w lemma="σύν"><supplied reason="lost">σὺν</supplied></w><lb n="6a"/><w lemma="ὁ"><supplied reason="lost">τοῖς</supplied></w>  <w lemma="σπειροκέφαλον"><supplied reason="lost">σπειροκεφάλοις</supplied></w></ab></div><div type="textpart_section" n="ii"><ab><lb n="1"/><persName type="aphrodisian" full="yes"><name reg="Ἀρτέμων">Ἀρτέμων</name>  <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name><lb n="2"/> <w lemma="ὁ">τοῦ</w><persName type="aphrodisian"> <name reg="Διονύσιος">Διονυσίου</name>  <space extent="3"/><lb n="3"/><persName type="aphrodisian"><name reg="Δινόμαχος">Δινομάχου</name></persName></persName></persName></persName> <w lemma="ὁ">τοὺς</w> <w lemma="ἕξ">ἓξ</w><lb n="4"/> <w lemma="κίων">κείονας</w> <w lemma="ἐκ"><unclear reason="damage">ἐ</unclear>κ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδί<lb n="5" type="worddiv"/>ων</w> <w lemma="ἀνατίθημι">ἀνέθηκε</w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">Δή<lb n="6" type="worddiv"/>μῳ</w>  <w lemma="σύν">σὺ<unclear reason="damage">ν</unclear></w>  <w lemma="ὁ"><supplied reason="lost">τοῖς</supplied></w><lb n="7"/><w lemma="σπειροκέφαλον">σπειροκ<unclear reason="damage">ε</unclear><supplied reason="lost">φάλοις</supplied></w></ab></div><div type="textpart_section" n="iii"><ab><lb n="1"/><persName type="aphrodisian" full="yes"><name reg="Ἀρτέμων"><supplied reason="lost">Ἀ</supplied>ρτέμων</name>  <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράσ<lb n="2" type="worddiv"/>του</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυ<supplied reason="lost">σίου</supplied></name><lb n="3"/>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w><persName type="aphrodisian">  <name reg="Δινόμαχος">Δινομά<lb n="4" type="worddiv"/><supplied reason="lost">χου</supplied></name></persName></persName></persName></persName>  <w lemma="ὁ"><supplied reason="lost">τοὺ</supplied><unclear reason="damage">ς</unclear></w>  <w lemma="ἕξ"><unclear reason="damage">ἓ</unclear><supplied reason="lost">ξ</supplied></w><lb n="4a"/> <supplied reason="lost"><w lemma="κίων">κείονας</w></supplied> <gap extent="2" dim="right" reason="lost" unit="character"/></ab></div><div type="textpart_section" n="iv"><ab><lb n="1"/><space extent="3" unit="character" dim="horizontal"/>    <persName type="aphrodisian" full="yes"><name reg="Ἀρτέμων">Ἀρτέμων</name>  <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name>  <space extent="3" unit="character" dim="horizontal"/><lb n="2"/><supplied reason="lost"><space extent="3" unit="character" dim="horizontal"/></supplied>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <persName type="aphrodisian"><name reg="Διονύσιος"><supplied reason="lost">Δι</supplied>ονυσίου</name>  <space extent="3" unit="character" dim="horizontal"/><lb n="3"/><supplied reason="lost"><space extent="3" unit="character" dim="horizontal"/></supplied>  <persName type="aphrodisian"><name reg="Δινόμαχος"><supplied reason="lost" cert="low">Δινομάχου</supplied></name></persName></persName></persName>  </persName><w lemma="ὁ"><supplied reason="lost">τ</supplied>οὺς</w>  <space extent="3" unit="character" dim="horizontal"/><lb n="4"/><supplied reason="lost"><space extent="3" unit="character" dim="horizontal"/></supplied>  <gap extent="4" dim="left" reason="lost" unit="character"/>  <supplied cert="low" reason="lost"><w lemma="ἐκ">ἐκ</w>  <w lemma="ὁ">τῶν</w></supplied>  <w lemma="ἴδιος"><supplied reason="lost">ἰδί</supplied>ων</w>  <space extent="3" unit="character" dim="horizontal"/><lb n="5"/><supplied reason="lost"><space extent="3" unit="character" dim="horizontal"/></supplied><gap extent="11" dim="left" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">τ</unclear>ο</orig>  <space extent="3" unit="character" dim="horizontal"/><lb n="5a"/><space extent="1" dim="vertical" unit="line"/></ab></div>
+<div n="i" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Ἀρτέμων">Ἀρτέμω<supplied reason="lost">ν</supplied></name>  <persName type="attested"><name nymRef="#Ἄδραστος"><supplied reason="lost">Ἀδ</supplied>ράστο<supplied reason="lost">υ</supplied></name><lb n="2"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυ<supplied reason="lost">σ</supplied>ίου</name>  <w lemma="ὁ">το<supplied reason="lost">ῦ</supplied></w><lb n="3"/><persName type="attested"><name nymRef="#Δινόμαχος">Δινο<supplied reason="lost">μ</supplied><unclear reason="damage">ά</unclear>χου</name></persName></persName></persName></persName>  <w lemma="ὁ">τ<unclear reason="damage">οὺ</unclear>ς</w><lb n="4"/> <w lemma="ἕξ">ἓξ</w> <w lemma="κίων">κε<unclear reason="damage">ί</unclear><supplied reason="lost">ο</supplied><unclear reason="damage">να</unclear>ς</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w><lb n="5"/> <w lemma="ἴδιος">ἰδίων</w> <w lemma="ἀνατίθημι"><supplied reason="lost">ἀνέθηκε</supplied></w><lb n="6"/> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος"><supplied reason="lost">Δήμ</supplied>ῳ</w>  <w lemma="σύν"><supplied reason="lost">σὺν</supplied></w><lb n="6a"/><w lemma="ὁ"><supplied reason="lost">τοῖς</supplied></w>  <w lemma="σπειροκέφαλον"><supplied reason="lost">σπειροκεφάλοις</supplied></w></ab></div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Ἀρτέμων">Ἀρτέμων</name>  <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name><lb n="2"/> <w lemma="ὁ">τοῦ</w><persName type="attested"> <name nymRef="#Διονύσιος">Διονυσίου</name>  <space extent="3"/><lb n="3"/><persName type="attested"><name nymRef="#Δινόμαχος">Δινομάχου</name></persName></persName></persName></persName> <w lemma="ὁ">τοὺς</w> <w lemma="ἕξ">ἓξ</w><lb n="4"/> <w lemma="κίων">κείονας</w> <w lemma="ἐκ"><unclear reason="damage">ἐ</unclear>κ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδί<lb n="5" break="no"/>ων</w> <w lemma="ἀνατίθημι">ἀνέθηκε</w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">Δή<lb n="6" break="no"/>μῳ</w>  <w lemma="σύν">σὺ<unclear reason="damage">ν</unclear></w>  <w lemma="ὁ"><supplied reason="lost">τοῖς</supplied></w><lb n="7"/><w lemma="σπειροκέφαλον">σπειροκ<unclear reason="damage">ε</unclear><supplied reason="lost">φάλοις</supplied></w></ab></div><div n="iii" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Ἀρτέμων"><supplied reason="lost">Ἀ</supplied>ρτέμων</name>  <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράσ<lb n="2" break="no"/>του</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυ<supplied reason="lost">σίου</supplied></name><lb n="3"/>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w><persName type="attested">  <name nymRef="#Δινόμαχος">Δινομά<lb n="4" break="no"/><supplied reason="lost">χου</supplied></name></persName></persName></persName></persName>  <w lemma="ὁ"><supplied reason="lost">τοὺ</supplied><unclear reason="damage">ς</unclear></w>  <w lemma="ἕξ"><unclear reason="damage">ἓ</unclear><supplied reason="lost">ξ</supplied></w><lb n="4a"/> <supplied reason="lost"><w lemma="κίων">κείονας</w></supplied> <gap reason="lost" unit="character" quantity="2"/></ab></div><div n="iv" type="textpart" subtype="section"><ab><lb n="1"/><space extent="3" unit="character" dim="horizontal"/>    <persName type="attested"><name nymRef="#Ἀρτέμων">Ἀρτέμων</name>  <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name>  <space extent="3" unit="character" dim="horizontal"/><lb n="2"/><supplied reason="lost"><space extent="3" unit="character" dim="horizontal"/></supplied>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <persName type="attested"><name nymRef="#Διονύσιος"><supplied reason="lost">Δι</supplied>ονυσίου</name>  <space extent="3" unit="character" dim="horizontal"/><lb n="3"/><supplied reason="lost"><space extent="3" unit="character" dim="horizontal"/></supplied>  <persName type="attested"><name nymRef="#Δινόμαχος"><supplied reason="lost" cert="low">Δινομάχου</supplied></name></persName></persName></persName>  </persName><w lemma="ὁ"><supplied reason="lost">τ</supplied>οὺς</w>  <space extent="3" unit="character" dim="horizontal"/><lb n="4"/><supplied reason="lost"><space extent="3" unit="character" dim="horizontal"/></supplied>  <gap reason="lost" unit="character" quantity="4"/>  <supplied cert="low" reason="lost"><w lemma="ἐκ">ἐκ</w>  <w lemma="ὁ">τῶν</w></supplied>  <w lemma="ἴδιος"><supplied reason="lost">ἰδί</supplied>ων</w>  <space extent="3" unit="character" dim="horizontal"/><lb n="5"/><supplied reason="lost"><space extent="3" unit="character" dim="horizontal"/></supplied><gap reason="lost" unit="character" quantity="11"/><orig n="unresolved"><unclear reason="damage">τ</unclear>ο</orig>  <space extent="3" unit="character" dim="horizontal"/><lb n="5a"/><space extent="1" dim="vertical" unit="line"/></ab></div>
 
 </div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); publications.</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>Artemon son of Adrastos the son of Dionysios the son of Dinomachos dedicated the six columns at his own expense to the People, with their capitals</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>These four columns are from a group of six dedicated by Artemon. Another two survive from the 14 dedicated by Nestor and Zenon, <xref type="inscription" n="1111" href="050205">5.205</xref>, (=Mendel 173). For further column dedications from the Hadrianic Baths see <xref type="iAph">1113</xref> (=Boulanger B Page 23 no. 29), and <xref type="inscription" n="1112" href="050003">5.3</xref> (=84.64).</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
- <rs type="origLocation">, on the north side of the 'Salle au vingt colonnes', at the south east corner of the east court of the <rs type="monuList">Hadrianic baths</rs>.</rs> <rs type="found">i : <rs type="monuList">South Agora</rs>, north portico; ii and iii: <rs type="monuList">Hadrianic Baths</rs>, 'Salle au vingt colonnes'; iv <rs type="monuList">Tetrastoon</rs>, reused in the south colonnade.</rs>
-; Last known location: <rs type="lastLocation">i and iii,  Museum; ii and iv, Findspot.</rs>
-</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>The text informs us that there were originally 6 columns, presumably each bearing the same text; Mendel copied ii and cited i (notebook A 7, a; C, 9); all four recorded by the NYU expedition: i in 1985, ii and iii in 1988 (<rs type="invNo">88.18</rs>), iv in 1978 (<rs type="siteNo">Theatre 20</rs>).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>i and ii published by <bibl type="primary" n="mendel1906"><author>Mendel</author>, <title level="j">CRAI</title> 1906, <biblScope>172</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257007">128</biblScope>, <biblScope n="257008">129</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="85_G_15"><figDesc>i. Column (1985)</figDesc></figure><figure href="85_G_14"><figDesc>i. Text (1985)</figDesc></figure><figure href="88_E_19A"><figDesc>ii. Text (1988)</figDesc></figure><figure href="88_E_03A"><figDesc>iii. Fragment (1988)</figDesc></figure><figure href="78_H_12"><figDesc>iv. Text (1978)</figDesc></figure><figure href="78_H_13"><figDesc>iv. Text (1978)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions">
-<head>Transcriptions</head>
-<p><figure href="Boulanger_A_07"><figDesc>Boulanger, notebook A, page 7</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>Artemon son of Adrastos the son of Dionysios the son of Dinomachos dedicated the six columns at his own expense to the People, with their capitals</p>
+         </div>
+         <div type="commentary">
+            <p>These four columns are from a group of six dedicated by Artemon. Another two survive from the 14 dedicated by Nestor and Zenon, <ref type="inscription" n="1111" target="050205.xml"/>, (=Mendel 173). For further column dedications from the Hadrianic Baths see <ref type="iAph" target=".xml"/> (=Boulanger B Page 23 no. 29), and <ref type="inscription" n="1112" target="050003.xml"/> (=84.64).</p>
+         </div>
+         <div type="bibliography">
+            <p>i and ii published by <bibl type="primary" n="mendel1906">
+                  <author>Mendel</author>, <title level="j">CRAI</title> 1906, <citedRange>172</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257007">128</citedRange>, <citedRange n="257008">129</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

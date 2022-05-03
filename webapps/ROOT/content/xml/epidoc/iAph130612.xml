@@ -1,85 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130612" n="iAph1433 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> inscription for Lucia Antoniane</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-01-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two adjoining pieces of the lower part of a <rs type="material">white marble</rs> <rs type="objectType">sarcophagus</rs>; traces of figures above.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary inscription for Lucia Antoniane</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130612</idno>
+            <idno type="IAph2007">iAph130612</idno>
+            <idno type="JMR2004">iAph1433</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two adjoining pieces of the lower part of a <material>white marble</material>
+                              <objectType>sarcophagus</objectType>; traces of figures above.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in four lines on a broad lower border; the text must have begun on an upper feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025</height>; ligatures: l. 2,  <foreign xml:lang="grc">ΝΜ</foreign>, <foreign xml:lang="grc">ΝΗ</foreign>; l. 3,  <foreign xml:lang="grc">ΤΗ</foreign> (twice), <foreign xml:lang="grc">ΜΜ</foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+Second to third centuries A.D.
+ (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, West</rs>: with the remains of a monumental tomb in the field south of the road to New Geyre, about 0.25 mile east of New Geyre.</provenance>
+                  <provenance type="observed" when="1976">Findspot (1976)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-30" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_L_10.jpg">
+            <desc>Left fragment (1975)</desc>
+         </graphic>
+         <graphic url="76_C_06A.jpg">
+            <desc>Left fragment (1976)</desc>
+         </graphic>
+         <graphic url="76_C_07A.jpg">
+            <desc>Right fragment (1976)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="0"/>    <gap reason="lost" unit="character" extent="unknown"/> <supplied reason="lost"><w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w></supplied>  <lb n="1"/> <w lemma="σορός">σορῷ</w> <w lemma="ἐνθάπτω">ἐντέθαπται</w> <persName type="attested"><name nymRef="#Λουκία">Λουκία</name> <name nymRef="#Ἀντωνιανή">Ἀντωνιά<unclear reason="damage">ν</unclear>η</name></persName> <w lemma="σύντροφος">σύντροφος</w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Θεόφιλος">Θεοφίλου</name></persName> <w lemma="τίθημι"><supplied reason="lost">τεθή</supplied><lb n="2" break="no"/>σεται</w> <w lemma="δέ">δὲ</w> <w lemma="ἐν">ἐ<hi rend="ligature" id="lig1">ν</hi></w> <w lemma="μέν" id="lig2">μὲν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <persName type="attested"><name nymRef="#Θεόφιλος">Θεόφιλος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="κατασκευάζω">κατε<unclear reason="damage">σ</unclear><supplied reason="lost">κευά</supplied><unclear reason="damage">σα</unclear>ς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἡρῶος">ἡρῶον</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Λουκία">Λουκία</name> <name nymRef="#Ἀντωνία">Ἀντωνία</name> <name nymRef="#Αὐρηλία">Αὐρη<lb n="3" break="no"/>λία</name> <name nymRef="#Ἀρίστη">Ἀρίσ<hi rend="ligature">τη</hi></name> <persName type="attested"><name nymRef="#Καλλίας">Καλλίου</name></persName></persName> <w lemma="ὁ">ἡ</w> <w lemma="θυγάτηρ">θυγα<hi rend="ligature">τη</hi>ρ</w> <w lemma="ὁ">τῆς</w> <persName type="attested"><name nymRef="#Ἀπφία">Ἀπφία<supplied reason="lost">ς</supplied></name></persName>  <w><gap reason="lost" unit="character" quantity="3"/>ης</w> <w lemma="ἀνατρέφω">ἀνατεθρα<hi rend="ligature">μμ</hi>έ<hi rend="ligature">νη</hi></w> <w lemma="δέ">δὲ</w> <w lemma="ὑπό">ὑπὸ</w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Θεόφιλος">Θεοφίλου</name></persName> <w lemma="οὐδείς">οὐ<lb n="4" break="no"/>δεὶς</w> <w lemma="δέ">δ'</w> <w lemma="ἕτερος">ἕτερος</w> <w lemma="ἔχω">ἕξει</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἐνθάπτω">ἐνταφῆναι</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="τις">τινα</w> <w lemma="ὁ">τῶν</w> <w lemma="ἐνθάπτω">ἐνταφέν<unclear reason="damage">τ</unclear><supplied reason="lost" cert="low">ων</supplied></w></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> in four lines on a broad lower border; the text must have begun on an upper feature.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.025</measure>; ligatures: l. 2,  <foreign lang="grc">ΝΜ</foreign>, <foreign lang="grc">ΝΗ</foreign>; l. 3,  <foreign lang="grc">ΤΗ</foreign> (twice), <foreign lang="grc">ΜΜ</foreign>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date>
- (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/>    <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w></supplied>  <lb n="1"/> <w lemma="σορός">σορῷ</w> <w lemma="ἐνθάπτω">ἐντέθαπται</w> <persName type="aphrodisian"><name reg="Λουκία">Λουκία</name> <name reg="Ἀντωνιανή">Ἀντωνιά<unclear reason="damage">ν</unclear>η</name></persName> <w lemma="σύντροφος">σύντροφος</w> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Θεόφιλος">Θεοφίλου</name></persName> <w lemma="τίθημι"><supplied reason="lost">τεθή</supplied><lb n="2" type="worddiv"/>σεται</w> <w lemma="δέ">δὲ</w> <w lemma="ἐν">ἐ<hi rend="ligature" id="lig1">ν</hi></w> <w lemma="μέν" id="lig2">μὲν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <persName type="aphrodisian"><name reg="Θεόφιλος">Θεόφιλος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="κατασκευάζω">κατε<unclear reason="damage">σ</unclear><supplied reason="lost">κευά</supplied><unclear reason="damage">σα</unclear>ς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἡρῶος">ἡρῶον</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Λουκία">Λουκία</name> <name reg="Ἀντωνία" type="        ">Ἀντωνία</name> <name reg="Αὐρηλία">Αὐρη<lb n="3" type="worddiv"/>λία</name> <name reg="Ἀρίστη">Ἀρίσ<hi rend="ligature">τη</hi></name> <persName type="aphrodisian"><name reg="Καλλίας">Καλλίου</name></persName></persName> <w lemma="ὁ">ἡ</w> <w lemma="θυγάτηρ">θυγα<hi rend="ligature">τη</hi>ρ</w> <w lemma="ὁ">τῆς</w> <persName type="aphrodisian"><name reg="Ἀπφία">Ἀπφία<supplied reason="lost">ς</supplied></name></persName>  <w><gap reason="lost" extent="3" unit="character"/>ης</w> <w lemma="ἀνατρέφω">ἀνατεθρα<hi rend="ligature">μμ</hi>έ<hi rend="ligature">νη</hi></w> <w lemma="δέ">δὲ</w> <w lemma="ὑπό">ὑπὸ</w> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Θεόφιλος">Θεοφίλου</name></persName> <w lemma="οὐδείς">οὐ<lb n="4" type="worddiv"/>δεὶς</w> <w lemma="δέ">δ'</w> <w lemma="ἕτερος">ἕτερος</w> <w lemma="ἔχω">ἕξει</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἐνθάπτω">ἐνταφῆναι</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="τις">τινα</w> <w lemma="ὁ">τῶν</w> <w lemma="ἐνθάπτω">ἐνταφέν<unclear reason="damage">τ</unclear><supplied reason="lost" cert="low">ων</supplied></w></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 4, It is not clear that there is room for the final <foreign lang="grc">ΩΝ</foreign>; perhaps an abbreviation or a continuation in another line below, now completely abraded.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>[ . . .  in the ] sarcophagus has been buried Lucia Antoniane who was brought up with Theophilos; there will be placed in the sarcophagus Theophilos who built the heroon, and Lucia Antonia Aurelia Ariste, (daughter) of Kallias, the daughter of Apphia [. . . .] brought up by Theophilos; no one else will have authority to bury in the sarcophagus or to exhume any of those buried in it.</p>
-</div>
-<div type="commentary" n="none">
-<head>Commentary</head>
-<p>... </p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Necropolis, West</rs>: with the remains of a monumental tomb in the field south of the road to New Geyre, about 0.25 mile east of New Geyre.</rs>
-<rs type="lastLocation">Findspot (1976)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition (<rs type="siteNo">West Cemetery 4</rs>; sarcophagus catalogue <rs type="sarcCat">199</rs> and <rs type="sarcCat">196</rs>).</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="75_L_10"><figDesc>Left fragment (1975)</figDesc></figure><figure href="76_C_06A"><figDesc>Left fragment (1976)</figDesc></figure><figure href="76_C_07A"><figDesc>Right fragment (1976)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 4, It is not clear that there is room for the final <foreign xml:lang="grc">ΩΝ</foreign>; perhaps an abbreviation or a continuation in another line below, now completely abraded.</p>
+         </div>
+         <div type="translation">
+            <p>[ . . .  in the ] sarcophagus has been buried Lucia Antoniane who was brought up with Theophilos; there will be placed in the sarcophagus Theophilos who built the heroon, and Lucia Antonia Aurelia Ariste, (daughter) of Kallias, the daughter of Apphia [. . . .] brought up by Theophilos; no one else will have authority to bury in the sarcophagus or to exhume any of those buried in it.</p>
+         </div>
+         <div type="commentary" n="none">
+            <p>... </p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

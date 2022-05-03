@@ -1,51 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080409" n="iAph0249 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType">Sundial</rs></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change><change><date>2003-06-02</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Tidied and regularised</item></change><change><date>2002-11-02</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Typed and tagged Greek</item></change><change>
-  <date>2003-09-03</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged, lemmatised and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p><rs type="material" key="marmor">White marble</rs> columnar <rs type="objectType">altar</rs>; the diameter of the top surface, which is slightly ovel, is <measure dim="diameter" type="length">0.78</measure> (north-south), <measure dim="diameter" type="length">0.885</measure> (west to east), to serve as a <rs type="objectType">sundial</rs></p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on the top surface; there is a hole where the <term lang="la">gnomon</term> may have stood.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Lunate.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0600" exact="none" cert="low" notBefore="0401">Fifth-sixth century</date> (<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>).</p>
-      </div>
-
-      <div lang="grc" n="text" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sundial</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080409</idno>
+            <idno type="IAph2007">iAph080409</idno>
+            <idno type="JMR2004">iAph0249</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material> columnar <objectType>altar</objectType>; the diameter of the top surface, which is slightly ovel, is <dim type="diameter">0.78</dim> (north-south), <dim type="diameter">0.885</dim> (west to east), to serve as a <objectType>sundial</objectType>
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the top surface; there is a hole where the <term xml:lang="la">gnomon</term> may have stood.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lunate.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="context lettering">Fifth-sixth century (<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Tetrastoon">Tetrastoon</rs>: standing with its base <measure type="length" unit="metre" dim="height">0.55</measure> below the present pavement level, and protruding above it. </provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publication; transcriptions (Reynolds, M. Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">Tidied and regularised</change>
+         <change when="2002-11-02" who="#GB">Typed and tagged Greek</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="NY_74_28_08.jpg">
+            <desc>View (1974)</desc>
+         </graphic>
+         <graphic url="DSCN0268.jpg">
+            <desc>Face (2004)</desc>
+         </graphic>
+         <graphic url="DSCN0266.jpg">
+            <desc>View from east (2004)</desc>
+         </graphic>
+         <graphic url="DSCN0287.jpg">
+            <desc>View from north (2004)</desc>
+         </graphic>
+         <graphic url="75_G_37.jpg">
+            <desc>Tetrastoon, view from south east (1975)</desc>
+         </graphic>
+         <graphic url="75_H_02.jpg">
+            <desc>Tetrastoon, view from north east (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<ab n="a">
 		 <cb n="a"/><lb n="1"/><w lemma="χειμερινός">χιμερινή</w>
 		</ab>
@@ -53,49 +135,33 @@
 		 <cb n="b"/><lb n="1"/><w lemma="θερινός">θερ<supplied reason="lost">ι</supplied>νή</w>
 		</ab>
 		<ab n="a">
-		 <cb n="c"/><lb n="1"/><w lemma="ἰσημερινός">ἰσημε<lb n="2" type="worddiv"/>ρινή</w>
+		 <cb n="c"/><lb n="1"/><w lemma="ἰσημερινός">ἰσημε<lb n="2" break="no"/>ρινή</w>
 		</ab>
       </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>a. (along the winter solsitial curve): Winter.</ab><ab>b. (along the summer solstitial curve): Summer.</ab><ab>c. (along the equinoctial line): Equinoctial.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See bibliography and, for the context, discussion at <xref type="eAla-text" n="V.16">V.16</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="Tetrastoon">Tetrastoon</rs>: standing with its base <measure type="length" unit="metre" dim="height">0.55</measure> below the present pavement level, and protruding above it. </rs>. Original location: <rs type="origLocation">Findspot.</rs>. Last recorded location: <rs type="lastLocation">Findspot.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published, from Reynolds, by <bibl type="hbi" n="pattenden1981"><author>P. Pattenden</author>, <title level="j">JHS</title> 101 (1981), 101-112</bibl> whence <bibl n="seg"><title level="j">SEG</title> <biblScope>1981.931</biblScope></bibl>; <bibl n="be"><title level="j">BE</title> <biblScope>1982.360</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257754">868</biblScope></bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi"><author>Roueché</author> (2004), <biblScope>249</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Publication; transcriptions (Reynolds, M. Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="NY_74_28_08"><figDesc>View (1974)</figDesc></figure><figure href="DSCN0268"><figDesc>Face (2004)</figDesc></figure><figure href="DSCN0266"><figDesc>View from east (2004)</figDesc></figure><figure href="DSCN0287"><figDesc>View from north (2004)</figDesc></figure><figure href="75_G_37"><figDesc>Tetrastoon, view from south east (1975)</figDesc></figure><figure href="75_H_02"><figDesc>Tetrastoon, view from north east (1975)</figDesc></figure></p></div>
-
-    
-
-      
-
-    </body>
-  </text>
+         <div type="translation">
+            <ab>a. (along the winter solsitial curve): Winter.</ab>
+            <ab>b. (along the summer solstitial curve): Summer.</ab>
+            <ab>c. (along the equinoctial line): Equinoctial.</ab>
+         </div>
+         <div type="commentary">
+            <p>See bibliography and, for the context, discussion at <ref type="eAla-text" n="V.16" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published, from Reynolds, by <bibl type="hbi" n="pattenden1981">
+                  <author>P. Pattenden</author>, <title level="j">JHS</title> 101 (1981), 101-112</bibl> whence <bibl n="seg">
+                  <title level="j">SEG</title>
+                  <citedRange>1981.931</citedRange>
+               </bibl>; <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1982.360</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257754">868</citedRange>
+               </bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi">
+                  <author>Roueché</author> (2004), <citedRange>249</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

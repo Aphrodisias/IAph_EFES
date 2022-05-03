@@ -1,112 +1,151 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080406" n="iAph0021 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">i. <rs type="textType">Honours</rs>  for Titus Falvius Sallustios Athenagoras; ii. <rs type="textType">Honours</rs> for Valens by <rs type="personType" reg="governor">Antonius Tatianos</rs></title>
-</titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>i. Honours  for Titus Falvius Sallustios Athenagoras; ii. Honours for Valens by Antonius Tatianos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080406</idno>
+            <idno type="IAph2007">iAph080406</idno>
+            <idno type="JMR2004">iAph0021</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>72.54</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A rectangular <material key="marmor">white marble</material>
+                              <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> (<height unit="metre">1.21</height> × <width unit="metre">0.60</width> × <depth unit="metre">0.575</depth>); panels within moulding on four sides (<width unit="metre">0.40</width> x <height unit="metre">0.98</height>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on two opposite faces within the panels.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. Unpublished. ii.  <height unit="metre">0.03-0.04</height>; <foreign xml:lang="grc">Φ</foreign>, <height unit="metre">0.055</height>; elongated and clear cut; similar to <ref type="inscription" n="20" target="080405.xml"/>; scroll for abbreviation.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>re-used in the <rs type="monuList" key="Tetrastoon">Tetrastoon</rs>, west portico in the fourth century: a rectangular plinth, on which this base probably stood, is in position, against a column of the west portico of the tetrastoon, just south of the probable plinth of <ref type="inscription" n="20" target="080405.xml"/>. .</origPlace>
+                     <origDate notBefore="0364" notAfter="0364" evidence="reign">A.D. 364 (<rs type="criteria">reign</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Theatre">Theatre</rs>: re-used in the central stretch of the Theatre defence wall.</provenance>
+                  <provenance type="observed" when="2004">Museum (2004).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-16" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-16" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">name tags reduced</change>
+         <change when="2003-07-14" who="JLG">Lemmatised</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">Typed and marked-up Greek</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="72_A_14A.jpg">
+            <desc>Face ii. (1972)</desc>
+         </graphic>
+         <graphic url="DSCN0270.jpg">
+            <desc>Face ii. (2004)</desc>
+         </graphic>
+         <graphic url="DSCN0272.jpg">
+            <desc>Face ii., left side and top (2004)</desc>
+         </graphic>
+         <graphic url="NY_93_88_03.jpg">
+            <desc>Top of base (1993)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-16</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-06-22</date><respStmt><name>CMR</name></respStmt><item>tagged, tidied and corrected</item></change><change><date>2003-07-14</date><respStmt><name>JLG</name></respStmt><item>Lemmatised</item></change><change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>name tags reduced</item></change><change><date>2004-01-16</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change><change><date>2003-05-27</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Typed and marked-up Greek</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A rectangular <rs type="material" key="marmor">white marble</rs> <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs> (<measure type="length" unit="metre" dim="height">1.21</measure> × <measure type="length" unit="metre" dim="width">0.60</measure> × <measure type="length" unit="metre" dim="depth">0.575</measure>); panels within moulding on four sides (<measure dim="width" type="length" unit="metre">0.40</measure> x <measure dim="height" type="length" unit="metre">0.98</measure>).</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on two opposite faces within the panels.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p>i. Unpublished. ii.  <measure type="length" unit="metre" dim="height">0.03-0.04</measure>; <foreign lang="grc">Φ</foreign>, <measure type="length" unit="metre" dim="height">0.055</measure>; elongated and clear cut; similar to <xref type="inscription" n="20" href="080405">8.405</xref>; scroll for abbreviation.</p>
-</div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p><date precision="circa" value="0364" notBefore="0364" notAfter="0364" exact="both">A.D. 364</date> (<rs type="criteria">reign</rs>).</p>
-</div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="ii"><ab><lb n="1"/><persName key="Valens" type="emperor" full="yes"><name reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">άουιον</supplied></expan></name> <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αύδιον</supplied></expan></name> <name reg="Βάλης">Βάλητα</name></persName><lb n="2"/><space extent="1" unit="character" dim="horizontal"/> <rs type="dignity" key="augustus">Αὔγουστον</rs><lb n="3"/><persName type="aphrodisian" key="TatianusAnt" full="yes"><name reg="Ἀντώνιος"><expan><abbr>Ἀντ</abbr><supplied reason="abbreviation">ώνιος</supplied></expan></name> <name reg="Τατιανός">Τατιανὸς</name></persName><lb n="4"/><w lemma="ὁ">ὁ</w> <rs type="dignity" key="clarissimus"><w lemma="λαμπρός"><expan><abbr>λαμπρ</abbr><supplied reason="abbreviation">ότατος</supplied></expan></w></rs> <rs type="official-secul" key="praeses"><w lemma="ἡγεμών">ἡγεμὼν</w></rs><lb n="5"/><rs type="admin" key="Caria"><w lemma="ἐπαρχεία">ἐπαρχείας</w><lb n="6"/><space extent="1" unit="character" dim="horizontal"/> <placeName reg="Καρία">Καρίας</placeName></rs> <g type="leaf"/>
+<div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><persName key="Valens" type="emperor"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>άουιον</ex></expan></name> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name> <name nymRef="#Βάλης">Βάλητα</name></persName><lb n="2"/><space extent="1" unit="character" dim="horizontal"/> <rs type="dignity" key="augustus">Αὔγουστον</rs><lb n="3"/><persName key="TatianusAnt" type="attested"><name nymRef="#Ἀντώνιος"><expan><abbr>Ἀντ</abbr><ex>ώνιος</ex></expan></name> <name nymRef="#Τατιανός">Τατιανὸς</name></persName><lb n="4"/><w lemma="ὁ">ὁ</w> <rs type="dignity" key="clarissimus"><w lemma="λαμπρός"><expan><abbr>λαμπρ</abbr><ex>ότατος</ex></expan></w></rs> <rs type="official-secul" key="praeses"><w lemma="ἡγεμών">ἡγεμὼν</w></rs><lb n="5"/><rs type="admin" key="Caria"><w lemma="ἐπαρχεία">ἐπαρχείας</w><lb n="6"/><space extent="1" unit="character" dim="horizontal"/> <placeName nymRef="#Καρία">Καρίας</placeName></rs> <g ref="#leaf"/>
 </ab></div>
 </div>
-
-<div type="translation">
-<head>Translation</head>
-<p> Antonius Tatianos, <term lang="la">clarissimus praeses</term> of the province of Caria <supplied reason="subaudible">set up this statue of</supplied> Flavius Claudius Valens, Augustus.</p>
-</div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>i. No commentary yet (2007)</p><p>ii. See discussion at <xref type="eAla-text" n="III.10">III.10</xref>.</p>
-</div>
-
-<div type="history" n="locations"><head>Locations</head><p> <rs type="found"><rs type="monuList" key="Theatre">Theatre</rs>: re-used in the central stretch of the Theatre defence wall.</rs> <rs type="origLocation">re-used in the <rs type="monuList" key="Tetrastoon">Tetrastoon</rs>, west portico in the fourth century: a rectangular plinth, on which this base probably stood, is in position, against a column of the west portico of the tetrastoon, just south of the probable plinth of <xref type="inscription" n="20" href="080405">8.405</xref>. .</rs>. Last recorded location: <rs type="lastLocation">Museum (2004).</rs>. </p></div>
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated in 1972 by the NYU expedition (<rs type="invNo">72.54</rs>).</p>
-</div>
-
-<div type="bibliography" n="none_i">
-<head>Bibliography</head>
-<p>i. Unpublished. ii. cited by <bibl><author>J. R. Martindale</author>, <title level="j">Historia</title> 29 (<date value="1980" notBefore="1980" notAfter="1980" exact="both">1980</date>), 494</bibl>; published by <bibl type="hbi" rend="primary" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>21</biblScope>  and Plate vi</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257541">658</biblScope></bibl>.</p>
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, Roueché).</p>
-</div>
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="72_A_14A"><figDesc>Face ii. (1972)</figDesc></figure><figure href="DSCN0270"><figDesc>Face ii. (2004)</figDesc></figure><figure href="DSCN0272"><figDesc>Face ii., left side and top (2004)</figDesc></figure><figure href="NY_93_88_03"><figDesc>Top of base (1993)</figDesc></figure></p></div>
-
-
-
-
-
-</body>
-</text>
+         <div type="translation">
+            <p> Antonius Tatianos, <term xml:lang="la">clarissimus praeses</term> of the province of Caria <supplied reason="subaudible">set up this statue of</supplied> Flavius Claudius Valens, Augustus.</p>
+         </div>
+         <div type="commentary">
+            <p>i. No commentary yet (2007)</p>
+            <p>ii. See discussion at <ref type="eAla-text" n="III.10" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography" n="none_i">
+            <p>i. Unpublished. ii. cited by <bibl>
+                  <author>J. R. Martindale</author>, <title level="j">Historia</title> 29 (<date value="1980" notBefore="1980" notAfter="1980" exact="both">1980</date>), 494</bibl>; published by <bibl type="hbi" rend="primary" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>21</citedRange>  and Plate vi</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257541">658</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

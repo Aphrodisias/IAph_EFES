@@ -1,84 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120022" n="iAph1785 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Aelius Aurelius Ammianos Paulinos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Aelius Aurelius Ammianos Paulinos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120022</idno>
+            <idno type="IAph2007">iAph120022</idno>
+            <idno type="JMR2004">iAph1785</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description: presumably a rectangular<objectType> statue base</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No descriptions</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="nomenclature">
+Second to third centuries A.D. (<rs type="criteria">nomenclature</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">Walls, North</rs>:  near <ref type="inscription" n="1049" target="120005.xml"/> (=M. 528); 'by the other ΚΑΤΑ ΔΟΞΑΝΤΑ, copied 1705' (Sherard). Boeckh's lemma 'ad austrum' is a deduction from the lemmata in Picenini's notebook.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard papers; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>No description: presumably a rectangular<rs type="objectType"> statue base</rs>.</p>
+<ab><lb n="1"/>  <w lemma="κατά">κα<unclear reason="damage">τ</unclear><supplied reason="lost">ὰ</supplied></w> <w lemma="ὁ">τὰ</w> <w lemma="δοκέω">δόξαντα</w> <w lemma="καί">καὶ</w> <lb n="2"/> <w lemma="διά">διὰ</w> <w lemma="ψήφισμα">ψηφίσμα<lb n="3" break="no"/>τος</w> <w lemma="τιμητικός">τειμητικοῦ</w> <lb n="4"/> <w lemma="ὁ">τῇ</w> <w lemma="βουλή">βουλῇ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <lb n="5"/><space extent="3" unit="character" dim="horizontal"/> <w lemma="δῆμος">δήμῳ</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="6"/> <persName type="attested"><name nymRef="#Αἴλιος">Αἴλιον</name> <name nymRef="#Αὐρήλιος">Αὐρήλιον</name> <lb n="7"/> <name nymRef="#Ἀμμιανός">Αμμιανὸν</name> <name nymRef="#Παυλεῖνος">Παυλεῖ<lb n="8" break="no"/>νον</name> <w lemma="υἱός">υἱὸν</w> <persName type="attested"><name nymRef="#Αἴλιος">Αιλίου</name> <lb n="9"/> <name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <name nymRef="#Παπίας">Παπίου</name> <lb n="10"/> <name nymRef="#Τατιανός">Τατιανοῦ</name></persName></persName> <w lemma="ἀνήρ">ἄνδρα</w> <lb n="11"/> <w lemma="ἀπό">ἀπὸ</w> <w lemma="πρόγονος">προγόνων</w> <lb n="12"/> <w lemma="φιλότιμος">φιλότειμον</w> <w lemma="περί">περὶ</w> <lb n="13"/> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <w lemma="νομικός">νομι<lb n="14" break="no"/>κὸν</w> <w lemma="ἄριστος">ἄριστον</w> <w lemma="ἐκτελέω">ἐκτε<lb n="15" break="no"/>λέσαντα</w> <w lemma="ὁ">τὰς</w> <w lemma="πρῶτος">πρώ<lb n="16" break="no"/>τας</w> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λι<lb n="17" break="no"/>τουργίας</w> <w lemma="πρό">πρὸ</w> <w lemma="ἡλικία">ἡλι<lb n="18" break="no"/>κίας</w>  <w lemma="ζάω"><supplied reason="lost">ζ</supplied>ήσαντα</w>  <lb n="19"/> <w lemma="κόσμιος">κοσμίως</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑ<lb n="20" break="no"/>πόδειγμα</w> <w lemma="ἀρετή">ἀρετῆς</w> <lb n="21"/> <w lemma="καί">καὶ</w> <w lemma="ἐπαινέω">ἐπαινεθέντα</w> <lb n="22"/> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἦθος">ἤθους</w> <w lemma="πραότης">πραύτη<lb n="23" break="no"/>τι</w> <w lemma="καί">καὶ</w> <w lemma="ἐπιείκεια">ἐπιεικείᾳ</w> <lb n="24"/><space extent="3" unit="character" dim="horizontal"/>  <w lemma="βίος">βίου</w><space extent="3" unit="character" dim="horizontal"/>  <lb n="25"/>  <space extent="3" unit="character" dim="horizontal"/>  <g ref="#leaf"/>  <lb n="26"/> <w lemma="ὁ">τὴν</w> <w lemma="ἀνάστασις">ἀνάστασιν</w> <lb n="27"/> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδρίας">ἀνδριάντος</w> <lb n="28"/><w lemma="ποιέω"><supplied reason="lost">ποι</supplied>ησαμένης</w> <w>ΠΑ</w> <lb n="29"/><gap reason="lost" unit="character" quantity="4"/>ΤΗΣ  ΠΟΠΛΙ<gap reason="lost" unit="character" quantity="2"/>  <lb n="30"/><gap reason="lost" unit="character" quantity="3"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No descriptions</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No description</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">nomenclature</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <w lemma="κατά">κα<unclear reason="damage">τ</unclear><supplied reason="lost">ὰ</supplied></w> <w lemma="ὁ">τὰ</w> <w lemma="δοκέω">δόξαντα</w> <w lemma="καί">καὶ</w> <lb n="2"/> <w lemma="διά">διὰ</w> <w lemma="ψήφισμα">ψηφίσμα<lb n="3" type="worddiv"/>τος</w> <w lemma="τιμητικός">τειμητικοῦ</w> <lb n="4"/> <w lemma="ὁ">τῇ</w> <w lemma="βουλή">βουλῇ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <lb n="5"/><space extent="3" unit="character" dim="horizontal"/> <w lemma="δῆμος">δήμῳ</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="6"/> <persName type="aphrodisian"><name reg="Αἴλιος">Αἴλιον</name> <name reg="Αὐρήλιος" type="nomen">Αὐρήλιον</name> <lb n="7"/> <name reg="Ἀμμιανός">Αμμιανὸν</name> <name reg="Παυλεῖνος">Παυλεῖ<lb n="8" type="worddiv"/>νον</name> <w lemma="υἱός">υἱὸν</w> <persName type="aphrodisian"><name reg="Αἴλιος">Αιλίου</name> <lb n="9"/> <name reg="Αὐρήλιος" type="nomen">Αὐρηλίου</name> <name reg="Παπίας">Παπίου</name> <lb n="10"/> <name reg="Τατιανός">Τατιανοῦ</name></persName></persName> <w lemma="ἀνήρ">ἄνδρα</w> <lb n="11"/> <w lemma="ἀπό">ἀπὸ</w> <w lemma="πρόγονος">προγόνων</w> <lb n="12"/> <w lemma="φιλότιμος">φιλότειμον</w> <w lemma="περί">περὶ</w> <lb n="13"/> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <w lemma="νομικός">νομι<lb n="14" type="worddiv"/>κὸν</w> <w lemma="ἄριστος">ἄριστον</w> <w lemma="ἐκτελέω">ἐκτε<lb n="15" type="worddiv"/>λέσαντα</w> <w lemma="ὁ">τὰς</w> <w lemma="πρῶτος">πρώ<lb n="16" type="worddiv"/>τας</w> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λι<lb n="17" type="worddiv"/>τουργίας</w> <w lemma="πρό">πρὸ</w> <w lemma="ἡλικία">ἡλι<lb n="18" type="worddiv"/>κίας</w>  <w lemma="ζάω"><supplied reason="lost">ζ</supplied>ήσαντα</w>  <lb n="19"/> <w lemma="κόσμιος">κοσμίως</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑ<lb n="20" type="worddiv"/>πόδειγμα</w> <w lemma="ἀρετή">ἀρετῆς</w> <lb n="21"/> <w lemma="καί">καὶ</w> <w lemma="ἐπαινέω">ἐπαινεθέντα</w> <lb n="22"/> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἦθος">ἤθους</w> <w lemma="πραότης">πραύτη<lb n="23" type="worddiv"/>τι</w> <w lemma="καί">καὶ</w> <w lemma="ἐπιείκεια">ἐπιεικείᾳ</w> <lb n="24"/><space extent="3" unit="character" dim="horizontal"/>  <w lemma="βίος">βίου</w><space extent="3" unit="character" dim="horizontal"/>  <lb n="25"/>  <space extent="3" unit="character" dim="horizontal"/>  <g type="leaf"/>  <lb n="26"/> <w lemma="ὁ">τὴν</w> <w lemma="ἀνάστασις">ἀνάστασιν</w> <lb n="27"/> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδρίας">ἀνδριάντος</w> <lb n="28"/><w lemma="ποιέω"><supplied reason="lost">ποι</supplied>ησαμένης</w> <w>ΠΑ</w> <lb n="29"/><gap reason="lost" extent="4" unit="character"/>ΤΗΣ  ΠΟΠΛΙ<gap reason="lost" extent="2" unit="character"/>  <lb n="30"/><gap reason="lost" extent="3" unit="character"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 1, ΚΑΤΑΔΟΞ 1705; ΚΑΙΤΑΔΟΞ 1716</p><p>l. 18, ΚΙΑΗΣΑΝΤΑ 1705; ΚΙΑΣ ... ΗΣΑΝΤΑ 1716; ΚΙΑΝ ... ΗΣΑΝΤΑ Boeckh</p><p>l. 28, ΠΟΠΛΙ 1705; ΠΟΛΛΙ 1716</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p> No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p> No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList" cert="low">Walls, North</rs>:  near <xref type="inscription" n="1049" href="120005">12.5</xref> (=M. 528); 'by the other ΚΑΤΑ ΔΟΞΑΝΤΑ, copied 1705' (Sherard). Boeckh's lemma 'ad austrum' is a deduction from the lemmata in Picenini's notebook.</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard papers; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Sherard in 1705 and 1716 (10101, 43 and 123) and by Picenini in 1705 (10102, 32 and, from Tisser, 55v.) Not reported subsequently</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard papers and Picenini, CIG <biblScope>2788</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257106">227</biblScope>
-</bibl>.</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 1, ΚΑΤΑΔΟΞ 1705; ΚΑΙΤΑΔΟΞ 1716</p>
+            <p>l. 18, ΚΙΑΗΣΑΝΤΑ 1705; ΚΙΑΣ ... ΗΣΑΝΤΑ 1716; ΚΙΑΝ ... ΗΣΑΝΤΑ Boeckh</p>
+            <p>l. 28, ΠΟΠΛΙ 1705; ΠΟΛΛΙ 1716</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p> No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p> No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard papers and Picenini, CIG <citedRange>2788</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257106">227</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

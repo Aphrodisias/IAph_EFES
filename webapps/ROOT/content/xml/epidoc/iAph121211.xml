@@ -1,84 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph121211" n="iAph0615 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Gladiator memorial</rs> for familia of M. Antonius Apellas Severinos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term><term><rs type="textType" key="sacer">Religious</rs></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-04-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A large stele (<measure dim="height" unit="metre" type="length">1.46</measure> x <measure dim="width" unit="metre" type="length">0.87</measure> x <measure dim="depth" unit="metre" type="length">0.28</measure>) with a central panel, within simple moulding, topped by a decorated pediment and acroteria and flanked by scrolls. The panel is supported by two winged <rs type="decoration">victories</rs>, holding palms; between them is a smaller figure, with a wheel, identified by Robert as <rs type="decoration">Nemesis</rs>.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> within the panel.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.03-0.04</measure>, clear but irregular; lunate sigma and epsilon.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date exact="none" notAfter="0233" notBefore="0166">Late second/early third century</date>
- (<rs type="criteria">prosopography</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <space unit="character" extent="1"/> <persName type="divine"><w lemma="ἀγαθός">Ἀγαθῇ</w> <w lemma="τύχη">Τύχῃ</w></persName> <space unit="character" extent="1"/> <lb n="2"/> <w lemma="ὑπόμνημα">ὑπόμνημα</w> <w lemma="φαμιλία">φαμιλίας</w> <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="κυνηγέσιον">κυνηγεσίων</w> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <name reg="Ἀντώνιος">Ἀν<lb n="4" type="worddiv"/> τωνίου</name>  <name reg="Ἀπελλᾶς">Ἀπελλᾶ</name> <name>Σεουη<lb n="5" type="worddiv"/>  ρείνου</name>  <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <w lemma="υἱός">ὑιοῦ</w> <lb n="6"/> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <name reg="Ἀντώνιος">Ἀντωνίου</name> <name reg="Ὑψικλῆς">Ὑψικλέ<lb n="7" type="worddiv"/> ους</name></persName></persName>  <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <g type="leaf"/>  </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Gladiator memorial for familia of M. Antonius Apellas Severinos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph121211</idno>
+            <idno type="IAph2007">iAph121211</idno>
+            <idno type="JMR2004">iAph0615</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A large stele (<height unit="metre">1.46</height> x <width unit="metre">0.87</width> x <depth unit="metre">0.28</depth>) with a central panel, within simple moulding, topped by a decorated pediment and acroteria and flanked by scrolls. The panel is supported by two winged <rs type="decoration">victories</rs>, holding palms; between them is a smaller figure, with a wheel, identified by Robert as <rs type="decoration">Nemesis</rs>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> within the panel.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.03-0.04</height>, clear but irregular; lunate sigma and epsilon.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0166"
+                               notAfter="0233"
+                               precision="medium"
+                               evidence="prosopography">
+Late second/early third century
+ (<rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">Walls</rs>:  'in the city wall' (MAMA); stray find later.</provenance>
+                  <provenance type="observed" when="1990">Museum (1990)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation> Transcriptions (Reynolds, Roueché); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-04-24" who="Charlotte-Tupman">DONE</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_H_20.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+         <graphic url="HS_3508.jpg">
+            <desc>Face (1990)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>To Good Fortune. Memorial of the familia, and of the venationes of M. Antonius Apellas Severinos, son of M. Antonius Hypsikles, high-priest.</p>
+<ab><lb n="1"/> <space unit="character" extent="1"/> <persName type="divine"><w lemma="ἀγαθός">Ἀγαθῇ</w> <w lemma="τύχη">Τύχῃ</w></persName> <space unit="character" extent="1"/> <lb n="2"/> <w lemma="ὑπόμνημα">ὑπόμνημα</w> <w lemma="φαμιλία">φαμιλίας</w> <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="κυνηγέσιον">κυνηγεσίων</w> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="#Ἀντώνιος">Ἀν<lb n="4" break="no"/> τωνίου</name>  <name nymRef="#Ἀπελλᾶς">Ἀπελλᾶ</name> <name>Σεουη<lb n="5" break="no"/>  ρείνου</name>  <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <w lemma="υἱός">ὑιοῦ</w> <lb n="6"/> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="#Ἀντώνιος">Ἀντωνίου</name> <name nymRef="#Ὑψικλῆς">Ὑψικλέ<lb n="7" break="no"/> ους</name></persName></persName>  <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <g ref="#leaf"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See  <bibl n="PPA">Roueché, <title>Performers and Partisans</title> ad loc. </bibl></p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList" cert="low">Walls</rs>:  'in the city wall' (MAMA); stray find later.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1990)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p> Transcriptions (Reynolds, Roueché); publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-
-<p>Recorded by W. H. Buckler; by the MAMA expedition; by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Buckler by <bibl n="robertglad">Robert, <title>Gladiateurs</title>, no. <biblScope>156</biblScope></bibl>, with discussion 56-9, 64; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA VIII.<biblScope>507</biblScope></bibl>, on which see <bibl n="hell13">Robert, Hell. XIII, 154-5</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257111">232</biblScope>
-</bibl>; cf. <bibl n="be">BE <biblScope>1966.402</biblScope></bibl>. Published by <bibl n="PPA">Roueché, PPA <biblScope>15</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_H_20"><figDesc>Face (1978)</figDesc></figure><figure href="HS_3508"><figDesc>Face (1990)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>To Good Fortune. Memorial of the familia, and of the venationes of M. Antonius Apellas Severinos, son of M. Antonius Hypsikles, high-priest.</p>
+         </div>
+         <div type="commentary">
+            <p>See  <bibl n="PPA">Roueché, <title>Performers and Partisans</title> ad loc. </bibl>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Buckler by <bibl n="robertglad">Robert, <title>Gladiateurs</title>, no. <citedRange>156</citedRange>
+               </bibl>, with discussion 56-9, 64; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA VIII.<citedRange>507</citedRange>
+               </bibl>, on which see <bibl n="hell13">Robert, Hell. XIII, 154-5</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257111">232</citedRange>
+               </bibl>; cf. <bibl n="be">BE <citedRange>1966.402</citedRange>
+               </bibl>. Published by <bibl n="PPA">Roueché, PPA <citedRange>15</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

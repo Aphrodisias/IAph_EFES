@@ -1,83 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120622" n="iAph0630 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Gladiator memorial</rs> for Aniketos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-01-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material">white marble</rs> <rs type="objectType">altar-stele</rs> with moulding above and below on three sides (<measure dim="height" type="length" unit="metre">0.90</measure> x <measure dim="width" type="length" unit="metre">0.40</measure> x <measure dim="depth" type="length" unit="metre">0.38</measure>). The relief is of a <rs type="decoration">gladiator</rs> advancing to his left. He wears body armour and a helmet which covers his face. On his left arm he holds a long shield in front of his body; in his right hand he holds a short sword</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on face</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>irregular, <measure dim="height" type="length" unit="metre">0.03</measure>, lunate sigma.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">content</rs>, <rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <persName type="aphrodisian"><name reg="Ἀνίκητος">Ἀνίκητος</name></persName> </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Gladiator memorial for Aniketos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120622</idno>
+            <idno type="IAph2007">iAph120622</idno>
+            <idno type="JMR2004">iAph0630</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>75.280</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material>white marble</material>
+                              <objectType>altar-stele</objectType> with moulding above and below on three sides (<height unit="metre">0.90</height> x <width unit="metre">0.40</width> x <depth unit="metre">0.38</depth>). The relief is of a <rs type="decoration">gladiator</rs> advancing to his left. He wears body armour and a helmet which covers his face. On his left arm he holds a long shield in front of his body; in his right hand he holds a short sword</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>irregular, <height unit="metre">0.03</height>, lunate sigma.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="content lettering">
+Second to third centuries A.D. (<rs type="criteria">content</rs>, <rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (east part)</rs> with <ref type="inscription" n="629" target="120621.xml"/> and <ref type="inscription" n="631" target="120615.xml"/> during excavation</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_A_13A.jpg">
+            <desc>Face (1976)</desc>
+         </graphic>
+         <graphic url="89_D_25A.jpg">
+            <desc>Face (1989)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>Aniketos.</p>
+<ab><lb n="1"/> <persName type="attested"><name nymRef="#Ἀνίκητος">Ἀνίκητος</name></persName> </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>For this name used by a gladiator see Sabbatini, Roma no.59; the sense of 'unbeatable' is obviously appropriate.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, South (east part)</rs> with <xref type="inscription" n="629" href="120621">12.621</xref> and <xref type="inscription" n="631" href="120615">12.615</xref> during excavation</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcriptions (Reynolds, Roueché)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-
-<p>Recorded by the NYU expedition in 1975 (<rs type="invNo">75.280</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="PPA">Roueché, PPA <biblScope>30</biblScope></bibl></p>
-</div><div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="76_A_13A"><figDesc>Face (1976)</figDesc></figure><figure href="89_D_25A"><figDesc>Face (1989)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>Aniketos.</p>
+         </div>
+         <div type="commentary">
+            <p>For this name used by a gladiator see Sabbatini, Roma no.59; the sense of 'unbeatable' is obviously appropriate.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="PPA">Roueché, PPA <citedRange>30</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

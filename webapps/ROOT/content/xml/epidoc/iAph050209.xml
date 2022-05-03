@@ -1,80 +1,134 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050209" n="iAph1184 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Dedication</rs> of a <seg cert="low">caryatid</seg> by Claudia Seleukeia</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedication of a <seg cert="low">caryatid</seg> by Claudia Seleukeia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050209</idno>
+            <idno type="IAph2007">iAph050209</idno>
+            <idno type="JMR2004">iAph1184</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>statue base</objectType>; probably with <rs type="decoration">egg and dart moulding</rs> above.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.046</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Hadrianic Baths, East court</rs>: ?Caryatid portico</origPlace>
+                     <origDate notBefore="0134"
+                               notAfter="0166"
+                               precision="medium"
+                               evidence="lettering monument group prosopography">
+Mid second century A.D.
+(<rs type="criteria">lettering</rs>, <rs type="criteria">monument group</rs>, <rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Hadrianic Baths</rs>: '<foreign xml:lang="fr">Façade de l'agora</foreign>' (Gaudin)</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Gaudin's squeeze; publication.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Boulanger_A_41.jpg">
+            <desc>Boulanger notebook A, 41</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">statue base</rs>; probably with <rs type="decoration">egg and dart moulding</rs> above.</p>
+<ab><lb n="1"/>  <persName type="attested"><name nymRef="#Κλαυδία"><expan><abbr>Κλ</abbr><ex>αυδία</ex></expan></name>  <g ref="#stop"/>  <name nymRef="#Σελεύκεια">Σελεύ<lb n="2" break="no"/>κεια</name>  <g ref="#stop"/>  <persName type="attested"><name nymRef="#Ἀπολλώνιος">Ἀπολ  <lb n="3" break="no"/>λωνίου</name></persName></persName>  <w lemma="θυγάτηρ">θυ<lb n="4" break="no"/>γάτηρ</w> <w lemma="ὁ">τῷ</w> <lb n="5"/><space extent="3" unit="character" dim="horizontal"/>  <w lemma="δῆμος">Δήμῳ</w></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.046</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0134" notAfter="0166" exact="none">Mid second century A.D.</date>
-(<rs type="criteria">lettering</rs>, <rs type="criteria">monument group</rs>, <rs type="criteria">prosopography</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="aphrodisian" full="yes"><name reg="Κλαυδία"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδία</supplied></expan></name>  <g type="stop"/>  <name reg="Σελεύκεια">Σελεύ<lb n="2" type="worddiv"/>κεια</name>  <g type="stop"/>  <persName type="aphrodisian" full="yes"><name reg="Ἀπολλώνιος">Ἀπολ  <lb n="3" type="worddiv"/>λωνίου</name></persName></persName>  <w lemma="θυγάτηρ">θυ<lb n="4" type="worddiv"/>γάτηρ</w> <w lemma="ὁ">τῷ</w> <lb n="5"/><space extent="3" unit="character" dim="horizontal"/>  <w lemma="δῆμος">Δήμῳ</w></ab>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p>Cl<supplied reason="abbreviation">audia</supplied> Seleukeia, daughter of Apollonios, to the People.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of the series of dedications from the East Court of the Hadrianic Baths:<xref type="inscription" n="1184" href="050209">5.209</xref>, <xref type="inscription" n="1185" href="050007">5.7</xref>, <xref type="inscription" n="1189" href="050210">5.210</xref>, <xref type="inscription" n="1190" href="050211">5.211</xref>, <xref type="inscription" n="1198" href="050212">5.212</xref>, <xref type="inscription" n="1205" href="050213">5.213</xref>, <xref type="inscription" n="1209" href="050008">5.8</xref>, and others, currently in preparation for publication by Joyce Reynolds;  all are by women, and apparently bore caryatids (see <xref type="inscription" n="1198" href="050212">5.212</xref>). </p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation"><rs type="monuList">Hadrianic Baths, East court</rs>: ?Caryatid portico</rs> <rs type="found"><rs type="monuList">Hadrianic Baths</rs>: '<foreign lang="fr">Façade de l'agora</foreign>' (Gaudin)</rs> <rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Gaudin's squeeze; publication.</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Gaudin (151); transcribed from Reinach by Boulanger (notebook A 41, no.28); not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Gaudin by <bibl type="primary" n="reinach"><author>Reinach</author>, <biblScope>28</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257040">161</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="Preliminary transcriptions">
-<head>Transcriptions</head>
-<p><figure href="Boulanger_A_41"><figDesc>Boulanger notebook A, 41</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>Cl<ex>audia</ex> Seleukeia, daughter of Apollonios, to the People.</p>
+         </div>
+         <div type="commentary">
+            <p>One of the series of dedications from the East Court of the Hadrianic Baths:<ref type="inscription" n="1184" target="050209.xml"/>, <ref type="inscription" n="1185" target="050007.xml"/>, <ref type="inscription" n="1189" target="050210.xml"/>, <ref type="inscription" n="1190" target="050211.xml"/>, <ref type="inscription" n="1198" target="050212.xml"/>, <ref type="inscription" n="1205" target="050213.xml"/>, <ref type="inscription" n="1209" target="050008.xml"/>, and others, currently in preparation for publication by Joyce Reynolds;  all are by women, and apparently bore caryatids (see <ref type="inscription" n="1198" target="050212.xml"/>). </p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Gaudin by <bibl type="primary" n="reinach">
+                  <author>Reinach</author>, <citedRange>28</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257040">161</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

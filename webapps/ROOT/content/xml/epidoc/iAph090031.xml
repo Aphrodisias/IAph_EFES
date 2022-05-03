@@ -1,80 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph090031" n="iAph1294 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for 
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for 
 Julia, daughter of Drusus</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph090031</idno>
+            <idno type="IAph2007">iAph090031</idno>
+            <idno type="JMR2004">iAph1294</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>84.31</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>statue base</objectType> (<width unit="metre">0.64</width> × <height unit="metre">0.265</height> × <depth unit="metre">0.655</depth>) with moulding.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face (inscribed area <width unit="metre">0.60</width>   × <height unit="metre">0.14</height>).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>ave. <height unit="metre">0.035-0.04</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Sebasteion</rs>
+                     </origPlace>
+                     <origDate notBefore="0014" notAfter="0069" evidence="context lettering">
+Julio-Claudian
+(<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Sebasteion</rs>: SEB W.Pro I-84 V-E</provenance>
+                  <provenance type="observed">Dighouse garden</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="85_E_08.jpg">
+            <desc>Face (1985)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">statue base</rs> (<measure type="length" unit="metre" dim="width">0.64</measure> × <measure type="length" unit="metre" dim="height">0.265</measure> × <measure type="length" unit="metre" dim="depth">0.655</measure>) with moulding.</p></div><div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the face (inscribed area <measure type="length" unit="metre" dim="width">0.60</measure>   × <measure type="length" unit="metre" dim="height">0.14</measure>).</p>
+<ab><lb n="1"/>  <persName type="emperor"><name nymRef="#Ἰουλία">Ἰουλίαν</name>  <persName type="emperor"><name nymRef="#Δροῦσος">Δρούσου</name>  <lb n="2"/><name nymRef="#Καῖσαρ">Καίσαρος</name></persName>  <w lemma="θυγάτηρ">θυγατέρα</w></persName>  </ab>
 </div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>ave. <measure dim="height" type="length" unit="metre">0.035-0.04</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0014" notAfter="0069" exact="both">Julio-Claudian</date>
-(<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="emperor" full="yes"><name type=" " reg="Ἰουλία">Ἰουλίαν</name>  <persName type="emperor" full="yes"><name reg="Δροῦσος">Δρούσου</name>  <lb n="2"/><name reg="Καῖσαρ">Καίσαρος</name></persName>  <w lemma="θυγάτηρ">θυγατέρα</w></persName>  </ab>
-</div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>The last letter of each line is sliced vertically, and presumably continued on an adjoining surface, although the moulding at the side makes a difficulty.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>(Statue of) Julia, daughter of Drusus Caesar.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of the Sebasteion group of dedications to the imperial family (<xref type="inscription" n="1315" href="090037">9.37</xref>=72.224, <xref type="inscription" n="1316" href="090038">9.38</xref>=72.237, <xref type="inscription" n="1317" href="090039">9.39</xref>=72.275, <xref type="inscription" n="1318" href="090040">9.40</xref>=73.145, <xref type="inscription" n="1296" href="090033">9.33</xref>=77.123, <xref type="inscription" n="1288" href="090026">9.26</xref>=80.172, <xref type="inscription" n="1289" href="090027">9.27</xref>=82.108, <xref type="inscription" n="1298" href="090035">9.35</xref>=82.109, <xref type="inscription" n="1290" href="090028">9.28</xref>=82.116, <xref type="inscription" n="1297" href="090034">9.34</xref>=82.117, <xref type="inscription" n="1291" href="090029">9.29</xref>=82.118, <xref type="inscription" n="1299" href="090036">9.36</xref>=82.210, <xref type="inscription" n="1293" href="090030">9.30</xref>=84.30, <xref type="inscription" n="1294" href="090031">9.31</xref>=84.31, <xref type="inscription" n="1295" href="090032">9.32</xref>., and  <xref type="inscription" n="1295" href="090032">9.32</xref>=84.41). On these see <bibl n="jmr1996b"><author>Reynolds</author> (1996), <title level="a">Ruler-cult at Aphrodisias</title></bibl>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-Found: <rs type="found"><rs type="monuList">Sebasteion</rs>: SEB W.Pro I-84 V-E</rs>
-<rs type="lastLocation">Dighouse garden</rs><rs type="origLocation"><rs type="monuList">Sebasteion</rs></rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Found by the NYU expedition during excavation in 1984 (<rs type="invNo">84.31</rs>; SBI <rs type="sbi">74</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>mentioned by <bibl n="jmr1986"><author>Reynolds</author>, <title level="j">StudClas</title> 24, 1986, 112</bibl>; by <bibl n="rrrs1987"><author>Smith</author>, <title level="j">JRS</title> 77, 1987, 95</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257075">196</biblScope></bibl> </p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="85_E_08"><figDesc>Face (1985)</figDesc></figure></p><p>			84.A.33-37; KTE</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>The last letter of each line is sliced vertically, and presumably continued on an adjoining surface, although the moulding at the side makes a difficulty.</p>
+         </div>
+         <div type="translation">
+            <p>(Statue of) Julia, daughter of Drusus Caesar.</p>
+         </div>
+         <div type="commentary">
+            <p>One of the Sebasteion group of dedications to the imperial family (<ref type="inscription" n="1315" target="090037.xml"/>=72.224, <ref type="inscription" n="1316" target="090038.xml"/>=72.237, <ref type="inscription" n="1317" target="090039.xml"/>=72.275, <ref type="inscription" n="1318" target="090040.xml"/>=73.145, <ref type="inscription" n="1296" target="090033.xml"/>=77.123, <ref type="inscription" n="1288" target="090026.xml"/>=80.172, <ref type="inscription" n="1289" target="090027.xml"/>=82.108, <ref type="inscription" n="1298" target="090035.xml"/>=82.109, <ref type="inscription" n="1290" target="090028.xml"/>=82.116, <ref type="inscription" n="1297" target="090034.xml"/>=82.117, <ref type="inscription" n="1291" target="090029.xml"/>=82.118, <ref type="inscription" n="1299" target="090036.xml"/>=82.210, <ref type="inscription" n="1293" target="090030.xml"/>=84.30, <ref type="inscription" n="1294" target="090031.xml"/>=84.31, <ref type="inscription" n="1295" target="090032.xml"/>., and  <ref type="inscription" n="1295" target="090032.xml"/>=84.41). On these see <bibl n="jmr1996b">
+                  <author>Reynolds</author> (1996), <title level="a">Ruler-cult at Aphrodisias</title>
+               </bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>mentioned by <bibl n="jmr1986">
+                  <author>Reynolds</author>, <title level="j">StudClas</title> 24, 1986, 112</bibl>; by <bibl n="rrrs1987">
+                  <author>Smith</author>, <title level="j">JRS</title> 77, 1987, 95</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257075">196</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

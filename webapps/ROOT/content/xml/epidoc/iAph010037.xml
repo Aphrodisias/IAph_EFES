@@ -1,127 +1,272 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010037" n="iAph0099 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">Fragments from a <rs type="textType" reg="verse">poem</rs> <seg cert="low"><rs type="textType" reg="building inscription">decorating a feature</rs></seg> in the Temple-Church</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-29</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change><change><date>2003-11-06</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-08-25</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-25</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Twenty-two <rs type="material" key="marmor">white marble</rs> fragments, some joining, from the outer rim of a large <rs type="objectType" reg="circular crowning feature">circular feature</rs> (outer diam. <measure dim="diameter" type="length">3</measure> m, inner <measure dim="diameter" type="length">2.55</measure>). The blocks were designed to be seen from below, and have elaborately ornamented trapezoidal panels on the underside (each <measure precision="circa" type="length" dim="none">0.98</measure> long); the panels each have a different pattern, which enables the grouping together of several fragments which do not join. The blocks are slightly convex, and the outer edge slopes outwards from bottom to top (H. <measure type="length" unit="metre" dim="height">0.16</measure>); on it are a series of bosses with an ornamental cross (<measure precision="circa" type="length" dim="none">0.40</measure> apart).</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>The text runs in one line between the bosses, with a continuous line incised above and below it.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>av. <measure type="length" unit="metre" dim="height">0.09</measure>; deep triangular trenches; elongated and ornate. Colon for stop in a after <foreign lang="grc">φύσιν</foreign>, and in b: semi-colon in a after <foreign lang="grc">ΡΙΣ</foreign>; horizontal line over abbreviation in k.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="1000" exact="none" notBefore="0901">Tenth century A.D.</date> (<rs type="criteria">architecture</rs>, <rs type="criteria">terminology</rs>)</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
-		<div type="textpart_fragment" n="a"><ab>
-		<lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ι</unclear>ν</orig> <g type="boss"/> <gap dim="internal" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig> <g type="boss"/><orig n="unresolved">κωσ</orig> <w lemma="φύσις">φύσιν</w> <g type="stop"/> <g type="boss"/> <orig n="unresolved">γε</orig> <gap dim="internal" reason="lost" extent="unknown" unit="character"/> <seg type="damage"><supplied reason="lost"><g type="boss"/></supplied><gap dim="internal" reason="lost" extent="unknown" unit="character"/></seg> <g type="boss"/><orig n="unresolved">ρισ</orig> <g type="stop"/> <persName type="divine" key="archangel" full="yes"><persName type="divine" key="angel" full="yes"><w lemma="ἄγγελος">ἄγγέλ <g type="boss"/> ων</w></persName> <w lemma="πρωτοστάτης">πρω<unclear reason="damage">τ</unclear><supplied reason="lost">ο <g type="boss"/></supplied> στά<unclear reason="damage">τη</unclear><supplied reason="lost">ς</supplied></w></persName> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		</ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">λιι</unclear></orig>ων <g type="boss"/> <w lemma="σῶμα">σῶμα</w> <w lemma="νεκρός">νεκρ <g type="boss"/> ῶν</w> <w lemma="ὁ">τῷ</w> <w lemma="βίος">βίῷ</w> <g type="stop"/> <g type="boss"/>  <gap dim="right" reason="lost" extent="unknown" unit="character"/></ab></div><div type="textpart_fragment" n="c"><ab>
-		<lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <g type="boss"/> <orig n="unresolved">ου</orig> <w lemma="θυηπόλος">θυηπό <g type="boss"/> λ<unclear reason="damage">ο</unclear><supplied reason="lost">υ</supplied></w> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		</ab></div><div type="textpart_fragment" n="d"><ab><lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <orig n="unresolved"><unclear reason="damage">ω</unclear>σφψ</orig> <g type="boss"/> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		</ab></div><div type="textpart_fragment" n="e"><ab><lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <persName key="Christ" type="divine" full="yes"><name><unclear reason="damage">Χ</unclear>ριστῷ</name></persName> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		</ab></div><div type="textpart_fragment" n="f"><note lang="en" place="not specified" anchored="yes">(perhaps from the end of a)</note><ab><lb n="1"/>
-		<gap dim="left" reason="lost" extent="unknown" unit="character"/> <g type="boss"/> <orig n="unresolved">αυλ</orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		</ab></div><div type="textpart_fragment" n="g"><ab><lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">α</unclear>λλ</orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		</ab></div><div type="textpart_fragment" n="h"><ab><lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved">τισ<unclear reason="damage">ι</unclear></orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		</ab></div><div type="textpart_fragment" n="i"><ab><lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="undefined">κ</unclear>ο</orig> <g type="boss"/> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		</ab></div><div type="textpart_fragment" n="j"><ab><lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <g type="boss"/> <orig n="unresolved">τ<unclear reason="undefined">ι</unclear></orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		</ab></div><div type="textpart_fragment" n="k"><ab><lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <persName type="divine"><w lemma="θεός"><hi rend="supraline"><expan><abbr>Θ</abbr><supplied reason="abbreviation">ε</supplied><abbr>έ</abbr></expan></hi></w></persName> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragments from a poem <seg cert="low">decorating a feature</seg> in the Temple-Church</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010037</idno>
+            <idno type="IAph2007">iAph010037</idno>
+            <idno type="JMR2004">iAph0099</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>62.104</idno>
+                  <idno>62.110</idno>
+                  <idno>62.174</idno>
+                  <idno>62.175</idno>
+                  <idno>62.176</idno>
+                  <idno>62.177</idno>
+                  <idno>62.178</idno>
+                  <idno>62.196</idno>
+                  <idno>62.197</idno>
+                  <idno>62.198</idno>
+                  <idno>62.199</idno>
+                  <idno>63.637</idno>
+                  <idno>64.129</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Twenty-two <material key="marmor">white marble</material> fragments, some joining, from the outer rim of a large <objectType key="circular crowning feature">circular feature</objectType> (outer diam. <dim type="diameter">3</dim> m, inner <dim type="diameter">2.55</dim>). The blocks were designed to be seen from below, and have elaborately ornamented trapezoidal panels on the underside (each <height>0.98</height> long); the panels each have a different pattern, which enables the grouping together of several fragments which do not join. The blocks are slightly convex, and the outer edge slopes outwards from bottom to top (H. <height unit="metre">0.16</height>); on it are a series of bosses with an ornamental cross (<height>0.40</height> apart).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>The text runs in one line between the bosses, with a continuous line incised above and below it.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>av. <height unit="metre">0.09</height>; deep triangular trenches; elongated and ornate. Colon for stop in a after <foreign xml:lang="grc">φύσιν</foreign>, and in b: semi-colon in a after <foreign xml:lang="grc">ΡΙΣ</foreign>; horizontal line over abbreviation in k.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Temple/Church</rs>.</origPlace>
+                     <origDate notBefore="0901"
+                               notAfter="1000"
+                               precision="medium"
+                               evidence="architecture terminology">Tenth century A.D. (<rs type="criteria">architecture</rs>, <rs type="criteria">terminology</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>: various locations, over several years.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-29" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-25" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-06" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-25" who="#CMR">tagged and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="DO_02.jpg">
+            <desc>a. Fragment 1 (1969)</desc>
+         </graphic>
+         <graphic url="DO_01.jpg">
+            <desc>a. Fragment 1, underside (1969)</desc>
+         </graphic>
+         <graphic url="DO_03.jpg">
+            <desc>a. Fragment 2 (1969)</desc>
+         </graphic>
+         <graphic url="DO_04.jpg">
+            <desc>a. Fragment 2, underside (1969)</desc>
+         </graphic>
+         <graphic url="DO_05.jpg">
+            <desc>a. Fragment 3 (1969)</desc>
+         </graphic>
+         <graphic url="DO_06.jpg">
+            <desc>a. Fragment 3, underside (1969)</desc>
+         </graphic>
+         <graphic url="DO_07.jpg">
+            <desc>a. Fragment 4 (1969)</desc>
+         </graphic>
+         <graphic url="DO_09.jpg">
+            <desc>a. Fragment 5 (1969)</desc>
+         </graphic>
+         <graphic url="DO_11.jpg">
+            <desc>a. Fragment 6 (1969)</desc>
+         </graphic>
+         <graphic url="DO_12.jpg">
+            <desc>b. Fragment 1 (1969)</desc>
+         </graphic>
+         <graphic url="DO_13.jpg">
+            <desc>b. Fragment 1, underside (1969)</desc>
+         </graphic>
+         <graphic url="DO_15.jpg">
+            <desc>b. Fragment 3 (1969)</desc>
+         </graphic>
+         <graphic url="DO_14.jpg">
+            <desc>b. Fragment 3, underside (1969)</desc>
+         </graphic>
+         <graphic url="DO_17.jpg">
+            <desc>b. Fragment 4 (1969)</desc>
+         </graphic>
+         <graphic url="DO_16.jpg">
+            <desc>b. Fragment 4, underside (1969)</desc>
+         </graphic>
+         <graphic url="72_D_08A.jpg">
+            <desc>b. Assembled, left end (1972)</desc>
+         </graphic>
+         <graphic url="72_D_09A.jpg">
+            <desc>b. Assembled, right end (1972)</desc>
+         </graphic>
+         <graphic url="DO_19.jpg">
+            <desc>c. Fragment 1 (1969)</desc>
+         </graphic>
+         <graphic url="DO_18.jpg">
+            <desc>c. Fragment 1, underside (1969)</desc>
+         </graphic>
+         <graphic url="DO_20.jpg">
+            <desc>c. Fragment 2 (1969)</desc>
+         </graphic>
+         <graphic url="DO_23.jpg">
+            <desc>c. Fragment 3 (1969)</desc>
+         </graphic>
+         <graphic url="DO_22.jpg">
+            <desc>c. Fragment 3, underside (1969)</desc>
+         </graphic>
+         <graphic url="72_D_07A.jpg">
+            <desc>c. Assembled (1972)</desc>
+         </graphic>
+         <graphic url="DO_24.jpg">
+            <desc>d. Face (1969)</desc>
+         </graphic>
+         <graphic url="DO_25.jpg">
+            <desc>e. Face (1969)</desc>
+         </graphic>
+         <graphic url="DO_26.jpg">
+            <desc>f. Face (1969)</desc>
+         </graphic>
+         <graphic url="DO_27.jpg">
+            <desc>g. Face (1969)</desc>
+         </graphic>
+         <graphic url="DO_28.jpg">
+            <desc>g. Underside (1969)</desc>
+         </graphic>
+         <graphic url="rosen002.jpg">
+            <desc>i. Face (1966)</desc>
+         </graphic>
+         <graphic url="78_C_11.jpg">
+            <desc>j. Face (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+		<div n="a" type="textpart" subtype="fragment"><ab>
+		<lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ι</unclear>ν</orig> <g ref="#boss"/> <gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig> <g ref="#boss"/><orig n="unresolved">κωσ</orig> <w lemma="φύσις">φύσιν</w> <g ref="#stop"/> <g ref="#boss"/> <orig n="unresolved">γε</orig> <gap reason="lost" unit="character" extent="unknown"/> <seg type="damage"><supplied reason="lost"><g ref="#boss"/></supplied><gap reason="lost" unit="character" extent="unknown"/></seg> <g ref="#boss"/><orig n="unresolved">ρισ</orig> <g ref="#stop"/> <persName key="archangel" type="divine"><persName key="angel" type="divine"><w lemma="ἄγγελος">ἄγγέλ <g ref="#boss"/> ων</w></persName> <w lemma="πρωτοστάτης">πρω<unclear reason="damage">τ</unclear><supplied reason="lost">ο <g ref="#boss"/></supplied> στά<unclear reason="damage">τη</unclear><supplied reason="lost">ς</supplied></w></persName> <gap reason="lost" unit="character" extent="unknown"/>
+		</ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">λιι</unclear></orig>ων <g ref="#boss"/> <w lemma="σῶμα">σῶμα</w> <w lemma="νεκρός">νεκρ <g ref="#boss"/> ῶν</w> <w lemma="ὁ">τῷ</w> <w lemma="βίος">βίῷ</w> <g ref="#stop"/> <g ref="#boss"/>  <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="c" type="textpart" subtype="fragment"><ab>
+		<lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <g ref="#boss"/> <orig n="unresolved">ου</orig> <w lemma="θυηπόλος">θυηπό <g ref="#boss"/> λ<unclear reason="damage">ο</unclear><supplied reason="lost">υ</supplied></w> <gap reason="lost" unit="character" extent="unknown"/>
+		</ab></div><div n="d" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <orig n="unresolved"><unclear reason="damage">ω</unclear>σφψ</orig> <g ref="#boss"/> <gap reason="lost" unit="character" extent="unknown"/>
+		</ab></div><div n="e" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <persName key="Christ" type="divine"><name><unclear reason="damage">Χ</unclear>ριστῷ</name></persName> <gap reason="lost" unit="character" extent="unknown"/>
+		</ab></div><div n="f" type="textpart" subtype="fragment"><note place="not specified" xml:lang="en"/><ab><lb n="1"/>
+		<gap reason="lost" unit="character" extent="unknown"/> <g ref="#boss"/> <orig n="unresolved">αυλ</orig><gap reason="lost" unit="character" extent="unknown"/>
+		</ab></div><div n="g" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">α</unclear>λλ</orig><gap reason="lost" unit="character" extent="unknown"/>
+		</ab></div><div n="h" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">τισ<unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		</ab></div><div n="i" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="undefined">κ</unclear>ο</orig> <g ref="#boss"/> <gap reason="lost" unit="character" extent="unknown"/>
+		</ab></div><div n="j" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <g ref="#boss"/> <orig n="unresolved">τ<unclear reason="undefined">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		</ab></div><div n="k" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <persName type="divine"><w lemma="θεός"><hi rend="supraline"><expan><abbr>Θ</abbr><ex>ε</ex><abbr>έ</abbr></expan></hi></w></persName> <gap reason="lost" unit="character" extent="unknown"/>
 		</ab></div>
       </div>
-
-      <div type="apparatus"><head>Appartus</head><p>f. Perhaps <foreign lang="grc">αὐλ<supplied reason="lost">η</supplied><gap reason="lost" dim="right"/></foreign></p></div><div type="translation">
-        <head>Translation</head>
-        <ab>
-		a. <gap dim="left" reason="lost"/> nature <gap dim="internal" reason="lost"/> leader of angels <gap dim="right" reason="lost"/>
-		<cb n="b"/></ab><ab>b.  body of the dead, <seg>by life</seg> <gap dim="right" reason="lost"/>
-		</ab><ab>c. <gap dim="left" reason="lost"/> priest <gap dim="right" reason="lost"/>
-		</ab><ab>e. <gap dim="left" reason="lost"/> Christ <gap dim="right" reason="lost"/>
-		</ab><ab>k. <gap dim="left" reason="lost"/> <supplied reason="subaudible">o</supplied> God <gap dim="right" reason="lost"/>
-		</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-		<p>See discussion at <xref type="eAla-text" n="VII.8">VII.8</xref></p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList">Temple/Church</rs>: various locations, over several years.</rs>. Original location: <rs type="origLocation"><rs type="monuList">Temple/Church</rs>.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Part of a, and k recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (30); a-j excavated by the NYU expedition in 1962, 1963, 1964, or recorded as stray finds (<rs type="invNo">62.104</rs>, <rs type="invNo">62.110</rs>, <rs type="invNo">62.174</rs>, <rs type="invNo">62.175</rs>, <rs type="invNo">62.176</rs>, <rs type="invNo">62.177</rs>, <rs type="invNo">62.178</rs>, <rs type="invNo">62.196</rs>, <rs type="invNo">62.197</rs>, <rs type="invNo">62.198</rs>, <rs type="invNo">62.199</rs>, <rs type="invNo">63.637</rs>, <rs type="invNo">64.129</rs>, and unnumbered).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>a. (part) and k. published from Gaudin by <bibl type="hbi" n="reinach"><author>Reinach</author>, no. <biblScope>211</biblScope></bibl>, whence <bibl type="hbi" n="IGC"><title level="s">IGC</title> <biblScope>259</biblScope></bibl>; all published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>99</biblScope> and plates xxv, xxvi (a. and c.)</bibl>, whence <bibl type="hbi" n="steinepig"><title level="m">Steinepigramme</title> <biblScope>02/09/98</biblScope></bibl>; not in <title level="m">PHI</title>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs"><head>Photographs</head><p><figure href="DO_02"><figDesc>a. Fragment 1 (1969)</figDesc></figure><figure href="DO_01"><figDesc>a. Fragment 1, underside (1969)</figDesc></figure><figure href="DO_03"><figDesc>a. Fragment 2 (1969)</figDesc></figure><figure href="DO_04"><figDesc>a. Fragment 2, underside (1969)</figDesc></figure><figure href="DO_05"><figDesc>a. Fragment 3 (1969)</figDesc></figure><figure href="DO_06"><figDesc>a. Fragment 3, underside (1969)</figDesc></figure><figure href="DO_07"><figDesc>a. Fragment 4 (1969)</figDesc></figure><figure href="DO_09"><figDesc>a. Fragment 5 (1969)</figDesc></figure><figure href="DO_11"><figDesc>a. Fragment 6 (1969)</figDesc></figure><figure href="DO_12"><figDesc>b. Fragment 1 (1969)</figDesc></figure><figure href="DO_13"><figDesc>b. Fragment 1, underside (1969)</figDesc></figure><figure href="DO_15"><figDesc>b. Fragment 3 (1969)</figDesc></figure><figure href="DO_14"><figDesc>b. Fragment 3, underside (1969)</figDesc></figure><figure href="DO_17"><figDesc>b. Fragment 4 (1969)</figDesc></figure><figure href="DO_16"><figDesc>b. Fragment 4, underside (1969)</figDesc></figure><figure href="72_D_08A"><figDesc>b. Assembled, left end (1972)</figDesc></figure><figure href="72_D_09A"><figDesc>b. Assembled, right end (1972)</figDesc></figure><figure href="DO_19"><figDesc>c. Fragment 1 (1969)</figDesc></figure><figure href="DO_18"><figDesc>c. Fragment 1, underside (1969)</figDesc></figure><figure href="DO_20"><figDesc>c. Fragment 2 (1969)</figDesc></figure><figure href="DO_23"><figDesc>c. Fragment 3 (1969)</figDesc></figure><figure href="DO_22"><figDesc>c. Fragment 3, underside (1969)</figDesc></figure><figure href="72_D_07A"><figDesc>c. Assembled (1972)</figDesc></figure><figure href="DO_24"><figDesc>d. Face (1969)</figDesc></figure><figure href="DO_25"><figDesc>e. Face (1969)</figDesc></figure><figure href="DO_26"><figDesc>f. Face (1969)</figDesc></figure><figure href="DO_27"><figDesc>g. Face (1969)</figDesc></figure><figure href="DO_28"><figDesc>g. Underside (1969)</figDesc></figure><figure href="rosen002"><figDesc>i. Face (1966)</figDesc></figure><figure href="78_C_11"><figDesc>j. Face (1978)</figDesc></figure></p></div>
-
-      
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <p>f. Perhaps <foreign xml:lang="grc">αὐλ<supplied reason="lost">η</supplied>
+                  <gap reason="lost" unit="character" extent="unknown"/>
+               </foreign>
+            </p>
+         </div>
+         <div type="translation">
+            <ab>
+		a. <gap reason="lost" unit="character" extent="unknown"/> nature <gap reason="lost" unit="character" extent="unknown"/> leader of angels <gap reason="lost" unit="character" extent="unknown"/>
+               <cb n="b"/>
+            </ab>
+            <ab>b.  body of the dead, <seg>by life</seg>
+               <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
+            <ab>c. <gap reason="lost" unit="character" extent="unknown"/> priest <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
+            <ab>e. <gap reason="lost" unit="character" extent="unknown"/> Christ <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
+            <ab>k. <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="subaudible">o</supplied> God <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="VII.8" target=".xml"/>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>a. (part) and k. published from Gaudin by <bibl type="hbi" n="reinach">
+                  <author>Reinach</author>, no. <citedRange>211</citedRange>
+               </bibl>, whence <bibl type="hbi" n="IGC">
+                  <title level="s">IGC</title>
+                  <citedRange>259</citedRange>
+               </bibl>; all published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>99</citedRange> and plates xxv, xxvi (a. and c.)</bibl>, whence <bibl type="hbi" n="steinepig">
+                  <title level="m">Steinepigramme</title>
+                  <citedRange>02/09/98</citedRange>
+               </bibl>; not in <title level="m">PHI</title>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

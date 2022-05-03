@@ -1,82 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph121002" n="iAph1851 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Molossos, Ammia and Phanias</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Molossos, Ammia and Phanias</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph121002</idno>
+            <idno type="IAph2007">iAph121002</idno>
+            <idno type="JMR2004">iAph1851</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Monumental <objectType cert="low">block</objectType>
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in three columns</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.036</height> (l.1) and <height unit="metre">0.03</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0033"
+                               notAfter="-0033"
+                               precision="medium"
+                               evidence="titulature prosopography">
+Late first century B.C. or early first century A.D. (<rs type="criteria">titulature</rs>, <rs type="criteria">prosopography</rs>
+                     </origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, West Gate</rs>: Sherard: 'at the west gate, on the left hand as you enter, third column, the first and third broke'. Gaudin: 'Porte Ouest, interieurement'. Sherard is probably referring to columns of writing, not separate stones.</provenance>
+                  <provenance type="observed" when="1904">Findspot (1904)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard papers; Gaudin; publications</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="gaudin_0023.jpg">
+            <desc>Gaudin squeeze</desc>
+         </graphic>
+         <graphic url="gaudin_0030.jpg">
+            <desc>Gaudin squeeze</desc>
+         </graphic>
+         <graphic url="gaudin_0062.jpg">
+            <desc>Gaudin squeeze</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Monumental <rs type="objectType" cert="low">block</rs></p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> in three columns</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.036</measure> (l.1) and <measure dim="height" type="length" unit="metre">0.03</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="-0033" notAfter="-0033" exact="none">Late first century B.C. or early first century A.D.</date> (<rs type="criteria">titulature</rs>, <rs type="criteria">prosopography</rs></p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section"><ab><lb n="1"/>  <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή"><supplied reason="lost">βουλὴ</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="γερουσία"><supplied reason="lost">γ</supplied>ε<supplied reason="lost">ρ</supplied>ουσία</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="σύμπας">σύνπας</w> <w lemma="δῆμος">δῆ<supplied reason="lost">μος</supplied></w></ab></div><div type="textpart_section"><div type="textpart_column" n="i"><ab><lb n="1"/><persName type="aphrodisian"><gap reason="lost" extent="3" unit="character"/> <name reg="Διόδωρος" type="        "><supplied reason="lost">Διοδ</supplied><unclear reason="damage">ώ</unclear>ρου</name>  <name reg="Μολοσσός">Μολοσ<lb n="2" type="worddiv"/><supplied reason="lost">σὸν</supplied></name></persName>  <w lemma="φιλόπολις"><supplied reason="lost">φιλό</supplied>πολιν</w>  <w lemma="ἱερατεύω">ἱερα<lb n="3" type="worddiv"/><supplied reason="lost">τεύσαντα</supplied></w>  <persName type="emperor"><name reg="Καῖσαρ"><supplied reason="lost">Καίσ</supplied>αρος</name></persName> <w lemma="διά">διὰ</w> <w lemma="βίος">βίου</w> <lb n="4"/><w lemma="ὅς"><supplied reason="lost" cert="low">ὃς</supplied></w>  <w lemma="πολύς"><supplied reason="lost">πο</supplied>λλὰς</w>  <w lemma="λειτουργία">λει<lb n="5" type="worddiv"/><supplied reason="lost">τουργίας</supplied></w>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ἑστίασις">ἑστιάσεις</w> <lb n="6"/><w><gap reason="lost" extent="2" unit="character"/>η</w> <w lemma="παρέχω">παρέσχηκε</w> <lb n="7"/><w lemma="καταλείπω"><supplied reason="lost">  καταλι</supplied>πόντα</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <lb n="8"/><w lemma="χρῆμα"><supplied reason="lost">χρήματα</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἴ</supplied>ς</w> <w lemma="τε">τε</w> <w lemma="κατασκευή">κατασ<lb n="9" type="worddiv"/><supplied reason="lost">κευὰς</supplied></w>  <w lemma="ἀνάθημα"><supplied reason="lost">ἀν</supplied>αθημάτων</w>  <lb n="10"/><w lemma="καί"><supplied reason="lost">  καὶ</supplied></w>  <w lemma="κλῆρος"><supplied reason="lost">κλήρο</supplied>υς</w> <w lemma="διηνεκής">διηνεκῶς</w></ab></div><div type="textpart_column" n="ii"><ab><lb n="1"/> <persName type="aphrodisian"><name reg="Ἀμμία">Ἀμμίαν</name> <persName type="aphrodisian"><name reg="Φανίας">Φανίου</name></persName> <lb n="2"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Μύων">Μύωνος</name></persName></persName> <w lemma="ἱερατεύω">ἱερα<lb n="3" type="worddiv"/>τεύσασαν</w> <persName type="emperor"><w lemma="θεά">θεᾶς</w> <lb n="4"/> <name reg="Ἰουλία">Ἰουλίας</name></persName> <w lemma="νέος">νέας</w> <lb n="5"/> <persName type="divine"><name reg="Δημήτηρ">Δήμητρος</name></persName> <w lemma="συμφιλοδοξέω">συνφι<lb n="6" type="worddiv"/>λοδοξήσασαν</w>  <lb n="7"/> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσιν</w> <persName type="aphrodisian"><name reg="Μολοσσός">Μολοσ<lb n="8" type="worddiv"/>σῷ</name></persName> <w lemma="ὁ">τῷ</w> <w lemma="ἀνήρ">ἀνδρί</w></ab></div><div type="textpart_column" n="iii"><ab><lb n="1"/><persName type="aphrodisian"><name reg="Φανίας">Φαν<supplied reason="lost">ίαν</supplied></name> <gap reason="lost" extent="3" unit="character"/> <persName type="aphrodisian"><name reg="Μολοσσός"><supplied reason="lost">Μολοσ</supplied><lb n="2" type="worddiv"/>σοῦ</name></persName></persName>  <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>  <persName type="aphrodisian"><name reg="Ἀμμία"><supplied reason="lost">Ἀμμίας</supplied></name></persName>  <w lemma="ἱερατεύω"><supplied reason="lost">ἱερα</supplied><lb n="3" type="worddiv"/>τεύσ<supplied reason="lost">αντα</supplied></w>  <persName type="emperor"><w lemma="σεβαστός"><supplied reason="lost">Σεβαστοῦ</supplied></w>  <lb n="4"/><name reg="Καῖσαρ">Καίσα<supplied reason="lost">ρος</supplied></name></persName><gap reason="lost" extent="3" unit="character"/>  <lb n="4a"/><gap reason="lost" extent="3" unit="character"/></ab></div>
+<div type="textpart" subtype="section"><ab><lb n="1"/>  <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή"><supplied reason="lost">βουλὴ</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="γερουσία"><supplied reason="lost">γ</supplied>ε<supplied reason="lost">ρ</supplied>ουσία</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="σύμπας">σύνπας</w> <w lemma="δῆμος">δῆ<supplied reason="lost">μος</supplied></w></ab></div><div type="textpart" subtype="section"><div n="i" type="textpart" subtype="column"><ab><lb n="1"/><persName type="attested"><gap reason="lost" unit="character" quantity="3"/> <name nymRef="#Διόδωρος"><supplied reason="lost">Διοδ</supplied><unclear reason="damage">ώ</unclear>ρου</name>  <name nymRef="#Μολοσσός">Μολοσ<lb n="2" break="no"/><supplied reason="lost">σὸν</supplied></name></persName>  <w lemma="φιλόπολις"><supplied reason="lost">φιλό</supplied>πολιν</w>  <w lemma="ἱερατεύω">ἱερα<lb n="3" break="no"/><supplied reason="lost">τεύσαντα</supplied></w>  <persName type="emperor"><name nymRef="#Καῖσαρ"><supplied reason="lost">Καίσ</supplied>αρος</name></persName> <w lemma="διά">διὰ</w> <w lemma="βίος">βίου</w> <lb n="4"/><w lemma="ὅς"><supplied reason="lost" cert="low">ὃς</supplied></w>  <w lemma="πολύς"><supplied reason="lost">πο</supplied>λλὰς</w>  <w lemma="λειτουργία">λει<lb n="5" break="no"/><supplied reason="lost">τουργίας</supplied></w>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ἑστίασις">ἑστιάσεις</w> <lb n="6"/><w><gap reason="lost" unit="character" quantity="2"/>η</w> <w lemma="παρέχω">παρέσχηκε</w> <lb n="7"/><w lemma="καταλείπω"><supplied reason="lost">  καταλι</supplied>πόντα</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <lb n="8"/><w lemma="χρῆμα"><supplied reason="lost">χρήματα</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἴ</supplied>ς</w> <w lemma="τε">τε</w> <w lemma="κατασκευή">κατασ<lb n="9" break="no"/><supplied reason="lost">κευὰς</supplied></w>  <w lemma="ἀνάθημα"><supplied reason="lost">ἀν</supplied>αθημάτων</w>  <lb n="10"/><w lemma="καί"><supplied reason="lost">  καὶ</supplied></w>  <w lemma="κλῆρος"><supplied reason="lost">κλήρο</supplied>υς</w> <w lemma="διηνεκής">διηνεκῶς</w></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="1"/> <persName type="attested"><name nymRef="#Ἀμμία">Ἀμμίαν</name> <persName type="attested"><name nymRef="#Φανίας">Φανίου</name></persName> <lb n="2"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μύων">Μύωνος</name></persName></persName> <w lemma="ἱερατεύω">ἱερα<lb n="3" break="no"/>τεύσασαν</w> <persName type="emperor"><w lemma="θεά">θεᾶς</w> <lb n="4"/> <name nymRef="#Ἰουλία">Ἰουλίας</name></persName> <w lemma="νέος">νέας</w> <lb n="5"/> <persName type="divine"><name nymRef="#Δημήτηρ">Δήμητρος</name></persName> <w lemma="συμφιλοδοξέω">συνφι<lb n="6" break="no"/>λοδοξήσασαν</w>  <lb n="7"/> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσιν</w> <persName type="attested"><name nymRef="#Μολοσσός">Μολοσ<lb n="8" break="no"/>σῷ</name></persName> <w lemma="ὁ">τῷ</w> <w lemma="ἀνήρ">ἀνδρί</w></ab></div><div n="iii" type="textpart" subtype="column"><ab><lb n="1"/><persName type="attested"><name nymRef="#Φανίας">Φαν<supplied reason="lost">ίαν</supplied></name> <gap reason="lost" unit="character" quantity="3"/> <persName type="attested"><name nymRef="#Μολοσσός"><supplied reason="lost">Μολοσ</supplied><lb n="2" break="no"/>σοῦ</name></persName></persName>  <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>  <persName type="attested"><name nymRef="#Ἀμμία"><supplied reason="lost">Ἀμμίας</supplied></name></persName>  <w lemma="ἱερατεύω"><supplied reason="lost">ἱερα</supplied><lb n="3" break="no"/>τεύσ<supplied reason="lost">αντα</supplied></w>  <persName type="emperor"><w lemma="σεβαστός"><supplied reason="lost">Σεβαστοῦ</supplied></w>  <lb n="4"/><name nymRef="#Καῖσαρ">Καίσα<supplied reason="lost">ρος</supplied></name></persName><gap reason="lost" unit="character" quantity="3"/>  <lb n="4a"/><gap reason="lost" unit="character" quantity="3"/></ab></div>
 </div></div>
-
-<div type="translation" n="notyet">
-<head>Translation</head>
-<p>None yet (2007)</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See <bibl n="epiBibItem" id="jmr1986" default="NO"><author rend="primary">J. M. <name type="surname">Reynolds</name></author>, <title level="a">Further information on imperial cult at Aphrodisias</title>, Festschrift Pippidi, <title level="j">Studii Clasici</title> 24 (<date>1986</date>), 109-17</bibl>,
+         <div type="translation" n="notyet">
+            <p>None yet (2007)</p>
+         </div>
+         <div type="commentary">
+            <p>See <bibl n="epiBibItem" id="jmr1986" default="NO">
+                  <author rend="primary">J. M. <name type="surname">Reynolds</name>
+                  </author>, <title level="a">Further information on imperial cult at Aphrodisias</title>, Festschrift Pippidi, <title level="j">Studii Clasici</title> 24 (<date>1986</date>), 109-17</bibl>,
                       114.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, West Gate</rs>: Sherard: 'at the west gate, on the left hand as you enter, third column, the first and third broke'. Gaudin: 'Porte Ouest, interieurement'. Sherard is probably referring to columns of writing, not separate stones.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot (1904)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard papers; Gaudin; publications</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied (lines 2-10) by Sherard in 1716 (10101, f. 127); complete text recorded by K&amp;R (not in notebook); recorded by Gaudin (134). Not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard, CIG <biblScope>2815</biblScope></bibl>; from K&amp;R and from Gaudin, by <bibl n="reinach">Reinach, <biblScope>35</biblScope></bibl>, whence W. H. Buckler, Rev. de Phil. (1914), 211-14; discussed by L. Robert, Rev. de Phil. (1930), 26-7, whence SEG 30, 1244, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257185">306</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="Preliminary transcriptions"><head>Representations</head><p><figure href="gaudin_0023"><figDesc>Gaudin squeeze</figDesc></figure><figure href="gaudin_0030"><figDesc>Gaudin squeeze</figDesc></figure><figure href="gaudin_0062"><figDesc>Gaudin squeeze</figDesc></figure></p></div></body></text>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard, CIG <citedRange>2815</citedRange>
+               </bibl>; from K&amp;R and from Gaudin, by <bibl n="reinach">Reinach, <citedRange>35</citedRange>
+               </bibl>, whence W. H. Buckler, Rev. de Phil. (1914), 211-14; discussed by L. Robert, Rev. de Phil. (1930), 26-7, whence SEG 30, 1244, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257185">306</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

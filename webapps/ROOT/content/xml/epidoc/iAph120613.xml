@@ -1,83 +1,132 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120613" n="iAph1905 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Honours</rs> for Tiberius Claudius Hierokles</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-02</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Honours for Tiberius Claudius Hierokles</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120613</idno>
+            <idno type="IAph2007">iAph120613</idno>
+            <idno type="JMR2004">iAph1905</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material>
+                              <objectType>base</objectType>, with <rs type="decoration">moulding</rs> above and below (<width unit="metre">0.69</width> x  <height>0.34</height> x depth not measurable) from a composite monument, of which it formed the right side.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the exposed face, i. to the left of ii.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. <height unit="metre">0.03</height>; ii. l.1, <height unit="metre">0.04</height>; ll. 2, 3, <height unit="metre">0.03</height>; l.4, <height unit="metre">0.025</height>; l.5, <height unit="metre">0.02</height>. Rho with a second down stroke.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0051"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering">
+Second half of first century A.D.
+ (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (east part)</rs>: reused upside down in the southern section of the city wall, excavated in 1975.</provenance>
+                  <provenance type="observed" when="1977">Findspot (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-02" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_G_09.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="77_G_10.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>A <rs type="material" key="marmor">white marble</rs> <rs type="objectType">base</rs>, with <rs type="decoration">moulding</rs> above and below (<measure type="length" unit="metre" dim="width">0.69</measure> x  <measure dim="height" type="length" precision="circa">0.34</measure> x depth not measurable) from a composite monument, of which it formed the right side.</p>
+<div n="i" type="textpart" subtype="section"><ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/> <persName type="attested"><name nymRef="#Γάϊος">Γαίον</name>  <lb n="2"/><w><gap reason="lost" unit="character" extent="unknown"/><supplied reason="lost">ο</supplied>υς</w> <w lemma="υἱός">υἱὸν</w></persName> <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="λεγιών">λεγιῶ<lb n="4" break="no"/><supplied reason="lost">νος</supplied></w> <gap reason="lost" unit="character" extent="unknown"/> <space extent="3" unit="character" dim="horizontal"/></ab></div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <lb n="2"/> <w lemma="τιμάω">ἐτείμησαν</w> <g ref="#star"/>  <persName type="attested"><name nymRef="#Τιβέριος">Τιβέρι<lb n="3" break="no"/>ον</name> <name nymRef="#Κλαύδιος">Κλαύδιον</name> <persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀριστο<lb n="4" break="no"/>κλέους</name></persName> <w lemma="υἱός">υἱὸν</w> <name nymRef="#Κυρείνα">Κυρίνᾳ</name> <space extent="3" unit="character" dim="horizontal"/>  <lb n="5"/><space extent="3" unit="character" dim="horizontal"/>  <name nymRef="#Ἱεροκλῆς">Ἱεροκ<supplied reason="lost">λέα</supplied></name></persName>  <space extent="3" unit="character" dim="horizontal"/></ab></div>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the exposed face, i. to the left of ii.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>i. <measure dim="height" type="length" unit="metre">0.03</measure>; ii. l.1, <measure dim="height" type="length" unit="metre">0.04</measure>; ll. 2, 3, <measure dim="height" type="length" unit="metre">0.03</measure>; l.4, <measure dim="height" type="length" unit="metre">0.025</measure>; l.5, <measure dim="height" type="length" unit="metre">0.02</measure>. Rho with a second down stroke.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date cert="low" notAfter="0100" notBefore="0051" exact="none">Second half of first century A.D.</date>
- (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="i"><ab><lb n="1"/>  <gap reason="lost" extent="unknown" unit="character" dim="left"/> <persName type="aphrodisian"><name reg="Γάϊος">Γαίον</name>  <lb n="2"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/><supplied reason="lost">ο</supplied>υς</w> <w lemma="υἱός">υἱὸν</w></persName> <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/> <w lemma="λεγιών">λεγιῶ<lb n="4" type="worddiv"/><supplied reason="lost">νος</supplied></w> <gap reason="lost" extent="unknown" unit="character" dim="left"/> <space extent="3" unit="character" dim="horizontal"/></ab></div><div type="textpart_section" n="ii"><ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <lb n="2"/> <w lemma="τιμάω">ἐτείμησαν</w> <g type="star"/>  <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen">Τιβέρι<lb n="3" type="worddiv"/>ον</name> <name reg="Κλαύδιος">Κλαύδιον</name> <persName type="aphrodisian"><name reg="Ἀριστοκλῆς">Ἀριστο<lb n="4" type="worddiv"/>κλέους</name></persName> <w lemma="υἱός">υἱὸν</w> <name type="tribe" reg="Κυρείνα">Κυρίνᾳ</name> <space extent="3" unit="character" dim="horizontal"/>  <lb n="5"/><space extent="3" unit="character" dim="horizontal"/>  <name reg="Ἱεροκλῆς">Ἱεροκ<supplied reason="lost">λέα</supplied></name></persName>  <space extent="3" unit="character" dim="horizontal"/></ab></div>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>i. <gap dim="left" extent="unknown" reason="lost" unit="character"/><supplied reason="lost" cert="low">honoured</supplied> Gaius <supplied reason="lost" cert="low"> son of </supplied><gap reason="lost"/>, of  legion <gap reason="lost"/></p><p>ii. The Council and the People honoured Tiberius Claudius Hierok<supplied reason="lost">les</supplied> son of Aristokles, of the tribe Quirina.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The first honorand was apparently a legionary soldier, so was certainly a Roman citizen, quite possibly a Gaius Julius, but cites his father by a name which was certainly Greek, so may have been the first Roman citizen in the family.  The second, with Roman citizenship apparently given by Claudius or Nero, has a Greek name himself and also cites his father by a Greek name, and was very probably himself the recipient of Roman citizenship. Since the juxtaposition of the two suggests a family relationship, they may be two brothers who acquired Roman citizenship in different reigns.  Since very few Aphrodisians are known to have served in the Roman army, the reference to a legion is notable.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, South (east part)</rs>: reused upside down in the southern section of the city wall, excavated in 1975.</rs>
-<rs type="lastLocation">Findspot (1977)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1975 (<rs type="siteNo">Walls 111</rs>).</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_G_09"><figDesc>Face (1977)</figDesc></figure><figure href="77_G_10"><figDesc>Face (1977)</figDesc></figure> KTE;</p>
-</div></body></text>
+         <div type="translation">
+            <p>i. <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost" cert="low">honoured</supplied> Gaius <supplied reason="lost" cert="low"> son of </supplied>
+               <gap reason="lost" unit="character" extent="unknown"/>, of  legion <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+            <p>ii. The Council and the People honoured Tiberius Claudius Hierok<supplied reason="lost">les</supplied> son of Aristokles, of the tribe Quirina.</p>
+         </div>
+         <div type="commentary">
+            <p>The first honorand was apparently a legionary soldier, so was certainly a Roman citizen, quite possibly a Gaius Julius, but cites his father by a name which was certainly Greek, so may have been the first Roman citizen in the family.  The second, with Roman citizenship apparently given by Claudius or Nero, has a Greek name himself and also cites his father by a Greek name, and was very probably himself the recipient of Roman citizenship. Since the juxtaposition of the two suggests a family relationship, they may be two brothers who acquired Roman citizenship in different reigns.  Since very few Aphrodisians are known to have served in the Roman army, the reference to a legion is notable.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

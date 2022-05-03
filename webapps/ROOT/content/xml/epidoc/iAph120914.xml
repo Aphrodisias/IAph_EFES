@@ -1,83 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120914" n="iAph1101 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building inscription</rs> by Aphrodite</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building inscription by Aphrodite</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120914</idno>
+            <idno type="IAph2007">iAph120914</idno>
+            <idno type="JMR2004">iAph1101</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
 
 None</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
 
-None</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p>No measurements</p>
+None</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No measurements</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" evidence="lettering">
+Second century A.D. (<rs type="criteria">lettering</rs>?)</origDate>
+                  </origin>
+                  <provenance type="found">reused in the <rs type="monuList">Walls, west</rs>, in a stretch where the wall was about 30 feet high: '<foreign xml:lang="la">muro occidentali 30 circiter pedes alto</foreign>. ye wall seems here entire. To ye right are several <emph>illegible</emph> in ye wall' (Sherard) near <ref type="inscription" n="1782" target="121018.xml"/> (=CIG 2783)</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard's notebook; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <w lemma="ὁ">Ἡ</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδείτη</name></persName> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="πρόσοδος">προσόδων</w> <lb n="2"/> <w lemma="ὁ">τὰς</w> <w lemma="ἀνδριαντοθήκη">ἀνδριαντοθήκας</w> <w lemma="κατασκευάζω">κατεσκεύα<lb n="3" break="no"/>σεν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="πυλίς">πυλίδας</w> <w lemma="σύν">σὺν</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐπιφέρω">ἐπι<lb n="4" break="no"/>φερομένοις</w> <w lemma="μετατίθημι">μετέθηκεν</w> <w lemma="καί">καὶ</w> <w lemma="ανίστημι">ἀνεστη<lb n="5" break="no"/>σεν</w> <w lemma="καί">καὶ</w> <w lemma="λευκουργέω">ἐλευκούργησεν</w> <w lemma="ἐπιμελέομαι">ἐπιμεληθέντων</w> <lb n="6"/><persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name>  <persName type="attested"><name nymRef="#Μένανδρος">Μενάνδρου</name></persName></persName></persName>  <lb n="7"/><persName type="attested"><name nymRef="#Ἀπολλώνιος">Ἀπολλωνίου</name>  <num value="3">γ</num>  <persName type="attested"><name nymRef="#Πηλεύς">Πηλέως</name></persName></persName>  <persName type="attested"><name nymRef="#Εὐγενέτωρ">Εὐγενέτορος</name>  <lb n="8"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἄτταλος">Ἀττάλου</name></persName></persName>  <persName type="attested"><name nymRef="#Ἡρακλίδης">Ἡρακλείδου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><orig n="unresolved">πιττα</orig></persName></persName><lb n="9"/><persName type="attested"><name nymRef="#Πελοπίδας">Πελοπίδου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔνους">Εὔνου</name></persName></persName>  <lb n="10"/><space dim="horizontal"/>  <w lemma="νεοποιός">νεοποιῶν</w></ab>
 </div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0200" notBefore="0101">Second century A.D.</date> (<rs type="criteria">lettering</rs>?)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">Ἡ</w> <persName type="divine" full="yes"><name reg="Ἀφροδίτη">Ἀφροδείτη</name></persName> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="πρόσοδος">προσόδων</w> <lb n="2"/> <w lemma="ὁ">τὰς</w> <w lemma="ἀνδριαντοθήκη">ἀνδριαντοθήκας</w> <w lemma="κατασκευάζω">κατεσκεύα<lb n="3" type="worddiv"/>σεν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="πυλίς">πυλίδας</w> <w lemma="σύν">σὺν</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐπιφέρω">ἐπι<lb n="4" type="worddiv"/>φερομένοις</w> <w lemma="μετατίθημι">μετέθηκεν</w> <w lemma="καί">καὶ</w> <w lemma="ανίστημι">ἀνεστη<lb n="5" type="worddiv"/>σεν</w> <w lemma="καί">καὶ</w> <w lemma="λευκουργέω">ἐλευκούργησεν</w> <w lemma="ἐπιμελέομαι">ἐπιμεληθέντων</w> <lb n="6"/><persName type="aphrodisian" full="yes"><name reg="Ζήνων">Ζήνωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name>  <persName type="aphrodisian"><name reg="Μένανδρος">Μενάνδρου</name></persName></persName></persName>  <lb n="7"/><persName type="aphrodisian" full="yes"><name reg="Ἀπολλώνιος">Ἀπολλωνίου</name>  <num value="3">γ</num>  <persName type="aphrodisian"><name reg="Πηλεύς">Πηλέως</name></persName></persName>  <persName type="aphrodisian" full="yes"><name reg="Εὐγενέτωρ">Εὐγενέτορος</name>  <lb n="8"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἄτταλος">Ἀττάλου</name></persName></persName>  <persName type="aphrodisian" full="yes"><name reg="Ἡρακλίδης">Ἡρακλείδου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><orig n="unresolved">πιττα</orig></persName></persName><lb n="9"/><persName type="aphrodisian" full="yes"><name reg="Πελοπίδας">Πελοπίδου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Εὔνους">Εὔνου</name></persName></persName>  <lb n="10"/><space dim="horizontal"/>  <w lemma="νεοποιός">νεοποιῶν</w></ab>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard's notebook; publications.</p>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>The copy was compressed in a corner of the page: as a result, Boeckh printed l. 5 as two lines.</p><p>There is a dash after l. 5, probably indicating a gap.</p><p>l.7, <foreign lang="grc">ΕΥΓΕΝ</foreign> Sherard, <foreign lang="grc">ΕΓΓΕΝ</foreign> Boeckh.</p><p>l.10, <foreign lang="grc">νε<supplied reason="lost">ω</supplied>ποιῶν</foreign> Boeckh.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Aphrodite from her own income prepared the statue bases and changed, set up and faced with marble the little gates with their <seg cert="low">lintels</seg>; the supervisors, <term lang="grc-Latn">neopoioi</term>, were Zenon the son of Zenon son of Menandros, Apollonios son of Peleus son of Peleus son of Peleus, Eugenetor the son of Attalos, Herakleides the son of <seg cert="low">Pittas</seg>, Pelopides the son of Eunous.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The inscription seen by Fellows (60 and 61, p. 357) which Boeckh (<title level="m">CIG</title> II, 1109) related to this inscription was in fact that published as <xref type="inscription" n="1481" href="120803">12.803</xref> (=LBW 1611), column B.</p><p>The divisions in the list of names, all in the genitive, are far from clear; perhaps the first neopoios is Zenon Menandros son of Zenon, and the second Apollonios Peleus son of Apollonios son of Apollonios. We are grateful to Dr Fabienne Marchand, of LGPN, for the suggestion; but the name at the end of line 8 remains obscure.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found">reused in the <rs type="monuList">Walls, west</rs>, in a stretch where the wall was about 30 feet high: '<foreign lang="la">muro occidentali 30 circiter pedes alto</foreign>. ye wall seems here entire. To ye right are several <emph>illegible</emph> in ye wall' (Sherard) near <xref type="inscription" n="1782" href="121018">12.1018</xref> (=CIG 2783)</rs>;  <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot</rs></p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied in 1705 by Picenini (BM Add 10102, 45 and, from Tisser, 63), whence Sherard, BM Add. 10101, f.12. Not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published, from Sherard by <bibl type="primary" n="CIGII"><author>Boeckh</author>, <title>CIG</title> <biblScope>2749</biblScope></bibl>, ?whence  <bibl>Texier, pp. 161-2</bibl>, <bibl n="oikonomos1921">Oikonomos, <title level="j">A.D.</title> 7, 1921-1922, 292, no. 1</bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257000">121</biblScope></bibl>. </p>
-</div>
-<div type="figure" n="none">
-<head>Photographs</head>
-<p>None</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>The copy was compressed in a corner of the page: as a result, Boeckh printed l. 5 as two lines.</p>
+            <p>There is a dash after l. 5, probably indicating a gap.</p>
+            <p>l.7, <foreign xml:lang="grc">ΕΥΓΕΝ</foreign> Sherard, <foreign xml:lang="grc">ΕΓΓΕΝ</foreign> Boeckh.</p>
+            <p>l.10, <foreign xml:lang="grc">νε<supplied reason="lost">ω</supplied>ποιῶν</foreign> Boeckh.</p>
+         </div>
+         <div type="translation">
+            <p>Aphrodite from her own income prepared the statue bases and changed, set up and faced with marble the little gates with their <seg cert="low">lintels</seg>; the supervisors, <term xml:lang="grc-Latn">neopoioi</term>, were Zenon the son of Zenon son of Menandros, Apollonios son of Peleus son of Peleus son of Peleus, Eugenetor the son of Attalos, Herakleides the son of <seg cert="low">Pittas</seg>, Pelopides the son of Eunous.</p>
+         </div>
+         <div type="commentary">
+            <p>The inscription seen by Fellows (60 and 61, p. 357) which Boeckh (<title level="m">CIG</title> II, 1109) related to this inscription was in fact that published as <ref type="inscription" n="1481" target="120803.xml"/> (=LBW 1611), column B.</p>
+            <p>The divisions in the list of names, all in the genitive, are far from clear; perhaps the first neopoios is Zenon Menandros son of Zenon, and the second Apollonios Peleus son of Apollonios son of Apollonios. We are grateful to Dr Fabienne Marchand, of LGPN, for the suggestion; but the name at the end of line 8 remains obscure.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published, from Sherard by <bibl type="primary" n="CIGII">
+                  <author>Boeckh</author>, <title>CIG</title>
+                  <citedRange>2749</citedRange>
+               </bibl>, ?whence  <bibl>Texier, pp. 161-2</bibl>, <bibl n="oikonomos1921">Oikonomos, <title level="j">A.D.</title> 7, 1921-1922, 292, no. 1</bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257000">121</citedRange>
+               </bibl>. </p>
+         </div>
+      </body>
+   </text>
 </TEI>

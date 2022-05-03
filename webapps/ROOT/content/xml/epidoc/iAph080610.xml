@@ -1,103 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080610" n="iAph0057 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType">Building inscription</rs> of Pytheas, in <rs type="textType">verse</rs> </title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change><date>2003-08-21</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-01-28</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Five joining fragments of <rs type="material" key="marmor">white marble</rs> <rs type="objectType">revetment</rs>, with upper and lower edges surviving (H. <measure type="length" unit="metre" dim="height">0.62</measure>, W. <measure type="length" unit="metre" dim="width">1.28</measure>, Th. <measure type="length" unit="metre" dim="depth">0.025</measure>).</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on the prepared face.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p><measure type="length" unit="metre" dim="height">0.275</measure>; very mannered; cut with a broad trench, with triangular profile, but with sides unpolished.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0500" exact="none" notBefore="0468">Late fifth century</date> (<rs type="criteria">prosopography</rs>).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building inscription of Pytheas, in verse </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080610</idno>
+            <idno type="IAph2007">iAph080610</idno>
+            <idno type="JMR2004">iAph0057</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>74.197</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Five joining fragments of <material key="marmor">white marble</material>
+                              <objectType>revetment</objectType>, with upper and lower edges surviving (H. <height unit="metre">0.62</height>, W. <width unit="metre">1.28</width>, Th. <depth unit="metre">0.025</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the prepared face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.275</height>; very mannered; cut with a broad trench, with triangular profile, but with sides unpolished.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Theatre Baths</rs>.</origPlace>
+                     <origDate notBefore="0468"
+                               notAfter="0500"
+                               precision="medium"
+                               evidence="prosopography">Late fifth century (<rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="ThBaths">Theatre Baths</rs>.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-28" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-21" who="#CMR">tagged and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_H_27A.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="77_H_26A.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<ab>
-		<lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/> <persName key="Pytheas" type="aphrodisian" full="yes"><name reg="Πυθέας"><supplied reason="lost">Π</supplied>υθέας</name></persName> <w lemma="τρισόλβιος">τρισό<unclear reason="damage">λ</unclear><supplied reason="lost">βιος</supplied></w> <gap dim="right" extent="unknown" reason="lost" unit="character"/>
+		<lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <persName key="Pytheas" type="attested"><name nymRef="#Πυθέας"><supplied reason="lost">Π</supplied>υθέας</name></persName> <w lemma="τρισόλβιος">τρισό<unclear reason="damage">λ</unclear><supplied reason="lost">βιος</supplied></w> <gap reason="lost" unit="character" extent="unknown"/>
 		</ab>
       </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab><gap dim="left" extent="unknown" reason="lost"/> <persName full="yes">Pytheas</persName> thrice-blessed <gap dim="right" extent="unknown" reason="lost"/></ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>For Pytheas see <xref type="inscription" n="55" href="110070">11.70</xref>, <xref type="inscription" n="56" href="020020">2.20</xref>, <xref type="inscription" n="58" href="050303">5.303</xref>, <xref type="inscription" n="250" href="150361">15.361</xref> and discussion at <xref type="eAla-text" n="V.18">V.18</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="ThBaths">Theatre Baths</rs>.</rs>. Original location: <rs type="origLocation"><rs type="monuList">Theatre Baths</rs>.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition in <date value="1974" notBefore="1974" notAfter="1974" exact="both">1974</date> (<rs type="invNo">74.197</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>57</biblScope> and plate xiv</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257594">707</biblScope></bibl>, <bibl type="hbi" n="steinepig"><title level="m">Steinepigramme</title> <biblScope>02/09/21</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs"><head>Photographs</head><p><figure href="77_H_27A"><figDesc>Face (1977)</figDesc></figure><figure href="77_H_26A"><figDesc>Face (1977)</figDesc></figure></p></div>
-
-      
-
-    </body>
-  </text>
+         <div type="translation">
+            <ab>
+               <gap reason="lost" unit="character" extent="unknown"/>
+               <persName full="yes">Pytheas</persName> thrice-blessed <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
+         </div>
+         <div type="commentary">
+            <p>For Pytheas see <ref type="inscription" n="55" target="110070.xml"/>, <ref type="inscription" n="56" target="020020.xml"/>, <ref type="inscription" n="58" target="050303.xml"/>, <ref type="inscription" n="250" target="150361.xml"/> and discussion at <ref type="eAla-text" n="V.18" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>57</citedRange> and plate xiv</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257594">707</citedRange>
+               </bibl>, <bibl type="hbi" n="steinepig">
+                  <title level="m">Steinepigramme</title>
+                  <citedRange>02/09/21</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

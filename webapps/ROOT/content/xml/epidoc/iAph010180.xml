@@ -1,94 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010180" n="iAph0411 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Fragments, third century, from Temple</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragments, third century, from Temple</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010180</idno>
+            <idno type="IAph2007">iAph010180</idno>
+            <idno type="JMR2004">iAph0411</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two <material key="marmor">white marble</material> fragments, apparently related; a. upper and a small portion of left side moulding (<width unit="metre">0.36</width> × <height unit="metre">0.15</height> × <depth unit="metre">0.11</depth>); b. ; c. no edges (<width unit="metre">0.26</width> × <height unit="metre">0.08</height> × <depth unit="metre">0.10</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro"> Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02–0.025</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering cutting">Probably third century A.D. (<rs type="criteria">lettering</rs>; <rs type="criteria">cutting</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>, 1961</provenance>
+                  <provenance type="observed" when="1976">Museum (1976)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-27" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-09-29" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_J_17A.jpg">
+            <desc>Fragment a (1976)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-04-27</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2005-09-29</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two <rs type="material" key="marmor">white marble</rs> fragments, apparently related; a. upper and a small portion of left side moulding (<measure type="length" unit="metre" dim="width">0.36</measure> × <measure type="length" unit="metre" dim="height">0.15</measure> × <measure type="length" unit="metre" dim="depth">0.11</measure>); b. ; c. no edges (<measure type="length" unit="metre" dim="width">0.26</measure> × <measure type="length" unit="metre" dim="height">0.08</measure> × <measure type="length" unit="metre" dim="depth">0.10</measure>).</p>
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">σε</unclear>κτε<unclear reason="damage">λ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/><lb n="1a"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">νε</orig><gap reason="lost" unit="character" extent="unknown"/><lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/><lb n="2a"/><gap reason="lost" unit="line" extent="unknown"/></ab></div>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro"> Inscribed</rs> on one face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02–0.025</measure>.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>Probably <date notAfter="0300" notBefore="0201" exact="none" cert="low">third century A.D.</date> (<rs type="criteria">lettering</rs>; <rs type="criteria">cutting</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<div type="textpart_fragment" n="a"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">σε</unclear>κτε<unclear reason="damage">λ</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="1a"/><gap dim="bottom" extent="unknown" reason="lost" unit="line"/></ab></div><div type="textpart_fragment" n="b"><ab><lb n="0"/><gap dim="top" extent="unknown" reason="lost" unit="line"/><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">νε</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">ε</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2a"/><gap dim="bottom" extent="unknown" reason="lost" unit="line"/></ab></div>
-</div>
-
-<div type="apparatus"><head>Apparatus</head><p>a. l. 1, the first letter is only an upper cross bar.</p></div><div type="translation" sample="complete" org="uniform" n="none">
-<head>Translation</head>
-<p>Not usefully translatable.</p></div>
-
- <div type="commentary" n="commentary">
-<head>Commentary</head>
-<p>Perhaps tp be associated with <xref type="inscription" n="1036" href="010158">1.158</xref></p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Temple/Church</rs>, 1961</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Museum (1976)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1961  (a. <rs type="siteNo">Temple 41</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p>[[a. 66.1.29; b.  66.1.85]]</p><p><figure href="76_J_17A"><figDesc>Fragment a (1976)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="apparatus">
+            <p>a. l. 1, the first letter is only an upper cross bar.</p>
+         </div>
+         <div type="translation" sample="complete" org="uniform" n="none">
+            <p>Not usefully translatable.</p>
+         </div>
+         <div type="commentary" n="commentary">
+            <p>Perhaps tp be associated with <ref type="inscription" n="1036" target="010158.xml"/>
+            </p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

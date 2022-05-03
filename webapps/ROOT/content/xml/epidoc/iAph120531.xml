@@ -1,84 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120531" n="iAph1777 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Aurelia Messouleia Satorneila</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Aurelia Messouleia Satorneila</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120531</idno>
+            <idno type="IAph2007">iAph120531</idno>
+            <idno type="JMR2004">iAph1777</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description; probably a <objectType cert="low">statue base</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Ligatures: NE l.2; HN ll.5, 6, MN l. 6, TH l.9, 10. o for abbreviation.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="nomenclature">
+Second to third centuries A.D.
+(<rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South-east</rs>: 'in muro'(Sherard); apparently in or near the south east stretch, near <ref type="inscription" n="1766" target="120528.xml"/>, <ref type="inscription" n="1770" target="120537.xml"/> (= CIG 2770, 2794).</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard papers; publications</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>No description; probably a <rs type="objectType" cert="low">statue base</rs>.</p>
+<ab><lb n="1"/> <persName type="attested"><name nymRef="#Αὐρηλία">Αὐρηλίαν</name> <g ref="#stop"/>  <name nymRef="#Μεσσουληΐα">Μεσσου<lb n="2" break="no"/>ληίαν</name> <name nymRef="#Σατορνεῖλα">Σατορνεῖλαν</name> <lb n="3"/> <persName><name nymRef="#Διονύσιος">Διονυσίου</name> <w lemma="τρίς">τρὶς</w> <w lemma="ὁ">τοῦ</w> <lb n="4"/> <persName><name nymRef="#Διογένης">Διογένους</name></persName></persName> <name nymRef="#Χρυσαορίς">Χρυσα<lb n="5" break="no"/>ορίδα</name></persName> <w lemma="ὁ">τὴν</w> ἀξιολογω<lb n="6" break="no"/>τάτην <w lemma="καί">καὶ</w> <w lemma="σεμνός">σεμνοτάτην</w> <lb n="7"/> <w lemma="ἀνθηφόρος">ἀνθηφόρον</w> <w lemma="ὁ">τ<unclear reason="damage">ῆς</unclear></w> <w lemma="θεός">θεοῦ</w> <lb n="8"/> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδείτης</name></persName> <w lemma="καί">καὶ</w> <w lemma="ἀρχιέρεια">ἀρχι<lb n="9" break="no"/>έρειαν</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρίς">πατρίδος</w> <lb n="10"/> <w lemma="ποιέω">ποιησαμένου</w> <w lemma="ὁ">τὴν</w> <lb n="11"/> <w lemma="ἀνάστασις">ἀνάστασιν</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδρίας">ἀν<lb n="12" break="no"/>δριάντος</w> <persName type="attested"><name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <lb n="13"/> <name nymRef="#Φλάβιος">Φλ.</name> <name nymRef="#Ἡφαιστίων">Ἡφαιστίωνος</name></persName> <w lemma="ἀρχιερεύς">ἀρ<lb n="14" break="no"/>χιερέως</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνήρ">ἀνδρὸς</w> <lb n="15"/>  <space extent="3" unit="character" dim="horizontal"/> <w lemma="αὐτός">αὐτῆς</w> <g ref="#leaf"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Ligatures: NE l.2; HN ll.5, 6, MN l. 6, TH l.9, 10. o for abbreviation.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date>
-(<rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <persName type="aphrodisian"><name reg="Αὐρηλία">Αὐρηλίαν</name> <g type="stop"/>  <name reg="Μεσσουληΐα">Μεσσου<lb n="2" type="worddiv"/>ληίαν</name> <name reg="Σατορνεῖλα">Σατορνεῖλαν</name> <lb n="3"/> <persName><name reg="Διονύσιος">Διονυσίου</name> <w lemma="τρίς">τρὶς</w> <w lemma="ὁ">τοῦ</w> <lb n="4"/> <persName><name reg="Διογένης">Διογένους</name></persName></persName> <name reg="Χρυσαορίς">Χρυσα<lb n="5" type="worddiv"/>ορίδα</name></persName> <w lemma="ὁ">τὴν</w> ἀξιολογω<lb n="6" type="worddiv"/>τάτην <w lemma="καί">καὶ</w> <w lemma="σεμνός">σεμνοτάτην</w> <lb n="7"/> <w lemma="ἀνθηφόρος">ἀνθηφόρον</w> <w lemma="ὁ">τ<unclear reason="damage">ῆς</unclear></w> <w lemma="θεός">θεοῦ</w> <lb n="8"/> <persName type="divine"><name reg="Ἀφροδίτη">Ἀφροδείτης</name></persName> <w lemma="καί">καὶ</w> <w lemma="ἀρχιέρεια">ἀρχι<lb n="9" type="worddiv"/>έρειαν</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρίς">πατρίδος</w> <lb n="10"/> <w lemma="ποιέω">ποιησαμένου</w> <w lemma="ὁ">τὴν</w> <lb n="11"/> <w lemma="ἀνάστασις">ἀνάστασιν</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδρίας">ἀν<lb n="12" type="worddiv"/>δριάντος</w> <persName type="aphrodisian"><name reg="Αὐρήλιος" type="nomen">Αὐρηλίου</name> <lb n="13"/> <name reg="Φλάβιος">Φλ.</name> <name reg="Ἡφαιστίων">Ἡφαιστίωνος</name></persName> <w lemma="ἀρχιερεύς">ἀρ<lb n="14" type="worddiv"/>χιερέως</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνήρ">ἀνδρὸς</w> <lb n="15"/>  <space extent="3" unit="character" dim="horizontal"/> <w lemma="αὐτός">αὐτῆς</w> <g type="leaf"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Line 2, ΛΗΙΑΝ Picenini (f. 56)</p><p>l. 7,  ΤΑΝ S.</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, South-east</rs>: 'in muro'(Sherard); apparently in or near the south east stretch, near <xref type="inscription" n="1766" href="120528">12.528</xref>, <xref type="inscription" n="1770" href="120537">12.537</xref> (= CIG 2770, 2794).</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard papers; publications</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Sherard (10101, 14) and Picenini (10102, 25, and from Tisser,  56, and 75v) in 1705; Not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard papers, CIG <biblScope>2821</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257127">248</biblScope>
-</bibl>.</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>Line 2, ΛΗΙΑΝ Picenini (f. 56)</p>
+            <p>l. 7,  ΤΑΝ S.</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard papers, CIG <citedRange>2821</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257127">248</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

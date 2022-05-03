@@ -1,91 +1,120 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080034" n="iAph0515 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Letter</rs> of Hadrian to Aphrodisias</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-03-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-03-15</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Archive wall, column three, first course and upper part of second course.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed area <measure type="length" unit="metre" dim="width">0.95</measure> x <measure type="length" unit="metre" dim="height">0.61</measure>. Lines 1, and 8 outspaced; l.2 compelted on the right margin.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>second to third centuries A.D.. ll.1-9,<measure dim="height" type="length" unit="metre">0.02</measure>, ll. 10ff, ave <measure type="length" unit="metre" dim="height">0.018</measure>. Ligatures: ΗΝ, ΝΚ l.5, ΤΗ l.6, ΝΠ l.7, ΤΗ l.8, ΝΗ, ΝΚ, ΤΕ l.9, ΤΗ l.10, ΗΚ, ΜΗΝ, ΝΠ, ΝΤ, ΤΕ l.11, ΤΗΝ l.12, ΤΕ, ΜΗ, ΝΚ, ΗΡ, ΗΜΕ, ΝΗ l.13, ΤΗ, ΗΝ l.14, ΤΕ l.15, ΝΓ, ΜΕ (twice) l.16, ΤΕ, ΠΕ, ΤΗ, ΜΕ, ΤΕ., l.17. Apices in ll. 1, 2, 6; bar above the igure in l. 3; small circle to mark an abbreviation in l.8; small space followed by a capital omicron for ὅμως to mark the start of the emperor’s decision in l. 12. </p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>Inscription: <date notBefore="0101" notAfter="0300" exact="none">second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">context</rs>).
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter of Hadrian to Aphrodisias</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080034</idno>
+            <idno type="IAph2007">iAph080034</idno>
+            <idno type="JMR2004">iAph0515</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Archive wall, column three, first course and upper part of second course.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed area <width unit="metre">0.95</width> x <height unit="metre">0.61</height>. Lines 1, and 8 outspaced; l.2 compelted on the right margin.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>second to third centuries A.D.. ll.1-9,<height unit="metre">0.02</height>, ll. 10ff, ave <height unit="metre">0.018</height>. Ligatures: ΗΝ, ΝΚ l.5, ΤΗ l.6, ΝΠ l.7, ΤΗ l.8, ΝΗ, ΝΚ, ΤΕ l.9, ΤΗ l.10, ΗΚ, ΜΗΝ, ΝΠ, ΝΤ, ΤΕ l.11, ΤΗΝ l.12, ΤΕ, ΜΗ, ΝΚ, ΗΡ, ΗΜΕ, ΝΗ l.13, ΤΗ, ΗΝ l.14, ΤΕ l.15, ΝΓ, ΜΕ (twice) l.16, ΤΕ, ΠΕ, ΤΗ, ΜΕ, ΤΕ., l.17. Apices in ll. 1, 2, 6; bar above the igure in l. 3; small circle to mark an abbreviation in l.8; small space followed by a capital omicron for ὅμως to mark the start of the emperor’s decision in l. 12. </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Theatre</rs>: north parodos wall</origPlace>
+                     <origDate notBefore="0119"
+                               notAfter="0119"
+                               precision="medium"
+                               evidence="lettering context titulature">Inscription: second to third centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">context</rs>).
 
 
-Document: <date notAfter="0119" notBefore="0119" exact="both" value="0119">119 A.D.</date> (<rs type="criteria">titulature</rs>)
-</p>
+Document: 119 A.D. (<rs type="criteria">titulature</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: north parodos wall</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-03-30" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-15" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_M_12A.jpg">
+            <desc>View, above <ref type="inscription" n="512" target="080031.xml"/>, <ref type="inscription" n="511" target="080030.xml"/> (1977)</desc>
+         </graphic>
+         <graphic url="77_M_13A.jpg">
+            <desc>View, above <ref type="inscription" n="512" target="080031.xml"/>, <ref type="inscription" n="511" target="080030.xml"/> (1977)</desc>
+         </graphic>
+         <graphic url="HUMS003679.jpg">
+            <desc>Archive Wall view (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <persName type="emperor"><w lemma="αὐτοκράτωρ">αὐτοκράτωρ</w> <name nymRef="#Καῖσαρ">Καῖσαρ</name> <w lemma="θεός">θεοῦ</w> <w>Τραϊανοῦ</w> <w lemma="Παρθικός">Παρθικοῦ</w> <w lemma="υἱός">υἱός</w> <lb n="2"/> <w lemma="θεός">θεοῦ</w> <name nymRef="#Νέρβα">Νέρουα</name> <w lemma="υἱωνός">υἱωνός</w> <name nymRef="#Τραιανός">Τραϊανὸς</name> <name nymRef="#Ἁδριανός">Ἁδριανὸς</name> <w lemma="σεβαστός">Σεβαστός</w></persName> <lb n="3"/> <w lemma="ἀρχιερεύς">ἀρχιερεὺς</w> <w lemma="μέγας">μέγιστος</w> <w lemma="δημαρχικός">δημαρχικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <w lemma="ὁ">τὸ</w> <num value="3">γ</num> <lb n="4"/> <placeName nymRef="#Ἀφροδεισιεύς">Ἀφροδεισιέων</placeName> <w lemma="ἄρχων">ἄρχουσι</w> <w lemma="βουλή">βουλῇ</w> <w lemma="δῆμος">δήμῳ</w> <w lemma="χαίρω">χαίρειν</w> <space unit="character" extent="1"/> <lb n="5"/>  <w lemma="ὁ">τὴν</w> <w lemma="μέν">μὲν</w> <w lemma="ἐλευθερία">ἐλευθερίαν</w> <w lemma="καί">καὶ</w> <w lemma="αὐτονομία">αὐτονομίαν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἄλλος">ἄλλα</w> <lb n="6"/> <w lemma="ὁ">τὰ</w> <w lemma="ὑπάρχω">ὑπάρξαντα</w> <w lemma="ὑμεῖς">ὑμεῖν</w> <w lemma="παρά">παρά</w> <w lemma="τε">τε</w> <w lemma="ὁ">τῆς</w> <w lemma="σύγκλητος">συνκλήτου</w> <w lemma="καί">καὶ</w> <lb n="7"/> <w lemma="ὁ">τῶν</w> <w lemma="πρό">πρὸ</w> <w lemma="ἐγώ">ἐμοῦ</w> <w lemma="αὐτοκράτωρ">αὐτοκρατόρων</w> <w lemma="βεβαιόω">ἐβεβαίωσα</w> <w lemma="πρόσθεν">πρόσθεν</w> <lb n="8"/> <w lemma="ἐντυγχάνω">ἐντευχθεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="διά">διὰ</w> <w lemma="πρεσβεία">πρεσβείας</w> <w lemma="περί">περὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="ὁ">τοῦ</w> <w lemma="σίδηρος">σιδή<lb n="9" break="no"/>ρου </w> <w lemma="χρῆσις">χρήσεως</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῦ</w> <w lemma="τέλος">τέλους</w> <w lemma="ὁ">τῶν</w> <w lemma="ἧλος">ἥλων</w> <w lemma="καίπερ">καίπερ</w> <lb n="10"/>  <w lemma="ἀμφισβητήσιμος">ἀνφισβητησίμου</w> <w lemma="ὁ">τοῦ</w> <w lemma="πρᾶγμα">πράγματος</w> <w lemma="εἰμί">ὄντος</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὸ</w> <lb n="11"/> <w lemma="μή">μὴ</w> <w lemma="νῦν">νῦν</w> <w lemma="πρῶτος">πρῶτον</w> <w lemma="ὁ">τοὺς</w> <w lemma="τελώνης">τελώνας</w> <w lemma="ἐπιχειρέω">ἐπικεχειρηκέναι</w> <lb n="12"/> <w>παρ’</w> <w lemma="ὑμεῖς">ὑμῶν</w> <w lemma="ἐκλέγω">ἐγλέγειν</w> <space unit="character" extent="1"/> <w lemma="ὁμῶς">ὁμῶς</w> <w lemma="οἶδα">εἰδὼς</w> <w lemma="ὁ">τὴν</w> <w lemma="πόλις">πόλιν</w> <lb n="13"/> <w lemma="ὁ">τά</w> <w lemma="τε">τε</w> <w lemma="ἄλλος">ἄλλα</w> <w lemma="τιμή">τειμῆς</w> <w lemma="εἰμί">οὖσαν</w> <w lemma="ἄξιος">ἀξίαν</w> <w lemma="καί">καὶ</w> <w lemma="ἐξαιρέω">ἐξῃρημένη<supplied reason="omitted">ν</supplied></w>  <lb n="14"/> <w lemma="ὁ">τοῦ</w> <w lemma="τύπος">τύπου</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐπαρχεία">ἐπαρχείας</w> <w lemma="ἀπαλλάσσω">ἀπαλάσσω</w> <w lemma="αὐτός">αὐτὴν</w> <lb n="15"/>  <w lemma="ὁ">τοῦ</w> <w lemma="τέλεσμα">τελέσματος</w> <w lemma="καί">καὶ</w> <w lemma="γράφω">γέγραπφα</w> <persName type="attested"><name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίῳ</ex></expan></name> <name nymRef="#Ἀγριππεῖνος">Ἀγριππείνῳ</name></persName> <lb n="16"/> <w lemma="ὁ">τῷ</w> <w lemma="ἐπίτροπος">ἐπιτρόπῳ</w> <w lemma="ἐγώ">μου</w> <w lemma="παραγγέλλω">παρανγεῖλαι</w> <w lemma="ὁ">τῷ</w> <w lemma="μισθόω">μεμισθωμένῳ</w> <lb n="17"/> <w lemma="ὁ">τὸ</w> <w lemma="ἐν">ἐν</w> <placeName nymRef="#Ἀσία">Ἀσίᾳ</placeName> <w lemma="τέλος">τέλος</w> <w lemma="ἀπέχω">ἀπέχεσθαι</w> <w lemma="ὁ">τῆς</w> <w lemma="ὑμέτερος">ὑμετέρας</w> <w lemma="πόλις">πόλεως</w></ab>
 </div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <persName type="emperor"><w lemma="αὐτοκράτωρ">αὐτοκράτωρ</w> <name reg="Καῖσαρ">Καῖσαρ</name> <w lemma="θεός">θεοῦ</w> <w>Τραϊανοῦ</w> <w lemma="Παρθικός">Παρθικοῦ</w> <w lemma="υἱός">υἱός</w> <lb n="2"/> <w lemma="θεός">θεοῦ</w> <name reg="Νέρβα">Νέρουα</name> <w lemma="υἱωνός">υἱωνός</w> <name reg="Τραιανός">Τραϊανὸς</name> <name reg="Ἁδριανός">Ἁδριανὸς</name> <w lemma="σεβαστός">Σεβαστός</w></persName> <lb n="3"/> <w lemma="ἀρχιερεύς">ἀρχιερεὺς</w> <w lemma="μέγας">μέγιστος</w> <w lemma="δημαρχικός">δημαρχικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <w lemma="ὁ">τὸ</w> <num value="3">γ</num> <lb n="4"/> <placeName type="ethnic" reg="Ἀφροδεισιεύς">Ἀφροδεισιέων</placeName> <w lemma="ἄρχων">ἄρχουσι</w> <w lemma="βουλή">βουλῇ</w> <w lemma="δῆμος">δήμῳ</w> <w lemma="χαίρω">χαίρειν</w> <space unit="character" extent="1"/> <lb n="5"/>  <w lemma="ὁ">τὴν</w> <w lemma="μέν">μὲν</w> <w lemma="ἐλευθερία">ἐλευθερίαν</w> <w lemma="καί">καὶ</w> <w lemma="αὐτονομία">αὐτονομίαν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἄλλος">ἄλλα</w> <lb n="6"/> <w lemma="ὁ">τὰ</w> <w lemma="ὑπάρχω">ὑπάρξαντα</w> <w lemma="ὑμεῖς">ὑμεῖν</w> <w lemma="παρά">παρά</w> <w lemma="τε">τε</w> <w lemma="ὁ">τῆς</w> <w lemma="σύγκλητος">συνκλήτου</w> <w lemma="καί">καὶ</w> <lb n="7"/> <w lemma="ὁ">τῶν</w> <w lemma="πρό">πρὸ</w> <w lemma="ἐγώ">ἐμοῦ</w> <w lemma="αὐτοκράτωρ">αὐτοκρατόρων</w> <w lemma="βεβαιόω">ἐβεβαίωσα</w> <w lemma="πρόσθεν">πρόσθεν</w> <lb n="8"/> <w lemma="ἐντυγχάνω">ἐντευχθεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="διά">διὰ</w> <w lemma="πρεσβεία">πρεσβείας</w> <w lemma="περί">περὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="ὁ">τοῦ</w> <w lemma="σίδηρος">σιδή<lb type="worddiv" n="9"/>ρου </w> <w lemma="χρῆσις">χρήσεως</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῦ</w> <w lemma="τέλος">τέλους</w> <w lemma="ὁ">τῶν</w> <w lemma="ἧλος">ἥλων</w> <w lemma="καίπερ">καίπερ</w> <lb n="10"/>  <w lemma="ἀμφισβητήσιμος">ἀνφισβητησίμου</w> <w lemma="ὁ">τοῦ</w> <w lemma="πρᾶγμα">πράγματος</w> <w lemma="εἰμί">ὄντος</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὸ</w> <lb n="11"/> <w lemma="μή">μὴ</w> <w lemma="νῦν">νῦν</w> <w lemma="πρῶτος">πρῶτον</w> <w lemma="ὁ">τοὺς</w> <w lemma="τελώνης">τελώνας</w> <w lemma="ἐπιχειρέω">ἐπικεχειρηκέναι</w> <lb n="12"/> <w>παρ’</w> <w lemma="ὑμεῖς">ὑμῶν</w> <w lemma="ἐκλέγω">ἐγλέγειν</w> <space unit="character" extent="1"/> <w lemma="ὁμῶς">ὁμῶς</w> <w lemma="οἶδα">εἰδὼς</w> <w lemma="ὁ">τὴν</w> <w lemma="πόλις">πόλιν</w> <lb n="13"/> <w lemma="ὁ">τά</w> <w lemma="τε">τε</w> <w lemma="ἄλλος">ἄλλα</w> <w lemma="τιμή">τειμῆς</w> <w lemma="εἰμί">οὖσαν</w> <w lemma="ἄξιος">ἀξίαν</w> <w lemma="καί">καὶ</w> <w lemma="ἐξαιρέω">ἐξῃρημένη<supplied reason="omitted">ν</supplied></w>  <lb n="14"/> <w lemma="ὁ">τοῦ</w> <w lemma="τύπος">τύπου</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐπαρχεία">ἐπαρχείας</w> <w lemma="ἀπαλλάσσω">ἀπαλάσσω</w> <w lemma="αὐτός">αὐτὴν</w> <lb n="15"/>  <w lemma="ὁ">τοῦ</w> <w lemma="τέλεσμα">τελέσματος</w> <w lemma="καί">καὶ</w> <w lemma="γράφω">γέγραπφα</w> <persName type="aphrodisian"><name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίῳ</supplied></expan></name> <name reg="Ἀγριππεῖνος">Ἀγριππείνῳ</name></persName> <lb n="16"/> <w lemma="ὁ">τῷ</w> <w lemma="ἐπίτροπος">ἐπιτρόπῳ</w> <w lemma="ἐγώ">μου</w> <w lemma="παραγγέλλω">παρανγεῖλαι</w> <w lemma="ὁ">τῷ</w> <w lemma="μισθόω">μεμισθωμένῳ</w> <lb n="17"/> <w lemma="ὁ">τὸ</w> <w lemma="ἐν">ἐν</w> <placeName reg="Ἀσία">Ἀσίᾳ</placeName> <w lemma="τέλος">τέλος</w> <w lemma="ἀπέχω">ἀπέχεσθαι</w> <w lemma="ὁ">τῆς</w> <w lemma="ὑμέτερος">ὑμετέρας</w> <w lemma="πόλις">πόλεως</w></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 13. The cutter wrote ΑΑΑ and then attempted to erase the bar of the second alpha; at the end of the line he wrote ΕΖΗΡΗΜΕΝΗΣ.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Imperator Caesar Trajanus Hadrianus Augustus, son of divus Trajanus Parthicus, grandson of divus Nerva, Pontifex Maximus, holding the tribunician power for the third time, greets the Magistrates, Council and People of the Aphrodisians.</p>
-<p>Your freedom, autonomy and other (privileges) which were given you by the Senate and the Emperors who have preceded me, I confirmed earlier. I have been petitioned through an embassy about the use of iron and the tax on nails. Although the matter is controversial, since this is not the first time that the collectors have attempted to collect from you, nevertheless, knowing that the city is in other respects worthy of honour and is removed from the formula provinciae, I release it from payment and I have written to Claudius Agrippinus, my procurator, to instruct the contractor for the tax in Asia to keep away from your city.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Hadrian held the tribunician power for the third time in 119; throughout this year he was in Italy, if not in Rome. For further commentary see Aphrodisias and Rome, 116-118.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: north parodos wall</rs>
-<rs type="origLocation"><rs type="monuList">Theatre</rs>: north parodos wall</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>transcription (Reynolds); publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1967.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="jmr1982">Reynolds, A&amp;R <biblScope>15</biblScope></bibl> whence SEG 32, 1097; BE 1983:376; AnnEpig 1984, 869; SEG 33, 855, and from all these <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>  <biblScope n="256930">52</biblScope>
-</bibl>. Discussed: <bibl>Millar, Emperor in the Roman World, 429</bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p> <figure href="77_M_12A"><figDesc>View, above <xref type="inscription" n="512" href="080031">8.31</xref>, <xref type="inscription" n="511" href="080030">8.30</xref> (1977)</figDesc></figure><figure href="77_M_13A"><figDesc>View, above <xref type="inscription" n="512" href="080031">8.31</xref>, <xref type="inscription" n="511" href="080030">8.30</xref> (1977)</figDesc></figure><figure href="HUMS003679"><figDesc>Archive Wall view (1994)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 13. The cutter wrote ΑΑΑ and then attempted to erase the bar of the second alpha; at the end of the line he wrote ΕΖΗΡΗΜΕΝΗΣ.</p>
+         </div>
+         <div type="translation">
+            <p>Imperator Caesar Trajanus Hadrianus Augustus, son of divus Trajanus Parthicus, grandson of divus Nerva, Pontifex Maximus, holding the tribunician power for the third time, greets the Magistrates, Council and People of the Aphrodisians.</p>
+            <p>Your freedom, autonomy and other (privileges) which were given you by the Senate and the Emperors who have preceded me, I confirmed earlier. I have been petitioned through an embassy about the use of iron and the tax on nails. Although the matter is controversial, since this is not the first time that the collectors have attempted to collect from you, nevertheless, knowing that the city is in other respects worthy of honour and is removed from the formula provinciae, I release it from payment and I have written to Claudius Agrippinus, my procurator, to instruct the contractor for the tax in Asia to keep away from your city.</p>
+         </div>
+         <div type="commentary">
+            <p>Hadrian held the tribunician power for the third time in 119; throughout this year he was in Italy, if not in Rome. For further commentary see Aphrodisias and Rome, 116-118.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="jmr1982">Reynolds, A&amp;R <citedRange>15</citedRange>
+               </bibl> whence SEG 32, 1097; BE 1983:376; AnnEpig 1984, 869; SEG 33, 855, and from all these <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256930">52</citedRange>
+               </bibl>. Discussed: <bibl>Millar, Emperor in the Roman World, 429</bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,114 +1,157 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010033" n="iAph0132 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType">Graffiti</rs>: names and <rs type="textType" reg="prayer/invocation">prayers</rs></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-27</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-27</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Fragment from a <rs type="material" key="marmor">white marble</rs> <rs type="objectType">balustrade</rs>, broken in two,
-with a cross in relief on one side (<measure type="length" unit="metre" dim="height">0.36</measure> × <measure type="length" unit="metre" dim="width">0.31</measure> × <measure type="length" unit="metre" dim="depth">0.155</measure>); the upper edge has a boss protruding
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Graffiti: names and prayers</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010033</idno>
+            <idno type="IAph2007">iAph010033</idno>
+            <idno type="JMR2004">iAph0132</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment from a <material key="marmor">white marble</material>
+                              <objectType>balustrade</objectType>, broken in two,
+with a cross in relief on one side (<height unit="metre">0.36</height> × <width unit="metre">0.31</width> × <depth unit="metre">0.155</depth>); the upper edge has a boss protruding
 from it, and a polished surface, on which are several finely cut
-graffiti.</p></div><div type="description" n="text"><head>Description of text</head><p>i at upper edge; ii below i; iii
-along lower edge. There are further traces of letters.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Av. <measure precision="circa" type="length" unit="metre" dim="height">0.005</measure>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0600" exact="none" notBefore="0401">Fifth to sixth centuries</date> or later (<rs type="criteria">content</rs>, <rs type="criteria">location</rs>).</p>
-      </div>
-
-      <div type="edition" lang="grc">
-        <head lang="en">Edition</head>
+graffiti.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i at upper edge; ii below i; iii
+along lower edge. There are further traces of letters.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Av. <height unit="metre">0.005</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList" cert="low">Temple/Church</rs>.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="content location">Fifth to sixth centuries or later (<rs type="criteria">content</rs>, <rs type="criteria">location</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-27" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-27" who="#CMR">tagged and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="80_A_01.jpg">
+            <desc>Face (1980)</desc>
+         </graphic>
+         <graphic url="80_A_02.jpg">
+            <desc>Fragment with underside (1980)</desc>
+         </graphic>
+         <graphic url="85_J_25.jpg">
+            <desc>Underside of block (1985)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
         
-		<div type="textpart_section" n="i"><ab><lb n="1"/><gap reason="lost" dim="left" extent="unknown" unit="character"/> <w lemma="ὁ"><expan><abbr>τ</abbr><supplied reason="abbreviation">οῦ</supplied></expan></w> <gap reason="lost" dim="right" extent="unknown" unit="character"/><lb n="2"/><persName key="Theophylact3" type="aphrodisian" full="yes"><name reg="Θεοφύλακτος">Θεοφύλακτος</name></persName> <expan><abbr>τ</abbr><supplied reason="abbreviation">οῦ</supplied></expan> <orig n="unresolved"><unclear reason="damage">ργλχ</unclear></orig> <gap reason="lost" dim="right" extent="unknown" unit="character"/></ab></div> 
+        
+		<div n="i" type="textpart" subtype="section"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="ὁ"><expan><abbr>τ</abbr><ex>οῦ</ex></expan></w> <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/><persName key="Theophylact3" type="attested"><name nymRef="#Θεοφύλακτος">Θεοφύλακτος</name></persName> <expan><abbr>τ</abbr><ex>οῦ</ex></expan> <orig n="unresolved"><unclear reason="damage">ργλχ</unclear></orig> <gap reason="lost" unit="character" extent="unknown"/></ab></div> 
 		        
-		<div type="textpart_section" n="ii"><ab><lb n="1"/><persName type="aphrodisian" key="george3" full="yes"><name>Γαιόργ<unclear reason="damage">η</unclear>ος</name></persName> <g type="cross"/><lb n="2"/><g type="cross"/> <g type="cross"/> <persName key="george3" type="aphrodisian" full="yes"><name reg="Γεοργήιος">Γεοργηίου</name></persName> <persName type="divine" key="Lord" full="yes"><w lemma="κύριος"><expan><abbr>Κ</abbr><supplied reason="abbreviation">ύρι</supplied><abbr>ε</abbr></expan></w></persName> <g type="cross"/> <w lemma="βοηθέω"><expan><abbr>βω</abbr><supplied reason="abbreviation">ήθι</supplied></expan></w>.<lb n="3"/><persName type="aphrodisian" full="yes"><name reg="Γεώργιος">Γεορ</name></persName> <space dim="horizontal"/>
+		<div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><persName key="george3" type="attested"><name>Γαιόργ<unclear reason="damage">η</unclear>ος</name></persName> <g ref="#cross"/><lb n="2"/><g ref="#cross"/> <g ref="#cross"/> <persName key="george3" type="attested"><name nymRef="#Γεοργήιος">Γεοργηίου</name></persName> <persName key="Lord" type="divine"><w lemma="κύριος"><expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan></w></persName> <g ref="#cross"/> <w lemma="βοηθέω"><expan><abbr>βω</abbr><ex>ήθι</ex></expan></w>.<lb n="3"/><persName type="attested"><name nymRef="#Γεώργιος">Γεορ</name></persName> <space dim="horizontal"/>
 </ab></div>
 		
-			<div type="textpart_section" n="iii"><ab><lb n="1"/><persName key="Ioannes9" type="aphrodisian" full="yes"><name reg="Ἰωάννης"><expan><abbr>Ἰω</abbr><supplied reason="abbreviation">αννης</supplied></expan></name></persName><lb n="2"/><persName type="divine" key="Theotokos" full="yes"><w lemma="μήτηρ"><expan><abbr>μ</abbr><supplied reason="abbreviation">ήτη</supplied><abbr>ρ</abbr></expan></w> <w lemma="θεός"><expan><abbr><supplied reason="lost">θ</supplied></abbr><supplied reason="abbreviation">εο</supplied><abbr>ῦ</abbr></expan></w></persName> <persName type="aphrodisian" key="michael3" full="yes"><name reg="Μιχαήλ"><expan><abbr>Μιχ</abbr><supplied reason="abbreviation">αὴλ</supplied></expan></name></persName> <expan><abbr>τ</abbr><supplied reason="abbreviation">οῦ</supplied></expan> <persName type="aphrodisian" key="palmas" full="yes"><name>Πα<unclear reason="damage">λμ</unclear>α</name></persName> <persName full="yes" type="aphrodisian"><name reg="Κωνσταντῖνος"><expan><abbr>Κω</abbr><supplied reason="abbreviation">νσταντῖνος</supplied></expan></name></persName> <expan><abbr>τ</abbr><supplied reason="abbreviation">οῦ</supplied></expan> <orig n="unresolved"><unclear reason="damage">βτη</unclear></orig><lb n="3"/><persName key="michael4" type="aphrodisian" full="yes"><name reg="Μιχαήλ">Μηχαήλ</name></persName></ab></div>
+			<div n="iii" type="textpart" subtype="section"><ab><lb n="1"/><persName key="Ioannes9" type="attested"><name nymRef="#Ἰωάννης"><expan><abbr>Ἰω</abbr><ex>αννης</ex></expan></name></persName><lb n="2"/><persName key="Theotokos" type="divine"><w lemma="μήτηρ"><expan><abbr>μ</abbr><ex>ήτη</ex><abbr>ρ</abbr></expan></w> <w lemma="θεός"><expan><abbr><supplied reason="lost">θ</supplied></abbr><ex>εο</ex><abbr>ῦ</abbr></expan></w></persName> <persName key="michael3" type="attested"><name nymRef="#Μιχαήλ"><expan><abbr>Μιχ</abbr><ex>αὴλ</ex></expan></name></persName> <expan><abbr>τ</abbr><ex>οῦ</ex></expan> <persName key="palmas" type="attested"><name>Πα<unclear reason="damage">λμ</unclear>α</name></persName> <persName type="attested"><name nymRef="#Κωνσταντῖνος"><expan><abbr>Κω</abbr><ex>νσταντῖνος</ex></expan></name></persName> <expan><abbr>τ</abbr><ex>οῦ</ex></expan> <orig n="unresolved"><unclear reason="damage">βτη</unclear></orig><lb n="3"/><persName key="michael4" type="attested"><name nymRef="#Μιχαήλ">Μηχαήλ</name></persName></ab></div>
 		
       </div>
-
-      
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>i. Theophylaktos.</ab>
-        <ab> ii. Georgios. son of Georgios. Lord help. Georgios.</ab>
-        <ab>iii. Joannes. Mother of God. Michael <seg cert="low">son of</seg> Palmas.
+         <div type="translation">
+            <ab>i. Theophylaktos.</ab>
+            <ab> ii. Georgios. son of Georgios. Lord help. Georgios.</ab>
+            <ab>iii. Joannes. Mother of God. Michael <seg cert="low">son of</seg> Palmas.
 <seg cert="low">Konstantinos</seg> ... Michael.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="VIII.13">VIII.13</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList">Temple/Church</rs>.</rs>. Original location: <rs type="origLocation"><rs type="monuList" cert="low">Temple/Church</rs>.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition; read and measured by J.M.
-Reynolds in <date value="1966" notBefore="1966" notAfter="1966" exact="both">1966</date>, since when some of the surface has been broken away,
-and the block broken in two.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in
-Late Antiquity</title> no. <biblScope>132</biblScope>, and plate xxxii</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257688">802</biblScope>, <biblScope n="257689">803</biblScope>,
-<biblScope n="257676">790</biblScope>, <biblScope n="257655">768</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcriptions (Reynolds, Roueché).</p>
-      
-
-    </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="80_A_01"><figDesc>Face (1980)</figDesc></figure><figure href="80_A_02"><figDesc>Fragment with underside (1980)</figDesc></figure><figure href="85_J_25"><figDesc>Underside of block (1985)</figDesc></figure></p></div>
-
-      
-
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="VIII.13" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in
+Late Antiquity</title> no. <citedRange>132</citedRange>, and plate xxxii</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257688">802</citedRange>, <citedRange n="257689">803</citedRange>,
+<citedRange n="257676">790</citedRange>, <citedRange n="257655">768</citedRange>
+               </bibl>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

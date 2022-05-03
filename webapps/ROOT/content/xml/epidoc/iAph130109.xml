@@ -1,86 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130109" n="iAph1447 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> inscription for Marcus Aurelius Alexandros and Aurelia Tatia</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr2003">Reynolds and Isik (<date>2007</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-04</date><respStmt><name>GB</name></respStmt><item>DONE</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">sarcophagus</rs>, with lid, (<measure precision="circa" dim="width" type="length" unit="metre">2.00</measure>); for description see <bibl>Isik 178</bibl>.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary inscription for Marcus Aurelius Alexandros and Aurelia Tatia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130109</idno>
+            <idno type="IAph2007">iAph130109</idno>
+            <idno type="JMR2004">iAph1447</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>sarcophagus</objectType>, with lid, (<width unit="metre">2.00</width>); for description see <bibl>Isik 178</bibl>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>a. ll. 1-2 <rs type="execution" ref="scalpro">inscribed</rs> on the lower moulding of the lid, excluding the projections, ll. 3-21 on the <rs type="decoration">tabella</rs> impinging on all mouldings, ll. 22-23 on the lower moulding of the sarcophagus. Text b. is  on the projections on the lid.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Quite well-designed, cut and aligned in the second-to-fourth-century style; a l.1, <height unit="metre">0.022</height>; l.2, <height unit="metre">0.025</height>; l.3, <height unit="metre">0.02</height>, ll.4 ff, <height unit="metre">0.018-0.02</height>. b, <height unit="metre">0.06</height>. Ligatured <foreign xml:lang="grc">ΤΗ</foreign> (ll. 3, 21), <foreign xml:lang="grc">ΝΗ</foreign> (l. 4), <foreign xml:lang="grc">ΜΗΝ</foreign> (l. 23), <foreign xml:lang="grc">ΜΜ</foreign> (l.7). Star for denarius; slanting stroke before the figure in l. 22 and after it in l. 23.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0250"
+                               precision="medium"
+                               evidence="lettering nomenclature">Perhaps 
+first half of the third century
+ (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east</rs> in chamber tomb, with <ref type="inscription" n="1445" target="130111.xml"/> (=410), <ref type="inscription" n="1446" target="130108.xml"/> (=411), <ref type="inscription" n="1448" target="130110.xml"/> (=414), <ref type="inscription" n="1449" target="130101.xml"/> (=415).</provenance>
+                  <provenance type="observed" when="1994">Museum (1994)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-04" who="GB">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="94_C_07.jpg">
+            <desc>Sarcophagus (1994)</desc>
+         </graphic>
+         <graphic url="94_C_08.jpg">
+            <desc>Sarcophagus (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="a" type="textpart" subtype="section"><ab><lb n="1"/> <w>ἠ</w> <w lemma="σορός">σορός</w> <w lemma="εἰμί">ἐστιν</w> <persName type="attested"><name nymRef="#Μᾶρκος">Μάρκου</name> <name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <name nymRef="#Ἀλέξανδρος">Ἀλεξάνδρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἑκαταῖος">Ἑκαταίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζή<lb n="2" break="no"/>νωνος</name> <w lemma="τρίς">τρὶς</w> <w lemma="ὁ">τοῦ</w> <g ref="#projection"/> <persName type="attested"><name nymRef="#Ἑκαταῖος"> Ἑκαταίο<supplied reason="omitted">υ</supplied></name> <name nymRef="#Χάρμος">Χάρμου</name></persName></persName></persName></persName></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Αὐρηλία">Αὐρ<unclear reason="damage">η</unclear>λία<supplied reason="omitted">ς</supplied></name> <g ref="#projection"/> <name nymRef="#Τατία">Τατίας</name> <w lemma="ὁ">τῆς</w> <persName type="attested"><name nymRef="#Ἀλέξανδρος">Ἀ<lb n="3" break="no"/>λεξάνδρου</name></persName></persName> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w> <w lemma="γυνή">γυναι<lb n="4" break="no"/>κὸς</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἐν">ἐ<hi rend="ligature" id="lig2">ν</hi></w><link targets="lig2 lig3"/> <w lemma="ὅς"><hi rend="ligature" id="lig3">ᾗ</hi></w> <w lemma="σορός">σο<lb n="5" break="no"/>ρῷ</w> <w lemma="θάπτω">ταφήσονται</w> <persName type="attested"><name nymRef="#Ἀλέξανδρος">Ἀλέ<lb n="6" break="no"/>ξα<supplied reason="omitted">ν</supplied>δρ<choice><sic>α</sic><corr>ος</corr></choice></name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Τατία">Τατία</name></persName> <w lemma="ὁ">οἱ</w> <lb n="7"/> <w lemma="προγράφω">προγεγρα<hi rend="ligature">μμ</hi>ένοι</w> <lb n="8"/> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Αὐρήλιος">Αὐρήλιοι</name> <name nymRef="#Ἀλέξανδρος">Ἀλέξαν<lb n="9" break="no"/>δρος</name></persName> <w lemma="καί">καὶ</w><persName type="attested"><name nymRef="#Ἀλεξάνδρα">Ἀλεξάνδρα</name> </persName><w lemma="ὁ">οἱ</w> <lb n="10"/> <persName type="attested"><name nymRef="#Ἀλέξανδρος">Ἀλεξάνδρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἑκαταῖος">Ἑ <lb n="11"/> καταίου</name></persName></persName> <w lemma="ὁ">τὰ</w> <w lemma="τέκνον">τέκνα</w> <lb n="12"/> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ἕτερος">ἕτερον</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐ<lb n="13" break="no"/> δεὶς</w>  <w lemma="ἔχω">ἕξει</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἐνθάπτω">ἐν<lb n="14" break="no"/>θάψαι</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="ὁ">τοὺς</w> <lb n="15"/> <w lemma="προδηλόω">προδηλουμένους</w> <lb n="16"/> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="τοιοῦτος">τοιοῦτό</w> <w lemma="τις">τι</w> <lb n="17"/> <w lemma="τολμάω">τολμήσας</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσε<lb n="18" break="no"/>βὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> <lb n="19"/> <w lemma="τυμβωρύχος">τυμβωρύχος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσ<lb n="20" break="no"/>αποτεισάτω</w> <w lemma="ὁ">τῇ</w> <w lemma="θεός">θεῷ</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀ<lb n="21" break="no"/>φροδεί<hi rend="ligature">τῃ</hi></name></persName> <w lemma="εἰς">εἰς</w> <w lemma="χρυσιακόν">χρυσια<lb n="22" break="no"/>κὸν</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1500">αφ</num> <g ref="#stop"/> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="οὗτος">ταύτης</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <lb n="23"/> <w lemma="ἐπί">ἐπί</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="7">ζ</num> <persName type="attested"><name nymRef="#Ὑψικλῆς">Ὑψικλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <name nymRef="#Ἱέραξ">Ἱέρακος</name></persName></persName> <w lemma="μείς"><hi rend="ligature">μην</hi>ὸς</w> <rs type="month"><w lemma="Λῶος">Λώου</w></rs> <rs type="month"><w>Ἁδριανοῦ</w></rs></ab></div><div n="b" type="textpart" subtype="section"><ab> <lb n="1"/><w lemma="ζάω">Ζῶ<milestone unit="block"/>σιν</w>  </ab></div>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>a. ll. 1-2 <rs type="execution" key="scalpro">inscribed</rs> on the lower moulding of the lid, excluding the projections, ll. 3-21 on the <rs type="decoration">tabella</rs> impinging on all mouldings, ll. 22-23 on the lower moulding of the sarcophagus. Text b. is  on the projections on the lid.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Quite well-designed, cut and aligned in the second-to-fourth-century style; a l.1, <measure dim="height" type="length" unit="metre">0.022</measure>; l.2, <measure dim="height" type="length" unit="metre">0.025</measure>; l.3, <measure dim="height" type="length" unit="metre">0.02</measure>, ll.4 ff, <measure dim="height" type="length" unit="metre">0.018-0.02</measure>. b, <measure dim="height" type="length" unit="metre">0.06</measure>. Ligatured <foreign lang="grc">ΤΗ</foreign> (ll. 3, 21), <foreign lang="grc">ΝΗ</foreign> (l. 4), <foreign lang="grc">ΜΗΝ</foreign> (l. 23), <foreign lang="grc">ΜΜ</foreign> (l.7). Star for denarius; slanting stroke before the figure in l. 22 and after it in l. 23.</p>
-</div>
-<div type="description" n="date" sample="complete" org="uniform">
-<head>Date</head>
-<p>Perhaps 
-<date notBefore="0201" notAfter="0250" exact="none" cert="low">first half of the third century</date>
- (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="a"><ab><lb n="1"/> <w>ἠ</w> <w lemma="σορός">σορός</w> <w lemma="εἰμί">ἐστιν</w> <persName type="aphrodisian"><name reg="Μᾶρκος">Μάρκου</name> <name reg="Αὐρήλιος" type="nomen">Αὐρηλίου</name> <name reg="Ἀλέξανδρος">Ἀλεξάνδρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἑκαταῖος">Ἑκαταίου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυσίου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζή<lb n="2" type="worddiv"/>νωνος</name> <w lemma="τρίς">τρὶς</w> <w lemma="ὁ">τοῦ</w> <g type="projection"/> <persName type="aphrodisian"><name reg="Ἑκαταῖος"> Ἑκαταίο<supplied reason="omitted">υ</supplied></name> <name reg="Χάρμος">Χάρμου</name></persName></persName></persName></persName></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Αὐρηλία">Αὐρ<unclear reason="damage">η</unclear>λία<supplied reason="omitted">ς</supplied></name> <g type="projection"/> <name reg="Τατία">Τατίας</name> <w lemma="ὁ">τῆς</w> <persName type="aphrodisian"><name reg="Ἀλέξανδρος">Ἀ<lb n="3" type="worddiv"/>λεξάνδρου</name></persName></persName> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w> <w lemma="γυνή">γυναι<lb n="4" type="worddiv"/>κὸς</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἐν">ἐ<hi rend="ligature" id="lig2">ν</hi></w><link targets="lig2 lig3"/> <w lemma="ὅς"><hi rend="ligature" id="lig3">ᾗ</hi></w> <w lemma="σορός">σο<lb n="5" type="worddiv"/>ρῷ</w> <w lemma="θάπτω">ταφήσονται</w> <persName type="aphrodisian"><name reg="Ἀλέξανδρος">Ἀλέ<lb n="6" type="worddiv"/>ξα<supplied reason="omitted">ν</supplied>δρ<choice type="correction"><sic>α</sic><corr>ος</corr></choice></name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Τατία">Τατία</name></persName> <w lemma="ὁ">οἱ</w> <lb n="7"/> <w lemma="προγράφω">προγεγρα<hi rend="ligature">μμ</hi>ένοι</w> <lb n="8"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Αὐρήλιος">Αὐρήλιοι</name> <name reg="Ἀλέξανδρος">Ἀλέξαν<lb n="9" type="worddiv"/>δρος</name></persName> <w lemma="καί">καὶ</w><persName type="aphrodisian"><name reg="Ἀλεξάνδρα">Ἀλεξάνδρα</name> </persName><w lemma="ὁ">οἱ</w> <lb n="10"/> <persName type="aphrodisian"><name reg="Ἀλέξανδρος">Ἀλεξάνδρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἑκαταῖος">Ἑ <lb n="11"/> καταίου</name></persName></persName> <w lemma="ὁ">τὰ</w> <w lemma="τέκνον">τέκνα</w> <lb n="12"/> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ἕτερος">ἕτερον</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐ<lb n="13" type="worddiv"/> δεὶς</w>  <w lemma="ἔχω">ἕξει</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἐνθάπτω">ἐν<lb n="14" type="worddiv"/>θάψαι</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="ὁ">τοὺς</w> <lb n="15"/> <w lemma="προδηλόω">προδηλουμένους</w> <lb n="16"/> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="τοιοῦτος">τοιοῦτό</w> <w lemma="τις">τι</w> <lb n="17"/> <w lemma="τολμάω">τολμήσας</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσε<lb n="18" type="worddiv"/>βὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> <lb n="19"/> <w lemma="τυμβωρύχος">τυμβωρύχος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσ<lb n="20" type="worddiv"/>αποτεισάτω</w> <w lemma="ὁ">τῇ</w> <w lemma="θεός">θεῷ</w> <persName type="divine"><name reg="Ἀφροδίτη">Ἀ<lb n="21" type="worddiv"/>φροδεί<hi rend="ligature">τῃ</hi></name></persName> <w lemma="εἰς">εἰς</w> <w lemma="χρυσιακόν">χρυσια<lb n="22" type="worddiv"/>κὸν</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1500">αφ</num> <g type="stop"/> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="οὗτος">ταύτης</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <lb n="23"/> <w lemma="ἐπί">ἐπί</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="7">ζ</num> <persName type="aphrodisian"><name reg="Ὑψικλῆς">Ὑψικλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name> <name reg="Ἱέραξ">Ἱέρακος</name></persName></persName> <w lemma="μείς"><hi rend="ligature">μην</hi>ὸς</w> <rs type="month"><w lemma="Λῶος">Λώου</w></rs> <rs type="month"><w>Ἁδριανοῦ</w></rs></ab></div><div type="textpart_section" n="b"><ab> <lb n="1"/><w lemma="ζάω">Ζῶ<milestone unit="block"/>σιν</w>  </ab></div>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 6, <foreign lang="grc">ΑΛΕ<lb/>ΞΑΔΡΑ</foreign> lapis, but there can be no doubt that the two owners were meant.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>a. The sarcophagus is the property of Marcus Aurelius Alexandros, son of Hekataios the son of Dionysios the son of Zenon third from <supplied reason="explanation">son of Zenon son of Zenon son of</supplied> Hekataios Charmos, and of Aurelia Tatia, daughter of Alexandros, his wife; in which tomb there shall be buried Alexandros and Tatia the afore-mentioned, and Aurelii Alexandros and Alexandra the children of Alexandros son of Hekataios, their children; but no-one else will have a right to bury in it or to remove those named above. Since whoever dares to do anything of the kind is to be held sacrilegious, accursed and a tomb-breaker, and in addition is to pay to the goddess Aphrodite to provide her golden adornments 1500 silver denarii. A copy of this inscribed text was deposited in the Property-Archive when Hypsikles son of Adrastos Hierax was stephanephorus for the seventh time in the month Loos, which is the month of Hadrian.</p><p>b. They are still living</p>
-</div>
-<div type="commentary" sample="complete" org="uniform">
-<head>Commentary</head>
-<p>The sarcophagus was found in a chamber-tomb along with <xref type="inscription" n="1445" href="130111">13.111</xref>, <xref type="inscription" n="1446" href="130108">13.108</xref>, <xref type="inscription" n="1448" href="130110">13.110</xref> and another (<xref type="inscription" n="1449" href="130101">13.101</xref>) of a different type,  and should belong to approximately the same period as they do. All are surely of the third century and perhaps of its first half. The male owner gives a long genealogy, but nothing suggests that he is a member of the Aphrodisian élite. It is probable that he was the first of his family to receive Roman citizenship and did so as a result of the Edict of Caracalla in A.D. 212.</p><p>The funerary formulae contain some variants from the standard, notably in omitting the provision for payment of the prosecutor and in specifying the purpose for which the treasurers of Aphrodite should use the fine; cf. also <xref type="inscription" n="1397" href="020309">2.309</xref> (=no. 100). For the possibility that the specification of silver denarii may indicate a date when the coinage was being seriously debased see Introduction.The stephanephoros, who came of a family very prominent in Aphrodisian public life in the first and second centuries A.D., may also have appeared in <xref type="inscription" n="1454" href="130149">13.149</xref> (=no. 104). </p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Necropolis, North-east</rs> in chamber tomb, with <xref type="inscription" n="1445" href="130111">13.111</xref> (=410), <xref type="inscription" n="1446" href="130108">13.108</xref> (=411), <xref type="inscription" n="1448" href="130110">13.110</xref> (=414), <xref type="inscription" n="1449" href="130101">13.101</xref> (=415).</rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Museum (1994)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition (Sarcophagus catalogue <rs type="sarcCat">412</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="jmr2003">Reynolds and Isik, no. <biblScope>178</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="94_C_07"><figDesc>Sarcophagus (1994)</figDesc></figure><figure href="94_C_08"><figDesc>Sarcophagus (1994)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 6, <foreign xml:lang="grc">ΑΛΕ<lb/>ΞΑΔΡΑ</foreign> lapis, but there can be no doubt that the two owners were meant.</p>
+         </div>
+         <div type="translation">
+            <p>a. The sarcophagus is the property of Marcus Aurelius Alexandros, son of Hekataios the son of Dionysios the son of Zenon third from <supplied reason="explanation">son of Zenon son of Zenon son of</supplied> Hekataios Charmos, and of Aurelia Tatia, daughter of Alexandros, his wife; in which tomb there shall be buried Alexandros and Tatia the afore-mentioned, and Aurelii Alexandros and Alexandra the children of Alexandros son of Hekataios, their children; but no-one else will have a right to bury in it or to remove those named above. Since whoever dares to do anything of the kind is to be held sacrilegious, accursed and a tomb-breaker, and in addition is to pay to the goddess Aphrodite to provide her golden adornments 1500 silver denarii. A copy of this inscribed text was deposited in the Property-Archive when Hypsikles son of Adrastos Hierax was stephanephorus for the seventh time in the month Loos, which is the month of Hadrian.</p>
+            <p>b. They are still living</p>
+         </div>
+         <div type="commentary" sample="complete" org="uniform">
+            <p>The sarcophagus was found in a chamber-tomb along with <ref type="inscription" n="1445" target="130111.xml"/>, <ref type="inscription" n="1446" target="130108.xml"/>, <ref type="inscription" n="1448" target="130110.xml"/> and another (<ref type="inscription" n="1449" target="130101.xml"/>) of a different type,  and should belong to approximately the same period as they do. All are surely of the third century and perhaps of its first half. The male owner gives a long genealogy, but nothing suggests that he is a member of the Aphrodisian élite. It is probable that he was the first of his family to receive Roman citizenship and did so as a result of the Edict of Caracalla in A.D. 212.</p>
+            <p>The funerary formulae contain some variants from the standard, notably in omitting the provision for payment of the prosecutor and in specifying the purpose for which the treasurers of Aphrodite should use the fine; cf. also <ref type="inscription" n="1397" target="020309.xml"/> (=no. 100). For the possibility that the specification of silver denarii may indicate a date when the coinage was being seriously debased see Introduction.The stephanephoros, who came of a family very prominent in Aphrodisian public life in the first and second centuries A.D., may also have appeared in <ref type="inscription" n="1454" target="130149.xml"/> (=no. 104). </p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="jmr2003">Reynolds and Isik, no. <citedRange>178</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

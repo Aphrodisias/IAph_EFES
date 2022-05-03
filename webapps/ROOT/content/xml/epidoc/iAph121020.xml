@@ -1,83 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph121020" n="iAph1919 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Ulpia Carminia Claudiana</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-02-28</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2007-02-20</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Ulpia Carminia Claudiana</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph121020</idno>
+            <idno type="IAph2007">iAph121020</idno>
+            <idno type="JMR2004">iAph1919</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Plain <material key="marmor">white marble</material>
+                              <objectType>statue base</objectType>, with hole and pouring channel on top (<width unit="metre">0.55</width>  × <height unit="metre">1.32</height>  × <depth unit="metre">0.485</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on one face. The block is complete, although the upper edge is chipped; the text must have begun on a crowning feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>ll. 1-17, <height unit="metre">0.03</height>; ll. 18-22, <height unit="metre">0.025</height>. ligatures: <foreign xml:lang="grc">ΜΗ</foreign>, l.2, <foreign xml:lang="grc">ΤΗ</foreign> l.12, <foreign xml:lang="grc">ΗΝ</foreign> l.1, 20, <foreign xml:lang="grc">ΝΕ</foreign> l.22. Star for stop, l. 5; dot for stop elsewhere. Stops for abbreviation.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering nomenclature">
+Third century A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>).
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, West gate</rs>: re-used in the west gate</provenance>
+                  <provenance type="observed" when="1991">Findspot (1991)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-02-28" who="Charlotte-Tupman">DONE</change>
+         <change when="2007-02-20" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="91_D_19A.jpg">
+            <desc>Face (1991)</desc>
+         </graphic>
+         <graphic url="91_D_20A.jpg">
+            <desc>Face (1991)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Plain <rs type="material" key="marmor">white marble</rs> <rs type="objectType">statue base</rs>, with hole and pouring channel on top (<measure type="length" unit="metre" dim="width">0.55</measure>  × <measure type="length" unit="metre" dim="height">1.32</measure>  × <measure type="length" unit="metre" dim="depth">0.485</measure>).</p>
+<ab><lb n="0"/>  <gap reason="lost" unit="character" id="gap01" extent="unknown"/><certainty target="gap01" degree="low" locus="#gi"/> <persName type="attested"><name nymRef="#Οὐλπία"><supplied reason="lost"><expan><abbr>Οὐλ</abbr><ex>πίαν</ex></expan></supplied></name>  <name nymRef="#Καρμινία"><supplied reason="lost"><expan><abbr>Καρ</abbr><ex>μινίαν</ex></expan></supplied></name>  <lb n="1"/><name nymRef="#Κλαυδιανή">Κλαυδιαν<hi rend="ligature">ὴν</hi></name></persName>  <w lemma="θυγάτηρ">θυγ<unclear reason="damage">α</unclear><lb n="2" break="no"/>τέρα</w> <w lemma="πόλις">πόλεως</w> <w lemma="μήτηρ"><hi rend="ligature">μη</hi>τέ<lb n="3" break="no"/>ρα</w> <w lemma="συνκλητικός">συνκλητικῶν</w> <g ref="#stop"/>   <placeName nymRef="#Ἀσία">Ἀ<lb n="4" break="no"/>σίας</placeName> <w lemma="ἀρχιέρεια">ἀρχιερείαν</w> <w lemma="θυγάτηρ">θυ<lb n="5" break="no"/>γατέρα</w>  <g ref="#stop"/>  <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ<am><g ref="#stop"/></am></abbr><ex>άρκου</ex></expan></name>  <name nymRef="#Οὔλπιος"><expan><abbr>Οὐλ<am><g ref="#stop"/></am></abbr><ex>πίου</ex></expan></name>    <name nymRef="#Καρμίνιος"><expan><abbr>Καρ<am><g ref="#stop"/></am></abbr><ex>μινίου</ex></expan></name><lb n="6"/><name nymRef="#Κλαυδιανός">Κλαυδιανοῦ</name></persName>  <g ref="#stop"/> <placeName nymRef="#Ἀσία">Ἀσίας</placeName>  <lb n="7"/> <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <g ref="#stop"/> <w lemma="καί">καὶ</w> <g ref="#stop"/> <w lemma="ἀρχιερεύς">ἀρχιε<lb n="8" break="no"/>ρέως</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Οὐλπία"><expan><abbr>Οὐ<g ref="#stop"/>λ<am><g ref="#stop"/></am></abbr><ex>πίας</ex></expan></name>  <name nymRef="#Κλαυδία"><expan><abbr>Κλ<am><g ref="#stop"/></am></abbr><ex>αυδίας</ex></expan></name>  <name nymRef="#Καρμινία"><expan><abbr>Καρ<am><g ref="#stop"/></am></abbr><ex>μινίας</ex></expan></name>  <lb n="9"/><persName type="attested"><name nymRef="#Πρόκλη">Προκλῆς</name></persName></persName> <w lemma="θυγάτηρ">θυγατρὸς</w> <lb n="10"/> <w lemma="πόλις">πόλεως</w> <g ref="#stop"/> <placeName nymRef="#Ἀσία">Ἀσίας</placeName> <w lemma="ἀρχιέρεια">ἀρχιε<lb n="11"/>ρείας</w> <w lemma="δίς">δὶς</w> <w lemma="ἀρχιέρεια">ἀρχιερείας</w> <lb n="12"/> <w lemma="ἱερεύς">ἱερέων</w> <w lemma="διά">διὰ</w> <w lemma="βίος">βίου</w> <g ref="#stop"/> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w>  <lb n="13"/> <w lemma="θεός">θεοῦ</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδείτης</name></persName>  <lb n="14"/> <w lemma="πρόγονος">προγόνων</w> <placeName nymRef="#Ἀσία">Ἀσίας</placeName>  <w lemma="ἀρχιερεύς">ἀρ<lb n="15" break="no"/>χιερέων</w> <g ref="#stop"/> <w lemma="καί">καὶ</w> <w lemma="ἀρχιερεύς">ἀρχιερέ<lb n="16" break="no"/>ων</w> <w lemma="ἀνεψιά">ἀνεψίαν</w> <w lemma="συνκλητικός">συνκλη<lb n="17" break="no"/>τικῶν</w> <w lemma="καί">καὶ</w> <w lemma="ὑπατικός">ὑπατικῶν</w> <lb n="17a"/>  <space extent="1" unit="line" dim="horizontal"/>  <lb n="18"/><space extent="2" unit="character" dim="horizontal"/>  <w lemma="ἐπιμελέω">ἐπιμεληθέντος</w>  <space extent="2" unit="character" dim="horizontal"/>  <lb n="19"/><persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name>  <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name>  <name nymRef="#Ζηνόβιος">Ζηνοβίου</name>  <w lemma="τετρακίς">τετράκις</w>  <lb n="20"/><w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Ζηνόβιος">Ζ<hi rend="ligature">ην</hi>οβίου</name>  <w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος">Ἀρτεμι<lb n="21" break="no"/>δώρου</name>  <persName type="attested"><name nymRef="#Ἐπαφρόδειτος">Ἐπαφροδείτου</name></persName></persName></persName></persName>  <w lemma="ἱερεύς">ἱε<lb n="22" break="no"/>ρεως</w>  <w lemma="διά">διὰ</w>  <w lemma="βίος">βίου</w>  <persName type="divine"><w lemma="θεός">Θεῶ<hi rend="ligature" id="hi5">ν</hi></w><link targets="hi5  hi6" targOrder="U"/>  <w lemma="ἔρως"><hi rend="ligature" id="hi6">Ἐ</hi>ρώτων</w></persName>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on one face. The block is complete, although the upper edge is chipped; the text must have begun on a crowning feature.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>ll. 1-17, <measure type="length" unit="metre" dim="height">0.03</measure>; ll. 18-22, <measure type="length" unit="metre" dim="height">0.025</measure>. ligatures: <foreign lang="grc">ΜΗ</foreign>, l.2, <foreign lang="grc">ΤΗ</foreign> l.12, <foreign lang="grc">ΗΝ</foreign> l.1, 20, <foreign lang="grc">ΝΕ</foreign> l.22. Star for stop, l. 5; dot for stop elsewhere. Stops for abbreviation.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date exact="none" notBefore="0201" notAfter="0300">Third century A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>).
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="character" id="gap01" dim="left"/><certainty target="gap01" degree="low" locus="#gi"/> <persName type="aphrodisian" full="yes"><name reg="Οὐλπία"><supplied reason="lost"><expan><abbr>Οὐλ</abbr><supplied reason="abbreviation">πίαν</supplied></expan></supplied></name>  <name reg="Καρμινία"><supplied reason="lost"><expan><abbr>Καρ</abbr><supplied reason="abbreviation">μινίαν</supplied></expan></supplied></name>  <lb n="1"/><name reg="Κλαυδιανή">Κλαυδιαν<hi rend="ligature">ὴν</hi></name></persName>  <w lemma="θυγάτηρ">θυγ<unclear reason="damage">α</unclear><lb n="2" type="worddiv"/>τέρα</w> <w lemma="πόλις">πόλεως</w> <w lemma="μήτηρ"><hi rend="ligature">μη</hi>τέ<lb n="3" type="worddiv"/>ρα</w> <w lemma="συνκλητικός">συνκλητικῶν</w> <g type="stop"/>   <placeName type="admin" full="yes" reg="Ἀσία">Ἀ<lb n="4" type="worddiv"/>σίας</placeName> <w lemma="ἀρχιέρεια">ἀρχιερείαν</w> <w lemma="θυγάτηρ">θυ<lb n="5" type="worddiv"/>γατέρα</w>  <g type="stop"/>  <persName type="aphrodisian" full="yes"><name reg="Μᾶρκος"><expan><abbr>Μ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">άρκου</supplied></expan></name>  <name reg="Οὔλπιος"><expan><abbr>Οὐλ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">πίου</supplied></expan></name>    <name reg="Καρμίνιος"><expan><abbr>Καρ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">μινίου</supplied></expan></name><lb n="6"/><name reg="Κλαυδιανός">Κλαυδιανοῦ</name></persName>  <g type="stop"/> <placeName type="admin" full="yes" reg="Ἀσία">Ἀσίας</placeName>  <lb n="7"/> <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <g type="stop"/> <w lemma="καί">καὶ</w> <g type="stop"/> <w lemma="ἀρχιερεύς">ἀρχιε<lb n="8" type="worddiv"/>ρέως</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian" full="yes"><name reg="Οὐλπία"><expan><abbr>Οὐ<g type="stop"/>λ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">πίας</supplied></expan></name>  <name reg="Κλαυδία"><expan><abbr>Κλ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">αυδίας</supplied></expan></name>  <name reg="Καρμινία"><expan><abbr>Καρ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">μινίας</supplied></expan></name>  <lb n="9"/><persName type="aphrodisian" full="yes"><name reg="Πρόκλη">Προκλῆς</name></persName></persName> <w lemma="θυγάτηρ">θυγατρὸς</w> <lb n="10"/> <w lemma="πόλις">πόλεως</w> <g type="stop"/> <placeName type="admin" full="yes" reg="Ἀσία">Ἀσίας</placeName> <w lemma="ἀρχιέρεια">ἀρχιε<lb n="11"/>ρείας</w> <w lemma="δίς">δὶς</w> <w lemma="ἀρχιέρεια">ἀρχιερείας</w> <lb n="12"/> <w lemma="ἱερεύς">ἱερέων</w> <w lemma="διά">διὰ</w> <w lemma="βίος">βίου</w> <g type="stop"/> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w>  <lb n="13"/> <w lemma="θεός">θεοῦ</w> <persName type="divine" full="yes"><name reg="Ἀφροδίτη">Ἀφροδείτης</name></persName>  <lb n="14"/> <w lemma="πρόγονος">προγόνων</w> <placeName type="admin" full="yes" reg="Ἀσία">Ἀσίας</placeName>  <w lemma="ἀρχιερεύς">ἀρ<lb n="15" type="worddiv"/>χιερέων</w> <g type="stop"/> <w lemma="καί">καὶ</w> <w lemma="ἀρχιερεύς">ἀρχιερέ<lb n="16" type="worddiv"/>ων</w> <w lemma="ἀνεψιά">ἀνεψίαν</w> <w lemma="συνκλητικός">συνκλη<lb n="17" type="worddiv"/>τικῶν</w> <w lemma="καί">καὶ</w> <w lemma="ὑπατικός">ὑπατικῶν</w> <lb n="17a"/>  <space extent="1" unit="line" dim="horizontal"/>  <lb n="18"/><space extent="2" unit="character" dim="horizontal"/>  <w lemma="ἐπιμελέω">ἐπιμεληθέντος</w>  <space extent="2" unit="character" dim="horizontal"/>  <lb n="19"/><persName type="aphrodisian" full="yes"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name>  <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name>  <name reg="Ζηνόβιος">Ζηνοβίου</name>  <w lemma="τετρακίς">τετράκις</w>  <lb n="20"/><w lemma="ὁ">τοῦ</w>  <persName type="aphrodisian" full="yes"><name reg="Ζηνόβιος">Ζ<hi rend="ligature">ην</hi>οβίου</name>  <w lemma="ὁ">τοῦ</w>  <persName type="aphrodisian" full="yes"><name reg="Ἀρτεμίδωρος">Ἀρτεμι<lb n="21" type="worddiv"/>δώρου</name>  <persName type="aphrodisian" full="yes"><name reg="Ἐπαφρόδειτος">Ἐπαφροδείτου</name></persName></persName></persName></persName>  <w lemma="ἱερεύς">ἱε<lb n="22" type="worddiv"/>ρεως</w>  <w lemma="διά">διὰ</w>  <w lemma="βίος">βίου</w>  <persName type="divine" full="yes"><w lemma="θεός">Θεῶ<hi rend="ligature" id="hi5">ν</hi></w><link targets="hi5  hi6" targOrder="U"/>  <w lemma="ἔρως"><hi rend="ligature" id="hi6">Ἐ</hi>ρώτων</w></persName>  </ab>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p> ...? <supplied reason="lost" cert="low">honoured</supplied> <supplied reason="lost">Ulpia Carminia</supplied>] Claudiane, daughter of the city, mother of the senators M<supplied reason="abbreviation">arcus</supplied> Ulp<supplied reason="abbreviation">ius</supplied> Car<supplied reason="abbreviation">minius</supplied> Claudianus, high priest of Asia, high priest (of the city) and Ulp<supplied reason="abbreviation">ia</supplied> Cl<supplied reason="abbreviation">audia</supplied> Car<supplied reason="abbreviation">minia</supplied> Prokle, daughter of the city, high priestess of Asia twice, high priestess (of the city), (both of them) priests for life of the goddess Aphrodite, descended from high priests of Asia and high priests (of the city), cousin of senatorials and consulars. M<supplied reason="abbreviation">arcus</supplied> Aur<supplied reason="abbreviation">elius</supplied> Zenobios, fourth of the name from Zenobios son of Artemidoros, son of Epaphroditos, priest for life of the divine Loves, oversaw provision (of the monument).</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The mother, Ulpia (<supplied reason="abbreviation">Claudia</supplied>) Carminia Prokla, is also honoured in <xref type="iAph">1847</xref> (Museum 100), which was found in the Hadrianic Baths by Boulanger.</p><p>The father is presumably not the same as the great donor (<xref type="inscription" n="1769" href="121111">12.1111</xref> =CIG 2782) who was married to Flavia Apphia.</p><p>The daughter is not otherwise known.</p><p>The epimelete also figures in <xref type="inscription" n="396" href="121011">12.1011</xref> (Walls 162), <xref type="iAph">1901</xref> (Walls 9) and <xref type="inscription" n="238" href="050015">5.15</xref>.i (88.9), but there without Roman citizenship. The use of <term lang="la">tria nomina</term> here suggests that the date is after the Antonine Constitution.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, West gate</rs>: re-used in the west gate</rs>
-<rs type="lastLocation">Findspot (1991)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition (<rs type="siteNo">Walls 163</rs>).</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="91_D_19A"><figDesc>Face (1991)</figDesc></figure><figure href="91_D_20A"><figDesc>Face (1991)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p> ...? <supplied reason="lost" cert="low">honoured</supplied>
+               <supplied reason="lost">Ulpia Carminia</supplied>] Claudiane, daughter of the city, mother of the senators M<ex>arcus</ex> Ulp<ex>ius</ex> Car<ex>minius</ex> Claudianus, high priest of Asia, high priest (of the city) and Ulp<ex>ia</ex> Cl<ex>audia</ex> Car<ex>minia</ex> Prokle, daughter of the city, high priestess of Asia twice, high priestess (of the city), (both of them) priests for life of the goddess Aphrodite, descended from high priests of Asia and high priests (of the city), cousin of senatorials and consulars. M<ex>arcus</ex> Aur<ex>elius</ex> Zenobios, fourth of the name from Zenobios son of Artemidoros, son of Epaphroditos, priest for life of the divine Loves, oversaw provision (of the monument).</p>
+         </div>
+         <div type="commentary">
+            <p>The mother, Ulpia (<ex>Claudia</ex>) Carminia Prokla, is also honoured in <ref type="iAph" target=".xml"/> (Museum 100), which was found in the Hadrianic Baths by Boulanger.</p>
+            <p>The father is presumably not the same as the great donor (<ref type="inscription" n="1769" target="121111.xml"/> =CIG 2782) who was married to Flavia Apphia.</p>
+            <p>The daughter is not otherwise known.</p>
+            <p>The epimelete also figures in <ref type="inscription" n="396" target="121011.xml"/> (Walls 162), <ref type="iAph" target=".xml"/> (Walls 9) and <ref type="inscription" n="238" target="050015.xml"/>.i (88.9), but there without Roman citizenship. The use of <term xml:lang="la">tria nomina</term> here suggests that the date is after the Antonine Constitution.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

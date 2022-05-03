@@ -1,122 +1,171 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010505" n="iAph0072 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">Fl. Epipha<supplied cert="low" reason="lost">nios</supplied> <seg cert="low">Hermias</seg> and others <seg cert="low"><rs type="textType" reg="building inscription">make a <rs type="textType">benefaction</rs></rs></seg></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change>
-  <date>2003-07-17</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-23</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-01-28</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Three fragments of a thick <rs type="material" key="marmor">white marble</rs> <rs type="objectType">panel</rs>; total <measure type="length" unit="metre" dim="height">0.36</measure>, W. <measure type="length" unit="metre" dim="width">0.395</measure>, thickness <measure type="length" unit="metre" dim="depth">0.06</measure>. Although the face area does not show it, the three stones do join.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on a prepared face, apparently within a raised <term lang="la">tabula ansata</term>, of which the lower right corner survives. All the other surfaces are rough.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>very distinctive, averaging <measure type="length" unit="metre" dim="height">0.03</measure> (<foreign lang="grc">Ο</foreign> is <measure type="length" unit="metre" dim="height">0.02</measure>); <foreign lang="grc">Υ</foreign> has a crossbar, and some elements in <foreign lang="grc">Υ, Α, Μ</foreign> and <foreign lang="grc">Κ</foreign> are not attached. Scroll for abbreviation.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0401" notAfter="0600">Fifth to sixth centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fl. Epipha<supplied cert="low" reason="lost">nios</supplied>
+               <seg cert="low">Hermias</seg> and others <seg cert="low">make a benefaction</seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010505</idno>
+            <idno type="IAph2007">iAph010505</idno>
+            <idno type="JMR2004">iAph0072</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>63.1</idno>
+                  <idno>83.110a</idno>
+                  <idno>83.110b</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three fragments of a thick <material key="marmor">white marble</material>
+                              <objectType>panel</objectType>; total <height unit="metre">0.36</height>, W. <width unit="metre">0.395</width>, thickness <depth unit="metre">0.06</depth>. Although the face area does not show it, the three stones do join.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on a prepared face, apparently within a raised <term xml:lang="la">tabula ansata</term>, of which the lower right corner survives. All the other surfaces are rough.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>very distinctive, averaging <height unit="metre">0.03</height> (<foreign xml:lang="grc">Ο</foreign> is <height unit="metre">0.02</height>); <foreign xml:lang="grc">Υ</foreign> has a crossbar, and some elements in <foreign xml:lang="grc">Υ, Α, Μ</foreign> and <foreign xml:lang="grc">Κ</foreign> are not attached. Scroll for abbreviation.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering">Fifth to sixth centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs key="Tetrapylon" type="monuList">Tetrapylon</rs> area.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-28" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-23" who="#CMR">tagged and corrected</change>
+         <change when="2003-07-17" who="Juan-Garcés">lemmatised</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_J_30A.jpg">
+            <desc>Fragment, lines 1-3 (1977)</desc>
+         </graphic>
+         <graphic url="83_B_25A.jpg">
+            <desc>Fragment. lines 3-4 (1983)</desc>
+         </graphic>
+         <graphic url="83_B_24A.jpg">
+            <desc>Fragment, lower right corner (1983)</desc>
+         </graphic>
+         <graphic url="85_G_03.jpg">
+            <desc>Assembled fragments (1985)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<ab>
-		<lb n="0"/><gap dim="top" reason="lost" unit="line" extent="unknown"/>
-		<lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <w lemma="οἶκος">οἴκου</w> <w lemma="οὗτος">τού<supplied reason="lost" cert="low">του</supplied></w> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		<lb n="2"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">λιλ</unclear></orig><gap dim="internal" reason="lost" extent="unknown" unit="character"/> <w lemma="περί">περὶ</w> <persName type="aphrodisian" key="hermias2" full="yes"><name reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">άουιον</supplied></expan></name> <name reg="Ἐπιφάνιος">Ἐπιφά<supplied reason="lost" cert="low">νιον</supplied></name> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		<lb n="3"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <name reg="Ἑρμίας"><supplied reason="lost" cert="low">Ἑ</supplied>ρμίαν</name></persName> <w lemma="οἰκεῖος">ο<supplied reason="lost">ἰκ</supplied>εῖοι</w> <persName key="Victor" type="aphrodisian" full="yes"><name reg="Βίκτωρ">Βίκτορος</name></persName> <orig n="unresolved"><unclear reason="damage">τ</unclear></orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		<lb n="4"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <rs key="clarissimus" type="dignity"><w lemma="λαμπρός"><expan><abbr><supplied reason="lost">λα</supplied>μ</abbr><supplied reason="abbreviation">προτατ-</supplied></expan></w></rs> <rs type="official-secul" key="eparch"><w lemma="ἔπαρχος">ἐπαρχ<gap dim="internal" reason="lost" extent="unknown" unit="character"/></w></rs><orig n="unresolved"><unclear reason="damage">τ</unclear></orig><gap dim="internal" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>λ<unclear reason="damage">ι</unclear></orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		<lb n="5"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">λι</unclear>σαν</orig> <space dim="horizontal"/>
+		<lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+		<lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <w lemma="οἶκος">οἴκου</w> <w lemma="οὗτος">τού<supplied reason="lost" cert="low">του</supplied></w> <gap reason="lost" unit="character" extent="unknown"/>
+		<lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">λιλ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/> <w lemma="περί">περὶ</w> <persName key="hermias2" type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>άουιον</ex></expan></name> <name nymRef="#Ἐπιφάνιος">Ἐπιφά<supplied reason="lost" cert="low">νιον</supplied></name> <gap reason="lost" unit="character" extent="unknown"/>
+		<lb n="3"/><gap reason="lost" unit="character" extent="unknown"/> <name nymRef="#Ἑρμίας"><supplied reason="lost" cert="low">Ἑ</supplied>ρμίαν</name></persName> <w lemma="οἰκεῖος">ο<supplied reason="lost">ἰκ</supplied>εῖοι</w> <persName key="Victor" type="attested"><name nymRef="#Βίκτωρ">Βίκτορος</name></persName> <orig n="unresolved"><unclear reason="damage">τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		<lb n="4"/><gap reason="lost" unit="character" extent="unknown"/> <rs key="clarissimus" type="dignity"><w lemma="λαμπρός"><expan><abbr><supplied reason="lost">λα</supplied>μ</abbr><ex>προτατ-</ex></expan></w></rs> <rs type="official-secul" key="eparch"><w lemma="ἔπαρχος">ἐπαρχ<gap reason="lost" unit="character" extent="unknown"/></w></rs><orig n="unresolved"><unclear reason="damage">τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>λ<unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		<lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">λι</unclear>σαν</orig> <space dim="horizontal"/>
 		</ab>
       </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p>Below the last line are some small (<measure type="length" unit="metre" dim="height">0.01</measure>) scratched letters:</p>
-        <ab><foreign lang="grc"><gap dim="left" reason="lost"/><orig n="unresolved"><unclear reason="damage">ια</unclear>φω<unclear reason="damage">ιι</unclear></orig></foreign></ab>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab><gap dim="left" reason="lost"/> of this house <gap dim="internal" reason="lost"/><supplied reason="lost" cert="low">those</supplied> around Flavius Epipha<supplied reason="lost">nios</supplied> <gap dim="internal" reason="lost"/> <supplied reason="lost" cert="low">and</supplied> <supplied reason="lost">He</supplied>rmias, of the household of Bictor <gap dim="internal" reason="lost"/> <term lang="la">?clarissimus</term>, prefect <gap dim="internal" reason="lost"/> <seg cert="low">they set up</seg>.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>Probably to be associated with <xref type="inscription" n="245" href="010507">1.507</xref>; see discussion at <xref type="eAla-text" n="V.50">V.50</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs key="Tetrapylon" type="monuList">Tetrapylon</rs> area.</rs>. Original location: <rs type="origLocation">Unknown.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition in 1963 and 1983 (<rs type="invNo">63.1</rs>, <rs type="invNo">83.110a</rs> and <rs type="invNo">83.110b</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>72</biblScope> and plate xvii</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257495">613</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="77_J_30A"><figDesc>Fragment, lines 1-3 (1977)</figDesc></figure><figure href="83_B_25A"><figDesc>Fragment. lines 3-4 (1983)</figDesc></figure><figure href="83_B_24A"><figDesc>Fragment, lower right corner (1983)</figDesc></figure><figure href="85_G_03"><figDesc>Assembled fragments (1985)</figDesc></figure></p></div>
-
-      
-
-      
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <p>Below the last line are some small (<measure type="length" unit="metre" dim="height">0.01</measure>) scratched letters:</p>
+            <ab>
+               <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>
+                  <orig n="unresolved">
+                     <unclear reason="damage">ια</unclear>φω<unclear reason="damage">ιι</unclear>
+                  </orig>
+               </foreign>
+            </ab>
+         </div>
+         <div type="translation">
+            <ab>
+               <gap reason="lost" unit="character" extent="unknown"/> of this house <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost" cert="low">those</supplied> around Flavius Epipha<supplied reason="lost">nios</supplied>
+               <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost" cert="low">and</supplied>
+               <supplied reason="lost">He</supplied>rmias, of the household of Bictor <gap reason="lost" unit="character" extent="unknown"/>
+               <term xml:lang="la">?clarissimus</term>, prefect <gap reason="lost" unit="character" extent="unknown"/>
+               <seg cert="low">they set up</seg>.</ab>
+         </div>
+         <div type="commentary">
+            <p>Probably to be associated with <ref type="inscription" n="245" target="010507.xml"/>; see discussion at <ref type="eAla-text" n="V.50" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>72</citedRange> and plate xvii</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257495">613</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

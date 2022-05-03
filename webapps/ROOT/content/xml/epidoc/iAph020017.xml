@@ -1,86 +1,134 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020017" n="iAph1718 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours </rs> for L. Ant. Cl. Dometeinos Diogenes</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-07-11</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours  for L. Ant. Cl. Dometeinos Diogenes</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020017</idno>
+            <idno type="IAph2007">iAph020017</idno>
+            <idno type="JMR2004">iAph1718</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>64.277</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>statue base</objectType> in three elements. Multi tiered upper plinth <width unit="metre">0.95</width>  × <height unit="metre">0.35</height>  × <depth unit="metre">0.85</depth>; shaft with moulding on all four sides (0.565 x 1.31 x 0.565; multi tiered lower plinth <width unit="metre">0.92</width>  × <height unit="metre">0.35</height>  × <depth unit="metre">0.90</depth>. The statue survives; see bibliography.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on one fascia of the upper plinth (l.1) and on the shaft.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard II/III century forms<height unit="metre">0.035</height>. Small circles for stops after each of the abbreviated names in ll. 2 and 13, and before the first name in l. 13.Ligature: ΜΕ in l. 15.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0200" notAfter="0250" evidence="prosopography lettering">
+ Early third century A.D. (<rs type="criteria">prosopography</rs>, <rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon</rs>: standing against the south face of the south portico wall, west of the entrance</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-07-11" who="cmr">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">statue base</rs> in three elements. Multi tiered upper plinth <measure type="length" unit="metre" dim="width">0.95</measure>  × <measure type="length" unit="metre" dim="height">0.35</measure>  × <measure type="length" unit="metre" dim="depth">0.85</measure>; shaft with moulding on all four sides (0.565 x 1.31 x 0.565; multi tiered lower plinth <measure type="length" unit="metre" dim="width">0.92</measure>  × <measure type="length" unit="metre" dim="height">0.35</measure>  × <measure type="length" unit="metre" dim="depth">0.90</measure>. The statue survives; see bibliography.</p>
+<ab><lb n="1"/> <space extent="3"/><w lemma="ὁ">ἡ</w> <w lemma="πατρίς">πατρίς</w><space extent="3"/> <lb n="2"/><persName type="attested"><name nymRef="#Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιον</ex></expan></name>  <name nymRef="#Ἀντώνιος"><expan><abbr>Ἀντ</abbr><ex>ώνιον</ex></expan></name>  <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name>  <name nymRef="#Δομετῖνος">Δο<lb n="3" break="no"/>μετεῖνον</name>  <lb n="4"/><name nymRef="#Διογένης">Διογένην</name></persName>  <lb n="5"/> <w lemma="ὁ">τὸν</w> <w lemma="νομοθέτης">νομοθέ<lb n="6" break="no"/>την</w> <w lemma="πατήρ">πατέρα</w> <lb n="7"/> <w lemma="καί">καὶ</w> <w lemma="πάππος">πάππον</w> <lb n="8"/><w lemma="συνκλητικός">συνκλητι<lb n="9" break="no"/><space extent="3"/>κῶν</w>    <space extent="3" unit="character" dim="horizontal"/>  <lb n="9a"/><space extent="12"/> <lb n="10"/> <w lemma="ὁ">τῆς</w> <w lemma="ἀνάστασις">ἀναστάσε<lb n="11" break="no"/>ως</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδρίας">ἀνδριάν<lb n="12" break="no"/>τος</w>  <w lemma="προνοέομαι">προνοησα<lb n="13" break="no"/>μένου</w>  <persName type="attested"><name nymRef="#Τιβέριος"><expan><abbr>Τιβ</abbr><ex>ερίου</ex></expan></name>  <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name>  <lb n="14"/><name nymRef="#Κτησίας">Κτησίου</name></persName>  <w lemma="πρεσβύτερος">πρεσβυ<lb n="15" break="no"/>τέρου</w>  <w lemma="ποιέω">ποιησαμέ<lb n="16" break="no"/>νου</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="17"/> <w lemma="βωμός">βωμὸν</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="καί">καὶ</w> <lb n="18"/> <w lemma="ὁ">τὰ</w> <w lemma="λοιπός">λοιπὰ</w> <w lemma="παρά">παρ'</w> <w lemma="ἑαυτοῦ">ἑ<lb n="19" break="no"/>αυτοῦ</w>    <space extent="3" unit="character" dim="horizontal"/>.  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed on one fascia of the upper plinth (l.1) and on the shaft.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Standard II/III century forms<measure dim="height" type="length" unit="metre">0.035</measure>. Small circles for stops after each of the abbreviated names in ll. 2 and 13, and before the first name in l. 13.Ligature: ΜΕ in l. 15.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0250" notBefore="0200"> Early third century A.D.</date> (<rs type="criteria">prosopography</rs>, <rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <space extent="3"/><w lemma="ὁ">ἡ</w> <w lemma="πατρίς">πατρίς</w><space extent="3"/> <lb n="2"/><persName type="aphrodisian"><name reg="Λούκιος" type="praenomen"><expan><abbr>Λ</abbr><supplied reason="abbreviation">ούκιον</supplied></expan></name>  <name reg="Ἀντώνιος"><expan><abbr>Ἀντ</abbr><supplied reason="abbreviation">ώνιον</supplied></expan></name>  <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αύδιον</supplied></expan></name>  <name reg="Δομετῖνος">Δο<lb n="3" type="worddiv"/>μετεῖνον</name>  <lb n="4"/><name reg="Διογένης">Διογένην</name></persName>  <lb n="5"/> <w lemma="ὁ">τὸν</w> <w lemma="νομοθέτης">νομοθέ<lb n="6" type="worddiv"/>την</w> <w lemma="πατήρ">πατέρα</w> <lb n="7"/> <w lemma="καί">καὶ</w> <w lemma="πάππος">πάππον</w> <lb n="8"/><w lemma="συνκλητικός">συνκλητι<lb n="9" type="worddiv"/><space extent="3"/>κῶν</w>    <space extent="3" unit="character" dim="horizontal"/>  <lb n="9a"/><space extent="12"/> <lb n="10"/> <w lemma="ὁ">τῆς</w> <w lemma="ἀνάστασις">ἀναστάσε<lb n="11" type="worddiv"/>ως</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδρίας">ἀνδριάν<lb n="12" type="worddiv"/>τος</w>  <w lemma="προνοέομαι">προνοησα<lb n="13" type="worddiv"/>μένου</w>  <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen"><expan><abbr>Τιβ</abbr><supplied reason="abbreviation">ερίου</supplied></expan></name>  <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name>  <lb n="14"/><name reg="Κτησίας">Κτησίου</name></persName>  <w lemma="πρεσβύτερος">πρεσβυ<lb n="15" type="worddiv"/>τέρου</w>  <w lemma="ποιέω">ποιησαμέ<lb n="16" type="worddiv"/>νου</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="17"/> <w lemma="βωμός">βωμὸν</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="καί">καὶ</w> <lb n="18"/> <w lemma="ὁ">τὰ</w> <w lemma="λοιπός">λοιπὰ</w> <w lemma="παρά">παρ'</w> <w lemma="ἑαυτοῦ">ἑ<lb n="19" type="worddiv"/>αυτοῦ</w>    <space extent="3" unit="character" dim="horizontal"/>.  </ab>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>His fatherland (honoured) L(ucius) Ant(onius) Cl(audius) Dometeinos Diogenes, law-giver, father and grandfather of  senatorials.  Tib(erius) Cl(audius) Ktesias the elder, supervised the erection of the statue and himself had the altar made for him, and the other features beside himself.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>For Dometeinos Diogenes see PIR2 C, 853; for his ancestry, in a family already notable at Aphrodisias in the mid first century AD  see <xref type="inscription" n="567" href="080023">8.23</xref>, <xref type="inscription" n="881" href="090025">9.25</xref> (SEG 31 (1981) 901, 913, and for his senatorial descendents e.g.  397 (MAMA 502). The text here appears to be the latest that we have in his honour, since it alone describes him as a grandfather.  Certainly belonging late in his life, it may even have been set up after his death in view of the epimelete's reference to an altar, which should indicate a post-mortem cult. Other inscriptions show him to have held the office of stephanephorus, perpetual gymnasiarch and high priest of Asia (indicated here by the crown on his statue, but not in the text), as well a that of nomothetes. The stress on the nomothesia here indicaets unusual impotance for it - it was,perhaps, a genuine lawgiving, perhaps a revision of the civic constituion and not a regular office. The absence of a reference to the high priesthood may indicate appointment to that office after the passage of the civic decree which underlies the production and erection of the statue.</p><p>As a high priest he will have needed the assistance of a high priestess and, presumably because he was a widower, can be supposed to have chosen his niece, Tatiane (<xref type="inscription" n="1723" href="020013">2.13</xref>), although there is no specific evidence that she served with him. (For a rebuttal of the suggestion that she may have been his wife see on <xref type="inscription" n="1723" href="020013">2.13</xref>).</p><p>Tib. Claudius Ktesias is otherwsie known as a civic benefactor in the second to third centuries A.D., possibly also as a rhetor; see  <xref type="inscription" n="1027" href="120028">12.28</xref> (=MAMA 497)</p>
-   </div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Findspot</rs>
-<rs type="found"><rs type="monuList">Bouleuterion/Odeon</rs>: standing against the south face of the south portico wall, west of the entrance</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1964 (<rs type="invNo">64.277</rs>; SBI <rs type="sbi">110</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Described by <bibl n="kte1965">Erim, <title>AJA</title> 69, 1965, 145</bibl>, and <bibl><title>Archaeology</title> 20, 1967, 26, fig. 15</bibl>; full text, by <bibl n="jmr1968">Reynolds, in <title>Belleten Türk Tarih Kurumu</title> 32, 1968, 21-23, no. <biblScope>6</biblScope></bibl>, whence <bibl n="be">BE <biblScope>1969.54</biblScope></bibl>, and in <bibl n="ktejmr1979">Inan-Rosenbaum <title>Porträtplastik</title>, 212-213, no. <biblScope>186</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1982.1101</biblScope></bibl>, <bibl n="seg">SEG <biblScope>1985.1082</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257112">233</biblScope>
-</bibl>. Published, with the statue, by <bibl n="rrrs2006"> <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, no. <biblScope>48</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>See Smith</p><p>KTE 62; 64.95.5 </p>
-</div></body></text>
+         <div type="translation">
+            <p>His fatherland (honoured) L(ucius) Ant(onius) Cl(audius) Dometeinos Diogenes, law-giver, father and grandfather of  senatorials.  Tib(erius) Cl(audius) Ktesias the elder, supervised the erection of the statue and himself had the altar made for him, and the other features beside himself.</p>
+         </div>
+         <div type="commentary">
+            <p>For Dometeinos Diogenes see PIR2 C, 853; for his ancestry, in a family already notable at Aphrodisias in the mid first century AD  see <ref type="inscription" n="567" target="080023.xml"/>, <ref type="inscription" n="881" target="090025.xml"/> (SEG 31 (1981) 901, 913, and for his senatorial descendents e.g.  397 (MAMA 502). The text here appears to be the latest that we have in his honour, since it alone describes him as a grandfather.  Certainly belonging late in his life, it may even have been set up after his death in view of the epimelete's reference to an altar, which should indicate a post-mortem cult. Other inscriptions show him to have held the office of stephanephorus, perpetual gymnasiarch and high priest of Asia (indicated here by the crown on his statue, but not in the text), as well a that of nomothetes. The stress on the nomothesia here indicaets unusual impotance for it - it was,perhaps, a genuine lawgiving, perhaps a revision of the civic constituion and not a regular office. The absence of a reference to the high priesthood may indicate appointment to that office after the passage of the civic decree which underlies the production and erection of the statue.</p>
+            <p>As a high priest he will have needed the assistance of a high priestess and, presumably because he was a widower, can be supposed to have chosen his niece, Tatiane (<ref type="inscription" n="1723" target="020013.xml"/>), although there is no specific evidence that she served with him. (For a rebuttal of the suggestion that she may have been his wife see on <ref type="inscription" n="1723" target="020013.xml"/>).</p>
+            <p>Tib. Claudius Ktesias is otherwsie known as a civic benefactor in the second to third centuries A.D., possibly also as a rhetor; see  <ref type="inscription" n="1027" target="120028.xml"/> (=MAMA 497)</p>
+         </div>
+         <div type="bibliography">
+            <p>Described by <bibl n="kte1965">Erim, <title>AJA</title> 69, 1965, 145</bibl>, and <bibl>
+                  <title>Archaeology</title> 20, 1967, 26, fig. 15</bibl>; full text, by <bibl n="jmr1968">Reynolds, in <title>Belleten Türk Tarih Kurumu</title> 32, 1968, 21-23, no. <citedRange>6</citedRange>
+               </bibl>, whence <bibl n="be">BE <citedRange>1969.54</citedRange>
+               </bibl>, and in <bibl n="ktejmr1979">Inan-Rosenbaum <title>Porträtplastik</title>, 212-213, no. <citedRange>186</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1101</citedRange>
+               </bibl>, <bibl n="seg">SEG <citedRange>1985.1082</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257112">233</citedRange>
+               </bibl>. Published, with the statue, by <bibl n="rrrs2006">
+                  <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, no. <citedRange>48</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

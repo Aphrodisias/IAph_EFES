@@ -1,84 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph040302" n="iAph1067 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Sculptor's signature</rs>: <seg cert="low">Menodotos</seg></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1991</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="ktejmr1991">Erim and Reynolds (<date>1991</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">statue</rs> of a <rs type="decoration">draped woman</rs>, on an oval plinth; for publication, see bibliography.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the front face of the plinth.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>
-<measure type="length" unit="metre" dim="height">0.015</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date cert="low" exact="none" notAfter="0100" notBefore="0001">First century A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">sculpture</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><persName type="aphrodisian"><name reg="Μηνόδοτος"><supplied reason="lost">Μηνόδοτος</supplied></name>  <gap reason="lost" extent="unknown" unit="character"/>  <persName type="aphrodisian"><name><gap reason="lost" extent="unknown" unit="character"/>μάχου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Μηνόδοτος">Μηνοδό<unclear reason="damage">τ</unclear><supplied reason="lost">ου</supplied></name></persName></persName></persName>  <lb n="2"/><space extent="3" unit="character" dim="horizontal"/> <w>ἐποίει</w> <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <supplied reason="lost" cert="low"><space extent="3"/></supplied>    <space extent="3" unit="character" dim="horizontal"/>  </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sculptor's signature: <seg cert="low">Menodotos</seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph040302</idno>
+            <idno type="IAph2007">iAph040302</idno>
+            <idno type="JMR2004">iAph1067</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>83.122</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>statue</objectType> of a <rs type="decoration">draped woman</rs>, on an oval plinth; for publication, see bibliography.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the front face of the plinth.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.015</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering sculpture">
+First century A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">sculpture</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">South Agora, Agora Gate</rs>: south-east of the Agora Gate</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url=" 85_H_33A.jpg">
+            <desc>Text, right end (1985)</desc>
+         </graphic>
+         <graphic url="85_H_34A.jpg">
+            <desc>Statue (1985)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>Menodotos, son of [...] [?-]machos, the son of Menodotos, made (this).</p>
+<ab><lb n="1"/><persName type="attested"><name nymRef="#Μηνόδοτος"><supplied reason="lost">Μηνόδοτος</supplied></name>  <gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name><gap reason="lost" unit="character" extent="unknown"/>μάχου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μηνόδοτος">Μηνοδό<unclear reason="damage">τ</unclear><supplied reason="lost">ου</supplied></name></persName></persName></persName>  <lb n="2"/><space extent="3" unit="character" dim="horizontal"/> <w>ἐποίει</w> <gap reason="lost" unit="character" extent="unknown"/>  <supplied reason="lost" cert="low"><space extent="3"/></supplied>    <space extent="3" unit="character" dim="horizontal"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See Erim-Reynolds, loc. cit., with a reference to <xref type="inscription" n="1268" href="080052">8.52</xref>; see also Smith.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">South Agora, Agora Gate</rs>: south-east of the Agora Gate</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1983 (<rs type="invNo">83.122</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="ktejmr1991">Erim-Reynolds, 'Sculptors' no.<biblScope>7</biblScope></bibl>, whence <bibl n="seg"><title level="j">SEG</title> 40 <biblScope>1990.930</biblScope></bibl>. Published, with the statue, by <bibl n="rrrs2006"> <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, no. <biblScope>85</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href=" 85_H_33A"><figDesc>Text, right end (1985)</figDesc></figure><figure href="85_H_34A"><figDesc>Statue (1985)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>Menodotos, son of [...] [?-]machos, the son of Menodotos, made (this).</p>
+         </div>
+         <div type="commentary">
+            <p>See Erim-Reynolds, loc. cit., with a reference to <ref type="inscription" n="1268" target="080052.xml"/>; see also Smith.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="ktejmr1991">Erim-Reynolds, 'Sculptors' no.<citedRange>7</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title level="j">SEG</title> 40 <citedRange>1990.930</citedRange>
+               </bibl>. Published, with the statue, by <bibl n="rrrs2006">
+                  <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, no. <citedRange>85</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

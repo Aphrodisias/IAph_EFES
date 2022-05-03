@@ -1,84 +1,158 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph121111" n="iAph1769 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Honours</rs> for M. Ulpius Carminius Klaudianos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Honours for M. Ulpius Carminius Klaudianos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph121111</idno>
+            <idno type="IAph2007">iAph121111</idno>
+            <idno type="JMR2004">iAph1769</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No measurements; Ligatures: l. 6,  <foreign xml:lang="grc">ΜΗ</foreign>, <foreign xml:lang="grc">ΜΜ</foreign>; l. 8,  <foreign xml:lang="grc">ΗΝ</foreign>; l. 10,  <foreign xml:lang="grc">ΗΝ</foreign>; l. 11,  <foreign xml:lang="grc">ΝΗ</foreign>; l. 12,  <foreign xml:lang="grc">ΝΗ</foreign>; l. 13,  <foreign xml:lang="grc">ΗΝΜ</foreign>; l. 14,  <foreign xml:lang="grc">ΗΝ</foreign>; l. 35,  <foreign xml:lang="grc">ΗΝ</foreign>; l. 39,  <foreign xml:lang="grc">ΗΝ</foreign>, <foreign xml:lang="grc">ΜΗΝ</foreign>; l. 43,  <foreign xml:lang="grc">ΗΝ</foreign>; l. 45,  <foreign xml:lang="grc">ΠΡ</foreign>; Star for denariii.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="prosopography">
+Second century A.D. (<rs type="criteria">prosopography</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North-west</rs>: 'N. W. muro externo prope terram' (Sherard), so ', at the NW corner of Stadium</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard papers; Deering; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Deering_16.jpg">
+            <desc>Deering notebook 16</desc>
+         </graphic>
+         <graphic url="Deering_16v.jpg">
+            <desc>Deering notebook 16v</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>No description</p>
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="ὁ">ὁ</w> <placeName nymRef="#Ἀφροδεισιεύς">Ἀφροδισιέων</placeName> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="γερουσία">γερουσία</w><lb n="2"/> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μᾶρ</abbr><ex>κος</ex></expan></name> <name nymRef="#Οὔλπιος"><expan><abbr>Οὔλ</abbr><ex>πιος</ex></expan></name> <name nymRef="#Καρμίνιος"><expan><abbr>Καρ</abbr><ex>μίνιος</ex></expan></name> <name nymRef="#Κλαυδιανός">Κλαυδιανὸν</name> <w lemma="υἱός">ὑὸν</w> <persName type="attested"><name nymRef="#Καρμίνιος"><expan><abbr>Καρ</abbr><ex>μινίου</ex></expan></name> <name nymRef="#Κλαυδιανός">Κλαυδιανοῦ</name></persName></persName> <lb n="3"/> <w lemma="Ἀσία">Ἀσίας</w> <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <w lemma="πάππος">πάππου</w> <w lemma="καί">καὶ</w> <w lemma="πρόπαππος">προπάππου</w> <w lemma="συνκλητικός">συν<lb n="3" break="no"/>κλητικῶν</w> <w lemma="τιμάω">τειμηθέντα</w> <w lemma="ἐν">ἐν</w> <w lemma="πολύς">πολλοῖς</w> <w lemma="ὑπό">ὑπὸ</w> <w lemma="ὁ">τῶν</w> <lb n="4"/> <w lemma="αὐτοκράτωρ">αὐτοκρατόρων</w> <w lemma="ἀνήρ">ἄνδρα</w> <persName type="attested"><name nymRef="#Φλαβία"><expan><abbr>Φλ</abbr><ex>αβίας</ex></expan></name> <name nymRef="#Ἀπφία">Ἀπφίας</name></persName> <w lemma="ἀρχιέρεια">ἀρχιερείας</w> <lb n="5"/> <placeName nymRef="#Ἀσία">Ἀσίας</placeName> <w lemma="μήτηρ">μητρὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἀδελφή">ἀδελφῆς</w> <w lemma="καί">καὶ</w> <w lemma="μάμμη">μάμμης</w> <w lemma="συνκλητικός">συνκλη<lb n="6" break="no"/>τικῶν</w> <w lemma="φιλόπατρις">φιλοπάτριδος</w> <w lemma="θυγάτηρ">θυγατρὸς</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="καί">καὶ</w> <lb n="7"/> <persName type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αβίου</ex></expan></name> <name nymRef="#Ἀθηναγόρας">Ἀθηναγόρου</name></persName> <w lemma="ἐπίτροπος">ἐπιτρόπου</w> <w lemma="σεβαστός">Σεβαστοῦ</w> <w lemma="πατήρ">πατρὸς</w> <w lemma="καί">καὶ</w> <lb n="8"/> <w lemma="πάππος">πάππου</w> <w lemma="καί">καὶ</w> <w lemma="πρόπαππος">προπάππου</w> <w lemma="συνκλητικός">συνκλητικῶν</w> <w lemma="αὐτός">αὐτὸν</w> <w lemma="ἀρχιερεύς">ἀρχι<lb n="9" break="no"/>ερέως</w> <w lemma="ὁ">τῆς</w> <placeName nymRef="#Ἀσία">Ἀσίας</placeName> <w lemma="υἱός">ὑὸν</w> <w lemma="πατήρ">πατέρα</w> <persName type="attested"><name nymRef="#Καρμίνιος"><expan><abbr>Καρ</abbr><ex>μινίου</ex></expan></name> <name nymRef="#Ἀθηναγόρας">Ἀθηναγόρου</name></persName> <w lemma="συνκλητικός">συν<lb n="10" break="no"/>κλητικοῦ</w> <w lemma="πάππος">πάππον</w> <persName type="attested"><name nymRef="#Καρμίνιος">Καρμινίων</name> <name nymRef="#Ἀθηναγόρας">Ἀθηναγόρου</name></persName> <w lemma="καί">καὶ</w> <lb n="11"/> <persName type="attested"><name nymRef="#Κλαυδιανός">Κλαυδιανοῦ</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀπφία">Ἀπφίας</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Λιβιανή">Λειβιανῆς</name></persName> <w lemma="συνκλητικός">συνκλη<lb n="12" break="no"/>τικῶν</w> <w lemma="ἀργυροταμίας">ἀργυροταμίαν</w> <w lemma="ὁ">τῆς</w> <placeName nymRef="#Ἀσία">Ἀσίας</placeName> <w lemma="λογιστής">λογιστὴν</w> <w lemma="μετά">μετὰ</w> <lb n="13"/> <w lemma="ὑπατικός">ὑπατικοὺς</w> <w lemma="δίδωμι">δοθέντα</w> <w lemma="ὁ">τῆς</w> <placeName nymRef="#Κυζικηνός">Κυζικηνῶν</placeName> <w lemma="πόλις">πόλεως</w> <lb n="14"/> <w lemma="ἀρχιερεύς">ἀρχιερέα</w> <w lemma="ταμίας">ταμίαν</w> <w lemma="ἀρχινεωποιός">ἀρχινεοποιὸν</w> <w lemma="ἱερεύς">ἱερέα</w> <w lemma="διά">διὰ</w> <w lemma="βίος">βίου</w> <lb n="15"/> <w lemma="θεά">θεᾶς</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδίτης</name></persName> <w lemma="ὅς">ᾗ</w> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <w lemma="χρῆμα">χρήματα</w> <w lemma="εἰς">εἰς</w> <w lemma="ἀρχιερεύς">ἀρχιερ<supplied reason="omitted">έ</supplied><lb n="16" break="no"/>ων</w> <w lemma="ἀνάθημα">ἀναθη<unclear reason="damage">μ</unclear>άτων</w> <w lemma="κατασκευή">κατασκευὰς</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ἱερατικός">ἱερατι<supplied reason="lost">κὸν</supplied></w>  <lb n="17"/> <w lemma="χρύσεος">χρύσεον</w> <w lemma="στέφανος">στέφανον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="δέ">δὲ</w> <w lemma="μυριάς">μυριάδας</w> <w lemma="δέκα">δέκα</w> <w lemma="ἥμισυς"><supplied reason="lost">ἥ</supplied><lb n="18" break="no"/>μισυ</w> <w lemma="ἀνατίθημι">ἀναθέντα</w> <w lemma="εἰς">εἰς</w> <w lemma="αἰώνιος">αἰωνίων</w> <w lemma="ἔργον">ἔργων</w> <w lemma="κατασκευή">κατασκευὰς</w> <w lemma="ἀπό">ἀπὸ</w> <lb n="19"/> <w lemma="εἰμί">ὧν</w> <w lemma="ἤδη">ἤδη</w> <w lemma="δίδωμι">δέδοται</w> <w lemma="εἰς">εἰς</w> <w lemma="μέν">μὲν</w> <w lemma="ὁ">τὰ</w> <w lemma="θεωρητήριον">θεωρητήρια</w> <w lemma="ὁ">τοῦ</w> <w lemma="θέατρον">θεάτρου</w> <lb n="20"/><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <w lemma="μυρίος">μύρια</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <w lemma="δέ">δὲ</w> <w lemma="οὗτος">τοῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="ὁ">τῆς</w> <w lemma="πλατεῖα">πλατείας</w> <w lemma="ἐκ">ἐ<lb n="21" break="no"/>ξ</w> <w lemma="ἀμφότερος">ἀμφοτέρων</w> <w lemma="ὁ">τῶν</w> <w lemma="μέρος">μέρων</w> <w lemma="ἐκ">ἐξ</w> <w lemma="ἀρχή">ἀρχῆς</w> <w lemma="μέχρι">μέχρι</w> <w lemma="τέλος">τέλους</w> <lb n="22"/> <w lemma="ἐκ">ἐκ</w> <w lemma="θεμέλιος">θεμελίων</w> <w lemma="μέχρι">μέχρι</w> <w lemma="γείσος">γείσους</w> <w lemma="εὐτυχής">εὐτυχῶς</w> <w lemma="γίγνομαι">γέγονε</w> <w lemma="καί">καὶ</w> <w lemma="γίγνομαι">γε<lb n="23" break="no"/>νήσεται</w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="Διογενιανόν">Διογενιανῷ</w> <w lemma="δέ">δὲ</w> <w lemma="γυμνάσιον">γυμνασίῳ</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="ἕτερος">ἑ<lb n="24" break="no"/>τέρων</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="χρῆμα">χρημάτων</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀλειπτήριον">ἀλιπτήριον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ἐμβασιλικόν">ἐμβασι<lb n="25" break="no"/>λικὸν</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="εἴσοδος">εἰσόδους</w> <w lemma="καί">καὶ</w> <w lemma="ἔξοδος">ἐξόδους</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τῆς</w> <lb n="26"/> <w lemma="γυνή">γυναικὸς</w> <persName type="attested"><name nymRef="#Ἀπφία">Ἀπφίας</name></persName> <w lemma="σκουτλόω">σκουτλώσαντα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἄγαλμα">ἀγάλματα</w> <w lemma="πᾶς">πάν<lb n="27" break="no"/>τα</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἔργον">ἔργοις</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺς</w> <w lemma="ἀνδριάς">ἀνδριάντας</w> <w lemma="οἴκοθεν">οἴκοθεν</w> <lb n="28"/> <w lemma="κατασκευάζω">κατεσκευακότα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="λευκόλιθος">λευκολίθους</w> <w lemma="παραστάς">παραστά<supplied reason="lost">δ</supplied>ας</w>  <lb n="29"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w><w lemma="κατά"> κατ'</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="εἴλημα">εἴλημα</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τῆς</w> <w lemma="γλυφή">γλυφῆς</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="καί">καὶ</w><lb n="30"/> <w lemma="ὁ">τοὺς</w> <w lemma="κίων">κείονας</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τῶν</w> <w lemma="βωμόσπειρον">βωμοσπειρῶν</w> <w lemma="καί">καὶ</w> <w lemma="κεφαλή">κεφαλῶν</w> <lb n="31"/> <w lemma="κατασκευάζω">κατασκευακότα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="λαμπρός">λαμπροτάτῃ</w> <w lemma="δέ">δὲ</w> <w lemma="βουλή">βουλῇ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="ἱερός">ἱε<lb n="32" break="no"/>ρωτάτῃ</w> <w lemma="γερουσία">γερουσίᾳ</w> <w lemma="ἀνατίθημι">ἀνατεθεικότα</w> <w lemma="χρῆμα">χρήματα</w> <w lemma="εἰς">εἰς</w> <w lemma="αἰώνιος">αἰωνίων</w> <lb n="33"/> <w lemma="κλῆρος">κλήρων</w> <w lemma="διανομή">διανομάς</w> <w lemma="καί">καὶ</w> <w lemma="ἄλλος">ἄλλας</w> <w lemma="δέ">δὲ</w> <w lemma="πολύς">πολλὰς</w> <w lemma="πολλάκις">πολλάκις</w> <lb n="34"/> <w lemma="διανομή">διανομὰς</w> <w lemma="δίδωμι">δεδωκότα</w> <w lemma="ὁ">τοῖς</w> <w lemma="τε">τε</w> <w lemma="ὁ">τὴν</w> <w lemma="πόλις">πόλιν</w> <w lemma="κατοικέω">κατοικοῦσιν</w> <lb n="35"/> <w lemma="πολίτης">πολείταις</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="χώρα">χώρας</w> <w lemma="καί">καὶ</w> <w lemma="ἕτερος">ἑτέρας</w> <w lemma="δέ">δὲ</w> <w lemma="διανομή">διανο<lb n="36" break="no"/>μὰς</w> <w lemma="δίδωμι">δεδωκότα</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="ὁ">τῇ</w> <w lemma="τε">τε</w> <w lemma="βουλή">βουλῇ</w> <w lemma="πᾶς">πάσῃ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="γερουσία">γε<lb n="37" break="no"/>ρουσίᾳ</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="καί">καὶ</w> <w lemma="ἐπίδοσις">ἐπιδόσεις</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πάντι</w> <w lemma="καιρός">καιρῷ</w> <w lemma="ποιέω">πε<lb n="38" break="no"/>ποιημένον</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="γνώμη">γνώμην</w> <w lemma="πολίτης">πολείταις</w> <lb n="39"/> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w> <w lemma="ξένος">ξένοις</w> <w lemma="καί">καὶ</w> <w lemma="ἔλαιον">ἔλαια</w> <w lemma="δρακτόν">δρακτοῖς</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="τίθημι">τεθεικότα</w> <lb n="40"/> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="καιρός">καιρῷ</w> <w lemma="ὁ">τῆς</w> <w lemma="ὁ">τοῦ</w> <placeName nymRef="#Τιμέλης">Τιμέλου</placeName> <w lemma="ποταμός">ποταμοῦ</w> <w lemma="εἰσαγωγή">εἰσαγωγῆς</w> <lb n="41"/> <w lemma="καί">καὶ</w> <w lemma="πρεσβεία">πρεσβείας</w> <w lemma="δέ">δὲ</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="εὐτυχής">εὐτυχῶς</w> <w lemma="ἐκτελέω">ἐκτετελεκότα</w> <lb n="42"/> <w lemma="καί">καὶ</w> <w lemma="παρά">παρ'</w> <w lemma="ὅλος">ὅλον</w> <w lemma="ὁ">τὸν</w> <w lemma="βίος">βίον</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="εὐεργέτης">εὐεργέτην</w> <w lemma="καί">καὶ</w> <w lemma="φιλόπατρις">φιλόπατριν</w><lb n="43"/><w lemma="ἐν"><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ἴδιος">ἰδίοις</w> <w lemma="ἔργον">ἔργοις</w> <w lemma="ἀνίστημι">ἀνέστησεν</w> <w lemma="προσανατίθεμαι">προσανατεθεικότα</w> <w lemma="δέ">δὲ</w> <lb n="44"/><w lemma="πρόσφατος"><supplied reason="lost">πρ</supplied>όσφατον</w> <w lemma="καί">καὶ</w> <w lemma="ἄλλος">ἄλλα</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="5000">ε</num> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὸ</w> <w lemma="εἰμί">εἶναι</w> <lb n="45"/>  <space extent="3" unit="character" dim="horizontal"/><w lemma="ἀρχαῖος">ἀ<supplied reason="lost">ρ</supplied>χαίας</w> <w lemma="μυρίος"><expan><abbr>μύ</abbr><ex>ρια</ex></expan></w> <num value="11">ια</num> <g ref="#leaf"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No measurements; Ligatures: l. 6,  <foreign lang="grc">ΜΗ</foreign>, <foreign lang="grc">ΜΜ</foreign>; l. 8,  <foreign lang="grc">ΗΝ</foreign>; l. 10,  <foreign lang="grc">ΗΝ</foreign>; l. 11,  <foreign lang="grc">ΝΗ</foreign>; l. 12,  <foreign lang="grc">ΝΗ</foreign>; l. 13,  <foreign lang="grc">ΗΝΜ</foreign>; l. 14,  <foreign lang="grc">ΗΝ</foreign>; l. 35,  <foreign lang="grc">ΗΝ</foreign>; l. 39,  <foreign lang="grc">ΗΝ</foreign>, <foreign lang="grc">ΜΗΝ</foreign>; l. 43,  <foreign lang="grc">ΗΝ</foreign>; l. 45,  <foreign lang="grc">ΠΡ</foreign>; Star for denariii.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0200" exact="none">Second century A.D.</date> (<rs type="criteria">prosopography</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="ὁ">ὁ</w> <placeName type="ethnic" reg="Ἀφροδεισιεύς">Ἀφροδισιέων</placeName> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="γερουσία">γερουσία</w><lb n="2"/> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μᾶρ</abbr><supplied reason="abbreviation">κος</supplied></expan></name> <name reg="Οὔλπιος"><expan><abbr>Οὔλ</abbr><supplied reason="abbreviation">πιος</supplied></expan></name> <name reg="Καρμίνιος"><expan><abbr>Καρ</abbr><supplied reason="abbreviation">μίνιος</supplied></expan></name> <name reg="Κλαυδιανός">Κλαυδιανὸν</name> <w lemma="υἱός">ὑὸν</w> <persName type="aphrodisian"><name reg="Καρμίνιος"><expan><abbr>Καρ</abbr><supplied reason="abbreviation">μινίου</supplied></expan></name> <name reg="Κλαυδιανός">Κλαυδιανοῦ</name></persName></persName> <lb n="3"/> <w lemma="Ἀσία">Ἀσίας</w> <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <w lemma="πάππος">πάππου</w> <w lemma="καί">καὶ</w> <w lemma="πρόπαππος">προπάππου</w> <w lemma="συνκλητικός">συν<lb n="3" type="worddiv"/>κλητικῶν</w> <w lemma="τιμάω">τειμηθέντα</w> <w lemma="ἐν">ἐν</w> <w lemma="πολύς">πολλοῖς</w> <w lemma="ὑπό">ὑπὸ</w> <w lemma="ὁ">τῶν</w> <lb n="4"/> <w lemma="αὐτοκράτωρ">αὐτοκρατόρων</w> <w lemma="ἀνήρ">ἄνδρα</w> <persName type="aphrodisian"><name reg="Φλαβία"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">αβίας</supplied></expan></name> <name reg="Ἀπφία">Ἀπφίας</name></persName> <w lemma="ἀρχιέρεια">ἀρχιερείας</w> <lb n="5"/> <placeName reg="Ἀσία">Ἀσίας</placeName> <w lemma="μήτηρ">μητρὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἀδελφή">ἀδελφῆς</w> <w lemma="καί">καὶ</w> <w lemma="μάμμη">μάμμης</w> <w lemma="συνκλητικός">συνκλη<lb n="6" type="worddiv"/>τικῶν</w> <w lemma="φιλόπατρις">φιλοπάτριδος</w> <w lemma="θυγάτηρ">θυγατρὸς</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="καί">καὶ</w> <lb n="7"/> <persName type="aphrodisian"><name reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">αβίου</supplied></expan></name> <name reg="Ἀθηναγόρας">Ἀθηναγόρου</name></persName> <w lemma="ἐπίτροπος">ἐπιτρόπου</w> <w lemma="σεβαστός">Σεβαστοῦ</w> <w lemma="πατήρ">πατρὸς</w> <w lemma="καί">καὶ</w> <lb n="8"/> <w lemma="πάππος">πάππου</w> <w lemma="καί">καὶ</w> <w lemma="πρόπαππος">προπάππου</w> <w lemma="συνκλητικός">συνκλητικῶν</w> <w lemma="αὐτός">αὐτὸν</w> <w lemma="ἀρχιερεύς">ἀρχι<lb n="9" type="worddiv"/>ερέως</w> <w lemma="ὁ">τῆς</w> <placeName reg="Ἀσία">Ἀσίας</placeName> <w lemma="υἱός">ὑὸν</w> <w lemma="πατήρ">πατέρα</w> <persName type="aphrodisian"><name reg="Καρμίνιος"><expan><abbr>Καρ</abbr><supplied reason="abbreviation">μινίου</supplied></expan></name> <name reg="Ἀθηναγόρας">Ἀθηναγόρου</name></persName> <w lemma="συνκλητικός">συν<lb n="10" type="worddiv"/>κλητικοῦ</w> <w lemma="πάππος">πάππον</w> <persName type="aphrodisian"><name reg="Καρμίνιος">Καρμινίων</name> <name reg="Ἀθηναγόρας">Ἀθηναγόρου</name></persName> <w lemma="καί">καὶ</w> <lb n="11"/> <persName type="aphrodisian"><name reg="Κλαυδιανός">Κλαυδιανοῦ</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀπφία">Ἀπφίας</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Λιβιανή">Λειβιανῆς</name></persName> <w lemma="συνκλητικός">συνκλη<lb n="12" type="worddiv"/>τικῶν</w> <w lemma="ἀργυροταμίας">ἀργυροταμίαν</w> <w lemma="ὁ">τῆς</w> <placeName reg="Ἀσία">Ἀσίας</placeName> <w lemma="λογιστής">λογιστὴν</w> <w lemma="μετά">μετὰ</w> <lb n="13"/> <w lemma="ὑπατικός">ὑπατικοὺς</w> <w lemma="δίδωμι">δοθέντα</w> <w lemma="ὁ">τῆς</w> <placeName reg="Κυζικηνός">Κυζικηνῶν</placeName> <w lemma="πόλις">πόλεως</w> <lb n="14"/> <w lemma="ἀρχιερεύς">ἀρχιερέα</w> <w lemma="ταμίας">ταμίαν</w> <w lemma="ἀρχινεωποιός">ἀρχινεοποιὸν</w> <w lemma="ἱερεύς">ἱερέα</w> <w lemma="διά">διὰ</w> <w lemma="βίος">βίου</w> <lb n="15"/> <w lemma="θεά">θεᾶς</w> <persName type="divine"><name reg="Ἀφροδίτη">Ἀφροδίτης</name></persName> <w lemma="ὅς">ᾗ</w> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <w lemma="χρῆμα">χρήματα</w> <w lemma="εἰς">εἰς</w> <w lemma="ἀρχιερεύς">ἀρχιερ<supplied reason="omitted">έ</supplied><lb n="16" type="worddiv"/>ων</w> <w lemma="ἀνάθημα">ἀναθη<unclear reason="damage">μ</unclear>άτων</w> <w lemma="κατασκευή">κατασκευὰς</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ἱερατικός">ἱερατι<supplied reason="lost">κὸν</supplied></w>  <lb n="17"/> <w lemma="χρύσεος">χρύσεον</w> <w lemma="στέφανος">στέφανον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="δέ">δὲ</w> <w lemma="μυριάς">μυριάδας</w> <w lemma="δέκα">δέκα</w> <w lemma="ἥμισυς"><supplied reason="lost">ἥ</supplied><lb n="18" type="worddiv"/>μισυ</w> <w lemma="ἀνατίθημι">ἀναθέντα</w> <w lemma="εἰς">εἰς</w> <w lemma="αἰώνιος">αἰωνίων</w> <w lemma="ἔργον">ἔργων</w> <w lemma="κατασκευή">κατασκευὰς</w> <w lemma="ἀπό">ἀπὸ</w> <lb n="19"/> <w lemma="εἰμί">ὧν</w> <w lemma="ἤδη">ἤδη</w> <w lemma="δίδωμι">δέδοται</w> <w lemma="εἰς">εἰς</w> <w lemma="μέν">μὲν</w> <w lemma="ὁ">τὰ</w> <w lemma="θεωρητήριον">θεωρητήρια</w> <w lemma="ὁ">τοῦ</w> <w lemma="θέατρον">θεάτρου</w> <lb n="20"/><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <w lemma="μυρίος">μύρια</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <w lemma="δέ">δὲ</w> <w lemma="οὗτος">τοῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="ὁ">τῆς</w> <w lemma="πλατεῖα">πλατείας</w> <w lemma="ἐκ">ἐ<lb n="21" type="worddiv"/>ξ</w> <w lemma="ἀμφότερος">ἀμφοτέρων</w> <w lemma="ὁ">τῶν</w> <w lemma="μέρος">μέρων</w> <w lemma="ἐκ">ἐξ</w> <w lemma="ἀρχή">ἀρχῆς</w> <w lemma="μέχρι">μέχρι</w> <w lemma="τέλος">τέλους</w> <lb n="22"/> <w lemma="ἐκ">ἐκ</w> <w lemma="θεμέλιος">θεμελίων</w> <w lemma="μέχρι">μέχρι</w> <w lemma="γείσος">γείσους</w> <w lemma="εὐτυχής">εὐτυχῶς</w> <w lemma="γίγνομαι">γέγονε</w> <w lemma="καί">καὶ</w> <w lemma="γίγνομαι">γε<lb n="23" type="worddiv"/>νήσεται</w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="Διογενιανόν">Διογενιανῷ</w> <w lemma="δέ">δὲ</w> <w lemma="γυμνάσιον">γυμνασίῳ</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="ἕτερος">ἑ<lb n="24" type="worddiv"/>τέρων</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="χρῆμα">χρημάτων</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀλειπτήριον">ἀλιπτήριον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ἐμβασιλικόν">ἐμβασι<lb n="25" type="worddiv"/>λικὸν</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="εἴσοδος">εἰσόδους</w> <w lemma="καί">καὶ</w> <w lemma="ἔξοδος">ἐξόδους</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τῆς</w> <lb n="26"/> <w lemma="γυνή">γυναικὸς</w> <persName type="aphrodisian"><name reg="Ἀπφία">Ἀπφίας</name></persName> <w lemma="σκουτλόω">σκουτλώσαντα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἄγαλμα">ἀγάλματα</w> <w lemma="πᾶς">πάν<lb n="27" type="worddiv"/>τα</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἔργον">ἔργοις</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺς</w> <w lemma="ἀνδριάς">ἀνδριάντας</w> <w lemma="οἴκοθεν">οἴκοθεν</w> <lb n="28"/> <w lemma="κατασκευάζω">κατεσκευακότα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="λευκόλιθος">λευκολίθους</w> <w lemma="παραστάς">παραστά<supplied reason="lost">δ</supplied>ας</w>  <lb n="29"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w><w lemma="κατά"> κατ'</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="εἴλημα">εἴλημα</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τῆς</w> <w lemma="γλυφή">γλυφῆς</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="καί">καὶ</w><lb n="30"/> <w lemma="ὁ">τοὺς</w> <w lemma="κίων">κείονας</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τῶν</w> <w lemma="βωμόσπειρον">βωμοσπειρῶν</w> <w lemma="καί">καὶ</w> <w lemma="κεφαλή">κεφαλῶν</w> <lb n="31"/> <w lemma="κατασκευάζω">κατασκευακότα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="λαμπρός">λαμπροτάτῃ</w> <w lemma="δέ">δὲ</w> <w lemma="βουλή">βουλῇ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="ἱερός">ἱε<lb n="32" type="worddiv"/>ρωτάτῃ</w> <w lemma="γερουσία">γερουσίᾳ</w> <w lemma="ἀνατίθημι">ἀνατεθεικότα</w> <w lemma="χρῆμα">χρήματα</w> <w lemma="εἰς">εἰς</w> <w lemma="αἰώνιος">αἰωνίων</w> <lb n="33"/> <w lemma="κλῆρος">κλήρων</w> <w lemma="διανομή">διανομάς</w> <w lemma="καί">καὶ</w> <w lemma="ἄλλος">ἄλλας</w> <w lemma="δέ">δὲ</w> <w lemma="πολύς">πολλὰς</w> <w lemma="πολλάκις">πολλάκις</w> <lb n="34"/> <w lemma="διανομή">διανομὰς</w> <w lemma="δίδωμι">δεδωκότα</w> <w lemma="ὁ">τοῖς</w> <w lemma="τε">τε</w> <w lemma="ὁ">τὴν</w> <w lemma="πόλις">πόλιν</w> <w lemma="κατοικέω">κατοικοῦσιν</w> <lb n="35"/> <w lemma="πολίτης">πολείταις</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="χώρα">χώρας</w> <w lemma="καί">καὶ</w> <w lemma="ἕτερος">ἑτέρας</w> <w lemma="δέ">δὲ</w> <w lemma="διανομή">διανο<lb n="36" type="worddiv"/>μὰς</w> <w lemma="δίδωμι">δεδωκότα</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="ὁ">τῇ</w> <w lemma="τε">τε</w> <w lemma="βουλή">βουλῇ</w> <w lemma="πᾶς">πάσῃ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="γερουσία">γε<lb n="37" type="worddiv"/>ρουσίᾳ</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="καί">καὶ</w> <w lemma="ἐπίδοσις">ἐπιδόσεις</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πάντι</w> <w lemma="καιρός">καιρῷ</w> <w lemma="ποιέω">πε<lb n="38" type="worddiv"/>ποιημένον</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="γνώμη">γνώμην</w> <w lemma="πολίτης">πολείταις</w> <lb n="39"/> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w> <w lemma="ξένος">ξένοις</w> <w lemma="καί">καὶ</w> <w lemma="ἔλαιον">ἔλαια</w> <w lemma="δρακτόν">δρακτοῖς</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="τίθημι">τεθεικότα</w> <lb n="40"/> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="καιρός">καιρῷ</w> <w lemma="ὁ">τῆς</w> <w lemma="ὁ">τοῦ</w> <placeName reg="Τιμέλης">Τιμέλου</placeName> <w lemma="ποταμός">ποταμοῦ</w> <w lemma="εἰσαγωγή">εἰσαγωγῆς</w> <lb n="41"/> <w lemma="καί">καὶ</w> <w lemma="πρεσβεία">πρεσβείας</w> <w lemma="δέ">δὲ</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="εὐτυχής">εὐτυχῶς</w> <w lemma="ἐκτελέω">ἐκτετελεκότα</w> <lb n="42"/> <w lemma="καί">καὶ</w> <w lemma="παρά">παρ'</w> <w lemma="ὅλος">ὅλον</w> <w lemma="ὁ">τὸν</w> <w lemma="βίος">βίον</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="εὐεργέτης">εὐεργέτην</w> <w lemma="καί">καὶ</w> <w lemma="φιλόπατρις">φιλόπατριν</w><lb n="43"/><w lemma="ἐν"><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ἴδιος">ἰδίοις</w> <w lemma="ἔργον">ἔργοις</w> <w lemma="ἀνίστημι">ἀνέστησεν</w> <w lemma="προσανατίθεμαι">προσανατεθεικότα</w> <w lemma="δέ">δὲ</w> <lb n="44"/><w lemma="πρόσφατος"><supplied reason="lost">πρ</supplied>όσφατον</w> <w lemma="καί">καὶ</w> <w lemma="ἄλλος">ἄλλα</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="5000">ε</num> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὸ</w> <w lemma="εἰμί">εἶναι</w> <lb n="45"/>  <space extent="3" unit="character" dim="horizontal"/><w lemma="ἀρχαῖος">ἀ<supplied reason="lost">ρ</supplied>χαίας</w> <w lemma="μυρίος"><expan><abbr>μύ</abbr><supplied reason="abbreviation">ρια</supplied></expan></w> <num value="11">ια</num> <g type="leaf"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Deering's copy corrects many small inaccuracies in Sherard's; we have not noted below those corrections already made by Boeckh and confirmed by Deering. In general, he seems to have seen more than Sherard at the right side, but slightly less at the left.</p><p>l. 5, ἀρχιερείας: Deering's copy appears to indicate that the letters RXI were partly erased.</p><p>l. 6,  At the beginning, Sherard wrote ΙΩΝ, but then crossed out the I; Boeckh retained ΙΩΝ; Deering has ΩΝ.</p><p>l. 9, Sherard omitted πάππου καὶ, supplied by Boeckh and A. D. Macro, AJP 100 (1979), 94-8, and read by Deering.</p><p>l. 11, At end, K Sherard, καὶ Deering.</p><p>l. 15, ἀρχινεοποιὸν Sherard, Deering., ἀρχινε[ω]ποιὸν Boeckh.</p><p>l. 16/7, ΕΙΣΑΙ .../ΙΩΝ Sherard, who apparently then crossed out the last I; εἰς αἰ[ων]ίων Boeckh. ΕΙΣΑΡΧΙΕΡ/ΩΝ Deering, ΧΙΕΡ apparently partly erased.</p><p>l. 17, ΘΗΝΑΤΩΝ Sherard, Deering20:ΘΕΩΡ Sherard, ΘΗΩΡ Deering</p><p>l. 22, At beginning Ξ read by Sherard, space left by Deering. At end, Σ read by Sherard, space left by Deering.</p><p>l. 23, At beginning ΕΚ read by Sherard, spaces left by Deering</p><p>l. 24, At beginning ΗΣ read by Sherard, spaces left by Deering</p><p>l. 25, At beginning Τ read by Sherard, space left by DeeringΤΟΝΕΝ ... ΑΣΙ/ΛΙΚΟΝ Sherard, whence, τὸν ἐν[τὸς β]ασιλικὸν B.; τὸν [οἰκοβ]ασιλικὸν cj. L. Robert, BullEp. 1973.475; ΤΟΝΕΜΒΑΣΙ/ΛΙΚΟΝ Deering</p><p>l. 27, ΚΟΥΚΛΟΣΑΝΤΑ Sherard, whence κυκλ[ώ]σαντα Boeckh; σκουτλώσαντα Deering, and cj. Derenne, AC (1933), 7428ΟΙΚΟ . ΕΝ Sherard, ΘΙΚΟΘΕΝ Deering</p><p>l. 29, ΠΑΡΑΣΤ ... ΑΣ Sherard, whence παραστά[δ]ας Boeckh; ΠΑΡΑΣΤΑΣΑΣ Deering</p><p>l. 32, ΚΑΤΑΣΚΕΥΑΚΟΤΑ Sherard, Deering.; κατ[ε]σκευακότα Boeckh</p><p>l. 37, τε om. Sherard.</p><p>l. 40, ΞΗΝΟΙΣ Sherard, ΣΕΝΟΙΣ Deering; ΕΛΙΑΔΡΑΚΤΟΙΣ Sherard, whence •λ[ειο]δ[ι]άκτο[υ]ς Boeckh, ΕΛΑΙΑΔΡΑΚΤΟΙΣ Deering; ἔλαια δρακτοῖς cj. Waddington (on LBW 1602)</p><p>l. 44, ... ΙΔΙΟΙΣ Sherard MS; ... ΔΙΟΙΣ CIG transcription; ΛΙΙΔΙΟΙΣ Deering</p><p>l. 46, ΑΙΧΑΙΑΣ Sherard MS.; ΑΙΧΜΑΣ CIG transcription, whence [δρ]αχμὰς Boeckh; ΑξΧΑΙΑΣ Deering.</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p> No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, North-west</rs>: 'N. W. muro externo prope terram' (Sherard), so ', at the NW corner of Stadium</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard papers; Deering; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Sherard ( 10101, 10v-11) and Picenini (10102, 16-16v, and, from Tisser 72v-73) in 1705; by Deering (p.16-16v, no number); a copy by Leake, now in Cambridge, is from Deering's). Not reported subsequently</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII"><author>Boeckh</author>, from Sherard papers, CIG <biblScope>2782</biblScope></bibl>, and p. 1112, whence CIG as <bibl n="liermann1889">Liermann 73-86, no. <biblScope>14</biblScope></bibl>,<bibl> Ziebarth <title>ZVRW</title> 16, 1903, 292, no. 64</bibl>, <bibl n="laum1914">Laum <biblScope>108</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257194">315</biblScope>
-</bibl>.</p><p>Discussed by  Haussoullier, <title>Rev. de Phil</title>. 1920, 72; Derenne, <title>AC</title> 2 (1933), 74 with<title> Phil.Wochenschr.</title> (1934), 213 (l.27); Ferri, <title>Riv. Fil.</title> (1938), 59; Jacopi, <title>JdAI</title> (1938), 744-52; L. Robert, <title>Et.Anat.</title> 542, n.2; Rev. de Phil. (1929), 138 n.2; <title>Bull.Ep.</title> 1939.358, 1973.475 (ll. 25-26), 1980.472; C. Foss, <title>GRBS</title> 16 (1975), 217; A. D. Macro, <title>AJP</title> 100 (1979), 94-8, (ll. 9-10); <title>SEG</title> 29, 1068; <bibl><title>AnnEpig</title> <biblScope n="anep">1980, 865</biblScope>.</bibl></p>
-</div><div n="Preliminary transcriptions" type="figure"><head>Representations</head><p><figure href="Deering_16"><figDesc>Deering notebook 16</figDesc></figure><figure href="Deering_16v"><figDesc>Deering notebook 16v</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>Deering's copy corrects many small inaccuracies in Sherard's; we have not noted below those corrections already made by Boeckh and confirmed by Deering. In general, he seems to have seen more than Sherard at the right side, but slightly less at the left.</p>
+            <p>l. 5, ἀρχιερείας: Deering's copy appears to indicate that the letters RXI were partly erased.</p>
+            <p>l. 6,  At the beginning, Sherard wrote ΙΩΝ, but then crossed out the I; Boeckh retained ΙΩΝ; Deering has ΩΝ.</p>
+            <p>l. 9, Sherard omitted πάππου καὶ, supplied by Boeckh and A. D. Macro, AJP 100 (1979), 94-8, and read by Deering.</p>
+            <p>l. 11, At end, K Sherard, καὶ Deering.</p>
+            <p>l. 15, ἀρχινεοποιὸν Sherard, Deering., ἀρχινε[ω]ποιὸν Boeckh.</p>
+            <p>l. 16/7, ΕΙΣΑΙ .../ΙΩΝ Sherard, who apparently then crossed out the last I; εἰς αἰ[ων]ίων Boeckh. ΕΙΣΑΡΧΙΕΡ/ΩΝ Deering, ΧΙΕΡ apparently partly erased.</p>
+            <p>l. 17, ΘΗΝΑΤΩΝ Sherard, Deering20:ΘΕΩΡ Sherard, ΘΗΩΡ Deering</p>
+            <p>l. 22, At beginning Ξ read by Sherard, space left by Deering. At end, Σ read by Sherard, space left by Deering.</p>
+            <p>l. 23, At beginning ΕΚ read by Sherard, spaces left by Deering</p>
+            <p>l. 24, At beginning ΗΣ read by Sherard, spaces left by Deering</p>
+            <p>l. 25, At beginning Τ read by Sherard, space left by DeeringΤΟΝΕΝ ... ΑΣΙ/ΛΙΚΟΝ Sherard, whence, τὸν ἐν[τὸς β]ασιλικὸν B.; τὸν [οἰκοβ]ασιλικὸν cj. L. Robert, BullEp. 1973.475; ΤΟΝΕΜΒΑΣΙ/ΛΙΚΟΝ Deering</p>
+            <p>l. 27, ΚΟΥΚΛΟΣΑΝΤΑ Sherard, whence κυκλ[ώ]σαντα Boeckh; σκουτλώσαντα Deering, and cj. Derenne, AC (1933), 7428ΟΙΚΟ . ΕΝ Sherard, ΘΙΚΟΘΕΝ Deering</p>
+            <p>l. 29, ΠΑΡΑΣΤ ... ΑΣ Sherard, whence παραστά[δ]ας Boeckh; ΠΑΡΑΣΤΑΣΑΣ Deering</p>
+            <p>l. 32, ΚΑΤΑΣΚΕΥΑΚΟΤΑ Sherard, Deering.; κατ[ε]σκευακότα Boeckh</p>
+            <p>l. 37, τε om. Sherard.</p>
+            <p>l. 40, ΞΗΝΟΙΣ Sherard, ΣΕΝΟΙΣ Deering; ΕΛΙΑΔΡΑΚΤΟΙΣ Sherard, whence •λ[ειο]δ[ι]άκτο[υ]ς Boeckh, ΕΛΑΙΑΔΡΑΚΤΟΙΣ Deering; ἔλαια δρακτοῖς cj. Waddington (on LBW 1602)</p>
+            <p>l. 44, ... ΙΔΙΟΙΣ Sherard MS; ... ΔΙΟΙΣ CIG transcription; ΛΙΙΔΙΟΙΣ Deering</p>
+            <p>l. 46, ΑΙΧΑΙΑΣ Sherard MS.; ΑΙΧΜΑΣ CIG transcription, whence [δρ]αχμὰς Boeckh; ΑξΧΑΙΑΣ Deering.</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p> No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">
+                  <author>Boeckh</author>, from Sherard papers, CIG <citedRange>2782</citedRange>
+               </bibl>, and p. 1112, whence CIG as <bibl n="liermann1889">Liermann 73-86, no. <citedRange>14</citedRange>
+               </bibl>,<bibl> Ziebarth <title>ZVRW</title> 16, 1903, 292, no. 64</bibl>, <bibl n="laum1914">Laum <citedRange>108</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257194">315</citedRange>
+               </bibl>.</p>
+            <p>Discussed by  Haussoullier, <title>Rev. de Phil</title>. 1920, 72; Derenne, <title>AC</title> 2 (1933), 74 with<title> Phil.Wochenschr.</title> (1934), 213 (l.27); Ferri, <title>Riv. Fil.</title> (1938), 59; Jacopi, <title>JdAI</title> (1938), 744-52; L. Robert, <title>Et.Anat.</title> 542, n.2; Rev. de Phil. (1929), 138 n.2; <title>Bull.Ep.</title> 1939.358, 1973.475 (ll. 25-26), 1980.472; C. Foss, <title>GRBS</title> 16 (1975), 217; A. D. Macro, <title>AJP</title> 100 (1979), 94-8, (ll. 9-10); <title>SEG</title> 29, 1068; <bibl>
+                  <title>AnnEpig</title>
+                  <citedRange n="anep">1980, 865</citedRange>.</bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

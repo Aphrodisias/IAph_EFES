@@ -1,77 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050005" n="iAph1259 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building dedication</rs> to Aphrodite and 
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building dedication to Aphrodite and 
  emperors</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050005</idno>
+            <idno type="IAph2007">iAph050005</idno>
+            <idno type="JMR2004">iAph1259</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>28 pieces, complete or fragmentary, of <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> blocks.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in a single line on one fascia.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>'Grandes lettres à apices de <height>0m,072</height> profond et soigneusement gravées' (text i); <height unit="metre">0.085</height> (text ii); i.b. standard forms; <height unit="metre">0.08</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>From the entablature of the west portico (i) and the east portico (ii a and b) of the East court of the <rs type="monuList">Hadrianic Baths</rs>: i. 'Elle est gravée une seule fois et sous une forme abrégée sur le portique de l'Ouest, interrompu par le grand arc'; ii. "Elle est rejetée sur les 2. sect. du portique E. de part et d'autre de la porte centrale"</origPlace>
+                     <origDate notBefore="0117" notAfter="0138" evidence="reign">
+A.D. 117/138
+(<rs type="criteria">reign</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">In the east court of the <rs type="monuList">Hadrianic Baths</rs>
+                  </provenance>
+                  <provenance type="observed">In various locations in the east court of the Hadrianic Baths</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); Boulanger; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_L_08.jpg">
+            <desc>Fragment (1978)</desc>
+         </graphic>
+         <graphic url="Boulanger_A_01.jpg">
+            <desc>Boulanger notebook A, page 1: Fair copy</desc>
+         </graphic>
+         <graphic url="Boulanger_A_02.jpg">
+            <desc>Boulanger notebook A, page 2: Note of divisions</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>28 pieces, complete or fragmentary, of <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> blocks.</p></div><div type="description" n="text"><head>Description of Text</head><p> <rs type="execution" key="scalpro">Inscribed</rs> in a single line on one fascia.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>'Grandes lettres à apices de <measure value="0.072" dim="height" type="length">0m,072</measure> profond et soigneusement gravées' (text i); <measure type="length" unit="metre" dim="height">0.085</measure> (text ii); i.b. standard forms; <measure type="length" unit="metre" dim="height">0.08</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0117" notAfter="0138" exact="both">A.D. 117/138</date>
-(<rs type="criteria">reign</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="i"><note place="not specified" anchored="yes" lang="en">The text which follows is transcribed from the notebook, with annotations</note><div type="textpart_fragment" n="a"><ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <persName type="divine" full="yes"><name reg="Ἀφροδίτη">Ἀφ<milestone unit="block"/><seg type="autopsy">ροδείτη</seg></name></persName>  <persName type="emperor" full="yes"><seg type="autopsy">Α</seg><milestone unit="block"/><seg type="autopsy">ὐτοκράτορι</seg>  <milestone unit="block"/><name reg="Καῖσαρ"><seg type="autopsy">Καίσαρι</seg>  </name><seg type="autopsy">Τραι</seg><milestone unit="block"/><supplied reason="lost">α</supplied><seg type="autopsy">νῷ</seg>  <name reg="Ἁδριανός"><seg type="autopsy">Ἁδριαν</seg><milestone unit="block"/><seg type="autopsy">ῷ</seg></name>  <seg type="autopsy">Σεβαστῷ</seg>  <seg type="autopsy">Ὀλυ</seg><milestone unit="block"/><supplied reason="lost">μπ</supplied><seg type="autopsy">ίῳ</seg>  <seg type="autopsy">Παν</seg><milestone unit="block"/><supplied reason="lost">ελ</supplied>λη<milestone unit="block"/><seg type="autopsy">νίῳ</seg></persName>  <seg type="autopsy">καὶ</seg>  <seg type="autopsy">τῷ  </seg><seg type="autopsy">Δ</seg><milestone unit="block"/><seg type="autopsy">ήμῳ</seg>  <seg type="autopsy">τὸν</seg>  <seg type="autopsy">ἐπιφερ</seg><milestone unit="block"/><seg type="autopsy">όμενον</seg>  <seg type="autopsy">τ</seg><milestone unit="block"/><seg type="autopsy">οῖς</seg>  <seg type="autopsy">κειοσιν</seg>  <seg type="autopsy">κα</seg><milestone unit="block"/>  <gap dim="internal" extent="unknown" reason="lost" unit="character"/><milestone unit="block"/>εφαλα<milestone unit="block"/>ις  λε<gap dim="internal" extent="unknown" reason="lost" unit="character"/>θον  κόσ<supplied reason="lost">μ</supplied>ον  πα<gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="b"><note place="not  specified" anchored="yes" lang="en">To  this,  at  the  end,  Boulanger  wanted  to  add  the  architrave  block, although it is  inscribed  on  two  fasciae  (<measure dim="width" type="length" unit="metre">0.265</measure>  x  <measure dim="height" type="length" unit="metre">0.85</measure>  x  <measure dim="depth" type="length" unit="metre">0.495</measure>:  these  are  the  regular  measurements  for  architraves  in  the  North  Portico)  found  by  him,  and  again  in  1992  in  the  North  Portico  of  the  Portico  of  Tiberius  (and  now  in  situ):</note><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>  <supplied reason="lost">κατ</supplied>αλειφθέντων  α<unclear reason="damage">ὐ</unclear><supplied reason="lost">τῇ</supplied>  <gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/>      <gap dim="left" extent="unknown" reason="lost" unit="character"/><unclear reason="damage">τ</unclear>οῦ  Διοσκουριδ<unclear reason="damage">ο</unclear><supplied reason="lost">υ</supplied>  <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div></div><div type="textpart_section" n="ii"><note place="not  specified" anchored="yes" lang="fr">Portique  de  l'Est,  section  S.    10  blocs  ou  fragments.</note><ab><lb n="1"/><g type="fleuron"/>  <seg type="autopsy">ἡ</seg>  <persName type="divine" full="yes"><name reg="Ἀφροδίτη"><seg type="autopsy">Ἀφρο</seg><milestone unit="block"/>δείτη</name></persName>  Αὐ<milestone unit="block"/>  <gap extent="30" reason="lost" unit="character"/>ασ<gap extent="3" reason="lost" unit="character"/>ῳ  Ὀλυ<milestone unit="block"/>    <gap extent="21" reason="lost" unit="character"/><milestone unit="block"/><seg type="autopsy">μῳ</seg>  <seg type="autopsy">τὸν</seg>  <seg type="autopsy">ἐπιφερόμε</seg><milestone unit="block"/>  <gap extent="unknown" reason="lost" unit="character"/><milestone unit="block"/><seg type="autopsy">ς</seg>  <w lemma="κίων"><seg type="autopsy">κείοσι</seg><milestone unit="block"/>ν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ταῖς</w> <w lemma="κεφαλή">κεφαλαῖς</w> <w lemma="λευκόλιθος">λ<milestone unit="block"/>ευκό<milestone unit="block"/><seg type="autopsy">λιθον</seg></w>  <seg type="autopsy">κόσμον</seg><milestone unit="block"/>  <gap extent="60" reason="lost" unit="character"/><milestone unit="block"/>  <seg type="autopsy"><w lemma="ἀνατίθημι">ἀνέθηκεν</w></seg>  <seg type="autopsy"><g type="scroll"/>  <space unit="character" extent="3" dim="horizontal"/></seg></ab></div><div type="textpart_section" n="iii"><ab><lb n="1"/>  <gap extent="unknown" reason="lost" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">α</unclear>ρατ<unclear reason="damage">ο</unclear></orig><gap extent="unknown" reason="lost" unit="character"/>ΚΑΙ<gap extent="unknown" reason="lost" unit="character"/>  <seg type="autopsy"><supplied reason="lost">κ</supplied>αὶ</seg>  <seg type="autopsy">τῷ</seg><milestone unit="block"/>Δήμῳ    <g type="fleuron"/></ab></div><div type="textpart_section" n="iv"><note place="not  specified" anchored="yes" lang="fr">Portique  O,  section  N.    8  blocs  ou  fragments</note><ab><lb n="1"/>  <space unit="character" extent="3" dim="horizontal"/>  κόσμ<milestone unit="block"/>ὸν <w lemma="πᾶς">πάντα</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰ<milestone unit="block"/><seg type="autopsy">δίων</seg></w>  <seg type="autopsy">καὶ</seg>  <w lemma="ἐκ"><seg type="autopsy">ἐ</seg><milestone unit="block"/>κ</w> <w lemma="ὁ">τῶν</w> <w lemma="καταλείπω">κατ<supplied reason="lost">αλειφθέν</supplied><milestone unit="block"/><seg type="autopsy">των</seg></w>  <seg type="autopsy">αὐτ</seg><supplied reason="lost">ῇ</supplied>  <seg type="autopsy">ὑπὸ</seg>  <seg type="autopsy">Ἐπιγ</seg><supplied reason="lost">όνου</supplied><milestone unit="block"/>  <seg type="autopsy">τοῦ</seg>  <seg type="autopsy">Διοσκορίδου</seg>  <note place="not  specified" anchored="yes">sic</note>  <w lemma="ἀνατίθημι"><seg type="autopsy">ἀν</seg><milestone unit="block"/><seg type="autopsy">έθηκεν</seg></w>  <seg type="autopsy"><g type="scroll"/></seg></ab></div></div><div type="apparatus"><head>Apparatus</head><p>Blocks or fragments found again by the NYU expedition are highlighted.</p><p>iv. <foreign lang="grc">ΚΑΤ| . . . . . . . . |ΤΩΝ ΑΥΤ| . |</foreign> Boulanger; <foreign lang="grc">κατ[αλειφθέν]|των αὐτ[ῇ]</foreign> Robert</p><p>As Boulanger points out, this adds up to three copies (two on the east side of the east court and one on the west) of one text: <foreign lang="grc">ἡ Ἀφροδείτη Αὐτοκράτορι Καίσαρι Τραιανῷ Ἁδριανῷ Σεβαστῷ Ὀλυμπίῳ Πανελληνίῳ καὶ τῷ Δήμῳ τὸν ἐπιφερόμενον τοῖς κείοσιν καὶ ταῖς κεφαλαῖς λευκόλιθον κόσμ<unclear reason="damage">ο</unclear>ν πάντα ἐκ τῶν ἰδίων καὶ ἐκ τῶν καταλειφθέντων αὐτ<supplied reason="lost">ῇ</supplied> ὑπὸ Ἐπιγ<supplied reason="lost">όνου</supplied> τοῦ Διοσκουρίδου ἀνέθηκεν</foreign>.</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); Boulanger; publications.</p>
-</div>
-<div type="translation" n="notyet">
-<head>Translation</head>
-<p>...</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>[[JMR comments: This raises a point about the meaning of <foreign lang="grc">ἀνέθηκεν</foreign> the goddess has <foreign lang="grc">ἴδια</foreign> from which to build—but does she really dedicate? And how surprising for the names of the neopoioi (who surely controlled her funds) to be omitted?]]</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-; Original location: <rs type="origLocation">From the entablature of the west portico (i) and the east portico (ii a and b) of the East court of the <rs type="monuList">Hadrianic Baths</rs>: i. 'Elle est gravée une seule fois et sous une forme abrégée sur le portique de l'Ouest, interrompu par le grand arc'; ii. "Elle est rejetée sur les 2. sect. du portique E. de part et d'autre de la porte centrale"</rs>
-Found: <rs type="found">In the east court of the <rs type="monuList">Hadrianic Baths</rs></rs>
-; Last known location: <rs type="lastLocation">In various locations in the east court of the Hadrianic Baths</rs>.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the French expeditions in 1904, 1905 and 1913. Boulanger published fragmentary versions, but gives a fuller account in his notebook, put together after Mendel's publication: "M. Mendel qui n'avait pu rapprocher sur le terrain les fragments de l'architrave du portique E., n'a transcrit seulement la 1ere partie du texte de la dédicace" (<bibl><title level="m">CRAI</title> 1906 p. 167</bibl>). Several blocks or fragments (indicated by highlighting) have been found again by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>partially published by <bibl type="primary" n="mendel1906"><author>Mendel</author>, CRAI 1906, <biblScope>167</biblScope></bibl> , whence cited by <bibl n="marshall1906">Marshall, <title>CR</title> 20, 1906, p. 381</bibl>; by <bibl type="primary" n="boulanger1914"><author>Boulanger</author>, <title>CRAI</title> 1914, <biblScope>49</biblScope>, note 2</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="256989">111</biblScope>, <biblScope n="257011">132</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_L_08"><figDesc>Fragment (1978)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Boulanger_A_01"><figDesc>Boulanger notebook A, page 1: Fair copy</figDesc></figure><figure href="Boulanger_A_02"><figDesc>Boulanger notebook A, page 2: Note of divisions</figDesc></figure></p></div></body></text>
+<div n="i" type="textpart" subtype="section"><note place="not specified" xml:lang="en"/><div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφ<milestone unit="block"/><seg type="autopsy">ροδείτη</seg></name></persName>  <persName type="emperor"><seg type="autopsy">Α</seg><milestone unit="block"/><seg type="autopsy">ὐτοκράτορι</seg>  <milestone unit="block"/><name nymRef="#Καῖσαρ"><seg type="autopsy">Καίσαρι</seg>  </name><seg type="autopsy">Τραι</seg><milestone unit="block"/><supplied reason="lost">α</supplied><seg type="autopsy">νῷ</seg>  <name nymRef="#Ἁδριανός"><seg type="autopsy">Ἁδριαν</seg><milestone unit="block"/><seg type="autopsy">ῷ</seg></name>  <seg type="autopsy">Σεβαστῷ</seg>  <seg type="autopsy">Ὀλυ</seg><milestone unit="block"/><supplied reason="lost">μπ</supplied><seg type="autopsy">ίῳ</seg>  <seg type="autopsy">Παν</seg><milestone unit="block"/><supplied reason="lost">ελ</supplied>λη<milestone unit="block"/><seg type="autopsy">νίῳ</seg></persName>  <seg type="autopsy">καὶ</seg>  <seg type="autopsy">τῷ  </seg><seg type="autopsy">Δ</seg><milestone unit="block"/><seg type="autopsy">ήμῳ</seg>  <seg type="autopsy">τὸν</seg>  <seg type="autopsy">ἐπιφερ</seg><milestone unit="block"/><seg type="autopsy">όμενον</seg>  <seg type="autopsy">τ</seg><milestone unit="block"/><seg type="autopsy">οῖς</seg>  <seg type="autopsy">κειοσιν</seg>  <seg type="autopsy">κα</seg><milestone unit="block"/>  <gap reason="lost" unit="character" extent="unknown"/><milestone unit="block"/>εφαλα<milestone unit="block"/>ις  λε<gap reason="lost" unit="character" extent="unknown"/>θον  κόσ<supplied reason="lost">μ</supplied>ον  πα<gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="b" type="textpart" subtype="fragment"><note place="not  specified" xml:lang="en"/><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <supplied reason="lost">κατ</supplied>αλειφθέντων  α<unclear reason="damage">ὐ</unclear><supplied reason="lost">τῇ</supplied>  <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/>      <gap reason="lost" unit="character" extent="unknown"/><unclear reason="damage">τ</unclear>οῦ  Διοσκουριδ<unclear reason="damage">ο</unclear><supplied reason="lost">υ</supplied>  <gap reason="lost" unit="character" extent="unknown"/></ab></div></div><div n="ii" type="textpart" subtype="section"><note place="not  specified" xml:lang="fr"/><ab><lb n="1"/><g ref="#fleuron"/>  <seg type="autopsy">ἡ</seg>  <persName type="divine"><name nymRef="#Ἀφροδίτη"><seg type="autopsy">Ἀφρο</seg><milestone unit="block"/>δείτη</name></persName>  Αὐ<milestone unit="block"/>  <gap reason="lost" unit="character" quantity="30"/>ασ<gap reason="lost" unit="character" quantity="3"/>ῳ  Ὀλυ<milestone unit="block"/>    <gap reason="lost" unit="character" quantity="21"/><milestone unit="block"/><seg type="autopsy">μῳ</seg>  <seg type="autopsy">τὸν</seg>  <seg type="autopsy">ἐπιφερόμε</seg><milestone unit="block"/>  <gap reason="lost" unit="character" extent="unknown"/><milestone unit="block"/><seg type="autopsy">ς</seg>  <w lemma="κίων"><seg type="autopsy">κείοσι</seg><milestone unit="block"/>ν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ταῖς</w> <w lemma="κεφαλή">κεφαλαῖς</w> <w lemma="λευκόλιθος">λ<milestone unit="block"/>ευκό<milestone unit="block"/><seg type="autopsy">λιθον</seg></w>  <seg type="autopsy">κόσμον</seg><milestone unit="block"/>  <gap reason="lost" unit="character" quantity="60"/><milestone unit="block"/>  <seg type="autopsy"><w lemma="ἀνατίθημι">ἀνέθηκεν</w></seg>  <seg type="autopsy"><g ref="#scroll"/>  <space unit="character" extent="3" dim="horizontal"/></seg></ab></div><div n="iii" type="textpart" subtype="section"><ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">α</unclear>ρατ<unclear reason="damage">ο</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>ΚΑΙ<gap reason="lost" unit="character" extent="unknown"/>  <seg type="autopsy"><supplied reason="lost">κ</supplied>αὶ</seg>  <seg type="autopsy">τῷ</seg><milestone unit="block"/>Δήμῳ    <g ref="#fleuron"/></ab></div><div n="iv" type="textpart" subtype="section"><note place="not  specified" xml:lang="fr"/><ab><lb n="1"/>  <space unit="character" extent="3" dim="horizontal"/>  κόσμ<milestone unit="block"/>ὸν <w lemma="πᾶς">πάντα</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰ<milestone unit="block"/><seg type="autopsy">δίων</seg></w>  <seg type="autopsy">καὶ</seg>  <w lemma="ἐκ"><seg type="autopsy">ἐ</seg><milestone unit="block"/>κ</w> <w lemma="ὁ">τῶν</w> <w lemma="καταλείπω">κατ<supplied reason="lost">αλειφθέν</supplied><milestone unit="block"/><seg type="autopsy">των</seg></w>  <seg type="autopsy">αὐτ</seg><supplied reason="lost">ῇ</supplied>  <seg type="autopsy">ὑπὸ</seg>  <seg type="autopsy">Ἐπιγ</seg><supplied reason="lost">όνου</supplied><milestone unit="block"/>  <seg type="autopsy">τοῦ</seg>  <seg type="autopsy">Διοσκορίδου</seg>  <note place="not  specified" xml:lang=""/>  <w lemma="ἀνατίθημι"><seg type="autopsy">ἀν</seg><milestone unit="block"/><seg type="autopsy">έθηκεν</seg></w>  <seg type="autopsy"><g ref="#scroll"/></seg></ab></div></div>
+         <div type="apparatus">
+            <p>Blocks or fragments found again by the NYU expedition are highlighted.</p>
+            <p>iv. <foreign xml:lang="grc">ΚΑΤ| . . . . . . . . |ΤΩΝ ΑΥΤ| . |</foreign> Boulanger; <foreign xml:lang="grc">κατ[αλειφθέν]|των αὐτ[ῇ]</foreign> Robert</p>
+            <p>As Boulanger points out, this adds up to three copies (two on the east side of the east court and one on the west) of one text: <foreign xml:lang="grc">ἡ Ἀφροδείτη Αὐτοκράτορι Καίσαρι Τραιανῷ Ἁδριανῷ Σεβαστῷ Ὀλυμπίῳ Πανελληνίῳ καὶ τῷ Δήμῳ τὸν ἐπιφερόμενον τοῖς κείοσιν καὶ ταῖς κεφαλαῖς λευκόλιθον κόσμ<unclear reason="damage">ο</unclear>ν πάντα ἐκ τῶν ἰδίων καὶ ἐκ τῶν καταλειφθέντων αὐτ<supplied reason="lost">ῇ</supplied> ὑπὸ Ἐπιγ<supplied reason="lost">όνου</supplied> τοῦ Διοσκουρίδου ἀνέθηκεν</foreign>.</p>
+         </div>
+         <div type="translation" n="notyet">
+            <p>...</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>[[JMR comments: This raises a point about the meaning of <foreign xml:lang="grc">ἀνέθηκεν</foreign> the goddess has <foreign xml:lang="grc">ἴδια</foreign> from which to build—but does she really dedicate? And how surprising for the names of the neopoioi (who surely controlled her funds) to be omitted?]]</p>
+         </div>
+         <div type="bibliography">
+            <p>partially published by <bibl type="primary" n="mendel1906">
+                  <author>Mendel</author>, CRAI 1906, <citedRange>167</citedRange>
+               </bibl> , whence cited by <bibl n="marshall1906">Marshall, <title>CR</title> 20, 1906, p. 381</bibl>; by <bibl type="primary" n="boulanger1914">
+                  <author>Boulanger</author>, <title>CRAI</title> 1914, <citedRange>49</citedRange>, note 2</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256989">111</citedRange>, <citedRange n="257011">132</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

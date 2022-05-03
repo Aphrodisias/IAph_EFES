@@ -1,82 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150332" n="iAph1771 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for anonymous</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-13</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>
-No description; <seg cert="low">apparently a rectangular <rs type="objectType">statue base</rs></seg>, broken above and along the left edge.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No description</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0200">Second-third centuries A.D.</date>
-(<rs type="criteria">terminology</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="3" unit="character"/>  <lb n="2"/> <w lemma="ταμίας">ταμίαν</w> <w lemma="ἀρχινεωποιός">ἀρχινεο<lb n="3" type="worddiv"/>ποιὸν</w> <w lemma="πατήρ">πατρὸς</w> <lb n="4"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="πάππος">πάππου</w> <w lemma="καί">καὶ</w> <lb n="5"/><w lemma="πρόγονος"><supplied reason="lost">πρ</supplied>ογόνων</w>  <w lemma="ἀρχιερεύς">ἀρχι<lb n="6" type="worddiv"/>ερέων</w> <w lemma="καί">καὶ</w> <w lemma="στεφανηφόρος">στεφα<lb n="7" type="worddiv"/><supplied reason="lost">ν</supplied>ηφόρων</w> <w lemma="πᾶς">πάσας</w> <lb n="8"/><w lemma="ἀρχή"><supplied reason="lost">ἀ</supplied>ρχὰς</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λειτουρ<lb n="9" type="worddiv"/><supplied reason="lost">γ</supplied>ίας</w>  <w lemma="πληρόω">πληρώσαν</w><lb n="10" type="worddiv"/><w lemma="ὁ"><supplied reason="lost">τ</supplied>α</w> <w lemma="πολύς">πολλὰ</w> <w lemma="κατορθόω">κατορ<lb n="11" type="worddiv"/><supplied reason="lost">θ</supplied>ώσαντα</w> <w lemma="ὁ">τῇ</w> <w lemma="πατρίς">πατρί<lb n="12" type="worddiv"/>δι</w> <w lemma="ἐν">ἐν</w> <w lemma="συνηγορία">συνηγορίαις</w> <lb n="13"/><w lemma="μάλιστα"><supplied reason="lost">μ</supplied>άλιστα</w>  <w lemma="θαυμάζω">θαυμασ<lb n="14" type="worddiv"/><supplied reason="lost">θ</supplied>έντα</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="παιδεία">παιδείᾳ</w> <lb n="15"/><w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w> <w lemma="χρηστότης">χρηστότητι</w> <lb n="16"/><w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w> <w lemma="ἐπιείκεια">ἐπιεικείᾳ</w> <w lemma="βίος">βίου</w> <lb n="17"/><gap reason="lost" extent="3" unit="character"/>  </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for anonymous</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150332</idno>
+            <idno type="IAph2007">iAph150332</idno>
+            <idno type="JMR2004">iAph1771</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+No description; <seg cert="low">apparently a rectangular <objectType>statue base</objectType>
+                              </seg>, broken above and along the left edge.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0200" notAfter="0300" evidence="terminology">
+Second-third centuries A.D.
+(<rs type="criteria">terminology</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <seg cert="low">
+                        <rs type="monuList">Walls, East (south part)</rs>
+                     </seg>: 'on the east side', Sherard</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>publication; Sherard papers</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-13" who="cmr">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>[e.g. the city honoured .. ? .. so-and-so] treasurer, chief neopoios, whose father, grandfather and ancestors had been high priests and stephanephoroi; he fulfilled all the magistracies and liturgies and achieved many successes for his city by his advocacy in court cases; he was very much admired for his culture and the decency of his life [...]</p>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="2"/> <w lemma="ταμίας">ταμίαν</w> <w lemma="ἀρχινεωποιός">ἀρχινεο<lb n="3" break="no"/>ποιὸν</w> <w lemma="πατήρ">πατρὸς</w> <lb n="4"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="πάππος">πάππου</w> <w lemma="καί">καὶ</w> <lb n="5"/><w lemma="πρόγονος"><supplied reason="lost">πρ</supplied>ογόνων</w>  <w lemma="ἀρχιερεύς">ἀρχι<lb n="6" break="no"/>ερέων</w> <w lemma="καί">καὶ</w> <w lemma="στεφανηφόρος">στεφα<lb n="7" break="no"/><supplied reason="lost">ν</supplied>ηφόρων</w> <w lemma="πᾶς">πάσας</w> <lb n="8"/><w lemma="ἀρχή"><supplied reason="lost">ἀ</supplied>ρχὰς</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λειτουρ<lb n="9" break="no"/><supplied reason="lost">γ</supplied>ίας</w>  <w lemma="πληρόω">πληρώσαν</w><lb n="10" break="no"/><w lemma="ὁ"><supplied reason="lost">τ</supplied>α</w> <w lemma="πολύς">πολλὰ</w> <w lemma="κατορθόω">κατορ<lb n="11" break="no"/><supplied reason="lost">θ</supplied>ώσαντα</w> <w lemma="ὁ">τῇ</w> <w lemma="πατρίς">πατρί<lb n="12" break="no"/>δι</w> <w lemma="ἐν">ἐν</w> <w lemma="συνηγορία">συνηγορίαις</w> <lb n="13"/><w lemma="μάλιστα"><supplied reason="lost">μ</supplied>άλιστα</w>  <w lemma="θαυμάζω">θαυμασ<lb n="14" break="no"/><supplied reason="lost">θ</supplied>έντα</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="παιδεία">παιδείᾳ</w> <lb n="15"/><w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w> <w lemma="χρηστότης">χρηστότητι</w> <lb n="16"/><w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w> <w lemma="ἐπιείκεια">ἐπιεικείᾳ</w> <w lemma="βίος">βίου</w> <lb n="17"/><gap reason="lost" unit="character" quantity="3"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>For the language of 9ff, compare <xref type="inscription" n="1795" href="140018">14.18</xref> (=LBW 1598bis); compare also <xref type="inscription" n="1794" href="120324">12.324</xref> (=LBW 1598), not impossibly for the same man.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><seg cert="low"><rs type="monuList">Walls, East (south part)</rs></seg>: 'on the east side', Sherard</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>publication; Sherard papers</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Sherard in 1716 (10101, 130). Not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard papers, CIG <biblScope>2795</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257244">366</biblScope>
-</bibl>.</p>
-</div></body></text>
+         <div type="translation">
+            <p>[e.g. the city honoured .. ? .. so-and-so] treasurer, chief neopoios, whose father, grandfather and ancestors had been high priests and stephanephoroi; he fulfilled all the magistracies and liturgies and achieved many successes for his city by his advocacy in court cases; he was very much admired for his culture and the decency of his life [...]</p>
+         </div>
+         <div type="commentary">
+            <p>For the language of 9ff, compare <ref type="inscription" n="1795" target="140018.xml"/> (=LBW 1598bis); compare also <ref type="inscription" n="1794" target="120324.xml"/> (=LBW 1598), not impossibly for the same man.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard papers, CIG <citedRange>2795</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257244">366</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,143 +1,205 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110054" n="iAph0149 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType" reg="funerary">Funerary</rs> inscription for MMM. Aurrr. Peritianos, Eutyches and Herakleios</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-06</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-05-06</date><respStmt><name>CMR</name></respStmt><item>fixed lineation and rewrote apparatus</item></change><change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-29</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-27</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A <rs type="material" key="marmor">white marble</rs> <rs type="objectType"><rs type="objectType">sarcophagus</rs> lid</rs> (<measure type="length" unit="metre" dim="height">0.30</measure> × <measure type="length" unit="metre" dim="width">2.19</measure> × <measure type="length" unit="metre" dim="depth">0.99</measure>) which was intact when the MAMA expedition
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for MMM. Aurrr. Peritianos, Eutyches and Herakleios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110054</idno>
+            <idno type="IAph2007">iAph110054</idno>
+            <idno type="JMR2004">iAph0149</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material>
+                              <objectType>
+                                 <objectType>sarcophagus</objectType> lid</objectType> (<height unit="metre">0.30</height> × <width unit="metre">2.19</width> × <depth unit="metre">0.99</depth>) which was intact when the MAMA expedition
 found it, but is now in two halves and chipped.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> along the front edge. It is not obvious at what
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> along the front edge. It is not obvious at what
 point in the sentence order to take the letters inscribed on the
 projecting supports beneath the rim (on which l.1 is cut); these
-letters are shown below between pairs of double verticals ||.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Rough, cursive, and fluctuating wildly in size (width
-rather than height): <measure type="length" unit="metre" dim="height">0.025-0.035</measure>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0400" cert="low" exact="none" notBefore="0201">Third to fourth centuries</date> (<rs type="criteria">formulae</rs>, penalty).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+letters are shown below between pairs of double verticals ||.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Rough, cursive, and fluctuating wildly in size (width
+rather than height): <height unit="metre">0.025-0.035</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0400"
+                               precision="medium"
+                               evidence="formulae">Third to fourth centuries (<rs type="criteria">formulae</rs>, penalty).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, Village</rs>: 'in a house wall' <title level="m">MAMA</title>; found by the NYU
+expedition during the reconstruction of the dig-house.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; copies (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-27" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-06" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-29" who="#CMR">tagged and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-05-06" who="#CMR">fixed lineation and rewrote apparatus</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_Y_13.jpg">
+            <desc>Complete (1973)</desc>
+         </graphic>
+         <graphic url="NY_pr_055.jpg">
+            <desc>Left end</desc>
+         </graphic>
+         <graphic url="NY_pr_056.jpg">
+            <desc>Centre</desc>
+         </graphic>
+         <graphic url="NY_pr_057.jpg">
+            <desc>Right end</desc>
+         </graphic>
+         <graphic url="78_L_23.jpg">
+            <desc>Right end (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
         <ab>
-		 <lb n="1"/><w lemma="ὁ">ἡ</w> <w lemma="σορός">σορός</w> <w lemma="εἰμί">ἐστι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="τόπος">τόπος</w> <name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <persName type="aphrodisian" full="yes"><name reg="Μᾶρκος">Μάρκων</name> <name reg="Αὐρήλιος" type="nomen">Αὐρηλίων</name></persName> <w lemma="ἀδελφός">ἀδελφ<unclear reason="damage">ῶ</unclear><supplied reason="lost">ν</supplied></w> <persName type="aphrodisian" key="peritianus1" full="yes"><name reg="Περιτιανός"><unclear reason="damage">Περ</unclear><supplied reason="lost">ι</supplied>τιανοῦ</name></persName> <w lemma="καί">καὶ</w> <persName key="eutyches1" type="aphrodisian" full="yes"><name reg="Εὐτύχης">Εὐτύχης</name></persName> <w lemma="καί">καὶ</w> <persName key="heraclius1" type="aphrodisian" full="yes"><name reg="Ἡράκλειος">Ἡράκλειο<app type="previouslyread"><rdg resp="previous">ς</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" dim="right" unit="character"/></rdg></app></name></persName><lb n="2"/><w lemma="κληρονόμος">κληρονόμοι</w> <persName key="peritianus2" type="aphrodisian" reg="Περιτιανός" full="yes"><name reg="Περιτιανός">Περιτιανοῦ</name></persName> <persName key="Coridius" type="aphrodisian" full="yes"><name reg="Κωρίδιος">Κω<milestone unit="block"/><unclear reason="damage">ρ</unclear>ιδίου</name></persName><lb n="3"/><w lemma="ὁ">τοῦ</w> <w lemma="πατήρ">πατρὸς</w> <w lemma="αὐτός">αὐτῶν</w>· <w lemma="ὅστις">ὅτις</w> <w lemma="ἐάν">ἂν</w> <w lemma="δέ"><unclear reason="damage">δὲ</unclear></w> <w lemma="τολμάω">τολμήσι</w> <w lemma="ποτε">π<unclear reason="damage">ο</unclear><lb n="4" type="worddiv"/>τ<unclear reason="damage">ὲ</unclear></w> <w lemma="ἀνοίγνυμι">ἀνύξε</w> <w lemma="ὁ">τὸ</w> <w lemma="σκεῦος">σκεῦος</w> <w lemma="οὗτος">τοῦτ<unclear reason="damage">ο</unclear></w> <w lemma="χωρίς">χωρὶς</w> <w lemma="ὁ">τῶν</w> <w lemma="κληρονόμος">κληρον<seg rend="||">όμων</seg></w> <w lemma="ἀρσενικός">ἀρσενικῶν</w><lb n="5"/><w lemma="δίδωμι">δώσι</w> <w lemma="ὁ">τῷ</w> <w lemma="ταμεῖον">ταμίῳ</w> <w lemma="χρυσός">χρυσοῦ</w> <w lemma="λίτρα">λίτρας</w> <w lemma="δύο">δύω</w>.</ab>
+		 <lb n="1"/><w lemma="ὁ">ἡ</w> <w lemma="σορός">σορός</w> <w lemma="εἰμί">ἐστι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="τόπος">τόπος</w> <name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <persName type="attested"><name nymRef="#Μᾶρκος">Μάρκων</name> <name nymRef="#Αὐρήλιος">Αὐρηλίων</name></persName> <w lemma="ἀδελφός">ἀδελφ<unclear reason="damage">ῶ</unclear><supplied reason="lost">ν</supplied></w> <persName key="peritianus1" type="attested"><name nymRef="#Περιτιανός"><unclear reason="damage">Περ</unclear><supplied reason="lost">ι</supplied>τιανοῦ</name></persName> <w lemma="καί">καὶ</w> <persName key="eutyches1" type="attested"><name nymRef="#Εὐτύχης">Εὐτύχης</name></persName> <w lemma="καί">καὶ</w> <persName key="heraclius1" type="attested"><name nymRef="#Ἡράκλειος">Ἡράκλειο<app type="previouslyread"><rdg resp="previous">ς</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app></name></persName><lb n="2"/><w lemma="κληρονόμος">κληρονόμοι</w> <persName key="peritianus2" nymRef="#Περιτιανός" type="attested"><name nymRef="#Περιτιανός">Περιτιανοῦ</name></persName> <persName key="Coridius" type="attested"><name nymRef="#Κωρίδιος">Κω<milestone unit="block"/><unclear reason="damage">ρ</unclear>ιδίου</name></persName><lb n="3"/><w lemma="ὁ">τοῦ</w> <w lemma="πατήρ">πατρὸς</w> <w lemma="αὐτός">αὐτῶν</w>· <w lemma="ὅστις">ὅτις</w> <w lemma="ἐάν">ἂν</w> <w lemma="δέ"><unclear reason="damage">δὲ</unclear></w> <w lemma="τολμάω">τολμήσι</w> <w lemma="ποτε">π<unclear reason="damage">ο</unclear><lb n="4" break="no"/>τ<unclear reason="damage">ὲ</unclear></w> <w lemma="ἀνοίγνυμι">ἀνύξε</w> <w lemma="ὁ">τὸ</w> <w lemma="σκεῦος">σκεῦος</w> <w lemma="οὗτος">τοῦτ<unclear reason="damage">ο</unclear></w> <w lemma="χωρίς">χωρὶς</w> <w lemma="ὁ">τῶν</w> <w lemma="κληρονόμος">κληρον<seg rend="||">όμων</seg></w> <w lemma="ἀρσενικός">ἀρσενικῶν</w><lb n="5"/><w lemma="δίδωμι">δώσι</w> <w lemma="ὁ">τῷ</w> <w lemma="ταμεῖον">ταμίῳ</w> <w lemma="χρυσός">χρυσοῦ</w> <w lemma="λίτρα">λίτρας</w> <w lemma="δύο">δύω</w>.</ab>
 	  </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p>l.1. <bibl><title level="m">MAMA</title></bibl> omitted one of the initial <foreign lang="grc">Μ</foreign>s.</p>
-        <p><foreign lang="grc"><supplied reason="lost">Περι</supplied>τιανοῦ</foreign>
-<title level="m">MAMA</title>. Both Fellows and <title level="m">MAMA</title> read the final <term>sigma</term>
+         <div type="apparatus">
+            <p>l.1. <bibl>
+                  <title level="m">MAMA</title>
+               </bibl> omitted one of the initial <foreign xml:lang="grc">Μ</foreign>s.</p>
+            <p>
+               <foreign xml:lang="grc">
+                  <supplied reason="lost">Περι</supplied>τιανοῦ</foreign>
+               <title level="m">MAMA</title>. Both Fellows and <title level="m">MAMA</title> read the final <term>sigma</term>
 in this line.</p>
-        <p>l.2. It is not obvious where the letters <foreign lang="grc">ΡΙΔΙΟΥ</foreign> on the second of the projecting supports
-should be read. <title level="m">MAMA</title> read <foreign lang="grc">ΠΕ</foreign>
-where we read <foreign lang="grc">ΠΟ</foreign> at the end of what we are numbering as line 3,
-and then <foreign lang="grc">ΡΙΔΙΟΥ</foreign>, suggesting, very
-tentatively, <foreign lang="grc">περι<supplied reason="omitted">ι</supplied>δ<supplied reason="omitted">εῖν</supplied></foreign>. If we assume that
+            <p>l.2. It is not obvious where the letters <foreign xml:lang="grc">ΡΙΔΙΟΥ</foreign> on the second of the projecting supports
+should be read. <title level="m">MAMA</title> read <foreign xml:lang="grc">ΠΕ</foreign>
+where we read <foreign xml:lang="grc">ΠΟ</foreign> at the end of what we are numbering as line 3,
+and then <foreign xml:lang="grc">ΡΙΔΙΟΥ</foreign>, suggesting, very
+tentatively, <foreign xml:lang="grc">περι<supplied reason="omitted">ι</supplied>δ<supplied reason="omitted">εῖν</supplied>
+               </foreign>. If we assume that
 the cutter wrote on the two supports consecutively before returning to
 the recessed area, this provides an ending for the otherwise baffling
-<foreign lang="grc">ΚΩ</foreign> (on which see Robert); but <foreign lang="grc">ΚΩΡΙΔΙΟΥ</foreign> is not otherwise known.</p>
-        <p>l.4. The last word is actually written in line with
+<foreign xml:lang="grc">ΚΩ</foreign> (on which see Robert); but <foreign xml:lang="grc">ΚΩΡΙΔΙΟΥ</foreign> is not otherwise known.</p>
+            <p>l.4. The last word is actually written in line with
 l.5.</p>
-        <p><foreign lang="grc">τε</foreign>: <title level="m">MAMA</title> read <foreign lang="grc">ΤΟ</foreign>.</p>
-        <p><foreign lang="grc">κληρονόμων</foreign>:
-<title level="m">MAMA</title> did not see the second <foreign lang="grc">Ο</foreign>,
+            <p>
+               <foreign xml:lang="grc">τε</foreign>: <title level="m">MAMA</title> read <foreign xml:lang="grc">ΤΟ</foreign>.</p>
+            <p>
+               <foreign xml:lang="grc">κληρονόμων</foreign>:
+<title level="m">MAMA</title> did not see the second <foreign xml:lang="grc">Ο</foreign>,
 which is cut on the side of the projecting support.</p>
-        <p>1.5. <bibl><title level="m">MAMA</title></bibl> read <foreign lang="grc">ΔΟΣΙ</foreign>
-and <foreign lang="grc">ΔΥΟΥ</foreign>, but there is no doubt about
+            <p>1.5. <bibl>
+                  <title level="m">MAMA</title>
+               </bibl> read <foreign xml:lang="grc">ΔΟΣΙ</foreign>
+and <foreign xml:lang="grc">ΔΥΟΥ</foreign>, but there is no doubt about
 our readings.</p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>The coffin and the place belong to the brothers Marci
+         </div>
+         <div type="translation">
+            <ab>The coffin and the place belong to the brothers Marci
 Aurelii Peritianos and Eutyches and Herakleios, heirs of their father
-Peritianus <supplied cert="low" reason="subaudible">son of</supplied> <seg cert="low">Koridios</seg>; whoever should ever dare to open this
+Peritianus <supplied cert="low" reason="subaudible">son of</supplied>
+               <seg cert="low">Koridios</seg>; whoever should ever dare to open this
 sarcophagus other than the male heirs will give to the treasury two
 pounds of gold.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>Commentary: See discussion at <xref type="eAla-text" n="IX.8">IX.8</xref>; for the penalty, and its implications for
-the date, <xref type="eAla-text" n="IX.5">IX.5</xref>. This should perhaps be associated with <xref type="inscription" n="1607" href="110044">11.44</xref>, which might come from the same sarcophagus.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p> <rs type="found"><rs type="monuList">City, Village</rs>: 'in a house wall' <title level="m">MAMA</title>; found by the NYU
-expedition during the reconstruction of the dig-house.</rs>.  <rs type="origLocation">Unknown.</rs>. <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Copied hastily by <rs type="visitor" key="fellows">Fellows</rs> in <date>1840</date>; recorded by the <rs key="calder" type="visitor">MAMA
-expedition</rs>; by the NYU expedition.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="fellows1841"><author>Fellows</author>, no. <biblScope>67</biblScope></bibl> whence <bibl type="hbi" n="CIGIIc"><title level="m">CIG</title> <biblScope>2850e</biblScope> (p.1119)</bibl>; by
-<bibl type="hbi" n="MAMA8"><author>Cormack</author>, from the MAMA records, <title level="m">MAMA</title> 8, no. <biblScope>580</biblScope></bibl>, whence <bibl n="hell13" type="hbi"><author>L. Robert</author>,
-<title level="j">Hellenica</title> 13, 18, <title level="m">BE</title> <biblScope>1966.412</biblScope></bibl>; by
-<bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>
-no. <biblScope>149</biblScope> and plate xxxv</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257338">460</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Publications; copies (Reynolds, Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="73_Y_13"><figDesc>Complete (1973)</figDesc></figure><figure href="NY_pr_055"><figDesc>Left end</figDesc></figure><figure href="NY_pr_056"><figDesc>Centre</figDesc></figure><figure href="NY_pr_057"><figDesc>Right end</figDesc></figure><figure href="78_L_23"><figDesc>Right end (1978)</figDesc></figure></p></div>
-
-    
-
-      
-
+         </div>
+         <div type="commentary">
+            <p>Commentary: See discussion at <ref type="eAla-text" n="IX.8" target=".xml"/>; for the penalty, and its implications for
+the date, <ref type="eAla-text" n="IX.5" target=".xml"/>. This should perhaps be associated with <ref type="inscription" n="1607" target="110044.xml"/>, which might come from the same sarcophagus.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="fellows1841">
+                  <author>Fellows</author>, no. <citedRange>67</citedRange>
+               </bibl> whence <bibl type="hbi" n="CIGIIc">
+                  <title level="m">CIG</title>
+                  <citedRange>2850e</citedRange> (p.1119)</bibl>; by
+<bibl type="hbi" n="MAMA8">
+                  <author>Cormack</author>, from the MAMA records, <title level="m">MAMA</title> 8, no. <citedRange>580</citedRange>
+               </bibl>, whence <bibl n="hell13" type="hbi">
+                  <author>L. Robert</author>,
+<title level="j">Hellenica</title> 13, 18, <title level="m">BE</title>
+                  <citedRange>1966.412</citedRange>
+               </bibl>; by
+<bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>
+no. <citedRange>149</citedRange> and plate xxxv</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257338">460</citedRange>
+               </bibl>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

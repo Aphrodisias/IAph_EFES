@@ -1,104 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080020" n="iAph1759 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><seg cert="low"><rs type="textType">Place inscription</rs>s</seg> of Ioulianos and Bassos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A loose block (<measure type="length" unit="metre" dim="width">0.49</measure> x <measure type="length" unit="metre" dim="height">0.72</measure> x <measure type="length" unit="metre" dim="depth">0.33</measure>), whose upper left corner is lost. The faceis smooth except for a rough rectangular area between iii and iv. The upper and lower edges are drafted</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>iii: at upper edge of block; iv: cross lower part of block. </p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>iii. rough and badly aligned, but deeply cut; lunate; <measure type="length" unit="metre" dim="height">0.03</measure>-<measure type="length" unit="metre" dim="height">0.04</measure>. iv: lightly cut, irregular, and badly aligned. Several in l.1 are cut with a double outline; those in ll.2 and 3 resemble nos.3.ii, 4.i and 5.i; <measure type="length" unit="metre" dim="height">0.035</measure>-<measure type="length" unit="metre" dim="height">0.04</measure>. Standard sigma</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0600">First  to sixth century A.D.</date>
-(<rs type="criteria">context</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Place inscriptions</seg> of Ioulianos and Bassos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080020</idno>
+            <idno type="IAph2007">iAph080020</idno>
+            <idno type="JMR2004">iAph1759</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A loose block (<width unit="metre">0.49</width> x <height unit="metre">0.72</height> x <depth unit="metre">0.33</depth>), whose upper left corner is lost. The faceis smooth except for a rough rectangular area between iii and iv. The upper and lower edges are drafted</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>iii: at upper edge of block; iv: cross lower part of block. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>iii. rough and badly aligned, but deeply cut; lunate; <height unit="metre">0.03</height>-<height unit="metre">0.04</height>. iv: lightly cut, irregular, and badly aligned. Several in l.1 are cut with a double outline; those in ll.2 and 3 resemble nos.3.ii, 4.i and 5.i; <height unit="metre">0.035</height>-<height unit="metre">0.04</height>. Standard sigma</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0001" notAfter="0600" evidence="context">
+First  to sixth century A.D.
+(<rs type="criteria">context</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: skene frons, fifth stage room from north, loose; the block originally formed part of the north wall of the doorway to Room 5, further in than <ref type="inscription" n="1754" target="080018.xml"/> and <ref type="inscription" n="1755" target="080019.xml"/>
+                  </provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>Transcription (Reynolds, Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="83_D_29A.jpg">
+            <desc>ii and iii (1983)</desc>
+         </graphic>
+         <graphic url="83_D_33A.jpg">
+            <desc>ii and iii (1983)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
 <ab>
 <lb n="1"/>
 iii 
 <lb n="2"/>
-<persName type="aphrodisian"><name reg="Ἰουλιανός"><supplied reason="lost">Ἰου</supplied>λιανοῦ</name></persName> <w lemma="νεανισκόλογος">νεα<lb n="3" type="worddiv"/>
+<persName type="attested"><name nymRef="#Ἰουλιανός"><supplied reason="lost">Ἰου</supplied>λιανοῦ</name></persName> <w lemma="νεανισκόλογος">νεα<lb n="3" break="no"/>
 <supplied reason="lost">νισ</supplied>κολόγου</w> 
 <lb n="4"/>
 <w lemma="σκεῦος"><supplied reason="lost">σκε</supplied>ύη</w> 
 <lb n="5"/>
 iv 
 <lb n="6"/>
-<persName type="aphrodisian"><name reg="Βάσσος">Βάσσου</name></persName> <w lemma="διασκεῦος">διασκεύη</w> 
+<persName type="attested"><name nymRef="#Βάσσος">Βάσσου</name></persName> <w lemma="διασκεῦος">διασκεύη</w> 
 <lb n="7"/>
-<placeName type="ethnic">Ἀσιονείκου</placeName> <w lemma="καί">καὶ</w> 
+<placeName>Ἀσιονείκου</placeName> <w lemma="καί">καὶ</w> 
 <lb n="8"/>
 <w lemma="γυμνασίαρχος">γυμνασιάρχου</w></ab>
 </div>
-
-<div type="translation">
-<head>Translation</head>
-<p>iii: Equipment of Iulianos, neaniskologus.</p>
-<p>iv: Equipment of Bassos, victor in the Asian games, and gymnasiarch.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of the group of inscriptions, apparently by performers, at the doorways of the rooms on the stage front:  <xref type="inscription" n="698" href="080008">8.8</xref>, <xref type="inscription" n="699" href="080009">8.9</xref>, <xref type="inscription" n="700" href="080104">8.104</xref>, <xref type="inscription" n="1567" href="080015">8.15</xref>, <xref type="inscription" n="1707" href="080016">8.16</xref>, <xref type="inscription" n="1716" href="080017">8.17</xref>, <xref type="inscription" n="1754" href="080018">8.18</xref>, <xref type="inscription" n="1755" href="080019">8.19</xref>, <xref type="inscription" n="1759" href="080020">8.20</xref>, <xref type="inscription" n="1760" href="080021">8.21</xref>, <xref type="inscription" n="1895" href="080022">8.22</xref>. See <bibl n="PPA">Roueché, <title>PPA</title>, pp. 15-25.</bibl>.</p>
-
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: skene frons, fifth stage room from north, loose; the block originally formed part of the north wall of the doorway to Room 5, further in than <xref type="inscription" n="1754" href="080018">8.18</xref> and <xref type="inscription" n="1755" href="080019">8.19</xref></rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Museum</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, Roueché)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="PPA">Roueché, PPA <biblScope>1.5.iii</biblScope> and <biblScope>1.5.iv</biblScope>.</bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p> <figure href="83_D_29A"><figDesc>ii and iii (1983)</figDesc></figure><figure href="83_D_33A"><figDesc>ii and iii (1983)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>iii: Equipment of Iulianos, neaniskologus.</p>
+            <p>iv: Equipment of Bassos, victor in the Asian games, and gymnasiarch.</p>
+         </div>
+         <div type="commentary">
+            <p>One of the group of inscriptions, apparently by performers, at the doorways of the rooms on the stage front:  <ref type="inscription" n="698" target="080008.xml"/>, <ref type="inscription" n="699" target="080009.xml"/>, <ref type="inscription" n="700" target="080104.xml"/>, <ref type="inscription" n="1567" target="080015.xml"/>, <ref type="inscription" n="1707" target="080016.xml"/>, <ref type="inscription" n="1716" target="080017.xml"/>, <ref type="inscription" n="1754" target="080018.xml"/>, <ref type="inscription" n="1755" target="080019.xml"/>, <ref type="inscription" n="1759" target="080020.xml"/>, <ref type="inscription" n="1760" target="080021.xml"/>, <ref type="inscription" n="1895" target="080022.xml"/>. See <bibl n="PPA">Roueché, <title>PPA</title>, pp. 15-25.</bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="PPA">Roueché, PPA <citedRange>1.5.iii</citedRange> and <citedRange>1.5.iv</citedRange>.</bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

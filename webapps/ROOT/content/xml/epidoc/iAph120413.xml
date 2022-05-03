@@ -1,89 +1,153 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120413" n="iAph1786 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for anonymous, having held every office in the city</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for anonymous, having held every office in the city</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120413</idno>
+            <idno type="IAph2007">iAph120413</idno>
+            <idno type="JMR2004">iAph1786</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>72.488</idno>
+                  <idno>74.256</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material>white marble</material>
+                              <objectType>statue base</objectType> without mouldings.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>ll. 1-18, <height unit="metre">0.025</height>; ll. 19ff, <height unit="metre">0.02</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">
+First to second centuries A.D.
+(<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">Walls, South-east Gate</rs>: 'ad austrum, propius ad ad orientalem urbis portam', (Picenini) 'on the east side' (Sherard)</provenance>
+                  <provenance type="observed">All fragments now in the Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Fragments; Sherard papers; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url=" 73_S_05.jpg">
+            <desc>Fragment a, lines 8-15 (1973)</desc>
+         </graphic>
+         <graphic url="77_O_23.jpg">
+            <desc>Fragment a, lines 8-15 (1977)</desc>
+         </graphic>
+         <graphic url="77_S_16.jpg">
+            <desc>Fragment b, lines 16-23 (1977)</desc>
+         </graphic>
+         <graphic url="77_G_17.jpg">
+            <desc>Fragment c, lines 24-27 (1977)</desc>
+         </graphic>
+         <graphic url="77_Z_01.jpg">
+            <desc>Fragment c, lines 24-27 (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>A <rs type="material">white marble</rs> <rs type="objectType">statue base</rs> without mouldings.</p>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" quantity="4"/>  <lb n="2"/><w lemma="ἱερατεύω">ἱερατε<supplied reason="lost">ύσαντα</supplied></w>  <lb n="3"/><w lemma="διά"><supplied reason="lost">δ</supplied>ιὰ</w> <w lemma="βίος">βίου</w> <w lemma="γυμνασιαρχέω">γυμνασ<lb n="4" break="no"/><supplied reason="lost">ι</supplied>αρχήσαντα</w> <w lemma="δίς">δίς</w> <lb n="5"/><w lemma="στεφανηφορέω">στεφανηφορήσαν<lb n="6" break="no"/>τα</w> <w lemma="δίς">δίς</w> <w lemma="ἀγωνοθετέω">ἀγωνοθέτη<lb n="7" break="no"/>σαντα</w> <w lemma="τρίς">τρίς</w> <w lemma="ἑστιάω">ἑσστιά<lb n="8" break="no"/>σαντα</w> <w lemma="ὁ">τὸν</w> <w lemma="δῆμος">δῆμον</w> <lb n="9"/> <w>τετρακίς</w> <w lemma="πρεσβεύω">πρ<seg type="autopsy">εσβε</seg>ύ<lb n="10" break="no"/>σαντα</w> <w lemma="πολλάκις">πο<seg type="autopsy">λλάκις</seg></w> <lb n="11"/> <w lemma="ἄρχω">ἄρξαντα</w> <seg type="autopsy"><w lemma="ὁ">τὰς</w> <w lemma="ἐν">ἐν</w></seg> <lb n="12"/> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="ἀρχή">ἀ<seg type="autopsy">ρχὰς</seg></w> <w lemma="ἅπας"><seg type="autopsy">ἁ</seg> <lb n="13"/> πάσας</w> <w lemma="διά">δι<seg type="autopsy">ὰ</seg></w> <w lemma="πᾶς"><seg type="autopsy">παν</seg><lb n="14" break="no"/>τὸς</w> <w lemma="λέγω">λέγον<seg type="autopsy">τα</seg></w> <w lemma="καί"><seg type="autopsy">καὶ</seg></w> <lb n="15"/> <w lemma="πράσσω">πράσσοντ<seg type="autopsy">α</seg></w> <seg type="autopsy"><w lemma="καί">καὶ</w></seg> <w lemma="ψηφίζω"><seg type="autopsy">ψη</seg><lb n="16" break="no"/>φιζόμενον</w> <seg type="autopsy"><w lemma="ἀεί">ἀεὶ</w> <w lemma="ὁ">τὰ</w></seg> <lb n="17"/> <w lemma="συμφέρω"><seg type="autopsy">συνφέ</seg>ροντα</w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">δή<lb n="18" break="no"/><seg type="autopsy">μῳ</seg></w> <w lemma="ἀγαθός"><seg type="autopsy">ἀγαθ</seg>ὸν</w> <w lemma="καί">καὶ</w> <w lemma="εὔνους">εὔ<lb n="19" break="no"/><seg type="autopsy">νουν</seg></w> <w lemma="ὁ"><seg type="autopsy">τ</seg>ῇ</w> <w lemma="πατρίς">πατρίδι</w> <lb n="20"/>  <space extent="3" unit="character" dim="horizontal"/>  <lb n="21"/> <seg type="autopsy"><w lemma="ὁ">τῆς</w> <w lemma="δέ">δὲ</w></seg> <w><seg type="autopsy">κ</seg>ατασκευ<lb n="22" break="no"/><seg type="autopsy">ῆς</seg></w> <seg type="autopsy"><w lemma="ὁ">τοῦ</w> <w lemma="τε">τε</w></seg> <w lemma="ἀνδρίας">ἀνδρι<lb n="23" break="no"/><seg type="autopsy">άντος</seg></w> <w lemma="καί"><seg type="autopsy">κα</seg>ὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="ἀνάστασις">ἀ<lb n="24" break="no"/>ν<seg type="autopsy">αστάσε</seg>ως</w>  <w lemma="αὐτός">αὐ<lb n="25" break="no"/><supplied reason="lost">το</supplied><seg type="autopsy">ῦ</seg></w> <w lemma="ἐπιμελέομαι"><seg type="autopsy">ἐπεμ</seg>ελήθη</w> <lb n="26"/><persName type="attested"><name nymRef="#Τιβέριος"><supplied reason="lost">Τι</supplied><seg type="autopsy">βέριος</seg></name> <name nymRef="#Κλαύδιος">Κλαύδιος</name> <lb n="27"/> <persName type="attested"><name nymRef="#Μαρίων"><seg type="autopsy">Μαρίωνο</seg>ς</name></persName> <w lemma="υἱός">υἱὸς</w> <name nymRef="#Κυρείνα">Κυ<lb n="28" break="no"/><seg type="autopsy">ρίνᾳ</seg></name> <name nymRef="#Μένανδρος"><seg type="autopsy">Μέ</seg>νανδρος</name></persName> <lb n="29"/> <seg type="autopsy"><w lemma="ὁ">ὁ</w></seg> <w lemma="ἔγγονος"><seg type="autopsy">ἔγγον</seg>ος</w> <w lemma="αὐτός">αὐτοῦ</w> </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>ll. 1-18, <measure dim="height" type="length" unit="metre">0.025</measure>; ll. 19ff, <measure dim="height" type="length" unit="metre">0.02</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0200" exact="none">First to second centuries A.D.</date>
-(<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="4" unit="character"/>  <lb n="2"/><w lemma="ἱερατεύω">ἱερατε<supplied reason="lost">ύσαντα</supplied></w>  <lb n="3"/><w lemma="διά"><supplied reason="lost">δ</supplied>ιὰ</w> <w lemma="βίος">βίου</w> <w lemma="γυμνασιαρχέω">γυμνασ<lb n="4" type="worddiv"/><supplied reason="lost">ι</supplied>αρχήσαντα</w> <w lemma="δίς">δίς</w> <lb n="5"/><w lemma="στεφανηφορέω">στεφανηφορήσαν<lb n="6" type="worddiv"/>τα</w> <w lemma="δίς">δίς</w> <w lemma="ἀγωνοθετέω">ἀγωνοθέτη<lb n="7" type="worddiv"/>σαντα</w> <w lemma="τρίς">τρίς</w> <w lemma="ἑστιάω">ἑσστιά<lb n="8" type="worddiv"/>σαντα</w> <w lemma="ὁ">τὸν</w> <w lemma="δῆμος">δῆμον</w> <lb n="9"/> <w>τετρακίς</w> <w lemma="πρεσβεύω">πρ<seg type="autopsy">εσβε</seg>ύ<lb n="10" type="worddiv"/>σαντα</w> <w lemma="πολλάκις">πο<seg type="autopsy">λλάκις</seg></w> <lb n="11"/> <w lemma="ἄρχω">ἄρξαντα</w> <seg type="autopsy"><w lemma="ὁ">τὰς</w> <w lemma="ἐν">ἐν</w></seg> <lb n="12"/> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="ἀρχή">ἀ<seg type="autopsy">ρχὰς</seg></w> <w lemma="ἅπας"><seg type="autopsy">ἁ</seg> <lb n="13"/> πάσας</w> <w lemma="διά">δι<seg type="autopsy">ὰ</seg></w> <w lemma="πᾶς"><seg type="autopsy">παν</seg><lb n="14" type="worddiv"/>τὸς</w> <w lemma="λέγω">λέγον<seg type="autopsy">τα</seg></w> <w lemma="καί"><seg type="autopsy">καὶ</seg></w> <lb n="15"/> <w lemma="πράσσω">πράσσοντ<seg type="autopsy">α</seg></w> <seg type="autopsy"><w lemma="καί">καὶ</w></seg> <w lemma="ψηφίζω"><seg type="autopsy">ψη</seg><lb n="16" type="worddiv"/>φιζόμενον</w> <seg type="autopsy"><w lemma="ἀεί">ἀεὶ</w> <w lemma="ὁ">τὰ</w></seg> <lb n="17"/> <w lemma="συμφέρω"><seg type="autopsy">συνφέ</seg>ροντα</w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">δή<lb n="18" type="worddiv"/><seg type="autopsy">μῳ</seg></w> <w lemma="ἀγαθός"><seg type="autopsy">ἀγαθ</seg>ὸν</w> <w lemma="καί">καὶ</w> <w lemma="εὔνους">εὔ<lb n="19" type="worddiv"/><seg type="autopsy">νουν</seg></w> <w lemma="ὁ"><seg type="autopsy">τ</seg>ῇ</w> <w lemma="πατρίς">πατρίδι</w> <lb n="20"/>  <space extent="3" unit="character" dim="horizontal"/>  <lb n="21"/> <seg type="autopsy"><w lemma="ὁ">τῆς</w> <w lemma="δέ">δὲ</w></seg> <w><seg type="autopsy">κ</seg>ατασκευ<lb n="22" type="worddiv"/><seg type="autopsy">ῆς</seg></w> <seg type="autopsy"><w lemma="ὁ">τοῦ</w> <w lemma="τε">τε</w></seg> <w lemma="ἀνδρίας">ἀνδρι<lb n="23" type="worddiv"/><seg type="autopsy">άντος</seg></w> <w lemma="καί"><seg type="autopsy">κα</seg>ὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="ἀνάστασις">ἀ<lb n="24" type="worddiv"/>ν<seg type="autopsy">αστάσε</seg>ως</w>  <w lemma="αὐτός">αὐ<lb n="25" type="worddiv"/><supplied reason="lost">το</supplied><seg type="autopsy">ῦ</seg></w> <w lemma="ἐπιμελέομαι"><seg type="autopsy">ἐπεμ</seg>ελήθη</w> <lb n="26"/><persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen"><supplied reason="lost">Τι</supplied><seg type="autopsy">βέριος</seg></name> <name reg="Κλαύδιος">Κλαύδιος</name> <lb n="27"/> <persName type="aphrodisian"><name reg="Μαρίων"><seg type="autopsy">Μαρίωνο</seg>ς</name></persName> <w lemma="υἱός">υἱὸς</w> <name type="demotic" reg="Κυρείνα">Κυ<lb n="28" type="worddiv"/><seg type="autopsy">ρίνᾳ</seg></name> <name reg="Μένανδρος"><seg type="autopsy">Μέ</seg>νανδρος</name></persName> <lb n="29"/> <seg type="autopsy"><w lemma="ὁ">ὁ</w></seg> <w lemma="ἔγγονος"><seg type="autopsy">ἔγγον</seg>ος</w> <w lemma="αὐτός">αὐτοῦ</w> </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>The letters seen by us have been indicated.</p><p>l. 1, <foreign lang="grc"><gap extent="4" reason="lost" unit="character"/> ΙΕΡΑΤΕ <gap extent="5" reason="lost" unit="character"/></foreign></p><p>l. 6, <foreign lang="grc">ΕΣ<gap extent="1" reason="lost" unit="character"/>ΤΙΑ</foreign> 1705; <foreign lang="grc">ΕΣΣΤΙΑ</foreign> 1716</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList" cert="low">Walls, South-east Gate</rs>: 'ad austrum, propius ad ad orientalem urbis portam', (Picenini) 'on the east side' (Sherard)</rs>
-<rs type="lastLocation">All fragments now in the Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Fragments; Sherard papers; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>The full text copied by Sherard in 1716 ' on the east side' (10101, 130) and by Picenini in 1705 (10102, 33v and, from Tisser, 56v, whence 10101, 44-5). Three fragments found by the NYU expedition: <rs type="invNo">72.488</rs> (lines 8-15), <rs type="invNo">74.256</rs> two joining fragments (ll. 16-23 and 24-27)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Sherard's 1716 copy by <bibl n="CIGII">Boeckh, CIG <biblScope>2789</biblScope></bibl>, whence <bibl n="liermann1889">Liermann 45-47, no. <biblScope>7</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257178">299</biblScope>
-</bibl>
-</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href=" 73_S_05"><figDesc>Fragment a, lines 8-15 (1973)</figDesc></figure><figure href="77_O_23"><figDesc>Fragment a, lines 8-15 (1977)</figDesc></figure><figure href="77_S_16"><figDesc>Fragment b, lines 16-23 (1977)</figDesc></figure><figure href="77_G_17"><figDesc>Fragment c, lines 24-27 (1977)</figDesc></figure><figure href="77_Z_01"><figDesc>Fragment c, lines 24-27 (1977)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>The letters seen by us have been indicated.</p>
+            <p>l. 1, <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" quantity="4"/> ΙΕΡΑΤΕ <gap reason="lost" unit="character" quantity="5"/>
+               </foreign>
+            </p>
+            <p>l. 6, <foreign xml:lang="grc">ΕΣ<gap reason="lost" unit="character" quantity="1"/>ΤΙΑ</foreign> 1705; <foreign xml:lang="grc">ΕΣΣΤΙΑ</foreign> 1716</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Sherard's 1716 copy by <bibl n="CIGII">Boeckh, CIG <citedRange>2789</citedRange>
+               </bibl>, whence <bibl n="liermann1889">Liermann 45-47, no. <citedRange>7</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257178">299</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

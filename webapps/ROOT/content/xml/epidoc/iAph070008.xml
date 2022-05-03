@@ -1,92 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph070008" n="iAph1856 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for Lykidas Zenon</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Posthumous honours for Lykidas Zenon</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph070008</idno>
+            <idno type="IAph2007">iAph070008</idno>
+            <idno type="JMR2004">iAph1856</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material> rectangular <objectType>statue base</objectType>, chipped along the edges (<width unit="metre">0.60</width>  × <height unit="metre">1.68</height>  × <depth unit="metre">0.52</depth>). A thick upper moulding has been chipped away for the re-use of the stone.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">
+ First to second centuries A.D.
+(<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Martyrion</rs>: re-used on its side in the wall between the narthex and the main building. ('Dégagement de la principale basilique', Gaudin)</provenance>
+                  <provenance type="observed" when="1973">Findspot (1973)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); publications; Wood; Gaudin's squeeze.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_S_11.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="Wood_14_45v.jpg">
+            <desc>Wood notebook 14, page 45v</desc>
+         </graphic>
+         <graphic url="R_I_35.jpg">
+            <desc>Reichel notebook, I, 35</desc>
+         </graphic>
+         <graphic url="R_I_24v.jpg">
+            <desc>Reichel notebook, I.24v (noted)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>A <rs type="material" key="marmor">white marble</rs> rectangular <rs type="objectType">statue base</rs>, chipped along the edges (<measure type="length" unit="metre" dim="width">0.60</measure>  × <measure type="length" unit="metre" dim="height">1.68</measure>  × <measure type="length" unit="metre" dim="depth">0.52</measure>). A thick upper moulding has been chipped away for the re-use of the stone.</p>
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <lb n="2"/> <w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">ἡ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app></w> <w lemma="γερουσία">γερουσία</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">οἱ</w> <w lemma="νέος">νέοι</w> <lb n="3"/> <w lemma="τιμάω"><app type="previouslyread"><rdg resp="previous">ἐ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app>τείμησαν</w> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλ<lb n="4" break="no"/><space extent="1" unit="character" dim="horizontal"/>λακχότα</w> <space extent="8" unit="character" dim="horizontal"/>  <lb n="5"/> <persName type="attested"><name nymRef="#Λυκίδας "><app type="previouslyread"><rdg resp="previous">Λ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app>υκίδαν</name> <persName type="attested"><name nymRef="#Διογένης">Διογένους</name> <w lemma="ὁ">τοῦ</w> <lb n="6"/> <persName type="attested"><name nymRef="#Λυκίδας ">Λυκίδου</name></persName></persName> <name nymRef="#Ζήνων">Ζήνωνα</name></persName> <w lemma="ὁ">ταῖς</w> <lb n="7"/> <w lemma="καλός"><app type="previouslyread"><rdg resp="previous">κα</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="2"/></rdg></app>λλίσταις</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="ζάω">ζή<lb n="8" break="no"/><app type="previouslyread"><rdg resp="previous">σ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app>αντα</w> <w lemma="ἐν">ἐν</w> <w lemma="παιδεία">παιδείᾳ</w> <w lemma="κοσμίως">κοσ<lb n="9" break="no"/><app type="previouslyread"><rdg resp="previous">μί</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="2"/></rdg></app>ως</w> <w lemma="καί">καὶ</w> <w lemma="ἐνάρετος">ἐναρέτως</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="10"/> <w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">τὴ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="2"/></rdg></app>ν</w> <w lemma="δέ">δὲ</w> <w lemma="ἀνάθεσις">ἀνάθεσιν</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδριάς">ἀν<lb n="11" break="no"/><app type="previouslyread"><rdg resp="previous">δ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app>ριάντος</w> <w lemma="ποιέω">ἐποίησαντο</w> <lb n="12"/> <persName type="attested"><name nymRef="#Διογένης"><app type="previouslyread"><rdg resp="previous">Διο</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="3"/></rdg></app>γένης</name> <name nymRef="#Λυκίδας">Λυκίδου</name> <w lemma="ὁ">τοῦ</w> <name nymRef="#Διογένης">Διο<lb n="13" break="no"/><app type="previouslyread"><rdg resp="previous">γ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app>ένους</name></persName> <w lemma="νεοποιός">νεοποιὸς</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w><lb n="14"/><persName type="attested"><name nymRef="#Ἀμμία"><app type="previouslyread"><rdg resp="previous">Ἀμ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="2"/></rdg></app>μία</name> <persName type="attested"><name nymRef="#Ἑρμογένης">Ἑρμογένους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀπολλώνιος ">Ἀ<lb n="15" break="no"/>πολλωνίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Δημήτριος">Δημητρί<lb n="16" break="no"/>ου</name></persName></persName></persName></persName> <w lemma="ὁ">οἱ</w> <w lemma="γονεύς">γονεῖς</w> <w lemma="αὐτός">αὐτοῦ</w> <g ref="#scroll"/> </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on one face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure type="length" unit="metre" dim="height">0.025</measure></p>
-
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0200" exact="none"> First to second centuries A.D.</date>
-(<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <lb n="2"/> <w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">ἡ</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app></w> <w lemma="γερουσία">γερουσία</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">οἱ</w> <w lemma="νέος">νέοι</w> <lb n="3"/> <w lemma="τιμάω"><app type="previouslyread"><rdg resp="previous">ἐ</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app>τείμησαν</w> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλ<lb n="4" type="worddiv"/><space extent="1" unit="character" dim="horizontal"/>λακχότα</w> <space extent="8" unit="character" dim="horizontal"/>  <lb n="5"/> <persName type="aphrodisian"><name reg="Λυκίδας "><app type="previouslyread"><rdg resp="previous">Λ</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app>υκίδαν</name> <persName type="aphrodisian"><name reg="Διογένης">Διογένους</name> <w lemma="ὁ">τοῦ</w> <lb n="6"/> <persName type="aphrodisian"><name reg="Λυκίδας ">Λυκίδου</name></persName></persName> <name reg="Ζήνων">Ζήνωνα</name></persName> <w lemma="ὁ">ταῖς</w> <lb n="7"/> <w lemma="καλός"><app type="previouslyread"><rdg resp="previous">κα</rdg><rdg resp="autopsy"><gap extent="2" reason="lost" unit="character"/></rdg></app>λλίσταις</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="ζάω">ζή<lb n="8" type="worddiv"/><app type="previouslyread"><rdg resp="previous">σ</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app>αντα</w> <w lemma="ἐν">ἐν</w> <w lemma="παιδεία">παιδείᾳ</w> <w lemma="κοσμίως">κοσ<lb n="9" type="worddiv"/><app type="previouslyread"><rdg resp="previous">μί</rdg><rdg resp="autopsy"><gap extent="2" reason="lost" unit="character"/></rdg></app>ως</w> <w lemma="καί">καὶ</w> <w lemma="ἐνάρετος">ἐναρέτως</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="10"/> <w lemma="ὁ"><app type="previouslyread"><rdg resp="previous">τὴ</rdg><rdg resp="autopsy"><gap extent="2" reason="lost" unit="character"/></rdg></app>ν</w> <w lemma="δέ">δὲ</w> <w lemma="ἀνάθεσις">ἀνάθεσιν</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδριάς">ἀν<lb n="11" type="worddiv"/><app type="previouslyread"><rdg resp="previous">δ</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app>ριάντος</w> <w lemma="ποιέω">ἐποίησαντο</w> <lb n="12"/> <persName type="aphrodisian"><name reg="Διογένης"><app type="previouslyread"><rdg resp="previous">Διο</rdg><rdg resp="autopsy"><gap extent="3" reason="lost" unit="character"/></rdg></app>γένης</name> <name reg="Λυκίδας">Λυκίδου</name> <w lemma="ὁ">τοῦ</w> <name reg="Διογένης">Διο<lb n="13" type="worddiv"/><app type="previouslyread"><rdg resp="previous">γ</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app>ένους</name></persName> <w lemma="νεοποιός">νεοποιὸς</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w><lb n="14"/><persName type="aphrodisian"><name reg="Ἀμμία"><app type="previouslyread"><rdg resp="previous">Ἀμ</rdg><rdg resp="autopsy"><gap extent="2" reason="lost" unit="character"/></rdg></app>μία</name> <persName type="aphrodisian"><name reg="Ἑρμογένης">Ἑρμογένους</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀπολλώνιος ">Ἀ<lb n="15" type="worddiv"/>πολλωνίου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Δημήτριος">Δημητρί<lb n="16" type="worddiv"/>ου</name></persName></persName></persName></persName> <w lemma="ὁ">οἱ</w> <w lemma="γονεύς">γονεῖς</w> <w lemma="αὐτός">αὐτοῦ</w> <g type="scroll"/> </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-
-<p>Letters seen only by Wood, and not subsequently recorded are highlighted.</p></div>
-<div type="translation">
-<head>Translation</head>
-<p>The Council and the People and the Gerousia and the Young Men honoured, also after his death, with the finest honours, Lykidas Zenon son of Diogenes son of Lykidas who lived in education, with elegance and virtue. Diogenes son of Lykidas son of Diogenes, neopoios, and Ammia daughter of Hermogenes son of Apollonios son of Demetrios, his parents, undertook the erection of the statue.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Lykidas Zenon clearly died young, while he was still living 'in education'; he was probably a neos - that is, in the post-ephebic age group - which would explain why the neoi participated in his honours. </p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Martyrion</rs>: re-used on its side in the wall between the narthex and the main building. ('Dégagement de la principale basilique', Gaudin)</rs>
-<rs type="lastLocation">Findspot (1973)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); publications; Wood; Gaudin's squeeze.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Wood (14, 45v), before the left side had been severely chipped;  by Reichel (R I.24v, I, 35); recorded by Gaudin (5); by the NYU expedition (SBI <rs type="sbi">167</rs>).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="kubreich1893">Kubitschek &amp; Reichel, <title>AAWW</title> 1893, 103, no. <biblScope>14</biblScope></bibl>; by <bibl n="reinach">Reinach, from Gaudin's squeeze, <biblScope>62</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257381">503</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_S_11"><figDesc>Face (1973)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p><figure href="Wood_14_45v"><figDesc>Wood notebook 14, page 45v</figDesc></figure><figure href="R_I_35"><figDesc>Reichel notebook, I, 35</figDesc></figure><figure href="R_I_24v"><figDesc>Reichel notebook, I.24v (noted)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>Letters seen only by Wood, and not subsequently recorded are highlighted.</p>
+         </div>
+         <div type="translation">
+            <p>The Council and the People and the Gerousia and the Young Men honoured, also after his death, with the finest honours, Lykidas Zenon son of Diogenes son of Lykidas who lived in education, with elegance and virtue. Diogenes son of Lykidas son of Diogenes, neopoios, and Ammia daughter of Hermogenes son of Apollonios son of Demetrios, his parents, undertook the erection of the statue.</p>
+         </div>
+         <div type="commentary">
+            <p>Lykidas Zenon clearly died young, while he was still living 'in education'; he was probably a neos - that is, in the post-ephebic age group - which would explain why the neoi participated in his honours. </p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="kubreich1893">Kubitschek &amp; Reichel, <title>AAWW</title> 1893, 103, no. <citedRange>14</citedRange>
+               </bibl>; by <bibl n="reinach">Reinach, from Gaudin's squeeze, <citedRange>62</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257381">503</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

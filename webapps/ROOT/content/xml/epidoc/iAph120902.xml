@@ -1,88 +1,165 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120902" n="iAph1285 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Statue dedication</rs> to the
-<rs type="textType" reg="imperial">Emperor</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>1980</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1980">Reynolds (<date>1980</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Statue dedication to the
+Emperor</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120902</idno>
+            <idno type="IAph2007">iAph120902</idno>
+            <idno type="JMR2004">iAph1285</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>statue base</objectType> with moulding above and below on front and right side, still partly buried, broken away to left (<width unit="metre">1.07</width> visible × <height unit="metre">0.75</height> × <depth unit="metre">0.60</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.04</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0027" notAfter="0050" evidence="titulature">
+27 B.C-A.D. 50
+(<rs type="criteria">titulature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, West</rs>: reused south of the West gate.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); Gaudin's squeeze (checked); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_V_06.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="R_I_05v.jpg">
+            <desc>Reichel notebook I, 5v</desc>
+         </graphic>
+         <graphic url="K_V_13.jpg">
+            <desc>Kubitschek notebook V, 13</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">statue base</rs> with moulding above and below on front and right side, still partly buried, broken away to left (<measure type="length" unit="metre" dim="width">1.07</measure> visible × <measure type="length" unit="metre" dim="height">0.75</measure> × <measure type="length" unit="metre" dim="depth">0.60</measure>).</p></div><div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
+<ab><lb n="1"/>  <persName type="emperor"><persName nymRef="#Ζεύς" type="divine"><name nymRef="#Ζεύς">Δία</name>  <w lemma="πατρῷος">Πατρῷον</w></persName>  <lb n="2"/><w lemma="σεβαστός">Σεβαστὸν</w>  <name nymRef="#Καῖσαρ">Καίσαρα</name></persName>  <lb n="2a"/><space unit="line" extent="1" dim="horizontal"/></ab>
 </div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.04</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="-0027" notAfter="0050" exact="both">27 B.C-A.D. 50</date>
-(<rs type="criteria">titulature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="emperor" full="yes"><persName type="divine" reg="Ζεύς" full="yes"><name reg="Ζεύς">Δία</name>  <w lemma="πατρῷος">Πατρῷον</w></persName>  <lb n="2"/><w lemma="σεβαστός">Σεβαστὸν</w>  <name reg="Καῖσαρ">Καίσαρα</name></persName>  <lb n="2a"/><space unit="line" extent="1" dim="horizontal"/></ab>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); Gaudin's squeeze (checked); publications.</p>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 1, Reinach, with an incomplete squeeze, and not knowing that the stone was complete proposed <foreign lang="grc"><supplied reason="lost">Ἀπόλλω</supplied><unclear reason="damage">ν</unclear>α Πατρῷον</foreign>; Robert corrected this (in his first article) and then saw that Kubitschek and Reichel already gave the corect reading.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>(Statue of) Zeus of our Ancestors, Augustus Caesar.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>For the expression cf:
+         <div type="apparatus">
+            <p>l. 1, Reinach, with an incomplete squeeze, and not knowing that the stone was complete proposed <foreign xml:lang="grc">
+                  <supplied reason="lost">Ἀπόλλω</supplied>
+                  <unclear reason="damage">ν</unclear>α Πατρῷον</foreign>; Robert corrected this (in his first article) and then saw that Kubitschek and Reichel already gave the corect reading.</p>
+         </div>
+         <div type="translation">
+            <p>(Statue of) Zeus of our Ancestors, Augustus Caesar.</p>
+         </div>
+         <div type="commentary">
+            <p>For the expression cf:
 Nero at Smyrna, Smyrna 1, l. 5, 
-<foreign lang="grc">Τιβερίου Κλαυδίου Ἡρω<supplied reason="lost">^  ἀρχιερέως</supplied> καὶ σεβαστοφάντου καὶ [διὰ βίου ἀγωνοθέτου] θεᾶς Ῥώμης καὶ θεοῦ [Σεβαστοῦ Καίσαρος] 
+<foreign xml:lang="grc">Τιβερίου Κλαυδίου Ἡρω<supplied reason="lost">^  ἀρχιερέως</supplied> καὶ σεβαστοφάντου καὶ [διὰ βίου ἀγωνοθέτου] θεᾶς Ῥώμης καὶ θεοῦ [Σεβαστοῦ Καίσαρος] 
 Διὸς Πατρ'ου αὐτοκ[ράτορος καὶ ἀρχιερέως] μεγίστου, πατρὸς τῆ[ς πατρίδος καὶ σωτῆρος?] τοῦ σύμπαντος ἀν<unclear reason="damage">θ</unclear>[ρώπων γένους
-</foreign></p><p>Halicarnassus: GIBM894, 4-7
-<foreign lang="grc">Καίσαρα τὸν Σεβαστὸν ἐνεν[κ]αμένη [τ]ὸ[ν] τῷ καθ′ ἡμᾶς εὐδαίμονι βίωι πατέρα μὲν τῆς [ἑαυ]τοῦ πατ[ρ]ίδος θεᾶς Ῥώμης, Δία δὲ πατρῶον καὶ σωτῆρα τοῦ κο[ι] [ν]οῦ τῶν ἀνθρώπων γένους</foreign></p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, West</rs>: reused south of the West gate.</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Kubitschek (KV.13, Abklatsch 44) and by Reichel (RI.5v ); by Gaudin (37); recorded by the MAMA expedition in 1934; recorded by the NYU expedition in 1973 (SBI <rs type="sbi">97</rs>).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl type="primary" n="kubreich1893"><author>Kubitschek &amp; Reichel</author>, AAWW no. <biblScope>13</biblScope></bibl>; by <bibl type="primary" n="reinach"><author>Reinach</author>, from Gaudin, <biblScope>24</biblScope></bibl>, whence <bibl>Robert, <title level="m">RPh</title> 4 (1930), 26, no. 2</bibl>, <bibl>Robert, <title level="m">RPh</title> 8 (1934), 49, note 1</bibl>, <bibl>Buckler, <title level="m">RPh</title> 9, 1935, 177-88, 187</bibl>; by <bibl type="primary" n="MAMA8"><author>Cormack</author>, from the MAMA records, MAMA 8, <biblScope>431</biblScope></bibl>; by <bibl type="primary" n="jmr1980"><author>Reynolds</author>, PCPS 206, 1980, 77, no. <biblScope>5</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1980.1244</biblScope></bibl>, <bibl n="be"><title>BullEp</title> <biblScope>1982.355</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257070">191</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_V_06"><figDesc>Face (1973)</figDesc></figure>
-</p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="R_I_05v"><figDesc>Reichel notebook I, 5v</figDesc></figure><figure href="K_V_13"><figDesc>Kubitschek notebook V, 13</figDesc></figure></p></div></body></text>
+</foreign>
+            </p>
+            <p>Halicarnassus: GIBM894, 4-7
+<foreign xml:lang="grc">Καίσαρα τὸν Σεβαστὸν ἐνεν[κ]αμένη [τ]ὸ[ν] τῷ καθ′ ἡμᾶς εὐδαίμονι βίωι πατέρα μὲν τῆς [ἑαυ]τοῦ πατ[ρ]ίδος θεᾶς Ῥώμης, Δία δὲ πατρῶον καὶ σωτῆρα τοῦ κο[ι] [ν]οῦ τῶν ἀνθρώπων γένους</foreign>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="primary" n="kubreich1893">
+                  <author>Kubitschek &amp; Reichel</author>, AAWW no. <citedRange>13</citedRange>
+               </bibl>; by <bibl type="primary" n="reinach">
+                  <author>Reinach</author>, from Gaudin, <citedRange>24</citedRange>
+               </bibl>, whence <bibl>Robert, <title level="m">RPh</title> 4 (1930), 26, no. 2</bibl>, <bibl>Robert, <title level="m">RPh</title> 8 (1934), 49, note 1</bibl>, <bibl>Buckler, <title level="m">RPh</title> 9, 1935, 177-88, 187</bibl>; by <bibl type="primary" n="MAMA8">
+                  <author>Cormack</author>, from the MAMA records, MAMA 8, <citedRange>431</citedRange>
+               </bibl>; by <bibl type="primary" n="jmr1980">
+                  <author>Reynolds</author>, PCPS 206, 1980, 77, no. <citedRange>5</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1980.1244</citedRange>
+               </bibl>, <bibl n="be">
+                  <title>BullEp</title>
+                  <citedRange>1982.355</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257070">191</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

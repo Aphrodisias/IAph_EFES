@@ -1,84 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120615" n="iAph0631 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Gladiator memorial</rs> for Skirtos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material">white marble</rs> <rs type="objectType">altar-stele</rs>, with moulding above and below on three sides (<measure dim="height" type="length" unit="metre">0.90</measure> ×  <measure dim="width" type="length" unit="metre">0.40</measure> × <measure dim="depth" type="length" unit="metre">0.38</measure>. The relief is of a <rs type="decoration">gladiator</rs>, a <rs type="decoration">retiarius</rs>, wearing only a loin-guard, and a strap over his left shoulder, advancing to his left; he has a bare head and hair down to his shoulders. In his left hand he holds a tall <rs type="decoration" cert="low">trident</rs>, whose head is lost; in his right hand he holds a short <rs type="decoration">sword</rs>.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>standard forms, <measure dim="height" type="length" unit="metre">0.03</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0100"> Second to third centuries A.D.</date>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Gladiator memorial for Skirtos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120615</idno>
+            <idno type="IAph2007">iAph120615</idno>
+            <idno type="JMR2004">iAph0631</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>76.20</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material>white marble</material>
+                              <objectType>altar-stele</objectType>, with moulding above and below on three sides (<height unit="metre">0.90</height> ×  <width unit="metre">0.40</width> × <depth unit="metre">0.38</depth>. The relief is of a <rs type="decoration">gladiator</rs>, a <rs type="decoration">retiarius</rs>, wearing only a loin-guard, and a strap over his left shoulder, advancing to his left; he has a bare head and hair down to his shoulders. In his left hand he holds a tall <rs type="decoration" cert="low">trident</rs>, whose head is lost; in his right hand he holds a short <rs type="decoration">sword</rs>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>standard forms, <height unit="metre">0.03</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0100" notAfter="0300" evidence="lettering content">
+ Second to third centuries A.D.
 (<rs type="criteria">lettering</rs>, <rs type="criteria">content</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <persName type="aphrodisian"><name reg="Σκίρτος">Σκίρτος</name></persName> <g type="leaf"/>  </ab>
-</div>
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (east part)</rs> with <ref type="inscription" n="629" target="120621.xml"/> and <ref type="inscription" n="631" target="120615.xml"/> during excavation</provenance>
+                  <provenance type="observed" when="1976">Museum (1976)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_A_14A.jpg">
+            <desc>Face (1976)</desc>
+         </graphic>
+         <graphic url="89_B_19.jpg">
+            <desc>Face (1989)</desc>
+         </graphic>
+         <graphic url="HS_3514.jpg">
+            <desc>Face (1990)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>Skirtos.</p>
+<ab><lb n="1"/> <persName type="attested"><name nymRef="#Σκίρτος">Σκίρτος</name></persName> <g ref="#leaf"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>For the name see Robert, Gladiateurs, 300, 104, no.44; R. Vulpe, Apulum 5 (1965), 51-66, with BullÉp 1968.361; D. French, 'Two gladiatorial texts', no.1. The sense of 'nimble' is particularly appropriate to a retiarius.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, South (east part)</rs> with <xref type="inscription" n="629" href="120621">12.621</xref> and <xref type="inscription" n="631" href="120615">12.615</xref> during excavation</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1976)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcriptions (Reynolds, Roueché)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-
-<p>Recorded by the NYU expedition in 1976 (<rs type="invNo">76.20</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published Erim, <title>Türk Arkeoloji Dergisi</title> 25 (1980), 21, whence <bibl n="seg"><title>SEG</title> 30 <biblScope>1980.1257</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257411">531</biblScope>
-</bibl>; by <bibl n="PPA">Roueché, PPA <biblScope>31</biblScope></bibl></p>
-</div><div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="76_A_14A"><figDesc>Face (1976)</figDesc></figure><figure href="89_B_19"><figDesc>Face (1989)</figDesc></figure><figure href="HS_3514"><figDesc>Face (1990)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>Skirtos.</p>
+         </div>
+         <div type="commentary">
+            <p>For the name see Robert, Gladiateurs, 300, 104, no.44; R. Vulpe, Apulum 5 (1965), 51-66, with BullÉp 1968.361; D. French, 'Two gladiatorial texts', no.1. The sense of 'nimble' is particularly appropriate to a retiarius.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published Erim, <title>Türk Arkeoloji Dergisi</title> 25 (1980), 21, whence <bibl n="seg">
+                  <title>SEG</title> 30 <citedRange>1980.1257</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257411">531</citedRange>
+               </bibl>; by <bibl n="PPA">Roueché, PPA <citedRange>31</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

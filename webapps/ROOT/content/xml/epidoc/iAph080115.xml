@@ -1,90 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080115" n="iAph1922 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Building dedication</rs> by M. Aurelius Menestheus Skopas</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>1991</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1991">Reynolds (<date>1991</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-03-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Three <rs type="criteria">white marble</rs> <rs type="objectType">orthostat</rs>s.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed on a surface roughly smoothed for teh purpose, which is now chipped, particularly at the edges of the stones..</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Early third century; <measure dim="height" type="length" unit="metre">0.055</measure>. Ligatured <foreign lang="grc">ΤΗ</foreign> twice in l. 3, <foreign lang="grc">ΗΝ</foreign>  in l. 4. Erasure in l. 1.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0212" notAfter="0217">Early third century</date> (<rs type="criteria">reign</rs>, <rs type="criteria">titulature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building dedication by M. Aurelius Menestheus Skopas</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080115</idno>
+            <idno type="IAph2007">iAph080115</idno>
+            <idno type="JMR2004">iAph1922</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three <rs type="criteria">white marble</rs>
+                              <objectType>orthostat</objectType>s.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on a surface roughly smoothed for teh purpose, which is now chipped, particularly at the edges of the stones..</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Early third century; <height unit="metre">0.055</height>. Ligatured <foreign xml:lang="grc">ΤΗ</foreign> twice in l. 3, <foreign xml:lang="grc">ΗΝ</foreign>  in l. 4. Erasure in l. 1.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0212" notAfter="0217" evidence="reign titulature">
+Early third century (<rs type="criteria">reign</rs>, <rs type="criteria">titulature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: part of the veneering of the wall surrounding the orchestra after it had been deepened, on the west side, approximately opposite the centre of the stage, and below the tribunal.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-24" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
 <ab>
 
- <lb n="1"/><del><w lemma="θεά"><unclear reason="damage">Θεᾷ</unclear></w><persName type="divine"><name reg="Ἀφροδίτη"><unclear reason="damage"> Ἀφροδείτῃ</unclear></name></persName></del> <w lemma="καί">καὶ</w> <persName type="emperor"><w lemma="αὐτοκράτωρ">Αὐτοκράτορι</w> <name reg="Καῖσαρ">Καίσαρι</name> <name reg="Μᾶρκος">Μάρκῳ</name> <name reg="Αὐρήλιος">Α<supplied reason="lost">ὐρη</supplied>λίῳ</name><lb n="2"/><name reg="Ἀντωνεῖνος">Ἀντωνείνῳ</name> <w lemma="εὐσεβής">εὐσεβεῖ</w> <w lemma="εὐτυχής">εὐτυχε<supplied reason="lost">ῖ</supplied></w> <name reg="Σεβαστός">Σεβαστῷ</name></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="σύμπας">συν <space/><lb n="3"/>παντι</w> <w lemma="οἶκος">οἴκῳ</w> <w lemma="καί">καὶ</w> <w lemma="γένος">γένει</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w> <w lemma="γλυκύς">γλυκυτά<hi rend="ligature">τῃ</hi></w> <w lemma="πατρίς">πατρίδι</w><lb n="4"/><w lemma="ὁ">τ<hi rend="ligature">ὴν</hi></w> <w lemma="μετασκούτλωσις">μετασκούτλωσιν</w> <w lemma="ὁ">τοῦ</w> <w lemma="πεδάλιον">πεδαλίου</w> <w lemma="ὁ">τοῦ</w> <w lemma="θέατρον">θεάτρου</w><lb n="5"/><persName type="aphrodisian"><name reg="Μᾶρκος">Μᾶρκος</name> <name reg="Αὐρήλιος">Αὐρήλιος</name> <name reg="Μενεσθεύς">Μενεσθεὺς</name> <num value="4">δ</num> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀπολλώνιος">Ἀπολλωνίου</name></persName><lb n="6"/><space extent="4"/> <name reg="Σκόπας">Σκόπας</name></persName> <w lemma="καθώς">καθὼς</w> <w lemma="ὑπισχνέομαι">ὑπέσχετο</w> <space extent="6"/></ab>
+ <lb n="1"/><del><w lemma="θεά"><unclear reason="damage">Θεᾷ</unclear></w><persName type="divine"><name nymRef="#Ἀφροδίτη"><unclear reason="damage"> Ἀφροδείτῃ</unclear></name></persName></del> <w lemma="καί">καὶ</w> <persName type="emperor"><w lemma="αὐτοκράτωρ">Αὐτοκράτορι</w> <name nymRef="#Καῖσαρ">Καίσαρι</name> <name nymRef="#Μᾶρκος">Μάρκῳ</name> <name nymRef="#Αὐρήλιος">Α<supplied reason="lost">ὐρη</supplied>λίῳ</name><lb n="2"/><name nymRef="#Ἀντωνεῖνος">Ἀντωνείνῳ</name> <w lemma="εὐσεβής">εὐσεβεῖ</w> <w lemma="εὐτυχής">εὐτυχε<supplied reason="lost">ῖ</supplied></w> <name nymRef="#Σεβαστός">Σεβαστῷ</name></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="σύμπας">συν <space/><lb n="3"/>παντι</w> <w lemma="οἶκος">οἴκῳ</w> <w lemma="καί">καὶ</w> <w lemma="γένος">γένει</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w> <w lemma="γλυκύς">γλυκυτά<hi rend="ligature">τῃ</hi></w> <w lemma="πατρίς">πατρίδι</w><lb n="4"/><w lemma="ὁ">τ<hi rend="ligature">ὴν</hi></w> <w lemma="μετασκούτλωσις">μετασκούτλωσιν</w> <w lemma="ὁ">τοῦ</w> <w lemma="πεδάλιον">πεδαλίου</w> <w lemma="ὁ">τοῦ</w> <w lemma="θέατρον">θεάτρου</w><lb n="5"/><persName type="attested"><name nymRef="#Μᾶρκος">Μᾶρκος</name> <name nymRef="#Αὐρήλιος">Αὐρήλιος</name> <name nymRef="#Μενεσθεύς">Μενεσθεὺς</name> <num value="4">δ</num> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀπολλώνιος">Ἀπολλωνίου</name></persName><lb n="6"/><space extent="4"/> <name nymRef="#Σκόπας">Σκόπας</name></persName> <w lemma="καθώς">καθὼς</w> <w lemma="ὑπισχνέομαι">ὑπέσχετο</w> <space extent="6"/></ab>
 </div>
-
-<div type="translation">
-<head>Translation</head>
-<p>To the goddess Aphrodite and to Imperator Caesar Marcus Aurelius Antoninus Pius Felix Augustus and his whole household and family, also to his very dear country; Marcus Aurelius Menestheus Skopas (son of Menestheus, grandson of Menestheus, great grandson of Menestheus) the son of Apollonios (gave and dedicated) as he promised.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The titles Pius and Felix were not helfd by Marcus Aurelius, and show that the emperor here is Caracalla (A.D. 211-217); the date is surely latr than the murder of Geta early in 212, and almost certainly than the Antonine edict, giving Roman citizenship widely throughout the Empire, which is usually dated late in the same year.</p><p>For Skopas himself there is at present no other evidence, but a member of his family, also a public donor but apparently without Roman citizenship, figures on Aphrodian coins along with honours to Julia Domna; see <bibl type="primary" n="macdonald1976"><author>MacDonald</author>, <title level="m">Greek and Roman Coins from Aphrodisias</title>,  no. 204</bibl>; cf also <xref type="inscription" n="678" href="010177">1.177</xref> (= MAMA 513)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: part of the veneering of the wall surrounding the orchestra after it had been deepened, on the west side, approximately opposite the centre of the stage, and below the tribunal.</rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Findspot</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition (<rs type="siteNo">Theatre 23</rs>).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl type="primary" n="jmr1991"><author>Reynolds</author>, Aph.Papers 2, 15-28, no. <biblScope>C</biblScope></bibl>, whence <bibl n="seg"><title>SEG</title> <biblScope>1991.912</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p> ...</p>
-</div></body></text>
+         <div type="translation">
+            <p>To the goddess Aphrodite and to Imperator Caesar Marcus Aurelius Antoninus Pius Felix Augustus and his whole household and family, also to his very dear country; Marcus Aurelius Menestheus Skopas (son of Menestheus, grandson of Menestheus, great grandson of Menestheus) the son of Apollonios (gave and dedicated) as he promised.</p>
+         </div>
+         <div type="commentary">
+            <p>The titles Pius and Felix were not helfd by Marcus Aurelius, and show that the emperor here is Caracalla (A.D. 211-217); the date is surely latr than the murder of Geta early in 212, and almost certainly than the Antonine edict, giving Roman citizenship widely throughout the Empire, which is usually dated late in the same year.</p>
+            <p>For Skopas himself there is at present no other evidence, but a member of his family, also a public donor but apparently without Roman citizenship, figures on Aphrodian coins along with honours to Julia Domna; see <bibl type="primary" n="macdonald1976">
+                  <author>MacDonald</author>, <title level="m">Greek and Roman Coins from Aphrodisias</title>,  no. 204</bibl>; cf also <ref type="inscription" n="678" target="010177.xml"/> (= MAMA 513)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="primary" n="jmr1991">
+                  <author>Reynolds</author>, Aph.Papers 2, 15-28, no. <citedRange>C</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title>SEG</title>
+                  <citedRange>1991.912</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

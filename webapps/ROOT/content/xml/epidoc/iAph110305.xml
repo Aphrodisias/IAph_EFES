@@ -1,165 +1,275 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110305" n="iAph0652 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">List</rs> of prizes for contests</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-27</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Created edition and hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" cert="low">White marble</rs> <rs type="objectType">block</rs> in six fragments, two joining (C and F).</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description </p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p> No description</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date>
-(<rs type="criteria">content</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="I">
- <div type="textpart_section"><ab>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>List of prizes for contests</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110305</idno>
+            <idno type="IAph2007">iAph110305</idno>
+            <idno type="JMR2004">iAph0652</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material cert="low">White marble</material>
+                              <objectType>block</objectType> in six fragments, two joining (C and F).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote> No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="content">
+Second to third centuries A.D.
+(<rs type="criteria">content</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, South-east</rs>: 'in the southern part of the city, not far from the East Gate' (Sherard)</provenance>
+                  <provenance type="observed"> </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Notebooks, publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-27" who="Charlotte-Tupman">Created edition and hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Wood_14_46.jpg">
+            <desc>Wood notebook 14, page 46</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="I" type="textpart" subtype="section">
+ <div type="textpart" subtype="section"><ab>
   <lb n="0"/>
-  <w lemma="ἀγών"><supplied reason="lost">ἀγῶνος</supplied></w> <gap dim="internal" extent="20" precision="circa" reason="lost" unit="character"/> <w lemma="μουσικός"><supplied reason="lost">μου</supplied><lb n="1" type="worddiv"/>  σικοῦ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="ὁ">τῆς</w> <w lemma="σύνοδος">συνόδου</w> <w lemma="θέμα">θέ<supplied reason="lost">μ</supplied>α<supplied reason="lost">τα</supplied></w> <w lemma="ὁ"><supplied reason="lost">τὰ</supplied></w><lb n="2"/><w lemma="ὑπογράφω">ὑπογεγραμμένα</w></ab></div><div type="textpart_section"><div type="textpart_column" n="i"><ab><lb n="3"/><w lemma="σαλπικτής">σαλπικτῇ</w>                <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="150">ρν</num><lb n="4"/>  <w lemma="κῆρυξ">κήρυκι</w>                <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="150">ρν</num><lb n="5"/><w lemma="ἐνκωμιογράφης">ἐνκωμιογράφῳ</w>            <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="200">σ</num><lb n="6"/>  <w lemma="ποιητής">ποιητῇ</w>                <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="200">σ</num><lb n="7"/><w lemma="παῖς">παιδὶ</w> <w lemma="κιθαρῳδός">κιθαρῳδῷ</w>          <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="150">ρν</num><lb n="8"/><w lemma="πυθικός"><unclear reason="damage">π</unclear>υθικῷ</w> <w lemma="αὐλητής">αὐλητῇ</w>           <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="200">σ</num><lb n="9"/><w lemma="κωμῳδός">κωμῳδῷ</w>                  <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="400">υ</num><lb n="10"/><w>τ<supplied reason="lost">ρα</supplied>γ̣ῳδῷ</w>               <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="11"/><w lemma="κύκλιος">κυκλίῳ</w> <w lemma="αὐλητής">αὐλητῇ</w>           <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="350">τν</num><lb n="11a"/><gap reason="lost" unit="line" extent="unknown" dim="bottom"/></ab></div><div type="textpart_column" n="ii"><ab><lb n="3"/><w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="κιθαρῳδός">κιθαρῳδῷ</w>          <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="4"/>  <w lemma="διά">διὰ</w> <w lemma="πᾶς">πάντων</w>            <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="200">σ</num><lb n="5"/><w lemma="εἰς">εἰς</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὸν</w> <w lemma="γυμνικός">γυμνικὸν</w>     <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="6"/><w lemma="ὁ">τῶν</w> <w lemma="πολίτης">πολειτῶν</w> <w lemma="παῖς">παί<lb n="7" type="worddiv"/>  δων</w> <w lemma="ἀγών">ἀγῶνα</w><lb n="8"/><w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="ἀνήρ">ἀνδρὶ</w>       <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <num value="1000">α</num><lb n="9"/><w lemma="παλαιστής">παλαιστῇ</w> <w lemma="ἀνήρ">ἀνδρὶ</w>          <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <num value="1200">ασ</num><lb n="10"/><w lemma="παγκρατιαστής">πανκρατιαστῇ</w> <w lemma="ἀνήρ">ἀνδρὶ</w>      <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <num value="1200">ασ</num><lb n="11"/><w lemma="πύκτης">πύκτῃ</w> <w lemma="ἀνήρ">ἀνδρὶ</w>             <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <num value="1200">ασ</num></ab></div></div></div><div type="textpart_section" n="II"><ab><lb n="0"/><gap dim="top" extent="unknown" reason="lost" unit="line"/><lb n="1"/><w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="κιθαρῳδός">κιθαρῳδῷ</w>          <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="3250">γ<unclear reason="damage">σ</unclear>ν</num><lb n="2"/>  <w lemma="δευτερεῖος">δευτερείου</w>            <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000">α</num><lb n="3"/><w lemma="ποιητής">ποιητῇ</w> <w lemma="Ῥωμαικός">Ῥωμαικῷ</w>         <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied>  <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="4"/>  <w lemma="ποιητής">ποιητῇ</w>                <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied>  <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="5"/><w lemma="διά">διὰ</w> <w lemma="πᾶς">πάντων</w>              <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000">α</num><lb n="6"/><w lemma="γραμματεύς">γραμματεῖ</w>               <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="550">φν</num><lb n="7"/><w lemma="πανηγυριάρχης">πανηγυριάρχῃ</w>            <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied>  <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="8"/><w lemma="βῆλον">βήλων</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w><lb n="9"/><w lemma="διά">διὰ</w> <w lemma="θέατρον">θεάτρου</w>             <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000">α</num><lb n="9a"/><gap dim="bottom" extent="unknown" reason="lost" unit="line"/></ab></div><div type="textpart_section" n="III">
-<div type="textpart_section"><ab><lb n="0"/><gap dim="top" extent="unknown" reason="lost" unit="line"/>
+  <w lemma="ἀγών"><supplied reason="lost">ἀγῶνος</supplied></w> <gap reason="lost" unit="character" precision="low" quantity="20"/> <w lemma="μουσικός"><supplied reason="lost">μου</supplied><lb n="1" break="no"/>  σικοῦ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="ὁ">τῆς</w> <w lemma="σύνοδος">συνόδου</w> <w lemma="θέμα">θέ<supplied reason="lost">μ</supplied>α<supplied reason="lost">τα</supplied></w> <w lemma="ὁ"><supplied reason="lost">τὰ</supplied></w><lb n="2"/><w lemma="ὑπογράφω">ὑπογεγραμμένα</w></ab></div><div type="textpart" subtype="section"><div n="i" type="textpart" subtype="column"><ab><lb n="3"/><w lemma="σαλπικτής">σαλπικτῇ</w>                <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="150">ρν</num><lb n="4"/>  <w lemma="κῆρυξ">κήρυκι</w>                <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="150">ρν</num><lb n="5"/><w lemma="ἐνκωμιογράφης">ἐνκωμιογράφῳ</w>            <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="200">σ</num><lb n="6"/>  <w lemma="ποιητής">ποιητῇ</w>                <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="200">σ</num><lb n="7"/><w lemma="παῖς">παιδὶ</w> <w lemma="κιθαρῳδός">κιθαρῳδῷ</w>          <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="150">ρν</num><lb n="8"/><w lemma="πυθικός"><unclear reason="damage">π</unclear>υθικῷ</w> <w lemma="αὐλητής">αὐλητῇ</w>           <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="200">σ</num><lb n="9"/><w lemma="κωμῳδός">κωμῳδῷ</w>                  <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="400">υ</num><lb n="10"/><w>τ<supplied reason="lost">ρα</supplied>γ̣ῳδῷ</w>               <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="11"/><w lemma="κύκλιος">κυκλίῳ</w> <w lemma="αὐλητής">αὐλητῇ</w>           <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="350">τν</num><lb n="11a"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="3"/><w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="κιθαρῳδός">κιθαρῳδῷ</w>          <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="4"/>  <w lemma="διά">διὰ</w> <w lemma="πᾶς">πάντων</w>            <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="200">σ</num><lb n="5"/><w lemma="εἰς">εἰς</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὸν</w> <w lemma="γυμνικός">γυμνικὸν</w>     <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="6"/><w lemma="ὁ">τῶν</w> <w lemma="πολίτης">πολειτῶν</w> <w lemma="παῖς">παί<lb n="7" break="no"/>  δων</w> <w lemma="ἀγών">ἀγῶνα</w><lb n="8"/><w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="ἀνήρ">ἀνδρὶ</w>       <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <num value="1000">α</num><lb n="9"/><w lemma="παλαιστής">παλαιστῇ</w> <w lemma="ἀνήρ">ἀνδρὶ</w>          <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <num value="1200">ασ</num><lb n="10"/><w lemma="παγκρατιαστής">πανκρατιαστῇ</w> <w lemma="ἀνήρ">ἀνδρὶ</w>      <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <num value="1200">ασ</num><lb n="11"/><w lemma="πύκτης">πύκτῃ</w> <w lemma="ἀνήρ">ἀνδρὶ</w>             <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <num value="1200">ασ</num></ab></div></div></div><div n="II" type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/><lb n="1"/><w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="κιθαρῳδός">κιθαρῳδῷ</w>          <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="3250">γ<unclear reason="damage">σ</unclear>ν</num><lb n="2"/>  <w lemma="δευτερεῖος">δευτερείου</w>            <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000">α</num><lb n="3"/><w lemma="ποιητής">ποιητῇ</w> <w lemma="Ῥωμαικός">Ῥωμαικῷ</w>         <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied>  <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="4"/>  <w lemma="ποιητής">ποιητῇ</w>                <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied>  <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="5"/><w lemma="διά">διὰ</w> <w lemma="πᾶς">πάντων</w>              <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000">α</num><lb n="6"/><w lemma="γραμματεύς">γραμματεῖ</w>               <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="550">φν</num><lb n="7"/><w lemma="πανηγυριάρχης">πανηγυριάρχῃ</w>            <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied>  <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="8"/><w lemma="βῆλον">βήλων</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w><lb n="9"/><w lemma="διά">διὰ</w> <w lemma="θέατρον">θεάτρου</w>             <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000">α</num><lb n="9a"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div n="III" type="textpart" subtype="section">
+<div type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
 </ab></div>
-<div type="textpart_section"><div type="textpart_column" n="i">
+<div type="textpart" subtype="section"><div n="i" type="textpart" subtype="column">
   <ab>
    <lb n="1"/>
-   <w lemma="σαλπικτής">σαλπικτῇ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="2"/><w lemma="κῆρυξ">κήρυκι</w>̣                  <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="3"/><w>πυθ̣ικῷ</w> <w lemma="αὐλητής">αὐλητῇ</w>           <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1400">αυ</num><lb n="4"/>  <w lemma="δευτερεῖος">δευτερείου</w>            <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="400">υ</num><lb n="5"/><w lemma="κύκλιος">κυκλίῳ</w> <w lemma="αὐλητής">αὐλητῇ</w>           <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1500"><supplied reason="lost">α</supplied><unclear reason="damage">φ</unclear></num>
-   <lb n="6"/>  <w lemma="δευτερεῖος">δευτερείου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="7"/><w lemma="κωμῳδός">κωμῳδῷ</w>                  <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1600">αχ</num><lb n="8"/>  <w lemma="δευτερεῖος">δευτερείου</w>            <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="9"/>  <w lemma="τριτεῖον">τριτείου</w>              <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="300">τ</num><lb n="10"/><w lemma="τραγῳδός">τραγῳδῷ</w>                 <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="2700">βψ</num><lb n="11"/><w lemma="δευτερεῖος">δευτερείου</w>            <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="800">ω</num><lb n="12"/> <w lemma="τριτεῖον">τριτείου</w>              <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="600">χ</num><lb n="13"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="14"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="15"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="16"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="17"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="18"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="19"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="20"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="21"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="22"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="23"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="24"/><gap unit="line" reason="lost" dim="left" extent="1"/></ab></div><div type="textpart_column" n="ii"><ab><lb n="1"/>                <w lemma="ἀνήρ">ἀνδρὶ</w>  <lb n="2"/><w lemma="δολιχαδρόμος">δολιχαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="2000">β</num><lb n="3"/>           <w lemma="ἀγένειος">ἀγενείοις</w> <lb n="4"/>              <w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="2000">β</num><lb n="5"/>           <w lemma="πένταθλον">πεντάθλῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000"><supplied reason="lost">α</supplied></num><lb n="6"/>              <w lemma="παλαιστής">παλαιστῇ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="3800">γω</num><lb n="7"/><w lemma="πύκτης">πύκτῃ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="3800"><supplied reason="lost">γω</supplied></num><lb n="8"/>              <w lemma="παγκρατιαστής">πανκρατιασ<unclear reason="damage">τ</unclear><supplied reason="lost">ῇ</supplied></w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="5000">ε</num><lb n="9"/>  <w lemma="ἀνήρ">ἀνδρὶ</w><lb n="10"/>                 <w lemma="πένταθλον">πεντάθλῳ</w>                <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1340">ατμ</num><lb n="11"/>             <w lemma="παῖς">παιδὶ</w><lb n="12"/>               <w lemma="σταδιαδρόμος"><unclear reason="damage">σ</unclear>ταδιαδρ<unclear reason="damage">ό</unclear>μῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1400">αυ</num><lb n="13"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="14"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="15"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="16"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="17"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="18"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="19"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="20"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="21"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="22"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="23"/><gap unit="line" reason="lost" dim="left" extent="1"/><lb n="24"/><gap unit="line" reason="lost" dim="left" extent="1"/></ab></div><div type="textpart_column" n="iii"><ab><lb n="1"/>                <w lemma="παῖς">παισὶν</w>  <lb n="2"/><w lemma="παλαιστής">παλαιστ<supplied reason="lost">ῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="3"/>           <w lemma="πύκτης">πύκτῃ</w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="4"/>              <w lemma="παγκρατιαστής">παγκρα<supplied reason="lost">τιαστῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied>  <lb n="5"/>           <w lemma="ἀνήρ">ἀνδράσιν</w> <lb n="6"/>              <w lemma="παλαιστής">παλαισ<supplied reason="lost">τῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="7"/><w lemma="πύκτης">πύκτῃ</w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="8"/>              <w lemma="παγκρατιαστής">πανκρα<supplied reason="lost">τιαστῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="9"/>  <w lemma="ὁπλειτοδρόμος">ὁπλειτο<supplied reason="lost">δρόμῳ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="10"/>                 <w lemma="κέλης">κέλητι </w>                <w lemma="τέλειος"><supplied reason="lost">τελείῳ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="11"/>             <w lemma="κέλης">κέλητι</w> <w lemma="πωλικός">πωλικῷ</w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="12"/>               <w lemma="συνωρίς">συνωρίδ<supplied reason="lost">ι</supplied></w> <w lemma="τέλειος"><supplied reason="lost">τελείᾳ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="13"/> <w lemma="συνωρίς">συνωρίδ<supplied reason="lost">ι</supplied></w> <w lemma="πωλικός"><supplied reason="lost">πωλικῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied> <supplied reason="lost"><num><gap extent="1" extentmax="2" reason="lost" unit="character"/></num></supplied><lb n="14"/> <w lemma="δευτερεῖος">δευτερείου</w> <w lemma="πωλικός">πωλικοῦ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="350">τν</num><lb n="15"/> <w lemma="ἅρμα">ἅρματι</w> <w lemma="τέλειος">τελείῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1500">αφ</num><lb n="16"/> <w lemma="ἅρμα">ἅρματι</w> <w lemma="πωλικός">πωλικῷ</w>  <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000">α</num><lb n="17"/> <w lemma="ἅρμα">ἅρματος</w> <w lemma="ὁ">τὸ</w> <num value="2">β</num> <w lemma="τέλειος">τελείου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="18"/> <w lemma="ξυστάρχης">ξυστάρχῃ</w> <w lemma="εἰς"><supplied reason="lost">ε</supplied>ἰς</w> <w lemma="ἀναπλήρωσις">ἀναπ<supplied reason="lost">λή</supplied><lb n="19" type="worddiv"/><supplied reason="lost">ρωσιν</supplied></w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="745">ψμε</num><lb n="20"/><w lemma="ἱμαντοπάροχος">εἱμαντοπαρόχῳ</w>           <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="301">τα</num><lb n="21"/> <w lemma="ἀφετήριος">ἀφετηρίας</w> <w lemma="μάγγανον">μαγγάνων</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="300">τ</num>
+   <w lemma="σαλπικτής">σαλπικτῇ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="2"/><w lemma="κῆρυξ">κήρυκι</w>̣                  <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="3"/><w>πυθ̣ικῷ</w> <w lemma="αὐλητής">αὐλητῇ</w>           <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1400">αυ</num><lb n="4"/>  <w lemma="δευτερεῖος">δευτερείου</w>            <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="400">υ</num><lb n="5"/><w lemma="κύκλιος">κυκλίῳ</w> <w lemma="αὐλητής">αὐλητῇ</w>           <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1500"><supplied reason="lost">α</supplied><unclear reason="damage">φ</unclear></num>
+   <lb n="6"/>  <w lemma="δευτερεῖος">δευτερείου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="7"/><w lemma="κωμῳδός">κωμῳδῷ</w>                  <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1600">αχ</num><lb n="8"/>  <w lemma="δευτερεῖος">δευτερείου</w>            <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="9"/>  <w lemma="τριτεῖον">τριτείου</w>              <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="300">τ</num><lb n="10"/><w lemma="τραγῳδός">τραγῳδῷ</w>                 <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="2700">βψ</num><lb n="11"/><w lemma="δευτερεῖος">δευτερείου</w>            <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="800">ω</num><lb n="12"/> <w lemma="τριτεῖον">τριτείου</w>              <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="600">χ</num><lb n="13"/><gap unit="line" reason="lost" quantity="1"/><lb n="14"/><gap unit="line" reason="lost" quantity="1"/><lb n="15"/><gap unit="line" reason="lost" quantity="1"/><lb n="16"/><gap unit="line" reason="lost" quantity="1"/><lb n="17"/><gap unit="line" reason="lost" quantity="1"/><lb n="18"/><gap unit="line" reason="lost" quantity="1"/><lb n="19"/><gap unit="line" reason="lost" quantity="1"/><lb n="20"/><gap unit="line" reason="lost" quantity="1"/><lb n="21"/><gap unit="line" reason="lost" quantity="1"/><lb n="22"/><gap unit="line" reason="lost" quantity="1"/><lb n="23"/><gap unit="line" reason="lost" quantity="1"/><lb n="24"/><gap unit="line" reason="lost" quantity="1"/></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="1"/>                <w lemma="ἀνήρ">ἀνδρὶ</w>  <lb n="2"/><w lemma="δολιχαδρόμος">δολιχαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="2000">β</num><lb n="3"/>           <w lemma="ἀγένειος">ἀγενείοις</w> <lb n="4"/>              <w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="2000">β</num><lb n="5"/>           <w lemma="πένταθλον">πεντάθλῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000"><supplied reason="lost">α</supplied></num><lb n="6"/>              <w lemma="παλαιστής">παλαιστῇ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="3800">γω</num><lb n="7"/><w lemma="πύκτης">πύκτῃ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="3800"><supplied reason="lost">γω</supplied></num><lb n="8"/>              <w lemma="παγκρατιαστής">πανκρατιασ<unclear reason="damage">τ</unclear><supplied reason="lost">ῇ</supplied></w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="5000">ε</num><lb n="9"/>  <w lemma="ἀνήρ">ἀνδρὶ</w><lb n="10"/>                 <w lemma="πένταθλον">πεντάθλῳ</w>                <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1340">ατμ</num><lb n="11"/>             <w lemma="παῖς">παιδὶ</w><lb n="12"/>               <w lemma="σταδιαδρόμος"><unclear reason="damage">σ</unclear>ταδιαδρ<unclear reason="damage">ό</unclear>μῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1400">αυ</num><lb n="13"/><gap unit="line" reason="lost" quantity="1"/><lb n="14"/><gap unit="line" reason="lost" quantity="1"/><lb n="15"/><gap unit="line" reason="lost" quantity="1"/><lb n="16"/><gap unit="line" reason="lost" quantity="1"/><lb n="17"/><gap unit="line" reason="lost" quantity="1"/><lb n="18"/><gap unit="line" reason="lost" quantity="1"/><lb n="19"/><gap unit="line" reason="lost" quantity="1"/><lb n="20"/><gap unit="line" reason="lost" quantity="1"/><lb n="21"/><gap unit="line" reason="lost" quantity="1"/><lb n="22"/><gap unit="line" reason="lost" quantity="1"/><lb n="23"/><gap unit="line" reason="lost" quantity="1"/><lb n="24"/><gap unit="line" reason="lost" quantity="1"/></ab></div><div n="iii" type="textpart" subtype="column"><ab><lb n="1"/>                <w lemma="παῖς">παισὶν</w>  <lb n="2"/><w lemma="παλαιστής">παλαιστ<supplied reason="lost">ῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="3"/>           <w lemma="πύκτης">πύκτῃ</w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="4"/>              <w lemma="παγκρατιαστής">παγκρα<supplied reason="lost">τιαστῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied>  <lb n="5"/>           <w lemma="ἀνήρ">ἀνδράσιν</w> <lb n="6"/>              <w lemma="παλαιστής">παλαισ<supplied reason="lost">τῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="7"/><w lemma="πύκτης">πύκτῃ</w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="8"/>              <w lemma="παγκρατιαστής">πανκρα<supplied reason="lost">τιαστῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="9"/>  <w lemma="ὁπλειτοδρόμος">ὁπλειτο<supplied reason="lost">δρόμῳ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="10"/>                 <w lemma="κέλης">κέλητι </w>                <w lemma="τέλειος"><supplied reason="lost">τελείῳ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="11"/>             <w lemma="κέλης">κέλητι</w> <w lemma="πωλικός">πωλικῷ</w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="12"/>               <w lemma="συνωρίς">συνωρίδ<supplied reason="lost">ι</supplied></w> <w lemma="τέλειος"><supplied reason="lost">τελείᾳ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="13"/> <w lemma="συνωρίς">συνωρίδ<supplied reason="lost">ι</supplied></w> <w lemma="πωλικός"><supplied reason="lost">πωλικῇ</supplied></w> <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied> <supplied reason="lost"><num><gap reason="lost" unit="character" atLeast="1" atMost="2"/></num></supplied><lb n="14"/> <w lemma="δευτερεῖος">δευτερείου</w> <w lemma="πωλικός">πωλικοῦ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="350">τν</num><lb n="15"/> <w lemma="ἅρμα">ἅρματι</w> <w lemma="τέλειος">τελείῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1500">αφ</num><lb n="16"/> <w lemma="ἅρμα">ἅρματι</w> <w lemma="πωλικός">πωλικῷ</w>  <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000">α</num><lb n="17"/> <w lemma="ἅρμα">ἅρματος</w> <w lemma="ὁ">τὸ</w> <num value="2">β</num> <w lemma="τέλειος">τελείου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="18"/> <w lemma="ξυστάρχης">ξυστάρχῃ</w> <w lemma="εἰς"><supplied reason="lost">ε</supplied>ἰς</w> <w lemma="ἀναπλήρωσις">ἀναπ<supplied reason="lost">λή</supplied><lb n="19" break="no"/><supplied reason="lost">ρωσιν</supplied></w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="745">ψμε</num><lb n="20"/><w lemma="ἱμαντοπάροχος">εἱμαντοπαρόχῳ</w>           <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="301">τα</num><lb n="21"/> <w lemma="ἀφετήριος">ἀφετηρίας</w> <w lemma="μάγγανον">μαγγάνων</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="300">τ</num>
  <lb n="22"/>
- <w lemma="σκάμμα">σκάμματος</w> <w lemma="καί">καὶ</w> <w lemma="πήλωμα"><unclear reason="damage">π</unclear>ηλ<unclear reason="damage">ώ</unclear>ματος</w>  <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="400">υ</num><lb n="23"/> <w lemma="εἰς">εἰς</w> <w lemma="ἔλαιον">ἔλαιον</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="2000">β</num><lb n="24"/><w lemma="ἀγαλματοποιός">ἀγαλματοποιοῖς</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1500">αφ</num></ab></div></div></div>
- <div type="textpart_section" n="IV"><div type="textpart_section"><ab><lb n="0"/><gap dim="top" extent="unknown" reason="lost" unit="line"/></ab></div><div type="textpart_section"><div type="textpart_column" n="i"><ab><lb n="1"/>                <w lemma="χοροκιθαρεύς">χοροκιθαρεῖ</w>  <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="2"/><w lemma="χοραύλης">χοραύλῃ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="750">ψν</num><lb n="3"/>           <w lemma="κιθαρῳδός">κιθαρῳδῷ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1500">αφ</num><lb n="4"/>              <w lemma="δευτερεῖος">δευτερείου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="400">υ</num><lb n="5"/>           <w lemma="πυρρίχη">πυρρίχῃ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="6"/>              <w lemma="Σάτυρος">σατύρῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="150">ρν</num><lb n="7"/><w lemma="διά">διὰ</w> <w lemma="πᾶς">πάντων</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="8"/>              <w lemma="θέμα">θέματα</w> <w lemma="γυμνικός">γυμνικά</w> <lb n="8a"/>  <space unit="line" extent="1"/><lb n="9"/>                 <w lemma="παῖς">παιδὶ</w>                <w lemma="δολιχαδρόμος">δολιχαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ<gap extent="1" dim="internal" reason="lost" unit="character"/></num><lb n="10"/>             <w lemma="παῖς">παιδὶ</w> <w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="525">φκε</num><lb n="11"/>               <w lemma="παῖς">παιδὶ</w> <w lemma="διαυλοδρόμος"><supplied reason="lost">δι</supplied>αυλ<supplied reason="lost">ο</supplied>δρόμῳ</w>  <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="12"/><w lemma="παῖς">παιδὶ</w> <w lemma="πένταθλον">πεντάθλῳ</w>          <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="13"/> <w lemma="παῖς">παιδὶ</w> <w lemma="παλαιστής">παλαιστῇ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num></ab></div><div type="textpart_column" n="ii"><ab><lb n="1"/>                <w lemma="παῖς">παιδὶ</w>  <w lemma="πύκτης">πύκτῃ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000">α</num><lb n="2"/><w lemma="παῖς">παιδὶ</w> <w lemma="παγκρατιαστής"> πανκρατιαστῇ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1650">αχν</num><lb n="3"/>           <w lemma="ἀγένειος">ἀγενείῳ</w>  <w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="750">ψν</num><lb n="4"/>              <w lemma="ἀγένειος">ἀγενείῳ</w> <w lemma="πένταθλον">πεντάθλῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="385">τπε</num><lb n="5"/>           <w lemma="ἀγένειος">ἀγενείῳ</w> <w lemma="παλαιστής">παλαιστῇ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000">α</num><lb n="6"/>                          <w lemma="ἀγένειος">ἀγενείῳ</w> <w lemma="πύκτης">πύκτῃ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1500">αφ</num><lb n="7"/>     <w lemma="ἀγένειος">ἀγενείῳ</w> <w lemma="παγκρατιαστής">πανκρατιαστῇ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1500">αφ</num><lb n="8"/>                      <w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="δολιχαδρόμος">δολιχαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="750">ψν</num><lb n="8a"/>   <space unit="line" extent="1"/><lb n="9"/>                 <w lemma="ἀνήρ">ἀνδρὶ</w>                <w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1250">ασν</num><lb n="10"/>                     <w lemma="ἀνήρ">ἀνδρὶ</w> <w>διαυλα̣δρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000">α</num><lb n="11"/>                          <w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="πένταθλον">πεντάθλῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="12"/> <w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="παλαιστής">παλαιστῇ</w>          <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="2000">β</num><lb n="13"/><w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="πύκτης">πύκτῃ</w>   <g type="leaf"/> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="2000">β</num></ab></div><div type="textpart_column" n="iii"><ab><lb n="1"/>                <w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="παγκρατιαστής">πανκρατιαστῇ</w>      <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="3000">γ</num><lb n="2"/>            <w lemma="ὁπλειτοδρόμος">ὁπλειτοδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="3"/>                 <w lemma="ἀποβάτης">ἀποβάτῃ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="250">σν</num><lb n="4"/>              <w lemma="ἱππικός">ἱππικῷ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="750">ψν</num><lb n="5"/>           <w lemma="σκάμμα">σκαμματος</w> <w lemma="καί">καὶ</w> <w lemma="μάγγανον">μαγγάνων</w><lb n="6"/>              <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="στάδιον">στάδιον</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="500">φ</num><lb n="7"/><w lemma="ἱμάς"><unclear reason="damage">ἱ</unclear>μ<unclear reason="damage">ά</unclear>ντων</w> <w lemma="μισθός">μισθός</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="250">σν</num><lb n="8"/>              <w>ξ̣υστάρχῃ</w> <w lemma="εἰς">εἰς</w> <w lemma="ἀναπλήρωσις">ἀναπλή<lb n="9" type="worddiv"/>   ρωσιν</w>                 <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="674">χοδ</num><lb n="10"/>                  <w lemma="ἀνδρίας">ἀνδριάντος</w> <g type="scroll"/>                <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000">α</num><lb n="10α"/>             <space unit="line" extent="1"/>
+ <w lemma="σκάμμα">σκάμματος</w> <w lemma="καί">καὶ</w> <w lemma="πήλωμα"><unclear reason="damage">π</unclear>ηλ<unclear reason="damage">ώ</unclear>ματος</w>  <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="400">υ</num><lb n="23"/> <w lemma="εἰς">εἰς</w> <w lemma="ἔλαιον">ἔλαιον</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="2000">β</num><lb n="24"/><w lemma="ἀγαλματοποιός">ἀγαλματοποιοῖς</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1500">αφ</num></ab></div></div></div>
+ <div n="IV" type="textpart" subtype="section"><div type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div type="textpart" subtype="section"><div n="i" type="textpart" subtype="column"><ab><lb n="1"/>                <w lemma="χοροκιθαρεύς">χοροκιθαρεῖ</w>  <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="2"/><w lemma="χοραύλης">χοραύλῃ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="750">ψν</num><lb n="3"/>           <w lemma="κιθαρῳδός">κιθαρῳδῷ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1500">αφ</num><lb n="4"/>              <w lemma="δευτερεῖος">δευτερείου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="400">υ</num><lb n="5"/>           <w lemma="πυρρίχη">πυρρίχῃ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="6"/>              <w lemma="Σάτυρος">σατύρῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="150">ρν</num><lb n="7"/><w lemma="διά">διὰ</w> <w lemma="πᾶς">πάντων</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="8"/>              <w lemma="θέμα">θέματα</w> <w lemma="γυμνικός">γυμνικά</w> <lb n="8a"/>  <space unit="line" extent="1"/><lb n="9"/>                 <w lemma="παῖς">παιδὶ</w>                <w lemma="δολιχαδρόμος">δολιχαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ<gap reason="lost" unit="character" quantity="1"/></num><lb n="10"/>             <w lemma="παῖς">παιδὶ</w> <w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="525">φκε</num><lb n="11"/>               <w lemma="παῖς">παιδὶ</w> <w lemma="διαυλοδρόμος"><supplied reason="lost">δι</supplied>αυλ<supplied reason="lost">ο</supplied>δρόμῳ</w>  <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="12"/><w lemma="παῖς">παιδὶ</w> <w lemma="πένταθλον">πεντάθλῳ</w>          <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="13"/> <w lemma="παῖς">παιδὶ</w> <w lemma="παλαιστής">παλαιστῇ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="1"/>                <w lemma="παῖς">παιδὶ</w>  <w lemma="πύκτης">πύκτῃ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000">α</num><lb n="2"/><w lemma="παῖς">παιδὶ</w> <w lemma="παγκρατιαστής"> πανκρατιαστῇ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1650">αχν</num><lb n="3"/>           <w lemma="ἀγένειος">ἀγενείῳ</w>  <w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="750">ψν</num><lb n="4"/>              <w lemma="ἀγένειος">ἀγενείῳ</w> <w lemma="πένταθλον">πεντάθλῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="385">τπε</num><lb n="5"/>           <w lemma="ἀγένειος">ἀγενείῳ</w> <w lemma="παλαιστής">παλαιστῇ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000">α</num><lb n="6"/>                          <w lemma="ἀγένειος">ἀγενείῳ</w> <w lemma="πύκτης">πύκτῃ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1500">αφ</num><lb n="7"/>     <w lemma="ἀγένειος">ἀγενείῳ</w> <w lemma="παγκρατιαστής">πανκρατιαστῇ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1500">αφ</num><lb n="8"/>                      <w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="δολιχαδρόμος">δολιχαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="750">ψν</num><lb n="8a"/>   <space unit="line" extent="1"/><lb n="9"/>                 <w lemma="ἀνήρ">ἀνδρὶ</w>                <w lemma="σταδιαδρόμος">σταδιαδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1250">ασν</num><lb n="10"/>                     <w lemma="ἀνήρ">ἀνδρὶ</w> <w>διαυλα̣δρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000">α</num><lb n="11"/>                          <w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="πένταθλον">πεντάθλῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="12"/> <w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="παλαιστής">παλαιστῇ</w>          <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="2000">β</num><lb n="13"/><w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="πύκτης">πύκτῃ</w>   <g ref="#leaf"/> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="2000">β</num></ab></div><div n="iii" type="textpart" subtype="column"><ab><lb n="1"/>                <w lemma="ἀνήρ">ἀνδρὶ</w> <w lemma="παγκρατιαστής">πανκρατιαστῇ</w>      <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="3000">γ</num><lb n="2"/>            <w lemma="ὁπλειτοδρόμος">ὁπλειτοδρόμῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="3"/>                 <w lemma="ἀποβάτης">ἀποβάτῃ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="250">σν</num><lb n="4"/>              <w lemma="ἱππικός">ἱππικῷ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="750">ψν</num><lb n="5"/>           <w lemma="σκάμμα">σκαμματος</w> <w lemma="καί">καὶ</w> <w lemma="μάγγανον">μαγγάνων</w><lb n="6"/>              <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="στάδιον">στάδιον</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="500">φ</num><lb n="7"/><w lemma="ἱμάς"><unclear reason="damage">ἱ</unclear>μ<unclear reason="damage">ά</unclear>ντων</w> <w lemma="μισθός">μισθός</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="250">σν</num><lb n="8"/>              <w>ξ̣υστάρχῃ</w> <w lemma="εἰς">εἰς</w> <w lemma="ἀναπλήρωσις">ἀναπλή<lb n="9" break="no"/>   ρωσιν</w>                 <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="674">χοδ</num><lb n="10"/>                  <w lemma="ἀνδρίας">ἀνδριάντος</w> <g ref="#scroll"/>                <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000">α</num><lb n="10α"/>             <space unit="line" extent="1"/>
  </ab>
  </div></div></div>
 </div>
- <div type="apparatus">
-  
-<head>Apparatus</head>
-<p>Section I:</p><p> l. 2 was copied twice by S. In one copy he has KOUTV : APO, in the other KOU : : N; Wood has SIKOUTVN. At the end S. once has YE (so W.) and once YE . . A.
-</p><p>Col i. l.5: KURIKH S., KHRUKI W. 
-</p><p>l.9: EUYIKV . UL S., . . OIKOAUL W.
-</p><p>l.10: . . VMVDV S., KVMVDV W.
-l.11: . . .VDV S., T . .TVDV W.
-</p><p>l.12: AIVAUL S., KUKLIVAUL W.
-</p><p>Col. ii. l.9: ETADIADRV S., STADIADRO W. ANDRI S, ANDRIA: W., êndr[aw * . . .] Boeckh.
-</p><p>l.10: ANDRAS S., ANDRI:: W., êndraw [* . . .] Boeckh.
-</p><p>l.11: ANDRIAS S., AN::: W., êndraw [* . . .] Boeckh. 
-</p><p>l.12: ANDRIAS S., W., êndraw [* . . .] Boeckh.
-</p><p>Section II:</p><p>Wood’s copy omits ll.2 and 6, and the column of figures.
-</p><p>l.1: GEN S, GSN Boeckh.
-</p><p>l.7: *A added by Boeckh.
-</p><p>Section II:</p><p>Col. i. l.2: KHRUKH S.
-</p><p>l.3: PUYA S.
-l.5: *R S., *F Boeckh; ? [A]F` cj. Wörrle, 234 n.44.
-</p><p>l.6: *F S., *R Boeckh.
-</p><p>Col. ii. l.5: *GV S., *[A] cj. Ebert.
-</p><p>l.7: PUKTH [. . ] S. [*GV] cj. Ebert.
-</p><p>l.8: IASTI S.
-</p><p>l.11: PAIADI S.
-</p><p>l.12: ETADIADRVMV S.
-</p><p>Col. iii. l.14: POLLOU, corrected to PVLIKOU by S. in the hand of 1716, p[≈]l[vn ?] Boeckh.
-</p><p>l.17: TE in ligature S., whence [T]E Boeckh.
-</p><p>l.18: XUSTARXHSISANAP S.; it seems likely that the phrase was completed on the next line, as in IV, Column iii, l.8/9.
-</p><p>l.20: TH in ligature S, whence T[H] Boeckh.
-</p><p>l.22: HITHLOMATOS S., pÆlvmatow cj. M. B. Poliakoff, ZPE 79 (1989), 291-2.
-l.23: *LF S.
-</p><p>Section IV:</p><p>Col.i. l.1: AREI (1705) ARI (1716).
-</p><p>l.4: EIOU (1705), ERIOU (1716).
-</p><p>l.5: *UF (1705), *F (1716).
-</p><p>l.11: *FKE (1705), *XKE, the first letter blotted (1716).
-</p><p>l.10: There is a blot, perhaps disguising a further figure, after f (1705).
-</p><p>l.12: PAIDIAULVDRONV (1705), PAIDIAULHDROMV (1716).
-</p><p>l.13: *N (1705), *SN (1716).
-</p><p>Col. ii. l.2: *AXN(1705), *ASN (1716).
-</p><p>l.3: NEV, DRVMV (1705), NEIV, DROMV (1716).
-</p><p>l.8: DROMV (1705), DRVMV (1716).
-</p><p>l.10: *SN (1705), *ASN (1716).
-</p><p>l.12: After AYLV, vac. (1705).
-</p><p>l.14: leaf omitted, 1716.
-</p><p>Col. iii. l.4/5: IPIKV vac. / *UN at end of next line (1705), IPPIKV *CN / nothing at end of next line (1716).
-</p><p>l.7: ENANTVMISYVS vac. (1705), HNANTVNNISTOS *SN (1716).
-</p><p>l.8/9: SUNTARXHEISANAPLH *SN / (on next line) RVSIN vac. (1705), XUSTARXHEISANAPANRVSIN *XOD (1716).
+         <div type="apparatus">
+            <p>Section I:</p>
+            <p> l. 2 was copied twice by S. In one copy he has KOUTV : APO, in the other KOU : : N; Wood has SIKOUTVN. At the end S. once has YE (so W.) and once YE . . A.
 </p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p> Section I: </p><p>For the musical [contest] of those from the synod the prizes are as follows:
-</p><p>Column i:
+            <p>Col i. l.5: KURIKH S., KHRUKI W. 
+</p>
+            <p>l.9: EUYIKV . UL S., . . OIKOAUL W.
+</p>
+            <p>l.10: . . VMVDV S., KVMVDV W.
+l.11: . . .VDV S., T . .TVDV W.
+</p>
+            <p>l.12: AIVAUL S., KUKLIVAUL W.
+</p>
+            <p>Col. ii. l.9: ETADIADRV S., STADIADRO W. ANDRI S, ANDRIA: W., êndr[aw * . . .] Boeckh.
+</p>
+            <p>l.10: ANDRAS S., ANDRI:: W., êndraw [* . . .] Boeckh.
+</p>
+            <p>l.11: ANDRIAS S., AN::: W., êndraw [* . . .] Boeckh. 
+</p>
+            <p>l.12: ANDRIAS S., W., êndraw [* . . .] Boeckh.
+</p>
+            <p>Section II:</p>
+            <p>Wood’s copy omits ll.2 and 6, and the column of figures.
+</p>
+            <p>l.1: GEN S, GSN Boeckh.
+</p>
+            <p>l.7: *A added by Boeckh.
+</p>
+            <p>Section II:</p>
+            <p>Col. i. l.2: KHRUKH S.
+</p>
+            <p>l.3: PUYA S.
+l.5: *R S., *F Boeckh; ? [A]F` cj. Wörrle, 234 n.44.
+</p>
+            <p>l.6: *F S., *R Boeckh.
+</p>
+            <p>Col. ii. l.5: *GV S., *[A] cj. Ebert.
+</p>
+            <p>l.7: PUKTH [. . ] S. [*GV] cj. Ebert.
+</p>
+            <p>l.8: IASTI S.
+</p>
+            <p>l.11: PAIADI S.
+</p>
+            <p>l.12: ETADIADRVMV S.
+</p>
+            <p>Col. iii. l.14: POLLOU, corrected to PVLIKOU by S. in the hand of 1716, p[≈]l[vn ?] Boeckh.
+</p>
+            <p>l.17: TE in ligature S., whence [T]E Boeckh.
+</p>
+            <p>l.18: XUSTARXHSISANAP S.; it seems likely that the phrase was completed on the next line, as in IV, Column iii, l.8/9.
+</p>
+            <p>l.20: TH in ligature S, whence T[H] Boeckh.
+</p>
+            <p>l.22: HITHLOMATOS S., pÆlvmatow cj. M. B. Poliakoff, ZPE 79 (1989), 291-2.
+l.23: *LF S.
+</p>
+            <p>Section IV:</p>
+            <p>Col.i. l.1: AREI (1705) ARI (1716).
+</p>
+            <p>l.4: EIOU (1705), ERIOU (1716).
+</p>
+            <p>l.5: *UF (1705), *F (1716).
+</p>
+            <p>l.11: *FKE (1705), *XKE, the first letter blotted (1716).
+</p>
+            <p>l.10: There is a blot, perhaps disguising a further figure, after f (1705).
+</p>
+            <p>l.12: PAIDIAULVDRONV (1705), PAIDIAULHDROMV (1716).
+</p>
+            <p>l.13: *N (1705), *SN (1716).
+</p>
+            <p>Col. ii. l.2: *AXN(1705), *ASN (1716).
+</p>
+            <p>l.3: NEV, DRVMV (1705), NEIV, DROMV (1716).
+</p>
+            <p>l.8: DROMV (1705), DRVMV (1716).
+</p>
+            <p>l.10: *SN (1705), *ASN (1716).
+</p>
+            <p>l.12: After AYLV, vac. (1705).
+</p>
+            <p>l.14: leaf omitted, 1716.
+</p>
+            <p>Col. iii. l.4/5: IPIKV vac. / *UN at end of next line (1705), IPPIKV *CN / nothing at end of next line (1716).
+</p>
+            <p>l.7: ENANTVMISYVS vac. (1705), HNANTVNNISTOS *SN (1716).
+</p>
+            <p>l.8/9: SUNTARXHEISANAPLH *SN / (on next line) RVSIN vac. (1705), XUSTARXHEISANAPANRVSIN *XOD (1716).
+</p>
+         </div>
+         <div type="translation">
+            <p> Section I: </p>
+            <p>For the musical [contest] of those from the synod the prizes are as follows:
+</p>
+            <p>Column i:
 Trumpeter, 150 denarii; herald, 150 denarii; writer of encomia, 200 denarii; poet, 200 denarii; boy harp-singer, 150 denarii; pythic flautist, 200 denarii; comedian, 400 denarii; [tra]gedian, 500 denarii; cyclic flautist, 300 denarii; [ . . .
-</p><p>Column ii:
+</p>
+            <p>Column ii:
 Adult harp-singer, 500 denarii; overall victor, 200 denarii. For the athletic contest of the citizen boys, [?] denarii. Adult stadium-runner, 1000 [denarii]; adult wrestler, 1,500 [denarii]; adult pancratiast, 1,500 [denarii]; adult boxer, 1,500 [denarii][ . . .
-</p><p>Section II:</p><p>. . . ] adult harp-singer, 3,250 denarii, second prize, 1,000 denarii; Latin poet, [? denarii]; poet, [? denarii]; overall victor, 1,000 denarii; secretary, 550 denarii; panegyriarch, [? denarii]; awnings and equipment for the theatre, 1,000 denarii; [ . . . </p><p>Section III:</p><p>Column i
+</p>
+            <p>Section II:</p>
+            <p>. . . ] adult harp-singer, 3,250 denarii, second prize, 1,000 denarii; Latin poet, [? denarii]; poet, [? denarii]; overall victor, 1,000 denarii; secretary, 550 denarii; panegyriarch, [? denarii]; awnings and equipment for the theatre, 1,000 denarii; [ . . . </p>
+            <p>Section III:</p>
+            <p>Column i
 . . . ] trumpeter, 500 denarii; herald, 500 denarii; pythic flautist, 1,400 denarii, second prize, 400 denarii; cyclic flautist, [?1],500 denarii, second prize, 500 denarii; comedian, 1,600 denarii, second prize, 500 denarii, third prize, 300 denarii; tragedian, 2,700 denarii, second prize, 800 denarii, third prize, 600 denarii; [ . . .
-</p><p>Column ii
+</p>
+            <p>Column ii
 . . . ] adult long-distance runner, 2,000 denarii. For young men: stadium-runner, 2,000 denarii; pentathlete, [?1,000] denarii; wrestler, 3,800 denarii; boxer, [3,800 denarii]; pancratiast, 5,000 denarii; adult pentathlete, 1,340 denarii; boy stadium-runner, 1,400 denarii; [ . . .
-</p><p>Column iii
+</p>
+            <p>Column iii
 . . . ] For boys: wrestler, [ ? denarii]; boxer, [ ? denarii]; pancratiast, [ ? denarii]. For men: wrestler, [ ? denarii]; boxer, [ ? denarii]; pancratiast, [ ? denarii]; hoplite-runner, [ ? denarii]; race-horse, [horse, ? denarii]; race-horse, [colt, ? denarii]; pair [of horses, ? denarii]; pair [of colts, ? denarii]; second prize for colts, 350 denarii; chariot (with) horses, 1,500 denarii; chariot (with) colts, 1,000 denarii; chariot (with) horses, second, 500 denarii; for the xystarch, in reimbursement, 745 denarii; for the supplier of straps, 301 denarii; for releasing of the pulleys, 300 denarii; for sand-pit and the mud-pit, 400 denarii; for oil, 2,000 denarii; for sculptors, 1,500 denarii; [ . . .
 </p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Section I: </p><p>For a boys’ class in a musical contest (Column i, l.8), see Robert, ‘Études d’épigraphie grecque’, 55-6 (= OMS LIIL, 1155-6). For the contest diå pãntvn (Column ii, l.5) , as being a contest between all the victors, see BullÉp 1968.254. A reinterpretation of Column ii, ll.8-12 suggests that the denarius sign could not be read here, and that the letters at the end of the lines indicate sums of money, which are in keeping with other prizes for these events.</p><p>Section II:</p><p>Since the provision for equipment follows immediately on the musical events, it seems likely that this fragment is from the schedule for a musical contest. </p><p>Section III:</p><p>This anonymous contest is the most lavish of those listed.
+         </div>
+         <div type="commentary">
+            <p>Section I: </p>
+            <p>For a boys’ class in a musical contest (Column i, l.8), see Robert, ‘Études d’épigraphie grecque’, 55-6 (= OMS LIIL, 1155-6). For the contest diå pãntvn (Column ii, l.5) , as being a contest between all the victors, see BullÉp 1968.254. A reinterpretation of Column ii, ll.8-12 suggests that the denarius sign could not be read here, and that the letters at the end of the lines indicate sums of money, which are in keeping with other prizes for these events.</p>
+            <p>Section II:</p>
+            <p>Since the provision for equipment follows immediately on the musical events, it seems likely that this fragment is from the schedule for a musical contest. </p>
+            <p>Section III:</p>
+            <p>This anonymous contest is the most lavish of those listed.
 	In i.5 the prize for the cyclic flautist has been amended, in line with the conjecture of Wörrle, to make the first prize larger than the second, and to bring it into proportion with the other prizes for musicians. Similarly, in ii. 5-7, the prizes require emendation, as shown by Ebert; it is the boxer and the wrestler (6 and 7) who are likely to have had prizes of the same amount (as at IV.ii.5 and 6), while the pentathlete won less (as at IV.iii.4). 
-</p><p>Section IV:</p><p>Column i
+</p>
+            <p>Section IV:</p>
+            <p>Column i
  . . ] choral harpist, 500 denarii; choral flautist, 750 denarii; harp singer, 1,500 denarii, second prize, 400 denarii; pyrrhic dancer, 500 denarii; satyr performer, 150 denarii; overall victor, 500 denarii. Athletic prizes: boy long-distance runner, 5[?00] denarii; boy stadium-runner, 525 denarii; boy double-circuit runner, 500 denarii; boy pentathlete, 500 denarii; boy wrestler, 500 denarii; 
-</p><p>Column ii
+</p>
+            <p>Column ii
 boy boxer, 1,000 denarii; boy pancratiast, 1,650 denarii; young man stadium-runner, 750 denarii; young man pentathlete, 385 denarii; young man wrestler, 1,500 denarii; young man boxer, 1,500 denarii; adult long-distance runner, 750 denarii; adult stadium-runner, 1,250, adult double-circuit runner, 1,000 denarii; adult pentathlete, 500 denarii; adult wrestler, 2,000 denarii; adult boxer, 2,000 denarii. stop.
-</p><p>Column iii
+</p>
+            <p>Column iii
 adult pancratiast, 3,000 denarii; hoplite runner, 500 denarii; horse-jumper, 250 denarii; horseman, 750 denarii; for sand-pit and pulleys for the stadium, 500 denarii; hire of straps, 250 denarii; for the xystarch, as reimbursement, 674 denarii; for statue, 1,000 denarii. ?end. 
 </p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">City, South-east</rs>: 'in the southern part of the city, not far from the East Gate' (Sherard)</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation"> </rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Notebooks, publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-
-<p>Seen by Sherard in 1705 (when he copied A, B, C, E, and F) and in 1716 (when he copied D, and recopied F with C) , BM ADD. 10101, 46-48v. A and B also copied by Wood in 1750 (vol.15, 46). not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh from Sherard, CIG <biblScope n="CIGIIc">2758</biblScope> A-G</bibl>; G is derived from the copy of C and F made in 1716. Published from CIG by <bibl n="liermann1889">Liermann, <title>Analecta</title> <biblScope>37</biblScope></bibl>; see also the discussion by <bibl n="jmr1982" type="primary"><author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <biblScope>61</biblScope></bibl>, <bibl>Wörrle, <title>Stadt und Fest</title>, 230-6</bibl>. Published by <bibl n="PPA">Roueché, PPA <biblScope>52</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="none">
-<head>Photographs</head>
-<p> No photographs</p>
-</div><div n="transcriptions" type="figure"><head>Representations</head><p><figure href="Wood_14_46"><figDesc>Wood notebook 14, page 46</figDesc></figure></p></div></body></text>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh from Sherard, CIG <citedRange n="CIGIIc">2758</citedRange> A-G</bibl>; G is derived from the copy of C and F made in 1716. Published from CIG by <bibl n="liermann1889">Liermann, <title>Analecta</title>
+                  <citedRange>37</citedRange>
+               </bibl>; see also the discussion by <bibl n="jmr1982" type="primary">
+                  <author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <citedRange>61</citedRange>
+               </bibl>, <bibl>Wörrle, <title>Stadt und Fest</title>, 230-6</bibl>. Published by <bibl n="PPA">Roueché, PPA <citedRange>52</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

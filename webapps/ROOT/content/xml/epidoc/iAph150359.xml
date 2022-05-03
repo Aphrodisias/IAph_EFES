@@ -1,93 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150359" n="iAph0239 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><seg cert="low"><rs type="textType" reg="donor's inscription">Donor</rs> prayer</seg> from a church</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change><change><date>2003-06-02</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Tidied and regularised</item></change><change><date>2002-10-31</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Typed and tagged Greek</item></change><change>
-  <date>2003-09-03</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged, lemmatised and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p><rs type="material" key="marmor">White marble</rs> fragment (<measure type="length" unit="metre" dim="height">0.21</measure> × <measure type="length" unit="metre" dim="width">0.15</measure> × <measure type="length" unit="metre" dim="depth">0.17</measure>) from the crowning feature of a <rs type="objectType">balustrade</rs>; the top is smooth; one side has a moulded profile, the other is smooth, tapering inwards. The underside has been left rough. Resembles <xref type="inscription" n="92" href="010012">1.12</xref>, <xref type="inscription" n="93" href="010013">1.13</xref>, <xref type="inscription" n="94" href="010014">1.14</xref>, <xref type="inscription" n="95" href="010015">1.15</xref>, <xref type="inscription" n="96" href="010016">1.16</xref>, <xref type="inscription" n="107" href="010192">1.192</xref>, <xref type="inscription" n="240" href="050122">5.122</xref>.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> in one line on upper fascia of moulded profile.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Lunate <term>epsilon</term>, cursive <term>alpha</term>; av. <measure type="length" unit="metre" dim="height">0.035</measure>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0600" exact="none" notBefore="0401">Fifth/sixth century</date> or later (<rs type="criteria">lettering</rs>).</p>
-	  </div>
-
-	  <div type="edition" lang="grc">
-		<head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Donor prayer</seg> from a church</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150359</idno>
+            <idno type="IAph2007">iAph150359</idno>
+            <idno type="JMR2004">iAph0239</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>92.47</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material> fragment (<height unit="metre">0.21</height> × <width unit="metre">0.15</width> × <depth unit="metre">0.17</depth>) from the crowning feature of a <objectType>balustrade</objectType>; the top is smooth; one side has a moulded profile, the other is smooth, tapering inwards. The underside has been left rough. Resembles <ref type="inscription" n="92" target="010012.xml"/>, <ref type="inscription" n="93" target="010013.xml"/>, <ref type="inscription" n="94" target="010014.xml"/>, <ref type="inscription" n="95" target="010015.xml"/>, <ref type="inscription" n="96" target="010016.xml"/>, <ref type="inscription" n="107" target="010192.xml"/>, <ref type="inscription" n="240" target="050122.xml"/>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in one line on upper fascia of moulded profile.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lunate <term>epsilon</term>, cursive <term>alpha</term>; av. <height unit="metre">0.035</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>An unidentified church, <seg cert="low">crowning the chancel barrier</seg>.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering">Fifth/sixth century or later (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">Stray find.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">Tidied and regularised</change>
+         <change when="2002-10-31" who="#GB">Typed and tagged Greek</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="92_A_19.jpg">
+            <desc>Face (1992)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+		
 		<ab>
-		<lb n="1"/><space dim="horizontal"/> <persName key="eutychianos1" reg="Εὐτυχιανος" type="aphrodisian" full="yes"><name reg="Εὐτυχιανός">Εὐτυχιανο<gap dim="right" reason="lost" extent="unknown" unit="character"/></name></persName>
+		<lb n="1"/><space dim="horizontal"/> <persName key="eutychianos1" nymRef="#Εὐτυχιανος" type="attested"><name nymRef="#Εὐτυχιανός">Εὐτυχιανο<gap reason="lost" unit="character" extent="unknown"/></name></persName>
 		</ab>
 	  </div>
-	  
-      <div type="translation">
-        <head>Translation</head>
-        <ab>Eutychianos <supplied reason="subaudible">gave or made</supplied> <note rend="italic" place="not specified" anchored="yes">or</note> Of Eutychianos.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="VII.22">VII.22</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found">Stray find.</rs>. Original location: <rs type="origLocation">An unidentified church, <seg cert="low">crowning the chancel barrier</seg>.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU excavation in 1992 (<rs type="invNo">92.47</rs>).</p>
-      </div>
-
-      <div type="bibliography"><head>Bibliography</head><p>Published by <bibl n="ala2004" rend="primary" type="hbi"><author>Roueché</author> (2004), <biblScope>239</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="92_A_19"><figDesc>Face (1992)</figDesc></figure></p></div>
-
-    
-
-      
-
+         <div type="translation">
+            <ab>Eutychianos <supplied reason="subaudible">gave or made</supplied>
+               <note rend="italic" place="not specified" xml:lang=""/> Of Eutychianos.</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="VII.22" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="ala2004" rend="primary" type="hbi">
+                  <author>Roueché</author> (2004), <citedRange>239</citedRange>
+               </bibl>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

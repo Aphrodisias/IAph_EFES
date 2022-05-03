@@ -1,77 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110025" n="iAph1148 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><seg cert="low"><rs type="textType">Building inscription</rs> of Melition son of Pythion</seg></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Building inscription of Melition son of Pythion</seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110025</idno>
+            <idno type="IAph2007">iAph110025</idno>
+            <idno type="JMR2004">iAph1148</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two  <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> blocks, one complete  (<width unit="metre">1.57</width> × <height unit="metre">0.42</height> × <depth unit="metre">0.58</depth>) and one broken away at the right end and damaged above (<width unit="metre">0.99</width> x <height unit="metre">0.42</height> x <depth unit="metre">0.59</depth>), slightly curving, both with simple moulding above and between the two fasciae.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>The first is <rs type="execution" ref="scalpro">inscribed</rs> on both fasciae (ll.1 and 2 on upper, l. 3 on lower), the second on the upper one only; the texts have been erased at the left end of ll. 1 and 2, and are interrupted by a bad flaw in the stone.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard forms; ll.1, 2, <height>0.048</height>; l.3, <height>0.05</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0150"
+                               precision="medium"
+                               evidence="lettering">
+ Probably first half of second century A.D.
+(<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, Village</rs>  the first in New Museum excavation area, 
+the second in the area of museum offices</provenance>
+                  <provenance type="observed" when="1983">Museum (1983)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Τranscription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-30" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_R_07A.jpg">
+            <desc>Block 1, left part (1977)</desc>
+         </graphic>
+         <graphic url="77_R_08A.jpg">
+            <desc>Block 1, right part (1977)</desc>
+         </graphic>
+         <graphic url="78_L_10.jpg">
+            <desc>Block 1, face (1978)</desc>
+         </graphic>
+         <graphic url="77_BB_08.jpg">
+            <desc>Block 2, face (1977)</desc>
+         </graphic>
+         <graphic url="83_C_17.jpg">
+            <desc>Block 2, face (1983)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-04-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two  <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> blocks, one complete  (<measure type="length" unit="metre" dim="width">1.57</measure> × <measure type="length" unit="metre" dim="height">0.42</measure> × <measure type="length" unit="metre" dim="depth">0.58</measure>) and one broken away at the right end and damaged above (<measure dim="width" type="length" unit="metre">0.99</measure> x <measure dim="height" type="length" unit="metre">0.42</measure> x <measure dim="depth" type="length" unit="metre">0.59</measure>), slightly curving, both with simple moulding above and between the two fasciae.</p></div><div type="description" n="text"><head>Description of Text</head><p>The first is <rs type="execution" key="scalpro">inscribed</rs> on both fasciae (ll.1 and 2 on upper, l. 3 on lower), the second on the upper one only; the texts have been erased at the left end of ll. 1 and 2, and are interrupted by a bad flaw in the stone.</p>
-</div><div type="description" n="letters"><head>Description of letters</head><p>Standard forms; ll.1, 2, <measure dim="none">0.048</measure>; l.3, <measure dim="none">0.05</measure>.</p>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><w lemma="καί">καὶ</w>  <persName type="attested"><name nymRef="#Μελίτιος">Μελίτιον</name>  <persName type="attested"><name nymRef="#Πυθίων">Πυθίω<milestone unit="block"/>νος</name></persName></persName>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ν</orig>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">τ<gap reason="lost" unit="character" id="gap04" quantity="1"/><certainty target="gap04" locus="#gi" degree="low" assertedValue="space"/>ὰ</w>  <w lemma="ἐν">ἐν</w>  <w lemma="αὐτός">αὐτοῖς</w>  <milestone unit="block"/>    <w lemma="πᾶς">πάντα</w> <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ἐκ"><supplied reason="lost">ἐκ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῶν</w>  <w lemma="ἴδιος">ἰδίων</w>  <gap reason="lost" unit="character" quantity="2"/><space extent="7" unit="character" dim="horizontal"/><milestone unit="block"/> <space extent="1" unit="line" dim="horizontal"/></ab>
 </div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date cert="low" notAfter="0150" notBefore="0101" exact="none"> Probably first half of second century A.D.</date>
-(<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="unknown" dim="left" unit="character"/><w lemma="καί">καὶ</w>  <persName type="aphrodisian" full="yes"><name reg="Μελίτιος">Μελίτιον</name>  <persName type="aphrodisian"><name reg="Πυθίων">Πυθίω<milestone unit="block"/>νος</name></persName></persName>  <lb n="2"/><gap reason="lost" extent="unknown" dim="left" unit="character"/><orig n="unresolved">ν</orig>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">τ<gap extent="1" dim="internal" reason="lost" unit="character" id="gap04"/><certainty target="gap04" locus="#gi" degree="low" assertedValue="space"/>ὰ</w>  <w lemma="ἐν">ἐν</w>  <w lemma="αὐτός">αὐτοῖς</w>  <milestone unit="block"/>    <w lemma="πᾶς">πάντα</w> <lb n="3"/><gap reason="lost" extent="unknown" dim="left" unit="character"/>  <w lemma="ἐκ"><supplied reason="lost">ἐκ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῶν</w>  <w lemma="ἴδιος">ἰδίων</w>  <gap reason="lost" extent="2" unit="character" dim="internal"/><space extent="7" unit="character" dim="horizontal"/><milestone unit="block"/> <space extent="1" unit="line" dim="horizontal"/></ab>
-</div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 2,  apparently a fault in the stone between <foreign lang="grc">Τ</foreign> and <foreign lang="grc">Α</foreign>.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p><gap reason="lost" extent="unknown" dim="left" unit="character"/> and Melition daughter of Pythion made the <gap reason="lost" extent="unknown" dim="internal" unit="character"/> and everything in them   <gap reason="lost" extent="unknown" dim="internal" unit="character"/> <supplied reason="lost">at</supplied> their own expense <gap reason="lost" extent="unknown" dim="right" unit="character"/></p>
-</div>
-<div type="commentary" n="none">
-<head>Commentary</head>
-<p>
+         <div type="apparatus">
+            <p>l. 2,  apparently a fault in the stone between <foreign xml:lang="grc">Τ</foreign> and <foreign xml:lang="grc">Α</foreign>.</p>
+         </div>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/> and Melition daughter of Pythion made the <gap reason="lost" unit="character" extent="unknown"/> and everything in them   <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost">at</supplied> their own expense <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary" n="none">
+            <p>
 There is insufficient evidence to show what was built but it should be noted that it is described by a plural pronoun. The builders are likely to have been a man (name lost) and his wife who is not at present identifiable.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-Found: <rs type="found"><rs type="monuList">City, Village</rs>  the first in New Museum excavation area, 
-the second in the area of museum offices</rs> <rs type="origLocation">Unknown</rs>
-; Last known location: <rs type="lastLocation">Museum (1983)</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Τranscription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition while clearing for the Museum (<rs type="siteNo">Village 11</rs>).</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_R_07A"><figDesc>Block 1, left part (1977)</figDesc></figure><figure href="77_R_08A"><figDesc>Block 1, right part (1977)</figDesc></figure><figure href="78_L_10"><figDesc>Block 1, face (1978)</figDesc></figure></p><p><figure href="77_BB_08"><figDesc>Block 2, face (1977)</figDesc></figure></p>
-<p><figure href="83_C_17"><figDesc>Block 2, face (1983)</figDesc></figure></p></div></body></text>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

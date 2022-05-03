@@ -1,41 +1,79 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph030008" n="iAph0031 ">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="m">i. <rs type="textType">Verse</rs>
-               <rs type="textType">honours</rs> for <rs type="personType" reg="governor"
-               >Oikoumenios</rs>; ii. <rs type="textType">Invocation</rs></title>
+            <title>i. Verse
+               honours for Oikoumenios; ii. Invocation</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
          </titleStmt>
          <publicationStmt>
-            <p>
-               <bibl>
-                  <editor>Charlotte M. <name type="surname">Roueché</name></editor>
-                  <date>2007</date>
-               </bibl>
-            </p>
-            <p>Creative Commons licence Attribution 2.5
-                  (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p>
-            <p>All reuse or distribution of this work must contain somewhere a link back to the URL
-                  <xref>http://insaph.kcl.ac.uk/</xref></p>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph030008</idno>
+            <idno type="IAph2007">iAph030008</idno>
+            <idno type="JMR2004">iAph0031</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
          </publicationStmt>
          <sourceDesc>
-            <p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>65.198</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material>
+                              <objectType>statue</objectType>, and a rectangular white marble <objectType>statue base</objectType> shaft with panels within moulded edges on three
+               sides (<height unit="metre">1.27</height> × <width unit="metre">0.60</width> × <depth unit="metre">0.53</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i. <rs type="execution" ref="scalpro">Inscribed</rs> on the central panel of the
+               base; the surface is rough, either because it was badly prepared, or more probably
+               because an earlier inscription had been erased.ii. Inscribed on the head of the statue, behind the front line of hair, to the left
+               of centre.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. Irregular, <height unit="metre">0.025</height>-<height unit="metre">0.04</height>;
+               I. 6. apparently an apostrophe after <foreign xml:lang="grc">τῆιδ</foreign> I. 9,
+                  <foreign xml:lang="grc">Ω</foreign> for <foreign xml:lang="grc">ω<ex>ν</ex>
+                        </foreign>).ii. Neatly cut.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0368"
+                               notAfter="0400"
+                               precision="medium"
+                               evidence="style language">Later fourth century
+                  A.D. (<rs type="criteria">style</rs>, <rs type="criteria">language</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">North Agora</rs>: standing against the
+                  north wall of the north stoa. .</provenance>
+                  <provenance type="observed" when="Findspot&#xA;1994">Findspot
+               (1994).</provenance>
+               </history>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language id="en">English</language>
-            <language id="fr">French</language>
-            <language id="de">German</language>
-            <language id="grc">Ancient Greek</language>
-
-            <language id="grc-Latn">Transliterated Greek</language>
-            <language id="el">Modern Greek</language>
-            <language id="it">Italian</language>
-            <language id="la">Latin</language>
-            <language id="es">Spanish</language>
-            <language id="tr">Turkish</language>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
          </langUsage>
          <textClass>
             <keywords>
@@ -43,138 +81,76 @@
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry" key="TR">Turkey</geogName>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot" key="Geyre">Geyre</placeName>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
             </keywords>
          </textClass>
+         <creation> Transcription (Roueché); Publication.</creation>
       </profileDesc>
       <revisionDesc>
-         <change>
-            <date>2004-06-08</date>
-            <respStmt>
-               <name>Juan Garcés</name>
-            </respStmt>
-            <item>Marked up inventory number(s)</item>
-         </change>
-         <change>
-            <date>2004-06-08</date>
-            <respStmt>
-               <name>Gabriel Bodard</name>
-            </respStmt>
-            <item>Checked and fixed all image divs and refs</item>
-         </change>
-         <change>
-            <date>2004-03-22</date>
-            <respStmt>
-               <name>Gabriel Bodard</name>
-            </respStmt>
-            <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-         </change>
-         <change>
-            <date>2003-11-04</date>
-            <respStmt>
-               <name>John Lavagnino</name>
-            </respStmt>
-            <item>Converted beta code to Unicode</item>
-         </change>
-         <change>
-            <date>2003-05-27</date>
-            <respStmt>
-               <name>Gabriel Bodard</name>
-            </respStmt>
-            <item>tidied and corrected</item>
-         </change>
-         <change>
-            <date>2003-04-30</date>
-            <respStmt>
-               <name>Juan Garcés</name>
-            </respStmt>
-            <item>tidied and corrected</item>
-         </change>
-         <change>
-            <date>2003-06-22</date>
-            <respStmt>
-               <name>CMR</name>
-            </respStmt>
-            <item>tagged, tidied and corrected</item>
-         </change>
-         <change>
-            <date>2003-07-15</date>
-            <respStmt>
-               <name>Juan Garcés</name>
-            </respStmt>
-            <item>lemmatised</item>
-         </change>
-         <change>
-            <date>2003-08-20</date>
-            <respStmt>
-               <name>CMR</name>
-            </respStmt>
-            <item>name tags reduced</item>
-         </change>
-         <change>
-            <date>2004-01-23</date>
-            <respStmt>
-               <name>CMR</name>
-            </respStmt>
-            <item>tidied; image refs</item>
-         </change>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="&#xA;---------------Juan-Garcés&#xA;------------">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-22" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-23" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="&#xA;---------------John-Lavagnino&#xA;------------">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">name tags reduced</change>
+         <change when="2003-07-15" who="&#xA;---------------Juan-Garcés&#xA;------------">lemmatised</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="&#xA;---------------Juan-Garcés&#xA;------------">tidied and corrected</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="72_L_27A.jpg">
+            <desc>i. Face (1972)</desc>
+         </graphic>
+         <graphic url="NY_94_55_03.jpg">
+            <desc>i. Top of base (1994)</desc>
+         </graphic>
+         <graphic url="NY_94_55_02.jpg">
+            <desc>i. View (1994)</desc>
+         </graphic>
+         <graphic url="NY_pr_046.jpg">
+            <desc>i. Squeeze</desc>
+         </graphic>
+         <graphic url="smith-ala254.jpg">
+            <desc>ii. Inscription on head (drawing, 2001)</desc>
+         </graphic>
+         <graphic url="smith-ala31.jpg">
+            <desc>Statue and base: Drawing: K. Gorkay, from Smith (2002)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
    <text>
       <body>
-         <div type="description" n="monument">
-            <head>Description of Monument</head>
-            <p>A <rs type="material" key="marmor">white marble</rs>
-               <rs type="objectType">statue</rs>, and a rectangular white marble <rs
-                  type="objectType">statue base</rs> shaft with panels within moulded edges on three
-               sides (<measure type="length" unit="metre" dim="height">1.27</measure> × <measure
-                  type="length" unit="metre" dim="width">0.60</measure> × <measure type="length"
-                  unit="metre" dim="depth">0.53</measure>).</p>
-         </div>
-         <div type="description" n="text">
-            <head>Description of Text</head>
-            <p>i. <rs type="execution" key="scalpro">Inscribed</rs> on the central panel of the
-               base; the surface is rough, either because it was badly prepared, or more probably
-               because an earlier inscription had been erased.</p>
-            <p>ii. Inscribed on the head of the statue, behind the front line of hair, to the left
-               of centre.</p>
-         </div>
-         <div type="description" n="letters">
-            <head>Description of Letters</head>
-            <p>i. Irregular, <measure dim="height" type="length" unit="metre"
-                  >0.025</measure>-<measure dim="height" type="length" unit="metre">0.04</measure>;
-               I. 6. apparently an apostrophe after <foreign lang="grc">τῆιδ</foreign> I. 9,
-                  <foreign lang="grc">Ω</foreign> for <foreign lang="grc">ω<supplied
-                     reason="abbreviation">ν</supplied></foreign>).</p>
-            <p>ii. Neatly cut.</p>
-         </div>
-         <div type="description" n="date">
-            <head>Date</head>
-            <p><date exact="none" cert="low" notBefore="0368" notAfter="0400">Later fourth century
-                  A.D.</date> (<rs type="criteria">style</rs>, <rs type="criteria"
-            >language</rs>).</p>
-         </div>
-         <div n="text" lang="grc" type="edition">
-            <head lang="en">Edition</head>
-            <div n="i" type="textpart_section">
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            
+            <div n="i" type="textpart" subtype="section">
                <lg>
                   <lb n="1"/>
                   <l n="1"><w lemma="ὁ">τὸν</w>
                      <w lemma="σύ">σὲ</w>
                      <w lemma="νόμος">νόμων</w>
-                     <w lemma="πλήθω">πλή<lb n="2" type="worddiv"/>θοντα</w>, <w lemma="ὁ">τὸν</w>
-                     <placeName type="ethnic" reg="Ἰταλιῶτις">
-                        <w lemma="Ἰταλιῶτις">Ἰταλι<lb n="3" type="worddiv"/>ώτιδα</w>
+                     <w lemma="πλήθω">πλή<lb n="2" break="no"/>θοντα</w>, <w lemma="ὁ">τὸν</w>
+                     <placeName nymRef="#Ἰταλιῶτις">
+                        <w lemma="Ἰταλιῶτις">Ἰταλι<lb n="3" break="no"/>ώτιδα</w>
                      </placeName>
                      <persName type="divine">
-                        <name reg="Μοῦσα">Μοῦσαν</name>
+                        <name nymRef="#Μοῦσα">Μοῦσαν</name>
                      </persName>
                      <space dim="horizontal" extent="1" unit="character"/>
                   </l>
@@ -182,7 +158,7 @@
                   <l n="2">
                      <space dim="horizontal" extent="1" unit="character"/>
                      <w lemma="Ἀτθίς">
-                        <placeName type="ethnic" full="yes" reg="Ἀτθίς">Ἀτθίδος</placeName>
+                        <placeName nymRef="#Ἀτθίς">Ἀτθίδος</placeName>
                      </w>
                      <w lemma="ἡδυεπής">ἡδυεπεῖ</w>
                      <lb n="5"/>
@@ -193,14 +169,14 @@
                   <lb n="6"/>
                   <l n="3">
                      <w lemma="ὅδε">τῆιδ'</w>
-                     <persName key="Oecumenius" type="aphrodisian" full="yes">
-                        <name reg="Οἰκουμένιος">Οἰκουμένιον</name>
+                     <persName key="Oecumenius" type="attested">
+                        <name nymRef="#Οἰκουμένιος">Οἰκουμένιον</name>
                      </persName>
                      <lb n="7"/>
                      <w lemma="ὁ">τὸν</w>
                      <w lemma="ἀοίδιμος">ἀοίδιμον</w>
                      <rs key="praeses" type="official-secul">
-                        <w lemma="ἡγεμονεύς">ἡγεμο<lb n="8" type="worddiv"/>νῆα</w>
+                        <w lemma="ἡγεμονεύς">ἡγεμο<lb n="8" break="no"/>νῆα</w>
                      </rs>
                      <space dim="horizontal" extent="1" unit="character"/>
                   </l>
@@ -210,29 +186,28 @@
                      </rs>
                      <w lemma="ὁ">τῶν</w>
                      <w lemma="Ἀφροδεισιεύς">
-                        <placeName type="ethnic" full="yes" reg="Ἀφροδεισιεύς">Ἀφροδισιέω<unclear
-                              reason="damage">ν</unclear></placeName>
+                        <placeName nymRef="#Ἀφροδεισιεύς">Ἀφροδισιέω<unclear reason="damage">ν</unclear></placeName>
                      </w>·</l>
                   <lb n="10"/>
                   <l n="5"><w lemma="ὁ">τῶι</w>
                      <w lemma="γάρ">γὰρ</w>
                      <w lemma="δή">δὴ</w>
                      <w lemma="καθαρός">καθαρῶι</w>
-                     <w lemma="φρήν">φρέ<lb n="11" type="worddiv"/>να</w>
+                     <w lemma="φρήν">φρέ<lb n="11" break="no"/>να</w>
                      <w lemma="καί">καὶ</w>
                      <w lemma="χείρ">χέρα</w>, <w lemma="τίς">τί</w>
                      <w met="PLEI/WN" lemma="πλείων">πλέον</w><lb n="12"/><w lemma="εὑρίσκω">εὑρεῖν</w>
                      <space dim="horizontal" extent="1" unit="character"/>
                   </l>
-                  <l n="6"><w lemma="μνημοσύνη">μνημοσύ<lb n="13" type="worddiv"/>νης</w>
+                  <l n="6"><w lemma="μνημοσύνη">μνημοσύ<lb n="13" break="no"/>νης</w>
                      <w lemma="ἀγαθός">ἀγαθῆς</w>
                      <w lemma="ἄλλος">ἄλλο</w>
-                     <w lemma="πάρειμι">πά<lb n="14" type="worddiv"/>ρεστι</w>
-                     <w lemma="γέρας">γέρας</w>; <g type="leaf"/>
+                     <w lemma="πάρειμι">πά<lb n="14" break="no"/>ρεστι</w>
+                     <w lemma="γέρας">γέρας</w>; <g ref="#leaf"/>
                   </l>
                </lg>
             </div>
-            <div n="ii" type="textpart_section">
+            <div n="ii" type="textpart" subtype="section">
                <ab>
                   <lb n="1"/>
                   <w lemma="ΧΜΓ">
@@ -242,105 +217,54 @@
             </div>
          </div>
          <div type="translation">
-            <head>Translation</head>
             <p>i: You who are full of <supplied reason="subaudible">knowledge of</supplied> laws,
                who have blended the Italian Muse with the sweet-voiced honey of the Attic,
                Oikoumenios, the famous governor, the friendly council of the Aphrodisians has set
                you up here; for what greater reward than that of being well remembered can the man
                find who is pure in mind and in hand? </p>
-            <p>ii: ?M<supplied reason="abbreviation">ary</supplied> b<supplied reason="abbreviation"
-                  >ore</supplied> Ch<supplied reason="abbreviation">rist</supplied>. God, help.</p>
+            <p>ii: ?M<ex>ary</ex> b<ex>ore</ex> Ch<ex>rist</ex>. God, help.</p>
          </div>
          <div type="commentary">
-            <head>Commentary</head>
-            <p>For i. see discussion at <xref type="eAla-text" n="III.33">III.33</xref>.</p>
-            <p>For ii., the inscription on the head, see discussion at <xref type="eAla-text"
-                  n="VIII.20">VIII.20</xref>, and compare <xref type="inscription" n="145"
-                  href="150102">15.102</xref></p>
-            <p>For the statue and the monument as whole, see <bibl type="hbi" n="rrrs2002"
-                     ><author>Smith</author> 'The Statue Monument of Oecumenius: A New Portrait of a
-                  Late Antique Governor from Aphrodisias' (JRS, <date value="1999" notBefore="1999"
-                     notAfter="1999" exact="both">2002</date>), 134-156</bibl></p>
-         </div>
-         <div type="history" n="locations">
-            <head>Locations</head>
-            <p>Found: <rs type="found"><rs type="monuList">North Agora</rs>: standing against the
-                  north wall of the north stoa. .</rs>. Original location: <rs type="origLocation"
-                  >Findspot.</rs>. Last recorded location: <rs type="lastLocation">Findspot
-               (1994).</rs>. </p>
-         </div>
-
-
-         <div type="history" n="record">
-            <head>History of Recording</head>
-            <p>The base and the body of the statue were excavated by the NYU expedition in 1965
-               (base: <rs type="invNo">65.198</rs>); see <bibl><author>K. T. Erim</author> in <title
-                     level="j">Turk Ark. Derg.</title> 15.1 (1966), 61</bibl>. The head was
-               excavated in 2000.</p>
+            <p>For i. see discussion at <ref type="eAla-text" n="III.33" target=".xml"/>.</p>
+            <p>For ii., the inscription on the head, see discussion at <ref type="eAla-text" n="VIII.20" target=".xml"/>, and compare <ref type="inscription" n="145" target="150102.xml"/>
+            </p>
+            <p>For the statue and the monument as whole, see <bibl type="hbi" n="rrrs2002">
+                  <author>Smith</author> 'The Statue Monument of Oecumenius: A New Portrait of a
+                  Late Antique Governor from Aphrodisias' (JRS, <date value="1999" notBefore="1999" notAfter="1999" exact="both">2002</date>), 134-156</bibl>
+            </p>
          </div>
          <div type="bibliography">
-            <head>Bibliography</head>
-            <p>Published by <bibl type="hbi" rend="primary" n="sevcenko1967"
-                  ><author>Ševcenko</author> (<date>1967</date>), <biblScope>286</biblScope></bibl>,
+            <p>Published by <bibl type="hbi" rend="primary" n="sevcenko1967">
+                  <author>Ševcenko</author> (<date>1967</date>), <citedRange>286</citedRange>
+               </bibl>,
                whence <bibl n="be">
                   <title level="j">BE</title>
-                  <biblScope>1968.508</biblScope>
-               </bibl>; republished by <bibl type="hbi" rend="primary" n="sevcenko1968"
-                     ><author>Ševcenko</author> (<date>1968</date>)
-               <biblScope>29</biblScope></bibl>, whence <bibl n="be">
+                  <citedRange>1968.508</citedRange>
+               </bibl>; republished by <bibl type="hbi" rend="primary" n="sevcenko1968">
+                  <author>Ševcenko</author> (<date>1968</date>)
+               <citedRange>29</citedRange>
+               </bibl>, whence <bibl n="be">
                   <title level="j">BE</title>
-                  <biblScope>1969.543</biblScope>
-               </bibl>; by <bibl type="hbi" rend="primary" n="ALA"><author>Roueché</author>, <title
-                     level="m">Aphrodisias in Late Antiquity</title>, no. <biblScope>31</biblScope>
+                  <citedRange>1969.543</citedRange>
+               </bibl>; by <bibl type="hbi" rend="primary" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>, no. <citedRange>31</citedRange>
                   and plate ix</bibl>, whence <bibl n="PHI">
                   <author>McCabe</author>
                   <title level="m">PHI Aphrodisias</title>
-                  <biblScope n="257611">724</biblScope>
+                  <citedRange n="257611">724</citedRange>
                </bibl>, <bibl type="hbi" n="steinepig">
                   <title level="m">Steinepigramme</title>
-                  <biblScope>02/09/17</biblScope>
+                  <citedRange>02/09/17</citedRange>
                </bibl>.</p>
-            <p>Statue: <bibl><author>K.T. Erim</author>, '<title level="a">Two new early Byzantine
+            <p>Statue: <bibl>
+                  <author>K.T. Erim</author>, '<title level="a">Two new early Byzantine
                      statues from Aphrodisias</title>', <title level="j">DOP</title> 21
-                  (<date>1967</date>), 285-6, no. <biblScope>2</biblScope></bibl>; <bibl type="hbi"
-                  n="rrrs2002"><author>Smith</author> (<date>2002</date>)
-                  <biblScope>134-156</biblScope></bibl>.</p>
+                  (<date>1967</date>), 285-6, no. <citedRange>2</citedRange>
+               </bibl>; <bibl type="hbi" n="rrrs2002">
+                  <author>Smith</author> (<date>2002</date>)
+                  <citedRange>134-156</citedRange>
+               </bibl>.</p>
          </div>
-         <div type="history" n="text-constituted-from">
-            <head>Text Constituted From</head>
-            <p> Transcription (Roueché); Publication.</p>
-         </div>
-         <div type="figure" n="photographs">
-            <head>Photographs</head>
-            <p>
-               <figure href="72_L_27A">
-                  <figDesc>i. Face (1972)</figDesc>
-               </figure>
-               <figure href="NY_94_55_03">
-                  <figDesc>i. Top of base (1994)</figDesc>
-               </figure>
-               <figure href="NY_94_55_02">
-                  <figDesc>i. View (1994)</figDesc>
-               </figure>
-            </p>
-         </div>
-         <div type="figure" n="transcriptions">
-            <head>Representations</head>
-            <p>
-               <figure href="NY_pr_046">
-                  <figDesc>i. Squeeze</figDesc>
-               </figure>
-               <figure href="smith-ala254">
-                  <figDesc>ii. Inscription on head (drawing, 2001)</figDesc>
-               </figure>
-               <figure href="smith-ala31">
-                  <figDesc>Statue and base: Drawing: K. Gorkay, from Smith (2002)</figDesc>
-               </figure>
-            </p>
-         </div>
-
-
-
       </body>
    </text>
 </TEI>

@@ -1,101 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130107" n="iAph0707 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <seg cert="low"><rs type="textType">Jewish</rs></seg> <rs type="textType">graffiti</rs> in a bath-building</title>
-</titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> and <editor>Robert <name type="surname">Tannenbaum</name></editor><date>1987</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="JandG">Reynolds and Tannenbaum  (<date>1987</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Jewish</seg> graffiti in a bath-building</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130107</idno>
+            <idno type="IAph2007">iAph130107</idno>
+            <idno type="JMR2004">iAph0707</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">Marble</material>
+                              <objectType>panel</objectType>s in a threshold within the bath-building  beside the extra-mural "Nymphaeum".</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="littera scarifata">Incised</rs> on the top face; while a. may be complete on its stone, b. is certainly not, and must originally have extended onto flanking panels.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Rough and uneven letters in an unprofessional hand, or pehaps several hands, probably quite late, <height unit="metre">0.03-0.04</height>; lunate <foreign xml:lang="grc">Ε</foreign>, <foreign xml:lang="grc">Σ</foreign>, and <foreign xml:lang="grc">Ω</foreign> except in the second hand of i, cursive <foreign xml:lang="grc">Δ</foreign>, and <foreign xml:lang="grc">Μ</foreign> in i, cursive <foreign xml:lang="grc">Α</foreign>  in ii.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0201" notAfter="0800" evidence="nomenclature">Third century A.D. or later (<rs type="criteria">nomenclature</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east</rs>: cut on threshhold of  building adjacent to "Extra-mural nymphaeum"</provenance>
+                  <provenance type="observed" when="1981">Findspot  (1981)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Acclamation</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-01-04" who="#GB">Summarised in EpiDoc form</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="JMR_1_1968_01.jpg">
+            <desc>Stone (1968)</desc>
+         </graphic>
+         <graphic url="81_F_09.jpg">
+            <desc>Squeeze, i. a. (1981)</desc>
+         </graphic>
+         <graphic url="81_F_10.jpg">
+            <desc>Squeeze, i. b. (1981)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Acclamation</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-01-04</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Summarised in EpiDoc form</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">Marble</rs> <rs type="objectType">panel</rs>s in a threshold within the bath-building  beside the extra-mural "Nymphaeum".</p>
+<div n="i" type="textpart" subtype="section"><div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><w lemma="νικάω">νικᾷ</w>  <w lemma="ὁ">ἡ</w>    <w lemma="τύχη">τύχη</w>  <w lemma="ὁ">τῶν</w>  <w lemma="ὅδε">ὁ͂δε</w><lb n="2"/><persName type="attested"><name nymRef="#Εὐσέβιος">Εὐσεβίου</name></persName>  <w lemma="γράμμα">γράμματα</w>  <space unit="character" extent="unknown" dim="horizontal"/></ab></div><div n="b" type="textpart" subtype="fragment"><note place="not  specified" xml:lang=""/><ab><lb/><lb n="1"/><orig n="unresolved">κε</orig><space unit="character" extent="1" dim="horizontal"/></ab></div></div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><supplied reason="lost"><w lemma="νικάω">νικᾷ</w>  <w lemma="ὁ">ἡ</w></supplied>    <w lemma="τύχη"><supplied reason="lost">τύχ</supplied>η</w>  <w lemma="ὁ">τῶν</w>  <w lemma="ὅδε">ὁ῀δε</w>  <space unit="character" extent="unknown" dim="horizontal"/><lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Ζηνᾶς">Ζηνᾶς</name></persName>  <space unit="character" extent="unknown" dim="horizontal"/><lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="#Νόννος">Νόννος</name></persName>  <space unit="character" extent="unknown" dim="horizontal"/><lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="#Θεόδωρος"><expan><abbr>Θε<supplied reason="lost">όδ</supplied>ωρ</abbr><ex>ο</ex><abbr>ς</abbr></expan></name></persName>  <space unit="character" extent="unknown" dim="horizontal"/><lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="#Σαββάτιος  ">Σαββάτιο<supplied reason="lost">ς</supplied></name></persName><lb n="6"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Κάλλιστος">Κάλλιστος</name></persName>  <space unit="character" extent="1" dim="horizontal"/></ab></div>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="littera scarifata">Incised</rs> on the top face; while a. may be complete on its stone, b. is certainly not, and must originally have extended onto flanking panels.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p>Rough and uneven letters in an unprofessional hand, or pehaps several hands, probably quite late, <measure type="length" unit="metre" dim="height">0.03-0.04</measure>; lunate <foreign lang="grc">Ε</foreign>, <foreign lang="grc">Σ</foreign>, and <foreign lang="grc">Ω</foreign> except in the second hand of i, cursive <foreign lang="grc">Δ</foreign>, and <foreign lang="grc">Μ</foreign> in i, cursive <foreign lang="grc">Α</foreign>  in ii.</p>
-</div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p><date cert="low" notBefore="0201" notAfter="0800">Third century A.D. or later</date> (<rs type="criteria">nomenclature</rs>).</p>
-</div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<div type="textpart_section" n="i"><div type="textpart_fragment" n="a"><ab><lb n="1"/><w lemma="νικάω">νικᾷ</w>  <w lemma="ὁ">ἡ</w>    <w lemma="τύχη">τύχη</w>  <w lemma="ὁ">τῶν</w>  <w lemma="ὅδε">ὁ͂δε</w><lb n="2"/><persName type="aphrodisian" full="yes"><name reg="Εὐσέβιος">Εὐσεβίου</name></persName>  <w lemma="γράμμα">γράμματα</w>  <space unit="character" extent="unknown" dim="horizontal"/></ab></div><div type="textpart_fragment" n="b"><note place="not  specified" anchored="yes">Second  hand:  rather  larger  and  inserted  between  the  end  of  l.  1  and  the  right  edge.</note><ab><lb/><lb n="1"/><orig n="unresolved">κε</orig><space unit="character" extent="1" dim="horizontal"/></ab></div></div><div type="textpart_section" n="ii"><ab><lb n="1"/><supplied reason="lost"><w lemma="νικάω">νικᾷ</w>  <w lemma="ὁ">ἡ</w></supplied>    <w lemma="τύχη"><supplied reason="lost">τύχ</supplied>η</w>  <w lemma="ὁ">τῶν</w>  <w lemma="ὅδε">ὁ῀δε</w>  <space unit="character" extent="unknown" dim="horizontal"/><lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>  <persName type="aphrodisian" full="yes"><name reg="Ζηνᾶς">Ζηνᾶς</name></persName>  <space unit="character" extent="unknown" dim="horizontal"/><lb n="3"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><persName type="aphrodisian" full="yes"><name reg="Νόννος">Νόννος</name></persName>  <space unit="character" extent="unknown" dim="horizontal"/><lb n="4"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><persName type="aphrodisian" full="yes"><name reg="Θεόδωρος"><expan><abbr>Θε<supplied reason="lost">όδ</supplied>ωρ</abbr><supplied reason="abbreviation">ο</supplied><abbr>ς</abbr></expan></name></persName>  <space unit="character" extent="unknown" dim="horizontal"/><lb n="5"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><persName type="aphrodisian" full="yes"><name reg="Σαββάτιος  ">Σαββάτιο<supplied reason="lost">ς</supplied></name></persName><lb n="6"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>  <persName type="aphrodisian" full="yes"><name reg="Κάλλιστος">Κάλλιστος</name></persName>  <space unit="character" extent="1" dim="horizontal"/></ab></div>
-</div>
-
-
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>ii. l. 1 is restored from i. a. l. 1. </p>
-</div><div type="translation">
-<head>Translation</head>
-<p>i. The fortune triumphs of those here; writing of Eusebios</p><p>ii. <supplied reason="lost">The fortune triumphs</supplied> of those here <gap dim="left" extent="unknown" reason="lost"/> Zenas <gap dim="left" extent="unknown" reason="lost"/> Nonnos <gap dim="left" extent="unknown" reason="lost"/> Theodoros <gap dim="left" extent="unknown" reason="lost"/>  Sabbatios <gap dim="left" extent="unknown" reason="lost"/> Kallistos</p>
-</div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>Some of the names (such as Sabbatios) seem to be Jewish or Christian, but others are not necessarily so.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Necropolis, North-east</rs>: cut on threshhold of  building adjacent to "Extra-mural nymphaeum"</rs><rs type="origLocation" reg="findspot">Findspot</rs>. <rs type="lastLocation" reg="findspot">Findspot  (1981)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition.</p>
-</div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="JandG" rend="primary" type="hbi">Reynolds &amp; Tannenbaum, <title level="m">Jews and Godfearers at Aphrodisias</title>, appendix, <biblScope>7</biblScope></bibl>. </p>
-</div>
-
-<div type="figure" n="photographs"><head>Photographs</head><p><figure href="JMR_1_1968_01"><figDesc>Stone (1968)</figDesc></figure><figure href="81_F_09"><figDesc>Squeeze, i. a. (1981)</figDesc></figure><figure href="81_F_10"><figDesc>Squeeze, i. b. (1981)</figDesc></figure></p></div>
-
-
-
-</body>
-</text>
-
+         <div type="apparatus">
+            <p>ii. l. 1 is restored from i. a. l. 1. </p>
+         </div>
+         <div type="translation">
+            <p>i. The fortune triumphs of those here; writing of Eusebios</p>
+            <p>ii. <supplied reason="lost">The fortune triumphs</supplied> of those here <gap reason="lost" unit="character" extent="unknown"/> Zenas <gap reason="lost" unit="character" extent="unknown"/> Nonnos <gap reason="lost" unit="character" extent="unknown"/> Theodoros <gap reason="lost" unit="character" extent="unknown"/>  Sabbatios <gap reason="lost" unit="character" extent="unknown"/> Kallistos</p>
+         </div>
+         <div type="commentary">
+            <p>Some of the names (such as Sabbatios) seem to be Jewish or Christian, but others are not necessarily so.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="JandG" rend="primary" type="hbi">Reynolds &amp; Tannenbaum, <title level="m">Jews and Godfearers at Aphrodisias</title>, appendix, <citedRange>7</citedRange>
+               </bibl>. </p>
+         </div>
+      </body>
+   </text>
 </TEI>

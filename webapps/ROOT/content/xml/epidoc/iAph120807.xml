@@ -1,81 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120807" n="iAph1906 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Marcus Antonius Popillios Agelaos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-20</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Marcus Antonius Popillios Agelaos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120807</idno>
+            <idno type="IAph2007">iAph120807</idno>
+            <idno type="JMR2004">iAph1906</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper part of a <material>white marble</material>
+                              <objectType>base</objectType> with heavy moulding above (<height unit="metre">0.030</height>) and traces of a moulding below.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> (l.1) on the upper fascia and (ll.2 ff.) on the face, which is badly chipped.  One loose fragment joins to provide the end of ll. 2-4.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.015</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">
+ Second century A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South-west</rs>: re-used in the southern stretch.</provenance>
+                  <provenance type="observed" when="1975">Findspot, half buried (1975)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-20" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_C_10.jpg">
+            <desc>Face (1975)</desc>
+         </graphic>
+         <graphic url="75_F_03A.jpg">
+            <desc>Face (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Upper part of a <rs type="material">white marble</rs> <rs type="objectType">base</rs> with heavy moulding above (<measure dim="height" type="length" unit="metre" precision="circa">0.030</measure>) and traces of a moulding below.</p>
+<ab><lb n="1"/>  <space extent="3" unit="character" dim="horizontal"/> <persName type="divine"><w lemma="ἀγαθός">Ἀγαθῇ</w> <w lemma="τύχη">Τύχῃ</w></persName> <space extent="3" unit="character" dim="horizontal"/>  <lb n="2"/> <persName type="attested"><name nymRef="#Μᾶρκος">Μᾶρκος</name> <name nymRef="#Ἀντώνιος">Ἀντώνιος</name> <name nymRef="#Ποπίλλιος">Ποπ<unclear reason="damage">ί</unclear>λ<lb n="3" break="no"/><supplied reason="lost">λ</supplied>ιος</name> <name nymRef="#Ἀγέλαος">Ἀγέλαος</name></persName> <w lemma="σοφιστής">σοφιστ<supplied reason="lost">ὴ</supplied>ς</w>  <lb n="4"/><w lemma="πρωτονεωποιός"><supplied reason="lost">πρω</supplied><unclear reason="damage">τ</unclear>ονεωποιὸς</w>  <w><gap reason="lost" unit="character" quantity="6"/>ς</w></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> (l.1) on the upper fascia and (ll.2 ff.) on the face, which is badly chipped.  One loose fragment joins to provide the end of ll. 2-4.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre" precision="circa">0.015</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0200" notBefore="0101" exact="none"> Second century A.D.</date> (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <space extent="3" unit="character" dim="horizontal"/> <persName type="divine"><w lemma="ἀγαθός">Ἀγαθῇ</w> <w lemma="τύχη">Τύχῃ</w></persName> <space extent="3" unit="character" dim="horizontal"/>  <lb n="2"/> <persName type="aphrodisian"><name reg="Μᾶρκος">Μᾶρκος</name> <name reg="Ἀντώνιος">Ἀντώνιος</name> <name reg="Ποπίλλιος">Ποπ<unclear reason="damage">ί</unclear>λ<lb n="3" type="worddiv"/><supplied reason="lost">λ</supplied>ιος</name> <name reg="Ἀγέλαος">Ἀγέλαος</name></persName> <w lemma="σοφιστής">σοφιστ<supplied reason="lost">ὴ</supplied>ς</w>  <lb n="4"/><w lemma="πρωτονεωποιός"><supplied reason="lost">πρω</supplied><unclear reason="damage">τ</unclear>ονεωποιὸς</w>  <w><gap reason="lost" extent="6" unit="character"/>ς</w></ab>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>For Good Fortune. Marcus Antonius Popillios Agelaos, sophist, chief ship-builder <supplied reason="lost" cert="low">offered this</supplied></p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Reinach suggested he might be related to L<supplied reason="abbreviation">ucius</supplied> Antonius Flavianos, father-in-law of C<supplied reason="abbreviation">aius</supplied> Julius Politianos  in <xref type="inscription" n="1783" href="120105">12.105</xref> (=CIG 2786).</p><p>He may also be related to M<supplied reason="abbreviation">arcus</supplied> Antonius Zenon Ulpianos, in <xref type="inscription" n="365" href="120708">12.708</xref> (=Walls 131), found in the same area.</p>
-<p>Compare also M<supplied reason="abbreviation">arcus</supplied> Antonius Agelaos, stephanephorus in <xref type="inscription" n="1538" href="120414">12.414</xref></p></div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, South-west</rs>: re-used in the southern stretch.</rs>
-<rs type="lastLocation">Findspot, half buried (1975)</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition (<rs type="siteNo">Walls 121</rs>).</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="75_C_10"><figDesc>Face (1975)</figDesc></figure><figure href="75_F_03A"><figDesc>Face (1975)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>For Good Fortune. Marcus Antonius Popillios Agelaos, sophist, chief ship-builder <supplied reason="lost" cert="low">offered this</supplied>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>Reinach suggested he might be related to L<ex>ucius</ex> Antonius Flavianos, father-in-law of C<ex>aius</ex> Julius Politianos  in <ref type="inscription" n="1783" target="120105.xml"/> (=CIG 2786).</p>
+            <p>He may also be related to M<ex>arcus</ex> Antonius Zenon Ulpianos, in <ref type="inscription" n="365" target="120708.xml"/> (=Walls 131), found in the same area.</p>
+            <p>Compare also M<ex>arcus</ex> Antonius Agelaos, stephanephorus in <ref type="inscription" n="1538" target="120414.xml"/>
+            </p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

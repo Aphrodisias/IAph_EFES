@@ -1,82 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020522" n="iAph1238 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><seg cert="low"><rs type="textType">Building dedication</rs></seg> to <seg cert="low">divinity/emperor</seg></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-02-13</date><respStmt><name>Gabriel Bodard</name></respStmt><item>DONE</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Building dedication</seg> to <seg cert="low">divinity/emperor</seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020522</idno>
+            <idno type="IAph2007">iAph020522</idno>
+            <idno type="JMR2004">iAph1238</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>68.261</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper right corner of <material key="marmor">white marble</material>
+                              <objectType cert="low">statue base</objectType> without moulding (<width unit="metre">0.25</width> × <height unit="metre">0.31</height> × <depth unit="metre">0.48</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025</height>; l.2, <foreign xml:lang="grc">ΝΚ</foreign> in ligature</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0167"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+Late second to third centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon, West area</rs>: 'W. Odeon, Bishop's Palace, Tr. I, Str. 1'</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-13" who="#GB">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_B_34.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-
-
-
-<p>Upper right corner of <rs type="material" key="marmor">white marble</rs> <rs type="objectType" cert="low">statue base</rs> without moulding (<measure type="length" unit="metre" dim="width">0.25</measure> × <measure type="length" unit="metre" dim="height">0.31</measure> × <measure type="length" unit="metre" dim="depth">0.48</measure>).</p>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/> <w lemma="θεός">θεῷ</w> <space extent="4" unit="character" dim="horizontal"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ν</orig>  <w lemma="ὁ">τὸ<hi rend="ligature" id="hi1">ν</hi></w><link targets="hi1  hi2"/>  <w lemma="κράτιστος"><hi rend="ligature" id="hi2">κ</hi>ρά<lb n="3" break="no"/><supplied reason="lost" cert="low">τιστον</supplied></w> <w><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">κ</unclear>ισ</orig></w> <w lemma="ἐπί">ἐπι<lb n="4" break="no"/></w> <w><gap reason="lost" unit="character" extent="unknown"/>ριον  <lb n="5" break="no"/><gap reason="lost" unit="character" extent="unknown"/></w><orig n="unresolved">λ</orig>  <lb n="5a"/><gap reason="lost" unit="line" extent="unknown"/></ab>
 </div>
-<div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on one face.</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.025</measure>; l.2, <foreign lang="grc">ΝΚ</foreign> in ligature</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0167" notAfter="0300" exact="none" cert="low">Late second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="unknown" unit="character" dim="left"/> <w lemma="θεός">θεῷ</w> <space extent="4" unit="character" dim="horizontal"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ν</orig>  <w lemma="ὁ">τὸ<hi rend="ligature" id="hi1">ν</hi></w><link targets="hi1  hi2"/>  <w lemma="κράτιστος"><hi rend="ligature" id="hi2">κ</hi>ρά<lb n="3" type="worddiv"/><supplied reason="lost" cert="low">τιστον</supplied></w> <w><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">κ</unclear>ισ</orig></w> <w lemma="ἐπί">ἐπι<lb n="4" type="worddiv"/></w> <w><gap reason="lost" extent="unknown" unit="character" dim="left"/>ριον  <lb n="5" type="worddiv"/><gap reason="lost" extent="unknown" unit="character" dim="left"/></w><orig n="unresolved">λ</orig>  <lb n="5a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/></ab>
-</div>
-
-
-<div type="apparatus"><head>Apparatus</head><p>l. 3, <foreign lang="grc"><supplied reason="lost" cert="low">πολλά</supplied>κις</foreign></p></div><div type="translation">
-<head>Translation</head>
-<p>
-<gap reason="lost" extent="unknown" unit="character" dim="left"/> <supplied reason="subaudible">dedicated</supplied> to the deity  <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><note>so and so</note></supplied> the eminent <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost" cert="low">many</supplied> times  <gap reason="lost" extent="unknown" unit="character" dim="right"/></p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p> It appears that a statue of a fairly eminent person is being dedicated to a divinity. Since the location is near the Temenos of Aphrodite who is often entitled <foreign lang="grc">θεός</foreign> she may well be the divinity concerned. Since the subject has the title <foreign lang="grc">κράτιστος</foreign> he was presumably of Roman equestrian status, possibly, but not necessarily, an official. In line 3 it seems probable that we have part of a statement that he did something many times.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
- Original location: <rs type="origLocation">Unknown</rs>
-Found: <rs type="found"><rs type="monuList">Bouleuterion/Odeon, West area</rs>: 'W. Odeon, Bishop's Palace, Tr. I, Str. 1'</rs>
-; Last known location: <rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1968 (<rs type="invNo">68.261</rs>, SBI <rs type="sbi">20</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_B_34"><figDesc>Face (1978)</figDesc></figure>
-</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 3, <foreign xml:lang="grc">
+                  <supplied reason="lost" cert="low">πολλά</supplied>κις</foreign>
+            </p>
+         </div>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="subaudible">dedicated</supplied> to the deity  <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost">
+                  <note xml:lang=""/>
+               </supplied> the eminent <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost" cert="low">many</supplied> times  <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p> It appears that a statue of a fairly eminent person is being dedicated to a divinity. Since the location is near the Temenos of Aphrodite who is often entitled <foreign xml:lang="grc">θεός</foreign> she may well be the divinity concerned. Since the subject has the title <foreign xml:lang="grc">κράτιστος</foreign> he was presumably of Roman equestrian status, possibly, but not necessarily, an official. In line 3 it seems probable that we have part of a statement that he did something many times.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

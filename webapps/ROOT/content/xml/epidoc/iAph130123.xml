@@ -1,83 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130123" n="iAph0617 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Gladiator memorial</rs>, for Unio</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied xrefs</item></change><change><date>2007-01-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>An <rs type="objectType">altar-stele</rs>, with moulding above and below on three sides, badly worn (<measure dim="height" unit="metre" type="length">0.71</measure> x <measure dim="width" unit="metre" type="length">0.37</measure> x <measure dim="depth" unit="metre" type="length">0.42</measure>). On face, relief of a heavily armed <rs type="decoration">gladiator</rs> with shield, advancing right.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face above the relief</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>standard forms, <measure dim="height" type="length" unit="metre">0.02</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date>
- (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <persName type="aphrodisian"><name reg="Οὔνιων">Οὔνιων</name></persName> <w lemma="πάλος">πάλου</w> <num value="2">β</num> <lb n="2"/> <w lemma="ὑπό">ὑπὸ</w> <persName type="aphrodisian"><name reg="Παρδαλᾶς">Παρδαλᾶ</name></persName> <lb n="3"/> <w lemma="πάλος">πάλου</w> <num value="1">α</num> </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Gladiator memorial, for Unio</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130123</idno>
+            <idno type="IAph2007">iAph130123</idno>
+            <idno type="JMR2004">iAph0617</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>An <objectType>altar-stele</objectType>, with moulding above and below on three sides, badly worn (<height unit="metre">0.71</height> x <width unit="metre">0.37</width> x <depth unit="metre">0.42</depth>). On face, relief of a heavily armed <rs type="decoration">gladiator</rs> with shield, advancing right.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face above the relief</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>standard forms, <height unit="metre">0.02</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+Second to third centuries A.D.
+ (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east</rs>: in the old  Turkish cemetery.</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied xrefs</change>
+         <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_D_32.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+         <graphic url="78_D_33.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+         <graphic url="80_D_20.jpg">
+            <desc>Face (1980)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>Unio of brigade 2 by Pardalas of brigade 1.</p>
+<ab><lb n="1"/> <persName type="attested"><name nymRef="#Οὔνιων">Οὔνιων</name></persName> <w lemma="πάλος">πάλου</w> <num value="2">β</num> <lb n="2"/> <w lemma="ὑπό">ὑπὸ</w> <persName type="attested"><name nymRef="#Παρδαλᾶς">Παρδαλᾶ</name></persName> <lb n="3"/> <w lemma="πάλος">πάλου</w> <num value="1">α</num> </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>For the name Unio, see Robert, Gladiateurs, 232 and 301, with OMS IV, 175. For Pardalas as the name of a mime see <xref type="iAph">601</xref>.ii, and of a gladiator, Gladiateurs no. 269, and 300</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Necropolis, North-east</rs>: in the old  Turkish cemetery.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcriptions (Reynolds, Roueché)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-
-<p>Recorded by the NYU expedition in 1978 (<rs type="siteNo">East Cemetery 3</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="PPA">Roueché, PPA <biblScope>17</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_D_32"><figDesc>Face (1978)</figDesc></figure><figure href="78_D_33"><figDesc>Face (1978)</figDesc></figure><figure href="80_D_20"><figDesc>Face (1980)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>Unio of brigade 2 by Pardalas of brigade 1.</p>
+         </div>
+         <div type="commentary">
+            <p>For the name Unio, see Robert, Gladiateurs, 232 and 301, with OMS IV, 175. For Pardalas as the name of a mime see <ref type="iAph" target=".xml"/>.ii, and of a gladiator, Gladiateurs no. 269, and 300</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="PPA">Roueché, PPA <citedRange>17</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,121 +1,168 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050018" n="iAph0088 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">Eugenios is <rs type="textType" reg="honours"><rs type="textType" reg="verse">honoured</rs></rs> by <seg cert="low">the <term lang="grc-Latn">boule</term></seg></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-08-24</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-01-10</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A <rs type="material" key="marmor">white marble</rs> <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs> (<measure type="length" unit="metre" dim="height">1.48</measure> × <measure type="length" unit="metre" dim="width">0.535</measure> × <measure type="length" unit="metre" dim="depth">0.41</measure>with a central recessed panel.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on the central, recessed face.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p><measure type="length" unit="metre" dim="height">0.025</measure>-<measure type="length" unit="metre" dim="height">0.03</measure>; lunate forms, neat and rounded, very similar to <xref type="inscription" n="85" href="050016">5.16</xref>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0501" notAfter="0600">Sixth century</date> (<rs type="criteria">lettering</rs>).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Eugenios is honoured by <seg cert="low">the <term xml:lang="grc-Latn">boule</term>
+               </seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050018</idno>
+            <idno type="IAph2007">iAph050018</idno>
+            <idno type="JMR2004">iAph0088</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material>
+                              <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> (<height unit="metre">1.48</height> × <width unit="metre">0.535</width> × <depth unit="metre">0.41</depth>with a central recessed panel.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the central, recessed face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025</height>-<height unit="metre">0.03</height>; lunate forms, neat and rounded, very similar to <ref type="inscription" n="85" target="050016.xml"/>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList" key="HadrBath" cert="low">Hadrianic Baths</rs>.</origPlace>
+                     <origDate notBefore="0501"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering">Sixth century (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="HadrBath">Hadrianic Baths, East Court</rs>: '<foreign xml:lang="fr">Portique N<ex>ord</ex>
+                     </foreign>'.</provenance>
+                  <provenance type="observed">Among the material from the French excavtions piled in the East Court.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Boulanger notebooks; publications; transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-10" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-24" who="#CMR">tagged and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_J_29A.jpg">
+            <desc>Face (1975)</desc>
+         </graphic>
+         <graphic url="72_C_25.jpg">
+            <desc>Detail (1972)</desc>
+         </graphic>
+         <graphic url="NY_94_56_01.jpg">
+            <desc>Top of base (1994)</desc>
+         </graphic>
+         <graphic url="Boulanger_A_78.jpg">
+            <desc>Transcription by Boulanger, Notebook A, p. 78 </desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<lg met="elegaic">
 		<lb n="1"/>
 		<l n="1" met="hexameter"><w lemma="ἀντί">ἀντ'</w> <w lemma="εὐεργεσία">εὐεργεσίης</w> <w lemma="καί">καὶ</w>
 		<lb n="2"/><w lemma="εἰμί">ὧν</w> <w lemma="δωρέομαι">δωρήσατο</w> <w lemma="πάτρη">πά
-		<lb n="3" type="worddiv"/>τρηι</w></l>
-		<l met="pentameter" n="2"><persName key="Eugenius" type="aphrodisian" full="yes"><name reg="Εὐγένιος">Εὐγένιον</name></persName> <rs type="subject" key="ordo"><w lemma="τάξις">τάξις</w></rs>
+		<lb n="3" break="no"/>τρηι</w></l>
+		<l met="pentameter" n="2"><persName key="Eugenius" type="attested"><name nymRef="#Εὐγένιος">Εὐγένιον</name></persName> <rs type="subject" key="ordo"><w lemma="τάξις">τάξις</w></rs>
 		<lb n="4"/><w lemma="ἵστημι">στῆσεν</w> <w lemma="ἀμείβομαι">ἀμιβομένη</w>.</l>
 		</lg>
       </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p>l.4. After cutting the first <foreign lang="grc">Σ</foreign> of <foreign lang="grc">στῆσεν</foreign> the inscriber began to cut a cross bar, as for <foreign lang="grc">Ε</foreign>.</p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>In return for his benefaction, and for the gifts he has made to his country, the <term lang="la">ordo</term> set up <supplied reason="subaudible">a statue of</supplied> Eugenios, in repayment.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="VI.32">VI.32</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="HadrBath">Hadrianic Baths, East Court</rs>: '<foreign lang="fr">Portique N<supplied reason="abbreviation">ord</supplied></foreign>'.</rs>. Original location: <rs type="origLocation"><rs type="monuList" key="HadrBath" cert="low">Hadrianic Baths</rs>.</rs>. Last recorded location: <rs type="lastLocation">Among the material from the French excavtions piled in the East Court.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by <rs type="visitor" key="boulanger">Boulanger</rs>, 30 October 1913 (notebook A, 78, no. 22, whence B, 39 no. 22); recorded by <rs type="visitor" key="robert">J. and L. Robert</rs>; by the NYU expedition.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published from Boulanger's copy and his own by <bibl type="hbi" n="hell4"><author>L. Robert</author>, <title level="j">Hellenica</title> 4, <biblScope>133</biblScope> and plate v</bibl>, whence <bibl n="be"><title level="j">BE</title> <biblScope>1949.178</biblScope></bibl>; discussed by <bibl><author>T. Drew-Bear</author>, <title level="j">REA</title> 82, (<date>1980</date>), 163</bibl>; published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>88</biblScope>, and plate xxiii</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257606">719</biblScope></bibl>, <bibl type="hbi" n="steinepig"><title level="m">Steinepigramme</title> <biblScope>02/09/10</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Boulanger notebooks; publications; transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs"><head>Photographs</head><p><figure href="75_J_29A"><figDesc>Face (1975)</figDesc></figure><figure href="72_C_25"><figDesc>Detail (1972)</figDesc></figure><figure href="NY_94_56_01"><figDesc>Top of base (1994)</figDesc></figure></p></div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Boulanger_A_78"><figDesc>Transcription by Boulanger, Notebook A, p. 78 </figDesc></figure></p></div>
-
-      
-
+         <div type="apparatus">
+            <p>l.4. After cutting the first <foreign xml:lang="grc">Σ</foreign> of <foreign xml:lang="grc">στῆσεν</foreign> the inscriber began to cut a cross bar, as for <foreign xml:lang="grc">Ε</foreign>.</p>
+         </div>
+         <div type="translation">
+            <ab>In return for his benefaction, and for the gifts he has made to his country, the <term xml:lang="la">ordo</term> set up <supplied reason="subaudible">a statue of</supplied> Eugenios, in repayment.</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="VI.32" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Boulanger's copy and his own by <bibl type="hbi" n="hell4">
+                  <author>L. Robert</author>, <title level="j">Hellenica</title> 4, <citedRange>133</citedRange> and plate v</bibl>, whence <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1949.178</citedRange>
+               </bibl>; discussed by <bibl>
+                  <author>T. Drew-Bear</author>, <title level="j">REA</title> 82, (<date>1980</date>), 163</bibl>; published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>88</citedRange>, and plate xxiii</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257606">719</citedRange>
+               </bibl>, <bibl type="hbi" n="steinepig">
+                  <title level="m">Steinepigramme</title>
+                  <citedRange>02/09/10</citedRange>
+               </bibl>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

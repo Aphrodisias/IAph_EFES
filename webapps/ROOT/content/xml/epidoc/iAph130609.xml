@@ -1,94 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130609" n="iAph0546 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Edict</rs> of Silius Italicus, proconsul</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-04-02</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-03-15</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Upper part of a <rs type="material">white marble</rs> <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs> (<measure dim="width" type="length" unit="metre"> 0.53</measure> x <measure dim="height" type="length" unit="metre">0.37</measure>  x <measure dim="depth" type="length" unit="metre">0.58</measure>)</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Edict of Silius Italicus, proconsul</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130609</idno>
+            <idno type="IAph2007">iAph130609</idno>
+            <idno type="JMR2004">iAph0546</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper part of a <material>white marble</material>
+                              <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> (<width unit="metre"> 0.53</width> x <height unit="metre">0.37</height>  x <depth unit="metre">0.58</depth>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>-<height unit="metre">0.025</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>unknown</origPlace>
+                     <origDate notBefore="0077" notAfter="0077" evidence="prosopography">
+77 A.D.
+(<rs type="criteria">prosopography</rs>)</origDate>
+                  </origin>
+                  <provenance type="found" when="1934">
+                     <rs type="monuList">Necropolis, West</rs>: lying beside a cistern about 3 km approximately westwards of Aphrodisias at a bearing of 255° on the Acropolis (1934).</provenance>
+                  <provenance type="observed" when="1934">Findspot (1934)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>Publications, MAMA squeeze (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-02" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-15" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/><persName type="attested"><name nymRef="#Τιβέριος"><unclear reason="damage">Τ</unclear>ιβέριος</name> <name nymRef="#Κάτιος">Κάτιος</name> <name>Ἀ<supplied reason="lost">σ</supplied>κ<unclear reason="damage">ώ</unclear>  <lb n="2" break="no"/>νιος</name> <name nymRef="#Σείλιος">Σείλιος</name> <name nymRef="#Ἰταλικός">Εἰταλικὸς</name></persName> <lb n="3"/> <w lemma="ἀνθύπατος">ἀνθύπατος</w> <w lemma="λέγω">λέγει</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <lb n="4"/> <w lemma="ψήφισμα">ψηφισμάτων</w> <w lemma="εἰμί">ὄντων</w> <lb n="5"/>  <w lemma="καθά">καθὰ</w> <w lemma="κωλύω">κωλύεται</w> <w lemma="συνλαμβάνω">συνλαμ <lb n="6" break="no"/><unclear reason="damage">βάν</unclear><supplied reason="lost">ειν</supplied></w> <w lemma="τρέφω">τρέφειν</w> <w lemma="σοβέω">σοβεῖν</w> <lb n="7"/><w lemma="ἐν"><gap reason="lost" unit="character" extent="unknown"/><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="ὁ">τὰ<unclear reason="damage">ς</unclear></w>  <lb n="8"/><w lemma="περιστερά"><supplied reason="lost">περιστερὰ</supplied>ς</w> <w lemma="ὁ">τῆς</w> <w lemma="τε">τε</w> <w lemma="θρησκεία">θρησ<lb n="9" break="no"/><supplied reason="lost">κείας</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="περί"><supplied reason="lost">πε</supplied>ρὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="θεός">θεὸν</w> <lb n="10"/> <gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">εσθατι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="10α"/><gap reason="lost" unit="character" extent="unknown"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>
-<measure type="length" unit="metre" dim="height">0.02</measure>-<measure type="length" unit="metre" dim="height">0.025</measure>
-</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0077" exact="both" notBefore="0077" value="0077">77 A.D.</date>
-(<rs type="criteria">prosopography</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen"><unclear reason="damage">Τ</unclear>ιβέριος</name> <name reg="Κάτιος">Κάτιος</name> <name>Ἀ<supplied reason="lost">σ</supplied>κ<unclear reason="damage">ώ</unclear>  <lb type="worddiv" n="2"/>νιος</name> <name reg="Σείλιος">Σείλιος</name> <name reg="Ἰταλικός">Εἰταλικὸς</name></persName> <lb n="3"/> <w lemma="ἀνθύπατος">ἀνθύπατος</w> <w lemma="λέγω">λέγει</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <lb n="4"/> <w lemma="ψήφισμα">ψηφισμάτων</w> <w lemma="εἰμί">ὄντων</w> <lb n="5"/>  <w lemma="καθά">καθὰ</w> <w lemma="κωλύω">κωλύεται</w> <w lemma="συνλαμβάνω">συνλαμ <lb type="worddiv" n="6"/><unclear reason="damage">βάν</unclear><supplied reason="lost">ειν</supplied></w> <w lemma="τρέφω">τρέφειν</w> <w lemma="σοβέω">σοβεῖν</w> <lb n="7"/><w lemma="ἐν"><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="ὁ">τὰ<unclear reason="damage">ς</unclear></w>  <lb n="8"/><w lemma="περιστερά"><supplied reason="lost">περιστερὰ</supplied>ς</w> <w lemma="ὁ">τῆς</w> <w lemma="τε">τε</w> <w lemma="θρησκεία">θρησ<lb type="worddiv" n="9"/><supplied reason="lost">κείας</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="περί"><supplied reason="lost">πε</supplied>ρὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="θεός">θεὸν</w> <lb n="10"/> <gap reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">εσθατι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>  <lb n="10α"/><gap reason="lost" extent="unknown" unit="character"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l.1: [Τι]βέριος Calder, Τιβέριος MAMA, Ἀσκω Calder, Ἀσκ̣ω̣ MAMA.</p>
-<p>l.3: κα[ὶ] Calder, Sokolowski, Robert; κα[ίπερ] MAMA.</p>
-<p>l.7: ?[πωλεῖν Calder, [πιάζειν Sokolowski.</p>
-<p>l.10: <gap extent="unknown" reason="lost" unit="character"/>ΣΘΑ[Ι] Calder, [χάριν, ἀλλ᾿αἰδεῖ]σ̣θαι̣ Sokolowski, [ἀμελεῖν τινες] τ̣ολ̣[μῶσι] MAMA.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Ti. Catius Asconius Silius Italicus, proconsul, announces: although decrees also exist by which it is forbidden to catch, keep, scare or [ . . ? . . ] the [doves] in the city and [ . . ? . . ] of the cult concerning the goddess [ . . .</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>When the site was identified in 1976 the cistern had been dismantled and its stones apparently re-used in a newly-built farmhouse, but this piece was not visible; it has presumably been broken up or re-used with the inscribed face covered. See further Aphrodisias and Rome, 173.</p>
-<p>For the proconsul, the poet Silius Italicus, see <title>PIR</title> C1 0474, and W. Eck, <title>Senatoren von Vespasian bis Hadrian</title> (1970), 82 f.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Necropolis, West</rs>: lying beside a cistern about 3 km approximately westwards of Aphrodisias at a bearing of 255° on the Acropolis (1934).</rs>
-<rs type="origLocation">unknown</rs>
-<rs type="lastLocation">Findspot (1934)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications, MAMA squeeze (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the MAMA expedition in 1934; not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="calder1935">Calder, CR 49, 1935, 216-217</bibl>, whence <bibl n="be">BE <biblScope>1938.395</biblScope></bibl>, <bibl>Campbell, <title>CR</title> 50, 1936, 56-58</bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <biblScope>411</biblScope></bibl>, whence <bibl n="hell13">L. Robert, <title>Hellenica</title> 13, l4</bibl>, <bibl n="be">BE <biblScope>1966.384</biblScope></bibl>, <bibl>Sokolowski, LSAM 189, no. 86</bibl>, <bibl><title>SEG</title> 15, 660</bibl>; <bibl>Robert, <title>JS</title> 1971, 81-97</bibl>; published, from all these, <bibl n="jmr1982">Reynolds, A&amp;R <biblScope>46</biblScope></bibl> whence <bibl n="seg">SEG 32, <biblScope>1982.1097</biblScope></bibl>; <bibl n="be">BE <biblScope>1983.391</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>  <biblScope n="256953">75</biblScope>
-</bibl>. Discussion by <bibl>D. J. Campbell, CR 50 (1936), 56 f.</bibl> (on the prosopography) ; <bibl>E. Bikermann, Syria 25 (1948), 83</bibl>; <bibl n="be">J. and L. Robert, Bull. Ep. <biblScope>1971.613</biblScope></bibl> ; <bibl>M. Guarducci RAL 1973, 587 f</bibl>. ; <bibl n="be">J. and L. Robert, Bull. Ep. <biblScope>1976. 90</biblScope></bibl> (all on the doves)</p>
-</div>
-<div type="figure" n="none">
-<head>Photographs</head>
-<p> No photographs</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l.1: [Τι]βέριος Calder, Τιβέριος MAMA, Ἀσκω Calder, Ἀσκ̣ω̣ MAMA.</p>
+            <p>l.3: κα[ὶ] Calder, Sokolowski, Robert; κα[ίπερ] MAMA.</p>
+            <p>l.7: ?[πωλεῖν Calder, [πιάζειν Sokolowski.</p>
+            <p>l.10: <gap reason="lost" unit="character" extent="unknown"/>ΣΘΑ[Ι] Calder, [χάριν, ἀλλ᾿αἰδεῖ]σ̣θαι̣ Sokolowski, [ἀμελεῖν τινες] τ̣ολ̣[μῶσι] MAMA.</p>
+         </div>
+         <div type="translation">
+            <p>Ti. Catius Asconius Silius Italicus, proconsul, announces: although decrees also exist by which it is forbidden to catch, keep, scare or [ . . ? . . ] the [doves] in the city and [ . . ? . . ] of the cult concerning the goddess [ . . .</p>
+         </div>
+         <div type="commentary">
+            <p>When the site was identified in 1976 the cistern had been dismantled and its stones apparently re-used in a newly-built farmhouse, but this piece was not visible; it has presumably been broken up or re-used with the inscribed face covered. See further Aphrodisias and Rome, 173.</p>
+            <p>For the proconsul, the poet Silius Italicus, see <title>PIR</title> C1 0474, and W. Eck, <title>Senatoren von Vespasian bis Hadrian</title> (1970), 82 f.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="calder1935">Calder, CR 49, 1935, 216-217</bibl>, whence <bibl n="be">BE <citedRange>1938.395</citedRange>
+               </bibl>, <bibl>Campbell, <title>CR</title> 50, 1936, 56-58</bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <citedRange>411</citedRange>
+               </bibl>, whence <bibl n="hell13">L. Robert, <title>Hellenica</title> 13, l4</bibl>, <bibl n="be">BE <citedRange>1966.384</citedRange>
+               </bibl>, <bibl>Sokolowski, LSAM 189, no. 86</bibl>, <bibl>
+                  <title>SEG</title> 15, 660</bibl>; <bibl>Robert, <title>JS</title> 1971, 81-97</bibl>; published, from all these, <bibl n="jmr1982">Reynolds, A&amp;R <citedRange>46</citedRange>
+               </bibl> whence <bibl n="seg">SEG 32, <citedRange>1982.1097</citedRange>
+               </bibl>; <bibl n="be">BE <citedRange>1983.391</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256953">75</citedRange>
+               </bibl>. Discussion by <bibl>D. J. Campbell, CR 50 (1936), 56 f.</bibl> (on the prosopography) ; <bibl>E. Bikermann, Syria 25 (1948), 83</bibl>; <bibl n="be">J. and L. Robert, Bull. Ep. <citedRange>1971.613</citedRange>
+               </bibl> ; <bibl>M. Guarducci RAL 1973, 587 f</bibl>. ; <bibl n="be">J. and L. Robert, Bull. Ep. <citedRange>1976. 90</citedRange>
+               </bibl> (all on the doves)</p>
+         </div>
+      </body>
+   </text>
 </TEI>

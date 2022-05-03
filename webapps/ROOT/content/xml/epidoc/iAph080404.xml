@@ -1,118 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080404" n="iAph0213 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType">List</rs> of commodities</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-06-02</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change>
-  <date>2003-08-30</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p><rs type="objectType" reg="wall plaster">Plastered wall</rs>, in a recess.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p> The text is scratched on the north side of a recess, at
-<measure type="length" dim="none">1.40</measure> above ground level; it occupies a space <measure type="length" unit="metre" dim="width">0.28</measure> high and <measure type="length" unit="metre" dim="width">0.12</measure> wide.
-The surface is lost at the lower left.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Cursive and very irregular, <measure type="length" unit="metre" dim="height">0.01-0.02</measure>; abbreviations: // (ll. 1, 2);
-<foreign lang="grc">Υ</foreign> over <foreign lang="grc">Μ</foreign>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0400" cert="low" notBefore="0301">Fourth century</date> (<rs type="criteria">terminology</rs>, <rs type="criteria">location</rs>)</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>List of commodities</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080404</idno>
+            <idno type="IAph2007">iAph080404</idno>
+            <idno type="JMR2004">iAph0213</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <objectType key="wall plaster">Plastered wall</objectType>, in a recess.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> The text is scratched on the north side of a recess, at
+<height>1.40</height> above ground level; it occupies a space <width unit="metre">0.28</width> high and <width unit="metre">0.12</width> wide.
+The surface is lost at the lower left.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Cursive and very irregular, <height unit="metre">0.01-0.02</height>; abbreviations: // (ll. 1, 2);
+<foreign xml:lang="grc">Υ</foreign> over <foreign xml:lang="grc">Μ</foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0301" notAfter="0400" evidence="terminology location">Fourth century (<rs type="criteria">terminology</rs>, <rs type="criteria">location</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Tetrastoon">Tetrastoon</rs>: east wall of theatre building. There are
+recesses in the wall on either side of the main entrance; this is on
+the north wall of the south recess. .</provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-30" who="#CMR">tagged and corrected</change>
+         <change when="2003-06-02" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="83_E_32.jpg">
+            <desc>Face (1983)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
         <ab>
-		  	<lb n="1"/> <orig n="unresolved">ικερ</orig> <space dim="horizontal" unit="character"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="8">η</num><lb n="2"/> <w lemma="στόραξ"><expan><abbr>στο<unclear reason="damage">ρ</unclear></abbr><supplied reason="abbreviation">ακος</supplied></expan></w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="2">β</num><lb n="3"/> <w lemma="ἔλαιον">ἐλέω</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="20">κ</num><lb n="4"/> <w lemma="λάχανον">λαχα<unclear reason="damage">ν</unclear>α<unclear reason="damage">ο</unclear><orig n="unresolved"><unclear reason="damage">ιι</unclear></orig></w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="13">ιγ</num><lb n="5"/> <w lemma="μέλι">μέλιτος</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="3">γ</num><lb n="6"/> <w lemma="οἶνος"><supplied reason="lost" cert="low">οἴ</supplied>νου</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="15">ιε</num><lb n="7"/> <w lemma="ψουμίον">ψουμίον</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="8">η</num><lb n="8"/> <w lemma="ὄσπρος"><supplied reason="lost">ὄ</supplied><unclear reason="damage">σ</unclear>πρου</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="2">β</num><lb n="9"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ι</unclear>υλιο</orig>ς <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="4">δ</num><lb n="10"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ιυ</unclear>ου</orig> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="2">β</num><lb n="11"/> <orig n="unresolved">δι</orig><gap dim="internal" reason="lost" extent="unknown" unit="character"/> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><supplied reason="abbreviation">ριάδας</supplied></expan></w> <num value="9">θ</num><lb n="12-13"/><gap reason="illegible" extent="2" unit="line"/><note lang="en" place="not specified" anchored="yes">scratches and damage 
-			over <seg cert="low">2</seg> lines</note> 
-			<lb n="14"/><orig n="unresolved">ισν</orig><gap reason="lost" dim="right" extent="unknown" unit="character"/>
+		  	<lb n="1"/> <orig n="unresolved">ικερ</orig> <space dim="horizontal" unit="character"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="8">η</num><lb n="2"/> <w lemma="στόραξ"><expan><abbr>στο<unclear reason="damage">ρ</unclear></abbr><ex>ακος</ex></expan></w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="2">β</num><lb n="3"/> <w lemma="ἔλαιον">ἐλέω</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="20">κ</num><lb n="4"/> <w lemma="λάχανον">λαχα<unclear reason="damage">ν</unclear>α<unclear reason="damage">ο</unclear><orig n="unresolved"><unclear reason="damage">ιι</unclear></orig></w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="13">ιγ</num><lb n="5"/> <w lemma="μέλι">μέλιτος</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="3">γ</num><lb n="6"/> <w lemma="οἶνος"><supplied reason="lost" cert="low">οἴ</supplied>νου</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="15">ιε</num><lb n="7"/> <w lemma="ψουμίον">ψουμίον</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="8">η</num><lb n="8"/> <w lemma="ὄσπρος"><supplied reason="lost">ὄ</supplied><unclear reason="damage">σ</unclear>πρου</w> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="2">β</num><lb n="9"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ι</unclear>υλιο</orig>ς <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="4">δ</num><lb n="10"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιυ</unclear>ου</orig> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="2">β</num><lb n="11"/> <orig n="unresolved">δι</orig><gap reason="lost" unit="character" extent="unknown"/> <space dim="horizontal"/> <w lemma="μυριάς"><expan><abbr>μυ</abbr><ex>ριάδας</ex></expan></w> <num value="9">θ</num><lb n="12-13"/><gap reason="illegible" unit="line" quantity="2"/><note place="not specified" xml:lang="en"/> 
+			<lb n="14"/><orig n="unresolved">ισν</orig><gap reason="lost" unit="character" extent="unknown"/>
 			<lb n="15"/><space dim="horizontal"/></ab>
       </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab><seg cert="low"/>, 8 myriads; <seg cert="low">storax</seg>, 2 myriads; oil, 30 myriads
+         <div type="translation">
+            <ab>
+               <seg cert="low"/>, 8 myriads; <seg cert="low">storax</seg>, 2 myriads; oil, 30 myriads
 <seg cert="low">vegetables</seg>, 13 myriads; honey, 3 myriads; wine, 15 myriads; bread, 8
-myriads; <seg cert="low">pulse</seg>, 2 myriads; <gap reason="lost"/>, 4 myriads; <gap reason="lost"/>, 2
-myriads; <gap reason="lost"/>, 9 myriads; <gap reason="lost"/></ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head><p>See discussion at <xref type="eAla-text" n="XI.19">XI.19</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="Tetrastoon">Tetrastoon</rs>: east wall of theatre building. There are
-recesses in the wall on either side of the main entrance; this is on
-the north wall of the south recess. .</rs>. Original location: <rs type="origLocation">Findspot.</rs>. Last recorded location: <rs type="lastLocation">Findspot.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU expedition.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias
-in Late Antiquity</title> no. <biblScope>213</biblScope>, and plate xlv</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257651">764</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="83_E_32"><figDesc>Face (1983)</figDesc></figure></p></div>
-
-    
-
-      
-
+myriads; <seg cert="low">pulse</seg>, 2 myriads; <gap reason="lost" unit="character" extent="unknown"/>, 4 myriads; <gap reason="lost" unit="character" extent="unknown"/>, 2
+myriads; <gap reason="lost" unit="character" extent="unknown"/>, 9 myriads; <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="XI.19" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias
+in Late Antiquity</title> no. <citedRange>213</citedRange>, and plate xlv</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257651">764</citedRange>
+               </bibl>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

@@ -1,76 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120641" n="iAph1312 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for 
-<rs type="textType" reg="imperial">Caracalla</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-03-11</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for 
+Caracalla</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120641</idno>
+            <idno type="IAph2007">iAph120641</idno>
+            <idno type="JMR2004">iAph1312</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>75.326</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Plain <material key="marmor">white marble</material>
+                              <objectType>statue base shaft</objectType> chipped on all edges (<width unit="metre">0.58</width>   × <height unit="metre">1.31</height> x <depth unit="metre">0.49</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>ll. 1-12, <height unit="metre">0.045-0.05</height>; ll. 13-14, <height unit="metre">0.025</height>. Ligatures: <foreign xml:lang="grc">ΝΝ</foreign>, l.8.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0210" notAfter="0217" evidence="reign nomenclature">
+A.D. 210-217
+(<rs type="criteria">reign</rs>, <rs type="criteria">nomenclature</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (east part)</rs>:  excavation on inner side of S. wall, trench 1; reused.</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-11" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_J_32A.jpg">
+            <desc>Face (1976)</desc>
+         </graphic>
+         <graphic url="77_G_16.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="HUMS003439.jpg">
+            <desc>Face (2001)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Plain <rs type="material" key="marmor">white marble</rs> <rs type="objectType">statue base shaft</rs> chipped on all edges (<measure type="length" unit="metre" dim="width">0.58</measure>   × <measure type="length" unit="metre" dim="height">1.31</measure> x <measure precision="circa" type="length" unit="metre" dim="depth">0.49</measure>).</p>
+<ab><lb n="1"/>  <persName type="emperor"><w lemma="αὐτοκράτωρ">Α<unclear reason="damage">ὐ</unclear>τοκράτορα</w>  <lb n="2"/><name nymRef="#Καῖσαρ">Καίσαρα</name>  <name nymRef="#Μᾶρκος">Μᾶρ  <lb n="3" break="no"/>κον</name>  <name nymRef="#Αὐρήλιος">Αὐρήλιον</name>  <lb n="4"/><space extent="1" unit="character" dim="horizontal"/>  <name nymRef="#Σεουῆρος">Σεουῆρον</name>    <space extent="1" unit="character" dim="horizontal"/>  <lb n="5"/><name nymRef="#Ἀντωνεῖνος">Ἀντωνεῖνον</name><lb n="6"/><name nymRef="#Εὐσεβής">Εὐσεβῆ</name>  <name nymRef="#Σεβαστός">Σε<lb n="7" break="no"/>βαστὸν</name>  <w lemma="βρεταννικός">Βρε<lb n="8" break="no"/>τα<hi rend="ligature">νν</hi>ικὸν</w>  <w lemma="μέγας">Μέ<lb n="9" break="no"/>γιστον</w></persName>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆ<lb n="10" break="no"/>μος</w>  <w lemma="ἐκ">ἐξ</w>  <w lemma="ἀπόλειψις">ἀπο<lb n="11" break="no"/>λείψεως</w>  <persName type="attested"><name nymRef="#Φλάβιος">Φλα<lb n="12" break="no"/>βίου</name>  <name nymRef="#Ἄτταλος">Ἀττάλου</name>  </persName><lb n="12a"/><space unit="line" extent="1" dim="vertical"/>    <lb n="13"/><w lemma="ἐπιμελέω">ἐπιμεληθέντος</w>  <g ref="#stop"/>  <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μάρ</abbr><ex>κου</ex></expan></name>  <g ref="#stop"/>  <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name>    <lb n="14"/>  <name nymRef="#Χρήσιμος">Χρησίμου</name>  <w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Ἀπολλώνιος">Ἀπολλωνίου</name></persName></persName></ab>
 </div>
-<div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p>ll. 1-12, <measure type="length" unit="metre" dim="height">0.045-0.05</measure>; ll. 13-14, <measure type="length" unit="metre" dim="height">0.025</measure>. Ligatures: <foreign lang="grc">ΝΝ</foreign>, l.8.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0210" notAfter="0217" exact="both">A.D. 210-217</date>
-(<rs type="criteria">reign</rs>, <rs type="criteria">nomenclature</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="emperor" full="yes"><w lemma="αὐτοκράτωρ">Α<unclear reason="damage">ὐ</unclear>τοκράτορα</w>  <lb n="2"/><name reg="Καῖσαρ" type="cognomen">Καίσαρα</name>  <name reg="Μᾶρκος" type="praenomen">Μᾶρ  <lb n="3" type="worddiv"/>κον</name>  <name reg="Αὐρήλιος" type="gentilicium">Αὐρήλιον</name>  <lb n="4"/><space extent="1" unit="character" dim="horizontal"/>  <name reg="Σεουῆρος">Σεουῆρον</name>    <space extent="1" unit="character" dim="horizontal"/>  <lb n="5"/><name reg="Ἀντωνεῖνος">Ἀντωνεῖνον</name><lb n="6"/><name reg="Εὐσεβής">Εὐσεβῆ</name>  <name reg="Σεβαστός">Σε<lb n="7" type="worddiv"/>βαστὸν</name>  <w lemma="βρεταννικός">Βρε<lb n="8" type="worddiv"/>τα<hi rend="ligature">νν</hi>ικὸν</w>  <w lemma="μέγας">Μέ<lb n="9" type="worddiv"/>γιστον</w></persName>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆ<lb n="10" type="worddiv"/>μος</w>  <w lemma="ἐκ">ἐξ</w>  <w lemma="ἀπόλειψις">ἀπο<lb n="11" type="worddiv"/>λείψεως</w>  <persName type="aphrodisian" full="yes"><name reg="Φλάβιος">Φλα<lb n="12" type="worddiv"/>βίου</name>  <name reg="Ἄτταλος">Ἀττάλου</name>  </persName><lb n="12a"/><space unit="line" extent="1" dim="vertical"/>    <lb n="13"/><w lemma="ἐπιμελέω">ἐπιμεληθέντος</w>  <g type="stop"/>  <persName type="aphrodisian" full="yes"><name reg="Μᾶρκος"><expan><abbr>Μάρ</abbr><supplied reason="abbreviation">κου</supplied></expan></name>  <g type="stop"/>  <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name>    <lb n="14"/>  <name reg="Χρήσιμος">Χρησίμου</name>  <w lemma="ὁ">τοῦ</w>  <persName type="aphrodisian" full="yes"><name reg="Ἀπολλώνιος">Ἀπολλωνίου</name></persName></persName></ab>
-</div>
-
-
-<div type="apparatus"><head>Apparatus</head><p>l. 1, first two letters damaged; <foreign lang="grc">Α</foreign> is clearly legible but <foreign lang="grc">Υ</foreign> is not.</p><p>l. 14, the final <foreign lang="grc">Υ</foreign> is tall.</p></div><div type="translation">
-<head>Translation</head>
-<p>Imperator Caesar Marcus Aurelius Severus Antoninus Pius Augustus, Britannicus Maximus. The People <supplied reason="subaudible">put up his statue</supplied> from the bequest of Flavius Attalos. Marcus Aurelius Chresimos, son of Apollonios, undertook <supplied reason="subaudible">care of the erection</supplied>.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>This text must have accompanied a statue of Caracalla, whose name included the element Britannicus from 210 A.D.</p><p> Another statue of Julia Domna (<xref type="inscription" n="1309" href="120642">12.642</xref>=MAMA 452) which is a pair to this, was found in the same area; a further statue of Caracalla (<xref type="inscription" n="1308" href="120326">12.326</xref>=MAMA 451) was set up from the same bequest.</p><p>The epimelete is not otherwise known at present.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="origLocation">Unknown</rs>  <rs type="found"><rs type="monuList">Walls, South (east part)</rs>:  excavation on inner side of S. wall, trench 1; reused.</rs> <rs type="lastLocation">Museum (1977)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1975 (<rs type="invNo">75.326</rs>; SBI <rs type="sbi">35</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="76_J_32A"><figDesc>Face (1976)</figDesc></figure><figure href="77_G_16"><figDesc>Face (1977)</figDesc></figure><figure href="HUMS003439"><figDesc>Face (2001)</figDesc></figure></p><p>KTE</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 1, first two letters damaged; <foreign xml:lang="grc">Α</foreign> is clearly legible but <foreign xml:lang="grc">Υ</foreign> is not.</p>
+            <p>l. 14, the final <foreign xml:lang="grc">Υ</foreign> is tall.</p>
+         </div>
+         <div type="translation">
+            <p>Imperator Caesar Marcus Aurelius Severus Antoninus Pius Augustus, Britannicus Maximus. The People <supplied reason="subaudible">put up his statue</supplied> from the bequest of Flavius Attalos. Marcus Aurelius Chresimos, son of Apollonios, undertook <supplied reason="subaudible">care of the erection</supplied>.</p>
+         </div>
+         <div type="commentary">
+            <p>This text must have accompanied a statue of Caracalla, whose name included the element Britannicus from 210 A.D.</p>
+            <p> Another statue of Julia Domna (<ref type="inscription" n="1309" target="120642.xml"/>=MAMA 452) which is a pair to this, was found in the same area; a further statue of Caracalla (<ref type="inscription" n="1308" target="120326.xml"/>=MAMA 451) was set up from the same bequest.</p>
+            <p>The epimelete is not otherwise known at present.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

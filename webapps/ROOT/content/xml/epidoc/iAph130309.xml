@@ -1,80 +1,153 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130309" n="iAph0164 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType" reg="funerary">Epitaph</rs> of Philosophia</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-06</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-06-02</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-29</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-27</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A <seg cert="low">white</seg> <rs type="material" key="marmor">marble</rs> <rs type="objectType">column</rs> (no further description and no
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph of Philosophia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130309</idno>
+            <idno type="IAph2007">iAph130309</idno>
+            <idno type="JMR2004">iAph0164</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <seg cert="low">white</seg>
+                              <material key="marmor">marble</material>
+                              <objectType>column</objectType> (no further description and no
 dimensions).</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>On the face of the column.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Remarkably abundant abbreviations.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date value="0551" notBefore="0551" notAfter="0551" exact="both">A.D. 551</date>.</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>On the face of the column.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Remarkably abundant abbreviations.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0551" notAfter="0551">A.D. 551.</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">Necropolis, South-east</rs>: '<foreign xml:lang="fr">hors des murs, le long de la route, à
+droite, 20 m. avant la porte Est</foreign>' (Grégoire interpreted this as
+meaning 20 minutes, but 20 metres seems more likely).</provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; squeeze.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-27" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-06" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-29" who="#CMR">tagged and corrected</change>
+         <change when="2003-06-02" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="martin-ala164.jpg">
+            <desc> Photograph of squeeze by M. H. Martin,
+Collège de France.</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
        <ab>
-		<lb n="1"/><g type="cross"/> <w lemma="τελειόω">ἐτελιώθι</w> <w lemma="καί"><expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan></w> <w lemma="ἀναπαύω">ἀνεπάη</w> <w lemma="ὁ">ὁ</w> <w lemma="μακάριος">μακ<supplied reason="lost">άριος</supplied></w> <w lemma="ὁ">ὁ</w> <w lemma="κηδεστής"><expan><abbr>κη</abbr><supplied reason="abbreviation">δεστής</supplied></expan></w><lb n="2"/><w lemma="ἐγώ">μου</w> <persName type="aphrodisian" key="aristolaus1" full="yes"><name reg="Ἀριστόλαος"><expan><abbr>Ἀρ</abbr><supplied reason="abbreviation">ι</supplied><abbr>στόλαος</abbr></expan></name></persName> <date><w lemma="ἰνδικτιών"><expan><abbr><supplied reason="lost">ἰ</supplied>νδ</abbr><supplied reason="abbreviation">ικτίωνος</supplied></expan></w> <num value="1">α</num>, <w lemma="μείς"><expan><abbr>μη</abbr><supplied reason="abbreviation">νὸς</supplied></expan></w> <num value="2">β</num>, <num value="14">ιδ</num> <w lemma="ἡμέρα"><expan><abbr>ἡμέ</abbr><supplied reason="abbreviation">ρᾳ</supplied></expan></w> <w lemma="πρῶτος"><supplied reason="lost" cert="low">πρώ</supplied>τῃ</w></date> <g type="cross"/><lb n="3"/><g type="cross"/> <w lemma="ἀναπαύω">ἀνεπάη</w> <w lemma="δέ">δὲ</w> <w lemma="καί"><expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan></w> <w lemma="ὁ">ἡ</w> <w lemma="τρισεύμοιρος">τρισεύμοιρος</w> <w lemma="ὁ">ἡ</w> <w lemma="μακάριος"><expan><abbr>μακαρ</abbr><supplied reason="abbreviation">ία</supplied></expan></w><lb n="4"/><w lemma="ὁ">ἡ</w> <w lemma="γίγνομαι"><expan><abbr>γεναμέ</abbr><supplied reason="abbreviation">νη</supplied></expan></w> <rs type="dignity" key="dominus"><w lemma="κυρά">κυρὰ</w></rs> <w lemma="ὁ">τῶν</w> <w lemma="ὧδε"><w lemma="ὧδε">ὧδε</w></w>, <w lemma="ὁ">ἡ</w> <w lemma="κηδεστρία">κηδεστρία</w> <w lemma="ἐγώ">μου</w><lb n="5"/><persName key="theodoreta1" type="aphrodisian" full="yes"><name reg="Θεοδωρήτα">Θεοδωρήτα</name></persName><date> <w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><supplied reason="abbreviation">ικτίωνος</supplied></expan></w> <num value="4">δ</num>, <w lemma="μείς"><expan><abbr>μη</abbr><supplied reason="abbreviation">νὸς</supplied></expan></w> <num value="4">δ</num>, <num value="13">ιγ</num> <w lemma="ἡμέρα"><expan><abbr>ἡμέ</abbr><supplied reason="abbreviation">ρᾳ</supplied></expan></w> <w lemma="ἕκτος">ἕκτῃ</w> </date><g type="cross"/><lb n="6"/><g type="cross"/> <w lemma="τίκτω">ἐτέχθη</w> <w lemma="ὁ">ἡ</w> <rs type="dignity" key="dominus"><w lemma="κυρά">κυρὰ</w></rs> <persName key="philosophia1" type="aphrodisian" full="yes"><name>Φιλοσοφία</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="θυγάτηρ">θυγάτηρ</w><lb n="7"/><w lemma="μέν">μὲν</w> <persName key="aristolaus1" type="aphrodisian" full="yes"><name reg="Ἀριστόλαος">Ἀριστολάου</name></persName> <w lemma="καί"><expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan></w> <persName key="theodoreta1" type="aphrodisian" full="yes"><name reg="Θεοδωρήτα">Θεοδωρήτας</name></persName> <w lemma="ὁ">τῶν</w> <w lemma="μακάριος"><expan><abbr>μα<lb n="8" type="worddiv"/>καρ</abbr><supplied reason="abbreviation">ίων</supplied></expan></w>, <w lemma="γαμετή"><expan><abbr>γαμε</abbr><supplied reason="abbreviation">τὴ</supplied></expan></w> <w lemma="δέ">δὲ</w> <w lemma="γίγνομαι"><expan><abbr>γεναμέ</abbr><supplied reason="abbreviation">νη</supplied></expan></w> <w lemma="γνήσιος">γνησία</w> <w lemma="ἐγώ">ἐμοῦ</w> <persName type="aphrodisian" key="johnphiladelphus" full="yes"><name reg="Ἰωάννης">Ἰωάννου</name><lb n="9"/><name reg="Φιλάδελφος">Φιλαδέλφου</name></persName>, <date><w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><supplied reason="abbreviation">ικτίωνος</supplied></expan></w> <num value="15">ιε</num>, <w lemma="μείς"><expan><abbr>μη</abbr><supplied reason="abbreviation">νὸς</supplied></expan></w> <num value="4">δ</num>, <num value="5">ε</num>, <w lemma="ὑπατεία"><expan><abbr>ὑπ</abbr><supplied reason="abbreviation">ατείας</supplied></expan></w> <persName key="rusticius" type="other" full="yes"><name reg="Ῥουστίκιος">Ῥουστικίου</name></persName></date>, <w lemma="καί">καὶ</w><lb n="10"/><w lemma="ζάω">ἔζησεν</w>, <w lemma="ἐκβιόω">ἐξεβίου</w> <sic n="superfluous">ου</sic> <w lemma="ἄχρι">ἄχρι</w> <date><w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><supplied reason="abbreviation">ικτίωνος</supplied></expan></w> <num value="14">ιδ</num> <w lemma="μείς"><expan><abbr>μη</abbr><supplied reason="abbreviation">νὸς</supplied></expan></w> <num value="7">ζ</num>, <num value="20">κ</num>, <w lemma="ἡμέρα"><expan><abbr>ἡμέ</abbr><supplied reason="abbreviation">ρα</supplied></expan></w><lb n="11"/><w lemma="τετράς">τετράδι</w>, <w lemma="βασιλία">βασιλίας</w> <w lemma="ὁ">τοῦ</w> <rs type="dignity" key="sanctissimus"><w lemma="θεῖος"><expan><abbr>θ<supplied reason="lost">ι</supplied>οτά</abbr><supplied reason="abbreviation">του</supplied></expan></w></rs> <w lemma="καί"><expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan></w> <rs type="dignity" key="piissimus"><w lemma="εὐσεβής"><expan><abbr>εὐσεβε</abbr><supplied reason="abbreviation">στάτου</supplied></expan></w></rs> <w lemma="ἐγώ">ἡμῶν</w><lb n="12"/><rs type="official-secul" key="despot"><w lemma="δεσπότης"><expan><abbr>δεσπό</abbr><supplied reason="abbreviation">του</supplied></expan></w></rs> <persName type="emperor" key="Justinian" full="yes"><name type=" " reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">αουίου</supplied></expan></name> <name reg="Ἰουστινιανός">Ἰουστινια<supplied reason="lost">ν</supplied>οῦ</name></persName></date> <w lemma="ἔτος">ἔτους</w> <num value="25">κε</num>, <w lemma="μετά"><expan><abbr>μ</abbr><supplied reason="abbreviation">ε</supplied><abbr>τ</abbr><supplied reason="abbreviation">ὰ</supplied></expan></w> <w lemma="ὑπατεία"><expan><abbr>ὑπ</abbr><supplied reason="abbreviation">ατείαν</supplied></expan></w> <persName key="basilius" type="other" full="yes"><name type=" " reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">αουίου</supplied></expan></name> <name reg="Βασίλιος"><expan><abbr>Βασι</abbr><supplied reason="abbreviation">λίου</supplied></expan></name></persName><lb n="13"/><w lemma="ἔτος">ἔτους</w> <num value="10">ι</num>.  <w lemma="χρή">χρὴ</w> <w lemma="οὖν">οὖν</w> <w lemma="οἶδα">εἰδένε</w> <w lemma="ὁ">τοὺς</w> <w lemma="ζάω">ζῶντας</w> <w lemma="ὡς">ὡς</w><lb n="14"/><w lemma="ζάω">ἔζησεν</w> <w lemma="ὁ">ἡ</w> <w lemma="μακάριος">μακαρί<supplied reason="lost">α</supplied></w> <persName full="yes" type="aphrodisian"><name>Φιλοσοφία</name></persName> <w lemma="ὁ">τὰ</w> <w lemma="πᾶς"><expan><abbr>πά</abbr><supplied reason="abbreviation">ντα</supplied></expan></w> <w lemma="ἔτος">ἔτη</w><lb n="15"/><num value="29">κθ</num> <w lemma="μείς"><expan><abbr>μῆ</abbr><supplied reason="abbreviation">νας</supplied></expan></w> <num value="2">β</num>, <w lemma="ἡμέρα"><expan><abbr>ἡ</abbr><supplied reason="lost"><abbr>μέ</abbr><supplied reason="abbreviation">ρας</supplied></supplied></expan></w> <supplied reason="lost" cert="low"><num value="15">ιε</num></supplied>.  <w lemma="δέχομαι"><supplied reason="lost">δεχ</supplied>έσθω</w> <w lemma="οὖν">οὖν</w> <w lemma="αὐτός"><expan><abbr>αὐτῶ</abbr><supplied reason="abbreviation">ν</supplied></expan></w> <w lemma="ὁ">τὰ</w> <w lemma="ψύχιον">ψυχία</w><lb n="16"/><supplied cert="low" reason="lost"><w lemma="ὁ">ὁ</w> <persName key="God" type="divine" full="yes"><w lemma="θεός"><expan><abbr>Θ</abbr><supplied reason="abbreviation">εό</supplied><abbr>ς</abbr></expan></w></persName>,</supplied> <supplied reason="lost"><w lemma="καί"><expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan></w></supplied> <w lemma="αἰών">ἐῶ<supplied reason="lost">να</supplied></w> <w lemma="ὁ">ταῖς</w> <w lemma="ψυχή">ψυχε͂ς</w> <w lemma="αὐτός">αὐτῶν</w><lb n="17"/><space dim="horizontal"/> <w lemma="χαρίζομαι">χαρίσε</w> <g type="cross"/> </ab>
+		<lb n="1"/><g ref="#cross"/> <w lemma="τελειόω">ἐτελιώθι</w> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <w lemma="ἀναπαύω">ἀνεπάη</w> <w lemma="ὁ">ὁ</w> <w lemma="μακάριος">μακ<supplied reason="lost">άριος</supplied></w> <w lemma="ὁ">ὁ</w> <w lemma="κηδεστής"><expan><abbr>κη</abbr><ex>δεστής</ex></expan></w><lb n="2"/><w lemma="ἐγώ">μου</w> <persName key="aristolaus1" type="attested"><name nymRef="#Ἀριστόλαος"><expan><abbr>Ἀρ</abbr><ex>ι</ex><abbr>στόλαος</abbr></expan></name></persName> <date><w lemma="ἰνδικτιών"><expan><abbr><supplied reason="lost">ἰ</supplied>νδ</abbr><ex>ικτίωνος</ex></expan></w> <num value="1">α</num>, <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὸς</ex></expan></w> <num value="2">β</num>, <num value="14">ιδ</num> <w lemma="ἡμέρα"><expan><abbr>ἡμέ</abbr><ex>ρᾳ</ex></expan></w> <w lemma="πρῶτος"><supplied reason="lost" cert="low">πρώ</supplied>τῃ</w></date> <g ref="#cross"/><lb n="3"/><g ref="#cross"/> <w lemma="ἀναπαύω">ἀνεπάη</w> <w lemma="δέ">δὲ</w> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <w lemma="ὁ">ἡ</w> <w lemma="τρισεύμοιρος">τρισεύμοιρος</w> <w lemma="ὁ">ἡ</w> <w lemma="μακάριος"><expan><abbr>μακαρ</abbr><ex>ία</ex></expan></w><lb n="4"/><w lemma="ὁ">ἡ</w> <w lemma="γίγνομαι"><expan><abbr>γεναμέ</abbr><ex>νη</ex></expan></w> <rs type="dignity" key="dominus"><w lemma="κυρά">κυρὰ</w></rs> <w lemma="ὁ">τῶν</w> <w lemma="ὧδε"><w lemma="ὧδε">ὧδε</w></w>, <w lemma="ὁ">ἡ</w> <w lemma="κηδεστρία">κηδεστρία</w> <w lemma="ἐγώ">μου</w><lb n="5"/><persName key="theodoreta1" type="attested"><name nymRef="#Θεοδωρήτα">Θεοδωρήτα</name></persName><date> <w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτίωνος</ex></expan></w> <num value="4">δ</num>, <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὸς</ex></expan></w> <num value="4">δ</num>, <num value="13">ιγ</num> <w lemma="ἡμέρα"><expan><abbr>ἡμέ</abbr><ex>ρᾳ</ex></expan></w> <w lemma="ἕκτος">ἕκτῃ</w> </date><g ref="#cross"/><lb n="6"/><g ref="#cross"/> <w lemma="τίκτω">ἐτέχθη</w> <w lemma="ὁ">ἡ</w> <rs type="dignity" key="dominus"><w lemma="κυρά">κυρὰ</w></rs> <persName key="philosophia1" type="attested"><name>Φιλοσοφία</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="θυγάτηρ">θυγάτηρ</w><lb n="7"/><w lemma="μέν">μὲν</w> <persName key="aristolaus1" type="attested"><name nymRef="#Ἀριστόλαος">Ἀριστολάου</name></persName> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <persName key="theodoreta1" type="attested"><name nymRef="#Θεοδωρήτα">Θεοδωρήτας</name></persName> <w lemma="ὁ">τῶν</w> <w lemma="μακάριος"><expan><abbr>μα<lb n="8" break="no"/>καρ</abbr><ex>ίων</ex></expan></w>, <w lemma="γαμετή"><expan><abbr>γαμε</abbr><ex>τὴ</ex></expan></w> <w lemma="δέ">δὲ</w> <w lemma="γίγνομαι"><expan><abbr>γεναμέ</abbr><ex>νη</ex></expan></w> <w lemma="γνήσιος">γνησία</w> <w lemma="ἐγώ">ἐμοῦ</w> <persName key="johnphiladelphus" type="attested"><name nymRef="#Ἰωάννης">Ἰωάννου</name><lb n="9"/><name nymRef="#Φιλάδελφος">Φιλαδέλφου</name></persName>, <date><w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτίωνος</ex></expan></w> <num value="15">ιε</num>, <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὸς</ex></expan></w> <num value="4">δ</num>, <num value="5">ε</num>, <w lemma="ὑπατεία"><expan><abbr>ὑπ</abbr><ex>ατείας</ex></expan></w> <persName key="rusticius" type="other"><name nymRef="#Ῥουστίκιος">Ῥουστικίου</name></persName></date>, <w lemma="καί">καὶ</w><lb n="10"/><w lemma="ζάω">ἔζησεν</w>, <w lemma="ἐκβιόω">ἐξεβίου</w> <sic n="superfluous">ου</sic> <w lemma="ἄχρι">ἄχρι</w> <date><w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτίωνος</ex></expan></w> <num value="14">ιδ</num> <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὸς</ex></expan></w> <num value="7">ζ</num>, <num value="20">κ</num>, <w lemma="ἡμέρα"><expan><abbr>ἡμέ</abbr><ex>ρα</ex></expan></w><lb n="11"/><w lemma="τετράς">τετράδι</w>, <w lemma="βασιλία">βασιλίας</w> <w lemma="ὁ">τοῦ</w> <rs type="dignity" key="sanctissimus"><w lemma="θεῖος"><expan><abbr>θ<supplied reason="lost">ι</supplied>οτά</abbr><ex>του</ex></expan></w></rs> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <rs type="dignity" key="piissimus"><w lemma="εὐσεβής"><expan><abbr>εὐσεβε</abbr><ex>στάτου</ex></expan></w></rs> <w lemma="ἐγώ">ἡμῶν</w><lb n="12"/><rs type="official-secul" key="despot"><w lemma="δεσπότης"><expan><abbr>δεσπό</abbr><ex>του</ex></expan></w></rs> <persName key="Justinian" type="emperor"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αουίου</ex></expan></name> <name nymRef="#Ἰουστινιανός">Ἰουστινια<supplied reason="lost">ν</supplied>οῦ</name></persName></date> <w lemma="ἔτος">ἔτους</w> <num value="25">κε</num>, <w lemma="μετά"><expan><abbr>μ</abbr><ex>ε</ex><abbr>τ</abbr><ex>ὰ</ex></expan></w> <w lemma="ὑπατεία"><expan><abbr>ὑπ</abbr><ex>ατείαν</ex></expan></w> <persName key="basilius" type="other"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αουίου</ex></expan></name> <name nymRef="#Βασίλιος"><expan><abbr>Βασι</abbr><ex>λίου</ex></expan></name></persName><lb n="13"/><w lemma="ἔτος">ἔτους</w> <num value="10">ι</num>.  <w lemma="χρή">χρὴ</w> <w lemma="οὖν">οὖν</w> <w lemma="οἶδα">εἰδένε</w> <w lemma="ὁ">τοὺς</w> <w lemma="ζάω">ζῶντας</w> <w lemma="ὡς">ὡς</w><lb n="14"/><w lemma="ζάω">ἔζησεν</w> <w lemma="ὁ">ἡ</w> <w lemma="μακάριος">μακαρί<supplied reason="lost">α</supplied></w> <persName type="attested"><name>Φιλοσοφία</name></persName> <w lemma="ὁ">τὰ</w> <w lemma="πᾶς"><expan><abbr>πά</abbr><ex>ντα</ex></expan></w> <w lemma="ἔτος">ἔτη</w><lb n="15"/><num value="29">κθ</num> <w lemma="μείς"><expan><abbr>μῆ</abbr><ex>νας</ex></expan></w> <num value="2">β</num>, <w lemma="ἡμέρα"><expan><abbr>ἡ</abbr><supplied reason="lost"><abbr>μέ</abbr><ex>ρας</ex></supplied></expan></w> <supplied reason="lost" cert="low"><num value="15">ιε</num></supplied>.  <w lemma="δέχομαι"><supplied reason="lost">δεχ</supplied>έσθω</w> <w lemma="οὖν">οὖν</w> <w lemma="αὐτός"><expan><abbr>αὐτῶ</abbr><ex>ν</ex></expan></w> <w lemma="ὁ">τὰ</w> <w lemma="ψύχιον">ψυχία</w><lb n="16"/><supplied cert="low" reason="lost"><w lemma="ὁ">ὁ</w> <persName key="God" type="divine"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>εό</ex><abbr>ς</abbr></expan></w></persName>,</supplied> <supplied reason="lost"><w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w></supplied> <w lemma="αἰών">ἐῶ<supplied reason="lost">να</supplied></w> <w lemma="ὁ">ταῖς</w> <w lemma="ψυχή">ψυχε͂ς</w> <w lemma="αὐτός">αὐτῶν</w><lb n="17"/><space dim="horizontal"/> <w lemma="χαρίζομαι">χαρίσε</w> <g ref="#cross"/> </ab>
       </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p>l.10. <foreign lang="grc">ἐξεβίου</foreign> Reinach,
-<foreign lang="grc">ἐξ ἐκείνου</foreign> Grégoire.</p>
-        <p>l.15. <foreign lang="grc"><orig n="unresolved">εσθ<supplied reason="abbreviation">ου</supplied>ν</orig></foreign> Reinach wrote
-<foreign lang="grc"><supplied reason="lost">Δεχ</supplied>έσθω θ<supplied reason="abbreviation">εὸ</supplied>ς ὀ͂ν</foreign>, but
-Grégoire's<foreign lang="grc"><supplied reason="lost">Δεχ</supplied>έσθω ὀ͂ν</foreign> seems preferable.</p>
-        <p>l.16. <foreign lang="grc"><supplied reason="lost">καὶ ζωὴν εἰς</supplied></foreign> Reinach:<foreign lang="grc"><supplied reason="lost">ὁ θ<supplied reason="abbreviation">εὸ</supplied>ς κ<supplied reason="abbreviation">αὶ</supplied></supplied></foreign> Grégoire.</p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>Aristolaos, my father-in-law, of blessed memory, died and
-entered his rest in indiction 1, month 2, day 14, a <supplied cert="low" reason="lost">Sun</supplied>day <note place="not specified" anchored="yes">or <supplied cert="low" reason="lost">Fri</supplied>day.</note></ab>
-        <ab>The thrice fortunate, of blessed memory, who was lady of
+         <div type="apparatus">
+            <p>l.10. <foreign xml:lang="grc">ἐξεβίου</foreign> Reinach,
+<foreign xml:lang="grc">ἐξ ἐκείνου</foreign> Grégoire.</p>
+            <p>l.15. <foreign xml:lang="grc">
+                  <orig n="unresolved">εσθ<ex>ου</ex>ν</orig>
+               </foreign> Reinach wrote
+<foreign xml:lang="grc">
+                  <supplied reason="lost">Δεχ</supplied>έσθω θ<ex>εὸ</ex>ς ὀ͂ν</foreign>, but
+Grégoire's<foreign xml:lang="grc">
+                  <supplied reason="lost">Δεχ</supplied>έσθω ὀ͂ν</foreign> seems preferable.</p>
+            <p>l.16. <foreign xml:lang="grc">
+                  <supplied reason="lost">καὶ ζωὴν εἰς</supplied>
+               </foreign> Reinach:<foreign xml:lang="grc">
+                  <supplied reason="lost">ὁ θ<ex>εὸ</ex>ς κ<ex>αὶ</ex>
+                  </supplied>
+               </foreign> Grégoire.</p>
+         </div>
+         <div type="translation">
+            <ab>Aristolaos, my father-in-law, of blessed memory, died and
+entered his rest in indiction 1, month 2, day 14, a <supplied cert="low" reason="lost">Sun</supplied>day <note place="not specified" xml:lang=""/>
+            </ab>
+            <ab>The thrice fortunate, of blessed memory, who was lady of
 these here, my mother-in-law, Theodoreta, also entered her rest in
 indiction 4, month 4, day 13, a Friday.</ab>
-        <ab>The lady Philosophia, the daughter of Aristolaos and
+            <ab>The lady Philosophia, the daughter of Aristolaos and
 Theodoreta of blessed memory, who became acknowledged wife to me, Joannes
 Philadelphos, was born in indiction 15. month 4, day 5, in the
 consulate of Rusticius and lived her full span until indiction 14.
@@ -83,50 +156,28 @@ and pious master. Flavius Justinianos, and year 10 after the consulate
 of Flavius Basilios. So the living should know that Philosophia, of
 blessed memory, lived in all 29 years, 2 months, <supplied reason="lost" cert="low">15</supplied> days. So may
 <supplied reason="lost">God</supplied> receive their souls, <supplied reason="lost">and</supplied> grant eternity to their spirits.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="IX.30">IX.30</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p><rs type="found"><rs type="monuList" cert="low">Necropolis, South-east</rs>: '<foreign lang="fr">hors des murs, le long de la route, à
-droite, 20 m. avant la porte Est</foreign>' (Grégoire interpreted this as
-meaning 20 minutes, but 20 metres seems more likely).</rs>. <rs type="origLocation">Unknown.</rs>. <rs type="lastLocation">Findspot.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (46); not reported subsequently.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="reinach"><author>Reinach</author>, no. <biblScope>203</biblScope></bibl>, from Gaudin, whence
-<bibl type="hbi" n="IGC"><author>Grégoire</author>, <title level="m">IGC</title> <biblScope>255</biblScope></bibl>; by <bibl type="hbi" n="ALA"><author>Roueché</author>,
-<title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>164</biblScope> and plate xxxviii</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>
-<biblScope n="257629">742</biblScope></bibl> . Discussed by <bibl><author>D. Feissel</author>, 'Une épitaphe
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="IX.30" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="reinach">
+                  <author>Reinach</author>, no. <citedRange>203</citedRange>
+               </bibl>, from Gaudin, whence
+<bibl type="hbi" n="IGC">
+                  <author>Grégoire</author>, <title level="m">IGC</title>
+                  <citedRange>255</citedRange>
+               </bibl>; by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>,
+<title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>164</citedRange> and plate xxxviii</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257629">742</citedRange>
+               </bibl> . Discussed by <bibl>
+                  <author>D. Feissel</author>, 'Une épitaphe
 d'Aphrodisias et le calendrier de la province d'Asie au Bas-Empire',
 <title level="m">BCH</title> 119 <date value="1995" notBefore="1995" notAfter="1995" exact="both">1995</date>, 375-79</bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Publications; squeeze.</p>
-      </div>
-
-      
-
-    <div type="figure" n="transcriptions">
-        <head>Representations</head>
-        <p><figure href="martin-ala164"><figDesc> Photograph of squeeze by M. H. Martin,
-Collège de France.</figDesc></figure></p></div>
-
-      
-
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

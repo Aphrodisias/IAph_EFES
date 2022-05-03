@@ -1,85 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110046" n="iAph1634 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> fragment naming Statilius Zotikos and Aelius Heliodoros</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">sarcophagus</rs> front, worn and hard to read; right edge apparently survives. No measurements.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary fragment naming Statilius Zotikos and Aelius Heliodoros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110046</idno>
+            <idno type="IAph2007">iAph110046</idno>
+            <idno type="JMR2004">iAph1634</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>sarcophagus</objectType> front, worn and hard to read; right edge apparently survives. No measurements.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Apparently inscribed on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>standard forms; <height unit="metre">0.023</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="nomenclature lettering">Second to third centuries A.D. (<rs type="criteria">nomenclature</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">City, Village</rs>: apparently ?in a farmhouse</provenance>
+                  <provenance type="observed" when="1893">Findspot (1893)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Notebooks, publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_III_49.jpg">
+            <desc>Kubitschek notebook III, 49</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/>  <gap reason="lost" unit="character" quantity="3"/><unclear reason="damage">Ι</unclear><gap reason="lost" unit="character" quantity="4"/><unclear reason="damage">ΙΕ</unclear><gap reason="lost" unit="character" quantity="3"/><unclear reason="damage">ΙΙΙΟ</unclear>Ρ<unclear reason="damage">.ΔΙ</unclear>Α<unclear reason="damage">ΙΟΙΑ</unclear>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="2"/><gap reason="lost" unit="character" quantity="3"/> <persName type="attested"><name nymRef="#Στατίλιος">Στ<unclear reason="damage">α</unclear>τι<unclear reason="damage">λ</unclear>ίου</name> <name nymRef="#Ζωτικός">Ζωτικοῦ</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζωτικός">Ζωτικοῦ</name></persName></persName> <supplied reason="lost"><w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w></supplied>    <w lemma="ἰσώστη"><supplied reason="lost">ἰ</supplied>σώστῃ</w> <w lemma="κηδεύω">κεκήδευται</w> <persName type="attested"><name nymRef="#Τιβέριος">Τιβ.</name> <name nymRef="#Κλαύδιος">Κλαυ.</name></persName> <gap reason="lost" unit="character" quantity="1"/>ΑΝΙ  <lb n="3"/><gap reason="lost" unit="character" quantity="3"/> <persName type="attested"><name nymRef="#Αἴλιος">Αἴλιος</name> <name nymRef="#Ἡλιόδωρος">Ἡλιόδωρος</name></persName> <w lemma="ἕτερος"><unclear reason="damage">ἕτ</unclear><supplied reason="lost">ερος</supplied></w>  <supplied reason="lost"><w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἔχω">ἕξει</w></supplied>      <w lemma="ἐξουσία"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ξ</unclear>ουσίαν</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <w lemma="τις">τινὰ</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκ<lb n="4" break="no"/><supplied reason="lost">θάψαι</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Apparently inscribed on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>standard forms; <measure dim="height" type="length" unit="metre">0.023</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">nomenclature</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="3" unit="character"/><unclear reason="damage">Ι</unclear><gap reason="lost" extent="4" unit="character"/><unclear reason="damage">ΙΕ</unclear><gap reason="lost" extent="3" unit="character"/><unclear reason="damage">ΙΙΙΟ</unclear>Ρ<unclear reason="damage">.ΔΙ</unclear>Α<unclear reason="damage">ΙΟΙΑ</unclear>  <gap reason="lost" extent="3" unit="character"/>  <lb n="2"/><gap reason="lost" extent="3" unit="character"/> <persName type="aphrodisian"><name reg="Στατίλιος">Στ<unclear reason="damage">α</unclear>τι<unclear reason="damage">λ</unclear>ίου</name> <name reg="Ζωτικός">Ζωτικοῦ</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζωτικός">Ζωτικοῦ</name></persName></persName> <supplied reason="lost"><w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w></supplied>    <w lemma="ἰσώστη"><supplied reason="lost">ἰ</supplied>σώστῃ</w> <w lemma="κηδεύω">κεκήδευται</w> <persName type="aphrodisian"><name reg="Τιβέριος">Τιβ.</name> <name reg="Κλαύδιος">Κλαυ.</name></persName> <gap reason="lost" extent="1" unit="character"/>ΑΝΙ  <lb n="3"/><gap reason="lost" extent="3" unit="character"/> <persName type="aphrodisian"><name reg="Αἴλιος">Αἴλιος</name> <name reg="Ἡλιόδωρος">Ἡλιόδωρος</name></persName> <w lemma="ἕτερος"><unclear reason="damage">ἕτ</unclear><supplied reason="lost">ερος</supplied></w>  <supplied reason="lost"><w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἔχω">ἕξει</w></supplied>      <w lemma="ἐξουσία"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ξ</unclear>ουσίαν</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <w lemma="τις">τινὰ</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκ<lb n="4" type="worddiv"/><supplied reason="lost">θάψαι</supplied></w>  <gap reason="lost" extent="3" unit="character"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l.2·ΣΤΛΤΙΑΙΟΥ</p>
-</div>
-<div type="translation" n="notyet">
-<head>Translation</head>
-<p>...</p>
-</div>
-<div type="commentary" n="none">
-<head>Commentary</head>
-<p>No iseful comment</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList" cert="low">City, Village</rs>: apparently ?in a farmhouse</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot (1893)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Notebooks, publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Kubitschek (III.49); not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from K's notebook (iii.49) by <bibl n="cormack1964">Cormack, no. <biblScope>28</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257376">498</biblScope>
-</bibl>. not reported subsequently.</p>
-</div>
-<div type="figure" n="Preliminary transcriptions">
-<head>Representations</head>
-<p><figure href="K_III_49"><figDesc>Kubitschek notebook III, 49</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l.2·ΣΤΛΤΙΑΙΟΥ</p>
+         </div>
+         <div type="translation" n="notyet">
+            <p>...</p>
+         </div>
+         <div type="commentary" n="none">
+            <p>No iseful comment</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from K's notebook (iii.49) by <bibl n="cormack1964">Cormack, no. <citedRange>28</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257376">498</citedRange>
+               </bibl>. not reported subsequently.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

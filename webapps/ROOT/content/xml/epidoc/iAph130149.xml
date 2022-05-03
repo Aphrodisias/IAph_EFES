@@ -1,86 +1,148 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130149" n="iAph1454 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> <rs type="textType" reg="curse">formula</rs> from sarcophagus</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr2003">Reynolds and Isik (<date>2007</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-07-11</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date>2007-02-06</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Left side of a <rs type="material">white marble</rs> <rs type="decoration">garland</rs> <rs type="objectType">sarcophagus</rs>; for full description see Isik 104.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary formula from sarcophagus</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130149</idno>
+            <idno type="IAph2007">iAph130149</idno>
+            <idno type="JMR2004">iAph1454</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Left side of a <material>white marble</material>
+                              <rs type="decoration">garland</rs>
+                              <objectType>sarcophagus</objectType>; for full description see Isik 104.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the upper moulding (l.1) and within the tabella of which only the left side survives (<height unit="metre">0.15</height> x <width unit="metre">0.39</width>). The text must have begun on the lid.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote> Quite well-designed, cut and aligned in the second-to-fourth-century style, <height unit="metre">0.02</height>. Ligatured <foreign xml:lang="grc">ΤΗ</foreign> (l.4); small slanting stroke above the figure in l.7.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0250"
+                               precision="medium"
+                               evidence="lettering stephanephoros">
+ Probably first half of the third century A.D.
+(<rs type="criteria">lettering</rs>, <rs type="criteria">stephanephoros</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east</rs>, near chamber tomb </provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-07-11" who="cmr">DONE</change>
+         <change when="2007-02-06" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="94_E_03A.jpg">
+            <desc>Face (1994)</desc>
+         </graphic>
+         <graphic url="94_E_04A.jpg">
+            <desc>Face (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+  <ab><lb n="0"/>  <gap reason="lost" unit="character" quantity="3"/>  <w lemma="ἀποτίνω"><supplied reason="lost" cert="low">ἀποτείσει</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w lemma="ἱερός"><supplied reason="lost">ἱερώτατον</supplied></w>  <lb n="1"/><w lemma="ταμεῖον">ταμεῖ<supplied reason="lost">ῳ</supplied></w>  <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w>  <w lemma="θεά"><supplied reason="lost">θεᾷ</supplied></w>  <lb n="2"/><persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδ<supplied reason="lost">είτῃ</supplied></name></persName>  <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w></supplied>  <w lemma="εἰμί"><supplied reason="lost" cert="low">ὧν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w lemma="τρίτος"><supplied reason="lost">τρίτον</supplied></w>  <lb n="3"/><w lemma="εἰμί">ἔστα<supplied reason="lost">ι</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <w lemma="ἐκδικέω"><supplied reason="lost">ἐκδικήσαντος</supplied></w>  <lb n="4"/> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w> <w lemma="ἐπιγραφή">ἐ<supplied reason="lost">πιγραφῆς</supplied></w>  <w lemma="ἀποτίθημι"><supplied reason="lost">ἀπετέθη</supplied></w>  <w lemma="ἀντίγραφον"><supplied reason="lost">ἀντίγραφον</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w lemma="χρεωφυλάκιον"><supplied reason="lost">χρεοφυ</supplied><lb n="5" break="no"/>λάκιον</w>  <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>  <w lemma="στεφανηφόρος"><supplied reason="lost">στεφανηφόρου</supplied></w>  <lb n="6"/> <w lemma="ὁ">τὸ</w> <num value="7">ζ</num> <persName type="attested"><name nymRef="#Ὑψικλῆς"><unclear reason="damage">Ὑ</unclear><supplied reason="lost">ψικλέους</supplied></name>  <persName type="attested"><name nymRef="#Ἄδραστος"><supplied reason="lost">Ἀδράσ</supplied><lb n="7" break="no"/>τοῦ</name></persName></persName>  <w lemma="ὁ">τ<supplied reason="lost">ο</supplied></w>  <gap reason="lost" unit="character" quantity="3"/><lb n="8"/> <orig n="unresolved">κορ</orig> <g ref="#stop"/>  <orig n="unresolved">μ</orig><gap reason="lost" unit="character" quantity="2"/>  <lb n="9"/> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τ<gap reason="lost" unit="character" quantity="3"/></w>  <w lemma="θάπτω"><supplied reason="lost" cert="low">τα</supplied><lb n="10" break="no"/>φήσον<supplied reason="lost">ται</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="11"/> <g ref="#scroll"/> <orig n="unresolved">ειο</orig> <lb n="11a"/>  <space extent="3" unit="character" dim="horizontal"/>  <lb n="12"/> <w lemma="ὁ">τὸ</w> <num value="7">ζ</num> <persName type="attested"><name nymRef="#Ὑψικλῆς"><unclear reason="damage">Ὑ</unclear><supplied reason="lost">ψικλέους</supplied></name>  <persName type="attested"><name nymRef="#Ἄδραστος"><supplied reason="lost">Ἀδράσ</supplied><lb n="13" break="no"/>του</name>  <w lemma="ὁ">τ<supplied reason="lost">οῦ</supplied></w>  <persName type="attested"><name nymRef="#Ἄδραστος"><supplied reason="lost">Ἀδράστου</supplied></name></persName></persName></persName>  <w lemma="μείς"><supplied cert="low" reason="lost"><expan><abbr>μή</abbr><ex>νος</ex></expan></supplied></w>  <lb n="14"/> <orig n="unresolved">κορ</orig> <g ref="#stop"/>  <orig n="unresolved">μ</orig><gap reason="lost" unit="character" quantity="2"/>  <lb n="15"/> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τ<supplied reason="lost">αῖς</supplied></w>  <w lemma="εἰσώστη"><supplied reason="lost">εἰσώσταις</supplied></w>  <w lemma="θάπτω"><supplied reason="lost">τα</supplied><lb n="16" break="no"/>φήσον<supplied reason="lost">ται</supplied></w>  <w lemma="ὅς"><supplied reason="lost">οὓς</supplied></w>  <w lemma="ἐάν"><supplied reason="lost">ἂν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w> <gap reason="lost" unit="character" quantity="5"/><lb n="17" break="no"/><g ref="#scroll"/>  <w>ειο<supplied reason="lost">ς</supplied></w>  <w lemma="βούλομαι"><supplied reason="lost">βουλήθη</supplied></w>  <lb n="17a"/>  <space extent="3" unit="character" dim="horizontal"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the upper moulding (l.1) and within the tabella of which only the left side survives (<measure dim="height" type="length" unit="metre">0.15</measure> x <measure dim="width" type="length" unit="metre">0.39</measure>). The text must have begun on the lid.</p>
-</div>
-<div type="description" n="letters" sample="complete" org="uniform">
-<head>Letters</head>
-<p> Quite well-designed, cut and aligned in the second-to-fourth-century style, <measure dim="height" type="length" unit="metre">0.02</measure>. Ligatured <foreign lang="grc">ΤΗ</foreign> (l.4); small slanting stroke above the figure in l.7.</p>
-</div>
-<div type="description" n="date" sample="complete" org="uniform">
-<head>Date</head>
-<p>
-<date cert="low" exact="none" notBefore="0201" notAfter="0250"> Probably first half of the third century A.D.</date>
-(<rs type="criteria">lettering</rs>, <rs type="criteria">stephanephoros</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-  <ab><lb n="0"/>  <gap reason="lost" extent="3" unit="character"/>  <w lemma="ἀποτίνω"><supplied reason="lost" cert="low">ἀποτείσει</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w lemma="ἱερός"><supplied reason="lost">ἱερώτατον</supplied></w>  <lb n="1"/><w lemma="ταμεῖον">ταμεῖ<supplied reason="lost">ῳ</supplied></w>  <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w>  <w lemma="θεά"><supplied reason="lost">θεᾷ</supplied></w>  <lb n="2"/><persName type="divine"><name reg="Ἀφροδίτη">Ἀφροδ<supplied reason="lost">είτῃ</supplied></name></persName>  <supplied reason="lost"><w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w></supplied>  <w lemma="εἰμί"><supplied reason="lost" cert="low">ὧν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w lemma="τρίτος"><supplied reason="lost">τρίτον</supplied></w>  <lb n="3"/><w lemma="εἰμί">ἔστα<supplied reason="lost">ι</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <w lemma="ἐκδικέω"><supplied reason="lost">ἐκδικήσαντος</supplied></w>  <lb n="4"/> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w> <w lemma="ἐπιγραφή">ἐ<supplied reason="lost">πιγραφῆς</supplied></w>  <w lemma="ἀποτίθημι"><supplied reason="lost">ἀπετέθη</supplied></w>  <w lemma="ἀντίγραφον"><supplied reason="lost">ἀντίγραφον</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w lemma="χρεωφυλάκιον"><supplied reason="lost">χρεοφυ</supplied><lb n="5" type="worddiv"/>λάκιον</w>  <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>  <w lemma="στεφανηφόρος"><supplied reason="lost">στεφανηφόρου</supplied></w>  <lb n="6"/> <w lemma="ὁ">τὸ</w> <num value="7">ζ</num> <persName type="aphrodisian"><name reg="Ὑψικλῆς"><unclear reason="damage">Ὑ</unclear><supplied reason="lost">ψικλέους</supplied></name>  <persName type="aphrodisian"><name reg="Ἄδραστος"><supplied reason="lost">Ἀδράσ</supplied><lb n="7" type="worddiv"/>τοῦ</name></persName></persName>  <w lemma="ὁ">τ<supplied reason="lost">ο</supplied></w>  <gap reason="lost" extent="3" unit="character"/><lb n="8"/> <orig n="unresolved">κορ</orig> <g type="stop"/>  <orig n="unresolved">μ</orig><gap reason="lost" extent="2" unit="character"/>  <lb n="9"/> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τ<gap reason="lost" extent="3" unit="character"/></w>  <w lemma="θάπτω"><supplied reason="lost" cert="low">τα</supplied><lb n="10" type="worddiv"/>φήσον<supplied reason="lost">ται</supplied></w>  <gap reason="lost" extent="3" unit="character"/>  <lb n="11"/> <g type="scroll"/> <orig n="unresolved">ειο</orig> <lb n="11a"/>  <space extent="3" unit="character" dim="horizontal"/>  <lb n="12"/> <w lemma="ὁ">τὸ</w> <num value="7">ζ</num> <persName type="aphrodisian"><name reg="Ὑψικλῆς"><unclear reason="damage">Ὑ</unclear><supplied reason="lost">ψικλέους</supplied></name>  <persName type="aphrodisian"><name reg="Ἄδραστος"><supplied reason="lost">Ἀδράσ</supplied><lb n="13" type="worddiv"/>του</name>  <w lemma="ὁ">τ<supplied reason="lost">οῦ</supplied></w>  <persName type="aphrodisian"><name reg="Ἄδραστος"><supplied reason="lost">Ἀδράστου</supplied></name></persName></persName></persName>  <w lemma="μείς"><supplied cert="low" reason="lost"><expan><abbr>μή</abbr><supplied reason="abbreviation">νος</supplied></expan></supplied></w>  <lb n="14"/> <orig n="unresolved">κορ</orig> <g type="stop"/>  <orig n="unresolved">μ</orig><gap reason="lost" extent="2" unit="character"/>  <lb n="15"/> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τ<supplied reason="lost">αῖς</supplied></w>  <w lemma="εἰσώστη"><supplied reason="lost">εἰσώσταις</supplied></w>  <w lemma="θάπτω"><supplied reason="lost">τα</supplied><lb n="16" type="worddiv"/>φήσον<supplied reason="lost">ται</supplied></w>  <w lemma="ὅς"><supplied reason="lost">οὓς</supplied></w>  <w lemma="ἐάν"><supplied reason="lost">ἂν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w> <gap reason="lost" extent="5" unit="character"/><lb n="17" type="worddiv"/><g type="scroll"/>  <w>ειο<supplied reason="lost">ς</supplied></w>  <w lemma="βούλομαι"><supplied reason="lost">βουλήθη</supplied></w>  <lb n="17a"/>  <space extent="3" unit="character" dim="horizontal"/>  </ab>
-</div>
-<div type="apparatus" sample="complete" org="uniform">
-<head>Apparatus</head>
-<p>ll. 1-6, 10-12 are supplemented exempli gratia by versions of the standard formula; the sense must be correct (even if the exact wording is not always so), and only the owner's name (ll. 11-12) remains uncertain</p><p> l. 7, the only name with initial <foreign lang="grc">Y</foreign> which is at all common in Aphrodisian élite families is Hypsikles and the name of Hypsikles Adrastos son of Adrastos, could be fitted in here; he was a prominent Aphrodisian of the Hadrianic period who is known to have held the stephanephorate post mortem and indeed in the third century (for a date by his seventh tenure see <xref type="inscription" n="1447" href="130109">13.109</xref>). In 1447 either he or his father is credited with the additional name Hierax and although this figures only for his grandfather in earlier inscriptions of the family (<xref type="inscription" n="1509" href="120026">12.26</xref>=MAMA 413, with <xref type="inscription" n="1017" href="120003">12.3</xref> 483, <xref type="inscription" n="1018" href="120308">12.308</xref> 484, <xref type="inscription" n="1019" href="120004">12.4</xref> 485), it may well have appeared, whether rightly or wrongly, in any text that named him in the third century. If we can suggest a cutter's error in the third letter of l. 9 (where I can make no likely sense of what stands on the stone)</p><p> ll. 6-9 could be supplemented <foreign lang="grc">ἐπὶ στεφανηφόρου]τὸ ζ´ Ὑ<supplied reason="lost">ψικλέους Ἀδράσ</supplied><lb/>του τ<supplied reason="lost">οῦ Ἀδράστου Ἱέρα</supplied><lb/>κο<choice type="correction"><corr>ς</corr></choice> <g type="stop"/> μ<supplied reason="lost" cert="low">ήνος</supplied></foreign>.  There can be no certainty that this is the man, but it has a certain plausibility.</p>
-</div><div type="translation">
-<head>Translation</head>
-<p>... whover contravenes these provisions will pay to the most sacred] treasury [.. ? .. denarii and to the goddess ] Aphrodite [ .. ? .. denarii, of which one third] shall belong [ to the proecutor] A copy of the inscribed text [was deposited in the Property]-archive in the seventh stephanephorate of ?Hy[psikles son of Adras]tos son of [Adrastos ? in the month] KOR M [ .. ? .. ] And in the other burial places shall be buried whomsoever [ .....]eius (sc. the owner) wishes.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The reconstruction of ll. 1-7 is fairly straightforward; from 8 on the conjectures are less certain.</p>
-<p>The tomb was apparently a composite one, and of some pretensions as the double fine also suggests. The owner must have been a man of some substance.</p></div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Necropolis, North-east</rs>, near chamber tomb </rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum.</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1994 (Sarcophagus <rs type="sarcCat">433</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="jmr2003">Isik and Reynolds, no. <biblScope>104</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="94_E_03A"><figDesc>Face (1994)</figDesc></figure><figure href="94_E_04A"><figDesc>Face (1994)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus" sample="complete" org="uniform">
+            <p>ll. 1-6, 10-12 are supplemented exempli gratia by versions of the standard formula; the sense must be correct (even if the exact wording is not always so), and only the owner's name (ll. 11-12) remains uncertain</p>
+            <p> l. 7, the only name with initial <foreign xml:lang="grc">Y</foreign> which is at all common in Aphrodisian élite families is Hypsikles and the name of Hypsikles Adrastos son of Adrastos, could be fitted in here; he was a prominent Aphrodisian of the Hadrianic period who is known to have held the stephanephorate post mortem and indeed in the third century (for a date by his seventh tenure see <ref type="inscription" n="1447" target="130109.xml"/>). In 1447 either he or his father is credited with the additional name Hierax and although this figures only for his grandfather in earlier inscriptions of the family (<ref type="inscription" n="1509" target="120026.xml"/>=MAMA 413, with <ref type="inscription" n="1017" target="120003.xml"/> 483, <ref type="inscription" n="1018" target="120308.xml"/> 484, <ref type="inscription" n="1019" target="120004.xml"/> 485), it may well have appeared, whether rightly or wrongly, in any text that named him in the third century. If we can suggest a cutter's error in the third letter of l. 9 (where I can make no likely sense of what stands on the stone)</p>
+            <p> ll. 6-9 could be supplemented <foreign xml:lang="grc">ἐπὶ στεφανηφόρου]τὸ ζ´ Ὑ<supplied reason="lost">ψικλέους Ἀδράσ</supplied>
+                  <lb/>του τ<supplied reason="lost">οῦ Ἀδράστου Ἱέρα</supplied>
+                  <lb/>κο<choice>
+                     <corr>ς</corr>
+                  </choice>
+                  <g ref="#stop"/> μ<supplied reason="lost" cert="low">ήνος</supplied>
+               </foreign>.  There can be no certainty that this is the man, but it has a certain plausibility.</p>
+         </div>
+         <div type="translation">
+            <p>... whover contravenes these provisions will pay to the most sacred] treasury [.. ? .. denarii and to the goddess ] Aphrodite [ .. ? .. denarii, of which one third] shall belong [ to the proecutor] A copy of the inscribed text [was deposited in the Property]-archive in the seventh stephanephorate of ?Hy[psikles son of Adras]tos son of [Adrastos ? in the month] KOR M [ .. ? .. ] And in the other burial places shall be buried whomsoever [ .....]eius (sc. the owner) wishes.</p>
+         </div>
+         <div type="commentary">
+            <p>The reconstruction of ll. 1-7 is fairly straightforward; from 8 on the conjectures are less certain.</p>
+            <p>The tomb was apparently a composite one, and of some pretensions as the double fine also suggests. The owner must have been a man of some substance.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="jmr2003">Isik and Reynolds, no. <citedRange>104</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

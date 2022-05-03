@@ -1,83 +1,139 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120611" n="iAph1477 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for Flavius <gap reason="lost" extent="unknown"/></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-06</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A: Two joining<rs type="material"> white marble</rs> pieces forming the left hand <rs type="objectType">block</rs> of a composite monument (together <measure dim="width" type="length" unit="metre">1.13</measure> x <measure dim="height" type="length" unit="metre">0.71</measure> x <measure dim="depth" type="length" unit="metre">0.32</measure>) with a hole on top for an attachment. B: Right hand block <measure type="length" unit="metre" dim="width">1.56</measure>   × <measure type="length" unit="metre" dim="height">0.72</measure>   × <measure type="length" unit="metre" dim="depth">0.36</measure> with badly chipped surface to left.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for Flavius <gap reason="lost" unit="character" extent="unknown"/>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120611</idno>
+            <idno type="IAph2007">iAph120611</idno>
+            <idno type="JMR2004">iAph1477</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A: Two joining<material> white marble</material> pieces forming the left hand <objectType>block</objectType> of a composite monument (together <width unit="metre">1.13</width> x <height unit="metre">0.71</height> x <depth unit="metre">0.32</depth>) with a hole on top for an attachment. B: Right hand block <width unit="metre">1.56</width>   × <height unit="metre">0.72</height>   × <depth unit="metre">0.36</depth> with badly chipped surface to left.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>perhaps I-II; ave 0.055; Ligatures: l. 3,  ΜΝ</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">First to second centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (east part)</rs>, by the NYU excavations on the outer face of excavated stretch.</provenance>
+                  <provenance type="observed">block A in Museum, block B in situ.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications, Preliminary transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-06" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_A_04.jpg">
+            <desc>Left hand block (1978)</desc>
+         </graphic>
+         <graphic url="80_D_24.jpg">
+            <desc>Right hand block (1980)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖο<supplied reason="lost">ν</supplied></w>  <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">τὴν</supplied>  <w lemma="ἐπίκειμαι"><supplied reason="lost">ἐ</supplied>πὶ<lb n="2" break="no"/>κειμένην</w>  <w lemma="αὐτός">α<supplied reason="lost">ὐτῷ</supplied></w>  <w lemma="σορός"><supplied reason="lost">σορὸν</supplied></w>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w>  <lb n="3"/> <w lemma="ὁ">τὰς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="μνημεῖον">μν<supplied reason="lost">ημείῳ</supplied></w>  <w lemma="εἰσώστη"><supplied reason="lost">εἰσώ</supplied><lb n="4" break="no"/>στας</w>  <w lemma="κατασκευάζω">κατεσ<supplied reason="lost">κεύασεν</supplied></w>  <persName type="attested"><name nymRef="#Τίτος"><supplied reason="lost">Τ</supplied>ί<lb n="5" break="no"/>τος</name>  <name nymRef="#Φλάβιος">Φλάβιο<supplied reason="lost">ς</supplied></name>  <gap reason="lost" unit="character" quantity="5"/></persName><unclear reason="damage">Α</unclear>Σ  <g ref="#stop"/>  <w lemma="ἑαυτοῦ">ἑ<lb n="6" break="no"/>αυτῷ</w> <w lemma="καί">καὶ</w> <w lemma="ὅς">οἷ<supplied reason="lost">ς</supplied></w>  <w lemma="ἐάν"><supplied reason="lost">ἂν</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">α</supplied><unclear reason="damage">ὐ</unclear>τὸς</w>  <lb n="7"/> <w lemma="βούλομαι">βουλήθη</w> <w lemma="ἤ">ἢ</w> <w lemma="διατάσσω"><supplied reason="lost">διατάξ</supplied>ηται</w>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>perhaps I-II; ave 0.055; Ligatures: l. 3,  ΜΝ</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date notBefore="0001" notAfter="0200" exact="none">First to second centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖο<supplied reason="lost">ν</supplied></w>  <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">τὴν</supplied>  <w lemma="ἐπίκειμαι"><supplied reason="lost">ἐ</supplied>πὶ<lb n="2" type="worddiv"/>κειμένην</w>  <w lemma="αὐτός">α<supplied reason="lost">ὐτῷ</supplied></w>  <w lemma="σορός"><supplied reason="lost">σορὸν</supplied></w>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w>  <lb n="3"/> <w lemma="ὁ">τὰς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="μνημεῖον">μν<supplied reason="lost">ημείῳ</supplied></w>  <w lemma="εἰσώστη"><supplied reason="lost">εἰσώ</supplied><lb n="4" type="worddiv"/>στας</w>  <w lemma="κατασκευάζω">κατεσ<supplied reason="lost">κεύασεν</supplied></w>  <persName type="aphrodisian"><name reg="Τίτος" type="praenomen"><supplied reason="lost">Τ</supplied>ί<lb n="5" type="worddiv"/>τος</name>  <name reg="Φλάβιος">Φλάβιο<supplied reason="lost">ς</supplied></name>  <gap reason="lost" extent="5" unit="character"/></persName><unclear reason="damage">Α</unclear>Σ  <g type="stop"/>  <w lemma="ἑαυτοῦ">ἑ<lb n="6" type="worddiv"/>αυτῷ</w> <w lemma="καί">καὶ</w> <w lemma="ὅς">οἷ<supplied reason="lost">ς</supplied></w>  <w lemma="ἐάν"><supplied reason="lost">ἂν</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">α</supplied><unclear reason="damage">ὐ</unclear>τὸς</w>  <lb n="7"/> <w lemma="βούλομαι">βουλήθη</w> <w lemma="ἤ">ἢ</w> <w lemma="διατάσσω"><supplied reason="lost">διατάξ</supplied>ηται</w>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 1,  At end Fellows: Ν</p><p> 2,  At end Fellows: Η</p><p>4,  At end Fellows saw nothing</p><p>5. perhaps Περειτ]ας.  At end Fellows: ]ΣΕ </p><p>6,  At end Fellows: ]ΤΟΣ</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, South (east part)</rs>, by the NYU excavations on the outer face of excavated stretch.</rs><rs type="lastLocation">block A in Museum, block B in situ.</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications, Preliminary transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Fellows; by Loew; recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="fellows1841">Fellows, no. <biblScope>57</biblScope>, p. 356</bibl>, whence <bibl n="CIGIIc">CIG <biblScope>2850d</biblScope></bibl>; seen by Loew, whence noted <bibl n="franz1847">Franz <biblScope>a.17</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257406">526</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_A_04"><figDesc>Left hand block (1978)</figDesc></figure><figure href="80_D_24"><figDesc>Right hand block (1980)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 1,  At end Fellows: Ν</p>
+            <p> 2,  At end Fellows: Η</p>
+            <p>4,  At end Fellows saw nothing</p>
+            <p>5. perhaps Περειτ]ας.  At end Fellows: ]ΣΕ </p>
+            <p>6,  At end Fellows: ]ΤΟΣ</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="fellows1841">Fellows, no. <citedRange>57</citedRange>, p. 356</bibl>, whence <bibl n="CIGIIc">CIG <citedRange>2850d</citedRange>
+               </bibl>; seen by Loew, whence noted <bibl n="franz1847">Franz <citedRange>a.17</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257406">526</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

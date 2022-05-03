@@ -1,89 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010008" n="iAph1125 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Column dedication</rs> by Attalos and Attalis</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Column dedication by Attalos and Attalis</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010008</idno>
+            <idno type="IAph2007">iAph010008</idno>
+            <idno type="JMR2004">iAph1125</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three fragments from a <rs type="decoration">tabella ansata</rs> (<width unit="metre">0.745</width> x <height unit="metre">0.465</height>) on a fluted <material key="marmor">white marble</material>
+                              <objectType>column</objectType>; a (left side fragment) <width unit="metre">0.30</width>   × <height unit="metre">0.30</height>   × <depth unit="metre">0.14</depth>. b (centre fragment) <width unit="metre">0.28</width>   × <height unit="metre">0.80</height>   × <depth unit="metre">0.40</depth>. c (right lower corner) <width unit="metre">0.27</width>   × <height unit="metre">0.36</height>   × <depth unit="metre">0.29</depth>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in tabella ansata.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.03-0.035</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot: on column.</origPlace>
+                     <origDate notBefore="0034"
+                               notAfter="0066"
+                               precision="medium"
+                               evidence="lettering">
+Mid first century A.D.
+(<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>, section XI.</provenance>
+                  <provenance type="observed">a nd c in Museum; b in Temple-church, chancel.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-24" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="72_D_26A.jpg">
+            <desc>Fragment a. (1972)</desc>
+         </graphic>
+         <graphic url="77_S_30.jpg">
+            <desc>Fragment b. (1977)</desc>
+         </graphic>
+         <graphic url="77_BB_25.jpg">
+            <desc>Fragment c. (1977)</desc>
+         </graphic>
+         <graphic url="Deering_05v.jpg">
+            <desc>Complete: Deering notebook, page 5v</desc>
+         </graphic>
+         <graphic url="K_V_22.jpg">
+            <desc>Fragment b: Kubitschek notebook V, 22 (a)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-
-<p>Three fragments from a <rs type="decoration">tabella ansata</rs> (<measure dim="width" type="length" unit="metre">0.745</measure> x <measure dim="height" type="length" unit="metre">0.465</measure>) on a fluted <rs type="material" key="marmor">white marble</rs> <rs type="objectType">column</rs>; a (left side fragment) <measure type="length" unit="metre" dim="width">0.30</measure>   × <measure type="length" unit="metre" dim="height">0.30</measure>   × <measure type="length" unit="metre" dim="depth">0.14</measure>. b (centre fragment) <measure type="length" unit="metre" dim="width">0.28</measure>   × <measure type="length" unit="metre" dim="height">0.80</measure>   × <measure type="length" unit="metre" dim="depth">0.40</measure>. c (right lower corner) <measure type="length" unit="metre" dim="width">0.27</measure>   × <measure type="length" unit="metre" dim="height">0.36</measure>   × <measure type="length" unit="metre" dim="depth">0.29</measure>.</p>
+<ab><lb n="1"/><persName type="attested"><name nymRef="#Ἄτταλος">Ἄτταλο<seg type="autopsy">ς</seg></name>  <persName type="attested"><name nymRef="#Μένανδρος"><seg type="autopsy">Μ</seg>εν<lb n="2" break="no"/>άνδρ<seg type="autopsy"><unclear reason="damage">ο</unclear>υ</seg></name>  <w lemma="ὁ"><seg type="autopsy">το</seg>ῦ</w>  <persName type="attested"><name nymRef="#Ἄτταλος">Ἀτ<lb n="3" break="no"/><seg type="autopsy"><unclear reason="damage">τά</unclear></seg>λ<seg type="autopsy"><unclear reason="damage">ο</unclear></seg>υ</name></persName></persName></persName>  <w lemma="καί">κ<seg type="autopsy">αὶ</seg></w>  <persName type="attested"><name nymRef="#Ἀτταλίς">Ἀ<seg type="autopsy">τ</seg>τα<lb n="4" break="no"/><seg type="autopsy">λὶς</seg></name>  <persName type="attested"><name nymRef="#Μενεκράτης"><seg type="autopsy">Μ<unclear reason="damage">ε</unclear></seg>ν<seg type="autopsy">εκρ</seg>ά<supplied reason="lost">τους</supplied></name></persName><lb n="5"/><name nymRef="#Ἄπφιος"><seg type="autopsy">Ἄπφιο</seg>ν</name></persName> <w lemma="ὁ">οἱ</w> <w lemma="ἱερεύς"><supplied reason="lost">ἱερ</supplied>εῖς</w>  <lb n="6"/><w lemma="ὁ"><seg type="autopsy">τῆς</seg></w>  <persName type="divine"><name nymRef="#Ἀφροδίτη"><seg type="autopsy">Ἀ</seg>φρο<seg type="autopsy">δείτης</seg></name></persName>  <lb n="7"/><w lemma="θεά"><seg type="autopsy"><unclear reason="damage">θ</unclear>εᾷ</seg></w>  <persName type="divine"><name nymRef="#Ἀφροδίτη"><seg type="autopsy">Ἀφ</seg>ροδεί<seg type="autopsy">τῃ</seg></name></persName>  <space unit="character" extent="1" dim="horizontal"/><lb n="8"/><supplied reason="lost"><w lemma="καί">καὶ</w>  <w lemma="ὁ">τῷ</w>  <w lemma="δῆμος">Δήμωι</w></supplied>  <space unit="character" extent="5" dim="horizontal"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>
-
-<rs type="execution" key="scalpro">Inscribed</rs> in tabella ansata.</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p><measure type="length" unit="metre" dim="height">0.03-0.035</measure></p>
-
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0034" notAfter="0066" exact="none">Mid first century A.D.</date>
-(<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><persName type="aphrodisian" full="yes"><name type=" " reg="Ἄτταλος">Ἄτταλο<seg type="autopsy">ς</seg></name>  <persName type="aphrodisian"><name reg="Μένανδρος"><seg type="autopsy">Μ</seg>εν<lb n="2" type="worddiv"/>άνδρ<seg type="autopsy"><unclear reason="damage">ο</unclear>υ</seg></name>  <w lemma="ὁ"><seg type="autopsy">το</seg>ῦ</w>  <persName type="aphrodisian"><name reg="Ἄτταλος">Ἀτ<lb n="3" type="worddiv"/><seg type="autopsy"><unclear reason="damage">τά</unclear></seg>λ<seg type="autopsy"><unclear reason="damage">ο</unclear></seg>υ</name></persName></persName></persName>  <w lemma="καί">κ<seg type="autopsy">αὶ</seg></w>  <persName type="aphrodisian" full="yes"><name reg="Ἀτταλίς">Ἀ<seg type="autopsy">τ</seg>τα<lb n="4" type="worddiv"/><seg type="autopsy">λὶς</seg></name>  <persName type="aphrodisian"><name reg="Μενεκράτης"><seg type="autopsy">Μ<unclear reason="damage">ε</unclear></seg>ν<seg type="autopsy">εκρ</seg>ά<supplied reason="lost">τους</supplied></name></persName><lb n="5"/><name reg="Ἄπφιος"><seg type="autopsy">Ἄπφιο</seg>ν</name></persName> <w lemma="ὁ">οἱ</w> <w lemma="ἱερεύς"><supplied reason="lost">ἱερ</supplied>εῖς</w>  <lb n="6"/><w lemma="ὁ"><seg type="autopsy">τῆς</seg></w>  <persName type="divine" full="yes"><name reg="Ἀφροδίτη"><seg type="autopsy">Ἀ</seg>φρο<seg type="autopsy">δείτης</seg></name></persName>  <lb n="7"/><w lemma="θεά"><seg type="autopsy"><unclear reason="damage">θ</unclear>εᾷ</seg></w>  <persName type="divine" full="yes"><name reg="Ἀφροδίτη"><seg type="autopsy">Ἀφ</seg>ροδεί<seg type="autopsy">τῃ</seg></name></persName>  <space unit="character" extent="1" dim="horizontal"/><lb n="8"/><supplied reason="lost"><w lemma="καί">καὶ</w>  <w lemma="ὁ">τῷ</w>  <w lemma="δῆμος">Δήμωι</w></supplied>  <space unit="character" extent="5" dim="horizontal"/></ab>
-</div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p> Letters read by us are highlighted.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Attalos son of Menandros the son of Attalos, and Attalis Apphion daughter of Menekrates, priests of Aphrodite, for the goddess Aphrodite and the People</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of the group of column dedications from the Temple of Aphrodite: <xref type="inscription" n="1121" href="010004">1.4</xref> (=MAMA 437), <xref type="inscription" n="1122" href="010005">1.5</xref> (=MAMA 438), <xref type="inscription" n="1123" href="010006">1.6</xref> (=Reinach 122), <xref type="inscription" n="1124" href="010007">1.7</xref> (=MAMA 450), <xref type="inscription" n="1125" href="010008">1.8</xref> (=KRC 37+); see discussed by <bibl n="jmr1990"><author>Reynolds</author>, 'Inscriptions and the Building of the Temple', <title>Aphrodisias Papers </title>(Ann Arbor, 1990), 37-40, 38</bibl>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Findspot: on column.</rs> <rs type="found"><rs type="monuList">Temple/Church</rs>, section XI.</rs><rs type="lastLocation">a nd c in Museum; b in Temple-church, chancel.</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); publications.</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>The text was copied by Deering (5v, no. 21) who saw it complete, except for the end of l.4, and l.8; It was broken by 1893, when fragment b was copied by Kubitschek (V.22a). a-c excavated by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>b published from K&amp;R by <bibl n="cormack1964">Cormack, ABSA 59, 1964, 27, no. <biblScope>37</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257035">156</biblScope></bibl>; a and c unpublished</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>
- <figure href="72_D_26A"><figDesc>Fragment a. (1972)</figDesc></figure><figure href="77_S_30"><figDesc>Fragment b. (1977)</figDesc></figure><figure href="77_BB_25"><figDesc>Fragment c. (1977)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Deering_05v"><figDesc>Complete: Deering notebook, page 5v</figDesc></figure><figure href="K_V_22"><figDesc>Fragment b: Kubitschek notebook V, 22 (a)</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p> Letters read by us are highlighted.</p>
+         </div>
+         <div type="translation">
+            <p>Attalos son of Menandros the son of Attalos, and Attalis Apphion daughter of Menekrates, priests of Aphrodite, for the goddess Aphrodite and the People</p>
+         </div>
+         <div type="commentary">
+            <p>One of the group of column dedications from the Temple of Aphrodite: <ref type="inscription" n="1121" target="010004.xml"/> (=MAMA 437), <ref type="inscription" n="1122" target="010005.xml"/> (=MAMA 438), <ref type="inscription" n="1123" target="010006.xml"/> (=Reinach 122), <ref type="inscription" n="1124" target="010007.xml"/> (=MAMA 450), <ref type="inscription" n="1125" target="010008.xml"/> (=KRC 37+); see discussed by <bibl n="jmr1990">
+                  <author>Reynolds</author>, 'Inscriptions and the Building of the Temple', <title>Aphrodisias Papers </title>(Ann Arbor, 1990), 37-40, 38</bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>b published from K&amp;R by <bibl n="cormack1964">Cormack, ABSA 59, 1964, 27, no. <citedRange>37</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257035">156</citedRange>
+               </bibl>; a and c unpublished</p>
+         </div>
+      </body>
+   </text>
 </TEI>

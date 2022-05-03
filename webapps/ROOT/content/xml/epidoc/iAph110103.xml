@@ -1,85 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110103" n="iAph1635 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for Tiberius Claudius Diadoumenos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material">white marble</rs> <rs type="objectType">block</rs> broken at the back (<measure dim="height" type="length" unit="metre">0.38</measure> x <measure dim="width" type="length" unit="metre"> 0.50</measure> x <measure dim="depth" type="length" unit="metre" precision="circa">0.24</measure>).</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for Tiberius Claudius Diadoumenos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110103</idno>
+            <idno type="IAph2007">iAph110103</idno>
+            <idno type="JMR2004">iAph1635</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material>white marble</material>
+                              <objectType>block</objectType> broken at the back (<height unit="metre">0.38</height> x <width unit="metre"> 0.50</width> x <depth unit="metre">0.24</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard forms; <height unit="metre">0.02</height>. Ligatures: <foreign xml:lang="grc">HN</foreign>, l.3.; <foreign xml:lang="grc">NH</foreign>, l.7</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace> Unknown</origPlace>
+                     <origDate notBefore="0050"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="terminology nomenclature">First to second centuries A.D.  (<rs type="criteria">terminology</rs>, <rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, North-east</rs>: 'inside the ancient city near the Stadium and the East Gate'.</provenance>
+                  <provenance type="observed" when="1893">Findspot (1893)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Notebook, publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_III_51.jpg">
+            <desc>Kubitschek notebook III, 51</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="πλάτας">πλάτας</w> <w lemma="εἰμί">ἐστιν</w> <persName type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name> <lb n="2"/> <name nymRef="#Κλαύδιος">Κλαυδίου</name> <name nymRef="#Διαδουμενός">Διαδουμένου</name></persName> <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="ἴδιος"><supplied reason="omitted">ἰ</supplied>δίων</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τ<hi rend="ligature"><unclear reason="damage">ὴ</unclear>ν</hi></w> <w lemma="δίδωμι">δο<lb n="4" break="no"/>θεῖσαν</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="συγχώρησις">συν<unclear reason="damage">χ</unclear>ώρησιν</w> <w lemma="ὑπό">ὑ<lb n="5" break="no"/><unclear reason="damage">π</unclear>ὸ</w> <persName type="attested"><name nymRef="#Σάλβιος">Σαλβίου</name> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ο<supplied reason="lost">ῦ</supplied></w> <persName type="attested"><name nymRef="#Ἑρμογένης">Ἑρμογένους</name></persName></persName> <lb n="6"/> <w lemma="διά">δι<unclear reason="damage">ὰ</unclear></w> <w lemma="ὁ">τοῦ</w> <w lemma="χρεωφυλάκιον"><supplied reason="lost">χ</supplied>ρ<unclear reason="damage">ε</unclear>οφυλακίου</w> <w lemma="εἰμί">ὧν</w> <w lemma="ἄν">ἄν</w> <lb n="7"/> <w lemma="τις">τ<unclear reason="damage">ις</unclear></w> <w lemma="μετακινέω">με<unclear reason="damage">τα</unclear><supplied reason="lost">κι</supplied><hi rend="ligature">νή</hi><unclear reason="damage">σ</unclear>ει</w> <w lemma="οὗτος">τούτων</w> <w lemma="τις">τι<lb n="8" break="no"/><unclear reason="damage">ν</unclear>ὰ</w>  <w lemma="μήτε">μ<unclear reason="damage">ή</unclear><supplied reason="lost">τε</supplied></w> <w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w> <w lemma="γῆ">γῆ</w> <w lemma="καρποφόρος"><unclear reason="damage">κ</unclear>αρποφόρο<supplied reason="lost">ς</supplied></w>  <w lemma="μήτε">μή<lb n="9" break="no"/>τε</w>  <w lemma="θάλασσα"><unclear reason="damage">θ</unclear>ά<unclear reason="damage">λ</unclear><supplied reason="lost">α</supplied>σσα</w> <w lemma="πλωτός">π<unclear reason="damage">λ</unclear>ωτὴ</w> <w lemma="εἰμί">ἔστ<supplied reason="lost">ω</supplied></w>  <w lemma="αὐτός">αὐ<lb n="10" break="no"/>τῷ</w> <w lemma="ὁ">τῷ</w> <w lemma="ἐπιχειρέω">ἐπι<supplied reason="lost">χ</supplied>ειρήσαντι</w>  <g ref="#leaf"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed on the face</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Standard forms; <measure dim="height" type="length" unit="metre">0.02</measure>. Ligatures: <foreign lang="grc">HN</foreign>, l.3.; <foreign lang="grc">NH</foreign>, l.7</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date notBefore="0050" notAfter="0200" exact="none">First to second centuries A.D.</date>  (<rs type="criteria">terminology</rs>, <rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="πλάτας">πλάτας</w> <w lemma="εἰμί">ἐστιν</w> <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen">Τιβερίου</name> <lb n="2"/> <name reg="Κλαύδιος">Κλαυδίου</name> <name reg="Διαδουμενός">Διαδουμένου</name></persName> <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="ἴδιος"><supplied reason="omitted">ἰ</supplied>δίων</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τ<hi rend="ligature"><unclear reason="damage">ὴ</unclear>ν</hi></w> <w lemma="δίδωμι">δο<lb n="4" type="worddiv"/>θεῖσαν</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="συγχώρησις">συν<unclear reason="damage">χ</unclear>ώρησιν</w> <w lemma="ὑπό">ὑ<lb n="5" type="worddiv"/><unclear reason="damage">π</unclear>ὸ</w> <persName type="aphrodisian"><name reg="Σάλβιος">Σαλβίου</name> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ο<supplied reason="lost">ῦ</supplied></w> <persName type="aphrodisian"><name reg="Ἑρμογένης">Ἑρμογένους</name></persName></persName> <lb n="6"/> <w lemma="διά">δι<unclear reason="damage">ὰ</unclear></w> <w lemma="ὁ">τοῦ</w> <w lemma="χρεωφυλάκιον"><supplied reason="lost">χ</supplied>ρ<unclear reason="damage">ε</unclear>οφυλακίου</w> <w lemma="εἰμί">ὧν</w> <w lemma="ἄν">ἄν</w> <lb n="7"/> <w lemma="τις">τ<unclear reason="damage">ις</unclear></w> <w lemma="μετακινέω">με<unclear reason="damage">τα</unclear><supplied reason="lost">κι</supplied><hi rend="ligature">νή</hi><unclear reason="damage">σ</unclear>ει</w> <w lemma="οὗτος">τούτων</w> <w lemma="τις">τι<lb n="8" type="worddiv"/><unclear reason="damage">ν</unclear>ὰ</w>  <w lemma="μήτε">μ<unclear reason="damage">ή</unclear><supplied reason="lost">τε</supplied></w> <w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w> <w lemma="γῆ">γῆ</w> <w lemma="καρποφόρος"><unclear reason="damage">κ</unclear>αρποφόρο<supplied reason="lost">ς</supplied></w>  <w lemma="μήτε">μή<lb n="9" type="worddiv"/>τε</w>  <w lemma="θάλασσα"><unclear reason="damage">θ</unclear>ά<unclear reason="damage">λ</unclear><supplied reason="lost">α</supplied>σσα</w> <w lemma="πλωτός">π<unclear reason="damage">λ</unclear>ωτὴ</w> <w lemma="εἰμί">ἔστ<supplied reason="lost">ω</supplied></w>  <w lemma="αὐτός">αὐ<lb n="10" type="worddiv"/>τῷ</w> <w lemma="ὁ">τῷ</w> <w lemma="ἐπιχειρέω">ἐπι<supplied reason="lost">χ</supplied>ειρήσαντι</w>  <g type="leaf"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 3,  On the squeeze Cormack read small letters above the delta, including <foreign lang="grc">T</foreign> and <foreign lang="grc">N</foreign>, and restored <foreign lang="grc">καὶ <supplied reason="omitted">τῶν ἰ</supplied>δίων</foreign></p><p>l. 10,  <foreign lang="grc">ΕΠΙΣΙΡΗΣΑΝΤΙ</foreign> lapis, presumably, as Robert pointed out, an error for the normal verb, not a new term, as supposed by Cormack.</p>
-</div>
-<div type="translation" n="notyet">
-<head>Translation</head>
-<p>...</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>...</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation"> Unknown</rs>
-<rs type="found"><rs type="monuList">City, North-east</rs>: 'inside the ancient city near the Stadium and the East Gate'.</rs>
-<rs type="lastLocation">Findspot (1893)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Notebook, publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Kubitschek (K III.51, Abklatsch 103); not reported subsequently</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from K's notebook by <bibl n="cormack1964">Cormack, no. <biblScope>29</biblScope></bibl> (whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257375">497</biblScope>
-</bibl>), on which see L. Robert, Ant. Class. (1966) 385-6, BE 1967:545.</p>
-</div>
-<div type="figure" n="Preliminary transcriptions">
-<head>Representations</head>
-<p><figure href="K_III_51"><figDesc>Kubitschek notebook III, 51</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 3,  On the squeeze Cormack read small letters above the delta, including <foreign xml:lang="grc">T</foreign> and <foreign xml:lang="grc">N</foreign>, and restored <foreign xml:lang="grc">καὶ <supplied reason="omitted">τῶν ἰ</supplied>δίων</foreign>
+            </p>
+            <p>l. 10,  <foreign xml:lang="grc">ΕΠΙΣΙΡΗΣΑΝΤΙ</foreign> lapis, presumably, as Robert pointed out, an error for the normal verb, not a new term, as supposed by Cormack.</p>
+         </div>
+         <div type="translation" n="notyet">
+            <p>...</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>...</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from K's notebook by <bibl n="cormack1964">Cormack, no. <citedRange>29</citedRange>
+               </bibl> (whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257375">497</citedRange>
+               </bibl>), on which see L. Robert, Ant. Class. (1966) 385-6, BE 1967:545.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

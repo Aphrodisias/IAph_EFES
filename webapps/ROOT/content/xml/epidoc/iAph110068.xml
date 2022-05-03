@@ -1,131 +1,187 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110068" n="iAph0053 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType">Verse</rs> <rs type="textType">posthumous honours</rs>, apparently , for Asclepiodotus</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2007-08-13</date><respStmt><name>EL</name></respStmt><item>tidied expan</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change>
-  <date>2003-11-04</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change><date>2003-08-21</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change>
-  <date>2003-07-16</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2004-01-25</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A re-used <rs type="material" key="marmor">white marble</rs> <seg cert="low"><rs type="objectType">statue base</rs></seg> (<measure type="length" unit="metre" dim="width">0.99</measure>  × <measure type="length" unit="metre" dim="height">0.52</measure> × <measure type="length" unit="metre" dim="depth">0.515</measure>) originally intended for architectural decoration; the rear face has elaborate mouldings at each side. The stone is broken at the top left corner and the right side, and the surface is worn.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on the face, which is very slightly concave as seen from the sides.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p><measure dim="height" type="length" unit="metre">0.03-0.04</measure>; slightly elongated, simple: l.1, <foreign lang="grc">Κ<g type="scroll"/></foreign>; l.4, apostrophe after <foreign lang="grc">ΤΟΝΔ</foreign>; between ll. 4 and 5 there is a short horizontal line in the left margin, apparently demarcating the two stanzas.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0500" exact="none" notBefore="0468">Late fifth century</date> (<rs type="criteria">prosopography</rs>).</p>
-      </div>
-
-      <div lang="grc" n="text" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Verse posthumous honours, apparently , for Asclepiodotus</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110068</idno>
+            <idno type="IAph2007">iAph110068</idno>
+            <idno type="JMR2004">iAph0053</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A re-used <material key="marmor">white marble</material>
+                              <seg cert="low">
+                                 <objectType>statue base</objectType>
+                              </seg> (<width unit="metre">0.99</width>  × <height unit="metre">0.52</height> × <depth unit="metre">0.515</depth>) originally intended for architectural decoration; the rear face has elaborate mouldings at each side. The stone is broken at the top left corner and the right side, and the surface is worn.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face, which is very slightly concave as seen from the sides.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.03-0.04</height>; slightly elongated, simple: l.1, <foreign xml:lang="grc">Κ<g ref="#scroll"/>
+                        </foreign>; l.4, apostrophe after <foreign xml:lang="grc">ΤΟΝΔ</foreign>; between ll. 4 and 5 there is a short horizontal line in the left margin, apparently demarcating the two stanzas.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0468"
+                               notAfter="0500"
+                               precision="medium"
+                               evidence="prosopography">Late fifth century (<rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, Village</rs>: '<foreign xml:lang="la">In muro apud Turcam domum in orientali pagi parte</foreign>' (Picenini); 'built into a village house, which has since been demolished' (NYU).</provenance>
+                  <provenance type="observed" when="2004">Museum (2004).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation> Transcription (Roueché); Publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-13" who="EL">tidied expan</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-25" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-21" who="#CMR">tagged and corrected</change>
+         <change when="2003-07-16" who="Juan-Garcés">lemmatised</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_V_23.jpg">
+            <desc>Face and top (1973)</desc>
+         </graphic>
+         <graphic url="NY_93_96_23.jpg">
+            <desc>Face and right end (1993)</desc>
+         </graphic>
+         <graphic url="NY_93_96_24.jpg">
+            <desc>Underside (1993)</desc>
+         </graphic>
+         <graphic url="DSCN0292.jpg">
+            <desc>Underside and right end
+(2004)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<lg met="elegaic">
-		<lb n="1"/><l met="hexameter" n="1"><w lemma="λάμπω"><supplied reason="lost">λ</supplied>άμπει</w> <w lemma="καί"><expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan></w> <w lemma="φθίνω">φθιμένοις</w> <w lemma="ἀρετή">ἀρετῆς</w> <w lemma="φάος">φάος</w>, <w lemma="ὁ">οἳ</w> <w lemma="περί">περὶ</w> <w lemma="πάτρη">π<unclear reason="damage">άτ</unclear>ρ<unclear reason="damage">η</unclear><supplied reason="lost">ς</supplied></w></l>
+		<lb n="1"/><l met="hexameter" n="1"><w lemma="λάμπω"><supplied reason="lost">λ</supplied>άμπει</w> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <w lemma="φθίνω">φθιμένοις</w> <w lemma="ἀρετή">ἀρετῆς</w> <w lemma="φάος">φάος</w>, <w lemma="ὁ">οἳ</w> <w lemma="περί">περὶ</w> <w lemma="πάτρη">π<unclear reason="damage">άτ</unclear>ρ<unclear reason="damage">η</unclear><supplied reason="lost">ς</supplied></w></l>
 		<lb n="2"/><l n="2" met="pentameter"><w lemma="πολύς">πολλὰ</w> <w lemma="πονέω">πονησάμενοι</w> <w lemma="σύνειμι">ξυνὸν</w> <w lemma="τίθημι">ἔθεντ'</w> <w lemma="ὄφελος">ὄφε<unclear reason="damage">λ</unclear><supplied reason="lost">ος</supplied></w>.</l>
-		<lb n="3"/><l met="hexameter" n="3"><persName key="AsclepiodotusAph" type="aphrodisian" full="yes"><name reg="Ἀσκληπιόδοτος">Ἀσκληπιοδότωι</name></persName> <w lemma="λόγος">λόγος</w> <w lemma="ἁρμόζω">ἥρμ<unclear reason="damage">ο</unclear>σεν</w>, <w lemma="ὅς">ὧι</w> <w lemma="πόλις">πόλις</w> <w lemma="ὅδε"><unclear reason="damage">ἥ</unclear><supplied reason="lost">δε</supplied></w></l>
+		<lb n="3"/><l met="hexameter" n="3"><persName key="AsclepiodotusAph" type="attested"><name nymRef="#Ἀσκληπιόδοτος">Ἀσκληπιοδότωι</name></persName> <w lemma="λόγος">λόγος</w> <w lemma="ἁρμόζω">ἥρμ<unclear reason="damage">ο</unclear>σεν</w>, <w lemma="ὅς">ὧι</w> <w lemma="πόλις">πόλις</w> <w lemma="ὅδε"><unclear reason="damage">ἥ</unclear><supplied reason="lost">δε</supplied></w></l>
 		<lb n="4"/><l n="4" met="pentameter"><w lemma="οἷος">οἷάπερ</w> <w lemma="οἰκιστής">οἰκιστῆι</w> <w lemma="ὅδε">τόνδ'</w> <w lemma="ἀνατίθημι">ἀνέθηκε</w> <w lemma="τύπος">τύπο<supplied reason="lost">ν</supplied></w>.</l>
 		</lg>
-		<ab><lb n="4a"/><g type="dash"/></ab>
+		<ab><lb n="4a"/><g ref="#dash"/></ab>
 		<lg met="elegaic">
 		<lb n="5"/><l met="hexameter" n="5"><w lemma="τήκω">Τήκει</w> <w lemma="καί">καὶ</w> <w lemma="πέτρα">πέτρην</w> <w lemma="ὁ">ὁ</w> <w lemma="πολύς">πολὺς</w> <w lemma="χρόνος">χρόνος</w>: <w lemma="ἀλλά">ἀ<unclear reason="damage">λλ</unclear>'</w> <w lemma="ἀρετή"><unclear reason="damage">ἀ</unclear><supplied reason="lost">ρετάων</supplied></w></l>
-		<lb n="6"/><l met="pentameter" n="6"><persName key="AsclepiodotusAph" type="aphrodisian" full="yes"><name reg="Ἀσκληπιόδοτος">Ἀσκληπιοδότου</name></persName> <w lemma="ὁ">τὸ</w> <w lemma="κλέος">κλέος</w> <w lemma="ἀθάνατος">ἀθάνατον</w>,</l>
+		<lb n="6"/><l met="pentameter" n="6"><persName key="AsclepiodotusAph" type="attested"><name nymRef="#Ἀσκληπιόδοτος">Ἀσκληπιοδότου</name></persName> <w lemma="ὁ">τὸ</w> <w lemma="κλέος">κλέος</w> <w lemma="ἀθάνατος">ἀθάνατον</w>,</l>
 		<lb n="7"/><l met="hexameter" n="7"><w lemma="ὅσος">ὅσσα</w> <w lemma="καί">καὶ</w> <w lemma="οἷος">οἷα</w> <w lemma="πόρω">πόρεν</w> <w lemma="γέρας">γέρα</w> <w lemma="πατρίς">πατρίδι</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="πᾶς">π<supplied reason="lost">ᾶσιν</supplied></w></l>
 		<lb n="8"/><l met="pentameter" n="8"><w lemma="καί">καὶ</w> <w lemma="ὅδε">τόδε</w> <w lemma="μετρέω">μετρείσθω</w> <w lemma="σύνειμι">ξυνὸν</w> <w lemma="ἔρεισμα">ἔρεισμα</w> <w lemma="θόλος">θ<unclear reason="damage">ό</unclear><supplied reason="lost">λου</supplied></w>.</l>
 		</lg>
 		</div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p>There are no significant differences between the modern copies. In line 8, for <foreign lang="grc">ξυνὸν</foreign>, <title level="m">AP</title> has <foreign lang="grc">κοῖλον</foreign>. The Byzantine copyist perhaps chose to 'improve' the text, and wrote <foreign lang="grc">κοινὸν</foreign> which was subsequently corrupted to <foreign lang="grc">κοῖλον</foreign> (as editors since Boeckh have conjectured); but see commentary, <xref type="eAla-text" n="V.8">V.8</xref>.</p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>The light of virtue shines even for dead men, who, undertaking many labours for their country, established general benefits. The saying fits Asklepiodotos, for whom this city has dedicated this statue as for a founder.</ab>
-        <ab>Long time wears away even stone; but the fame of Asklepiodotos' virtues is immortal, the number and kind of privileges which he obtained for his country. In addition to all these, let this adjacent structure of the vaulted chamber be counted as well.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>For Asklepiodotos see also <xref type="inscription" n="54" href="110069">11.69</xref>; see discussion at <xref type="eAla-text" n="V.8">V.8</xref> following.</p>
-        
-	  </div>
-		
-		
-	  <div type="history" n="locations"><head>Locations</head><p><rs type="found"><rs type="monuList">City, Village</rs>: '<foreign lang="la">In muro apud Turcam domum in orientali pagi parte</foreign>' (Picenini); 'built into a village house, which has since been demolished' (NYU).</rs>. <rs type="origLocation">Unknown.</rs>. <rs type="lastLocation">Museum (2004).</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Apparently copied in the Byzantine period; copied by <rs type="visitor" key="picenini">Picenini</rs> (BL Add. 10102, 20v, no. 39) whence <rs key="sherard" type="visitor">Sherard</rs> (BL Add. 10101 f. 31); recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (9); by the <rs type="visitor" key="calder">MAMA expedition</rs>; by <rs type="visitor" key="robert">J and L. Robert</rs>; recorded by the NYU expedition (SBI <rs type="sbi">70</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Lines 5-8 published in <bibl rend="primary" n="AnthPal"><title level="m" type="abbreviated">Anthologia Palatina</title> <biblScope>9.704</biblScope></bibl>; the full text published by <bibl type="hbi" rend="primary" n="CIGII"><author>Boeckh</author>, <title level="s">CIG</title> <biblScope>2851</biblScope></bibl>, from Sherard papers, whence <bibl><author>Welcker</author>, '<title level="a">Inedita et nuper primum edita</title>' <title level="j">RhM</title> 4 (1836), 393-423, 416-418, no. 31</bibl>, <bibl><author>Kaibel</author> <title level="m">EG</title> 889</bibl>; by <bibl type="hbi" rend="primary" n="reinach"><author>Reinach</author>, no. <biblScope>84</biblScope></bibl>, from Gaudin; by <bibl type="hbi" rend="primary" n="hell4"><author>Robert</author>, <title level="j">Hellenica</title> 4, <biblScope>115-126</biblScope></bibl>, whence <bibl n="be"><title level="j">BE</title> <biblScope>1949.178</biblScope></bibl>; by <bibl type="hbi" n="MAMA8"><author>Cormack</author>, <title level="s" type="abbreviated">MAMA</title> 8, no. <biblScope>486</biblScope></bibl>, from the MAMA records, whence <bibl type="hbi" n="hell13"><author>Robert</author>, <title level="j">Hellenica</title> 13, <biblScope>170-1</biblScope></bibl>; by <bibl type="hbi" rend="primary" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>53</biblScope> and plate xiii</bibl> whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257617">730</biblScope></bibl>, <bibl type="hbi" n="steinepig"><title level="m">Steinepigramme</title> <biblScope>02/09/05</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p> Transcription (Roueché); Publications.</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="73_V_23"><figDesc>Face and top (1973)</figDesc></figure><figure href="NY_93_96_23"><figDesc>Face and right end (1993)</figDesc></figure><figure href="NY_93_96_24"><figDesc>Underside (1993)</figDesc></figure><figure href="DSCN0292"><figDesc>Underside and right end
-(2004)</figDesc></figure></p></div>
-
-      
-
-      
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <p>There are no significant differences between the modern copies. In line 8, for <foreign xml:lang="grc">ξυνὸν</foreign>, <title level="m">AP</title> has <foreign xml:lang="grc">κοῖλον</foreign>. The Byzantine copyist perhaps chose to 'improve' the text, and wrote <foreign xml:lang="grc">κοινὸν</foreign> which was subsequently corrupted to <foreign xml:lang="grc">κοῖλον</foreign> (as editors since Boeckh have conjectured); but see commentary, <ref type="eAla-text" n="V.8" target=".xml"/>.</p>
+         </div>
+         <div type="translation">
+            <ab>The light of virtue shines even for dead men, who, undertaking many labours for their country, established general benefits. The saying fits Asklepiodotos, for whom this city has dedicated this statue as for a founder.</ab>
+            <ab>Long time wears away even stone; but the fame of Asklepiodotos' virtues is immortal, the number and kind of privileges which he obtained for his country. In addition to all these, let this adjacent structure of the vaulted chamber be counted as well.</ab>
+         </div>
+         <div type="commentary">
+            <p>For Asklepiodotos see also <ref type="inscription" n="54" target="110069.xml"/>; see discussion at <ref type="eAla-text" n="V.8" target=".xml"/> following.</p>
+         </div>
+         <div type="bibliography">
+            <p>Lines 5-8 published in <bibl rend="primary" n="AnthPal">
+                  <title level="m" type="abbreviated">Anthologia Palatina</title>
+                  <citedRange>9.704</citedRange>
+               </bibl>; the full text published by <bibl type="hbi" rend="primary" n="CIGII">
+                  <author>Boeckh</author>, <title level="s">CIG</title>
+                  <citedRange>2851</citedRange>
+               </bibl>, from Sherard papers, whence <bibl>
+                  <author>Welcker</author>, '<title level="a">Inedita et nuper primum edita</title>' <title level="j">RhM</title> 4 (1836), 393-423, 416-418, no. 31</bibl>, <bibl>
+                  <author>Kaibel</author>
+                  <title level="m">EG</title> 889</bibl>; by <bibl type="hbi" rend="primary" n="reinach">
+                  <author>Reinach</author>, no. <citedRange>84</citedRange>
+               </bibl>, from Gaudin; by <bibl type="hbi" rend="primary" n="hell4">
+                  <author>Robert</author>, <title level="j">Hellenica</title> 4, <citedRange>115-126</citedRange>
+               </bibl>, whence <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1949.178</citedRange>
+               </bibl>; by <bibl type="hbi" n="MAMA8">
+                  <author>Cormack</author>, <title level="s" type="abbreviated">MAMA</title> 8, no. <citedRange>486</citedRange>
+               </bibl>, from the MAMA records, whence <bibl type="hbi" n="hell13">
+                  <author>Robert</author>, <title level="j">Hellenica</title> 13, <citedRange>170-1</citedRange>
+               </bibl>; by <bibl type="hbi" rend="primary" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>53</citedRange> and plate xiii</bibl> whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257617">730</citedRange>
+               </bibl>, <bibl type="hbi" n="steinepig">
+                  <title level="m">Steinepigramme</title>
+                  <citedRange>02/09/05</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

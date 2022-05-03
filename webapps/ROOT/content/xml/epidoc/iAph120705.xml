@@ -1,85 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120705" n="iAph1899 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for anonymous</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-05</date><respStmt><name>CMR</name></respStmt><item>DONE</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for anonymous</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120705</idno>
+            <idno type="IAph2007">iAph120705</idno>
+            <idno type="JMR2004">iAph1899</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment from the right side of a <material key="marmor">white marble</material>
+                              <objectType>block</objectType> (<width unit="metre">0.315</width>  × <height unit="metre">0.28</height>  × <depth unit="metre">0.305</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0025" notAfter="0075" evidence="prosopography spelling">
+mid first century A.D
+(<rs type="criteria">prosopography</rs>, <rs type="criteria">spelling</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, south (west part)</rs>: southern stretch, a little west of <ref type="inscription" n="1594" target="120918.xml"/> (=MAMA 573)</provenance>
+                  <provenance type="observed" when="1961">Findspot (1961)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-05" who="#CMR">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Fragment from the right side of a <rs type="material" key="marmor">white marble</rs> <rs type="objectType">block</rs> (<measure type="length" unit="metre" dim="width">0.315</measure>  × <measure type="length" unit="metre" dim="height">0.28</measure>  × <measure type="length" unit="metre" dim="depth">0.305</measure>).</p>
+<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">νθε</unclear></orig><lb n="2"/><persName type="attested"><name><gap reason="lost" unit="character" extent="unknown"/>ωνος</name></persName> <w lemma="ὁ">τοῦ</w> <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/> <persName type="attested"><name nymRef="#Παπίας"><supplied reason="lost">Π</supplied>απίαν</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="καί">καὶ</w> <lb n="4"/><w><gap reason="lost" unit="character" extent="unknown"/><unclear reason="damage">π</unclear>πον</w> <w lemma="ἀνά,εἰσ">ἀνέσστη<lb n="5"/><supplied reason="lost">σεν</supplied></w>   <gap reason="lost" unit="character" extent="unknown"/> <persName type="attested"><name nymRef="#Ἀθηναγόρας"><supplied reason="lost">Ἀθ</supplied><unclear reason="damage">η</unclear>ναγορας</name>  <persName type="attested"><name nymRef="#Ἀθηναγόρας">Ἀθηνα<lb n="6" break="no"/><supplied reason="lost">γόρου</supplied></name> τοῦ <persName type="attested"><name nymRef="#Εὔμαχος">Εὐμάχου</name></persName>    <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <persName type="attested"><name nymRef="#Διογένης">Διογένους</name></persName></persName></persName> <space extent="1" unit="character" dim="horizontal"/>  <lb n="7"/><w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w> <gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <persName type="attested"><name><gap reason="lost" unit="character" quantity="2"/>ωνος</name></persName>  <lb n="7a"/><gap reason="lost" unit="line" extent="unknown"/>  <space extent="3" unit="character" dim="horizontal"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed on one face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0075" notBefore="0025">mid first century A.D</date>
-(<rs type="criteria">prosopography</rs>, <rs type="criteria">spelling</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">νθε</unclear></orig><lb n="2"/><persName type="aphrodisian"><name><gap reason="lost" extent="unknown" unit="character" dim="left"/>ωνος</name></persName> <w lemma="ὁ">τοῦ</w> <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/> <persName type="aphrodisian"><name reg="Παπίας"><supplied reason="lost">Π</supplied>απίαν</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="καί">καὶ</w> <lb n="4"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/><unclear reason="damage">π</unclear>πον</w> <w lemma="ἀνά,εἰσ">ἀνέσστη<lb n="5"/><supplied reason="lost">σεν</supplied></w>   <gap reason="lost" extent="unknown" unit="character" dim="left"/> <persName type="aphrodisian"><name reg="Ἀθηναγόρας"><supplied reason="lost">Ἀθ</supplied><unclear reason="damage">η</unclear>ναγορας</name>  <persName type="aphrodisian"><name reg="Ἀθηναγόρας">Ἀθηνα<lb n="6" type="worddiv"/><supplied reason="lost">γόρου</supplied></name> τοῦ <persName type="aphrodisian"><name reg="Εὔμαχος">Εὐμάχου</name></persName>    <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <persName type="aphrodisian"><name reg="Διογένης">Διογένους</name></persName></persName></persName> <space extent="1" unit="character" dim="horizontal"/>  <lb n="7"/><w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w> <gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <persName type="aphrodisian"><name><gap reason="lost" extent="2" unit="character"/>ωνος</name></persName>  <lb n="7a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  <space extent="3" unit="character" dim="horizontal"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Line 1, <seg cert="low"><orig n="unresolved"><unclear reason="damage">νοσ</unclear></orig></seg>. But the nu could be the final letter of the honorand's first name, and if so ΘΕ could begin his patronymic.</p><p>Line 2 carries on his genealogy, which ended only in l. 3, and was followed by a second persoanl name.</p><p>Line 3 then indicates that he was also known in some other way, set out in line 4, ending, on the face of it, in a name (?or description) which referred to horses.</p><p>Line 5 presumably contained a word describing the monument, between the verb and the name of Athenagoras, who erected it.</p><p>Line 6: Athenagoras' gradfather's name can be supplied from <xref type="inscription" n="1121" href="010004">1.4</xref>.</p><p>Line 7: we do not know the names of Athenagoras' ancestors this far back.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p> [So-and-so honoured . .? . . ] Papias also known as [ . . ? . . -]ppos (e.g. Philippos). Athenagoras son of Athenagoras [son of Eumachos] son of Diogenes son of [ . . ? . . ] son of [ . . .-]on set up [?a statue].</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The Athenagoras of l. 5 ff. is almost certainly the father of the dedicator of columns in the Temple of Aphrodite (<xref type="inscription" n="1121" href="010004">1.4</xref>, <xref type="inscription" n="1122" href="010005">1.5</xref>, <xref type="inscription" n="1123" href="010006">1.6</xref>). Too little of the honorands naem survives for identification at present, although Papias is a name that occurs among the first families of the city (see Name Index).</p><p>The double sigma in line 4 is paralleled by use of a numneber of doubled letters in other texts - a feature which occurs notably in the reign of the Emperor Claudius.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, south (west part)</rs>: southern stretch, a little west of <xref type="inscription" n="1594" href="120918">12.918</xref> (=MAMA 573)</rs>
-<rs type="lastLocation">Findspot (1961)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition (<rs type="siteNo">Walls 7</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div><div type="figure" n="photographs">
-<head>Photographs</head>
-<p>[[?None]]</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>Line 1, <seg cert="low">
+                  <orig n="unresolved">
+                     <unclear reason="damage">νοσ</unclear>
+                  </orig>
+               </seg>. But the nu could be the final letter of the honorand's first name, and if so ΘΕ could begin his patronymic.</p>
+            <p>Line 2 carries on his genealogy, which ended only in l. 3, and was followed by a second persoanl name.</p>
+            <p>Line 3 then indicates that he was also known in some other way, set out in line 4, ending, on the face of it, in a name (?or description) which referred to horses.</p>
+            <p>Line 5 presumably contained a word describing the monument, between the verb and the name of Athenagoras, who erected it.</p>
+            <p>Line 6: Athenagoras' gradfather's name can be supplied from <ref type="inscription" n="1121" target="010004.xml"/>.</p>
+            <p>Line 7: we do not know the names of Athenagoras' ancestors this far back.</p>
+         </div>
+         <div type="translation">
+            <p> [So-and-so honoured . .? . . ] Papias also known as [ . . ? . . -]ppos (e.g. Philippos). Athenagoras son of Athenagoras [son of Eumachos] son of Diogenes son of [ . . ? . . ] son of [ . . .-]on set up [?a statue].</p>
+         </div>
+         <div type="commentary">
+            <p>The Athenagoras of l. 5 ff. is almost certainly the father of the dedicator of columns in the Temple of Aphrodite (<ref type="inscription" n="1121" target="010004.xml"/>, <ref type="inscription" n="1122" target="010005.xml"/>, <ref type="inscription" n="1123" target="010006.xml"/>). Too little of the honorands naem survives for identification at present, although Papias is a name that occurs among the first families of the city (see Name Index).</p>
+            <p>The double sigma in line 4 is paralleled by use of a numneber of doubled letters in other texts - a feature which occurs notably in the reign of the Emperor Claudius.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

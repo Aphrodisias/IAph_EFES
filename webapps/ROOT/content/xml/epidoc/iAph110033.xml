@@ -1,79 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110033" n="iAph1542 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">  <rs type="textType" reg="funerary">Funerary</rs> inscription for Tib. Cl. Anteros</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>'<rs type="material" key="marmor">marble</rs> <rs type="objectType">block</rs>' (<measure type="length" unit="metre" dim="width">0.097</measure>   × <measure type="length" unit="metre" dim="height">0.325</measure>   × <measure type="length" unit="metre" dim="depth">0.13</measure>) 'complete above and below' (MAMA).</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> Inscribed on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.027</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p> <date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>  Funerary inscription for Tib. Cl. Anteros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110033</idno>
+            <idno type="IAph2007">iAph110033</idno>
+            <idno type="JMR2004">iAph1542</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>'<material key="marmor">marble</material>
+                              <objectType>block</objectType>' (<width unit="metre">0.097</width>   × <height unit="metre">0.325</height>   × <depth unit="metre">0.13</depth>) 'complete above and below' (MAMA).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> Inscribed on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.027</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown, cemetery</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering"> Second to third centuries A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, Village</rs>: 'Mosquée. Place du marché' (Reinach); 'In the wall of the School (MAMA)</provenance>
+                  <provenance type="observed" when="1934">Findspot (1934)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; Kubitschek; Gaudin's squeeze.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_III_14.jpg">
+            <desc>Kubitschek notebook III, 14</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<ab><lb n="0"/><space extent="1" unit="line" dim="horizontal"/><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <gap extent="5" reason="lost" unit="character"/>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="πλάτας">πλάτας</w> <w lemma="ὁ">ὁ</w> <w lemma="παράκειμαι">παρακείμενος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <supplied reason="lost"><w lemma="περί">περὶ</w>  <w lemma="αὐτός">αὐτοὺς</w></supplied><lb n="2"/>  <w lemma="περίκειμαι"><supplied reason="lost">περικεί</supplied><unclear reason="damage">μ</unclear>ενος</w> <w lemma="τόπος">τόπος</w> <w lemma="εἰμί">εἰσὶν</w> <persName type="aphrodisian" full="yes"><name reg="Τιβέριος" type="praenomen"><expan><abbr>Τιβ</abbr><supplied reason="abbreviation">ερίου</supplied></expan></name>  <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name>  <name reg="Ἀντέρως">Ἀντέρωτος</name></persName>  <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w></supplied>  <w lemma="διατάγμα"><supplied reason="lost">δια</supplied><lb n="3" type="worddiv"/>  <supplied reason="lost">τάγματι</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῷ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τοῦ</w> <w lemma="χρεωφυλάκιον">χρεοφυλακίου</w> <w lemma="δηλόω">δηλουμένω<unclear reason="damage">ν</unclear></w>  <gap extent="unknown" dim="right" reason="lost" unit="character"/><lb n="3a"/><space extent="1" unit="line" dim="horizontal"/></ab>
+
+<ab><lb n="0"/><space extent="1" unit="line" dim="horizontal"/><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <gap reason="lost" unit="character" quantity="5"/>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="πλάτας">πλάτας</w> <w lemma="ὁ">ὁ</w> <w lemma="παράκειμαι">παρακείμενος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <supplied reason="lost"><w lemma="περί">περὶ</w>  <w lemma="αὐτός">αὐτοὺς</w></supplied><lb n="2"/>  <w lemma="περίκειμαι"><supplied reason="lost">περικεί</supplied><unclear reason="damage">μ</unclear>ενος</w> <w lemma="τόπος">τόπος</w> <w lemma="εἰμί">εἰσὶν</w> <persName type="attested"><name nymRef="#Τιβέριος"><expan><abbr>Τιβ</abbr><ex>ερίου</ex></expan></name>  <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name>  <name nymRef="#Ἀντέρως">Ἀντέρωτος</name></persName>  <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w></supplied>  <w lemma="διατάγμα"><supplied reason="lost">δια</supplied><lb n="3" break="no"/>  <supplied reason="lost">τάγματι</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῷ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τοῦ</w> <w lemma="χρεωφυλάκιον">χρεοφυλακίου</w> <w lemma="δηλόω">δηλουμένω<unclear reason="damage">ν</unclear></w>  <gap reason="lost" unit="character" extent="unknown"/><lb n="3a"/><space extent="1" unit="line" dim="horizontal"/></ab>
 </div>
-<div type="apparatus"><head>Apparatus</head><p>l. 1, <foreign lang="grc">βωμός</foreign> supplied by Reinach and by MAMA.</p><p>l. 3, <foreign lang="grc">χρεοφυλλακίου</foreign>, stone.</p></div>
-<div type="translation">
-<head>Translation</head>
-<p><supplied reason="lost">The</supplied> <gap reason="lost"/> and the platform beside it and the area surrounding them are the property of Tiberius Claudius Anteros <supplied reason="lost">and of those</supplied> named <supplied reason="lost">in the <seg cert="low">will</seg> deposited</supplied> in the property-archive <gap reason="lost"/></p></div>
-<div type="commentary">
-<head>Commentary</head>
-<p>No commentary</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">City, Village</rs>: 'Mosquée. Place du marché' (Reinach); 'In the wall of the School (MAMA)</rs> <rs type="origLocation">Unknown, cemetery</rs> <rs type="lastLocation">Findspot (1934)</rs>.</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; Kubitschek; Gaudin's squeeze.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by K&amp;R (KIII.14, Ablatsch 72); by Gaudin (171); by the MAMA expedition; not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 259, no. <biblScope>153</biblScope></bibl>; by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8, no. <biblScope>539</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257374">496</biblScope>
-</bibl>
-</p>
-</div>
-<div type="figure" n="Preliminary transcriptions">
-<head>Representations</head>
-<p><figure href="K_III_14"><figDesc>Kubitschek notebook III, 14</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 1, <foreign xml:lang="grc">βωμός</foreign> supplied by Reinach and by MAMA.</p>
+            <p>l. 3, <foreign xml:lang="grc">χρεοφυλλακίου</foreign>, stone.</p>
+         </div>
+         <div type="translation">
+            <p>
+               <supplied reason="lost">The</supplied>
+               <gap reason="lost" unit="character" extent="unknown"/> and the platform beside it and the area surrounding them are the property of Tiberius Claudius Anteros <supplied reason="lost">and of those</supplied> named <supplied reason="lost">in the <seg cert="low">will</seg> deposited</supplied> in the property-archive <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>No commentary</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 259, no. <citedRange>153</citedRange>
+               </bibl>; by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8, no. <citedRange>539</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257374">496</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

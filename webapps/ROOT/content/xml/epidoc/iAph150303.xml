@@ -1,84 +1,122 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150303" n="iAph1379 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> for <gap reason="lost"/> ?son of <supplied reason="lost" cert="low">Aure</supplied>lius</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-20</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Upper left corner of a sarcophagus front (<measure dim="width" type="length" unit="metre">0.325</measure> x <measure dim="height" type="length" unit="metre">0.27</measure> x <measure dim="depth" type="length" unit="metre">0.24</measure>) with moulding a seated <rs type="decoration" cert="low">lion</rs> above.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date cert="low" exact="none" notAfter="0300" notBefore="0101">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἰσώστη">ἰσ<supplied reason="lost" cert="low">ώστη</supplied></w>  <gap reason="lost" extent="unknown" unit="character"/><persName type="aphrodisian">  <name reg="Αὐρήλιος" type="nomen"><supplied reason="lost" cert="low">Αὐρη</supplied><lb n="2" type="worddiv"/>λίου</name>  <orig n="unresolved">ε<unclear reason="damage">ρα</unclear>τ<unclear reason="damage">τ</unclear></orig></persName><gap reason="lost" extent="3" unit="character"/>  <lb n="2a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary for <gap reason="lost" unit="character" extent="unknown"/> ?son of <supplied reason="lost" cert="low">Aure</supplied>lius</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150303</idno>
+            <idno type="IAph2007">iAph150303</idno>
+            <idno type="JMR2004">iAph1379</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>70.560</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper left corner of a sarcophagus front (<width unit="metre">0.325</width> x <height unit="metre">0.27</height> x <depth unit="metre">0.24</depth>) with moulding a seated <rs type="decoration" cert="low">lion</rs> above.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">Second to third centuries A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">Stray in 1970</provenance>
+                  <provenance type="observed" when="1970">Museum (1970)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-20" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 1, there was perhaps a reference to the <foreign lang="grc">εἰσωσται</foreign> (<foreign lang="grc">ἰσωσται</foreign>) but one would have expected the article before it; the opening of the owner's name in the genitive case ended the line, and the beginning of l. 2 suggests that he was a Roman citizen and, given the likely date, with the nomen Aurelius (though this cannot be certain).</p>
-</div><div type="translation">
-<head>Translation</head>
-<p>The sarcophagus and the burial [places are the property of <supplied reason="lost" cert="low">Aure</supplied>lius Erat<gap reason="lost" extent="unknown" unit="character"/></p>
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἰσώστη">ἰσ<supplied reason="lost" cert="low">ώστη</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/><persName type="attested">  <name nymRef="#Αὐρήλιος"><supplied reason="lost" cert="low">Αὐρη</supplied><lb n="2" break="no"/>λίου</name>  <orig n="unresolved">ε<unclear reason="damage">ρα</unclear>τ<unclear reason="damage">τ</unclear></orig></persName><gap reason="lost" unit="character" quantity="3"/>  <lb n="2a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
-<div type="commentary" n="none">
-<head>Commentary</head>
-<p>No comment.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found">Stray in 1970</rs>
-
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1970)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1970 (<rs type="invNo">70.560</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>? CHECK</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 1, there was perhaps a reference to the <foreign xml:lang="grc">εἰσωσται</foreign> (<foreign xml:lang="grc">ἰσωσται</foreign>) but one would have expected the article before it; the opening of the owner's name in the genitive case ended the line, and the beginning of l. 2 suggests that he was a Roman citizen and, given the likely date, with the nomen Aurelius (though this cannot be certain).</p>
+         </div>
+         <div type="translation">
+            <p>The sarcophagus and the burial [places are the property of <supplied reason="lost" cert="low">Aure</supplied>lius Erat<gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary" n="none">
+            <p>No comment.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

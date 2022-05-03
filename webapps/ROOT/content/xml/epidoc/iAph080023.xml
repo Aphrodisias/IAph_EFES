@@ -1,89 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080023" n="iAph0567 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for T. Claudius Diogenes</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>1981</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1981b">Reynolds (<date>1981</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-04-17</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two<rs type="material"> white marble</rs>  <rs type="objectType">frieze</rs> blocks: the first (<measure dim="width" type="length" unit="metre">0.685</measure> long) bears the mark <foreign lang="grc">ΑΑ</foreign>; the second (<measure dim="width" type="length" unit="metre">0.97</measure>) has <foreign lang="grc"><supplied reason="lost" cert="low">Β</supplied>Α</foreign>.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for T. Claudius Diogenes</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080023</idno>
+            <idno type="IAph2007">iAph080023</idno>
+            <idno type="JMR2004">iAph0567</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two<material> white marble</material>
+                              <objectType>frieze</objectType> blocks: the first (<width unit="metre">0.685</width> long) bears the mark <foreign xml:lang="grc">ΑΑ</foreign>; the second (<width unit="metre">0.97</width>) has <foreign xml:lang="grc">
+                                 <supplied reason="lost" cert="low">Β</supplied>Α</foreign>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in 3 lines on the fascia. The text began on a third, missing, block to the left.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.026-0.027</height>. Star for stop.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Theatre</rs> proskenion frieze. Inscribed on the blocks which make up the cornice, of the Doric order, above <ref type="inscription" n="536" target="080001.xml"/>,  the inscription of Zoilos, across the back of the Theatre stage. The blocks have simple moulding above, supporting water spouts in the form of lions' heads; the underside has a decoration of mutules. </origPlace>
+                     <origDate notBefore="0034"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="prosopography lettering">
+Mid to late first century A.D.
+ (<rs type="criteria">prosopography</rs>, <rs type="criteria">lettering</rs>) or a descendant.</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: stage area</provenance>
+                  <provenance type="observed" when="1989">Findspot (1989), restored north of <ref type="iAph" target=".xml"/>, just south of porta regia.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-04-17" who="Charlotte-Tupman">tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_Q_16A.jpg">
+            <desc>b (1973)</desc>
+         </graphic>
+         <graphic url="89_E_13A.jpg">
+            <desc>Assembled, in situ (1989)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή"><supplied reason="lost">βουλὴ</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <w lemma="δῆμος"><supplied reason="lost">δῆμος</supplied></w> <w lemma="τιμάω"><supplied reason="lost">ἐτείμησαν</supplied></w>  <persName type="attested"><name nymRef="#Τιβέριος"><supplied reason="lost"><expan><abbr>Τι</abbr><ex>βέριον</ex></expan></supplied></name> <name nymRef="#Κλαύδιος"><supplied reason="lost" cert="low">Κλαύ</supplied><milestone unit="block"/>διον</name> <name nymRef="#Διογένης">Διογένην</name></persName> <w lemma="ἀρχιερεύς">ἀρχιερέα</w> <w lemma="ὁ">τῆς</w> <milestone unit="block"/>  <placeName nymRef="#Ἀσία"><unclear reason="damage">Ἀ</unclear>σίας</placeName> <w lemma="καί">καὶ</w> <w lemma="σεβαστοφάντης">σεβαστοφάντην</w> <w lemma="καί">καὶ</w> <w lemma="ἀγωνοθέτης">ἀγωνοθέ <lb n="2" break="no"/><supplied reason="lost" cert="low">την</supplied></w>  <gap reason="lost" unit="character" precision="low" quantity="27"/> <milestone unit="block"/> <w lemma="εὐεργέτης">εὐεργέτην</w> <w>δίκαιον</w> <w lemma="φιλάνθρωπος">φιλάνθ<supplied reason="lost">ρ</supplied><milestone unit="block"/>ωπον</w> <w lemma="φιλοπολίτης">φιλοπολείτην</w> <g ref="#stop"/> <w lemma="νομοθέτης">νομοθέτην</w> <w lemma="δίς">δὶς</w> <w lemma="γυμνασιαρχέω">γυ<lb n="3" break="no"/><supplied reason="lost">μνασιαρχήσαντα</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὰς</supplied></w>  <w lemma="ἀρχή"><supplied reason="lost">ἀρχὰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὰς</supplied></w>  <w lemma="λοιπός"><supplied reason="lost">λοι</supplied><milestone unit="block"/><unclear reason="damage">π</unclear>ὰς</w> <w lemma="ἀνυπέρθετος">ἀνυπερθέτως</w> <w lemma="πληρόω">πεπλ<unclear reason="damage">η</unclear><milestone unit="block"/><unclear reason="damage">ρ</unclear>ωκότα</w> <w lemma="πᾶς">πάσας</w> <space extent="3" unit="character" dim="horizontal"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> in 3 lines on the fascia. The text began on a third, missing, block to the left.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>
-<measure type="length" unit="metre" dim="height">0.026-0.027</measure>. Star for stop.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0034" notAfter="0100" exact="none">Mid to late first century A.D.</date>
- (<rs type="criteria">prosopography</rs>, <rs type="criteria">lettering</rs>) or a descendant.</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή"><supplied reason="lost">βουλὴ</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <w lemma="δῆμος"><supplied reason="lost">δῆμος</supplied></w> <w lemma="τιμάω"><supplied reason="lost">ἐτείμησαν</supplied></w>  <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen"><supplied reason="lost"><expan><abbr>Τι</abbr><supplied reason="abbreviation">βέριον</supplied></expan></supplied></name> <name reg="Κλαύδιος"><supplied reason="lost" cert="low">Κλαύ</supplied><milestone unit="block"/>διον</name> <name reg="Διογένης">Διογένην</name></persName> <w lemma="ἀρχιερεύς">ἀρχιερέα</w> <w lemma="ὁ">τῆς</w> <milestone unit="block"/>  <placeName reg="Ἀσία"><unclear reason="damage">Ἀ</unclear>σίας</placeName> <w lemma="καί">καὶ</w> <w lemma="σεβαστοφάντης">σεβαστοφάντην</w> <w lemma="καί">καὶ</w> <w lemma="ἀγωνοθέτης">ἀγωνοθέ <lb type="worddiv" n="2"/><supplied reason="lost" cert="low">την</supplied></w>  <gap reason="lost" extent="27" unit="character" precision="circa"/> <milestone unit="block"/> <w lemma="εὐεργέτης">εὐεργέτην</w> <w>δίκαιον</w> <w lemma="φιλάνθρωπος">φιλάνθ<supplied reason="lost">ρ</supplied><milestone unit="block"/>ωπον</w> <w lemma="φιλοπολίτης">φιλοπολείτην</w> <g type="stop"/> <w lemma="νομοθέτης">νομοθέτην</w> <w lemma="δίς">δὶς</w> <w lemma="γυμνασιαρχέω">γυ<lb type="worddiv" n="3"/><supplied reason="lost">μνασιαρχήσαντα</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὰς</supplied></w>  <w lemma="ἀρχή"><supplied reason="lost">ἀρχὰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὰς</supplied></w>  <w lemma="λοιπός"><supplied reason="lost">λοι</supplied><milestone unit="block"/><unclear reason="damage">π</unclear>ὰς</w> <w lemma="ἀνυπέρθετος">ἀνυπερθέτως</w> <w lemma="πληρόω">πεπλ<unclear reason="damage">η</unclear><milestone unit="block"/><unclear reason="damage">ρ</unclear>ωκότα</w> <w lemma="πᾶς">πάσας</w> <space extent="3" unit="character" dim="horizontal"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 2,  δίκαιον omitted in first publication.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>[The Council and the People honoured Ti(berius) Clau]dius Diogenes, high-priest of Asia, and sebastophant, and contest-president[...] benefactor, just, lover of mankind, lover of the citizens, nomothete, twice gy[mnasiarch and] having carried out all [the other offices] unsurpassably.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>This may well be the man who restored the Sebasteion portico, under Claudius and Nero. See discussion by Reynolds, loc. cit. below, and <title>Aphrodisias Papers</title> 2, 18.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: stage area</rs>
-<rs type="origLocation"><rs type="monuList">Theatre</rs> proskenion frieze. Inscribed on the blocks which make up the cornice, of the Doric order, above <xref type="inscription" n="536" href="080001">8.1</xref>,  the inscription of Zoilos, across the back of the Theatre stage. The blocks have simple moulding above, supporting water spouts in the form of lions' heads; the underside has a decoration of mutules. </rs>
-<rs type="lastLocation">Findspot (1989), restored north of <xref type="iAph"> 566</xref>, just south of porta regia.</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Εxcavated by the NYU expedition in 1971 (no catalogue numbers).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="jmr1981b">Reynolds, <title>ZPE</title> 43 (1981), 317-27, no.<biblScope>4</biblScope></bibl>, whence <bibl n="seg">SEG 31, <biblScope>1981.901</biblScope></bibl>; <bibl n="be">BullEp 1982.<biblScope>356</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257175">296</biblScope>
-</bibl>
-</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_Q_16A"><figDesc>b (1973)</figDesc></figure><figure href="89_E_13A"><figDesc>Assembled, in situ (1989)</figDesc></figure></p>
-<p>More? Check KTE</p></div></body></text>
+         <div type="apparatus">
+            <p>l. 2,  δίκαιον omitted in first publication.</p>
+         </div>
+         <div type="translation">
+            <p>[The Council and the People honoured Ti(berius) Clau]dius Diogenes, high-priest of Asia, and sebastophant, and contest-president[...] benefactor, just, lover of mankind, lover of the citizens, nomothete, twice gy[mnasiarch and] having carried out all [the other offices] unsurpassably.</p>
+         </div>
+         <div type="commentary">
+            <p>This may well be the man who restored the Sebasteion portico, under Claudius and Nero. See discussion by Reynolds, loc. cit. below, and <title>Aphrodisias Papers</title> 2, 18.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="jmr1981b">Reynolds, <title>ZPE</title> 43 (1981), 317-27, no.<citedRange>4</citedRange>
+               </bibl>, whence <bibl n="seg">SEG 31, <citedRange>1981.901</citedRange>
+               </bibl>; <bibl n="be">BullEp 1982.<citedRange>356</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257175">296</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,86 +1,121 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120305" n="iAph0554 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Dedication</rs> by M. Iulius Attalos, imperial freedman, to Aphrodite, the imperial house, and the Senate and People of Rome. </title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-04-02</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-03-15</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Large <rs type="material">white marble</rs> <rs type="objectType">block</rs> broken away at the right side, originally with moulding on all three surviving faces (<measure precision="circa" type="length" unit="metre" dim="width">1.52</measure> x <measure type="length" unit="metre" dim="height">0.99</measure> x <measure type="length" unit="metre" dim="depth">0.54</measure>). </p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>inscribed on the reverse face</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure precision="circa" type="length" unit="metre" dim="height">0.04</measure>
-</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0100" notBefore="0001">First century A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">content</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="θειότης">Θειότητι</w> <w lemma="αὐτοκράτωρ">Αὐτοκρατόρων</w> <w lemma="θεά">Θεᾷ</w> <persName type="divine"><name reg="Ἀφροδίτη">Ἀφροδίτῃ </name><w lemma="γενέτειρα">γεν<unclear reason="damage">ε</unclear><supplied reason="lost">τείρᾳ</supplied></w></persName>  <lb n="2"/> <w lemma="σύγκλητος">Συνκλήτῳ</w> <w lemma="δῆμος">Δήμῳ</w> <placeName reg="Ῥωμαῖος">Ῥωμαίων</placeName> <w lemma="πολίτης">πολείταις</w> <w lemma="εὐχαριστέω">εὐχαρισ<supplied reason="lost">τῶν</supplied></w>  <lb n="3"/> <persName type="aphrodisian"><name reg="Μᾶρκος">Μᾶρκος</name> <name reg="Ἰούλιος">Ἰούλιος</name> <name reg="Ἄτταλος">Ἄτταλος</name> <w lemma="ἀπελεύθερος">ἀπελεύθερος</w> <persName type="emperor"><name reg="Καῖσαρ">Καίσα<supplied reason="lost">ρος</supplied></name></persName></persName></ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedication by M. Iulius Attalos, imperial freedman, to Aphrodite, the imperial house, and the Senate and People of Rome. </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120305</idno>
+            <idno type="IAph2007">iAph120305</idno>
+            <idno type="JMR2004">iAph0554</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Large <material>white marble</material>
+                              <objectType>block</objectType> broken away at the right side, originally with moulding on all three surviving faces (<width unit="metre">1.52</width> x <height unit="metre">0.99</height> x <depth unit="metre">0.54</depth>). </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>inscribed on the reverse face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.04</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" evidence="lettering content">
+First century A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">content</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs>: re-used on the inner face of the eastern stretch, north of the East Gate, near IAph <ref type="inscription" n="544" target="120301.xml"/>, <ref type="inscription" n="1153" target="120318.xml"/>.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-02" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-15" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="81_C_12.jpg">
+            <desc>Face (1981)</desc>
+         </graphic>
+         <graphic url="78_H_04.jpg">
+            <desc>Squeeze (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>For the divinity of the Imperatores, for goddess Aphrodite Genetrix, for the Senate and People of Rome, for the citizens, in gratitude Marcus Julius Attalos, freedman of Caesar.</p>
+<ab><lb n="1"/> <w lemma="θειότης">Θειότητι</w> <w lemma="αὐτοκράτωρ">Αὐτοκρατόρων</w> <w lemma="θεά">Θεᾷ</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδίτῃ </name><w lemma="γενέτειρα">γεν<unclear reason="damage">ε</unclear><supplied reason="lost">τείρᾳ</supplied></w></persName>  <lb n="2"/> <w lemma="σύγκλητος">Συνκλήτῳ</w> <w lemma="δῆμος">Δήμῳ</w> <placeName nymRef="#Ῥωμαῖος">Ῥωμαίων</placeName> <w lemma="πολίτης">πολείταις</w> <w lemma="εὐχαριστέω">εὐχαρισ<supplied reason="lost">τῶν</supplied></w>  <lb n="3"/> <persName type="attested"><name nymRef="#Μᾶρκος">Μᾶρκος</name> <name nymRef="#Ἰούλιος">Ἰούλιος</name> <name nymRef="#Ἄτταλος">Ἄτταλος</name> <w lemma="ἀπελεύθερος">ἀπελεύθερος</w> <persName type="emperor"><name nymRef="#Καῖσαρ">Καίσα<supplied reason="lost">ρος</supplied></name></persName></persName></ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See Reynolds, Aphrodisias and Rome, 182,‘Further information’, 111-2, and ‘Ruler-cult’, 50.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, East (south part)</rs>: re-used on the inner face of the eastern stretch, north of the East Gate, near IAph <xref type="inscription" n="544" href="120301">12.301</xref>, <xref type="inscription" n="1153" href="120318">12.318</xref>.</rs>
-<rs type="origLocation">unknown</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1978 (<rs type="siteNo">Walls 108</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="jmr1980"><author>Reynolds</author>, PCPS 206, 1980, 73-74, no. <biblScope>2</biblScope></bibl>, whence <bibl n="seg"><title>SEG</title> <biblScope>1980.1253</biblScope></bibl>, <bibl n="be"><title>BullEp</title> 1982.<biblScope>355</biblScope></bibl>, <bibl n="anep"><title>AnnEpig</title> 1980, <biblScope>867</biblScope></bibl>; republished by  <bibl type="primary" n="jmr1982"><author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <biblScope>54</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1982.1097</biblScope></bibl>, <bibl n="be">BullEp <biblScope>1983.391</biblScope></bibl>,  <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>  <biblScope n="257029">150</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="81_C_12"><figDesc>Face (1981)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="78_H_04"><figDesc>Squeeze (1978)</figDesc></figure></p></div></body></text>
+         <div type="translation">
+            <p>For the divinity of the Imperatores, for goddess Aphrodite Genetrix, for the Senate and People of Rome, for the citizens, in gratitude Marcus Julius Attalos, freedman of Caesar.</p>
+         </div>
+         <div type="commentary">
+            <p>See Reynolds, Aphrodisias and Rome, 182,‘Further information’, 111-2, and ‘Ruler-cult’, 50.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="jmr1980">
+                  <author>Reynolds</author>, PCPS 206, 1980, 73-74, no. <citedRange>2</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title>SEG</title>
+                  <citedRange>1980.1253</citedRange>
+               </bibl>, <bibl n="be">
+                  <title>BullEp</title> 1982.<citedRange>355</citedRange>
+               </bibl>, <bibl n="anep">
+                  <title>AnnEpig</title> 1980, <citedRange>867</citedRange>
+               </bibl>; republished by  <bibl type="primary" n="jmr1982">
+                  <author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <citedRange>54</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1097</citedRange>
+               </bibl>, <bibl n="be">BullEp <citedRange>1983.391</citedRange>
+               </bibl>,  <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257029">150</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

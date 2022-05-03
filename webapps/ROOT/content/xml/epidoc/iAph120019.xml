@@ -1,88 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120019" n="iAph1530 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">a: <rs type="textType">Funerary</rs> inscription and b: <rs type="textType">consolatory  <rs type="textType">decree</rs></rs> </title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-03-07</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">block</rs> (<measure type="length" unit="metre" dim="width">1.37</measure>   × <measure type="length" unit="metre" dim="height">0.60</measure>   × <measure type="length" unit="metre" dim="depth">1.37</measure>) complete on all sides.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>a:  is <rs type="execution" key="scalpro">inscribed</rs> at the left side of the stone, and must have continued from an adjacent block; b:  is inscribed to the right and must have continued onto the next block. Both texts must have begun on upper blocks.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>a: <measure dim="height" type="length" unit="metre">0.02-0.025</measure>; b: <measure dim="height" type="length" unit="metre">0.02-0.025</measure>. Ligatures: <foreign lang="grc">ΜΝ</foreign>, l.2; <foreign lang="grc">ΗΝ</foreign> l.7; <foreign lang="grc">ΜΗ</foreign> l.10</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date exact="none" notAfter="0300" notBefore="0101"> Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)
-</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>a: Funerary inscription and b: consolatory  decree </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120019</idno>
+            <idno type="IAph2007">iAph120019</idno>
+            <idno type="JMR2004">iAph1530</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>block</objectType> (<width unit="metre">1.37</width>   × <height unit="metre">0.60</height>   × <depth unit="metre">1.37</depth>) complete on all sides.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>a:  is <rs type="execution" ref="scalpro">inscribed</rs> at the left side of the stone, and must have continued from an adjacent block; b:  is inscribed to the right and must have continued onto the next block. Both texts must have begun on upper blocks.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a: <height unit="metre">0.02-0.025</height>; b: <height unit="metre">0.02-0.025</height>. Ligatures: <foreign xml:lang="grc">ΜΝ</foreign>, l.2; <foreign xml:lang="grc">ΗΝ</foreign> l.7; <foreign xml:lang="grc">ΜΗ</foreign> l.10</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Probably west or north Necropolis</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+ Second to third centuries A.D. (<rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North</rs>: at the west end of the Stadium</provenance>
+                  <provenance type="observed" when="1973">Findspot (1973)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-07" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_V_01.jpg">
+            <desc>a and b  (1973)</desc>
+         </graphic>
+         <graphic url="73_V_01.jpg">
+            <desc>a and b (1973)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
+<cb n="a"/><ab>    <lb n="1"/>  <gap reason="lost" unit="character" precision="low" quantity="14"/>ΟΥΚΑΙΤΗΟΙΝΙΑ <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰς</w> <w lemma="δίδωμι">δοθείσας</w> <lb n="2"/><supplied reason="lost">αὐτῷ</supplied>  <supplied reason="lost">ὑπὸ</supplied>  <gap reason="lost" unit="character" precision="low" quantity="10"/>  <w lemma="τετράκις"><supplied reason="lost">τετράκ</supplied>ι</w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ὑψικλῆς">Ὑψικλέους</name></persName> <w lemma="ὁ">τῶν</w> <w lemma="τόπος">τόπων</w> <w lemma="συγχώρησις">συνχω<lb n="3" break="no"/><supplied reason="lost">ρήσεις</supplied></w>  <supplied reason="lost">διὰ</supplied>  <supplied reason="lost">τοῦ</supplied>  <w lemma="χρεωφυλάκιον"><supplied reason="lost">χρεοφυλακίο</supplied>υ</w> <w lemma="εἰμί">ὧν</w> <w lemma="ἐν">ἐν</w> <w lemma="μέν">μὲν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="θάπτω">τέθαπται</w> <persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀρισ<lb n="4" break="no"/><supplied reason="lost">τοκλῆς</supplied></name>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς"><supplied reason="lost">Ἀριστοκλέους</supplied></name>  <supplied reason="lost">τοῦ</supplied> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Θεαίτητος">Θεαιτήτου</name></persName></persName></persName></persName> <w lemma="ὁ">ὁ</w> <w lemma="υἱός">υἱὸς</w> <w lemma="αὐτός">αὐ<lb n="5" break="no"/><supplied reason="lost">  τοῦ</supplied></w>  <supplied reason="lost">ταφήσονται</supplied>  <supplied reason="lost">δὲ</supplied>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς"><supplied reason="lost">Ἀρι</supplied>στοκλῆς</name> <w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνων</name></persName></persName>  <w lemma="καί">καὶ</w>  <persName type="attested"><name nymRef="#Ἄπφιος">Ἄπφιον</name></persName> Ἀ<lb n="6" break="no"/><supplied reason="lost"> <unclear reason="damage"> </unclear></supplied><gap reason="lost" unit="character" precision="low" quantity="15"/>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w> <persName type="attested"><name nymRef="#Ἡρώδης ">Ἡρώδου</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="γυνή">γυνὴ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">ταῖς</w> <lb n="7"/><supplied reason="lost">εἰσώσταις</supplied>  <supplied reason="lost">ταφήσονται</supplied>   <persName type="attested"><name nymRef="#Μένιππος"><supplied reason="lost">Μέ</supplied>νιππός</name> <w lemma="τε">τε</w><persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀριστοκλέους</name></persName> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζή<lb n="8" break="no"/><supplied reason="lost">  νωνος</supplied></name>  <supplied reason="lost">τοῦ</supplied>  <persName type="attested"><name nymRef="#Θεαίτητος"><supplied reason="lost">Θεαιτήτου</supplied></name></persName></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνων</name> <w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀριστοκλῆς</name></persName></persName> <lb n="9"/><supplied reason="lost">καὶ</supplied>  <persName type="attested"><name nymRef="#Μένιππος"><supplied reason="lost">Μένιππος</supplied></name></persName>  <supplied reason="lost">ὁ</supplied>  <w lemma="προδηλόω"><supplied reason="lost">προδ</supplied>ηλούμενος</w> <w lemma="βούλομαι">βουληθῶσιν</w> <g ref="#leaf"/>  <lb n="10"/><supplied reason="lost">ταύτης</supplied>  <supplied reason="lost">τῆς</supplied>  <w lemma="ἐπιγραφή"><supplied reason="lost">ἐπιγραφῆ</supplied>ς</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <lb n="11"/><supplied reason="lost">  χρεοφυλάκιον</supplied>  <supplied reason="lost">ἐπὶ</supplied>  <w lemma="στεφανηφόρος"><supplied reason="lost">στε</supplied>φανηφόρου</w> <w lemma="ὁ">τὸ</w> <w>δ´</w> <persName type="attested"><name nymRef="#Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name> <name nymRef="#Ὑψικλῆς">Ὑψικλέ<lb n="12" break="no"/><supplied reason="lost">ους</supplied></name></persName>  <gap reason="lost" unit="character" precision="low" quantity="14"/>  <persName type="attested"><name><supplied reason="lost">μ</supplied>ηνὸς</name></persName> <rs type="month"><w lemma="Ἰουλίηος">Ἰουλιήου</w></rs> <space extent="3" unit="character" dim="horizontal"/>  <lb n="12a"/>  <space extent="3" unit="character" dim="horizontal"/></ab><cb n="b"/><ab>  <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/> <w lemma="ὁ"><unclear reason="damage">τ</unclear>οῦ</w> <persName type="attested"><name nymRef="#Γορτύνιος"><unclear reason="damage">Γ</unclear>ορ<unclear reason="damage">τ</unclear>υνίου</name> <w lemma="ὁ"><unclear reason="damage">τοῦ</unclear></w> <persName type="attested"><name nymRef="#Ἀριστοκλῆς"><unclear reason="damage">Ἀριστ</unclear>οκ<supplied reason="lost">λέους</supplied></name></persName></persName>  <lb n="2"/> <w lemma="ἦθος">ἤθει</w> <w lemma="καί">καὶ</w> <w lemma="σεμνότις">σεμνότητι</w> <w lemma="βίος">βίου</w> <w lemma="ὑπερβάλλω">ὑπε<supplied reason="lost">ρβεβληκὼς</supplied></w>  <w lemma="πρό"><supplied reason="lost">πρὸ</supplied></w>  <w lemma="ὥρα"><supplied reason="lost">ὥρας</supplied></w>  <w lemma="ἄρτι"><supplied reason="lost">ἄρτι</supplied></w>  <lb n="3"/> <w lemma="τελευτάω">τετελεύτηκεν</w> <w lemma="προσήκω">προσήκει</w> <w lemma="δέ">δ<supplied reason="lost">ὲ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοὺς</supplied></w>  <w lemma="συνγενής"><supplied reason="lost">συνγενεῖς</supplied></w>  <w lemma="ὁ"><supplied reason="lost" cert="low">τῶν</supplied></w>  <w lemma="τελευτάω"><supplied reason="lost">τετε</supplied><lb n="4" break="no"/>λευτηκότων</w> <w lemma="παραμυθέομαι">παραμυθεῖσθα<unclear reason="damage">ι</unclear></w> <gap reason="lost" unit="character" quantity="3"/>  <lb n="5"/> <w lemma="φίλτατος">φιλτάτων</w> <w lemma="ἀποβολή">ἀποβολῆς</w> <g ref="#stop"/> <w lemma="διά">διὰ</w> <w lemma="οὗτος">ταῦ<unclear reason="damage">τ</unclear><supplied reason="lost">α</supplied></w>  <w lemma="δοκέω"><supplied reason="lost">δεδόχθαι</supplied></w>  <w lemma="τιμάω"><supplied reason="lost">τετειμῆσ</supplied><lb n="6" break="no"/>θαι</w> <w lemma="μέν">μὲν</w> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλλακχότα</w> <w lemma="ὁ">τα<supplied reason="lost">ῖς</supplied></w>  <supplied reason="lost">πρώταις</supplied>  <supplied reason="lost">τειμαῖς</supplied>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς"><supplied reason="lost">Ἀριστο</supplied><lb n="7" break="no"/>κ<supplied reason="omitted">λέ</supplied>α</name> <persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀριστοκλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων"><supplied reason="lost">Ζήν<unclear reason="damage">ω</unclear>νος</supplied></name> <supplied reason="lost">τοῦ</supplied> <persName type="attested"><name nymRef="#Θεαίτητος"><supplied reason="lost">Θεαιτήτου</supplied></name></persName></persName></persName></persName> <w lemma="παραμυθία"><supplied reason="lost">παραμυ</supplied></w><lb n="8" break="no"/>θήσασθαι <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὸν</w> <w lemma="πατήρ">πατέρα</w> <w lemma="αὐτός">α<unclear reason="damage">ὐ</unclear><supplied reason="lost">τοῦ</supplied></w>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς"><supplied reason="lost">Ἀριστοκλέα</supplied></name></persName>  <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>  <supplied reason="lost">ταῖς</supplied>  <lb n="9"/> <w lemma="ὁ">τῆς</w> <w lemma="τύχη">τύχης</w> <w lemma="συμφορά">συμφοραῖς</w> <w lemma="ὁ">ταῖς</w> <w lemma="τελέω">τελ<supplied reason="lost" cert="low">εσθείσαις</supplied></w>    <lb n="10"/> <persName type="attested"><name nymRef="#Γονεύς">Γονεὺς</name> <persName type="attested"><name nymRef="#Μητρόδωρος">Μητροδόρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Γονεύς">Γο<supplied reason="lost">νέως</supplied></name></persName></persName></persName>  <supplied reason="lost">πρῶτος</supplied>  <w lemma="ἄρχων"><supplied reason="lost">ἄρχων</supplied></w>  <lb n="11"/> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name> <name nymRef="#Ἰούλιος">Ἰούλιος</name> <persName type="attested"><name nymRef="#Πύρρος">Πύρρου</name></persName></persName> <w lemma="γραμματεύς">γραμμ<unclear reason="damage">α</unclear><supplied reason="lost">τεὺς</supplied></w>  <w lemma="δῆμος"><supplied reason="lost">δήμου</supplied></w> <gap reason="lost" unit="character" quantity="1"/>  <lb n="11a"/>  <space extent="3" unit="character" dim="horizontal"/>  </ab>
 </div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<cb n="a"/><ab>    <lb n="1"/>  <gap reason="lost" extent="14" unit="character" precision="circa"/>ΟΥΚΑΙΤΗΟΙΝΙΑ <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰς</w> <w lemma="δίδωμι">δοθείσας</w> <lb n="2"/><supplied reason="lost">αὐτῷ</supplied>  <supplied reason="lost">ὑπὸ</supplied>  <gap reason="lost" extent="10" unit="character" precision="circa"/>  <w lemma="τετράκις"><supplied reason="lost">τετράκ</supplied>ι</w> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ὑψικλῆς">Ὑψικλέους</name></persName> <w lemma="ὁ">τῶν</w> <w lemma="τόπος">τόπων</w> <w lemma="συγχώρησις">συνχω<lb n="3" type="worddiv"/><supplied reason="lost">ρήσεις</supplied></w>  <supplied reason="lost">διὰ</supplied>  <supplied reason="lost">τοῦ</supplied>  <w lemma="χρεωφυλάκιον"><supplied reason="lost">χρεοφυλακίο</supplied>υ</w> <w lemma="εἰμί">ὧν</w> <w lemma="ἐν">ἐν</w> <w lemma="μέν">μὲν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="θάπτω">τέθαπται</w> <persName type="aphrodisian"><name reg="Ἀριστοκλῆς">Ἀρισ<lb n="4" type="worddiv"/><supplied reason="lost">τοκλῆς</supplied></name>  <persName type="aphrodisian"><name reg="Ἀριστοκλῆς"><supplied reason="lost">Ἀριστοκλέους</supplied></name>  <supplied reason="lost">τοῦ</supplied> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Θεαίτητος">Θεαιτήτου</name></persName></persName></persName></persName> <w lemma="ὁ">ὁ</w> <w lemma="υἱός">υἱὸς</w> <w lemma="αὐτός">αὐ<lb n="5" type="worddiv"/><supplied reason="lost">  τοῦ</supplied></w>  <supplied reason="lost">ταφήσονται</supplied>  <supplied reason="lost">δὲ</supplied>  <persName type="aphrodisian"><name reg="Ἀριστοκλῆς"><supplied reason="lost">Ἀρι</supplied>στοκλῆς</name> <w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνων</name></persName></persName>  <w lemma="καί">καὶ</w>  <persName type="aphrodisian"><name reg="Ἄπφιος">Ἄπφιον</name></persName> Ἀ<lb n="6" type="worddiv"/><supplied reason="lost"> <unclear reason="damage"> </unclear></supplied><gap reason="lost" extent="15" unit="character" precision="circa"/>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w> <persName type="aphrodisian"><name reg="Ἡρώδης ">Ἡρώδου</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="γυνή">γυνὴ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">ταῖς</w> <lb n="7"/><supplied reason="lost">εἰσώσταις</supplied>  <supplied reason="lost">ταφήσονται</supplied>   <persName type="aphrodisian"><name reg="Μένιππος"><supplied reason="lost">Μέ</supplied>νιππός</name> <w lemma="τε">τε</w><persName type="aphrodisian"><name reg="Ἀριστοκλῆς">Ἀριστοκλέους</name></persName> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζή<lb n="8" type="worddiv"/><supplied reason="lost">  νωνος</supplied></name>  <supplied reason="lost">τοῦ</supplied>  <persName type="aphrodisian"><name reg="Θεαίτητος"><supplied reason="lost">Θεαιτήτου</supplied></name></persName></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνων</name> <w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀριστοκλῆς">Ἀριστοκλῆς</name></persName></persName> <lb n="9"/><supplied reason="lost">καὶ</supplied>  <persName type="aphrodisian"><name reg="Μένιππος"><supplied reason="lost">Μένιππος</supplied></name></persName>  <supplied reason="lost">ὁ</supplied>  <w lemma="προδηλόω"><supplied reason="lost">προδ</supplied>ηλούμενος</w> <w lemma="βούλομαι">βουληθῶσιν</w> <g type="leaf"/>  <lb n="10"/><supplied reason="lost">ταύτης</supplied>  <supplied reason="lost">τῆς</supplied>  <w lemma="ἐπιγραφή"><supplied reason="lost">ἐπιγραφῆ</supplied>ς</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <lb n="11"/><supplied reason="lost">  χρεοφυλάκιον</supplied>  <supplied reason="lost">ἐπὶ</supplied>  <w lemma="στεφανηφόρος"><supplied reason="lost">στε</supplied>φανηφόρου</w> <w lemma="ὁ">τὸ</w> <w>δ´</w> <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen"><expan><abbr>Τι</abbr><supplied reason="abbreviation">βερίου</supplied></expan></name> <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name> <name reg="Ὑψικλῆς">Ὑψικλέ<lb n="12" type="worddiv"/><supplied reason="lost">ους</supplied></name></persName>  <gap reason="lost" extent="14" unit="character" precision="circa"/>  <persName type="aphrodisian"><name><supplied reason="lost">μ</supplied>ηνὸς</name></persName> <rs type="month"><w lemma="Ἰουλίηος">Ἰουλιήου</w></rs> <space extent="3" unit="character" dim="horizontal"/>  <lb n="12a"/>  <space extent="3" unit="character" dim="horizontal"/></ab><cb n="b"/><ab>  <lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/> <w lemma="ὁ"><unclear reason="damage">τ</unclear>οῦ</w> <persName type="aphrodisian"><name reg="Γορτύνιος"><unclear reason="damage">Γ</unclear>ορ<unclear reason="damage">τ</unclear>υνίου</name> <w lemma="ὁ"><unclear reason="damage">τοῦ</unclear></w> <persName type="aphrodisian"><name reg="Ἀριστοκλῆς"><unclear reason="damage">Ἀριστ</unclear>οκ<supplied reason="lost">λέους</supplied></name></persName></persName>  <lb n="2"/> <w lemma="ἦθος">ἤθει</w> <w lemma="καί">καὶ</w> <w lemma="σεμνότις">σεμνότητι</w> <w lemma="βίος">βίου</w> <w lemma="ὑπερβάλλω">ὑπε<supplied reason="lost">ρβεβληκὼς</supplied></w>  <w lemma="πρό"><supplied reason="lost">πρὸ</supplied></w>  <w lemma="ὥρα"><supplied reason="lost">ὥρας</supplied></w>  <w lemma="ἄρτι"><supplied reason="lost">ἄρτι</supplied></w>  <lb n="3"/> <w lemma="τελευτάω">τετελεύτηκεν</w> <w lemma="προσήκω">προσήκει</w> <w lemma="δέ">δ<supplied reason="lost">ὲ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοὺς</supplied></w>  <w lemma="συνγενής"><supplied reason="lost">συνγενεῖς</supplied></w>  <w lemma="ὁ"><supplied reason="lost" cert="low">τῶν</supplied></w>  <w lemma="τελευτάω"><supplied reason="lost">τετε</supplied><lb n="4" type="worddiv"/>λευτηκότων</w> <w lemma="παραμυθέομαι">παραμυθεῖσθα<unclear reason="damage">ι</unclear></w> <gap reason="lost" extent="3" unit="character"/>  <lb n="5"/> <w lemma="φίλτατος">φιλτάτων</w> <w lemma="ἀποβολή">ἀποβολῆς</w> <g type="stop"/> <w lemma="διά">διὰ</w> <w lemma="οὗτος">ταῦ<unclear reason="damage">τ</unclear><supplied reason="lost">α</supplied></w>  <w lemma="δοκέω"><supplied reason="lost">δεδόχθαι</supplied></w>  <w lemma="τιμάω"><supplied reason="lost">τετειμῆσ</supplied><lb n="6" type="worddiv"/>θαι</w> <w lemma="μέν">μὲν</w> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλλακχότα</w> <w lemma="ὁ">τα<supplied reason="lost">ῖς</supplied></w>  <supplied reason="lost">πρώταις</supplied>  <supplied reason="lost">τειμαῖς</supplied>  <persName type="aphrodisian"><name reg="Ἀριστοκλῆς"><supplied reason="lost">Ἀριστο</supplied><lb n="7" type="worddiv"/>κ<supplied reason="omitted">λέ</supplied>α</name> <persName type="aphrodisian"><name reg="Ἀριστοκλῆς">Ἀριστοκλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων"><supplied reason="lost">Ζήν<unclear reason="damage">ω</unclear>νος</supplied></name> <supplied reason="lost">τοῦ</supplied> <persName type="aphrodisian"><name reg="Θεαίτητος"><supplied reason="lost">Θεαιτήτου</supplied></name></persName></persName></persName></persName> <w lemma="παραμυθία"><supplied reason="lost">παραμυ</supplied></w><lb n="8" type="worddiv"/>θήσασθαι <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὸν</w> <w lemma="πατήρ">πατέρα</w> <w lemma="αὐτός">α<unclear reason="damage">ὐ</unclear><supplied reason="lost">τοῦ</supplied></w>  <persName type="aphrodisian"><name reg="Ἀριστοκλῆς"><supplied reason="lost">Ἀριστοκλέα</supplied></name></persName>  <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>  <supplied reason="lost">ταῖς</supplied>  <lb n="9"/> <w lemma="ὁ">τῆς</w> <w lemma="τύχη">τύχης</w> <w lemma="συμφορά">συμφοραῖς</w> <w lemma="ὁ">ταῖς</w> <w lemma="τελέω">τελ<supplied reason="lost" cert="low">εσθείσαις</supplied></w>    <lb n="10"/> <persName type="aphrodisian"><name reg="Γονεύς">Γονεὺς</name> <persName type="aphrodisian"><name reg="Μητρόδωρος">Μητροδόρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Γονεύς">Γο<supplied reason="lost">νέως</supplied></name></persName></persName></persName>  <supplied reason="lost">πρῶτος</supplied>  <w lemma="ἄρχων"><supplied reason="lost">ἄρχων</supplied></w>  <lb n="11"/> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">ᾶρκος</supplied></expan></name> <name reg="Ἰούλιος">Ἰούλιος</name> <persName type="aphrodisian"><name reg="Πύρρος">Πύρρου</name></persName></persName> <w lemma="γραμματεύς">γραμμ<unclear reason="damage">α</unclear><supplied reason="lost">τεὺς</supplied></w>  <w lemma="δῆμος"><supplied reason="lost">δήμου</supplied></w> <gap reason="lost" extent="1" unit="character"/>  <lb n="11a"/>  <space extent="3" unit="character" dim="horizontal"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>a: l. 1,  <foreign lang="grc">... Ο.ΗΙΑΚΑΤΑ</foreign> Waddington</p><p>b: l. 7, <foreign lang="grc">ΚΕΛΑ</foreign> lapis</p><p>b l. 9,  at end, <foreign lang="grc">ΤΕ</foreign> Sherard, Fellows, Kubitschek, Buresch; <foreign lang="grc">ΓΕ</foreign> Waddington, Cormack; <foreign lang="grc">ΤΕΛ</foreign> Reinach</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p> a: [...] in accordance with the areas ceded [to him by ..?.. son of ..?.., fourth of the name from Hypsikles and recorded in the Property-archive.  Of these, Aris[tokles son of Aristokles the] son of Zenon the son of Theaitetos, his son, has been buried in the sarcophagus and [in it also shall be buried Ari]stokles son of Zenon and Apphion daughter of A[..?.. the son of ..?.. the son of] Herodes, his wife; and in the [subsisiary burial places shall be buried Me]nippos son of Aristokles the son of Ze[non the son of Theaitetos] and whomsoever Zenon and Aristokles and the afore]mentioned Menippos wish.  A copy [of this inscription was deposited in the Property-Archive in the] fourth stephanephorate of Tiberius Claudius Hypsikles [ ..?..] in the month of July.</p><p>b: [... ?the son] of  Gortynios the son of Aristokles [..?..] out[standing in character and respectability of life [who has just] died [prematurely], it is fitting to console [the parents of those who have died, grieving for the] loss of their loved ones. For this reason [it was agreed that Aristo]kles son of</p><p> Aristokles son of Ze[non ?son of Theaitetos] should be honoured even after death with [the first honours] and his father [Aristokles] should be offered consoltation for the accidents of fate which have occurred. Goneus son of Metrodoros son of Go[neus first archon], M(arcus) Iulius Pyrros being secretary [of the People]</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Probably west or north Necropolis</rs>
-<rs type="found"><rs type="monuList">Walls, North</rs>: at the west end of the Stadium</rs>
-<rs type="lastLocation">Findspot (1973)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied in 1705 by Picenini (10102, 13v and 53) and by Sherard, (10101, 24); by Fellows; by Waddington in 1850; by K&amp;R (no notebook entry); recorded by Gaudin (130); recorded by the MAMA expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard, CIG <biblScope>2836</biblScope> and <biblScope>2776</biblScope></bibl>; by <bibl n="fellows1841" type="hbi" rend="primary">Fellows no. <biblScope>52</biblScope> and <biblScope>28</biblScope></bibl>, whence <bibl n="CIGIIc">CIG p. 1111</bibl>, (b) <bibl n="bailie1846">Bailie, no. <biblScope>55</biblScope></bibl>;  <bibl n="LBW">Waddington, LBW <biblScope>1633a</biblScope> and <biblScope>1633b</biblScope></bibl>, whence discussed by <bibl>Buresch, 'Die griechische Trostbeschlüsse', <title>RhM</title> 49, 1894, 424-460, 428-429</bibl>,  by <bibl>O.Gottwald, 'Zu den gr. Trostbeschlüssen,', <title>Commentationes Vindobonense</title>s 3 (1937), 5-18, 10</bibl>, by <bibl>L. Robert, <title>Ét. Anat.</title> 102</bibl>; mentioned by<bibl n="reinach"> Reinach, from Gaudin's squeeze, no. <biblScope>11a</biblScope> and <biblScope>11b</biblScope></bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records, nos. <biblScope>541</biblScope> (a) and <biblScope>409</biblScope> (b)</bibl>, whence <bibl n="hell13">L. Robert, <title>Hellenica</title> 13, 208, 231 (b ll. 3-4, 9)</bibl>, <bibl n="be">BE <biblScope>1966.383</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257305">427</biblScope>
- and <biblScope n="256900">22</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p> <figure href="73_V_01"><figDesc>a and b  (1973)</figDesc></figure><figure href="73_V_01"><figDesc>a and b (1973)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>a: l. 1,  <foreign xml:lang="grc">... Ο.ΗΙΑΚΑΤΑ</foreign> Waddington</p>
+            <p>b: l. 7, <foreign xml:lang="grc">ΚΕΛΑ</foreign> lapis</p>
+            <p>b l. 9,  at end, <foreign xml:lang="grc">ΤΕ</foreign> Sherard, Fellows, Kubitschek, Buresch; <foreign xml:lang="grc">ΓΕ</foreign> Waddington, Cormack; <foreign xml:lang="grc">ΤΕΛ</foreign> Reinach</p>
+         </div>
+         <div type="translation">
+            <p> a: [...] in accordance with the areas ceded [to him by ..?.. son of ..?.., fourth of the name from Hypsikles and recorded in the Property-archive.  Of these, Aris[tokles son of Aristokles the] son of Zenon the son of Theaitetos, his son, has been buried in the sarcophagus and [in it also shall be buried Ari]stokles son of Zenon and Apphion daughter of A[..?.. the son of ..?.. the son of] Herodes, his wife; and in the [subsisiary burial places shall be buried Me]nippos son of Aristokles the son of Ze[non the son of Theaitetos] and whomsoever Zenon and Aristokles and the afore]mentioned Menippos wish.  A copy [of this inscription was deposited in the Property-Archive in the] fourth stephanephorate of Tiberius Claudius Hypsikles [ ..?..] in the month of July.</p>
+            <p>b: [... ?the son] of  Gortynios the son of Aristokles [..?..] out[standing in character and respectability of life [who has just] died [prematurely], it is fitting to console [the parents of those who have died, grieving for the] loss of their loved ones. For this reason [it was agreed that Aristo]kles son of</p>
+            <p> Aristokles son of Ze[non ?son of Theaitetos] should be honoured even after death with [the first honours] and his father [Aristokles] should be offered consoltation for the accidents of fate which have occurred. Goneus son of Metrodoros son of Go[neus first archon], M(arcus) Iulius Pyrros being secretary [of the People]</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard, CIG <citedRange>2836</citedRange> and <citedRange>2776</citedRange>
+               </bibl>; by <bibl n="fellows1841" type="hbi" rend="primary">Fellows no. <citedRange>52</citedRange> and <citedRange>28</citedRange>
+               </bibl>, whence <bibl n="CIGIIc">CIG p. 1111</bibl>, (b) <bibl n="bailie1846">Bailie, no. <citedRange>55</citedRange>
+               </bibl>;  <bibl n="LBW">Waddington, LBW <citedRange>1633a</citedRange> and <citedRange>1633b</citedRange>
+               </bibl>, whence discussed by <bibl>Buresch, 'Die griechische Trostbeschlüsse', <title>RhM</title> 49, 1894, 424-460, 428-429</bibl>,  by <bibl>O.Gottwald, 'Zu den gr. Trostbeschlüssen,', <title>Commentationes Vindobonense</title>s 3 (1937), 5-18, 10</bibl>, by <bibl>L. Robert, <title>Ét. Anat.</title> 102</bibl>; mentioned by<bibl n="reinach"> Reinach, from Gaudin's squeeze, no. <citedRange>11a</citedRange> and <citedRange>11b</citedRange>
+               </bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records, nos. <citedRange>541</citedRange> (a) and <citedRange>409</citedRange> (b)</bibl>, whence <bibl n="hell13">L. Robert, <title>Hellenica</title> 13, 208, 231 (b ll. 3-4, 9)</bibl>, <bibl n="be">BE <citedRange>1966.383</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257305">427</citedRange>
+ and <citedRange n="256900">22</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

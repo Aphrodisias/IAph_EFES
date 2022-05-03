@@ -1,88 +1,108 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120932" n="iAph1789 ">
- <teiHeader>
-  <fileDesc>
-   <titleStmt>
-    <title level="m"><rs type="textType">Honours</rs> for a centurio frumentarius</title>
-    </titleStmt>
-   <publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-   <sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-  </fileDesc>
-  <profileDesc>
-   <langUsage>
-    <language id="en">English</language>
-    <language id="fr">French</language>
-    <language id="de">German</language>
-    <language id="grc">Ancient Greek</language>
-    <language id="grc-Latn">Transliterated Greek</language>
-    <language id="el">Modern Greek</language>
-    <language id="it">Italian</language>
-    <language id="la">Latin</language>
-    <language id="es">Spanish</language>
-    <language id="tr">Turkish</language>
-   </langUsage>
-   <textClass>
-    <keywords><term>
-      <geogName type="ancientRegion" key="Asia">Asia</geogName>
-     </term><term>
-      <geogName type="modernCountry" key="TR">Turkey</geogName>
-     </term><term>
-      <placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName>
-     </term><term>
-      <placeName type="modernFindspot" key="Geyre">Geyre</placeName>
-     </term></keywords>
-   </textClass>
-  </profileDesc>
-  <revisionDesc>
-   <change>
-    <date>2007-07-09</date>
-    <respStmt>
-     <name>cmr</name>
-    </respStmt>
-    <item>DONE</item>
-   </change>
-
-   <change>
-    <date/>
-    <respStmt>
-     <name>GB</name>
-    </respStmt>
-    <item>hand tidied</item>
-   </change>
-   <change>
-    <date>2005-12-13</date>
-    <respStmt>
-     <name>Elliott Hall</name>
-    </respStmt>
-    <item>Batch converted Word2XML</item>
-   </change>
-  </revisionDesc>
- </teiHeader>
- <text>
-  <body>
-   <div type="description" n="monument">
-    <head>Description of Monument</head>
-    <p>Presumably a <rs type="objectType">statue base</rs>.</p>
-
-   </div>
-   <div type="description" n="text">
-    <head>Description of Text</head>
-    <p>No description</p>
-   </div>
-   <div type="description" n="letters">
-    <head>Letters</head>
-    <p>No description</p>
-   </div>
-   <div type="description" n="date">
-    <head>Date</head>
-    <p>
-     <date notAfter="300" notBefore="201">Third century A.D.</date> (<rs type="criteria">terminology</rs>, <rs type="criteria">comparanda</rs>) </p>
-   </div>
-   <div type="edition" lang="grc">
-    <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for a centurio frumentarius</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120932</idno>
+            <idno type="IAph2007">iAph120932</idno>
+            <idno type="JMR2004">iAph1789</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Presumably a <objectType>statue base</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="201" notAfter="300" evidence="terminology comparanda">
+     Third century A.D. (<rs type="criteria">terminology</rs>, <rs type="criteria">comparanda</rs>) </origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, West</rs>: central western stretch, near <ref type="inscription" n="659" target="120925.xml"/> (=CIG 2763) and <ref type="inscription" n="663" target="120929.xml"/> (CIG 2765).</provenance>
+                  <provenance type="observed" when="1716">Findspot (1716)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; Sherard papers</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-09" who="&#xA;-----cmr&#xA;----">DONE</change>
+         <change when="2005-12-13" who="&#xA;-----Elliott-Hall&#xA;----">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="&#xA;-----GB&#xA;----">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+    
     <ab>
      <lb n="0"/>
      <supplied reason="lost">
-      <note>e.g.</note>
+      <note xml:lang=""/>
       <w lemma="ὁ">ἡ</w>
       <w lemma="πόλις">πόλις</w>
      </supplied>
@@ -98,17 +118,17 @@
      <lb n="3"/>
      <w lemma="ἁγνῶς">ἁγνῶς</w>
      <w lemma="καί">καὶ</w>
-     <w lemma="ἀνδρείως">ἀν<lb n="4" type="worddiv"/>δρ<supplied reason="lost">ε</supplied>ίως</w>
-     <w lemma="ἀναστρέφω">ἀναστρα<lb n="5" type="worddiv"/>φέντα</w>
+     <w lemma="ἀνδρείως">ἀν<lb n="4" break="no"/>δρ<supplied reason="lost">ε</supplied>ίως</w>
+     <w lemma="ἀναστρέφω">ἀναστρα<lb n="5" break="no"/>φέντα</w>
      <w lemma="ἐν">ἐν</w>
      <w lemma="ὁ">τῷ</w>
      <w lemma="ὁ">τῆς</w>
      <lb n="6"/>
-     <placeName reg="Ἀσία">Ἀσίας</placeName>
+     <placeName nymRef="#Ἀσία">Ἀσίας</placeName>
      <w lemma="ἔθνος">ἔθν<unclear reason="damage">ε</unclear>ι</w>
-     <w lemma="εὔνοια">εὐ<lb n="7" type="worddiv"/>νοίας</w>
+     <w lemma="εὔνοια">εὐ<lb n="7" break="no"/>νοίας</w>
      <w lemma="καί">καὶ</w>
-     <w lemma="στοργή">στορ<lb n="8" type="worddiv"/>γῆς</w>
+     <w lemma="στοργή">στορ<lb n="8" break="no"/>γῆς</w>
      <w lemma="ἕνεκεν">ἕνεκεν</w>
      <w lemma="ὁ">τ<unclear reason="damage">ῆ</unclear>ς</w>
      <lb n="9"/>
@@ -116,7 +136,7 @@
      <w lemma="αὐτός">αὑτὴν</w>
      <w lemma="ἀμείβω">ἠμείψατο</w>
      <lb n="10"/>
-     <w lemma="ἐπιμελέω">ἐπ<choice type="correction">
+     <w lemma="ἐπιμελέω">ἐπ<choice>
        <sic>ι</sic>
        <corr>ε</corr>
       </choice>μελήσατο</w>
@@ -127,64 +147,53 @@
      <lb n="12"/>
      <w lemma="ἀνδρίας">ἀνδριάντος</w>
      <w lemma="ὁ">ὁ</w>
-     <w lemma="ἀξιόλογος">ἀ<unclear reason="damage">ξ</unclear><supplied reason="lost">ι</supplied><lb n="13" type="worddiv"/>ο<unclear reason="damage">λ</unclear>ο<unclear reason="damage">γ</unclear>ώτατος</w>
-     <persName type="aphrodisian">
-      <name reg="Ἀντώνιος">Ἀντ<unclear reason="damage">ώ</unclear><lb n="14" type="worddiv"/>νιος</name>
-      <name reg="Ἀνδρόνικος">Ἀνδρόνικος</name>
+     <w lemma="ἀξιόλογος">ἀ<unclear reason="damage">ξ</unclear><supplied reason="lost">ι</supplied><lb n="13" break="no"/>ο<unclear reason="damage">λ</unclear>ο<unclear reason="damage">γ</unclear>ώτατος</w>
+     <persName type="attested">
+      <name nymRef="#Ἀντώνιος">Ἀντ<unclear reason="damage">ώ</unclear><lb n="14" break="no"/>νιος</name>
+      <name nymRef="#Ἀνδρόνικος">Ἀνδρόνικος</name>
      </persName>
     </ab>
    </div>
-   <div type="apparatus">
-    <head>Apparatus</head>
-    <p>l. 1, <foreign lang="grc">ΤΟΝΑΡΧ</foreign>.</p>
-    <p> l. 2, Boeckh's copy of Sherard's notes showed <foreign lang="grc">ΑΡΙΟΥ</foreign>, but the
-     MS has <foreign lang="grc">ΑΡΙΟΝ</foreign></p>
-    <p> l. 4, <foreign lang="grc">ΔΡΙΩΣ</foreign></p>
-    <p> l. 6, <foreign lang="grc">ΕΘΝΟΙ</foreign></p>
-    <p> l. 8, <foreign lang="grc">ΤΕΣ</foreign></p>
-    <p> l. 10, Sherard copied this line twice. <foreign lang="grc">ΕΠΙΜΕΛ</foreign>.</p>
-    <p>ll. 12/13, <foreign lang="grc">ΟΑΣ/ΟΥΤΟΠΩΤΑΤΟΖΑΝΤΟ</foreign>.</p>
-   </div>
-   <div type="translation">
-    <head>Translation</head>
-    <p>[The city has rewarded [...] centurio frumentarius, who has conducted himself decently and
+         <div type="apparatus">
+            <p>l. 1, <foreign xml:lang="grc">ΤΟΝΑΡΧ</foreign>.</p>
+            <p> l. 2, Boeckh's copy of Sherard's notes showed <foreign xml:lang="grc">ΑΡΙΟΥ</foreign>, but the
+     MS has <foreign xml:lang="grc">ΑΡΙΟΝ</foreign>
+            </p>
+            <p> l. 4, <foreign xml:lang="grc">ΔΡΙΩΣ</foreign>
+            </p>
+            <p> l. 6, <foreign xml:lang="grc">ΕΘΝΟΙ</foreign>
+            </p>
+            <p> l. 8, <foreign xml:lang="grc">ΤΕΣ</foreign>
+            </p>
+            <p> l. 10, Sherard copied this line twice. <foreign xml:lang="grc">ΕΠΙΜΕΛ</foreign>.</p>
+            <p>ll. 12/13, <foreign xml:lang="grc">ΟΑΣ/ΟΥΤΟΠΩΤΑΤΟΖΑΝΤΟ</foreign>.</p>
+         </div>
+         <div type="translation">
+            <p>[The city has rewarded [...] centurio frumentarius, who has conducted himself decently and
      bravely in the province of Asia, for his goodwill and affection towards her. The most worthy
      Antonius Androneikos oversaw the erection of the statue.</p>
-   </div>
-   <div type="commentary">
-    <head>Commentary</head>
-    <p>This inscription is similar to, but not (as Cormack thought) identical with, <xref type="inscription" n="1034" href="120931">12.931</xref> (=MAMA 508); see discussion by <bibl n="cmr1981">Roueché, <title level="j">JRS</title> 71, 1981, 113-117.</bibl>.</p>
-   </div>
-   <div type="history" n="locations">
-    <head>Locations</head>
-    <p>
-     <rs type="origLocation">Unknown</rs>
-     <rs type="found"><rs type="monuList">Walls, West</rs>: central western stretch, near <xref type="inscription" n="659" href="120925">12.925</xref> (=CIG 2763) and <xref type="inscription" n="663" href="120929">12.929</xref> (CIG 2765).</rs>
-     <rs type="lastLocation">Findspot (1716)</rs>
-    </p>
-   </div>
-   <div type="history" n="text-constituted-from">
-    <head>Text Constituted From</head>
-    <p>Publications; Sherard papers</p>
-   </div>
-   <div type="history" n="record">
-    <head>History of Recording</head>
-    <p>Transcribed by Sherard in 1716 (10101, 128); not reported subsequently.</p>
-   </div>
-   <div type="bibliography">
-    <head>Bibliography</head>
-    <p>Published by <bibl n="CIGII">Boeckh, from Sherard papers, CIG
-     <biblScope>2802</biblScope></bibl>; by <bibl n="cmr1981">Roueché, JRS 71, 1981, 113-117, no.
-       <biblScope>8</biblScope></bibl>, whence <bibl n="seg">SEG
-     <biblScope>1981.905</biblScope></bibl>, col. 2, <bibl n="be">BE
-     <biblScope>1982.357</biblScope></bibl>, <bibl n="anep">AnnEpig
-     <biblScope>1981.771</biblScope></bibl>, <bibl n="PHI">
-      <author>McCabe</author>
-      <title level="m">PHI Aphrodisias</title>
-      <biblScope n="257238">360</biblScope>
-     </bibl>
-    </p>
-   </div>
-  </body>
- </text>
+         </div>
+         <div type="commentary">
+            <p>This inscription is similar to, but not (as Cormack thought) identical with, <ref type="inscription" n="1034" target="120931.xml"/> (=MAMA 508); see discussion by <bibl n="cmr1981">Roueché, <title level="j">JRS</title> 71, 1981, 113-117.</bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard papers, CIG
+     <citedRange>2802</citedRange>
+               </bibl>; by <bibl n="cmr1981">Roueché, JRS 71, 1981, 113-117, no.
+       <citedRange>8</citedRange>
+               </bibl>, whence <bibl n="seg">SEG
+     <citedRange>1981.905</citedRange>
+               </bibl>, col. 2, <bibl n="be">BE
+     <citedRange>1982.357</citedRange>
+               </bibl>, <bibl n="anep">AnnEpig
+     <citedRange>1981.771</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257238">360</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

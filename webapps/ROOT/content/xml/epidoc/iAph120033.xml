@@ -1,81 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120033" n="iAph0547 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for the proconsul, Sulpicius Priscus </title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-01-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material">white marble</rs> <rs type="objectType">statue base</rs>; no measurements..</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for the proconsul, Sulpicius Priscus </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120033</idno>
+            <idno type="IAph2007">iAph120033</idno>
+            <idno type="JMR2004">iAph0547</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material>white marble</material>
+                              <objectType>statue base</objectType>; no measurements..</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre"> 0.035</height>; ligatured ΗΜ in l.9; deliberate erasure in l.11.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0222" notAfter="0235" evidence="reign">
+A.D. 222/235
+(<rs type="criteria">reign</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North</rs>, found with <ref type="inscription" n="548" target="120034.xml"/>
+                  </provenance>
+                  <provenance type="observed" when="1904">Findspot (1904)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription from squeeze  (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
+<ab><lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <lb n="2"/> <w lemma="ὁ">τῆς</w> <w lemma="λαμπρός">λαμπροτάτης</w> <lb n="3"/> <w lemma="Ἀφροδεισιεύς">Ἀφροδεισιέων</w> <lb n="4"/> <w lemma="πόλις">πόλεως</w> <persName type="attested"><name nymRef="#Σουλπίκιος">Σουλπίκιον</name> <lb n="5"/> <name nymRef="#Πρείσκος">Πρεῖσκον</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="διάσημος">δια<lb n="6" break="no"/>σημότατον</w>  <w lemma="ἀνθύπατος">ἀνθύ<lb n="7" break="no"/>πατον</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰς</w> <w lemma="ὁ">τοῦ</w> <lb n="8"/> <w lemma="μέγας">μεγίστου</w> <w lemma="καί">καὶ</w> <w lemma="θεῖοσ1">θειο<lb n="9" break="no"/>τάτου </w><w lemma="κύριος">κυρίου</w> <w lemma="ἐγώ">ἡμῶν</w> <lb n="10"/> <persName type="emperor"><w lemma="αὐτοκράτωρ">αὐτοκράτορος</w> <name nymRef="#Σεουῆρος">Σεου<lb n="11" break="no"/><supplied reason="lost">ή</supplied>ρου</name> <name nymRef="#Ἀλέξανδρος">Ἀλεξάνδρου</name></persName> <lb n="12"/><w lemma="ἐντολή"><supplied reason="lost" cert="low">ἐντολάς</supplied></w>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre"> 0.035</measure>; ligatured ΗΜ in l.9; deliberate erasure in l.11.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0222" notAfter="0235" exact="both">A.D. 222/235</date>
-(<rs type="criteria">reign</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <lb n="2"/> <w lemma="ὁ">τῆς</w> <w lemma="λαμπρός">λαμπροτάτης</w> <lb n="3"/> <w lemma="Ἀφροδεισιεύς">Ἀφροδεισιέων</w> <lb n="4"/> <w lemma="πόλις">πόλεως</w> <persName type="aphrodisian"><name reg="Σουλπίκιος">Σουλπίκιον</name> <lb n="5"/> <name reg="Πρείσκος">Πρεῖσκον</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="διάσημος">δια<lb n="6" type="worddiv"/>σημότατον</w>  <w lemma="ἀνθύπατος">ἀνθύ<lb n="7" type="worddiv"/>πατον</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰς</w> <w lemma="ὁ">τοῦ</w> <lb n="8"/> <w lemma="μέγας">μεγίστου</w> <w lemma="καί">καὶ</w> <w lemma="θεῖοσ1">θειο<lb n="9" type="worddiv"/>τάτου </w><w lemma="κύριος">κυρίου</w> <w lemma="ἐγώ">ἡμῶν</w> <lb n="10"/> <persName type="emperor"><w lemma="αὐτοκράτωρ">αὐτοκράτορος</w> <name reg="Σεουῆρος">Σεου<lb n="11" type="worddiv"/><supplied reason="lost">ή</supplied>ρου</name> <name reg="Ἀλέξανδρος">Ἀλεξάνδρου</name></persName> <lb n="12"/><w lemma="ἐντολή"><supplied reason="lost" cert="low">ἐντολάς</supplied></w>  </ab>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>The People of the most splendid city of the Aphrodisians (set up a statue of) Sulpicius Priscus, perfectissimus vir, proconsul, according to [?the instructions] of our greatest and most revered lord Imperator Severus [Alexander].</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See Reynolds, loc. cit.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"> <rs type="monuList">Walls, North</rs>, found with <xref type="inscription" n="548" href="120034">12.34</xref></rs>
-<rs type="lastLocation">Findspot (1904)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription from squeeze  (Reynolds); publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Gaudin (161); not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 84, no. <biblScope>4</biblScope></bibl>, whence <bibl>Abbott &amp; Johnson, no. 138</bibl>, <bibl>Veyne, <title>Mél. Piganiol</title> 1395-1396</bibl>, <bibl n="be">BE <biblScope>1967.554</biblScope></bibl>; by <bibl n="jmr1982">Reynolds, from Gaudin, <title>Aphrodisias &amp; Rome</title>, doc. <biblScope>47</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1982.1097</biblScope></bibl>, <bibl n="be">BE <biblScope>1983.391</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257205">327</biblScope>
-</bibl>.</p>
-</div></body></text>
+         <div type="translation">
+            <p>The People of the most splendid city of the Aphrodisians (set up a statue of) Sulpicius Priscus, perfectissimus vir, proconsul, according to [?the instructions] of our greatest and most revered lord Imperator Severus [Alexander].</p>
+         </div>
+         <div type="commentary">
+            <p>See Reynolds, loc. cit.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 84, no. <citedRange>4</citedRange>
+               </bibl>, whence <bibl>Abbott &amp; Johnson, no. 138</bibl>, <bibl>Veyne, <title>Mél. Piganiol</title> 1395-1396</bibl>, <bibl n="be">BE <citedRange>1967.554</citedRange>
+               </bibl>; by <bibl n="jmr1982">Reynolds, from Gaudin, <title>Aphrodisias &amp; Rome</title>, doc. <citedRange>47</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1097</citedRange>
+               </bibl>, <bibl n="be">BE <citedRange>1983.391</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257205">327</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

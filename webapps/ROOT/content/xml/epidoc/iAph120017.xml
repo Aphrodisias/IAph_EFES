@@ -1,99 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120017" n="iAph1041 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Honours</rs> for  Publius Aelius Hilarianos from his father</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Honours for  Publius Aelius Hilarianos from his father</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120017</idno>
+            <idno type="IAph2007">iAph120017</idno>
+            <idno type="JMR2004">iAph1041</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType key="statue base">statue base</objectType>, without any visible moulding (not measurable).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.03</height>; apices on first two letters of <foreign xml:lang="grc">ΥΙΟΝ</foreign>, l. 6; on <foreign xml:lang="grc">Υ</foreign>, l. 9</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">Second to third centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North</rs>: re-used in the north wall of the Stadium, west of (<ref type="inscription" n="1027" target="120028.xml"/>=MAMA 497)</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; Gaudin's squeeze; Preliminary transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_P_33A.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType" reg="statue base">statue base</rs>, without any visible moulding (not measurable).</p>
+    <ab><lb n="0"/><persName type="attested"><supplied reason="lost"><name nymRef="#Πόπλιος">Πόπλιον</name>  <name nymRef="#Αἴλιος">Αἴλιον</name></supplied>  <lb n="1"/><name nymRef="#Ἱλαριανός"><supplied reason="lost">Ἱ</supplied>λαριανὸν</name></persName>  <w lemma="ἱππικός">ἱππ<supplied reason="lost">ι</supplied><lb n="2" break="no"/>κὸν</w> <persName type="attested"><name nymRef="#Πόπλιος">Ποπλίου</name> <name nymRef="#Αἴλιος">Αἰ<lb n="3" break="no"/>λίου</name>  <name nymRef="#Ἀπολλωνιανός">Ἀπολλων<lb n="4" break="no"/><supplied reason="lost">ι</supplied>ανοῦ</name>  <w lemma="πριμιπιλάριος">πρειμο<lb n="5" break="no"/>πειλαρίου</w> <w lemma="υἱός"><hi rend="apex">υ</hi><hi rend="apex">ἱ</hi>ὸν</w> <lb n="6" break="no"/><persName type="attested"><name nymRef="#Πόπλιος">Ποπλίου</name> <name nymRef="#Αἴλιος">Αἰλίου</name> <lb n="7"/> <name nymRef="#Ἱλαριανός">Ἱλαριανοῦ</name></persName></persName> <w lemma="ὑπατικός">ὑπα<lb n="8" break="no"/>τικοῦ</w> <w lemma="ἔκγονος">ἔκγονον</w> <lb n="9"/> <w lemma="πολύς">πολλῶν</w> <w lemma="ὑπατικός">ὑπατ<unclear reason="damage">ι</unclear><lb n="10" break="no"/><unclear reason="damage">κ</unclear>ῶν</w> <w lemma="καί">καὶ</w> <w lemma="συνκλητικός">συνκλη<lb n="11" break="no"/>τικῶν</w>  <w lemma="συνγενής">συνγεν<supplied reason="lost">ῆ</supplied></w>  <lb n="11a"/>                <space dim="vertical" extent="1" unit="line"/><lb n="12"/> <persName type="attested"><name nymRef="#Πόπλιος">Πόπλιος</name> <name nymRef="#Αἴλιος">Αἴλιος</name><lb n="13"/> <name nymRef="#Ἀπολλωνιανός">Ἀπολλωνιανὸς</name></persName><lb n="14"/><g ref="#scroll"/> <w lemma="ὁ">ὁ</w> <w lemma="πατήρ">πατήρ</w> <g ref="#leaf"/><lb n="14a"/>                <space dim="vertical" extent="1" unit="line"/></ab> 
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.03</measure>; apices on first two letters of <foreign lang="grc">ΥΙΟΝ</foreign>, l. 6; on <foreign lang="grc">Υ</foreign>, l. 9</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-    <ab><lb n="0"/><persName type="aphrodisian" full="yes"><supplied reason="lost"><name reg="Πόπλιος">Πόπλιον</name>  <name reg="Αἴλιος">Αἴλιον</name></supplied>  <lb n="1"/><name reg="Ἱλαριανός"><supplied reason="lost">Ἱ</supplied>λαριανὸν</name></persName>  <w lemma="ἱππικός">ἱππ<supplied reason="lost">ι</supplied><lb n="2" type="worddiv"/>κὸν</w> <persName type="aphrodisian"><name type="praenomen" reg="Πόπλιος">Ποπλίου</name> <name type="gentilicium" reg="Αἴλιος">Αἰ<lb n="3" type="worddiv"/>λίου</name>  <name reg="Ἀπολλωνιανός">Ἀπολλων<lb n="4" type="worddiv"/><supplied reason="lost">ι</supplied>ανοῦ</name>  <w lemma="πριμιπιλάριος">πρειμο<lb n="5" type="worddiv"/>πειλαρίου</w> <w lemma="υἱός"><hi rend="apex">υ</hi><hi rend="apex">ἱ</hi>ὸν</w> <lb n="6" type="worddiv"/><persName type="aphrodisian"><name type="praenomen" reg="Πόπλιος">Ποπλίου</name> <name type="gentilicium" reg="Αἴλιος">Αἰλίου</name> <lb n="7"/> <name type="cognomen" reg="Ἱλαριανός">Ἱλαριανοῦ</name></persName></persName> <w lemma="ὑπατικός">ὑπα<lb n="8" type="worddiv"/>τικοῦ</w> <w lemma="ἔκγονος">ἔκγονον</w> <lb n="9"/> <w lemma="πολύς">πολλῶν</w> <w lemma="ὑπατικός">ὑπατ<unclear reason="damage">ι</unclear><lb n="10" type="worddiv"/><unclear reason="damage">κ</unclear>ῶν</w> <w lemma="καί">καὶ</w> <w lemma="συνκλητικός">συνκλη<lb n="11" type="worddiv"/>τικῶν</w>  <w lemma="συνγενής">συνγεν<supplied reason="lost">ῆ</supplied></w>  <lb n="11a"/>                <space dim="vertical" extent="1" unit="line"/><lb n="12"/> <persName type="aphrodisian"><name type="praenomen" reg="Πόπλιος">Πόπλιος</name> <name type="gentilicium" reg="Αἴλιος">Αἴλιος</name><lb n="13"/> <name reg="Ἀπολλωνιανός">Ἀπολλωνιανὸς</name></persName><lb n="14"/><g type="scroll"/> <w lemma="ὁ">ὁ</w> <w lemma="πατήρ">πατήρ</w> <g type="leaf"/><lb n="14a"/>                <space dim="vertical" extent="1" unit="line"/></ab> 
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; Gaudin's squeeze; Preliminary transcription (Reynolds)</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>Publius Aelius Hilarianos, <term lang="la">eques romanus</term>, son of Publius Aelius Apollonianos <term lang="la">primipilarius</term>, grandson of Publius Aelius Hilarianos consular, relative of many senatorials and consulars.</p><p>Publius Aelius Apollonianos, his father (set up the statue).</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>This man was honoured, in identical terms, by his mother (<xref type="inscription" n="1791" href="120535">12.535</xref>=LBW 595) and his father (here).  For his career see B. Dobson, <title>Recherches Structures Sociales</title> 110 and n.2, and Eck, loc. cit.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Walls, North</rs>: re-used in the north wall of the Stadium, west of (<xref type="inscription" n="1027" href="120028">12.28</xref>=MAMA 497)</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Sherard in 1716 (10101, 127); by Waddington; by K&amp;R (no notebook reference);  recorded by Gaudin (102); by the MAMA expedition; by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard, CIG <biblScope>2792</biblScope></bibl>; by <bibl n="LBW">Waddington, LBW <biblScope>1617</biblScope></bibl>; mentioned by <bibl n="reinach"><author>Reinach</author>, from Gaudin's squeeze, REG 19, 1906, 129, no. <biblScope>57</biblScope></bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <biblScope>518</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257108">229</biblScope></bibl>; discussed by <bibl>W. Eck, ZPE 42 (1981), 235-6</bibl>, whence <bibl n="seg">SEG <biblScope>1981.902</biblScope></bibl>, <bibl n="be">BE <biblScope>1981.517</biblScope></bibl>.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_P_33A"><figDesc>Face (1973)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="translation">
+            <p>Publius Aelius Hilarianos, <term xml:lang="la">eques romanus</term>, son of Publius Aelius Apollonianos <term xml:lang="la">primipilarius</term>, grandson of Publius Aelius Hilarianos consular, relative of many senatorials and consulars.</p>
+            <p>Publius Aelius Apollonianos, his father (set up the statue).</p>
+         </div>
+         <div type="commentary">
+            <p>This man was honoured, in identical terms, by his mother (<ref type="inscription" n="1791" target="120535.xml"/>=LBW 595) and his father (here).  For his career see B. Dobson, <title>Recherches Structures Sociales</title> 110 and n.2, and Eck, loc. cit.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard, CIG <citedRange>2792</citedRange>
+               </bibl>; by <bibl n="LBW">Waddington, LBW <citedRange>1617</citedRange>
+               </bibl>; mentioned by <bibl n="reinach">
+                  <author>Reinach</author>, from Gaudin's squeeze, REG 19, 1906, 129, no. <citedRange>57</citedRange>
+               </bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <citedRange>518</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257108">229</citedRange>
+               </bibl>; discussed by <bibl>W. Eck, ZPE 42 (1981), 235-6</bibl>, whence <bibl n="seg">SEG <citedRange>1981.902</citedRange>
+               </bibl>, <bibl n="be">BE <citedRange>1981.517</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

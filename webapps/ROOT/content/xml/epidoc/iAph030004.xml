@@ -1,78 +1,161 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph030004" n="iAph0032 ">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="m">i. <rs type="textType">Dedication</rs> to Patris by Zenon son of Euthymos and others; ii. The Phrygian Metropolis <rs type="textType">honours</rs> <rs type="personType" reg="governor">Alexandros</rs>, in <rs type="textType">verse</rs></title>
-            </titleStmt>
-         <publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-         <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
+            <title>i. Dedication to Patris by Zenon son of Euthymos and others; ii. The Phrygian Metropolis honours Alexandros, in verse</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph030004</idno>
+            <idno type="IAph2007">iAph030004</idno>
+            <idno type="JMR2004">iAph0032</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>65.396</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>An octagonal <material key="marmor">white marble</material>
+                              <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> (<height unit="metre">1.05</height>, on a plinth <height unit="metre">0.21</height>; <width unit="metre">0.495</width>) with two inscriptions. The first, probably dating from the <date exact="none" cert="low" notBefore="0001" notAfter="0133">first or early second century A.D.</date>, has been partially erased, and the base placed so that it faces the wall.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i. inscribed on the  reverse face, now against the wall, the letters at the right ends of the lines being partially erased; ii. occupies two faces, diametrically opposite the first text.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. ave. <height unit="metre">0.026</height>, standard forms of the first to second centuries A.D., moderately well designed and cut; diairetic dots on initial Ι, l. 4; ii. ll. 1-3, <height unit="metre">0.04</height>; ll. 4-8. <height unit="metre">0.035</height>; l. 9, <height unit="metre">0.045</height>; clearly cut, irregular; lunate in l. 9, otherwise square.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0368"
+                               notAfter="0500"
+                               precision="medium"
+                               evidence="lettering lettering content">i. probably second century A.D.
+ (<rs type="criteria">lettering</rs>); ii. Late fourth or fifth century (<rs type="criteria">lettering</rs>, <rs type="criteria">content</rs>).</origDate>
+                  </origin>
+                  <provenance type="found"> Standing against the north wall of the north stoa of the <rs type="monuList">North Agora</rs> some way west of <ref type="inscription" n="31" target="030008.xml"/>.</provenance>
+                  <provenance type="observed" when="1994">Findspot (1994).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language id="en">English</language>
-            <language id="fr">French</language>
-            <language id="de">German</language>
-            <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-            <language id="el">Modern Greek</language>
-            <language id="it">Italian</language>
-            <language id="la">Latin</language>
-            <language id="es">Spanish</language>
-            <language id="tr">Turkish</language>
-         </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-   <revisionDesc><change><date>2007-02-14</date><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-22</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-06-22</date><respStmt><name>CMR</name></respStmt><item>tagged, tidied and corrected</item></change><change>
-  <date>2003-07-15</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>name tags reduced</item></change><change><date>2004-01-23</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché, Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-14" who="GB">hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-22" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-23" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">name tags reduced</change>
+         <change when="2003-07-15" who="Juan-Garcés">lemmatised</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_G_20.jpg">
+            <desc>i. Squeeze (1978)</desc>
+         </graphic>
+         <graphic url="78_H_01.jpg">
+            <desc>i. Squeeze (1978)</desc>
+         </graphic>
+         <graphic url="73_Y_28.jpg">
+            <desc>Face ii. (1973)</desc>
+         </graphic>
+         <graphic url="NY_94_54_34.jpg">
+            <desc>Face ii.
+(1994)</desc>
+         </graphic>
+         <graphic url="72_B_17A.jpg">
+            <desc>ii. Left panel (1972)</desc>
+         </graphic>
+         <graphic url="94_D_17.jpg">
+            <desc>ii. Left panel (1994)</desc>
+         </graphic>
+         <graphic url="73_S_32.jpg">
+            <desc>ii. Right panel (1973)</desc>
+         </graphic>
+         <graphic url="94_D_16.jpg">
+            <desc>Monument (1994)</desc>
+         </graphic>
+         <graphic url="94_D_17.jpg">
+            <desc>Monument (1994)</desc>
+         </graphic>
+         <graphic url="NY_94_54_35.jpg">
+            <desc>Top of base
+(1994)</desc>
+         </graphic>
+         <graphic url="smith-ala32.jpg">
+            <desc>ii: Statue and base: Drawing: K. Gorkay, from Smith (1999)
+</desc>
+         </graphic>
+      </surface>
+   </facsimile>
    <text>
       <body>
-         <div type="description" n="monument">
-            <head>Description of Monument</head>
-            <p>An octagonal <rs type="material" key="marmor">white marble</rs> <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs> (<measure type="length" unit="metre" dim="height">1.05</measure>, on a plinth <measure type="length" unit="metre" dim="height">0.21</measure>; <measure type="length" unit="metre" dim="width">0.495</measure>) with two inscriptions. The first, probably dating from the <date exact="none" cert="low" notBefore="0001" notAfter="0133">first or early second century A.D.</date>, has been partially erased, and the base placed so that it faces the wall.</p>
-         </div>
-         <div type="description" n="text">
-            <head>Description of Text</head>
-			<p>i. inscribed on the  reverse face, now against the wall, the letters at the right ends of the lines being partially erased; ii. occupies two faces, diametrically opposite the first text.</p>
-         </div>
-         <div type="description" n="letters">
-            <head>Description of Letters</head>
-			<p>i. ave. <measure dim="height" type="length" unit="metre">0.026</measure>, standard forms of the first to second centuries A.D., moderately well designed and cut; diairetic dots on initial Ι, l. 4; ii. ll. 1-3, <measure type="length" unit="metre" dim="height">0.04</measure>; ll. 4-8. <measure type="length" unit="metre" dim="height">0.035</measure>; l. 9, <measure type="length" unit="metre" dim="height">0.045</measure>; clearly cut, irregular; lunate in l. 9, otherwise square.</p>
-         </div>
-         <div type="description" n="date">
-            <head>Date</head>
-			<p>i. probably <date notBefore="0101" notAfter="0200" exact="none">second century A.D.</date>
- (<rs type="criteria">lettering</rs>); ii. <date exact="none" cert="low" notBefore="0368" notAfter="0500">Late fourth or fifth century</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">content</rs>).</p>
-         </div>
-         <div lang="grc" n="text" type="edition">
-            <head lang="en">Edition</head>
-            <div type="textpart_section" n="i"><ab><lb n="1"/> <persName type="aphrodisian"><name reg="Ζήνων"><unclear reason="damage">Ζ</unclear>ήνων</name> <persName><name reg="Εὔθυμος">Εὐ<unclear reason="damage">θύ</unclear>μου</name></persName><lb n="2"/> <w lemma="φύσις">φύσει</w> <w lemma="δέ">δὲ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνο<supplied reason="lost">ς</supplied></name> <lb n="3"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀγαθᾶς">Ἀγαθᾶ</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Εὔθυμος">Εὐ<supplied reason="lost">θύ</supplied><lb n="4" type="worddiv"/>μου</name></persName></persName></persName></persName>    <w lemma="σύν">σὺν</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἰούλιος"><unclear reason="damage">Ἰ</unclear>ου<unclear reason="damage">λ</unclear><supplied reason="lost">ί</supplied>ῳ</name> </persName><lb n="5"/> <w lemma="ὁ">τῷ</w> <w lemma="ἀδελφός">ἀδελφῷ</w> <w lemma="ποιέω"><unclear cert="low" reason="damage">πο</unclear><supplied cert="low" reason="lost">ί</supplied><lb n="6"/>ήσας</w>  <w lemma="μετά">μετὰ</w> <persName type="aphrodisian"><name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name> <name reg="Ἱέραξ">Ἱε<unclear reason="damage">ρ</unclear><supplied reason="lost">α</supplied><lb n="7" type="worddiv"/>κος</name> <w lemma="υἱός">υἱοῦ</w> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστ<unclear reason="damage">ο</unclear>υ</name></persName></persName> <lb n="8"/> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <w lemma="ὁ">τῇ</w> πα<supplied reason="lost">τρί</supplied><lb n="9" type="worddiv"/>δι <w lemma="σύν">σὺν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="περί"><unclear reason="damage">περ</unclear><supplied reason="lost">ὶ</supplied></w> <w lemma="αὐτός"><supplied reason="lost">αὐ</supplied><lb n="10" type="worddiv"/>τὴν</w> <w lemma="κόσμος">κόσμῳ</w> <w lemma="πᾶς">πά<unclear reason="damage">ντι</unclear></w></ab></div><div type="textpart_section" n="ii"><lg met="elegaic">
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            
+            <div n="i" type="textpart" subtype="section"><ab><lb n="1"/> <persName type="attested"><name nymRef="#Ζήνων"><unclear reason="damage">Ζ</unclear>ήνων</name> <persName><name nymRef="#Εὔθυμος">Εὐ<unclear reason="damage">θύ</unclear>μου</name></persName><lb n="2"/> <w lemma="φύσις">φύσει</w> <w lemma="δέ">δὲ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνο<supplied reason="lost">ς</supplied></name> <lb n="3"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀγαθᾶς">Ἀγαθᾶ</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔθυμος">Εὐ<supplied reason="lost">θύ</supplied><lb n="4" break="no"/>μου</name></persName></persName></persName></persName>    <w lemma="σύν">σὺν</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἰούλιος"><unclear reason="damage">Ἰ</unclear>ου<unclear reason="damage">λ</unclear><supplied reason="lost">ί</supplied>ῳ</name> </persName><lb n="5"/> <w lemma="ὁ">τῷ</w> <w lemma="ἀδελφός">ἀδελφῷ</w> <w lemma="ποιέω"><unclear cert="low" reason="damage">πο</unclear><supplied cert="low" reason="lost">ί</supplied><lb n="6"/>ήσας</w>  <w lemma="μετά">μετὰ</w> <persName type="attested"><name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name> <name nymRef="#Ἱέραξ">Ἱε<unclear reason="damage">ρ</unclear><supplied reason="lost">α</supplied><lb n="7" break="no"/>κος</name> <w lemma="υἱός">υἱοῦ</w> <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστ<unclear reason="damage">ο</unclear>υ</name></persName></persName> <lb n="8"/> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <w lemma="ὁ">τῇ</w> πα<supplied reason="lost">τρί</supplied><lb n="9" break="no"/>δι <w lemma="σύν">σὺν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="περί"><unclear reason="damage">περ</unclear><supplied reason="lost">ὶ</supplied></w> <w lemma="αὐτός"><supplied reason="lost">αὐ</supplied><lb n="10" break="no"/>τὴν</w> <w lemma="κόσμος">κόσμῳ</w> <w lemma="πᾶς">πά<unclear reason="damage">ντι</unclear></w></ab></div><div n="ii" type="textpart" subtype="section"><lg met="elegaic">
               <lb n="1"/>
-               <l><w lemma="εἰκών">εἰκόνα</w> <w lemma="λαίνεος">λαϊνέην</w> <w lemma="μέν">μὲν</w><lb n="2"/><persName key="alexander1" type="aphrodisian" full="yes"><name reg="Ἀλέξανδρος">Ἀλεξάνδροιο</name></persName> <w lemma="δίκαιος">δικαίου</w></l>
+               <l><w lemma="εἰκών">εἰκόνα</w> <w lemma="λαίνεος">λαϊνέην</w> <w lemma="μέν">μὲν</w><lb n="2"/><persName key="alexander1" type="attested"><name nymRef="#Ἀλέξανδρος">Ἀλεξάνδροιο</name></persName> <w lemma="δίκαιος">δικαίου</w></l>
               <lb n="3"/>
-               <l><w lemma="ὁ">ἡ</w> <placeName key="Phrygia" type="admin" full="yes" reg="Φρυγία">Φρυγίης</placeName> <w lemma="μήτηρ">μήτηρ</w><lb n="4"/><w lemma="μήτηρ">μητέρι</w> <w lemma="ὁ">τῆι</w> <placeName key="Caria" type="admin" full="yes" reg="Καρία">Καρίης</placeName></l>
+               <l><w lemma="ὁ">ἡ</w> <placeName key="Phrygia" nymRef="#Φρυγία">Φρυγίης</placeName> <w lemma="μήτηρ">μήτηρ</w><lb n="4"/><w lemma="μήτηρ">μητέρι</w> <w lemma="ὁ">τῆι</w> <placeName key="Caria" nymRef="#Καρία">Καρίης</placeName></l>
               <lb n="5"/>
-               <l><w lemma="ὁ">τῆς</w> <w lemma="ζάθεος">ζαθέης</w> <w lemma="ἀρχή">ἀρχής</w> <w lemma="τέκμαρ">τέκμαρ</w><lb n="6"/><w lemma="ἄμβροτος">ἄμβρ<choice type="correction"><sic>θ</sic><corr>ο</corr></choice>τον</w> <w lemma="ἐνθάδε">ἐνθάδ'</w> <w lemma="πέμπω">ἔπεμψεν</w></l>
+               <l><w lemma="ὁ">τῆς</w> <w lemma="ζάθεος">ζαθέης</w> <w lemma="ἀρχή">ἀρχής</w> <w lemma="τέκμαρ">τέκμαρ</w><lb n="6"/><w lemma="ἄμβροτος">ἄμβρ<choice><sic>θ</sic><corr>ο</corr></choice>τον</w> <w lemma="ἐνθάδε">ἐνθάδ'</w> <w lemma="πέμπω">ἔπεμψεν</w></l>
               <lb n="7"/>
                <l><w lemma="πᾶς">πᾶς</w> <w lemma="δέ">δὲ</w> <w lemma="λόγος">λόγος</w> <w lemma="μείω">μείων</w><lb n="8"/><w lemma="τε">τ'</w> <w lemma="ἀνήρ">ἀνδρὸς</w> <w lemma="εὐφροσύνη">εὐφροσύνης</w>.</l>
             </lg>
@@ -82,49 +165,40 @@
               <lb n="9"/><w lemma="εὐτυχής">εὐτυχῶς</w></ab>
          </div></div>
          <div type="apparatus">
-            <head>Apparatus</head>
-            <p>i.  ll. 1, 3, possibly <foreign lang="grc">Εὐδάμου</foreign> in both cases, but the stone is in an extremely awkward position for a reader.</p><p>ii. l. 5, there is a line cut over the first <foreign lang="grc">Α</foreign>.</p>
-            <p>ii. l. 6, There is a cross-bar in the first <foreign lang="grc">Ο</foreign>, making a <foreign lang="grc">Θ</foreign>; <foreign lang="grc">Π</foreign> has been corrected from <foreign lang="grc">Η</foreign>.</p>
-            <p>ii. l. 7, <foreign lang="grc">Π</foreign> has apparently been corrected from <foreign lang="grc">Τ</foreign>.</p>
+            <p>i.  ll. 1, 3, possibly <foreign xml:lang="grc">Εὐδάμου</foreign> in both cases, but the stone is in an extremely awkward position for a reader.</p>
+            <p>ii. l. 5, there is a line cut over the first <foreign xml:lang="grc">Α</foreign>.</p>
+            <p>ii. l. 6, There is a cross-bar in the first <foreign xml:lang="grc">Ο</foreign>, making a <foreign xml:lang="grc">Θ</foreign>; <foreign xml:lang="grc">Π</foreign> has been corrected from <foreign xml:lang="grc">Η</foreign>.</p>
+            <p>ii. l. 7, <foreign xml:lang="grc">Π</foreign> has apparently been corrected from <foreign xml:lang="grc">Τ</foreign>.</p>
          </div>
          <div type="translation">
-            <head>Translation</head>
-            <p>i. Zenon son of Euthymos (<seg cert="low">Eudamos</seg>), natural son of Zenon son of Agathas the son of Euthymos (<seg cert="low">Eudamos</seg>) with his brother Iulius (?) having had this made (?) in company with Claudius Adrastos son of Hierax, dedicated it, together with all the decorative features round it, to the fatherland.</p><p>ii. A stone image of the just Alexander the mother of Phrygia sent here to the mother of Caria, (as) an undying mark of his god-like rule; but all words fall short of the man's good cheer. With good fortune!</p>
+            <p>i. Zenon son of Euthymos (<seg cert="low">Eudamos</seg>), natural son of Zenon son of Agathas the son of Euthymos (<seg cert="low">Eudamos</seg>) with his brother Iulius (?) having had this made (?) in company with Claudius Adrastos son of Hierax, dedicated it, together with all the decorative features round it, to the fatherland.</p>
+            <p>ii. A stone image of the just Alexander the mother of Phrygia sent here to the mother of Caria, (as) an undying mark of his god-like rule; but all words fall short of the man's good cheer. With good fortune!</p>
          </div>
          <div type="commentary">
-            <head>Commentary</head>
-            <p>i.The second name in line 1 (cf also lines 3/4) is uncertainly read - perhaps Eudamos.. The adte is probably in the first half of the second century, judging by the letter forms. The purpose is to record a gift to the city of an undefined but clearly visible object which was feminine in gender, and apparently surrounded, in some sense, with decorative features; possibly an ornament of the Bouleuterion/Odeon, but not necessarily so.</p><p>The persons involved are not at present identified although most of their names are well-attested at Aphrodisias; for an Adrastos whose geneaology include also a Hierax see name index. They were clearly men of wealth and status and of families interested in the Roman connection, since Adrastos was of one which receive citizenship in the reign of Claudius, when it was rare in the city, and Zenon's brother had a Roman name (if Iulius is rightly read). It is possible that Adrastos was himself the first recipient of Roman citizenship in his family, since his patronymic is not cited in the Roman manner by reference to a <term lang="la">praenomen</term>;  but some Aphrodisians were inclined to retain the local custom of citing a father's full name even when he had Roman citizenship, so that this is uncertain. It is of interest that at least one of the two brothers named had been adopted, and that , since the adoptive father apparently had the same name as the natural father's grandfather, the adoption was quite probably within two branches of the same family - an example of the kind of family strategies in use at Aphrodisias.</p><p>ii. For the text, see discussion at <xref type="eAla-text" n="III.35">III.35</xref>. For the statue and the monument as whole, see <bibl type="hbi" n="rrrs1999"><author>Smith</author> (<date value="1999" notBefore="1999" notAfter="1999" exact="both">1999</date>) 165-7</bibl>.</p>
-         </div>
-         <div type="history" n="locations"><head>Locations</head><p> <rs type="found"> Standing against the north wall of the north stoa of the <rs type="monuList">North Agora</rs> some way west of <xref type="inscription" n="31" href="030008">3.8</xref>.</rs>  <rs type="origLocation">Findspot.</rs> <rs type="lastLocation">Findspot (1994).</rs>. </p></div>
-         
-         
-         <div type="history" n="record">
-            <head>History of Recording</head>
-            <p>Excavated by the NYU expedition in <date value="1965" notBefore="1965" notAfter="1965" exact="both">1965</date> (<rs type="invNo">65.396</rs>; SBI <rs type="sbi">108</rs>). The  statue accompanying ii, whose head is lost, was found lying beside the base, and is now in the Museum.</p>
+            <p>i.The second name in line 1 (cf also lines 3/4) is uncertainly read - perhaps Eudamos.. The adte is probably in the first half of the second century, judging by the letter forms. The purpose is to record a gift to the city of an undefined but clearly visible object which was feminine in gender, and apparently surrounded, in some sense, with decorative features; possibly an ornament of the Bouleuterion/Odeon, but not necessarily so.</p>
+            <p>The persons involved are not at present identified although most of their names are well-attested at Aphrodisias; for an Adrastos whose geneaology include also a Hierax see name index. They were clearly men of wealth and status and of families interested in the Roman connection, since Adrastos was of one which receive citizenship in the reign of Claudius, when it was rare in the city, and Zenon's brother had a Roman name (if Iulius is rightly read). It is possible that Adrastos was himself the first recipient of Roman citizenship in his family, since his patronymic is not cited in the Roman manner by reference to a <term xml:lang="la">praenomen</term>;  but some Aphrodisians were inclined to retain the local custom of citing a father's full name even when he had Roman citizenship, so that this is uncertain. It is of interest that at least one of the two brothers named had been adopted, and that , since the adoptive father apparently had the same name as the natural father's grandfather, the adoption was quite probably within two branches of the same family - an example of the kind of family strategies in use at Aphrodisias.</p>
+            <p>ii. For the text, see discussion at <ref type="eAla-text" n="III.35" target=".xml"/>. For the statue and the monument as whole, see <bibl type="hbi" n="rrrs1999">
+                  <author>Smith</author> (<date value="1999" notBefore="1999" notAfter="1999" exact="both">1999</date>) 165-7</bibl>.</p>
          </div>
          <div type="bibliography">
-            <head>Bibliography</head>
-            <p>i. forthcoming by Reynolds in publication of Bouleuterion Odeon. ii. Published by <bibl type="hbi" rend="primary" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>32</biblScope></bibl> whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257600">713</biblScope></bibl>, <bibl type="hbi" n="cpj1997"><author>C. P. Jones</author>, <title level="j">Hermes</title> 125 (<date value="1997" notBefore="1997" notAfter="1997" exact="both">1997</date>), <biblScope>212-14</biblScope></bibl>, <bibl type="hbi" n="steinepig"><title level="j">Steinepigramme</title> <biblScope>02/09/02</biblScope>.</bibl></p>
-            <p>Statue: <bibl><author>K. T. Erim</author> in <title level="j">Turk Ark. Derg.</title> 15.1 (<date value="1966" notBefore="1966" notAfter="1966" exact="both">1966</date>), <biblScope>61</biblScope>, <biblScope>66</biblScope></bibl>; <bibl type="hbi" n="rrrs1999"><author>Smith</author> (<date value="1999" notBefore="1999" notAfter="1999" exact="both">1999</date>), <biblScope>165-7</biblScope></bibl>.</p>
+            <p>i. forthcoming by Reynolds in publication of Bouleuterion Odeon. ii. Published by <bibl type="hbi" rend="primary" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>32</citedRange>
+               </bibl> whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257600">713</citedRange>
+               </bibl>, <bibl type="hbi" n="cpj1997">
+                  <author>C. P. Jones</author>, <title level="j">Hermes</title> 125 (<date value="1997" notBefore="1997" notAfter="1997" exact="both">1997</date>), <citedRange>212-14</citedRange>
+               </bibl>, <bibl type="hbi" n="steinepig">
+                  <title level="j">Steinepigramme</title>
+                  <citedRange>02/09/02</citedRange>.</bibl>
+            </p>
+            <p>Statue: <bibl>
+                  <author>K. T. Erim</author> in <title level="j">Turk Ark. Derg.</title> 15.1 (<date value="1966" notBefore="1966" notAfter="1966" exact="both">1966</date>), <citedRange>61</citedRange>, <citedRange>66</citedRange>
+               </bibl>; <bibl type="hbi" n="rrrs1999">
+                  <author>Smith</author> (<date value="1999" notBefore="1999" notAfter="1999" exact="both">1999</date>), <citedRange>165-7</citedRange>
+               </bibl>.</p>
          </div>
-         <div type="history" n="text-constituted-from">
-            <head>Text Constituted From</head>
-            <p>Transcription (Roueché, Reynolds).</p>
-         </div>
-         <div type="figure" n="photographs">
-            <head>Photographs</head>
-            <p><figure href="78_G_20"><figDesc>i. Squeeze (1978)</figDesc></figure><figure href="78_H_01"><figDesc>i. Squeeze (1978)</figDesc></figure> <figure href="73_Y_28"><figDesc>Face ii. (1973)</figDesc></figure><figure href="NY_94_54_34"><figDesc>Face ii.
-(1994)</figDesc></figure><figure href="72_B_17A"><figDesc>ii. Left panel (1972)</figDesc></figure><figure href="94_D_17"><figDesc>ii. Left panel (1994)</figDesc></figure><figure href="73_S_32"><figDesc>ii. Right panel (1973)</figDesc></figure> <figure href="94_D_16"><figDesc>Monument (1994)</figDesc></figure><figure href="94_D_17"><figDesc>Monument (1994)</figDesc></figure><figure href="NY_94_54_35"><figDesc>Top of base
-(1994)</figDesc></figure></p></div>
-         <div type="figure" n="transcriptions">
-            <head>Representations</head>
-            <p><figure href="smith-ala32"><figDesc>ii: Statue and base: Drawing: K. Gorkay, from Smith (1999)
-</figDesc></figure></p>
-         
-         </div>
-      
-
-
-         </body>
+      </body>
    </text>
 </TEI>

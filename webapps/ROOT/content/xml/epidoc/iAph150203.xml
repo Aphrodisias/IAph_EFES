@@ -1,87 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150203" n="iAph1483 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType" cert="low">Dedication</rs> or <rs type="textType" cert="low">funerary</rs> inscription for Zenonis</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-06</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>No description</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No description</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedication or funerary inscription for Zenonis</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150203</idno>
+            <idno type="IAph2007">iAph150203</idno>
+            <idno type="JMR2004">iAph1483</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate>
 No indication
-</p>
+</origDate>
+                  </origin>
+                  <provenance type="found">Unknown.</provenance>
+                  <provenance type="observed" when="1850">Findspot (1850)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-06" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <persName type="attested"><name nymRef="#Ζηνωνίς">Ζηνωνίδι</name> <w lemma="ὁ">τῇ</w> <persName type="attested"><name nymRef="#Παυσανίας">Παυσανίου</name> <w lemma="ὁ">τοῦ</w> <gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/> <persName type="attested"><name nymRef="#Ἀπελλᾶς">Ἀπέλλα</name></persName></persName> θυγατρ<unclear reason="damage">ὶ</unclear> <w lemma="ἔκγονος">ἐκγόνῃ</w> <persName type="attested"><name>Δ<gap reason="lost" unit="character" extent="unknown"/></name>  <lb n="3"/> <name nymRef="#Ζηνωνίς">Ζηνωνίδος</name></persName></persName> <w lemma="καί">καὶ</w> <w lemma="τέκνον">τέκνοις</w> αὐ<supplied reason="lost">τῆς</supplied>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/> <w lemma="τέκνον">τέκνοις</w> <w lemma="εἰς">εἰς</w> <w lemma="διαδόχη">διαδόχην</w> <supplied reason="lost" cert="low">vac.</supplied>  </ab>
 </div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <persName type="aphrodisian"><name reg="Ζηνωνίς">Ζηνωνίδι</name> <w lemma="ὁ">τῇ</w> <persName type="aphrodisian"><name reg="Παυσανίας">Παυσανίου</name> <w lemma="ὁ">τοῦ</w> <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/> <persName type="aphrodisian"><name reg="Ἀπελλᾶς">Ἀπέλλα</name></persName></persName> θυγατρ<unclear reason="damage">ὶ</unclear> <w lemma="ἔκγονος">ἐκγόνῃ</w> <persName type="aphrodisian"><name>Δ<gap reason="lost" extent="unknown" unit="character" dim="right"/></name>  <lb n="3"/> <name reg="Ζηνωνίς">Ζηνωνίδος</name></persName></persName> <w lemma="καί">καὶ</w> <w lemma="τέκνον">τέκνοις</w> αὐ<supplied reason="lost">τῆς</supplied>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4"/> <w lemma="τέκνον">τέκνοις</w> <w lemma="εἰς">εἰς</w> <w lemma="διαδόχη">διαδόχην</w> <supplied reason="lost" cert="low">vac.</supplied>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 2, ΘΥΓΑΤΡΗ</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>For Zenonis the daughter of Pausanias son of [...] of Apellas, granddaughter of D[...] of Zenonis and for her children [...] children by succession (?) [...]</p>
-</div>
-<div type="commentary" n="none">
-<head>Commentary</head>
-<p> No comment</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found">Unknown.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot (1850)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Waddington in 1850; not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="LBW">Waddington LBW <biblScope>1629</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257419">539</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="none">
-<head>Photographs</head>
-<p>No photographs</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 2, ΘΥΓΑΤΡΗ</p>
+         </div>
+         <div type="translation">
+            <p>For Zenonis the daughter of Pausanias son of [...] of Apellas, granddaughter of D[...] of Zenonis and for her children [...] children by succession (?) [...]</p>
+         </div>
+         <div type="commentary" n="none">
+            <p> No comment</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="LBW">Waddington LBW <citedRange>1629</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257419">539</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

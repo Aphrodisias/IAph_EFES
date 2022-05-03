@@ -1,96 +1,129 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020508" n="iAph0347 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> <rs type="textType">honours</rs> for Kastor son of Menekrates</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary honours for Kastor son of Menekrates</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020508</idno>
+            <idno type="IAph2007">iAph020508</idno>
+            <idno type="JMR2004">iAph0347</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>67.474</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Part of a plain <material key="marmor">white marble</material>
+                              <objectType>base</objectType> chipped on all edges, with upper and lower left corners broken and the front face water-worn (<width unit="metre">0.46</width> × <height unit="metre">0.77</height> × <depth unit="metre">0.39</depth>). There are holes in the top for an attachment.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs>  on the face. The text must have begun on a lost upper feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025</height>; ligatured <foreign xml:lang="grc">ΝΤ</foreign> in  l. 8.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering">Probably   first century A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon, West area</rs>
+                  </provenance>
+                  <provenance type="observed" when="1978">Museum (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-01" who="#GB">DONE</change>
+         <change when="2007-01-11" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-05-25" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_B_27.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-03-01</date><respStmt><name>Gabriel Bodard</name></respStmt><item>DONE</item></change><change><date>2007-01-11</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date>2005-05-25</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Part of a plain <rs type="material" key="marmor">white marble</rs> <rs type="objectType">base</rs> chipped on all edges, with upper and lower left corners broken and the front face water-worn (<measure type="length" unit="metre" dim="width">0.46</measure> × <measure type="length" unit="metre" dim="height">0.77</measure> × <measure type="length" unit="metre" dim="depth">0.39</measure>). There are holes in the top for an attachment.</p>
+<ab><lb n="1"/><supplied reason="lost"><w lemma="ὁ">Ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></supplied>  <w lemma="τιμάω">ἐτεί<lb n="2" break="no"/><supplied reason="lost">μησεν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ταῖ</supplied>ς</w>  <w lemma="καλός">καλλίσ<unclear reason="damage">τα</unclear><supplied reason="lost">ις</supplied>  </w><lb n="3"/><w lemma="τιμή"><supplied reason="lost">τειμαῖ</supplied><unclear reason="damage">ς</unclear></w>  <persName type="attested"><name nymRef="#Κάστωρ">Κάστορα</name>  <w lemma="υἱός">ὑὸν</w>  <persName type="attested"><name nymRef="#Μενεκράτης">Μ<unclear reason="damage">ε</unclear><lb n="4" break="no"/><supplied reason="lost">νεκ</supplied>ράτους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Κάστωρ">Κάστο<lb n="5" break="no"/><supplied reason="lost">ρ</supplied>ος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μενεκράτης">Μενεκράτους</name></persName></persName><lb n="6"/><name nymRef="#Ἰάσων"><unclear reason="damage">Ἰ</unclear>άσονος</name></persName></persName>  <w lemma="ἥρως">ἥρωα</w>  <w lemma="νεανίας">νεανε<lb n="7"/>αν</w>  <w lemma="καλός">καλὸν</w>  <w lemma="καί">καὶ</w>  <w lemma="ἀγαθός">ἀγαθὸν</w>  <space extent="1" unit="character" dim="horizontal"/><lb n="8"/><w lemma="ζάω"><supplied reason="lost">ζ</supplied><unclear reason="damage">ή</unclear>σαντα</w>    <w lemma="πρός"><unclear reason="damage">π</unclear>ρὸ<unclear reason="damage">ς</unclear></w>  <w lemma="πᾶς">πᾶσαν</w><lb n="9"/><w lemma="τέλειος"><supplied reason="lost">τέ</supplied>λειαν</w>  <w lemma="ἀρετή">ἀρ<unclear reason="damage">ετὴν</unclear></w>  <w lemma="ὁ"><unclear reason="damage">τ</unclear>ὴν</w>  <w lemma="τιμή">τει<lb n="10" break="no"/><supplied reason="lost">μὴ</supplied>ν</w>  <w lemma="ἀνατίθημι">ἀναθέν<unclear reason="damage">τος</unclear></w>    <persName type="attested"><name nymRef="#Ἰούλιος">Ἰουλίου</name></persName><lb n="11"/><w><gap reason="lost" unit="character" quantity="3"/>ου</w> <persName type="attested"><name nymRef="#Κάστωρ">Κάστορι</name></persName> <w lemma="ὁ">τῷ</w> <w lemma="ἑαυτός">ἑαυ<lb n="12" break="no"/><space unit="character" extent="3" dim="horizontal"/><supplied reason="lost">το</supplied>ῦ</w><w lemma="γνώριμος">γνωρίμῳ</w>  <space unit="character" extent="3" dim="horizontal"/>  <g ref="#scroll"/><lb n="12a"/><space unit="line" extent="1" dim="vertical"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs>  on the face. The text must have begun on a lost upper feature.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.025</measure>; ligatured <foreign lang="grc">ΝΤ</foreign> in  l. 8.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>Probably   <date exact="none" notAfter="0100" notBefore="0001" cert="low">first century A.D.</date> (<rs type="criteria">lettering</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><supplied reason="lost"><w lemma="ὁ">Ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></supplied>  <w lemma="τιμάω">ἐτεί<lb n="2" type="worddiv"/><supplied reason="lost">μησεν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ταῖ</supplied>ς</w>  <w lemma="καλός">καλλίσ<unclear reason="damage">τα</unclear><supplied reason="lost">ις</supplied>  </w><lb n="3"/><w lemma="τιμή"><supplied reason="lost">τειμαῖ</supplied><unclear reason="damage">ς</unclear></w>  <persName type="aphrodisian"><name reg="Κάστωρ">Κάστορα</name>  <w lemma="υἱός">ὑὸν</w>  <persName type="aphrodisian"><name reg="Μενεκράτης">Μ<unclear reason="damage">ε</unclear><lb n="4" type="worddiv"/><supplied reason="lost">νεκ</supplied>ράτους</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Κάστωρ">Κάστο<lb n="5" type="worddiv"/><supplied reason="lost">ρ</supplied>ος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Μενεκράτης">Μενεκράτους</name></persName></persName><lb n="6"/><name reg="Ἰάσων"><unclear reason="damage">Ἰ</unclear>άσονος</name></persName></persName>  <w lemma="ἥρως">ἥρωα</w>  <w lemma="νεανίας">νεανε<lb n="7"/>αν</w>  <w lemma="καλός">καλὸν</w>  <w lemma="καί">καὶ</w>  <w lemma="ἀγαθός">ἀγαθὸν</w>  <space extent="1" unit="character" dim="horizontal"/><lb n="8"/><w lemma="ζάω"><supplied reason="lost">ζ</supplied><unclear reason="damage">ή</unclear>σαντα</w>    <w lemma="πρός"><unclear reason="damage">π</unclear>ρὸ<unclear reason="damage">ς</unclear></w>  <w lemma="πᾶς">πᾶσαν</w><lb n="9"/><w lemma="τέλειος"><supplied reason="lost">τέ</supplied>λειαν</w>  <w lemma="ἀρετή">ἀρ<unclear reason="damage">ετὴν</unclear></w>  <w lemma="ὁ"><unclear reason="damage">τ</unclear>ὴν</w>  <w lemma="τιμή">τει<lb n="10" type="worddiv"/><supplied reason="lost">μὴ</supplied>ν</w>  <w lemma="ἀνατίθημι">ἀναθέν<unclear reason="damage">τος</unclear></w>    <persName type="aphrodisian"><name reg="Ἰούλιος">Ἰουλίου</name></persName><lb n="11"/><w><gap reason="lost" dim="left" extent="3" unit="character"/>ου</w> <persName type="aphrodisian"><name reg="Κάστωρ">Κάστορι</name></persName> <w lemma="ὁ">τῷ</w> <w lemma="ἑαυτός">ἑαυ<lb n="12" type="worddiv"/><space unit="character" extent="3" dim="horizontal"/><supplied reason="lost">το</supplied>ῦ</w><w lemma="γνώριμος">γνωρίμῳ</w>  <space unit="character" extent="3" dim="horizontal"/>  <g type="scroll"/><lb n="12a"/><space unit="line" extent="1" dim="vertical"/></ab>
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>[?The Council and the People honoured] with the finest [honours] Kastor son of Menekrates Iason, son of Kastor son of Menekrates, hero, a young man, fine and good, who lived in accordance with every perfect virtue. Julius [..?..] erected the honour to Kastor his friend.</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>L. 2 indicates that the honours paid were public and therefore decreed by public bodies—probably, therefore, the city council, people, and/or perhaps gerousia, possibly the youth as well (<foreign lang="grc">οἱ νεοί</foreign>) since the honorand is a youth.</p><p>The honorand is named with his father, grandfather, and great-grandfather, one of whom had the second name Iason—probably his father Menekrates who had the same name as <emph>his</emph> grandfather and will have needed a second name to distinguish him. The honour was in fact set up by a friend whose name sugests that he had Roman citizenship, probably given to him or to his family by Augustus or a Julio-Claudian emperor—not quite impossibly C. Julius Zoilos or a descendant of his.</p><p>The family also probably figures in <xref type="inscription" n="1020" href="110006">11.6</xref> (=MAMA 488).</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p>Found: <rs type="found"><rs type="monuList">Bouleuterion/Odeon, West area</rs></rs>. Original location: <rs type="origLocation">Unknown</rs>. Last recorded: <rs type="lastLocation">Museum (1978)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1967 (<rs type="invNo">67.474</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs"><head>Photographs</head><p><figure href="78_B_27"><figDesc>Face (1978)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="translation">
+            <p>[?The Council and the People honoured] with the finest [honours] Kastor son of Menekrates Iason, son of Kastor son of Menekrates, hero, a young man, fine and good, who lived in accordance with every perfect virtue. Julius [..?..] erected the honour to Kastor his friend.</p>
+         </div>
+         <div type="commentary">
+            <p>L. 2 indicates that the honours paid were public and therefore decreed by public bodies—probably, therefore, the city council, people, and/or perhaps gerousia, possibly the youth as well (<foreign xml:lang="grc">οἱ νεοί</foreign>) since the honorand is a youth.</p>
+            <p>The honorand is named with his father, grandfather, and great-grandfather, one of whom had the second name Iason—probably his father Menekrates who had the same name as <emph>his</emph> grandfather and will have needed a second name to distinguish him. The honour was in fact set up by a friend whose name sugests that he had Roman citizenship, probably given to him or to his family by Augustus or a Julio-Claudian emperor—not quite impossibly C. Julius Zoilos or a descendant of his.</p>
+            <p>The family also probably figures in <ref type="inscription" n="1020" target="110006.xml"/> (=MAMA 488).</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

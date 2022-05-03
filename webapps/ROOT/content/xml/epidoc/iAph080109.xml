@@ -1,146 +1,208 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080109" n="iAph0076 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">Fragmentary <rs type="textType" cert="low">acclamation</rs>s</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary acclamations</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080109</idno>
+            <idno type="IAph2007">iAph080109</idno>
+            <idno type="JMR2004">iAph0076</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A series of frsco fragments on <objectType>wall plaster</objectType>, some joining to make up ten fragments.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Letters painted in green on a white background; there are slight traces of a border at the lower edge of a.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Varying in size, where this can be determined: <height unit="metre">0.05-0.07</height> in a and b, <height unit="metre">0.04</height>-<height unit="metre">0.045</height> in c, d and e. The lettering itself is very similar to that of <ref type="inscription" n="61" target="050024.xml"/>, <ref type="inscription" n="75" target="080408.xml"/>, <ref type="inscription" n="78" target="080268.xml"/>, <ref type="inscription" n="79" target="110063.xml"/>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="terminology">Fifth to sixth centuries (<rs type="criteria">terminology</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Theatre">Theatre</rs>: Stage front: small 'chamber' at the north end, painted on the eastern, inner face of the west wall. </provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-28" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-24" who="#CMR">tagged and corrected</change>
+         <change when="2003-07-17" who="Juan-Garcés">lemmatised</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_AA_23.jpg">
+            <desc>a: (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_20.jpg">
+            <desc>b: (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_19.jpg">
+            <desc>c: (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_18.jpg">
+            <desc>d: (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_21.jpg">
+            <desc>e: (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_15.jpg">
+            <desc>f: (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_16.jpg">
+            <desc>g: (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_17.jpg">
+            <desc>h: (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_22.jpg">
+            <desc>j: (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change>
-  <date>2003-07-17</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-24</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-01-28</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A series of frsco fragments on <rs type="objectType">wall plaster</rs>, some joining to make up ten fragments.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>Letters painted in green on a white background; there are slight traces of a border at the lower edge of a.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Varying in size, where this can be determined: <measure type="length" unit="metre" dim="height">0.05-0.07</measure> in a and b, <measure type="length" unit="metre" dim="height">0.04</measure>-<measure type="length" unit="metre" dim="height">0.045</measure> in c, d and e. The lettering itself is very similar to that of <xref type="inscription" n="61" href="050024">5.24</xref>, <xref type="inscription" n="75" href="080408">8.408</xref>, <xref type="inscription" n="78" href="080268">8.268</xref>, <xref type="inscription" n="79" href="110063">11.63</xref>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0401" notAfter="0600">Fifth to sixth centuries</date> (<rs type="criteria">terminology</rs>).</p>
-      </div>
-
-      <div type="edition" lang="grc">
-        <head lang="en">Edition</head>
-		
-		  <div type="textpart_section" n="i"><ab>
-		 <lb n="0"/><gap dim="top" reason="lost" extent="unknown" unit="line"/>
-		 <lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">νιυ</unclear><gap dim="internal" extent="1" reason="lost" unit="character"/><unclear reason="damage">λσι</unclear></orig>
-		 <lb n="2"/><rs key="acclamations" type="subject"><supplied cert="low" reason="lost"><w lemma="νικάω">νικᾷ</w> <w lemma="ὁ">ἡ</w></supplied> <w lemma="τύχη"><unclear reason="damage">τ</unclear>ύχη</w></rs> <w lemma="ὁ">τῆς</w> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		 <lb n="3"/><g type="border"/>
+		  <div n="i" type="textpart" subtype="section"><ab>
+		 <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+		 <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">νιυ</unclear><gap reason="lost" unit="character" quantity="1"/><unclear reason="damage">λσι</unclear></orig>
+		 <lb n="2"/><rs key="acclamations" type="subject"><supplied cert="low" reason="lost"><w lemma="νικάω">νικᾷ</w> <w lemma="ὁ">ἡ</w></supplied> <w lemma="τύχη"><unclear reason="damage">τ</unclear>ύχη</w></rs> <w lemma="ὁ">τῆς</w> <gap reason="lost" unit="character" extent="unknown"/>
+		 <lb n="3"/><g ref="#border"/>
 		  </ab></div>
 		
-		  <div type="textpart_section" n="ii"><ab>
-		 <lb n="0"/><gap dim="top" reason="lost" extent="unknown" unit="line"/>
-		 <lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>η<unclear reason="damage">ι</unclear></orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		 <lb n="2"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <rs type="subject" key="acclamations"><w lemma="νικάω">νικᾷ</w></rs> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		 <lb n="3"/><gap dim="bottom" reason="lost" extent="unknown" unit="line"/>
+		  <div n="ii" type="textpart" subtype="section"><ab>
+		 <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+		 <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>η<unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		 <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> <rs type="subject" key="acclamations"><w lemma="νικάω">νικᾷ</w></rs> <gap reason="lost" unit="character" extent="unknown"/>
+		 <lb n="3"/><gap reason="lost" unit="line" extent="unknown"/>
 		  </ab></div>
 		
-		  <div type="textpart_section" n="iii"><ab>
-		 <lb n="0"/><gap dim="top" reason="lost" extent="unknown" unit="line"/>
-		 <lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>μ<unclear reason="damage">ι</unclear></orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		 <lb n="2"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <w lemma="εὐσεβής"><supplied reason="lost" cert="low">εὐσε</supplied>βοῦς</w> <orig n="unresolved"><unclear reason="damage">ο</unclear></orig> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		 <lb n="3"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ρ</unclear>ισ</orig> <space dim="horizontal" extent="1" unit="character"/> <g type="decoration"/>
-		 <lb n="4"/><gap dim="bottom" reason="lost" extent="unknown" unit="line"/>
+		  <div n="iii" type="textpart" subtype="section"><ab>
+		 <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+		 <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>μ<unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		 <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="εὐσεβής"><supplied reason="lost" cert="low">εὐσε</supplied>βοῦς</w> <orig n="unresolved"><unclear reason="damage">ο</unclear></orig> <gap reason="lost" unit="character" extent="unknown"/>
+		 <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ρ</unclear>ισ</orig> <space dim="horizontal" extent="1" unit="character"/> <g ref="#decoration"/>
+		 <lb n="4"/><gap reason="lost" unit="line" extent="unknown"/>
 		  </ab></div>
 		
-		  <div type="textpart_section" n="iv"><ab>
-		 <lb n="0"/><gap dim="top" reason="lost" extent="unknown" unit="line"/>
-		 <lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ο</unclear>ιδ<unclear reason="damage">λ</unclear></orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		 <lb n="2"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved">κψ</orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		 <lb n="3"/><gap dim="bottom" reason="lost" extent="unknown" unit="line"/>
+		  <div n="iv" type="textpart" subtype="section"><ab>
+		 <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+		 <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ο</unclear>ιδ<unclear reason="damage">λ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		 <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">κψ</orig><gap reason="lost" unit="character" extent="unknown"/>
+		 <lb n="3"/><gap reason="lost" unit="line" extent="unknown"/>
 		  </ab></div>
 		
-		  <div type="textpart_section" n="v"><ab>
-		 <lb n="0"/><gap dim="top" reason="lost" extent="unknown" unit="line"/>
-		 <lb n="1"/><gap dim="left" reason="lost" extent="unknown" unit="character"/> <rs type="subject" key="acclamations"><w lemma="τύχη"><supplied reason="lost" cert="low">τύ</supplied>χ<unclear reason="damage">η</unclear></w></rs> <gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		 <lb n="2"/><gap dim="left" reason="lost" extent="unknown" unit="character"/><orig n="unresolved"><unclear reason="damage">ι</unclear>τ<unclear reason="damage">λ</unclear></orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		 <lb n="3"/><gap dim="bottom" reason="lost" extent="unknown" unit="line"/>
+		  <div n="v" type="textpart" subtype="section"><ab>
+		 <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+		 <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <rs type="subject" key="acclamations"><w lemma="τύχη"><supplied reason="lost" cert="low">τύ</supplied>χ<unclear reason="damage">η</unclear></w></rs> <gap reason="lost" unit="character" extent="unknown"/>
+		 <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ι</unclear>τ<unclear reason="damage">λ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		 <lb n="3"/><gap reason="lost" unit="line" extent="unknown"/>
 		  </ab></div>
       </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p>The five further fragments are even less significant.</p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <p>
-		i. <gap dim="left" reason="lost"/> the fortune triumphs! <gap dim="right" reason="lost"/></p><p>ii.  <gap dim="left" reason="lost"/> triumphs! <gap dim="right" reason="lost"/></p><p>iii. <gap dim="left" reason="lost"/> <seg cert="low">pious</seg> <gap dim="right" reason="lost"/></p><p>v. <gap dim="left" reason="lost"/> <seg cert="low">fortune</seg> <gap dim="right" reason="lost"/></p>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="V.57">V.57</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="Theatre">Theatre</rs>: Stage front: small 'chamber' at the north end, painted on the eastern, inner face of the west wall. </rs>. Original location: <rs type="origLocation">Findspot.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition in 1970.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>76</biblScope> a-e</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257696">810</biblScope>, <biblScope n="257697">811</biblScope>, <biblScope n="257698">812</biblScope>, <biblScope n="257699">813</biblScope>, <biblScope n="257700">814</biblScope></bibl>; republished by <bibl type="hbi" n="PPA"><author>Roueché</author>, <title type="abbreviated" level="m">PPA</title>, <biblScope>9</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs"><head>Photographs</head><p><figure href="77_AA_23"><figDesc>a: (1977)</figDesc></figure><figure href="77_AA_20"><figDesc>b: (1977)</figDesc></figure><figure href="77_AA_19"><figDesc>c: (1977)</figDesc></figure><figure href="77_AA_18"><figDesc>d: (1977)</figDesc></figure><figure href="77_AA_21"><figDesc>e: (1977)</figDesc></figure><figure href="77_AA_15"><figDesc>f: (1977)</figDesc></figure><figure href="77_AA_16"><figDesc>g: (1977)</figDesc></figure><figure href="77_AA_17"><figDesc>h: (1977)</figDesc></figure><figure href="77_AA_22"><figDesc>j: (1977)</figDesc></figure></p></div>
-
-      
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <p>The five further fragments are even less significant.</p>
+         </div>
+         <div type="translation">
+            <p>
+		i. <gap reason="lost" unit="character" extent="unknown"/> the fortune triumphs! <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+            <p>ii.  <gap reason="lost" unit="character" extent="unknown"/> triumphs! <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+            <p>iii. <gap reason="lost" unit="character" extent="unknown"/>
+               <seg cert="low">pious</seg>
+               <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+            <p>v. <gap reason="lost" unit="character" extent="unknown"/>
+               <seg cert="low">fortune</seg>
+               <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="V.57" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>76</citedRange> a-e</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257696">810</citedRange>, <citedRange n="257697">811</citedRange>, <citedRange n="257698">812</citedRange>, <citedRange n="257699">813</citedRange>, <citedRange n="257700">814</citedRange>
+               </bibl>; republished by <bibl type="hbi" n="PPA">
+                  <author>Roueché</author>, <title type="abbreviated" level="m">PPA</title>, <citedRange>9</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

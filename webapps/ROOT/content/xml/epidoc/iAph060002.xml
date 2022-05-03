@@ -1,90 +1,205 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph060002" n="iAph1251 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building dedication</rs> for <seg cert="low">Titus</seg></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-17</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date>2007-01-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building dedication for <seg cert="low">Titus</seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph060002</idno>
+            <idno type="IAph2007">iAph060002</idno>
+            <idno type="JMR2004">iAph1251</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fifteen fragments from blocks of a  <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType>, with a simple moulding above and three fasciae. When complete, average height <height unit="metre">0.495</height>, <depth unit="metre">0.765</depth> a &amp; b. two adjoining fragments, with upper and lower edges surviving. (a: left edge survives, <width unit="metre">1.02</width>   × <height unit="metre">0.51</height>   × <depth unit="metre">0.69</depth>; b: <width unit="metre">1.08</width>   × <height unit="metre">0.515</height>   × <depth unit="metre">0.73</depth>).  c. complete block (<width unit="metre">1.73</width> × <height unit="metre">0.48</height> × <depth unit="metre">0.69</depth>); . Fragments:d. without edges (<width unit="metre">0.38</width> × <height unit="metre">0.31</height> × <depth unit="metre">0.31</depth>); e. with upper moulding surviving, no other edges. f. without edges (<width unit="metre">0.41</width> × <height unit="metre">0.22</height> × <depth unit="metre">0.20</depth>);g. with upper moulding and right edge (<width unit="metre">0.09</width> × <height unit="metre">0.31</height> × <depth unit="metre">0.32</depth>); h. without edges (<width unit="metre">0.30</width> × <height unit="metre">0.20</height> × <depth unit="metre">0.23</depth>);   i. with right edge (<width unit="metre">0.50</width> × <height unit="metre">0.30</height> × <depth unit="metre">0.45</depth>); k. without edges (<width unit="metre">0.27</width> × <height unit="metre">0.25</height> × <depth unit="metre">0.08</depth>);  l, complete to left (<height unit="metre">0.13</height>, <width unit="metre">0.385</width>); m: broken at both ends (<width unit="metre">0.80</width>, <height unit="metre">0.13</height>); n, complete to left; o: complete to left; p. complete to right (<height unit="metre">0.50</height>, <width unit="metre">1.03</width>, <depth unit="metre">0.55</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the upper of three fasciae, average <height unit="metre">0.0145</height>; there is a simple moulding above the upper fascia.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Later first to early second century A.D., with noticeably broad and comparatively  shallow trenches; <height unit="metre">0.075-0.09</height>, showing slight variations in cutting and shape from piece to piece, no doubt because several workmen wre employed</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Ten fragments cetainly, four probably and one possibly come from the West colonnade of the <rs type="monuList">Basilica</rs>; it is unlikely but not quite excluded that some pieces came from the East colonnade.</origPlace>
+                     <origDate notBefore="0069"
+                               notAfter="0096"
+                               evidence="probable reign architecture lettering">
+Flavian, A.D. 79-96
+(<rs type="criteria">probable reign</rs>, <rs type="criteria">architecture</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found"> a-k at various points during excavation of the eastern part of the <rs type="monuList">Basilica</rs>; l and p 'Geyre, Südseite (Kubitschek); l, m, n and o beside the path along the south-west side of the Acropolis, quite close to the martyrion.</provenance>
+                  <provenance type="observed" when="2006">a-k, l-m on site in the Basilica; n, o, p, in fields to east of Basilica (2006)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Kubitschek notebook; Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-17" who="cmr">DONE</change>
+         <change when="2007-01-30" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_E_26A.jpg">
+            <desc>Fragment a (1978)</desc>
+         </graphic>
+         <graphic url="78_E_27A.jpg">
+            <desc>Fragment b (1978)</desc>
+         </graphic>
+         <graphic url="77_W_13.jpg">
+            <desc>Fragment c (1977)</desc>
+         </graphic>
+         <graphic url="78_E_35A.jpg">
+            <desc>Fragment c (1978)</desc>
+         </graphic>
+         <graphic url="78_E_33A.jpg">
+            <desc>Fragment d (1978)</desc>
+         </graphic>
+         <graphic url="78_E_32A.jpg">
+            <desc>Fragment e (1978)</desc>
+         </graphic>
+         <graphic url="78_E_29A.jpg">
+            <desc>Fragment f (1978)</desc>
+         </graphic>
+         <graphic url="78_E_30A.jpg">
+            <desc>Fragment g (1978)</desc>
+         </graphic>
+         <graphic url="78_E_28A.jpg">
+            <desc>Fragment h (1978)</desc>
+         </graphic>
+         <graphic url="78_E_34A.jpg">
+            <desc>Fragment k (1978)</desc>
+         </graphic>
+         <graphic url="78_E_31A.jpg">
+            <desc>Fragment j (1978)</desc>
+         </graphic>
+         <graphic url="73_Y_16.jpg">
+            <desc>Fragment m. (1973)</desc>
+         </graphic>
+         <graphic url="80_F_01.jpg">
+            <desc>Fragment m. (1980)</desc>
+         </graphic>
+         <graphic url="2001_A_24.jpg">
+            <desc>Fragment m. (2001)</desc>
+         </graphic>
+         <graphic url="2001_A_25.jpg">
+            <desc>Fragment m. (2001)</desc>
+         </graphic>
+         <graphic url="K_III_26.jpg">
+            <desc>l and p: Kubitschek notebook III.26</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Fifteen fragments from blocks of a  <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs>, with a simple moulding above and three fasciae. When complete, average height <measure dim="height" type="length" unit="metre">0.495</measure>, <measure dim="depth" type="length" unit="metre">0.765</measure></p><p> a &amp; b. two adjoining fragments, with upper and lower edges surviving. (a: left edge survives, <measure type="length" unit="metre" dim="width">1.02</measure>   × <measure type="length" unit="metre" dim="height">0.51</measure>   × <measure type="length" unit="metre" dim="depth">0.69</measure>; b: <measure type="length" unit="metre" dim="width">1.08</measure>   × <measure type="length" unit="metre" dim="height">0.515</measure>   × <measure type="length" unit="metre" dim="depth">0.73</measure>).  c. complete block (<measure type="length" unit="metre" dim="width">1.73</measure> × <measure type="length" unit="metre" dim="height">0.48</measure> × <measure type="length" unit="metre" dim="depth">0.69</measure>); . Fragments:d. without edges (<measure type="length" unit="metre" dim="width">0.38</measure> × <measure type="length" unit="metre" dim="height">0.31</measure> × <measure type="length" unit="metre" dim="depth">0.31</measure>); e. with upper moulding surviving, no other edges. f. without edges (<measure type="length" unit="metre" dim="width">0.41</measure> × <measure type="length" unit="metre" dim="height">0.22</measure> × <measure type="length" unit="metre" dim="depth">0.20</measure>);g. with upper moulding and right edge (<measure type="length" unit="metre" dim="width">0.09</measure> × <measure type="length" unit="metre" dim="height">0.31</measure> × <measure type="length" unit="metre" dim="depth">0.32</measure>); h. without edges (<measure type="length" unit="metre" dim="width">0.30</measure> × <measure type="length" unit="metre" dim="height">0.20</measure> × <measure type="length" unit="metre" dim="depth">0.23</measure>);   i. with right edge (<measure type="length" unit="metre" dim="width">0.50</measure> × <measure type="length" unit="metre" dim="height">0.30</measure> × <measure type="length" unit="metre" dim="depth">0.45</measure>); k. without edges (<measure type="length" unit="metre" dim="width">0.27</measure> × <measure type="length" unit="metre" dim="height">0.25</measure> × <measure type="length" unit="metre" dim="depth">0.08</measure>);  l, complete to left (<measure dim="height" type="length" unit="metre">0.13</measure>, <measure dim="width" type="length" unit="metre">0.385</measure>); m: broken at both ends (<measure dim="width" type="length" unit="metre">0.80</measure>, <measure dim="height" type="length" unit="metre">0.13</measure>); n, complete to left; o: complete to left; p. complete to right (<measure dim="height" type="length" unit="metre">0.50</measure>, <measure dim="width" type="length" unit="metre">1.03</measure>, <measure dim="depth" type="length" unit="metre" precision="circa">0.55</measure>).</p>
-</div><div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the upper of three fasciae, average <measure dim="height" type="length" unit="metre">0.0145</measure>; there is a simple moulding above the upper fascia.</p></div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Later first to early second century A.D., with noticeably broad and comparatively  shallow trenches; <measure dim="height" type="length" unit="metre" precision="circa">0.075-0.09</measure>, showing slight variations in cutting and shape from piece to piece, no doubt because several workmen wre employed</p>
+
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/>    <gap reason="lost" unit="character" extent="unknown"/>  <w lemma="καῖσαρ"><supplied reason="lost">Καίσ</supplied>αρι</w>  <space/>  <w lemma="σεβαστός">Σεβα<supplied reason="lost" cert="low">στῷ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/>    <gap reason="lost" unit="character" extent="unknown"/><persName type="emperor"><name nymRef="#Τίτος"><supplied reason="lost" cert="low">Τί</supplied>τῳ</name>  <g ref="#leaf"/>  <name nymRef="#Καῖσαρ">Καί<supplied reason="lost" cert="low">σαρι</supplied></name></persName>    <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="c" type="textpart" subtype="fragment"><ab><lb n="1"/>    <gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="#Παυλεῖνα"><supplied reason="lost">Παυ</supplied><milestone unit="block"/>λλεῖνα</name>  <space unit="character" extent="1" dim="horizontal"/>  <persName type="attested"><name nymRef="#Ἱεροκλῆς ">Ἱεροκλ<milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/></name></persName></persName></ab></div><div n="d" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">α</orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="e" type="textpart" subtype="fragment"><ab><lb n="1"/>    <gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">η</orig>  <space unit="character" extent="1" dim="horizontal"/>  <orig n="unresolved">ε</orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="f" type="textpart" subtype="fragment">      <ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">Κ</unclear>α<unclear reason="damage">π</unclear></orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="g" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="h" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="j" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">λν</unclear></orig>  <space unit="character" extent="1" dim="horizontal"/>  <milestone unit="block"/>    <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="k" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ν<unclear reason="damage">E</unclear></orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="l" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><milestone unit="block"/><orig n="unresolved">ασι</orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="m" type="textpart" subtype="fragment"><ab><lb n="1"/>    <gap reason="lost" unit="character" extent="unknown"/><space/>  <w lemma="ἀνίκητος"><orig reg="ἀνίκητον">ἀνείκ<unclear reason="damage">η</unclear><supplied reason="lost">το</supplied></orig><gap reason="lost" unit="character" extent="unknown"/></w></ab></div><div n="n" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><milestone unit="block"/>    <orig n="unresolved">αντ</orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="o" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><milestone unit="block"/><orig n="unresolved"><unclear reason="damage">ε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="p" type="textpart" subtype="fragment"><ab><lb n="1"/>    <w><gap reason="lost" unit="character" extent="unknown"/>ωνος</w>  <g ref="#dash"/>  <orig n="unresolved">δεκ</orig><gap reason="lost" unit="character" extent="unknown"/></ab></div>
+
 </div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0069" notAfter="0096" exact="both" cert="low">Flavian, A.D. 79-96</date>
-(<rs type="criteria">probable reign</rs>, <rs type="criteria">architecture</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-
-<div type="textpart_fragment" n="a"><ab><lb n="1"/>    <gap dim="left" extent="unknown" reason="lost" unit="character"/>  <w lemma="καῖσαρ"><supplied reason="lost">Καίσ</supplied>αρι</w>  <space/>  <w lemma="σεβαστός">Σεβα<supplied reason="lost" cert="low">στῷ</supplied></w>  <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/>    <gap dim="left" extent="unknown" reason="lost" unit="character"/><persName type="emperor"><name reg="Τίτος" type="praenomen"><supplied reason="lost" cert="low">Τί</supplied>τῳ</name>  <g type="leaf"/>  <name type=" " reg="Καῖσαρ">Καί<supplied reason="lost" cert="low">σαρι</supplied></name></persName>    <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="c"><ab><lb n="1"/>    <gap dim="left" extent="unknown" reason="lost" unit="character"/><persName type="aphrodisian" full="yes"><name reg="Παυλεῖνα"><supplied reason="lost">Παυ</supplied><milestone unit="block"/>λλεῖνα</name>  <space unit="character" extent="1" dim="horizontal"/>  <persName type="aphrodisian"><name reg="Ἱεροκλῆς ">Ἱεροκλ<milestone unit="block"/><gap dim="right" extent="unknown" reason="lost" unit="character"/></name></persName></persName></ab></div><div type="textpart_fragment" n="d"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">α</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="e"><ab><lb n="1"/>    <gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">η</orig>  <space unit="character" extent="1" dim="horizontal"/>  <orig n="unresolved">ε</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="f">      <ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">Κ</unclear>α<unclear reason="damage">π</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="g"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">τ</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="h"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">τ</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="j"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">λν</unclear></orig>  <space unit="character" extent="1" dim="horizontal"/>  <milestone unit="block"/>    <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="k"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">ν<unclear reason="damage">E</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="l"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><milestone unit="block"/><orig n="unresolved">ασι</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="m"><ab><lb n="1"/>    <gap dim="left" extent="unknown" reason="lost" unit="character"/><space/>  <w lemma="ἀνίκητος"><orig reg="ἀνίκητον">ἀνείκ<unclear reason="damage">η</unclear><supplied reason="lost">το</supplied></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></w></ab></div><div type="textpart_fragment" n="n"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><milestone unit="block"/>    <orig n="unresolved">αντ</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="o"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><milestone unit="block"/><orig n="unresolved"><unclear reason="damage">ε</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="p"><ab><lb n="1"/>    <w><gap dim="left" extent="unknown" reason="lost" unit="character"/>ωνος</w>  <g type="dash"/>  <orig n="unresolved">δεκ</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div>
-
-</div>
-
-
-<div type="apparatus"><head>Apparatus</head><p>Fragments l to o are very probably elements of the same architrave as a-k; p is rather less certain, since it was seen some 50 metres away from l and m, and in the Kubitschek drawing it has a leaf stop of a type different from the only other surviving stop, on b.</p><p>b might be restored as:</p><p>i. <gap extent="3" reason="lost"/><supplied reason="lost">Τί</supplied>τῳ <g type="leaf"/> Καί<supplied reason="lost">σαρι </supplied><gap extent="3" reason="lost"/></p><p>or (a and b)</p><p><gap extent="3" reason="lost"/><supplied reason="lost">Καίσαρι Σεβάσ</supplied>τῳ <g type="leaf"/>  καὶ <gap extent="3" reason="lost"/></p><p>or</p><p><gap extent="3" reason="lost"/> <supplied reason="lost">Σεβάσ</supplied>τῳ <g type="leaf"/>  Καί<supplied reason="lost">σαρι <gap extent="3" reason="lost"/></supplied></p><p>f: Κ is very incomplete - perhaps Λ; Π might be Ε.</p><p>k: Ε very incomplete, could be Σ.</p><p>l: of rthe fourth letter only part of a base serif survives, but its shape suggests perhaps <term lang="la">alpha</term> or <term lang="la">lambda</term>. If it were  <term lang="la">alpha</term>, this would probably be from the name of the emperor Vespasian, whether used in his own title or those of his sons, and would be associated with a, and perhaps b.. If it were <term lang="la">lambda</term>, this could be from βασιλική, describing a building.</p><p>m: certainly from ἀνείκητος, ου, and so quite probably from an imperial title. </p><p>p: The stop after the first word is different in kind from that in b, the only other stop we have; Kubitschek's drawing of the epsilon is also a little different from any in a-o. It would be rash to propsoe arestoration, but it is probable that the second word made some reference to δέκα, 10.</p></div>
-<div type="translation">
-<head>Translation</head>
-<p>a and b, perhaps  Ti]tus Caesar Augustus [ . . . </p><p>c. Pauleina daughter or wife of ?Hierokles</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Of the dedication only an imperial reference is recognisable, but it is very incomplete, and while architecture 9on which see Stinson, forthcoming) points to the Flavian period, and lettring is acceptable s of that period, it is not certain who was the reigning emperor involved. Fragment l, ΑΣΙ,  might come from the name Vespasianus, but this was also Titus' name and would have figured in the patronymics of Titus or of Domitian; but itt could also  be part of the word βασιλική, from the formula βασιλική στοά (although we do not know at present that this was the Aphrodisian building named as a basilica in antiquity). Fragment m, ἀνείκ<unclear reason="damage">η</unclear><supplied reason="lost">τος</supplied>,  is very likely to be an imperial epithet, although an unofficial one at this date (S. Weinstock, <title>Harvard theological Review</title> 50 (1957), 211-247). Apparently eschewed by Vespasian, it appears in the poets both for Titus (Martial, <title>De Spectaculis</title> 6.20) and for Domitian (Statius, <title>Silvae</title> 4.7.49f.), but has as yet only appeared in inscriptions for Domitian (<xref type="iAph">1313</xref>, and see commentary on <xref type="inscription" n="1286" href="110104">11.104</xref>). The case for Domitian is, therefore, the stronger, but Titus cannot be quite excluded. If the emperor was Domitian, the date should be later than A.D. 84 when he accepted the title Germanics, which appears without ἀνείκητος in <xref type="inscription" n="1284" href="080236">8.236</xref>; the occasion of the second triumph in 89 might seem likely.</p><p>The name Paulleina in the nominative case (c) suggests that the building was donated by citizens, like the Sebasteion, and was not a civic undertaking. Paulleina may be the Claudia Pauleina, stephanephoros in AD 119 (<xref type="inscription" n="1320" href="110412">11.412</xref>) but is not certainly so. Here family was probably a romanising Greek one, certainly so if the Hierokles (or Hieroketianos) named after her is her father; but he could, perhaps, be her husband.</p></div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"> a-k at various points during excavation of the eastern part of the <rs type="monuList">Basilica</rs>; l and p 'Geyre, Südseite (Kubitschek); l, m, n and o beside the path along the south-west side of the Acropolis, quite close to the martyrion.</rs> <rs type="lastLocation">a-k, l-m on site in the Basilica; n, o, p, in fields to east of Basilica (2006)</rs><rs type="origLocation">Ten fragments cetainly, four probably and one possibly come from the West colonnade of the <rs type="monuList">Basilica</rs>; it is unlikely but not quite excluded that some pieces came from the East colonnade.</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Kubitschek notebook; Transcription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>l and p recorded by  Kubitschek  (K.iii.26);  a-k excavated by the NYU expedition in 1977 and 1978 (<rs type="siteNo">Portico 11</rs>); l, m, n and o recorded by Reynolds.</p>
-</div>
-<div type="bibliography"><head>Bibliography</head><p>l and m published from K's notebook by <bibl type="primary" n="cormack1964"><author>Cormack</author>, <title>ABSA</title> no. <biblScope>12</biblScope></bibl>; others unpublished.</p>
-<p>ished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_E_26A"><figDesc>Fragment a (1978)</figDesc></figure>
-<figure href="78_E_27A"><figDesc>Fragment b (1978)</figDesc></figure><figure href="77_W_13"><figDesc>Fragment c (1977)</figDesc></figure>
-<figure href="78_E_35A"><figDesc>Fragment c (1978)</figDesc></figure>
-
-
-<figure href="78_E_33A"><figDesc>Fragment d (1978)</figDesc></figure><figure href="78_E_32A"><figDesc>Fragment e (1978)</figDesc></figure>
-<figure href="78_E_29A"><figDesc>Fragment f (1978)</figDesc></figure>
-<figure href="78_E_30A"><figDesc>Fragment g (1978)</figDesc></figure>
-<figure href="78_E_28A"><figDesc>Fragment h (1978)</figDesc></figure>
-
-<figure href="78_E_34A"><figDesc>Fragment k (1978)</figDesc></figure>
-<figure href="78_E_31A"><figDesc>Fragment j (1978)</figDesc></figure>
-<figure href="73_Y_16"><figDesc>Fragment m. (1973)</figDesc></figure><figure href="80_F_01"><figDesc>Fragment m. (1980)</figDesc></figure><figure href="2001_A_24"><figDesc>Fragment m. (2001)</figDesc></figure><figure href="2001_A_25"><figDesc>Fragment m. (2001)</figDesc></figure></p>
-
-
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="K_III_26"><figDesc>l and p: Kubitschek notebook III.26</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>Fragments l to o are very probably elements of the same architrave as a-k; p is rather less certain, since it was seen some 50 metres away from l and m, and in the Kubitschek drawing it has a leaf stop of a type different from the only other surviving stop, on b.</p>
+            <p>b might be restored as:</p>
+            <p>i. <gap reason="lost" unit="character" quantity="3"/>
+               <supplied reason="lost">Τί</supplied>τῳ <g ref="#leaf"/> Καί<supplied reason="lost">σαρι </supplied>
+               <gap reason="lost" unit="character" quantity="3"/>
+            </p>
+            <p>or (a and b)</p>
+            <p>
+               <gap reason="lost" unit="character" quantity="3"/>
+               <supplied reason="lost">Καίσαρι Σεβάσ</supplied>τῳ <g ref="#leaf"/>  καὶ <gap reason="lost" unit="character" quantity="3"/>
+            </p>
+            <p>or</p>
+            <p>
+               <gap reason="lost" unit="character" quantity="3"/>
+               <supplied reason="lost">Σεβάσ</supplied>τῳ <g ref="#leaf"/>  Καί<supplied reason="lost">σαρι <gap reason="lost" unit="character" quantity="3"/>
+               </supplied>
+            </p>
+            <p>f: Κ is very incomplete - perhaps Λ; Π might be Ε.</p>
+            <p>k: Ε very incomplete, could be Σ.</p>
+            <p>l: of rthe fourth letter only part of a base serif survives, but its shape suggests perhaps <term xml:lang="la">alpha</term> or <term xml:lang="la">lambda</term>. If it were  <term xml:lang="la">alpha</term>, this would probably be from the name of the emperor Vespasian, whether used in his own title or those of his sons, and would be associated with a, and perhaps b.. If it were <term xml:lang="la">lambda</term>, this could be from βασιλική, describing a building.</p>
+            <p>m: certainly from ἀνείκητος, ου, and so quite probably from an imperial title. </p>
+            <p>p: The stop after the first word is different in kind from that in b, the only other stop we have; Kubitschek's drawing of the epsilon is also a little different from any in a-o. It would be rash to propsoe arestoration, but it is probable that the second word made some reference to δέκα, 10.</p>
+         </div>
+         <div type="translation">
+            <p>a and b, perhaps  Ti]tus Caesar Augustus [ . . . </p>
+            <p>c. Pauleina daughter or wife of ?Hierokles</p>
+         </div>
+         <div type="commentary">
+            <p>Of the dedication only an imperial reference is recognisable, but it is very incomplete, and while architecture 9on which see Stinson, forthcoming) points to the Flavian period, and lettring is acceptable s of that period, it is not certain who was the reigning emperor involved. Fragment l, ΑΣΙ,  might come from the name Vespasianus, but this was also Titus' name and would have figured in the patronymics of Titus or of Domitian; but itt could also  be part of the word βασιλική, from the formula βασιλική στοά (although we do not know at present that this was the Aphrodisian building named as a basilica in antiquity). Fragment m, ἀνείκ<unclear reason="damage">η</unclear>
+               <supplied reason="lost">τος</supplied>,  is very likely to be an imperial epithet, although an unofficial one at this date (S. Weinstock, <title>Harvard theological Review</title> 50 (1957), 211-247). Apparently eschewed by Vespasian, it appears in the poets both for Titus (Martial, <title>De Spectaculis</title> 6.20) and for Domitian (Statius, <title>Silvae</title> 4.7.49f.), but has as yet only appeared in inscriptions for Domitian (<ref type="iAph" target=".xml"/>, and see commentary on <ref type="inscription" n="1286" target="110104.xml"/>). The case for Domitian is, therefore, the stronger, but Titus cannot be quite excluded. If the emperor was Domitian, the date should be later than A.D. 84 when he accepted the title Germanics, which appears without ἀνείκητος in <ref type="inscription" n="1284" target="080236.xml"/>; the occasion of the second triumph in 89 might seem likely.</p>
+            <p>The name Paulleina in the nominative case (c) suggests that the building was donated by citizens, like the Sebasteion, and was not a civic undertaking. Paulleina may be the Claudia Pauleina, stephanephoros in AD 119 (<ref type="inscription" n="1320" target="110412.xml"/>) but is not certainly so. Here family was probably a romanising Greek one, certainly so if the Hierokles (or Hieroketianos) named after her is her father; but he could, perhaps, be her husband.</p>
+         </div>
+         <div type="bibliography">
+            <p>l and m published from K's notebook by <bibl type="primary" n="cormack1964">
+                  <author>Cormack</author>, <title>ABSA</title> no. <citedRange>12</citedRange>
+               </bibl>; others unpublished.</p>
+            <p>ished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

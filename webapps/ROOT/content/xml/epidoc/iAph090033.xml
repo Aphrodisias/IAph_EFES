@@ -1,78 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph090033" n="iAph1296 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for 
-<rs type="textType" reg="dedication to Emperor">Marcus Lepidus</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>1980</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1980">Reynolds (<date>1980</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-10</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for 
+Marcus Lepidus</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph090033</idno>
+            <idno type="IAph2007">iAph090033</idno>
+            <idno type="JMR2004">iAph1296</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>77.123</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Rectangular <material>white marble</material>
+                              <objectType>statue base</objectType>, with moulding above on four sides and below on three sides (<width unit="metre">0.63</width> × <height unit="metre">1.17</height> × <depth unit="metre">0.43</depth>). Chipped on all edges, upper front corners broken.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.04</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Almost certainly in the <rs type="monuList">Sebasteion</rs>
+                     </origPlace>
+                     <origDate notBefore="0014" notAfter="0069" evidence="context lettering">
+Julio-Claudian
+(<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">South Agora</rs>: in 'East Agora Trench 5'</provenance>
+                  <provenance type="observed" when="1978">Museum (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds), publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-10" who="cmr">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_A_02.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+         <graphic url="HUMS003553.jpg">
+            <desc>Face (2001)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Rectangular <rs type="material">white marble</rs> <rs type="objectType">statue base</rs>, with moulding above on four sides and below on three sides (<measure type="length" unit="metre" dim="width">0.63</measure> × <measure type="length" unit="metre" dim="height">1.17</measure> × <measure type="length" unit="metre" dim="depth">0.43</measure>). Chipped on all edges, upper front corners broken.</p>
+<ab><lb n="1"/>    <space extent="1" unit="character" dim="horizontal"/>  <persName type="emperor"><name nymRef="#Μᾶρκος">Μᾶρκον</name>    <space extent="1" unit="character" dim="horizontal"/>  <lb n="2"/><name nymRef="#Λέπιδος">Λέπιδον</name></persName><lb n="2a"/><space dim="vertical" unit="line"/></ab>
 </div>
-<div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.04</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0014" notAfter="0069" exact="both">Julio-Claudian</date>
-(<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>    <space extent="1" unit="character" dim="horizontal"/>  <persName type="emperor" full="yes"><name reg="Μᾶρκος">Μᾶρκον</name>    <space extent="1" unit="character" dim="horizontal"/>  <lb n="2"/><name reg="Λέπιδος">Λέπιδον</name></persName><lb n="2a"/><space dim="vertical" unit="line"/></ab>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p><supplied reason="subaudible">Statue of</supplied> Marcus Lepidus.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Probably one of the Sebasteion group of dedications to the imperial family (<xref type="inscription" n="1315" href="090037">9.37</xref>=72.224, <xref type="inscription" n="1316" href="090038">9.38</xref>=72.237, <xref type="inscription" n="1317" href="090039">9.39</xref>=72.275, <xref type="inscription" n="1318" href="090040">9.40</xref>=73.145, <xref type="inscription" n="1296" href="090033">9.33</xref>=77.123, <xref type="inscription" n="1288" href="090026">9.26</xref>=80.172, <xref type="inscription" n="1289" href="090027">9.27</xref>=82.108, <xref type="inscription" n="1298" href="090035">9.35</xref>=82.109, <xref type="inscription" n="1290" href="090028">9.28</xref>=82.116, <xref type="inscription" n="1297" href="090034">9.34</xref>=82.117, <xref type="inscription" n="1291" href="090029">9.29</xref>=82.118, <xref type="inscription" n="1299" href="090036">9.36</xref>=82.210, <xref type="inscription" n="1293" href="090030">9.30</xref>=84.30, <xref type="inscription" n="1294" href="090031">9.31</xref>=84.31, and  <xref type="inscription" n="1295" href="090032">9.32</xref>=84.41). On these see <bibl n="jmr1996b"><author>Reynolds</author> (1996), <title level="a">Ruler-cult at Aphrodisias</title></bibl>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-Found: <rs type="found"><rs type="monuList">South Agora</rs>: in 'East Agora Trench 5'</rs>
-<rs type="origLocation">Almost certainly in the <rs type="monuList">Sebasteion</rs></rs> <rs type="lastLocation">Museum (1978)</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds), publications.</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1977 (<rs type="invNo">77.123</rs>; SBI <rs type="sbi">48</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>published by <bibl type="primary" n="jmr1980"><author>Reynolds</author>, <title level="m">PCPS</title> 206 (1980), no. <biblScope>15</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1980.1251</biblScope></bibl>; <bibl n="be">BE <biblScope>1982.355</biblScope></bibl>; <bibl n="anep">AnnEpig <biblScope>1980.876</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257081">202</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_A_02"><figDesc>Face (1978)</figDesc></figure><figure href="HUMS003553"><figDesc>Face (2001)</figDesc></figure></p><p>KTE 77.37.8-9</p>
-</div></body></text>
+         <div type="translation">
+            <p>
+               <supplied reason="subaudible">Statue of</supplied> Marcus Lepidus.</p>
+         </div>
+         <div type="commentary">
+            <p>Probably one of the Sebasteion group of dedications to the imperial family (<ref type="inscription" n="1315" target="090037.xml"/>=72.224, <ref type="inscription" n="1316" target="090038.xml"/>=72.237, <ref type="inscription" n="1317" target="090039.xml"/>=72.275, <ref type="inscription" n="1318" target="090040.xml"/>=73.145, <ref type="inscription" n="1296" target="090033.xml"/>=77.123, <ref type="inscription" n="1288" target="090026.xml"/>=80.172, <ref type="inscription" n="1289" target="090027.xml"/>=82.108, <ref type="inscription" n="1298" target="090035.xml"/>=82.109, <ref type="inscription" n="1290" target="090028.xml"/>=82.116, <ref type="inscription" n="1297" target="090034.xml"/>=82.117, <ref type="inscription" n="1291" target="090029.xml"/>=82.118, <ref type="inscription" n="1299" target="090036.xml"/>=82.210, <ref type="inscription" n="1293" target="090030.xml"/>=84.30, <ref type="inscription" n="1294" target="090031.xml"/>=84.31, and  <ref type="inscription" n="1295" target="090032.xml"/>=84.41). On these see <bibl n="jmr1996b">
+                  <author>Reynolds</author> (1996), <title level="a">Ruler-cult at Aphrodisias</title>
+               </bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>published by <bibl type="primary" n="jmr1980">
+                  <author>Reynolds</author>, <title level="m">PCPS</title> 206 (1980), no. <citedRange>15</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1980.1251</citedRange>
+               </bibl>; <bibl n="be">BE <citedRange>1982.355</citedRange>
+               </bibl>; <bibl n="anep">AnnEpig <citedRange>1980.876</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257081">202</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

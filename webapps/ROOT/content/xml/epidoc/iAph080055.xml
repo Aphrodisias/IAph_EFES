@@ -1,117 +1,180 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080055" n="iAph0761 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Seat inscriptions</rs>: Theatre, Block C</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-<textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term><term><rs type="textType" key="cetera">Factional</rs></term><term><rs type="textType" key="cetera">Acclamation</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-03-26</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Theatre, <rs type="objectType">seat</rs>s</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Row 12: on one seat, which is broken at both sides.  18: on one seat, which is broken at both sides.  21:i. on several seats;  21.ii. At east end. 22: A scatter of varied letters across entire row.  26: On one seat at east end.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Row 12: monogram, <measure type="length" unit="metre" dim="height">0.29</measure>. Row 18: <measure type="length" unit="metre" dim="height">0.06</measure> - <measure type="length" unit="metre" dim="height">0.14</measure>. L.1 has been partially erased. Row 21:i. ave. <measure type="length" unit="metre" dim="height">0.10</measure>. Row 21.ii. <measure type="length" unit="metre" dim="height">0.08</measure> - <measure type="length" unit="metre" dim="height">0.11</measure>. Row 22:  <measure dim="height" type="length" unit="metre">0.16 - 0.21</measure>.Row 26:  <measure dim="height" type="length" unit="metre">0.07 - 0.08</measure>; ΤΟ in ligature.</p><p>Designs: 2: <measure dim="width" type="length" unit="metre">0.20</measure> x <measure dim="height" type="length" unit="metre">0.08</measure>. 4: <measure dim="height" type="length" unit="metre">0.345</measure> x <measure dim="width" type="length" unit="metre">0.20</measure>. 5: <measure dim="width" type="length" unit="metre">0.28</measure> x <measure dim="height" type="length" unit="metre">0.185</measure>. 6: <measure dim="width" type="length" unit="metre">0.175</measure> x <measure dim="height" type="length" unit="metre">0.13</measure>. </p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0600" notBefore="0101" exact="none">Second to sixth centuries A.D.</date> (<rs type="criteria">context</rs>).</p>
-</div>
-<div type="edition" n="text" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="2"><note>Design, type H4  
-</note></div><div type="textpart_section" n="3"><note>Scattered letters 
-</note></div><div type="textpart_section" n="4"><note>There is a well cut cross, with triangular ends to each arm.</note></div><div type="textpart_section" n="5"><note>Design, type H4 within a frame, and with a central line between the two rows, </note></div><div type="textpart_section" n="6"><note>Design, half a type S3  
-</note></div><div type="textpart_section" n="12"><note>Monogram. Component letters are <foreign lang="grc">ΗΤΛΛ<unclear reason="damage">Κ</unclear></foreign> (or <foreign lang="grc">Θ</foreign>)<foreign lang="grc"><unclear reason="damage">Ο</unclear></foreign>: perhaps  
-</note><ab><lb n="1"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Seat inscriptions: Theatre, Block C</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080055</idno>
+            <idno type="IAph2007">iAph080055</idno>
+            <idno type="JMR2004">iAph0761</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Theatre, <objectType>seat</objectType>s</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Row 12: on one seat, which is broken at both sides.  18: on one seat, which is broken at both sides.  21:i. on several seats;  21.ii. At east end. 22: A scatter of varied letters across entire row.  26: On one seat at east end.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Row 12: monogram, <height unit="metre">0.29</height>. Row 18: <height unit="metre">0.06</height> - <height unit="metre">0.14</height>. L.1 has been partially erased. Row 21:i. ave. <height unit="metre">0.10</height>. Row 21.ii. <height unit="metre">0.08</height> - <height unit="metre">0.11</height>. Row 22:  <height unit="metre">0.16 - 0.21</height>.Row 26:  <height unit="metre">0.07 - 0.08</height>; ΤΟ in ligature.Designs: 2: <width unit="metre">0.20</width> x <height unit="metre">0.08</height>. 4: <height unit="metre">0.345</height> x <width unit="metre">0.20</width>. 5: <width unit="metre">0.28</width> x <height unit="metre">0.185</height>. 6: <width unit="metre">0.175</width> x <height unit="metre">0.13</height>. </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="context">
+Second to sixth centuries A.D. (<rs type="criteria">context</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: seats, block C.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Factional</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Acclamation</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds, Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-26" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_H_25.jpg">
+            <desc>Row 12 (1975)</desc>
+         </graphic>
+         <graphic url="72_L_03A.jpg">
+            <desc>Row 18 (1972)</desc>
+         </graphic>
+         <graphic url="75_H_20.jpg">
+            <desc>Row 18 (1975)</desc>
+         </graphic>
+         <graphic url="88_F_08.jpg">
+            <desc>Row 21.ii (1988)</desc>
+         </graphic>
+         <graphic url="75_H_16.jpg">
+            <desc>Rows 21 and 22 (1975)</desc>
+         </graphic>
+         <graphic url="75_H_17.jpg">
+            <desc>Rows 21 and 22 (1975)</desc>
+         </graphic>
+         <graphic url="75_H_18.jpg">
+            <desc>Rows 21 and 22 (1975)</desc>
+         </graphic>
+         <graphic url="75_H_15.jpg">
+            <desc>Row 26 (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<w lemma="τόπος"><expan><abbr>τό</abbr><supplied reason="abbreviation">πος</supplied></expan></w>  
+<div n="2" type="textpart" subtype="section"><note xml:lang=""/></div><div n="3" type="textpart" subtype="section"><note xml:lang=""/></div><div n="4" type="textpart" subtype="section"><note xml:lang=""/></div><div n="5" type="textpart" subtype="section"><note xml:lang=""/></div><div n="6" type="textpart" subtype="section"><note xml:lang=""/></div><div n="12" type="textpart" subtype="section"><note xml:lang=""/><ab><lb n="1"/>
 
-</ab></div><div type="textpart_section" n="15"><note>Scattered letters 
-</note></div><div type="textpart_section" n="16"><note>Scattered letters 
-</note></div><div type="textpart_section" n="17"><note>Design, two rows of roughly drawn circles, one of 7 and one of 4; 
-</note></div><div type="textpart_section" n="18"><ab>
+<w lemma="τόπος"><expan><abbr>τό</abbr><ex>πος</ex></expan></w>  
+
+</ab></div><div n="15" type="textpart" subtype="section"><note xml:lang=""/></div><div n="16" type="textpart" subtype="section"><note xml:lang=""/></div><div n="17" type="textpart" subtype="section"><note xml:lang=""/></div><div n="18" type="textpart" subtype="section"><ab>
 <lb n="1"/>
 <w lemma="κακός">Κακὰ</w> <w lemma="ὁ"><unclear reason="damage">τὰ</unclear></w> <w lemma="ἔτος"><unclear reason="damage">ἔτ</unclear>η</w> 
 <lb n="2"/>
-<w lemma="ὁ">τῶν</w> <w lemma="πράσινος">Πρασίνων</w></ab></div><div type="textpart_section" n="19"><note>Scattered letters 
-</note></div><div type="textpart_section" n="20"><note>Design, type SSS1, uncompleted (no cross lines) 
-</note></div><div type="textpart_section" n="21"><div type="textpart_column" n="i"><ab>
+<w lemma="ὁ">τῶν</w> <w lemma="πράσινος">Πρασίνων</w></ab></div><div n="19" type="textpart" subtype="section"><note xml:lang=""/></div><div n="20" type="textpart" subtype="section"><note xml:lang=""/></div><div n="21" type="textpart" subtype="section"><div n="i" type="textpart" subtype="column"><ab>
 
 <lb n="1"/><milestone unit="block"/> <space extent="3" unit="character"/> <milestone unit="block"/> <unclear reason="damage">Κ</unclear>
 <unclear reason="damage">Α</unclear> <milestone unit="block"/> κα<milestone unit="block"/>τ<unclear reason="damage">έ</unclear>
 <supplied reason="lost">χεται</supplied>
-<milestone unit="block"/> ΗΤΛ <milestone unit="block"/> <gap reason="lost" unit="character" dim="right" extent="unknown"/></ab></div><div type="textpart_column" n="ii"><ab>
+<milestone unit="block"/> ΗΤΛ <milestone unit="block"/> <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="ii" type="textpart" subtype="column"><ab>
  <lb n="1"/><space extent="3"/><orig>ΚΜΚ</orig> <space extent="3"/> 
-</ab></div></div><div type="textpart_section" n="22"><ab type="στεπσ">
+</ab></div></div><div n="22" type="textpart" subtype="section"><ab type="στεπσ">
 <lb n="1"/>
-<g type="steps"/><milestone unit="block"/> <note>gameboard type SSS2</note> <milestone unit="block"/> <note>2 seats</note> <milestone unit="block"/> <orig n="unresolved">ατ</orig> <milestone unit="block"/> <w lemma="καί"><expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan></w> <milestone unit="block"/> <orig n="unresolved">αδ</orig> <milestone unit="block"/> <orig n="unresolved"><unclear reason="damage">σ</unclear>χ<unclear reason="damage">π</unclear></orig> <milestone unit="block"/> <space extent="3" unit="character"/> <milestone unit="block"/> <orig n="unresolved">χ</orig> <milestone unit="block"/> <space extent="3" unit="character"/> <milestone unit="block"/> <g type="steps"/></ab></div><div type="textpart_section" n="23"><note>Design, type C1 with central dot.</note></div><div type="textpart_section" n="26"><ab>
+<g ref="#steps"/><milestone unit="block"/> <note xml:lang=""/> <milestone unit="block"/> <note xml:lang=""/> <milestone unit="block"/> <orig n="unresolved">ατ</orig> <milestone unit="block"/> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <milestone unit="block"/> <orig n="unresolved">αδ</orig> <milestone unit="block"/> <orig n="unresolved"><unclear reason="damage">σ</unclear>χ<unclear reason="damage">π</unclear></orig> <milestone unit="block"/> <space extent="3" unit="character"/> <milestone unit="block"/> <orig n="unresolved">χ</orig> <milestone unit="block"/> <space extent="3" unit="character"/> <milestone unit="block"/> <g ref="#steps"/></ab></div><div n="23" type="textpart" subtype="section"><note xml:lang=""/></div><div n="26" type="textpart" subtype="section"><ab>
   
-<lb n="1"/><w lemma="τόπος"><expan><abbr><hi rend="ligature">τό</hi></abbr><supplied reason="abbreviation">πος</supplied></expan></w> <persName type="aphrodisian"><name reg="Βενουσῖνος"><expan><abbr>Β<unclear>ε</unclear>ν<unclear>υσ</unclear>ιν</abbr><supplied reason="abbreviation">ου</supplied></expan></name></persName> </ab></div>
+<lb n="1"/><w lemma="τόπος"><expan><abbr><hi rend="ligature">τό</hi></abbr><ex>πος</ex></expan></w> <persName type="attested"><name nymRef="#Βενουσῖνος"><expan><abbr>Β<unclear>ε</unclear>ν<unclear>υσ</unclear>ιν</abbr><ex>ου</ex></expan></name></persName> </ab></div>
 </div>
-
-<div type="translation">
-<head>Translation</head>
-<p>Row 12, ?Place of <gap extent="unknown" reason="lost" unit="character"/>.</p>
-<p>Row 18, Bad years for the Greens!</p>
-<p>Row 21, reserved.</p>
-<p>Row 26, Place of Benusinos</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See bibliography.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: seats, block C.</rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Findspot</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, Roueché)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Row 18: cited, <bibl>Alan Cameron, Circus Factions, 315</bibl>; published, <bibl n="ALA">Roueché, ALA <biblScope>181.ii </biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257714">828</biblScope></bibl>: all published by <bibl n="PPA">Roueché, PPA <biblScope>46.C</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p> <figure href="75_H_25"><figDesc>Row 12 (1975)</figDesc></figure><figure href="72_L_03A"><figDesc>Row 18 (1972)</figDesc></figure><figure href="75_H_20"><figDesc>Row 18 (1975)</figDesc></figure><figure href="88_F_08"><figDesc>Row 21.ii (1988)</figDesc></figure><figure href="75_H_16"><figDesc>Rows 21 and 22 (1975)</figDesc></figure><figure href="75_H_17"><figDesc>Rows 21 and 22 (1975)</figDesc></figure><figure href="75_H_18"><figDesc>Rows 21 and 22 (1975)</figDesc></figure><figure href="75_H_15"><figDesc>Row 26 (1975)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>Row 12, ?Place of <gap reason="lost" unit="character" extent="unknown"/>.</p>
+            <p>Row 18, Bad years for the Greens!</p>
+            <p>Row 21, reserved.</p>
+            <p>Row 26, Place of Benusinos</p>
+         </div>
+         <div type="commentary">
+            <p>See bibliography.</p>
+         </div>
+         <div type="bibliography">
+            <p>Row 18: cited, <bibl>Alan Cameron, Circus Factions, 315</bibl>; published, <bibl n="ALA">Roueché, ALA <citedRange>181.ii </citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257714">828</citedRange>
+               </bibl>: all published by <bibl n="PPA">Roueché, PPA <citedRange>46.C</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

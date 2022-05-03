@@ -1,89 +1,109 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080095" n="iAph1912 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Graffiti</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-03-26</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> doric <rs type="objectType">half-column</rs>, supporting stage architrave.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>a: on the east face, b: cut into the fluting on the west. c, on the south face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>c: lightly cut letters, <measure type="length" unit="metre" dim="height">0.02</measure>-<measure type="length" unit="metre" dim="height">0.03</measure>
-</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0500" notBefore="0200" precision="circa"> Third to fifth century A.D.</date>
-(<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<cb n="a"/><note>There are traces of letters</note><cb n="b"/><note>a cross carefully cut</note><cb n="c"/><ab><lb n="1"/>
-<persName type="aphrodisian"><name reg="Ἡλιώ̣δορος"><expan><abbr>Ἡ<unclear reason="damage">λ</unclear>ι<unclear reason="damage">ώ</unclear>̣δ<unclear reason="damage">ο</unclear><supplied reason="lost">ρ</supplied></abbr><supplied reason="abbreviation" cert="low">ος</supplied></expan></name></persName> </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Graffiti</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080095</idno>
+            <idno type="IAph2007">iAph080095</idno>
+            <idno type="JMR2004">iAph1912</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material> doric <objectType>half-column</objectType>, supporting stage architrave.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>a: on the east face, b: cut into the fluting on the west. c, on the south face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>c: lightly cut letters, <height unit="metre">0.02</height>-<height unit="metre">0.03</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0200" notAfter="0500" evidence="context lettering">
+ Third to fifth century A.D.
+(<rs type="criteria">context</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs> stage, portico across stage, eleventh column from south.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>Transcription (Reynolds, Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-26" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="HUMS003465.jpg">
+            <desc>View of stage columns (1985)</desc>
+         </graphic>
+         <graphic url="76_H_19.jpg">
+            <desc>a, east face (1976)</desc>
+         </graphic>
+         <graphic url="76_H_06.jpg">
+            <desc>b, south face (1976)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>Heliodoros or (place of) Heliodoros</p>
+<cb n="a"/><note xml:lang=""/><cb n="b"/><note xml:lang=""/><cb n="c"/><ab><lb n="1"/>
+<persName type="attested"><name nymRef="#Ἡλιώ̣δορος"><expan><abbr>Ἡ<unclear reason="damage">λ</unclear>ι<unclear reason="damage">ώ</unclear>̣δ<unclear reason="damage">ο</unclear><supplied reason="lost">ρ</supplied></abbr><ex cert="low">ος</ex></expan></name></persName> </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of a series of inscriptions on the columns supporting the architrave on the stage (which carries <xref type="inscription" n="536" href="080001">8.1</xref>): <xref type="inscription" n="1896" href="080089">8.89</xref>, <xref type="inscription" n="1897" href="080098">8.98</xref>, <xref type="inscription" n="1900" href="080090">8.90</xref>, <xref type="inscription" n="1903" href="080091">8.91</xref>, <xref type="inscription" n="1909" href="080092">8.92</xref>, <xref type="inscription" n="1910" href="080093">8.93</xref>, <xref type="inscription" n="1911" href="080094">8.94</xref>, <xref type="inscription" n="1912" href="080095">8.95</xref>, <xref type="inscription" n="1914" href="080096">8.96</xref>, <xref type="inscription" n="1915" href="080097">8.97</xref> . All the inscriptions are on the stage side of the columns, and were presumably only visible to those using the stage. See <bibl n="PPA">Roueché, <title>Performers and Partisans</title>, Chapter III</bibl>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs> stage, portico across stage, eleventh column from south.</rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Findspot</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, Roueché)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="PPA">Roueché, <title>PPA</title> <biblScope>6.11</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="HUMS003465"><figDesc>View of stage columns (1985)</figDesc></figure><figure href="76_H_19"><figDesc>a, east face (1976)</figDesc></figure><figure href="76_H_06"><figDesc>b, south face (1976)</figDesc></figure> </p>
-</div></body></text>
+         <div type="translation">
+            <p>Heliodoros or (place of) Heliodoros</p>
+         </div>
+         <div type="commentary">
+            <p>One of a series of inscriptions on the columns supporting the architrave on the stage (which carries <ref type="inscription" n="536" target="080001.xml"/>): <ref type="inscription" n="1896" target="080089.xml"/>, <ref type="inscription" n="1897" target="080098.xml"/>, <ref type="inscription" n="1900" target="080090.xml"/>, <ref type="inscription" n="1903" target="080091.xml"/>, <ref type="inscription" n="1909" target="080092.xml"/>, <ref type="inscription" n="1910" target="080093.xml"/>, <ref type="inscription" n="1911" target="080094.xml"/>, <ref type="inscription" n="1912" target="080095.xml"/>, <ref type="inscription" n="1914" target="080096.xml"/>, <ref type="inscription" n="1915" target="080097.xml"/> . All the inscriptions are on the stage side of the columns, and were presumably only visible to those using the stage. See <bibl n="PPA">Roueché, <title>Performers and Partisans</title>, Chapter III</bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="PPA">Roueché, <title>PPA</title>
+                  <citedRange>6.11</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

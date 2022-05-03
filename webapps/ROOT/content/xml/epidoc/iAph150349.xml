@@ -1,93 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150349" n="iAph0243 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType" reg="funerary">Epitaph</rs> of Zoetos</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change><change><date>2003-06-02</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Tidied and regularised</item></change><change><date>2002-11-01</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Typed and tagged Greek</item></change><change>
-  <date>2003-09-03</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A rectangular <rs type="material" key="marmor">white marble</rs> <rs type="objectType">stele</rs>, with a simply moulded panel on the front face, supporting a rougly cut hemisphere—probably cut down to serve as a Moslem tombstone. <measure type="length" unit="metre" dim="height">0.35</measure> × <measure type="length" unit="metre" dim="width">0.70</measure> × <measure type="length" unit="metre" dim="depth">0.325</measure>.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> within the panel (<measure type="length" unit="metre" dim="height">0.23</measure> × <measure type="length" unit="metre" dim="width">0.35</measure>) which is chipped to the right.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Rough and irregular, <measure type="length" unit="metre" dim="height">0.02-0.025</measure>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0301" notAfter="0400">Fourth century</date> or later (<rs type="criteria">content</rs>).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph of Zoetos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150349</idno>
+            <idno type="IAph2007">iAph150349</idno>
+            <idno type="JMR2004">iAph0243</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A rectangular <material key="marmor">white marble</material>
+                              <objectType>stele</objectType>, with a simply moulded panel on the front face, supporting a rougly cut hemisphere—probably cut down to serve as a Moslem tombstone. <height unit="metre">0.35</height> × <width unit="metre">0.70</width> × <depth unit="metre">0.325</depth>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> within the panel (<height unit="metre">0.23</height> × <width unit="metre">0.35</width>) which is chipped to the right.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Rough and irregular, <height unit="metre">0.02-0.025</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0301"
+                               notAfter="0400"
+                               precision="medium"
+                               evidence="content">Fourth century or later (<rs type="criteria">content</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">Stray find.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged and corrected</change>
+         <change when="2003-06-02" who="#GB">Tidied and regularised</change>
+         <change when="2002-11-01" who="#GB">Typed and tagged Greek</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="94_B_14A.jpg">
+            <desc>Face (1994)</desc>
+         </graphic>
+         <graphic url="94_C_12.jpg">
+            <desc>Face (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<ab>
-		<lb n="1"/><persName key="zoetus1" type="aphrodisian" full="yes"><name reg="Ζωητός">Ζωητὸς</name></persName><lb n="2"/><persName type="aphrodisian" key="theopemptus1" full="yes"><name reg="Θεόπεμπτος">Θεοπ<unclear reason="damage">εμπ</unclear>
-		<lb n="3" type="worddiv"/>του</name></persName> <w lemma="ὄλβιος">ὄλβιον</w>
+		<lb n="1"/><persName key="zoetus1" type="attested"><name nymRef="#Ζωητός">Ζωητὸς</name></persName><lb n="2"/><persName key="theopemptus1" type="attested"><name nymRef="#Θεόπεμπτος">Θεοπ<unclear reason="damage">εμπ</unclear>
+		<lb n="3" break="no"/>του</name></persName> <w lemma="ὄλβιος">ὄλβιον</w>
 		<lb n="4"/><w lemma="βίος">βίον</w> <w lemma="ζηλόω">ζηλ<unclear reason="damage">ώ</unclear>
-		<lb n="5" type="worddiv"/>σας</w> <w lemma="ἐνθάδε">ἐνθάδε</w>
+		<lb n="5" break="no"/>σας</w> <w lemma="ἐνθάδε">ἐνθάδε</w>
 		<lb n="6"/><w lemma="κατάκειμαι"><orig reg="κατάκειται">κατάκιτε</orig></w>
 		</ab>
       </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>Zoetos, son of Theopemptos, who strove for the blessed life, lies here.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See <xref type="eAla-text" n="IX.43">IX.43</xref> and for this man's brother see <xref type="inscription" n="169" href="130158">13.158</xref> and discussion at <xref type="eAla-text" n="IX.42">IX.42</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p><rs type="found">Stray find.</rs>.  <rs type="origLocation">Unknown.</rs>. <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU expedition in <date value="1994" notBefore="1994" notAfter="1994" exact="both">1994</date>.</p>
-      </div>
-
-      <div type="bibliography"><head>Bibliography</head><p>Published by <bibl n="ala2004" rend="primary" type="hbi"><author>Roueché</author> (2004), <biblScope>243</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs"><head>Photographs</head><p><figure href="94_B_14A"><figDesc>Face (1994)</figDesc></figure><figure href="94_C_12"><figDesc>Face (1994)</figDesc></figure></p></div>
-
-      
-
-    </body>
-  </text>
+         <div type="translation">
+            <ab>Zoetos, son of Theopemptos, who strove for the blessed life, lies here.</ab>
+         </div>
+         <div type="commentary">
+            <p>See <ref type="eAla-text" n="IX.43" target=".xml"/> and for this man's brother see <ref type="inscription" n="169" target="130158.xml"/> and discussion at <ref type="eAla-text" n="IX.42" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="ala2004" rend="primary" type="hbi">
+                  <author>Roueché</author> (2004), <citedRange>243</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

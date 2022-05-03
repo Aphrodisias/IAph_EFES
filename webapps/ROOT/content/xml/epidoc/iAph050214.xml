@@ -1,167 +1,252 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050214" n="iAph0672 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Aurelius Achilles</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term><term><rs type="textType" key="sacer">Religious</rs></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-01-17</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A plain <rs type="objectType">statue base</rs> shaft (<measure dim="height" unit="metre" type="length">1.28</measure> x <measure dim="width" unit="metre" type="length">0.55</measure> x <measure dim="depth" unit="metre" type="length">0.53</measure>) without moulding, chipped at edges but complete above and below.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on two adjoining faces, i to the right, ii to the left. The text of i must have begun on a crowning feature; so perhaps did that of ii.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>i. Letters standard second-/third-century forms, av. 0.015. Apex above initial Θ, l.9. Ligatures: ΤΗ l.4, ΝΗ l.5, ΜΗ l.8, ΤΗ, ΤΗΝ l.10, ΠΕ, ΤΗ l.11, ΤΗ l.12, ΤΗΝ, ΠΕ l.13, ΤΗ,l.14, ΤΗ l.15, ΜΝ l.19, ΤΗΝ, ΤΗΝ l.20, ΜΕ, ΜΕ l.22, ΜΗ l.23, ΜΕ l.24, ΠΡ l.26, ΝΗ l.27, ΤΗ, ΝΤ l.28, ΤΗΝ l.29, ΤΗ, ΠΗ, ΤΕ l.31, ΤΗ, ΜΕ l.32, ΤΗ, ΝΕ l.33, ΜΗ l.35, ΜΕ, ΤΗΝ l.35, ΜΗ, ΝΗ, ΤΗ l.38, ΤΗ l.40, ΤΗΝ, ΤΗΝ, ΠΕ l.41. ii. Letters av. 0.02; apices over Ι, l.19, initial Ε, l.21. Ligatures: ΤΕ l.1, ΜΕ, ΝΕ l.3, ΤΕ l.5, ΜΗ l.11, ΤΕ l.13, ΗΜΕ, ΤΕ l.15, ΗΤ l.22..]</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0212" notAfter="0300" exact="notBefore">Third century (after 212)</date>
- (<rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Aurelius Achilles</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050214</idno>
+            <idno type="IAph2007">iAph050214</idno>
+            <idno type="JMR2004">iAph0672</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A plain <objectType>statue base</objectType> shaft (<height unit="metre">1.28</height> x <width unit="metre">0.55</width> x <depth unit="metre">0.53</depth>) without moulding, chipped at edges but complete above and below.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on two adjoining faces, i to the right, ii to the left. The text of i must have begun on a crowning feature; so perhaps did that of ii.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. Letters standard second-/third-century forms, av. 0.015. Apex above initial Θ, l.9. Ligatures: ΤΗ l.4, ΝΗ l.5, ΜΗ l.8, ΤΗ, ΤΗΝ l.10, ΠΕ, ΤΗ l.11, ΤΗ l.12, ΤΗΝ, ΠΕ l.13, ΤΗ,l.14, ΤΗ l.15, ΜΝ l.19, ΤΗΝ, ΤΗΝ l.20, ΜΕ, ΜΕ l.22, ΜΗ l.23, ΜΕ l.24, ΠΡ l.26, ΝΗ l.27, ΤΗ, ΝΤ l.28, ΤΗΝ l.29, ΤΗ, ΠΗ, ΤΕ l.31, ΤΗ, ΜΕ l.32, ΤΗ, ΝΕ l.33, ΜΗ l.35, ΜΕ, ΤΗΝ l.35, ΜΗ, ΝΗ, ΤΗ l.38, ΤΗ l.40, ΤΗΝ, ΤΗΝ, ΠΕ l.41. ii. Letters av. 0.02; apices over Ι, l.19, initial Ε, l.21. Ligatures: ΤΕ l.1, ΜΕ, ΝΕ l.3, ΤΕ l.5, ΜΗ l.11, ΤΕ l.13, ΗΜΕ, ΤΕ l.15, ΗΤ l.22..]</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Hadrianic Baths, East court</rs>
+                     </origPlace>
+                     <origDate notBefore="0212"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="nomenclature">
+Third century (after 212)
+ (<rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Hadrianic Baths, East court</rs>: found 'dans le 3e' (corrected to 4e in fair copy) 'entrée du portique nord'; 'Dans le 3e entrecolonnement du portique N(ord) (Boulanger).</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché); publications; Boulanger notebooks.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-01-17" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="72_A_36A.jpg">
+            <desc>Face i (1972)</desc>
+         </graphic>
+         <graphic url="89_D_07A.jpg">
+            <desc>Face i (1989)</desc>
+         </graphic>
+         <graphic url="89_D_19A.jpg">
+            <desc>Face ii (1989)</desc>
+         </graphic>
+         <graphic url="77_B_21A.jpg">
+            <desc>Face ii (1977)</desc>
+         </graphic>
+         <graphic url="Boulanger_A_75.jpg">
+            <desc>Boulanger, Notebook A, page 75</desc>
+         </graphic>
+         <graphic url="Boulanger_A_76.jpg">
+            <desc>Boulanger, Notebook A, page 76</desc>
+         </graphic>
+         <graphic url="Boulanger_B_25.jpg">
+            <desc>Boulanger, Notebook B, Page 25</desc>
+         </graphic>
+         <graphic url="Boulanger_B_27.jpg">
+            <desc>Boulanger, Notebook B, Page 27</desc>
+         </graphic>
+         <graphic url="Boulanger_B_29.jpg">
+            <desc>Boulanger, Notebook B, Page 29</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="textpart_column" n="i"><ab>
-<lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/> 
-<lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/> <w lemma="σπουδάζω">ἐσπουδακότας</w> <w lemma="ἀποδέχομαι">ἀποδεχο<supplied reason="lost">μέ</supplied>  
-<lb type="worddiv" n="2"/><supplied reason="lost">νης</supplied></w> <w lemma="ἀεί">ἀεὶ</w> <w lemma="ὁ">ταῖς</w> <w lemma="πρέπω">πρεπούσαις</w> <w lemma="καί">καὶ</w> <w lemma="δίκαιος">δικα<supplied reason="lost">ί</supplied><supplied reason="lost" cert="low"><space extent="2" unit="character" dim="horizontal"/></supplied>
+
+<div n="i" type="textpart" subtype="column"><ab>
+<lb n="0"/><gap reason="lost" unit="line" extent="unknown"/> 
+<lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="σπουδάζω">ἐσπουδακότας</w> <w lemma="ἀποδέχομαι">ἀποδεχο<supplied reason="lost">μέ</supplied>  
+<lb n="2" break="no"/><supplied reason="lost">νης</supplied></w> <w lemma="ἀεί">ἀεὶ</w> <w lemma="ὁ">ταῖς</w> <w lemma="πρέπω">πρεπούσαις</w> <w lemma="καί">καὶ</w> <w lemma="δίκαιος">δικα<supplied reason="lost">ί</supplied><supplied reason="lost" cert="low"><space extent="2" unit="character" dim="horizontal"/></supplied>
 <lb n="3"/><supplied reason="lost">αις</supplied></w> <w lemma="πρός">πρὸς</w> <w lemma="ἄξιος">ἀξίαν</w> <w lemma="μαρτυρία">μαρτυρίαις</w> <w lemma="ὁ">τῆς</w> <w lemma="λαμπρός">λαμ
-<lb type="worddiv" n="4"/><supplied reason="lost">πρ</supplied>οτάτης</w>  <w lemma="πόλις">πόλεως</w> <w lemma="ὁ">τῶν</w> <w lemma="Ἐφέσιος">Ἐφεσίων</w> <w lemma="καί">καὶ</w> <space extent="3" unit="character" dim="horizontal"/>  
+<lb n="4" break="no"/><supplied reason="lost">πρ</supplied>οτάτης</w>  <w lemma="πόλις">πόλεως</w> <w lemma="ὁ">τῶν</w> <w lemma="Ἐφέσιος">Ἐφεσίων</w> <w lemma="καί">καὶ</w> <space extent="3" unit="character" dim="horizontal"/>  
 <lb n="5"/>  <w lemma="συνήδομαι"><supplied reason="lost">συ</supplied>νηδομένης</w> <w lemma="ὡς">ὡς</w> <w lemma="οἰκεῖος">οἰκείοις</w> <w lemma="ὁ">τοῖς</w> <w lemma="πᾶς">παν
-<lb type="worddiv" n="6"/><supplied reason="lost">τῶ</supplied>ν</w>  <w lemma="ἀγαθός">ἀγαθοῖς,</w> <w lemma="καί">καὶ</w> <w lemma="ὅσος">ὅσα</w> <w lemma="ὁ">ταῖς</w> <w lemma="ἄλλος">ἄλλαις</w> <w lemma="πόλις">πο
-<lb type="worddiv" n="7"/><supplied reason="lost">λ</supplied>εσιν</w>  <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐπιφανής">ἐπιφανέσιν</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀνήρ">ἀν
-<lb type="worddiv" n="8"/><supplied reason="lost">δ</supplied>ρῶν</w>  <w lemma="ὑπάρχω">ὑπάρχει</w> <w lemma="πρός">πρὸς</w> <w lemma="εὐδοκίμησις">εὐδοκίμησιν</w> 
+<lb n="6" break="no"/><supplied reason="lost">τῶ</supplied>ν</w>  <w lemma="ἀγαθός">ἀγαθοῖς,</w> <w lemma="καί">καὶ</w> <w lemma="ὅσος">ὅσα</w> <w lemma="ὁ">ταῖς</w> <w lemma="ἄλλος">ἄλλαις</w> <w lemma="πόλις">πο
+<lb n="7" break="no"/><supplied reason="lost">λ</supplied>εσιν</w>  <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐπιφανής">ἐπιφανέσιν</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀνήρ">ἀν
+<lb n="8" break="no"/><supplied reason="lost">δ</supplied>ρῶν</w>  <w lemma="ὑπάρχω">ὑπάρχει</w> <w lemma="πρός">πρὸς</w> <w lemma="εὐδοκίμησις">εὐδοκίμησιν</w> 
 <lb n="9"/><w lemma="ἐξαιρετός"><supplied reason="lost">ἐ</supplied>ξαίρετα</w> <w lemma="οὗτος">ταῦτα</w> <w lemma="ὑπάρχω">ὑπάρχειν</w> <w lemma="εὐτύχημα">εὐτυχή
-<lb type="worddiv" n="10"/><supplied reason="lost">μ</supplied>ατα</w>  <w lemma="πλείων">πλεῖον</w> <w lemma="δέ">δέ</w> <w lemma="τις">τι</w> <w lemma="ὁ">τῆς</w> <w lemma="περί">περὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="εὔνοια">εὔνοι
-<lb type="worddiv" n="11"/><supplied reason="lost">α</supplied>ν</w>  <w>ῥοπῆς</w> <w lemma="ἀπονέμω">ἀπονεμούσης</w> <w lemma="ὁ">τῇ</w> <w lemma="λαμπρός">λαμ<lb type="worddiv" n="12"/><unclear reason="damage">π</unclear>ροτάτῃ</w> 
- <w lemma="πόλις">πόλει</w> <w lemma="ὁ">τῶν</w> <placeName type="ethnic" reg="Ἀφροδεισιεύς">Ἀφροδεισιέων</placeName> 
+<lb n="10" break="no"/><supplied reason="lost">μ</supplied>ατα</w>  <w lemma="πλείων">πλεῖον</w> <w lemma="δέ">δέ</w> <w lemma="τις">τι</w> <w lemma="ὁ">τῆς</w> <w lemma="περί">περὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="εὔνοια">εὔνοι
+<lb n="11" break="no"/><supplied reason="lost">α</supplied>ν</w>  <w>ῥοπῆς</w> <w lemma="ἀπονέμω">ἀπονεμούσης</w> <w lemma="ὁ">τῇ</w> <w lemma="λαμπρός">λαμ<lb n="12" break="no"/><unclear reason="damage">π</unclear>ροτάτῃ</w> 
+ <w lemma="πόλις">πόλει</w> <w lemma="ὁ">τῶν</w> <placeName nymRef="#Ἀφροδεισιεύς">Ἀφροδεισιέων</placeName> 
 <lb n="13"/><w lemma="πρός"><supplied reason="lost">π</supplied>ρὸς</w> <w lemma="ὁ">τὴν</w> <w lemma="πολύς">πολλὰ</w> <w lemma="καί">καὶ</w> <w lemma="ἐξαιρετός">ἐξαίρετα</w> <w lemma="περί">περὶ</w> 
 <lb n="14"/><w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear reason="damage">ὴν</unclear></w> <w lemma="ἀντίδοσις">ἀντίδοσιν</w> <w lemma="ὁ">τῆς</w> <w lemma="φιλοστοργία">φιλοστοργίας</w> 
 <lb n="15"/>  <w lemma="εἰμί">ἐστιν</w> <w lemma="αὐτός">αὐτῇ</w> <w lemma="δίκαιος">δίκαια</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="οὗτος">ταῦτα</w> <space extent="1" unit="character" dim="horizontal"/>  
-<lb n="16"/><persName type="aphrodisian"><name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ήλιον</supplied></expan></name> <name reg="Ἀχιλλεύς">Ἀχιλλέα</name></persName> <w lemma="σῶμα">σώματος</w> <w lemma="μέν">μὲν</w> <w lemma="ἄσκησις">ἄσκη
-<lb type="worddiv" n="17"/>σιν</w>  <w lemma="ἐπαναιρέομαι">ἐπανελόμενον</w> <w lemma="ἄθλησις">ἀθλήσεως</w> <w lemma="δέ">δὲ</w> 
+<lb n="16"/><persName type="attested"><name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιον</ex></expan></name> <name nymRef="#Ἀχιλλεύς">Ἀχιλλέα</name></persName> <w lemma="σῶμα">σώματος</w> <w lemma="μέν">μὲν</w> <w lemma="ἄσκησις">ἄσκη
+<lb n="17" break="no"/>σιν</w>  <w lemma="ἐπαναιρέομαι">ἐπανελόμενον</w> <w lemma="ἄθλησις">ἀθλήσεως</w> <w lemma="δέ">δὲ</w> 
 <lb n="18"/> <w lemma="ὁ">τὸν</w> <w lemma="γενναῖος">γενναιότατον</w> <w lemma="βίος">βίου</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <w lemma="προαίρεσις">προ
-<lb type="worddiv" n="19"/>αιρέσεως</w>  <w lemma="ὁ">τὸν</w> <w lemma="σεμνός">σεμνότατον</w> <w lemma="ὡς">ὡς</w> <w lemma="ἐν">ἐν</w> <w lemma="αὐτός">αὐ
-<lb type="worddiv" n="20"/> τῷ</w>  <w lemma="πᾶς">πᾶσαν</w> <w lemma="κεράννυμι">κεκρᾶσθαι</w> <w lemma="ὁ">τὴν</w> <w lemma="ἀρετή">ἀρετὴν</w> <w lemma="ὅσος">ὅσην</w> 
+<lb n="19" break="no"/>αιρέσεως</w>  <w lemma="ὁ">τὸν</w> <w lemma="σεμνός">σεμνότατον</w> <w lemma="ὡς">ὡς</w> <w lemma="ἐν">ἐν</w> <w lemma="αὐτός">αὐ
+<lb n="20" break="no"/> τῷ</w>  <w lemma="πᾶς">πᾶσαν</w> <w lemma="κεράννυμι">κεκρᾶσθαι</w> <w lemma="ὁ">τὴν</w> <w lemma="ἀρετή">ἀρετὴν</w> <w lemma="ὅσος">ὅσην</w> 
 <lb n="21"/> <w lemma="ψυχή">ψυχῆς</w> <w lemma="εἰμί">ἐστιν</w> <w lemma="καί">καὶ</w> <w lemma="σῶμα">σώματος</w> <w lemma="ἀποδέχομαι">ἀποδε
-<lb type="worddiv" n="22"/>ξαμένης</w>  <w lemma="μέν">μὲν</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> 
+<lb n="22" break="no"/>ξαμένης</w>  <w lemma="μέν">μὲν</w> <w lemma="πολλάκις">πολλάκις</w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> 
 <lb n="23"/> <w lemma="φθάνω">φθάνουσιν</w> <w lemma="ἀγών">ἀγῶσιν</w> <w lemma="ὅς">οἷς</w> <w lemma="κοσμέω">ἐκόσμησεν</w> 
 <lb n="24"/> <w lemma="διαπρεπής">διαπρεπῶς</w> <w lemma="καί">καὶ</w> <w lemma="μετά">μετὰ</w> <w lemma="πᾶς">πάσης</w> <w lemma="ἀγωνίζομαι">ἀγω
-<lb type="worddiv" n="25"/>νισάμενος</w>  <w lemma="ἀνδριάς">ἀνδρείας</w> <w lemma="μάλιστα">μάλιστα</w> <w lemma="δέ">δὲ</w> 
+<lb n="25" break="no"/>νισάμενος</w>  <w lemma="ἀνδριάς">ἀνδρείας</w> <w lemma="μάλιστα">μάλιστα</w> <w lemma="δέ">δὲ</w> 
 <lb n="26"/> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="ὁ">τῶν</w> <w lemma="Ὀκτωβρίων">Ὀλυμπίων</w> <w lemma="ἀγών">ἀγῶνι</w> <w lemma="ὅτι">ὅτι</w> <w lemma="προτρέπω">πρ<unclear reason="damage">ο</unclear>
-<lb type="worddiv" n="27"/>τρεψαμένης</w>   <w lemma="αὐτός">αὐτὸν</w> <w lemma="ὡς">ὡς</w> <w lemma="πατρίς">πατρίδος</w> 
+<lb n="27" break="no"/>τρεψαμένης</w>   <w lemma="αὐτός">αὐτὸν</w> <w lemma="ὡς">ὡς</w> <w lemma="πατρίς">πατρίδος</w> 
 <lb n="28"/> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="τέλειος">τελεώτατον</w> <w lemma="ὁ">τῶν</w> 
 <lb n="29"/> <w lemma="ἀγώνισμα">ἀγωνισμάτων</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="κρίσις">κρίσιν</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀνήρ">ἀν
-<lb type="worddiv" n="30"/> δρῶν</w>  <w lemma="μετέρχομαι">μετελθεῖν</w> <w lemma="ὑπακούω">ὑπακούσας</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  
+<lb n="30" break="no"/> δρῶν</w>  <w lemma="μετέρχομαι">μετελθεῖν</w> <w lemma="ὑπακούω">ὑπακούσας</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  
 <lb n="31"/> <w lemma="πείθω">πεισθεὶς</w> <w lemma="ὁ">τῇ</w> <w lemma="προτροπή">προτροπῇ</w> <w lemma="ὁ">τούς</w> <w lemma="τε">τε</w> <w lemma="ἀντίπαλος">ἀν
-<lb type="worddiv" n="32"/>τιπάλους</w>  <w lemma="καταγωνίζομαι">κατηγωνίσατο</w> <w lemma="καί">καὶ</w> <w lemma="μετά">μετὰ</w> 
+<lb n="32" break="no"/>τιπάλους</w>  <w lemma="καταγωνίζομαι">κατηγωνίσατο</w> <w lemma="καί">καὶ</w> <w lemma="μετά">μετὰ</w> 
 <lb n="33"/> <w lemma="τοσοῦτος">τοσαύτης</w> <w lemma="δόξα">δόξης</w> <w lemma="ὁ">τὸν</w> <w lemma="κότινος">κότινον</w> <w lemma="ἀναδέω">ἀν<unclear reason="damage">ε</unclear>  
-<lb type="worddiv" n="34"/>δήσατο</w> <w lemma="ὡς">ὡς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w lemma="μάλιστα">μάλιστα</w> <w lemma="ὁ">τῶν</w> 
+<lb n="34" break="no"/>δήσατο</w> <w lemma="ὡς">ὡς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w lemma="μάλιστα">μάλιστα</w> <w lemma="ὁ">τῶν</w> 
 <lb n="35"/> <w lemma="εὐδοκιμέω">εὐδοκιμησάντων</w> <w lemma="ἀγώνισμα">ἀγωνισμάτων</w> 
 <lb n="36"/> <w lemma="καταριθμέω">καταριθμεῖσθαι</w> <w lemma="ὁ">τὴν</w> <w lemma="ἀνδρεῖος">ἀνδρείαν</w> <w lemma="αὐτός">αὐ
-<lb type="worddiv" n="37"/>τοῦ</w>  <w lemma="καί">καὶ</w> <w lemma="προθυμία">προθυμίαν</w> <g type="scroll"/> <w lemma="διά">διὰ</w> <w lemma="οὗτος">ταῦτα</w> <w lemma="δοκέω">ἔ
-<lb type="worddiv" n="38"/>δοξεν</w>  <w lemma="μή">μὴ</w> <w lemma="μέχρι">μέχρις</w> <w lemma="μόνος">μόνης</w> <w lemma="ὁ">τῆς</w> <w lemma="γνῶσις">γνώ
-<lb type="worddiv" n="39"/>σεως</w>  <w lemma="ὁ">τῶν</w> <w lemma="πάρειμι1">παρόντων</w> <w lemma="μηδέ">μηδὲ</w> <w lemma="ὁ">τῶν</w> <w>ἀ 
-<lb type="worddiv" n="40"/>παντησάντων</w> <w lemma="κατά">κατὰ</w> <w lemma="καιρός">καιρὸν</w> <w lemma="ὁ">τῷ</w> <w lemma="στάδιον">στα
-<lb type="worddiv" n="41"/>δίῳ</w>  <w lemma="ἵστημι">στῆναι</w> <w lemma="ὁ">τὴν</w> <w lemma="περί">περὶ</w> <w lemma="οὗτος">τούτων</w> <w lemma="μαρτυρία">μαρτυρί<lb type="worddiv" n="42"/>αν</w> 
+<lb n="37" break="no"/>τοῦ</w>  <w lemma="καί">καὶ</w> <w lemma="προθυμία">προθυμίαν</w> <g ref="#scroll"/> <w lemma="διά">διὰ</w> <w lemma="οὗτος">ταῦτα</w> <w lemma="δοκέω">ἔ
+<lb n="38" break="no"/>δοξεν</w>  <w lemma="μή">μὴ</w> <w lemma="μέχρι">μέχρις</w> <w lemma="μόνος">μόνης</w> <w lemma="ὁ">τῆς</w> <w lemma="γνῶσις">γνώ
+<lb n="39" break="no"/>σεως</w>  <w lemma="ὁ">τῶν</w> <w lemma="πάρειμι1">παρόντων</w> <w lemma="μηδέ">μηδὲ</w> <w lemma="ὁ">τῶν</w> <w>ἀ 
+<lb n="40" break="no"/>παντησάντων</w> <w lemma="κατά">κατὰ</w> <w lemma="καιρός">καιρὸν</w> <w lemma="ὁ">τῷ</w> <w lemma="στάδιον">στα
+<lb n="41" break="no"/>δίῳ</w>  <w lemma="ἵστημι">στῆναι</w> <w lemma="ὁ">τὴν</w> <w lemma="περί">περὶ</w> <w lemma="οὗτος">τούτων</w> <w lemma="μαρτυρία">μαρτυρί<lb n="42" break="no"/>αν</w> 
   <w lemma="ἀλλά">ἀ<supplied reason="lost">λλ</supplied>ὰ</w> <w lemma="γάρ">γὰρ</w> <w lemma="καί">καὶ</w> <w lemma="παρακατατίθεμαι">παρακαταθέσθ<supplied reason="lost">αι</supplied></w>  <w lemma="διά">δι<supplied reason="lost">ὰ</supplied></w>  
 <lb n="43"/> <w lemma="οὗτος">τούτου</w> <w lemma="ὁ">τοῦ</w> <w lemma="ψήφισμα">ψηφίσματος</w> <w lemma="ἔτι">ἔτι</w> <w lemma="μᾶλλον">μᾶ<supplied reason="lost">λ</supplied>  
-<lb type="worddiv" n="44"/>λον</w> <w lemma="αὐτός">αὐτὸν</w> <w lemma="ὁ">τῇ</w> <w lemma="πατρίς">πατρίδι</w></ab>
-</div><div type="textpart_column" n="ii"><ab>
-<lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  
-<lb n="1"/><w lemma="εἴτε">εἴ<unclear reason="damage">τ</unclear>ε</w> <w lemma="δέ">δὲ</w> <persName type="aphrodisian"><name reg="Βαριανός">Βαριανο<unclear reason="damage">ῖο</unclear></name></persName>  <orig n="unresolved"><unclear reason="damage">ιι</unclear></orig><gap extent="1" reason="illegible" unit="character"/><orig n="unresolved"><unclear reason="damage">ο</unclear></orig>  <gap reason="lost" extent="7" unit="character"/>  
+<lb n="44" break="no"/>λον</w> <w lemma="αὐτός">αὐτὸν</w> <w lemma="ὁ">τῇ</w> <w lemma="πατρίς">πατρίδι</w></ab>
+</div><div n="ii" type="textpart" subtype="column"><ab>
+<lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  
+<lb n="1"/><w lemma="εἴτε">εἴ<unclear reason="damage">τ</unclear>ε</w> <w lemma="δέ">δὲ</w> <persName type="attested"><name nymRef="#Βαριανός">Βαριανο<unclear reason="damage">ῖο</unclear></name></persName>  <orig n="unresolved"><unclear reason="damage">ιι</unclear></orig><gap reason="illegible" unit="character" quantity="1"/><orig n="unresolved"><unclear reason="damage">ο</unclear></orig>  <gap reason="lost" unit="character" quantity="7"/>  
 <lb n="2"/><space extent="3" unit="character" dim="horizontal"/> <w lemma="ἀγορεύω">ἀγορεύσεις</w> <space extent="3" unit="character" dim="horizontal"/>  
 <lb n="3"/> <w lemma="μέτρον">μέτροις</w> <w lemma="νικάω">νεικήσας</w><w lemma="οὗτος"> τοῦτο<supplied reason="lost">ν</supplied></w>  <w lemma="ἔχω"><supplied reason="lost">ἔχω</supplied></w>  
 <lb n="4"/><space extent="3" unit="character" dim="horizontal"/> <w lemma="κότινος">κότινον</w> <space extent="3" unit="character" dim="horizontal"/>  
-<lb n="5"/> <w lemma="εἴτε">εἴτ'</w> <w lemma="ἐπιφημίζω">ἐπιφημίξῃς</w> <w lemma="ὁ">τὸν</w> <w lemma="ἔφηβος">ἔφη<supplied reason="lost">βον</supplied></w> <persName type="aphrodisian"><name reg="Ἀρείων"><supplied reason="lost">Ἀ</supplied><lb type="worddiv" n="6"/><space extent="3" unit="character" dim="horizontal"/>ρείονα</name></persName> <w lemma="φώς">φωτῶν</w> <space extent="3" unit="character" dim="horizontal"/>  
+<lb n="5"/> <w lemma="εἴτε">εἴτ'</w> <w lemma="ἐπιφημίζω">ἐπιφημίξῃς</w> <w lemma="ὁ">τὸν</w> <w lemma="ἔφηβος">ἔφη<supplied reason="lost">βον</supplied></w> <persName type="attested"><name nymRef="#Ἀρείων"><supplied reason="lost">Ἀ</supplied><lb n="6" break="no"/><space extent="3" unit="character" dim="horizontal"/>ρείονα</name></persName> <w lemma="φώς">φωτῶν</w> <space extent="3" unit="character" dim="horizontal"/>  
 <lb n="7"/> <w lemma="καί">καὶ</w> <w lemma="κατά">κατὰ</w> <w lemma="οὗτος">τούτου</w> <persName type="divine"><name><del>Ζεύ</del><unclear reason="damage">ς</unclear></name></persName>  <w lemma="ὀπάζω">ὤπ<unclear reason="damage">α</unclear><supplied reason="lost">σε</supplied></w>  
 <lb n="8"/><space extent="3" unit="character" dim="horizontal"/> <w lemma="ἐγώ">μοι</w> <w lemma="κότινος">κότινον</w> <space extent="3" unit="character" dim="horizontal"/>  
-<lb n="9"/> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσιν</w> <w lemma="δέ">δὲ</w> <w lemma="ἔθνος">ἐθνέων</w> <orig n="unresolved">ειρ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  
+<lb n="9"/> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσιν</w> <w lemma="δέ">δὲ</w> <w lemma="ἔθνος">ἐθνέων</w> <orig n="unresolved">ειρ</orig><gap reason="lost" unit="character" extent="unknown"/>  
 <lb n="10"/>  <space extent="3" unit="character" dim="horizontal"/> <w lemma="στάδιον">σταδίοις</w> <w lemma="τόσος">τόσος</w> <w lemma="εἰμί">εἰμί</w> <supplied reason="lost"><space extent="3" unit="character" dim="horizontal"/></supplied>  
 <lb n="11"/> <w lemma="ὅσος">ὅσσον</w> <w lemma="μήτις">μήτις</w> <w lemma="ἐμός">ἐμῶν</w> <w lemma="ἀστός">ἀστὸς</w> <w lemma="φύω">ἔ<supplied reason="lost">φυ</supplied></w>  
 <lb n="12"/><space extent="3" unit="character" dim="horizontal"/> <w lemma="προφέρω">προφέρειν</w> <space extent="3" unit="character" dim="horizontal"/>  
-<lb n="13"/> <w lemma="πλῆθος">πλῆθος</w> <w lemma="δέ">δὲ</w> <w lemma="στέφανος">στεφάνων</w> <w lemma="ἀγορεύω">ἀγορεύ<lb type="worddiv" n="14"/><space extent="3" unit="character" dim="horizontal"/>ει</w> 
+<lb n="13"/> <w lemma="πλῆθος">πλῆθος</w> <w lemma="δέ">δὲ</w> <w lemma="στέφανος">στεφάνων</w> <w lemma="ἀγορεύω">ἀγορεύ<lb n="14" break="no"/><space extent="3" unit="character" dim="horizontal"/>ει</w> 
  <w lemma="σύ">σοι</w> <w lemma="κλέος">κλέος</w> <w lemma="ἄλλος">ἄλλων</w> <space extent="3" unit="character" dim="horizontal"/>  
 <lb n="15"/>  <w lemma="εἰκών">εἰκόνι</w> <w lemma="λαίνεος">λαινέῃ</w> <w lemma="καί">καὶ</w> <w lemma="τύπος">τύπῳ</w> <w lemma="ἡμέτερος">ἡμετέρῳ</w> 
-<lb n="16"/><w lemma="πολλάκις">πόλλα<unclear reason="damage">κι</unclear></w> <w lemma="γάρ">γὰρ</w> <w lemma="δή">δὴ</w> <persName type="divine"><name><del>Πύθια</del></name></persName> <w lemma="ἔχω"><del>ἔ</del>χω</w> <w lemma="καί">καὶ</w>  <persName type="divine"><name>Ὀ<lb type="worddiv" n="17"/><space extent="3" unit="character" dim="horizontal"/><del rend="erasure">λύμπια</del></name></persName> <w lemma="δεῖος">δεῖα</w> <space extent="3" unit="character" dim="horizontal"/>  
-<lb n="18"/> <w lemma="ἀντίπαλος">ἀντιπάλους</w> <w lemma="νικάω">νεικῶν</w> <w lemma="κύδιμος"><expan><abbr>κυδίμ</abbr><supplied reason="abbreviation">ῳ</supplied></expan></w>  
+<lb n="16"/><w lemma="πολλάκις">πόλλα<unclear reason="damage">κι</unclear></w> <w lemma="γάρ">γὰρ</w> <w lemma="δή">δὴ</w> <persName type="divine"><name><del>Πύθια</del></name></persName> <w lemma="ἔχω"><del>ἔ</del>χω</w> <w lemma="καί">καὶ</w>  <persName type="divine"><name>Ὀ<lb n="17" break="no"/><space extent="3" unit="character" dim="horizontal"/><del rend="erasure">λύμπια</del></name></persName> <w lemma="δεῖος">δεῖα</w> <space extent="3" unit="character" dim="horizontal"/>  
+<lb n="18"/> <w lemma="ἀντίπαλος">ἀντιπάλους</w> <w lemma="νικάω">νεικῶν</w> <w lemma="κύδιμος"><expan><abbr>κυδίμ</abbr><ex>ῳ</ex></expan></w>  
 <lb n="19"/><space extent="3" unit="character" dim="horizontal"/> <w lemma="εὔκλεια">εὐκλείῃ</w> <space extent="3" unit="character" dim="horizontal"/>  
-<lb n="20"/>  <w lemma="οὐδείς">οὐδενὸς</w> <w lemma="ἄνθρωπος">ἀνθρώπων</w> <w>δηρε<unclear reason="damage">ι</unclear><lb type="worddiv" n="21"/><space extent="3" unit="character" dim="horizontal"/>σαμένου</w>  
+<lb n="20"/>  <w lemma="οὐδείς">οὐδενὸς</w> <w lemma="ἄνθρωπος">ἀνθρώπων</w> <w>δηρε<unclear reason="damage">ι</unclear><lb n="21" break="no"/><space extent="3" unit="character" dim="horizontal"/>σαμένου</w>  
  <w lemma="περί">περὶ</w> <w lemma="νείκη">νείκης</w> <space extent="3"/> 
-<lb n="22"/><w lemma="εἰς"><supplied reason="lost">ε</supplied><unclear reason="damage">ἰ</unclear>ς</w> <w lemma="ἔρις">ἔριν</w> <w lemma="ἔκλητος">ἐκλήτου</w> <w lemma="δεύτερος">δεύτερον</w> <w lemma="ἀντιάζω">ἀν<lb type="worddiv" n="23"/><space extent="8"/>τιάσαι</w> 
+<lb n="22"/><w lemma="εἰς"><supplied reason="lost">ε</supplied><unclear reason="damage">ἰ</unclear>ς</w> <w lemma="ἔρις">ἔριν</w> <w lemma="ἔκλητος">ἐκλήτου</w> <w lemma="δεύτερος">δεύτερον</w> <w lemma="ἀντιάζω">ἀν<lb n="23" break="no"/><space extent="8"/>τιάσαι</w> 
  <space extent="8"/></ab>
 </div></div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>i. ll.5/6: πάν//[πα]ν R., πάν//[τω]ν M., W., J.</p>
-<p>i. ll.9/10: εὐτυχῆ // [κ]ατὰ R., M., W., εὐτυχή//[μ]ατα J.</p>
-<p>i. ll.16/17: ΑΣΚΗΣΙΝ//ΕΠΑ R., whence M., W.</p>
-<p>i. l. 42,  ΑΝΑ B., lapis; ἀλλὰ R., M., W.; ἅμα J.; ἀνὰ ἔαρ cj. Ebert.</p>
-<p>ii. The supplements are those of Jones, unless stated.</p>
-<p>ii. l. 3,  μετρ'οἷς M.</p>
-<p>ii. l. 9,  εἴρ[ου] cj. J.; εἴρ[ης] M., from εἴρη, 'agora'; εἱρ[οῖς], for ἱερ[οῖς], E.</p>
-<p>ii. l. 11,  J. suggested ἔ[φυ as a possibility, but preferred ἔ[φη; ἐ[ρεῖ] M.; ἔ[χει] E.</p>
-<p>ii. l. 13,  J., working from a squeeze, could not know that there is no room for another letter after Υ: this therefore imposes the reading ἀγορεύει, which is assumed by E.</p>
-<p>ii. l. 18,  ΚΥΔΙΜΟ : there is no room for a further letter at the end; either a final sigma was omitted, as assumed by Jones, giving a nominative, or the omicron is a mistake for omega, giving the dative, κυδίμῳ. I slightly prefer the second interpretation, which is also that of Ebert.</p>
-<p>ii. l. 22,  {Ω]Σ J. There seem to be traces of an upright before Σ, giving ΙΣ or [ε]ἰς, as conjectured by M. and E.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p> i. [ - - ] since the most splendid city of the Ephesians always welcomes those who have shown zeal with testimonies that are fitting and just for their worth, and takes a share of pleasure in the advantages of all (men) as if they were her own, and (since she considers that) whatever outstanding (advantages) accrue to the good reputation of other cities from distinguished men, these are matters of (?general) good fortune; (10) and since she assigns an especial portion of her inclination towards goodwill to the most splendid city of the Aphrodisians, towards which she has many and outstanding justifications for the exchange of affection. For these reasons, (the city) has welcomed Aurelius Achilles - - who has both undertaken the training of the body, and is also most noble in training, and most dignified in his way of life and his conduct, so that in him (20) all virtue of body and soul is blended - - (has welcomed him) often, both in previous contests, which he adorned, having competed impressively and with all courage, and especially in the contest of the Olympia, because, when the city encouraged him - - as if it were his own fatherland - - to proceed to the ultimate competition, and to the category of men (30), he listened, and was persuaded by the encouragement, and defeated his opponents, and bound on the (crown of) olive with such glory that his (?display of) courage and eagerness are to be numbered among the most distinguished of contests. For these reasons it was resolved that the testimony about these events should not extend only as far as the knowledge of those who were present and (40) happened to be in the stadium at the time, but by means of this decree he should be commended even more to his fatherland.</p>
-<p>ii. [?a couplet naming Achilles] but if you proclaim [?the prowess] of Varianus in verse, I hold the olive having defeated him; or if you praise the ephebe Arion, (superior) to grown men, against him too Zeus´ granted me the olive (wreath). In all the stadia of the nations [ ?ask] - - I am as great as none of my fellow-citizens [was able to] surpass. The throng of other crowns proclaims to you my fame, by means of, ?or in a stone image and my likeness. For I often have Pythia, and divine Olympia, defeating (my) rivals with glorious fame, while none of the men who have struggled (with me) for victory has been summoned to confront a second contest (?).</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See the full discussion by Jones, 'Two inscriptions from Aphrodisias', HSCP 85 (1981), 107-29; see alsocommentary at Roueché, PPA 72.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Hadrianic Baths, East court</rs>: found 'dans le 3e' (corrected to 4e in fair copy) 'entrée du portique nord'; 'Dans le 3e entrecolonnement du portique N(ord) (Boulanger).</rs>
-<rs type="origLocation"><rs type="monuList">Hadrianic Baths, East court</rs></rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcriptions (Reynolds, Roueché); publications; Boulanger notebooks.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-
-<p>Excavated by Boulanger, 26 October 1913 (notebook A, 75-6, no. 18, whence B 25-29, no. 18); recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>i. published by <bibl n="robert1939">L. Robert, from Boulanger, <title>Anatolian Studies Buckler</title> (Manchester, 1939), 230-44</bibl> (= <bibl n="robertOMS1">OMS I, 614-28</bibl>), whence republished by <bibl n="merkelbach1974">R. Merkelbach, ZPE 14 (1974), 91-4</bibl>, and <bibl n="wankel">H. Wankel, I.Eph. I, 12</bibl>. i and ii published by <bibl n="jones1981">C. P. Jones 'Two inscriptions from Aphrodisias', HSCP 85 (1981), 107-29</bibl>; from this i has been reprinted as <bibl n="seg">SEG <biblScope>1981.903</biblScope></bibl>, and ii, with the comments of <bibl n="merkelback1981">R. Merkelbach, ZPE 49 (1982), 282-3</bibl>, and <bibl n="ebert1981">J. Ebert, Stadion 7 (1981), 203-10</bibl>, as <bibl n="seg">SEG <biblScope>1981.904</biblScope></bibl>; further comments <bibl n="be">Bull Ép. <biblScope>1984.410</biblScope> &amp; <biblScope>1984.411</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1984.1045</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="256889">11</biblScope>.</bibl>. Published from all these, with further comments from Jones, <bibl n="PPA">Roueché, PPA <biblScope>72</biblScope></bibl>, whence ii published by <bibl n="steinepig">Merkelbach and Staufer, Steinepigramme <biblScope>02/09/27</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="72_A_36A"><figDesc>Face i (1972)</figDesc></figure><figure href="89_D_07A"><figDesc>Face i (1989)</figDesc></figure><figure href="89_D_19A"><figDesc>Face ii (1989)</figDesc></figure><figure href="77_B_21A"><figDesc>Face ii (1977)</figDesc></figure></p>
-</div><div n="transcriptions" type="figure"><head>Representations</head><p><figure href="Boulanger_A_75"><figDesc>Boulanger, Notebook A, page 75</figDesc></figure><figure href="Boulanger_A_76"><figDesc>Boulanger, Notebook A, page 76</figDesc></figure><figure href="Boulanger_B_25"><figDesc>Boulanger, Notebook B, Page 25</figDesc></figure><figure href="Boulanger_B_27"><figDesc>Boulanger, Notebook B, Page 27</figDesc></figure><figure href="Boulanger_B_29"><figDesc>Boulanger, Notebook B, Page 29</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>i. ll.5/6: πάν//[πα]ν R., πάν//[τω]ν M., W., J.</p>
+            <p>i. ll.9/10: εὐτυχῆ // [κ]ατὰ R., M., W., εὐτυχή//[μ]ατα J.</p>
+            <p>i. ll.16/17: ΑΣΚΗΣΙΝ//ΕΠΑ R., whence M., W.</p>
+            <p>i. l. 42,  ΑΝΑ B., lapis; ἀλλὰ R., M., W.; ἅμα J.; ἀνὰ ἔαρ cj. Ebert.</p>
+            <p>ii. The supplements are those of Jones, unless stated.</p>
+            <p>ii. l. 3,  μετρ'οἷς M.</p>
+            <p>ii. l. 9,  εἴρ[ου] cj. J.; εἴρ[ης] M., from εἴρη, 'agora'; εἱρ[οῖς], for ἱερ[οῖς], E.</p>
+            <p>ii. l. 11,  J. suggested ἔ[φυ as a possibility, but preferred ἔ[φη; ἐ[ρεῖ] M.; ἔ[χει] E.</p>
+            <p>ii. l. 13,  J., working from a squeeze, could not know that there is no room for another letter after Υ: this therefore imposes the reading ἀγορεύει, which is assumed by E.</p>
+            <p>ii. l. 18,  ΚΥΔΙΜΟ : there is no room for a further letter at the end; either a final sigma was omitted, as assumed by Jones, giving a nominative, or the omicron is a mistake for omega, giving the dative, κυδίμῳ. I slightly prefer the second interpretation, which is also that of Ebert.</p>
+            <p>ii. l. 22,  {Ω]Σ J. There seem to be traces of an upright before Σ, giving ΙΣ or [ε]ἰς, as conjectured by M. and E.</p>
+         </div>
+         <div type="translation">
+            <p> i. [ - - ] since the most splendid city of the Ephesians always welcomes those who have shown zeal with testimonies that are fitting and just for their worth, and takes a share of pleasure in the advantages of all (men) as if they were her own, and (since she considers that) whatever outstanding (advantages) accrue to the good reputation of other cities from distinguished men, these are matters of (?general) good fortune; (10) and since she assigns an especial portion of her inclination towards goodwill to the most splendid city of the Aphrodisians, towards which she has many and outstanding justifications for the exchange of affection. For these reasons, (the city) has welcomed Aurelius Achilles - - who has both undertaken the training of the body, and is also most noble in training, and most dignified in his way of life and his conduct, so that in him (20) all virtue of body and soul is blended - - (has welcomed him) often, both in previous contests, which he adorned, having competed impressively and with all courage, and especially in the contest of the Olympia, because, when the city encouraged him - - as if it were his own fatherland - - to proceed to the ultimate competition, and to the category of men (30), he listened, and was persuaded by the encouragement, and defeated his opponents, and bound on the (crown of) olive with such glory that his (?display of) courage and eagerness are to be numbered among the most distinguished of contests. For these reasons it was resolved that the testimony about these events should not extend only as far as the knowledge of those who were present and (40) happened to be in the stadium at the time, but by means of this decree he should be commended even more to his fatherland.</p>
+            <p>ii. [?a couplet naming Achilles] but if you proclaim [?the prowess] of Varianus in verse, I hold the olive having defeated him; or if you praise the ephebe Arion, (superior) to grown men, against him too Zeus´ granted me the olive (wreath). In all the stadia of the nations [ ?ask] - - I am as great as none of my fellow-citizens [was able to] surpass. The throng of other crowns proclaims to you my fame, by means of, ?or in a stone image and my likeness. For I often have Pythia, and divine Olympia, defeating (my) rivals with glorious fame, while none of the men who have struggled (with me) for victory has been summoned to confront a second contest (?).</p>
+         </div>
+         <div type="commentary">
+            <p>See the full discussion by Jones, 'Two inscriptions from Aphrodisias', HSCP 85 (1981), 107-29; see alsocommentary at Roueché, PPA 72.</p>
+         </div>
+         <div type="bibliography">
+            <p>i. published by <bibl n="robert1939">L. Robert, from Boulanger, <title>Anatolian Studies Buckler</title> (Manchester, 1939), 230-44</bibl> (= <bibl n="robertOMS1">OMS I, 614-28</bibl>), whence republished by <bibl n="merkelbach1974">R. Merkelbach, ZPE 14 (1974), 91-4</bibl>, and <bibl n="wankel">H. Wankel, I.Eph. I, 12</bibl>. i and ii published by <bibl n="jones1981">C. P. Jones 'Two inscriptions from Aphrodisias', HSCP 85 (1981), 107-29</bibl>; from this i has been reprinted as <bibl n="seg">SEG <citedRange>1981.903</citedRange>
+               </bibl>, and ii, with the comments of <bibl n="merkelback1981">R. Merkelbach, ZPE 49 (1982), 282-3</bibl>, and <bibl n="ebert1981">J. Ebert, Stadion 7 (1981), 203-10</bibl>, as <bibl n="seg">SEG <citedRange>1981.904</citedRange>
+               </bibl>; further comments <bibl n="be">Bull Ép. <citedRange>1984.410</citedRange> &amp; <citedRange>1984.411</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1984.1045</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256889">11</citedRange>.</bibl>. Published from all these, with further comments from Jones, <bibl n="PPA">Roueché, PPA <citedRange>72</citedRange>
+               </bibl>, whence ii published by <bibl n="steinepig">Merkelbach and Staufer, Steinepigramme <citedRange>02/09/27</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

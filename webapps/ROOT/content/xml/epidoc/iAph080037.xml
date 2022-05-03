@@ -1,92 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080037" n="iAph0518 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Letter</rs> of Severus and Caracalla to Aphrodisias</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-04-01</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-03-15</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Archive wall, column 5, third course. The left side, covering one and a half blocks, is complete except for the upper right corner of the second block, but on the right side one block is broken and partly lost and the right end is wholly lost ; fragments of the lost areas have been found fallen in front of the wall.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed area <measure type="length" unit="metre" dim="width">1.56</measure> x <measure type="length" unit="metre" dim="height">0.18</measure>; l. 1 outspaced.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Second to third cent. A.D.: av. <measure type="length" unit="metre" dim="height">0.018</measure> ; ligatured ΗΝ, ΝΗ in 1. 5 ; apex in l. 2; star stop at the end of 1. 5.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter of Severus and Caracalla to Aphrodisias</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080037</idno>
+            <idno type="IAph2007">iAph080037</idno>
+            <idno type="JMR2004">iAph0518</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>67.310</idno>
+                  <idno>67.454</idno>
+                  <idno>69.310</idno>
+                  <idno>69.458</idno>
+                  <idno>69.459</idno>
+                  <idno>69.463</idno>
+                  <idno>69.469</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Archive wall, column 5, third course. The left side, covering one and a half blocks, is complete except for the upper right corner of the second block, but on the right side one block is broken and partly lost and the right end is wholly lost ; fragments of the lost areas have been found fallen in front of the wall.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed area <width unit="metre">1.56</width> x <height unit="metre">0.18</height>; l. 1 outspaced.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second to third cent. A.D.: av. <height unit="metre">0.018</height> ; ligatured ΗΝ, ΝΗ in 1. 5 ; apex in l. 2; star stop at the end of 1. 5.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Theatre</rs>: north parodos wall</origPlace>
+                     <origDate notBefore="0198"
+                               notAfter="0198"
+                               precision="medium"
+                               evidence="lettering context titulature">
 
-Inscription: <date notBefore="0101" notAfter="0300" exact="none">second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">context</rs>).
+Inscription: second to third centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">context</rs>).
 
 
 Document: 
-<date value="0198" notBefore="0198" notAfter="0198" exact="both">A.D. 198</date>
+A.D. 198
  (<rs type="criteria">titulature</rs>).
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="αὐτοκράτωρ">αὐτοκράτορες</w> <persName type="emperor"><name reg="Σεβῆρος">Σεουῆρος</name></persName> <w lemma="καί">καὶ</w> <persName type="emperor"><name reg="Ἀντωνεῖνος">Ἀντωνεῖνος</name></persName> <placeName type="ethnic" reg="Ἀφροδεισιεύς"><supplied reason="lost">Ἀφρο</supplied><unclear reason="damage">δεισιέων</unclear></placeName>  <w lemma="ὁ">το<unclear reason="damage">ῖ</unclear><unclear reason="damage">ς</unclear></w>  <w lemma="ἄρχων"><unclear reason="damage">ἄ</unclear><supplied reason="lost">ρχουσι</supplied></w>  <w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="βουλή">β<supplied reason="lost">ουλῇ</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος"><supplied reason="lost">δήμῳ</supplied></w>  <w lemma="χαίρω"><supplied reason="lost">χαίρειν</supplied></w>  <supplied reason="lost"><space extent="3"/></supplied>  <lb n="2"/> <w lemma="ἥδομαι">ἡσθέντας</w> <w lemma="ὑμεῖς">ὑμᾶς</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="ὁ">τοὺς</w> <w lemma="θρασύνω">θρασυνομένους</w> <w lemma="βάρβαρος"><supplied reason="lost">βαρ</supplied>βάρους</w>  <w lemma="νικάω">νενεικῆσ<supplied reason="lost">θα</supplied><unclear reason="damage">ι</unclear></w> <w lemma="καί">καὶ</w> <w lemma="πᾶς">πᾶσαν</w> <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="οἰκουμένη"><supplied reason="lost">οἰκου</supplied>μ<supplied reason="lost">ένην</supplied></w>  <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="εἰρήνη"><supplied reason="lost">εἰρήνῃ</supplied></w>  <w lemma="γίγνομαι"><supplied reason="lost">γεγενῆσ</supplied>  <lb type="worddiv" n="3"/> θαι</w> <w lemma="σφόδρα">σφόδρα</w> <w lemma="πρέπω">ἔπρεπεν</w> <w lemma="εὐφραίνω">εὐφρανθῆναι</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρῷος">πατρῴας</w> <w lemma="κοινωνία">κοινωνίας</w> <w lemma="εἰς">εἰς</w> <w lemma="ἐγώ,">ἐμὲ</w> <persName type="emperor"><name reg="Ἀντωνεῖνος">Ἀντωνεῖνον</name></persName> <w lemma="ἥκω">ἡκούσης</w> <w lemma="εἰμί"><supplied reason="lost" cert="low">ὄντας</supplied></w>  <w lemma="καλός"><supplied reason="lost">καλοὺς</supplied></w>  <w lemma="ἀγαθός"><supplied reason="lost">κἀγαθοὺς</supplied></w>  <w lemma="ἀνήρ"><supplied reason="lost">ἄνδρας</supplied></w>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <lb n="5"/> <w lemma="ὁ">τῇ</w> <placeName type="ethnic" reg="Ῥωμαῖος">Ῥωμαίων</placeName> <w lemma="ἀρχή">ἀρχῇ</w> <w lemma="μᾶλλον">μᾶλλον</w> <w lemma="ἄλλος">ἄλλων</w> <w lemma="προσήκω">προσήκοντας</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="πρό">προκαθημένην</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="ὑμεῖς">ὑμ<supplied reason="lost">ῶν</supplied></w>  <w lemma="θεός"><supplied reason="lost">θεόν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="ὑπάρχω"><supplied reason="lost">ὑπάρχουσα</supplied><unclear reason="damage">ν</unclear></w>  <lb n="7"/> <w lemma="ὑμεῖς">ὑμεῖν</w> <w lemma="πολιτεία">πολειτείαν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺς</w> <w>ἐπ’</w> <w lemma="αὐτός">αὐτῇ</w> <w lemma="νόμος">νόμους</w> <w lemma="ὁ">τοὺς</w> <w lemma="μέχρι">μέχρι</w> <w lemma="ὁ">τῆς</w> <w lemma="ἡμέτερος">ἡμετέρας</w> <w lemma="ἀρχή">ἀρχῆς</w> <w lemma="ἀκίνητος">ἀκει<supplied reason="lost">ν</supplied>ήτους</w>  <w lemma="μένω">μεμενηκότα<supplied reason="lost">ς</supplied></w>  <w lemma="φυλάσσω"><supplied reason="lost">φυλάττομεν</supplied></w>  <w lemma="εὐτυχέω"><supplied reason="lost">εὐτυχ</supplied>εῖ<supplied reason="lost" cert="low">τε</supplied></w></ab>
-</div>
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: north parodos wall</provenance>
+                  <provenance type="observed">Findspot; fragments in Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>transcription (Reynolds)This edition: Reynolds (2007)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-01" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-15" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_M_16A.jpg">
+            <desc>Left end in situ, view below <ref type="inscription" n="516" target="080035.xml"/>, <ref type="inscription" n="517" target="080036.xml"/>, above <ref type="inscription" n="519" target="080099.xml"/>, <ref type="inscription" n="521" target="080103.xml"/> (1977)</desc>
+         </graphic>
+         <graphic url="77_M_22A.jpg">
+            <desc>Left end in situ, view below <ref type="inscription" n="516" target="080035.xml"/>, <ref type="inscription" n="517" target="080036.xml"/> (1977)</desc>
+         </graphic>
+         <graphic url="77_M_21A.jpg">
+            <desc>Left end in situ, view below <ref type="inscription" n="517" target="080036.xml"/>, above <ref type="inscription" n="519" target="080099.xml"/>, <ref type="inscription" n="521" target="080103.xml"/> (1977)</desc>
+         </graphic>
+         <graphic url="HUMS003679.jpg">
+            <desc>Archive Wall view (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>The Emperors Severus and Antoninus to the [Magistrates) and the [Council and People] of the Aphrodisians, greetings.</p>
-<p>It was most appropriate that you, who rejoiced at the conquest of the insolent barbarians and [?the establishment of peace in] all [?the inhabited world], celebrated the coming of joint rule shared with my father to me, Antoninus, [.. ? .. for you are ? good and noble men and] more closely related than others to the empire of the Romans because of [the goddess] who presides over your city. Your existing polity and its laws which have survived unchanged up to our reign [we preserve. ?Farewell].</p>
+<ab><lb n="1"/> <w lemma="αὐτοκράτωρ">αὐτοκράτορες</w> <persName type="emperor"><name nymRef="#Σεβῆρος">Σεουῆρος</name></persName> <w lemma="καί">καὶ</w> <persName type="emperor"><name nymRef="#Ἀντωνεῖνος">Ἀντωνεῖνος</name></persName> <placeName nymRef="#Ἀφροδεισιεύς"><supplied reason="lost">Ἀφρο</supplied><unclear reason="damage">δεισιέων</unclear></placeName>  <w lemma="ὁ">το<unclear reason="damage">ῖ</unclear><unclear reason="damage">ς</unclear></w>  <w lemma="ἄρχων"><unclear reason="damage">ἄ</unclear><supplied reason="lost">ρχουσι</supplied></w>  <w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="βουλή">β<supplied reason="lost">ουλῇ</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος"><supplied reason="lost">δήμῳ</supplied></w>  <w lemma="χαίρω"><supplied reason="lost">χαίρειν</supplied></w>  <supplied reason="lost"><space extent="3"/></supplied>  <lb n="2"/> <w lemma="ἥδομαι">ἡσθέντας</w> <w lemma="ὑμεῖς">ὑμᾶς</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="ὁ">τοὺς</w> <w lemma="θρασύνω">θρασυνομένους</w> <w lemma="βάρβαρος"><supplied reason="lost">βαρ</supplied>βάρους</w>  <w lemma="νικάω">νενεικῆσ<supplied reason="lost">θα</supplied><unclear reason="damage">ι</unclear></w> <w lemma="καί">καὶ</w> <w lemma="πᾶς">πᾶσαν</w> <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="οἰκουμένη"><supplied reason="lost">οἰκου</supplied>μ<supplied reason="lost">ένην</supplied></w>  <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="εἰρήνη"><supplied reason="lost">εἰρήνῃ</supplied></w>  <w lemma="γίγνομαι"><supplied reason="lost">γεγενῆσ</supplied>  <lb n="3" break="no"/> θαι</w> <w lemma="σφόδρα">σφόδρα</w> <w lemma="πρέπω">ἔπρεπεν</w> <w lemma="εὐφραίνω">εὐφρανθῆναι</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρῷος">πατρῴας</w> <w lemma="κοινωνία">κοινωνίας</w> <w lemma="εἰς">εἰς</w> <w lemma="ἐγώ,">ἐμὲ</w> <persName type="emperor"><name nymRef="#Ἀντωνεῖνος">Ἀντωνεῖνον</name></persName> <w lemma="ἥκω">ἡκούσης</w> <w lemma="εἰμί"><supplied reason="lost" cert="low">ὄντας</supplied></w>  <w lemma="καλός"><supplied reason="lost">καλοὺς</supplied></w>  <w lemma="ἀγαθός"><supplied reason="lost">κἀγαθοὺς</supplied></w>  <w lemma="ἀνήρ"><supplied reason="lost">ἄνδρας</supplied></w>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <lb n="5"/> <w lemma="ὁ">τῇ</w> <placeName nymRef="#Ῥωμαῖος">Ῥωμαίων</placeName> <w lemma="ἀρχή">ἀρχῇ</w> <w lemma="μᾶλλον">μᾶλλον</w> <w lemma="ἄλλος">ἄλλων</w> <w lemma="προσήκω">προσήκοντας</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="πρό">προκαθημένην</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="ὑμεῖς">ὑμ<supplied reason="lost">ῶν</supplied></w>  <w lemma="θεός"><supplied reason="lost">θεόν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="ὑπάρχω"><supplied reason="lost">ὑπάρχουσα</supplied><unclear reason="damage">ν</unclear></w>  <lb n="7"/> <w lemma="ὑμεῖς">ὑμεῖν</w> <w lemma="πολιτεία">πολειτείαν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺς</w> <w>ἐπ’</w> <w lemma="αὐτός">αὐτῇ</w> <w lemma="νόμος">νόμους</w> <w lemma="ὁ">τοὺς</w> <w lemma="μέχρι">μέχρι</w> <w lemma="ὁ">τῆς</w> <w lemma="ἡμέτερος">ἡμετέρας</w> <w lemma="ἀρχή">ἀρχῆς</w> <w lemma="ἀκίνητος">ἀκει<supplied reason="lost">ν</supplied>ήτους</w>  <w lemma="μένω">μεμενηκότα<supplied reason="lost">ς</supplied></w>  <w lemma="φυλάσσω"><supplied reason="lost">φυλάττομεν</supplied></w>  <w lemma="εὐτυχέω"><supplied reason="lost">εὐτυχ</supplied>εῖ<supplied reason="lost" cert="low">τε</supplied></w></ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See Aphrodisias and Rome, 127-129.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: north parodos wall</rs>
-<rs type="origLocation"><rs type="monuList">Theatre</rs>: north parodos wall</rs>
-<rs type="lastLocation">Findspot; fragments in Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>transcription (Reynolds)This edition: Reynolds (2007)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1967; and fragments found over subsequent years (inventory nos. <rs type="invNo">67.310</rs> , <rs type="invNo">67.454</rs>, <rs type="invNo">69.310</rs>, <rs type="invNo">69.458</rs>, <rs type="invNo">69.459</rs>, <rs type="invNo">69.463</rs>, <rs type="invNo">69.469</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="jmr1982">Reynolds, A&amp;R <biblScope>18</biblScope></bibl> whence <bibl n="be">BE <biblScope>1983.379</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>  <biblScope n="256933">55</biblScope>
-</bibl>. Discussed by <bibl>Millar, <title>ERW</title> 416</bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>  <figure href="77_M_16A"><figDesc>Left end in situ, view below <xref type="inscription" n="516" href="080035">8.35</xref>, <xref type="inscription" n="517" href="080036">8.36</xref>, above <xref type="inscription" n="519" href="080099">8.99</xref>, <xref type="inscription" n="521" href="080103">8.103</xref> (1977)</figDesc></figure><figure href="77_M_22A"><figDesc>Left end in situ, view below <xref type="inscription" n="516" href="080035">8.35</xref>, <xref type="inscription" n="517" href="080036">8.36</xref> (1977)</figDesc></figure><figure href="77_M_21A"><figDesc>Left end in situ, view below <xref type="inscription" n="517" href="080036">8.36</xref>, above <xref type="inscription" n="519" href="080099">8.99</xref>, <xref type="inscription" n="521" href="080103">8.103</xref> (1977)</figDesc></figure><figure href="HUMS003679"><figDesc>Archive Wall view (1994)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>The Emperors Severus and Antoninus to the [Magistrates) and the [Council and People] of the Aphrodisians, greetings.</p>
+            <p>It was most appropriate that you, who rejoiced at the conquest of the insolent barbarians and [?the establishment of peace in] all [?the inhabited world], celebrated the coming of joint rule shared with my father to me, Antoninus, [.. ? .. for you are ? good and noble men and] more closely related than others to the empire of the Romans because of [the goddess] who presides over your city. Your existing polity and its laws which have survived unchanged up to our reign [we preserve. ?Farewell].</p>
+         </div>
+         <div type="commentary">
+            <p>See Aphrodisias and Rome, 127-129.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="jmr1982">Reynolds, A&amp;R <citedRange>18</citedRange>
+               </bibl> whence <bibl n="be">BE <citedRange>1983.379</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256933">55</citedRange>
+               </bibl>. Discussed by <bibl>Millar, <title>ERW</title> 416</bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

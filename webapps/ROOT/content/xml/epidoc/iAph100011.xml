@@ -1,104 +1,173 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph100011" n="iAph0729 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Seat inscriptions</rs>: Stadium Block 10</title></titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-<textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-03-26</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Stadium <rs type="objectType">seat</rs>s</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the seats. Row A: on rim of seat above entrance to arena. Row D: at west end. Row H: along entire row. Row J: at west end. Row L: at west end. Row M: from west end. Row R: starting on fourth seat from west end. </p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Row A: cursive, <measure type="length" unit="metre" dim="height">0.05</measure>. Row D: ave. <measure type="length" unit="metre" dim="height">0.08</measure>; lunate sigma. Row H: <measure type="length" unit="metre" dim="height">0.05-0.06</measure>. Row J: ave. <measure type="length" unit="metre" dim="height">0.06</measure>. Row L: ave. <measure type="length" unit="metre" dim="height">0.07</measure>. Row M: <measure type="length" unit="metre" dim="height">0.06-0.10</measure>; lunate sigma. Row R: neat, with seriphs; <measure type="length" unit="metre" dim="height">0.05-0.07</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0600" notBefore="0101" exact="none">Second-sixth century A.D.</date>
-(<rs type="criteria">context</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="A"><ab>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Seat inscriptions: Stadium Block 10</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph100011</idno>
+            <idno type="IAph2007">iAph100011</idno>
+            <idno type="JMR2004">iAph0729</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Stadium <objectType>seat</objectType>s</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the seats. Row A: on rim of seat above entrance to arena. Row D: at west end. Row H: along entire row. Row J: at west end. Row L: at west end. Row M: from west end. Row R: starting on fourth seat from west end. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Row A: cursive, <height unit="metre">0.05</height>. Row D: ave. <height unit="metre">0.08</height>; lunate sigma. Row H: <height unit="metre">0.05-0.06</height>. Row J: ave. <height unit="metre">0.06</height>. Row L: ave. <height unit="metre">0.07</height>. Row M: <height unit="metre">0.06-0.10</height>; lunate sigma. Row R: neat, with seriphs; <height unit="metre">0.05-0.07</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="context">
+Second-sixth century A.D.
+(<rs type="criteria">context</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Stadium</rs>: seats, block 10. </provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds, Roueché). This edition: Roueché (2007)..</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-26" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_E_07.jpg">
+            <desc>Row A (1975)</desc>
+         </graphic>
+         <graphic url="83_C_18.jpg">
+            <desc>Row D (1983)</desc>
+         </graphic>
+         <graphic url="77_W_01.jpg">
+            <desc>Row H (1977)</desc>
+         </graphic>
+         <graphic url="77_W_11.jpg">
+            <desc>Row J (1977)</desc>
+         </graphic>
+         <graphic url="77_W_12.jpg">
+            <desc>Row J (1977)</desc>
+         </graphic>
+         <graphic url="88_C_10A.jpg">
+            <desc>Row M (1988)</desc>
+         </graphic>
+         <graphic url="88_C_11A.jpg">
+            <desc>Row M (1988)</desc>
+         </graphic>
+         <graphic url="77_W_07.jpg">
+            <desc>Row R (1977)</desc>
+         </graphic>
+         <graphic url="77_W_08.jpg">
+            <desc>Row R (1977)</desc>
+         </graphic>
+         <graphic url="77_W_09.jpg">
+            <desc>Row R (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="A" type="textpart" subtype="section"><ab>
 
 <lb n="1"/><milestone unit="block"/> <space extent="3" unit="character"/> <orig n="unresolved">απο</orig><milestone unit="block"/>
- <gap dim="right" extent="unknown" reason="lost" unit="character"/>
-</ab></div><div type="textpart_section" n="D"><ab> 
+ <gap reason="lost" unit="character" extent="unknown"/>
+</ab></div><div n="D" type="textpart" subtype="section"><ab> 
 
 <lb n="1"/><orig n="unresolved">υ</orig> <w lemma="βυρσεύς">β<milestone unit="block"/>υ<milestone unit="block"/><unclear reason="damage">ρ</unclear><milestone unit="block"/><space extent="3" unit="character"/><milestone unit="block"/>
  σ<milestone unit="block"/>έ<milestone unit="block"/>ω<milestone unit="block"/>ν<milestone unit="block"/></w> <w lemma="συντεχνία">σ<milestone unit="block"/><unclear reason="damage">υ</unclear>
-<milestone unit="block"/><supplied reason="lost">ντεχνία</supplied></w></ab></div><div type="textpart_section" n="H"><ab>  <lb n="1"/><g type="steps"/> <milestone unit="block"/><gap reason="lost" extent="1" unit="character"/><milestone unit="block"/><orig n="unresolved">ιυ</orig><milestone unit="block"/><gap reason="lost" extent="1" unit="character"/><orig n="unresolved">τε</orig><milestone unit="block"/><gap reason="lost" unit="character" extent="3"/><milestone unit="block"/><orig n="unresolved">ων</orig><milestone unit="block"/> <note>five seats</note> <milestone unit="block"/><orig n="unresolved">μ</orig><space extent="3"/><orig n="unresolved">ει</orig><milestone unit="block"/>λ<g type="scroll"/> <w lemma="τόπος">τ<milestone unit="block"/><supplied reason="lost">ό</supplied><unclear>π</unclear><milestone unit="block"/><supplied reason="lost">ος</supplied></w><milestone unit="block"/>  </ab></div><div type="textpart_section" n="J"><ab> 
+<milestone unit="block"/><supplied reason="lost">ντεχνία</supplied></w></ab></div><div n="H" type="textpart" subtype="section"><ab>  <lb n="1"/><g ref="#steps"/> <milestone unit="block"/><gap reason="lost" unit="character" quantity="1"/><milestone unit="block"/><orig n="unresolved">ιυ</orig><milestone unit="block"/><gap reason="lost" unit="character" quantity="1"/><orig n="unresolved">τε</orig><milestone unit="block"/><gap reason="lost" unit="character" quantity="3"/><milestone unit="block"/><orig n="unresolved">ων</orig><milestone unit="block"/> <note xml:lang=""/> <milestone unit="block"/><orig n="unresolved">μ</orig><space extent="3"/><orig n="unresolved">ει</orig><milestone unit="block"/>λ<g ref="#scroll"/> <w lemma="τόπος">τ<milestone unit="block"/><supplied reason="lost">ό</supplied><unclear>π</unclear><milestone unit="block"/><supplied reason="lost">ος</supplied></w><milestone unit="block"/>  </ab></div><div n="J" type="textpart" subtype="section"><ab> 
 
 <lb n="1"/><milestone unit="block"/>
-<gap reason="lost" unit="character" extent="2"/><milestone unit="block"/><orig n="unresolved">κυ</orig><milestone unit="block"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="1" unit="character"/><milestone unit="block"/><gap reason="lost" extent="1" unit="character"/><orig n="unresolved">ε</orig><milestone unit="block"/><orig n="unresolved">ω<unclear reason="damage">ρ</unclear></orig><milestone unit="block"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig><milestone unit="block"/><gap reason="lost" extent="unknown" unit="character" dim="right"/></ab></div><div type="textpart_section" n="L"><ab>
-<lb n="1"/><persName type="aphrodisian"><name reg="Αἰλιανός">Αἰ<milestone unit="block"/>λι<milestone unit="block"/>α<milestone unit="block"/>νοῦ</name></persName><milestone unit="block"/> <space unit="character" extent="1"/></ab></div><div type="textpart_section" n="M"><ab><lb n="1"/><g type="steps"/> <milestone unit="block"/><gap reason="lost" extent="1" unit="character"/><orig n="unresolved"><unclear>γ</unclear></orig><milestone unit="block"/><gap reason="lost" extent="2" unit="character"/><milestone unit="block"/><gap reason="lost" extent="1" unit="character"/> <persName type="aphrodisian"><name reg="Εὐάραστος">Ε<milestone unit="block"/><unclear>ὐ</unclear><milestone unit="block"/>αρ<milestone unit="block"/>άσ<milestone unit="block"/>του</name></persName> <milestone unit="block"/><w lemma="τόπος"><expan><abbr>τό</abbr><supplied reason="abbreviation" cert="low">πος</supplied></expan></w> <milestone unit="block"/><orig n="unresolved">νης</orig><milestone unit="block"/><note>four seats to end</note></ab></div><div type="textpart_section" n="R"><ab><lb n="1"/><space extent="3"/><milestone unit="block"/> <w lemma="τόπος"><expan><abbr>τόπ</abbr><supplied reason="abbreviation">ος</supplied></expan></w> <milestone unit="block"/> <persName type="aphrodisian"><name reg="Ἀντίγονος"><supplied reason="lost">Ἀ</supplied>ντι<unclear>γ</unclear>ό<milestone unit="block"/>νο<supplied reason="lost">υ</supplied></name></persName> <milestone unit="block"/> <space extent="3"/></ab>
+<gap reason="lost" unit="character" quantity="2"/><milestone unit="block"/><orig n="unresolved">κυ</orig><milestone unit="block"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" quantity="1"/><milestone unit="block"/><gap reason="lost" unit="character" quantity="1"/><orig n="unresolved">ε</orig><milestone unit="block"/><orig n="unresolved">ω<unclear reason="damage">ρ</unclear></orig><milestone unit="block"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig><milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="L" type="textpart" subtype="section"><ab>
+<lb n="1"/><persName type="attested"><name nymRef="#Αἰλιανός">Αἰ<milestone unit="block"/>λι<milestone unit="block"/>α<milestone unit="block"/>νοῦ</name></persName><milestone unit="block"/> <space unit="character" extent="1"/></ab></div><div n="M" type="textpart" subtype="section"><ab><lb n="1"/><g ref="#steps"/> <milestone unit="block"/><gap reason="lost" unit="character" quantity="1"/><orig n="unresolved"><unclear>γ</unclear></orig><milestone unit="block"/><gap reason="lost" unit="character" quantity="2"/><milestone unit="block"/><gap reason="lost" unit="character" quantity="1"/> <persName type="attested"><name nymRef="#Εὐάραστος">Ε<milestone unit="block"/><unclear>ὐ</unclear><milestone unit="block"/>αρ<milestone unit="block"/>άσ<milestone unit="block"/>του</name></persName> <milestone unit="block"/><w lemma="τόπος"><expan><abbr>τό</abbr><ex cert="low">πος</ex></expan></w> <milestone unit="block"/><orig n="unresolved">νης</orig><milestone unit="block"/><note xml:lang=""/></ab></div><div n="R" type="textpart" subtype="section"><ab><lb n="1"/><space extent="3"/><milestone unit="block"/> <w lemma="τόπος"><expan><abbr>τόπ</abbr><ex>ος</ex></expan></w> <milestone unit="block"/> <persName type="attested"><name nymRef="#Ἀντίγονος"><supplied reason="lost">Ἀ</supplied>ντι<unclear>γ</unclear>ό<milestone unit="block"/>νο<supplied reason="lost">υ</supplied></name></persName> <milestone unit="block"/> <space extent="3"/></ab>
 </div></div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Row M: There may have been letters either side of the first upsilon. </p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Row D: [?Association of] tanners.</p>
-<p>Row L: (Place of) Aelianos.</p>
-<p>Row M: ?Place of Euarastos. ...</p>
-<p>Row R: Place of Antigonos.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See bibliography.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Stadium</rs>: seats, block 10. </rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Findspot</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, Roueché). This edition: Roueché (2007)..</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="PPA">Roueché, PPA <biblScope>45.12</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="75_E_07"><figDesc>Row A (1975)</figDesc></figure><figure href="83_C_18"><figDesc>Row D (1983)</figDesc></figure><figure href="77_W_01"><figDesc>Row H (1977)</figDesc></figure><figure href="77_W_11"><figDesc>Row J (1977)</figDesc></figure><figure href="77_W_12"><figDesc>Row J (1977)</figDesc></figure><figure href="88_C_10A"><figDesc>Row M (1988)</figDesc></figure><figure href="88_C_11A"><figDesc>Row M (1988)</figDesc></figure><figure href="77_W_07"><figDesc>Row R (1977)</figDesc></figure><figure href="77_W_08"><figDesc>Row R (1977)</figDesc></figure><figure href="77_W_09"><figDesc>Row R (1977)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>Row M: There may have been letters either side of the first upsilon. </p>
+         </div>
+         <div type="translation">
+            <p>Row D: [?Association of] tanners.</p>
+            <p>Row L: (Place of) Aelianos.</p>
+            <p>Row M: ?Place of Euarastos. ...</p>
+            <p>Row R: Place of Antigonos.</p>
+         </div>
+         <div type="commentary">
+            <p>See bibliography.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="PPA">Roueché, PPA <citedRange>45.12</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

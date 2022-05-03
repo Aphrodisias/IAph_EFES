@@ -1,80 +1,168 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150245" n="iAph1462 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for Adrastos Polychronios</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-06</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material">white marble</rs> <rs type="objectType">sarcophagus</rs>, with two <rs type="decoration">bust</rs>s above the inscribed panel, now in fragments.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for Adrastos Polychronios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150245</idno>
+            <idno type="IAph2007">iAph150245</idno>
+            <idno type="JMR2004">iAph1462</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>70.238</idno>
+                  <idno>70.312</idno>
+                  <idno>70.338</idno>
+                  <idno>71.98</idno>
+                  <idno>71.102</idno>
+                  <idno>71.103</idno>
+                  <idno>72.257</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material>white marble</material>
+                              <objectType>sarcophagus</objectType>, with two <rs type="decoration">bust</rs>s above the inscribed panel, now in fragments.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the front face, within a simple moulding; lines 10-11 are on the lower moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02-0.025</height>. Ligatures: ΜΝ l.2; ΝΜΝΗΜ l.3; ΤΗΝ l.4, 6; ΜΗ l.5, 7 (twice), 8; HN l.6, 8 (twice); NK l.7; ΗΓ l.8; ΗΡ l.8, 9; ΤΗ l.8; NN l.9</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace> Unknown necropolis</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0400"
+                               precision="medium"
+                               evidence="lettering">First to fourth centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Stray</rs>: no indication.</provenance>
+                  <provenance type="observed">Museum (fragments)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; Preliminary transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-06" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_K_23.jpg">
+            <desc>Assembled fragments (1978)</desc>
+         </graphic>
+         <graphic url="78_F_24.jpg">
+            <desc>Assembled fragments, showing sculpture (1978)</desc>
+         </graphic>
+         <graphic url="77_R_15A.jpg">
+            <desc>Further fragment, lines  5-8 (1977)</desc>
+         </graphic>
+         <graphic url="77_X_13.jpg">
+            <desc>Scu;pture fragment, with l.1 (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <seg type="autopsy"><w lemma="ὁ">ὁ</w></seg> <w lemma="πλάτας"><seg type="autopsy">πλ</seg>άτας</w> <w lemma="εἰμί">ἐσ<seg type="autopsy">τιν</seg></w> <persName type="attested"><name nymRef="#Ἄδραστος"><seg type="autopsy">Ἀδράστο</seg>υ</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Γλύκων"><seg type="autopsy">Γλύκων</seg>ος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Γλύκων">Γλύκ<seg type="autopsy">ωνος</seg></name> <seg type="autopsy"><w lemma="ὁ">τοῦ</w></seg> <persName type="attested"><seg type="autopsy"><name nymRef="#Λέων">Λέοντος</name></seg> <w lemma="ὁ"><seg type="autopsy">τ</seg>οῦ</w> <lb n="2"/> <persName type="attested"><name nymRef="#Ἑκατόμνως"><seg type="autopsy">Ἑκ</seg>ατόμνονο<seg type="autopsy">ς</seg></name></persName></persName></persName></persName> <name nymRef="#Πολυχρόνιος"><seg type="autopsy">Πολυχρονίου</seg></name></persName> <w lemma="ὅστις"><seg type="autopsy">ὅ</seg>ντινα</w> <w lemma="πλάτας">πλάτ<unclear reason="damage">α</unclear>ν</w> <w lemma="συγχωρέω">συνεχώρη<seg type="autopsy">σεν</seg></w> <seg type="autopsy"><w lemma="αὐτός">αὐτῷ</w> <persName type="attested"><name nymRef="#Πολυχρονία">Πολυχρονία</name> <persName type="attested"><name nymRef="#Καλλικράτης">Καλλικράτου</name></persName></persName></seg> <lb n="3"/> <w lemma="εἰς">εἰ<seg type="autopsy">ς</seg></w> <seg type="autopsy"><w lemma="ὅς">ὃν</w></seg> <w lemma="πλάτας"><seg type="autopsy">πλάτ</seg>αν</w> <w lemma="κατασκευάζω">κατ<seg type="autopsy">εσκεύασεν</seg></w> <w lemma="μνημεῖον"><seg type="autopsy">μν</seg>ημεῖον</w> <w lemma="ὁ">τὸ</w> <w lemma="ἐπίκειμαι">ἐπικείμενον</w> <w lemma="ὁ">τῷ</w> <seg type="autopsy"><w lemma="πλάτη">πλάτᾳ</w> <w lemma="σορός">σορόν</w> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w></seg> <w lemma="ἰσώστη">ἰσώστας</w> <w lemma="ὁ">τὰς</w> <seg type="autopsy"><w lemma="ἐν">ἐν</w> <w lemma="αὐτός">αὐτῷ</w></seg> <lb n="4"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="λοιπός">λυπὰ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐν">ἐν</w> <w lemma="αὐτός">αὐ<seg type="autopsy">τῷ</seg></w> <seg type="autopsy"><w lemma="εἰς">εἰς</w> <w lemma="ὅς"><unclear reason="damage">ἣ</unclear>ν</w></seg> <w lemma="σορός"><seg type="autopsy">σ</seg>ορὸν</w> <w lemma="θάπτω">ἔθαψα</w> <persName type="attested"><name nymRef="#Βάριλλα">Βαρίλλα<supplied reason="omitted">ν</supplied></name></persName> <w lemma="ὁ">τὴν</w> <w lemma="ἑαυτός">ἐμαυ<seg type="autopsy">τοῦ</seg></w> <w lemma="γυνή"><seg type="autopsy">γυναῖκα</seg></w> <w lemma="βούλομαι"><seg type="autopsy">β</seg>ούλομαι</w> <w lemma="δέ">δὲ</w> <w lemma="καί">κα<seg type="autopsy">ὶ</seg></w> <w lemma="αὐτός"><seg type="autopsy">αὐτὸς</seg></w>  <lb n="5"/> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός"><seg type="autopsy">σορῷ</seg></w> <w lemma="τίθημι">τεθῆναι</w> <w lemma="ἕτερος">ἕ<seg type="autopsy">τερον</seg></w> <w lemma="δέ"><seg type="autopsy">δὲ</seg></w> <w lemma="μηδείς"><seg type="autopsy">μ</seg>ηδένα</w> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τῇ</w> <w lemma="ἰσώστη">ἰσώστῃ</w> <w lemma="ὁ">τῇ</w> <w lemma="πρῶτος">πρώ<seg type="autopsy">τῃ</seg></w> <w lemma="ὑπόκειμαι"><seg type="autopsy">ὑποκειμέν</seg>ῃ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἐνθάπτω"><seg type="autopsy">ἐνταφῆναι</seg></w> <lb n="6"/> <w lemma="βούλομαι"><seg type="autopsy">βούλομαι</seg></w> <w lemma="ὁ"><seg type="autopsy">τὴ</seg>ν</w> <w lemma="γυνή">γυναῖκά</w> <w lemma="ἐγώ">μου</w> <w lemma="καί"><seg type="autopsy">καὶ</seg></w> <persName type="attested"><name nymRef="#Πολυχρόνιος"><seg type="autopsy">Πο</seg>λυχρόνιον</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="υἱός">υἱόν</w> <w lemma="ἐγώ"><seg type="autopsy">μου</seg></w> <seg type="autopsy"><w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τῇ</w> <w lemma="ἕτερος">ἑτέρᾳ</w></seg> <w lemma="ἰσώστη"><seg type="autopsy">ἰσώ</seg>στῃ</w> <seg type="autopsy"><w lemma="τίθημι">τεθῆναι</w> <w lemma="βούλομαι">βούλομαι</w></seg> <lb n="7"/> <persName type="attested"><name nymRef="#Τατιανός"><seg type="autopsy">Τατιανὸν</seg></name></persName> <w lemma="καί"><seg type="autopsy">κ</seg>αὶ</w> <persName type="attested"><name nymRef="#Ἄδραστος"> Ἄδραστον</name></persName> <w lemma="ὁ">τὰ</w> <seg type="autopsy"><w lemma="τέκνον">τέκνα</w> <w lemma="ἐγώ">μου</w></seg> <w lemma="ἕτερος"><seg type="autopsy">ἕτ</seg>ερον</w> <w lemma="δέ">δὲ</w> <w lemma="μηδέ">μήδ<seg type="autopsy">ε</seg></w> <w lemma="ἐν"><seg type="autopsy">ἐν</seg></w> <seg type="autopsy"><w lemma="ὁ">τῷ</w> <w lemma="σορός">σορῷ</w> <w lemma="μηδέ">μήδε</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">ταῖς</w> <w lemma="ἰσώστη">ἰσώσταις</w></seg> <lb n="8"/> <w lemma="τίθημι"><seg type="autopsy">τεθῆ</seg>ναι</w> <w lemma="εἰ">εἰ</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὸν</w> <w lemma="ὕσπληγξ">ὕσπληγα</w> <w lemma="ὁ"><seg type="autopsy">οἱ</seg></w> <w lemma="κληρονόμος"><seg type="autopsy">κληρονόμ</seg>οι</w> <w lemma="ἐγώ">μου</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἐντίθημι">ἐντεθῆναί</w> <w lemma="ἐγώ">με</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ"><seg type="autopsy">τῇ</seg></w> <seg type="autopsy"><w lemma="σορός">σορῷ</w> <w lemma="μή">μὴ</w> <w lemma="ἀσφαλίζομαι">ἀσφαλίσωνται</w></seg> <lb n="9"/> <w lemma="εἰμί"><seg type="autopsy">ἔστ</seg>ω</w> <w lemma="ἐγώ">μου</w> <w lemma="κληρονόμος">κληρονόμος</w> <w lemma="ὁ">ἡ</w> <seg type="autopsy"><w lemma="θεά">θεὰ</w>  <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδείτη</name></persName></seg> <w lemma="οὗτος"><seg type="autopsy">τοῦ</seg>το</w> <w lemma="δέ">δὲ</w> <seg type="autopsy"><w lemma="ἐκδικέω">ἐκδικήσουσιν</w> <w lemma="ὁ">οἱ</w> <w lemma="κατά">κατὰ</w> <w lemma="καιρός">καιρὸν</w> <w lemma="νεοποιός">νεωπυοὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="αὐτός">αὐτοῦ</w> </seg><lb n="10"/>  <w lemma="εἰμί">ἔστωσαν</w> <w lemma="ὑπεύθυνος">ὑπε<unclear reason="damage">ύ</unclear>θ<unclear reason="damage">υ</unclear>νοι</w> <supplied reason="lost" cert="low">ἐὰν</supplied>  <supplied reason="lost">δέ  </supplied><seg type="autopsy">τις  <unclear reason="damage">ΛΛΙΛ</unclear><gap reason="lost" unit="character" quantity="1"/><unclear reason="damage">Ι</unclear>ΑΥ<gap reason="lost" unit="character" quantity="1"/> <orig n="unresolved">α</orig> <w lemma="διατάσσω">διατετάγμαι</w> <w lemma="ἕτερος">ἕτερόν</w> <orig n="unresolved">τιιι</orig> <w lemma="θάπτω">θά<supplied reason="lost">ψ</supplied>ει </w><w lemma="εἰμί">ἔστω</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> </seg><lb n="11"/>  <w lemma="προσαποτίνω">προσαποτεισάτω</w> <seg type="autopsy"><w lemma="ὁ">τῷ</w> <w lemma="ἱερός">ἱερωτάτῳ</w> <w lemma="ταμεῖον">ταμείῳ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <w>η</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος">τρίτ<supplied reason="lost">ον</supplied></w>  <w lemma="μέρος"><supplied reason="lost">μέρος</supplied></w> <w lemma="εἰμί">ἔστω</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσαντος</w></seg> </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the front face, within a simple moulding; lines 10-11 are on the lower moulding.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02-0.025</measure>. Ligatures: ΜΝ l.2; ΝΜΝΗΜ l.3; ΤΗΝ l.4, 6; ΜΗ l.5, 7 (twice), 8; HN l.6, 8 (twice); NK l.7; ΗΓ l.8; ΗΡ l.8, 9; ΤΗ l.8; NN l.9</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date notBefore="0001" notAfter="0400" exact="none">First to fourth centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p>
-  </div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <seg type="autopsy"><w lemma="ὁ">ὁ</w></seg> <w lemma="πλάτας"><seg type="autopsy">πλ</seg>άτας</w> <w lemma="εἰμί">ἐσ<seg type="autopsy">τιν</seg></w> <persName type="aphrodisian"><name reg="Ἄδραστος"><seg type="autopsy">Ἀδράστο</seg>υ</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Γλύκων"><seg type="autopsy">Γλύκων</seg>ος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Γλύκων">Γλύκ<seg type="autopsy">ωνος</seg></name> <seg type="autopsy"><w lemma="ὁ">τοῦ</w></seg> <persName type="aphrodisian"><seg type="autopsy"><name reg="Λέων">Λέοντος</name></seg> <w lemma="ὁ"><seg type="autopsy">τ</seg>οῦ</w> <lb n="2"/> <persName type="aphrodisian"><name reg="Ἑκατόμνως"><seg type="autopsy">Ἑκ</seg>ατόμνονο<seg type="autopsy">ς</seg></name></persName></persName></persName></persName> <name reg="Πολυχρόνιος"><seg type="autopsy">Πολυχρονίου</seg></name></persName> <w lemma="ὅστις"><seg type="autopsy">ὅ</seg>ντινα</w> <w lemma="πλάτας">πλάτ<unclear reason="damage">α</unclear>ν</w> <w lemma="συγχωρέω">συνεχώρη<seg type="autopsy">σεν</seg></w> <seg type="autopsy"><w lemma="αὐτός">αὐτῷ</w> <persName type="aphrodisian"><name reg="Πολυχρονία">Πολυχρονία</name> <persName type="aphrodisian"><name reg="Καλλικράτης">Καλλικράτου</name></persName></persName></seg> <lb n="3"/> <w lemma="εἰς">εἰ<seg type="autopsy">ς</seg></w> <seg type="autopsy"><w lemma="ὅς">ὃν</w></seg> <w lemma="πλάτας"><seg type="autopsy">πλάτ</seg>αν</w> <w lemma="κατασκευάζω">κατ<seg type="autopsy">εσκεύασεν</seg></w> <w lemma="μνημεῖον"><seg type="autopsy">μν</seg>ημεῖον</w> <w lemma="ὁ">τὸ</w> <w lemma="ἐπίκειμαι">ἐπικείμενον</w> <w lemma="ὁ">τῷ</w> <seg type="autopsy"><w lemma="πλάτη">πλάτᾳ</w> <w lemma="σορός">σορόν</w> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w></seg> <w lemma="ἰσώστη">ἰσώστας</w> <w lemma="ὁ">τὰς</w> <seg type="autopsy"><w lemma="ἐν">ἐν</w> <w lemma="αὐτός">αὐτῷ</w></seg> <lb n="4"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="λοιπός">λυπὰ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐν">ἐν</w> <w lemma="αὐτός">αὐ<seg type="autopsy">τῷ</seg></w> <seg type="autopsy"><w lemma="εἰς">εἰς</w> <w lemma="ὅς"><unclear reason="damage">ἣ</unclear>ν</w></seg> <w lemma="σορός"><seg type="autopsy">σ</seg>ορὸν</w> <w lemma="θάπτω">ἔθαψα</w> <persName type="aphrodisian"><name reg="Βάριλλα">Βαρίλλα<supplied reason="omitted">ν</supplied></name></persName> <w lemma="ὁ">τὴν</w> <w lemma="ἑαυτός">ἐμαυ<seg type="autopsy">τοῦ</seg></w> <w lemma="γυνή"><seg type="autopsy">γυναῖκα</seg></w> <w lemma="βούλομαι"><seg type="autopsy">β</seg>ούλομαι</w> <w lemma="δέ">δὲ</w> <w lemma="καί">κα<seg type="autopsy">ὶ</seg></w> <w lemma="αὐτός"><seg type="autopsy">αὐτὸς</seg></w>  <lb n="5"/> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός"><seg type="autopsy">σορῷ</seg></w> <w lemma="τίθημι">τεθῆναι</w> <w lemma="ἕτερος">ἕ<seg type="autopsy">τερον</seg></w> <w lemma="δέ"><seg type="autopsy">δὲ</seg></w> <w lemma="μηδείς"><seg type="autopsy">μ</seg>ηδένα</w> <w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τῇ</w> <w lemma="ἰσώστη">ἰσώστῃ</w> <w lemma="ὁ">τῇ</w> <w lemma="πρῶτος">πρώ<seg type="autopsy">τῃ</seg></w> <w lemma="ὑπόκειμαι"><seg type="autopsy">ὑποκειμέν</seg>ῃ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἐνθάπτω"><seg type="autopsy">ἐνταφῆναι</seg></w> <lb n="6"/> <w lemma="βούλομαι"><seg type="autopsy">βούλομαι</seg></w> <w lemma="ὁ"><seg type="autopsy">τὴ</seg>ν</w> <w lemma="γυνή">γυναῖκά</w> <w lemma="ἐγώ">μου</w> <w lemma="καί"><seg type="autopsy">καὶ</seg></w> <persName type="aphrodisian"><name reg="Πολυχρόνιος"><seg type="autopsy">Πο</seg>λυχρόνιον</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="υἱός">υἱόν</w> <w lemma="ἐγώ"><seg type="autopsy">μου</seg></w> <seg type="autopsy"><w lemma="ἐν">ἐν</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τῇ</w> <w lemma="ἕτερος">ἑτέρᾳ</w></seg> <w lemma="ἰσώστη"><seg type="autopsy">ἰσώ</seg>στῃ</w> <seg type="autopsy"><w lemma="τίθημι">τεθῆναι</w> <w lemma="βούλομαι">βούλομαι</w></seg> <lb n="7"/> <persName type="aphrodisian"><name reg="Τατιανός"><seg type="autopsy">Τατιανὸν</seg></name></persName> <w lemma="καί"><seg type="autopsy">κ</seg>αὶ</w> <persName type="aphrodisian"><name reg="Ἄδραστος"> Ἄδραστον</name></persName> <w lemma="ὁ">τὰ</w> <seg type="autopsy"><w lemma="τέκνον">τέκνα</w> <w lemma="ἐγώ">μου</w></seg> <w lemma="ἕτερος"><seg type="autopsy">ἕτ</seg>ερον</w> <w lemma="δέ">δὲ</w> <w lemma="μηδέ">μήδ<seg type="autopsy">ε</seg></w> <w lemma="ἐν"><seg type="autopsy">ἐν</seg></w> <seg type="autopsy"><w lemma="ὁ">τῷ</w> <w lemma="σορός">σορῷ</w> <w lemma="μηδέ">μήδε</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">ταῖς</w> <w lemma="ἰσώστη">ἰσώσταις</w></seg> <lb n="8"/> <w lemma="τίθημι"><seg type="autopsy">τεθῆ</seg>ναι</w> <w lemma="εἰ">εἰ</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὸν</w> <w lemma="ὕσπληγξ">ὕσπληγα</w> <w lemma="ὁ"><seg type="autopsy">οἱ</seg></w> <w lemma="κληρονόμος"><seg type="autopsy">κληρονόμ</seg>οι</w> <w lemma="ἐγώ">μου</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἐντίθημι">ἐντεθῆναί</w> <w lemma="ἐγώ">με</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ"><seg type="autopsy">τῇ</seg></w> <seg type="autopsy"><w lemma="σορός">σορῷ</w> <w lemma="μή">μὴ</w> <w lemma="ἀσφαλίζομαι">ἀσφαλίσωνται</w></seg> <lb n="9"/> <w lemma="εἰμί"><seg type="autopsy">ἔστ</seg>ω</w> <w lemma="ἐγώ">μου</w> <w lemma="κληρονόμος">κληρονόμος</w> <w lemma="ὁ">ἡ</w> <seg type="autopsy"><w lemma="θεά">θεὰ</w>  <persName type="divine"><name reg="Ἀφροδίτη">Ἀφροδείτη</name></persName></seg> <w lemma="οὗτος"><seg type="autopsy">τοῦ</seg>το</w> <w lemma="δέ">δὲ</w> <seg type="autopsy"><w lemma="ἐκδικέω">ἐκδικήσουσιν</w> <w lemma="ὁ">οἱ</w> <w lemma="κατά">κατὰ</w> <w lemma="καιρός">καιρὸν</w> <w lemma="νεοποιός">νεωπυοὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="αὐτός">αὐτοῦ</w> </seg><lb n="10"/>  <w lemma="εἰμί">ἔστωσαν</w> <w lemma="ὑπεύθυνος">ὑπε<unclear reason="damage">ύ</unclear>θ<unclear reason="damage">υ</unclear>νοι</w> <supplied reason="lost" cert="low">ἐὰν</supplied>  <supplied reason="lost">δέ  </supplied><seg type="autopsy">τις  <unclear reason="damage">ΛΛΙΛ</unclear><gap reason="lost" extent="1" unit="character"/><unclear reason="damage">Ι</unclear>ΑΥ<gap reason="lost" extent="1" unit="character"/> <orig n="unresolved">α</orig> <w lemma="διατάσσω">διατετάγμαι</w> <w lemma="ἕτερος">ἕτερόν</w> <orig n="unresolved">τιιι</orig> <w lemma="θάπτω">θά<supplied reason="lost">ψ</supplied>ει </w><w lemma="εἰμί">ἔστω</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> </seg><lb n="11"/>  <w lemma="προσαποτίνω">προσαποτεισάτω</w> <seg type="autopsy"><w lemma="ὁ">τῷ</w> <w lemma="ἱερός">ἱερωτάτῳ</w> <w lemma="ταμεῖον">ταμείῳ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <w>η</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος">τρίτ<supplied reason="lost">ον</supplied></w>  <w lemma="μέρος"><supplied reason="lost">μέρος</supplied></w> <w lemma="εἰμί">ἔστω</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσαντος</w></seg> </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Letters seen by us have been indicated.</p><p>ll. 2, 3: ΠΛΑΤΟΝ S., W.</p><p>l. 3, ΤΑΣ S, ΤΑΣΤΑΣ W</p><p>l. 4, ΕΙΣΙΝ S., ΕΙΣΕΝ W.; ΛΛΑΤΗΝ S, W;</p><p>l. 5, After μηδένα ΕΝΤΗ S., ΕΝΔΕΤΗ W.</p><p>l. 6, ΥΙΟΝ S, ΥΟΝ W</p><p>l. 8, ΟΝΤΑΙ S., ΩΝΤΑΙ W.l. 9, ΝΕΩΠΥΙΟΟΙΕΠΙ S. ΝΕΩΠΥΟΙΕΠΙ W.</p><p>ll. 10 and 11 not copied by Wood</p><p>l. 10, ΥΠΕΥΘΙΝΟΙ . ΙΣ.ΑΤΑΑΔΙΑΤΕΤΑΡΝΑΙ . ΕΤΕΒΟΝΤΙΙΟΗ . ΒΗ .ΣΤΩ Sherard</p><p>l. 11,  ΗΩΗΝΤΟΤΡΙΣΤΩΤΟΥΕΚΔΙΚΗΣΑΝΤΟΣ Sherard</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation"> Unknown necropolis</rs>
-<rs type="found"><rs type="monuList">Stray</rs>: no indication.</rs>
-<rs type="lastLocation">Museum (fragments)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; Preliminary transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded in 1705  by Picenini (10102.21), whence Sherard  (10101, 33);  by Wood in 1750 (lines 1-9; vol. 15, 45); by Fellows, no. 41; perhaps by Bailie. K&amp; R found 2 fragments, A. Wilhelm saw a fragment in Smyrna. At least 15 fragments found again by the NYU expedition, including <rs type="invNo">70.238</rs>, <rs type="invNo">70.312</rs>, <rs type="invNo">70.338</rs>, <rs type="invNo">71.98</rs>, <rs type="invNo">71.102</rs>, <rs type="invNo">71.103</rs>; <rs type="invNo">72.257</rs> (several fragments).</p>
-</div>
-<div type="bibliography"><head>Bibliography</head><p>Published by Boeckh, from Sherard, <bibl n="CIGII">CIG <biblScope>2824</biblScope></bibl>; by <bibl n="fellows1841">Fellows, no <biblScope>41</biblScope></bibl>, <bibl n="CIGIIc"> whence CIG p.1115</bibl>; by  <bibl n="cormack1955">Cormack, <title>Notes</title> 15 and fig. 8</bibl>; from these <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257285">407</biblScope></bibl></p></div><div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_K_23"><figDesc>Assembled fragments (1978)</figDesc></figure><figure href="78_F_24"><figDesc>Assembled fragments, showing sculpture (1978)</figDesc></figure><figure href="77_R_15A"><figDesc>Further fragment, lines  5-8 (1977)</figDesc></figure><figure href="77_X_13"><figDesc>Scu;pture fragment, with l.1 (1977)</figDesc></figure></p>
-</div><div n="transcriptions"><head>Representations</head><p><figure href="Wood_14_45"><figDesc>Wood, notebook 14, p. 45</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>Letters seen by us have been indicated.</p>
+            <p>ll. 2, 3: ΠΛΑΤΟΝ S., W.</p>
+            <p>l. 3, ΤΑΣ S, ΤΑΣΤΑΣ W</p>
+            <p>l. 4, ΕΙΣΙΝ S., ΕΙΣΕΝ W.; ΛΛΑΤΗΝ S, W;</p>
+            <p>l. 5, After μηδένα ΕΝΤΗ S., ΕΝΔΕΤΗ W.</p>
+            <p>l. 6, ΥΙΟΝ S, ΥΟΝ W</p>
+            <p>l. 8, ΟΝΤΑΙ S., ΩΝΤΑΙ W.l. 9, ΝΕΩΠΥΙΟΟΙΕΠΙ S. ΝΕΩΠΥΟΙΕΠΙ W.</p>
+            <p>ll. 10 and 11 not copied by Wood</p>
+            <p>l. 10, ΥΠΕΥΘΙΝΟΙ . ΙΣ.ΑΤΑΑΔΙΑΤΕΤΑΡΝΑΙ . ΕΤΕΒΟΝΤΙΙΟΗ . ΒΗ .ΣΤΩ Sherard</p>
+            <p>l. 11,  ΗΩΗΝΤΟΤΡΙΣΤΩΤΟΥΕΚΔΙΚΗΣΑΝΤΟΣ Sherard</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by Boeckh, from Sherard, <bibl n="CIGII">CIG <citedRange>2824</citedRange>
+               </bibl>; by <bibl n="fellows1841">Fellows, no <citedRange>41</citedRange>
+               </bibl>, <bibl n="CIGIIc"> whence CIG p.1115</bibl>; by  <bibl n="cormack1955">Cormack, <title>Notes</title> 15 and fig. 8</bibl>; from these <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257285">407</citedRange>
+               </bibl>
+            </p>
+         </div>
+         <div n="transcriptions">
+            <p>
+               <figure href="Wood_14_45">
+                  <figDesc>Wood, notebook 14, p. 45</figDesc>
+               </figure>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,84 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph121205" n="iAph1617 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for Hermogenes son of Menodoros</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>No description</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for Hermogenes son of Menodoros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph121205</idno>
+            <idno type="IAph2007">iAph121205</idno>
+            <idno type="JMR2004">iAph1617</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height> (Anthopoulos). Ligatures (from Deering): l. 1,  ΜΗ; l. 3,  ΝΗ, ΜΗΝ; l. 4,  ΜΗ, ΝΗ; l. 6,  ΝΗΜΗ, ΜΗ; l. 7,  ΜΗ, ΝΜΗ; l. 8,  ΝΜ, ΜΗ; l. 12,  ΝΜ; l. 14,  ΝΗ; l. 15,  ΜΗ.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="nomenclature">First to second centuries A.D. (<rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls</rs>: 'A fallen stone near the city wall' (Waddington). Not found again.</provenance>
+                  <provenance type="observed" when="1850">Findspot (1850)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Deering_12v.jpg">
+            <desc>Deering notebook 12v</desc>
+         </graphic>
+         <graphic url="Deering_13.jpg">
+            <desc>Deering notebook 13</desc>
+         </graphic>
+         <graphic url="K_III_27.jpg">
+            <desc>Kubitschek notebook III, 27</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w>ἐπ᾿</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="οἰκοδομέω">οἰκοδομημέν<supplied reason="lost">ον</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="2"/> <w lemma="ὅς">οὗ</w> <w lemma="εἰμί">ἐστιν</w> <w lemma="ὁ">ἡ</w> <w lemma="κάθοδος">κάθοδος</w> <w lemma="ἔμπροσθεν">ἔμπροσθεν</w> <w lemma="πρός">πρὸς</w> <w lemma="μεσήμβριος">μεσημβρί<supplied reason="lost">αν</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="3"/> <w lemma="ἐπί">ἐπὶ</w> <w lemma="καθάρσιος">καθαρσίου</w> <w lemma="κατασκευάζω">κατεσκεύασεν</w> <persName type="attested"><name nymRef="#Ἑρμογένης">Ἑρμογένης</name> <persName type="attested"><name nymRef="#Μηνόδωρος">Μηνοδώρο<supplied reason="lost">υ</supplied></name>   <persName type="attested"><name><gap reason="lost" unit="character" quantity="2"/>    <lb n="4"/>δώρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Δημήτριος">Δημητρίου</name></persName></persName></persName></persName>  <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀπολλώνιος ">Ἀπολλώνιος</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἑρμογένης">Ἑρμογένης</name></persName> <w lemma="καί">καὶ</w> <unclear reason="damage">Ι</unclear><gap reason="lost" unit="character" quantity="3"/>  <lb n="5"/> <w lemma="ὁ">τὰ</w> <w lemma="τέκνον">τέκνα</w> <w lemma="ὁ">τὰ</w> <persName type="attested"><name nymRef="#Ἑρμογένης">Ἑρμογένους</name></persName> <w lemma="ἑαυτοῦ">ἑαυτοῖς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐκ">ἐξ</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="εἰμί">ἐσομένοις</w> <gap reason="lost" unit="character" quantity="3"/>  <lb n="6"/> <w lemma="ἔκγονος">ἐκγόνοις</w> <w lemma="καί">καὶ</w> <w lemma="διάδοχος">διαδόχοις</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="μηδείς">μηδενὸς</w> <w lemma="ἔχω">ἔχοντος</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w>μηδ<gap reason="lost" unit="character" quantity="3"/></w>  <lb n="7"/> <w lemma="κληρονόμος">κληρονόμων</w> <w lemma="ἤ">ἢ</w> <w lemma="διάδοχος">διαδόχων</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ἐξαλλοτριόω">ἐξαλλοτριῶσαι</w> <w lemma="μήτε">μήτε</w> <w lemma="ὁ">τὸ</w> <w lemma="πύργιον">πύργιον</w> <w lemma="μήτε">μή<lb n="8" break="no"/>τε</w> <w lemma="ὁ">τὸ</w> <w>ὑπ᾿</w> <w lemma="αὐτός">αὐτὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="μήτε">μήτε</w> <w lemma="πρᾶσις">πράσεως</w> <w lemma="ὄνομα">ὀνόματι</w> <w lemma="μήτε">μήτε</w> <w lemma="συγχώρησις">συνωχρήσεως</w> <w lemma="ἐπεί">ἐπεὶ</w> <lb n="9"/> <w lemma="ὁ">ὁ</w> <w lemma="ποιέω">ποιήσας</w> <w lemma="τις">τι</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἀπαλλοτρίωσις">ἀπαλλοτριώσει</w> <w>ᾧ</w> <w lemma="δή">δή</w> <w lemma="ποτε">ποτε</w> <w lemma="τρόπος">τρόπῳ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="ἀναδέχομαι">ἀναδεξάμενος</w> <lb n="10"/> <w lemma="ἔνοχος">ἔνοχος</w> <w lemma="εἰμί">ἔσται</w> <w lemma="ἀσέβεια">ἀσεβείᾳ</w> <w lemma="καί">καὶ</w> <w lemma="εἰσφέρω">εἰσοίσει</w> <w lemma="ἕκαστος">ἕκαστος</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸν</w> <w lemma="κυριακός">κυριακὸν</w> <w lemma="φίσκος">φίσκον</w> <w lemma="ἀνά">ἀ<lb n="11" break="no"/>νὰ</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <w lemma="μυρίος">μυρία</w> <w lemma="ὡς">ὡς</w> <w lemma="ἐκ">ἐκ</w> <w lemma="καταδίκη">καταδίκης</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸν</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσται</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσαντος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="ὑπεναντίος">ὑ<lb n="12" break="no"/>πεναντίως</w> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="εἰμί">ἔσται</w> <w lemma="ἄκυρος">ἄκυρον</w> <w lemma="καί">καὶ</w> <w lemma="οὐδείς">οὐδὲν</w> <w lemma="ἥσσων">ἧττον</w> <w lemma="μένω">μενεῖ</w> <w lemma="ὁ">τὰ</w> <w lemma="προδηλόω">προδηλού<lb n="13" break="no"/>μενα</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὰ</w> <w lemma="καθοσιόομαι">καθωσιωμένα</w> <g ref="#stop"/> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="οὗτος">ταύτης</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ὁ">τὰ</w> <w lemma="νῦν">νῦν</w> <w lemma="ἀντίτυπος">ἀν<lb n="14" break="no"/>τίτυπον</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <persName type="attested"><name nymRef="#Ἄτταλος">Ἀττάλου</name> <name nymRef="#Ἄδραστος">Ἀδράστου</name> <lb n="15"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Νεικότειμος">Νεικοτείμου</name></persName></persName> <w lemma="ἥρως">ἥρωος</w> <w lemma="ὁ">τὸ</w> <w lemma="δεύτερος">δεύτερον</w> <w lemma="μείς">μηνὸς</w> <rs type="month"><w lemma="Δεῖος">Δείου</w></rs> <g ref="#leaf"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02</measure> (Anthopoulos). Ligatures (from Deering): l. 1,  ΜΗ; l. 3,  ΝΗ, ΜΗΝ; l. 4,  ΜΗ, ΝΗ; l. 6,  ΝΗΜΗ, ΜΗ; l. 7,  ΜΗ, ΝΜΗ; l. 8,  ΝΜ, ΜΗ; l. 12,  ΝΜ; l. 14,  ΝΗ; l. 15,  ΜΗ.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date notBefore="0001" notAfter="0200" exact="none">First to second centuries A.D.</date> (<rs type="criteria">nomenclature</rs>)</p>
-  </div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w>ἐπ᾿</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="οἰκοδομέω">οἰκοδομημέν<supplied reason="lost">ον</supplied></w>  <gap reason="lost" extent="3" unit="character"/>  <lb n="2"/> <w lemma="ὅς">οὗ</w> <w lemma="εἰμί">ἐστιν</w> <w lemma="ὁ">ἡ</w> <w lemma="κάθοδος">κάθοδος</w> <w lemma="ἔμπροσθεν">ἔμπροσθεν</w> <w lemma="πρός">πρὸς</w> <w lemma="μεσήμβριος">μεσημβρί<supplied reason="lost">αν</supplied></w>  <gap reason="lost" extent="3" unit="character"/>  <lb n="3"/> <w lemma="ἐπί">ἐπὶ</w> <w lemma="καθάρσιος">καθαρσίου</w> <w lemma="κατασκευάζω">κατεσκεύασεν</w> <persName type="aphrodisian"><name reg="Ἑρμογένης">Ἑρμογένης</name> <persName type="aphrodisian"><name reg="Μηνόδωρος">Μηνοδώρο<supplied reason="lost">υ</supplied></name>   <persName type="aphrodisian"><name><gap reason="lost" extent="2" unit="character"/>    <lb n="4"/>δώρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Δημήτριος">Δημητρίου</name></persName></persName></persName></persName>  <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀπολλώνιος ">Ἀπολλώνιος</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἑρμογένης">Ἑρμογένης</name></persName> <w lemma="καί">καὶ</w> <unclear reason="damage">Ι</unclear><gap reason="lost" extent="3" unit="character"/>  <lb n="5"/> <w lemma="ὁ">τὰ</w> <w lemma="τέκνον">τέκνα</w> <w lemma="ὁ">τὰ</w> <persName type="aphrodisian"><name reg="Ἑρμογένης">Ἑρμογένους</name></persName> <w lemma="ἑαυτοῦ">ἑαυτοῖς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐκ">ἐξ</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="εἰμί">ἐσομένοις</w> <gap reason="lost" extent="3" unit="character"/>  <lb n="6"/> <w lemma="ἔκγονος">ἐκγόνοις</w> <w lemma="καί">καὶ</w> <w lemma="διάδοχος">διαδόχοις</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="μηδείς">μηδενὸς</w> <w lemma="ἔχω">ἔχοντος</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w>μηδ<gap reason="lost" extent="3" unit="character"/></w>  <lb n="7"/> <w lemma="κληρονόμος">κληρονόμων</w> <w lemma="ἤ">ἢ</w> <w lemma="διάδοχος">διαδόχων</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ἐξαλλοτριόω">ἐξαλλοτριῶσαι</w> <w lemma="μήτε">μήτε</w> <w lemma="ὁ">τὸ</w> <w lemma="πύργιον">πύργιον</w> <w lemma="μήτε">μή<lb n="8" type="worddiv"/>τε</w> <w lemma="ὁ">τὸ</w> <w>ὑπ᾿</w> <w lemma="αὐτός">αὐτὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="μήτε">μήτε</w> <w lemma="πρᾶσις">πράσεως</w> <w lemma="ὄνομα">ὀνόματι</w> <w lemma="μήτε">μήτε</w> <w lemma="συγχώρησις">συνωχρήσεως</w> <w lemma="ἐπεί">ἐπεὶ</w> <lb n="9"/> <w lemma="ὁ">ὁ</w> <w lemma="ποιέω">ποιήσας</w> <w lemma="τις">τι</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἀπαλλοτρίωσις">ἀπαλλοτριώσει</w> <w>ᾧ</w> <w lemma="δή">δή</w> <w lemma="ποτε">ποτε</w> <w lemma="τρόπος">τρόπῳ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="ἀναδέχομαι">ἀναδεξάμενος</w> <lb n="10"/> <w lemma="ἔνοχος">ἔνοχος</w> <w lemma="εἰμί">ἔσται</w> <w lemma="ἀσέβεια">ἀσεβείᾳ</w> <w lemma="καί">καὶ</w> <w lemma="εἰσφέρω">εἰσοίσει</w> <w lemma="ἕκαστος">ἕκαστος</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸν</w> <w lemma="κυριακός">κυριακὸν</w> <w lemma="φίσκος">φίσκον</w> <w lemma="ἀνά">ἀ<lb n="11" type="worddiv"/>νὰ</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <w lemma="μυρίος">μυρία</w> <w lemma="ὡς">ὡς</w> <w lemma="ἐκ">ἐκ</w> <w lemma="καταδίκη">καταδίκης</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸν</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσται</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσαντος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="ὑπεναντίος">ὑ<lb n="12" type="worddiv"/>πεναντίως</w> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="εἰμί">ἔσται</w> <w lemma="ἄκυρος">ἄκυρον</w> <w lemma="καί">καὶ</w> <w lemma="οὐδείς">οὐδὲν</w> <w lemma="ἥσσων">ἧττον</w> <w lemma="μένω">μενεῖ</w> <w lemma="ὁ">τὰ</w> <w lemma="προδηλόω">προδηλού<lb n="13" type="worddiv"/>μενα</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὰ</w> <w lemma="καθοσιόομαι">καθωσιωμένα</w> <g type="stop"/> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="οὗτος">ταύτης</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ὁ">τὰ</w> <w lemma="νῦν">νῦν</w> <w lemma="ἀντίτυπος">ἀν<lb n="14" type="worddiv"/>τίτυπον</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <persName type="aphrodisian"><name reg="Ἄτταλος">Ἀττάλου</name> <name reg="Ἄδραστος">Ἀδράστου</name> <lb n="15"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Νεικότειμος">Νεικοτείμου</name></persName></persName> <w lemma="ἥρως">ἥρωος</w> <w lemma="ὁ">τὸ</w> <w lemma="δεύτερος">δεύτερον</w> <w lemma="μείς">μηνὸς</w> <rs type="month"><w lemma="Δεῖος">Δείου</w></rs> <g type="leaf"/>  </ab>
-</div>
-<div type="apparatus" n="anthopoulos1875">
-<head>Apparatus</head>
-<p>l. 2, ΚΑΘΟΔΟΞΕΝΠΡΟΣ</p><p>l. 3, ΣΚΕΥΑΣΑΝ Deering CHECK LBWAt end ΜΗΝΟΔΟΡΟ Deering; ΜΝΟΔΩΗ Franz; ΜΗΝΟΔΩΡ Waddington; .. ]ΝΟΔΩΡΟ Anthopoulos</p><p>l. 4, At end ΚΑΙ Ι Franz, Anthopoulos, KAI Deering, Waddington</p><p>l. 5, ΕΞΟΜΕΝΩΝ Deering; ΕΣΟΜΕΝΟ Franz; ΕΣΟΜΕΝΟΙΣ Waddington; ΕΣΟΜΕΝΟΝ Anthopoulos.</p><p>l. 6, At end ΜΗΔ Deering, Franz, Anthopoulos, om. Waddington</p><p>l. 8, At end ΕΠΕΙ Deering, Franz; ΕΠ Anthopoulos; om. Waddington</p><p>l. 10, ΕΚΑΣΤΟΣΑΥΤΩΝ Deering; ΕΚΑΣΑΥΤΩΝ Franz ΕΚΑΣΤΟΝ W</p>
-</div>
-<div type="translation" n="notyet">
-<head>Translation</head>
-<p>...</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls</rs>: 'A fallen stone near the city wall' (Waddington). Not found again.</rs>
-<rs type="lastLocation">Findspot (1850)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Deering, p. 12v, ( 40); by Loew; by Waddington. A fragment from the left side seen in Pirlibey by Anthopoulos in 1872; another fragment seen by Kubitschek (K III, 27).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="leake1843">Leake, from Deering, <biblScope>16</biblScope></bibl>: Deering's copy ran across two pages; Leake missed the ends of ll. 10-14, which were on the second (adjacent) page. By <bibl n="franz1847">Franz, from Loew, p.113, <biblScope>b.9</biblScope></bibl>; by <bibl n="LBW">Waddington LBW <biblScope>1639</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257364">486</biblScope>
-</bibl>Fragment published by <bibl>Anthopoulos <title>Homeros</title> 3 (1875), <biblScope>81</biblScope></bibl>, with <bibl n="hell13">L. Robert, Hellenica 13, <biblScope>114</biblScope></bibl>; assembled fragments from K&amp;R published by Cormack Notes fig. 14..</p>
-</div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p><figure href="Deering_12v"><figDesc>Deering notebook 12v</figDesc></figure><figure href="Deering_13"><figDesc>Deering notebook 13</figDesc></figure><figure href="K_III_27"><figDesc>Kubitschek notebook III, 27</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus" n="anthopoulos1875">
+            <p>l. 2, ΚΑΘΟΔΟΞΕΝΠΡΟΣ</p>
+            <p>l. 3, ΣΚΕΥΑΣΑΝ Deering CHECK LBWAt end ΜΗΝΟΔΟΡΟ Deering; ΜΝΟΔΩΗ Franz; ΜΗΝΟΔΩΡ Waddington; .. ]ΝΟΔΩΡΟ Anthopoulos</p>
+            <p>l. 4, At end ΚΑΙ Ι Franz, Anthopoulos, KAI Deering, Waddington</p>
+            <p>l. 5, ΕΞΟΜΕΝΩΝ Deering; ΕΣΟΜΕΝΟ Franz; ΕΣΟΜΕΝΟΙΣ Waddington; ΕΣΟΜΕΝΟΝ Anthopoulos.</p>
+            <p>l. 6, At end ΜΗΔ Deering, Franz, Anthopoulos, om. Waddington</p>
+            <p>l. 8, At end ΕΠΕΙ Deering, Franz; ΕΠ Anthopoulos; om. Waddington</p>
+            <p>l. 10, ΕΚΑΣΤΟΣΑΥΤΩΝ Deering; ΕΚΑΣΑΥΤΩΝ Franz ΕΚΑΣΤΟΝ W</p>
+         </div>
+         <div type="translation" n="notyet">
+            <p>...</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="leake1843">Leake, from Deering, <citedRange>16</citedRange>
+               </bibl>: Deering's copy ran across two pages; Leake missed the ends of ll. 10-14, which were on the second (adjacent) page. By <bibl n="franz1847">Franz, from Loew, p.113, <citedRange>b.9</citedRange>
+               </bibl>; by <bibl n="LBW">Waddington LBW <citedRange>1639</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257364">486</citedRange>
+               </bibl>Fragment published by <bibl>Anthopoulos <title>Homeros</title> 3 (1875), <citedRange>81</citedRange>
+               </bibl>, with <bibl n="hell13">L. Robert, Hellenica 13, <citedRange>114</citedRange>
+               </bibl>; assembled fragments from K&amp;R published by Cormack Notes fig. 14..</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,97 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph121011" n="iAph0396 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">   <rs type="textType">Honours</rs> for Zenon son of Menippos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>   Honours for Zenon son of Menippos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph121011</idno>
+            <idno type="IAph2007">iAph121011</idno>
+            <idno type="JMR2004">iAph0396</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A plain <material key="marmor">white marble</material>
+                              <objectType>statue base</objectType>, with hole and pouring channel on top for the attachment of a crowning feature (<width unit="metre">0.545</width>   ×  <height unit="metre">1.27</height>   ×  <depth unit="metre">0.54</depth>). </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro"> Inscribed</rs> on one face. The stone is complete; the text must have begun on a crowning feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote> ll. 1-3, <height unit="metre">0.03</height>;  ll. 5 ff, <height unit="metre">0.025</height>; ligatures: <foreign xml:lang="grc">ΜΗ</foreign>, l.1. <foreign xml:lang="grc">ΝΜ</foreign> in l.4, <foreign xml:lang="grc">ΗΝ</foreign> in ll. 2, 3, 4, 14, <foreign xml:lang="grc">ΝΗ</foreign> l.11. Diaeretic dots around <foreign xml:lang="grc">Α</foreign> in ll. 5, 12, possibly 13; around <foreign xml:lang="grc">Ε</foreign> in ll. 5, 9, 11 (twice), 12; the <foreign xml:lang="grc">Β</foreign>s in ll. 12, 14 are non-standard and slightly different from each other; line above the figure in l. 15.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering prosopography">  Second to third centuries A.D. (<rs type="criteria">lettering</rs> and <rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, West Gate</rs>:  re-used</provenance>
+                  <provenance type="observed" when="1990">Findspot (1990)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-30" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-08-25" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="90_A_05A.jpg">
+            <desc>Face (1990)</desc>
+         </graphic>
+         <graphic url="90_A_06A.jpg">
+            <desc>Face (1990)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-04-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2005-08-25</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
 
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A plain <rs type="material" key="marmor">white marble</rs> <rs type="objectType">statue base</rs>, with hole and pouring channel on top for the attachment of a crowning feature (<measure type="length" unit="metre" dim="width">0.545</measure>   ×  <measure type="length" unit="metre" dim="height">1.27</measure>   ×  <measure type="length" unit="metre" dim="depth">0.54</measure>). </p>
+<ab><lb n="0"/>  <supplied reason="lost"><note place="not  specified" xml:lang=""/><w lemma="ὁ">ἡ</w> <w lemma="πόλις">πόλις</w> <w lemma="καλός">καλλίσταις</w> <w lemma="καί">καὶ</w></supplied>  <w lemma="πρέπω"><supplied reason="lost">πρεπού</supplied><lb n="1" break="no"/><unclear reason="damage">σ</unclear>αῖς</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="τιμάω">ἐτεί<hi rend="ligature">μη</hi>σεν</w><lb n="2"/><persName type="attested"><name nymRef="#Ζήνων">Ζ<hi rend="ligature">ήν</hi>ωνα</name>  <persName type="attested"><name nymRef="#Μένιππος">Μενίππου</name>  <w lemma="ὁ">τοῦ</w><lb n="3"/><persName type="attested"><name nymRef="#Ζήνων">Ζ<hi rend="ligature">ήν</hi>ωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Καλλίας">Καλλίου</name></persName></persName></persName><lb n="4"/> <w lemma="ὁ">τὸ<hi rend="ligature" id="lig1">ν</hi></w> <name nymRef="#Μένιππος"><hi rend="ligature" id="lig2">Μ</hi>ενίππου</name> <link targets="lig1 lig2"/><w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζ<hi rend="ligature">ήν</hi>ω<lb n="5" break="no"/>νος</name></persName> <w lemma="πατήρ">πατέρα</w></persName> <w lemma="ἀρχιερεύς">ἀρχιερέα</w> <w lemma="ταμίας">τα<lb n="6" break="no"/>μίαν</w> <w lemma="νεοποιός">νεοποιὸν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w><lb n="7"/> <w lemma="ἄλλος">ἀλλὰς</w> <w lemma="πάσσω">ἅπασας</w> <w lemma="ἀρχή">ἀρχάς</w> <w lemma="τε">τε</w><lb n="8"/> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λειτουργίας</w> <w lemma="φιλοτίμως">φιλοτεί<lb n="9" break="no"/>μως</w> <w lemma="ἐπιτελέω">ἐπιτελέσαντα</w> <w lemma="ὁ">τῇ</w><lb n="10"/> <w lemma="πατρίς">πατρίδι</w> <g ref="#stop"/>  <w lemma="θαυμάζω">θαυμασθέντα</w><lb n="11"/> <w lemma="ἐπί">ἐπί</w> <w lemma="τε">τε</w> <w lemma="σωφροσύνη">σωφροσύ<hi rend="ligature">νῃ</hi></w> <w lemma="καί">καὶ</w> <w lemma="ἐπιείκεια">ἐπι<lb n="12" break="no"/>εικείᾳ</w> <w lemma="βίος">βίου</w> <g ref="#stop"/> <w lemma="καί">καὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="εὔνοια">εὐνοίᾳ</w><lb n="13"/> <w lemma="ὁ">τῇ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w><lb n="13a"/><space dim="vertical" unit="line" extent="1"/><lb n="14"/> <w lemma="ἐπιμελέω">ἐπιμεληθέντος</w> <persName type="attested"><name nymRef="#Ζηνόβιος">Ζ<hi rend="ligature">ην</hi>οβίου</name><lb n="15"/><space dim="vertical" unit="character" extent="4"/>    <num value="4"><hi rend="supraline">δ</hi></num>  <persName type="attested"><name nymRef="#Ἐπαφρόδειτος">Ἐπαφροδείτου</name></persName></persName>  <space dim="vertical" unit="character" extent="4"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro"> Inscribed</rs> on one face. The stone is complete; the text must have begun on a crowning feature.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p> ll. 1-3, <measure dim="height" type="length" unit="metre">0.03</measure>;  ll. 5 ff, <measure dim="height" type="length" unit="metre">0.025</measure>; ligatures: <foreign lang="grc">ΜΗ</foreign>, l.1. <foreign lang="grc">ΝΜ</foreign> in l.4, <foreign lang="grc">ΗΝ</foreign> in ll. 2, 3, 4, 14, <foreign lang="grc">ΝΗ</foreign> l.11. Diaeretic dots around <foreign lang="grc">Α</foreign> in ll. 5, 12, possibly 13; around <foreign lang="grc">Ε</foreign> in ll. 5, 9, 11 (twice), 12; the <foreign lang="grc">Β</foreign>s in ll. 12, 14 are non-standard and slightly different from each other; line above the figure in l. 15.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>  <date notAfter="0300" notBefore="0101" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs> and <rs type="criteria">prosopography</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-
-<ab><lb n="0"/>  <supplied reason="lost"><note place="not  specified" anchored="yes">e.g.</note><w lemma="ὁ">ἡ</w> <w lemma="πόλις">πόλις</w> <w lemma="καλός">καλλίσταις</w> <w lemma="καί">καὶ</w></supplied>  <w lemma="πρέπω"><supplied reason="lost">πρεπού</supplied><lb n="1" type="worddiv"/><unclear reason="damage">σ</unclear>αῖς</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="τιμάω">ἐτεί<hi rend="ligature">μη</hi>σεν</w><lb n="2"/><persName type="aphrodisian" full="yes"><name reg="Ζήνων">Ζ<hi rend="ligature">ήν</hi>ωνα</name>  <persName type="aphrodisian"><name reg="Μένιππος" type="">Μενίππου</name>  <w lemma="ὁ">τοῦ</w><lb n="3"/><persName type="aphrodisian"><name reg="Ζήνων">Ζ<hi rend="ligature">ήν</hi>ωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Καλλίας">Καλλίου</name></persName></persName></persName><lb n="4"/> <w lemma="ὁ">τὸ<hi rend="ligature" id="lig1">ν</hi></w> <name reg="Μένιππος" type=""><hi rend="ligature" id="lig2">Μ</hi>ενίππου</name> <link targets="lig1 lig2"/><w lemma="καί">καὶ</w> <persName type="aphrodisian" full="yes"><name reg="Ζήνων">Ζ<hi rend="ligature">ήν</hi>ω<lb n="5" type="worddiv"/>νος</name></persName> <w lemma="πατήρ">πατέρα</w></persName> <w lemma="ἀρχιερεύς">ἀρχιερέα</w> <w lemma="ταμίας">τα<lb n="6" type="worddiv"/>μίαν</w> <w lemma="νεοποιός">νεοποιὸν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w><lb n="7"/> <w lemma="ἄλλος">ἀλλὰς</w> <w lemma="πάσσω">ἅπασας</w> <w lemma="ἀρχή">ἀρχάς</w> <w lemma="τε">τε</w><lb n="8"/> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λειτουργίας</w> <w lemma="φιλοτίμως">φιλοτεί<lb n="9" type="worddiv"/>μως</w> <w lemma="ἐπιτελέω">ἐπιτελέσαντα</w> <w lemma="ὁ">τῇ</w><lb n="10"/> <w lemma="πατρίς">πατρίδι</w> <g type="stop"/>  <w lemma="θαυμάζω">θαυμασθέντα</w><lb n="11"/> <w lemma="ἐπί">ἐπί</w> <w lemma="τε">τε</w> <w lemma="σωφροσύνη">σωφροσύ<hi rend="ligature">νῃ</hi></w> <w lemma="καί">καὶ</w> <w lemma="ἐπιείκεια">ἐπι<lb n="12" type="worddiv"/>εικείᾳ</w> <w lemma="βίος">βίου</w> <g type="stop"/> <w lemma="καί">καὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="εὔνοια">εὐνοίᾳ</w><lb n="13"/> <w lemma="ὁ">τῇ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w><lb n="13a"/><space dim="vertical" unit="line" extent="1"/><lb n="14"/> <w lemma="ἐπιμελέω">ἐπιμεληθέντος</w> <persName type="aphrodisian" full="yes"><name reg="Ζηνόβιος">Ζ<hi rend="ligature">ην</hi>οβίου</name><lb n="15"/><space dim="vertical" unit="character" extent="4"/>    <num value="4"><hi rend="supraline">δ</hi></num>  <persName type="aphrodisian"><name reg="Ἐπαφρόδειτος">Ἐπαφροδείτου</name></persName></persName>  <space dim="vertical" unit="character" extent="4"/></ab>
-</div>
-
-
-
-<div type="translation">
-<head>Translation</head>
-<p><supplied reason="lost" cert="low">The city</supplied> honoured with <supplied reason="lost">the finest and</supplied> fitting honours Zenon son of Menippos the son of Zenon the son of Kallias, father of Menippos and Zenon; high priest <supplied reason="subaudible">of the Imperial cult</supplied>, treasurer, temple-builder who had also filled all other offices and liturgies for his country zealously. He was admired for his self-restraint and proper behaviour and for his goodwill towards his country. Zenobios, fourth of the name from Epaphroditos oversaw <supplied reason="subaudible">provision of the monument</supplied>.</p></div>
-
- <div type="commentary">
-<head>Commentary</head>
-<p>The sons of this man are honoured in very similar terms in two inscriptions (not yet published)</p><p>For the epimelete see <xref type="inscription" n="1919" href="121020">12.1020</xref>.</p><p></p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p>Found: <rs type="found"><rs type="monuList">Walls, West Gate</rs>:  re-used</rs>. Original location: <rs type="origLocation">Unknown</rs>. Last recorded: <rs type="lastLocation">Findspot (1990)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1990 (<rs type="siteNo">Walls 162</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p><figure href="90_A_05A"><figDesc>Face (1990)</figDesc></figure><figure href="90_A_06A"><figDesc>Face (1990)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="translation">
+            <p>
+               <supplied reason="lost" cert="low">The city</supplied> honoured with <supplied reason="lost">the finest and</supplied> fitting honours Zenon son of Menippos the son of Zenon the son of Kallias, father of Menippos and Zenon; high priest <supplied reason="subaudible">of the Imperial cult</supplied>, treasurer, temple-builder who had also filled all other offices and liturgies for his country zealously. He was admired for his self-restraint and proper behaviour and for his goodwill towards his country. Zenobios, fourth of the name from Epaphroditos oversaw <supplied reason="subaudible">provision of the monument</supplied>.</p>
+         </div>
+         <div type="commentary">
+            <p>The sons of this man are honoured in very similar terms in two inscriptions (not yet published)</p>
+            <p>For the epimelete see <ref type="inscription" n="1919" target="121020.xml"/>.</p>
+            <p/>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,119 +1,198 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020019" n="iAph0043 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">Ampelios, father of the city, <rs type="textType" reg="building inscription">restores</rs> the 'palaestra'</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-	  	<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2007-08-13</date><respStmt><name>EL</name></respStmt><item>tidied expan</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change>
-  <date>2003-07-16</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-16</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>name tags reduced</item></change><change><date>2004-01-23</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p><rs type="material">White marble</rs> <rs type="objectType">block</rs>s making up the Odeon/Bouleuterion stage edge, which is <measure type="length" unit="metre" dim="height">0.10</measure> high. The rim was broken in several places: it has been largely restored, but four fragments are still loose.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>Cut along the rim of the stage. The total length of the text is <measure type="length" dim="none" unit="metre" precision="circa">7.65</measure>.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p><measure dim="height" type="length" unit="metre">0.06-0.07</measure>; scroll for abbreviation; well cut.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0434" notAfter="0467">Mid fifth century</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">titulature</rs>).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Ampelios, father of the city, restores the 'palaestra'</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020019</idno>
+            <idno type="IAph2007">iAph020019</idno>
+            <idno type="JMR2004">iAph0043</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>block</objectType>s making up the Odeon/Bouleuterion stage edge, which is <height unit="metre">0.10</height> high. The rim was broken in several places: it has been largely restored, but four fragments are still loose.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Cut along the rim of the stage. The total length of the text is <height unit="metre">7.65</height>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.06-0.07</height>; scroll for abbreviation; well cut.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0434"
+                               notAfter="0467"
+                               precision="medium"
+                               evidence="lettering titulature">Mid fifth century (<rs type="criteria">lettering</rs>, <rs type="criteria">titulature</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs key="Boul" type="monuList">Bouleuterion/Odeon</rs>: on the stage rim; .</provenance>
+                  <provenance type="observed" when="1977">Findspot; fragments in Museum (1977).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-13" who="EL">tidied expan</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-23" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">name tags reduced</change>
+         <change when="2003-08-16" who="#CMR">tagged and corrected</change>
+         <change when="2003-07-16" who="Juan-Garcés">lemmatised</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_U_02A.jpg">
+            <desc>View (1973)</desc>
+         </graphic>
+         <graphic url="73_U_03A.jpg">
+            <desc>Part (1973)</desc>
+         </graphic>
+         <graphic url="73_U_04A.jpg">
+            <desc>Part (1973)</desc>
+         </graphic>
+         <graphic url="72_J_24.jpg">
+            <desc>Detail, 1 (1972)</desc>
+         </graphic>
+         <graphic url="72_J_25.jpg">
+            <desc>Detail, 2 (1972)</desc>
+         </graphic>
+         <graphic url="72_J_26.jpg">
+            <desc>Detail, 3 (1972)</desc>
+         </graphic>
+         <graphic url="72_J_27.jpg">
+            <desc>Detail, 4 (1972)</desc>
+         </graphic>
+         <graphic url="72_J_28.jpg">
+            <desc>Detail, 5 (1972)</desc>
+         </graphic>
+         <graphic url="72_J_29.jpg">
+            <desc>Detail, 6 (1972)</desc>
+         </graphic>
+         <graphic url="72_J_30.jpg">
+            <desc>Detail, 7 (1972)</desc>
+         </graphic>
+         <graphic url="76_E_07.jpg">
+            <desc>Detail, 8 (1972)</desc>
+         </graphic>
+         <graphic url="72_J_32.jpg">
+            <desc>Detail, 9 (1972)</desc>
+         </graphic>
+         <graphic url="72_J_33.jpg">
+            <desc>Detail, 10 (1972)</desc>
+         </graphic>
+         <graphic url="77_BB_17.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<ab>
-		<lb n="1"/><w lemma="ἐπί">ἐπὶ</w> <w lemma="εὐτυχία">εὐτυχίᾳ</w> <w lemma="ὁ"><unclear reason="undefined">τ</unclear>ῆς</w> <rs key="clarus" type="dignity"><w lemma="λαμπρός">λαμπρᾶς</w></rs> <w lemma="Ἀφροδεισιεύς"><placeName type="ethnic" full="yes" reg="Ἀφροδεισιεύς">Ἀφροδισιαί<supplied reason="lost">ων</supplied></placeName></w> <rs key="capital" type="subject"><w lemma="μητρόπολις"><supplied reason="lost">μητροπό</supplied><seg type="fragment">λεω</seg><supplied reason="lost">ς</supplied></w></rs> <w lemma="καί">καὶ</w> <w lemma="οὗτος"><supplied reason="lost">το</supplied>ῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <w lemma="ὁ">τῆς</w> <w lemma="παλαίστρα">πα<unclear reason="damage">λ</unclear>έσ<unclear reason="damage">τ</unclear><seg type="fragment">ρας</seg></w> <w lemma="γίγνομαι">ἐγέν<supplied reason="lost">ετο</supplied></w> <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w> <persName type="aphrodisian" key="Ampelius" full="yes"><supplied reason="lost" cert="low"><name reg="Φλάβιος">Φλαβίου</name></supplied> <supplied reason="lost"><name reg="Ἀμπέλιος">Ἀμπελίου</name></supplied></persName> <w lemma="ὁ"><unclear reason="damage">τ</unclear>ο<supplied reason="lost">ῦ</supplied></w> <w lemma="ἐλλόγιμος"><rs type="dignity" key="eloquentissimus"><expan><abbr>ἐλλογιμ</abbr><supplied reason="abbreviation">ωτάτου</supplied></expan></rs></w> <seg type="fragment"><w lemma="σχολαστικός"><rs key="scholasticus" type="profession"><expan><abbr>σχ</abbr><supplied reason="abbreviation">ολαστικοῦ</supplied></expan></rs></w> <w lemma="καί">καὶ</w></seg> <rs key="pater" type="official-secul"><w lemma="πατήρ"><seg>π</seg><supplied reason="lost">ατρ</supplied>ός</w></rs> <w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><supplied reason="abbreviation">ικτιῶνι</supplied></expan></w> <num value="10"><hi rend="supraline">ι</hi></num> <w lemma="εὐτυχής"><expan><abbr>εὐτυχ</abbr><supplied reason="abbreviation">εστάτῃ</supplied></expan></w>
+		<lb n="1"/><w lemma="ἐπί">ἐπὶ</w> <w lemma="εὐτυχία">εὐτυχίᾳ</w> <w lemma="ὁ"><unclear reason="undefined">τ</unclear>ῆς</w> <rs key="clarus" type="dignity"><w lemma="λαμπρός">λαμπρᾶς</w></rs> <w lemma="Ἀφροδεισιεύς"><placeName nymRef="#Ἀφροδεισιεύς">Ἀφροδισιαί<supplied reason="lost">ων</supplied></placeName></w> <rs key="capital" type="subject"><w lemma="μητρόπολις"><supplied reason="lost">μητροπό</supplied><seg type="fragment">λεω</seg><supplied reason="lost">ς</supplied></w></rs> <w lemma="καί">καὶ</w> <w lemma="οὗτος"><supplied reason="lost">το</supplied>ῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <w lemma="ὁ">τῆς</w> <w lemma="παλαίστρα">πα<unclear reason="damage">λ</unclear>έσ<unclear reason="damage">τ</unclear><seg type="fragment">ρας</seg></w> <w lemma="γίγνομαι">ἐγέν<supplied reason="lost">ετο</supplied></w> <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w> <persName key="Ampelius" type="attested"><supplied reason="lost" cert="low"><name nymRef="#Φλάβιος">Φλαβίου</name></supplied> <supplied reason="lost"><name nymRef="#Ἀμπέλιος">Ἀμπελίου</name></supplied></persName> <w lemma="ὁ"><unclear reason="damage">τ</unclear>ο<supplied reason="lost">ῦ</supplied></w> <w lemma="ἐλλόγιμος"><rs type="dignity" key="eloquentissimus"><expan><abbr>ἐλλογιμ</abbr><ex>ωτάτου</ex></expan></rs></w> <seg type="fragment"><w lemma="σχολαστικός"><rs key="scholasticus" type="profession"><expan><abbr>σχ</abbr><ex>ολαστικοῦ</ex></expan></rs></w> <w lemma="καί">καὶ</w></seg> <rs key="pater" type="official-secul"><w lemma="πατήρ"><seg>π</seg><supplied reason="lost">ατρ</supplied>ός</w></rs> <w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτιῶνι</ex></expan></w> <num value="10"><hi rend="supraline">ι</hi></num> <w lemma="εὐτυχής"><expan><abbr>εὐτυχ</abbr><ex>εστάτῃ</ex></expan></w>
 		</ab>
 		</div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p><foreign lang="grc">ἰνδ<supplied reason="abbreviation">ικτίωνος</supplied> <num value="10"><hi rend="supraline">ι</hi></num>, εὐτυχ<supplied reason="abbreviation">ῶς</supplied></foreign> ALA;
-		<foreign lang="grc">ἰνδ<supplied reason="abbreviation">ικτιῶνι</supplied> <num value="10"><hi rend="supraline">ι</hi></num> εὐτυχ<supplied reason="abbreviation">εστάτῃ</supplied></foreign> Feissel.</p>
-        <p>The letters on the loose fragments are highlighted in the text.</p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>For the good fortune of the splendid metropolis of the Aphrodisians, this work of the <term lang="la">palaestra</term> also took place <supplied reason="lost" cert="low">under Flavius Ampelius</supplied> the most eloquent <term lang="la">scholasticus</term> and <term lang="la">pater</term>, in the tenth indiction. With good fortune.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="IV.21">IV.21</xref> following.</p>
-        <p>For Ampelios, see also <xref type="inscription" n="38" href="040202">4.202</xref>, <xref type="inscription" n="22" href="120101">12.101</xref> and <xref type="inscription" n="44" href="080609">8.609</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs key="Boul" type="monuList">Bouleuterion/Odeon</rs>: on the stage rim; .</rs>. Original location: <rs type="origLocation">Findspot.</rs>. Last recorded location: <rs type="lastLocation">Findspot; fragments in Museum (1977).</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition in <date>1963</date>.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl rend="primary"><author>Erim</author>, <title level="j">ILN</title> 21 Dec. 1963, <biblScope>1028</biblScope></bibl>; by <bibl type="hbi" rend="primary" n="cmr1979"><author>Roueché</author> (1979), 176, no. <biblScope>2</biblScope></bibl>, whence <bibl n="be"><title level="j">BE</title> <biblScope>1980.473</biblScope></bibl>; by <bibl type="hbi" rend="primary" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>43</biblScope> and plate</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257502">620</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcriptions (Reynolds, Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_U_02A"><figDesc>View (1973)</figDesc></figure><figure href="73_U_03A"><figDesc>Part (1973)</figDesc></figure><figure href="73_U_04A"><figDesc>Part (1973)</figDesc></figure><figure href="72_J_24"><figDesc>Detail, 1 (1972)</figDesc></figure><figure href="72_J_25"><figDesc>Detail, 2 (1972)</figDesc></figure><figure href="72_J_26"><figDesc>Detail, 3 (1972)</figDesc></figure><figure href="72_J_27"><figDesc>Detail, 4 (1972)</figDesc></figure><figure href="72_J_28"><figDesc>Detail, 5 (1972)</figDesc></figure><figure href="72_J_29"><figDesc>Detail, 6 (1972)</figDesc></figure><figure href="72_J_30"><figDesc>Detail, 7 (1972)</figDesc></figure><figure href="76_E_07"><figDesc>Detail, 8 (1972)</figDesc></figure><figure href="72_J_32"><figDesc>Detail, 9 (1972)</figDesc></figure><figure href="72_J_33"><figDesc>Detail, 10 (1972)</figDesc></figure><figure href="77_BB_17"><figDesc>Fragment (1977)</figDesc></figure></p></div>
-
-
-
-      
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <p>
+               <foreign xml:lang="grc">ἰνδ<ex>ικτίωνος</ex>
+                  <num value="10">
+                     <hi rend="supraline">ι</hi>
+                  </num>, εὐτυχ<ex>ῶς</ex>
+               </foreign> ALA;
+		<foreign xml:lang="grc">ἰνδ<ex>ικτιῶνι</ex>
+                  <num value="10">
+                     <hi rend="supraline">ι</hi>
+                  </num> εὐτυχ<ex>εστάτῃ</ex>
+               </foreign> Feissel.</p>
+            <p>The letters on the loose fragments are highlighted in the text.</p>
+         </div>
+         <div type="translation">
+            <ab>For the good fortune of the splendid metropolis of the Aphrodisians, this work of the <term xml:lang="la">palaestra</term> also took place <supplied reason="lost" cert="low">under Flavius Ampelius</supplied> the most eloquent <term xml:lang="la">scholasticus</term> and <term xml:lang="la">pater</term>, in the tenth indiction. With good fortune.</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="IV.21" target=".xml"/> following.</p>
+            <p>For Ampelios, see also <ref type="inscription" n="38" target="040202.xml"/>, <ref type="inscription" n="22" target="120101.xml"/> and <ref type="inscription" n="44" target="080609.xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl rend="primary">
+                  <author>Erim</author>, <title level="j">ILN</title> 21 Dec. 1963, <citedRange>1028</citedRange>
+               </bibl>; by <bibl type="hbi" rend="primary" n="cmr1979">
+                  <author>Roueché</author> (1979), 176, no. <citedRange>2</citedRange>
+               </bibl>, whence <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1980.473</citedRange>
+               </bibl>; by <bibl type="hbi" rend="primary" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>43</citedRange> and plate</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257502">620</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

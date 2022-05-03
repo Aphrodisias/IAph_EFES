@@ -1,84 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120105" n="iAph1783 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for C. Julius Potitianοs and for Antonia Flaviane</title></titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-03</date><respStmt><name>GB</name></respStmt><item>DONE</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Posthumous honours for C. Julius Potitianοs and for Antonia Flaviane</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120105</idno>
+            <idno type="IAph2007">iAph120105</idno>
+            <idno type="JMR2004">iAph1783</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description; but ll.17 and 29 suggest that this was a <objectType cert="low">statue base</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lines 1-16, <height unit="metre">0.027</height>; ll.17 ff., <height unit="metre">0.025</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering">
+First century A.D.
+ (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North-east</rs>: in the stretch just east of the north east gate. In exteriori huius portae parte marmore transversim locato (Picenini)</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard papers; Gaudin's squeeze; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-03" who="GB">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>No description; but ll.17 and 29 suggest that this was a <rs type="objectType" cert="low">statue base</rs>.</p>
+<ab><lb n="1"/>  <supplied reason="lost"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ἡ</w></supplied>  <w lemma="γερουσία"><supplied reason="lost">γε</supplied>  <lb n="2"/> ρουσία</w> <w lemma="καί">κ]αὶ</w> <w lemma="ὁ">οἱ</w> <w lemma="νέος">νέοι</w> <w lemma="τιμάω">ἐτ<unclear reason="damage">ε</unclear><supplied reason="lost">ί</supplied>μησα<supplied reason="lost">ν</supplied></w>  <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλλακχότα</w> <g ref="#stop"/>    <supplied reason="lost" cert="low"><space extent="3" unit="character" dim="horizontal"/>  </supplied>  <lb n="4"/> <persName type="attested"><persName type="attested"><name nymRef="#Γάϊος">Γάϊον</name> <name nymRef="#Ἰούλιος">Ἰούλιον</name> <name nymRef="#Ἄδραστος">Ἀδράστου</name></persName> <w lemma="υἱός">υἱόν</w> <lb n="5"/> <name nymRef="#Ποτειτιανός">Ποτειτιανόν</name></persName> <w lemma="ἀνήρ">ἄνδρα</w> <w lemma="φιλόπατρις">φιλόπα<lb n="6" break="no"/>τριν</w> <w lemma="πᾶς">πᾶσαν</w> <w lemma="λειτουργία">λειτουργίαν</w> <w lemma="καί">καὶ</w> <w lemma="ὑπηρεσία">ὑ<lb n="7" break="no"/>πηρεσίαν</w>  <g ref="#stop"/> <w lemma="ἐκτελέω">ἐκτετελεκότα</w> <w lemma="ὁ">τ<supplied reason="lost">ῇ</supplied></w>  <lb n="8"/> <w lemma="πατρίς">πατρίδι</w> <w lemma="καί">καὶ</w> <w lemma="πρεσβεύω">πεπρεσβευκότα</w> <sic n="superfluous">υ</sic> <lb n="9"/> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρίς">πατρίδος</w> <w lemma="προίς">προῖκα</w> <w lemma="πλεονάκις">πλε<lb n="10" break="no"/>ονάκις</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τοὺς</w> <w lemma="αὐτοκράτωρ">αὐτοκράτο<lb n="11" break="no"/>ρας</w> <w lemma="πράσσω">πράξαντα</w> <w lemma="ἀεί">ἀεὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="συμφέρω">συ<unclear reason="damage">μ</unclear>φέρο<unclear reason="damage">ν</unclear><lb n="12" break="no"/>τα</w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">δήμῳ</w> <w lemma="ὁ">ταῖς</w> <w lemma="ἄξιος">ἀξίαις</w> <w lemma="καί">καὶ</w> <w lemma="ἀναλογέω">ἀναλο<lb n="13" break="no"/>γούσαις</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="γίγνομαι">γενόμε<lb n="14" break="no"/>νον</w> <w lemma="περί">περὶ</w> <w lemma="πᾶς">πάντα</w> <w lemma="καλός">καλὸν</w> <w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθόν</w> <lb n="15"/> <w lemma="τιμάω">τετειμημένον</w> <w lemma="ψήφισμα">ψηφίσμασιν</w> <w lemma="καί">καὶ</w> <lb n="16"/><w lemma="πολιτεία">πολειτεία<supplied reason="lost">ι</supplied>ς</w> <w lemma="καί">καὶ</w> <w lemma="ὑπό">ὑπὸ</w> <w lemma="ἕτερος">ἑτέρων</w> <w lemma="πόλις">πόλε<lb n="17" break="no"/>  <space extent="3" unit="character" dim="horizontal"/> ων</w> <w lemma="πολύς">πολλῶν</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="18"/> <w lemma="ὁ">τὴν</w> <w lemma="δέ">δὲ</w> <w lemma="τιμή">τειμὴν</w> <w lemma="ἀνίστημι">ἀνέστησεν</w> <w lemma="σύν">σὺν</w> <lb n="19"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="βωμός">βωμῷ</w> <persName type="attested"><name nymRef="#Ἰουλία">Ἰουλί<g ref="#stop"/>α</name>  <g ref="#stop"/> <name nymRef="#Ἀντωνία">Ἀντωνία</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="θυγάτηρ">θ<supplied reason="lost">υ</supplied><lb n="20" break="no"/>γάτηρ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καθώς">καθὼς</w> <w lemma="διατάσσω">διετάξατ<supplied reason="lost">ο</supplied></w>  <lb n="21"/> <w lemma="ὅμοιος">ὁμοίως</w> <w lemma="τιμάω">ἐτείμησεν</w> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <lb n="22"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="γερουσία">γερουσία</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλ<lb n="23" break="no"/>λίσταις</w> <w lemma="καί">καὶ</w> <w lemma="πρέπω">πρεπούσαις</w> <w lemma="τιμή">τειμαῖς</w> <lb n="24"/> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀντωνία">Ἀντωνίαν</name> <persName type="attested"><name nymRef="#Λούκιος"><expan><abbr>Λ</abbr><ex>ουκιου</ex></expan></name> <name nymRef="#Ἀντώνιος">Ἀντωνίου</name> <name nymRef="#Φλαβιανός">Φλαβι<lb n="25" break="no"/>ανοῦ</name></persName> <w lemma="θυγάτηρ">θυγατέρα</w> <name nymRef="#Φλαβιανή">Φλαβιανὴν</name></persName> <w lemma="ἱέρεια">ἱέρει<lb n="26" break="no"/>αν</w> <persName type="divine"><name>Ἀρετῆς</name></persName> <w lemma="ὁ">τὴν</w> <persName type="attested"><name nymRef="#Ποτειτιανός">Ποτειτιανοῦ</name></persName> <lb n="27"/> <w lemma="γυνή">γυναῖκα</w> <w lemma="φίλανδρος">φίλανδρον</w> <w lemma="φιλότεκνος">φιλότεκνον</w> <lb n="28"/> <w lemma="ζάω">ζῶσαν</w> <w lemma="κόσμιος">κοσμίως</w> <w lemma="ὡς">ὡς</w> <w lemma="μαρτυρέω">μαρτυρεῖσθα<supplied reason="lost">ι</supplied></w>  <lb n="29"/> <w lemma="ὑπό">ὑπὸ</w> <w lemma="πᾶς">πάντων</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="σωφροσύνη">σωφροσύνῃ</w> <lb n="30"/> <w lemma="ὁ">τὴν</w> <w lemma="δέ">δὲ</w> <w lemma="τιμή">τειμὴν</w> <w lemma="ὁ">τὴν</w> <w lemma="ἴδιος">ἰδίαν</w> <w lemma="ἀνίστημι">ἀνέσ<lb n="31" break="no"/>τησεν</w> <w lemma="ἑαυτοῦ">ἑαυτῇ</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <lb n="32"/> <space extent="unknown"/><w lemma="ζάω">ζῶσα</w> <g ref="#leaf"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Lines 1-16, <measure dim="height" type="length" unit="metre">0.027</measure>; ll.17 ff., <measure dim="height" type="length" unit="metre">0.025</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date cert="low" notBefore="0001" notAfter="0100" exact="none">First century A.D.</date>
- (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <supplied reason="lost"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ἡ</w></supplied>  <w lemma="γερουσία"><supplied reason="lost">γε</supplied>  <lb n="2"/> ρουσία</w> <w lemma="καί">κ]αὶ</w> <w lemma="ὁ">οἱ</w> <w lemma="νέος">νέοι</w> <w lemma="τιμάω">ἐτ<unclear reason="damage">ε</unclear><supplied reason="lost">ί</supplied>μησα<supplied reason="lost">ν</supplied></w>  <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλλακχότα</w> <g type="stop"/>    <supplied reason="lost" cert="low"><space extent="3" unit="character" dim="horizontal"/>  </supplied>  <lb n="4"/> <persName type="aphrodisian"><persName type="aphrodisian"><name reg="Γάϊος">Γάϊον</name> <name reg="Ἰούλιος">Ἰούλιον</name> <name reg="Ἄδραστος">Ἀδράστου</name></persName> <w lemma="υἱός">υἱόν</w> <lb n="5"/> <name reg="Ποτειτιανός">Ποτειτιανόν</name></persName> <w lemma="ἀνήρ">ἄνδρα</w> <w lemma="φιλόπατρις">φιλόπα<lb n="6" type="worddiv"/>τριν</w> <w lemma="πᾶς">πᾶσαν</w> <w lemma="λειτουργία">λειτουργίαν</w> <w lemma="καί">καὶ</w> <w lemma="ὑπηρεσία">ὑ<lb n="7" type="worddiv"/>πηρεσίαν</w>  <g type="stop"/> <w lemma="ἐκτελέω">ἐκτετελεκότα</w> <w lemma="ὁ">τ<supplied reason="lost">ῇ</supplied></w>  <lb n="8"/> <w lemma="πατρίς">πατρίδι</w> <w lemma="καί">καὶ</w> <w lemma="πρεσβεύω">πεπρεσβευκότα</w> <sic n="superfluous">υ</sic> <lb n="9"/> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρίς">πατρίδος</w> <w lemma="προίς">προῖκα</w> <w lemma="πλεονάκις">πλε<lb n="10" type="worddiv"/>ονάκις</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τοὺς</w> <w lemma="αὐτοκράτωρ">αὐτοκράτο<lb n="11" type="worddiv"/>ρας</w> <w lemma="πράσσω">πράξαντα</w> <w lemma="ἀεί">ἀεὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="συμφέρω">συ<unclear reason="damage">μ</unclear>φέρο<unclear reason="damage">ν</unclear><lb n="12" type="worddiv"/>τα</w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">δήμῳ</w> <w lemma="ὁ">ταῖς</w> <w lemma="ἄξιος">ἀξίαις</w> <w lemma="καί">καὶ</w> <w lemma="ἀναλογέω">ἀναλο<lb n="13" type="worddiv"/>γούσαις</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="γίγνομαι">γενόμε<lb n="14" type="worddiv"/>νον</w> <w lemma="περί">περὶ</w> <w lemma="πᾶς">πάντα</w> <w lemma="καλός">καλὸν</w> <w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθόν</w> <lb n="15"/> <w lemma="τιμάω">τετειμημένον</w> <w lemma="ψήφισμα">ψηφίσμασιν</w> <w lemma="καί">καὶ</w> <lb n="16"/><w lemma="πολιτεία">πολειτεία<supplied reason="lost">ι</supplied>ς</w> <w lemma="καί">καὶ</w> <w lemma="ὑπό">ὑπὸ</w> <w lemma="ἕτερος">ἑτέρων</w> <w lemma="πόλις">πόλε<lb n="17" type="worddiv"/>  <space extent="3" unit="character" dim="horizontal"/> ων</w> <w lemma="πολύς">πολλῶν</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="18"/> <w lemma="ὁ">τὴν</w> <w lemma="δέ">δὲ</w> <w lemma="τιμή">τειμὴν</w> <w lemma="ἀνίστημι">ἀνέστησεν</w> <w lemma="σύν">σὺν</w> <lb n="19"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="βωμός">βωμῷ</w> <persName type="aphrodisian"><name reg="Ἰουλία">Ἰουλί<g type="stop"/>α</name>  <g type="stop"/> <name reg="Ἀντωνία" type="        ">Ἀντωνία</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="θυγάτηρ">θ<supplied reason="lost">υ</supplied><lb n="20" type="worddiv"/>γάτηρ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καθώς">καθὼς</w> <w lemma="διατάσσω">διετάξατ<supplied reason="lost">ο</supplied></w>  <lb n="21"/> <w lemma="ὅμοιος">ὁμοίως</w> <w lemma="τιμάω">ἐτείμησεν</w> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <lb n="22"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="γερουσία">γερουσία</w> <w lemma="ὁ">ταῖς</w> <w lemma="καλός">καλ<lb n="23" type="worddiv"/>λίσταις</w> <w lemma="καί">καὶ</w> <w lemma="πρέπω">πρεπούσαις</w> <w lemma="τιμή">τειμαῖς</w> <lb n="24"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀντωνία">Ἀντωνίαν</name> <persName type="aphrodisian"><name reg="Λούκιος"><expan><abbr>Λ</abbr><supplied reason="abbreviation">ουκιου</supplied></expan></name> <name reg="Ἀντώνιος">Ἀντωνίου</name> <name reg="Φλαβιανός">Φλαβι<lb n="25" type="worddiv"/>ανοῦ</name></persName> <w lemma="θυγάτηρ">θυγατέρα</w> <name reg="Φλαβιανή">Φλαβιανὴν</name></persName> <w lemma="ἱέρεια">ἱέρει<lb n="26" type="worddiv"/>αν</w> <persName type="divine"><name>Ἀρετῆς</name></persName> <w lemma="ὁ">τὴν</w> <persName type="aphrodisian"><name reg="Ποτειτιανός">Ποτειτιανοῦ</name></persName> <lb n="27"/> <w lemma="γυνή">γυναῖκα</w> <w lemma="φίλανδρος">φίλανδρον</w> <w lemma="φιλότεκνος">φιλότεκνον</w> <lb n="28"/> <w lemma="ζάω">ζῶσαν</w> <w lemma="κόσμιος">κοσμίως</w> <w lemma="ὡς">ὡς</w> <w lemma="μαρτυρέω">μαρτυρεῖσθα<supplied reason="lost">ι</supplied></w>  <lb n="29"/> <w lemma="ὑπό">ὑπὸ</w> <w lemma="πᾶς">πάντων</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="σωφροσύνη">σωφροσύνῃ</w> <lb n="30"/> <w lemma="ὁ">τὴν</w> <w lemma="δέ">δὲ</w> <w lemma="τιμή">τειμὴν</w> <w lemma="ὁ">τὴν</w> <w lemma="ἴδιος">ἰδίαν</w> <w lemma="ἀνίστημι">ἀνέσ<lb n="31" type="worddiv"/>τησεν</w> <w lemma="ἑαυτοῦ">ἑαυτῇ</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <lb n="32"/> <space extent="unknown"/><w lemma="ζάω">ζῶσα</w> <g type="leaf"/></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Sherard's copy is made rather confusing by the corrections made on his second visit.</p><p>l.1 .. ΟΥΑΙΟΝ .. ΜΗΣΑ 1705, corrected to ΚΑΙΟΙΝΕΟΙΚΑΙΗ ..... ΣΙΑ in 1716. Boeckh interpreted the corrections as forming another line, and printed:[ὁ δῆμος] καὶ οἱ νέοι καὶ ἡ [γερου]σία[καὶ ἡ β]ου[λὴ ἐτείμησαν] Reinach read ΑΙΟΙΝΕΟΙΕΤΕ</p><p>l. 3,  ΙΟΥ Sherard; ΙΟΥΛΙΟΝ Picenini [Ι]ΟΥΛΙΟΝ Reinach</p><p>l.6, at end: Τ Sherard; ΤΗ Reinach</p><p>l.7 : at end, Gaudin's squeeze shows dot Υ dot</p><p>l.8, at end: ΙΔΙ Sherard; ΠΛΕΟ Reinach</p><p>l. 11,  ΑΝΑ . Sherard; ΑΝΑΛΟ Reinach</p><p>l. 12,  . ΟΥΣΑΙΣ Sherard, <unclear reason="damage">Γ</unclear>ΟΥ[... Reinach</p><p>l. 14,  ΣΗΦ Sherard; ΨΗΦ Reinach</p><p>l.15 ΠΟΛΕΙΤΕΙΑΣ Sherard</p><p>l.16 Correct spacing in Picenini and Reinach.</p><p>l. 17, at end: ΣΥΝ . . Sherard</p><p>l. 19,  ΠΑΤΗΡ Sherard; ΤΑΤ[... Reinach. ΤΑΞ .. Sherard ΤΑΞΑΤ Reinach</p><p>l. 26,  ΤΕΧΝΟΝ Sherard, ΤΕΚΝΟΝ Reinach</p><p>l. 27,  ΕΙΣΟ . Sherard, ΕΙΣΘΑ Reinach</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>[?The Council and the People and the Gerousia] and the Young Men honoured, even after his death, Caius Iulius Potitianοs, a man who loved his homeland, carried out every liturgy and service for his homeland, and was ambassador on her behalf at his own expense on several occasions to the emperors, having done always what was advantageous for the People. (They voted him) honours due and fitting for him, he being in everything fine and good, and honoured by decreed and grants of citizenship also by many other cities. Julia Antonia his daughter set up the honour (?statue), together with the altar, as he prescribed in his will. Similarly the Council and the People and the Gerousia also honoured with the finest and fitting honours Antonia Flaviane, daughter of L(ucius) Antonius Flavianus, the wife of Potitianοs, a loving wife and a loving mother, who lived in a well-ordered way, so that everyone bears witness to her temperance. She set up the honour (?statue) for herself at her own expense in her lifetime.</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p> ...</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, North-east</rs>: in the stretch just east of the north east gate. In exteriori huius portae parte marmore transversim locato (Picenini)</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard papers; Gaudin's squeeze; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Lines 1-20 copied by Picenini (10102, f. 29)in 1705, whence Sherard, apparently corrected in 1716 (10101, f.29); fragments of the whole recorded by Gaudin (86, 93 a, b, c, d, g, e, f, h, k, l); not reported subsequently</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh from Sherard papers, CIG <biblScope>2786</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257162">283</biblScope>
-</bibl>; fragments published by <bibl n="reinach">Reinach, from Gaudin's squeeze, upper part <biblScope>94</biblScope> (ll. 1-9), <biblScope>95</biblScope> (ll.11-23), <biblScope>96</biblScope> (22-24), <biblScope>97</biblScope> (ll. 23-30), <biblScope>98</biblScope> (ll. 17-21), <biblScope>99</biblScope> (ll.19-30), <biblScope>101</biblScope> (ll. 7-18), <biblScope>121</biblScope> (ll. 11-15)</bibl>, on which see Cormack, Notes 11 and 57 fig. 5, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257196">317</biblScope>
-</bibl>, L. Robert, Hellenica 13, 137 n.1.</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>Sherard's copy is made rather confusing by the corrections made on his second visit.</p>
+            <p>l.1 .. ΟΥΑΙΟΝ .. ΜΗΣΑ 1705, corrected to ΚΑΙΟΙΝΕΟΙΚΑΙΗ ..... ΣΙΑ in 1716. Boeckh interpreted the corrections as forming another line, and printed:[ὁ δῆμος] καὶ οἱ νέοι καὶ ἡ [γερου]σία[καὶ ἡ β]ου[λὴ ἐτείμησαν] Reinach read ΑΙΟΙΝΕΟΙΕΤΕ</p>
+            <p>l. 3,  ΙΟΥ Sherard; ΙΟΥΛΙΟΝ Picenini [Ι]ΟΥΛΙΟΝ Reinach</p>
+            <p>l.6, at end: Τ Sherard; ΤΗ Reinach</p>
+            <p>l.7 : at end, Gaudin's squeeze shows dot Υ dot</p>
+            <p>l.8, at end: ΙΔΙ Sherard; ΠΛΕΟ Reinach</p>
+            <p>l. 11,  ΑΝΑ . Sherard; ΑΝΑΛΟ Reinach</p>
+            <p>l. 12,  . ΟΥΣΑΙΣ Sherard, <unclear reason="damage">Γ</unclear>ΟΥ[... Reinach</p>
+            <p>l. 14,  ΣΗΦ Sherard; ΨΗΦ Reinach</p>
+            <p>l.15 ΠΟΛΕΙΤΕΙΑΣ Sherard</p>
+            <p>l.16 Correct spacing in Picenini and Reinach.</p>
+            <p>l. 17, at end: ΣΥΝ . . Sherard</p>
+            <p>l. 19,  ΠΑΤΗΡ Sherard; ΤΑΤ[... Reinach. ΤΑΞ .. Sherard ΤΑΞΑΤ Reinach</p>
+            <p>l. 26,  ΤΕΧΝΟΝ Sherard, ΤΕΚΝΟΝ Reinach</p>
+            <p>l. 27,  ΕΙΣΟ . Sherard, ΕΙΣΘΑ Reinach</p>
+         </div>
+         <div type="translation">
+            <p>[?The Council and the People and the Gerousia] and the Young Men honoured, even after his death, Caius Iulius Potitianοs, a man who loved his homeland, carried out every liturgy and service for his homeland, and was ambassador on her behalf at his own expense on several occasions to the emperors, having done always what was advantageous for the People. (They voted him) honours due and fitting for him, he being in everything fine and good, and honoured by decreed and grants of citizenship also by many other cities. Julia Antonia his daughter set up the honour (?statue), together with the altar, as he prescribed in his will. Similarly the Council and the People and the Gerousia also honoured with the finest and fitting honours Antonia Flaviane, daughter of L(ucius) Antonius Flavianus, the wife of Potitianοs, a loving wife and a loving mother, who lived in a well-ordered way, so that everyone bears witness to her temperance. She set up the honour (?statue) for herself at her own expense in her lifetime.</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p> ...</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh from Sherard papers, CIG <citedRange>2786</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257162">283</citedRange>
+               </bibl>; fragments published by <bibl n="reinach">Reinach, from Gaudin's squeeze, upper part <citedRange>94</citedRange> (ll. 1-9), <citedRange>95</citedRange> (ll.11-23), <citedRange>96</citedRange> (22-24), <citedRange>97</citedRange> (ll. 23-30), <citedRange>98</citedRange> (ll. 17-21), <citedRange>99</citedRange> (ll.19-30), <citedRange>101</citedRange> (ll. 7-18), <citedRange>121</citedRange> (ll. 11-15)</bibl>, on which see Cormack, Notes 11 and 57 fig. 5, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257196">317</citedRange>
+               </bibl>, L. Robert, Hellenica 13, 137 n.1.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

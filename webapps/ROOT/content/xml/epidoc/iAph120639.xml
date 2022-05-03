@@ -1,95 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120639" n="iAph0388 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Honours</rs> for Marcus Aurelius [...]nus son of Artemon</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1991</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="ktejmr1991">Erim and Reynolds (<date>1991</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Honours for Marcus Aurelius [...]nus son of Artemon</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120639</idno>
+            <idno type="IAph2007">iAph120639</idno>
+            <idno type="JMR2004">iAph0388</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>76.96</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <objectType>Statue base</objectType> of tapering <material key="marmor">white marble</material>
+                              <objectType>statue base</objectType> shaft, damaged above but substantially reconstructed from fragments (<width unit="metre">0.465</width>–<width unit="metre">0.425</width> × <height unit="metre">1.17</height> × <depth unit="metre">0.44</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> Inscribed on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.017</height>; apices on <foreign xml:lang="grc">Ρ</foreign> and <foreign xml:lang="grc">Α</foreign> in l. 1; ligatured <foreign xml:lang="grc">ΗΝ</foreign> in ll. 3, 10, <foreign xml:lang="grc">ΤΗ</foreign> in ll. 4, 7, 8, <foreign xml:lang="grc">ΗΜ</foreign> in l. 5.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering nomenclature">  Probably third century A.D. (<rs type="criteria">lettering</rs>; <rs type="criteria">nomenclature</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (east part)</rs>, in the excavation area</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-11" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-09-29" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_A_27.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-11</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date>2005-09-29</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="objectType">Statue base</rs> of tapering <rs type="material" key="marmor">white marble</rs> <rs type="objectType">statue base</rs> shaft, damaged above but substantially reconstructed from fragments (<measure type="length" unit="metre" dim="width">0.465</measure>–<measure dim="width" type="length" unit="metre">0.425</measure> × <measure type="length" unit="metre" dim="height">1.17</measure> × <measure type="length" unit="metre" dim="depth">0.44</measure>).</p>
+<ab><lb n="1"/><persName type="attested"><name nymRef="#Μᾶρκος"><supplied reason="lost">Μ</supplied>ᾶρκον</name>  <name nymRef="#Αὐρήλιος">Αὐρήλιο<unclear reason="damage">ν</unclear></name>  <gap reason="lost" unit="character" quantity="3"/><lb n="2"/><name><gap reason="lost" unit="character" quantity="1"/>νον</name>  <persName type="attested"><name nymRef="#Ἀρτέμων">Ἀ<unclear reason="damage">ρ</unclear>τέμωνος</name>  <w lemma="ὁ">το<unclear reason="damage">ῦ</unclear></w><lb n="3"/><persName type="attested"><name nymRef="#Καλλικλῆς"><supplied reason="lost">Κ</supplied>αλλικλέους</name></persName></persName>  <w lemma="ἐπίκλην">ἐπίκλην</w><lb n="4"/><name nymRef="#Κωλώτης"><w lemma="κωλώτης">Κωλώτην</w></name></persName>  <w lemma="ἀγαλμαγτοποιός">ἀγαλμα<choice><sic>γ</sic><corr>τ</corr></choice>οπο<unclear reason="damage">ι</unclear><lb n="5" break="no"/>ὸν</w> <w lemma="ζάω">ζήσαντα</w> <w lemma="ἐδημόνως">ἐδημόνως</w> <lb n="6"/><w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="σώφρων">σωφρόνως</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑπό  <lb n="7" break="no"/>δειγμα</w> <w lemma="ἀρετή">ἀρετῆς</w> <g ref="#scroll"/><lb n="7a"/><space unit="line" extent="1" dim="horizontal"/><lb n="8"/> <w lemma="ὁ">τὴν</w> <w lemma="δέ">δὲ</w> <w lemma="ἀνάστασις">ἀνάστασιν</w> <w lemma="ὁ">τοῦ</w><lb n="9"/> <w lemma="ἀνδριάς">ἀνδρείαντος</w> <w lemma="ποιέω">ἐποιήσατο</w><lb n="10"/>  <g ref="#leaf"/>  <persName type="attested"><name nymRef="#Ζηνᾶς">Ζηνᾶς</name></persName>  <w lemma="ὁ">ὁ</w>  <w lemma="υἱός"><orig reg="υἱὸς">ὑειὸς</orig></w> <w lemma="αὐτός">αὐτοῦ</w> <g ref="#leaf"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> Inscribed on one face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.017</measure>; apices on <foreign lang="grc">Ρ</foreign> and <foreign lang="grc">Α</foreign> in l. 1; ligatured <foreign lang="grc">ΗΝ</foreign> in ll. 3, 10, <foreign lang="grc">ΤΗ</foreign> in ll. 4, 7, 8, <foreign lang="grc">ΗΜ</foreign> in l. 5.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>  Probably <date notBefore="0201" notAfter="0300" exact="none" cert="low">third century A.D.</date> (<rs type="criteria">lettering</rs>; <rs type="criteria">nomenclature</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><persName type="aphrodisian" full="yes"><name reg="Μᾶρκος"><supplied reason="lost">Μ</supplied>ᾶρκον</name>  <name reg="Αὐρήλιος" type="nomen">Αὐρήλιο<unclear reason="damage">ν</unclear></name>  <gap dim="right" extent="3" reason="lost" unit="character"/><lb n="2"/><name><gap dim="left" extent="1" reason="lost" unit="character"/>νον</name>  <persName type="aphrodisian" full="yes"><name type=" " reg="Ἀρτέμων">Ἀ<unclear reason="damage">ρ</unclear>τέμωνος</name>  <w lemma="ὁ">το<unclear reason="damage">ῦ</unclear></w><lb n="3"/><persName type="aphrodisian" full="yes"><name reg="Καλλικλῆς"><supplied reason="lost">Κ</supplied>αλλικλέους</name></persName></persName>  <w lemma="ἐπίκλην">ἐπίκλην</w><lb n="4"/><name reg="Κωλώτης"><w lemma="κωλώτης">Κωλώτην</w></name></persName>  <w lemma="ἀγαλμαγτοποιός">ἀγαλμα<choice type="correction"><sic>γ</sic><corr>τ</corr></choice>οπο<unclear reason="damage">ι</unclear><lb n="5" type="worddiv"/>ὸν</w> <w lemma="ζάω">ζήσαντα</w> <w lemma="ἐδημόνως">ἐδημόνως</w> <lb n="6"/><w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="σώφρων">σωφρόνως</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑπό  <lb n="7" type="worddiv"/>δειγμα</w> <w lemma="ἀρετή">ἀρετῆς</w> <g type="scroll"/><lb n="7a"/><space unit="line" extent="1" dim="horizontal"/><lb n="8"/> <w lemma="ὁ">τὴν</w> <w lemma="δέ">δὲ</w> <w lemma="ἀνάστασις">ἀνάστασιν</w> <w lemma="ὁ">τοῦ</w><lb n="9"/> <w lemma="ἀνδριάς">ἀνδρείαντος</w> <w lemma="ποιέω">ἐποιήσατο</w><lb n="10"/>  <g type="leaf"/>  <persName type="aphrodisian"><name reg="Ζηνᾶς">Ζηνᾶς</name></persName>  <w lemma="ὁ">ὁ</w>  <w lemma="υἱός"><orig reg="υἱὸς">ὑειὸς</orig></w> <w lemma="αὐτός">αὐτοῦ</w> <g type="leaf"/></ab>
-</div>
-
-<div type="apparatus"><head>Apparatus</head><p>l. 4, <foreign lang="grc">Τ</foreign> executed as a <foreign lang="grc">Γ</foreign>.</p></div><div type="translation">
-<head>Translation</head>
-<p><supplied reason="subaudible">Statue of</supplied> Marcus Aurelius <gap reason="lost"/>nus, son of Artemon son of Kallikles, surnamed "Gecko", sculptor; he lived with modesty and self-control, giving an example of virtue. The erection of the statue was the action of Zenas, his son.</p></div>
-
- <div type="commentary">
-<head>Commentary</head>
-<p>See Erim-Reynolds, loc. cit.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"> <rs type="monuList">Walls, South (east part)</rs>, in the excavation area</rs> <rs type="origLocation">Unknown</rs>  <rs type="lastLocation">Museum</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition  (<rs type="invNo">76.96</rs>, SBI <rs type="sbi">28</rs>).</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published in  <bibl n="ktejmr1991">Erim-Reynolds, 'Sculptors' no.<biblScope>19</biblScope></bibl>, whence <bibl n="seg"><title level="j">SEG</title> 40 <biblScope>1990.942</biblScope></bibl></p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p><figure href="77_A_27"><figDesc>Face (1977)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="apparatus">
+            <p>l. 4, <foreign xml:lang="grc">Τ</foreign> executed as a <foreign xml:lang="grc">Γ</foreign>.</p>
+         </div>
+         <div type="translation">
+            <p>
+               <supplied reason="subaudible">Statue of</supplied> Marcus Aurelius <gap reason="lost" unit="character" extent="unknown"/>nus, son of Artemon son of Kallikles, surnamed "Gecko", sculptor; he lived with modesty and self-control, giving an example of virtue. The erection of the statue was the action of Zenas, his son.</p>
+         </div>
+         <div type="commentary">
+            <p>See Erim-Reynolds, loc. cit.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published in  <bibl n="ktejmr1991">Erim-Reynolds, 'Sculptors' no.<citedRange>19</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title level="j">SEG</title> 40 <citedRange>1990.942</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

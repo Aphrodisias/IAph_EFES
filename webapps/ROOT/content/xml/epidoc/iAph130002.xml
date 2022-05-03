@@ -1,87 +1,173 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130002" n="iAph1599 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for anonymous and his wife <supplied reason="lost">Ul</supplied>pia Ammia</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-01-31</date><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>White marble <rs type="objectType">sarcophagus</rs> fragment, very badly weathered</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for anonymous and his wife <supplied reason="lost">Ul</supplied>pia Ammia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130002</idno>
+            <idno type="IAph2007">iAph130002</idno>
+            <idno type="JMR2004">iAph1599</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>White marble <objectType>sarcophagus</objectType> fragment, very badly weathered</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the surviving face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.028</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown, perhaps <rs type="monuList">Necropolis, North</rs>
+                     </origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering nomenclature">Probably
+second century
+(<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North-west</rs>: 'près de la tour du rempart' (Gaudin); inside face, a little north of the west gate.</provenance>
+                  <provenance type="observed" when="1975">Findspot (1975)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); Gaudin's squeeze; publication.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-31" who="GB">hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="JMR_1_1968_003.jpg">
+            <desc>Face (1968)</desc>
+         </graphic>
+         <graphic url="75_C_22.jpg">
+            <desc>Face (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/>  <supplied reason="lost" cert="low"><note xml:lang=""/> <w lemma="ὁ">τὸ</w>  <w lemma="ὑποσόριον">ὑποσόριον</w></supplied> <orig n="unresolved"><unclear reason="damage">ω</unclear></orig> <w lemma="καί">καὶ</w> <w lemma="ὁ">αἱ</w> <w lemma="ἐπίκειμαι">ἐπικε<supplied reason="lost">ίμεναι</supplied></w>  <w lemma="εἰσωθέω"><supplied reason="lost">εἰσῶσται</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>    <supplied reason="lost" cert="low">ἡ</supplied>  <supplied reason="lost">εἰσωώστη  </supplied> <w lemma="ὁ">ἡ</w> <w lemma="βλέπω">βλέπουσα</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ"><unclear reason="damage">τὴν</unclear></w>  <supplied reason="lost" cert="low"><w lemma="ὁδός">ὁδὸν</w></supplied>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ι</unclear>ροτ<unclear reason="damage">ηοε</unclear>ον</orig> <w lemma="κεῖμαι">κείμεναι</w> <orig n="unresolved">π<unclear reason="damage">ε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><w><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ν</orig><gap reason="lost" unit="character" quantity="1"/><unclear reason="damage">σ</unclear>ιοις</w> <w lemma="εἰσώστη">εἰσώ<unclear reason="damage">σ</unclear>ταις</w> <orig n="unresolved">επτα</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/><w lemma="μνημεῖον"><supplied reason="lost">μν</supplied>ημεῖον</w> <orig n="unresolved"><unclear reason="damage">αντι</unclear></orig> <w lemma="ὅδε">τῆσδε</w> <w lemma="βλέπω"><unclear reason="damage">βλε</unclear><supplied reason="lost" cert="low">πούσης</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τὸ</w> <orig n="unresolved">οιοοσ</orig> <w lemma="εἰμί">ὦσιν</w> <persName type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name> <name nymRef="#Κλαύδιος">Κλαυδ<supplied reason="lost">ίου</supplied></name></persName>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="7"/><supplied reason="lost">καὶ</supplied>  <persName type="attested"><name nymRef="#Οὐλπία"><supplied reason="lost">Οὐλ</supplied>πίας</name> <name nymRef="#Ἀμμία">Ἀμμίας</name></persName> <w lemma="ὁ">τῆς</w> <w lemma="γυνή">γυναικὸς</w> <w lemma="αὐτός">αὐτο<supplied reason="lost">ῦ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="8"/><gap reason="lost" unit="character" extent="unknown"/>  <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">οὓς</supplied> <w lemma="ἐάν">ἂν</w> <w lemma="αὐτός">αὐτοὶ</w> <w lemma="βούλομαι">βουληθῶσιν</w> <w lemma="ἤ">ἢ</w> <w lemma="διατάσσω">διατάξων<unclear reason="damage">τ</unclear><supplied reason="lost">αι</supplied></w>  <supplied reason="lost" cert="low"><w lemma="κατά">κατὰ</w>  <w lemma="ὁ">τὴν</w>  <w lemma="δίδωμι">δεδομένην</w></supplied>  <lb n="9"/>  <w lemma="αὐτός"><supplied reason="lost" cert="low">α</supplied>ὐτοῖς</w> <w lemma="συγχώρησις">συνχωρή<unclear reason="damage">σ</unclear>ιν</w> <w lemma="ὑπό">ὑπὸ</w> <persName type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name> <name nymRef="#Κλαύδιος">Κλαυδί<supplied reason="lost">ου</supplied></name></persName>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="10"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ε<unclear reason="damage">β</unclear>ιλουσιν<unclear reason="damage">υπ</unclear>κενση</orig> <w lemma="σορός">σορὸν</w> <w lemma="ὅς">ἥ</w> <w lemma="βλέπω">βλεπούση</w> <gap reason="lost" unit="character" extent="unknown"/>  <lb n="10a"/><space unit="line" dim="vertical"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the surviving face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.028</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>Probably
-<date notBefore="0101" notAfter="0200" exact="none">second century</date>
-(<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <supplied reason="lost" cert="low"><note>e.g.</note> <w lemma="ὁ">τὸ</w>  <w lemma="ὑποσόριον">ὑποσόριον</w></supplied> <orig n="unresolved"><unclear reason="damage">ω</unclear></orig> <w lemma="καί">καὶ</w> <w lemma="ὁ">αἱ</w> <w lemma="ἐπίκειμαι">ἐπικε<supplied reason="lost">ίμεναι</supplied></w>  <w lemma="εἰσωθέω"><supplied reason="lost">εἰσῶσται</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>    <supplied reason="lost" cert="low">ἡ</supplied>  <supplied reason="lost">εἰσωώστη  </supplied> <w lemma="ὁ">ἡ</w> <w lemma="βλέπω">βλέπουσα</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ"><unclear reason="damage">τὴν</unclear></w>  <supplied reason="lost" cert="low"><w lemma="ὁδός">ὁδὸν</w></supplied>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ι</unclear>ροτ<unclear reason="damage">ηοε</unclear>ον</orig> <w lemma="κεῖμαι">κείμεναι</w> <orig n="unresolved">π<unclear reason="damage">ε</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ν</orig><gap reason="lost" extent="1" unit="character"/><unclear reason="damage">σ</unclear>ιοις</w> <w lemma="εἰσώστη">εἰσώ<unclear reason="damage">σ</unclear>ταις</w> <orig n="unresolved">επτα</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="5"/><w lemma="μνημεῖον"><supplied reason="lost">μν</supplied>ημεῖον</w> <orig n="unresolved"><unclear reason="damage">αντι</unclear></orig> <w lemma="ὅδε">τῆσδε</w> <w lemma="βλέπω"><unclear reason="damage">βλε</unclear><supplied reason="lost" cert="low">πούσης</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="6"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τὸ</w> <orig n="unresolved">οιοοσ</orig> <w lemma="εἰμί">ὦσιν</w> <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen">Τιβερίου</name> <name reg="Κλαύδιος">Κλαυδ<supplied reason="lost">ίου</supplied></name></persName>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="7"/><supplied reason="lost">καὶ</supplied>  <persName type="aphrodisian"><name reg="Οὐλπία"><supplied reason="lost">Οὐλ</supplied>πίας</name> <name reg="Ἀμμία">Ἀμμίας</name></persName> <w lemma="ὁ">τῆς</w> <w lemma="γυνή">γυναικὸς</w> <w lemma="αὐτός">αὐτο<supplied reason="lost">ῦ</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="8"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">οὓς</supplied> <w lemma="ἐάν">ἂν</w> <w lemma="αὐτός">αὐτοὶ</w> <w lemma="βούλομαι">βουληθῶσιν</w> <w lemma="ἤ">ἢ</w> <w lemma="διατάσσω">διατάξων<unclear reason="damage">τ</unclear><supplied reason="lost">αι</supplied></w>  <supplied reason="lost" cert="low"><w lemma="κατά">κατὰ</w>  <w lemma="ὁ">τὴν</w>  <w lemma="δίδωμι">δεδομένην</w></supplied>  <lb n="9"/>  <w lemma="αὐτός"><supplied reason="lost" cert="low">α</supplied>ὐτοῖς</w> <w lemma="συγχώρησις">συνχωρή<unclear reason="damage">σ</unclear>ιν</w> <w lemma="ὑπό">ὑπὸ</w> <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen">Τιβερίου</name> <name reg="Κλαύδιος">Κλαυδί<supplied reason="lost">ου</supplied></name></persName>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="10"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ε<unclear reason="damage">β</unclear>ιλουσιν<unclear reason="damage">υπ</unclear>κενση</orig> <w lemma="σορός">σορὸν</w> <w lemma="ὅς">ἥ</w> <w lemma="βλέπω">βλεπούση</w> <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="10a"/><space unit="line" dim="vertical"/></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 2, <foreign lang="grc"><gap reason="lost" extent="unknown" unit="character" dim="left"/> <supplied reason="lost">ἐ</supplied>μβατεούσας ἐπ<supplied reason="lost" cert="low">ὶ τὰ ἐνδέξια</supplied> <gap reason="lost" extent="unknown" unit="character" dim="right"/></foreign>  Reinach</p><p>l. 3,  <foreign lang="grc"><orig n="unresolved">οναφον</orig> κείμεναι <orig n="unresolved">π</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/></foreign>, whence <foreign lang="grc"><supplied reason="lost">αἱ δὲ ἐπὶ τ</supplied>ὸ <seg cert="low"><choice type="correction"><sic>ν</sic><corr>λ</corr></choice>α<choice type="correction"><sic>φ</sic><corr>ι</corr></choice>ὸν</seg> κείμεναι <orig n="unresolved">π</orig></foreign> Reinach</p><p>l. 4,  <foreign lang="grc"><gap reason="lost" extent="unknown" unit="character" dim="left"/>μειοις εἰσώσταις τά τε<gap reason="lost" extent="unknown" unit="character" dim="right"/></foreign> Reinach</p><p>l. 5,  <foreign lang="grc"><gap reason="lost" extent="unknown" unit="character" dim="left"/>ΑΜ ..Η ...ΑΝ ...ΔΕΒΑΜ<gap reason="lost" extent="unknown" unit="character" dim="right"/></foreign> Reinach</p><p>l. 6,  <foreign lang="grc"><gap reason="lost" extent="unknown" unit="character" dim="left"/><unclear reason="damage">Ε</unclear>ΠΙΤΟΟ<unclear reason="damage">Ι</unclear>ΟΣ<gap reason="lost" extent="unknown" unit="character" dim="right"/></foreign> Reinach</p><p>l. 7,  <foreign lang="grc"><gap reason="lost" extent="unknown" unit="character" dim="left"/> Ἀμμίας</foreign> Reinach</p><p>l. 8,  <foreign lang="grc">διατάξων[ται</foreign> Reinach</p><p>ll. 8/9,  <foreign lang="grc"><supplied reason="lost">καθὼς συνεχωρήθη <lb/> α</supplied>ὐτοῖς <supplied reason="lost">τὸ ὑποσ</supplied>όριον ὑπὸ</foreign> Reinach</p><p>l. 10,  <foreign lang="grc"><gap reason="lost" extent="unknown" unit="character" dim="left"/>εριδουσν <gap reason="lost" extent="4" unit="character" dim="internal" precision="circa"/> σορὸν ἢ <gap reason="lost" extent="unknown" unit="character" dim="right"/></foreign> Reinach</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p> ...</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p> ...</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown, perhaps <rs type="monuList">Necropolis, North</rs></rs>
-<rs type="found"><rs type="monuList">Walls, North-west</rs>: 'près de la tour du rempart' (Gaudin); inside face, a little north of the west gate.</rs>
-<rs type="lastLocation">Findspot (1975)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); Gaudin's squeeze; publication.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Gaudin (6), by the MAMA expedition; by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="reinach" type="primary"><author>Reinach</author>, from Gaudin's squeeze, REG 19, 1906, 258-259, no. <biblScope>152</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257295">417</biblScope>
-</bibl>; mentioned by Cormack, Notes 37, from the MAMA records.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="JMR_1_1968_003"><figDesc>Face (1968)</figDesc></figure><figure href="75_C_22"><figDesc>Face (1975)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 2, <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>
+                  <supplied reason="lost">ἐ</supplied>μβατεούσας ἐπ<supplied reason="lost" cert="low">ὶ τὰ ἐνδέξια</supplied>
+                  <gap reason="lost" unit="character" extent="unknown"/>
+               </foreign>  Reinach</p>
+            <p>l. 3,  <foreign xml:lang="grc">
+                  <orig n="unresolved">οναφον</orig> κείμεναι <orig n="unresolved">π</orig>
+                  <gap reason="lost" unit="character" extent="unknown"/>
+               </foreign>, whence <foreign xml:lang="grc">
+                  <supplied reason="lost">αἱ δὲ ἐπὶ τ</supplied>ὸ <seg cert="low">
+                     <choice>
+                        <sic>ν</sic>
+                        <corr>λ</corr>
+                     </choice>α<choice>
+                        <sic>φ</sic>
+                        <corr>ι</corr>
+                     </choice>ὸν</seg> κείμεναι <orig n="unresolved">π</orig>
+               </foreign> Reinach</p>
+            <p>l. 4,  <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>μειοις εἰσώσταις τά τε<gap reason="lost" unit="character" extent="unknown"/>
+               </foreign> Reinach</p>
+            <p>l. 5,  <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>ΑΜ ..Η ...ΑΝ ...ΔΕΒΑΜ<gap reason="lost" unit="character" extent="unknown"/>
+               </foreign> Reinach</p>
+            <p>l. 6,  <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>
+                  <unclear reason="damage">Ε</unclear>ΠΙΤΟΟ<unclear reason="damage">Ι</unclear>ΟΣ<gap reason="lost" unit="character" extent="unknown"/>
+               </foreign> Reinach</p>
+            <p>l. 7,  <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/> Ἀμμίας</foreign> Reinach</p>
+            <p>l. 8,  <foreign xml:lang="grc">διατάξων[ται</foreign> Reinach</p>
+            <p>ll. 8/9,  <foreign xml:lang="grc">
+                  <supplied reason="lost">καθὼς συνεχωρήθη <lb/> α</supplied>ὐτοῖς <supplied reason="lost">τὸ ὑποσ</supplied>όριον ὑπὸ</foreign> Reinach</p>
+            <p>l. 10,  <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>εριδουσν <gap reason="lost" unit="character" precision="low" quantity="4"/> σορὸν ἢ <gap reason="lost" unit="character" extent="unknown"/>
+               </foreign> Reinach</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p> ...</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p> ...</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="reinach" type="primary">
+                  <author>Reinach</author>, from Gaudin's squeeze, REG 19, 1906, 258-259, no. <citedRange>152</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257295">417</citedRange>
+               </bibl>; mentioned by Cormack, Notes 37, from the MAMA records.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

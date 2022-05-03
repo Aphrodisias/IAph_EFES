@@ -1,117 +1,154 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050120" n="iAph0033 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Verse</rs> <rs type="textType">honours</rs> for Eupeithios</title>
-</titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Verse honours for Eupeithios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050120</idno>
+            <idno type="IAph2007">iAph050120</idno>
+            <idno type="JMR2004">iAph0033</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>66.542</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A rectangular <material key="marmor">white marble</material>
+                              <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> with panels within moulded edges on three sides (<height unit="metre">0.97</height> × <width unit="metre">0.485</width> × <depth unit="metre">0.38</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the central panel.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.03-0.045</height>; 12; ligatured <foreign xml:lang="grc">ΗΝ</foreign> in I. 4; <term>sigma</term> lunate in 1. 1, otherwise rectangular.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0334"
+                               notAfter="0400"
+                               precision="medium"
+                               evidence="lettering">Mid to late fourth century (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="HadrBath">Hadrianic baths</rs>: at the west side of trench A, in the room north of the tepidarium.</provenance>
+                  <provenance type="observed" when="1993">Museum (1993).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché); Publication.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-22" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-23" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">corrected,name tags reduced</change>
+         <change when="2003-07-15" who="Juan-Garcés">lemmatised</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="72_D_01A.jpg">
+            <desc>Face (1972)</desc>
+         </graphic>
+         <graphic url="77_AA_36.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="NY_93_76_07.jpg">
+            <desc>View (1993)</desc>
+         </graphic>
+         <graphic url="NY_93_76_08.jpg">
+            <desc>Face (1993)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-22</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-06-22</date><respStmt><name>CMR</name></respStmt><item>tagged, tidied and corrected</item></change><change>
-  <date>2003-07-15</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>corrected,name tags reduced</item></change><change><date>2004-01-23</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A rectangular <rs type="material" key="marmor">white marble</rs> <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs> with panels within moulded edges on three sides (<measure type="length" unit="metre" dim="height">0.97</measure> × <measure type="length" unit="metre" dim="width">0.485</measure> × <measure type="length" unit="metre" dim="depth">0.38</measure>).</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the central panel.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure type="length" unit="metre" dim="height">0.03-0.045</measure>; 12; ligatured <foreign lang="grc">ΗΝ</foreign> in I. 4; <term>sigma</term> lunate in 1. 1, otherwise rectangular.</p>
-</div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p><date exact="none" cert="low" notBefore="0334" notAfter="0400">Mid to late fourth century</date> (<rs type="criteria">lettering</rs>).</p>
-</div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-<lg met="elegaic"><lb n="1"/><l><w lemma="ὁ">τὸν</w> <w lemma="σοφός">σοφὸν</w> <w lemma="ὅδε">ἥδε</w><lb n="2"/><rs type="subject" key="city"><w lemma="πόλις">πόλις</w></rs> <persName key="Eupeithius" type="aphrodisian" full="yes"><name reg="Εὐπείθιος">Εὐπείθιον</name></persName><lb n="3"/><w lemma="ἕνεκα">εἵνεκα</w> <w lemma="πᾶς">πάντων</w></l><lb n="4"/><l><w lemma="ἵστημι">στήσατο</w> <w met="LAI/NEOS2" lemma="λαίνεος">λαϊνέ<hi rend="ligature">ην</hi></w><lb n="5"/><w lemma="εἰκών">εἰκόνα</w> <w lemma="δέμω">δειμαμένη</w> <g type="leaf"/></l><lb n="6"/><l><w lemma="μνάομαι">μνωομένη</w> <w lemma="μετά">μετὰ</w><lb n="7"/><w lemma="πότμος">πότμον</w> <w lemma="ὅτι">ὅτ'</w> <w lemma="ἀνήρ">ἀνδρά<lb n="8" type="worddiv"/>σιν</w> <w lemma="αἶνος">αἶνος</w> <w lemma="ἀληθής">ἀληθὴς</w> <g type="leaf"/></l><lb n="9"/><l><w lemma="τίνω">τίνεται</w> <w lemma="ἀνδρόμεος">ἀνδρομέ<lb n="10" type="worddiv"/>ης</w> <w lemma="ἔκτοθι">ἔκτοθι</w> <w lemma="βασκανία">βασκα<lb n="11" type="worddiv"/>νίης</w> <g type="leaf"/></l>
+<lg met="elegaic"><lb n="1"/><l><w lemma="ὁ">τὸν</w> <w lemma="σοφός">σοφὸν</w> <w lemma="ὅδε">ἥδε</w><lb n="2"/><rs type="subject" key="city"><w lemma="πόλις">πόλις</w></rs> <persName key="Eupeithius" type="attested"><name nymRef="#Εὐπείθιος">Εὐπείθιον</name></persName><lb n="3"/><w lemma="ἕνεκα">εἵνεκα</w> <w lemma="πᾶς">πάντων</w></l><lb n="4"/><l><w lemma="ἵστημι">στήσατο</w> <w met="LAI/NEOS2" lemma="λαίνεος">λαϊνέ<hi rend="ligature">ην</hi></w><lb n="5"/><w lemma="εἰκών">εἰκόνα</w> <w lemma="δέμω">δειμαμένη</w> <g ref="#leaf"/></l><lb n="6"/><l><w lemma="μνάομαι">μνωομένη</w> <w lemma="μετά">μετὰ</w><lb n="7"/><w lemma="πότμος">πότμον</w> <w lemma="ὅτι">ὅτ'</w> <w lemma="ἀνήρ">ἀνδρά<lb n="8" break="no"/>σιν</w> <w lemma="αἶνος">αἶνος</w> <w lemma="ἀληθής">ἀληθὴς</w> <g ref="#leaf"/></l><lb n="9"/><l><w lemma="τίνω">τίνεται</w> <w lemma="ἀνδρόμεος">ἀνδρομέ<lb n="10" break="no"/>ης</w> <w lemma="ἔκτοθι">ἔκτοθι</w> <w lemma="βασκανία">βασκα<lb n="11" break="no"/>νίης</w> <g ref="#leaf"/></l>
 </lg>
 </div>
-
-<div type="translation">
-<head>Translation</head>
-<p>This city had made and set up a stone image <supplied reason="subaudible">of</supplied> the wise Eupeithios because of everything, recalling that it is after death that true praise, beyond human envy, is accorded to men.</p>
-</div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>See discussion at <xref type="eAla-text" n="III.38">III.38</xref>.</p>
-</div>
-
-<div type="history" n="locations"><head>Locations</head><p> <rs type="found"><rs type="monuList" key="HadrBath">Hadrianic baths</rs>: at the west side of trench A, in the room north of the tepidarium.</rs>  <rs type="origLocation">Unknown.</rs> <rs type="lastLocation">Museum (1993).</rs>. </p></div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in <date>1966</date> (<rs type="invNo">66.542</rs>; SBI <rs type="sbi">4</rs>). The plinth of the accompanying statue, with a fragment of a foot and the edge of a <term>chlamys</term> was found with the base.</p>
-</div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>. Published by <bibl type="hbi" rend="primary" n="sevcenko1968"><author>I. Ševcenko</author>, <title level="j">Synthronon</title> (1968), <biblScope>38</biblScope> n. 55</bibl>, whence <bibl n="be"><title level="j">BE</title> <biblScope>1969.543</biblScope></bibl>;  by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>33</biblScope> and plate ix</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257607">720</biblScope></bibl>, <bibl type="hbi" n="steinepig"><title level="j">Steinepigramme</title> <biblScope>02/09/11</biblScope></bibl>.</p>
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Roueché); Publication.</p>
-</div>
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="72_D_01A"><figDesc>Face (1972)</figDesc></figure><figure href="77_AA_36"><figDesc>Face (1977)</figDesc></figure><figure href="NY_93_76_07"><figDesc>View (1993)</figDesc></figure><figure href="NY_93_76_08"><figDesc>Face (1993)</figDesc></figure></p></div>
-
-
-
-
-
-</body>
-</text>
+         <div type="translation">
+            <p>This city had made and set up a stone image <supplied reason="subaudible">of</supplied> the wise Eupeithios because of everything, recalling that it is after death that true praise, beyond human envy, is accorded to men.</p>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="III.38" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>. Published by <bibl type="hbi" rend="primary" n="sevcenko1968">
+                  <author>I. Ševcenko</author>, <title level="j">Synthronon</title> (1968), <citedRange>38</citedRange> n. 55</bibl>, whence <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1969.543</citedRange>
+               </bibl>;  by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>33</citedRange> and plate ix</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257607">720</citedRange>
+               </bibl>, <bibl type="hbi" n="steinepig">
+                  <title level="j">Steinepigramme</title>
+                  <citedRange>02/09/11</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

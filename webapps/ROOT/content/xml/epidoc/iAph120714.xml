@@ -1,88 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120714" n="iAph1578 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for MMM. Aur. Cl. Kastor, Papylos and Dionysios</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two adjoining <rs type="material">white marble</rs> fragments from a <rs type="objectType">block</rs>: a, left hand fragment (<measure type="length" unit="metre" dim="width">0.85</measure>  × <measure type="length" unit="metre" dim="height">0.24</measure>  × <measure type="length" unit="metre" dim="depth">0.27</measure>); b, right hand fragment, now broken to left (<measure type="length" unit="metre" dim="width">0.39</measure>  × <measure type="length" unit="metre" dim="height">0.67</measure>  × <measure type="length" unit="metre" dim="depth">0.32</measure>).</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for MMM. Aur. Cl. Kastor, Papylos and Dionysios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120714</idno>
+            <idno type="IAph2007">iAph120714</idno>
+            <idno type="JMR2004">iAph1578</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two adjoining <material>white marble</material> fragments from a <objectType>block</objectType>: a, left hand fragment (<width unit="metre">0.85</width>  × <height unit="metre">0.24</height>  × <depth unit="metre">0.27</depth>); b, right hand fragment, now broken to left (<width unit="metre">0.39</width>  × <height unit="metre">0.67</height>  × <depth unit="metre">0.32</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.0175-0.022</height>; line above letter for abbreviation. Ligatures: NM l.1</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering nomenclature">
+Second to third centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (west part)</rs>: re-used immediately west of the 1975 excavation, near <ref type="inscription" n="1500" target="120612.xml"/> (=MAMA 410). 'Dégagement de la porte présumée en face du Gymnase' (Gaudin)</provenance>
+                  <provenance type="observed" when="1975">Findspot (1975)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_E_17.jpg">
+            <desc>Fragment a, lines 1-4  (1975))</desc>
+         </graphic>
+         <graphic url="75_E_16.jpg">
+            <desc>Fragment b, lines 1-6  (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="ἡρῶος">ἡρῶόν</w> <w lemma="εἰμί">ἐστιν</w> <w lemma="προγονικός">πρ<unclear reason="damage">ο</unclear>γονικὸν</w> <persName type="attested"><name nymRef="#Μᾶρκος">Μάρκων</name> <lb n="2"/> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίων</ex></expan></name> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίων</ex></expan></name> <name nymRef="#Κάστωρ">Κάστορος</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Παπύλος">Παπύλου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διο<lb n="3" break="no"/>νυσίου</name> <w lemma="ὁ">τῶν</w> <name nymRef="#Παπύλος">Παπύλου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name> <lb n="4"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Παπύλος">Παπύλου</name></persName></persName></persName> <w lemma="κληρονόμος">κληρονόμων</w> <w lemma="διάδοχος"><unclear reason="damage">δ</unclear>ιαδόχων</w> <lb n="5"/> <w lemma="τε">τε</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="καθώς">καθὼς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐγχαράσσω">ἐνκεχαραγμένα</w> <w lemma="καί">καὶ</w> <lb n="6"/> <w lemma="διά">διὰ</w> <w lemma="ὁ">τοῦ</w> <w lemma="ψήφισμα">ψηφίσματος</w> <w lemma="δείκνυμι">δείκνυσιν</w> <g ref="#scroll"/> </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.0175-0.022</measure>; line above letter for abbreviation. Ligatures: NM l.1</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="ἡρῶος">ἡρῶόν</w> <w lemma="εἰμί">ἐστιν</w> <w lemma="προγονικός">πρ<unclear reason="damage">ο</unclear>γονικὸν</w> <persName type="aphrodisian"><name reg="Μᾶρκος">Μάρκων</name> <lb n="2"/> <name reg="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίων</supplied></expan></name> <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίων</supplied></expan></name> <name reg="Κάστωρ">Κάστορος</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Παπύλος" type="">Παπύλου</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διο<lb n="3" type="worddiv"/>νυσίου</name> <w lemma="ὁ">τῶν</w> <name reg="Παπύλος" type="">Παπύλου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυσίου</name> <lb n="4"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Παπύλος" type="">Παπύλου</name></persName></persName></persName> <w lemma="κληρονόμος">κληρονόμων</w> <w lemma="διάδοχος"><unclear reason="damage">δ</unclear>ιαδόχων</w> <lb n="5"/> <w lemma="τε">τε</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="καθώς">καθὼς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐγχαράσσω">ἐνκεχαραγμένα</w> <w lemma="καί">καὶ</w> <lb n="6"/> <w lemma="διά">διὰ</w> <w lemma="ὁ">τοῦ</w> <w lemma="ψήφισμα">ψηφίσματος</w> <w lemma="δείκνυμι">δείκνυσιν</w> <g type="scroll"/> </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Both fragments were complete when recorded by Gaudin; by the time of the MAMA expedition a had lost lines 5 and 6, and b had lost the left side.</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, South (west part)</rs>: re-used immediately west of the 1975 excavation, near <xref type="inscription" n="1500" href="120612">12.612</xref> (=MAMA 410). 'Dégagement de la porte présumée en face du Gymnase' (Gaudin)</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot (1975)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Gaudin (84); by the MAMA expedition; by the NYU expedition</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 272, no. <biblScope>167</biblScope></bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <biblScope>561</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257330">452</biblScope>
-</bibl>
-</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="75_E_17"><figDesc>Fragment a, lines 1-4  (1975))</figDesc></figure><figure href="75_E_16"><figDesc>Fragment b, lines 1-6  (1975)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>Both fragments were complete when recorded by Gaudin; by the time of the MAMA expedition a had lost lines 5 and 6, and b had lost the left side.</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 272, no. <citedRange>167</citedRange>
+               </bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <citedRange>561</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257330">452</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

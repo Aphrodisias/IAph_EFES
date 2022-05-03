@@ -1,88 +1,152 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110508" n="iAph1767 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for Muon and Peritas</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>No description. The <seg cert="low"><rs type="objectType">masonry block</rs></seg> on which this was inscribed formed part of a tomb (<foreign lang="grc">μνημεῖον</foreign>, I, 14) 
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Posthumous honours for Muon and Peritas</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110508</idno>
+            <idno type="IAph2007">iAph110508</idno>
+            <idno type="JMR2004">iAph1767</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description. The <seg cert="low">
+                                 <objectType>masonry block</objectType>
+                              </seg> on which this was inscribed formed part of a tomb (<foreign xml:lang="grc">μνημεῖον</foreign>, I, 14) 
 </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0098" notAfter="0117" evidence="priesthoods reign">
+98-117 A.D.
+ (<rs type="criteria">priesthoods</rs>, <rs type="criteria">reign</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">City, North-west</rs>: copied in Sherard's notebook after <ref type="inscription" n="1530" target="120019.xml"/> (=MAMA 541) and <ref type="inscription" n="87" target="110515.xml"/> (=504) and before some north wall inscriptions.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard papers; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="i" type="textpart" subtype="column"><ab><lb n="1"/>   <lb n="2"/><persName type="attested"><name nymRef="#Μύων">Μύωνα</name>  <persName type="attested"><name nymRef="#Περίτας">Περίτου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσ<supplied reason="lost">ίου</supplied></name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Περίτας">Περίτου</name></persName></persName></persName></persName>  <lb n="3"/> <w lemma="ὁ">τοῦ</w> <w lemma="φύσις">φύσει</w> <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name>  <persName type="attested"><name nymRef="#Μόλων">Μόλωνος</name>  <name nymRef="#Μύων">Μύων<supplied reason="lost">ος</supplied></name>  <persName type="attested"><name nymRef="#Ἄδραστος"><supplied reason="lost">Ἀδ</supplied>ράστου</name></persName></persName></persName></persName> <w lemma="ἀνήρ">ἄνδρα</w> <lb n="4"/><w lemma="ὁ"><supplied reason="lost">το</supplied>ῦ</w> <w lemma="πατήρ">πατρὸς</w> <w lemma="καί">καὶ</w> <w lemma="πρόγονος">προγόνων</w> <w lemma="ἔνδοξος">ἐνδόξων</w> <w lemma="γένος">γένους</w> <w lemma="πρῶτος">πρώτου</w> <w lemma="καί">καὶ</w> <w lemma="πολύς">πολλὰς</w> <w lemma="γυμνασιαρχία">γυ<lb n="5" break="no"/>μνασιαρχίας</w> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορία">στεφανοφορίας</w> <w lemma="ποιέω">πεποιηκότος</w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <w lemma="πρεσβεία">πρεσ<lb n="6" break="no"/>βείαις</w> <w lemma="καί">καὶ</w> <w lemma="ἀρχή">ἀρχαῖς</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λιτουργίαις</w> <w lemma="πᾶς">πάσαις</w> <w lemma="γίγνομαι">γεγονότος</w> <g ref="#scroll"/> <w lemma="ἀνήρ">ἀνδρῶν</w> <lb n="7"/><w lemma="ἀπόγονος">ἀπόγονο<supplied reason="lost">ν</supplied></w> <w lemma="ὁ">τῶν</w> <w lemma="συγκτίζω">συνεκτ<unclear reason="damage">ι</unclear>κότων</w> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <g ref="#scroll"/> <w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτον</w> <w lemma="ἀπό">ἀπὸ</w> <lb n="8"/> <w lemma="παῖς">παιδὸς</w> <w lemma="ἡλικία">ἡλικίας</w> <g ref="#star"/> <w lemma="ζάω">ζήσαντα</w> <w lemma="καλός">καλῶς</w> <w lemma="καί">καὶ</w> <w lemma="ἐνάρετος">ἐναρέτως</w> <w lemma="καί">καὶ</w> <w lemma="ἀναλογούντως">ἀναλο<lb n="9" break="no"/>γούντως</w> <w lemma="ὁ">τῇ</w> <w lemma="ὁ">τοῦ</w> <w lemma="γένος">γένο<supplied reason="lost">υ</supplied>ς</w> <w lemma="ἀξία">ἀξίᾳ</w> <w lemma="ἀσκέω">ἀσκήσαντα</w> <w lemma="παιδεία">παιδ<unclear reason="damage">ε</unclear><supplied reason="lost">ίαν</supplied></w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐ<lb n="10" break="no"/>ν</w> <w lemma="ὁ">αἳς</w> <w lemma="φιλοτιμέομαι">ἐφιλοτιμήσατο</w> <w lemma="πρῶτος">πρὼταις</w> <w lemma="πρεσβεία">πρεσβείαις</w> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w> <w lemma="ἱερατεία">ἱερατείᾳ</w> <w lemma="θεός">θεοῦ</w> <lb n="11"/> <persName type="emperor"><name nymRef="#Νέρβα">Νέρβα</name></persName> <w lemma="παρέχω">παράσχοντα</w> <w lemma="χρήσιμος">χρήσιμον</w> <w lemma="ἑαυτός">ἐαυτὸν</w> <w lemma="ὁ">τῇ</w> <w lemma="πατρίς">πατρίδι</w> <w lemma="εἰκών">εἰκ<unclear reason="damage">ό</unclear>νων</w> <lb n="12"/> <w lemma="τε">τε</w> <w lemma="ἔνοπλος">ἐνόπλοις</w> <w lemma="ἐπίχρυσος">ἐπιχρύσοις</w> <w lemma="ἀνάθεσις">ἀναθέσεσιν</w> <w lemma="καί">καὶ</w> <w lemma="ἄγαλμα">ἀγαλμάτων</w> <lb n="13"/> <w lemma="καί">καὶ</w> <w lemma="ἀνδριάς">ἀνδριάντων</w> <w lemma="ἐν">ἐν</w> <w lemma="ἱερός">ἱεροῖς</w> <w lemma="καί">καὶ</w> <w lemma="δημόσιος">δημοσί<supplied reason="lost">ο</supplied>ις</w> <w lemma="τόπος">τόποις</w> <w lemma="ἔχω">ἐχόντων</w> <lb n="14"/> <w lemma="ἐπιγραφή">ἐπιγραφὰς</w> <w lemma="ὁ">τὰς</w> <w lemma="ἀναλογέω">ἀναλογούσας</w> <w lemma="ὁ">τῇ</w> <w lemma="ὁ">τοῦ</w> <w lemma="γένος">γένους</w> <w lemma="ἀξία">ἀξίᾳ</w> <lb n="15"/> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὴν</w> <w lemma="ἐπίκειμαι">ἐπικειμένην</w> <w lemma="σορός">σορὸν</w> <w lemma="οὗτος">τούτῳ</w> <w lemma="ὁ">τῷ</w> <w lemma="μνημεῖον">μνημείῳ</w> <w lemma="μηδείς">μηδενὶ</w> <w lemma="ἄλλος">ἄλλῳ</w> <w lemma="ἔξεστι">ἐξεῖναι</w> <lb n="16"/> <w lemma="τίθημι">τεθῆναι</w> <w lemma="ἤ">ἢ</w> <w lemma="μόνος">μόνῳ</w> <persName type="attested"><name nymRef="#Περίτας">Περίτᾳ</name></persName> <w lemma="ὁ">τῷ</w> <w lemma="κατασκευάζω">κα<unclear reason="damage">τ</unclear>εσκευακοτ<unclear reason="damage">ι</unclear></w> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="τίθημι">θεὶς</w> <lb n="17"/><w lemma="ἕτερος"><supplied reason="lost">ἕ</supplied>τερόν</w> <w lemma="τις">τινα</w> <w lemma="ἀποτίνω">ἀπιτισάτω</w> <w lemma="ὁ">τὰ</w> <w lemma="δηλόω">δη<unclear reason="damage">λ</unclear>ούμενα</w> <w lemma="πρόστιμον">πρόστειμα</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="διαθήκη">διαθήκῃ</w> <w lemma="ὁ">τῇ</w> <lb n="18"/><persName type="attested"><name nymRef="#Περίτας">Περίτου</name></persName> <w lemma="ζάω">Ζῇ.</w></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="20"/><persName type="attested"><name nymRef="#Περείτας">Περείτα<unclear reason="damage">ν</unclear></name>  <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσ<supplied reason="lost">ίο</supplied>υ</name> <w lemma="ὁ">τοῦ</w> <lb n="21"/> <persName type="attested"><name nymRef="#Περίτας">Περίτου</name></persName></persName></persName> <w lemma="ὁ">τοῦ</w> <w lemma="φύσις">φύσει</w> <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μόλων">Μόλω<lb n="22" break="no"/>νος</name></persName></persName> <name nymRef="#Μύων">Μύωνα</name></persName> <w lemma="ἀνήρ">ἄνδρα</w> <w lemma="γένος">γένους</w> <w lemma="λαμπρός">λαμπροῦ</w> <w lemma="καί">καὶ</w> <w lemma="ἔνδοξος">ἐν<lb n="23" break="no"/>δόξου</w> <w lemma="καί">καὶ</w> <w lemma="γίγνομαι">γεγ<supplied reason="lost">ο</supplied>νότος</w> <w lemma="ἐν">ἐν</w> <w lemma="τε">τ<unclear reason="damage">ε</unclear></w> <w lemma="γυμνασιαρχία">γυμνασιαρχίαις</w> <lb n="24"/> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορία">στεφανοφορίαις</w> <w lemma="καί">καὶ</w> <w lemma="πρεσβεία">πρεσβείαις</w> <w lemma="καί">καὶ</w> <w lemma="κατασκευή">κατασκευ<lb n="25" break="no"/>αῖς</w> <w lemma="ἔργον">ἔργων</w> <w lemma="καί">καὶ</w> <w lemma="ἀρχή">ἀρχαῖς</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λιτουργίαις</w> <w lemma="πᾶς">πάσαις</w> <w lemma="καί">καὶ</w> <lb n="26"/> <w lemma="αὐτός">αὐτον</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="πρῶτος">πρ<unclear reason="damage">ώ</unclear>της</w> <w lemma="ἡλικία">ἡλικίας</w> <w lemma="κατακολουθέω">κα<unclear reason="damage">τ</unclear>ακολουθο<supplied reason="lost">ῦ</supplied>ντα</w>  <lb n="27"/> <w lemma="ὁ">τῷ</w> <w lemma="ὁ">τοῦ</w> <w lemma="γένος">γένους</w> <w lemma="ἀξίωμα">ἀξιώματι</w> <w lemma="ζάω">ζῶντα</w> <w lemma="φιλοτίμως">φιλοτίμως</w> <lb n="28"/> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="ἐγχειρίζω">ἐνχειρ<unclear reason="damage">ι</unclear>σθεισας</w> <w lemma="αὐτός">αὐτῷ</w> <lb n="29"/> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="καί">καὶ</w> <w lemma="πρεσβεία">πρεσβείας</w> <w lemma="καί">καὶ</w> <w lemma="ἐκδικία">ἐγδικίας</w> <w lemma="τελέω">τετελ<unclear reason="damage">ε</unclear>κοτα</w><w lemma="ἴσως"> ἴ<lb n="30" break="no"/>σως</w> <w lemma="καί">καὶ</w> <w lemma="δικαίως">δικαίως</w> <w lemma="καί">καὶ</w> <w lemma="ἀξίως">ἀξίως</w> <w lemma="ὁ">τῶν</w> <w lemma="πρόγονος">προγόνων</w> <w lemma="τελέω">τελο<supplied reason="lost">υ</supplied>μ<lb n="31" break="no"/><supplied reason="lost">έ</supplied>νης</w> <w lemma="τε">τε</w> <w lemma="γυμνασιαρχία">γυμνασιαρχίας</w> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορία">στεφανηφορίας</w> <w lemma="ἑνδέκατος">ἑν<lb n="32" break="no"/>δεκάτης</w> <w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτῆς</w> <w lemma="καθάπερ">κα<supplied reason="lost">θα</supplied>πε<supplied reason="lost">ρ</supplied></w> <persName type="attested"><name>Μύων</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="πρόπαππος">προπαπ<lb n="33" break="no"/>πος</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="λαμπρός">λαμπρῶς</w> <w lemma="καί">καὶ</w> <w lemma="ἐκτενής">ἐκτενῶς</w> <w lemma="καί">καὶ</w> <w lemma="ἀξίως">ἀξίως</w> <w lemma="ὁ">τῶν</w> <lb n="34"/> <w lemma="πρόγονος">προγόνων</w> <w lemma="ὁ">τὰ</w> <w lemma="καθήκω">καθήκοντα</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="ὁ">τῆς</w> <w lemma="γυμνασιαρχία">γυμνασιαρχίας</w> <lb n="35"/> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορία">στεφανηφορίας</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="τελέω">τετελεκότα</w> <w lemma="ἱερατεύω">ἱερα<lb n="36" break="no"/>τεύσαντα</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <w lemma="θεός">θεοῦ</w> <persName type="emperor"><name nymRef="#Τίτος">Τίτου</name></persName></ab></div>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No description.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0098" notAfter="0117">98-117 A.D.</date>
- (<rs type="criteria">priesthoods</rs>, <rs type="criteria">reign</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_column" n="i"><ab><lb n="1"/>   <lb n="2"/><persName type="aphrodisian"><name reg="Μύων">Μύωνα</name>  <persName type="aphrodisian"><name reg="Περίτας">Περίτου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυσ<supplied reason="lost">ίου</supplied></name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Περίτας">Περίτου</name></persName></persName></persName></persName>  <lb n="3"/> <w lemma="ὁ">τοῦ</w> <w lemma="φύσις">φύσει</w> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name>  <persName type="aphrodisian"><name reg="Μόλων">Μόλωνος</name>  <name reg="Μύων">Μύων<supplied reason="lost">ος</supplied></name>  <persName type="aphrodisian"><name reg="Ἄδραστος"><supplied reason="lost">Ἀδ</supplied>ράστου</name></persName></persName></persName></persName> <w lemma="ἀνήρ">ἄνδρα</w> <lb n="4"/><w lemma="ὁ"><supplied reason="lost">το</supplied>ῦ</w> <w lemma="πατήρ">πατρὸς</w> <w lemma="καί">καὶ</w> <w lemma="πρόγονος">προγόνων</w> <w lemma="ἔνδοξος">ἐνδόξων</w> <w lemma="γένος">γένους</w> <w lemma="πρῶτος">πρώτου</w> <w lemma="καί">καὶ</w> <w lemma="πολύς">πολλὰς</w> <w lemma="γυμνασιαρχία">γυ<lb n="5" type="worddiv"/>μνασιαρχίας</w> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορία">στεφανοφορίας</w> <w lemma="ποιέω">πεποιηκότος</w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <w lemma="πρεσβεία">πρεσ<lb n="6" type="worddiv"/>βείαις</w> <w lemma="καί">καὶ</w> <w lemma="ἀρχή">ἀρχαῖς</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λιτουργίαις</w> <w lemma="πᾶς">πάσαις</w> <w lemma="γίγνομαι">γεγονότος</w> <g type="scroll"/> <w lemma="ἀνήρ">ἀνδρῶν</w> <lb n="7"/><w lemma="ἀπόγονος">ἀπόγονο<supplied reason="lost">ν</supplied></w> <w lemma="ὁ">τῶν</w> <w lemma="συγκτίζω">συνεκτ<unclear reason="damage">ι</unclear>κότων</w> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <g type="scroll"/> <w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτον</w> <w lemma="ἀπό">ἀπὸ</w> <lb n="8"/> <w lemma="παῖς">παιδὸς</w> <w lemma="ἡλικία">ἡλικίας</w> <g type="star"/> <w lemma="ζάω">ζήσαντα</w> <w lemma="καλός">καλῶς</w> <w lemma="καί">καὶ</w> <w lemma="ἐνάρετος">ἐναρέτως</w> <w lemma="καί">καὶ</w> <w lemma="ἀναλογούντως">ἀναλο<lb n="9" type="worddiv"/>γούντως</w> <w lemma="ὁ">τῇ</w> <w lemma="ὁ">τοῦ</w> <w lemma="γένος">γένο<supplied reason="lost">υ</supplied>ς</w> <w lemma="ἀξία">ἀξίᾳ</w> <w lemma="ἀσκέω">ἀσκήσαντα</w> <w lemma="παιδεία">παιδ<unclear reason="damage">ε</unclear><supplied reason="lost">ίαν</supplied></w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐ<lb n="10" type="worddiv"/>ν</w> <w lemma="ὁ">αἳς</w> <w lemma="φιλοτιμέομαι">ἐφιλοτιμήσατο</w> <w lemma="πρῶτος">πρὼταις</w> <w lemma="πρεσβεία">πρεσβείαις</w> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w> <w lemma="ἱερατεία">ἱερατείᾳ</w> <w lemma="θεός">θεοῦ</w> <lb n="11"/> <persName type="emperor"><name reg="Νέρβα">Νέρβα</name></persName> <w lemma="παρέχω">παράσχοντα</w> <w lemma="χρήσιμος">χρήσιμον</w> <w lemma="ἑαυτός">ἐαυτὸν</w> <w lemma="ὁ">τῇ</w> <w lemma="πατρίς">πατρίδι</w> <w lemma="εἰκών">εἰκ<unclear reason="damage">ό</unclear>νων</w> <lb n="12"/> <w lemma="τε">τε</w> <w lemma="ἔνοπλος">ἐνόπλοις</w> <w lemma="ἐπίχρυσος">ἐπιχρύσοις</w> <w lemma="ἀνάθεσις">ἀναθέσεσιν</w> <w lemma="καί">καὶ</w> <w lemma="ἄγαλμα">ἀγαλμάτων</w> <lb n="13"/> <w lemma="καί">καὶ</w> <w lemma="ἀνδριάς">ἀνδριάντων</w> <w lemma="ἐν">ἐν</w> <w lemma="ἱερός">ἱεροῖς</w> <w lemma="καί">καὶ</w> <w lemma="δημόσιος">δημοσί<supplied reason="lost">ο</supplied>ις</w> <w lemma="τόπος">τόποις</w> <w lemma="ἔχω">ἐχόντων</w> <lb n="14"/> <w lemma="ἐπιγραφή">ἐπιγραφὰς</w> <w lemma="ὁ">τὰς</w> <w lemma="ἀναλογέω">ἀναλογούσας</w> <w lemma="ὁ">τῇ</w> <w lemma="ὁ">τοῦ</w> <w lemma="γένος">γένους</w> <w lemma="ἀξία">ἀξίᾳ</w> <lb n="15"/> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὴν</w> <w lemma="ἐπίκειμαι">ἐπικειμένην</w> <w lemma="σορός">σορὸν</w> <w lemma="οὗτος">τούτῳ</w> <w lemma="ὁ">τῷ</w> <w lemma="μνημεῖον">μνημείῳ</w> <w lemma="μηδείς">μηδενὶ</w> <w lemma="ἄλλος">ἄλλῳ</w> <w lemma="ἔξεστι">ἐξεῖναι</w> <lb n="16"/> <w lemma="τίθημι">τεθῆναι</w> <w lemma="ἤ">ἢ</w> <w lemma="μόνος">μόνῳ</w> <persName type="aphrodisian"><name reg="Περίτας">Περίτᾳ</name></persName> <w lemma="ὁ">τῷ</w> <w lemma="κατασκευάζω">κα<unclear reason="damage">τ</unclear>εσκευακοτ<unclear reason="damage">ι</unclear></w> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="τίθημι">θεὶς</w> <lb n="17"/><w lemma="ἕτερος"><supplied reason="lost">ἕ</supplied>τερόν</w> <w lemma="τις">τινα</w> <w lemma="ἀποτίνω">ἀπιτισάτω</w> <w lemma="ὁ">τὰ</w> <w lemma="δηλόω">δη<unclear reason="damage">λ</unclear>ούμενα</w> <w lemma="πρόστιμον">πρόστειμα</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="διαθήκη">διαθήκῃ</w> <w lemma="ὁ">τῇ</w> <lb n="18"/><persName type="aphrodisian"><name reg="Περίτας">Περίτου</name></persName> <w lemma="ζάω">Ζῇ.</w></ab></div><div type="textpart_column" n="ii"><ab><lb n="20"/><persName type="aphrodisian"><name reg="Περείτας">Περείτα<unclear reason="damage">ν</unclear></name>  <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυσ<supplied reason="lost">ίο</supplied>υ</name> <w lemma="ὁ">τοῦ</w> <lb n="21"/> <persName type="aphrodisian"><name reg="Περίτας">Περίτου</name></persName></persName></persName> <w lemma="ὁ">τοῦ</w> <w lemma="φύσις">φύσει</w> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Μόλων">Μόλω<lb n="22" type="worddiv"/>νος</name></persName></persName> <name reg="Μύων">Μύωνα</name></persName> <w lemma="ἀνήρ">ἄνδρα</w> <w lemma="γένος">γένους</w> <w lemma="λαμπρός">λαμπροῦ</w> <w lemma="καί">καὶ</w> <w lemma="ἔνδοξος">ἐν<lb n="23" type="worddiv"/>δόξου</w> <w lemma="καί">καὶ</w> <w lemma="γίγνομαι">γεγ<supplied reason="lost">ο</supplied>νότος</w> <w lemma="ἐν">ἐν</w> <w lemma="τε">τ<unclear reason="damage">ε</unclear></w> <w lemma="γυμνασιαρχία">γυμνασιαρχίαις</w> <lb n="24"/> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορία">στεφανοφορίαις</w> <w lemma="καί">καὶ</w> <w lemma="πρεσβεία">πρεσβείαις</w> <w lemma="καί">καὶ</w> <w lemma="κατασκευή">κατασκευ<lb n="25" type="worddiv"/>αῖς</w> <w lemma="ἔργον">ἔργων</w> <w lemma="καί">καὶ</w> <w lemma="ἀρχή">ἀρχαῖς</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λιτουργίαις</w> <w lemma="πᾶς">πάσαις</w> <w lemma="καί">καὶ</w> <lb n="26"/> <w lemma="αὐτός">αὐτον</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="πρῶτος">πρ<unclear reason="damage">ώ</unclear>της</w> <w lemma="ἡλικία">ἡλικίας</w> <w lemma="κατακολουθέω">κα<unclear reason="damage">τ</unclear>ακολουθο<supplied reason="lost">ῦ</supplied>ντα</w>  <lb n="27"/> <w lemma="ὁ">τῷ</w> <w lemma="ὁ">τοῦ</w> <w lemma="γένος">γένους</w> <w lemma="ἀξίωμα">ἀξιώματι</w> <w lemma="ζάω">ζῶντα</w> <w lemma="φιλοτίμως">φιλοτίμως</w> <lb n="28"/> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="ἐγχειρίζω">ἐνχειρ<unclear reason="damage">ι</unclear>σθεισας</w> <w lemma="αὐτός">αὐτῷ</w> <lb n="29"/> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="καί">καὶ</w> <w lemma="πρεσβεία">πρεσβείας</w> <w lemma="καί">καὶ</w> <w lemma="ἐκδικία">ἐγδικίας</w> <w lemma="τελέω">τετελ<unclear reason="damage">ε</unclear>κοτα</w><w lemma="ἴσως"> ἴ<lb n="30" type="worddiv"/>σως</w> <w lemma="καί">καὶ</w> <w lemma="δικαίως">δικαίως</w> <w lemma="καί">καὶ</w> <w lemma="ἀξίως">ἀξίως</w> <w lemma="ὁ">τῶν</w> <w lemma="πρόγονος">προγόνων</w> <w lemma="τελέω">τελο<supplied reason="lost">υ</supplied>μ<lb n="31" type="worddiv"/><supplied reason="lost">έ</supplied>νης</w> <w lemma="τε">τε</w> <w lemma="γυμνασιαρχία">γυμνασιαρχίας</w> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορία">στεφανηφορίας</w> <w lemma="ἑνδέκατος">ἑν<lb n="32" type="worddiv"/>δεκάτης</w> <w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτῆς</w> <w lemma="καθάπερ">κα<supplied reason="lost">θα</supplied>πε<supplied reason="lost">ρ</supplied></w> <persName type="aphrodisian"><name>Μύων</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="πρόπαππος">προπαπ<lb n="33" type="worddiv"/>πος</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="λαμπρός">λαμπρῶς</w> <w lemma="καί">καὶ</w> <w lemma="ἐκτενής">ἐκτενῶς</w> <w lemma="καί">καὶ</w> <w lemma="ἀξίως">ἀξίως</w> <w lemma="ὁ">τῶν</w> <lb n="34"/> <w lemma="πρόγονος">προγόνων</w> <w lemma="ὁ">τὰ</w> <w lemma="καθήκω">καθήκοντα</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="ὁ">τῆς</w> <w lemma="γυμνασιαρχία">γυμνασιαρχίας</w> <lb n="35"/> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορία">στεφανηφορίας</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="τελέω">τετελεκότα</w> <w lemma="ἱερατεύω">ἱερα<lb n="36" type="worddiv"/>τεύσαντα</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <w lemma="θεός">θεοῦ</w> <persName type="emperor"><name reg="Τίτος" type="praenomen">Τίτου</name></persName></ab></div>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Column i.</p><p>l. 3, [..]ΥΠΑΤΡΟΣ S; [ἀπὸ ]πατρὸς Boeckh.</p><p>ll.5-7 stops omitted by Boeckh.</p><p>l. 5, ΓΕΓΟΝΟΝΟΤΟΣΑΝΔΡΩΝ S, γεγονό[το]ς ἄνδρὸς Boeckh.</p><p>l. 6, ΑΠΟΓΟΝΟΣ, ΣΥΝΕΚΤΗΚ S.</p><p>l. 8, ΓΕΝΟΣ, ΠΑΙΔΙ ... Κ S.</p><p>l.10ΑΣΚΟΝ S.</p><p>l. 12, ΔΗΜΟΣΙΑΣ S.</p><p>l.13ἀξίᾳ [τειμηθέντα] ? Boeckh.</p><p>l. 14, ΤΟΥΤΩΤΟ S., ΤΟΥΤΩ Boeckh</p><p>.l. 16, ΑΠΟΤΙΣΑΙΤΩ S., ἀποτίσ[ε]ι τῷ [ταμέιῳ] Boeckh.</p><p>Column ii.</p><p>l.1ΡΕΙΤΑΙ . ΑΔ . ΥΣ .. Υ</p><p>l.3ΜΥΩΝΑ S. Μύων[ος] Boeckh.</p><p>l. 4, ΓΕΓΕΝΟ . ΤΗ</p><p>l.7ΑΥΤΩΝ. ΠΡΟΤΗΣ. ΚΑΙΑΚΟΛΟΥΘΟΝΤΑ</p><p>l. 8, ΣΩΝΤΑ</p><p>l.:9:ΧΕΙΡΗΣΘ</p><p>l. 10, ΤΕΛΗΚ</p><p>l.11-12:ΤΕΛΟΜ/ΝΗΣ</p><p>l. 13, ΚΑΤΕΜΥΩΝ</p><p>l. 15, ΤΑΚΑΘ S. ΚΑΚΑΘ, corrected to [τὰ] καθ, Boeckh.</p><p>l. 16, ΙΕΡΩ, with Α above, S. ΙΕΡΩ corrected to ἱερ[α], Boeckh.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>i. Myon son of Peritas, the son of Adrastos son of Dionysios, (adoptive) son of Peritas, by birth son of Adrastos (?the son) of Molon of Myon of Adrastos, a man whose father and ancestors were of esteemed, of a first family which had often held the gymnasiarchy and stephanephoria and taken part in embassies and magistracies and all liturgies, a descendant of those who founded the homeland, and one who from his childhood lived finely and virtuously and in a manner appropriate to the reputation of his family, pursuing education also in the important embassies in which he sought to distinguish himself, and in the priesthood of the god Nerva showed himself useful to his homeland by setting up images in gilt shields and statues of different kinds in sacred and public places, carrying inscriptions fitting the reputation of his family. In the sarcophagus standing on this memorial it is not allowed to anyone else except Peritas who built the tomb to bury, since anyone who buries anyone else (there) is to pay the fines specified in the will of Peritas.He is still alive</p><p>ii. Peritas Myon son of Adrastos son of Dionysios, (adoptive) son of Peritas, by birth son of Adrastos son of Molon, a man of a distinguished and esteemed family which had taken part in gymnasiarchies and stephanephoria and embassies and constructions of works and magistracies and all liturgies, one who also from his youth, following the reputation of his family, living with generosity towards his fatherland and having carried out the magistracies and embassies and judgeships which were entrusted to him fairly and justly and in a manner worthy of his ancestors. While he was holding  the gymnasiarchy and his eleventh stephanephorate, that too, in the manner of Muon his great-grandfather, splendidly and lavishly and worthily of his ancestors, he completed what was appropriate for the gymnasiarchy and the stephanephorate from his own resources; he also served as priest of the god Titus.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>No coommentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList" cert="low">City, North-west</rs>: copied in Sherard's notebook after <xref type="inscription" n="1530" href="120019">12.19</xref> (=MAMA 541) and <xref type="inscription" n="87" href="110515">11.515</xref> (=504) and before some north wall inscriptions.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard papers; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>copied by Sherard in 1716 (BM Add. 10101, 123-125). Not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard papers, CIG <biblScope>2771</biblScope></bibl>, whence Liermann, Analecta VIII, p.47ff, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257389">511</biblScope>
-(i) and <biblScope n="257400">522</biblScope> (ii)</bibl>.</p>
-</div>
-<div type="figure" n="none">
-<head>Photographs</head>
-<p>None</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>Column i.</p>
+            <p>l. 3, [..]ΥΠΑΤΡΟΣ S; [ἀπὸ ]πατρὸς Boeckh.</p>
+            <p>ll.5-7 stops omitted by Boeckh.</p>
+            <p>l. 5, ΓΕΓΟΝΟΝΟΤΟΣΑΝΔΡΩΝ S, γεγονό[το]ς ἄνδρὸς Boeckh.</p>
+            <p>l. 6, ΑΠΟΓΟΝΟΣ, ΣΥΝΕΚΤΗΚ S.</p>
+            <p>l. 8, ΓΕΝΟΣ, ΠΑΙΔΙ ... Κ S.</p>
+            <p>l.10ΑΣΚΟΝ S.</p>
+            <p>l. 12, ΔΗΜΟΣΙΑΣ S.</p>
+            <p>l.13ἀξίᾳ [τειμηθέντα] ? Boeckh.</p>
+            <p>l. 14, ΤΟΥΤΩΤΟ S., ΤΟΥΤΩ Boeckh</p>
+            <p>.l. 16, ΑΠΟΤΙΣΑΙΤΩ S., ἀποτίσ[ε]ι τῷ [ταμέιῳ] Boeckh.</p>
+            <p>Column ii.</p>
+            <p>l.1ΡΕΙΤΑΙ . ΑΔ . ΥΣ .. Υ</p>
+            <p>l.3ΜΥΩΝΑ S. Μύων[ος] Boeckh.</p>
+            <p>l. 4, ΓΕΓΕΝΟ . ΤΗ</p>
+            <p>l.7ΑΥΤΩΝ. ΠΡΟΤΗΣ. ΚΑΙΑΚΟΛΟΥΘΟΝΤΑ</p>
+            <p>l. 8, ΣΩΝΤΑ</p>
+            <p>l.:9:ΧΕΙΡΗΣΘ</p>
+            <p>l. 10, ΤΕΛΗΚ</p>
+            <p>l.11-12:ΤΕΛΟΜ/ΝΗΣ</p>
+            <p>l. 13, ΚΑΤΕΜΥΩΝ</p>
+            <p>l. 15, ΤΑΚΑΘ S. ΚΑΚΑΘ, corrected to [τὰ] καθ, Boeckh.</p>
+            <p>l. 16, ΙΕΡΩ, with Α above, S. ΙΕΡΩ corrected to ἱερ[α], Boeckh.</p>
+         </div>
+         <div type="translation">
+            <p>i. Myon son of Peritas, the son of Adrastos son of Dionysios, (adoptive) son of Peritas, by birth son of Adrastos (?the son) of Molon of Myon of Adrastos, a man whose father and ancestors were of esteemed, of a first family which had often held the gymnasiarchy and stephanephoria and taken part in embassies and magistracies and all liturgies, a descendant of those who founded the homeland, and one who from his childhood lived finely and virtuously and in a manner appropriate to the reputation of his family, pursuing education also in the important embassies in which he sought to distinguish himself, and in the priesthood of the god Nerva showed himself useful to his homeland by setting up images in gilt shields and statues of different kinds in sacred and public places, carrying inscriptions fitting the reputation of his family. In the sarcophagus standing on this memorial it is not allowed to anyone else except Peritas who built the tomb to bury, since anyone who buries anyone else (there) is to pay the fines specified in the will of Peritas.He is still alive</p>
+            <p>ii. Peritas Myon son of Adrastos son of Dionysios, (adoptive) son of Peritas, by birth son of Adrastos son of Molon, a man of a distinguished and esteemed family which had taken part in gymnasiarchies and stephanephoria and embassies and constructions of works and magistracies and all liturgies, one who also from his youth, following the reputation of his family, living with generosity towards his fatherland and having carried out the magistracies and embassies and judgeships which were entrusted to him fairly and justly and in a manner worthy of his ancestors. While he was holding  the gymnasiarchy and his eleventh stephanephorate, that too, in the manner of Muon his great-grandfather, splendidly and lavishly and worthily of his ancestors, he completed what was appropriate for the gymnasiarchy and the stephanephorate from his own resources; he also served as priest of the god Titus.</p>
+         </div>
+         <div type="commentary">
+            <p>No coommentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard papers, CIG <citedRange>2771</citedRange>
+               </bibl>, whence Liermann, Analecta VIII, p.47ff, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257389">511</citedRange>
+(i) and <citedRange n="257400">522</citedRange> (ii)</bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

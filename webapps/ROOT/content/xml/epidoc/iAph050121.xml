@@ -1,114 +1,162 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050121" n="iAph0024 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Verse</rs> <rs type="textType">honours</rs> for Menandros, <seg cert="low">vicar</seg></title>
-</titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Verse honours for Menandros, <seg cert="low">vicar</seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050121</idno>
+            <idno type="IAph2007">iAph050121</idno>
+            <idno type="JMR2004">iAph0024</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">bluish marble</material> columnar <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType>, broken below (height <height unit="metre">1.45</height>. diam. <dim type="diameter">0.55</dim>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.05-0.06</height>;  ll.9, 4, <height unit="metre">0.065</height>; elongated and elegantly cut.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0385" notAfter="0388" evidence="prosopography">A.D. 385/388 (<rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="HadrBath">Hadrianic Baths</rs>: '<foreign xml:lang="fr">Galerie de l'Est—Partie S<ex>ud</ex>
+                     </foreign>' (Boulanger); lying in the southern stretch of the west portico of the South Agora.</provenance>
+                  <provenance type="observed" when="1973">Findspot (1973).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché); Boulanger; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-22" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-23" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">name tags reduced</change>
+         <change when="2003-07-14" who="JLG">Lemmatised</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">Typed and marked-up Greek</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="72_C_02.jpg">
+            <desc>Face (1972)</desc>
+         </graphic>
+         <graphic url="72_E_04A.jpg">
+            <desc>Right side (1972)</desc>
+         </graphic>
+         <graphic url="73_W_16.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="NY_pr_068.jpg">
+            <desc>Face (NYU excavation photo)</desc>
+         </graphic>
+         <graphic url="Boulanger_A_49.jpg">
+            <desc>Boulanger, Notebook A, page 49</desc>
+         </graphic>
+         <graphic url="Boulanger_B_10.jpg">
+            <desc>Boulanger, Notebook B, page 10</desc>
+         </graphic>
+         <graphic url="Boulanger_B_11.jpg">
+            <desc>Boulanger, Notebook B, page 11</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-22</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-06-22</date><respStmt><name>CMR</name></respStmt><item>tagged, tidied and corrected</item></change><change><date>2003-07-14</date><respStmt><name>JLG</name></respStmt><item>Lemmatised</item></change><change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>name tags reduced</item></change><change><date>2004-01-23</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change><change><date>2003-05-27</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Typed and marked-up Greek</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material" key="marmor">bluish marble</rs> columnar <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs>, broken below (height <measure type="length" unit="metre" dim="height">1.45</measure>. diam. <measure dim="diameter" type="length">0.55</measure>).</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure type="length" unit="metre" dim="height">0.05-0.06</measure>;  ll.9, 4, <measure type="length" unit="metre" dim="height">0.065</measure>; elongated and elegantly cut.</p>
-</div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p><date notAfter="0388" exact="both" cert="low" notBefore="0385">A.D. 385/388</date> (<rs type="criteria">prosopography</rs>).</p>
-</div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-<lg><lb n="1"/><l><g type="leaf"/> <rs type="subject" key="boule"><w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w></rs> <w lemma="ὁ">τὸν</w> <w lemma="πᾶς">πᾶσι</w> <w lemma="προσηνής">προς<lb n="2" type="worddiv"/>ηνέα</w> <w lemma="ὅδε">τόνδε</w> <persName type="aphrodisian" key="Menander1" full="yes"><name reg="Μένανδρος">Μένανδρον</name></persName></l><lb n="3"/><l><w lemma="πολύς">πολλῶν</w> <w lemma="ἀντί">ἀντ'</w> <w lemma="ἀγαθός">ἀγαθῶν</w><lb n="4"/><w lemma="ἵστημι">στῆσεν</w> <w lemma="ἀμείβομαι">ἀμειβομένη</w></l><lb n="5"/><l><w lemma="ὅς">ὃς</w> <w lemma="μέγας">μεγάλῃ</w> <w lemma="χαρίεις">χαρίεντα</w> <rs type="subject" key="city"><w lemma="πόλις">πόλι</w></rs><lb n="6"/><w lemma="θρεπτήριος">θρεπτήρια</w> <w lemma="τίς">τίνων</w></l><lb n="7"/><l><w lemma="δασμός">δασμοὺς</w> <w lemma="πραύνω">πρηΰνας</w> <w lemma="πᾶς">πᾶσιν</w><lb n="8"/><w lemma="τίθημι">ἔθηκε</w> <w lemma="φάος">φάος</w> <g type="leaf"/></l>
+<lg><lb n="1"/><l><g ref="#leaf"/> <rs type="subject" key="boule"><w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w></rs> <w lemma="ὁ">τὸν</w> <w lemma="πᾶς">πᾶσι</w> <w lemma="προσηνής">προς<lb n="2" break="no"/>ηνέα</w> <w lemma="ὅδε">τόνδε</w> <persName key="Menander1" type="attested"><name nymRef="#Μένανδρος">Μένανδρον</name></persName></l><lb n="3"/><l><w lemma="πολύς">πολλῶν</w> <w lemma="ἀντί">ἀντ'</w> <w lemma="ἀγαθός">ἀγαθῶν</w><lb n="4"/><w lemma="ἵστημι">στῆσεν</w> <w lemma="ἀμείβομαι">ἀμειβομένη</w></l><lb n="5"/><l><w lemma="ὅς">ὃς</w> <w lemma="μέγας">μεγάλῃ</w> <w lemma="χαρίεις">χαρίεντα</w> <rs type="subject" key="city"><w lemma="πόλις">πόλι</w></rs><lb n="6"/><w lemma="θρεπτήριος">θρεπτήρια</w> <w lemma="τίς">τίνων</w></l><lb n="7"/><l><w lemma="δασμός">δασμοὺς</w> <w lemma="πραύνω">πρηΰνας</w> <w lemma="πᾶς">πᾶσιν</w><lb n="8"/><w lemma="τίθημι">ἔθηκε</w> <w lemma="φάος">φάος</w> <g ref="#leaf"/></l>
 </lg>
 </div>
-
-<div type="translation">
-<head>Translation</head>
-<p>The Council, in exchange for many benefits, set up this <supplied reason="subaudible">statue of</supplied> Menandros, who was affable to all, and who, making a welcome repayment for his rearing to the great city, moderated <supplied reason="subaudible">her</supplied> tribute, and established light for all.</p>
-</div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>See discussion at <xref type="eAla-text" n="III.22">III.22</xref>.</p>
-</div>
-
-<div type="history" n="locations"><head>Locations</head><p><rs type="found"><rs type="monuList" key="HadrBath">Hadrianic Baths</rs>: '<foreign lang="fr">Galerie de l'Est—Partie S<supplied reason="abbreviation">ud</supplied></foreign>' (Boulanger); lying in the southern stretch of the west portico of the South Agora.</rs>. Original location: <rs type="origLocation" cert="low">Unknown</rs>. <rs type="lastLocation">Findspot (1973).</rs>. </p></div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the <rs type="visitor" key="mendel">French expedition</rs> in <date value="1905" notBefore="1905" notAfter="1905" exact="both">1905</date>, and copied by A. <rs type="visitor" key="boulanger">Boulanger</rs> in <date value="1913" notBefore="1913" notAfter="1913" exact="both">1913</date> (notebook A, 49 no. 1, whence B, 10-11, no. 9); copied by <rs type="visitor" key="robert">J. and L. Robert</rs> in <date value="1946" notBefore="1946" notAfter="1946" exact="both">1946</date>; recorded by the NYU expedition.</p>
-</div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from his own copy and from Boulanger, by <bibl type="hbi" rend="primary" n="hell4"><author>L. Robert</author>, <title level="j">Hellenica</title> 4, <biblScope>133-5</biblScope> and plate vi</bibl>, whence <bibl n="be"><title level="j">BE</title> <biblScope>1949.178</biblScope></bibl>; by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>24</biblScope> and Plate vii</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257610">723</biblScope></bibl>, <bibl type="hbi" n="steinepig"><title level="s">Steinepigramme</title> <biblScope>02/09/16</biblScope></bibl>.</p>
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Roueché); Boulanger; publications.</p>
-</div>
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="72_C_02"><figDesc>Face (1972)</figDesc></figure><figure href="72_E_04A"><figDesc>Right side (1972)</figDesc></figure><figure href="73_W_16"><figDesc>Face (1973)</figDesc></figure><figure href="NY_pr_068"><figDesc>Face (NYU excavation photo)</figDesc></figure></p>
-</div>
-
-<div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Boulanger_A_49"><figDesc>Boulanger, Notebook A, page 49</figDesc></figure><figure href="Boulanger_B_10"><figDesc>Boulanger, Notebook B, page 10</figDesc></figure><figure href="Boulanger_B_11"><figDesc>Boulanger, Notebook B, page 11</figDesc></figure></p></div>
-
-
-
-</body>
-</text>
+         <div type="translation">
+            <p>The Council, in exchange for many benefits, set up this <supplied reason="subaudible">statue of</supplied> Menandros, who was affable to all, and who, making a welcome repayment for his rearing to the great city, moderated <supplied reason="subaudible">her</supplied> tribute, and established light for all.</p>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="III.22" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from his own copy and from Boulanger, by <bibl type="hbi" rend="primary" n="hell4">
+                  <author>L. Robert</author>, <title level="j">Hellenica</title> 4, <citedRange>133-5</citedRange> and plate vi</bibl>, whence <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1949.178</citedRange>
+               </bibl>; by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>24</citedRange> and Plate vii</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257610">723</citedRange>
+               </bibl>, <bibl type="hbi" n="steinepig">
+                  <title level="s">Steinepigramme</title>
+                  <citedRange>02/09/16</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

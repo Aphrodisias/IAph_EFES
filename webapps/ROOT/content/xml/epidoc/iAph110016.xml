@@ -1,87 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110016" n="iAph1891 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Adrastos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>1996</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1996a">Reynolds (<date>1996</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Block (<measure dim="width" type="length" unit="metre">0.91</measure> x  <measure dim="height" type="length" unit="metre">0.37</measure> x  <measure dim="depth" type="length" unit="metre">0.46</measure>), damaged above, down the left hand side and at the lower left corner, with holes on the top for the attachment of an upper feature, inscribed on one face. The block looks like a building block and, if that is right, what stood above it may well have been another block (rather than an architectural element) both being part of the wall of the tomb implied in the text.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Adrastos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110016</idno>
+            <idno type="IAph2007">iAph110016</idno>
+            <idno type="JMR2004">iAph1891</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Block (<width unit="metre">0.91</width> x  <height unit="metre">0.37</height> x  <depth unit="metre">0.46</depth>), damaged above, down the left hand side and at the lower left corner, with holes on the top for the attachment of an upper feature, inscribed on one face. The block looks like a building block and, if that is right, what stood above it may well have been another block (rather than an architectural element) both being part of the wall of the tomb implied in the text.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face. The inscription began on the wall or feature above, and we have no means of telling just how much of it is lost.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>probably middle to third quarter of the 1st century A.D.: <height unit="metre">0.013</height>; ligatured <foreign xml:lang="grc">ΝΗ</foreign> in l.7.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering">
+First century A.D.
+ (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, Village</rs>: during demolition of a modern house near the Theatre.</provenance>
+                  <provenance type="observed" when="1981">Museum (1981)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="81_E_14.jpg">
+            <desc>Face (1981)</desc>
+         </graphic>
+         <graphic url="81_E_15.jpg">
+            <desc>Face (1981)</desc>
+         </graphic>
+         <graphic url="81_F_12.jpg">
+            <desc>Squeeze (1981)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/> <w lemma="ὁ">τῆς</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὸν</w> <w lemma="δῆμος">δῆμον</w> <w lemma="φιλοτιμία">φιλοτειμίας</w> <w lemma="εὔνοια">εὐνοίᾳ</w> <w lemma="ὁ">τῇ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὰ</w> <w lemma="κοινός">κοινὰ</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="2"/><w lemma="χράω2"><unclear reason="damage">κ</unclear>εχρημένος</w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσιν</w> <space extent="1" unit="character" dim="horizontal"/> <w lemma="τιμή">τειμῆς</w> <w lemma="ἄξιος">ἄξια</w> <w lemma="πᾶς">πάντα</w> <w lemma="παρά">παρεσχημένος</w> <lb n="3"/><w lemma="ἐκτενής"><unclear reason="damage">ἐ</unclear>κτενῶς</w>  <g ref="#stop"/> <w lemma="ἀντί">ἀνθ'</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="δίδωμι">ἔδωκεν</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="καί">καὶ</w> <w lemma="ψηφίζω">ἐψηφίσατο</w> <lb n="4"/><supplied reason="lost">ἐ</supplied>νταφὴν <w lemma="καί">καὶ</w> <w lemma="κηδεία">κηδείαν</w> <space extent="1" unit="character" dim="horizontal"/> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἄντικρυς">ἄντικρυς</w> <lb n="5"/><w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <w lemma="βουλευτήριον">βουλευτηρίου</w> <w lemma="δημόσιος">δημοσίοις</w> <w lemma="ἐργαστήριον">ἐργαστηρίοις</w> <w lemma="ἀμείβομαι">ἀμειβόμενοι</w> <lb n="6"/><w lemma="αὐτός"><supplied reason="lost">α</supplied>ὐτοῦ</w> <w lemma="ὁ">τὴν</w> <w lemma="εὔνοια">εὐνοίαν</w> <w lemma="καθώς">καθὼς</w> <w lemma="ὁ">τὸ</w> <w lemma="ψήφισμα">ψήφισμα</w> <w lemma="περιέχω">περιέχει</w> <w lemma="ὅδε">τάδε</w> <w lemma="νῦν">νῦν</w> <lb n="7"/><w lemma="ἄγω"><supplied reason="lost">ἀ</supplied><unclear reason="damage">γ</unclear>ομέ<hi rend="ligature">νη</hi>ς</w> <w lemma="βουλή">βουλῆς</w> <w lemma="προέρχομαι">προελθὼν</w> <space extent="1" unit="character" dim="horizontal"/> <persName type="attested"><name nymRef="#Ἄδραστος">Ἄδραστος</name></persName> <w lemma="καί">καὶ</w> <w lemma="ὕπαρχος">ὑπάρχων</w> <w lemma="καί">καὶ</w> <lb n="8"/><w lemma="ἐν"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ν</unclear></w> <w lemma="οὗτος">τούτῳ</w> <w lemma="φιλόπατρις">φιλόπατρις</w> <w lemma="καί">καὶ</w> <w lemma="μή">μὴ</w> <w lemma="βούλομαι">βουλόμενος</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="πρόσοδος">πρό<lb n="9" break="no"/><supplied reason="lost">σ</supplied><unclear reason="damage">ο</unclear>δον</w>  <w lemma="μειόω">μειοῦσθαι</w> <w lemma="αἱρέω">αἱρούμενος</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὸ</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="ὠφέλιμος">ὠφέλιμον</w> <lb n="10"/><w lemma="ἀξιόω"><supplied reason="lost">ἠξ</supplied>ίωσεν</w> <w lemma="μετατίθημι">μετατεθῆναι</w> <w lemma="ὁ">τὸν</w> <w lemma="τόπος">τόπον</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐνταφή">ἐνταφῆς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <lb n="11"/><w><gap reason="lost" unit="character" extent="unknown"/>οις</w>  <space extent="1" unit="character" dim="horizontal"/> <w lemma="ἐργαστήριον">ἐργαστηρίοις</w> <space extent="1" unit="character" dim="horizontal"/> <w lemma="ἑαυτός">αὑτοῦ</w> <space extent="3" unit="character" dim="horizontal"/> <w lemma="δοκέω">δεδόχθαι</w> <w lemma="ὁ">τῇ</w> <w lemma="βουλή">βουλῇ</w> <lb n="12"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῷ</supplied></w> <w lemma="δῆμος">δήμῳ</w> <w lemma="τηρέω">τηρουμένου</w> <w lemma="ὁ">τοῦ</w> <w lemma="πρῶτος">πρώτου</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐνταφή">ἐνταφῆς</w> <lb n="13"/><w lemma="ψήφισμα"><supplied reason="lost">ψηφίσ</supplied><unclear reason="damage">μα</unclear>τος</w> <w lemma="καθώς">καθὼς</w> <w lemma="κυρόω">ἐκυρώθη</w> <w lemma="ἐπιτρέπω">ἐπιτετράφθαι</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <lb n="14"/><gap reason="lost" unit="character" atLeast="5" atMost="6"/> <w lemma="ἐργαστήριον"><supplied reason="lost">ἐργα</supplied><unclear reason="damage">σ</unclear>τηριοις</w> <w lemma="κατασκευάζω">κατασκευάσαι</w> <w lemma="ὁ">τὸ</w> <w lemma="ἡρῶος">ἡρῶον</w> <space extent="3" unit="character" dim="horizontal"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face. The inscription began on the wall or feature above, and we have no means of telling just how much of it is lost.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>probably middle to third quarter of the 1st century A.D.: <measure type="length" unit="metre" dim="height">0.013</measure>; ligatured <foreign lang="grc">ΝΗ</foreign> in l.7.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0100" exact="none">First century A.D.</date>
- (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/> <w lemma="ὁ">τῆς</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὸν</w> <w lemma="δῆμος">δῆμον</w> <w lemma="φιλοτιμία">φιλοτειμίας</w> <w lemma="εὔνοια">εὐνοίᾳ</w> <w lemma="ὁ">τῇ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὰ</w> <w lemma="κοινός">κοινὰ</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="2"/><w lemma="χράω2"><unclear reason="damage">κ</unclear>εχρημένος</w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσιν</w> <space extent="1" unit="character" dim="horizontal"/> <w lemma="τιμή">τειμῆς</w> <w lemma="ἄξιος">ἄξια</w> <w lemma="πᾶς">πάντα</w> <w lemma="παρά">παρεσχημένος</w> <lb n="3"/><w lemma="ἐκτενής"><unclear reason="damage">ἐ</unclear>κτενῶς</w>  <g type="stop"/> <w lemma="ἀντί">ἀνθ'</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="δίδωμι">ἔδωκεν</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="καί">καὶ</w> <w lemma="ψηφίζω">ἐψηφίσατο</w> <lb n="4"/><supplied reason="lost">ἐ</supplied>νταφὴν <w lemma="καί">καὶ</w> <w lemma="κηδεία">κηδείαν</w> <space extent="1" unit="character" dim="horizontal"/> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἄντικρυς">ἄντικρυς</w> <lb n="5"/><w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <w lemma="βουλευτήριον">βουλευτηρίου</w> <w lemma="δημόσιος">δημοσίοις</w> <w lemma="ἐργαστήριον">ἐργαστηρίοις</w> <w lemma="ἀμείβομαι">ἀμειβόμενοι</w> <lb n="6"/><w lemma="αὐτός"><supplied reason="lost">α</supplied>ὐτοῦ</w> <w lemma="ὁ">τὴν</w> <w lemma="εὔνοια">εὐνοίαν</w> <w lemma="καθώς">καθὼς</w> <w lemma="ὁ">τὸ</w> <w lemma="ψήφισμα">ψήφισμα</w> <w lemma="περιέχω">περιέχει</w> <w lemma="ὅδε">τάδε</w> <w lemma="νῦν">νῦν</w> <lb n="7"/><w lemma="ἄγω"><supplied reason="lost">ἀ</supplied><unclear reason="damage">γ</unclear>ομέ<hi rend="ligature">νη</hi>ς</w> <w lemma="βουλή">βουλῆς</w> <w lemma="προέρχομαι">προελθὼν</w> <space extent="1" unit="character" dim="horizontal"/> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἄδραστος</name></persName> <w lemma="καί">καὶ</w> <w lemma="ὕπαρχος">ὑπάρχων</w> <w lemma="καί">καὶ</w> <lb n="8"/><w lemma="ἐν"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ν</unclear></w> <w lemma="οὗτος">τούτῳ</w> <w lemma="φιλόπατρις">φιλόπατρις</w> <w lemma="καί">καὶ</w> <w lemma="μή">μὴ</w> <w lemma="βούλομαι">βουλόμενος</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="πρόσοδος">πρό<lb type="worddiv" n="9"/><supplied reason="lost">σ</supplied><unclear reason="damage">ο</unclear>δον</w>  <w lemma="μειόω">μειοῦσθαι</w> <w lemma="αἱρέω">αἱρούμενος</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὸ</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="ὠφέλιμος">ὠφέλιμον</w> <lb n="10"/><w lemma="ἀξιόω"><supplied reason="lost">ἠξ</supplied>ίωσεν</w> <w lemma="μετατίθημι">μετατεθῆναι</w> <w lemma="ὁ">τὸν</w> <w lemma="τόπος">τόπον</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐνταφή">ἐνταφῆς</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <lb n="11"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/>οις</w>  <space extent="1" unit="character" dim="horizontal"/> <w lemma="ἐργαστήριον">ἐργαστηρίοις</w> <space extent="1" unit="character" dim="horizontal"/> <w lemma="ἑαυτός">αὑτοῦ</w> <space extent="3" unit="character" dim="horizontal"/> <w lemma="δοκέω">δεδόχθαι</w> <w lemma="ὁ">τῇ</w> <w lemma="βουλή">βουλῇ</w> <lb n="12"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῷ</supplied></w> <w lemma="δῆμος">δήμῳ</w> <w lemma="τηρέω">τηρουμένου</w> <w lemma="ὁ">τοῦ</w> <w lemma="πρῶτος">πρώτου</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐνταφή">ἐνταφῆς</w> <lb n="13"/><w lemma="ψήφισμα"><supplied reason="lost">ψηφίσ</supplied><unclear reason="damage">μα</unclear>τος</w> <w lemma="καθώς">καθὼς</w> <w lemma="κυρόω">ἐκυρώθη</w> <w lemma="ἐπιτρέπω">ἐπιτετράφθαι</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <lb n="14"/><gap reason="lost" extent="5" unit="character" extentmax="6"/> <w lemma="ἐργαστήριον"><supplied reason="lost">ἐργα</supplied><unclear reason="damage">σ</unclear>τηριοις</w> <w lemma="κατασκευάζω">κατασκευάσαι</w> <w lemma="ὁ">τὸ</w> <w lemma="ἡρῶος">ἡρῶον</w> <space extent="3" unit="character" dim="horizontal"/></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 11, <seg cert="low"><foreign lang="grc"><supplied reason="lost">ἰδί</supplied>οις</foreign></seg></p>
-<p>l. 14, <seg cert="low"><foreign lang="grc"><supplied reason="lost">ἑαυτοῦ ἐργα</supplied></foreign></seg></p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p><gap reason="lost" extent="unknown" unit="line" dim="top"/> <supplied reason="lost" cert="low">because of</supplied> his generosity to the People, behaving with goodwill for the common interest in all things, having continuously provided everything that was deserving of honour. In return for which the People gave and decreed for him burial and funerary rites in the city, in the public ergasteria opposite the Council-chamber, returning his goodwill as stated in the decree. Now, when the Council was discussing these matters, Adrastos came forward, being on this occasion too concerned for his native city and, unwilling that the income of the city should be reduced, but preferring what was helpful for the city, thought it proper that the place of the tomb should be relocated in ?his own ergasteria; it was decided by the Council and the People that, while the original decree of a tomb should stand, he should be allowed to prepare the Heroon in <seg cert="low">his own ergasteria</seg>.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The inscription began on the wall or feature above, and we have no means of telling just how much of it is lost. What we have, however, although damaged at the left hand side, can be readily restored, except in ll. 11 and 14. It gives us the latter part of a decree passed by the Council and People in honour of a benefactor (ll. 1-6), followed by an account of a subsequent discussion in the Council when the honorand, Adrastos, proposed an amendment to the original decree (ll. 7-11), and by an amending decree of the Council and People which resulted (ll. 11-14). For further discussion see Reynolds, <foreign lang="la">loc. cit</foreign>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">City, Village</rs>: during demolition of a modern house near the Theatre.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1981)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition (<rs type="siteNo">Museum 57</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="jmr1996a"><author>J. M. Reynolds</author>, <title>Honouring benefactors at Aphrodisias: a new inscription</title>, in <title>Aphrodisias Papers</title> 3 (1996), <biblScope>120-126</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1996.1393</biblScope></bibl>, <bibl n="be">BullEp <biblScope>1999.477</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="81_E_14"><figDesc>Face (1981)</figDesc></figure><figure href="81_E_15"><figDesc>Face (1981)</figDesc></figure></p></div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="81_F_12"><figDesc>Squeeze (1981)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 11, <seg cert="low">
+                  <foreign xml:lang="grc">
+                     <supplied reason="lost">ἰδί</supplied>οις</foreign>
+               </seg>
+            </p>
+            <p>l. 14, <seg cert="low">
+                  <foreign xml:lang="grc">
+                     <supplied reason="lost">ἑαυτοῦ ἐργα</supplied>
+                  </foreign>
+               </seg>
+            </p>
+         </div>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="line" extent="unknown"/>
+               <supplied reason="lost" cert="low">because of</supplied> his generosity to the People, behaving with goodwill for the common interest in all things, having continuously provided everything that was deserving of honour. In return for which the People gave and decreed for him burial and funerary rites in the city, in the public ergasteria opposite the Council-chamber, returning his goodwill as stated in the decree. Now, when the Council was discussing these matters, Adrastos came forward, being on this occasion too concerned for his native city and, unwilling that the income of the city should be reduced, but preferring what was helpful for the city, thought it proper that the place of the tomb should be relocated in ?his own ergasteria; it was decided by the Council and the People that, while the original decree of a tomb should stand, he should be allowed to prepare the Heroon in <seg cert="low">his own ergasteria</seg>.</p>
+         </div>
+         <div type="commentary">
+            <p>The inscription began on the wall or feature above, and we have no means of telling just how much of it is lost. What we have, however, although damaged at the left hand side, can be readily restored, except in ll. 11 and 14. It gives us the latter part of a decree passed by the Council and People in honour of a benefactor (ll. 1-6), followed by an account of a subsequent discussion in the Council when the honorand, Adrastos, proposed an amendment to the original decree (ll. 7-11), and by an amending decree of the Council and People which resulted (ll. 11-14). For further discussion see Reynolds, <foreign xml:lang="la">loc. cit</foreign>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="jmr1996a">
+                  <author>J. M. Reynolds</author>, <title>Honouring benefactors at Aphrodisias: a new inscription</title>, in <title>Aphrodisias Papers</title> 3 (1996), <citedRange>120-126</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1996.1393</citedRange>
+               </bibl>, <bibl n="be">BullEp <citedRange>1999.477</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

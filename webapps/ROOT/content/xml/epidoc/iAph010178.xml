@@ -1,98 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010178" n="iAph0305 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Conclusion of <rs type="textType">funerary</rs> text, third century A.D.</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Conclusion of funerary text, third century A.D.</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010178</idno>
+            <idno type="IAph2007">iAph010178</idno>
+            <idno type="JMR2004">iAph0305</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>62.305</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Piece from the lower part of a <material>white marble</material>
+                              <objectType key="sarcophagus">sarcophagus</objectType>  (<width unit="metre">0.90</width> × <height unit="metre">0.35</height> × <depth unit="metre">0.13</depth>).  </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the bottom moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="nomenclature lettering">Third century A.D. (<rs type="criteria">nomenclature</rs> and <rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>: T. Aph. XVI</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-26" who="#GB">DONE</change>
+         <change when="2007-01-11" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-03-21" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-02-26</date><respStmt><name>Gabriel Bodard</name></respStmt><item>DONE</item></change><change><date>2007-01-11</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date>2005-03-21</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Piece from the lower part of a <rs type="material">white marble</rs>  <rs type="objectType" reg="sarcophagus">sarcophagus</rs>  (<measure type="length" unit="metre" dim="width">0.90</measure> × <measure type="length" unit="metre" dim="height">0.35</measure> × <measure type="length" unit="metre" dim="depth">0.13</measure>).  </p>
+<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>μου<supplied reason="lost"><w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w></supplied>  <w lemma="χρεωφυλάκιον"><supplied reason="lost">χρ</supplied>εοφυλάκιον</w>  <w lemma="ἐπί">ἐπὶ</w>  <w lemma="στεφανηφόρος">στεφανηφόρου</w>  <persName nymRef="#Μάρκος  Αὐρήλιος" type="attested"><name nymRef="#Μᾶρκος">Μάρκου</name>  <name nymRef="#Αὐρήλιος">Αὐρ<supplied reason="lost">ηλίου</supplied></name></persName>  <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/><w lemma="ἐγώ"><gap reason="lost" unit="character" quantity="36"/>μου</w>  <g ref="#scroll"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the bottom moulding.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p> <measure dim="height" type="length" unit="metre">0.02</measure>.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date exact="none" notAfter="0300" notBefore="0201">Third century A.D.</date> (<rs type="criteria">nomenclature</rs> and <rs type="criteria">lettering</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>μου<supplied reason="lost"><w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w></supplied>  <w lemma="χρεωφυλάκιον"><supplied reason="lost">χρ</supplied>εοφυλάκιον</w>  <w lemma="ἐπί">ἐπὶ</w>  <w lemma="στεφανηφόρος">στεφανηφόρου</w>  <persName reg="Μάρκος  Αὐρήλιος" full="yes" type="aphrodisian"><name reg="Μᾶρκος">Μάρκου</name>  <name type="nomen" reg="Αὐρήλιος">Αὐρ<supplied reason="lost">ηλίου</supplied></name></persName>  <gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><w lemma="ἐγώ"><gap dim="left" extent="36" reason="lost" unit="character"/>μου</w>  <g type="scroll"/></ab>
-</div>
-
-
-
-<div type="translation">
-<head>Translation</head>
-<p><supplied reason="lost">A copy of the inscription was placed in the</supplied> property-archive in the stephanephorate of Marcus Aurelius <gap reason="lost"/></p><p><gap reason="lost"/> in the month <supplied reason="lost">Pane</supplied>mos or <supplied reason="lost">Hebdo</supplied>mos.</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>l. 2, must be the end of a month name, Πάνημος or Ἕβδομος.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Temple/Church</rs>: T. Aph. XVI</rs> <rs type="origLocation">Unknown</rs> Last recorded: <rs type="lastLocation">Museum (1977)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1962 (<rs type="invNo">62.305</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>77_E_19</p></div></body>
-</text>
-
+         <div type="translation">
+            <p>
+               <supplied reason="lost">A copy of the inscription was placed in the</supplied> property-archive in the stephanephorate of Marcus Aurelius <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/> in the month <supplied reason="lost">Pane</supplied>mos or <supplied reason="lost">Hebdo</supplied>mos.</p>
+         </div>
+         <div type="commentary">
+            <p>l. 2, must be the end of a month name, Πάνημος or Ἕβδομος.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

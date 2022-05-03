@@ -1,195 +1,195 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130301" n="iAph1009 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">
-          <rs type="textType">Funerary</rs> <rs type="textType"> honours</rs> for  Neaira and Metrodoros</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="de">German</language>
-        <language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+          Funerary  honours for  Neaira and Metrodoros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130301</idno>
+            <idno type="IAph2007">iAph130301</idno>
+            <idno type="JMR2004">iAph1009</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A plain <material key="marmor">white marble</material>
+                              <objectType key="block">block</objectType> (<height unit="metre">2.06</height> × <width unit="metre">0.59</width> × depth not measurable).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+Both texts <rs type="execution" ref="scalpro">inscribed</rs> on the face, which is cracked, i. to the left, ii. to the right. The block is complete above, though chipped; i. must therefore have begun on an upper block.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. <height unit="metre">
+0.03-0.035</height> ii. <height unit="metre">
+0.02-0.025</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList" cert="low">Necropolis, South-east</rs>
+                     </origPlace>
+                     <origDate notBefore="0051" notAfter="0100" precision="medium"> 
+i. first half of first century A.D.; ii. second half of first century A.D.
+        </origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South-east Gate</rs>:element of the tomb incorporated in the gate.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); Sherard papers; Wood; Deering; Gaudin.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="&#xA;----------Charlotte-Tupman&#xA;--------">hand tidied</change>
+         <change when="2005-01-26" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_T_35.jpg">
+            <desc>i (1973)</desc>
+         </graphic>
+         <graphic url="73_T_33.jpg">
+            <desc>ii (1973)</desc>
+         </graphic>
+         <graphic url="Wood_14_47.jpg">
+            <desc>i: Wood notebook 14, page 47</desc>
+         </graphic>
+         <graphic url="Deering_01v.jpg">
+            <desc>i and ii: Deering notebook, 1v</desc>
+         </graphic>
+         <graphic url="gaudin_0057.jpg">
+            <desc>ii: Gaudin squeeze </desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-        <language id="grc-Latn">Transliterated Greek</language>
-        <language id="el">Modern Greek</language>
-        <language id="it">Italian</language>
-        <language id="la">Latin</language>
-        <language id="es">Spanish</language>
-        <language id="tr">Turkish</language>
-      </langUsage>
-      <textClass>
-        <keywords><term>
-            <geogName type="ancientRegion" key="Asia">Asia</geogName>
-          </term><term>
-            <geogName type="modernCountry" key="TR">Turkey</geogName>
-          </term><term>
-            <placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName>
-          </term><term>
-            <placeName type="modernFindspot" key="Geyre">Geyre</placeName>
-          </term></keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change>
-        <date>2007-01-19</date>
-        <respStmt>
-          <name>Charlotte Tupman</name>
-        </respStmt>
-        <item>hand tidied</item>
-      </change>
-
-      <change>
-        <date>2005-01-26</date>
-        <respStmt>
-          <name>Gabriel Bodard</name>
-        </respStmt>
-        <item>transferred to XML</item>
-      </change>
-
-      <change>
-        <date>2004-11-18</date>
-        <respStmt>
-          <name>Gabriel Bodard</name>
-        </respStmt>
-        <item>Created dummy file</item>
-      </change>
-    </revisionDesc>
-  </teiHeader>
-
-  <text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A plain <rs type="material" key="marmor">white marble</rs> <rs type="objectType" reg="block">block</rs> (<measure type="length" unit="metre" dim="height">2.06</measure> × <measure type="length" unit="metre" dim="width">0.59</measure> × depth not measurable).</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>
-Both texts <rs type="execution" key="scalpro">inscribed</rs> on the face, which is cracked, i. to the left, ii. to the right. The block is complete above, though chipped; i. must therefore have begun on an upper block.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p>i. <measure type="length" unit="metre" dim="height">
-0.03-0.035</measure> ii. <measure type="length" unit="metre" dim="height">
-0.02-0.025</measure>.</p>
-</div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p> 
-i. <date exact="none" notBefore="0001" notAfter="0050" cert="low">first half of first century A.D.</date>; ii. <date exact="none" notBefore="0051" notAfter="0100" cert="low">second half of first century A.D.</date>
-        </p>
-</div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
 
 
-<div type="textpart_section" n="i"><ab><lb n="0"/>
+<div n="i" type="textpart" subtype="section"><ab><lb n="0"/>
           <supplied reason="lost">
-            <w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="τιμάω"><orig reg="ἐτίμησεν">ἐτείμη<lb n="1" type="worddiv"/>  σεν</orig>
+            <w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="τιμάω"><orig reg="ἐτίμησεν">ἐτείμη<lb n="1" break="no"/>  σεν</orig>
             </w>
           </supplied>  <w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w>  <w lemma="μεταλλάζω">μετ<unclear reason="damage">ηλ</unclear>λακ<unclear reason="damage">χυ</unclear>
             <supplied reason="lost">ῖαν</supplied>
           </w>  <lb n="2"/>
-          <w lemma="ὁ">ταῖς</w>  <w lemma="ἄξιος">ἀξίαις</w>  <w lemma="καί">καὶ</w>  <w lemma="πρέπω">πρεπού<lb n="3" type="worddiv"/>σαις</w>  <w lemma="τιμή"><orig reg="τιμαῖς">τειμαῖς</orig>
-          </w>  <persName reg="Νέαιρα Μενεκλέους Ἀμμία" full="yes" type="aphrodisian"><name reg="Νέαιρα">Νέαιραν</name>  <persName reg="Μενεκλῆς" full="yes" type="aphrodisian"><name reg="Μενεκλῆς">Με<lb n="4" type="worddiv"/>νεκλέους</name>
-            </persName>  <name reg="Ἀμμία">Ἀμμίαν</name>
-          </persName>  <w lemma="γυνή">γυναῖ<lb n="5"/>κα</w>  <w lemma="γίγνομαι">γενομένην</w>  <persName reg="Μητρόδωρος Μητροδώρου Δημήτριος" full="yes" type="aphrodisian"><name type="        " reg="Μητρόδωρος">Μητροδώ<lb n="6" type="worddiv"/>ρου</name>  <w lemma="ὁ">τοῦ</w>  <persName type="aphrodisian"><name type="        " reg="Μητρόδωρος">Μητροδώρου</name>
-            </persName>  <name reg="Δημήτριος">Δημη<lb n="7" type="worddiv"/>τρίου</name>
+          <w lemma="ὁ">ταῖς</w>  <w lemma="ἄξιος">ἀξίαις</w>  <w lemma="καί">καὶ</w>  <w lemma="πρέπω">πρεπού<lb n="3" break="no"/>σαις</w>  <w lemma="τιμή"><orig reg="τιμαῖς">τειμαῖς</orig>
+          </w>  <persName nymRef="#Νέαιρα Μενεκλέους Ἀμμία" type="attested"><name nymRef="#Νέαιρα">Νέαιραν</name>  <persName nymRef="#Μενεκλῆς" type="attested"><name nymRef="#Μενεκλῆς">Με<lb n="4" break="no"/>νεκλέους</name>
+            </persName>  <name nymRef="#Ἀμμία">Ἀμμίαν</name>
+          </persName>  <w lemma="γυνή">γυναῖ<lb n="5"/>κα</w>  <w lemma="γίγνομαι">γενομένην</w>  <persName nymRef="#Μητρόδωρος Μητροδώρου Δημήτριος" type="attested"><name nymRef="#Μητρόδωρος">Μητροδώ<lb n="6" break="no"/>ρου</name>  <w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Μητρόδωρος">Μητροδώρου</name>
+            </persName>  <name nymRef="#Δημήτριος">Δημη<lb n="7" break="no"/>τρίου</name>
           </persName>  <w lemma="ζάω">ζήσασαν</w>  <w lemma="κόσμιος">κοσμίως</w>  <lb n="8"/>
           <w lemma="καί">καὶ</w>  <w lemma="σώφρων">σωφρόνως</w>  <space extent="unknown" unit="character" dim="horizontal"/>
           <lb n="8a"/>
           <space unit="line" dim="vertical"/>
         </ab></div>
         
-        <div type="textpart_section" n="ii"><ab>
+        <div n="ii" type="textpart" subtype="section"><ab>
           <lb n="1"/>
           <w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="τιμάω"><orig reg="ἐτίμησεν">ἐτείμησεν</orig>
           </w>  <lb n="2"/>
-          <w lemma="καί">καὶ</w>  <w lemma="μεταλλάζω">μετηλλαχχότα</w>  <note place="not specified" anchored="yes">sic</note>  <persName reg="Μητρόδωρος Μητροδώρου Δημήτριος" full="yes" type="aphrodisian"><name reg="Μητρόδωρος">Μητρόδωρον</name>
+          <w lemma="καί">καὶ</w>  <w lemma="μεταλλάζω">μετηλλαχχότα</w>  <note place="not specified" xml:lang=""/>  <persName nymRef="#Μητρόδωρος Μητροδώρου Δημήτριος" type="attested"><name nymRef="#Μητρόδωρος">Μητρόδωρον</name>
             <lb n="3"/>
-            <persName type="aphrodisian">
-              <name reg="Μητρόδωρος" type="        ">Μητροδώρου</name>
-            </persName>  <name reg="Δημήτριος">Δημήτριον</name>
-          </persName>  <w lemma="ζάω">ζήσαν<lb n="4" type="worddiv"/>τα</w>  <w lemma="κόσμιος">κοσμίως</w>  <w lemma="ἀνήρ">ἄνδρα</w>  <w lemma="περί">περὶ</w>  <w lemma="ὁ">τὰ</w>  <w lemma="κοινός">κοινὰ</w>  <w lemma="ὁ">τῆς</w>  <lb n="5"/>
+            <persName type="attested">
+              <name nymRef="#Μητρόδωρος">Μητροδώρου</name>
+            </persName>  <name nymRef="#Δημήτριος">Δημήτριον</name>
+          </persName>  <w lemma="ζάω">ζήσαν<lb n="4" break="no"/>τα</w>  <w lemma="κόσμιος">κοσμίως</w>  <w lemma="ἀνήρ">ἄνδρα</w>  <w lemma="περί">περὶ</w>  <w lemma="ὁ">τὰ</w>  <w lemma="κοινός">κοινὰ</w>  <w lemma="ὁ">τῆς</w>  <lb n="5"/>
           <w lemma="πόλις">πόλεως</w>  <w lemma="φιλότιμος">φιλότειμον</w>  <w lemma="ἐν">ἔν</w>  <w lemma="τε">τε</w>  <w lemma="ἀρχή">ἀρχαῖς</w>  <lb n="6"/>
           <w lemma="καί">καὶ</w>  <w lemma="ὑπόσχεσις">ὑποσχέσεσιν</w>  <w lemma="καί">καὶ</w>  <w lemma="ἐργεπιστασία">ἐργεπιστασίαις</w>  <lb n="7"/>
-          <w lemma="καί">καὶ</w>  <w lemma="ὁ">ταῖς</w>  <w lemma="λοιπός">λοιπαῖς</w>  <w lemma="εἰς">εἰς</w>  <w lemma="ὁ">τὴν</w>  <w lemma="πατρίς">πατρίδα</w>  <g type="scroll"/>  <lb n="8"/>
+          <w lemma="καί">καὶ</w>  <w lemma="ὁ">ταῖς</w>  <w lemma="λοιπός">λοιπαῖς</w>  <w lemma="εἰς">εἰς</w>  <w lemma="ὁ">τὴν</w>  <w lemma="πατρίς">πατρίδα</w>  <g ref="#scroll"/>  <lb n="8"/>
           <w lemma="ὑπηρεσία">ὑπηρεσίαις</w>  <w lemma="πρόθυμος">πρόθυμον</w>  <w lemma="γίγνομαι">γενόμενον</w>
           <lb n="8a"/>
           <space unit="line" dim="vertical"/>
         </ab></div>
 
 </div>
-
-<div type="apparatus"><head>Apparatus</head>
-        <p>i: Wood could not read lines 1 and 2</p><p>ii. l. 7, episilon corrected from sigma.</p>
-      </div>
-      <div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); Sherard papers; Wood; Deering; Gaudin.</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>i. <supplied reason="lost">The Council and the People honoured</supplied> also after her death with appropriate and becoming honours Neaira Ammia, daughter of Menekles, who was the wife of Metrodoros Demetrios son of Metrodoros, who lived in a well-ordered and discreet manner.</p>
-        <p>ii. The Council and the People honoured also after his death Metrodoros Demetrios son of Metrodoros who lived with due order, ambitious to serve the common good of the city and zealous as a magistrate, in the superintendency of public building and in other services for the city.</p>
-</div>
-
-<div type="commentary">
- <head>Commentary</head>
-<p>These texts are in different hands - i. resembles <xref type="inscription" n="1012" href="120609">12.609</xref> (=MAMA 478) - but are inscribed on a single block, part of the tomb whose elements were incorporated in the South-east gate, and which include <xref type="inscription" n="1010" href="130302">13.302</xref> (=ΜΑΜΑ 474), and <xref type="inscription" n="1527" href="120411">12.411</xref> (=MAMA 548): see <bibl n="jmr1999">Reynolds, 'The first known Aphrodisian to hold a procuratorship', <title>Steine und Wege</title> (Vienna, 1999), 327-334</bibl>.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Walls, South-east Gate</rs>:element of the tomb incorporated in the gate.</rs> <rs type="lastLocation" reg="findspot">Findspot</rs>  <rs type="origLocation"><rs type="monuList" cert="low">Necropolis, South-east</rs></rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Sherard in 1716 (10101 121-2);  by Wood (14, f47);  by Deering (1v, nos 4 and 5);  by Fellows;  by <bibl n="bailie1843">Bailie (see <title>Researches</title>, 51-2, 83-4)</bibl>;  by Choisy;  by Loew;  by Waddington; mentioned by K&amp;R (RI.14v);recorded   by Gaudin (154, 147);  by the MAMA expedition;  by the NYU expedition.</p>
-</div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>a: Published published by <bibl n="CIGII">Boeckh from Sherard, CIG <biblScope>2816</biblScope> and <biblScope>2779</biblScope></bibl>; by <bibl n="fellows1841">Fellows, Acct. 323-324, no. <biblScope>31</biblScope> and <biblScope>30</biblScope></bibl>, whence <bibl n="CIGIIc">CIG p. 1114</bibl>, <bibl n="bailie1846">Bailie, Fasc. ii 24-25 and 283, no. <biblScope>51.i and h</biblScope></bibl>. Mentioned by <bibl n="franz1847">Franz, from Loew, Ann. d. Inst. 19, 1847, 114-115, nos. <biblScope>a.1</biblScope> and <biblScope> a.6</biblScope></bibl>; Published by <bibl n="reinach" rend="primary" type="hbi"><author>Reinach</author>, <title level="j">REG</title> 19, 1906, 125-127, nos. <biblScope>67</biblScope>, 
-          <biblScope>65</biblScope></bibl>; from the MAMA records, by <bibl n="MAMA8" rend="primary" type="hbi"><author>Cormack</author>, <title level="m">MAMA</title> <biblScope>473</biblScope>, <biblScope>472</biblScope>
-          </bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257188">309</biblScope>, <biblScope n="257184">305</biblScope>
-          </bibl>.</p>
-</div>
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_T_35"><figDesc>i (1973)</figDesc></figure><figure href="73_T_33"><figDesc>ii (1973)</figDesc></figure></p>
-</div>
-
-
-
-<div type="figure" n="transcriptions"><head>Representations</head>
-        <p>
-          <figure href="Wood_14_47"><figDesc>i: Wood notebook 14, page 47</figDesc></figure><figure href="Deering_01v">
-            <figDesc>i and ii: Deering notebook, 1v</figDesc>
-          </figure>
-          <figure href="gaudin_0057">
-            <figDesc>ii: Gaudin squeeze </figDesc>
-          </figure>
-        </p>
-      </div>
-    </body>
-</text>
-
+         <div type="apparatus">
+            <p>i: Wood could not read lines 1 and 2</p>
+            <p>ii. l. 7, episilon corrected from sigma.</p>
+         </div>
+         <div type="translation">
+            <p>i. <supplied reason="lost">The Council and the People honoured</supplied> also after her death with appropriate and becoming honours Neaira Ammia, daughter of Menekles, who was the wife of Metrodoros Demetrios son of Metrodoros, who lived in a well-ordered and discreet manner.</p>
+            <p>ii. The Council and the People honoured also after his death Metrodoros Demetrios son of Metrodoros who lived with due order, ambitious to serve the common good of the city and zealous as a magistrate, in the superintendency of public building and in other services for the city.</p>
+         </div>
+         <div type="commentary">
+            <p>These texts are in different hands - i. resembles <ref type="inscription" n="1012" target="120609.xml"/> (=MAMA 478) - but are inscribed on a single block, part of the tomb whose elements were incorporated in the South-east gate, and which include <ref type="inscription" n="1010" target="130302.xml"/> (=ΜΑΜΑ 474), and <ref type="inscription" n="1527" target="120411.xml"/> (=MAMA 548): see <bibl n="jmr1999">Reynolds, 'The first known Aphrodisian to hold a procuratorship', <title>Steine und Wege</title> (Vienna, 1999), 327-334</bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>a: Published published by <bibl n="CIGII">Boeckh from Sherard, CIG <citedRange>2816</citedRange> and <citedRange>2779</citedRange>
+               </bibl>; by <bibl n="fellows1841">Fellows, Acct. 323-324, no. <citedRange>31</citedRange> and <citedRange>30</citedRange>
+               </bibl>, whence <bibl n="CIGIIc">CIG p. 1114</bibl>, <bibl n="bailie1846">Bailie, Fasc. ii 24-25 and 283, no. <citedRange>51.i and h</citedRange>
+               </bibl>. Mentioned by <bibl n="franz1847">Franz, from Loew, Ann. d. Inst. 19, 1847, 114-115, nos. <citedRange>a.1</citedRange> and <citedRange> a.6</citedRange>
+               </bibl>; Published by <bibl n="reinach" rend="primary" type="hbi">
+                  <author>Reinach</author>, <title level="j">REG</title> 19, 1906, 125-127, nos. <citedRange>67</citedRange>, 
+          <citedRange>65</citedRange>
+               </bibl>; from the MAMA records, by <bibl n="MAMA8" rend="primary" type="hbi">
+                  <author>Cormack</author>, <title level="m">MAMA</title>
+                  <citedRange>473</citedRange>, <citedRange>472</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257188">309</citedRange>, <citedRange n="257184">305</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

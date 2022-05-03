@@ -1,83 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110507" n="iAph0614 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Gladiator memorial</rs> for familia of Zenon Hypsikles</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-01-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material">white marble</rs> <rs type="objectType">block</rs> with a decoration of three simple acroteria above a recessed panel within a simple moulding.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on panel, and on lower moulding (l.8). It is not clear where the last line would have been inscribed.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>standard first/second-century forms, c. 0.02; ligature, HN l.1</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0150" notBefore="0050">?Late first/ early second century</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">prosopography</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="φαμιλία">Φαμιλία</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνων<supplied reason="lost">ος</supplied></name>  <lb n="2"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ὑψικλῆς">Ὑψικλέους</name> <lb n="3"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ὑψικλῆς">Ὑψικλέους</name> <lb n="4"/> <w lemma="ὁ">τοῦ</w> <w lemma="φύσις">φύσει</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνω<lb n="5" type="worddiv"/>  νος</name></persName></persName></persName> <name reg="Ὑψικλῆς">Ὑψικλέους</name></persName> <lb n="6"/> <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <w lemma="μονομάχος">μονο<lb n="7" type="worddiv"/> μάχων</w> <w lemma="καί">καὶ</w> <w lemma="κατάδικος">κατα<lb n="8" type="worddiv"/> δίκων</w> <w lemma="καί">καὶ</w> <w lemma="ταυροκαθάπτης">ταυροκα<lb n="9" type="worddiv"/><supplied reason="lost" cert="low">θαπτῶν</supplied></w>   <gap reason="lost" extent="unknown" unit="character" dim="right"/>  </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Gladiator memorial for familia of Zenon Hypsikles</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110507</idno>
+            <idno type="IAph2007">iAph110507</idno>
+            <idno type="JMR2004">iAph0614</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>76.192</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material>white marble</material>
+                              <objectType>block</objectType> with a decoration of three simple acroteria above a recessed panel within a simple moulding.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on panel, and on lower moulding (l.8). It is not clear where the last line would have been inscribed.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>standard first/second-century forms, c. 0.02; ligature, HN l.1</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0050" notAfter="0150" evidence="lettering prosopography">
+?Late first/ early second century (<rs type="criteria">lettering</rs>, <rs type="criteria">prosopography</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">City, North-west</rs>: 'on the north side of the city' (Fellows); <rs type="monuList">Stray</rs> find in 1976.</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; transcriptions (Reynolds, Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_W_36.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>Of Zenon Hypsikles, son of Hypsikles, son of Hypsikles the natural son of Zenon, high-priest, the familia of single combatants and convicts and bull-catchers [...]</p>
+<ab><lb n="1"/> <w lemma="φαμιλία">Φαμιλία</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνων<supplied reason="lost">ος</supplied></name>  <lb n="2"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ὑψικλῆς">Ὑψικλέους</name> <lb n="3"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ὑψικλῆς">Ὑψικλέους</name> <lb n="4"/> <w lemma="ὁ">τοῦ</w> <w lemma="φύσις">φύσει</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνω<lb n="5" break="no"/>  νος</name></persName></persName></persName> <name nymRef="#Ὑψικλῆς">Ὑψικλέους</name></persName> <lb n="6"/> <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <w lemma="μονομάχος">μονο<lb n="7" break="no"/> μάχων</w> <w lemma="καί">καὶ</w> <w lemma="κατάδικος">κατα<lb n="8" break="no"/> δίκων</w> <w lemma="καί">καὶ</w> <w lemma="ταυροκαθάπτης">ταυροκα<lb n="9" break="no"/><supplied reason="lost" cert="low">θαπτῶν</supplied></w>   <gap reason="lost" unit="character" extent="unknown"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The owner of this troupe is perhaps mentioned in one other text, <xref type="inscription" n="1030" href="110022">11.22</xref> (=MAMA VIII.500  ); his sister, Ammia Hypsiklis, occurs in another, put up by her grandson, <xref type="inscription" n="1228" href="120712">12.712</xref> (=Reinach 29). He was identified by Liermann with a Zenon son of Hypsikles active in the mid first century: <xref type="inscription" n="1481" href="120803">12.803</xref> (=LBW 1611), but both names are very common at Aphrodisias; the text put up by his sister's grandson should perhaps be dated to the late second century, since the next generation of his family was apparently active after 212: <xref type="inscription" n="1526" href="120523">12.523</xref> (=MAMA VIII.559) with a similar, unpublished, text). This therefore suggests a date for this inscription in the late first or early second century.</p>
-<p>The familia includes the same elements as that in <xref type="inscription" n="613" href="040104">4.104</xref>, together with 'bull-catchers', whose special skill was to pursue the bulls, initially on horseback, and then to mount the bulls themselves (Robert, Gladiateurs, 318-9).</p>
-<p>For further discussion see Roueché, PPA, loc. cit.</p></div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"> <rs type="monuList" cert="low">City, North-west</rs>: 'on the north side of the city' (Fellows); <rs type="monuList">Stray</rs> find in 1976.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; transcriptions (Reynolds, Roueché)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-
-<p>Copied by Fellows; recorded by the NYU expedition (excavation inventory no. <rs type="invNo">76.192</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="fellows1841">Fellows, no. <biblScope>20</biblScope></bibl>, whence <bibl n="CIGIIc">CIG <biblScope>2759b</biblScope></bibl>, <bibl n="liermann1889">Liermann, Analecta 5</bibl>, <bibl>Robert, Gladiateurs no. <biblScope>157</biblScope></bibl>; discussed by <bibl>Baunack, RM 38 (1883), 299</bibl>, <bibl>Robert, 'Πυκτεύειν', RA 30 (1929), 24-41, 28 (= OMS I, 691-708, 695</bibl>). Published<bibl n="PPA"> by Roueché, PPA <biblScope>14</biblScope></bibl>.</p>
-</div><div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_W_36"><figDesc>Face (1977)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>Of Zenon Hypsikles, son of Hypsikles, son of Hypsikles the natural son of Zenon, high-priest, the familia of single combatants and convicts and bull-catchers [...]</p>
+         </div>
+         <div type="commentary">
+            <p>The owner of this troupe is perhaps mentioned in one other text, <ref type="inscription" n="1030" target="110022.xml"/> (=MAMA VIII.500  ); his sister, Ammia Hypsiklis, occurs in another, put up by her grandson, <ref type="inscription" n="1228" target="120712.xml"/> (=Reinach 29). He was identified by Liermann with a Zenon son of Hypsikles active in the mid first century: <ref type="inscription" n="1481" target="120803.xml"/> (=LBW 1611), but both names are very common at Aphrodisias; the text put up by his sister's grandson should perhaps be dated to the late second century, since the next generation of his family was apparently active after 212: <ref type="inscription" n="1526" target="120523.xml"/> (=MAMA VIII.559) with a similar, unpublished, text). This therefore suggests a date for this inscription in the late first or early second century.</p>
+            <p>The familia includes the same elements as that in <ref type="inscription" n="613" target="040104.xml"/>, together with 'bull-catchers', whose special skill was to pursue the bulls, initially on horseback, and then to mount the bulls themselves (Robert, Gladiateurs, 318-9).</p>
+            <p>For further discussion see Roueché, PPA, loc. cit.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="fellows1841">Fellows, no. <citedRange>20</citedRange>
+               </bibl>, whence <bibl n="CIGIIc">CIG <citedRange>2759b</citedRange>
+               </bibl>, <bibl n="liermann1889">Liermann, Analecta 5</bibl>, <bibl>Robert, Gladiateurs no. <citedRange>157</citedRange>
+               </bibl>; discussed by <bibl>Baunack, RM 38 (1883), 299</bibl>, <bibl>Robert, 'Πυκτεύειν', RA 30 (1929), 24-41, 28 (= OMS I, 691-708, 695</bibl>). Published<bibl n="PPA"> by Roueché, PPA <citedRange>14</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

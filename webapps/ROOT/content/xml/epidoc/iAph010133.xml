@@ -1,95 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010133" n="iAph0303 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Panel fragment, , second century A.D., from Temple</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Panel fragment, , second century A.D., from Temple</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010133</idno>
+            <idno type="IAph2007">iAph010133</idno>
+            <idno type="JMR2004">iAph0303</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>62.200</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment of an inscribed <material>marble</material>
+                              <objectType key="panel">panel</objectType>, re-used for relief sculpture with a design of leaves (<width unit="metre">0.09</width> × <height unit="metre">0.12</height> × <depth unit="metre">0.045</depth>).  </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard second to third  century forms; <height unit="metre">0.035</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">Second to third centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs> 'T. Aph. XV'</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-26" who="#GB">DONE</change>
+         <change when="2005-03-21" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_E_26.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="77_N_35A.jpg">
+            <desc>Face reversed (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-02-26</date><respStmt><name>Gabriel Bodard</name></respStmt><item>DONE</item></change><change><date>2005-03-21</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Fragment of an inscribed <rs type="material">marble</rs> <rs type="objectType" reg="panel">panel</rs>, re-used for relief sculpture with a design of leaves (<measure type="length" unit="metre" dim="width">0.09</measure> × <measure type="length" unit="metre" dim="height">0.12</measure> × <measure type="length" unit="metre" dim="depth">0.045</measure>).  </p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p>Standard second to third  century forms; <measure dim="height" type="length" unit="metre">0.035</measure>.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date exact="none" notAfter="0300" notBefore="0101" cert="low">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="0"/><gap unit="line" reason="lost" extent="unknown" dim="top"/><lb n="1"/><gap unit="character" reason="lost" extent="unknown" dim="left"/><orig n="unresolved"><unclear reason="damage">ε</unclear>ν</orig><gap unit="character" reason="lost" extent="unknown" dim="right"/><lb n="2"/><gap unit="character" reason="lost" extent="unknown" dim="left"/><orig n="unresolved"><unclear reason="damage">τ</unclear>η</orig><gap unit="character" reason="lost" extent="unknown" dim="right"/><lb n="2a"/><gap unit="line" reason="lost" extent="unknown" dim="bottom"/></ab><note place="not  specified" anchored="yes">or:</note><ab><lb n="0"/><gap unit="line" reason="lost" extent="unknown" dim="top"/><lb n="1"/><gap unit="character" reason="lost" extent="unknown" dim="left"/><orig n="unresolved">η<unclear reason="damage">σ</unclear></orig><gap unit="character" reason="lost" extent="unknown" dim="right"/><lb n="2"/><gap unit="character" reason="lost" extent="unknown" dim="left"/><orig n="unresolved">ν<unclear reason="damage">τ</unclear></orig><gap unit="character" reason="lost" extent="unknown" dim="right"/><lb n="2a"/><gap unit="line" reason="lost" extent="unknown" dim="bottom"/></ab></div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-
-<div type="translation" sample="complete" org="uniform" n="none">
-<head>Translation</head>
-<p>No words discernible.</p></div>
-
-<div type="commentary" sample="complete" org="uniform" n="none">
-<head>Commentary</head>
-<p>No comment.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p>Found: <rs type="found"><rs type="monuList">Temple/Church</rs> 'T. Aph. XV'</rs>. Original location: <rs type="origLocation">Unknown</rs>Last recorded: <rs type="lastLocation">Museum (1977)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition (<rs type="invNo">62.200</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs"><head>Photographs</head><p><figure href="77_E_26"><figDesc>Face (1977)</figDesc></figure><figure href="77_N_35A"><figDesc>Face reversed (1977)</figDesc></figure></p></div></body>
-</text>
-
+<ab><lb n="0"/><gap unit="line" reason="lost" extent="unknown"/><lb n="1"/><gap unit="character" reason="lost" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ε</unclear>ν</orig><gap unit="character" reason="lost" extent="unknown"/><lb n="2"/><gap unit="character" reason="lost" extent="unknown"/><orig n="unresolved"><unclear reason="damage">τ</unclear>η</orig><gap unit="character" reason="lost" extent="unknown"/><lb n="2a"/><gap unit="line" reason="lost" extent="unknown"/></ab><note place="not  specified" xml:lang=""/><ab><lb n="0"/><gap unit="line" reason="lost" extent="unknown"/><lb n="1"/><gap unit="character" reason="lost" extent="unknown"/><orig n="unresolved">η<unclear reason="damage">σ</unclear></orig><gap unit="character" reason="lost" extent="unknown"/><lb n="2"/><gap unit="character" reason="lost" extent="unknown"/><orig n="unresolved">ν<unclear reason="damage">τ</unclear></orig><gap unit="character" reason="lost" extent="unknown"/><lb n="2a"/><gap unit="line" reason="lost" extent="unknown"/></ab></div>
+         <div type="translation" sample="complete" org="uniform" n="none">
+            <p>No words discernible.</p>
+         </div>
+         <div type="commentary" sample="complete" org="uniform" n="none">
+            <p>No comment.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

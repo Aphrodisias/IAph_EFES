@@ -1,100 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph121202" n="iAph1546 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Menekra<supplied reason="lost">tes</supplied></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-08</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>White marble <rs type="objectType">block</rs> (<measure type="length" unit="metre" dim="width">0.42</measure>   × <measure type="length" unit="metre" dim="height">0.99</measure>   × <measure type="length" unit="metre" dim="depth">0.65</measure>) without moulding; broken above and on the upper left side, chipped at the right.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.The left side appears complete; the text must have begun on an adjacent block of a composite monument.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>
-<measure type="length" unit="metre" dim="height">0.02</measure>-<measure type="length" unit="metre" dim="height">0.025</measure>
-</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date cert="low" notAfter="0200" notBefore="0001">First to second centuries A.D.</date>
-(<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="τιμάω"><supplied reason="lost">ἐτείμησεν</supplied></w> <persName type="aphrodisian"><name reg="Μενεκράτης">Μεν<app type="previouslyread">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Menekra<supplied reason="lost">tes</supplied>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph121202</idno>
+            <idno type="IAph2007">iAph121202</idno>
+            <idno type="JMR2004">iAph1546</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>White marble <objectType>block</objectType> (<width unit="metre">0.42</width>   × <height unit="metre">0.99</height>   × <depth unit="metre">0.65</depth>) without moulding; broken above and on the upper left side, chipped at the right.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.The left side appears complete; the text must have begun on an adjacent block of a composite monument.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>-<height unit="metre">0.025</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0200" evidence="lettering">
+First to second centuries A.D.
+(<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls</rs>.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications, notebooks</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-08" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="R_I_16v.jpg">
+            <desc>Reichel notebook I, 16v</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="τιμάω"><supplied reason="lost">ἐτείμησεν</supplied></w> <persName type="attested"><name nymRef="#Μενεκράτης">Μεν<app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="4" reason="lost" unit="character"/></rdg>
+<gap reason="lost" unit="character" quantity="4"/></rdg>
 <rdg resp="previous">εκρά</rdg>
-</app><lb type="worddiv" n="2"/><supplied reason="lost">την</supplied></name>   <gap reason="lost" extent="2" unit="character"/>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <persName type="aphrodisian"><name reg="Διονύσιος"><supplied reason="lost">Δι</supplied>ονυσίου</name></persName>  <persName type="aphrodisian"><name reg="Μεν-">Μ<unclear reason="damage">ε</unclear><app type="previouslyread">
+</app><lb n="2" break="no"/><supplied reason="lost">την</supplied></name>   <gap reason="lost" unit="character" quantity="2"/>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <persName type="attested"><name nymRef="#Διονύσιος"><supplied reason="lost">Δι</supplied>ονυσίου</name></persName>  <persName type="attested"><name nymRef="#Μεν-">Μ<unclear reason="damage">ε</unclear><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="1" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="1"/>
 </rdg>
 <rdg resp="previous">
 ν</rdg>
-</app>  <lb type="worddiv" n="3"/><gap reason="lost" extent="7" unit="character"/></name></persName></persName>  <w lemma="χρυσός"><supplied reason="lost">χρ</supplied>υσῷ</w> <w lemma="στέφανος">στεφάνῳ</w> <lb n="4"/><w lemma="εἰκών"><supplied reason="lost">εἰκόνι</supplied></w>  <w lemma="χαλκοῦς"><supplied reason="lost">χαλκ</supplied>ῇ</w> <w lemma="γραπτό">γραπτῇ</w> <w lemma="προεδρία">προεδρί<lb type="worddiv" n="5"/><supplied reason="lost">ᾳ</supplied></w>   <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="πᾶς"><supplied reason="lost">πᾶσιν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῖς</supplied></w> <w lemma="ἀγών">ἀγῶσιν</w> <w lemma="σίτησις">σιτή<lb type="worddiv" n="6"/><supplied reason="lost">σει</supplied></w>   <w lemma="δημόσιος"><supplied reason="lost">δημοσίᾳ</supplied></w>  <w lemma="ἀρετή"><supplied reason="lost">ἀρε</supplied>τῆς</w> <w lemma="ἕνεκεν">ἕνεκεν</w> <lb n="7"/><supplied reason="lost" cert="low"><space extent="3" unit="character" dim="horizontal"/></supplied>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ἑαυτοῦ"><supplied reason="lost">ἑ</supplied>αυτόν</w>  <space extent="3" unit="character" dim="horizontal"/>  </ab>
+</app>  <lb n="3" break="no"/><gap reason="lost" unit="character" quantity="7"/></name></persName></persName>  <w lemma="χρυσός"><supplied reason="lost">χρ</supplied>υσῷ</w> <w lemma="στέφανος">στεφάνῳ</w> <lb n="4"/><w lemma="εἰκών"><supplied reason="lost">εἰκόνι</supplied></w>  <w lemma="χαλκοῦς"><supplied reason="lost">χαλκ</supplied>ῇ</w> <w lemma="γραπτό">γραπτῇ</w> <w lemma="προεδρία">προεδρί<lb n="5" break="no"/><supplied reason="lost">ᾳ</supplied></w>   <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="πᾶς"><supplied reason="lost">πᾶσιν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοῖς</supplied></w> <w lemma="ἀγών">ἀγῶσιν</w> <w lemma="σίτησις">σιτή<lb n="6" break="no"/><supplied reason="lost">σει</supplied></w>   <w lemma="δημόσιος"><supplied reason="lost">δημοσίᾳ</supplied></w>  <w lemma="ἀρετή"><supplied reason="lost">ἀρε</supplied>τῆς</w> <w lemma="ἕνεκεν">ἕνεκεν</w> <lb n="7"/><supplied reason="lost" cert="low"><space extent="3" unit="character" dim="horizontal"/></supplied>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ἑαυτοῦ"><supplied reason="lost">ἑ</supplied>αυτόν</w>  <space extent="3" unit="character" dim="horizontal"/>  </ab>
 </div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>The letters highlighted were read by Loew, but not by the MAMA team.</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p> No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls</rs>.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications, notebooks</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Loew; noted by Reichel (RI.16v); recorded by the MAMA expedition; not reported subsequently</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>published by <bibl n="franz1847">Franz, from Loew, <biblScope>b.2</biblScope></bibl>, whence <bibl n="LBW">LBW <biblScope>1595</biblScope></bibl>, <bibl n="liermann1889">Liermann 14-16, no. <biblScope>2</biblScope></bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records MAMA 8, no. <biblScope>460</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257182">303</biblScope>
-</bibl>
-</p>
-</div>
-<div type="figure" n="none">
-<head>Photographs</head>
-<p>No photographs</p>
-</div><div n="Preliminary transcriptions" type="figure"><head>Representations</head><p><figure href="R_I_16v"><figDesc>Reichel notebook I, 16v</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>The letters highlighted were read by Loew, but not by the MAMA team.</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p> No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>published by <bibl n="franz1847">Franz, from Loew, <citedRange>b.2</citedRange>
+               </bibl>, whence <bibl n="LBW">LBW <citedRange>1595</citedRange>
+               </bibl>, <bibl n="liermann1889">Liermann 14-16, no. <citedRange>2</citedRange>
+               </bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records MAMA 8, no. <citedRange>460</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257182">303</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

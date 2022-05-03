@@ -1,92 +1,160 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120711" n="iAph0671 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> <rs type="textType">honours</rs> for anonymous, pancratiast</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-16</date><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Five fragments, which do not join, from a <rs type="objectType">sarcophagus</rs> front. a. Left side fragment (<measure dim="height" unit="metre" type="length">1.11</measure> x <measure dim="width" unit="metre" type="length">0.58</measure> x <measure dim="depth" unit="metre" type="length">1.28</measure>) with lower edge surviving; b. fragment from ?right side, without top or bottom edges (<measure dim="height" unit="metre" type="length">0.64</measure> x <measure dim="width" unit="metre" type="length">0.40</measure> x <measure dim="depth" unit="metre" type="length">0.18</measure>); c. fragment without edges (<measure dim="height" type="length" unit="metre">0.17</measure> x <measure dim="width" type="length" unit="metre">0.22</measure> x <measure dim="depth" type="length" unit="metre">0.21</measure>); d. fragment without edges (<measure dim="height" unit="metre" type="length">0.18</measure> x <measure dim="width" unit="metre" type="length">0.23</measure> x <measure dim="depth" unit="metre" type="length">0.19</measure>); e. fragment broken on all sides (<measure dim="height" unit="metre" type="length">0.15</measure> x <measure dim="width" unit="metre" type="length">0.28</measure> x <measure dim="depth" unit="metre" type="length">0.13</measure>) with traces of cement on the face from re-use.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary honours for anonymous, pancratiast</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120711</idno>
+            <idno type="IAph2007">iAph120711</idno>
+            <idno type="JMR2004">iAph0671</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>70.220</idno>
+                  <idno>72.493</idno>
+                  <idno>76.39</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Five fragments, which do not join, from a <objectType>sarcophagus</objectType> front. a. Left side fragment (<height unit="metre">1.11</height> x <width unit="metre">0.58</width> x <depth unit="metre">1.28</depth>) with lower edge surviving; b. fragment from ?right side, without top or bottom edges (<height unit="metre">0.64</height> x <width unit="metre">0.40</width> x <depth unit="metre">0.18</depth>); c. fragment without edges (<height unit="metre">0.17</height> x <width unit="metre">0.22</width> x <depth unit="metre">0.21</depth>); d. fragment without edges (<height unit="metre">0.18</height> x <width unit="metre">0.23</width> x <depth unit="metre">0.19</depth>); e. fragment broken on all sides (<height unit="metre">0.15</height> x <width unit="metre">0.28</width> x <depth unit="metre">0.13</depth>) with traces of cement on the face from re-use.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face and within several of the wreaths, which are <width unit="metre">0.18</width> in diameter. a. ll.2-5, 8-10, 14-16 within wreaths; b. ll.3-6, 10 ff. within wreaths; c. within a wreath; d. inscribed above a wreath, the upper edge of which survives, chipped; e. inscribed within a wreath.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard second-/third-century forms, <height unit="metre">0.015-0.02</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>South necropolis</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="terminology lettering">
+Second to third centuries A.D.
+ (<rs type="criteria">terminology</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (west part)</rs> central stretch</provenance>
+                  <provenance type="observed">a. findspot; b.-e. in Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché); notebooks; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-16" who="GB">hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_T_20.jpg">
+            <desc>Fragment a (1973)</desc>
+         </graphic>
+         <graphic url="77_R_17A.jpg">
+            <desc>Fragment b (1977)</desc>
+         </graphic>
+         <graphic url="77_R_18A.jpg">
+            <desc>Fragment c (1977)</desc>
+         </graphic>
+         <graphic url="77_N_09A.jpg">
+            <desc>Fragment d (1977)</desc>
+         </graphic>
+         <graphic url="89_C_03.jpg">
+            <desc>Fragment e. (1989)</desc>
+         </graphic>
+         <graphic url="R_I_19.jpg">
+            <desc>a. Reichel notebook I, 19</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="a" type="textpart" subtype="fragment"><div n="i" type="textpart" subtype="column"><ab><lb n="1"/>  <placeName nymRef="#Σάρδεις">Σάρδις</placeName>   <lb n="2"/> <w lemma="κοινός">κοινὸν</w> <placeName nymRef="#Ἀσία">Ἀσίας</placeName>   <lb n="3"/>  <w lemma="πανκράτιον">παν<lb n="4" break="no"/>κράτι<lb n="5" break="no"/>ον</w>   <lb n="6"/> <placeName nymRef="#Λαοδίκεια">Λαυδίκειαν</placeName>   <lb n="7" break="no"/><placeName>Κλαυδίηα</placeName>    <lb n="8"/>  <w lemma="πανκράτιον">παν<lb n="9" break="no"/> κράτι <lb n="10" break="no"/> ον</w>  <lb n="11"/> <placeName nymRef="#Μιτυλήνη">Μιτυλήνην</placeName> <w lemma="Ἀμμώνηα">Ἀμ<lb n="12" break="no"/>μώνηα</w>   <w lemma="παῖς">παίδων</w>   <lb n="13" break="no"/><w lemma="καί">καὶ</w> <w lemma="ἀγένειος">ἀγενείων</w>  <lb n="14"/>  <w lemma="πανκράτιον">παν<lb n="15" break="no"/> κράτι <lb n="16" break="no"/>ον</w></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="1"/>   <gap reason="lost" unit="line" quantity="1"/>  <lb n="2"/> <gap reason="lost" unit="line" quantity="1"/>  <lb n="3"/>  <w lemma="πανκράτιον">π<supplied reason="lost">αν</supplied>  <lb n="4" break="no"/>κρά<supplied reason="lost">τι</supplied>  <lb n="5" break="no"/>ον</w>   <lb n="6"/>    <placeName nymRef="#Ἱερὰ πόλις"><w>Ιερὰ<unclear reason="damage">ν</unclear></w>  <lb n="7" break="no"/><w lemma="πόλις">πόλι<supplied reason="lost">ν</supplied></w></placeName>  <lb n="8"/>  <w lemma="πανκράτιον">παν<lb n="9" break="no"/> κράτι <lb n="10" break="no"/> ον</w>  <lb n="11"/>  <placeName><placeName nymRef="#Λαοδίκεια">Λαυδίκ<unclear reason="damage">ε</unclear><supplied reason="lost">ι</supplied>  <lb n="12" break="no"/>αν</placeName>   <w lemma="ὁ">τῆς</w>  <placeName nymRef="#Συρία">Σ<supplied reason="lost">υ</supplied>  <lb n="13" break="no"/>ρίας</placeName></placeName> <lb n="14"/>  <w lemma="πανκράτιον">παν<lb n="15" break="no"/> κράτι <lb n="16" break="no"/>ον</w></ab></div></div><div n="b" type="textpart" subtype="fragment"><div n="i" type="textpart" subtype="column"><ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><placeName><placeName nymRef="#Ἀντιοχία"><supplied reason="lost">Ἀντιό</supplied><unclear reason="damage">χ</unclear>ειαν</placeName> <w lemma="ὁ">τῆς</w> <placeName nymRef="#Συρία">Συρ<unclear reason="damage">ία</unclear>ς</placeName></placeName>  <lb n="2"/><w lemma="Πύθιος"><supplied reason="lost" cert="low">Πύθι</supplied>α</w> <w lemma="πρός">πρὸς</w> <placeName nymRef="#Δάφνη">Δάφνην</placeName> <lb n="3"/>  <w lemma="πανκράτιον">παν<lb n="4" break="no"/>κράτι <lb n="5" break="no"/>ον</w> <lb n="6" break="no"/><space dim="vertical" unit="line"/><lb n="7"/><placeName nymRef="#Ἔφεσος"><supplied reason="lost">Ἔφε</supplied>σον</placeName>   <lb n="8"/><w><supplied reason="lost">Ἐφέ</supplied><unclear reason="damage">σ</unclear>ηα</w><lb n="9"/><w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>  <w lemma="ἀγένειος"><supplied reason="lost">ἀγε</supplied><unclear reason="damage">ν</unclear>είων</w>  <lb n="10"/>  <w lemma="πανκράτιον"><supplied reason="lost">πα</supplied>ν  <lb n="10a" break="no"/><supplied reason="lost">κράτι</supplied>  <lb n="10b" break="no"/><supplied reason="lost">ον</supplied></w><lb n="10c"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div n="ii" type="textpart" subtype="column"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>    <lb n="1"/><space dim="vertical" unit="line"/><lb n="2"/><space dim="vertical" unit="line"/><lb n="3"/>  <rs type="festival"><placeName nymRef="#Νέμεια">Νέμει<lb n="4" break="no"/>α</placeName></rs>  <w lemma="πανκράτιον">παν<lb n="5" break="no"/> κράτι <lb n="6" break="no"/>ον</w>   <lb n="7"/>  <placeName nymRef="#Ἔφεσος">Ἔφεσ<unclear reason="damage">ον</unclear></placeName> <w lemma="κοινός">κοινὸν</w> <lb n="8"/>  <placeName nymRef="#Ἀσία">Ἀσ<supplied reason="lost">ίας</supplied></placeName>  <w lemma="παῖς"><supplied reason="lost">πα</supplied>ίδων</w>  <lb n="9"/><w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>  <w lemma="ἀγένειος"><supplied reason="lost">ἀγε</supplied><unclear reason="damage">ν</unclear>είων</w>  <lb n="10"/>  <w lemma="πανκράτιον"><supplied reason="lost">παν</supplied>  <lb n="10a" break="no"/><supplied reason="lost">κράτι</supplied>  <lb n="10b" break="no"/><supplied reason="lost">ον</supplied></w><lb n="10c"/><gap reason="lost" unit="line" extent="unknown"/></ab></div></div><div n="c" type="textpart" subtype="fragment"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/>   <w lemma="πανκράτιον"><w lemma="πᾶς">παν</w> <lb n="2" break="no"/>κρά  <lb n="3" break="no"/>τιον</w></ab></div><div n="d" type="textpart" subtype="fragment"><ab> <lb n="0"/><supplied reason="lost" cert="low">Ἀφροδεισιας</supplied>  <lb n="1"/><w><supplied reason="lost" cert="low">Ἀφρο</supplied><unclear reason="damage">δ</unclear>ει<unclear reason="damage">σ</unclear><supplied reason="lost" cert="low"><space extent="3" unit="character" dim="horizontal"/></supplied>  <lb n="2"/><supplied reason="lost">ίηα</supplied></w> <w>Ἀδώ-</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="3"/><supplied reason="lost" cert="low">νηα</supplied> <w lemma="τρίς">τρὶς</w> <space unit="character" extent="1"/> <lb n="3a"/> <g ref="#wreath"/></ab></div><div n="e" type="textpart" subtype="fragment"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>    <lb n="1"/> <placeName nymRef="#Ἡρακλεία">Ἡρα<lb n="2" break="no"/>κλεί<lb n="3" break="no"/>αν</placeName></ab></div>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face and within several of the wreaths, which are <measure dim="width" type="length" unit="metre">0.18</measure> in diameter. a. ll.2-5, 8-10, 14-16 within wreaths; b. ll.3-6, 10 ff. within wreaths; c. within a wreath; d. inscribed above a wreath, the upper edge of which survives, chipped; e. inscribed within a wreath.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Standard second-/third-century forms, <measure dim="height" type="length" unit="metre">0.015-0.02</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date>
- (<rs type="criteria">terminology</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_fragment" n="a"><div type="textpart_column" n="i"><ab><lb n="1"/>  <placeName reg="Σάρδεις">Σάρδις</placeName>   <lb n="2"/> <w lemma="κοινός">κοινὸν</w> <placeName reg="Ἀσία">Ἀσίας</placeName>   <lb n="3"/>  <w lemma="πανκράτιον">παν<lb type="worddiv" n="4"/>κράτι<lb type="worddiv" n="5"/>ον</w>   <lb n="6"/> <placeName reg="Λαοδίκεια">Λαυδίκειαν</placeName>   <lb type="worddiv" n="7"/><placeName>Κλαυδίηα</placeName>    <lb n="8"/>  <w lemma="πανκράτιον">παν<lb type="worddiv" n="9"/> κράτι <lb type="worddiv" n="10"/> ον</w>  <lb n="11"/> <placeName reg="Μιτυλήνη">Μιτυλήνην</placeName> <w lemma="Ἀμμώνηα">Ἀμ<lb type="worddiv" n="12"/>μώνηα</w>   <w lemma="παῖς">παίδων</w>   <lb type="worddiv" n="13"/><w lemma="καί">καὶ</w> <w lemma="ἀγένειος">ἀγενείων</w>  <lb n="14"/>  <w lemma="πανκράτιον">παν<lb type="worddiv" n="15"/> κράτι <lb type="worddiv" n="16"/>ον</w></ab></div><div type="textpart_column" n="ii"><ab><lb n="1"/>   <gap reason="lost" extent="1" unit="line" dim="top"/>  <lb n="2"/> <gap reason="lost" extent="1" unit="line" dim="top"/>  <lb n="3"/>  <w lemma="πανκράτιον">π<supplied reason="lost">αν</supplied>  <lb type="worddiv" n="4"/>κρά<supplied reason="lost">τι</supplied>  <lb type="worddiv" n="5"/>ον</w>   <lb n="6"/>    <placeName reg="Ἱερὰ πόλις"><w>Ιερὰ<unclear reason="damage">ν</unclear></w>  <lb type="worddiv" n="7"/><w lemma="πόλις">πόλι<supplied reason="lost">ν</supplied></w></placeName>  <lb n="8"/>  <w lemma="πανκράτιον">παν<lb type="worddiv" n="9"/> κράτι <lb type="worddiv" n="10"/> ον</w>  <lb n="11"/>  <placeName><placeName reg="Λαοδίκεια">Λαυδίκ<unclear reason="damage">ε</unclear><supplied reason="lost">ι</supplied>  <lb type="worddiv" n="12"/>αν</placeName>   <w lemma="ὁ">τῆς</w>  <placeName reg="Συρία">Σ<supplied reason="lost">υ</supplied>  <lb type="worddiv" n="13"/>ρίας</placeName></placeName> <lb n="14"/>  <w lemma="πανκράτιον">παν<lb type="worddiv" n="15"/> κράτι <lb type="worddiv" n="16"/>ον</w></ab></div></div><div type="textpart_fragment" n="b"><div type="textpart_column" n="i"><ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><placeName><placeName reg="Ἀντιοχία"><supplied reason="lost">Ἀντιό</supplied><unclear reason="damage">χ</unclear>ειαν</placeName> <w lemma="ὁ">τῆς</w> <placeName reg="Συρία">Συρ<unclear reason="damage">ία</unclear>ς</placeName></placeName>  <lb n="2"/><w lemma="Πύθιος"><supplied reason="lost" cert="low">Πύθι</supplied>α</w> <w lemma="πρός">πρὸς</w> <placeName reg="Δάφνη">Δάφνην</placeName> <lb n="3"/>  <w lemma="πανκράτιον">παν<lb type="worddiv" n="4"/>κράτι <lb type="worddiv" n="5"/>ον</w> <lb type="worddiv" n="6"/><space dim="vertical" unit="line"/><lb n="7"/><placeName reg="Ἔφεσος"><supplied reason="lost">Ἔφε</supplied>σον</placeName>   <lb n="8"/><w><supplied reason="lost">Ἐφέ</supplied><unclear reason="damage">σ</unclear>ηα</w><lb n="9"/><w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>  <w lemma="ἀγένειος"><supplied reason="lost">ἀγε</supplied><unclear reason="damage">ν</unclear>είων</w>  <lb n="10"/>  <w lemma="πανκράτιον"><supplied reason="lost">πα</supplied>ν  <lb type="worddiv" n="10a"/><supplied reason="lost">κράτι</supplied>  <lb type="worddiv" n="10b"/><supplied reason="lost">ον</supplied></w><lb n="10c"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/></ab></div><div type="textpart_column" n="ii"><ab><lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>    <lb n="1"/><space dim="vertical" unit="line"/><lb n="2"/><space dim="vertical" unit="line"/><lb n="3"/>  <rs type="festival"><placeName reg="Νέμεια">Νέμει<lb type="worddiv" n="4"/>α</placeName></rs>  <w lemma="πανκράτιον">παν<lb type="worddiv" n="5"/> κράτι <lb type="worddiv" n="6"/>ον</w>   <lb n="7"/>  <placeName reg="Ἔφεσος">Ἔφεσ<unclear reason="damage">ον</unclear></placeName> <w lemma="κοινός">κοινὸν</w> <lb n="8"/>  <placeName reg="Ἀσία">Ἀσ<supplied reason="lost">ίας</supplied></placeName>  <w lemma="παῖς"><supplied reason="lost">πα</supplied>ίδων</w>  <lb n="9"/><w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>  <w lemma="ἀγένειος"><supplied reason="lost">ἀγε</supplied><unclear reason="damage">ν</unclear>είων</w>  <lb n="10"/>  <w lemma="πανκράτιον"><supplied reason="lost">παν</supplied>  <lb type="worddiv" n="10a"/><supplied reason="lost">κράτι</supplied>  <lb type="worddiv" n="10b"/><supplied reason="lost">ον</supplied></w><lb n="10c"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/></ab></div></div><div type="textpart_fragment" n="c"><ab><lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/>   <w lemma="πανκράτιον"><w lemma="πᾶς">παν</w> <lb type="worddiv" n="2"/>κρά  <lb type="worddiv" n="3"/>τιον</w></ab></div><div type="textpart_fragment" n="d"><ab> <lb n="0"/><supplied reason="lost" cert="low">Ἀφροδεισιας</supplied>  <lb n="1"/><w><supplied reason="lost" cert="low">Ἀφρο</supplied><unclear reason="damage">δ</unclear>ει<unclear reason="damage">σ</unclear><supplied reason="lost" cert="low"><space extent="3" unit="character" dim="horizontal"/></supplied>  <lb n="2"/><supplied reason="lost">ίηα</supplied></w> <w>Ἀδώ-</w> <space extent="3" unit="character" dim="horizontal"/>  <lb n="3"/><supplied reason="lost" cert="low">νηα</supplied> <w lemma="τρίς">τρὶς</w> <space unit="character" extent="1"/> <lb n="3a"/> <g type="wreath"/></ab></div><div type="textpart_fragment" n="e"><ab><lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>    <lb n="1"/> <placeName reg="Ἡρακλεία">Ἡρα<lb type="worddiv" n="2"/>κλεί<lb type="worddiv" n="3"/>αν</placeName></ab></div>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>A: ll.6-7: Ἱεράπολιν MAMA.</p>
-<p>ll.11-12: ΑΜΝΩΝΗΑ Reinach.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>(sc. He won)</p>
-<p>a. Col. 1,  at Sardis, in the provincial festival of Asia, the pancration; at Laodicea, in the Claudiea, the pancration; at Mitylene, in the Ammonea, the pancration of boys and of young men;</p>
-<p>Col. 2,  [ at ?-] the pancration; at Hierapolis, the pancration; at Laodicea in Syria, the pancration;</p>
-<p>b. ...]at Antioch in Syria, in the Pythia at Daphne, the pancration, in the Nemeia, the pancration; at Ephesus, in the Ephesea, the pancration; at Ephesus, in the provincial festival of Asia, [the pancration] of boys and of young men; [...]</p>
-<p>c. [...], the pancration [...]</p>
-<p>d. [...] [?At Aphrodisias, ?the Aphrodisiea] ?Ado[nea</p>
-<p>e. [...] At Heraclea [...]</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See discussion at Roueché, 71</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, South (west part)</rs> central stretch</rs>
-<rs type="origLocation">South necropolis</rs>
-<rs type="lastLocation">a. findspot; b.-e. in Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcriptions (Reynolds, Roueché); notebooks; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording </head>
-<p>a., the left side fragment, recorded by Reichel (R I, 19); by Gaudin (116); by the MAMA expedition; by the NYU expedition. b., c., d. (excavation inventory nos <rs type="invNo">70.220</rs>, <rs type="invNo">72.493</rs>, <rs type="invNo">76.39</rs>) and e. recorded by the current expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>a. published by <bibl n="reinach">Reinach, from Gaudin's squeeze, no. <biblScope>148</biblScope></bibl>; by <bibl n="MAMA8">J. M. R. Cormack, from the MAMA records, MAMA VIII.<biblScope>423</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257224">346</biblScope></bibl>; all fragments published by <bibl n="PPA">Roueché, PPA <biblScope>71</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p> <figure href="73_T_20"><figDesc>Fragment a (1973)</figDesc></figure><figure href="77_R_17A"><figDesc>Fragment b (1977)</figDesc></figure><figure href="77_R_18A"><figDesc>Fragment c (1977)</figDesc></figure><figure href="77_N_09A"><figDesc>Fragment d (1977)</figDesc></figure><figure href="89_C_03"><figDesc>Fragment e. (1989)</figDesc></figure></p>
-</div><div n="transcriptions" type="figure"><head>Representations</head><p><figure href="R_I_19"><figDesc>a. Reichel notebook I, 19</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>A: ll.6-7: Ἱεράπολιν MAMA.</p>
+            <p>ll.11-12: ΑΜΝΩΝΗΑ Reinach.</p>
+         </div>
+         <div type="translation">
+            <p>(sc. He won)</p>
+            <p>a. Col. 1,  at Sardis, in the provincial festival of Asia, the pancration; at Laodicea, in the Claudiea, the pancration; at Mitylene, in the Ammonea, the pancration of boys and of young men;</p>
+            <p>Col. 2,  [ at ?-] the pancration; at Hierapolis, the pancration; at Laodicea in Syria, the pancration;</p>
+            <p>b. ...]at Antioch in Syria, in the Pythia at Daphne, the pancration, in the Nemeia, the pancration; at Ephesus, in the Ephesea, the pancration; at Ephesus, in the provincial festival of Asia, [the pancration] of boys and of young men; [...]</p>
+            <p>c. [...], the pancration [...]</p>
+            <p>d. [...] [?At Aphrodisias, ?the Aphrodisiea] ?Ado[nea</p>
+            <p>e. [...] At Heraclea [...]</p>
+         </div>
+         <div type="commentary">
+            <p>See discussion at Roueché, 71</p>
+         </div>
+         <div type="bibliography">
+            <p>a. published by <bibl n="reinach">Reinach, from Gaudin's squeeze, no. <citedRange>148</citedRange>
+               </bibl>; by <bibl n="MAMA8">J. M. R. Cormack, from the MAMA records, MAMA VIII.<citedRange>423</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257224">346</citedRange>
+               </bibl>; all fragments published by <bibl n="PPA">Roueché, PPA <citedRange>71</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

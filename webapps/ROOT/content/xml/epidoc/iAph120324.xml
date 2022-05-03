@@ -1,92 +1,141 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120324" n="iAph1794 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Honours</rs> for T. Cl. Kapitoleinos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Honours for T. Cl. Kapitoleinos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120324</idno>
+            <idno type="IAph2007">iAph120324</idno>
+            <idno type="JMR2004">iAph1794</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>'A pedestal' (Fellows); presumably a <objectType>
+                                 <objectType cert="low">statue base</objectType> shaft</objectType>, probably broken below.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0168"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="nomenclature">
+Third century A.D.
+(<rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs>: near the South-east gate</provenance>
+                  <provenance type="observed" when="1850">Findspot (1850)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard papers; publications</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>'A pedestal' (Fellows); presumably a <rs type="objectType"><rs type="objectType" cert="low">statue base</rs> shaft</rs>, probably broken below.</p>
+<ab><lb n="1"/> <w lemma="ὁ">Ἡ</w> <w lemma="πατρίς">πατρὶς</w> <lb n="2"/> <persName type="attested"><name nymRef="#Τιβέριος">Τιβέριον</name> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name> <lb n="3"/> <name nymRef="#Αὐρήλιος">Αὐρήλιον</name> <lb n="4"/> <persName type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name> <lb n="5"/> <name nymRef="#Κλαύδιος">Κλαυδίου</name> <lb n="6"/><name nymRef="#Καπιτωλῖνος">Καπιτωλεί<lb n="7" break="no"/>νου</name></persName> <w lemma="υἱός">ὑὸν</w> <lb n="8"/> <name nymRef="#Κτησίας">Κτησίαν</name></persName> <lb n="9"/> <w lemma="ὁ">τὸν</w> <w>ῥήτορα</w> <lb n="9a"/>  <gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No description</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0168" exact="none">Third century A.D.</date>
-(<rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">Ἡ</w> <w lemma="πατρίς">πατρὶς</w> <lb n="2"/> <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen">Τιβέριον</name> <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αύδιον</supplied></expan></name> <lb n="3"/> <name reg="Αὐρήλιος" type="nomen">Αὐρήλιον</name> <lb n="4"/> <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen">Τιβερίου</name> <lb n="5"/> <name reg="Κλαύδιος">Κλαυδίου</name> <lb n="6"/><name reg="Καπιτωλῖνος">Καπιτωλεί<lb n="7" type="worddiv"/>νου</name></persName> <w lemma="υἱός">ὑὸν</w> <lb n="8"/> <name reg="Κτησίας">Κτησίαν</name></persName> <lb n="9"/> <w lemma="ὁ">τὸν</w> <w>ῥήτορα</w> <lb n="9a"/>  <gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 2, <foreign lang="grc">ΚΛ</foreign> Sherard; not reported by Fellows or Waddington</p><p>l. 6, <foreign lang="grc">ΩΛΙ</foreign> Fellows</p><p>l. 9, <foreign lang="grc">ΡΗΤΟ</foreign> Fellows</p>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Waddington suggested <foreign lang="grc">καὶ σοφιστὴν</foreign> for the tenth line, on a parallel with <xref type="inscription" n="1795" href="140018">14.18</xref> (=LBW 1598bis); but 'rhetor' appears alone in <xref type="inscription" n="1585" href="120909">12.909</xref> (=CIG 2845), and it is also possible that the text is complete.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>The homeland (set up a statue of) Tiberius Cl(audius) Aurelius Ktesias, son of Tiberius Claudius Kapitoleinos, the rhetor [...]</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, East (south part)</rs>: near the South-east gate</rs>
-<rs type="lastLocation">Findspot (1850)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard papers; publications</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Transcribed by Sherard in 1716 (BM.Add. 10101. f.120); by Fellows in 1840 and by Waddington in 1850. Not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII"><author>Boeckh</author> from Sherard, <title level="j">CIG</title> <biblScope>2797</biblScope></bibl>; by <bibl n="fellows1841"><author>Fellows</author>, no. <biblScope>29</biblScope></bibl>; from both of these by <bibl n="bailie1846"><author>Bailie</author>, no. <biblScope>57</biblScope></bibl>; published by <bibl n="LBW"><author>Waddington</author>, LBW <biblScope>1598</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257173">294</biblScope>
-</bibl>.</p>
-</div><div type="figure" n="photographs">
-<head>Photographs</head>
-<p>No photographs
-</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 2, <foreign xml:lang="grc">ΚΛ</foreign> Sherard; not reported by Fellows or Waddington</p>
+            <p>l. 6, <foreign xml:lang="grc">ΩΛΙ</foreign> Fellows</p>
+            <p>l. 9, <foreign xml:lang="grc">ΡΗΤΟ</foreign> Fellows</p>
+         </div>
+         <div type="apparatus">
+            <p>Waddington suggested <foreign xml:lang="grc">καὶ σοφιστὴν</foreign> for the tenth line, on a parallel with <ref type="inscription" n="1795" target="140018.xml"/> (=LBW 1598bis); but 'rhetor' appears alone in <ref type="inscription" n="1585" target="120909.xml"/> (=CIG 2845), and it is also possible that the text is complete.</p>
+         </div>
+         <div type="translation">
+            <p>The homeland (set up a statue of) Tiberius Cl(audius) Aurelius Ktesias, son of Tiberius Claudius Kapitoleinos, the rhetor [...]</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">
+                  <author>Boeckh</author> from Sherard, <title level="j">CIG</title>
+                  <citedRange>2797</citedRange>
+               </bibl>; by <bibl n="fellows1841">
+                  <author>Fellows</author>, no. <citedRange>29</citedRange>
+               </bibl>; from both of these by <bibl n="bailie1846">
+                  <author>Bailie</author>, no. <citedRange>57</citedRange>
+               </bibl>; published by <bibl n="LBW">
+                  <author>Waddington</author>, LBW <citedRange>1598</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257173">294</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

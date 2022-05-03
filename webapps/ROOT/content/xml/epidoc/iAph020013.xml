@@ -1,88 +1,158 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020013" n="iAph1723 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">a: <rs type="textType">Honours</rs> for Claudia Antonia Tatiane; b. Sculptor's signature, of Alexandros</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-11</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date>2007-04-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>a: Honours for Claudia Antonia Tatiane; b. Sculptor's signature, of Alexandros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020013</idno>
+            <idno type="IAph2007">iAph020013</idno>
+            <idno type="JMR2004">iAph1723</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>64.426</idno>
+                  <idno>64.427</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>a. <material>White marble</material>
+                              <objectType>statue base</objectType> in three elements. Multi tiered upper plinth (<width unit="metre">0.88</width>  × <height unit="metre">0.41</height>  × <depth unit="metre">0.88</depth>); shaft with moulding on all four sides (<width unit="metre">0.565</width> x <height unit="metre">1.31</height> x <depth unit="metre">0.54</depth>); multi tiered lower plinth (<width unit="metre">0.81</width>  × <height unit="metre">0.405</height>  × <depth unit="metre">0.88</depth>). The statue survives; see bibliography. b. Plinth of <objectType>statue</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> a. <rs type="execution" ref="scalpro">Inscribed</rs> on the shaft; b. inscribed on the plinth of the statue.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a. <height unit="metre">0.035</height> (ll. 1-14); <height unit="metre">0.025</height> (ll.15-17); b. <height unit="metre">0.02</height>; ligatured <foreign xml:lang="grc">ΗΝ</foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="prosopography">
+Second century A.D.
+ (<rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon</rs>: standing against the south face of the south portico wall, east of the entrance ('S. Bou., Tr. 4, Str.3')</provenance>
+                  <provenance type="observed" when="2001">a. Findspot; b. Museum (2001)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-11" who="cmr">DONE</change>
+         <change when="2007-04-30" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="2001_A_09.jpg">
+            <desc>Base (2001)</desc>
+         </graphic>
+         <graphic url="78_F_31.jpg">
+            <desc>Plinth (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>a. <rs type="material">White marble</rs> <rs type="objectType">statue base</rs> in three elements. Multi tiered upper plinth (<measure type="length" unit="metre" dim="width">0.88</measure>  × <measure type="length" unit="metre" dim="height">0.41</measure>  × <measure type="length" unit="metre" dim="depth">0.88</measure>); shaft with moulding on all four sides (<measure dim="width" type="length" unit="metre">0.565</measure> x <measure dim="height" type="length" unit="metre">1.31</measure> x <measure dim="depth" type="length" unit="metre">0.54</measure>); multi tiered lower plinth (<measure type="length" unit="metre" dim="width">0.81</measure>  × <measure type="length" unit="metre" dim="height">0.405</measure>  × <measure type="length" unit="metre" dim="depth">0.88</measure>). The statue survives; see bibliography. b. Plinth of <rs type="objectType">statue</rs>.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> a. <rs type="execution" key="scalpro">Inscribed</rs> on the shaft; b. inscribed on the plinth of the statue.</p>
- </div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>a. <measure dim="height" type="length" unit="metre">0.035</measure> (ll. 1-14); <measure dim="height" type="length" unit="metre">0.025</measure> (ll.15-17); b. <measure type="length" unit="metre" dim="height">0.02</measure>; ligatured <foreign lang="grc">ΗΝ</foreign>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0200" exact="none">Second century A.D.</date>
- (<rs type="criteria">prosopography</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
 
-<div type="textpart_section" n="a"><ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <lb n="2"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <lb n="3"/> <persName type="aphrodisian"><name reg="Κλαυδία">Κλαυδίαν</name> <lb n="4"/> <name reg="Ἀντωνία">Ἀντωνίαν</name> <lb n="5"/> <name reg="Τατιανή">Τατιανὴν</name></persName> <lb n="6"/> <w lemma="ὁ">τὴν</w> <w lemma="κράτιστος">κρατίσ<lb n="7" type="worddiv"/>την</w> <w lemma="ἐκ">ἐκ</w> <w lemma="πρόγονος">προ<lb n="8" type="worddiv"/>γόνων</w>  <w lemma="εὐεργέτις">εὐ<lb n="9" type="worddiv"/>εργέτιν</w>  <w lemma="ἀνεψιά">ἀ<lb n="10" type="worddiv"/>νεψιὰν</w> <persName type="aphrodisian"><name reg="Κλαύδιος">Κλ.</name> <lb n="11"/> <name reg="Διογένης">Διογένους</name></persName> <lb n="12"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἄτταλος">Ἀττάλου</name></persName> <lb n="13"/><w lemma="συνκλητικός">συνκλητι<lb n="14" type="worddiv"/><space extent="3"/>κῶν</w><space extent="3"/>  <lb n="15"/><w lemma="ἐπιμελέω">ἐπιμεληθέν<lb n="16" type="worddiv"/>τος</w> <persName type="aphrodisian"><name reg="Τιβέριος"><expan><abbr>Τι</abbr><supplied reason="abbreviation">ιβερίου</supplied></expan></name> <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδῐου</supplied></expan></name> <name reg="Καπιτωλῖνος">Καπε<lb n="17" type="worddiv"/>τωλεινοῦ</name></persName></ab></div><div type="textpart_section" n="b">
-<ab><lb n="1"/> <persName type="aphrodisian"><name reg="Ἀλέξανδρος">Ἀλέξανδρος</name> <persName type="aphrodisian"><name reg="Ζήνων">Ζ<hi rend="ligature">ήν</hi>ωνος</name></persName></persName> <w lemma="ποιέω">ἐπο<unclear reason="damage">ί</unclear><supplied reason="lost">ει</supplied></w></ab></div></div>
-<div type="apparatus"><head>Apparatus</head>
-<p>b.  l. 1, <foreign lang="grc">ἐπ<supplied reason="lost">οίει</supplied></foreign> Erim.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p> a. The Council and the people (honoured) Claudia Antonia Tatiane, <term lang="la">egregia femina</term>, their benefactress as were her ancestors, cousin of Claudius Diogenes and Claudius Attalos, senatorials. Tib(erius) Cl(audius) Kapitoleinos supervised (the erection of the statue).</p><p>b. Alexandros son of Zenon made this.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>a. Claudia Antonia Tatiane was honoured with at least one other statue: see <xref type="inscription" n="1793" href="120323">12.323</xref>. In both she  is honoured as a civic benefactress, of a family of civic benefactors, cousin of two members of the Roman senatorial class and herself apparently of the Roman equestrian class since she is <foreign lang="grc">κρατίστη</foreign> (<foreign lang="grc">κράτιστος</foreign> = <term lang="la">egregius</term> being at this date applied to procurators or similarly ranking equestrian officers). The rank may have derived from that of her father or of an unknown husband. She has sometimes been thought the wife of Dometeinos (<xref type="inscription" n="1718" href="020017">2.17</xref>); but there is nothing in the inscriptions to justify this, and the absence of a title to balance her <term lang="la">egregia</term> is surprising if they were married. Provisionally at any rate we should suppose that if it is right to see her as a high priestess of Asia (and she is crowned on her statue, which it is plausible to take as a pair with his, <xref type="inscription" n="1718" href="020017">2.17</xref>) he invited her assistance because he was a widower and she was both rich and willing to undertake the function. She may be identical with a homonym who owned a tomb at Ephesos and in 204 wrote a letter inscribed on it (<title>SEG</title> IV.544); but this should not be regarded as certain, since her name is not so distinctive.</p><p>Tiberius Claudius Kapitoleinos, who was responsible for teherstion of both statues, is attested as a civic official at Aphrodisias in the second to third centuries (see name index). For his son see <xref type="inscription" n="1794" href="120324">12.324</xref>.</p><p>b. The sculptor whose signature is on the statue ws no doubt related to the Aphrodisian sculptor Zenon son of Alexandros (E. Löwy, <title>Inschriften griechischer Bildhauer</title> no. 366)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-a.
-<rs type="found"><rs type="monuList">Bouleuterion/Odeon</rs>: standing against the south face of the south portico wall, east of the entrance ('S. Bou., Tr. 4, Str.3')</rs>
-<rs type="origLocation">Findspot</rs> <rs type="lastLocation">a. Findspot; b. Museum (2001)</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1964 (<rs type="invNo">64.426</rs>, <rs type="invNo">64.427</rs>; SBI <rs type="sbi">111</rs>).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>a. Published by <bibl>Erim, <title>Archaeology</title> 20, 1967, 22-24</bibl>; by <bibl n="jmr1968">Reynolds, in <title>Belleten Türk Tarih Kurumu</title> 32, 1968, 21-23, no. <biblScope>5</biblScope></bibl>, whence <bibl n="be">BE <biblScope>1969.541</biblScope></bibl>; <bibl n="ktejmr1979">Reynolds in Inan-Rosenbaum <title>Porträtplastik</title> 215-216, no. <biblScope>187</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1982.1100</biblScope></bibl>; <bibl n="seg">SEG <biblScope>1985.1082</biblScope></bibl>8; <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257169">290</biblScope></bibl>.</p><p>b. Published by <bibl>Erim, Archaeology 20, 1967, 22-24</bibl>; by <bibl>Alföldi, Erim, &amp; Inan, Belleten Türk Tarih Kurumu 32, 1968, 8-10</bibl>, no. 5; by <bibl>Inan &amp; Alföldi-Rosenbaum 214, no. <biblScope>187</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1982.1103</biblScope></bibl>, <bibl n="seg">SEG <biblScope>1982.1082</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257465">585</biblScope>
-</bibl>; by <bibl n="ktejmr1991">Erim-Reynolds, 'Sculptors' no.<biblScope>2</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1990.925</biblScope></bibl>. Both texts published, with the statue, by <bibl n="rrrs2006"> <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, no. <biblScope>96</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="2001_A_09"><figDesc>Base (2001)</figDesc></figure><figure href="78_F_31"><figDesc>Plinth (1978)</figDesc></figure> </p>
-</div></body></text>
+<div n="a" type="textpart" subtype="section"><ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <lb n="2"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <lb n="3"/> <persName type="attested"><name nymRef="#Κλαυδία">Κλαυδίαν</name> <lb n="4"/> <name nymRef="#Ἀντωνία">Ἀντωνίαν</name> <lb n="5"/> <name nymRef="#Τατιανή">Τατιανὴν</name></persName> <lb n="6"/> <w lemma="ὁ">τὴν</w> <w lemma="κράτιστος">κρατίσ<lb n="7" break="no"/>την</w> <w lemma="ἐκ">ἐκ</w> <w lemma="πρόγονος">προ<lb n="8" break="no"/>γόνων</w>  <w lemma="εὐεργέτις">εὐ<lb n="9" break="no"/>εργέτιν</w>  <w lemma="ἀνεψιά">ἀ<lb n="10" break="no"/>νεψιὰν</w> <persName type="attested"><name nymRef="#Κλαύδιος">Κλ.</name> <lb n="11"/> <name nymRef="#Διογένης">Διογένους</name></persName> <lb n="12"/> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἄτταλος">Ἀττάλου</name></persName> <lb n="13"/><w lemma="συνκλητικός">συνκλητι<lb n="14" break="no"/><space extent="3"/>κῶν</w><space extent="3"/>  <lb n="15"/><w lemma="ἐπιμελέω">ἐπιμεληθέν<lb n="16" break="no"/>τος</w> <persName type="attested"><name nymRef="#Τιβέριος"><expan><abbr>Τι</abbr><ex>ιβερίου</ex></expan></name> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδῐου</ex></expan></name> <name nymRef="#Καπιτωλῖνος">Καπε<lb n="17" break="no"/>τωλεινοῦ</name></persName></ab></div><div n="b" type="textpart" subtype="section">
+<ab><lb n="1"/> <persName type="attested"><name nymRef="#Ἀλέξανδρος">Ἀλέξανδρος</name> <persName type="attested"><name nymRef="#Ζήνων">Ζ<hi rend="ligature">ήν</hi>ωνος</name></persName></persName> <w lemma="ποιέω">ἐπο<unclear reason="damage">ί</unclear><supplied reason="lost">ει</supplied></w></ab></div></div>
+         <div type="apparatus">
+            <p>b.  l. 1, <foreign xml:lang="grc">ἐπ<supplied reason="lost">οίει</supplied>
+               </foreign> Erim.</p>
+         </div>
+         <div type="translation">
+            <p> a. The Council and the people (honoured) Claudia Antonia Tatiane, <term xml:lang="la">egregia femina</term>, their benefactress as were her ancestors, cousin of Claudius Diogenes and Claudius Attalos, senatorials. Tib(erius) Cl(audius) Kapitoleinos supervised (the erection of the statue).</p>
+            <p>b. Alexandros son of Zenon made this.</p>
+         </div>
+         <div type="commentary">
+            <p>a. Claudia Antonia Tatiane was honoured with at least one other statue: see <ref type="inscription" n="1793" target="120323.xml"/>. In both she  is honoured as a civic benefactress, of a family of civic benefactors, cousin of two members of the Roman senatorial class and herself apparently of the Roman equestrian class since she is <foreign xml:lang="grc">κρατίστη</foreign> (<foreign xml:lang="grc">κράτιστος</foreign> = <term xml:lang="la">egregius</term> being at this date applied to procurators or similarly ranking equestrian officers). The rank may have derived from that of her father or of an unknown husband. She has sometimes been thought the wife of Dometeinos (<ref type="inscription" n="1718" target="020017.xml"/>); but there is nothing in the inscriptions to justify this, and the absence of a title to balance her <term xml:lang="la">egregia</term> is surprising if they were married. Provisionally at any rate we should suppose that if it is right to see her as a high priestess of Asia (and she is crowned on her statue, which it is plausible to take as a pair with his, <ref type="inscription" n="1718" target="020017.xml"/>) he invited her assistance because he was a widower and she was both rich and willing to undertake the function. She may be identical with a homonym who owned a tomb at Ephesos and in 204 wrote a letter inscribed on it (<title>SEG</title> IV.544); but this should not be regarded as certain, since her name is not so distinctive.</p>
+            <p>Tiberius Claudius Kapitoleinos, who was responsible for teherstion of both statues, is attested as a civic official at Aphrodisias in the second to third centuries (see name index). For his son see <ref type="inscription" n="1794" target="120324.xml"/>.</p>
+            <p>b. The sculptor whose signature is on the statue ws no doubt related to the Aphrodisian sculptor Zenon son of Alexandros (E. Löwy, <title>Inschriften griechischer Bildhauer</title> no. 366)</p>
+         </div>
+         <div type="bibliography">
+            <p>a. Published by <bibl>Erim, <title>Archaeology</title> 20, 1967, 22-24</bibl>; by <bibl n="jmr1968">Reynolds, in <title>Belleten Türk Tarih Kurumu</title> 32, 1968, 21-23, no. <citedRange>5</citedRange>
+               </bibl>, whence <bibl n="be">BE <citedRange>1969.541</citedRange>
+               </bibl>; <bibl n="ktejmr1979">Reynolds in Inan-Rosenbaum <title>Porträtplastik</title> 215-216, no. <citedRange>187</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1100</citedRange>
+               </bibl>; <bibl n="seg">SEG <citedRange>1985.1082</citedRange>
+               </bibl>8; <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257169">290</citedRange>
+               </bibl>.</p>
+            <p>b. Published by <bibl>Erim, Archaeology 20, 1967, 22-24</bibl>; by <bibl>Alföldi, Erim, &amp; Inan, Belleten Türk Tarih Kurumu 32, 1968, 8-10</bibl>, no. 5; by <bibl>Inan &amp; Alföldi-Rosenbaum 214, no. <citedRange>187</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1103</citedRange>
+               </bibl>, <bibl n="seg">SEG <citedRange>1982.1082</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257465">585</citedRange>
+               </bibl>; by <bibl n="ktejmr1991">Erim-Reynolds, 'Sculptors' no.<citedRange>2</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1990.925</citedRange>
+               </bibl>. Both texts published, with the statue, by <bibl n="rrrs2006">
+                  <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, no. <citedRange>96</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

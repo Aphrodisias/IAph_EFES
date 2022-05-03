@@ -1,82 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120011" n="iAph1283 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Title</rs> for image of <rs type="textType" reg="imperial">Nero Drusus Augustus Caesar</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>1980</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1980">Reynolds (<date>1980</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-11</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title for image of Nero Drusus Augustus Caesar</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120011</idno>
+            <idno type="IAph2007">iAph120011</idno>
+            <idno type="JMR2004">iAph1283</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <seg cert="low">
+                                 <objectType>Block</objectType> or <objectType>base</objectType>
+                              </seg> (no description)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0054" notAfter="0069" evidence="reign">
+A.D. 54-69
+(<rs type="criteria">reign</rs>)</origDate>
+                  </origin>
+                  <provenance type="found" when="2807">
+                     <rs type="monuList">Walls, north</rs>: in or near the north stretch, near <ref type="inscription" n="1466" target="120032.xml"/> (CIG 2835), <ref type="inscription" n="1774" target="121103.xml"/> (2807), <ref type="inscription" n="1513" target="120007.xml"/> (MAMA 416).</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard papers; publications</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-11" who="cmr">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="description" n="monument">
-<head>Description of Monument</head>
-
-<p><seg cert="low"><rs type="objectType">Block</rs> or <rs type="objectType">base</rs></seg> (no description)</p>
+<ab><lb n="1"/>  <persName type="emperor"><name nymRef="#Νέρων">Νέρων</name>  <name nymRef="#Δροῦσος">Δροῦσος</name>  <lb n="2"/><w lemma="σεβαστός">Σεβαστὸς</w>  <name nymRef="#Καῖσαρ">Καῖσαρ</name></persName>  </ab>
 </div>
-<div type="description" n="text"><head>Description of Text</head>
-<p>No description</p></div><div type="description" n="letters">
-<head>Letters</head>
-<p>No description</p>
-</div><div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0054" notAfter="0069" exact="both">A.D. 54-69</date>
-(<rs type="criteria">reign</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="emperor" full="yes"><name reg="Νέρων">Νέρων</name>  <name reg="Δροῦσος">Δροῦσος</name>  <lb n="2"/><w lemma="σεβαστός">Σεβαστὸς</w>  <name reg="Καῖσαρ">Καῖσαρ</name></persName>  </ab>
-</div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 1,  <foreign lang="grc">ΔΡΥΣΟΣ</foreign> Sherard; <foreign lang="grc">ΔΡΟΥΣΟΣ</foreign> Picenini.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Nero Drusus Augustus Caesar</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The name in the nominative would be a unique example if this inscription was on a statue base; this may perhaps be part of a longer text.</p><p>Boeckh described this as near the 'theatrum', whence Reynolds, loc. cit.; but this is Sherard's term for the Stadium, and it is clear from the associated material that it was found on the in or near the north wall.  This lessens but does not eliminate, the likelihood that this text came from the Sebasteion group.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
- <rs type="found"><rs type="monuList">Walls, north</rs>: in or near the north stretch, near <xref type="inscription" n="1466" href="120032">12.32</xref> (CIG 2835), <xref type="inscription" n="1774" href="121103">12.1103</xref> (2807), <xref type="inscription" n="1513" href="120007">12.7</xref> (MAMA 416).</rs> <rs type="lastLocation">Findspot</rs>
-<rs type="origLocation">Unknown</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard papers; publications</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Sherard (BM Add 10101 f.26) and Picenini (10102.16v, 53v) in 1705. Not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl type="primary" n="CIGII"><author>Boeckh</author>, from Sherard, CIG <biblScope>2740</biblScope></bibl>, whence <bibl n="jmr1980"><author>Reynolds</author>, PCPS 206, 1980, 81-82, no. <biblScope>16</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1980.1244</biblScope></bibl>, <bibl n="be">BullEp <biblScope>1982.355</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257084">205</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="none">
-<head>Photographs</head>
-<p>
-None</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 1,  <foreign xml:lang="grc">ΔΡΥΣΟΣ</foreign> Sherard; <foreign xml:lang="grc">ΔΡΟΥΣΟΣ</foreign> Picenini.</p>
+         </div>
+         <div type="translation">
+            <p>Nero Drusus Augustus Caesar</p>
+         </div>
+         <div type="commentary">
+            <p>The name in the nominative would be a unique example if this inscription was on a statue base; this may perhaps be part of a longer text.</p>
+            <p>Boeckh described this as near the 'theatrum', whence Reynolds, loc. cit.; but this is Sherard's term for the Stadium, and it is clear from the associated material that it was found on the in or near the north wall.  This lessens but does not eliminate, the likelihood that this text came from the Sebasteion group.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="primary" n="CIGII">
+                  <author>Boeckh</author>, from Sherard, CIG <citedRange>2740</citedRange>
+               </bibl>, whence <bibl n="jmr1980">
+                  <author>Reynolds</author>, PCPS 206, 1980, 81-82, no. <citedRange>16</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1980.1244</citedRange>
+               </bibl>, <bibl n="be">BullEp <citedRange>1982.355</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257084">205</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

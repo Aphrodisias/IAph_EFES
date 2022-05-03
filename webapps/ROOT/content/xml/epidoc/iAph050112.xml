@@ -1,74 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050112" n="iAph1214 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Votive</rs> offering to Asklepios by Amias</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-08-12</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change><change><date>2007-01-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Votive offering to Asklepios by Amias</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050112</idno>
+            <idno type="IAph2007">iAph050112</idno>
+            <idno type="JMR2004">iAph1214</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>63.568</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
 
-Rectangular <rs type="material" key="marmor">white marble</rs> <rs type="objectType">panel</rs>/<rs type="objectType">votive relief</rs> with round-headed projection above (<measure type="length" unit="metre" dim="width">0.17</measure> × <measure type="length" unit="metre" dim="height">0.145</measure> × <measure type="length" unit="metre" dim="depth">0.04</measure>).</p></div><div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on one face on the projection with one line impinging on the block below, which carries a relief of <rs type="decoration">two breasts</rs>.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure type="length" unit="metre" dim="height">0.008</measure>; square sigma.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>Perhaps 
-<date notBefore="0101" notAfter="0200" exact="none" cert="low">second century A.D.</date> (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="aphrodisian" full="yes"><name reg="Ἀμιάς">Ἀμια<lb n="2" type="worddiv"/>ς</name></persName>  <w lemma="θεός">θεῷ</w>  <persName type="divine" full="yes"><name reg="Ἀσκλήπιος">Ἀσ<lb n="3" type="worddiv"/>κληπίῳ</name></persName>  <w lemma="εὐχή">εὐ<lb n="4" type="worddiv"/><space extent="1" unit="character" dim="horizontal"/>  χήν</w>    <space extent="1" unit="character" dim="horizontal"/>  </ab>
-</div>
+Rectangular <material key="marmor">white marble</material>
+                              <objectType>panel</objectType>/<objectType>votive relief</objectType> with round-headed projection above (<width unit="metre">0.17</width> × <height unit="metre">0.145</height> × <depth unit="metre">0.04</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on one face on the projection with one line impinging on the block below, which carries a relief of <rs type="decoration">two breasts</rs>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.008</height>; square sigma.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">Perhaps 
+second century A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Hadrianic Baths</rs>: South West sector</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-12" who="cmr">DONE</change>
+         <change when="2007-01-24" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_D_26A.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-
-<div type="translation">
-<head>Translation</head>
-<p>Amias, to the god Asklepios (in payment of) a vow</p>
+<ab><lb n="1"/>  <persName type="attested"><name nymRef="#Ἀμιάς">Ἀμια<lb n="2" break="no"/>ς</name></persName>  <w lemma="θεός">θεῷ</w>  <persName type="divine"><name nymRef="#Ἀσκλήπιος">Ἀσ<lb n="3" break="no"/>κληπίῳ</name></persName>  <w lemma="εὐχή">εὐ<lb n="4" break="no"/><space extent="1" unit="character" dim="horizontal"/>  χήν</w>    <space extent="1" unit="character" dim="horizontal"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of a group of votive offerings dedicated to Asklepios: three reliefs, <xref type="inscription" n="1214" href="050112">5.112</xref> (=63.568), <xref type="inscription" n="1215" href="050117">5.117</xref> (=63.570), <xref type="inscription" n="1216" href="150240">15.240</xref> (=70.551), and a base, <xref type="inscription" n="1224" href="040113">4.113</xref> (=90.26); the three with provenance were found in or near the Baths of Hadrian. We have benefited from comments made by the late Sara Aleshire.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="origLocation">Unknown</rs>
-Found: <rs type="found"><rs type="monuList">Hadrianic Baths</rs>: South West sector</rs>; <rs type="lastLocation">Museum (1977)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1963 (<rs type="invNo">63.568</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_D_26A"><figDesc>Face (1977)</figDesc></figure></p><p>[[66A.2.48, 49; KTE 62/64.65.2, 3]]</p>
-</div></body></text>
+         <div type="translation">
+            <p>Amias, to the god Asklepios (in payment of) a vow</p>
+         </div>
+         <div type="commentary">
+            <p>One of a group of votive offerings dedicated to Asklepios: three reliefs, <ref type="inscription" n="1214" target="050112.xml"/> (=63.568), <ref type="inscription" n="1215" target="050117.xml"/> (=63.570), <ref type="inscription" n="1216" target="150240.xml"/> (=70.551), and a base, <ref type="inscription" n="1224" target="040113.xml"/> (=90.26); the three with provenance were found in or near the Baths of Hadrian. We have benefited from comments made by the late Sara Aleshire.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

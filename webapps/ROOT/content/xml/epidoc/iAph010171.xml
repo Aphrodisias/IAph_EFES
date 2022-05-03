@@ -1,119 +1,181 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010171" n="iAph1875 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Lucius Antonius Karpion Aurelianos, who has established a <rs type="textType">foundation</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Lucius Antonius Karpion Aurelianos, who has established a foundation</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010171</idno>
+            <idno type="IAph2007">iAph010171</idno>
+            <idno type="JMR2004">iAph1875</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Rectangular <material key="marmor">white marble</material>
+                              <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType>, with moulded panels on all four sides in two large joining fragments (together <width unit="metre">0.49</width>  × <height unit="metre">1.125</height>  × <depth unit="metre">0.49</depth>) and one small fragment of ll. 14-16 (<width unit="metre">0.165</width>  × <height unit="metre">0.21</height>  × <depth unit="metre">0.10</depth>);</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> Inscribed on two adjacent faces. Face a, to the left, has broken moulding, and is broken down the left side. Face b is pitted to receive plaster. The moulding on face a survives at the upper edge; the text must therefore have begun on an upper feature. Traces of the plaster which covered the inscriptions when the stone was re-used are still adhering.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Face a: <height unit="metre">0.02</height>; ligatured <foreign xml:lang="grc">ΝΤ</foreign> l.14, <foreign xml:lang="grc">ΗΜ</foreign> l.15, <foreign xml:lang="grc">ΝΗ</foreign> l.22, 23, <foreign xml:lang="grc">ΤΕ</foreign> l.23. Apex on <foreign xml:lang="grc">ΥΙ</foreign>, l.5. Circular stops. Face b: <height unit="metre">0.025</height>; <foreign xml:lang="grc">Π</foreign> with a vertical line through the cross-bar, presumably <foreign xml:lang="grc">ΠΙ</foreign> in ligature, line 3.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering prosopography">Second to third centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>: re-used on the north side of the Byzantine chancel-barrier, third base from east.</provenance>
+                  <provenance type="observed" when="1978">Findspot; small fragment in Museum (1978).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); Deering notebook.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_E_10A.jpg">
+            <desc>a. 1-18 (1978)</desc>
+         </graphic>
+         <graphic url="77_A_24.jpg">
+            <desc>a. 18-26 (1977)</desc>
+         </graphic>
+         <graphic url="JMR_1_1968_076.jpg">
+            <desc>a. 1-26 (1968)</desc>
+         </graphic>
+         <graphic url="JMR_1_1968_067.jpg">
+            <desc>a. 1-26, with face b (1968)</desc>
+         </graphic>
+         <graphic url="77_BB_26.jpg">
+            <desc>a. fragment (1977)</desc>
+         </graphic>
+         <graphic url="76_J_24A.jpg">
+            <desc>Face b. (1976)</desc>
+         </graphic>
+         <graphic url="Deering_05v.jpg">
+            <desc>Face b: Deering notebook 5v</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Rectangular <rs type="material" key="marmor">white marble</rs> <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs>, with moulded panels on all four sides in two large joining fragments (together <measure type="length" unit="metre" dim="width">0.49</measure>  × <measure type="length" unit="metre" dim="height">1.125</measure>  × <measure type="length" unit="metre" dim="depth">0.49</measure>) and one small fragment of ll. 14-16 (<measure type="length" unit="metre" dim="width">0.165</measure>  × <measure type="length" unit="metre" dim="height">0.21</measure>  × <measure type="length" unit="metre" dim="depth">0.10</measure>);</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> Inscribed on two adjacent faces. Face a, to the left, has broken moulding, and is broken down the left side. Face b is pitted to receive plaster. The moulding on face a survives at the upper edge; the text must therefore have begun on an upper feature. Traces of the plaster which covered the inscriptions when the stone was re-used are still adhering.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Face a: <measure type="length" unit="metre" dim="height">0.02</measure>; ligatured <foreign lang="grc">ΝΤ</foreign> l.14, <foreign lang="grc">ΗΜ</foreign> l.15, <foreign lang="grc">ΝΗ</foreign> l.22, 23, <foreign lang="grc">ΤΕ</foreign> l.23. Apex on <foreign lang="grc">ΥΙ</foreign>, l.5. Circular stops. Face b: <measure dim="height" type="length" unit="metre">0.025</measure>; <foreign lang="grc">Π</foreign> with a vertical line through the cross-bar, presumably <foreign lang="grc">ΠΙ</foreign> in ligature, line 3.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">prosopography</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
 
-<div type="textpart_section" n="a"><ab><lb n="0"/>
-<supplied reason="lost"><note>e.g.</note> <w lemma="ὅς">ἥ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w></supplied>
+<div n="a" type="textpart" subtype="section"><ab><lb n="0"/>
+<supplied reason="lost"><note xml:lang=""/> <w lemma="ὅς">ἥ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w></supplied>
 <lb n="1"/><w lemma="τιμάω">ἐτείμησαν</w> <w lemma="ὁ">ταῖς</w> 
 <lb n="2"/><w lemma="καλός">καλλίσταις</w> <w lemma="καί">καὶ</w> 
 <lb n="3"/><w lemma="μέγας">μεγίσταις</w> <w lemma="τιμή">τει
-<lb n="4" type="worddiv"/>μαις</w> <persName type="aphrodisian"><name reg="Λούκιος" type="praenomen">Λούκιον</name> <name reg="Ἀντώνιος">Ἀν
-<lb n="5" type="worddiv"/>τώνιον</name> <persName type="aphrodisian"><name reg="Ἑρμῆς">Ἑρμοῦ</name></persName> <w lemma="υἱός">υἱ
-<lb n="6" type="worddiv"/>ὸν</w> <name reg="Καρπίων">Καρπιώνα</name> <name reg="Αὐρηλιανός">Αὐ
-<lb n="7" type="worddiv"/><supplied reason="lost">ρ</supplied>ηλιανὸν</name></persName> <w lemma="ἀνήρ">ἄνδρα</w> 
+<lb n="4" break="no"/>μαις</w> <persName type="attested"><name nymRef="#Λούκιος">Λούκιον</name> <name nymRef="#Ἀντώνιος">Ἀν
+<lb n="5" break="no"/>τώνιον</name> <persName type="attested"><name nymRef="#Ἑρμῆς">Ἑρμοῦ</name></persName> <w lemma="υἱός">υἱ
+<lb n="6" break="no"/>ὸν</w> <name nymRef="#Καρπίων">Καρπιώνα</name> <name nymRef="#Αὐρηλιανός">Αὐ
+<lb n="7" break="no"/><supplied reason="lost">ρ</supplied>ηλιανὸν</name></persName> <w lemma="ἀνήρ">ἄνδρα</w> 
 <lb n="8"/><w lemma="ἀπό"><supplied reason="lost">ἀ</supplied><unclear reason="damage">π</unclear>ὸ</w> <w lemma="πρόγονος">προγόνων</w> <w lemma="εὐγενής">εὐ
-<lb n="9" type="worddiv"/><supplied reason="lost">γε</supplied>νῶν</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργός">λειτουρ
-<lb n="10" type="worddiv"/><supplied reason="lost">γῶ</supplied>ν</w>  <g type="stop"/>  <w lemma="λειτουργέω">λειτουργήσαν
-<lb n="11" type="worddiv"/><supplied reason="lost">τα</supplied></w> <w lemma="δέ"><unclear reason="damage">δ</unclear>ὲ</w> <w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτὸν</w> <w lemma="πᾶς">πα
-<lb n="12" type="worddiv"/><supplied reason="lost">σα</supplied>ς</w> <w lemma="ὁ">τὰς</w> <w lemma="κατά">κατὰ</w> <w lemma="δυναμίς">δυνα
-<lb n="13" type="worddiv"/><supplied reason="lost">μιν</supplied></w> <w lemma="ἀρχή">ἀρχάς</w> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λι
-<lb n="14" type="worddiv"/><supplied reason="lost">το</supplied>υ<unclear reason="damage">ρ</unclear>γίας</w> <w lemma="ζάω">ζήσαντα</w> 
+<lb n="9" break="no"/><supplied reason="lost">γε</supplied>νῶν</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργός">λειτουρ
+<lb n="10" break="no"/><supplied reason="lost">γῶ</supplied>ν</w>  <g ref="#stop"/>  <w lemma="λειτουργέω">λειτουργήσαν
+<lb n="11" break="no"/><supplied reason="lost">τα</supplied></w> <w lemma="δέ"><unclear reason="damage">δ</unclear>ὲ</w> <w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτὸν</w> <w lemma="πᾶς">πα
+<lb n="12" break="no"/><supplied reason="lost">σα</supplied>ς</w> <w lemma="ὁ">τὰς</w> <w lemma="κατά">κατὰ</w> <w lemma="δυναμίς">δυνα
+<lb n="13" break="no"/><supplied reason="lost">μιν</supplied></w> <w lemma="ἀρχή">ἀρχάς</w> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λι
+<lb n="14" break="no"/><supplied reason="lost">το</supplied>υ<unclear reason="damage">ρ</unclear>γίας</w> <w lemma="ζάω">ζήσαντα</w> 
 <lb n="15"/><w lemma="κόσμιος"><supplied reason="lost">κο</supplied>σμίως</w> <w lemma="καί">καὶ</w> <w lemma="αἰδήμων">αἰδημό
-<lb n="16" type="worddiv"/><supplied reason="lost">ν</supplied>ως</w>  <g type="stop"/> <w lemma="ἀνατίθημι">ἀναθέντα</w> <w lemma="δέ">δὲ</w> 
+<lb n="16" break="no"/><supplied reason="lost">ν</supplied>ως</w>  <g ref="#stop"/> <w lemma="ἀνατίθημι">ἀναθέντα</w> <w lemma="δέ">δὲ</w> 
 <lb n="17"/><w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w>  <w lemma="ἱερός"><supplied reason="lost">ἱερ</supplied>ωτάτῃ</w> <w lemma="βουλή">βουλῇ</w> 
 <lb n="18"/><w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="αἰώνιος"><supplied reason="lost">αἰών</supplied>ιον</w> <w lemma="κλῆρος">κλῆρον</w> 
 <lb n="19"/><w lemma="ὁ"><supplied reason="lost">τὰ</supplied></w>  <w lemma="δηλόω"><supplied reason="lost">δη</supplied><unclear reason="damage">λ</unclear>ούμενα</w> <w lemma="διά">διὰ</w> 
 <lb n="20"/><w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w> <w lemma="γίγνομαι"><unclear reason="damage">γ</unclear>εγονυίας</w> <w lemma="ὑπό">ὑπὸ</w> 
 <lb n="21"/><w lemma="αὐτός"><supplied reason="lost">αὐτ</supplied>ου</w> <w lemma="ἀνάθεσις">ἀναθέσεως</w> 
 <lb n="22"/><w lemma="γίγνομαι"><supplied reason="lost">γε</supplied>νομένης</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στε
- <lb n="23" type="worddiv"/><supplied reason="lost">φα</supplied>νηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="6">Ϛ</num> <persName type="aphrodisian"><name reg="Λούκιος" type="praenomen">Λου
-<lb n="24" type="worddiv"/><supplied reason="lost">κίο</supplied>υ</name> <name reg="Ἀντώνιος">Ἀντωνίου</name> <name reg="Δομετῖνος">Δομε
-<lb n="25" type="worddiv"/><supplied reason="lost">τε</supplied>ίνου</name> <name reg="Διογένης">Διογένους </name></persName>
-<lb n="26"/> <supplied reason="lost" cert="low"><g type="scroll"/></supplied><w lemma="μείς"><unclear reason="damage">μ</unclear>ηνὸς</w> <w lemma="Δεῖος">Δείου</w> <g type="scroll"/></ab></div>
+ <lb n="23" break="no"/><supplied reason="lost">φα</supplied>νηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="6">Ϛ</num> <persName type="attested"><name nymRef="#Λούκιος">Λου
+<lb n="24" break="no"/><supplied reason="lost">κίο</supplied>υ</name> <name nymRef="#Ἀντώνιος">Ἀντωνίου</name> <name nymRef="#Δομετῖνος">Δομε
+<lb n="25" break="no"/><supplied reason="lost">τε</supplied>ίνου</name> <name nymRef="#Διογένης">Διογένους </name></persName>
+<lb n="26"/> <supplied reason="lost" cert="low"><g ref="#scroll"/></supplied><w lemma="μείς"><unclear reason="damage">μ</unclear>ηνὸς</w> <w lemma="Δεῖος">Δείου</w> <g ref="#scroll"/></ab></div>
 
-<div type="textpart_section" n="b"><ab>
+<div n="b" type="textpart" subtype="section"><ab>
 <lb n="1"/> <w lemma="προθεσμία">προθεσμία</w> 
 <lb n="2"/> <w lemma="κλῆρος">κλήρου</w> <w lemma="μείς">μηνὶ</w> 
 <lb n="3"/><num value="10">ι</num> <space extent="2" unit="character" dim="horizontal"/> <num value="10">ι</num> <orig n="unresolved"><hi rend="ligature">πι</hi></orig> 
 <lb n="3a"/><space extent="1" unit="line" dim="horizontal"/></ab></div>
 </div>
-
-<div type="translation">
-<head>Translation</head>
-<p>a: [? The Council and the People] honoured with the finest and greatest honours Lucius Antonius Karpion Aureleianos, son of Hermas, a man whose ancestors were well-born and liturgists. He himself also undertook all the magistracies and liturgies ?that he could, and lived in a well-regulated and modest manner. Moreover he dedicated to the most sacred Council for the purpose of a permanent ?distribution the sum indicated in his act of dedication which was made in the sixth stephanephorate of Lucius Antomius Dometinos Diogenes, in the month Deios.</p><p>b: Announcement of the lottery in the tenth month, 10 (denarii), to 80 people?</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The parallel with <xref type="inscription" n="428" href="110110">11.110</xref> suggests that the numbers in b.3 are to be read as numerals, to give the month, the size of the lot, and the number of the recipients. This would give a total of 800 denarii to be handed out.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Temple/Church</rs>: re-used on the north side of the Byzantine chancel-barrier, third base from east.</rs>
-<rs type="lastLocation">Findspot; small fragment in Museum (1978).</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); Deering notebook.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Deering saw and copied side b (5v, no. 22); complete text, on both sides, recorded by the NYU expedition (<rs type="siteNo">Temple 3</rs>; SBI <rs type="sbi">90</rs>).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="leake1843">Leake, from Deering,  <biblScope>8</biblScope></bibl>, whence <bibl n="LBW">LBW <biblScope>1628a</biblScope></bibl> whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257835">948</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_E_10A"><figDesc>a. 1-18 (1978)</figDesc></figure> <figure href="77_A_24"><figDesc>a. 18-26 (1977)</figDesc></figure><figure href="JMR_1_1968_076"><figDesc>a. 1-26 (1968)</figDesc></figure><figure href="JMR_1_1968_067"><figDesc>a. 1-26, with face b (1968)</figDesc></figure> <figure href="77_BB_26"><figDesc>a. fragment (1977)</figDesc></figure> <figure href="76_J_24A"><figDesc>Face b. (1976)</figDesc></figure></p>
-<p>a: Together: JMR.1.66.67, 76;</p></div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p><figure href="Deering_05v"><figDesc>Face b: Deering notebook 5v</figDesc></figure> </p>
-</div></body></text>
+         <div type="translation">
+            <p>a: [? The Council and the People] honoured with the finest and greatest honours Lucius Antonius Karpion Aureleianos, son of Hermas, a man whose ancestors were well-born and liturgists. He himself also undertook all the magistracies and liturgies ?that he could, and lived in a well-regulated and modest manner. Moreover he dedicated to the most sacred Council for the purpose of a permanent ?distribution the sum indicated in his act of dedication which was made in the sixth stephanephorate of Lucius Antomius Dometinos Diogenes, in the month Deios.</p>
+            <p>b: Announcement of the lottery in the tenth month, 10 (denarii), to 80 people?</p>
+         </div>
+         <div type="commentary">
+            <p>The parallel with <ref type="inscription" n="428" target="110110.xml"/> suggests that the numbers in b.3 are to be read as numerals, to give the month, the size of the lot, and the number of the recipients. This would give a total of 800 denarii to be handed out.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="leake1843">Leake, from Deering,  <citedRange>8</citedRange>
+               </bibl>, whence <bibl n="LBW">LBW <citedRange>1628a</citedRange>
+               </bibl> whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257835">948</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

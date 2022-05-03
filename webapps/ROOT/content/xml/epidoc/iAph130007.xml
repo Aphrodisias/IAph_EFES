@@ -1,98 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130007" n="iAph0363 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for Pyrrhos Papias son of Zenon</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Posthumous honours for Pyrrhos Papias son of Zenon</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130007</idno>
+            <idno type="IAph2007">iAph130007</idno>
+            <idno type="JMR2004">iAph0363</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Piece from the right side of a  <material key="marmor">marble</material> block (<seg cert="low">
+                                 <objectType>statue base</objectType>
+                              </seg>), no measurements.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> Inscribed on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.028</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown, probably <rs type="monuList">Necropolis, North</rs>
+                     </origPlace>
+                     <origDate notBefore="0168"
+                               notAfter="0233"
+                               precision="medium"
+                               evidence="lettering nomenclature">Probably late second to early third century A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>, family history)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North-east</rs>: 'n.e. wall upside down' (Sherard); 'Rempart. Mur du cirque (stade)' (Gaudin); seen in 1973 in the north wall north of the <rs type="monuList">Stadium</rs> with <ref type="inscription" n="1015" target="130006.xml"/>
+                  </provenance>
+                  <provenance type="observed" when="1973">Findspot (1973)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); Gaudin's squeeze; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-07" who="#GB">DONE</change>
+         <change when="2007-01-11" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-06-22" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-03-07</date><respStmt><name>Gabriel Bodard</name></respStmt><item>DONE</item></change><change><date>2007-01-11</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date>2005-06-22</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Piece from the right side of a  <rs type="material" key="marmor">marble</rs> block (<seg cert="low"><rs type="objectType">statue base</rs></seg>), no measurements.</p>
+ <ab><lb n="1"/><supplied reason="lost"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w></supplied>  <w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δ<supplied reason="lost">ῆ</supplied>  <lb n="2" break="no"/><supplied reason="lost">μος</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w>  <w lemma="γερουσία">γερου<lb n="3" break="no"/><supplied reason="lost">σία</supplied></w>  <w lemma="τιμάω"><supplied reason="lost">ἐτει</supplied>μησαν</w>  <lb n="4"/><w lemma="ὁ"><supplied reason="lost">ταῖς</supplied></w>  <w lemma="πρῶτος"><supplied reason="lost">πρώ</supplied>ταις</w> <w lemma="καί">καὶ</w> <lb n="5"/><w lemma="μέγας"><supplied reason="lost">μεγίστ</supplied>αις</w>  <w lemma="τιμή">τει<lb n="6" break="no"/><supplied reason="lost">μαῖς</supplied></w>  <persName nymRef="#Πύρρος  Ζήνωνος  Πύρρου  Παπίας" type="attested"><name nymRef="#Πύρρος"><supplied reason="lost">Πυ</supplied>ρρον</name>  <persName type="attested"><name nymRef="#Ζήνων">Ζή<lb n="7" break="no"/><supplied reason="lost">νωνος</supplied></name>  <w lemma="ὁ"><unclear reason="damage">τ</unclear>οῦ</w>  <persName type="attested"><name nymRef="#Πύρρος">Πύρ<lb n="8" break="no"/><supplied reason="lost">ρου</supplied></name>  <name nymRef="#Παπίας"><supplied reason="lost">Παπί</supplied>αν</name></persName></persName></persName>  <w lemma="φιλοπολίτης">φιλο<lb n="9" break="no"/><supplied reason="lost" cert="low">πολίτη</supplied>ν</w> <w lemma="γένος">γένους</w> <lb n="10"/><w lemma="πρῶτος"><supplied reason="lost">πρώτου</supplied></w> <w lemma="καί">καὶ</w> <w lemma="ἔνδοξος">ἐνδό<lb n="11" break="no"/><supplied reason="lost">ξου</supplied></w>  <w lemma="τελευτάω"><supplied reason="lost">τελ</supplied>ευτήσαν<lb n="12" break="no"/><supplied reason="lost">τα</supplied></w>  <gap reason="lost" unit="character" precision="low" quantity="7"/>  <w lemma="ἡλικία">ἡλικι<lb n="12a" break="no"/><gap reason="lost" unit="line" extent="unknown"/></w></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> Inscribed on one face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.028</measure></p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>Probably <date notAfter="0233" notBefore="0168" exact="none">late second to early third century A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>, family history)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
- <ab><lb n="1"/><supplied reason="lost"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w></supplied>  <w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δ<supplied reason="lost">ῆ</supplied>  <lb n="2" type="worddiv"/><supplied reason="lost">μος</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w>  <w lemma="γερουσία">γερου<lb n="3" type="worddiv"/><supplied reason="lost">σία</supplied></w>  <w lemma="τιμάω"><supplied reason="lost">ἐτει</supplied>μησαν</w>  <lb n="4"/><w lemma="ὁ"><supplied reason="lost">ταῖς</supplied></w>  <w lemma="πρῶτος"><supplied reason="lost">πρώ</supplied>ταις</w> <w lemma="καί">καὶ</w> <lb n="5"/><w lemma="μέγας"><supplied reason="lost">μεγίστ</supplied>αις</w>  <w lemma="τιμή">τει<lb n="6" type="worddiv"/><supplied reason="lost">μαῖς</supplied></w>  <persName reg="Πύρρος  Ζήνωνος  Πύρρου  Παπίας" full="yes" type="aphrodisian"><name reg="Πύρρος"><supplied reason="lost">Πυ</supplied>ρρον</name>  <persName type="aphrodisian"><name reg="Ζήνων">Ζή<lb n="7" type="worddiv"/><supplied reason="lost">νωνος</supplied></name>  <w lemma="ὁ"><unclear reason="damage">τ</unclear>οῦ</w>  <persName type="aphrodisian"><name reg="Πύρρος">Πύρ<lb n="8" type="worddiv"/><supplied reason="lost">ρου</supplied></name>  <name reg="Παπίας"><supplied reason="lost">Παπί</supplied>αν</name></persName></persName></persName>  <w lemma="φιλοπολίτης">φιλο<lb n="9" type="worddiv"/><supplied reason="lost" cert="low">πολίτη</supplied>ν</w> <w lemma="γένος">γένους</w> <lb n="10"/><w lemma="πρῶτος"><supplied reason="lost">πρώτου</supplied></w> <w lemma="καί">καὶ</w> <w lemma="ἔνδοξος">ἐνδό<lb n="11" type="worddiv"/><supplied reason="lost">ξου</supplied></w>  <w lemma="τελευτάω"><supplied reason="lost">τελ</supplied>ευτήσαν<lb n="12" type="worddiv"/><supplied reason="lost">τα</supplied></w>  <gap extent="7" dim="internal" reason="lost" unit="character" precision="circa"/>  <w lemma="ἡλικία">ἡλικι<lb n="12a" type="worddiv"/><gap extent="unknown" dim="bottom" reason="lost" unit="line"/></w></ab>
-</div>
-
-
-
-<div type="translation">
-<head>Translation</head>
-<p>The Council and the People and the Gerousia honoured with the first and greatest honours  Pyrrhos Papias, son of Zenon the son of Pyrrhos, lover <supplied reason="lost" cert="low">of his fellow citizens</supplied>, of a first and honoured family, who died  aged <gap reason="lost" dim="bottom"/></p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>Members of this family are also honoured in <xref type="inscription" n="1015" href="130006">13.6</xref> (=MAMA 481+Reinach 74) and <xref type="inscription" n="1016" href="130005">13.5</xref> (=MAMA 482 (=CIG 2775)) (see also <xref type="inscription" n="1466" href="120032">12.32</xref>). The family relationships are not at first sight quite clear, but it seems to be the case that the Pyrrhos <supplied reason="lost">Papi</supplied>as of this text is father to the Pyrrhos Papias son of Pyrrhos son of Zenon the son of Pyrrhos of <xref type="inscription" n="1015" href="130006">13.6</xref>, and Demetrios son of Pyrrhos Papias the son of Zenon the son of Pyrrhos the son of Zenon of <xref type="inscription" n="1016" href="130005">13.5</xref>. From the longer texts for the sons we learn (probably) the name of this man's wife (<xref type="inscription" n="1015" href="130006">13.6</xref>) and the fact that he had provided in his will that, in default of a living heir, his property was bequeathed to the People to fund the expensive offices of <foreign lang="grc-Latn">gymasiarch</foreign> and <foreign lang="grc-Latn">stephanephorus</foreign>, possibly also for other purposes (see commentaries on those texts).</p><p>The date is surely earlier than the decree of Caracalla on Citizenship since no Roman citizen name appears in these three texts. While the letter-forms of all three texts suggest a date not earlier than the second half of the second century A.D., in <xref type="inscription" n="1466" href="120032">12.32</xref> b (=CIG 2835) Demetrios figures as <foreign lang="grc-Latn">stephanephorus</foreign> in a funerary text in which the deceased are M. Aurelii, quite possibly, therefore, after that decree; but it is likely to be the case that this is a <foreign lang="la">post-mortem</foreign> stephanephorate conferred in gratitude for the wills of his father and brother, and possibly also his own.</p><p>The close similarity of the terms in the inscriptions of the two brothers may suggest that their deaths were fairly close together, and one is bound to wonder whether they could have been victims of the Antonine plague.</p><p>It was standard practice in the city to refer when possible to the merits of an honorand's family, as here. The family of Pyrrhos was clearly one which  stood high in public esteem and had performed expensive public services (is it perhaps to stress the expenditure that liturgies but not offices are mentioned?); but it was not one of what seems to be the highest ranking in the city, i.e. one descended from the first founders (see <title level="m">A&amp;R</title>, p. ...).</p><p>NB All three stones were found re-used in close proximity in, or fallen from, the city walls north of the Stadium. This strongly suggests that their original locations were close together—as would very obviously be the case if all came from a single family tomb.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p>Found: <rs type="found"><rs type="monuList">Walls, North-east</rs>: 'n.e. wall upside down' (Sherard); 'Rempart. Mur du cirque (stade)' (Gaudin); seen in 1973 in the north wall north of the <rs type="monuList">Stadium</rs> with <xref type="inscription" n="1015" href="130006">13.6</xref></rs>. Original location: <rs type="origLocation">Unknown, probably <rs type="monuList">Necropolis, North</rs></rs> Last recorded: <rs type="lastLocation">Findspot (1973)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded  by Gaudin;  by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="reinach" type="primary"><author>Reinach</author>, from Gaudin's squeeze, <title level="j">REG</title> 19, 1906, 141, no. <biblScope>73g</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257410">530</biblScope>
-</bibl>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); Gaudin's squeeze; publications.</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p>Reinach?  Gaudin's squeeze?</p></div></body>
-</text>
-
+         <div type="translation">
+            <p>The Council and the People and the Gerousia honoured with the first and greatest honours  Pyrrhos Papias, son of Zenon the son of Pyrrhos, lover <supplied reason="lost" cert="low">of his fellow citizens</supplied>, of a first and honoured family, who died  aged <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>Members of this family are also honoured in <ref type="inscription" n="1015" target="130006.xml"/> (=MAMA 481+Reinach 74) and <ref type="inscription" n="1016" target="130005.xml"/> (=MAMA 482 (=CIG 2775)) (see also <ref type="inscription" n="1466" target="120032.xml"/>). The family relationships are not at first sight quite clear, but it seems to be the case that the Pyrrhos <supplied reason="lost">Papi</supplied>as of this text is father to the Pyrrhos Papias son of Pyrrhos son of Zenon the son of Pyrrhos of <ref type="inscription" n="1015" target="130006.xml"/>, and Demetrios son of Pyrrhos Papias the son of Zenon the son of Pyrrhos the son of Zenon of <ref type="inscription" n="1016" target="130005.xml"/>. From the longer texts for the sons we learn (probably) the name of this man's wife (<ref type="inscription" n="1015" target="130006.xml"/>) and the fact that he had provided in his will that, in default of a living heir, his property was bequeathed to the People to fund the expensive offices of <foreign xml:lang="grc-Latn">gymasiarch</foreign> and <foreign xml:lang="grc-Latn">stephanephorus</foreign>, possibly also for other purposes (see commentaries on those texts).</p>
+            <p>The date is surely earlier than the decree of Caracalla on Citizenship since no Roman citizen name appears in these three texts. While the letter-forms of all three texts suggest a date not earlier than the second half of the second century A.D., in <ref type="inscription" n="1466" target="120032.xml"/> b (=CIG 2835) Demetrios figures as <foreign xml:lang="grc-Latn">stephanephorus</foreign> in a funerary text in which the deceased are M. Aurelii, quite possibly, therefore, after that decree; but it is likely to be the case that this is a <foreign xml:lang="la">post-mortem</foreign> stephanephorate conferred in gratitude for the wills of his father and brother, and possibly also his own.</p>
+            <p>The close similarity of the terms in the inscriptions of the two brothers may suggest that their deaths were fairly close together, and one is bound to wonder whether they could have been victims of the Antonine plague.</p>
+            <p>It was standard practice in the city to refer when possible to the merits of an honorand's family, as here. The family of Pyrrhos was clearly one which  stood high in public esteem and had performed expensive public services (is it perhaps to stress the expenditure that liturgies but not offices are mentioned?); but it was not one of what seems to be the highest ranking in the city, i.e. one descended from the first founders (see <title level="m">A&amp;R</title>, p. ...).</p>
+            <p>NB All three stones were found re-used in close proximity in, or fallen from, the city walls north of the Stadium. This strongly suggests that their original locations were close together—as would very obviously be the case if all came from a single family tomb.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="reinach" type="primary">
+                  <author>Reinach</author>, from Gaudin's squeeze, <title level="j">REG</title> 19, 1906, 141, no. <citedRange>73g</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257410">530</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

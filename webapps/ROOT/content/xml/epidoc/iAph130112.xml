@@ -1,86 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130112" n="iAph1580 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for M. Aur. Polychronios Charmides</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">sarcophagus</rs> <measure type="length" unit="metre" dim="width">2.12</measure>  × <measure type="length" unit="metre" dim="height">0.94</measure>  × <measure type="length" unit="metre" dim="depth">0.94</measure> with fluted front and sides, plain back. There is a central tabella on the front, inscribed on the upper moulding (ll. 1-2) and in the panel.
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for M. Aur. Polychronios Charmides</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130112</idno>
+            <idno type="IAph2007">iAph130112</idno>
+            <idno type="JMR2004">iAph1580</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>sarcophagus</objectType>
+                              <width unit="metre">2.12</width>  × <height unit="metre">0.94</height>  × <depth unit="metre">0.94</depth> with fluted front and sides, plain back. There is a central tabella on the front, inscribed on the upper moulding (ll. 1-2) and in the panel.
 </p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.0225-0.0275</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0212" notAfter="0250">Shortly after 212</date>
- (<rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
- <ab><lb n="1"/>  <w lemma="οἰνοπέδη"><supplied reason="lost">οἰν</supplied>οπ<unclear reason="damage">έ</unclear>δην</w> <w lemma="ὠνέομαι">ὠνή<unclear reason="damage">σατο</unclear></w> <w lemma="καινός">κα<unclear reason="damage">ι</unclear>νὰ</w> <w lemma="κενός">κ<unclear reason="damage">εν</unclear>ὰ</w> <w lemma="ἀνένταφος">ἀν<unclear reason="damage">έντ</unclear>αφα</w> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μᾶρ</abbr><supplied reason="abbreviation">κος</supplied></expan></name> <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ήλιος</supplied></expan></name> <name reg="Πολυχρόνιος">Πολυχρόνιος</name> <name reg="Χαρμίδης">Χαρμίδης</name></persName> <lb n="2"/> <w lemma="πρότερος">πρότερον</w> <persName type="aphrodisian"><name reg="Πολυχρόνιος">Πολυχρόνιος</name> <persName type="aphrodisian"><name reg="Τατιανός">Τατιανοῦ</name> <w lemma="τρίς">τρὶς</w> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Χαρμίδης">Χαρμίδου</name></persName></persName></persName> <w lemma="παρά">παρὰ</w> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μάρ</abbr><supplied reason="abbreviation">κου</supplied></expan></name> <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name> <name reg="Κάρπος">Κάρπου</name> <name reg="Περείτας">Περείτου</name></persName> <lb n="3"/> <w lemma="ἐπί">ἐπὶ</w> <persName type="aphrodisian"><name reg="Ἀριστοκλῆς">Ἀριστοκλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Χαιρέας" type="">Χαιρέου</name></persName></persName> <w lemma="εἰς">εἰς</w> <w lemma="ὅς">ἣν</w> <w lemma="σορός">σορὸν</w> <lb n="4"/> <w lemma="κηδεύω">κηδευθήσονται</w> <w lemma="αὐτός">αὐτός</w> <w lemma="τε">τε</w> <persName type="aphrodisian"><name reg="Πολυχρόνιος">Πο<lb n="5" type="worddiv"/>λυχρόνιος</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Αὐρηλία"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλία</supplied></expan></name> <name reg="Μελτίνη">Μελτίνη</name></persName> <w lemma="ὁ">ἡ</w> <lb n="6"/> <w lemma="γυνή">γυνὴ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ὁ">ἡ</w> <w lemma="πρότερος">πρότερον</w> <persName type="aphrodisian"><name reg="Μελτίνη">Μελ<lb n="7" type="worddiv"/>τίνη</name> <persName type="aphrodisian"><name reg="Ἀντίοχος">Ἀντιόχου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name></persName></persName></persName> <lb n="8"/> <w lemma="ἐάν">ἐὰν</w> <w lemma="μένω">μείνῃ</w> <w lemma="γυνή">γυνὴ</w> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Πολυχρόνιος">Πολυχρο<lb n="9" type="worddiv"/>νίου</name></persName> <w lemma="καί">καὶ</w> <w lemma="ἐάν">ἐὰν</w> <w lemma="γίγνομαι">γένηται</w> <w lemma="ὁ">τῷ</w> <persName type="aphrodisian"><name reg="Πολυχρόνιος">Πο<lb n="10" type="worddiv"/>λυχρονίῳ</name></persName> <w lemma="ἀρρενικός">ἀρρενικὸν</w> <w lemma="τέκνον">τέκνον</w> <lb n="11"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Αὐρηλία"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλία</supplied></expan></name> <name reg="Ζωσίμη">Ζωσίμη</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="πρότερος">πρότερον</w> <lb n="12"/> <persName type="aphrodisian"><name reg="Ζωσίμη">Ζωσίμη</name> <persName type="aphrodisian"><name reg="Ἀπολλώνιος ">Ἀπολλωνίου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀρχέλαος">Ἀρ<lb n="13" type="worddiv"/>χελάου</name></persName></persName></persName> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="ἕτερος">ἕτερος</w> <lb n="14"/> <w lemma="ἐνθάπτω">ἐνταφήσεται</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἐάν">ἐὰν</w> <lb n="15"/> <w lemma="δέ">δέ</w> <w lemma="τις">τις</w> <w lemma="ἕτερος">ἕτερον</w> <w lemma="σωματεῖον">σωμάτειον</w> <w lemma="ἐπιχειρέω">ἐπιχειρήσῃ</w> <lb n="16"/> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἀποτίνω">ἀποτείσει</w> <w lemma="θεά">θεᾷ</w> <persName type="divine"><name reg="Ἀφροδίτη">Ἀφροδείτῃ</name></persName> <w lemma="καί">καὶ</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἱερός">ἱερώτατον</w> <w lemma="ταμεῖον">ταμεῖον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="6000">Ϛ</num> <w lemma="ἐν">ἐν</w> <lb n="17"/> <w lemma="δέ">δὲ</w> <w lemma="ὁ">ταῖς</w> <w lemma="εἰσώστη"><supplied reason="lost">εἰσώ</supplied>σταις</w> <w lemma="θάπτω">ταφήσονται</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <w lemma="βούλομαι">βου<supplied reason="lost">λη</supplied>θῇ</w> <w lemma="ἤ">ἢ</w> <w lemma="διατάσσω">διατάξεται</w> <persName type="aphrodisian"><name reg="Πολυχρόνιος">Πολυχρόνιος</name></persName> <w lemma="ἤ">ἢ</w> <w lemma="κληρονόμος">κληρονόμος</w> <w lemma="ἤ">ἢ</w> <space extent="3" unit="character" dim="horizontal"/>  </ab>
-</div>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.0225-0.0275</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Necropolis, North-east</rs>
+                     </origPlace>
+                     <origDate notBefore="0212" notAfter="0250" evidence="nomenclature">
+Shortly after 212
+ (<rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east</rs>: in a field south of Eymir, south of the Karaçasu/Tabai road, with <ref type="inscription" n="1487" target="130147.xml"/>, <ref type="inscription" n="1503" target="130153.xml"/>  (=MAMA 553, 586)</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds);  publication.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_K_32A.jpg">
+            <desc>View (1977)</desc>
+         </graphic>
+         <graphic url="77_K_33A.jpg">
+            <desc>Detail (1977)</desc>
+         </graphic>
+         <graphic url="77_K_34A.jpg">
+            <desc>Detail (1977)</desc>
+         </graphic>
+         <graphic url="K_V_04.jpg">
+            <desc>Kubitschek notebook V, 4</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
+ <ab><lb n="1"/>  <w lemma="οἰνοπέδη"><supplied reason="lost">οἰν</supplied>οπ<unclear reason="damage">έ</unclear>δην</w> <w lemma="ὠνέομαι">ὠνή<unclear reason="damage">σατο</unclear></w> <w lemma="καινός">κα<unclear reason="damage">ι</unclear>νὰ</w> <w lemma="κενός">κ<unclear reason="damage">εν</unclear>ὰ</w> <w lemma="ἀνένταφος">ἀν<unclear reason="damage">έντ</unclear>αφα</w> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μᾶρ</abbr><ex>κος</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιος</ex></expan></name> <name nymRef="#Πολυχρόνιος">Πολυχρόνιος</name> <name nymRef="#Χαρμίδης">Χαρμίδης</name></persName> <lb n="2"/> <w lemma="πρότερος">πρότερον</w> <persName type="attested"><name nymRef="#Πολυχρόνιος">Πολυχρόνιος</name> <persName type="attested"><name nymRef="#Τατιανός">Τατιανοῦ</name> <w lemma="τρίς">τρὶς</w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Χαρμίδης">Χαρμίδου</name></persName></persName></persName> <w lemma="παρά">παρὰ</w> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μάρ</abbr><ex>κου</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name> <name nymRef="#Κάρπος">Κάρπου</name> <name nymRef="#Περείτας">Περείτου</name></persName> <lb n="3"/> <w lemma="ἐπί">ἐπὶ</w> <persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀριστοκλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Χαιρέας">Χαιρέου</name></persName></persName> <w lemma="εἰς">εἰς</w> <w lemma="ὅς">ἣν</w> <w lemma="σορός">σορὸν</w> <lb n="4"/> <w lemma="κηδεύω">κηδευθήσονται</w> <w lemma="αὐτός">αὐτός</w> <w lemma="τε">τε</w> <persName type="attested"><name nymRef="#Πολυχρόνιος">Πο<lb n="5" break="no"/>λυχρόνιος</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Αὐρηλία"><expan><abbr>Αὐρ</abbr><ex>ηλία</ex></expan></name> <name nymRef="#Μελτίνη">Μελτίνη</name></persName> <w lemma="ὁ">ἡ</w> <lb n="6"/> <w lemma="γυνή">γυνὴ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ὁ">ἡ</w> <w lemma="πρότερος">πρότερον</w> <persName type="attested"><name nymRef="#Μελτίνη">Μελ<lb n="7" break="no"/>τίνη</name> <persName type="attested"><name nymRef="#Ἀντίοχος">Ἀντιόχου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name></persName></persName></persName> <lb n="8"/> <w lemma="ἐάν">ἐὰν</w> <w lemma="μένω">μείνῃ</w> <w lemma="γυνή">γυνὴ</w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Πολυχρόνιος">Πολυχρο<lb n="9" break="no"/>νίου</name></persName> <w lemma="καί">καὶ</w> <w lemma="ἐάν">ἐὰν</w> <w lemma="γίγνομαι">γένηται</w> <w lemma="ὁ">τῷ</w> <persName type="attested"><name nymRef="#Πολυχρόνιος">Πο<lb n="10" break="no"/>λυχρονίῳ</name></persName> <w lemma="ἀρρενικός">ἀρρενικὸν</w> <w lemma="τέκνον">τέκνον</w> <lb n="11"/> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Αὐρηλία"><expan><abbr>Αὐρ</abbr><ex>ηλία</ex></expan></name> <name nymRef="#Ζωσίμη">Ζωσίμη</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="πρότερος">πρότερον</w> <lb n="12"/> <persName type="attested"><name nymRef="#Ζωσίμη">Ζωσίμη</name> <persName type="attested"><name nymRef="#Ἀπολλώνιος ">Ἀπολλωνίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀρχέλαος">Ἀρ<lb n="13" break="no"/>χελάου</name></persName></persName></persName> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="ἕτερος">ἕτερος</w> <lb n="14"/> <w lemma="ἐνθάπτω">ἐνταφήσεται</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἐάν">ἐὰν</w> <lb n="15"/> <w lemma="δέ">δέ</w> <w lemma="τις">τις</w> <w lemma="ἕτερος">ἕτερον</w> <w lemma="σωματεῖον">σωμάτειον</w> <w lemma="ἐπιχειρέω">ἐπιχειρήσῃ</w> <lb n="16"/> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἀποτίνω">ἀποτείσει</w> <w lemma="θεά">θεᾷ</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδείτῃ</name></persName> <w lemma="καί">καὶ</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἱερός">ἱερώτατον</w> <w lemma="ταμεῖον">ταμεῖον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="6000">Ϛ</num> <w lemma="ἐν">ἐν</w> <lb n="17"/> <w lemma="δέ">δὲ</w> <w lemma="ὁ">ταῖς</w> <w lemma="εἰσώστη"><supplied reason="lost">εἰσώ</supplied>σταις</w> <w lemma="θάπτω">ταφήσονται</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <w lemma="βούλομαι">βου<supplied reason="lost">λη</supplied>θῇ</w> <w lemma="ἤ">ἢ</w> <w lemma="διατάσσω">διατάξεται</w> <persName type="attested"><name nymRef="#Πολυχρόνιος">Πολυχρόνιος</name></persName> <w lemma="ἤ">ἢ</w> <w lemma="κληρονόμος">κληρονόμος</w> <w lemma="ἤ">ἢ</w> <space extent="3" unit="character" dim="horizontal"/>  </ab>
 </div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Necropolis, North-east</rs>: in a field south of Eymir, south of the Karaçasu/Tabai road, with <xref type="inscription" n="1487" href="130147">13.147</xref>, <xref type="inscription" n="1503" href="130153">13.153</xref>  (=MAMA 553, 586)</rs>
-<rs type="origLocation"><rs type="monuList">Necropolis, North-east</rs></rs>
-<rs type="lastLocation">Museum (1977)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds);  publication.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Kubitschek (V.4, Abklatsch 108); by the MAMA expedition, by the NYU expedition in 1977 (Sarcophagus catalogue <rs type="sarcCat">26</rs>).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <biblScope>576</biblScope></bibl>, whence <bibl n="hell13">Robert, <title>Hellenica</title> 13, 196, 232</bibl>, <bibl n="be">BE <biblScope>1966.411</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257339">461</biblScope>
-</bibl>
-</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_K_32A"><figDesc>View (1977)</figDesc></figure><figure href="77_K_33A"><figDesc>Detail (1977)</figDesc></figure><figure href="77_K_34A"><figDesc>Detail (1977)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="K_V_04"><figDesc>Kubitschek notebook V, 4</figDesc></figure></p></div></body></text>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <citedRange>576</citedRange>
+               </bibl>, whence <bibl n="hell13">Robert, <title>Hellenica</title> 13, 196, 232</bibl>, <bibl n="be">BE <citedRange>1966.411</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257339">461</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

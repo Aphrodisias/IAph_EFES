@@ -1,86 +1,167 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050009" n="iAph1262 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><seg cert="low"><rs type="textType">Building dedication</rs></seg> to Aphrodite and Hadrian </title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Building dedication</seg> to Aphrodite and Hadrian </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050009</idno>
+            <idno type="IAph2007">iAph050009</idno>
+            <idno type="JMR2004">iAph1262</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragments of <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> blocks, with a heavy <rs type="decoration">egg and dart moulding</rs>  above the inscribed face; a-e, g, no measurements; f, <width unit="metre">1.75</width>   × <height unit="metre">0.30</height> x depth not measurable; edge survives at right.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on two fasciae.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a: <height unit="metre">0.05-0.08</height>; b: <height unit="metre">0.06-0.077</height>; c: l.1 <height unit="metre">0.06</height>, l.2, <height unit="metre">0.025</height>; f: <height unit="metre">0.045</height>; g: <height unit="metre">0.072</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Hadrianic Baths</rs>
+                     </origPlace>
+                     <origDate notBefore="0117" notAfter="0138" evidence="reign">
+A.D. 117/138
+(<rs type="criteria">reign</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">a-e, g <rs type="monuList">Hadrianic Baths</rs>, a-e 'grande salle' of the aleipterion, g 'Thermes, façade'; f <rs type="monuList">Walls, West Gate</rs>: 'near the West Gate, partly buried' (Kubitschek); </provenance>
+                  <provenance type="observed">stone pile in the east court of the Hadrianic Baths</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); Gaudin; Boulanger; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-30" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_V_19.jpg">
+            <desc>Fragment a (1973)</desc>
+         </graphic>
+         <graphic url="AG_BatharchitraveII.jpg">
+            <desc>Fragment b, left end (2005)</desc>
+         </graphic>
+         <graphic url="78_H_14.jpg">
+            <desc>Fragment c, left end. (1978)</desc>
+         </graphic>
+         <graphic url="88_F_25.jpg">
+            <desc>Fragment c, right end. (1988)</desc>
+         </graphic>
+         <graphic url="88_F_26.jpg">
+            <desc>Fragment d. (1988)</desc>
+         </graphic>
+         <graphic url="88_F_27.jpg">
+            <desc>Fragment g. (1988)</desc>
+         </graphic>
+         <graphic url="K_III_000a.jpg">
+            <desc>Fragment f: Kubitschek notebook III, facing 1</desc>
+         </graphic>
+         <graphic url="Boulanger_A_05.jpg">
+            <desc>Boulanger, notebook A, page 5</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Fragments of <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> blocks, with a heavy <rs type="decoration">egg and dart moulding</rs>  above the inscribed face; a-e, g, no measurements; f, <measure type="length" unit="metre" dim="width">1.75</measure>   × <measure type="length" unit="metre" dim="height">0.30</measure> x depth not measurable; edge survives at right.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on two fasciae.</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p>a: <measure dim="height" type="length" unit="metre">0.05-0.08</measure>; b: <measure dim="height" type="length" unit="metre">0.06-0.077</measure>; c: l.1 <measure dim="height" type="length" unit="metre">0.06</measure>, l.2, <measure dim="height" type="length" unit="metre">0.025</measure>; f: <measure dim="height" type="length" unit="metre">0.045</measure>; g: <measure dim="height" type="length" unit="metre">0.072</measure></p>
-
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0117" notAfter="0138" exact="both">A.D. 117/138</date>
-(<rs type="criteria">reign</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_fragment" n="a"><ab><lb n="1"/><w lemma="θεά">Θεᾷ</w>  <persName type="divine" full="yes"><name reg="Ἀφροδίτη">Ἀφροδείτῃ</name></persName>  <w lemma="καί">καὶ</w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/></ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <persName type="emperor" full="yes"><w lemma="αὐτοκράτωρ">αὐτοκράτορι</w>  <name type=" " reg="Καῖσαρ">Καίσαρι</name>  <persName type="emperor" full="yes"><w lemma="θεός">Θεοῦ</w>  <name reg="Τραιανός">Τραϊανοῦ</name>  <name reg="Παρθικός">Π<supplied reason="lost">αρθικοῦ</supplied></name></persName>  <w lemma="υἱός"><supplied reason="lost">υἱῷ</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="internal"/>  <name reg="Τραιανός">Τραϊανῷ</name>  <name reg="Ἁδριανός">Ἁδριανῷ</name></persName>  <gap reason="lost" extent="unknown" unit="character" dim="right"/></ab></div><div type="textpart_fragment" n="c"><ab><lb n="1"/>                                            <gap reason="lost" extent="unknown" unit="character" dim="left"/>  <persName type="aphrodisian"><name type=" " reg="Εὔδαμος">Εὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name type=" " reg="Εὔδαμος"><unclear reason="damage">Ε</unclear><milestone unit="block"/>ὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Καλλίας">Καλλίου</name></persName> <w lemma="ὁ">τῶν</w> <milestone unit="block"/><gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="2"/>                                            <gap reason="lost" extent="unknown" unit="character" dim="left"/>      <space unit="character" extent="3" dim="horizontal"/> <w lemma="καί">καὶ</w> <w lemma="λουτήρ">λουτῆρσιν</w> <space unit="character" extent="5" dim="horizontal"/>      <milestone unit="block"/><gap reason="lost" extent="unknown" unit="character" dim="right"/></ab></div><div type="textpart_fragment" n="d"><ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><persName type="aphrodisian"><name reg="Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name type=" " reg="Εὔδαμος">Εὐδάμου</name></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <persName type="aphrodisian"><name reg="Ἀπφίων">Ἀπφ<supplied reason="lost">ί</supplied>ω<supplied reason="lost">νος</supplied></name></persName>  <gap reason="lost" extent="unknown" unit="character" dim="right"/></ab></div><div type="textpart_fragment" n="e"><ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><w lemma="ὑπισχνέομαι"><supplied reason="lost">ὑπέ</supplied>σχετο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀλειπτήριον">ἀλειπτήριον</w> <gap reason="lost" extent="unknown" unit="character" dim="right"/></ab></div><div type="textpart_fragment" n="f"><ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <persName type="aphrodisian"><name reg="Ζήνων"><supplied reason="lost">Ζήνω</supplied><seg type="autopsy">νος</seg></name>  <seg type="autopsy"><w lemma="ὁ">τοῦ</w></seg>  <persName type="aphrodisian"><name type=" " reg="Εὔδαμος"><seg type="autopsy">Εὐδάμ</seg>ου</name></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <persName type="aphrodisian"><name reg="Ἄπφιος">Ἀπφ<unclear reason="damage">ίω</unclear><gap reason="lost" extent="unknown" unit="character" dim="right"/></name></persName><lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <persName type="aphrodisian"><name reg="Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name type=" " reg="Εὔδαμος">Εὐ<supplied reason="lost">δάμου</supplied></name></persName></persName></ab></div><div type="textpart_fragment" n="g"><ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <w lemma="καί"><supplied reason="lost">κ</supplied><seg type="autopsy">αὶ</seg></w> <w lemma="ὁ"><seg type="autopsy">τ</seg>ῷ</w> <gap reason="lost" extent="unknown" unit="character" dim="right"/></ab></div></div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>d and g:	The highlighted letters on fragments found by the NYU expedition.</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Robert (l.c) suggested that <title level="m">f</title> might be the same text as <title level="m">d</title>. Mendel's copies are so summary that this could well be possible.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="origLocation"><rs type="monuList">Hadrianic Baths</rs></rs>
-<rs type="found">a-e, g <rs type="monuList">Hadrianic Baths</rs>, a-e 'grande salle' of the aleipterion, g 'Thermes, façade'; f <rs type="monuList">Walls, West Gate</rs>: 'near the West Gate, partly buried' (Kubitschek); </rs>
-<rs type="lastLocation">stone pile in the east court of the Hadrianic Baths</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); Gaudin; Boulanger; publications.</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>f copied by Kubitschek (K iii. facing 1); g recorded by Gaudin (126); a-e excavated by Mendel in 1905 (notebook A.5). a-c, and fragments of d and g recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>a-e published by <bibl type="primary" n="mendel1906"><author>Mendel</author>, CRAI 1906, <biblScope>171</biblScope>-172</bibl>; f published by <bibl type="primary" n="cormack1964"><author>Cormack</author>, from K&amp;R, ABSA 59, 1964, 16, no. <biblScope>1</biblScope></bibl>, whence <bibl>Robert, AC 35, 1966, 391</bibl>, <bibl n="be">BE <biblScope>1967.548</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="256992">114</biblScope></bibl>; g published by <bibl type="primary" n="reinach"><author>Reinach</author>, <biblScope>134</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257006">127</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_V_19"><figDesc>Fragment a (1973)</figDesc></figure><figure href="AG_BatharchitraveII"><figDesc>Fragment b, left end (2005)</figDesc></figure><figure href="78_H_14"><figDesc>Fragment c, left end. (1978)</figDesc></figure><figure href="88_F_25"><figDesc>Fragment c, right end. (1988)</figDesc></figure><figure href="88_F_26"><figDesc>Fragment d. (1988)</figDesc></figure><figure href="88_F_27"><figDesc>Fragment g. (1988)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions">
-<head>Transcriptions</head>
-<p><figure href="K_III_000a"><figDesc>Fragment f: Kubitschek notebook III, facing 1</figDesc></figure></p><p><figure href="Boulanger_A_05"><figDesc>Boulanger, notebook A, page 5</figDesc></figure></p>
-</div></body></text>
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><w lemma="θεά">Θεᾷ</w>  <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδείτῃ</name></persName>  <w lemma="καί">καὶ</w>  <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="emperor"><w lemma="αὐτοκράτωρ">αὐτοκράτορι</w>  <name nymRef="#Καῖσαρ">Καίσαρι</name>  <persName type="emperor"><w lemma="θεός">Θεοῦ</w>  <name nymRef="#Τραιανός">Τραϊανοῦ</name>  <name nymRef="#Παρθικός">Π<supplied reason="lost">αρθικοῦ</supplied></name></persName>  <w lemma="υἱός"><supplied reason="lost">υἱῷ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <name nymRef="#Τραιανός">Τραϊανῷ</name>  <name nymRef="#Ἁδριανός">Ἁδριανῷ</name></persName>  <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="c" type="textpart" subtype="fragment"><ab><lb n="1"/>                                            <gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Εὔδαμος">Εὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Εὔδαμος"><unclear reason="damage">Ε</unclear><milestone unit="block"/>ὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Καλλίας">Καλλίου</name></persName> <w lemma="ὁ">τῶν</w> <milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/><lb n="2"/>                                            <gap reason="lost" unit="character" extent="unknown"/>      <space unit="character" extent="3" dim="horizontal"/> <w lemma="καί">καὶ</w> <w lemma="λουτήρ">λουτῆρσιν</w> <space unit="character" extent="5" dim="horizontal"/>      <milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="d" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="#Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὐδάμου</name></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <persName type="attested"><name nymRef="#Ἀπφίων">Ἀπφ<supplied reason="lost">ί</supplied>ω<supplied reason="lost">νος</supplied></name></persName>  <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="e" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="ὑπισχνέομαι"><supplied reason="lost">ὑπέ</supplied>σχετο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀλειπτήριον">ἀλειπτήριον</w> <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="f" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Ζήνων"><supplied reason="lost">Ζήνω</supplied><seg type="autopsy">νος</seg></name>  <seg type="autopsy"><w lemma="ὁ">τοῦ</w></seg>  <persName type="attested"><name nymRef="#Εὔδαμος"><seg type="autopsy">Εὐδάμ</seg>ου</name></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <persName type="attested"><name nymRef="#Ἄπφιος">Ἀπφ<unclear reason="damage">ίω</unclear><gap reason="lost" unit="character" extent="unknown"/></name></persName><lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὐ<supplied reason="lost">δάμου</supplied></name></persName></persName></ab></div><div n="g" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <w lemma="καί"><supplied reason="lost">κ</supplied><seg type="autopsy">αὶ</seg></w> <w lemma="ὁ"><seg type="autopsy">τ</seg>ῷ</w> <gap reason="lost" unit="character" extent="unknown"/></ab></div></div>
+         <div type="apparatus">
+            <p>d and g:	The highlighted letters on fragments found by the NYU expedition.</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div type="commentary">
+            <p>Robert (l.c) suggested that <title level="m">f</title> might be the same text as <title level="m">d</title>. Mendel's copies are so summary that this could well be possible.</p>
+         </div>
+         <div type="bibliography">
+            <p>a-e published by <bibl type="primary" n="mendel1906">
+                  <author>Mendel</author>, CRAI 1906, <citedRange>171</citedRange>-172</bibl>; f published by <bibl type="primary" n="cormack1964">
+                  <author>Cormack</author>, from K&amp;R, ABSA 59, 1964, 16, no. <citedRange>1</citedRange>
+               </bibl>, whence <bibl>Robert, AC 35, 1966, 391</bibl>, <bibl n="be">BE <citedRange>1967.548</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256992">114</citedRange>
+               </bibl>; g published by <bibl type="primary" n="reinach">
+                  <author>Reinach</author>, <citedRange>134</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257006">127</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

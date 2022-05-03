@@ -1,115 +1,160 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120401" n="iAph0139 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType" reg="acclamation"><rs type="textType" reg="prayer/invocation">Invocations</rs></rs></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-06</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-27</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-27</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Interior <rs type="objectType">masonry block</rs>s of a small gateway. i: <measure type="length" unit="metre" dim="height">0.39</measure>  × <measure type="length" unit="metre" dim="width">0.98</measure>, D. not
-measurable; ii: <measure type="length" unit="metre" dim="height">0.54</measure>
-× <measure type="length" unit="metre" dim="width">0.34</measure> ×
-<measure type="length" unit="metre" dim="depth">1.03</measure>.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>Text i is cut on a block at the entrance to the passage, on
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Invocations</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120401</idno>
+            <idno type="IAph2007">iAph120401</idno>
+            <idno type="JMR2004">iAph0139</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Interior <objectType>masonry block</objectType>s of a small gateway. i: <height unit="metre">0.39</height>  × <width unit="metre">0.98</width>, D. not
+measurable; ii: <height unit="metre">0.54</height>
+× <width unit="metre">0.34</width> ×
+<depth unit="metre">1.03</depth>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Text i is cut on a block at the entrance to the passage, on
 the north side; ii is cut on the facing block on the south side. Both
-inscriptions are disposed around a shallowly-cut cross.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>i: <measure precision="circa" type="length" unit="metre" dim="height">0.035</measure>; ii, <measure type="length" unit="metre" dim="height">0.04-0.06</measure>; <term>diaeretic</term> dots on <foreign lang="grc">Ι</foreign>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0600" exact="none" notBefore="0401">Fifth-sixth century</date> or later (<rs type="criteria">content</rs>).</p>
-      </div>
-
-      <div type="edition" lang="grc">
-        <head lang="en">Edition</head>
+inscriptions are disposed around a shallowly-cut cross.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i: <height unit="metre">0.035</height>; ii, <height unit="metre">0.04-0.06</height>; <term>diaeretic</term> dots on <foreign xml:lang="grc">Ι</foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="content">Fifth-sixth century or later (<rs type="criteria">content</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South-east Gate</rs>:  in the small gateway
+to the north of the main archway. .</provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; transcriptions (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-27" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-06" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-27" who="#CMR">tagged and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="81_C_15.jpg">
+            <desc>View of gateway (1981)</desc>
+         </graphic>
+         <graphic url="72_E_32A.jpg">
+            <desc>i. Text (1972)</desc>
+         </graphic>
+         <graphic url="75_D_04A.jpg">
+            <desc>ii. Text (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
         <cb n="i"/>
-        <ab><lb n="1"/><w lemma="φῶς">φ <g type="cross" id="c1"/> ῶς</w>
-		  <lb n="2"/><w lemma="ζωή">ζω <g type="cross" id="c2"/> ή</w> <link targets="c1 c2" targOrder="U"/></ab>
+        <ab><lb n="1"/><w lemma="φῶς">φ <g ref="#cross"/> ῶς</w>
+		  <lb n="2"/><w lemma="ζωή">ζω <g ref="#cross"/> ή</w> <link targets="c1 c2" targOrder="U"/></ab>
 			<cb n="ii"/>        
-        <ab><lb n="1"/><persName type="divine" key="Christ" full="yes"><name>Χρ <g type="cross" id="c3"/> ιστὲ</name></persName>
-		  <lb n="2"/><w lemma="νικάω">νί <g type="cross" id="c4"/> κα</w><link targets="c3 c4" targOrder="U"/></ab>
+        <ab><lb n="1"/><persName key="Christ" type="divine"><name>Χρ <g ref="#cross"/> ιστὲ</name></persName>
+		  <lb n="2"/><w lemma="νικάω">νί <g ref="#cross"/> κα</w><link targets="c3 c4" targOrder="U"/></ab>
       </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <cb n="i"/><ab>i. Light! Life!</ab>
-        <cb n="ii"/><ab>ii. Christ, be victorious!</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="VIII.16">VIII.16</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p><rs type="found"><rs type="monuList">Walls, South-east Gate</rs>:  in the small gateway
-to the north of the main archway. .</rs><rs type="origLocation">Findspot.</rs><rs type="lastLocation">Findspot.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (118, 119); by the <rs type="visitor" key="calder">MAMA expedition</rs>; by
-the NYU expedition.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="reinach"><author>Reinach</author>, no.s. <biblScope>214</biblScope>, <biblScope>215</biblScope></bibl>, from Gaudin, whence
-<bibl type="hbi" n="IGC"><author>Grégoire</author>, <title level="m">IGC</title> <biblScope>265</biblScope>, <biblScope>266</biblScope></bibl>; by <bibl type="hbi" n="MAMA8"><author>Cormack</author>, from the
-MAMA records, <title level="m">MAMA</title> 8, <biblScope>458</biblScope></bibl>, ; by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>, no. <biblScope>139</biblScope> and plates
+         <div type="translation">
+            <cb n="i"/>
+            <ab>i. Light! Life!</ab>
+            <cb n="ii"/>
+            <ab>ii. Christ, be victorious!</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="VIII.16" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="reinach">
+                  <author>Reinach</author>, no.s. <citedRange>214</citedRange>, <citedRange>215</citedRange>
+               </bibl>, from Gaudin, whence
+<bibl type="hbi" n="IGC">
+                  <author>Grégoire</author>, <title level="m">IGC</title>
+                  <citedRange>265</citedRange>, <citedRange>266</citedRange>
+               </bibl>; by <bibl type="hbi" n="MAMA8">
+                  <author>Cormack</author>, from the
+MAMA records, <title level="m">MAMA</title> 8, <citedRange>458</citedRange>
+               </bibl>, ; by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>, no. <citedRange>139</citedRange> and plates
 xxxiii, xxxiv</bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Publications; transcriptions (Reynolds, Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="81_C_15"><figDesc>View of gateway (1981)</figDesc></figure><figure href="72_E_32A"><figDesc>i. Text (1972)</figDesc></figure><figure href="75_D_04A"><figDesc>ii. Text (1975)</figDesc></figure></p></div>
-
-    
-
-      
-
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

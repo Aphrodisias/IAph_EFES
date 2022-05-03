@@ -1,82 +1,124 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150340" n="iAph1512 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for  Marcus Carminius Jason and Statilia Diogenia</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr2003">Reynolds and Isik (<date>2007</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-02-08</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument" sample="complete" org="uniform">
-<head>Description of Monument</head>
-<p>Part of the front of a <rs type="material">white marble</rs> garlands <rs type="objectType">sarcophagus</rs> <measure type="length" unit="metre" dim="width">0.99</measure>   × <measure type="length" unit="metre" dim="height">0.49</measure>   × <measure type="length" unit="metre" dim="depth">0.15</measure>; for description see Isik 175.
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for  Marcus Carminius Jason and Statilia Diogenia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150340</idno>
+            <idno type="IAph2007">iAph150340</idno>
+            <idno type="JMR2004">iAph1512</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Part of the front of a <material>white marble</material> garlands <objectType>sarcophagus</objectType>
+                              <width unit="metre">0.99</width>   × <height unit="metre">0.49</height>   × <depth unit="metre">0.15</depth>; for description see Isik 175.
 </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in the tabella (die 0.27 x 0.25) from which an earlier inscription has been erased; ll. 1-3 on the upper moulding, ll 4 ff. impinging on the side mouldings.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>poorly designed, cut and aligned, 0.02; lunate epsilon, sigma, omega; very poorly cut; there may have been erasure in ll.8-10; non-standard spelling in l.2.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0250"
+                               precision="medium"
+                               evidence="lettering nomenclature">
+Perhaps first half of the third century
+ (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">stray before 1966</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-02-08" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορός</w> <w lemma="εἰμί">ἐστιν</w> <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">ὁ</supplied>  <w lemma="τόπος"><supplied reason="lost">τό</supplied>πος</w>  <lb n="2"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">αἱ</w> <w lemma="ὑπόκειμαι">ὑποκιμέναι</w> <w>ἰσώ<lb n="3" break="no"/>sic  <lb n="4"/> σται</w> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="#Καρμίνιος"><expan><abbr>Καρ</abbr><ex>μινίου</ex></expan></name> <name nymRef="#Ἰάσων">Ἰάσονος</name> <lb n="5"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀγαθῖνος">Ἀγαθίνου</name><lb n="6"/> <w lemma="ὁ">τοῦ</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Εὐστόχιος">Εὐστοχί<lb n="7" break="no"/>ου</name></persName></persName></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Στατιλία">Στατιλία<supplied reason="lost">ς</supplied></name>  <lb n="8"/> <name nymRef="#Διογένεια">Διογενίης</name></persName> <w lemma="ὁ">τῆς</w> <lb n="9"/><w lemma="γυνή"><unclear reason="damage">γυναικ</unclear><supplied reason="lost">ὸ</supplied>ς</w> <w lemma="αὐτός">αὐτοῦ</w> <lb n="10"/><gap reason="lost" unit="character" precision="low" quantity="8"/> <space extent="6"/> <lb n="10a"/><gap reason="lost" unit="line" extent="unknown"/>    </ab>
 </div>
-<div type="description" n="text" sample="complete" org="uniform">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> in the tabella (die 0.27 x 0.25) from which an earlier inscription has been erased; ll. 1-3 on the upper moulding, ll 4 ff. impinging on the side mouldings.</p>
-</div>
-<div type="description" n="letters" sample="complete" org="uniform">
-<head>Letters</head>
-<p>poorly designed, cut and aligned, 0.02; lunate epsilon, sigma, omega; very poorly cut; there may have been erasure in ll.8-10; non-standard spelling in l.2.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-Perhaps <date cert="low" exact="none" notAfter="0250" notBefore="0201">first half of the third century</date>
- (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορός</w> <w lemma="εἰμί">ἐστιν</w> <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">ὁ</supplied>  <w lemma="τόπος"><supplied reason="lost">τό</supplied>πος</w>  <lb n="2"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">αἱ</w> <w lemma="ὑπόκειμαι">ὑποκιμέναι</w> <w>ἰσώ<lb n="3" type="worddiv"/>sic  <lb n="4"/> σται</w> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <name reg="Καρμίνιος"><expan><abbr>Καρ</abbr><supplied reason="abbreviation">μινίου</supplied></expan></name> <name reg="Ἰάσων">Ἰάσονος</name> <lb n="5"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀγαθῖνος">Ἀγαθίνου</name><lb n="6"/> <w lemma="ὁ">τοῦ</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Εὐστόχιος">Εὐστοχί<lb n="7" type="worddiv"/>ου</name></persName></persName></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Στατιλία">Στατιλία<supplied reason="lost">ς</supplied></name>  <lb n="8"/> <name reg="Διογένεια">Διογενίης</name></persName> <w lemma="ὁ">τῆς</w> <lb n="9"/><w lemma="γυνή"><unclear reason="damage">γυναικ</unclear><supplied reason="lost">ὸ</supplied>ς</w> <w lemma="αὐτός">αὐτοῦ</w> <lb n="10"/><gap reason="lost" extent="8" unit="character" precision="circa"/> <space extent="6"/> <lb n="10a"/><gap dim="bottom" extent="unknown" reason="lost" unit="line"/>    </ab>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>The sarcophagus [and the] plot (on which it stands) belong to Marcus Carminius Jason son of Agathinos also called Eustochios, and Statilia Diogenia his wife [ - - -</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The poor quality of the letters, and the use by the owners of a sarcophagus which was apparently secondhand, suggest a family of modest means and status. Since the known Carminii were a great family of Aphrodisias and its neighbour Attouda, achieving Roman senatorial status in the second century (c.f. also on no. 6), and the wife's nomen indicates another family with Roman citizen status before the Edict of Caracalla in A.D. 212, it is reasonable to guess that these were, or were descended from, dependants of great families (perhaps freed slaves). Their property consisted of more than the sarcophagus but the text sets out no provisions for the proper use of any of it. There cannot have been space for these on the tabella.</p>
-</div>
-<div type="history" n="locations" sample="complete" org="uniform">
-<head>Locations</head>
-<p>
-<rs type="found">stray before 1966</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record" sample="complete" org="uniform">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition (<rs type="siteNo">Museum 107</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p><bibl n="jmr2003">Reynolds and Isik <biblScope>175</biblScope></bibl>.</p>
-</div><div type="figure" n="photographs" sample="complete" org="uniform">
-<head>Photographs</head>
-<p> [[ 66.1.86. Isik]]</p>
-</div></body></text>
+         <div type="translation">
+            <p>The sarcophagus [and the] plot (on which it stands) belong to Marcus Carminius Jason son of Agathinos also called Eustochios, and Statilia Diogenia his wife [ - - -</p>
+         </div>
+         <div type="commentary">
+            <p>The poor quality of the letters, and the use by the owners of a sarcophagus which was apparently secondhand, suggest a family of modest means and status. Since the known Carminii were a great family of Aphrodisias and its neighbour Attouda, achieving Roman senatorial status in the second century (c.f. also on no. 6), and the wife's nomen indicates another family with Roman citizen status before the Edict of Caracalla in A.D. 212, it is reasonable to guess that these were, or were descended from, dependants of great families (perhaps freed slaves). Their property consisted of more than the sarcophagus but the text sets out no provisions for the proper use of any of it. There cannot have been space for these on the tabella.</p>
+         </div>
+         <div type="bibliography">
+            <p>
+               <bibl n="jmr2003">Reynolds and Isik <citedRange>175</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,108 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050014" n="iAph0069 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">Fl. Photios <rs type="textType" reg="donor's inscription">gives</rs> a <rs type="textType"><rs type="objectType">gameboard</rs></rs></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-09</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change>
-  <date>2003-07-17</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-23</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-01-28</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A rectangular <rs type="material" key="marmor">white marble</rs> <rs type="objectType">statue base</rs> (<measure type="length" unit="metre" dim="height">1.14</measure> × <measure type="length" unit="metre" dim="width">0.57</measure> × <measure type="length" unit="metre" dim="depth">0.44</measure>) with moulded edge above and below on three sides.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on central panel with a board, type 3Rows.4, (<measure type="length" unit="metre" dim="height">0.45</measure> × <measure type="length" unit="metre" dim="width">1.00</measure>) carefully cut: circles <measure dim="diameter" type="length">0.03</measure>, central <rs type="decoration">rosette</rs>s in circles <measure dim="diameter" type="length">0.10</measure>; the text is inscribed on the lower moulding.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Av. <measure type="length" unit="metre" dim="height">0.03</measure>; irregular: scroll and letter above line for abbreviations.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0468" notAfter="0600">Late fifth/sixth century</date> (titulature).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fl. Photios gives a <objectType>gameboard</objectType>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050014</idno>
+            <idno type="IAph2007">iAph050014</idno>
+            <idno type="JMR2004">iAph0069</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A rectangular <material key="marmor">white marble</material>
+                              <objectType>statue base</objectType> (<height unit="metre">1.14</height> × <width unit="metre">0.57</width> × <depth unit="metre">0.44</depth>) with moulded edge above and below on three sides.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on central panel with a board, type 3Rows.4, (<height unit="metre">0.45</height> × <width unit="metre">1.00</width>) carefully cut: circles <dim type="diameter">0.03</dim>, central <rs type="decoration">rosette</rs>s in circles <dim type="diameter">0.10</dim>; the text is inscribed on the lower moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Av. <height unit="metre">0.03</height>; irregular: scroll and letter above line for abbreviations.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList" key="HadrBath" cert="low">Hadrianic Baths</rs>.</origPlace>
+                     <origDate notBefore="0468" notAfter="0600" precision="medium">Late fifth/sixth century (titulature).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="HadrBath">Hadrianic Baths</rs>: lying beside the northern entrance.</provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-09" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-28" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-23" who="#CMR">tagged and corrected</change>
+         <change when="2003-07-17" who="Juan-Garcés">lemmatised</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="72_A_17A.jpg">
+            <desc>Detail (1972)</desc>
+         </graphic>
+         <graphic url="91_E_19A.jpg">
+            <desc>Base (1991)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<ab>
-		<lb n="1"/><g type="cross"/> <w lemma="ἐπί">ἐπὶ</w> <persName type="aphrodisian" key="photius1" full="yes"><name reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">αβίου</supplied></expan></name> <name reg="Φώτιος">Φωτίου</name></persName> <rs type="profession" key="scholasticus"><w lemma="σχολαστικός"><expan><abbr>σχο</abbr><supplied reason="abbreviation">λαστικοῦ</supplied></expan></w></rs> <w lemma="καί"><expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan></w> <rs type="official-secul" key="pater"><w lemma="πατήρ">πατρός</w></rs> <g type="stop"/> <g type="cross"/>
+		<lb n="1"/><g ref="#cross"/> <w lemma="ἐπί">ἐπὶ</w> <persName key="photius1" type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αβίου</ex></expan></name> <name nymRef="#Φώτιος">Φωτίου</name></persName> <rs type="profession" key="scholasticus"><w lemma="σχολαστικός"><expan><abbr>σχο</abbr><ex>λαστικοῦ</ex></expan></w></rs> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <rs type="official-secul" key="pater"><w lemma="πατήρ">πατρός</w></rs> <g ref="#stop"/> <g ref="#cross"/>
 		</ab>
       </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>Under Flavius Photios, <term lang="la">scholasticus</term> and <term lang="la">pater</term>.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>This is the second of the gameboards given by Flavius Photios; see <xref type="inscription" n="68" href="050010">5.10</xref>, <xref type="inscription" n="238" href="050015">5.15</xref> and discussion at <xref type="eAla-text" n="V.44">V.44</xref> and <xref type="eAla-text" n="V.47">V.47</xref>.</p>
-        
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="HadrBath">Hadrianic Baths</rs>: lying beside the northern entrance.</rs>. Original location: <rs type="origLocation"><rs type="monuList" key="HadrBath" cert="low">Hadrianic Baths</rs>.</rs>. Last recorded location: <rs type="lastLocation">Findspot.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU expedition.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="cmr1979"><author>Roueché</author> (<date>1979</date>), no. <biblScope>1</biblScope></bibl>, whence <bibl n="be"><title level="j">BE</title> <biblScope>1980.473</biblScope></bibl>; republished by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>69</biblScope> and plate xvi</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257505">623</biblScope></bibl>; republished by <bibl type="hbi" n="cmr2004"><author>Roueché</author>, <title type="abbreviated" level="m">Gameboards</title>, no. <biblScope>2.ii</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs"><head>Photographs</head><p><figure href="72_A_17A"><figDesc>Detail (1972)</figDesc></figure><figure href="91_E_19A"><figDesc>Base (1991)</figDesc></figure></p></div>
-
-      
-
-    </body>
-  </text>
+         <div type="translation">
+            <ab>Under Flavius Photios, <term xml:lang="la">scholasticus</term> and <term xml:lang="la">pater</term>.</ab>
+         </div>
+         <div type="commentary">
+            <p>This is the second of the gameboards given by Flavius Photios; see <ref type="inscription" n="68" target="050010.xml"/>, <ref type="inscription" n="238" target="050015.xml"/> and discussion at <ref type="eAla-text" n="V.44" target=".xml"/> and <ref type="eAla-text" n="V.47" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="cmr1979">
+                  <author>Roueché</author> (<date>1979</date>), no. <citedRange>1</citedRange>
+               </bibl>, whence <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1980.473</citedRange>
+               </bibl>; republished by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>69</citedRange> and plate xvi</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257505">623</citedRange>
+               </bibl>; republished by <bibl type="hbi" n="cmr2004">
+                  <author>Roueché</author>, <title type="abbreviated" level="m">Gameboards</title>, no. <citedRange>2.ii</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,123 +1,186 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph040011" n="iAph0027 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="personType" reg="governor">Fl. Eutolmius Tatianos</rs> <rs type="textType">honours</rs> <rs type="textType" reg="imperial">Valentinian II</rs></title>
-</titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fl. Eutolmius Tatianos honours Valentinian II</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph040011</idno>
+            <idno type="IAph2007">iAph040011</idno>
+            <idno type="JMR2004">iAph0027</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>75.248</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material> columnar <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> (H. <height unit="metre">1.03</height>, diam. <dim type="diameter">0.54</dim>). The surface has been even more severely damaged by weather and moss than that of <ref type="inscription" n="26" target="040010.xml"/>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Av. <height unit="metre">0.035</height>; <foreign xml:lang="grc">Φ</foreign>, 1, 5, <height unit="metre">0.07</height>; simple, lunate. Scroll for abbreviation.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0388" notAfter="0392" evidence="emperor prosopography">A.D. 388/392 (<rs type="criteria">emperor</rs>, <rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs key="HadrBath" type="monuList">South Agora</rs>: West portico: '<foreign xml:lang="fr">Galerie de l'E<ex>st</ex>. Colonne à d<ex>roite</ex> de la porte la <seg cert="low">plus</seg> au N<ex>ord</ex>, de l'en<gap reason="lost" unit="character" extent="unknown"/>
+                     </foreign>' (Boulanger, notebook A: '<foreign xml:lang="fr">à droite de la porte</foreign>', Notebook B). Found by the current expedition standing apparently in situ in the west portico of the South Agora (although Grégoire, <title level="m">IGC</title> 276. from Mendel's notes, describes it as found fallen near its plinth), flanking, on the north, the steps which descend from the east court of the Hadrianic Baths to the portico. </provenance>
+                  <provenance type="observed" when="2002">Findspot (2002).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; Boulanger notebooks; transcription and squeeze (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-22" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-23" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">name tags reduced</change>
+         <change when="2003-07-15" who="JLG">Lemmatised</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_V_16.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="73_W_30.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="2002_A_32.jpg">
+            <desc>View (2002)</desc>
+         </graphic>
+         <graphic url="NY_94_57_01.jpg">
+            <desc>Right side(1994)</desc>
+         </graphic>
+         <graphic url="NY_94_57_00.jpg">
+            <desc>Left side (1994)</desc>
+         </graphic>
+         <graphic url="NY_94_56_36.jpg">
+            <desc>Top of base(1994)</desc>
+         </graphic>
+         <graphic url="Boulanger_A_61.jpg">
+            <desc>Boulanger Notebook A, page 61</desc>
+         </graphic>
+         <graphic url="smith-ala27.jpg">
+            <desc>Statue and base: Drawing: K.Gorkay, from Smith (1999)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-22</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change>
-  <date>2003-11-04</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-06-22</date><respStmt><name>CMR</name></respStmt><item>tagged, tidied and corrected</item></change><change><date>2003-07-15</date><respStmt><name>JLG</name></respStmt><item>Lemmatised</item></change><change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>name tags reduced</item></change><change><date>2004-01-23</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material" key="marmor">white marble</rs> columnar <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs> (H. <measure type="length" unit="metre" dim="height">1.03</measure>, diam. <measure dim="diameter" type="length">0.54</measure>). The surface has been even more severely damaged by weather and moss than that of <xref type="inscription" n="26" href="040010">4.10</xref>.</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p>Av. <measure type="length" unit="metre" dim="height">0.035</measure>; <foreign lang="grc">Φ</foreign>, 1, 5, <measure type="length" unit="metre" dim="height">0.07</measure>; simple, lunate. Scroll for abbreviation.</p>
-</div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p><date notAfter="0392" exact="both" notBefore="0388">A.D. 388/392</date> (<rs type="criteria">emperor</rs>, <rs type="criteria">prosopography</rs>).</p>
-</div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><persName key="agty" type="divine" reg="Ἀγαθὴ Τύχη" full="yes"><w lemma="ἀγαθός">Ἀγαθῇ</w> <w lemma="τύχη">Τύχῃ</w></persName><lb n="1a"/><space extent="1" dim="vertical" unit="line"/><lb n="2"/><w lemma="ὁ"><unclear reason="damage">τ</unclear>ὸν</w> <w lemma="ὁ">τῆς</w> <w lemma="ὑπό">ὑφ'</w> <w lemma="ἥλιος">ἡλίῳ</w> <w lemma="γῆ">γῆς</w><lb n="3"/><rs type="official-secul" key="imperator"><w lemma="αὐτοκράτωρ">αὐτοκράτορα</w></rs> <w lemma="καί">καὶ</w> <w lemma="τροπεοῦχος">τροπεο<unclear reason="damage">ῦχον</unclear></w><lb n="4"/><rs key="despot" type="official-secul"><w lemma="δεσπότης">δεσπότην</w></rs> <w lemma="ἐγώ">ἡμῶν</w><lb n="5"/><persName type="emperor" key="ValentinianII" full="yes"><name reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">άουιον</supplied></expan></name> <name reg="Οὐαλλεντινιανός">Οὐαλλεντινιανὸν</name></persName><lb n="6"/><w lemma="ὁ"><unclear reason="damage">τ</unclear>ὸν</w> <w lemma="αἰώνιος">αἰώνιον</w> <rs type="dignity" key="augustus">Αὔγουστον</rs><lb n="6a"/><space extent="1" dim="vertical" unit="line"/><lb n="7"/><del status="unremarkable"><persName key="EutTatianus" type="aphrodisian" full="yes"><name reg="Φλάβιος"><expan><abbr><unclear reason="damage">Φλ</unclear></abbr><supplied reason="abbreviation">άουιος</supplied></expan></name> <name reg="Εὐτόλμιος"><supplied reason="lost">Εὐ</supplied><unclear reason="damage">τόλ</unclear><supplied reason="lost">μι</supplied>ος</name> <name reg="Τατιανός"><supplied reason="lost">Τα</supplied><unclear reason="damage">τι</unclear><supplied reason="lost">ανὸς</supplied></name></persName></del><lb n="8"/><del status="unremarkable"><w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w> <rs key="clarissimus" type="dignity"><w lemma="λαμπρός"><expan><abbr><supplied reason="lost">λαμ</supplied><unclear reason="damage">πρ</unclear></abbr><supplied reason="abbreviation">ότατος</supplied></expan></w></rs> <rs key="PPO" type="official-secul"><w lemma="ἔπαρχος">ἔπ<supplied reason="lost">αρχ</supplied><unclear reason="damage">ος</unclear></w></rs> <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear reason="damage">οῦ</unclear></w> <w lemma="ἱερός"><unclear reason="undefined">ἱ</unclear><supplied reason="lost">ε</supplied><unclear reason="damage">ρ</unclear><supplied reason="lost">οῦ</supplied></w></del><lb n="9"/><del status="unremarkable"><w lemma="πραιτώριον"><supplied reason="lost">πρετωρί</supplied>ου</w> <w lemma="ὁ"><unclear reason="damage">τῇ</unclear></w>  <w lemma="συνήθης"><unclear reason="undefined">συ</unclear><supplied reason="lost">νήθει</supplied></w></del><lb n="10"/><del status="unremarkable"><supplied reason="lost"><w lemma="καθοσίωσις">καθοσιώσει</w></supplied> <w lemma="ἀφιερόω"><supplied reason="lost">ἀ</supplied><unclear reason="damage">φ</unclear><supplied reason="lost">ιέρωσεν</supplied></w></del><lb n="10a"/><space extent="1" dim="vertical" unit="line"/><lb n="11"/><del status="unremarkable"><w lemma="ἐπί"><unclear reason="damage">ἐπ</unclear><supplied reason="lost">ὶ</supplied></w> <persName key="priscus" type="aphrodisian" full="yes"><supplied reason="lost"><name reg="Ἀντώνιος">Ἀντωνίου</name> <name reg="Πρίσκος">Πρίσκου</name></supplied></persName></del><lb n="12"/><del status="unremarkable"><supplied reason="lost"><w lemma="ὁ">τοῦ</w> <rs type="dignity" key="clarissimus"><w lemma="λαμπρός"><expan><abbr>λαμπρ</abbr><supplied reason="abbreviation">οτάτου</supplied></expan></w></rs> <rs type="official-secul" key="praeses"><w lemma="ἡγεμών">ἡγεμόνος</w></rs></supplied></del>
+<ab><lb n="1"/><persName key="agty" nymRef="#Ἀγαθὴ Τύχη" type="divine"><w lemma="ἀγαθός">Ἀγαθῇ</w> <w lemma="τύχη">Τύχῃ</w></persName><lb n="1a"/><space extent="1" dim="vertical" unit="line"/><lb n="2"/><w lemma="ὁ"><unclear reason="damage">τ</unclear>ὸν</w> <w lemma="ὁ">τῆς</w> <w lemma="ὑπό">ὑφ'</w> <w lemma="ἥλιος">ἡλίῳ</w> <w lemma="γῆ">γῆς</w><lb n="3"/><rs type="official-secul" key="imperator"><w lemma="αὐτοκράτωρ">αὐτοκράτορα</w></rs> <w lemma="καί">καὶ</w> <w lemma="τροπεοῦχος">τροπεο<unclear reason="damage">ῦχον</unclear></w><lb n="4"/><rs key="despot" type="official-secul"><w lemma="δεσπότης">δεσπότην</w></rs> <w lemma="ἐγώ">ἡμῶν</w><lb n="5"/><persName key="ValentinianII" type="emperor"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>άουιον</ex></expan></name> <name nymRef="#Οὐαλλεντινιανός">Οὐαλλεντινιανὸν</name></persName><lb n="6"/><w lemma="ὁ"><unclear reason="damage">τ</unclear>ὸν</w> <w lemma="αἰώνιος">αἰώνιον</w> <rs type="dignity" key="augustus">Αὔγουστον</rs><lb n="6a"/><space extent="1" dim="vertical" unit="line"/><lb n="7"/><del status="unremarkable"><persName key="EutTatianus" type="attested"><name nymRef="#Φλάβιος"><expan><abbr><unclear reason="damage">Φλ</unclear></abbr><ex>άουιος</ex></expan></name> <name nymRef="#Εὐτόλμιος"><supplied reason="lost">Εὐ</supplied><unclear reason="damage">τόλ</unclear><supplied reason="lost">μι</supplied>ος</name> <name nymRef="#Τατιανός"><supplied reason="lost">Τα</supplied><unclear reason="damage">τι</unclear><supplied reason="lost">ανὸς</supplied></name></persName></del><lb n="8"/><del status="unremarkable"><w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w> <rs key="clarissimus" type="dignity"><w lemma="λαμπρός"><expan><abbr><supplied reason="lost">λαμ</supplied><unclear reason="damage">πρ</unclear></abbr><ex>ότατος</ex></expan></w></rs> <rs key="PPO" type="official-secul"><w lemma="ἔπαρχος">ἔπ<supplied reason="lost">αρχ</supplied><unclear reason="damage">ος</unclear></w></rs> <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear reason="damage">οῦ</unclear></w> <w lemma="ἱερός"><unclear reason="undefined">ἱ</unclear><supplied reason="lost">ε</supplied><unclear reason="damage">ρ</unclear><supplied reason="lost">οῦ</supplied></w></del><lb n="9"/><del status="unremarkable"><w lemma="πραιτώριον"><supplied reason="lost">πρετωρί</supplied>ου</w> <w lemma="ὁ"><unclear reason="damage">τῇ</unclear></w>  <w lemma="συνήθης"><unclear reason="undefined">συ</unclear><supplied reason="lost">νήθει</supplied></w></del><lb n="10"/><del status="unremarkable"><supplied reason="lost"><w lemma="καθοσίωσις">καθοσιώσει</w></supplied> <w lemma="ἀφιερόω"><supplied reason="lost">ἀ</supplied><unclear reason="damage">φ</unclear><supplied reason="lost">ιέρωσεν</supplied></w></del><lb n="10a"/><space extent="1" dim="vertical" unit="line"/><lb n="11"/><del status="unremarkable"><w lemma="ἐπί"><unclear reason="damage">ἐπ</unclear><supplied reason="lost">ὶ</supplied></w> <persName key="priscus" type="attested"><supplied reason="lost"><name nymRef="#Ἀντώνιος">Ἀντωνίου</name> <name nymRef="#Πρίσκος">Πρίσκου</name></supplied></persName></del><lb n="12"/><del status="unremarkable"><supplied reason="lost"><w lemma="ὁ">τοῦ</w> <rs type="dignity" key="clarissimus"><w lemma="λαμπρός"><expan><abbr>λαμπρ</abbr><ex>οτάτου</ex></expan></w></rs> <rs type="official-secul" key="praeses"><w lemma="ἡγεμών">ἡγεμόνος</w></rs></supplied></del>
 </ab>
 </div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l.5. Mendel apparently did not copy <foreign lang="grc"><abbr>Φλ</abbr></foreign> or the superfluous <foreign lang="grc">λ</foreign> in <foreign lang="grc">Οὐαλλεντινιανόν</foreign>; Boulanger recorded both.</p>
-<p>ll. 7-12 have been erased. Grégoire was unaware of this erasure; Mendel saw three lines erased, Boulanger recorded two. Our readings from the stone and from a squeeze are very unclear.</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>With Good Fortune. The emperor of <supplied reason="subaudible">all</supplied> the earth under the sun, and our victorious master, Flavius Valentinianus the eternal Augustus. <del status="unremarkable">Flavius Eutolmius Tatianos. <term lang="la">clarissimus</term>, prefect of the sacred <term lang="la">praetorium</term>, dedicated (this statue) with the customary devotion, in the time of Antonius Priskos, <term lang="la">clarissimus praeses</term>.</del></p>
-</div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>For Flavius Eutolmius Tatianos see <title level="m">PLRE</title> I Tatianos 5. For this group of dedications by him see <xref type="inscription" n="25" href="050217">5.217</xref>, <xref type="inscription" n="26" href="040010">4.10</xref>, and discussion at <xref type="eAla-text" n="III.24">III.24</xref>. For Antonius Priskos see  <xref type="inscription" n="25" href="050217">5.217</xref>, <xref type="inscription" n="26" href="040010">4.10</xref> and <xref type="inscription" n="28" href="020110">2.110</xref>, and discussion at <xref type="eAla-text" n="III.30">III.30</xref></p>
-</div>
-
-<div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs key="HadrBath" type="monuList">South Agora</rs>: West portico: '<foreign lang="fr">Galerie de l'E<supplied reason="abbreviation">st</supplied>. Colonne à d<supplied reason="abbreviation">roite</supplied> de la porte la <seg cert="low">plus</seg> au N<supplied reason="abbreviation">ord</supplied>, de l'en<gap reason="lost"/></foreign>' (Boulanger, notebook A: '<foreign lang="fr">à droite de la porte</foreign>', Notebook B). Found by the current expedition standing apparently in situ in the west portico of the South Agora (although Grégoire, <title level="m">IGC</title> 276. from Mendel's notes, describes it as found fallen near its plinth), flanking, on the north, the steps which descend from the east court of the Hadrianic Baths to the portico. </rs>. <rs type="origLocation">Findspot.</rs>. <rs type="lastLocation">Findspot (2002).</rs>. </p></div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated and transcribed by <rs type="visitor" key="mendel">Mendel</rs> in <date value="1905" notBefore="1905" notAfter="1905" exact="both">September 1905</date>; copied by <rs type="visitor" key="boulanger">Boulanger</rs> (Boulanger (Notebook A, 61, no. 22, whence B, 3, no. 2); copied by <rs type="visitor" key="robert">J. and L. Robert</rs>; recorded by the NYU expedition.</p>
-<p>Statue excavated by the NYU expedition in <date value="1975" notBefore="1975" notAfter="1975" exact="both">1975</date> (<rs type="invNo">75.248</rs>).</p>
-</div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl type="hbi" rend="primary" n="mendel1914"><author>Mendel</author>, <title level="m">Catalogue</title>, no. <biblScope>506.2</biblScope></bibl>; by <bibl type="hbi" n="IGC"><author>Grégoire</author>, <title level="m">IGC</title> <biblScope>276</biblScope></bibl>, from Mendel's copy; by <bibl type="hbi" rend="primary" n="hell4"><author>L. Robert</author>, <title level="j">Hellenica</title> 4, <biblScope>50-51</biblScope></bibl>, from Boulanger's notes and his own copy, whence <bibl n="be"><title level="j">BE</title> <biblScope>1949.178</biblScope></bibl>; by <bibl type="hbi" rend="primary" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>, <biblScope>27</biblScope> and Plate vii</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257545">662</biblScope>.</bibl></p>
-<p>Statue: <bibl type="hbi" n="rrrs1999"><author>R. R. R. Smith</author> (<date>1999</date>), <biblScope>162</biblScope></bibl>.</p>
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; Boulanger notebooks; transcription and squeeze (Roueché).</p>
-</div>
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-  <p><figure href="73_V_16"><figDesc>Face (1973)</figDesc></figure><figure href="73_W_30"><figDesc>Face (1973)</figDesc></figure><figure href="2002_A_32"><figDesc>View (2002)</figDesc></figure><figure href="NY_94_57_01"><figDesc>Right side(1994)</figDesc></figure><figure href="NY_94_57_00"><figDesc>Left side (1994)</figDesc></figure><figure href="NY_94_56_36"><figDesc>Top of base(1994)</figDesc></figure></p>
-
-
-</div>
-
-<div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Boulanger_A_61"><figDesc>Boulanger Notebook A, page 61</figDesc></figure><figure href="smith-ala27"><figDesc>Statue and base: Drawing: K.Gorkay, from Smith (1999)</figDesc></figure></p></div>
-
-</body>
-</text>
+         <div type="apparatus">
+            <p>l.5. Mendel apparently did not copy <foreign xml:lang="grc">
+                  <abbr>Φλ</abbr>
+               </foreign> or the superfluous <foreign xml:lang="grc">λ</foreign> in <foreign xml:lang="grc">Οὐαλλεντινιανόν</foreign>; Boulanger recorded both.</p>
+            <p>ll. 7-12 have been erased. Grégoire was unaware of this erasure; Mendel saw three lines erased, Boulanger recorded two. Our readings from the stone and from a squeeze are very unclear.</p>
+         </div>
+         <div type="translation">
+            <p>With Good Fortune. The emperor of <supplied reason="subaudible">all</supplied> the earth under the sun, and our victorious master, Flavius Valentinianus the eternal Augustus. <del status="unremarkable">Flavius Eutolmius Tatianos. <term xml:lang="la">clarissimus</term>, prefect of the sacred <term xml:lang="la">praetorium</term>, dedicated (this statue) with the customary devotion, in the time of Antonius Priskos, <term xml:lang="la">clarissimus praeses</term>.</del>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>For Flavius Eutolmius Tatianos see <title level="m">PLRE</title> I Tatianos 5. For this group of dedications by him see <ref type="inscription" n="25" target="050217.xml"/>, <ref type="inscription" n="26" target="040010.xml"/>, and discussion at <ref type="eAla-text" n="III.24" target=".xml"/>. For Antonius Priskos see  <ref type="inscription" n="25" target="050217.xml"/>, <ref type="inscription" n="26" target="040010.xml"/> and <ref type="inscription" n="28" target="020110.xml"/>, and discussion at <ref type="eAla-text" n="III.30" target=".xml"/>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" rend="primary" n="mendel1914">
+                  <author>Mendel</author>, <title level="m">Catalogue</title>, no. <citedRange>506.2</citedRange>
+               </bibl>; by <bibl type="hbi" n="IGC">
+                  <author>Grégoire</author>, <title level="m">IGC</title>
+                  <citedRange>276</citedRange>
+               </bibl>, from Mendel's copy; by <bibl type="hbi" rend="primary" n="hell4">
+                  <author>L. Robert</author>, <title level="j">Hellenica</title> 4, <citedRange>50-51</citedRange>
+               </bibl>, from Boulanger's notes and his own copy, whence <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1949.178</citedRange>
+               </bibl>; by <bibl type="hbi" rend="primary" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>, <citedRange>27</citedRange> and Plate vii</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257545">662</citedRange>.</bibl>
+            </p>
+            <p>Statue: <bibl type="hbi" n="rrrs1999">
+                  <author>R. R. R. Smith</author> (<date>1999</date>), <citedRange>162</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

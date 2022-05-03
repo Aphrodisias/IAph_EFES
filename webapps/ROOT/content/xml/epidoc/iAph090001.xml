@@ -1,77 +1,220 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph090001" n="iAph1270 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building <rs type="textType">restoration</rs></rs> dedicated to Aphrodite  and emperors</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-04-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building restoration dedicated to Aphrodite  and emperors</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph090001</idno>
+            <idno type="IAph2007">iAph090001</idno>
+            <idno type="JMR2004">iAph1270</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>81.88</idno>
+                  <idno>81.89</idno>
+                  <idno>81.87</idno>
+                  <idno>81.85</idno>
+                  <idno>81.94</idno>
+                  <idno>81.95</idno>
+                  <idno>71.440</idno>
+                  <idno>72.215</idno>
+                  <idno>72.162</idno>
+                  <idno>73.167</idno>
+                  <idno>73.151</idno>
+                  <idno>75.258</idno>
+                  <idno>73.111</idno>
+                  <idno>71.431</idno>
+                  <idno>67.471</idno>
+                  <idno>71.432</idno>
+                  <idno>72.164</idno>
+                  <idno>72.216</idno>
+                  <idno>70.247</idno>
+                  <idno>70.248</idno>
+                  <idno>83.150</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragments of <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> blocks (<width unit="metre">1.63</width>   × <height unit="metre">0.31</height>   × <depth unit="metre">0.57</depth>-<depth unit="metre">0.69</depth> in depth) from the entablature of the north portico of the Sebasteion. Above is a decoration of <rs type="decoration">mutule</rs>s, spaced at intervals of  <height unit="metre">0.30</height>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>The <rs type="execution" ref="scalpro">inscription</rs> runs in one line on a single, unstepped, face. The face is drafted above, below and at the ends of each block; the upper drafting line rises to follow the line of the moulding between the mutules.  The inscription was cut when the blocks were in place, and letters run across joins.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.09</height>; small star for stop.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Sebasteion</rs>
+                     </origPlace>
+                     <origDate notBefore="0014" notAfter="0100" precision="medium">
+ First century A.D.</origDate>
+                  </origin>
+                  <provenance type="found">Six architrave blocks were found in the <rs type="monuList">Sebasteion</rs>. These formed the left end of the inscription, and are succeeded by several empty blocks. 16 fragments of the preceding text were found, over a period of several years, re-used in the defence wall built in the first half of the 7th century across the east wall of the <rs type="monuList">Theatre</rs>.</provenance>
+                  <provenance type="observed" when="1981">Museum or restored on site (1981).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-24" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_B_00A.jpg">
+            <desc>Fragment a. (1977)</desc>
+         </graphic>
+         <graphic url="81_E_17.jpg">
+            <desc>Fragment a. (1981)</desc>
+         </graphic>
+         <graphic url="78_J_01.jpg">
+            <desc>Fragment b. (1978)</desc>
+         </graphic>
+         <graphic url="81_E_09.jpg">
+            <desc>Fragment c. (1981)</desc>
+         </graphic>
+         <graphic url="81_E_10.jpg">
+            <desc>Fragment c. (1981)</desc>
+         </graphic>
+         <graphic url="78_K_15.jpg">
+            <desc>Fragment c. (1978)</desc>
+         </graphic>
+         <graphic url="78_K_20.jpg">
+            <desc>Fragment c. (1978)</desc>
+         </graphic>
+         <graphic url="77_B_26A.jpg">
+            <desc>Fragment c. (1977)</desc>
+         </graphic>
+         <graphic url="78_K_22.jpg">
+            <desc>Fragment d. (1978)</desc>
+         </graphic>
+         <graphic url="78_L_03.jpg">
+            <desc>Fragment d. (1978)</desc>
+         </graphic>
+         <graphic url="77_F_29.jpg">
+            <desc>Fragment d. (1977)</desc>
+         </graphic>
+         <graphic url="78_L_05.jpg">
+            <desc>Fragment d. (1978)</desc>
+         </graphic>
+         <graphic url="77_B_27A.jpg">
+            <desc>Fragment e. (1977)</desc>
+         </graphic>
+         <graphic url="81_F_27.jpg">
+            <desc>Fragment e. (1981)</desc>
+         </graphic>
+         <graphic url="81_C_05.jpg">
+            <desc>Fragment f. (1981)</desc>
+         </graphic>
+         <graphic url="81_C_07.jpg">
+            <desc>Fragment g. (1981)</desc>
+         </graphic>
+         <graphic url="81_C_08.jpg">
+            <desc>Fragment g. (1981)</desc>
+         </graphic>
+         <graphic url="81_C_18.jpg">
+            <desc>Fragment h. (1981)</desc>
+         </graphic>
+         <graphic url="81_C_19.jpg">
+            <desc>Fragment h. (1981)</desc>
+         </graphic>
+         <graphic url="81_C_10.jpg">
+            <desc>Fragment i. (1981)</desc>
+         </graphic>
+         <graphic url="81_C_11.jpg">
+            <desc>Fragment i. (1981)</desc>
+         </graphic>
+         <graphic url="81_C_06.jpg">
+            <desc>Fragment j. (1981)</desc>
+         </graphic>
+         <graphic url="81_C_17.jpg">
+            <desc>Fragment k. (1981)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Fragments of <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> blocks (<measure type="length" unit="metre" dim="width">1.63</measure>   × <measure type="length" unit="metre" dim="height">0.31</measure>   × <measure type="length" unit="metre" dim="depth">0.57</measure>-<measure type="length" unit="metre" dim="depth">0.69</measure> in depth) from the entablature of the north portico of the Sebasteion. Above is a decoration of <rs type="decoration">mutule</rs>s, spaced at intervals of  <measure dim="none" type="length" unit="metre" precision="circa">0.30</measure>.</p>
+<ab><lb n="1"/>  <supplied reason="lost" cert="low"><persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδίτῃ</name></persName></supplied>  <persName type="divine"><supplied reason="lost"><w lemma="θεός">θεοῖς</w></supplied>  <supplied reason="lost"><persName type="emperor"><w lemma="σεβαστός">Σεβαστοῖς</w></persName></supplied>  <supplied reason="lost"><w lemma="Ὀκτωβρίων">Ὀλυνπίοις</w></supplied></persName>  <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">τῷ</supplied>  <supplied reason="lost"><w lemma="δῆμος">δήμῳ</w></supplied>  <milestone unit="block" n="a"/>  <g ref="#star"/>  <persName type="attested"><name nymRef="#Εὐσεβής">Εὐσέβης</name></persName>  <w lemma="φιλόπατρις">φιλό<supplied reason="lost">πατρις</supplied></w>  <supplied reason="lost">καὶ</supplied>  <persName type="attested"><name nymRef="#Μένανδρος"><supplied reason="lost">Μένα</supplied><unclear reason="damage">ν</unclear>δρος</name> <w lemma="ὁ">οἱ</w> <persName type="attested"><name nymRef="#Μένανδρος">Μ<milestone unit="block" n="b"/>ενάν<supplied reason="lost">δρου</supplied></name>  <supplied reason="lost">τοῦ</supplied>  <persName type="attested"><name nymRef="#Εὔνικος"><supplied reason="lost">Εὐνί</supplied>κου</name></persName></persName></persName>  <supplied reason="lost">καὶ</supplied>  <persName type="attested"><name nymRef="#Ἀπφία"><supplied reason="lost">Ἀπ</supplied><milestone unit="block" n="c"/>φίας</name>  <persName type="attested"><name nymRef="#Μένανδρος">Μενάν<supplied reason="lost">δρου</supplied></name></persName>  <supplied reason="lost">γυνὴ</supplied>  <persName type="attested"><name nymRef="#Εὐσεβής"><supplied reason="lost">Εὐσε</supplied>βοῦς</name></persName></persName>  <g ref="#stop"/>  <w lemma="ἀνατίθημι">ἀνέθ<unclear reason="damage">η</unclear><supplied reason="lost">κ</supplied><unclear reason="damage">α</unclear>ν</w> <w lemma="ἐκ">ἐκ</w> τῶ<milestone unit="block" n="d"/>ν  ἰδ<supplied reason="lost">ίων</supplied>  <g ref="#star"/> <w lemma="ὑπό">ὑπὸ</w> <rs type="subject" key="earthquake"><w lemma="σεισμός">σει<unclear reason="damage">σ</unclear><supplied reason="lost">μῶ</supplied>ν</w></rs>  δ<supplied reason="lost">ὲ</supplied>  <supplied reason="lost">κατενεχθέντα</supplied>  <supplied reason="lost">καὶ</supplied>  <w lemma="ἀχρειόω"><supplied reason="lost">ἀχρηω</supplied>θέν<milestone unit="block" n="e"/><supplied reason="lost">τ</supplied>α</w>  <w lemma="πάλιν">πά<supplied reason="lost">λ</supplied><unclear reason="damage">ι</unclear>ν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰ<milestone unit="block" n="f"/>δίων</w>  <g ref="#stop"/>  <persName type="attested"><name nymRef="#Ἀπφία">Ἀπφίας</name></persName>  <space unit="character" extent="1" dim="horizontal"/> <w lemma="σύν">σὺν</w> <milestone unit="block" n="g"/> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Τάτας">Τάτᾳ</name></persName> <w lemma="ὁ">τῇ</w> <w lemma="θυγάτηρ">θυγα<milestone unit="block" n="h"/>τρὶ</w>  <space unit="character" extent="1" dim="horizontal"/> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Μένανδρος">Μενάνδρῳ</name></persName>  <milestone unit="block" n="i"/>  <w lemma="καί">κ<supplied reason="lost">α</supplied>ὶ</w>  <persName type="attested"><name nymRef="#Εὐσεβής">Εὐσεβεῖ</name></persName> <w lemma="ὁ">τοῖς</w> <w lemma="ἔγγονος">ἐγ<milestone unit="block" n="j"/>γόνοις</w> <w lemma="τελέω">τελέσασα</w> <milestone unit="block" n="k"/> <w lemma="ἀποκαθίστημι">ἀποκαθέστησεν</w> <milestone unit="block"/>  <space unit="character" extent="5" dim="horizontal"/></ab>
 </div>
-<div type="description" n="text"><head>Description of Text</head><p>The <rs type="execution" key="scalpro">inscription</rs> runs in one line on a single, unstepped, face. The face is drafted above, below and at the ends of each block; the upper drafting line rises to follow the line of the moulding between the mutules.  The inscription was cut when the blocks were in place, and letters run across joins.</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p> <measure dim="height" type="length" unit="metre">0.09</measure>; small star for stop.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date exact="none" notAfter="0100" notBefore="0014"> First century A.D.</date></p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <supplied reason="lost" cert="low"><persName type="divine" full="yes"><name reg="Ἀφροδίτη">Ἀφροδίτῃ</name></persName></supplied>  <persName type="divine" full="yes"><supplied reason="lost"><w lemma="θεός">θεοῖς</w></supplied>  <supplied reason="lost"><persName type="emperor" full="yes"><w lemma="σεβαστός">Σεβαστοῖς</w></persName></supplied>  <supplied reason="lost"><w lemma="Ὀκτωβρίων">Ὀλυνπίοις</w></supplied></persName>  <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">τῷ</supplied>  <supplied reason="lost"><w lemma="δῆμος">δήμῳ</w></supplied>  <milestone unit="block" n="a"/>  <g type="star"/>  <persName type="aphrodisian" full="yes"><name reg="Εὐσεβής">Εὐσέβης</name></persName>  <w lemma="φιλόπατρις">φιλό<supplied reason="lost">πατρις</supplied></w>  <supplied reason="lost">καὶ</supplied>  <persName type="aphrodisian" full="yes"><name reg="Μένανδρος"><supplied reason="lost">Μένα</supplied><unclear reason="damage">ν</unclear>δρος</name> <w lemma="ὁ">οἱ</w> <persName type="aphrodisian"><name reg="Μένανδρος">Μ<milestone unit="block" n="b"/>ενάν<supplied reason="lost">δρου</supplied></name>  <supplied reason="lost">τοῦ</supplied>  <persName type="aphrodisian"><name reg="Εὔνικος" type=""><supplied reason="lost">Εὐνί</supplied>κου</name></persName></persName></persName>  <supplied reason="lost">καὶ</supplied>  <persName type="aphrodisian" full="yes"><name reg="Ἀπφία"><supplied reason="lost">Ἀπ</supplied><milestone unit="block" n="c"/>φίας</name>  <persName type="aphrodisian"><name reg="Μένανδρος">Μενάν<supplied reason="lost">δρου</supplied></name></persName>  <supplied reason="lost">γυνὴ</supplied>  <persName type="aphrodisian"><name reg="Εὐσεβής"><supplied reason="lost">Εὐσε</supplied>βοῦς</name></persName></persName>  <g type="stop"/>  <w lemma="ἀνατίθημι">ἀνέθ<unclear reason="damage">η</unclear><supplied reason="lost">κ</supplied><unclear reason="damage">α</unclear>ν</w> <w lemma="ἐκ">ἐκ</w> τῶ<milestone unit="block" n="d"/>ν  ἰδ<supplied reason="lost">ίων</supplied>  <g type="star"/> <w lemma="ὑπό">ὑπὸ</w> <rs type="subject" key="earthquake"><w lemma="σεισμός">σει<unclear reason="damage">σ</unclear><supplied reason="lost">μῶ</supplied>ν</w></rs>  δ<supplied reason="lost">ὲ</supplied>  <supplied reason="lost">κατενεχθέντα</supplied>  <supplied reason="lost">καὶ</supplied>  <w lemma="ἀχρειόω"><supplied reason="lost">ἀχρηω</supplied>θέν<milestone unit="block" n="e"/><supplied reason="lost">τ</supplied>α</w>  <w lemma="πάλιν">πά<supplied reason="lost">λ</supplied><unclear reason="damage">ι</unclear>ν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰ<milestone unit="block" n="f"/>δίων</w>  <g type="stop"/>  <persName type="aphrodisian" full="yes"><name reg="Ἀπφία">Ἀπφίας</name></persName>  <space unit="character" extent="1" dim="horizontal"/> <w lemma="σύν">σὺν</w> <milestone unit="block" n="g"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian" full="yes"><name reg="Τάτας" type="">Τάτᾳ</name></persName> <w lemma="ὁ">τῇ</w> <w lemma="θυγάτηρ">θυγα<milestone unit="block" n="h"/>τρὶ</w>  <space unit="character" extent="1" dim="horizontal"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian" full="yes"><name reg="Μένανδρος">Μενάνδρῳ</name></persName>  <milestone unit="block" n="i"/>  <w lemma="καί">κ<supplied reason="lost">α</supplied>ὶ</w>  <persName type="aphrodisian" full="yes"><name reg="Εὐσεβής">Εὐσεβεῖ</name></persName> <w lemma="ὁ">τοῖς</w> <w lemma="ἔγγονος">ἐγ<milestone unit="block" n="j"/>γόνοις</w> <w lemma="τελέω">τελέσασα</w> <milestone unit="block" n="k"/> <w lemma="ἀποκαθίστημι">ἀποκαθέστησεν</w> <milestone unit="block"/>  <space unit="character" extent="5" dim="horizontal"/></ab>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p><supplied reason="lost">For Aphrodite, for the gods Augusti Olympians, for the People</supplied>: Eusebes <supplied reason="subaudible">entitled</supplied> lover of his country, and Menandros, the sons of Menandros the son of Eunikos and Apphias daughter of Menandros, <supplied reason="lost">wife of</supplied> Eusebes set <supplied reason="subaudible">this</supplied> up at their own expense. After it was thrown down and made useless by earthquakes, again at their own expense Apphias completed and set it up again, in company with Tata, her daughter, and Menandros and Eusebes her grandsons.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The text can be restored by comparison with the virtually identical text found in the Propylon, <xref type="iAph">1274</xref> (=83.54+) (which only omits the filiation of Apphias). For the family see <xref type="iAph">1271</xref> (=81.173+)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-Found: <rs type="found">Six architrave blocks were found in the <rs type="monuList">Sebasteion</rs>. These formed the left end of the inscription, and are succeeded by several empty blocks. 16 fragments of the preceding text were found, over a period of several years, re-used in the defence wall built in the first half of the 7th century across the east wall of the <rs type="monuList">Theatre</rs>.</rs>
-; Last known location: <rs type="lastLocation">Museum or restored on site (1981).</rs>
-<rs type="origLocation"><rs type="monuList">Sebasteion</rs></rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition, in the Sebasteion in 1981 (from left to right, <rs type="invNo">81.88</rs>, <rs type="invNo">81.89</rs>, <rs type="invNo">81.87</rs>, <rs type="invNo">81.85</rs>, <rs type="invNo">81.94</rs>, <rs type="invNo">81.95</rs>) and in the East wall of the Theatre between 1967 and 1972 (<rs type="invNo">71.440</rs>, <rs type="invNo">72.215</rs>, <rs type="invNo">72.162</rs>, <rs type="invNo">73.167</rs>, <rs type="invNo">73.151</rs>, <rs type="invNo">75.258</rs>, <rs type="invNo">73.111</rs>, <rs type="invNo">71.431</rs>, <rs type="invNo">67.471</rs>, <rs type="invNo">71.432</rs>, <rs type="invNo">72.164</rs>, <rs type="invNo">72.216</rs>, <rs type="invNo">70.247</rs>, <rs type="invNo">70.248</rs>, and 2 unnumbered fragments).  <seg cert="low">Also <rs type="invNo">83.150</rs>.</seg></p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Cited by <bibl n="kte1982"><author>Erim</author>, <title level="j">Britannia</title> 13, 1982, 278, note 8</bibl>, <bibl n="rrrs1987"><author>Smith</author>, <title level="j">JRS</title> 77, 1987, 90</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="256973">95</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_B_00A"><figDesc>Fragment a. (1977)</figDesc></figure><figure href="81_E_17"><figDesc>Fragment a. (1981)</figDesc></figure><figure href="78_J_01"><figDesc>Fragment b. (1978)</figDesc></figure><figure href="81_E_09"><figDesc>Fragment c. (1981)</figDesc></figure><figure href="81_E_10"><figDesc>Fragment c. (1981)</figDesc></figure><figure href="78_K_15"><figDesc>Fragment c. (1978)</figDesc></figure><figure href="78_K_20"><figDesc>Fragment c. (1978)</figDesc></figure><figure href="77_B_26A"><figDesc>Fragment c. (1977)</figDesc></figure><figure href="78_K_22"><figDesc>Fragment d. (1978)</figDesc></figure><figure href="78_L_03"><figDesc>Fragment d. (1978)</figDesc></figure><figure href="77_F_29"><figDesc>Fragment d. (1977)</figDesc></figure><figure href="78_L_05"><figDesc>Fragment d. (1978)</figDesc></figure><figure href="77_B_27A"><figDesc>Fragment e. (1977)</figDesc></figure><figure href="81_F_27"><figDesc>Fragment e. (1981)</figDesc></figure><figure href="81_C_05"><figDesc>Fragment f. (1981)</figDesc></figure><figure href="81_C_07"><figDesc>Fragment g. (1981)</figDesc></figure><figure href="81_C_08"><figDesc>Fragment g. (1981)</figDesc></figure><figure href="81_C_18"><figDesc>Fragment h. (1981)</figDesc></figure><figure href="81_C_19"><figDesc>Fragment h. (1981)</figDesc></figure><figure href="81_C_10"><figDesc>Fragment i. (1981)</figDesc></figure><figure href="81_C_11"><figDesc>Fragment i. (1981)</figDesc></figure><figure href="81_C_06"><figDesc>Fragment j. (1981)</figDesc></figure><figure href="81_C_17"><figDesc>Fragment k. (1981)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>
+               <supplied reason="lost">For Aphrodite, for the gods Augusti Olympians, for the People</supplied>: Eusebes <supplied reason="subaudible">entitled</supplied> lover of his country, and Menandros, the sons of Menandros the son of Eunikos and Apphias daughter of Menandros, <supplied reason="lost">wife of</supplied> Eusebes set <supplied reason="subaudible">this</supplied> up at their own expense. After it was thrown down and made useless by earthquakes, again at their own expense Apphias completed and set it up again, in company with Tata, her daughter, and Menandros and Eusebes her grandsons.</p>
+         </div>
+         <div type="commentary">
+            <p>The text can be restored by comparison with the virtually identical text found in the Propylon, <ref type="iAph" target=".xml"/> (=83.54+) (which only omits the filiation of Apphias). For the family see <ref type="iAph" target=".xml"/> (=81.173+)</p>
+         </div>
+         <div type="bibliography">
+            <p>Cited by <bibl n="kte1982">
+                  <author>Erim</author>, <title level="j">Britannia</title> 13, 1982, 278, note 8</bibl>, <bibl n="rrrs1987">
+                  <author>Smith</author>, <title level="j">JRS</title> 77, 1987, 90</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256973">95</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

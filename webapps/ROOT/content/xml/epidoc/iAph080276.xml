@@ -1,112 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080276" n="iAph0108 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType" reg="dedication">Dedicatory</rs> <rs type="textType" reg="verse">poem</rs>, church of SS. Barbara and Anastasia</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-29</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change><change><date>2003-11-06</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-08-25</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-25</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Three <rs type="material" key="marmor">white marble</rs> fragments which join to form two blocks
-of a composite <rs type="objectType">lintel</rs> (H. <measure dim="none">0.15-0.18</measure>, D. <measure dim="none">0.31-0.35</measure>) with moulding along
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedicatory poem, church of SS. Barbara and Anastasia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080276</idno>
+            <idno type="IAph2007">iAph080276</idno>
+            <idno type="JMR2004">iAph0108</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>69.354</idno>
+                  <idno>70.224</idno>
+                  <idno>79.190</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three <material key="marmor">white marble</material> fragments which join to form two blocks
+of a composite <objectType>lintel</objectType> (H. <height>0.15-0.18</height>, D. <height>0.31-0.35</height>) with moulding along
 the front and the surviving right edge; probably only a small fragment
-is lost to the left—the total surviving W. <measure precision="circa" dim="none">1.50</measure>.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> in one line along the uppermost fascia of the
-moulding, which is chipped away above.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p><measure type="length" unit="metre" dim="height">0.025</measure>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0801" notAfter="1000">Ninth to tenth centuries A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">metre</rs>)</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
-        <lg><lb n="1"/><l n="1"><w lemma="ἔνθα"><supplied cert="low" reason="lost">ἔνθ'</supplied></w> <w lemma="ὁράω"><supplied reason="lost">ἴ</supplied>δε</w> <w lemma="ναός">ναὸν</w> <w lemma="ὁ"><unclear reason="damage">τ</unclear>ῶν</w> <persName type="divine" key="saint" full="yes"><w lemma="ἅγιος">ἁ<unclear reason="damage">γ</unclear>ίων</w></persName> <persName type="divine" key="martyrs" full="yes"><w lemma="μάρτυς">μαρ<unclear reason="damage">τ</unclear>ύρων</w></persName></l><l n="2"><persName type="divine" key="Barbara" full="yes"><name reg="Βαρβάρα">Βα<unclear reason="damage">ρ</unclear>βα<unclear reason="damage">ρ</unclear>ας</name></persName> <w lemma="τε">τε</w> <w lemma="φημί">φῆμι</w> <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w> <persName key="Anastasia" type="divine" full="yes"><name reg="Ἀναστασία"><supplied reason="lost">Ἀ</supplied>ναστασίας</name></persName> <g type="cross"/><space dim="horizontal"/></l></lg>
-</div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>Here <seg cert="low">see</seg> the church of the holy martyrs, Barbara, I
-mean, and Anastasia.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="VII.23">VII.23</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found">One block found during the excavation of the <rs type="monuList" key="Theatre">Theatre</rs> in
+is lost to the left—the total surviving W. <height>1.50</height>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in one line along the uppermost fascia of the
+moulding, which is chipped away above.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <seg cert="low">An unidentified church</seg>.</origPlace>
+                     <origDate notBefore="0801"
+                               notAfter="1000"
+                               precision="medium"
+                               evidence="lettering metre">Ninth to tenth centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">metre</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">One block found during the excavation of the <rs type="monuList" key="Theatre">Theatre</rs> in
 <date value="1969" notBefore="1969" notAfter="1969" exact="both">1969</date>, another a stray find in <date value="1970" notBefore="1970" notAfter="1970" exact="both">1970</date>, a third excavated in the
-<rs type="monuList" key="Sebasteion">Sebasteion</rs> portico in <date value="1979" notBefore="1979" notAfter="1979" exact="both">1979</date>.</rs>. Original location: <rs type="origLocation"><seg cert="low">An unidentified church</seg>.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU expedition (<rs type="invNo">69.354</rs>, <rs type="invNo">70.224</rs>, <rs type="invNo">79.190</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>107</biblScope> and plate xxix</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257494">612</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="transcriptions">
-        <head>Photographs</head>
-        <p><figure href="80_C_26"><figDesc>Left end fragment (1980)</figDesc></figure><figure href="77_Y_33"><figDesc>Centre fragment (1977)</figDesc></figure><figure href="77_Y_34"><figDesc>Right end fragment (1977)</figDesc></figure><figure href="80_H_20"><figDesc>Fragments 1 and 2 together (1980)</figDesc></figure></p></div>
-
-    
-
-      
-
+<rs type="monuList" key="Sebasteion">Sebasteion</rs> portico in <date value="1979" notBefore="1979" notAfter="1979" exact="both">1979</date>.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-29" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-25" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-06" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-25" who="#CMR">tagged and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="80_C_26.jpg">
+            <desc>Left end fragment (1980)</desc>
+         </graphic>
+         <graphic url="77_Y_33.jpg">
+            <desc>Centre fragment (1977)</desc>
+         </graphic>
+         <graphic url="77_Y_34.jpg">
+            <desc>Right end fragment (1977)</desc>
+         </graphic>
+         <graphic url="80_H_20.jpg">
+            <desc>Fragments 1 and 2 together (1980)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+        <lg><lb n="1"/><l n="1"><w lemma="ἔνθα"><supplied cert="low" reason="lost">ἔνθ'</supplied></w> <w lemma="ὁράω"><supplied reason="lost">ἴ</supplied>δε</w> <w lemma="ναός">ναὸν</w> <w lemma="ὁ"><unclear reason="damage">τ</unclear>ῶν</w> <persName key="saint" type="divine"><w lemma="ἅγιος">ἁ<unclear reason="damage">γ</unclear>ίων</w></persName> <persName key="martyrs" type="divine"><w lemma="μάρτυς">μαρ<unclear reason="damage">τ</unclear>ύρων</w></persName></l><l n="2"><persName key="Barbara" type="divine"><name nymRef="#Βαρβάρα">Βα<unclear reason="damage">ρ</unclear>βα<unclear reason="damage">ρ</unclear>ας</name></persName> <w lemma="τε">τε</w> <w lemma="φημί">φῆμι</w> <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w> <persName key="Anastasia" type="divine"><name nymRef="#Ἀναστασία"><supplied reason="lost">Ἀ</supplied>ναστασίας</name></persName> <g ref="#cross"/><space dim="horizontal"/></l></lg>
+</div>
+         <div type="translation">
+            <ab>Here <seg cert="low">see</seg> the church of the holy martyrs, Barbara, I
+mean, and Anastasia.</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="VII.23" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>107</citedRange> and plate xxix</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257494">612</citedRange>
+               </bibl>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

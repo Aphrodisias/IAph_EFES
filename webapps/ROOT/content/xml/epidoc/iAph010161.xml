@@ -1,103 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010161" n="iAph1044 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Ηonours</rs> for anonymous, who has established a <rs type="textType">foundation</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Ηonours for anonymous, who has established a foundation</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010161</idno>
+            <idno type="IAph2007">iAph010161</idno>
+            <idno type="JMR2004">iAph1044</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper part of a <material key="marmor">white marble</material>
+                              <objectType>statue base</objectType> shaft with moulded panels on at least two sides (<width unit="metre">0.55</width>   × <width unit="metre">0.54</width>   × <depth>0.36</depth>), damaged above and broken away below.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face (<width unit="metre">0.35</width> x <height unit="metre">0.42</height>), which is very weathered.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>; ligatures: ΝΤ, l.2; ΤΗ l. 3; ΜΕ l.10; ΤΗΝ l.12; ΝΗ l.12.  Apex on initial A, l.2.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">Second to third centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>: probably reused in the south side of the Byzantine bema-rail</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>publications; Preliminary transcription (Reynolds). </creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_D_06A.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="K_III_21.jpg">
+            <desc>Kubitschek notebook III, 21</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Upper part of a <rs type="material" key="marmor">white marble</rs> <rs type="objectType">statue base</rs> shaft with moulded panels on at least two sides (<measure type="length" unit="metre" dim="width">0.55</measure>   × <measure type="length" unit="metre" dim="width">0.54</measure>   × <measure type="depth" dim="depth">0.36</measure>), damaged above and broken away below.</p>
+                <ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/><lb n="0a"/><supplied reason="lost"><note place="not  specified" xml:lang=""/> <w lemma="πᾶς">πάσας</w> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="καί">καὶ</w></supplied>  <w lemma="λειτουργία"><supplied reason="lost">λει</supplied><lb n="1" break="no"/>τ<unclear reason="damage">ο</unclear><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" unit="character" extent="unknown"/></rdg><rdg resp="previous">υ</rdg></app><unclear reason="damage">ργίας</unclear></w>  <gap unit="character" reason="lost" extent="unknown"/>  <w lemma="ἐκτελέω"><supplied reason="lost" cert="low">ἐκτελέ</supplied><lb n="2" break="no"/><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="3"/></rdg><rdg resp="previous">σα<hi rend="ligature" id="hi1">ν</hi></rdg></app><link targets="hi1  hi2"/><hi rend="ligature" id="hi2"><unclear reason="damage">τ</unclear></hi>ος</w>  <g ref="#stop"/>  <w lemma="ἀνατίθημι">ἀνα<app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg><rdg resp="previous">θ</rdg></app><supplied reason="lost">έντος</supplied></w><lb n="3"/><w lemma="δέ"><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="2"/></rdg><rdg resp="previous">δὲ</rdg></app></w>  <w lemma="καί"><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg><rdg resp="previous">κ</rdg></app>αὶ</w>  <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w>  <w lemma="κράτιστος">κρατί<supplied reason="lost">στῃ</supplied></w><lb n="4"/><w lemma="βουλή"><unclear reason="damage">β</unclear><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="2"/></rdg><rdg resp="previous">ου</rdg></app><unclear reason="damage">λ</unclear>ῇ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="σεμνός"><unclear reason="damage">σ</unclear><supplied reason="lost">ε</supplied><lb n="5" break="no"/>μνοτάτ<unclear reason="damage">ῳ</unclear></w> <w lemma="καί">καὶ</w> <w lemma="ἀρχαῖος">ἀρχ<supplied reason="lost">αι</supplied><lb n="6" break="no"/>οτάτ<unclear reason="damage">ῳ</unclear></w>  <w lemma="συνέδριον"><unclear reason="damage">σ</unclear>υνεδρίῳ</w>  <lb n="7"/> <w lemma="ὁ">τῶν</w> <w lemma="χρυσοφόρος"><unclear reason="damage">χ</unclear>ρυσοφόρων</w>  <lb n="8"/><w lemma="νεοποιός"><unclear reason="damage">νεοπ</unclear>οιῶν</w> <w lemma="εἰς">εἰς</w> <w lemma="αἰώνιος">αἰω<lb n="9" break="no"/>ν<unclear reason="damage">ί</unclear>ους</w>  <w lemma="κλῆρος">κλ<unclear reason="damage">ήρ</unclear>ους</w>  <w lemma="ἀργύριον">ἀρ<lb n="10" break="no"/>γύριον</w>  <w lemma="γίγνομαι">γε<unclear reason="damage">ν</unclear>ό<hi rend="ligature">με</hi>νον</w>  <lb n="11"/> <w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτὸν</w> <w lemma="βουλευτής">βουλευ<lb n="12" break="no"/><hi rend="ligature">τήν</hi></w>  <g ref="#stop"/>  <w lemma="ἀλαιωνέω">ἐλεω<hi rend="ligature">νή</hi>σαντα</w>  <lb n="13"/> <w lemma="καί">καὶ</w> <w lemma="νεοποιέω">ν<unclear reason="damage">ε</unclear>οπυήσαντα</w>  <lb n="14"/><w lemma="φιλοτίμως">φιλοτεί<unclear reason="damage">μ</unclear>ως</w>  <g ref="#star"/>  <w lemma="καί">καὶ</w>  <lb n="15"/><w lemma="παραφυλάσσω"><supplied reason="lost">παραφυλ</supplied><unclear reason="damage">άξαντα</unclear></w><lb n="15a"/><gap unit="line" reason="lost" extent="unknown"/></ab> 
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face (<measure dim="width" type="length" unit="metre">0.35</measure> x <measure dim="height" type="length" unit="metre">0.42</measure>), which is very weathered.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02</measure>; ligatures: ΝΤ, l.2; ΤΗ l. 3; ΜΕ l.10; ΤΗΝ l.12; ΝΗ l.12.  Apex on initial A, l.2.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-                <ab><lb n="0"/>  <gap dim="top" extent="unknown" reason="lost" unit="line"/><lb n="0a"/><supplied reason="lost"><note place="not  specified" anchored="yes">e.g.</note> <w lemma="πᾶς">πάσας</w> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="καί">καὶ</w></supplied>  <w lemma="λειτουργία"><supplied reason="lost">λει</supplied><lb n="1" type="worddiv"/>τ<unclear reason="damage">ο</unclear><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" extent="unknown" unit="character"/></rdg><rdg resp="previous">υ</rdg></app><unclear reason="damage">ργίας</unclear></w>  <gap dim="internal" extent="unknown" unit="character" reason="lost"/>  <w lemma="ἐκτελέω"><supplied reason="lost" cert="low">ἐκτελέ</supplied><lb n="2" type="worddiv"/><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" extent="3" unit="character"/></rdg><rdg resp="previous">σα<hi rend="ligature" id="hi1">ν</hi></rdg></app><link targets="hi1  hi2"/><hi rend="ligature" id="hi2"><unclear reason="damage">τ</unclear></hi>ος</w>  <g type="stop"/>  <w lemma="ἀνατίθημι">ἀνα<app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" extent="1" unit="character"/></rdg><rdg resp="previous">θ</rdg></app><supplied reason="lost">έντος</supplied></w><lb n="3"/><w lemma="δέ"><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" extent="2" unit="character"/></rdg><rdg resp="previous">δὲ</rdg></app></w>  <w lemma="καί"><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" extent="1" unit="character"/></rdg><rdg resp="previous">κ</rdg></app>αὶ</w>  <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w>  <w lemma="κράτιστος">κρατί<supplied reason="lost">στῃ</supplied></w><lb n="4"/><w lemma="βουλή"><unclear reason="damage">β</unclear><app type="previouslyread"><rdg resp="autopsy"><gap reason="lost" extent="2" unit="character"/></rdg><rdg resp="previous">ου</rdg></app><unclear reason="damage">λ</unclear>ῇ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="σεμνός"><unclear reason="damage">σ</unclear><supplied reason="lost">ε</supplied><lb n="5" type="worddiv"/>μνοτάτ<unclear reason="damage">ῳ</unclear></w> <w lemma="καί">καὶ</w> <w lemma="ἀρχαῖος">ἀρχ<supplied reason="lost">αι</supplied><lb n="6" type="worddiv"/>οτάτ<unclear reason="damage">ῳ</unclear></w>  <w lemma="συνέδριον"><unclear reason="damage">σ</unclear>υνεδρίῳ</w>  <lb n="7"/> <w lemma="ὁ">τῶν</w> <w lemma="χρυσοφόρος"><unclear reason="damage">χ</unclear>ρυσοφόρων</w>  <lb n="8"/><w lemma="νεοποιός"><unclear reason="damage">νεοπ</unclear>οιῶν</w> <w lemma="εἰς">εἰς</w> <w lemma="αἰώνιος">αἰω<lb n="9" type="worddiv"/>ν<unclear reason="damage">ί</unclear>ους</w>  <w lemma="κλῆρος">κλ<unclear reason="damage">ήρ</unclear>ους</w>  <w lemma="ἀργύριον">ἀρ<lb n="10" type="worddiv"/>γύριον</w>  <w lemma="γίγνομαι">γε<unclear reason="damage">ν</unclear>ό<hi rend="ligature">με</hi>νον</w>  <lb n="11"/> <w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτὸν</w> <w lemma="βουλευτής">βουλευ<lb n="12" type="worddiv"/><hi rend="ligature">τήν</hi></w>  <g type="stop"/>  <w lemma="ἀλαιωνέω">ἐλεω<hi rend="ligature">νή</hi>σαντα</w>  <lb n="13"/> <w lemma="καί">καὶ</w> <w lemma="νεοποιέω">ν<unclear reason="damage">ε</unclear>οπυήσαντα</w>  <lb n="14"/><w lemma="φιλοτίμως">φιλοτεί<unclear reason="damage">μ</unclear>ως</w>  <g type="star"/>  <w lemma="καί">καὶ</w>  <lb n="15"/><w lemma="παραφυλάσσω"><supplied reason="lost">παραφυλ</supplied><unclear reason="damage">άξαντα</unclear></w><lb n="15a"/><gap dim="bottom" unit="line" reason="lost" extent="unknown"/></ab> 
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>publications; Preliminary transcription (Reynolds). </p>
-</div>
-
-<div type="apparatus"><head>Apparatus</head><p>The letters highlighted were seen by earlier readers, but not by the NYU expedition.</p><p>ll.1-3 [πάσας ἀρχὰς καὶ λει]/ τουργίας [ἐκτελέ]/σαντος ἀναθ[έντος]/ δὲ καὶ τῇ κρατίστῃ/ βούλῃ MAMA: the highlighted letters were read from K&amp;R.</p><p>l. 2,  σαντος ἀναθ[έντος] K&amp;R;  [ . . . .]<unclear reason="damage">Ο</unclear>ΣΑΝΤΑΦ[ . . . . .] Reinach.  We read Σ stop ΑΝ[
+         <div type="apparatus">
+            <p>The letters highlighted were seen by earlier readers, but not by the NYU expedition.</p>
+            <p>ll.1-3 [πάσας ἀρχὰς καὶ λει]/ τουργίας [ἐκτελέ]/σαντος ἀναθ[έντος]/ δὲ καὶ τῇ κρατίστῃ/ βούλῃ MAMA: the highlighted letters were read from K&amp;R.</p>
+            <p>l. 2,  σαντος ἀναθ[έντος] K&amp;R;  [ . . . .]<unclear reason="damage">Ο</unclear>ΣΑΝΤΑΦ[ . . . . .] Reinach.  We read Σ stop ΑΝ[
 l.15 [ . . . . . [ΑΡΞΑΝΤA Reinach; [παραφυλ]<unclear reason="damage">άξαντα</unclear> MAMA; [παραφυ]<unclear reason="damage">λάξαν</unclear>[τα] MB [[who?]]
-</p></div><div type="translation">
-<head>Translation</head>
-<p>... who had] filled [?all magistracies and] liturgies and havng dedicated money to the most powerful council and the most holy and ancient commission of the gold-wearing <term lang="grc-Latn">neopoioi</term> (?temple-builders) with a view to perpetual distributions by lot, he himself having been, with distinction, a councillor, ?a provider of oil, a neopoios; and having ?guarded [...</p></div>
-
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p></div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Temple/Church</rs>: probably reused in the south side of the Byzantine bema-rail</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Kubitschek (KIII.21, Abklatsch 68); squeezed by Gaudin (48); recorded by the MAMA expedition;  by the NYU expedition (SBI <rs type="sbi">104</rs>)</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 208, no. <biblScope>86</biblScope></bibl>, whence <bibl n="laum1914">Laum, no. <biblScope>115</biblScope></bibl>, and discussed by L. Robert, <title level="j">Études Anatoliennes</title> 317; by <bibl n="MAMA8">Cormack, from the MAMA records and from Kubitschek, MAMA 8, no. <biblScope>523</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257240">362</biblScope></bibl></p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_D_06A"><figDesc>Face (1977)</figDesc></figure></p></div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p><figure href="K_III_21"><figDesc>Kubitschek notebook III, 21</figDesc></figure></p>
-</div></body>
-</text>
-
+</p>
+         </div>
+         <div type="translation">
+            <p>... who had] filled [?all magistracies and] liturgies and havng dedicated money to the most powerful council and the most holy and ancient commission of the gold-wearing <term xml:lang="grc-Latn">neopoioi</term> (?temple-builders) with a view to perpetual distributions by lot, he himself having been, with distinction, a councillor, ?a provider of oil, a neopoios; and having ?guarded [...</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 208, no. <citedRange>86</citedRange>
+               </bibl>, whence <bibl n="laum1914">Laum, no. <citedRange>115</citedRange>
+               </bibl>, and discussed by L. Robert, <title level="j">Études Anatoliennes</title> 317; by <bibl n="MAMA8">Cormack, from the MAMA records and from Kubitschek, MAMA 8, no. <citedRange>523</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257240">362</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

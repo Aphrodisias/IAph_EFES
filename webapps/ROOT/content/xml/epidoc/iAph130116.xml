@@ -1,92 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130116" n="iAph0532 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Restoration</rs>, by Kallikrates of the <rs type="textType">dedication</rs> made by his ancestors</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-04-02</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-03-15</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Four adjoining fragments from the upper part of a <rs type="material">white marble</rs> <rs type="objectType">statue base</rs> shaft without moulding (together <measure dim="width" type="length" unit="metre">0.50</measure> x <measure dim="height" type="length" unit="metre">0.79</measure> x <measure dim="depth" type="length" unit="metre">0.24</measure>). Top and bottom are lost, but both sides survive.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Restoration, by Kallikrates of the dedication made by his ancestors</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130116</idno>
+            <idno type="IAph2007">iAph130116</idno>
+            <idno type="JMR2004">iAph0532</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>62.268</idno>
+                  <idno>69.328</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Four adjoining fragments from the upper part of a <material>white marble</material>
+                              <objectType>statue base</objectType> shaft without moulding (together <width unit="metre">0.50</width> x <height unit="metre">0.79</height> x <depth unit="metre">0.24</depth>). Top and bottom are lost, but both sides survive.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on the face. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.022</height>; ll.1-2 are cut more lightly than the rest.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0100" notAfter="0150" evidence="prosopography lettering">
+Document i: Late first century B.C. for  ll. 1-2, Reynolds first favoured Julius as Caesar, but came to think of Octavian; Document ii: early second century. (<rs type="criteria">prosopography</rs>, <rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">Necropolis, North-east</rs>: MAMA fragments found in a field wall north-east of the Stadium; other fragments stray finds.</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>Transcription (Reynolds), publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-02" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-15" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_J_24A.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+         <graphic url="80_F_31.jpg">
+            <desc>Assembled (1980)</desc>
+         </graphic>
+         <graphic url="80_F_30.jpg">
+            <desc>Assembled (1980)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <persName type="divine">Νίκη</persName> <w lemma="πάρειμι">πά<unclear reason="damage">ρ</unclear>ειμ<supplied reason="lost">ι</supplied></w>  <w lemma="θεογενής">θεογενε<supplied reason="lost">ῖ</supplied></w>  <lb n="2"/> <persName type="emperor"><name nymRef="#Καῖσαρ">Καίσαρι</name></persName> <w lemma="ἀεί">ἀεὶ</w> <space extent="3" unit="character"/>  <lb n="3"/> <persName type="divine"><w lemma="θεός">θεοῖς</w> <w lemma="σεβαστός">Σεβαστοῖς</w></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶ<supplied reason="lost">ι</supplied></w>  <lb n="4"/> <w lemma="δῆμος">Δήμωι</w> <w lemma="ὁ">τὴν</w> <persName type="divine">Νίκ<unclear reason="damage">η</unclear>ν</persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <lb n="5"/> <w lemma="λέων"><supplied reason="lost" cert="low">λ</supplied>έοντα</w>    <space extent="3" unit="character"/> <persName type="attested"><name nymRef="#Καλλικράτης">Καλ<supplied reason="lost">λ</supplied>ικράτης</name>  <lb n="6"/> <persName type="attested"><name nymRef="#Μολοσσός">Μολοσσοῦ</name></persName></persName> <w lemma="ἱερεύς">ἱε<unclear reason="damage">ρ</unclear><supplied reason="lost">εὺς</supplied></w> <persName type="divine">Μηνὸς <lb n="7"/><supplied reason="lost">Ἀσ</supplied>καινοῦ</persName> <w lemma="καί">καὶ</w> <persName type="divine"><unclear reason="damage">Ἑ</unclear><supplied reason="lost">ρμοῦ</supplied>  <supplied reason="lost">Ἀ</supplied>γοραίου</persName>  <w lemma="ὁ"><supplied reason="lost" cert="low">τὰ</supplied></w>  <lb n="8"/><w lemma="προγονικός"><supplied reason="lost">προ</supplied>γονικὰ</w>  <w lemma="ἀνάθημα">ἀν<supplied reason="lost">αθή</supplied>ματα</w>  <w lemma="αὐτός">αὐτὸ<supplied reason="lost">ς</supplied></w>  <lb n="9"/><w lemma="ἐπισκευάζω"><supplied reason="lost">ἐπ</supplied>ισκευάσα<supplied reason="lost">ς</supplied></w>  <w lemma="ἀποκαθίστημι"><supplied reason="lost">ἀπο</supplied>καθέστησ<unclear reason="damage">ε</unclear><supplied reason="lost">ν</supplied></w>  <lb n="9a"/>  <space extent="3" unit="character"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed on the face. </p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>
-<measure type="length" unit="metre" dim="height">0.022</measure>; ll.1-2 are cut more lightly than the rest.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-Document i: <date notAfter="-0027" notBefore="-0038">Late first century B.C.</date> for  ll. 1-2, Reynolds first favoured Julius as Caesar, but came to think of Octavian; Document ii: <date notAfter="0150" notBefore="0100">early second century</date>. (<rs type="criteria">prosopography</rs>, <rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <persName type="divine">Νίκη</persName> <w lemma="πάρειμι">πά<unclear reason="damage">ρ</unclear>ειμ<supplied reason="lost">ι</supplied></w>  <w lemma="θεογενής">θεογενε<supplied reason="lost">ῖ</supplied></w>  <lb n="2"/> <persName type="emperor"><name reg="Καῖσαρ">Καίσαρι</name></persName> <w lemma="ἀεί">ἀεὶ</w> <space extent="3" unit="character"/>  <lb n="3"/> <persName type="divine"><w lemma="θεός">θεοῖς</w> <w lemma="σεβαστός">Σεβαστοῖς</w></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶ<supplied reason="lost">ι</supplied></w>  <lb n="4"/> <w lemma="δῆμος">Δήμωι</w> <w lemma="ὁ">τὴν</w> <persName type="divine">Νίκ<unclear reason="damage">η</unclear>ν</persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <lb n="5"/> <w lemma="λέων"><supplied reason="lost" cert="low">λ</supplied>έοντα</w>    <space extent="3" unit="character"/> <persName type="aphrodisian"><name reg="Καλλικράτης">Καλ<supplied reason="lost">λ</supplied>ικράτης</name>  <lb n="6"/> <persName type="aphrodisian"><name reg="Μολοσσός">Μολοσσοῦ</name></persName></persName> <w lemma="ἱερεύς">ἱε<unclear reason="damage">ρ</unclear><supplied reason="lost">εὺς</supplied></w> <persName type="divine">Μηνὸς <lb n="7"/><supplied reason="lost">Ἀσ</supplied>καινοῦ</persName> <w lemma="καί">καὶ</w> <persName type="divine"><unclear reason="damage">Ἑ</unclear><supplied reason="lost">ρμοῦ</supplied>  <supplied reason="lost">Ἀ</supplied>γοραίου</persName>  <w lemma="ὁ"><supplied reason="lost" cert="low">τὰ</supplied></w>  <lb n="8"/><w lemma="προγονικός"><supplied reason="lost">προ</supplied>γονικὰ</w>  <w lemma="ἀνάθημα">ἀν<supplied reason="lost">αθή</supplied>ματα</w>  <w lemma="αὐτός">αὐτὸ<supplied reason="lost">ς</supplied></w>  <lb n="9"/><w lemma="ἐπισκευάζω"><supplied reason="lost">ἐπ</supplied>ισκευάσα<supplied reason="lost">ς</supplied></w>  <w lemma="ἀποκαθίστημι"><supplied reason="lost">ἀπο</supplied>καθέστησ<unclear reason="damage">ε</unclear><supplied reason="lost">ν</supplied></w>  <lb n="9a"/>  <space extent="3" unit="character"/></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l.1: πα[ντ]είμ[ω ἀγάλματα?] MAMA, πά[ρ]ειμ[ι] Robert.</p>
-<p>l.2: Καισάρε̣ι̣α εἰ MAMA, Καίσαρ[ι] ἀεί Robert</p>
-<p>l.6: ἱε[ρεῦς Μῆνὸς Ἀσ]- MAMA</p>
-<p>l.7: καινοῦ καὶ Ἑρ[μοῦ Ἀγοραίου τὰ] MAMA; ἀν[αθήματα πάντα] MAMA; [ἐπ]ισκευάσας [ἀποκαθέστησεν] MAMA.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>I am Victory, always present with Caesar, the descendant of a god. For the gods Augusti and the People, the (statue of) Victory and the ?lion: Kallikrates son of Molossos, priest of Men Askainos and of Hermes of the Agora, prepared and restored the dedications of his ancestors.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p> For the rededication, perhaps under an earthquake, the reign of Trajan seems probable. See Reynolds, <title>Aphrodisias and Rome</title> 150-156, and also <bibl n="jmr1986">‘Further information’, 109</bibl>, <bibl n="jmr1996b">‘Ruler-cult’ 42-43</bibl>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList" cert="low">Necropolis, North-east</rs>: MAMA fragments found in a field wall north-east of the Stadium; other fragments stray finds.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds), publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Two fragments recorded by the MAMA expedition; found again by the NYU expedition, together with further fragments (<rs type="invNo">62.268</rs> a and b, <rs type="invNo">69.328</rs>).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Two fragments published by Cormack from the MAMA records, <bibl n="MAMA8">MAMA 8, no. <biblScope>446</biblScope></bibl>, whence <bibl>Lane, <title>Berytus</title> 15, 1964, 27-28, no. 3</bibl>, <bibl n="hell13">Robert, <title>Hellenica</title> 13, 128-131</bibl>, <bibl n="be"><title>BE </title><biblScope>1966.397</biblScope></bibl>, <bibl>Lane, <title>Corpus Mon. Dei Menis</title> I no. 120, ll. 1-2</bibl>. Published with new fragments <bibl n="jmr1980">Reynolds, <title>PCPS</title> 206, 1980, 71-73, no. <biblScope>1</biblScope></bibl> whence <bibl n="seg">SEG 30, <biblScope>1980.1244-1245</biblScope></bibl>, <bibl>BE <biblScope>1982.355</biblScope></bibl>, <bibl n="anep"><title>AnnEpig</title> <biblScope>1980.866</biblScope></bibl>; republished by <bibl n="jmr1982">Reynolds, <title level="m">Aphrodisias &amp; Rome</title>, doc. <biblScope>32</biblScope></bibl>, whence <bibl>SEG <biblScope>1982.1097</biblScope></bibl>, <bibl n="be">BE <biblScope>1983.387</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257026">147</biblScope></bibl> <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>  <biblScope n="257027">148</biblScope>
-</bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_J_24A"><figDesc>Fragment (1977)</figDesc></figure><figure href="80_F_31"><figDesc>Assembled (1980)</figDesc></figure><figure href="80_F_30"><figDesc>Assembled (1980)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l.1: πα[ντ]είμ[ω ἀγάλματα?] MAMA, πά[ρ]ειμ[ι] Robert.</p>
+            <p>l.2: Καισάρε̣ι̣α εἰ MAMA, Καίσαρ[ι] ἀεί Robert</p>
+            <p>l.6: ἱε[ρεῦς Μῆνὸς Ἀσ]- MAMA</p>
+            <p>l.7: καινοῦ καὶ Ἑρ[μοῦ Ἀγοραίου τὰ] MAMA; ἀν[αθήματα πάντα] MAMA; [ἐπ]ισκευάσας [ἀποκαθέστησεν] MAMA.</p>
+         </div>
+         <div type="translation">
+            <p>I am Victory, always present with Caesar, the descendant of a god. For the gods Augusti and the People, the (statue of) Victory and the ?lion: Kallikrates son of Molossos, priest of Men Askainos and of Hermes of the Agora, prepared and restored the dedications of his ancestors.</p>
+         </div>
+         <div type="commentary">
+            <p> For the rededication, perhaps under an earthquake, the reign of Trajan seems probable. See Reynolds, <title>Aphrodisias and Rome</title> 150-156, and also <bibl n="jmr1986">‘Further information’, 109</bibl>, <bibl n="jmr1996b">‘Ruler-cult’ 42-43</bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Two fragments published by Cormack from the MAMA records, <bibl n="MAMA8">MAMA 8, no. <citedRange>446</citedRange>
+               </bibl>, whence <bibl>Lane, <title>Berytus</title> 15, 1964, 27-28, no. 3</bibl>, <bibl n="hell13">Robert, <title>Hellenica</title> 13, 128-131</bibl>, <bibl n="be">
+                  <title>BE </title>
+                  <citedRange>1966.397</citedRange>
+               </bibl>, <bibl>Lane, <title>Corpus Mon. Dei Menis</title> I no. 120, ll. 1-2</bibl>. Published with new fragments <bibl n="jmr1980">Reynolds, <title>PCPS</title> 206, 1980, 71-73, no. <citedRange>1</citedRange>
+               </bibl> whence <bibl n="seg">SEG 30, <citedRange>1980.1244-1245</citedRange>
+               </bibl>, <bibl>BE <citedRange>1982.355</citedRange>
+               </bibl>, <bibl n="anep">
+                  <title>AnnEpig</title>
+                  <citedRange>1980.866</citedRange>
+               </bibl>; republished by <bibl n="jmr1982">Reynolds, <title level="m">Aphrodisias &amp; Rome</title>, doc. <citedRange>32</citedRange>
+               </bibl>, whence <bibl>SEG <citedRange>1982.1097</citedRange>
+               </bibl>, <bibl n="be">BE <citedRange>1983.387</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257026">147</citedRange>
+               </bibl>
+               <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257027">148</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

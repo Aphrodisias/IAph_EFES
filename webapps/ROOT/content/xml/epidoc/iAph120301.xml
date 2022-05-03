@@ -1,100 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120301" n="iAph0544 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">   <rs type="textType">Honours</rs> for Sextus Appuleius</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>   Honours for Sextus Appuleius</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120301</idno>
+            <idno type="IAph2007">iAph120301</idno>
+            <idno type="JMR2004">iAph0544</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>statue base</objectType> shaft (<width unit="metre">0.62</width> × <height unit="metre">0.76</height> × <depth unit="metre">0.55</depth>); badly worn and chipped at all edges</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>l. 1, <height unit="metre">0.025</height>; ll. 2-3, <height unit="metre">0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0023" notAfter="-0015" evidence="career">  23/15 B.C. (<rs type="criteria">career</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs>: fallen from the inner face of the eastern stretch, north of the East Gate, near <ref type="inscription" n="1153" target="120318.xml"/> (=Walls 107), <ref type="inscription" n="554" target="120305.xml"/> (=108)</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-08-30" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_D_01A.jpg">
+            <desc>Stone (1975)</desc>
+         </graphic>
+         <graphic url="75_D_00A.jpg">
+            <desc>Text (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date>2005-08-30</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
 
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">statue base</rs> shaft (<measure type="length" unit="metre" dim="width">0.62</measure> × <measure type="length" unit="metre" dim="height">0.76</measure> × <measure type="length" unit="metre" dim="depth">0.55</measure>); badly worn and chipped at all edges</p>
+<ab><lb n="1"/><space extent="4" unit="character" dim="horizontal"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δ<supplied reason="lost">ῆ</supplied>μος</w>  <space extent="4" unit="character" dim="horizontal"/><lb n="2"/> <persName type="attested"><name nymRef="#Σέξστος">Σέξτον</name> <name nymRef="#Ἀππουλήϊος">Ἀππολήϊον</name></persName> <lb n="3"/> <w lemma="ὁ">τὸν</w> <w lemma="ἀνθύπατος"><supplied reason="lost">ἀ</supplied>νθύπατον</w>  <space extent="1" unit="character" dim="horizontal"/></ab>
+
+
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on one face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p>l. 1, <measure dim="height" type="length" unit="metre">0.025</measure>; ll. 2-3, <measure dim="height" type="length" unit="metre">0.03</measure>.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>  <date notAfter="-0015" notBefore="-0023" exact="both">23/15 B.C.</date> (<rs type="criteria">career</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-
-<ab><lb n="1"/><space extent="4" unit="character" dim="horizontal"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δ<supplied reason="lost">ῆ</supplied>μος</w>  <space extent="4" unit="character" dim="horizontal"/><lb n="2"/> <persName type="aphrodisian"><name reg="Σέξστος">Σέξτον</name> <name reg="Ἀππουλήϊος">Ἀππολήϊον</name></persName> <lb n="3"/> <w lemma="ὁ">τὸν</w> <w lemma="ἀνθύπατος"><supplied reason="lost">ἀ</supplied>νθύπατον</w>  <space extent="1" unit="character" dim="horizontal"/></ab>
-
-
-</div>
-
-
-
-<div type="translation">
-<head>Translation</head>
-<p>The People set up this statue of Sextus Appuleius, the proconsul.</p></div>
-
- <div type="commentary">
-<head>Commentary</head>
-<p>See bibliography</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, East (south part)</rs>: fallen from the inner face of the eastern stretch, north of the East Gate, near <xref type="inscription" n="1153" href="120318">12.318</xref> (=Walls 107), <xref type="inscription" n="554" href="120305">12.305</xref> (=108)</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition  in 1973 (<rs type="siteNo">Walls 106</rs>)</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>published by <bibl n="jmr1982">Reynolds, <title>Aphrodisias &amp; Rome</title>, doc. <biblScope>44</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1982.1097</biblScope></bibl>,  <bibl n="be">BE <biblScope>1983.390</biblScope></bibl>, <bibl n="anep">AnnEpig <biblScope>1984.879</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257117">238</biblScope></bibl></p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p><figure href="75_D_01A"><figDesc>Stone (1975)</figDesc></figure><figure href="75_D_00A"><figDesc>Text (1975)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="translation">
+            <p>The People set up this statue of Sextus Appuleius, the proconsul.</p>
+         </div>
+         <div type="commentary">
+            <p>See bibliography</p>
+         </div>
+         <div type="bibliography">
+            <p>published by <bibl n="jmr1982">Reynolds, <title>Aphrodisias &amp; Rome</title>, doc. <citedRange>44</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1097</citedRange>
+               </bibl>,  <bibl n="be">BE <citedRange>1983.390</citedRange>
+               </bibl>, <bibl n="anep">AnnEpig <citedRange>1984.879</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257117">238</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

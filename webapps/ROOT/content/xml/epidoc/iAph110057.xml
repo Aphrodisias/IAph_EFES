@@ -1,85 +1,125 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110057" n="iAph1792 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Honours</rs> for anonymous</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor>, <date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Honours for anonymous</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110057</idno>
+            <idno type="IAph2007">iAph110057</idno>
+            <idno type="JMR2004">iAph1792</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>'An inscription from a pedestal'; 'A <objectType>statue base</objectType>' (Bailie).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No measurements. Ligatures: <foreign xml:lang="grc">ΤΗ</foreign>, l.5, 6, 12, <foreign xml:lang="grc">ΝΗ</foreign>, l.13</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0212"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="nomenclature">
+? After 212 A.D. 
+ (<rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, Village</rs>: 'near the amphitheatre'; 'virgultis paene obruto incidi dum iter a theatro ad vicum Gheyerah facerem' Bailie.</provenance>
+                  <provenance type="observed" when="1842">Findspot (1842)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>'An inscription from a pedestal'; 'A <rs type="objectType">statue base</rs>' (Bailie).</p>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="2"/> <w lemma="ὁ">τὸν</w> <w lemma="ἀξιόλογος">ἀξιολογώτατον</w> <lb n="3"/> <w lemma="πρῶτος">πρῶτον</w> <w lemma="ἄρχων">ἄρχοντα</w> <w lemma="δίς">δὶς</w> <lb n="4"/> <w lemma="ταμίας">ταμίαν</w> <w lemma="γραμματεύς">γραμματέα</w> <lb n="5"/> <w lemma="δῆμος">δήμου</w> <w lemma="δίς">δὶς</w> <w lemma="ἀρχινεωποιός">ἀρχινεω<lb n="6" break="no"/>ποιὸν</w> <w lemma="ὁ">τῆς</w> <w lemma="θεός">θεοῦ</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφρο<lb n="7" break="no"/>δείτης</name></persName> <w lemma="πολλάκις">πολλάκις</w> <w lemma="ἀγοράνομος">ἀγορά<lb n="8" break="no"/>νομον</w> <w lemma="καί">καὶ</w> <w lemma="πᾶς">πάσας</w> <w lemma="ὁ">τὰς</w> <lb n="9"/> <w lemma="μέγας">μεγίστας</w> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="ἐκτελέω"><supplied reason="lost">ἐκ</supplied><lb n="10" break="no"/>τελέσαντα</w>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w>  <w lemma="ἐν">ἐ<supplied reason="lost">ν</supplied></w>  <lb n="11"/> <w lemma="ὁ">ταῖς</w> <w lemma="λοιπός">λοιπαῖς</w> <w lemma="ἐπίδοσις">ἐπ<supplied reason="lost">ι</supplied><lb n="12" break="no"/>δόσεσιν</w>  <w lemma="χρήσιμος">χρήσιμ<supplied reason="lost">α</supplied></w>  <w lemma="πράσσω"><supplied reason="lost">π</supplied>ρ<supplied reason="lost">α</supplied><lb n="13" break="no"/>ξαντα</w> <w lemma="ὁ">τῇ</w> <w lemma="πατρίς">πατρίδι</w> <w lemma="συνγενής"><supplied reason="lost">σ</supplied>υν<lb n="14" break="no"/>γ<supplied reason="lost">ε</supplied>νῆ</w> <persName type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name> <name nymRef="#Κλαύδιος">Κλ<supplied reason="lost">αυ</supplied><lb n="15" break="no"/>δίου</name>  <name nymRef="#Αὐρήλιος">Αὐρηλ<supplied reason="lost">ίου</supplied></name>  <name nymRef="#Καπιτωλῖνος">Κ<supplied reason="lost">απ</supplied>ε<lb n="16" break="no"/>τωλείνο<supplied reason="lost">υ</supplied></name></persName><gap reason="lost" unit="character" quantity="3"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No measurements. Ligatures: <foreign lang="grc">ΤΗ</foreign>, l.5, 6, 12, <foreign lang="grc">ΝΗ</foreign>, l.13</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0212" exact="none" notAfter="0300">? After 212 A.D. </date>
- (<rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="3" unit="character"/>  <lb n="2"/> <w lemma="ὁ">τὸν</w> <w lemma="ἀξιόλογος">ἀξιολογώτατον</w> <lb n="3"/> <w lemma="πρῶτος">πρῶτον</w> <w lemma="ἄρχων">ἄρχοντα</w> <w lemma="δίς">δὶς</w> <lb n="4"/> <w lemma="ταμίας">ταμίαν</w> <w lemma="γραμματεύς">γραμματέα</w> <lb n="5"/> <w lemma="δῆμος">δήμου</w> <w lemma="δίς">δὶς</w> <w lemma="ἀρχινεωποιός">ἀρχινεω<lb n="6" type="worddiv"/>ποιὸν</w> <w lemma="ὁ">τῆς</w> <w lemma="θεός">θεοῦ</w> <persName type="divine"><name reg="Ἀφροδίτη">Ἀφρο<lb n="7" type="worddiv"/>δείτης</name></persName> <w lemma="πολλάκις">πολλάκις</w> <w lemma="ἀγοράνομος">ἀγορά<lb n="8" type="worddiv"/>νομον</w> <w lemma="καί">καὶ</w> <w lemma="πᾶς">πάσας</w> <w lemma="ὁ">τὰς</w> <lb n="9"/> <w lemma="μέγας">μεγίστας</w> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="ἐκτελέω"><supplied reason="lost">ἐκ</supplied><lb n="10" type="worddiv"/>τελέσαντα</w>  <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w>  <w lemma="ἐν">ἐ<supplied reason="lost">ν</supplied></w>  <lb n="11"/> <w lemma="ὁ">ταῖς</w> <w lemma="λοιπός">λοιπαῖς</w> <w lemma="ἐπίδοσις">ἐπ<supplied reason="lost">ι</supplied><lb n="12" type="worddiv"/>δόσεσιν</w>  <w lemma="χρήσιμος">χρήσιμ<supplied reason="lost">α</supplied></w>  <w lemma="πράσσω"><supplied reason="lost">π</supplied>ρ<supplied reason="lost">α</supplied><lb n="13" type="worddiv"/>ξαντα</w> <w lemma="ὁ">τῇ</w> <w lemma="πατρίς">πατρίδι</w> <w lemma="συνγενής"><supplied reason="lost">σ</supplied>υν<lb n="14" type="worddiv"/>γ<supplied reason="lost">ε</supplied>νῆ</w> <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen">Τιβερίου</name> <name reg="Κλαύδιος">Κλ<supplied reason="lost">αυ</supplied><lb n="15" type="worddiv"/>δίου</name>  <name reg="Αὐρήλιος" type="nomen">Αὐρηλ<supplied reason="lost">ίου</supplied></name>  <name reg="Καπιτωλῖνος">Κ<supplied reason="lost">απ</supplied>ε<lb n="16" type="worddiv"/>τωλείνο<supplied reason="lost">υ</supplied></name></persName><gap reason="lost" extent="3" unit="character"/>  </ab>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>[...]the most noteworthy, chief archon twice, treasurer, secretary of the People twice, chief neopoios of the goddess Aphrodite several times, agoranomos, having held all the highest offices and served his homeland usefully on all the remaining occasions for benefactions, a relation of Tiberius Claudius Aurelius Kapitoleinos[...]</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The translation assumes that the figures are to be taken with the office which precedes, not that which follows. For the family see prosopography.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">City, Village</rs>: 'near the amphitheatre'; 'virgultis paene obruto incidi dum iter a theatro ad vicum Gheyerah facerem' Bailie.</rs>
-<rs type="lastLocation">Findspot (1842)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Bailie, (Researches 34 and 82: 'in truth, I may be said to have excavated in search of it, it lay so concealed in rubbish and underwood'); not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="bailie1846">Bailie, no <biblScope>61</biblScope></bibl>, whence <bibl n="LBW">LBW <biblScope>1596bis</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257227">349</biblScope>
-</bibl>.</p>
-</div><div type="figure" n="photographs">
-<head>Photographs</head>
-<p>No photographs
-</p>
-</div></body></text>
+         <div type="translation">
+            <p>[...]the most noteworthy, chief archon twice, treasurer, secretary of the People twice, chief neopoios of the goddess Aphrodite several times, agoranomos, having held all the highest offices and served his homeland usefully on all the remaining occasions for benefactions, a relation of Tiberius Claudius Aurelius Kapitoleinos[...]</p>
+         </div>
+         <div type="commentary">
+            <p>The translation assumes that the figures are to be taken with the office which precedes, not that which follows. For the family see prosopography.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="bailie1846">Bailie, no <citedRange>61</citedRange>
+               </bibl>, whence <bibl n="LBW">LBW <citedRange>1596bis</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257227">349</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

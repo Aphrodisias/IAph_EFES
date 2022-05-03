@@ -1,105 +1,161 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130206" n="iAph1492 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for Epandios and his family</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr2003">Reynolds and Isik (<date>2007</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument" sample="complete" org="uniform">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">sarcophagus</rs> <measure type="length" unit="metre" dim="width">1.95</measure>   × <measure type="length" unit="metre" dim="height">0.78</measure>   × <measure type="length" unit="metre" dim="depth">0.73</measure>; for a full description see Isik 107.
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for Epandios and his family</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130206</idno>
+            <idno type="IAph2007">iAph130206</idno>
+            <idno type="JMR2004">iAph1492</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>sarcophagus</objectType>
+                              <width unit="metre">1.95</width>   × <height unit="metre">0.78</height>   × <depth unit="metre">0.73</depth>; for a full description see Isik 107.
 </p>
-</div>
-<div type="description" n="text" sample="complete" org="uniform">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> in central tabella (<measure dim="width" type="length" unit="metre">0.31</measure> x <measure dim="height" type="length" unit="metre">0.40</measure>), ll. 1-14 within it and l. 15 on its lower moulding, and on the lower rim (ll. 18-19). The text must have begun on the lid, which is lost. The surface has become more worn than in the 1934 photograph.</p>
-</div>
-<div type="description" n="letters" sample="complete" org="uniform">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.0225</measure> in the tabella, <measure dim="height" type="length" unit="metre">0.025</measure> on the lower rim. Reasonably good examples of the second-to-fourth-century style. Star for denarius.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0240"> Middle to second half of the third century</date>
- (<rs type="criteria">lettering</rs>, <rs type="criteria">stephanephoros</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/> <gap dim="top" extent="unknown" reason="lost" unit="line"/>  
-<lb n="1"/> <persName type="aphrodisian"><name reg="Ἐπάνδιος">Ἐπανδίου</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="υἱός">υἱὸς</w> 
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in central tabella (<width unit="metre">0.31</width> x <height unit="metre">0.40</height>), ll. 1-14 within it and l. 15 on its lower moulding, and on the lower rim (ll. 18-19). The text must have begun on the lid, which is lost. The surface has become more worn than in the 1934 photograph.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.0225</height> in the tabella, <height unit="metre">0.025</height> on the lower rim. Reasonably good examples of the second-to-fourth-century style. Star for denarius.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown: probably Aphrodisias necropolis</origPlace>
+                     <origDate notBefore="0240"
+                               notAfter="0300"
+                               evidence="lettering stephanephoros">
+ Middle to second half of the third century
+ (<rs type="criteria">lettering</rs>, <rs type="criteria">stephanephoros</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east, Ata Eymir</rs>: ' beside a house' (MAMA)</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); publication.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="90_C_07A.jpg">
+            <desc>Face (1990)</desc>
+         </graphic>
+         <graphic url="94_E_08A.jpg">
+            <desc>Face (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="0"/> <gap reason="lost" unit="line" extent="unknown"/>  
+<lb n="1"/> <persName type="attested"><name nymRef="#Ἐπάνδιος">Ἐπανδίου</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="υἱός">υἱὸς</w> 
 <lb n="2"/> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ἕτερος">ἕτερος</w> <w lemma="δέ">δὲ</w> 
 <lb n="3"/> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἔχω">ἕξει</w> <w lemma="ἐξουσία">ἐ
-<lb n="4" type="worddiv"/>ξουσίαν</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w> 
+<lb n="4" break="no"/>ξουσίαν</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w> 
 <lb n="5"/> <w lemma="τις">τινὰ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἤ">ἢ</w> 
 <lb n="6"/> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="τις">τινὰ</w> <w lemma="ὁ">τῶν</w> 
 <lb n="7"/> <w lemma="ἐνθάπτω">ἐνθαμμένων</w> <w lemma="ἐπεί">ἐ
-<lb n="8" type="worddiv"/>πεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="οὗτος">τούτων</w> <w lemma="τις">τι</w> 
+<lb n="8" break="no"/>πεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="οὗτος">τούτων</w> <w lemma="τις">τι</w> 
 <lb n="9"/> <w lemma="ποιέω">ποιήσας</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀ
-<lb n="10" type="worddiv"/>σεβὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπά
-<lb n="11" type="worddiv"/>ρατος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσ
-<lb n="12" type="worddiv"/>αποτεισά<supplied reason="omitted">τ</supplied>ω</w>  
-<lb n="13"/> <w lemma="εἰς">εἰ<supplied reason="omitted">ς</supplied></w> <w lemma="ὁ">τὸ</w><w lemma="ἱερός"> ἱερώτατον</w><lb n="14"/> <w lemma="ταμεῖον">ταμεῖον</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="3000">γ</num> <w lemma="ἐν">ἐν</w> 
+<lb n="10" break="no"/>σεβὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπά
+<lb n="11" break="no"/>ρατος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσ
+<lb n="12" break="no"/>αποτεισά<supplied reason="omitted">τ</supplied>ω</w>  
+<lb n="13"/> <w lemma="εἰς">εἰ<supplied reason="omitted">ς</supplied></w> <w lemma="ὁ">τὸ</w><w lemma="ἱερός"> ἱερώτατον</w><lb n="14"/> <w lemma="ταμεῖον">ταμεῖον</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="3000">γ</num> <w lemma="ἐν">ἐν</w> 
 <lb n="15"/> <w lemma="δέ">δὲ</w> <w lemma="ὁ">ταῖς</w> <w lemma="ὑπόκειμαι">ὑποκειμέναις</w> 
-<lb n="16"/> <sic n="superfluous">σ</sic> <w lemma="εἰσώστη">εἰσώσταις</w> <w lemma="θάπτω">ταφήσονται</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <persName type="aphrodisian"><name reg="Ἐπάνδιος">Ἐπάνδιος</name></persName> <w lemma="βούλομαι">βουληθῇ</w> <w lemma="ἤ">ἢ</w> <w lemma="διατάσσω">διατάξηται</w> <w lemma="ὁ">τῆς</w> 
+<lb n="16"/> <sic n="superfluous">σ</sic> <w lemma="εἰσώστη">εἰσώσταις</w> <w lemma="θάπτω">ταφήσονται</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <persName type="attested"><name nymRef="#Ἐπάνδιος">Ἐπάνδιος</name></persName> <w lemma="βούλομαι">βουληθῇ</w> <w lemma="ἤ">ἢ</w> <w lemma="διατάσσω">διατάξηται</w> <w lemma="ὁ">τῆς</w> 
 <lb n="17"/> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀντίγραφον">ἀντί
- <lb n="18" type="worddiv"/><space extent="3" unit="character" dim="horizontal"/>γραφον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="6">Ϛ</num> <persName type="aphrodisian"><name reg="Λούκιος" type="praenomen"><expan><abbr><unclear reason="damage">Λ</unclear></abbr><supplied reason="abbreviation">ουκίου</supplied></expan></name> <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name> 
-<lb n="19"/>  <name reg="Διογένης">Διογένου</name>  <name reg="Δομετῖνος">Δομετείνου</name></persName> <w lemma="μείς">μηνὸς</w> <rs type="month"><w lemma="Λῶος">Λώου</w></rs> <space extent="3" unit="character" dim="horizontal"/>  </ab>
+ <lb n="18" break="no"/><space extent="3" unit="character" dim="horizontal"/>γραφον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="6">Ϛ</num> <persName type="attested"><name nymRef="#Λούκιος"><expan><abbr><unclear reason="damage">Λ</unclear></abbr><ex>ουκίου</ex></expan></name> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name> 
+<lb n="19"/>  <name nymRef="#Διογένης">Διογένου</name>  <name nymRef="#Δομετῖνος">Δομετείνου</name></persName> <w lemma="μείς">μηνὸς</w> <rs type="month"><w lemma="Λῶος">Λώου</w></rs> <space extent="3" unit="character" dim="horizontal"/>  </ab>
 </div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 12 at end, <foreign lang="grc">ΑΣΩ</foreign>, lapis</p><p> l. 13 beginning, <foreign lang="grc">ΕΙΤΟ</foreign>, lapis</p><p> l. 17, <foreign lang="grc">τὸ ε´</foreign> C.; <foreign lang="grc">Α(ὔλου)</foreign>, C.; both suggest that the line was only partially visible at the time of reading.</p><p>l. 19, <foreign lang="grc">Διογένου</foreign> sic.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>[?The sarcophagus and the rest of the tomb belong to .. ? .. Epandios and his wife and son. In the sarcophagus shall be buried Epandios and his wife and .. ? ..] son of Epandios, their son; but no one else shall have the right to place anyone in the sarcophagus or to remove any of those placed in it, since whoever does any of these things is to be (considered) sacrilegious and accursed, and in addition is to pay to the imperial treasury 3000 denarii. In the burial places below shall be buried those whom Epandios may wish or specify. A copy of the inscribed text was deposited in the civic archive in the sixth stephanephorate of L. Claudius Diogenes Dometinos, month Loos.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The tomb was a complex one, with the sarcophagus on top of a structure containing other burial places. Its owners were a man and wife, and perhaps their son, who was to be allowed burial in it; the man's name was (or included) Epandios (not otherwise attested at Aphrodisias).For the stephanephoros see comment on no. 6, which shows that his seventh tenure is to be dated in the second half of the third century.</p>
-<p>See Reynolds on Isik-Reynolds 107</p></div>
-<div type="history" n="locations" sample="complete" org="uniform">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Necropolis, North-east, Ata Eymir</rs>: ' beside a house' (MAMA)</rs>
-<rs type="origLocation">Unknown: probably Aphrodisias necropolis</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); publication.</p>
-</div>
-<div type="history" n="record" sample="complete" org="uniform">
-<head>History of Recording</head>
-<p>Recorded by the MAMA expedition; by the NYU expedition (Sarcophagus catalogue <rs type="sarcCat">178</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from the MAMA records, <bibl n="MAMA8">J.M.R.Cormack, MAMA 8 <biblScope>566</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257352">474</biblScope>
-</bibl>; <bibl n="jmr2003">Reynolds &amp; Isik <biblScope>107</biblScope></bibl>.</p>
-</div><div type="figure" n="photographs" sample="complete" org="uniform">
-<head>Photographs</head>
-<p>MAMA, pl. 19; 90.C.7, 8<figure href="90_C_07A"><figDesc>Face (1990)</figDesc></figure><figure href="94_E_08A"><figDesc>Face (1994)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 12 at end, <foreign xml:lang="grc">ΑΣΩ</foreign>, lapis</p>
+            <p> l. 13 beginning, <foreign xml:lang="grc">ΕΙΤΟ</foreign>, lapis</p>
+            <p> l. 17, <foreign xml:lang="grc">τὸ ε´</foreign> C.; <foreign xml:lang="grc">Α(ὔλου)</foreign>, C.; both suggest that the line was only partially visible at the time of reading.</p>
+            <p>l. 19, <foreign xml:lang="grc">Διογένου</foreign> sic.</p>
+         </div>
+         <div type="translation">
+            <p>[?The sarcophagus and the rest of the tomb belong to .. ? .. Epandios and his wife and son. In the sarcophagus shall be buried Epandios and his wife and .. ? ..] son of Epandios, their son; but no one else shall have the right to place anyone in the sarcophagus or to remove any of those placed in it, since whoever does any of these things is to be (considered) sacrilegious and accursed, and in addition is to pay to the imperial treasury 3000 denarii. In the burial places below shall be buried those whom Epandios may wish or specify. A copy of the inscribed text was deposited in the civic archive in the sixth stephanephorate of L. Claudius Diogenes Dometinos, month Loos.</p>
+         </div>
+         <div type="commentary">
+            <p>The tomb was a complex one, with the sarcophagus on top of a structure containing other burial places. Its owners were a man and wife, and perhaps their son, who was to be allowed burial in it; the man's name was (or included) Epandios (not otherwise attested at Aphrodisias).For the stephanephoros see comment on no. 6, which shows that his seventh tenure is to be dated in the second half of the third century.</p>
+            <p>See Reynolds on Isik-Reynolds 107</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from the MAMA records, <bibl n="MAMA8">J.M.R.Cormack, MAMA 8 <citedRange>566</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257352">474</citedRange>
+               </bibl>; <bibl n="jmr2003">Reynolds &amp; Isik <citedRange>107</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

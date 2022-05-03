@@ -1,89 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150261" n="iAph1768 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for Diogenes son of Menandros</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>J.  M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-7-13</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Posthumous honours for Diogenes son of Menandros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150261</idno>
+            <idno type="IAph2007">iAph150261</idno>
+            <idno type="JMR2004">iAph1768</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>n/a</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description (<seg cert="low">
+                                 <objectType>statue base</objectType> or <objectType>block</objectType>
+                              </seg>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Ornate apices on <foreign xml:lang="grc">Φ</foreign>, <foreign xml:lang="grc">Χ</foreign>, <foreign xml:lang="grc">Ρ</foreign> shown by Boeckh, presumably from Rochette, but not shown by Deering.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="content">
+First to second centuries A.D.
+ (<rs type="criteria">content</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">Unknown</provenance>
+                  <provenance type="observed">Unknown</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Deering notebook; publication.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-13" who="cmr">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Deering_04v.jpg">
+            <desc>Deering notebook, page 4v</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-
-
-<p>No description (<seg cert="low"><rs type="objectType">statue base</rs> or <rs type="objectType">block</rs></seg>)</p>
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καῖ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="τιμάω">ἐτείμ<unclear reason="damage">η</unclear>σαν</w> <w lemma="καί">καὶ</w> <lb n="2"/> <w lemma="μεταλλάζω">μετ<unclear reason="damage">η</unclear>λλαχοτα</w> <w lemma="ὁ">ταῖς</w> <w lemma="μέγας">μεγίστα<unclear reason="damage">ις</unclear></w> <w lemma="καί">καὶ</w> <lb n="3"/> <w lemma="καλός">καλλίσταις</w> <w lemma="τιμή">τείμαις</w> <persName type="attested"><name nymRef="#Διογένης">Διογένην</name>  <name nymRef="#Μένανδρος">Μενάν<lb n="4" break="no"/>δρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διογένης">Διογένους</name></persName></persName> <w lemma="ἱερεύς">ἱερέα</w> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="θεά">Θε<lb n="5" break="no"/>ᾶς</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδείτης</name></persName> <w lemma="καί">καὶ</w> <persName type="emperor"><w lemma="θεός">Θεῶν</w> <w lemma="σεβαστός">Σεβαστῶν</w></persName> <w lemma="ἀμεριμνία">ἀμε<lb n="6" break="no"/>ριμνίας</w> <w lemma="γυμνασιαρχέω">γυμνασιαρχήσαντα</w> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορέω">στεφα<lb n="7" break="no"/>νηφορήσαντα</w> <w lemma="καί">καὶ</w> <w lemma="ἱερεύω">ἱερεύσαντα</w> <w lemma="ὁ">τῶν</w> <w lemma="σεβαστός">Σεβασ<lb n="8" break="no"/>τῶν</w> <w lemma="ὑπερβάλλω">ὑπερβαλλούσαις</w> <w lemma="φιλοδοξία">φιλοδοξίαις</w> <w lemma="καί">καὶ</w> <lb n="9"/> <w lemma="πάνδημος">πανδήμοις</w> <w lemma="ἑστίασις">ἑστιάσε<supplied reason="lost">σ</supplied>ιν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="τελέω">τε<lb n="10" break="no"/>λέσαντα</w> <w lemma="φιλόδοξος">φιλοδόξως</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="λοιπός">λοιπὰ</w> <w lemma="εὐσεβῶς">εὐσε<lb n="11" break="no"/>βῶς</w>  <gap reason="lost" unit="character" quantity="3"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Ornate apices on <foreign lang="grc">Φ</foreign>, <foreign lang="grc">Χ</foreign>, <foreign lang="grc">Ρ</foreign> shown by Boeckh, presumably from Rochette, but not shown by Deering.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0200" exact="none">First to second centuries A.D.</date>
- (<rs type="criteria">content</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καῖ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="τιμάω">ἐτείμ<unclear reason="damage">η</unclear>σαν</w> <w lemma="καί">καὶ</w> <lb n="2"/> <w lemma="μεταλλάζω">μετ<unclear reason="damage">η</unclear>λλαχοτα</w> <w lemma="ὁ">ταῖς</w> <w lemma="μέγας">μεγίστα<unclear reason="damage">ις</unclear></w> <w lemma="καί">καὶ</w> <lb n="3"/> <w lemma="καλός">καλλίσταις</w> <w lemma="τιμή">τείμαις</w> <persName type="aphrodisian"><name reg="Διογένης">Διογένην</name>  <name reg="Μένανδρος">Μενάν<lb n="4" type="worddiv"/>δρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διογένης">Διογένους</name></persName></persName> <w lemma="ἱερεύς">ἱερέα</w> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="θεά">Θε<lb n="5" type="worddiv"/>ᾶς</w> <persName type="divine"><name reg="Ἀφροδίτη">Ἀφροδείτης</name></persName> <w lemma="καί">καὶ</w> <persName type="emperor"><w lemma="θεός">Θεῶν</w> <w lemma="σεβαστός">Σεβαστῶν</w></persName> <w lemma="ἀμεριμνία">ἀμε<lb n="6" type="worddiv"/>ριμνίας</w> <w lemma="γυμνασιαρχέω">γυμνασιαρχήσαντα</w> <w lemma="καί">καὶ</w> <w lemma="στεφανηφορέω">στεφα<lb n="7" type="worddiv"/>νηφορήσαντα</w> <w lemma="καί">καὶ</w> <w lemma="ἱερεύω">ἱερεύσαντα</w> <w lemma="ὁ">τῶν</w> <w lemma="σεβαστός">Σεβασ<lb n="8" type="worddiv"/>τῶν</w> <w lemma="ὑπερβάλλω">ὑπερβαλλούσαις</w> <w lemma="φιλοδοξία">φιλοδοξίαις</w> <w lemma="καί">καὶ</w> <lb n="9"/> <w lemma="πάνδημος">πανδήμοις</w> <w lemma="ἑστίασις">ἑστιάσε<supplied reason="lost">σ</supplied>ιν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="ἀρχή">ἀρχὰς</w> <w lemma="τελέω">τε<lb n="10" type="worddiv"/>λέσαντα</w> <w lemma="φιλόδοξος">φιλοδόξως</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="λοιπός">λοιπὰ</w> <w lemma="εὐσεβῶς">εὐσε<lb n="11" type="worddiv"/>βῶς</w>  <gap reason="lost" extent="3" unit="character"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 1, ΕΤΕΙΜΙΣΑΝ Rochette ΕΤΕΙΜΗΣΑΝ Deering</p><p>l. 2, ΜΕΤΙΛΛΑΧΟΤΑ, ΜΕΓΙΣΤΑΤΕ Rochette, ΜΕΤΗΛΛΑΧΟΤΑ, ΜΕΓΙΣΤΑΙΣ Deering</p><p>ll. 3-4, <foreign lang="grc">ΜΕΝΑ<lb/>ΝΔΡΟΥ</foreign> Rochette, <foreign lang="grc">ΜΕΝΑΝ<lb/>ΔΡΟΥ</foreign> Deering</p><p>l. 4, ΔΙΟΓΕΝΟΥΓ Rochette, ΔΙΟΓΕΝΟΥΣ Deering</p><p>l. 7, ΚΑΠΕΡΕΥΣΑΝΤΑ Rochette</p><p>l. 9, ΕΣΣΤΙΑΣΣΙΝ Rochette, ΕΣΤΙΑΣΕΙΝ Deering</p><p>  l. 10, ΦΙΛΩΔΟΞΟΣ, ΕΣΕΒΟΣ Rochette</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>The Council and the People honoured, even after his death, with the greatest and most splendid honours Diogenes son of Menandros the son of Diogenes. he had been priest of the goddess Aphrodite and of the Securitas of the gods, the Augusti; he (acted as) gymnasiarch, stephanephorus and priest of the Augusti with outstanding ambition and feasts for the whole people, and carried out the magistracies ambitiously, and the rest with piety [...]</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See <bibl n="jmr1980">Reynolds, 'Imperial Cult', 78</bibl>, <bibl n="jmr1986">'Further Information', 109</bibl>,<bibl n="jmr1996b"> 'Ruler-cult', 44</bibl>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found">Unknown</rs>
-<rs type="lastLocation">Unknown</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Deering notebook; publication.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Raoul Rochette; by Deering (4v, no.17).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Raoul-Rochette, CIG <biblScope>2778</biblScope></bibl>, whence Liermann 63-65, no. 11; SEG 30, 1244, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257149">270</biblScope>
-</bibl>. Lines 5/6 discussed by L. Robert, AntClass 1966, 418 n.1.</p>
-</div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p><figure href="Deering_04v"><figDesc>Deering notebook, page 4v</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>l. 1, ΕΤΕΙΜΙΣΑΝ Rochette ΕΤΕΙΜΗΣΑΝ Deering</p>
+            <p>l. 2, ΜΕΤΙΛΛΑΧΟΤΑ, ΜΕΓΙΣΤΑΤΕ Rochette, ΜΕΤΗΛΛΑΧΟΤΑ, ΜΕΓΙΣΤΑΙΣ Deering</p>
+            <p>ll. 3-4, <foreign xml:lang="grc">ΜΕΝΑ<lb/>ΝΔΡΟΥ</foreign> Rochette, <foreign xml:lang="grc">ΜΕΝΑΝ<lb/>ΔΡΟΥ</foreign> Deering</p>
+            <p>l. 4, ΔΙΟΓΕΝΟΥΓ Rochette, ΔΙΟΓΕΝΟΥΣ Deering</p>
+            <p>l. 7, ΚΑΠΕΡΕΥΣΑΝΤΑ Rochette</p>
+            <p>l. 9, ΕΣΣΤΙΑΣΣΙΝ Rochette, ΕΣΤΙΑΣΕΙΝ Deering</p>
+            <p>  l. 10, ΦΙΛΩΔΟΞΟΣ, ΕΣΕΒΟΣ Rochette</p>
+         </div>
+         <div type="translation">
+            <p>The Council and the People honoured, even after his death, with the greatest and most splendid honours Diogenes son of Menandros the son of Diogenes. he had been priest of the goddess Aphrodite and of the Securitas of the gods, the Augusti; he (acted as) gymnasiarch, stephanephorus and priest of the Augusti with outstanding ambition and feasts for the whole people, and carried out the magistracies ambitiously, and the rest with piety [...]</p>
+         </div>
+         <div type="commentary">
+            <p>See <bibl n="jmr1980">Reynolds, 'Imperial Cult', 78</bibl>, <bibl n="jmr1986">'Further Information', 109</bibl>,<bibl n="jmr1996b"> 'Ruler-cult', 44</bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Raoul-Rochette, CIG <citedRange>2778</citedRange>
+               </bibl>, whence Liermann 63-65, no. 11; SEG 30, 1244, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257149">270</citedRange>
+               </bibl>. Lines 5/6 discussed by L. Robert, AntClass 1966, 418 n.1.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

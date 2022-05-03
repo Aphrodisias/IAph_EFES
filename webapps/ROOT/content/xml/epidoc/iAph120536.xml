@@ -1,85 +1,127 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120536" n="iAph1799 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for C. Julius Philippos, </title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for C. Julius Philippos, </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120536</idno>
+            <idno type="IAph2007">iAph120536</idno>
+            <idno type="JMR2004">iAph1799</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>'Base' (Waddington); if this is complete, it must be a <objectType>
+                                 <objectType cert="low">statue base</objectType> shaft</objectType>; the text must have begun on an upper feature.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="terminology">
+Second to third centuries A.D. (<rs type="criteria">terminology</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, south-east</rs>: 'in terra iacente' Sherard; 'in lapidibus oblongis ad austrum' (Picenini), near <ref type="inscription" n="1282" target="120515.xml"/>, so the south-east stretch.</provenance>
+                  <provenance type="observed" when="1850">Findspot (1850)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>publications; Sherard papers</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>'Base' (Waddington); if this is complete, it must be a <rs type="objectType"><rs type="objectType" cert="low">statue base</rs> shaft</rs>; the text must have begun on an upper feature.</p>
+<ab><lb n="1"/> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰ</w> <w lemma="ψηφίζω">ἐψη<lb n="2" break="no"/>φισμένα</w> <w lemma="ὑπό">ὑπὸ</w> <lb n="3"/> <w lemma="ὁ">τῆς</w> <w lemma="βουλή">βουλῆς</w> <lb n="4"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῦ</w> <w lemma="δῆμος">δήμου</w> <lb n="5"/> <persName type="attested"><name>Γ.</name> <name nymRef="#Ἰούλιος">Ἰούλιον</name> <lb n="6"/> <name nymRef="#Φίλιππος">Φίλιππον</name></persName> <lb n="7"/> <w lemma="ὁ">τὸν</w> <w lemma="κράτιστος">κράτισ<lb n="8" break="no"/>τον</w> <w lemma="πατήρ">πατέρα</w> <lb n="9"/><w lemma="συνκλητικός">συνκλητι<lb n="10" break="no"/>κοῦ</w> <w lemma="καί">καὶ</w> <w lemma="ἀπό">ἀπὸ</w> <lb n="11"/> <w lemma="ἐπίτροπος">ἐπιτρόπων</w> <lb n="12"/><w lemma="λογιστεύω">λογιστεύσαν<lb n="13" break="no"/>τα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="ἡμέτερος">ἡ<lb n="14" break="no"/>μετέρας</w>  πό<lb n="15" break="no"/>λεως μετ'εὐ<lb n="16" break="no"/>νοίας  <w lemma="γίγνομαι">γενό<lb n="17" break="no"/>μενον</w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶ<lb n="18" break="no"/>σιν</w>  <w lemma="εὐεργέτης">εὐεργέ<lb n="19" break="no"/><space extent="3" unit="character" dim="horizontal"/> την</w> <g ref="#leaf"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No description</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">terminology</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰ</w> <w lemma="ψηφίζω">ἐψη<lb n="2" type="worddiv"/>φισμένα</w> <w lemma="ὑπό">ὑπὸ</w> <lb n="3"/> <w lemma="ὁ">τῆς</w> <w lemma="βουλή">βουλῆς</w> <lb n="4"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῦ</w> <w lemma="δῆμος">δήμου</w> <lb n="5"/> <persName type="aphrodisian"><name>Γ.</name> <name reg="Ἰούλιος">Ἰούλιον</name> <lb n="6"/> <name reg="Φίλιππος">Φίλιππον</name></persName> <lb n="7"/> <w lemma="ὁ">τὸν</w> <w lemma="κράτιστος">κράτισ<lb n="8" type="worddiv"/>τον</w> <w lemma="πατήρ">πατέρα</w> <lb n="9"/><w lemma="συνκλητικός">συνκλητι<lb n="10" type="worddiv"/>κοῦ</w> <w lemma="καί">καὶ</w> <w lemma="ἀπό">ἀπὸ</w> <lb n="11"/> <w lemma="ἐπίτροπος">ἐπιτρόπων</w> <lb n="12"/><w lemma="λογιστεύω">λογιστεύσαν<lb n="13" type="worddiv"/>τα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="ἡμέτερος">ἡ<lb n="14" type="worddiv"/>μετέρας</w>  πό<lb n="15" type="worddiv"/>λεως μετ'εὐ<lb n="16" type="worddiv"/>νοίας  <w lemma="γίγνομαι">γενό<lb n="17" type="worddiv"/>μενον</w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶ<lb n="18" type="worddiv"/>σιν</w>  <w lemma="εὐεργέτης">εὐεργέ<lb n="19" type="worddiv"/><space extent="3" unit="character" dim="horizontal"/> την</w> <g type="leaf"/>  </ab>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>A public body or bodies...] according to what was decreed by the Council and the People (set up the statue of) C(aius) Julius Philippos, <term lang="la">v(ir) e(gregius)</term>, father of a senator and of former procurators (or ? a former procurator?), who as curator also of our city acted with goodwill and was a benefactor on all occasions.</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, south-east</rs>: 'in terra iacente' Sherard; 'in lapidibus oblongis ad austrum' (Picenini), near <xref type="inscription" n="1282" href="120515">12.515</xref>, so the south-east stretch.</rs>
-<rs type="lastLocation">Findspot (1850)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>publications; Sherard papers</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Transcribed in 1705 by Sherard (10101.38) and Picenini (10102.28 and, from Tisser, 64v); by Waddington in 1850; not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard and Picenini, CIG <biblScope>2790</biblScope></bibl>; by <bibl n="LBW">Waddington, LBW <biblScope>1609</biblScope></bibl>, whence OGIS 500, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257161">282</biblScope>
-</bibl>.</p>
-</div><div type="figure" n="photographs">
-<head>Photographs</head>
-<p>No photographs
-</p>
-</div></body></text>
+         <div type="translation">
+            <p>A public body or bodies...] according to what was decreed by the Council and the People (set up the statue of) C(aius) Julius Philippos, <term xml:lang="la">v(ir) e(gregius)</term>, father of a senator and of former procurators (or ? a former procurator?), who as curator also of our city acted with goodwill and was a benefactor on all occasions.</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard and Picenini, CIG <citedRange>2790</citedRange>
+               </bibl>; by <bibl n="LBW">Waddington, LBW <citedRange>1609</citedRange>
+               </bibl>, whence OGIS 500, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257161">282</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

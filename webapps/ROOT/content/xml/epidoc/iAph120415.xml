@@ -1,85 +1,141 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120415" n="iAph1590 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Monumental fragment of <rs type="textType" cert="low">building dedication</rs></title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-10</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two <rs type="material">white marble</rs> <rs type="objectType">block</rs>s, from which an upper moulding has apparently been chipped away <measure type="length" unit="metre" dim="width">1.42</measure>  × <measure type="length" unit="metre" dim="height">0.38</measure>  × <measure type="length" unit="metre" dim="depth">0.43</measure>, cracked (perhaps broken) in two places.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.06</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date cert="low" notAfter="0200" notBefore="0101">Second century A.D.</date> (<rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="3" unit="character"/>ος <g type="scroll"/> <persName type="aphrodisian"><name reg="Πεδιεύς">Πεδιέως</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Πεδιεύς">Πε<supplied reason="lost">διέως</supplied></name></persName></persName>  <gap reason="lost" extent="3" unit="character"/>  </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Monumental fragment of building dedication</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120415</idno>
+            <idno type="IAph2007">iAph120415</idno>
+            <idno type="JMR2004">iAph1590</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two <material>white marble</material>
+                              <objectType>block</objectType>s, from which an upper moulding has apparently been chipped away <width unit="metre">1.42</width>  × <height unit="metre">0.38</height>  × <depth unit="metre">0.43</depth>, cracked (perhaps broken) in two places.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.06</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" evidence="lettering">
+Second century A.D. (<rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South-east Gate</rs>: re-used in the north wall of the small vaulted chamber (? side-gate) at the the north side.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; transcription (Beard)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-10" who="cmr">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_D_02A.jpg">
+            <desc>View (1975)</desc>
+         </graphic>
+         <graphic url="72_J_20.jpg">
+            <desc>Left end (1972)</desc>
+         </graphic>
+         <graphic url="72_J_21.jpg">
+            <desc>Centre (1972)</desc>
+         </graphic>
+         <graphic url="72_J_22.jpg">
+            <desc>Right end (1972)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p> . . . ]os, son of Pedieus, the son of ?Pe[dieus . . .</p>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" quantity="3"/>ος <g ref="#scroll"/> <persName type="attested"><name nymRef="#Πεδιεύς">Πεδιέως</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Πεδιεύς">Πε<supplied reason="lost">διέως</supplied></name></persName></persName>  <gap reason="lost" unit="character" quantity="3"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The text was regarded by Reinach as part of a monumental dedication, but figures in MAMA as funerary (persumably on the assumption that it was used in the wall of a tomb). The lettering and layout favour Reinach's view, and the room in which it is re-used is more probably a side chamber of the gate than part of a tomb.</p><p>The man named is otherwise unknown at present.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, South-east Gate</rs>: re-used in the north wall of the small vaulted chamber (? side-gate) at the the north side.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; transcription (Beard)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Gaudin (120); by the MAMA expedition; by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published,  from Gaudin, by <bibl n="reinach">Reinach, REG 19, 1906, 227, no. <biblScope>135</biblScope></bibl>; by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8, no. <biblScope>598</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257398">520</biblScope>
-</bibl>
-</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="75_D_02A"><figDesc>View (1975)</figDesc></figure><figure href="72_J_20"><figDesc>Left end (1972)</figDesc></figure><figure href="72_J_21"><figDesc>Centre (1972)</figDesc></figure><figure href="72_J_22"><figDesc>Right end (1972)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p> . . . ]os, son of Pedieus, the son of ?Pe[dieus . . .</p>
+         </div>
+         <div type="commentary">
+            <p>The text was regarded by Reinach as part of a monumental dedication, but figures in MAMA as funerary (persumably on the assumption that it was used in the wall of a tomb). The lettering and layout favour Reinach's view, and the room in which it is re-used is more probably a side chamber of the gate than part of a tomb.</p>
+            <p>The man named is otherwise unknown at present.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published,  from Gaudin, by <bibl n="reinach">Reinach, REG 19, 1906, 227, no. <citedRange>135</citedRange>
+               </bibl>; by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8, no. <citedRange>598</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257398">520</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

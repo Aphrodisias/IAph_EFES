@@ -1,119 +1,154 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020527" n="iAph0035 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Flavius Sep<supplied reason="lost">timius</supplied> <seg cert="low">a <rs type="textType" reg="building inscription">benefactor</rs></seg></title>
-</titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Flavius Sep<supplied reason="lost">timius</supplied>
+               <seg cert="low">a benefactor</seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020527</idno>
+            <idno type="IAph2007">iAph020527</idno>
+            <idno type="JMR2004">iAph0035</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>66.155</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Four fragments—three of which join to form a.—from a series of <material key="marmor">white marble</material>
+                              <objectType>panel</objectType>s with three fasciae, divided by grooves, and diminishing in height from top to bottom; a: three joining fragments, with left edge surviving (<height unit="metre">0.30</height> × <width unit="metre">0.69</width> × <depth unit="metre">0.025</depth>). b: broken at both ends (<height unit="metre">0.30</height> × <width unit="metre">0.51</width> × <depth unit="metre">0.055</depth>). Such variation in the thickness of <objectType>revetment</objectType> panels over a large area is not unusual.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the upper, tallest <term>fascia</term>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.11</height>; <foreign xml:lang="grc">Φ</foreign> is at least <height unit="metre">0.17</height>, extending onto the <term>fascia</term> below, and must have extended on to the panel above. Simple, lightly cut.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0301"
+                               notAfter="0400"
+                               precision="medium"
+                               evidence="lettering">?Fourth century (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon, West area</rs>, 'Bishop's Palace': a found re-used as a step in a doorway of the apsed room; b found in <rs type="monuList">Bouleuterion/Odeon, West area</rs>: MAB, stratum 1.</provenance>
+                  <provenance type="observed" when="1977">Museum (1977).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-22" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-23" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">corrected, name tags reduced</change>
+         <change when="2003-07-15" who="Juan-Garcés">lemmatised</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_K_27A.jpg">
+            <desc>a. Face (1975)</desc>
+         </graphic>
+         <graphic url="77_L_12A.jpg">
+            <desc>b. Face (1977)</desc>
+         </graphic>
+         <graphic url="rosen028.jpg">
+            <desc>b. Face (1966)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-22</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-06-22</date><respStmt><name>CMR</name></respStmt><item>tagged, tidied and corrected</item></change><change>
-  <date>2003-07-15</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>corrected, name tags reduced</item></change><change><date>2004-01-23</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-<text>
-<body>
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <space dim="horizontal" extent="unknown"/> <persName key="Septimius" type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αβίου</ex></expan></name> <expan><abbr>Σε<unclear reason="damage">π</unclear></abbr><ex>τιμι</ex></expan></persName><gap id="gap2" reason="lost" unit="character" extent="unknown"/><certainty locus="#gi" target="gap2" degree="low"/>
 
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Four fragments—three of which join to form a.—from a series of <rs type="material" key="marmor">white marble</rs> <rs type="objectType">panel</rs>s with three fasciae, divided by grooves, and diminishing in height from top to bottom; a: three joining fragments, with left edge surviving (<measure type="length" unit="metre" dim="height">0.30</measure> × <measure type="length" unit="metre" dim="width">0.69</measure> × <measure type="length" unit="metre" dim="depth">0.025</measure>). b: broken at both ends (<measure type="length" unit="metre" dim="height">0.30</measure> × <measure type="length" unit="metre" dim="width">0.51</measure> × <measure type="length" unit="metre" dim="depth">0.055</measure>). Such variation in the thickness of <rs type="objectType">revetment</rs> panels over a large area is not unusual.</p>
+</ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <rs key="capital" type="subject"><w lemma="μητρόπολις"><supplied reason="lost">μητ</supplied>ροπο<unclear reason="damage">λ</unclear><gap reason="lost" unit="character" extent="unknown"/></w></rs></ab></div>
+
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the upper, tallest <term>fascia</term>.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.11</measure>; <foreign lang="grc">Φ</foreign> is at least <measure dim="height" type="length" unit="metre">0.17</measure>, extending onto the <term>fascia</term> below, and must have extended on to the panel above. Simple, lightly cut.</p>
-</div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p><date notBefore="0301" notAfter="0400" exact="none">?Fourth century</date> (<rs type="criteria">lettering</rs>).</p>
-</div>
-
-<div lang="grc" n="text" type="edition">
-<head lang="en">Edition</head>
-<div type="textpart_fragment" n="a"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/> <space dim="horizontal" extent="unknown"/> <persName type="aphrodisian" key="Septimius" full="yes"><name reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">αβίου</supplied></expan></name> <expan><abbr>Σε<unclear reason="damage">π</unclear></abbr><supplied reason="abbreviation">τιμι</supplied></expan></persName><gap id="gap2" dim="right" extent="unknown" reason="lost" unit="character"/><certainty locus="#gi" target="gap2" degree="low"/>
-
-</ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/> <rs key="capital" type="subject"><w lemma="μητρόπολις"><supplied reason="lost">μητ</supplied>ροπο<unclear reason="damage">λ</unclear><gap dim="right" extent="unknown" reason="lost" unit="character"/></w></rs></ab></div>
-
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<div type="fragment" n="a"><p>a. <gap reason="lost" extent="unknown" dim="left" unit="character"/>Fl<supplied reason="abbreviation">avius</supplied> Sep<supplied reason="abbreviation">timius</supplied> <gap reason="lost" extent="unknown" dim="right" unit="character"/></p><p>b. <gap reason="lost" extent="unknown" dim="left" unit="character"/> metropolis <gap reason="lost" extent="unknown" dim="right" unit="character"/></p></div>
-</div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>See discussion at <xref type="eAla-text" n="III.41">III.41</xref>.</p>
-</div>
-
-<div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList">Bouleuterion/Odeon, West area</rs>, 'Bishop's Palace': a found re-used as a step in a doorway of the apsed room; b found in <rs type="monuList">Bouleuterion/Odeon, West area</rs>: MAB, stratum 1.</rs>. Original location: <rs type="origLocation">Unknown.</rs>. Last recorded location: <rs type="lastLocation">Museum (1977).</rs>. </p></div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1966 (<rs type="invNo">66.155</rs>).</p>
-</div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl type="hbi" rend="primary" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>35</biblScope></bibl> whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257549">666</biblScope></bibl>.</p>
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Roueché).</p>
-</div>
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="75_K_27A"><figDesc>a. Face (1975)</figDesc></figure><figure href="77_L_12A"><figDesc>b. Face (1977)</figDesc></figure><figure href="rosen028"><figDesc>b. Face (1966)</figDesc></figure></p></div>
-
-
-
-
-
-</body>
-</text>
+         <div type="translation">
+            <div type="fragment" n="a">
+               <p>a. <gap reason="lost" unit="character" extent="unknown"/>Fl<ex>avius</ex> Sep<ex>timius</ex>
+                  <gap reason="lost" unit="character" extent="unknown"/>
+               </p>
+               <p>b. <gap reason="lost" unit="character" extent="unknown"/> metropolis <gap reason="lost" unit="character" extent="unknown"/>
+               </p>
+            </div>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="III.41" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" rend="primary" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>35</citedRange>
+               </bibl> whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257549">666</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

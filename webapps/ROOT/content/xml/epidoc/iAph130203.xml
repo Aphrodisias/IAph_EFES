@@ -1,100 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130203" n="iAph1450 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> inscription for Marcus Aurelius Athenagoras</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-04</date><respStmt><name>GB</name></respStmt><item>DONE</item></change><change><date>2007-02-06</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">sarcophagus</rs>, with lid, (<measure dim="width" type="length" unit="metre">2.13</measure>).</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> a. on the vertical projections of the lid, lines 1-2, and b. across the sarcophagus front, which is otherwise undecorated (<measure dim="width" type="length" unit="metre">1.88</measure> x <measure dim="height" type="length" unit="metre">0.585</measure>), and broken to left.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Standard forms; a: <measure dim="height" type="length" unit="metre">0.07</measure>; b: <measure dim="height" type="length" unit="metre">0.025</measure>. Ligatures: l.1, <foreign lang="grc">HN</foreign> twice; l.8, <foreign lang="grc">TH</foreign> three times, <foreign lang="grc">ΤΗΝ</foreign>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date>
- (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary inscription for Marcus Aurelius Athenagoras</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130203</idno>
+            <idno type="IAph2007">iAph130203</idno>
+            <idno type="JMR2004">iAph1450</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>sarcophagus</objectType>, with lid, (<width unit="metre">2.13</width>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> a. on the vertical projections of the lid, lines 1-2, and b. across the sarcophagus front, which is otherwise undecorated (<width unit="metre">1.88</width> x <height unit="metre">0.585</height>), and broken to left.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard forms; a: <height unit="metre">0.07</height>; b: <height unit="metre">0.025</height>. Ligatures: l.1, <foreign xml:lang="grc">HN</foreign> twice; l.8, <foreign xml:lang="grc">TH</foreign> three times, <foreign xml:lang="grc">ΤΗΝ</foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+Second to third centuries A.D.
+ (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east, Ata Eymir</rs>: c. 5 km. east of Aphrodisias</provenance>
+                  <provenance type="observed" when="1994">Museum (1994)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-04" who="GB">DONE</change>
+         <change when="2007-02-06" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="94_B_24A.jpg">
+            <desc>Face (1994)</desc>
+         </graphic>
+         <graphic url="94_B_23A.jpg">
+            <desc>View (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="textpart_section" n="a"><ab>
+
+<div n="a" type="textpart" subtype="section"><ab>
 <lb n="1"/>
 <w lemma="ζάω">Ζῶ<milestone unit="block"/>σιν</w>
 </ab></div>
 
 
-<div type="textpart_section" n="b"><ab>
-<lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w> <w lemma="σορός"><supplied reason="lost">σορὸ</supplied>ς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="σπεῖρα">σπειρα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">αἱ</w> <w lemma="εἰς">εἰς</w> <w lemma="αὐτός">αὐτ<hi rend="ligature">ὴν</hi></w> <w lemma="ὁ">τ<hi rend="ligature">ὴν</hi></w> <w lemma="σπεῖρα">σ<unclear reason="damage">π</unclear>ειραν</w> <w lemma="κατασκευάζω">κατεσκευασμέναι</w> <w lemma="εἰσώστη">εἰσωσται</w> <w lemma="κατασκευάζω">κατεσκευά<lb n="2" type="worddiv"/><supplied reason="lost">σθησα</supplied>ν</w> <w lemma="καί">καὶ</w> <w lemma="ἐπισκευάζω">ἐπεσκευάσθησαν</w> <w lemma="ὑπό">ὑπὸ</w> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μάρ</abbr><supplied reason="abbreviation">κου</supplied></expan></name> <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name> <name reg="Ἀθηναγόρας">Ἀθηναγόρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Εὔδαμος">Εὐδάμου</name> <w lemma="τρίς">τρὶς</w> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Φίλων">Φίλωνος</name></persName></persName></persName> <w lemma="ἑαυτοῦ">αὑτῷ</w> 
-<lb n="3"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="γυνή"><supplied reason="lost">γυν</supplied>αικὶ</w> <w lemma="αὐτός">αὐτοῦ</w> <persName type="aphrodisian"><name reg="Αὐρηλία">Αὐρηλία</name> <name reg="Μελτίνη">Μελτίνη</name> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυσίου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀθηναγόρας">Ἀθηναγόρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Εὐπόλεμος">Εὐπολέμου</name></persName></persName></persName></persName> <w lemma="καί">καὶ</w> <w lemma="τέκνον">τέκνοις</w> <w lemma="αὐτός">αὐτῶν</w> 
-<lb n="4"/><gap reason="lost" extent="6" unit="character"/><orig n="unresolved"><unclear reason="damage">ς</unclear></orig>  <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἑαυτοῦ">αὑτὸν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="γυνή">γυναικὰ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἐγκηδεύω">ἐνκηδευθῆναι</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="κατασκευάζω">κατασκευασθήσεται</w> 
-<lb n="5"/><w lemma="ὑπό"><supplied reason="lost">ὑπὸ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῶν</w> <w lemma="ἐκ">ἐκ</w> <persName type="aphrodisian"><name reg="Μελιτίνη">Μελτίνης</name></persName> <w lemma="τέκνον">τέκνων</w> <w lemma="αὐτός">αὐτοῦ</w> <persName type="aphrodisian"><name reg="Εὔδαμος">Εὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀθηναγόρας">Ἀθηναγόρου</name></persName> <w lemma="ἀβακεῖον">ἀβακεῖον</w> <w lemma="ὁ">ὃ</w> <w lemma="καλύπτω">καλύψει</w> <w lemma="ὁ">τοὺς</w> 
-<lb n="6"/><gap reason="lost" extent="6" unit="character"/>  <w lemma="ἐγκηδεύω"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ν</unclear>κεκηδευμένους</w> <w lemma="καί">καὶ</w> <w lemma="οὕτως">οὕτως</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀβακεῖον">ἀβακεῖον</w> <w lemma="μεταλλάσσω">μεταλλάξαντα</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῆς</w> <persName type="aphrodisian"><name reg="Μελιτίνη">Μελτίνης</name></persName> <w lemma="τέκνον">τέ<lb n="7" type="worddiv"/><supplied reason="lost">κνα</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">α</supplied><unclear reason="damage">ὐ</unclear>τοῦ</w> <w lemma="ἐγκηδεύω">ἐνκηδευθήσεται</w> <persName type="aphrodisian"><name reg="Εὔδαμος" type="        ">Εὔδαμος</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀθηναγόρας">Ἀθηναγόρας</name></persName> <w lemma="ἄλλος">ἄλλον</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδένα</w> <w lemma="βούλομαι">βούλομαι</w> <w lemma="ἐγκηδεύω">ἐνκηδευ<lb n="8" type="worddiv"/><supplied reason="lost">θῆνα</supplied>ι</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w> <w lemma="σορός">σορῷ</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="ἀφηρωίζω">ἀφηρωῖσθαι</w> <w lemma="αὐτός">αὐ<hi rend="ligature">τὴν</hi></w> <w lemma="εἰς">εἰς</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὰς</w> <w lemma="ὑπόκειμαι">ὑποκειμένας</w> <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w> <w lemma="σπεῖρα">σπειρῃ</w> <w lemma="ὁ">τῆς</w> <w lemma="σορός">σοροῦ</w> <w lemma="φέρω">εἴσω</w> 
-<lb n="9"/><w lemma="ἐγκηδεύω"><supplied reason="lost">ἐν</supplied>κηδευθήσονται</w> <persName type="aphrodisian"><name reg="Αὐρηλία">Αὐρηλίαι</name> <name reg="Μελτίνη">Μελτίνη</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Μελτίνη">Μελτίνη</name></persName> <w lemma="ὁ">αἱ</w> <w lemma="θυγάτηρ">θυγάτερες</w> <w lemma="ἐγώ">μου</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="ἔχω">ἕξει</w> <w>ἐξου-</w> <w>σιψ</w> 
+<div n="b" type="textpart" subtype="section"><ab>
+<lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w> <w lemma="σορός"><supplied reason="lost">σορὸ</supplied>ς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="σπεῖρα">σπειρα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">αἱ</w> <w lemma="εἰς">εἰς</w> <w lemma="αὐτός">αὐτ<hi rend="ligature">ὴν</hi></w> <w lemma="ὁ">τ<hi rend="ligature">ὴν</hi></w> <w lemma="σπεῖρα">σ<unclear reason="damage">π</unclear>ειραν</w> <w lemma="κατασκευάζω">κατεσκευασμέναι</w> <w lemma="εἰσώστη">εἰσωσται</w> <w lemma="κατασκευάζω">κατεσκευά<lb n="2" break="no"/><supplied reason="lost">σθησα</supplied>ν</w> <w lemma="καί">καὶ</w> <w lemma="ἐπισκευάζω">ἐπεσκευάσθησαν</w> <w lemma="ὑπό">ὑπὸ</w> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μάρ</abbr><ex>κου</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name> <name nymRef="#Ἀθηναγόρας">Ἀθηναγόρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὐδάμου</name> <w lemma="τρίς">τρὶς</w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Φίλων">Φίλωνος</name></persName></persName></persName> <w lemma="ἑαυτοῦ">αὑτῷ</w> 
+<lb n="3"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="γυνή"><supplied reason="lost">γυν</supplied>αικὶ</w> <w lemma="αὐτός">αὐτοῦ</w> <persName type="attested"><name nymRef="#Αὐρηλία">Αὐρηλία</name> <name nymRef="#Μελτίνη">Μελτίνη</name> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀθηναγόρας">Ἀθηναγόρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὐπόλεμος">Εὐπολέμου</name></persName></persName></persName></persName> <w lemma="καί">καὶ</w> <w lemma="τέκνον">τέκνοις</w> <w lemma="αὐτός">αὐτῶν</w> 
+<lb n="4"/><gap reason="lost" unit="character" quantity="6"/><orig n="unresolved"><unclear reason="damage">ς</unclear></orig>  <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἑαυτοῦ">αὑτὸν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="γυνή">γυναικὰ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἐγκηδεύω">ἐνκηδευθῆναι</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="κατασκευάζω">κατασκευασθήσεται</w> 
+<lb n="5"/><w lemma="ὑπό"><supplied reason="lost">ὑπὸ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῶν</w> <w lemma="ἐκ">ἐκ</w> <persName type="attested"><name nymRef="#Μελιτίνη">Μελτίνης</name></persName> <w lemma="τέκνον">τέκνων</w> <w lemma="αὐτός">αὐτοῦ</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀθηναγόρας">Ἀθηναγόρου</name></persName> <w lemma="ἀβακεῖον">ἀβακεῖον</w> <w lemma="ὁ">ὃ</w> <w lemma="καλύπτω">καλύψει</w> <w lemma="ὁ">τοὺς</w> 
+<lb n="6"/><gap reason="lost" unit="character" quantity="6"/>  <w lemma="ἐγκηδεύω"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ν</unclear>κεκηδευμένους</w> <w lemma="καί">καὶ</w> <w lemma="οὕτως">οὕτως</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀβακεῖον">ἀβακεῖον</w> <w lemma="μεταλλάσσω">μεταλλάξαντα</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῆς</w> <persName type="attested"><name nymRef="#Μελιτίνη">Μελτίνης</name></persName> <w lemma="τέκνον">τέ<lb n="7" break="no"/><supplied reason="lost">κνα</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">α</supplied><unclear reason="damage">ὐ</unclear>τοῦ</w> <w lemma="ἐγκηδεύω">ἐνκηδευθήσεται</w> <persName type="attested"><name nymRef="#Εὔδαμος">Εὔδαμος</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀθηναγόρας">Ἀθηναγόρας</name></persName> <w lemma="ἄλλος">ἄλλον</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδένα</w> <w lemma="βούλομαι">βούλομαι</w> <w lemma="ἐγκηδεύω">ἐνκηδευ<lb n="8" break="no"/><supplied reason="lost">θῆνα</supplied>ι</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w> <w lemma="σορός">σορῷ</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="ἀφηρωίζω">ἀφηρωῖσθαι</w> <w lemma="αὐτός">αὐ<hi rend="ligature">τὴν</hi></w> <w lemma="εἰς">εἰς</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὰς</w> <w lemma="ὑπόκειμαι">ὑποκειμένας</w> <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w> <w lemma="σπεῖρα">σπειρῃ</w> <w lemma="ὁ">τῆς</w> <w lemma="σορός">σοροῦ</w> <w lemma="φέρω">εἴσω</w> 
+<lb n="9"/><w lemma="ἐγκηδεύω"><supplied reason="lost">ἐν</supplied>κηδευθήσονται</w> <persName type="attested"><name nymRef="#Αὐρηλία">Αὐρηλίαι</name> <name nymRef="#Μελτίνη">Μελτίνη</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Μελτίνη">Μελτίνη</name></persName> <w lemma="ὁ">αἱ</w> <w lemma="θυγάτηρ">θυγάτερες</w> <w lemma="ἐγώ">μου</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="ἔχω">ἕξει</w> <w>ἐξου-</w> <w>σιψ</w> 
 <lb n="10"/><supplied reason="lost">σίαν</supplied> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <w lemma="τις">τινα</w> <w lemma="ἕτερος">ἕτερον</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="ἤ">ἢ</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐγώ">ἐγω</w> <w>βεβούλημαι</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="ὁ">τοὺς</w> <w lemma="ἐγκηδεύω">ἐνκεκηδευ
-<lb n="11" type="worddiv"/><supplied reason="lost">μέ</supplied>νους</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσεβὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> <w lemma="τυμβωρύχος">τυμβωρύχος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσαποτεισάτω</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> 
-<lb n="12"/><w lemma="ἱερός"><supplied reason="lost">ἱ</supplied><unclear reason="damage">ε</unclear>ρώτατον</w> <w lemma="ταμεῖον">ταμεῖον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <w lemma="δισχειλιαπεντακόσιος">δισχειλιαπεντακόσια</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσται</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδική<lb n="13" type="worddiv"/>σαντος</w> <w lemma="οὗτος">ταύτης</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπί</w> <w lemma="στεφανηφόρος">στε<lb n="14" type="worddiv"/>φανηφόρου</w> <w lemma="ὁ">τὸ</w> <w lemma="τρισκαιδέκατον">τρισκαιδεκατον</w> <rs type="office" key="stephanephoros"><persName type="aphrodisian"><name reg="Ἀτταλίς">Ἀττάλιδος</name> <w lemma="ὁ">τῆς</w> <persName type="aphrodisian"><name reg="Μενεκράτης">Μενεκράτους</name></persName> <name reg="Ἄπφιος">Ἀπφίου</name></persName></rs> <w lemma="μείς">μηνὸς</w> <rs type="month"><w lemma="Ἀπελλαῖος">Ἀπελλαίου</w></rs></ab></div>
+<lb n="11" break="no"/><supplied reason="lost">μέ</supplied>νους</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσεβὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> <w lemma="τυμβωρύχος">τυμβωρύχος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσαποτεισάτω</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> 
+<lb n="12"/><w lemma="ἱερός"><supplied reason="lost">ἱ</supplied><unclear reason="damage">ε</unclear>ρώτατον</w> <w lemma="ταμεῖον">ταμεῖον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <w lemma="δισχειλιαπεντακόσιος">δισχειλιαπεντακόσια</w> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσται</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδική<lb n="13" break="no"/>σαντος</w> <w lemma="οὗτος">ταύτης</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπί</w> <w lemma="στεφανηφόρος">στε<lb n="14" break="no"/>φανηφόρου</w> <w lemma="ὁ">τὸ</w> <w lemma="τρισκαιδέκατον">τρισκαιδεκατον</w> <rs type="office" key="stephanephoros"><persName type="attested"><name nymRef="#Ἀτταλίς">Ἀττάλιδος</name> <w lemma="ὁ">τῆς</w> <persName type="attested"><name nymRef="#Μενεκράτης">Μενεκράτους</name></persName> <name nymRef="#Ἄπφιος">Ἀπφίου</name></persName></rs> <w lemma="μείς">μηνὸς</w> <rs type="month"><w lemma="Ἀπελλαῖος">Ἀπελλαίου</w></rs></ab></div>
 </div>
-
-<div type="translation">
-<head>Translation</head>
-<p>a.They are alive.</p><p>b. The sarcophagus and <seg cert="low">the moulded base</seg> and the <seg cert="low"><gap reason="ellipsis"/></seg> which have been prepared in the base were prepared and <seg cert="low">added</seg> by Marcus Aurelius Athenagoras son of Eudamos <supplied reason="explanation">son of Eudamos son of Eudamos</supplied> the son of Philon, for himself and his wife Aurelia Meltine, daughter of Dionysios, son of Athenagoras the son of Eupolemos and for their children [ .. ? .. ] after the burial of himself and his wife in the sarcophagus there shall be prepared by his children by Meltine: Eudamus and Athenagoras, a slab which shall cover those buried in it and so his children by Meltine, Eudamos and Athenagoras, when they are deaad, shall be buried on /above the slab. But I wish no-one else to be buried in the sarcophagus but that it be consecrated as a heroon. In the ??? below the moulded base of the sarcophagus there shall be buried Aureliae Meltine and Meltine my daughters, but no-one shall have the right to bury anyone else in the sarcophagus other than those whom I have wished or to take out those buried in it, since he is to be impious and accursed and a tomb-breaker and in addition is to pay to the most sacred treasury 2500 denarii of which the third will be the prperty of the prosecutor. A copy of this inscription was deposited in the Property-archive when Attalis Apphion, daughter of Menekrates was stephanephorus for the thirteenth time, in the month Apellaion.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>It is probable that the Edict of Caracalla issued within the lifetime of the principals whose families, despite their élite names, were probably not Roman citizens before it. The stephanephorus was certainly holding office post mortem.The restorations are reasonably certain except in l.4 where possibilities are <foreign lang="grc"><supplied reason="lost">μόνοι</supplied>ς</foreign> (but it is a little short) or a word meaning male (but <foreign lang="grc"><supplied reason="lost">ἀρρενικό</supplied>ς</foreign> is too long), and in l.6, where there are many possibilities.The provision for the insertion of a panel in this sarcophagus, dividing the parents from the sons, is interesting, as also the exclusion of the daughters therefrom. Both daughters appear to be named Meltine, although both seem to be alive; there may have been a cutter's error here.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Necropolis, North-east, Ata Eymir</rs>: c. 5 km. east of Aphrodisias</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1994)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition (Sarcophagus <rs type="sarcCat">419</rs>)</p>
-</div>
-<div type="bibliography" n="none">
-<head>Bibliography</head>
-<p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="94_B_24A"><figDesc>Face (1994)</figDesc></figure><figure href="94_B_23A"><figDesc>View (1994)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>a.They are alive.</p>
+            <p>b. The sarcophagus and <seg cert="low">the moulded base</seg> and the <seg cert="low">
+                  <gap reason="ellipsis" unit="character" extent="unknown"/>
+               </seg> which have been prepared in the base were prepared and <seg cert="low">added</seg> by Marcus Aurelius Athenagoras son of Eudamos <supplied reason="explanation">son of Eudamos son of Eudamos</supplied> the son of Philon, for himself and his wife Aurelia Meltine, daughter of Dionysios, son of Athenagoras the son of Eupolemos and for their children [ .. ? .. ] after the burial of himself and his wife in the sarcophagus there shall be prepared by his children by Meltine: Eudamus and Athenagoras, a slab which shall cover those buried in it and so his children by Meltine, Eudamos and Athenagoras, when they are deaad, shall be buried on /above the slab. But I wish no-one else to be buried in the sarcophagus but that it be consecrated as a heroon. In the ??? below the moulded base of the sarcophagus there shall be buried Aureliae Meltine and Meltine my daughters, but no-one shall have the right to bury anyone else in the sarcophagus other than those whom I have wished or to take out those buried in it, since he is to be impious and accursed and a tomb-breaker and in addition is to pay to the most sacred treasury 2500 denarii of which the third will be the prperty of the prosecutor. A copy of this inscription was deposited in the Property-archive when Attalis Apphion, daughter of Menekrates was stephanephorus for the thirteenth time, in the month Apellaion.</p>
+         </div>
+         <div type="commentary">
+            <p>It is probable that the Edict of Caracalla issued within the lifetime of the principals whose families, despite their élite names, were probably not Roman citizens before it. The stephanephorus was certainly holding office post mortem.The restorations are reasonably certain except in l.4 where possibilities are <foreign xml:lang="grc">
+                  <supplied reason="lost">μόνοι</supplied>ς</foreign> (but it is a little short) or a word meaning male (but <foreign xml:lang="grc">
+                  <supplied reason="lost">ἀρρενικό</supplied>ς</foreign> is too long), and in l.6, where there are many possibilities.The provision for the insertion of a panel in this sarcophagus, dividing the parents from the sons, is interesting, as also the exclusion of the daughters therefrom. Both daughters appear to be named Meltine, although both seem to be alive; there may have been a cutter's error here.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

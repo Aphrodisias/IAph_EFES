@@ -1,83 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120214" n="iAph0692 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for T. Aelius Aurelius Menandros</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>No description, but very probably part of a <rs type="objectType">statue base</rs>.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for T. Aelius Aurelius Menandros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120214</idno>
+            <idno type="IAph2007">iAph120214</idno>
+            <idno type="JMR2004">iAph0692</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description, but very probably part of a <objectType>statue base</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0138"
+                               notAfter="0169"
+                               precision="medium"
+                               evidence="emperor">
+A.D. 138-69
+(<rs type="criteria">emperor</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (north part)</rs>: 'in the wall on the east side of the town' (Wood)</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Wood notebook</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Wood_14_45.jpg">
+            <desc>Wood notebook 14, page 45</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><placeName nymRef="#Προυσιάς"> Προυσιάδα </placeName><w lemma="ἀνήρ">ἀνδρῶν</w> <w lemma="πανκράτιον">πανκράτιν,</w><placeName nymRef="#Κλαυδιόπολις"> Κλαυδιόπολιν </placeName><lb n="2"/><placeName><placeName nymRef="#Ἄγκυρα"> Ἄνκυραν </placeName><unclear reason="damage">τ</unclear>ῆς <placeName nymRef="#Γαλατία">Γαλατίας</placeName></placeName>, <placeName nymRef="#Πεσσινοῦς">Πεσσινοῦντα </placeName>, <placeName nymRef="#Δαμασκός">Δαμασκὸν </placeName> <num value="2">β</num>, <lb n="3"/> <placeName nymRef="#Βηρυτός">Βηρυτὸν</placeName>, <placeName nymRef="#Τύρος">Τύρον</placeName>, <placeName><placeName nymRef="#Καισαρεία">Κ<unclear reason="damage">α</unclear>ισαρείαν</placeName> <w lemma="ὁ">τῆς</w> <placeName nymRef="#Στράτων">Στράτωνος</placeName></placeName>, <lb n="4"/> <placeName><placeName nymRef="#Νεάπολις">Νεάπολιν</placeName> <w lemma="ὁ">τῆς</w> <placeName nymRef="#Σαμαρία">Σαμαρίας</placeName></placeName>, <placeName nymRef="#Σκυθόπολις">Σκυθόπολιν</placeName>, <placeName nymRef="#Γάζα">Γάζαν</placeName>, <lb n="5"/>  <placeName><placeName nymRef="#Καισαρεία">Καισάρειαν</placeName><placeName nymRef="#Πανιάς"> Πανιάδα </placeName></placeName> <num value="2">β</num>, <placeName nymRef="#Ἱερόπολις">Ἱερόπολιν</placeName>, <placeName nymRef="#Ἀναζαρβός">Ἀναζαρβὸν</placeName>, <placeName nymRef="#Μοψουεστία">Μοψ <lb n="6" break="no"/>ουεστίαν</placeName>, <placeName><placeName nymRef="#Τρίπολις">Τρίπολιν</placeName> <w lemma="ὁ">τῆς</w> <placeName nymRef="#Συρία">Συρίας</placeName></placeName>, <placeName><placeName nymRef="#Φιλαδελφία">Φιλαδέλφειαν</placeName> <w lemma="ὁ">τῆς</w> <lb n="7"/> <placeName nymRef="#Ἀραβία">Ἀραβίας</placeName></placeName>, <placeName><placeName nymRef="#Ζεῦγμα">Ζεῦγμα</placeName> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τῷ</w><placeName nymRef="#Εὐφράτης"> Εὐφράτῃ</placeName></placeName>, <placeName nymRef="#Κιβύρα">Κιβύραν</placeName></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No description</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date exact="none" notAfter="0169" notBefore="0138" precision="circa">A.D. 138-69</date>
-(<rs type="criteria">emperor</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><placeName reg="Προυσιάς"> Προυσιάδα </placeName><w lemma="ἀνήρ">ἀνδρῶν</w> <w lemma="πανκράτιον">πανκράτιν,</w><placeName reg="Κλαυδιόπολις"> Κλαυδιόπολιν </placeName><lb n="2"/><placeName><placeName reg="Ἄγκυρα"> Ἄνκυραν </placeName><unclear reason="damage">τ</unclear>ῆς <placeName reg="Γαλατία">Γαλατίας</placeName></placeName>, <placeName reg="Πεσσινοῦς">Πεσσινοῦντα </placeName>, <placeName reg="Δαμασκός">Δαμασκὸν </placeName> <num value="2">β</num>, <lb n="3"/> <placeName reg="Βηρυτός">Βηρυτὸν</placeName>, <placeName reg="Τύρος">Τύρον</placeName>, <placeName><placeName reg="Καισαρεία">Κ<unclear reason="damage">α</unclear>ισαρείαν</placeName> <w lemma="ὁ">τῆς</w> <placeName reg="Στράτων">Στράτωνος</placeName></placeName>, <lb n="4"/> <placeName><placeName reg="Νεάπολις">Νεάπολιν</placeName> <w lemma="ὁ">τῆς</w> <placeName reg="Σαμαρία">Σαμαρίας</placeName></placeName>, <placeName reg="Σκυθόπολις">Σκυθόπολιν</placeName>, <placeName reg="Γάζα">Γάζαν</placeName>, <lb n="5"/>  <placeName><placeName reg="Καισαρεία">Καισάρειαν</placeName><placeName reg="Πανιάς"> Πανιάδα </placeName></placeName> <num value="2">β</num>, <placeName reg="Ἱερόπολις">Ἱερόπολιν</placeName>, <placeName reg="Ἀναζαρβός">Ἀναζαρβὸν</placeName>, <placeName reg="Μοψουεστία">Μοψ <lb type="worddiv" n="6"/>ουεστίαν</placeName>, <placeName><placeName reg="Τρίπολις">Τρίπολιν</placeName> <w lemma="ὁ">τῆς</w> <placeName reg="Συρία">Συρίας</placeName></placeName>, <placeName><placeName reg="Φιλαδελφία">Φιλαδέλφειαν</placeName> <w lemma="ὁ">τῆς</w> <lb n="7"/> <placeName reg="Ἀραβία">Ἀραβίας</placeName></placeName>, <placeName><placeName reg="Ζεῦγμα">Ζεῦγμα</placeName> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τῷ</w><placeName reg="Εὐφράτης"> Εὐφράτῃ</placeName></placeName>, <placeName reg="Κιβύρα">Κιβύραν</placeName></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 2,  ΕΙΣ Wood, probably a misreading of ΤΗΣ in ligature.</p>
-<p>l. 3,  ΚΕΙΣΑΡΕΙΑΝ Wood.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>[... he won ] at Prusias, the men's pancration; at Claudiopolis, at Ancyra of Galatia, at Pessinus, at Damascus twice, at Beirut, at Tyre, at Caesarea Stratonos, at Neapolis of Samaria, at Scythopolis, at Gaza, at Caesarea Panias twice, at Hieropolis, at Anazarbus, at Mopsuestia, at Tripolis of Syria, at Philadelphia of Arabia, at Zeugma by the Euphrates, at Kibyra.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The text is clearly a shortened version of the list of victories in <xref type="inscription" n="691" href="120920">12.920</xref>.ii, ll.43-66.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, East (north part)</rs>: 'in the wall on the east side of the town' (Wood)</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Wood notebook</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
- 
-<p>Copied by Wood, notebook 14, f45; not reported subsequently</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Wood by <bibl n="PPA">Roueché, PPA <biblScope>92</biblScope></bibl>.</p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Wood_14_45"><figDesc>Wood notebook 14, page 45</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>l. 2,  ΕΙΣ Wood, probably a misreading of ΤΗΣ in ligature.</p>
+            <p>l. 3,  ΚΕΙΣΑΡΕΙΑΝ Wood.</p>
+         </div>
+         <div type="translation">
+            <p>[... he won ] at Prusias, the men's pancration; at Claudiopolis, at Ancyra of Galatia, at Pessinus, at Damascus twice, at Beirut, at Tyre, at Caesarea Stratonos, at Neapolis of Samaria, at Scythopolis, at Gaza, at Caesarea Panias twice, at Hieropolis, at Anazarbus, at Mopsuestia, at Tripolis of Syria, at Philadelphia of Arabia, at Zeugma by the Euphrates, at Kibyra.</p>
+         </div>
+         <div type="commentary">
+            <p>The text is clearly a shortened version of the list of victories in <ref type="inscription" n="691" target="120920.xml"/>.ii, ll.43-66.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Wood by <bibl n="PPA">Roueché, PPA <citedRange>92</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

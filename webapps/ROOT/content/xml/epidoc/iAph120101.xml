@@ -1,162 +1,251 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120101" n="iAph0022 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">i. <rs type="textType">Honours</rs> for Flavius Constantius, <rs type="personType">governor</rs>, for <rs type="textType" reg="building inscription">building the wall</rs>; ii. Flavius Ampelios restores the gate</title>
-</titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>i. Honours for Flavius Constantius, governor, for building the wall; ii. Flavius Ampelios restores the gate</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120101</idno>
+            <idno type="IAph2007">iAph120101</idno>
+            <idno type="JMR2004">iAph0022</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+A <material>white marble</material>
+                              <objectType>lintel</objectType> block with <rs type="decoration">egg and dart moulding</rs> above two stepped fasciae (<height unit="metre">0.75</height> × <width unit="metre">4.95</width> × <depth unit="metre">0.95</depth>); the condition of the stone appears not to have altered since it was first recorded.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+i. is cut on the upper fascia, and ii. on the lower. A cross flanked by an <term xml:lang="grc-Latn">alpha</term> and an <term xml:lang="grc-Latn">omega</term> within a circle was later cut over i., probably at the time that ii. was cut, or perhaps when it was emended.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+i. l. 1, <height unit="metre">0.07</height>, l. 2, <height unit="metre">0.08</height>; elongated, well-cut and regular; the <foreign xml:lang="grc">Α</foreign> of <foreign xml:lang="grc">ἡγεμόνα</foreign> was added above the line, <height>0.03</height>; scroll for abbreviation; b. <height unit="metre">0.04</height>.
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>expan tidied</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-19</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Added zero line numbers, and fixed column/fragment breaks</item></change><change>
-  <date>2004-03-22</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change><date>2003-06-22</date><respStmt><name>CMR</name></respStmt><item>tagged, tidied and corrected</item></change><change><date>2003-07-14</date><respStmt><name>JLG</name></respStmt><item>Lemmatised</item></change><change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>name tags reduced</item></change><change><date>2004-01-16</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change><change><date>2003-05-27</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Typed and marked-up Greek</item></change></revisionDesc></teiHeader>
-
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>
-A <rs type="material">white marble</rs> <rs type="objectType">lintel</rs> block with <rs type="decoration">egg and dart moulding</rs> above two stepped fasciae (<measure type="length" unit="metre" dim="height">0.75</measure> × <measure type="length" unit="metre" dim="width">4.95</measure> × <measure type="length" unit="metre" dim="depth">0.95</measure>); the condition of the stone appears not to have altered since it was first recorded.</p></div>
-<div type="description" n="text">
-<head>Description of Texts</head>
-<p>
-i. is cut on the upper fascia, and ii. on the lower. A cross flanked by an <term lang="grc-Latn">alpha</term> and an <term lang="grc-Latn">omega</term> within a circle was later cut over i., probably at the time that ii. was cut, or perhaps when it was emended.</p>
-</div>
-<div type="description" n="letters">
-<head>Description of Letters</head>
-
-<p>
-i. l. 1, <measure type="length" unit="metre" dim="height">0.07</measure>, l. 2, <measure type="length" unit="metre" dim="height">0.08</measure>; elongated, well-cut and regular; the <foreign lang="grc">Α</foreign> of <foreign lang="grc">ἡγεμόνα</foreign> was added above the line, <measure type="length" dim="height" value="0.03">0.03</measure>; scroll for abbreviation; b. <measure dim="height" type="length" unit="metre" precision="circa">0.04</measure>.
-
-ii. <measure type="length" unit="metre" dim="height">0.07</measure>; well cut; abbreviations: last letter above line in <foreign lang="grc">ΜΗΤΡΟΠ<hi rend="superscript">ο</hi>, ΕΛΛΟΓΙΜ<hi rend="superscript">ο</hi>, ΣΧ<hi rend="superscript">ο</hi></foreign>; scroll in <foreign lang="grc"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">αουίου</supplied></expan>, <expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan>, <expan><abbr>ἰνδ</abbr><supplied reason="abbreviation">ικτίωνος</supplied></expan></foreign>.</p>
-
-</div>
-<div type="description" n="date">
-<head>Date</head>
-
-<p>
-i: <date notAfter="0370" exact="both" cert="low" notBefore="0365">A.D. 365/370</date>
+ii. <height unit="metre">0.07</height>; well cut; abbreviations: last letter above line in <foreign xml:lang="grc">ΜΗΤΡΟΠ<hi rend="superscript">ο</hi>, ΕΛΛΟΓΙΜ<hi rend="superscript">ο</hi>, ΣΧ<hi rend="superscript">ο</hi>
+                        </foreign>; scroll in <foreign xml:lang="grc">
+                           <expan>
+                              <abbr>Φλ</abbr>
+                              <ex>αουίου</ex>
+                           </expan>, <expan>
+                              <abbr>κ</abbr>
+                              <ex>αὶ</ex>
+                           </expan>, <expan>
+                              <abbr>ἰνδ</abbr>
+                              <ex>ικτίωνος</ex>
+                           </expan>
+                        </foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+Findspot</origPlace>
+                     <origDate notBefore="0434"
+                               notAfter="0467"
+                               precision="medium"
+                               evidence="titulature titulature prosopography">
+i: A.D. 365/370
 (<rs type="criteria">titulature</rs>)
-ii (and i.b): <date notAfter="0467" exact="none" cert="low" notBefore="0434">Mid fifth century</date>
-(<rs type="criteria">titulature</rs>, <rs type="criteria">prosopography</rs>).</p>
+ii (and i.b): Mid fifth century
+(<rs type="criteria">titulature</rs>, <rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North-east</rs>: over the North-east Gate in the city wall, with the inscription on the west (inner) face; see .</provenance>
+                  <provenance type="observed" when="&#xA;2004">
+Findspot (2004)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription
+	 (Roueché); Deering; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">expan tidied</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-19" who="#GB">Added zero line numbers, and fixed column/fragment breaks</change>
+         <change when="2004-03-22" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-16" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">name tags reduced</change>
+         <change when="2003-07-14" who="JLG">Lemmatised</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">Typed and marked-up Greek</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="72_E_33A.jpg">
+            <desc>Left end (1972)</desc>
+         </graphic>
+         <graphic url="72_E_34A.jpg">
+            <desc>Centre (1972)</desc>
+         </graphic>
+         <graphic url="72_E_35A.jpg">
+            <desc>Right end (1972)</desc>
+         </graphic>
+         <graphic url="73_P_11A.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="75_C_04.jpg">
+            <desc>Face (1975)</desc>
+         </graphic>
+         <graphic url="DSCN0275.jpg">
+            <desc>Walls: north east gate and ALA 140 (2004)</desc>
+         </graphic>
+         <graphic url="Deering_04.jpg">
+            <desc>Deering notebook, page 4</desc>
+         </graphic>
+         <graphic url="Wood_14_46.jpg">
+            <desc>Wood notebook 14, page 46</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-</div>
-<div lang="grc" n="text" type="edition">
-<head lang="en">Edition</head>
 
-<div type="textpart_section" n="i"><div type="textpart_section" n="a"><ab><lb n="1"/>
-<persName type="aphrodisian" key="FlConstantius" full="yes"><name reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">άουιον</supplied></expan></name>
-<name reg="Κωστάντιος">Κωστάντιον</name></persName> <w lemma="ὁ">τὸν</w> <rs type="dignity" key="clarissimus"><w lemma="λαμπρός">λαμπρότατον</w></rs> <rs type="official-secul" key="praeses"><w lemma="ἡγεμών">ἡγεμόν<add place="supralinear">α</add></w></rs> <rs type="subject" key="CouncilPeople"><w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></rs> <g type="leaf"/><lb n="2"/>
-<g type="scroll"/>
-<space dim="horizontal" extent="1" unit="character"/> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἄλλος">ἄλλων</w> <w lemma="ἔργον">ἔργων</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="τεῖχος">τεῖχος</w> <w lemma="ἀνίστημι">ἀναστήσαντα</w> <g type="star"/></ab></div>
-<div type="textpart_section" n="b"><ab><lb n="1"/><note place="not specified" anchored="yes">cut over text</note> <w lemma="Α">Α</w> <g type="cross"/> <w lemma="Ω">Ω</w></ab></div></div>
+<div n="i" type="textpart" subtype="section"><div n="a" type="textpart" subtype="section"><ab><lb n="1"/>
+<persName key="FlConstantius" type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>άουιον</ex></expan></name>
+<name nymRef="#Κωστάντιος">Κωστάντιον</name></persName> <w lemma="ὁ">τὸν</w> <rs type="dignity" key="clarissimus"><w lemma="λαμπρός">λαμπρότατον</w></rs> <rs type="official-secul" key="praeses"><w lemma="ἡγεμών">ἡγεμόν<add place="supralinear">α</add></w></rs> <rs type="subject" key="CouncilPeople"><w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></rs> <g ref="#leaf"/><lb n="2"/>
+<g ref="#scroll"/>
+<space dim="horizontal" extent="1" unit="character"/> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἄλλος">ἄλλων</w> <w lemma="ἔργον">ἔργων</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="τεῖχος">τεῖχος</w> <w lemma="ἀνίστημι">ἀναστήσαντα</w> <g ref="#star"/></ab></div>
+<div n="b" type="textpart" subtype="section"><ab><lb n="1"/><note place="not specified" xml:lang=""/> <w lemma="Α">Α</w> <g ref="#cross"/> <w lemma="Ω">Ω</w></ab></div></div>
 
-<div type="textpart_section" n="ii"><ab n="scholasticus" type="profession"><lb n="1"/>
-<g type="cross"/> <w lemma="ἐπί">ἐπὶ</w> <w lemma="εὐτυχία">εὐτυχίᾳ</w> <w lemma="ὁ">τῆς</w> <rs type="dignity" key="clarus"><w lemma="λαμπρός">λαμπρᾶς</w></rs> <w lemma="Σταυροπολίτης"><placeName type="ethnic" full="yes" reg="Σταυρουπολίτης"><supplied reason="omitted">Σ</supplied>ταυρουπολίτων</placeName></w> <rs type="subject" key="capital"><w lemma="μητρόπολις"><expan><abbr>μητροπ</abbr><supplied reason="abbreviation">όλεως</supplied></expan></w></rs> <w lemma="καί">καὶ</w> <w lemma="οὗτος">τοῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <w lemma="ὁ">τῆς</w> <w lemma="πύλη">πύλης</w> <g type="stop"/> <w lemma="ἀνανεόω">ἀναινεώθη</w><lb n="2"/>
+<div n="ii" type="textpart" subtype="section"><ab n="scholasticus" type="profession"><lb n="1"/>
+<g ref="#cross"/> <w lemma="ἐπί">ἐπὶ</w> <w lemma="εὐτυχία">εὐτυχίᾳ</w> <w lemma="ὁ">τῆς</w> <rs type="dignity" key="clarus"><w lemma="λαμπρός">λαμπρᾶς</w></rs> <w lemma="Σταυροπολίτης"><placeName nymRef="#Σταυρουπολίτης"><supplied reason="omitted">Σ</supplied>ταυρουπολίτων</placeName></w> <rs type="subject" key="capital"><w lemma="μητρόπολις"><expan><abbr>μητροπ</abbr><ex>όλεως</ex></expan></w></rs> <w lemma="καί">καὶ</w> <w lemma="οὗτος">τοῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <w lemma="ὁ">τῆς</w> <w lemma="πύλη">πύλης</w> <g ref="#stop"/> <w lemma="ἀνανεόω">ἀναινεώθη</w><lb n="2"/>
 
-<g type="cross"/>
- <w lemma="ἐπί">ἐπὶ</w> <persName type="aphrodisian" key="Ampelius" full="yes"><name type=" " reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">αουίου</supplied></expan></name> <name reg="Ἀμπέλιος">Ἀμπελίου</name></persName> <w lemma="ὁ">τοῦ</w> <rs type="dignity" key="eloquentissimus"><w lemma="ἐλλόγιμος"><expan><abbr>ἐλλογιμ<orig><hi rend="superscript">ο</hi></orig></abbr><supplied reason="abbreviation">ωτάτου</supplied></expan></w></rs>
-<rs type="profession" key="scholasticus"><w lemma="σχολαστικός"><expan><abbr>σχ<hi rend="superscript">ο</hi></abbr><supplied reason="abbreviation">λαστικοῦ</supplied></expan></w></rs>
-<w lemma="καί"><expan><abbr>κ</abbr><supplied reason="abbreviation">αὶ</supplied></expan></w> <rs type="official-secul" key="pater"><w lemma="πατήρ">πατρός</w></rs> <g type="stop"/><rs type="subject" key="dating">
-<w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><supplied reason="abbreviation">ικτίωνος</supplied></expan></w>
+<g ref="#cross"/>
+ <w lemma="ἐπί">ἐπὶ</w> <persName key="Ampelius" type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αουίου</ex></expan></name> <name nymRef="#Ἀμπέλιος">Ἀμπελίου</name></persName> <w lemma="ὁ">τοῦ</w> <rs type="dignity" key="eloquentissimus"><w lemma="ἐλλόγιμος"><expan><abbr>ἐλλογιμ<am><hi rend="superscript">ο</hi></am></abbr><ex>ωτάτου</ex></expan></w></rs>
+<rs type="profession" key="scholasticus"><w lemma="σχολαστικός"><expan><abbr>σχ<hi rend="superscript">ο</hi></abbr><ex>λαστικοῦ</ex></expan></w></rs>
+<w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <rs type="official-secul" key="pater"><w lemma="πατήρ">πατρός</w></rs> <g ref="#stop"/><rs type="subject" key="dating">
+<w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτίωνος</ex></expan></w>
 <num value="8">
 <hi rend="supraline">η</hi></num></rs>
-<g type="cross"/>
+<g ref="#cross"/>
 </ab></div>
 
 </div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription
-	 (Roueché); Deering; publications.</p>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-
-<p>
-i. l.1. <foreign lang="grc">τόν</foreign> omitted by MAMA. The superscript <foreign lang="grc">Α</foreign> was first noted by Reinach.
+         <div type="apparatus">
+            <p>
+i. l.1. <foreign xml:lang="grc">τόν</foreign> omitted by MAMA. The superscript <foreign xml:lang="grc">Α</foreign> was first noted by Reinach.
 </p>
-
-
-
-<p>ii. 
-l.1. After <foreign lang="grc">λαμπρᾶς</foreign> the text originally read <foreign lang="grc"><del rend="overscore" status="unremarkable">ΑΦ</del>ΡΟ<del rend="overscore" status="unremarkable">ΔΙΣΙΑ</del>ΙΩΝ</foreign>; the letters highlighted here were subsequently erased and replaced, and the <foreign lang="grc">Ι</foreign> of <foreign lang="grc">ΙΩΝ</foreign> altered to <foreign lang="grc">Τ</foreign>, to read <foreign lang="grc">ΤΑΥΡΟΠΟΛΙΤΩΝ</foreign>.
+            <p>ii. 
+l.1. After <foreign xml:lang="grc">λαμπρᾶς</foreign> the text originally read <foreign xml:lang="grc">
+                  <del rend="overscore" status="unremarkable">ΑΦ</del>ΡΟ<del rend="overscore" status="unremarkable">ΔΙΣΙΑ</del>ΙΩΝ</foreign>; the letters highlighted here were subsequently erased and replaced, and the <foreign xml:lang="grc">Ι</foreign> of <foreign xml:lang="grc">ΙΩΝ</foreign> altered to <foreign xml:lang="grc">Τ</foreign>, to read <foreign xml:lang="grc">ΤΑΥΡΟΠΟΛΙΤΩΝ</foreign>.
 </p>
-<p>
+            <p>
 Earlier editors did not record the two stops (simple dots) or the apparent trace of a cross at the beginning of l. 2; the stone is broken here, and the reading is not certain.</p>
-
-</div>
-<div type="translation">
-<head>Translation</head>
-
-<p>
+         </div>
+         <div type="translation">
+            <p>
 i. The Council and the People <supplied reason="subaudible">have honoured</supplied>
-Fl<supplied reason="abbreviation">avius</supplied> Co<supplied reason="omitted">n</supplied>stantius, <term lang="la">clarissimus praeses</term>, who, as well as his other works, put up the wall.</p>
-
-<p>ii. 
-For the good fortune of the splendid metropolis of the <supplied reason="omitted">S</supplied>tauropolitans, this work of the gate was also renewed, under Fl<supplied reason="abbreviation">avius</supplied> Ampelios, the most eloquent <term lang="la">scholasticus</term> and <term lang="la">pater</term>, in the eighth indiction.</p>
-
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>i: 
-For Flavius Constantius see also <xref type="inscription" n="235" href="060004">6.4</xref>, and discussion at <xref type="eAla-text" n="III.16">III.16</xref>.</p><p>ii: For Flavius Ampelios see also <xref type="inscription" n="38" href="040202">4.202</xref>, <xref type="inscription" n="43" href="020019">2.19</xref>, <xref type="inscription" n="44" href="080609">8.609</xref> and discussion at <xref type="eAla-text" n="IV.33">IV.33</xref>..</p>
-</div>
-<div type="history" n="locations"><head>Locations</head><p> <rs type="found">
-<rs type="monuList">Walls, North-east</rs>: over the North-east Gate in the city wall, with the inscription on the west (inner) face; see .</rs> <rs type="origLocation">
-Findspot</rs> <rs type="lastLocation">
-Findspot (2004)</rs></p></div>
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>
-Copied in <date value="1705" notBefore="1705" notAfter="1705" exact="both">1705</date> by <rs type="visitor" key="sherard">Sherard</rs> (BM Add. 10101, f. 11); by <rs type="visitor" key="wood">Wood</rs>; by <rs type="visitor" key="sestini">Sestini</rs>; by <rs type="visitor" key="richter">von Richter</rs>; by <rs type="visitor" key="deering">Deering</rs>; perhaps by <rs type="visitor" key="texier">Texier</rs>; by <rs type="visitor" key="fellows">Fellows</rs>; probably by <rs type="visitor" key="bailie">Bailie</rs> (since he gives the wrong line divisions, different from those in earlier editions, the mistake may originate in his own note-book); copied by <rs key="lebas" type="visitor">Le Bas</rs>; by <rs type="visitor" key="kubitschek">Kubitschek</rs> and <rs type="visitor" key="reichel">Reichel</rs>; recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (1); by the <rs type="visitor" key="calder">MAMA expedition</rs>; by <rs type="visitor" key="robert">L. Robert</rs>; by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>
-Published by <bibl type="hbi" n="sestini1807"><author>Sestini</author> (<title level="m">Viaggi</title>, <biblScope>113</biblScope>)</bibl>; by <bibl><author>F. Graese</author> from <author>Gell</author> (<title level="m">Act. Acad. Petrop.</title> VIII, 706)</bibl>; by <bibl type="hbi" n="francke1830"><author>Francke</author> from Gell and von Richter, 428 nos. <biblScope>74</biblScope> and <biblScope>75</biblScope></bibl>; by <bibl type="hbi" n="CIGII"><author>Boeckh</author>, <title level="m">CIG</title> <biblScope>2745</biblScope>, <biblScope>2746</biblScope></bibl>, from all these and the Sherard papers, <seg cert="low">whence</seg> <bibl type="hbi" n="texier1839"><author>Texier</author>, <title level="m">As. Min.</title> iii 159, no. <biblScope>2</biblScope></bibl>; cited by <bibl type="hbi" n="fellows1841"><author>Fellows</author>,pp.  35-6, no. <biblScope>17</biblScope></bibl>; published by <bibl type="hbi" n="bailie1846"><author>Bailie</author>, <title level="m">Fasc</title>. ii 16-17 and 272-274, no. <biblScope>45</biblScope></bibl>; by <bibl type="hbi" n="LBW"><author>Waddington</author>, from Le Bas, LBW <biblScope>593</biblScope>, <biblScope>594</biblScope></bibl>; cited by <bibl type="hbi" n="kubreich1893"><author>Kubitschek and Reichel</author> (<title level="m">Anz. Wien. Akad.</title> 1893, p. 103)</bibl>; published from Gaudin's squeeze, <bibl type="hbi" n="reinach"><author>Reinach</author>, <title level="m">REG</title> 19, <date value="1906" notBefore="1906" notAfter="1906" exact="both">1906</date>, 227-230, no. <biblScope>136</biblScope></bibl>, whence <bibl type="hbi" n="IGC"><author>Grégoire</author>, <title level="m">Rec</title>. <biblScope>270</biblScope></bibl>; cited and a photograph published by <bibl type="hbi" n="hell4"><author>Robert</author>, <title level="m">Hellenica</title> 4, <biblScope>61</biblScope> note 2 and <biblScope>130</biblScope> note 5</bibl>, whence <bibl n="be"><title level="m">BE</title> <biblScope>1949.178</biblScope></bibl>, <bibl n="be"><title level="m">BE</title> <biblScope>1956.277</biblScope></bibl>; published by <bibl type="hbi" n="MAMA8"><author>Cormack</author>, from the MAMA records, <title level="m">MAMA</title> 8, no. <biblScope>427</biblScope></bibl>; by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> nos. <biblScope>22</biblScope> (i), <biblScope>42</biblScope> (ii) and plate vi</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257490">609</biblScope>, <biblScope n="257501">619</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="72_E_33A"><figDesc>Left end (1972)</figDesc></figure><figure href="72_E_34A"><figDesc>Centre (1972)</figDesc></figure><figure href="72_E_35A"><figDesc>Right end (1972)</figDesc></figure><figure href="73_P_11A"><figDesc>Face (1973)</figDesc></figure><figure href="75_C_04"><figDesc>Face (1975)</figDesc></figure><figure href="DSCN0275"><figDesc>Walls: north east gate and ALA 140 (2004)</figDesc></figure></p></div><div type="figure" n="transcriptions">
-<head>Transcriptions</head>
-<p><figure href="Deering_04"><figDesc>Deering notebook, page 4</figDesc></figure><figure href="Wood_14_46"><figDesc>Wood notebook 14, page 46</figDesc></figure></p></div>
-
-
-
-</body>
-</text>
+Fl<ex>avius</ex> Co<supplied reason="omitted">n</supplied>stantius, <term xml:lang="la">clarissimus praeses</term>, who, as well as his other works, put up the wall.</p>
+            <p>ii. 
+For the good fortune of the splendid metropolis of the <supplied reason="omitted">S</supplied>tauropolitans, this work of the gate was also renewed, under Fl<ex>avius</ex> Ampelios, the most eloquent <term xml:lang="la">scholasticus</term> and <term xml:lang="la">pater</term>, in the eighth indiction.</p>
+         </div>
+         <div type="commentary">
+            <p>i: 
+For Flavius Constantius see also <ref type="inscription" n="235" target="060004.xml"/>, and discussion at <ref type="eAla-text" n="III.16" target=".xml"/>.</p>
+            <p>ii: For Flavius Ampelios see also <ref type="inscription" n="38" target="040202.xml"/>, <ref type="inscription" n="43" target="020019.xml"/>, <ref type="inscription" n="44" target="080609.xml"/> and discussion at <ref type="eAla-text" n="IV.33" target=".xml"/>..</p>
+         </div>
+         <div type="bibliography">
+            <p>
+Published by <bibl type="hbi" n="sestini1807">
+                  <author>Sestini</author> (<title level="m">Viaggi</title>, <citedRange>113</citedRange>)</bibl>; by <bibl>
+                  <author>F. Graese</author> from <author>Gell</author> (<title level="m">Act. Acad. Petrop.</title> VIII, 706)</bibl>; by <bibl type="hbi" n="francke1830">
+                  <author>Francke</author> from Gell and von Richter, 428 nos. <citedRange>74</citedRange> and <citedRange>75</citedRange>
+               </bibl>; by <bibl type="hbi" n="CIGII">
+                  <author>Boeckh</author>, <title level="m">CIG</title>
+                  <citedRange>2745</citedRange>, <citedRange>2746</citedRange>
+               </bibl>, from all these and the Sherard papers, <seg cert="low">whence</seg>
+               <bibl type="hbi" n="texier1839">
+                  <author>Texier</author>, <title level="m">As. Min.</title> iii 159, no. <citedRange>2</citedRange>
+               </bibl>; cited by <bibl type="hbi" n="fellows1841">
+                  <author>Fellows</author>,pp.  35-6, no. <citedRange>17</citedRange>
+               </bibl>; published by <bibl type="hbi" n="bailie1846">
+                  <author>Bailie</author>, <title level="m">Fasc</title>. ii 16-17 and 272-274, no. <citedRange>45</citedRange>
+               </bibl>; by <bibl type="hbi" n="LBW">
+                  <author>Waddington</author>, from Le Bas, LBW <citedRange>593</citedRange>, <citedRange>594</citedRange>
+               </bibl>; cited by <bibl type="hbi" n="kubreich1893">
+                  <author>Kubitschek and Reichel</author> (<title level="m">Anz. Wien. Akad.</title> 1893, p. 103)</bibl>; published from Gaudin's squeeze, <bibl type="hbi" n="reinach">
+                  <author>Reinach</author>, <title level="m">REG</title> 19, <date value="1906" notBefore="1906" notAfter="1906" exact="both">1906</date>, 227-230, no. <citedRange>136</citedRange>
+               </bibl>, whence <bibl type="hbi" n="IGC">
+                  <author>Grégoire</author>, <title level="m">Rec</title>. <citedRange>270</citedRange>
+               </bibl>; cited and a photograph published by <bibl type="hbi" n="hell4">
+                  <author>Robert</author>, <title level="m">Hellenica</title> 4, <citedRange>61</citedRange> note 2 and <citedRange>130</citedRange> note 5</bibl>, whence <bibl n="be">
+                  <title level="m">BE</title>
+                  <citedRange>1949.178</citedRange>
+               </bibl>, <bibl n="be">
+                  <title level="m">BE</title>
+                  <citedRange>1956.277</citedRange>
+               </bibl>; published by <bibl type="hbi" n="MAMA8">
+                  <author>Cormack</author>, from the MAMA records, <title level="m">MAMA</title> 8, no. <citedRange>427</citedRange>
+               </bibl>; by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> nos. <citedRange>22</citedRange> (i), <citedRange>42</citedRange> (ii) and plate vi</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257490">609</citedRange>, <citedRange n="257501">619</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

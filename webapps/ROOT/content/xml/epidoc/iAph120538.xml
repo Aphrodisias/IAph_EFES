@@ -1,98 +1,160 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120538" n="iAph0650 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Letter</rs> of M. Ulpius Appuleius Eurykles to the Aphrodisians</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
- <textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-01-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>No description</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>No description</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0180" notAfter="0189" exact="both">Between 180 and 189, probably early 180s</date>
- (<rs type="criteria">Prosopography</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter of M. Ulpius Appuleius Eurykles to the Aphrodisians</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120538</idno>
+            <idno type="IAph2007">iAph120538</idno>
+            <idno type="JMR2004">iAph0650</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0180" notAfter="0189" evidence="Prosopography">
+Between 180 and 189, probably early 180s
+ (<rs type="criteria">Prosopography</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" cert="low">Walls, South-east</rs>: in urbis muro ad austrum.</provenance>
+                  <provenance type="observed" when="1705">Findspot (1705)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Sherard notebook; publications</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Wood_14_45.jpg">
+            <desc>Wood notebook 14, page 45</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
 <ab><lb n="1"/>
  <w lemma="ἀγαθός">Ἀγαθῇ</w> <w lemma="τύχη">Τύχῃ</w> <lb n="2"/>
- <persName type="aphrodisian"><name reg="Μᾶρκος">Μᾶρκος</name> <name reg="Οὔλπιος">Οὔλπιος</name> <name reg="Ἀππουλήϊος">Ἀππουλήϊος</name> <name reg="Εὐρυκλῆς">Εὐρυκλῆς</name></persName> <w lemma="ἀρχιερεύς">ἀρχιερεὺς</w> <placeName reg="Ἀσία">Ἀσίας</placeName> <w lemma="ἀποδείκνυμι">ἀποδεδει<supplied reason="lost">γ</supplied>μένο<supplied reason="lost">ς</supplied></w>  <lb n="3"/><w lemma="ναός">ναῶν</w> <sic n="superfluous">ΚΑΙ</sic> <w lemma="ὁ">τῶν</w> <w lemma="ἐν">ἐν</w> <placeName reg="Σμύρνη">Σμύρνῃ</placeName> <w lemma="ὁ">τ<supplied reason="omitted">ὸ</supplied></w> <num value="2">β</num> <placeName type="ethnic" reg="Ἀφροδεισιεύς">Ἀφροδισ<supplied reason="lost">ι</supplied>έων</placeName> <w lemma="ἄρχων">ἄρχουσι</w> <w lemma="βουλή">βουλῇ</w> <w lemma="δῆμος">δήμῳ</w> <w lemma="χαίρω">χαίρε<supplied reason="lost">ι</supplied>ν</w><g type="stop"/> <lb n="4"/> <w lemma="βούλομαι">Βουληθέντων</w> <w lemma="ὑμεῖς">ὑμῶν</w> <w lemma="πρόνοια">πρόνοιαν</w> <w lemma="ποιέω">ποιήσασθαί</w> <w lemma="ἐγώ">με</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τοὺς</w> <w lemma="ἀγών">ἀγῶνας</w> <lb n="5"/>  <w lemma="διά">διά</w> <w lemma="τε">τε</w> <w lemma="ὁ">τὴν</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὸν</w> <w lemma="μέγας">μέγιστον</w> <w lemma="αὐτοκράτωρ">Αὐτοκράτορα</w> <w lemma="εὐσέβεια">εὐσεβείαν</w> <persName type="emperor"><name reg="Μᾶρκος">Μᾶρκον</name> <name reg="Αὐρήλιος" type="nomen">Αὐρήλιον</name> <lb n="6"/>
-  <name reg="Κόμμοδος">Κόμοδον</name> <name reg="Ἀντωνῖνος">Ἀντωνῖνον</name> <w lemma="σεβαστός">Σεβαστόν</w></persName> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τοὺς</w> <w lemma="διατίθημι">διαθεμένους</w> <lb n="7"/>
- <w lemma="μνήμη">μνήμην</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="δόξα">δό<supplied reason="omitted">ξ</supplied>αν</w> <w lemma="ἤδη">ἤδη</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="ὁ">τῆς</w> <w lemma="σύνοδος">συνόδου</w> <w lemma="πολλάκις">π<supplied reason="lost">ολ</supplied> <lb type="worddiv" n="8"/>λάκις</w> <w lemma="ἐντυγχάνω">ἐντυχόντων</w> <w lemma="ἐγώ">μοι</w> <w lemma="οὐδέ">οὐδὲ</w> <w lemma="οὗτος">τοῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="μέρος">μέρος</w> <w lemma="καταλείπω">κατέλιπον</w> <w lemma="ἀδιάκριτος">ἀδιάκριτον</w> <lb n="9"/>
- <w lemma="ἕπομαι">ἑπόμενος</w> <w lemma="ὁ">τῇ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="λογιστεία">λογιστείαν</w> <w lemma="τάξις">τά<choice type="correction"><corr>ξ</corr></choice>ε<supplied reason="lost">ι</supplied></w> <w lemma="καί">καὶ</w> <w lemma="προθυμία">προθυμίᾳ</w> <w lemma="μέχρι">μέχρι</w> <w lemma="νῦν">νῦν</w> <w lemma="ὁ">τῆς</w> <w lemma="περί">περὶ</w> <lb n="10"/>
- <w lemma="ὁ">τοὺς</w> <w lemma="ἀγών">ἀγῶνας</w> <w lemma="κατάστασις">καταστάσεως</w> <w lemma="ἐλλείπω">ἐνλειπούσης</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τῶν</w> <w lemma="χρῆμα">χρημάτων</w> <w lemma="παρασκευή">πα<lb type="worddiv" n="11"/>ρασκευὴν</w>  <w lemma="ὀφείλω">ὀφειλόντων</w> <w lemma="συναυξάνω">συ<supplied reason="lost">ναυξ</supplied>ηθῆναι</w> <w lemma="κατά">κατά</w> <w lemma="τε">τε</w> <w lemma="ὁ">τὰς</w> <w lemma="ὁ">τῶν</w> <w lemma="τελευτάω">τελευτησάν<lb type="worddiv" n="12"/>των</w>  <w lemma="γνώμη">γνώμας</w> <w lemma="καί">καὶ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀξίωμα">ἀξί<supplied reason="omitted">ω</supplied>μα</w> <w lemma="ὁ">τοῦ</w> <w lemma="πόρος">πόρου</w> <w>ἀφ'</w> <w lemma="ὅς">οὗ</w> <w lemma="χρή"><supplied reason="omitted">χ</supplied>ρὴ</w> <w lemma="ὁ">τοὺς</w> <w lemma="ἀγών">ἀγῶνα<supplied reason="lost">ς</supplied></w> <w lemma="ἐπιτελέω">ἐπιτελεῖσθαι</w><lb n="13"/>
- <w lemma="ἀγών">ἀγὼν</w> <w lemma="μέν">μὲν</w> <w lemma="δή">δὴ</w> <w lemma="ὁ">ὁ</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <persName type="aphrodisian"><name reg="Φλάβιος">Φλαβίου</name> <name reg="Λυσίμαχος">Λυσιμάχου</name></persName> <w lemma="διαθήκη">διαθηκῶν</w> <w>προελήλυ <lb type="worddiv" n="14"/>
- θεν</w> <w lemma="εἰς">εἰς</w> <w lemma="ἀρχεῖον">ἀρχείου</w> <w lemma="πόρος">πόρου</w> <w lemma="μυριάς">μυριάδας</w> <w lemma="δώδεκα">δ<supplied reason="omitted">ώ</supplied>δεκα</w> <w lemma="ὡς">ὡς</w> <w lemma="δύναμαι">δύνασθαι</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="οὗτος">τού<lb type="worddiv" n="15"/>των</w> <w lemma="παρά">παρὰ</w> <w lemma="ἔτος">ἔτη</w> <w lemma="τέσσαρες">τέσσαρα</w> <w lemma="πληρόω">πληροῦσθαι</w> <w lemma="ὁ">τὸν</w> <w lemma="μουσικός"><expan><abbr>μ</abbr><supplied reason="abbreviation">ο</supplied>υσικὸν</expan></w> <w lemma="ἀγών">ἀγῶνα</w> <w lemma="καθά">καθὰ</w> <w lemma="ὁ">τῷ</w> <lb n="16"/><w lemma="διατίθημι">διαθεμέν<supplied reason="omitted">ῳ</supplied></w> <w lemma="δοκέω">ἔδοξεν</w> <w lemma="ὁ">αἱ</w> <w lemma="δέ">δὲ</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τὰς</w> <w lemma="δώδεκα">δ<supplied reason="omitted">ώ</supplied>δεκα</w> <w lemma="μυριάς">μυριάδας</w> <w lemma="εἰμί"><supplied reason="omitted">ο</supplied>ὖσαι</w> <w lemma="ἐν">ἐν</w> <w lemma="ἐκδανεισμός">ἐκ<lb type="worddiv" n="17"/>δανεισμῷ</w>  <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="προσγίγνομαι">προσγεγ<supplied reason="omitted">ο</supplied>ν<supplied reason="omitted">ὼ</supplied>ς</w> <w lemma="οὗτος">τούτοις</w> <w lemma="τόκος">τόκος</w> <w lemma="μέχρι">μέχρι</w> <w lemma="ἀρχή">ἀρχῆς</w> <w lemma="ἔτος"><supplied reason="lost">ἔ</supplied>τους</w> <lb n="18"/><supplied reason="lost">ποιεῖ</supplied> <w lemma="κεφάλαιος">κεφαλείου</w> <w lemma="δηνάριον">δηναρίων</w> <w lemma="μυριάς">μυριάδας</w> <w lemma="τρεῖς">τρεῖς</w> <w lemma="δηνάριον">δηνάρια</w> <w lemma="χίλιοι">χείλια</w> <w lemma="ὀκτακόσιοι">ὀκτ<supplied reason="omitted">ω</supplied>κόσια</w><lb n="19"/>
+ <persName type="attested"><name nymRef="#Μᾶρκος">Μᾶρκος</name> <name nymRef="#Οὔλπιος">Οὔλπιος</name> <name nymRef="#Ἀππουλήϊος">Ἀππουλήϊος</name> <name nymRef="#Εὐρυκλῆς">Εὐρυκλῆς</name></persName> <w lemma="ἀρχιερεύς">ἀρχιερεὺς</w> <placeName nymRef="#Ἀσία">Ἀσίας</placeName> <w lemma="ἀποδείκνυμι">ἀποδεδει<supplied reason="lost">γ</supplied>μένο<supplied reason="lost">ς</supplied></w>  <lb n="3"/><w lemma="ναός">ναῶν</w> <sic n="superfluous">ΚΑΙ</sic> <w lemma="ὁ">τῶν</w> <w lemma="ἐν">ἐν</w> <placeName nymRef="#Σμύρνη">Σμύρνῃ</placeName> <w lemma="ὁ">τ<supplied reason="omitted">ὸ</supplied></w> <num value="2">β</num> <placeName nymRef="#Ἀφροδεισιεύς">Ἀφροδισ<supplied reason="lost">ι</supplied>έων</placeName> <w lemma="ἄρχων">ἄρχουσι</w> <w lemma="βουλή">βουλῇ</w> <w lemma="δῆμος">δήμῳ</w> <w lemma="χαίρω">χαίρε<supplied reason="lost">ι</supplied>ν</w><g ref="#stop"/> <lb n="4"/> <w lemma="βούλομαι">Βουληθέντων</w> <w lemma="ὑμεῖς">ὑμῶν</w> <w lemma="πρόνοια">πρόνοιαν</w> <w lemma="ποιέω">ποιήσασθαί</w> <w lemma="ἐγώ">με</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τοὺς</w> <w lemma="ἀγών">ἀγῶνας</w> <lb n="5"/>  <w lemma="διά">διά</w> <w lemma="τε">τε</w> <w lemma="ὁ">τὴν</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὸν</w> <w lemma="μέγας">μέγιστον</w> <w lemma="αὐτοκράτωρ">Αὐτοκράτορα</w> <w lemma="εὐσέβεια">εὐσεβείαν</w> <persName type="emperor"><name nymRef="#Μᾶρκος">Μᾶρκον</name> <name nymRef="#Αὐρήλιος">Αὐρήλιον</name> <lb n="6"/>
+  <name nymRef="#Κόμμοδος">Κόμοδον</name> <name nymRef="#Ἀντωνῖνος">Ἀντωνῖνον</name> <w lemma="σεβαστός">Σεβαστόν</w></persName> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="πρός">πρὸς</w> <w lemma="ὁ">τοὺς</w> <w lemma="διατίθημι">διαθεμένους</w> <lb n="7"/>
+ <w lemma="μνήμη">μνήμην</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τῆς</w> <w lemma="πόλις">πόλεως</w> <w lemma="δόξα">δό<supplied reason="omitted">ξ</supplied>αν</w> <w lemma="ἤδη">ἤδη</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="ὁ">τῆς</w> <w lemma="σύνοδος">συνόδου</w> <w lemma="πολλάκις">π<supplied reason="lost">ολ</supplied> <lb n="8" break="no"/>λάκις</w> <w lemma="ἐντυγχάνω">ἐντυχόντων</w> <w lemma="ἐγώ">μοι</w> <w lemma="οὐδέ">οὐδὲ</w> <w lemma="οὗτος">τοῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="μέρος">μέρος</w> <w lemma="καταλείπω">κατέλιπον</w> <w lemma="ἀδιάκριτος">ἀδιάκριτον</w> <lb n="9"/>
+ <w lemma="ἕπομαι">ἑπόμενος</w> <w lemma="ὁ">τῇ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="λογιστεία">λογιστείαν</w> <w lemma="τάξις">τά<choice><corr>ξ</corr></choice>ε<supplied reason="lost">ι</supplied></w> <w lemma="καί">καὶ</w> <w lemma="προθυμία">προθυμίᾳ</w> <w lemma="μέχρι">μέχρι</w> <w lemma="νῦν">νῦν</w> <w lemma="ὁ">τῆς</w> <w lemma="περί">περὶ</w> <lb n="10"/>
+ <w lemma="ὁ">τοὺς</w> <w lemma="ἀγών">ἀγῶνας</w> <w lemma="κατάστασις">καταστάσεως</w> <w lemma="ἐλλείπω">ἐνλειπούσης</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τῶν</w> <w lemma="χρῆμα">χρημάτων</w> <w lemma="παρασκευή">πα<lb n="11" break="no"/>ρασκευὴν</w>  <w lemma="ὀφείλω">ὀφειλόντων</w> <w lemma="συναυξάνω">συ<supplied reason="lost">ναυξ</supplied>ηθῆναι</w> <w lemma="κατά">κατά</w> <w lemma="τε">τε</w> <w lemma="ὁ">τὰς</w> <w lemma="ὁ">τῶν</w> <w lemma="τελευτάω">τελευτησάν<lb n="12" break="no"/>των</w>  <w lemma="γνώμη">γνώμας</w> <w lemma="καί">καὶ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀξίωμα">ἀξί<supplied reason="omitted">ω</supplied>μα</w> <w lemma="ὁ">τοῦ</w> <w lemma="πόρος">πόρου</w> <w>ἀφ'</w> <w lemma="ὅς">οὗ</w> <w lemma="χρή"><supplied reason="omitted">χ</supplied>ρὴ</w> <w lemma="ὁ">τοὺς</w> <w lemma="ἀγών">ἀγῶνα<supplied reason="lost">ς</supplied></w> <w lemma="ἐπιτελέω">ἐπιτελεῖσθαι</w><lb n="13"/>
+ <w lemma="ἀγών">ἀγὼν</w> <w lemma="μέν">μὲν</w> <w lemma="δή">δὴ</w> <w lemma="ὁ">ὁ</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <persName type="attested"><name nymRef="#Φλάβιος">Φλαβίου</name> <name nymRef="#Λυσίμαχος">Λυσιμάχου</name></persName> <w lemma="διαθήκη">διαθηκῶν</w> <w>προελήλυ <lb n="14" break="no"/>
+ θεν</w> <w lemma="εἰς">εἰς</w> <w lemma="ἀρχεῖον">ἀρχείου</w> <w lemma="πόρος">πόρου</w> <w lemma="μυριάς">μυριάδας</w> <w lemma="δώδεκα">δ<supplied reason="omitted">ώ</supplied>δεκα</w> <w lemma="ὡς">ὡς</w> <w lemma="δύναμαι">δύνασθαι</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="οὗτος">τού<lb n="15" break="no"/>των</w> <w lemma="παρά">παρὰ</w> <w lemma="ἔτος">ἔτη</w> <w lemma="τέσσαρες">τέσσαρα</w> <w lemma="πληρόω">πληροῦσθαι</w> <w lemma="ὁ">τὸν</w> <w lemma="μουσικός"><expan><abbr>μ</abbr><ex>ο</ex>υσικὸν</expan></w> <w lemma="ἀγών">ἀγῶνα</w> <w lemma="καθά">καθὰ</w> <w lemma="ὁ">τῷ</w> <lb n="16"/><w lemma="διατίθημι">διαθεμέν<supplied reason="omitted">ῳ</supplied></w> <w lemma="δοκέω">ἔδοξεν</w> <w lemma="ὁ">αἱ</w> <w lemma="δέ">δὲ</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τὰς</w> <w lemma="δώδεκα">δ<supplied reason="omitted">ώ</supplied>δεκα</w> <w lemma="μυριάς">μυριάδας</w> <w lemma="εἰμί"><supplied reason="omitted">ο</supplied>ὖσαι</w> <w lemma="ἐν">ἐν</w> <w lemma="ἐκδανεισμός">ἐκ<lb n="17" break="no"/>δανεισμῷ</w>  <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="προσγίγνομαι">προσγεγ<supplied reason="omitted">ο</supplied>ν<supplied reason="omitted">ὼ</supplied>ς</w> <w lemma="οὗτος">τούτοις</w> <w lemma="τόκος">τόκος</w> <w lemma="μέχρι">μέχρι</w> <w lemma="ἀρχή">ἀρχῆς</w> <w lemma="ἔτος"><supplied reason="lost">ἔ</supplied>τους</w> <lb n="18"/><supplied reason="lost">ποιεῖ</supplied> <w lemma="κεφάλαιος">κεφαλείου</w> <w lemma="δηνάριον">δηναρίων</w> <w lemma="μυριάς">μυριάδας</w> <w lemma="τρεῖς">τρεῖς</w> <w lemma="δηνάριον">δηνάρια</w> <w lemma="χίλιοι">χείλια</w> <w lemma="ὀκτακόσιοι">ὀκτ<supplied reason="omitted">ω</supplied>κόσια</w><lb n="19"/>
  <w lemma="τριάκοντα">τριάκοντα</w> <w lemma="ἐννέα">ἐννέα</w> <w lemma="δύναμαι">δ<supplied reason="omitted">ύ</supplied>νασθε</w> <sic n="superfluous">I</sic> <w lemma="οὖν">οὖν</w> <w lemma="ἄρχω">ἀρχομένου</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἔτος">ἔτους</w> <w lemma="οὗτος">τοῦτον</w> <lb n="20"/>
- <w lemma="ὁ">τὸν</w> <w lemma="ἀγών">ἀγῶνα</w> <w lemma="ἐπιτελέω">ἐπιτελεῖν</w> <w lemma="ἀγαθός">ἀγαθῇ</w> <w lemma="τύχη">τύχῃ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἆθλον">ἄθλοις</w> <w lemma="ταλαντιαῖος">ταλαντιαί<lb type="worddiv" n="21"/>οις</w> <w lemma="καί">καὶ</w> <w lemma="ἀγώνισμα">ἀγωνίσμασιν</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἆθλον">ἆθλα</w><g type="stop"/> <w lemma="προθεσμία">προθεσμία</w> <w lemma="δέ">δὲ</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸν</w> <w lemma="ἔχω">ἑ<lb type="worddiv" n="22"/>ξῆς</w> <w lemma="χρόνος">χρόνον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἔπειμι">ἐπιοῦσαν</w> <w lemma="τετραετηρίς">τετραετηρίδα</w> <sic n="superfluous">Σ</sic> <w lemma="εἰμί">ἔσται</w> <w lemma="χρόνος">χρ<supplied reason="omitted">ό</supplied><supplied reason="lost">νος</supplied></w><lb n="23"/><w lemma="ὁ">ὁ</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="Βαρβίλληος"><supplied reason="lost">Βαρ</supplied><supplied reason="omitted">β</supplied>ιλλήων</w> <w lemma="ὁ">τῶν</w> <placeName reg="Ἔφεσος">Ἐφέσῳ</placeName> <w lemma="ἄγω"><supplied reason="lost">ἀγομένων</supplied></w> <w lemma="πρός">πρὸς</w> <w lemma="κοινός"><supplied reason="lost" cert="low">Κοινὰ</supplied></w> <placeName reg="Ἀσία">Ἀσίας</placeName> <w lemma="ῤώννυμι"><supplied reason="lost" cert="low">ἔρρωσθε</supplied></w>   <g type="leaf"/>  </ab>
+ <w lemma="ὁ">τὸν</w> <w lemma="ἀγών">ἀγῶνα</w> <w lemma="ἐπιτελέω">ἐπιτελεῖν</w> <w lemma="ἀγαθός">ἀγαθῇ</w> <w lemma="τύχη">τύχῃ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἆθλον">ἄθλοις</w> <w lemma="ταλαντιαῖος">ταλαντιαί<lb n="21" break="no"/>οις</w> <w lemma="καί">καὶ</w> <w lemma="ἀγώνισμα">ἀγωνίσμασιν</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἆθλον">ἆθλα</w><g ref="#stop"/> <w lemma="προθεσμία">προθεσμία</w> <w lemma="δέ">δὲ</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸν</w> <w lemma="ἔχω">ἑ<lb n="22" break="no"/>ξῆς</w> <w lemma="χρόνος">χρόνον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἔπειμι">ἐπιοῦσαν</w> <w lemma="τετραετηρίς">τετραετηρίδα</w> <sic n="superfluous">Σ</sic> <w lemma="εἰμί">ἔσται</w> <w lemma="χρόνος">χρ<supplied reason="omitted">ό</supplied><supplied reason="lost">νος</supplied></w><lb n="23"/><w lemma="ὁ">ὁ</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="Βαρβίλληος"><supplied reason="lost">Βαρ</supplied><supplied reason="omitted">β</supplied>ιλλήων</w> <w lemma="ὁ">τῶν</w> <placeName nymRef="#Ἔφεσος">Ἐφέσῳ</placeName> <w lemma="ἄγω"><supplied reason="lost">ἀγομένων</supplied></w> <w lemma="πρός">πρὸς</w> <w lemma="κοινός"><supplied reason="lost" cert="low">Κοινὰ</supplied></w> <placeName nymRef="#Ἀσία">Ἀσίας</placeName> <w lemma="ῤώννυμι"><supplied reason="lost" cert="low">ἔρρωσθε</supplied></w>   <g ref="#leaf"/>  </ab>
 </div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>From A&amp;R</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>With good fortune. Marcus Ulpius Appuleius Eurycles, designated high-priest of Asia, of the temples of Smyrna, for the second time, greets the Magistrates, Council and People of the Aphrodisians.</p>
-<p>Since it was your wish that I make provision also for the (funds) relating to the contests,(5) because of your piety towards the very great emperor Marcus Aurelius Commodus Antoninus Augustus, and because of the memory of those who bequeathed them, and because of the reputation of the city, and since those from the Synod had also already approached me several times, I have not failed to examine this sector as well, applying the same order and zeal as (I observed) in my curatorship. So far (10) the competitions have not taken place because the provision of money needed to be increased in accordance both with the directions of the deceased (founders) and with the reckoning of the funds from which the contests are due to be carried out. However, the contest from the will of Flavius Lysimachus has reached a total endowment of 120,000 denarii, so that it is possible from this sum (15) for the musical contest to be held every four years, as the testator wished. The funds over and above the 120,000 denarii, which are on loan, and the interest accruing to this up to the beginning of the year, makes a total of 31,839 denarii. You can therefore, when the year begins, carry out this (20) contest, with good fortune, for prizes amounting to a talent, and with competitions according to the prizes (available). The appointed time for the following period and the next four-yearly celebration will be the time between the Barbilleia at Ephesus and [?the provincial contest] of Asia. [? Farewell]</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See bibliography.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList" cert="low">Walls, South-east</rs>: in urbis muro ad austrum.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot (1705)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Sherard notebook; publications</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-
-<p>Copied by Picenini in 1705 (BM Add. 10102, 23-23v) whence Sherard (BM Add. 10101 35-6); by Wood in 1750 (14, f45); not reported subsequently</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Sherard by <bibl n="CIGII"><author>Boeckh</author>, <title>CIG</title> <biblScope>2741</biblScope></bibl>, whence <bibl n="liermann1889"><author>Liermann</author>, <title>Analecta</title> <biblScope>20</biblScope></bibl>, <bibl n="OGIS"><title>OGIS</title> 509</bibl>, <bibl n="laum1914">B. Laum, Stiftungen in der griechischen und römischen Antike (Leipzig/Berlin, 1914), <biblScope>103</biblScope> (ll. 13-23)</bibl>, <bibl>Pickard-Cambridge, <title>Festivals</title> 2, 320, no.<biblScope>16a</biblScope></bibl>. Republished from Sherard's notebook by <bibl n="jmr1982">J. M. <author>Reynolds</author>, A&amp;R <biblScope>57</biblScope></bibl>, whence <bibl>SEG 32, <biblScope>1982.1097</biblScope></bibl>; <bibl n="be">BE <biblScope>1983.392</biblScope></bibl>. <bibl n="PHI">PHI <biblScope n="256947">69</biblScope></bibl><bibl n="PPA"><author>Roueché</author>, <title>PPA</title> <biblScope>50</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="none">
-<head>Photographs</head>
-<p>None</p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Wood_14_45"><figDesc>Wood notebook 14, page 45</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>From A&amp;R</p>
+         </div>
+         <div type="translation">
+            <p>With good fortune. Marcus Ulpius Appuleius Eurycles, designated high-priest of Asia, of the temples of Smyrna, for the second time, greets the Magistrates, Council and People of the Aphrodisians.</p>
+            <p>Since it was your wish that I make provision also for the (funds) relating to the contests,(5) because of your piety towards the very great emperor Marcus Aurelius Commodus Antoninus Augustus, and because of the memory of those who bequeathed them, and because of the reputation of the city, and since those from the Synod had also already approached me several times, I have not failed to examine this sector as well, applying the same order and zeal as (I observed) in my curatorship. So far (10) the competitions have not taken place because the provision of money needed to be increased in accordance both with the directions of the deceased (founders) and with the reckoning of the funds from which the contests are due to be carried out. However, the contest from the will of Flavius Lysimachus has reached a total endowment of 120,000 denarii, so that it is possible from this sum (15) for the musical contest to be held every four years, as the testator wished. The funds over and above the 120,000 denarii, which are on loan, and the interest accruing to this up to the beginning of the year, makes a total of 31,839 denarii. You can therefore, when the year begins, carry out this (20) contest, with good fortune, for prizes amounting to a talent, and with competitions according to the prizes (available). The appointed time for the following period and the next four-yearly celebration will be the time between the Barbilleia at Ephesus and [?the provincial contest] of Asia. [? Farewell]</p>
+         </div>
+         <div type="commentary">
+            <p>See bibliography.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Sherard by <bibl n="CIGII">
+                  <author>Boeckh</author>, <title>CIG</title>
+                  <citedRange>2741</citedRange>
+               </bibl>, whence <bibl n="liermann1889">
+                  <author>Liermann</author>, <title>Analecta</title>
+                  <citedRange>20</citedRange>
+               </bibl>, <bibl n="OGIS">
+                  <title>OGIS</title> 509</bibl>, <bibl n="laum1914">B. Laum, Stiftungen in der griechischen und römischen Antike (Leipzig/Berlin, 1914), <citedRange>103</citedRange> (ll. 13-23)</bibl>, <bibl>Pickard-Cambridge, <title>Festivals</title> 2, 320, no.<citedRange>16a</citedRange>
+               </bibl>. Republished from Sherard's notebook by <bibl n="jmr1982">J. M. <author>Reynolds</author>, A&amp;R <citedRange>57</citedRange>
+               </bibl>, whence <bibl>SEG 32, <citedRange>1982.1097</citedRange>
+               </bibl>; <bibl n="be">BE <citedRange>1983.392</citedRange>
+               </bibl>. <bibl n="PHI">PHI <citedRange n="256947">69</citedRange>
+               </bibl>
+               <bibl n="PPA">
+                  <author>Roueché</author>, <title>PPA</title>
+                  <citedRange>50</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

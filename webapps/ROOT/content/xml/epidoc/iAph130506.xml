@@ -1,117 +1,156 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130506" n="iAph0147 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType" reg="funerary">Epitaphs</rs> of anonymous, <term lang="la">tabernarius</term>, and of Euarestos</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-29</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-27</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Upper right corner of a <rs type="material" key="marmor">white marble</rs> funerary <rs type="objectType">stele</rs> (<measure type="length" unit="metre" dim="height">0.43</measure> x
-<measure type="length" unit="metre" dim="width">0.47</measure>  × <measure type="length" unit="metre" dim="depth">0.10</measure>) in the form of an <term lang="la">aedicula</term>, with simply moulded
-gable and plain <term lang="grc-Latn">acroteria</term>, supported on columns with <rs type="decoration">Corinthian
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaphs of anonymous, <term xml:lang="la">tabernarius</term>, and of Euarestos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130506</idno>
+            <idno type="IAph2007">iAph130506</idno>
+            <idno type="JMR2004">iAph0147</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>62.24</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper right corner of a <material key="marmor">white marble</material> funerary <objectType>stele</objectType> (<height unit="metre">0.43</height> x
+<width unit="metre">0.47</width>  × <depth unit="metre">0.10</depth>) in the form of an <term xml:lang="la">aedicula</term>, with simply moulded
+gable and plain <term xml:lang="grc-Latn">acroteria</term>, supported on columns with <rs type="decoration">Corinthian
 capitals</rs>. Within the recess is the <rs type="decoration">bust</rs> of a <rs type="decoration">boy</rs> in relief.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>ii is cut on either side of the bust and is presumably the
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>ii is cut on either side of the bust and is presumably the
 original inscription of the monument; i is cut in irregular lettering
-on the gable.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>i. <measure type="length" unit="metre" dim="height">0.01-0.02</measure>;
+on the gable.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. <height unit="metre">0.01-0.02</height>;
 square <term>sigma</term> and cursive <term>omega</term>; ii. in standard second-
-or third-century lettering, <measure type="length" unit="metre" dim="height">0.02-0.025</measure>.</p>
+or third-century lettering, <height unit="metre">0.02-0.025</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="formulae penalty lettering">i. Third/fourth century (<rs type="criteria">formulae</rs>, <rs type="criteria">penalty</rs>); ii.
+Second/third century (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, South-west</rs>, west of the city walls</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-27" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-29" who="#CMR">tagged and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_X_21.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+       <div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><supplied reason="lost" cert="low"><w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="εἰμί">ἐστιν</w></supplied> <persName key="Euarestus" type="attested"><name nymRef="#Εὐάρεστος"><supplied reason="lost">Εὐ</supplied>αρέστου</name> <w lemma="ὁ">τοῦ</w> <persName key="Acheus" type="attested"><name nymRef="#Ἀχαῖος">Ἀχέου</name></persName></persName> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">ὃ</w><lb n="2"/><supplied reason="lost" cert="low"><w lemma="θάπτω">ταφήσεται</w> <w lemma="ὁ">τὰ</w></supplied> <w lemma="παιδίον"><supplied reason="lost">παι</supplied>δία</w> <w lemma="ἐγώ">μου</w>, <w lemma="ἕτερος">ἑτέρῳ</w><lb n="3"/><supplied cert="low" reason="lost"><w lemma="δέ">δὲ</w> <w lemma="οὐ">οὐκ</w></supplied> <w lemma="ἔξεστι"><supplied reason="lost">ἔξεστ</supplied>ι</w>, <w lemma="τολμάω">τολμή<lb n="4" break="no"/><supplied reason="lost">σας</supplied></w> <supplied reason="lost"><w lemma="δέ">δέ</w> <w lemma="τίς">τίς</w> <w lemma="τις">τινα</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w></supplied> <w lemma="δίδωμι"><supplied reason="lost">δώσ</supplied>ε</w> <w lemma="ὁ">τῷ</w> <w lemma="ἱερός">ἱερωτάτῳ</w> <w lemma="ταμεῖον">ταμίῳ</w> <w lemma="λίτρα">λίτραν</w> <w lemma="ἄσημος">ἀσήμου</w>.
+</ab></div><div n="b" type="textpart" subtype="fragment"><ab>       
+		<lb n="1"/><supplied cert="low" reason="lost"><w lemma="ἐνθάδε">ἐνθάδε</w></supplied> <w lemma="κεῖμαι">κεῖ <g ref="#bust"/> ται</w><lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">οσ</orig> <rs type="profession" key="tabernarius"><w lemma="ταβερνάριος">τα <g ref="#bust"/> βερ<lb n="3" break="no"/><supplied reason="lost" cert="low">νάριος</supplied></w></rs> <supplied reason="lost"><gap reason="lost" unit="character" quantity="4"/></supplied><orig n="unresolved">ντω</orig> <g ref="#bust"/> <orig n="unresolved">ν</orig><lb n="4"/><gap reason="lost" unit="line" quantity="1"/></ab></div>
+
       </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p>i. <date exact="none" cert="low" notBefore="0201" notAfter="0400">Third/fourth century</date> (<rs type="criteria">formulae</rs>, <rs type="criteria">penalty</rs>); ii.
-<date notAfter="0300" exact="none" notBefore="0101">Second/third century</date> (<rs type="criteria">lettering</rs>)</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
-       <div type="textpart_fragment" n="a"><ab><lb n="1"/><supplied reason="lost" cert="low"><w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="εἰμί">ἐστιν</w></supplied> <persName key="Euarestus" type="aphrodisian" full="yes"><name reg="Εὐάρεστος"><supplied reason="lost">Εὐ</supplied>αρέστου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian" key="Acheus" full="yes"><name reg="Ἀχαῖος">Ἀχέου</name></persName></persName> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">ὃ</w><lb n="2"/><supplied reason="lost" cert="low"><w lemma="θάπτω">ταφήσεται</w> <w lemma="ὁ">τὰ</w></supplied> <w lemma="παιδίον"><supplied reason="lost">παι</supplied>δία</w> <w lemma="ἐγώ">μου</w>, <w lemma="ἕτερος">ἑτέρῳ</w><lb n="3"/><supplied cert="low" reason="lost"><w lemma="δέ">δὲ</w> <w lemma="οὐ">οὐκ</w></supplied> <w lemma="ἔξεστι"><supplied reason="lost">ἔξεστ</supplied>ι</w>, <w lemma="τολμάω">τολμή<lb n="4" type="worddiv"/><supplied reason="lost">σας</supplied></w> <supplied reason="lost"><w lemma="δέ">δέ</w> <w lemma="τίς">τίς</w> <w lemma="τις">τινα</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w></supplied> <w lemma="δίδωμι"><supplied reason="lost">δώσ</supplied>ε</w> <w lemma="ὁ">τῷ</w> <w lemma="ἱερός">ἱερωτάτῳ</w> <w lemma="ταμεῖον">ταμίῳ</w> <w lemma="λίτρα">λίτραν</w> <w lemma="ἄσημος">ἀσήμου</w>.
-</ab></div><div type="textpart_fragment" n="b"><ab>       
-		<lb n="1"/><supplied cert="low" reason="lost"><w lemma="ἐνθάδε">ἐνθάδε</w></supplied> <w lemma="κεῖμαι">κεῖ <g type="bust"/> ται</w><lb n="2"/><gap reason="lost" dim="left" extent="unknown" unit="character"/><orig n="unresolved">οσ</orig> <rs type="profession" key="tabernarius"><w lemma="ταβερνάριος">τα <g type="bust"/> βερ<lb n="3" type="worddiv"/><supplied reason="lost" cert="low">νάριος</supplied></w></rs> <supplied reason="lost"><gap reason="lost" extent="4" unit="character"/></supplied><orig n="unresolved">ντω</orig> <g type="bust"/> <orig n="unresolved">ν</orig><lb n="4"/><gap reason="lost" dim="bottom" extent="1" unit="line"/></ab></div>
-
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>a. <supplied reason="lost" cert="low">The memorial belongs to </supplied><supplied reason="lost" cert="low">Eu</supplied>arestos son of Acheos, in which my children <supplied reason="lost">will be buried, but
+         <div type="translation">
+            <ab>a. <supplied reason="lost" cert="low">The memorial belongs to </supplied>
+               <supplied reason="lost" cert="low">Eu</supplied>arestos son of Acheos, in which my children <supplied reason="lost">will be buried, but
 no-one</supplied> else <supplied reason="lost">is allowed</supplied>; anyone who dares <supplied reason="lost">to bury anyone in it, let
 him give</supplied> to the most sacred treasury a pound of pure bullion.</ab>
-        <ab>b. <supplied reason="lost">Here</supplied> lies <gap reason="lost" extent="4" unit="character"/><seg cert="low">tavern-keeper</seg><gap reason="lost" dim="bottom" extent="1" unit="line"/></ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="IX.6">IX.6</xref>; for the penalty, and its implications for the date, <xref type="eAla-text" n="IX.5">IX.5</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p> <rs type="found"><rs type="monuList">Necropolis, South-west</rs>, west of the city walls</rs>. <rs type="origLocation">Unknown</rs>.  <rs type="lastLocation">Museum</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Found by the NYU expedition in 1962 (<rs type="invNo">62.24</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias
-in Late Antiquity</title> no. <biblScope>147</biblScope>. and plate xxxiv</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257354">476</biblScope>,
-<biblScope n="257457">577</biblScope></bibl>. Published by <bibl n="rrrs2006"> <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>,  <biblScope>Relief 5</biblScope></bibl></p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Reynolds, Roueché).</p>
-      </div>
- 
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="77_X_21"><figDesc>Face (1977)</figDesc></figure></p></div>
-
-    
-
-      
-
+            <ab>b. <supplied reason="lost">Here</supplied> lies <gap reason="lost" unit="character" quantity="4"/>
+               <seg cert="low">tavern-keeper</seg>
+               <gap reason="lost" unit="line" quantity="1"/>
+            </ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="IX.6" target=".xml"/>; for the penalty, and its implications for the date, <ref type="eAla-text" n="IX.5" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias
+in Late Antiquity</title> no. <citedRange>147</citedRange>. and plate xxxiv</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257354">476</citedRange>,
+<citedRange n="257457">577</citedRange>
+               </bibl>. Published by <bibl n="rrrs2006">
+                  <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>,  <citedRange>Relief 5</citedRange>
+               </bibl>
+            </p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

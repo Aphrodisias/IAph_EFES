@@ -1,103 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120030" n="iAph1025 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for Aelius Claudius . . .</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Posthumous honours for Aelius Claudius . . .</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120030</idno>
+            <idno type="IAph2007">iAph120030</idno>
+            <idno type="JMR2004">iAph1025</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment from the <seg cert="low">upper right corner</seg> of a <material key="marmor">white marble</material>
+                              <objectType>base</objectType> (<width unit="metre">0.28</width> × <height unit="metre">0.30</height> × <depth unit="metre">0.30</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> Inscribed on the face; the text may have begun on a crowning feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height>0.02-0.025</height>; dots for stops; stops for abbreviation; <foreign xml:lang="grc">ΗΜ</foreign> in ligature, l. 4; from l. 4 letters get smaller and rather more closely squeezed together.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0167"
+                               notAfter="0233"
+                               precision="medium"
+                               evidence="lettering nomen">Later second/early third century A.D. (<rs type="criteria">lettering</rs> and <rs type="criteria">nomen</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North</rs>: 'by the north wall of the Stadium' (MAMA)</provenance>
+                  <provenance type="observed" when="1934">Findspot (1934)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publication; notebook; MAMA squeeze (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_III_09.jpg">
+            <desc>Kubitschek notebook III, 9</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Fragment from the <seg cert="low">upper right corner</seg> of a <rs type="material" key="marmor">white marble</rs> <rs type="objectType">base</rs> (<measure type="length" unit="metre" dim="width">0.28</measure> × <measure type="length" unit="metre" dim="height">0.30</measure> × <measure type="length" unit="metre" dim="depth">0.30</measure>).</p>
+<ab><lb n="0"/><supplied reason="lost" cert="low"><w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></supplied><lb n="1"/><supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> γε</supplied>ρουσία  <w lemma="τιμάω">ἐτ<unclear reason="damage">ε</unclear><supplied reason="lost">ί</supplied><lb n="2" break="no"/><supplied reason="lost">μησεν</supplied></w> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλ  <space unit="character" extent="1" dim="horizontal"/><lb n="3" break="no"/><supplied reason="lost">λακχότ</supplied><unclear reason="damage">α</unclear></w>  <g ref="#stop"/> <persName type="attested"><name nymRef="#Αἴλιος">Αἴλιον</name> <g ref="#stop"/> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name> <g ref="#stop"/><lb n="4"/><gap reason="lost" unit="character" quantity="6"/> <persName type="attested"><name nymRef="#Ἀγ̣αθήμεροs"><supplied reason="lost">Ἀ</supplied><unclear reason="damage">γ</unclear>̣αθ<hi rend="ligature">ημ</hi>έρου</name></persName></persName>  <lb n="5"/><w lemma="υἱός"><supplied reason="lost">υἱὸν</supplied></w>  <gap reason="lost" unit="character" quantity="18"/>  <gap reason="illegible" unit="character" quantity="1"/> <w lemma="ζάω">ζήσαντα</w> <lb n="6"/><supplied reason="lost" cert="low">κοσμίως  <w lemma="καί">καὶ</w></supplied>  <w lemma="ἐνάρετος"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ν</unclear>αρέτως</w>  <lb n="7"/><gap reason="lost" unit="character" quantity="14"/>  <gap reason="illegible" unit="character" quantity="1"/>  <orig n="unresolved">υποτε</orig>  <lb n="8"/><gap reason="lost" unit="character" quantity="18"/><orig n="unresolved">πι</orig>  <space unit="character" extent="1" dim="horizontal"/><lb n="8a"/><gap reason="lost" unit="line" extent="unknown"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> Inscribed on the face; the text may have begun on a crowning feature.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure type="length" dim="none">0.02-0.025</measure>; dots for stops; stops for abbreviation; <foreign lang="grc">ΗΜ</foreign> in ligature, l. 4; from l. 4 letters get smaller and rather more closely squeezed together.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date exact="none" notAfter="0233" notBefore="0167">Later second/early third century A.D.</date> (<rs type="criteria">lettering</rs> and <rs type="criteria">nomen</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="0"/><supplied reason="lost" cert="low"><w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></supplied><lb n="1"/><supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> γε</supplied>ρουσία  <w lemma="τιμάω">ἐτ<unclear reason="damage">ε</unclear><supplied reason="lost">ί</supplied><lb n="2" type="worddiv"/><supplied reason="lost">μησεν</supplied></w> <w lemma="καί">καὶ</w> <w lemma="μεταλλάζω">μετηλ  <space unit="character" extent="1" dim="horizontal"/><lb n="3" type="worddiv"/><supplied reason="lost">λακχότ</supplied><unclear reason="damage">α</unclear></w>  <g type="stop"/> <persName type="aphrodisian"><name reg="Αἴλιος">Αἴλιον</name> <g type="stop"/> <name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αύδιον</supplied></expan></name> <g type="stop"/><lb n="4"/><gap extent="6" dim="left" reason="lost" unit="character"/> <persName type="aphrodisian"><name reg="Ἀγ̣αθήμεροs"><supplied reason="lost">Ἀ</supplied><unclear reason="damage">γ</unclear>̣αθ<hi rend="ligature">ημ</hi>έρου</name></persName></persName>  <lb n="5"/><w lemma="υἱός"><supplied reason="lost">υἱὸν</supplied></w>  <gap extent="18" dim="left" reason="lost" unit="character"/>  <gap extent="1" reason="illegible" unit="character"/> <w lemma="ζάω">ζήσαντα</w> <lb n="6"/><supplied reason="lost" cert="low">κοσμίως  <w lemma="καί">καὶ</w></supplied>  <w lemma="ἐνάρετος"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ν</unclear>αρέτως</w>  <lb n="7"/><gap extent="14" dim="left" reason="lost" unit="character"/>  <gap extent="1" reason="illegible" unit="character"/>  <orig n="unresolved">υποτε</orig>  <lb n="8"/><gap extent="18" dim="left" reason="lost" unit="character"/><orig n="unresolved">πι</orig>  <space unit="character" extent="1" dim="horizontal"/><lb n="8a"/><gap dim="bottom" extent="unknown" reason="lost" unit="line"/></ab>
-</div>
-
-
-
-<div type="apparatus"><head>Apparatus</head><p>l. 6, supplement suggested by L. Robert, <title>Hellenica</title> 13, 230; <foreign lang="grc">καλῶς</foreign> Cormack</p></div><div type="translation">
-<head>Translation</head>
-<p><supplied reason="lost" cert="low">The Council and the People and the ge</supplied>rousia honoured, even after his  death, Aelius Cl<supplied reason="abbreviation">audius</supplied> <gap reason="lost"/> son of Agathemeros <gap reason="lost"/> who lived <supplied reason="lost">in a decent and</supplied> virtuous manner <gap reason="lost" dim="bottom"/></p></div>
-
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Walls, North</rs>: 'by the north wall of the Stadium' (MAMA)</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot (1934)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publication; notebook; MAMA squeeze (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by K&amp;R (KIII.9, Abklatsch 87); by the MAMA expedition; not reported subsequently.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="MAMA8" rend="primary"><author>Cormack</author> from the MAMA records, <title level="m">MAMA</title> 8, no. <biblScope>494</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257291">413</biblScope></bibl>.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>No photographs</p>
-</div><div type="figure" n="Preliminary transcriptions">
-<head>Representations</head>
-<p><figure href="K_III_09"><figDesc>Kubitschek notebook III, 9</figDesc></figure></p>
-</div></body>
-</text>
-
+         <div type="apparatus">
+            <p>l. 6, supplement suggested by L. Robert, <title>Hellenica</title> 13, 230; <foreign xml:lang="grc">καλῶς</foreign> Cormack</p>
+         </div>
+         <div type="translation">
+            <p>
+               <supplied reason="lost" cert="low">The Council and the People and the ge</supplied>rousia honoured, even after his  death, Aelius Cl<ex>audius</ex>
+               <gap reason="lost" unit="character" extent="unknown"/> son of Agathemeros <gap reason="lost" unit="character" extent="unknown"/> who lived <supplied reason="lost">in a decent and</supplied> virtuous manner <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="MAMA8" rend="primary">
+                  <author>Cormack</author> from the MAMA records, <title level="m">MAMA</title> 8, no. <citedRange>494</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257291">413</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,125 +1,165 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080603" n="iAph0142 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType" reg="prayer/invocation">Prayer</rs></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-05-27</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-29</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-27</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p><rs type="material" key="marmor">Blue marble</rs> <rs type="objectType">column</rs>.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>The inscription is cut <measure dim="none">0.26</measure> above the lower end of the
-column, and the inscribed area measures <measure dim="height" type="length" unit="metre">0.43</measure> × <measure dim="width" type="length" unit="metre">0.23</measure>. Above the text
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Prayer</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080603</idno>
+            <idno type="IAph2007">iAph080603</idno>
+            <idno type="JMR2004">iAph0142</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">Blue marble</material>
+                              <objectType>column</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>The inscription is cut <height>0.26</height> above the lower end of the
+column, and the inscribed area measures <height unit="metre">0.43</height> × <width unit="metre">0.23</width>. Above the text
 is a depiction of a Christian sanctuary: two spiral columns support an
 arch, with a pointed roof surmounted by a cross. From the arch hangs a
 lamp, flanked by two candles and two birds. The candles stand on a
 rail between the columns, from which hang curtains, looped back to
 reveal a large cross, flanked by an angel and a saint. Two birds are
 perched on the capitals of the columns. The design and the letters
-have been cut with a fine-pointed implement.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p><measure dim="height" type="length" unit="metre">0.008-0.017</measure>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0400" exact="none" notBefore="0301">Fourth century A.D.</date> or later (<rs type="criteria">content</rs>).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+have been cut with a fine-pointed implement.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.008-0.017</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0301"
+                               notAfter="0400"
+                               precision="medium"
+                               evidence="content">Fourth century A.D. or later (<rs type="criteria">content</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs key="ThBaths" type="monuList">Theatre Baths</rs>: east portico, west side. Cut on the first
+column from the north: .</provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-27" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-29" who="#CMR">tagged and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="85_C_26.jpg">
+            <desc>View of portico (1985)</desc>
+         </graphic>
+         <graphic url="77_AA_24.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="NY_pr_049.jpg">
+            <desc>Right side view</desc>
+         </graphic>
+         <graphic url="DSCN0289.jpg">
+            <desc>Theatre Baths,east portico: western colonnade
+(2004)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
       <ab>
-			<lb n="1"/><persName key="Lord" type="divine" full="yes"><w lemma="κύριος">Κύριε</w></persName> <w lemma="ὁ">ὁ</w> <w lemma="θεός"><persName key="God" type="divine" full="yes">θεὸς</persName></w>
+			<lb n="1"/><persName key="Lord" type="divine"><w lemma="κύριος">Κύριε</w></persName> <w lemma="ὁ">ὁ</w> <w lemma="θεός"><persName key="God" type="divine">θεὸς</persName></w>
 			<lb n="2"/><w lemma="ὁ">ὁ</w> <w lemma="ἐπάνω">ἐ<unclear reason="damage">πά</unclear>νο</w> <w lemma="ὁ">τὸν</w>
 			<lb n="3"/><w lemma="οὐρανός">οὐρανῶν</w>, <w lemma="βοηθέω">βοήθησον</w>
 			<lb n="4"/><w lemma="καί">κὲ</w> <w lemma="οἰκονομέω">οἰκονόμεσον</w>
 			<lb n="5"/><w lemma="ὁ">τὸν</w> <w lemma="δοῦλος">δοῦλον</w> <w lemma="σύ">σου</w>
-			<lb n="6"/><persName key="kerek" type="aphrodisian" full="yes"><name reg="Κερεκόκκιος">Κερεκόκ<unclear reason="damage">κιω</unclear>ν</name></persName>
-			<lb n="7"/><w lemma="ὁ">τὼν</w> <w lemma="καί">κὲ</w> <persName type="aphrodisian" full="yes" key="koureos"><name reg="Κουρεως">Κο<unclear reason="damage">υρ</unclear>εων</name></persName>
+			<lb n="6"/><persName key="kerek" type="attested"><name nymRef="#Κερεκόκκιος">Κερεκόκ<unclear reason="damage">κιω</unclear>ν</name></persName>
+			<lb n="7"/><w lemma="ὁ">τὼν</w> <w lemma="καί">κὲ</w> <persName key="koureos" type="attested"><name nymRef="#Κουρεως">Κο<unclear reason="damage">υρ</unclear>εων</name></persName>
 		</ab>
 		
       </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p>l.7. Perhaps <foreign lang="grc">Κομεων</foreign>.</p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>Lord, the God who is above the heavens, help and provide
+         <div type="apparatus">
+            <p>l.7. Perhaps <foreign xml:lang="grc">Κομεων</foreign>.</p>
+         </div>
+         <div type="translation">
+            <ab>Lord, the God who is above the heavens, help and provide
 for your servant <seg cert="low">Kerekokkios</seg>, also called <seg cert="low">Koureos</seg>.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="VIII.19">VIII.19</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs key="ThBaths" type="monuList">Theatre Baths</rs>: east portico, west side. Cut on the first
-column from the north: .</rs>. Original location: <rs type="origLocation">Findspot.</rs>. Last recorded location: <rs type="lastLocation">Findspot.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU expedition.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias
-in Late Antiquity</title> no. <biblScope>142</biblScope> and plate xxxiv</bibl>; not in <title level="m">PHI</title>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="85_C_26"><figDesc>View of portico (1985)</figDesc></figure><figure href="77_AA_24"><figDesc>Face (1977)</figDesc></figure><figure href="NY_pr_049"><figDesc>Right side view</figDesc></figure><figure href="DSCN0289"><figDesc>Theatre Baths,east portico: western colonnade
-(2004)</figDesc></figure></p></div>
-
-    
-
-      
-
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="VIII.19" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias
+in Late Antiquity</title> no. <citedRange>142</citedRange> and plate xxxiv</bibl>; not in <title level="m">PHI</title>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

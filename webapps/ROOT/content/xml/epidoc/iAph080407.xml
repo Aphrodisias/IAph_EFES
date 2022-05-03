@@ -1,118 +1,169 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080407" n="iAph0064 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType">Verse</rs> <rs type="textType">honours</rs> for  <seg cert="low">a <rs type="personType">governor</rs></seg></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change>
-  <date>2003-07-17</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-23</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-01-28</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Two joining fragments of a <rs type="material" key="marmor">white marble</rs> columnar <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs> (total H. <measure precision="circa" type="length" unit="metre" dim="height">1.35</measure>. diam. <measure dim="diameter" type="length">0.53</measure>); the substantial part found standing on a plinth (H. <measure type="length" unit="metre" dim="height">0.33</measure>) cut down from the socle of a fluted column; the upper left corner fragment found separately.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p><measure type="length" unit="metre" dim="height">0.03-0.04</measure>, clear, irregular.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0401" notAfter="0500">Fifth century</date> (<rs type="criteria">lettering</rs>).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Verse honours for  <seg cert="low">a governor</seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080407</idno>
+            <idno type="IAph2007">iAph080407</idno>
+            <idno type="JMR2004">iAph0064</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>73.206</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two joining fragments of a <material key="marmor">white marble</material> columnar <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> (total H. <height unit="metre">1.35</height>. diam. <dim type="diameter">0.53</dim>); the substantial part found standing on a plinth (H. <height unit="metre">0.33</height>) cut down from the socle of a fluted column; the upper left corner fragment found separately.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.03-0.04</height>, clear, irregular.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0500"
+                               precision="medium"
+                               evidence="lettering">Fifth century (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Tetrastoon">Tetrastoon</rs>: main part found standing against a column of the western colonnade of the tetrastoon, immediately south of <ref type="inscription" n="62" target="080410.xml"/>; fragment found in the same area (NPS I) at <measure type="length" dim="height">0.20</measure> above the paving. .</provenance>
+                  <provenance type="observed">Findspot and Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-28" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-23" who="#CMR">tagged and corrected</change>
+         <change when="2003-07-17" who="Juan-Garcés">lemmatised</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_B_28.jpg">
+            <desc>Base in position, with <ref type="inscription" n="62" target="080410.xml"/> (1976)</desc>
+         </graphic>
+         <graphic url="NY_pr_073.jpg">
+            <desc>Base (1976)</desc>
+         </graphic>
+         <graphic url="72_C_19.jpg">
+            <desc>Detail, left (1972)</desc>
+         </graphic>
+         <graphic url="72_C_20.jpg">
+            <desc>Detail, right (1972)</desc>
+         </graphic>
+         <graphic url="NY_pr_067.jpg">
+            <desc>Upper right corner fragment (1973)</desc>
+         </graphic>
+         <graphic url="77_Y_07.jpg">
+            <desc>Fragments assembled (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<lg>
 		<lb n="1"/>
-		<l n="1"><gap dim="left" extent="13" reason="lost" unit="character"/> <w lemma="ἔρνος">ἔρνος</w>
-		<lb n="2"/><gap dim="left" extent="12" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">λ</unclear>ηοσ</orig></l>
+		<l n="1"><gap reason="lost" unit="character" quantity="13"/> <w lemma="ἔρνος">ἔρνος</w>
+		<lb n="2"/><gap reason="lost" unit="character" quantity="12"/><orig n="unresolved"><unclear reason="damage">λ</unclear>ηοσ</orig></l>
 		<lb n="3"/>
-		<l n="2"><gap dim="left" extent="12" reason="lost" unit="character"/><orig n="unresolved">ινορασ</orig>
-		<lb n="4"/><gap dim="left" extent="16-18" reason="lost" unit="character"/></l>
+		<l n="2"><gap reason="lost" unit="character" quantity="12"/><orig n="unresolved">ινορασ</orig>
+		<lb n="4"/><gap reason="lost" unit="character" extent="16-18"/></l>
 		<lb n="5"/>
-		<l n="3"><gap dim="left" extent="16-18" reason="lost" unit="character"/>
-		<lb n="6"/><unclear reason="damage">λ</unclear><gap dim="internal" extent="2" reason="lost" unit="character"/><orig n="unresolved">σησ</orig> <persName type="divine" key="Aphrodite" full="yes"><name><unclear reason="damage">Ἀ</unclear>φροδ<supplied reason="lost">ίτη</supplied><unclear reason="damage">ν</unclear></name></persName></l>
+		<l n="3"><gap reason="lost" unit="character" extent="16-18"/>
+		<lb n="6"/><unclear reason="damage">λ</unclear><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved">σησ</orig> <persName key="Aphrodite" type="divine"><name><unclear reason="damage">Ἀ</unclear>φροδ<supplied reason="lost">ίτη</supplied><unclear reason="damage">ν</unclear></name></persName></l>
 		<lb n="7"/>
 		<l n="4"><w lemma="ἐνφύλιος">ἐνφύλιον</w> <w lemma="δῆρις">δῆριν</w> <w lemma="ὀλεσίπτολις">ὀλεσί
-		<lb n="8" type="worddiv"/>πτολιν</w> <w lemma="ἐξελαύνω">ἐξελάσαντα</w> <g type="leaf"/></l>
+		<lb n="8" break="no"/>πτολιν</w> <w lemma="ἐξελαύνω">ἐξελάσαντα</w> <g ref="#leaf"/></l>
 		</lg>
        </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab><gap dim="left" reason="lost"/> offspring <gap dim="internal" reason="lost"/> Aphrodite, <supplied reason="subaudible">he who</supplied> drove out city-destroying civil strife.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="V.37">V.37</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="Tetrastoon">Tetrastoon</rs>: main part found standing against a column of the western colonnade of the tetrastoon, immediately south of <xref type="inscription" n="62" href="080410">8.410</xref>; fragment found in the same area (NPS I) at <measure type="length" dim="none">0.20</measure> above the paving. .</rs>. Original location: <rs type="origLocation">Findspot.</rs>. Last recorded location: <rs type="lastLocation">Findspot and Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition, main part in <date value="1972" notBefore="1972" notAfter="1972" exact="both">1972</date>, fragment in <date value="1973" notBefore="1973" notAfter="1973" exact="both">1973</date> (<rs type="invNo">73.206</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>64</biblScope> and plate xvi</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257615">728</biblScope></bibl>, <bibl type="hbi" n="steinepig"><title level="m">Steinepigramme</title> <biblScope>02/09/26</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs"><head>Photographs</head><p><figure href="76_B_28"><figDesc>Base in position, with <xref type="inscription" n="62" href="080410">8.410</xref> (1976)</figDesc></figure><figure href="NY_pr_073"><figDesc>Base (1976)</figDesc></figure><figure href="72_C_19"><figDesc>Detail, left (1972)</figDesc></figure><figure href="72_C_20"><figDesc>Detail, right (1972)</figDesc></figure><figure href="NY_pr_067"><figDesc>Upper right corner fragment (1973)</figDesc></figure><figure href="77_Y_07"><figDesc>Fragments assembled (1977)</figDesc></figure></p></div>
-
-      
-
-    </body>
-  </text>
+         <div type="translation">
+            <ab>
+               <gap reason="lost" unit="character" extent="unknown"/> offspring <gap reason="lost" unit="character" extent="unknown"/> Aphrodite, <supplied reason="subaudible">he who</supplied> drove out city-destroying civil strife.</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="V.37" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>64</citedRange> and plate xvi</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257615">728</citedRange>
+               </bibl>, <bibl type="hbi" n="steinepig">
+                  <title level="m">Steinepigramme</title>
+                  <citedRange>02/09/26</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,85 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120327" n="iAph1601 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> inscription for M. Aurelius Demetrios</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>No description</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary inscription for M. Aurelius Demetrios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120327</idno>
+            <idno type="IAph2007">iAph120327</idno>
+            <idno type="JMR2004">iAph1601</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>No description
+</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.033</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0400"
+                               precision="medium"
+                               evidence="terminology">
+Third to fourth centuries A.D.
+(<rs type="criteria">terminology</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs> stretch 'entre la maison Hussein Chaous et l'angle' (Gaudin); this is the findspot for <ref type="inscription" n="1002" target="120403.xml"/>, now just n. of the east gate.</provenance>
+                  <provenance type="observed" when="1904">Findspot (1904).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Deering; Gaudin;  publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Deering_01v.jpg">
+            <desc>Deering notebook, 1v</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="ἰσώστη">ἰσώστη</w> <w lemma="εἰμί">ἐστὶν</w> <persName type="attested"><name nymRef="#Μᾶρκος">Μάρκου</name> <name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <name nymRef="#Διονύσιος">Διονυσίου</name> <lb n="2"/> <w>ου</w> <persName type="attested"><name nymRef="#Ἀντίοχος">Ἀντιόχου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Σώπολις">Σωπόλεως</name></persName></persName></persName> <w lemma="ὁ">ἡ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="βαθρικόν">βαθρικῷ</w> <gap reason="lost" unit="character" quantity="3"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>No description
-</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.033</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0201" notAfter="0400" exact="none">Third to fourth centuries A.D.</date>
-(<rs type="criteria">terminology</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="ἰσώστη">ἰσώστη</w> <w lemma="εἰμί">ἐστὶν</w> <persName type="aphrodisian"><name reg="Μᾶρκος">Μάρκου</name> <name reg="Αὐρήλιος" type="nomen">Αὐρηλίου</name> <name reg="Διονύσιος">Διονυσίου</name> <lb n="2"/> <w>ου</w> <persName type="aphrodisian"><name reg="Ἀντίοχος">Ἀντιόχου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Σώπολις">Σωπόλεως</name></persName></persName></persName> <w lemma="ὁ">ἡ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="βαθρικόν">βαθρικῷ</w> <gap reason="lost" extent="3" unit="character"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l.1, after <foreign lang="grc">ΜΑΡ</foreign>, is written over a rasura; the erased letters presumably went with line 2.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>The burial niche belongs to Marcus Aurelius Dionysios son of Antiochos son of Sopolis, the one in the vault [ . . ? .  .]</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>No commentary</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Walls, East (south part)</rs> stretch 'entre la maison Hussein Chaous et l'angle' (Gaudin); this is the findspot for <xref type="inscription" n="1002" href="120403">12.403</xref>, now just n. of the east gate.</rs>
-<rs type="lastLocation">Findspot (1904).</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Deering; Gaudin;  publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied by Deering (2, no. 5); recorded by K&amp;R (squeeze); recorded by Gaudin (41); not reported subsequently</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="leake1843">Leake, from Deering, TRSL 1843, 234 and 288, no. <biblScope>2</biblScope></bibl>, whence <bibl n="LBW">Waddington LBW <biblScope>1643a</biblScope></bibl>; by <bibl n="reinach">Reinach from Gaudin, REG 19, 1906, 265-266, no. <biblScope>160</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257325">447</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="Preliminary transcriptions"><head>Representations</head><p><figure href="Deering_01v"><figDesc>Deering notebook, 1v</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>l.1, after <foreign xml:lang="grc">ΜΑΡ</foreign>, is written over a rasura; the erased letters presumably went with line 2.</p>
+         </div>
+         <div type="translation">
+            <p>The burial niche belongs to Marcus Aurelius Dionysios son of Antiochos son of Sopolis, the one in the vault [ . . ? .  .]</p>
+         </div>
+         <div type="commentary">
+            <p>No commentary</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="leake1843">Leake, from Deering, TRSL 1843, 234 and 288, no. <citedRange>2</citedRange>
+               </bibl>, whence <bibl n="LBW">Waddington LBW <citedRange>1643a</citedRange>
+               </bibl>; by <bibl n="reinach">Reinach from Gaudin, REG 19, 1906, 265-266, no. <citedRange>160</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257325">447</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

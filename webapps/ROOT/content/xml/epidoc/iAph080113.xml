@@ -1,78 +1,163 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080113" n="iAph1163 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType"> Building dedication</rs> by Aristokles Molossos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>1991</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1991">Reynolds (<date>1991</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Building dedication by Aristokles Molossos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080113</idno>
+            <idno type="IAph2007">iAph080113</idno>
+            <idno type="JMR2004">iAph1163</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>68.709</idno>
+                  <idno>67.216</idno>
+                  <idno>69.351</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Five <material key="marmor">white marble</material>
+                              <objectType key="Cornice blocks">fragments</objectType> from a long feature with moulding above a <objectType cert="low">cornice</objectType>   (ave. <height unit="metre">0.55</height> x ave. <depth unit="metre">0.30</depth>). Width, from left to right: a, <height>0.63</height>; b, <height>0.34</height>; c, <height>0.53</height>; d, <height>1.03</height>; e, <height>1.11</height>; f,. <height>1.30</height>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.07-0.075</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown, <rs type="monuList" cert="low">Theatre</rs>
+                     </origPlace>
+                     <origDate notBefore="041" notAfter="100" evidence="prosopography terminology">Julio-Claudian (<rs type="criteria">prosopography</rs>, <rs type="criteria">terminology</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">Two blocks (e. &amp; f.) from the right end found reused in the <rs type="monuList">Walls, South-east</rs>, south of the East Gate, near <ref type="inscription" n="671" target="120711.xml"/>), <ref type="inscription" n="1033" target="120539.xml"/>, <ref type="inscription" n="1534" target="120524.xml"/>; three more found during excavation of the <rs type="monuList">Theatre</rs>: b. in Theatre V, 1967; a. in Theatre VI, 1968; c. &amp; d. in Parodos area, 1969.</provenance>
+                  <provenance type="observed">e. &amp; f. still in situ; new fragments (a–d) in Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); Gaudin's squeeze; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-13" who="cmr">DONE</change>
+         <change when="2007-01-24" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_W_16.jpg">
+            <desc>Block b, left end(1977)</desc>
+         </graphic>
+         <graphic url="AG_MAMA435.jpg">
+            <desc>Block b, right end (2005)</desc>
+         </graphic>
+         <graphic url="73_T_21.jpg">
+            <desc>Blocks e. &amp; f. (1973)</desc>
+         </graphic>
+         <graphic url="Deering_07.jpg">
+            <desc>Deering notebook, page 7</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-13</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date>2007-01-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-
-<p>Five <rs type="material" key="marmor">white marble</rs> <rs type="objectType" reg="Cornice blocks">fragments</rs> from a long feature with moulding above a <rs type="objectType" cert="low">cornice</rs>   (ave. <measure dim="height" type="length" unit="metre">0.55</measure> x ave. <measure dim="depth" type="length" unit="metre">0.30</measure>). Width, from left to right: a, <measure dim="none">0.63</measure>; b, <measure dim="none">0.34</measure>; c, <measure dim="none">0.53</measure>; d, <measure dim="none">1.03</measure>; e, <measure dim="none">1.11</measure>; f,. <measure dim="none">1.30</measure>.</p>
+<ab><lb n="1"/>    <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδί<unclear reason="damage">τ</unclear>ῃ</name></persName>  <w lemma="θεός">θεο<milestone unit="block"/>ῖς</w>  <persName type="emperor"><w lemma="σεβαστός">Σεβαστοῖς</w></persName>  <w lemma="ὁ">τῶι</w>  <w lemma="δῆμος">Δήμωι</w>  <gap reason="lost" unit="character" quantity="27"/>    <supplied reason="lost"><w lemma="καί">καὶ</w>  <w lemma="ὁ">τὴν</w></supplied>  <w lemma="κερκίς"><supplied reason="lost">κ</supplied><milestone unit="block"/>ερκεῖδα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="ψελίς">ψε<milestone unit="block"/>λίδας</w>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀριστ<supplied reason="lost">οκλῆς</supplied></name>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος"><supplied reason="lost">Ἀρτεμιδώρου</supplied></name></persName><lb n="2"/><name nymRef="#Μολοσσός">Μολοσσὸς</name></persName>  <w lemma="φιλόδοξος">φιλό<milestone unit="block"/>δοξος</w>  <w lemma="καί">καὶ</w>  <w lemma="φιλόπολις">φιλόπολις</w>  <w lemma="καί">καὶ</w>  <persName type="attested"><name nymRef="#Κάϊκος"><unclear reason="damage">Κ</unclear><supplied reason="lost">άικος</supplied></name>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος"><supplied reason="lost">Ἀρτεμιδώρου</supplied></name></persName>  <name nymRef="#Παπίας"><supplied reason="lost">Παπίας</supplied></name></persName>  <w lemma="ἐργεπιστατέω"><supplied reason="lost">ἐργεπιστα</supplied><milestone unit="block"/>τήσαντος</w>  <persName type="attested"><name nymRef="#Ἑρμᾶς">Ἑρμᾶ</name>  <milestone unit="block"/>  <name nymRef="#Ἀριστοκλῆς">Ἀριστοκλέο<supplied reason="lost">υς</supplied></name>  <supplied reason="lost"><w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος">Ἀρτεμιδώρου</name></persName></supplied></persName><lb n="3"/> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰς</w> <persName type="attested"><name nymRef="#Μολοσσός">Μολο<milestone unit="block"/>σσοῦ</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="τρέφω">θρέψαντος</w> <w lemma="αὐτός">αὐτ<supplied reason="lost">οῦ</supplied></w>  <supplied reason="lost"><w lemma="διαθήκη">διαθήκας</w> <w lemma="προσεπαγγέλλω">προσεπηγγελμένου</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w></supplied>  <w lemma="τρίτος"><supplied reason="lost">τρί</supplied><milestone unit="block"/><unclear reason="damage">τ</unclear>ον</w> <w lemma="διάζωμα">διάζωμα</w> <w lemma="ὁ">τοῦ</w> <milestone unit="block"/> <w lemma="θέατρον">θεάτρου</w> <space unit="character" extent="4" dim="horizontal"/></ab>
 </div>
-<div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.07-0.075</measure>.</p>
-</div>
-<div n="date" type="description"><head>Date</head><p><date notBefore="041" notAfter="100">Julio-Claudian</date> (<rs type="criteria">prosopography</rs>, <rs type="criteria">terminology</rs>)</p></div><div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>    <persName type="divine" full="yes"><name reg="Ἀφροδίτη">Ἀφροδί<unclear reason="damage">τ</unclear>ῃ</name></persName>  <w lemma="θεός">θεο<milestone unit="block"/>ῖς</w>  <persName type="emperor" full="yes"><w lemma="σεβαστός">Σεβαστοῖς</w></persName>  <w lemma="ὁ">τῶι</w>  <w lemma="δῆμος">Δήμωι</w>  <gap extent="27" reason="lost" unit="character" dim="right"/>    <supplied reason="lost"><w lemma="καί">καὶ</w>  <w lemma="ὁ">τὴν</w></supplied>  <w lemma="κερκίς"><supplied reason="lost">κ</supplied><milestone unit="block"/>ερκεῖδα</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="ψελίς">ψε<milestone unit="block"/>λίδας</w>  <persName type="aphrodisian" full="yes"><name reg="Ἀριστοκλῆς">Ἀριστ<supplied reason="lost">οκλῆς</supplied></name>  <persName type="aphrodisian"><name reg="Ἀρτεμίδωρος"><supplied reason="lost">Ἀρτεμιδώρου</supplied></name></persName><lb n="2"/><name reg="Μολοσσός">Μολοσσὸς</name></persName>  <w lemma="φιλόδοξος">φιλό<milestone unit="block"/>δοξος</w>  <w lemma="καί">καὶ</w>  <w lemma="φιλόπολις">φιλόπολις</w>  <w lemma="καί">καὶ</w>  <persName type="aphrodisian" full="yes"><name reg="Κάϊκος"><unclear reason="damage">Κ</unclear><supplied reason="lost">άικος</supplied></name>  <persName type="aphrodisian"><name reg="Ἀρτεμίδωρος"><supplied reason="lost">Ἀρτεμιδώρου</supplied></name></persName>  <name reg="Παπίας" type="        "><supplied reason="lost">Παπίας</supplied></name></persName>  <w lemma="ἐργεπιστατέω"><supplied reason="lost">ἐργεπιστα</supplied><milestone unit="block"/>τήσαντος</w>  <persName type="aphrodisian" full="yes"><name reg="Ἑρμᾶς" type="        ">Ἑρμᾶ</name>  <milestone unit="block"/>  <name reg="Ἀριστοκλῆς">Ἀριστοκλέο<supplied reason="lost">υς</supplied></name>  <supplied reason="lost"><w lemma="ὁ">τοῦ</w>  <persName type="aphrodisian"><name reg="Ἀρτεμίδωρος">Ἀρτεμιδώρου</name></persName></supplied></persName><lb n="3"/> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰς</w> <persName type="aphrodisian"><name reg="Μολοσσός">Μολο<milestone unit="block"/>σσοῦ</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="τρέφω">θρέψαντος</w> <w lemma="αὐτός">αὐτ<supplied reason="lost">οῦ</supplied></w>  <supplied reason="lost"><w lemma="διαθήκη">διαθήκας</w> <w lemma="προσεπαγγέλλω">προσεπηγγελμένου</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w></supplied>  <w lemma="τρίτος"><supplied reason="lost">τρί</supplied><milestone unit="block"/><unclear reason="damage">τ</unclear>ον</w> <w lemma="διάζωμα">διάζωμα</w> <w lemma="ὁ">τοῦ</w> <milestone unit="block"/> <w lemma="θέατρον">θεάτρου</w> <space unit="character" extent="4" dim="horizontal"/></ab>
-</div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>The extent of the missing space can be determined by comparison with the wording of <xref type="inscription" n="1265" href="080108">8.108</xref> (=69.317).</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>For Aphrodite, the gods Augusti, the People <gap extent="27" reason="lost" unit="character" dim="right"/> <supplied reason="lost">and the</supplied> block of seats and the vaults: Aristokles Molossos, [son of Artemidoros], (entitled) lover of glory and lover of the city, and K[aikos Papias, son of Artemidoros (gave them); Hermas son of Aristokles [the son of Artemidoros] supervised the work in accordance with the will of Molossos, his foster-father, and also promised the third bank of seats in the auditorium.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of a group of inscriptions, in a distinctive hand, by Aristokles Molossos: <xref type="inscription" n="1163" href="080113">8.113</xref>, <xref type="inscription" n="1161" href="080111">8.111</xref>, <xref type="inscription" n="1162" href="080112">8.112</xref>, <xref type="inscription" n="1265" href="080108">8.108</xref>  and <xref type="iAph">1173</xref>; cf also <xref type="inscription" n="1157" href="080082">8.82</xref>; see <bibl n="jmr1991">Reynolds, <title level="m">Aph Papers</title> 2</bibl></p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found">Two blocks (e. &amp; f.) from the right end found reused in the <rs type="monuList">Walls, South-east</rs>, south of the East Gate, near <xref type="inscription" n="671" href="120711">12.711</xref>), <xref type="inscription" n="1033" href="120539">12.539</xref>, <xref type="inscription" n="1534" href="120524">12.524</xref>; three more found during excavation of the <rs type="monuList">Theatre</rs>: b. in Theatre V, 1967; a. in Theatre VI, 1968; c. &amp; d. in Parodos area, 1969.</rs> <rs type="origLocation">Unknown, <rs type="monuList" cert="low">Theatre</rs></rs> <rs type="lastLocation">e. &amp; f. still in situ; new fragments (a–d) in Museum.</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); Gaudin's squeeze; publications.</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>The blocks in the walls (e. &amp; f.) copied in 1705 , near <xref type="inscription" n="1786" href="120413">12.413</xref>  by Picenini (10102, 33v) whence Sherard (10101, 45); copied by Deering (7, no. 30); copied by Fellows; copied by Loew; copied by K&amp;R (no notebook entry); copied by Le Bas and by Waddington; recorded by Gaudin (121, 122); recorded by the MAMA expedition in 1934. Rediscovered by the NYU expedition, together with three further fragments (a. <rs type="invNo">68.709</rs>, b. <rs type="invNo">67.216</rs>, c. &amp; d. <rs type="invNo">69.351</rs>) excavated in 1967-1969.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>e. &amp; f. published by <bibl type="primary" n="CIGII"><author>Boeckh</author>, from Sherard, CIG <biblScope>2755</biblScope> and <biblScope>2808</biblScope></bibl>; by <bibl n="fellows1841">Fellows, <biblScope>19</biblScope></bibl> whence <bibl n="CIGIIc">CIG add. p. 1109</bibl>; from these <bibl n="bailie1846">Bailie, <biblScope>67</biblScope></bibl>. Listed by <bibl n="franz1847">Franz from Loew, <biblScope>a.13</biblScope></bibl>. Published by <bibl type="primary" n="LBW"><author>Waddington</author>, LBW <biblScope>592</biblScope> and <biblScope>1586</biblScope></bibl>; by <bibl type="primary" n="reinach"><author>Reinach</author>, from Gaudin, <biblScope>132</biblScope></bibl>; by <bibl type="primary" n="MAMA8"><author>Cormack</author>, from the MAMA records, MAMA 8, <biblScope>435a</biblScope>, <biblScope>435b</biblScope></bibl>, whence <bibl><title level="m">Hellenica</title> 13, 127-128 (l. 3)</bibl>, <bibl n="be">BE <biblScope>1966.396</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="256977">99</biblScope></bibl>. All fragments published by <bibl type="primary" n="jmr1991"><author>Reynolds</author>, <title level="m">Aph.Papers</title> 2, <biblScope>A.5</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1991.915</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>
-<figure href="77_W_16"><figDesc>Block b, left end(1977)</figDesc></figure><figure href="AG_MAMA435"><figDesc>Block b, right end (2005)</figDesc></figure><figure href="73_T_21"><figDesc>Blocks e. &amp; f. (1973)</figDesc></figure>
-</p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Deering_07"><figDesc>Deering notebook, page 7</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>The extent of the missing space can be determined by comparison with the wording of <ref type="inscription" n="1265" target="080108.xml"/> (=69.317).</p>
+         </div>
+         <div type="translation">
+            <p>For Aphrodite, the gods Augusti, the People <gap reason="lost" unit="character" quantity="27"/>
+               <supplied reason="lost">and the</supplied> block of seats and the vaults: Aristokles Molossos, [son of Artemidoros], (entitled) lover of glory and lover of the city, and K[aikos Papias, son of Artemidoros (gave them); Hermas son of Aristokles [the son of Artemidoros] supervised the work in accordance with the will of Molossos, his foster-father, and also promised the third bank of seats in the auditorium.</p>
+         </div>
+         <div type="commentary">
+            <p>One of a group of inscriptions, in a distinctive hand, by Aristokles Molossos: <ref type="inscription" n="1163" target="080113.xml"/>, <ref type="inscription" n="1161" target="080111.xml"/>, <ref type="inscription" n="1162" target="080112.xml"/>, <ref type="inscription" n="1265" target="080108.xml"/>  and <ref type="iAph" target=".xml"/>; cf also <ref type="inscription" n="1157" target="080082.xml"/>; see <bibl n="jmr1991">Reynolds, <title level="m">Aph Papers</title> 2</bibl>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>e. &amp; f. published by <bibl type="primary" n="CIGII">
+                  <author>Boeckh</author>, from Sherard, CIG <citedRange>2755</citedRange> and <citedRange>2808</citedRange>
+               </bibl>; by <bibl n="fellows1841">Fellows, <citedRange>19</citedRange>
+               </bibl> whence <bibl n="CIGIIc">CIG add. p. 1109</bibl>; from these <bibl n="bailie1846">Bailie, <citedRange>67</citedRange>
+               </bibl>. Listed by <bibl n="franz1847">Franz from Loew, <citedRange>a.13</citedRange>
+               </bibl>. Published by <bibl type="primary" n="LBW">
+                  <author>Waddington</author>, LBW <citedRange>592</citedRange> and <citedRange>1586</citedRange>
+               </bibl>; by <bibl type="primary" n="reinach">
+                  <author>Reinach</author>, from Gaudin, <citedRange>132</citedRange>
+               </bibl>; by <bibl type="primary" n="MAMA8">
+                  <author>Cormack</author>, from the MAMA records, MAMA 8, <citedRange>435a</citedRange>, <citedRange>435b</citedRange>
+               </bibl>, whence <bibl>
+                  <title level="m">Hellenica</title> 13, 127-128 (l. 3)</bibl>, <bibl n="be">BE <citedRange>1966.396</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256977">99</citedRange>
+               </bibl>. All fragments published by <bibl type="primary" n="jmr1991">
+                  <author>Reynolds</author>, <title level="m">Aph.Papers</title> 2, <citedRange>A.5</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1991.915</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

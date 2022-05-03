@@ -1,79 +1,161 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080005" n="iAph0572 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building dedication</rs> by C. Julius Zoilos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building dedication by C. Julius Zoilos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080005</idno>
+            <idno type="IAph2007">iAph080005</idno>
+            <idno type="JMR2004">iAph0572</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>67.294</idno>
+                  <idno>67.447</idno>
+                  <idno>70.459</idno>
+                  <idno>70.634</idno>
+                  <idno>71.419</idno>
+                  <idno>71.420</idno>
+                  <idno>71.421</idno>
+                  <idno>71.170</idno>
+                  <idno>71.446</idno>
+                  <idno>73.215</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Eighteen <material key="marmor">white marble</material> blocks or fragments of drafted masonry with a raised border above (blocks <width unit="metre">0.80</width> or <width unit="metre">1.18</width>   × <height unit="metre">0.34</height>   × <depth unit="metre">0.52</depth> or <depth unit="metre">1.32</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in one line on the face, after the drafting had been done; the text impinges on the drafted edges.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>b. <height>0.07-0.075</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Theatre</rs>, stage building.</origPlace>
+                     <origDate notBefore="-0028" notAfter="-0028" evidence="prosopography">
+28 B.C. (<rs type="criteria">prosopography</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">Fallen in the orchestra of the <rs type="monuList">Theatre</rs>
+                  </provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); publications</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_L_22A.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+         <graphic url="77_L_23A.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+         <graphic url="77_L_24A.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+         <graphic url="77_L_25A.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+         <graphic url="77_L_26A.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+         <graphic url="77_L_27A.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+         <graphic url="77_L_28A.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-
-<p>Eighteen <rs type="material" key="marmor">white marble</rs> blocks or fragments of drafted masonry with a raised border above (blocks <measure type="length" unit="metre" dim="width">0.80</measure> or <measure type="length" unit="metre" dim="width">1.18</measure>   × <measure type="length" unit="metre" dim="height">0.34</measure>   × <measure type="length" unit="metre" dim="depth">0.52</measure> or <measure type="length" unit="metre" dim="depth">1.32</measure>).</p></div><div type="description" n="text"><head>Description of text</head><p><rs type="execution" key="scalpro">Inscribed</rs> in one line on the face, after the drafting had been done; the text impinges on the drafted edges.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>b. <measure dim="none">0.07-0.075</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date precision="circa" value="-0028" notBefore="-0028" notAfter="-0028" exact="both">28 B.C.</date> (<rs type="criteria">prosopography</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="aphrodisian" full="yes"><name reg="Γάϊος">Γάϊος</name>  <name reg="Ἰούλιος">Ἰο<supplied reason="lost">ύλιο</supplied>ς</name>  <name reg="Ζωΐλος">Ζω<unclear reason="damage">ΐ</unclear>λος</name></persName>  <persName type="emperor" full="yes"><w lemma="θεός"><supplied reason="lost">θε</supplied>οῦ</w>  <name reg="Ἰούλιος">Ἰουλίου</name>  <w lemma="υἱός">υἱ<supplied reason="lost">ο</supplied><milestone unit="block"/>ῦ</w>  <name reg="Καῖσαρ">Καίσαρος</name></persName>  <w lemma="ἀπελεύθερος">ἀ<supplied reason="lost">πελεύθερο</supplied>ς</w> <w lemma="στεφανηφορέω">στεφανοφορήσας</w> <w lemma="ὁ">τὸ</w> <milestone unit="block"/> <w lemma="δέκατος">δέκατον</w> <w lemma="ἔχω">ἑξῆς</w> <space extent="1" unit="character" dim="horizontal"/> <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <w lemma="λογήιον"><unclear reason="damage">λ</unclear>ο<unclear reason="damage">γ</unclear><supplied reason="lost">ήι</supplied>ον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τ<milestone unit="block"/>ὸ</w>  <w lemma="προσκήνιον">προσ<unclear reason="damage">κ</unclear>ήν<supplied reason="lost">ι</supplied><unclear reason="damage">ο</unclear>ν</w> <w lemma="σύν">σὺν</w> <w lemma="ὁ">τοῖς</w> <milestone unit="block"/> <w lemma="ἐν">ἐν</w> <w lemma="αὐτός">αὐ<supplied reason="lost">τῶι</supplied></w>  <w lemma="προσκόσμημα"><supplied reason="lost">π</supplied>ροσκοσμή<milestone unit="block"/><unclear reason="damage">μα</unclear>σιν</w> <w lemma="πᾶς">πᾶσιν,</w> <space unit="character" dim="horizontal"/>  <persName type="divine" full="yes"><name reg="Ἀφροδίτη">Ἀφροδίτ<milestone unit="block"/>ῃ</name></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τ<supplied reason="lost">ῶι</supplied></w>  <w lemma="δῆμος"><supplied reason="lost">Δήμωι</supplied></w></ab></div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); publications</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>Caius Julius Zoilos, freedman of the divine Iulius' son Caesar, after being stephanephorus for the tenth time in succession <supplied reason="subaudible">gave</supplied> the stage and the proscenium with all the applied ornaments on it to Aphrodite and the People.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See most recently <bibl n="jmr1991">Reynolds, <title>Aphrodisias Papers</title> 2, 15-16</bibl>.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-Found: <rs type="found">Fallen in the orchestra of the <rs type="monuList">Theatre</rs></rs>
-<rs type="origLocation"><rs type="monuList">Theatre</rs>, stage building.</rs>
-; Last known location: <rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition (<rs type="invNo">67.294</rs>, <rs type="invNo">67.447</rs>, <rs type="invNo">70.459</rs>, <rs type="invNo">70.634</rs>, <rs type="invNo">71.419</rs>, <rs type="invNo">71.420</rs>,  <rs type="invNo">71.421</rs>, <rs type="invNo">71.170</rs>, <rs type="invNo">71.446</rs>, <rs type="invNo">73.215</rs></p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Mentioned, <bibl>BE 1971:609</bibl>; published by <bibl type="primary" n="jmr1982"><author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <biblScope>36b</biblScope></bibl>, whence <bibl>Orth, EA 3, 1984, 63</bibl>; <bibl>SEG 32, 1982.1097</bibl>; <bibl>BE 1983:388</bibl>; <bibl n="anep"><title level="j">An.Ép.</title> <biblScope>1984.878</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="256971">93</biblScope></bibl>, <bibl n="rrrs1993">Smith, <title level="m">Monument</title>, T2</bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>
-<figure href="77_L_22A"><figDesc>Fragment (1977)</figDesc></figure>
-<figure href="77_L_23A"><figDesc>Fragment (1977)</figDesc></figure><figure href="77_L_24A"><figDesc>Fragment (1977)</figDesc></figure><figure href="77_L_25A"><figDesc>Fragment (1977)</figDesc></figure><figure href="77_L_26A"><figDesc>Fragment (1977)</figDesc></figure><figure href="77_L_27A"><figDesc>Fragment (1977)</figDesc></figure><figure href="77_L_28A"><figDesc>Fragment (1977)</figDesc></figure></p>
-</div></body></text>
+<ab><lb n="1"/>  <persName type="attested"><name nymRef="#Γάϊος">Γάϊος</name>  <name nymRef="#Ἰούλιος">Ἰο<supplied reason="lost">ύλιο</supplied>ς</name>  <name nymRef="#Ζωΐλος">Ζω<unclear reason="damage">ΐ</unclear>λος</name></persName>  <persName type="emperor"><w lemma="θεός"><supplied reason="lost">θε</supplied>οῦ</w>  <name nymRef="#Ἰούλιος">Ἰουλίου</name>  <w lemma="υἱός">υἱ<supplied reason="lost">ο</supplied><milestone unit="block"/>ῦ</w>  <name nymRef="#Καῖσαρ">Καίσαρος</name></persName>  <w lemma="ἀπελεύθερος">ἀ<supplied reason="lost">πελεύθερο</supplied>ς</w> <w lemma="στεφανηφορέω">στεφανοφορήσας</w> <w lemma="ὁ">τὸ</w> <milestone unit="block"/> <w lemma="δέκατος">δέκατον</w> <w lemma="ἔχω">ἑξῆς</w> <space extent="1" unit="character" dim="horizontal"/> <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <w lemma="λογήιον"><unclear reason="damage">λ</unclear>ο<unclear reason="damage">γ</unclear><supplied reason="lost">ήι</supplied>ον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τ<milestone unit="block"/>ὸ</w>  <w lemma="προσκήνιον">προσ<unclear reason="damage">κ</unclear>ήν<supplied reason="lost">ι</supplied><unclear reason="damage">ο</unclear>ν</w> <w lemma="σύν">σὺν</w> <w lemma="ὁ">τοῖς</w> <milestone unit="block"/> <w lemma="ἐν">ἐν</w> <w lemma="αὐτός">αὐ<supplied reason="lost">τῶι</supplied></w>  <w lemma="προσκόσμημα"><supplied reason="lost">π</supplied>ροσκοσμή<milestone unit="block"/><unclear reason="damage">μα</unclear>σιν</w> <w lemma="πᾶς">πᾶσιν,</w> <space unit="character" dim="horizontal"/>  <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδίτ<milestone unit="block"/>ῃ</name></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τ<supplied reason="lost">ῶι</supplied></w>  <w lemma="δῆμος"><supplied reason="lost">Δήμωι</supplied></w></ab></div>
+         <div type="translation">
+            <p>Caius Julius Zoilos, freedman of the divine Iulius' son Caesar, after being stephanephorus for the tenth time in succession <supplied reason="subaudible">gave</supplied> the stage and the proscenium with all the applied ornaments on it to Aphrodite and the People.</p>
+         </div>
+         <div type="commentary">
+            <p>See most recently <bibl n="jmr1991">Reynolds, <title>Aphrodisias Papers</title> 2, 15-16</bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Mentioned, <bibl>BE 1971:609</bibl>; published by <bibl type="primary" n="jmr1982">
+                  <author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <citedRange>36b</citedRange>
+               </bibl>, whence <bibl>Orth, EA 3, 1984, 63</bibl>; <bibl>SEG 32, 1982.1097</bibl>; <bibl>BE 1983:388</bibl>; <bibl n="anep">
+                  <title level="j">An.Ép.</title>
+                  <citedRange>1984.878</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256971">93</citedRange>
+               </bibl>, <bibl n="rrrs1993">Smith, <title level="m">Monument</title>, T2</bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

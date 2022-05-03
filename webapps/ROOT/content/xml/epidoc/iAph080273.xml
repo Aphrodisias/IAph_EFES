@@ -1,124 +1,160 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080273" n="iAph0065 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">The city <rs type="textType">honours</rs> Bitianos, <rs type="personType">governor</rs></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
- 		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-24</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change>
-  <date>2003-07-17</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-23</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-01-28</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A rectangular <rs type="material" key="marmor">white marble</rs> <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs> (<measure type="length" unit="metre" dim="width">0.86</measure> × <measure type="length" unit="metre" dim="height">0.47</measure> × <measure type="length" unit="metre" dim="depth">0.40</measure>) with panels within moulded edges on three sides.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on the central panel; on the right side panel the letters <foreign lang="grc">ΤΑ</foreign> have been cut.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p><measure type="length" unit="metre" dim="height">0.02-0.03</measure>; irregular, and in varying forms; abbreviations: scroll above line in l. 4; letter above line in l. 5; there are apparently superfluous letters in lines 7 and 9.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0468" notAfter="0567">Late fifth/early-mid sixth century</date> (offices; titles).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>The city honours Bitianos, governor</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080273</idno>
+            <idno type="IAph2007">iAph080273</idno>
+            <idno type="JMR2004">iAph0065</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>70.226</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A rectangular <material key="marmor">white marble</material>
+                              <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> (<width unit="metre">0.86</width> × <height unit="metre">0.47</height> × <depth unit="metre">0.40</depth>) with panels within moulded edges on three sides.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the central panel; on the right side panel the letters <foreign xml:lang="grc">ΤΑ</foreign> have been cut.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02-0.03</height>; irregular, and in varying forms; abbreviations: scroll above line in l. 4; letter above line in l. 5; there are apparently superfluous letters in lines 7 and 9.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0468" notAfter="0567" precision="medium">Late fifth/early-mid sixth century (offices; titles).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Theatre">Theatre</rs>: north <term xml:lang="la">scaena</term>.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-28" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-23" who="#CMR">tagged and corrected</change>
+         <change when="2003-07-17" who="Juan-Garcés">lemmatised</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="NY_pr_054.jpg">
+            <desc>Base</desc>
+         </graphic>
+         <graphic url="NY_93_81_01.jpg">
+            <desc>Right side (1993)</desc>
+         </graphic>
+         <graphic url="NY_93_81_02.jpg">
+            <desc>Top (1993)</desc>
+         </graphic>
+         <graphic url="NY_94_71_06.jpg">
+            <desc>Top (1994)</desc>
+         </graphic>
+         <graphic url="72_A_09A.jpg">
+            <desc>Squeeze (1972)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<ab>
-		<lb n="1"/><supplied reason="lost" cert="low"><del status="unremarkable"><g type="cross"/></del></supplied> <w lemma="ὁ">ἡ</w> <rs key="clarus" type="dignity"><w lemma="λαμπρός">λαμπρὰ</w></rs> <w lemma="καί">καὶ</w>
-		<lb n="2"/><rs type="dignity" key="periphan"><w lemma="περιφανής">περιφανὴς</w></rs> <w lemma="Ἀφροδεισιεύς"><placeName full="yes" type="ethnic" reg="Ἀφροδεισιεύς">Ἀφροδι
-		<lb n="3" type="worddiv"/>σιέων</placeName></w> <rs type="subject" key="capital"><w lemma="μητρόπολις">μητρόπολις</w></rs>
-		<lb n="4"/><persName key="Vitianus" type="aphrodisian" full="yes"><name reg="Βιτιανός">Βιτιανὸν</name></persName> <w lemma="ὁ">τὸν</w> <rs type="dignity" key="clarissimus"><w lemma="λαμπρός"><expan><abbr>λαμπρ</abbr><supplied reason="abbreviation">ότατον</supplied></expan></w></rs>
-		<lb n="5"/><rs type="profession" key="scholasticus"><w lemma="σχολαστικός"><expan><abbr>σχο</abbr><supplied reason="abbreviation">λαστικὸν</supplied></expan></w></rs> <w lemma="καί">καὶ</w> <rs type="official-secul" key="consularis"><w lemma="ὑπατικός"><expan><abbr>ὑπα</abbr><supplied reason="abbreviation">τικὸν</supplied></expan></w></rs> <w lemma="ὁ">τὸν</w> <w lemma="οἰκεῖος">οἰκῖον</w>
+		<lb n="1"/><supplied reason="lost" cert="low"><del status="unremarkable"><g ref="#cross"/></del></supplied> <w lemma="ὁ">ἡ</w> <rs key="clarus" type="dignity"><w lemma="λαμπρός">λαμπρὰ</w></rs> <w lemma="καί">καὶ</w>
+		<lb n="2"/><rs type="dignity" key="periphan"><w lemma="περιφανής">περιφανὴς</w></rs> <w lemma="Ἀφροδεισιεύς"><placeName nymRef="#Ἀφροδεισιεύς">Ἀφροδι
+		<lb n="3" break="no"/>σιέων</placeName></w> <rs type="subject" key="capital"><w lemma="μητρόπολις">μητρόπολις</w></rs>
+		<lb n="4"/><persName key="Vitianus" type="attested"><name nymRef="#Βιτιανός">Βιτιανὸν</name></persName> <w lemma="ὁ">τὸν</w> <rs type="dignity" key="clarissimus"><w lemma="λαμπρός"><expan><abbr>λαμπρ</abbr><ex>ότατον</ex></expan></w></rs>
+		<lb n="5"/><rs type="profession" key="scholasticus"><w lemma="σχολαστικός"><expan><abbr>σχο</abbr><ex>λαστικὸν</ex></expan></w></rs> <w lemma="καί">καὶ</w> <rs type="official-secul" key="consularis"><w lemma="ὑπατικός"><expan><abbr>ὑπα</abbr><ex>τικὸν</ex></expan></w></rs> <w lemma="ὁ">τὸν</w> <w lemma="οἰκεῖος">οἰκῖον</w>
 		<lb n="6"/><w lemma="εὐεργέτης">εὐεργέτην</w> <w lemma="καί">καὶ</w>
 		<lb n="7"/><rs type="official-secul" key="agonothete"><w lemma="ἀγωνοθέτης">ἀγωνοθέτην</w></rs> <orig n="unresolved">α</orig>
 		<lb n="8"/><w lemma="ἀνατίθημι">ἀνέθηκεν</w>
 		<lb n="9"/><space dim="vertical" extent="1" unit="line"/>
-		<lb n="10"/><g type="leaf"/> <orig n="unresolved">α</orig>
+		<lb n="10"/><g ref="#leaf"/> <orig n="unresolved">α</orig>
 		</ab>
       </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p>l. 1,  Whatever stood at the beginning of the line—the outline suggests a cross—has been deeply erased.</p>
-        <p>l. 7,  The <foreign lang="grc">Α</foreign> at the end of the line, which conforms to the other letters, might be a numeral or a false start in writing <foreign lang="grc">ἀνέθηκεν</foreign>.</p>
-        <p>1.9: The <foreign lang="grc">Α</foreign> is very roughly written, and has the appearance of a rough graffito addition.</p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>The splendid and well-known metropolis of the Aphrodisians set up <supplied reason="subaudible">this statue of</supplied> Bitianos, <term lang="la">clarissimus scholasticus</term> and consular, their own benefactor and agonothete.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="V.38">V.38</xref>.</p>
-        
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="Theatre">Theatre</rs>: north <term lang="la">scaena</term>.</rs>. Original location: <rs type="origLocation">Unknown.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition in <date value="1970" notBefore="1970" notAfter="1970" exact="both">1970</date> (<rs type="invNo">70.226</rs>, SBI <rs type="sbi">26</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <biblScope>65</biblScope> and plate xvi</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257552">669</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs"><head>Photographs</head><p><figure href="NY_pr_054"><figDesc>Base</figDesc></figure><figure href="NY_93_81_01"><figDesc>Right side (1993)</figDesc></figure><figure href="NY_93_81_02"><figDesc>Top (1993)</figDesc></figure><figure href="NY_94_71_06"><figDesc>Top (1994)</figDesc></figure></p></div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="72_A_09A"><figDesc>Squeeze (1972)</figDesc></figure></p></div>
-
-      
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <p>l. 1,  Whatever stood at the beginning of the line—the outline suggests a cross—has been deeply erased.</p>
+            <p>l. 7,  The <foreign xml:lang="grc">Α</foreign> at the end of the line, which conforms to the other letters, might be a numeral or a false start in writing <foreign xml:lang="grc">ἀνέθηκεν</foreign>.</p>
+            <p>1.9: The <foreign xml:lang="grc">Α</foreign> is very roughly written, and has the appearance of a rough graffito addition.</p>
+         </div>
+         <div type="translation">
+            <ab>The splendid and well-known metropolis of the Aphrodisians set up <supplied reason="subaudible">this statue of</supplied> Bitianos, <term xml:lang="la">clarissimus scholasticus</term> and consular, their own benefactor and agonothete.</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="V.38" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>65</citedRange> and plate xvi</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257552">669</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,86 +1,151 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120909" n="iAph1585 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> inscription for Julius Aurelius Charidemos Ioulianos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Fragments of a white marble <rs type="objectType">block</rs> a: Left side fragment <measure type="length" unit="metre" dim="width">0.94</measure>  × <measure type="length" unit="metre" dim="height">0.745</measure>  × <measure type="length" unit="metre" dim="depth">0.36</measure>; b: upper right side fragment (1.75 0.55 x 0.34) c: lower left corner fragment (<measure type="length" unit="metre" dim="width">0.46</measure>  × <measure type="length" unit="metre" dim="height">0.195</measure>  × <measure type="length" unit="metre" dim="depth">0.115</measure>)
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary inscription for Julius Aurelius Charidemos Ioulianos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120909</idno>
+            <idno type="IAph2007">iAph120909</idno>
+            <idno type="JMR2004">iAph1585</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragments of a white marble <objectType>block</objectType> a: Left side fragment <width unit="metre">0.94</width>  × <height unit="metre">0.745</height>  × <depth unit="metre">0.36</depth>; b: upper right side fragment (1.75 0.55 x 0.34) c: lower left corner fragment (<width unit="metre">0.46</width>  × <height unit="metre">0.195</height>  × <depth unit="metre">0.115</depth>)
 </p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribed on the face</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.04</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0100"> Second to third centuries A.D.</date>
- (<rs type="criteria">nomenclature</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <persName type="aphrodisian"><name reg="Ἰούλιος">Ἰουλίου</name> <name reg="Αὐρήλιος" type="nomen">Αὐρηλίου</name> <name reg="Ζῆλος">Ζήλου</name> <w lemma="ἀρχιερεύς">ἀρχιερ<supplied reason="omitted">έ</supplied>ως</w> <w lemma="υἱός">υἱοῦ</w> <persName type="aphrodisian"><name reg="Χαρίδημος">Χαρι<lb n="2" type="worddiv"/>δήμου</name> <name reg="Ἰουλιανός">Ἰουλιανοῦ</name></persName></persName> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="θάπτω">τέθαπται</w> <persName type="aphrodisian"><name reg="Κλαύδιος">Κλαύδιος</name> <name reg="Αὐρήλιος" type="nomen">Αὐρήλι<lb n="3" type="worddiv"/>ος</name> <name reg="Ζῆλος">Ζῆλος</name></persName> <w lemma="ἀρχιερεύς">ἀρχιερεὺς</w> <w lemma="σοφιστής">σοφιστὴς</w> <w lemma="κτίστης">κτίστης</w> <w lemma="ὁ">τῶν</w> <w lemma="μέγας">μεγίστων</w> <w lemma="ἔργον">ἔργων</w> <lb n="4"/> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἰουλία">Ἰουλία</name> <name reg="Παῦλα">Παῦλα</name></persName> <w lemma="ἀρχιέρεια">ἀρχιέρεια</w> <w lemma="στεφανηφόρος">στεφανηφόρων</w> <w lemma="καί">καὶ</w> <lb n="5"/> <w lemma="ἀρχιερεύς">ἀρχιερέων</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="συναίτιος">συ<unclear reason="damage">ν</unclear>αιτίων</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="ὁ">τῆς</w> <w lemma="αὐτονομία">αὐτονομίας</w> <lb n="6"/> <w lemma="ἀπόγονος">ἀπόγονος</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Αὐρήλιος" type="nomen">Αὐρήλιος</name> <name reg="Χαρίδημος">Χαρίδημος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="ἔκγονος">ἔκγονος</w> <w lemma="αὐτός">αὐτῶν</w> <lb n="7"/> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="ἄλλος">ἄλλος</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἔχω">ἕξει</w> <w lemma="κηδεύω">κηδευθῆναι</w> <w lemma="ἐν">ἐν</w> <w lemma="τῆ">τῆ</w> <w lemma="σορός">σορ<supplied reason="lost">ῷ</supplied></w>  <lb n="8"/> <w lemma="ἤ">ἢ</w> <persName type="aphrodisian"><name reg="Ἰούλιος">Ἰούλιος</name> <name reg="Αὐρήλιος" type="nomen">Αὐρήλι<unclear reason="damage">ο</unclear>ς</name> <name reg="Χαρίδημος">Χαρίδημος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="παῖς">παῖς</w> <persName type="aphrodisian"><name reg="Ζῆλος">Ζήλου</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Παῦλα">Παύλης</name></persName> <lb n="9"/> <w lemma="μετά">μεθ'</w> <w lemma="ὅς">ὃν</w> <w lemma="ἀφηρωίζω">ἀφηρωϊσθήσεται</w> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἀνενόχλητος">ἀνενόχλητος</w> <w lemma="ὁ">τὸν</w> <w lemma="ἅπας">ἅ<lb n="10" type="worddiv"/><supplied reason="lost">παντα</supplied></w>  <supplied reason="lost"><w lemma="χρόνος">χρόνον</w> <w lemma="εἰμί">ἔσται</w></supplied><gap reason="lost" extent="3" unit="character"/>  </ab>
-</div>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.04</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown: city necropolis</origPlace>
+                     <origDate notBefore="0100" notAfter="0300" evidence="nomenclature lettering">
+ Second to third centuries A.D.
+ (<rs type="criteria">nomenclature</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, West</rs>: a. and b. found in 1972 re-used in the wall of a cistern against the west wall, by the first farmhouse south of the west gate; the cistern (which also contained <ref type="inscription" n="1568" target="120908.xml"/> (=MAMA 570) was subsequently cemented.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); notebooks; publications</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="72_J_12.jpg">
+            <desc>Lines 1-7, left end (1972)</desc>
+         </graphic>
+         <graphic url="72_J_10.jpg">
+            <desc>Lines 1-5, centre  (1972)</desc>
+         </graphic>
+         <graphic url="72_J_09.jpg">
+            <desc>Lines 1-5, right end (1972)</desc>
+         </graphic>
+         <graphic url="72_J_13.jpg">
+            <desc>Lines 4-9, left end (1972)</desc>
+         </graphic>
+         <graphic url="Deering_06v.jpg">
+            <desc>Deering notebook, 6v</desc>
+         </graphic>
+         <graphic url="R_I_06.jpg">
+            <desc>Fragment of ll. Reichel, notebook I, 6</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
+<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <persName type="attested"><name nymRef="#Ἰούλιος">Ἰουλίου</name> <name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <name nymRef="#Ζῆλος">Ζήλου</name> <w lemma="ἀρχιερεύς">ἀρχιερ<supplied reason="omitted">έ</supplied>ως</w> <w lemma="υἱός">υἱοῦ</w> <persName type="attested"><name nymRef="#Χαρίδημος">Χαρι<lb n="2" break="no"/>δήμου</name> <name nymRef="#Ἰουλιανός">Ἰουλιανοῦ</name></persName></persName> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <w lemma="θάπτω">τέθαπται</w> <persName type="attested"><name nymRef="#Κλαύδιος">Κλαύδιος</name> <name nymRef="#Αὐρήλιος">Αὐρήλι<lb n="3" break="no"/>ος</name> <name nymRef="#Ζῆλος">Ζῆλος</name></persName> <w lemma="ἀρχιερεύς">ἀρχιερεὺς</w> <w lemma="σοφιστής">σοφιστὴς</w> <w lemma="κτίστης">κτίστης</w> <w lemma="ὁ">τῶν</w> <w lemma="μέγας">μεγίστων</w> <w lemma="ἔργον">ἔργων</w> <lb n="4"/> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἰουλία">Ἰουλία</name> <name nymRef="#Παῦλα">Παῦλα</name></persName> <w lemma="ἀρχιέρεια">ἀρχιέρεια</w> <w lemma="στεφανηφόρος">στεφανηφόρων</w> <w lemma="καί">καὶ</w> <lb n="5"/> <w lemma="ἀρχιερεύς">ἀρχιερέων</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="συναίτιος">συ<unclear reason="damage">ν</unclear>αιτίων</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> <w lemma="ὁ">τῆς</w> <w lemma="αὐτονομία">αὐτονομίας</w> <lb n="6"/> <w lemma="ἀπόγονος">ἀπόγονος</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Αὐρήλιος">Αὐρήλιος</name> <name nymRef="#Χαρίδημος">Χαρίδημος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="ἔκγονος">ἔκγονος</w> <w lemma="αὐτός">αὐτῶν</w> <lb n="7"/> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="ἄλλος">ἄλλος</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἔχω">ἕξει</w> <w lemma="κηδεύω">κηδευθῆναι</w> <w lemma="ἐν">ἐν</w> <w lemma="τῆ">τῆ</w> <w lemma="σορός">σορ<supplied reason="lost">ῷ</supplied></w>  <lb n="8"/> <w lemma="ἤ">ἢ</w> <persName type="attested"><name nymRef="#Ἰούλιος">Ἰούλιος</name> <name nymRef="#Αὐρήλιος">Αὐρήλι<unclear reason="damage">ο</unclear>ς</name> <name nymRef="#Χαρίδημος">Χαρίδημος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="παῖς">παῖς</w> <persName type="attested"><name nymRef="#Ζῆλος">Ζήλου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Παῦλα">Παύλης</name></persName> <lb n="9"/> <w lemma="μετά">μεθ'</w> <w lemma="ὅς">ὃν</w> <w lemma="ἀφηρωίζω">ἀφηρωϊσθήσεται</w> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἀνενόχλητος">ἀνενόχλητος</w> <w lemma="ὁ">τὸν</w> <w lemma="ἅπας">ἅ<lb n="10" break="no"/><supplied reason="lost">παντα</supplied></w>  <supplied reason="lost"><w lemma="χρόνος">χρόνον</w> <w lemma="εἰμί">ἔσται</w></supplied><gap reason="lost" unit="character" quantity="3"/>  </ab>
 </div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, West</rs>: a. and b. found in 1972 re-used in the wall of a cistern against the west wall, by the first farmhouse south of the west gate; the cistern (which also contained <xref type="inscription" n="1568" href="120908">12.908</xref> (=MAMA 570) was subsequently cemented.</rs>
-<rs type="origLocation">Unknown: city necropolis</rs>
-<rs type="lastLocation">Findspot</rs>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard and Rochette, CIG <citedRange>2845</citedRange>
+               </bibl>; by <bibl n="fellows1841">Fellows, Acct. 343-344, no. <citedRange>47</citedRange>
+               </bibl>, whence CIG p.1117, <bibl n="bailie1846">
+                  <seg cert="low">Bailie</seg>, Fasc. ii 58-59 and 325-331, no. <citedRange>81</citedRange>
+               </bibl>, <bibl n="liermann1889">Liermann 144, n. <citedRange>3</citedRange>
+               </bibl> ; fragment published by <bibl n="reinach">Reinach, REG 19, 1906, 279 no. <citedRange>173</citedRange> and 291 no. <citedRange>197</citedRange>
+               </bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <citedRange>564</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257368">490</citedRange>
+               </bibl>; discussed by <bibl n="jmr1982" type="primary">
+                  <author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <citedRange>40</citedRange>
+               </bibl>.
 </p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); notebooks; publications</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>The complete text copied by Sherard in 1716 (f.126v) and Rochette; by Deering ( f 6v, no.27); by Fellows (perhaps by Bailie); by Choisy. Fragment of ll. 7-9 copied by K&amp;R (R.I.6); fragment recorded by Gaudin (no number); three larger fragments (a, b and c) recorded by the MAMA expedition (all discussed by Cormack, Notes 17 and 62 fig. 11); a and b recorded by the NYU expedition in 1972.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard and Rochette, CIG <biblScope>2845</biblScope></bibl>; by <bibl n="fellows1841">Fellows, Acct. 343-344, no. <biblScope>47</biblScope></bibl>, whence CIG p.1117, <bibl n="bailie1846"><seg cert="low">Bailie</seg>, Fasc. ii 58-59 and 325-331, no. <biblScope>81</biblScope></bibl>, <bibl n="liermann1889">Liermann 144, n. <biblScope>3</biblScope></bibl> ; fragment published by <bibl n="reinach">Reinach, REG 19, 1906, 279 no. <biblScope>173</biblScope> and 291 no. <biblScope>197</biblScope></bibl>; published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <biblScope>564</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257368">490</biblScope>
-</bibl>; discussed by <bibl n="jmr1982" type="primary"><author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <biblScope>40</biblScope></bibl>.
-</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="72_J_12"><figDesc>Lines 1-7, left end (1972)</figDesc></figure><figure href="72_J_10"><figDesc>Lines 1-5, centre  (1972)</figDesc></figure><figure href="72_J_09"><figDesc>Lines 1-5, right end (1972)</figDesc></figure><figure href="72_J_13"><figDesc>Lines 4-9, left end (1972)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Deering_06v"><figDesc>Deering notebook, 6v</figDesc></figure><figure href="R_I_06"><figDesc>Fragment of ll. Reichel, notebook I, 6</figDesc></figure></p></div></body></text>
+         </div>
+      </body>
+   </text>
 </TEI>

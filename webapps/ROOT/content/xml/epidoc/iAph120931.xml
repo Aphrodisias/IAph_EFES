@@ -1,98 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120931" n="iAph1034 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Aur<supplied reason="abbreviation">elius</supplied> Gaius, centurio frumentarius</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-09</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-  
-  <change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Aur<ex>elius</ex> Gaius, centurio frumentarius</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120931</idno>
+            <idno type="IAph2007">iAph120931</idno>
+            <idno type="JMR2004">iAph1034</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Plain <material key="marmor">white marble</material>
+                              <objectType key="base">statue base</objectType> (<width unit="metre">0.53</width>   × <height unit="metre">1.09</height>   × <depth unit="metre">0.50</depth>), broken at the upper corners and upper right side.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face. The upper edge, although chipped, is complete; the text must have begun on an upper feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lines 1-10, <height>0.03</height>; lines 11 ff., <height>0.025</height>.  Ligatures: <foreign xml:lang="grc">TH</foreign>, l. 9, <foreign xml:lang="grc">ME</foreign>, l. 11.  Circular stop; full-stop to mark abbreviation.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="201"
+                               notAfter="300"
+                               evidence="lettering nomenclature content">Third century A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>, <rs type="criteria">content</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, West</rs>: fallen from the  streach south of the West gate, near <ref type="inscription" n="659" target="120925.xml"/> (=CIG 2763) and <ref type="inscription" n="663" target="120929.xml"/> (=2765), <ref type="inscription" n="658" target="120924.xml"/> (=MAMA 512).</provenance>
+                  <provenance type="observed" when="1994">Findspot (1994)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; Gaudin's squeeze; Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-09" who="cmr">DONE</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_B_04.jpg">
+            <desc>Face (1976)</desc>
+         </graphic>
+         <graphic url="94_B_11A.jpg">
+            <desc>Face (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<text>
-<body>
 
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Plain <rs type="material" key="marmor">white marble</rs> <rs type="objectType" reg="base">statue base</rs> (<measure type="length" unit="metre" dim="width">0.53</measure>   × <measure type="length" unit="metre" dim="height">1.09</measure>   × <measure type="length" unit="metre" dim="depth">0.50</measure>), broken at the upper corners and upper right side.</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face. The upper edge, although chipped, is complete; the text must have begun on an upper feature.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p>Lines 1-10, <measure dim="none">0.03</measure>; lines 11 ff., <measure type="length" dim="none">0.025</measure>.  Ligatures: <foreign lang="grc">TH</foreign>, l. 9, <foreign lang="grc">ME</foreign>, l. 11.  Circular stop; full-stop to mark abbreviation.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notAfter="300" notBefore="201">Third century A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>, <rs type="criteria">content</rs>)</p>    </div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="0"/><supplied reason="lost"><seg cert="low"><w lemma="ὁ">ἡ</w>  <w lemma="πόλις">πόλις</w></seg></supplied><lb n="1"/>  <persName type="aphrodisian" full="yes"><name reg="Αὐρήλιος" type="nomen"><expan><abbr><supplied reason="lost">Α</supplied>ὐρ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">ήλιον</supplied></expan></name>  <space unit="character" extent="1" dim="horizontal"/>  <name reg="Γάϊος">Γάϊον</name></persName>  <w lemma="ἑκατόνταρχος"><supplied reason="lost">ἑκα</supplied><lb n="2" type="worddiv"/>  τόνταρχον</w>  <w lemma="φρουμεντάριος">φ<unclear reason="damage">ρ</unclear><supplied reason="lost">ου</supplied><lb n="3" type="worddiv"/>  μεντάριον</w>  <g type="stop"/>  <w lemma="ἁγνῶς">ἁ<lb n="4" type="worddiv"/>  γνῶς</w>  <w lemma="καί">καὶ</w>  <w lemma="ἀνδρείως">ἀνδρεί<lb n="5" type="worddiv"/>  ως</w>  <w lemma="ἀναστρέφω">ἀναστραφέν<lb n="6" type="worddiv"/>  τα</w>  <w lemma="ἐν">ἐν</w>  <w lemma="ὁ">τῷ</w>  <w lemma="ὁ">τῆς</w>  <placeName type="admin" key="Asia" full="yes" reg="Ἀσία">Ἀσί<lb n="7" type="worddiv"/>  ας</placeName>  <w lemma="ἔθνος">ἔθνει  </w><g type="stop"/>    <w lemma="εὔνοια">εὐνοί<lb n="8" type="worddiv"/>  ας</w>  <w lemma="καί">καὶ</w>  <w lemma="στοργή">στοργῆς</w>  <w lemma="ἕνεκεν">ἕ<lb n="9" type="worddiv"/>  νεκεν</w>  <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w>  <w lemma="εἰς">εἰς</w>  <w lemma="αὐτός">αὑ<lb n="10" type="worddiv"/>  τὴν</w>  <w lemma="ἀμείβω">ἠμείψατο</w>  <lb n="10a"/>                <space unit="line" extent="1" dim="horizontal"/><lb n="11"/>  <w lemma="ἐπιμελέομαι">ἐπε<hi rend="ligature">με</hi>λήσατο</w>  <w lemma="ὁ">τῆς</w>  <lb n="12"/>  <w lemma="ἀνάστασις">ἀναστάσεως</w>  <w lemma="ὁ">τοῦ</w>  <lb n="13"/>  <w lemma="ἀνδρίας">ἀνδριάντος</w>  <w lemma="ὁ">ὁ</w>  <w lemma="ἀξιόλογος">ἀξι<lb n="14" type="worddiv"/>  ολογώτατος</w>  <g type="stop"/>  <persName type="aphrodisian" full="yes"><name reg="Ἀντώνιος"><expan><abbr>Ἀντ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">ώνιος</supplied></expan></name><lb n="15"/>  <g type="scroll"/>  <name reg="Νεικόμαχος">Νεικόμαχος</name></persName>  <g type="scroll"/>.</ab></div>
-
-
-
-<div type="translation">
-<head>Translation</head>
-<p>[?The city has honoured] Aur(elius) Gaius, centurio frumentarius, who has conducted himself decently and bravely in the province of Asia, for his goodwill and affection towards her.  The most worthy Ant(onius) Neikomachos oversaw the erection of the statue.</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>This inscription is similar to, but not identical with, <xref type="inscription" n="1789" href="120932">12.932</xref> (=CIG 2802). Foer discussion, see <bibl n="cmr1981">Roueché, <title level="j">JRS</title> 71, 1981, 113-117.</bibl></p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p>  <rs type="found"><rs type="monuList">Walls, West</rs>: fallen from the  streach south of the West gate, near <xref type="inscription" n="659" href="120925">12.925</xref> (=CIG 2763) and <xref type="inscription" n="663" href="120929">12.929</xref> (=2765), <xref type="inscription" n="658" href="120924">12.924</xref> (=MAMA 512).</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot (1994)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; Gaudin's squeeze; Transcription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Gaudin (39); by the MAMA expedition; by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, <title level="j">REG</title> 19, 1906, 145-147, no. <biblScope>78</biblScope></bibl>, whence <bibl>ILS 9474</bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, <title level="m">MAMA</title> 8, no. <biblScope>508</biblScope></bibl>; by <bibl n="cmr1981">Roueché, <title level="j">JRS</title> 71, 1981, 113-117, no. <biblScope>7</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1981.905</biblScope>, col. 1</bibl>, <bibl n="be">BE <biblScope>1982.357</biblScope></bibl>, <bibl n="anep">AnnEpig <biblScope>1981.771</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257135">256</biblScope></bibl>.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="76_B_04"><figDesc>Face (1976)</figDesc></figure><figure href="94_B_11A"><figDesc>Face (1994)</figDesc></figure></p></div></body>
-</text>
-
+<ab><lb n="0"/><supplied reason="lost"><seg cert="low"><w lemma="ὁ">ἡ</w>  <w lemma="πόλις">πόλις</w></seg></supplied><lb n="1"/>  <persName type="attested"><name nymRef="#Αὐρήλιος"><expan><abbr><supplied reason="lost">Α</supplied>ὐρ<am><g ref="#stop"/></am></abbr><ex>ήλιον</ex></expan></name>  <space unit="character" extent="1" dim="horizontal"/>  <name nymRef="#Γάϊος">Γάϊον</name></persName>  <w lemma="ἑκατόνταρχος"><supplied reason="lost">ἑκα</supplied><lb n="2" break="no"/>  τόνταρχον</w>  <w lemma="φρουμεντάριος">φ<unclear reason="damage">ρ</unclear><supplied reason="lost">ου</supplied><lb n="3" break="no"/>  μεντάριον</w>  <g ref="#stop"/>  <w lemma="ἁγνῶς">ἁ<lb n="4" break="no"/>  γνῶς</w>  <w lemma="καί">καὶ</w>  <w lemma="ἀνδρείως">ἀνδρεί<lb n="5" break="no"/>  ως</w>  <w lemma="ἀναστρέφω">ἀναστραφέν<lb n="6" break="no"/>  τα</w>  <w lemma="ἐν">ἐν</w>  <w lemma="ὁ">τῷ</w>  <w lemma="ὁ">τῆς</w>  <placeName key="Asia" nymRef="#Ἀσία">Ἀσί<lb n="7" break="no"/>  ας</placeName>  <w lemma="ἔθνος">ἔθνει  </w><g ref="#stop"/>    <w lemma="εὔνοια">εὐνοί<lb n="8" break="no"/>  ας</w>  <w lemma="καί">καὶ</w>  <w lemma="στοργή">στοργῆς</w>  <w lemma="ἕνεκεν">ἕ<lb n="9" break="no"/>  νεκεν</w>  <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w>  <w lemma="εἰς">εἰς</w>  <w lemma="αὐτός">αὑ<lb n="10" break="no"/>  τὴν</w>  <w lemma="ἀμείβω">ἠμείψατο</w>  <lb n="10a"/>                <space unit="line" extent="1" dim="horizontal"/><lb n="11"/>  <w lemma="ἐπιμελέομαι">ἐπε<hi rend="ligature">με</hi>λήσατο</w>  <w lemma="ὁ">τῆς</w>  <lb n="12"/>  <w lemma="ἀνάστασις">ἀναστάσεως</w>  <w lemma="ὁ">τοῦ</w>  <lb n="13"/>  <w lemma="ἀνδρίας">ἀνδριάντος</w>  <w lemma="ὁ">ὁ</w>  <w lemma="ἀξιόλογος">ἀξι<lb n="14" break="no"/>  ολογώτατος</w>  <g ref="#stop"/>  <persName type="attested"><name nymRef="#Ἀντώνιος"><expan><abbr>Ἀντ<am><g ref="#stop"/></am></abbr><ex>ώνιος</ex></expan></name><lb n="15"/>  <g ref="#scroll"/>  <name nymRef="#Νεικόμαχος">Νεικόμαχος</name></persName>  <g ref="#scroll"/>.</ab></div>
+         <div type="translation">
+            <p>[?The city has honoured] Aur(elius) Gaius, centurio frumentarius, who has conducted himself decently and bravely in the province of Asia, for his goodwill and affection towards her.  The most worthy Ant(onius) Neikomachos oversaw the erection of the statue.</p>
+         </div>
+         <div type="commentary">
+            <p>This inscription is similar to, but not identical with, <ref type="inscription" n="1789" target="120932.xml"/> (=CIG 2802). Foer discussion, see <bibl n="cmr1981">Roueché, <title level="j">JRS</title> 71, 1981, 113-117.</bibl>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="reinach">Reinach, from Gaudin's squeeze, <title level="j">REG</title> 19, 1906, 145-147, no. <citedRange>78</citedRange>
+               </bibl>, whence <bibl>ILS 9474</bibl>; by <bibl n="MAMA8">Cormack, from the MAMA records, <title level="m">MAMA</title> 8, no. <citedRange>508</citedRange>
+               </bibl>; by <bibl n="cmr1981">Roueché, <title level="j">JRS</title> 71, 1981, 113-117, no. <citedRange>7</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1981.905</citedRange>, col. 1</bibl>, <bibl n="be">BE <citedRange>1982.357</citedRange>
+               </bibl>, <bibl n="anep">AnnEpig <citedRange>1981.771</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257135">256</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

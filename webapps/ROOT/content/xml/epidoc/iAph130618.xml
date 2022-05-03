@@ -1,86 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130618" n="iAph1519 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription of Aurelia Tertulla</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr2003">Reynolds and Isik (<date>2007</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-08</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument" sample="complete" org="uniform">
-<head>Description of Monument</head>
-<p>a: Part of a <rs type="material" key="marmor">white marble</rs> <rs type="decoration">garland</rs> <rs type="objectType">sarcophagus</rs> front <measure type="length" unit="metre" dim="width">0.81</measure> × <measure type="length" unit="metre" dim="height">0.48</measure>   × <measure type="length" unit="metre" dim="depth">0.32</measure>, showing a central moulded panel with curving handles upheld by <rs type="decoration">putti</rs>. b: part of a sarcophagus lid  (<measure type="length" unit="metre" dim="width">0.50</measure>   × <measure type="length" unit="metre" dim="height">0.16</measure>   × <measure type="length" unit="metre" dim="depth">0.51</measure>); for further description see Isik 194.
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription of Aurelia Tertulla</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130618</idno>
+            <idno type="IAph2007">iAph130618</idno>
+            <idno type="JMR2004">iAph1519</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>a: Part of a <material key="marmor">white marble</material>
+                              <rs type="decoration">garland</rs>
+                              <objectType>sarcophagus</objectType> front <width unit="metre">0.81</width> × <height unit="metre">0.48</height>   × <depth unit="metre">0.32</depth>, showing a central moulded panel with curving handles upheld by <rs type="decoration">putti</rs>. b: part of a sarcophagus lid  (<width unit="metre">0.50</width>   × <height unit="metre">0.16</height>   × <depth unit="metre">0.51</depth>); for further description see Isik 194.
 </p>
-</div>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>a. <rs type="execution" ref="scalpro">Inscribed</rs> on the face; ll. 1 - 12 within the panel upheld by putti, and ll. 13-15 on the moulding below. b. inscribed on one side</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a. Quite well designed, cut and aligned in the second-to-fourth-century style, ll.1-12, ave. <height unit="metre">0.015</height>; ll.13 - 15, <height unit="metre">0.02</height>. Ligatured <foreign xml:lang="grc">ΗΜ</foreign> (l.3), <foreign xml:lang="grc">ΜΗΝ</foreign> (l.12), <foreign xml:lang="grc">ΝΗ</foreign> (ll.8, 11), <foreign xml:lang="grc">ΤΗ</foreign> (ll.6, 9). Superscript bars above the figures in ll.7, 11, 12. b. With poorly designed letters, and incomplete above, <height unit="metre">0.025-0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0226"
+                               notAfter="0250"
+                               precision="medium"
+                               evidence="lettering spelling nomenclature monument">Perhaps 
+second quarter of the third century
+ (<rs type="criteria">lettering</rs>, <rs type="criteria">spelling</rs>, <rs type="criteria">nomenclature</rs>, <rs type="criteria">monument</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, West</rs>: in a pile of stones in a field just west of the west wall, north of the old road.</provenance>
+                  <provenance type="observed" when="1975">Findspot (1975)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-08" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_Y_00.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="75_F_10A.jpg">
+            <desc>Face (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="description" n="text" sample="complete" org="uniform">
-<head>Description of Text</head>
-<p>a. <rs type="execution" key="scalpro">Inscribed</rs> on the face; ll. 1 - 12 within the panel upheld by putti, and ll. 13-15 on the moulding below. b. inscribed on one side</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p>a. Quite well designed, cut and aligned in the second-to-fourth-century style, ll.1-12, ave. <measure dim="height" type="length" unit="metre">0.015</measure>; ll.13 - 15, <measure dim="height" type="length" unit="metre">0.02</measure>. Ligatured <foreign lang="grc">ΗΜ</foreign> (l.3), <foreign lang="grc">ΜΗΝ</foreign> (l.12), <foreign lang="grc">ΝΗ</foreign> (ll.8, 11), <foreign lang="grc">ΤΗ</foreign> (ll.6, 9). Superscript bars above the figures in ll.7, 11, 12. b. With poorly designed letters, and incomplete above, <measure precision="circa" dim="height" type="length" unit="metre">0.025-0.03</measure>.</p>
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/>  <supplied reason="lost" cert="low">ἡ</supplied>  <supplied reason="lost">σορὸς</supplied>  <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">ὁ</supplied>  <w lemma="τόπος"><unclear reason="damage">τόπο</unclear><supplied reason="lost">ς</supplied></w>  <supplied reason="lost">ἐν</supplied>  <supplied reason="lost">ᾧ</supplied>  <lb n="2"/><w lemma="κεῖμαι"><supplied reason="lost" cert="low">κεῖτ</supplied><unclear reason="damage">αι</unclear></w> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">κα<unclear reason="damage">ὶ</unclear></w> <lb n="3"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w lemma="παραχωρέω"><supplied reason="lost">π</supplied>αρακεχωρημέν<lb n="4" break="no"/><supplied reason="lost">ον</supplied></w> <w lemma="μέρος">μέρος</w> <w lemma="ὁ">τ<supplied reason="lost">οῦ</supplied></w>  <w lemma="παράκειμαι">παρακειμέ<lb n="5" break="no"/><supplied reason="lost">νου</supplied></w> <w lemma="πλάτας"><unclear reason="damage">π</unclear>λάτα</w> <w lemma="εἰμί">εἰ<supplied reason="omitted">σ</supplied>ὶν</w> <persName type="attested"><name nymRef="#Αὐρηλία"><unclear reason="damage">Αυ</unclear>ρηλίας</name> <name nymRef="#Τέρτυλλα">Τερ<lb n="6" break="no"/><supplied reason="lost">τ</supplied><unclear reason="damage">ύ</unclear>λλας</name> <w lemma="ὁ">τῆς</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων"><supplied reason="lost">Ζή</supplied><lb n="7" break="no"/>νωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name> <num value="3">γ</num> <w lemma="ὁ">τοῦ</w> <lb n="8"/> <persName type="attested"><name nymRef="#Ἀπολλώνιος ">Ἀπολλωνίου</name></persName></persName></persName></persName></persName> <w lemma="ὠνέομαι">ὠνηθέντα</w> <w lemma="ὑπό">ὑ<lb n="9" break="no"/>πὸ</w> <w lemma="αὐτός">αὐτῆς</w> <w lemma="παρά">παρὰ</w> <persName type="attested"><name nymRef="#Λούκιος">Λουκίου</name> <name nymRef="#Ἀντώνιος"><expan><abbr>Ἀν<lb n="10" break="no"/>τ</abbr><ex>ωνίου</ex></expan></name> <name nymRef="#Ἑρμῆς">Ἑρμοῦ</name> <w lemma="υἱός">υἱοῦ</w> <persName type="attested"><name nymRef="#Ἑρμῆς">Ἑρμοῦ</name></persName></persName> <w lemma="ἐπί">ἐπὶ</w> <lb n="11"/> <persName type="attested"><name nymRef="#Κλαυδία"><expan><abbr>Κλ</abbr><ex>αυδίας</ex></expan></name> <name nymRef="#Παυλεῖνα">Παυλεινῆς</name></persName> <space extent="1" unit="character" dim="horizontal"/> <w lemma="ὁ">τὸ</w> <num value="5">ε</num> <lb n="12"/> <w lemma="μείς">μηνὶ</w> <num value="8">η</num> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <w lemma="μέν">μὲν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σο<unclear reason="damage">ρ</unclear><supplied reason="lost">ῷ</supplied></w>  <lb n="13"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Τέρτυλλα"><supplied reason="lost" cert="low">Τερτύλ</supplied>λα</name> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Εὐτύχης">Εὐτύχης</name> <w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w> <name nymRef="#Τέρτυλλος">Τ<unclear reason="damage">έ</unclear><supplied reason="lost">ρτυ</supplied>λλος</name> <w lemma="ὁ">οἱ</w> <name nymRef="#Ἀπολλόδωρος">Ἀπολλοδ<unclear reason="damage">ώ</unclear><supplied reason="lost">ρου</supplied></name></persName></persName> <gap reason="lost" unit="character" extent="unknown"/>  <lb n="14"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὅς"><supplied reason="lost">οὓ</supplied>ς</w> <w lemma="ἐάν">ἂν</w> <w lemma="βούλομαι">βουληθῶσιν</w> <w lemma="ὁ">οἱ</w> <w lemma="προγράφω">προγεγραμμένοι</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="ἕτερος"><unclear reason="damage">ἕ</unclear><supplied reason="lost">τερος</supplied></w>  <w lemma="ἔχω"><supplied reason="lost" cert="low">ἕξει</supplied></w>  <w lemma="ἐξουσία"><supplied reason="lost">ἐξουσίαν</supplied></w>  <w lemma="ἐνθάπτω"><supplied reason="lost">ἐνθάψαι</supplied></w>  <w lemma="τις"><supplied reason="lost">τινὰ</supplied></w>  <lb n="15"/>  <w lemma="εἰς"><supplied reason="lost" cert="low">εἰς</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">αὐτὴν</supplied></w>  <w lemma="ἤ"><supplied reason="lost">ἢ</supplied></w>  <w lemma="ἐκθάπτω"><supplied reason="lost">ἐκθάψαι</supplied></w>  <w lemma="τις"><supplied reason="lost">τινὰ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῶν</supplied></w>  <w lemma="προγράφω"><supplied reason="lost">προγεγραμ</supplied><unclear reason="damage">μ</unclear>ένων</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="παρά">παρὰ</w> <w lemma="οὗτος">τοῦτο</w> <lb n="16"/> <w lemma="ποιέω">ποιήσας</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσε<unclear reason="damage">β</unclear>ὴ<supplied reason="lost">ς</supplied></w>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <w lemma="ἐπάρατος"><supplied reason="lost">ἐπάρατος</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="τυμβωρύχος"><supplied reason="lost">τυμβωρύχος</supplied></w></ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <persName type="attested"><name nymRef="#Μαρκιανός"><unclear reason="damage">Μαρκιαν</unclear></name> <name><gap reason="lost" unit="character" precision="low" quantity="3"/>κου</name></persName> <gap reason="lost" unit="character" extent="unknown"/></ab></div>
 </div>
-<div type="description" n="date">
-<head>Date</head>
-<p>Perhaps 
-<date notBefore="0226" notAfter="0250" exact="none" cert="low">second quarter of the third century</date>
- (<rs type="criteria">lettering</rs>, <rs type="criteria">spelling</rs>, <rs type="criteria">nomenclature</rs>, <rs type="criteria">monument</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_fragment" n="a"><ab><lb n="1"/>  <supplied reason="lost" cert="low">ἡ</supplied>  <supplied reason="lost">σορὸς</supplied>  <supplied reason="lost">καὶ</supplied>  <supplied reason="lost">ὁ</supplied>  <w lemma="τόπος"><unclear reason="damage">τόπο</unclear><supplied reason="lost">ς</supplied></w>  <supplied reason="lost">ἐν</supplied>  <supplied reason="lost">ᾧ</supplied>  <lb n="2"/><w lemma="κεῖμαι"><supplied reason="lost" cert="low">κεῖτ</supplied><unclear reason="damage">αι</unclear></w> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">κα<unclear reason="damage">ὶ</unclear></w> <lb n="3"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w lemma="παραχωρέω"><supplied reason="lost">π</supplied>αρακεχωρημέν<lb n="4" type="worddiv"/><supplied reason="lost">ον</supplied></w> <w lemma="μέρος">μέρος</w> <w lemma="ὁ">τ<supplied reason="lost">οῦ</supplied></w>  <w lemma="παράκειμαι">παρακειμέ<lb n="5" type="worddiv"/><supplied reason="lost">νου</supplied></w> <w lemma="πλάτας"><unclear reason="damage">π</unclear>λάτα</w> <w lemma="εἰμί">εἰ<supplied reason="omitted">σ</supplied>ὶν</w> <persName type="aphrodisian"><name reg="Αὐρηλία"><unclear reason="damage">Αυ</unclear>ρηλίας</name> <name reg="Τέρτυλλα">Τερ<lb n="6" type="worddiv"/><supplied reason="lost">τ</supplied><unclear reason="damage">ύ</unclear>λλας</name> <w lemma="ὁ">τῆς</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυσίου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων"><supplied reason="lost">Ζή</supplied><lb n="7" type="worddiv"/>νωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυσίου</name> <num value="3">γ</num> <w lemma="ὁ">τοῦ</w> <lb n="8"/> <persName type="aphrodisian"><name reg="Ἀπολλώνιος ">Ἀπολλωνίου</name></persName></persName></persName></persName></persName> <w lemma="ὠνέομαι">ὠνηθέντα</w> <w lemma="ὑπό">ὑ<lb n="9" type="worddiv"/>πὸ</w> <w lemma="αὐτός">αὐτῆς</w> <w lemma="παρά">παρὰ</w> <persName type="aphrodisian"><name reg="Λούκιος" type="praenomen">Λουκίου</name> <name reg="Ἀντώνιος"><expan><abbr>Ἀν<lb n="10" type="worddiv"/>τ</abbr><supplied reason="abbreviation">ωνίου</supplied></expan></name> <name reg="Ἑρμῆς">Ἑρμοῦ</name> <w lemma="υἱός">υἱοῦ</w> <persName type="aphrodisian"><name reg="Ἑρμῆς">Ἑρμοῦ</name></persName></persName> <w lemma="ἐπί">ἐπὶ</w> <lb n="11"/> <persName type="aphrodisian"><name reg="Κλαυδία"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίας</supplied></expan></name> <name reg="Παυλεῖνα">Παυλεινῆς</name></persName> <space extent="1" unit="character" dim="horizontal"/> <w lemma="ὁ">τὸ</w> <num value="5">ε</num> <lb n="12"/> <w lemma="μείς">μηνὶ</w> <num value="8">η</num> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <w lemma="μέν">μὲν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σο<unclear reason="damage">ρ</unclear><supplied reason="lost">ῷ</supplied></w>  <lb n="13"/><gap extent="unknown" dim="left" reason="lost" unit="character"/>  <persName type="aphrodisian"><name reg="Τέρτυλλα"><supplied reason="lost" cert="low">Τερτύλ</supplied>λα</name> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Εὐτύχης">Εὐτύχης</name> <w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w> <name reg="Τέρτυλλος">Τ<unclear reason="damage">έ</unclear><supplied reason="lost">ρτυ</supplied>λλος</name> <w lemma="ὁ">οἱ</w> <name reg="Ἀπολλόδωρος">Ἀπολλοδ<unclear reason="damage">ώ</unclear><supplied reason="lost">ρου</supplied></name></persName></persName> <gap extent="unknown" dim="right" reason="lost" unit="character"/>  <lb n="14"/><gap extent="unknown" dim="left" reason="lost" unit="character"/> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὅς"><supplied reason="lost">οὓ</supplied>ς</w> <w lemma="ἐάν">ἂν</w> <w lemma="βούλομαι">βουληθῶσιν</w> <w lemma="ὁ">οἱ</w> <w lemma="προγράφω">προγεγραμμένοι</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="δέ">δὲ</w> <w lemma="ἕτερος"><unclear reason="damage">ἕ</unclear><supplied reason="lost">τερος</supplied></w>  <w lemma="ἔχω"><supplied reason="lost" cert="low">ἕξει</supplied></w>  <w lemma="ἐξουσία"><supplied reason="lost">ἐξουσίαν</supplied></w>  <w lemma="ἐνθάπτω"><supplied reason="lost">ἐνθάψαι</supplied></w>  <w lemma="τις"><supplied reason="lost">τινὰ</supplied></w>  <lb n="15"/>  <w lemma="εἰς"><supplied reason="lost" cert="low">εἰς</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">αὐτὴν</supplied></w>  <w lemma="ἤ"><supplied reason="lost">ἢ</supplied></w>  <w lemma="ἐκθάπτω"><supplied reason="lost">ἐκθάψαι</supplied></w>  <w lemma="τις"><supplied reason="lost">τινὰ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῶν</supplied></w>  <w lemma="προγράφω"><supplied reason="lost">προγεγραμ</supplied><unclear reason="damage">μ</unclear>ένων</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="παρά">παρὰ</w> <w lemma="οὗτος">τοῦτο</w> <lb n="16"/> <w lemma="ποιέω">ποιήσας</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσε<unclear reason="damage">β</unclear>ὴ<supplied reason="lost">ς</supplied></w>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <w lemma="ἐπάρατος"><supplied reason="lost">ἐπάρατος</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="τυμβωρύχος"><supplied reason="lost">τυμβωρύχος</supplied></w></ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/><gap reason="lost" unit="character" dim="left" extent="unknown"/> <persName type="aphrodisian"><name reg="Μαρκιανός"><unclear reason="damage">Μαρκιαν</unclear></name> <name><gap reason="lost" unit="character" dim="internal" extent="3" precision="circa"/>κου</name></persName> <gap reason="lost" unit="character" dim="right" extent="unknown"/></ab></div>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 5, Ε<foreign lang="grc">ΙΞΙΝ</foreign> lapis</p><p>l. 13, <foreign lang="grc">Ἀπολλόδ<unclear reason="damage">ο</unclear>[τος</foreign> is also possible but what survives of the damaged letter suggests omega rather than omicron</p><p>ll. 13-15, perhaps around 28 letters are lost at either end; thus it is impossible to tell whether the persons named in l.13 were buried already (requiring <foreign lang="grc">κεκήδευνται</foreign> at the beginning) or were listed as having a right to be buried there, as was certainly the case for some of those named in l.14 (requiring <foreign lang="grc">κηδευθήσονται</foreign>)</p><p>ll. 14-15, standard funerary arrangements were made, but the precise wording, as well as the distribution of letters between the lines is uncertain. The normal concluding account of the fine to be paid and of the file-copy of the text can never have been written unless on a base below the sarcophagus.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>a; [? The sarcophagus and the] plot [?on which ] the sarcophagus [?stands] and the part of the platform adjacent to it belong to Aurelia Tertulla, daughter of Dionysios, the son of Zenon, the son of Dionysios, who was third of the name from Apollonios. They were bought by her from Lucius Ant(onius) Hermas, son of Hermas, in the fifth stephanephorate of Claudia Paulina, eighth month. In the sarcophagus [there has been (or shall be) buried .. ? .. ?Tertul]la and Eutyches also called Tertullos, children of Apollodo[ros (or Apollodo[tus) .. ? .. and there shall be buried .. ? .. and those whom] the aforementioned wish; but no one else [shall have the right to bury anyone in it nor to remove anyone of those buried] in it, since whoever contravenes this is to be (considered) sacrilegious [ and accursed and a tomb-breaker].</p><p>b: <gap extent="unknown" reason="lost" unit="character"/> Markian[os  . . . ]kos <gap extent="unknown" reason="lost" unit="character"/></p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Aurelia Tertulla's funerary property was clearly part of a funerary area shared with others, so that she is unlikely to be of high social status. The family no doubt acquired Roman citizenship under the Edict of Caracalla, and the Greek form of genealogy may indicate that the inscription was drafted not too long after A.D. 212. The two persons in l. 13 who shared her personal name were probably her children and Apollodoros (<seg cert="low">Apollodotos</seg>) was therefore her husband. L. Antonius Hermas, from whom she bought the funerary property, should be connected with an élite family of Antonii but in what degree is not known. Claudia Paulina was certainly of an élite family, and held her first stephanephorate in A.D. 119 (see <xref type="inscription" n="1320" href="110412">11.412</xref>,  ll. 1, 3); her fifth tenure was clearly post mortem.</p>
-</div>
-<div type="history" n="locations" sample="complete" org="uniform">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Necropolis, West</rs>: in a pile of stones in a field just west of the west wall, north of the old road.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Findspot (1975)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record" sample="complete" org="uniform">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1975 &amp; 1989 (<rs type="siteNo">Walls 132</rs>).</p>
-</div>
-<div type="bibliography" sample="complete" org="uniform">
-<head>Bibliography</head>
-<p>(a) published by <bibl n="jmr2003">Isik and Reynolds, no. <biblScope>194</biblScope></bibl>; (b) unpublished.</p>
-</div><div type="figure" n="photographs" sample="complete" org="uniform">
-<head>Photographs</head>
-<p><figure href="73_Y_00"><figDesc>Face (1973)</figDesc></figure><figure href="75_F_10A"><figDesc>Face (1975)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 5, Ε<foreign xml:lang="grc">ΙΞΙΝ</foreign> lapis</p>
+            <p>l. 13, <foreign xml:lang="grc">Ἀπολλόδ<unclear reason="damage">ο</unclear>[τος</foreign> is also possible but what survives of the damaged letter suggests omega rather than omicron</p>
+            <p>ll. 13-15, perhaps around 28 letters are lost at either end; thus it is impossible to tell whether the persons named in l.13 were buried already (requiring <foreign xml:lang="grc">κεκήδευνται</foreign> at the beginning) or were listed as having a right to be buried there, as was certainly the case for some of those named in l.14 (requiring <foreign xml:lang="grc">κηδευθήσονται</foreign>)</p>
+            <p>ll. 14-15, standard funerary arrangements were made, but the precise wording, as well as the distribution of letters between the lines is uncertain. The normal concluding account of the fine to be paid and of the file-copy of the text can never have been written unless on a base below the sarcophagus.</p>
+         </div>
+         <div type="translation">
+            <p>a; [? The sarcophagus and the] plot [?on which ] the sarcophagus [?stands] and the part of the platform adjacent to it belong to Aurelia Tertulla, daughter of Dionysios, the son of Zenon, the son of Dionysios, who was third of the name from Apollonios. They were bought by her from Lucius Ant(onius) Hermas, son of Hermas, in the fifth stephanephorate of Claudia Paulina, eighth month. In the sarcophagus [there has been (or shall be) buried .. ? .. ?Tertul]la and Eutyches also called Tertullos, children of Apollodo[ros (or Apollodo[tus) .. ? .. and there shall be buried .. ? .. and those whom] the aforementioned wish; but no one else [shall have the right to bury anyone in it nor to remove anyone of those buried] in it, since whoever contravenes this is to be (considered) sacrilegious [ and accursed and a tomb-breaker].</p>
+            <p>b: <gap reason="lost" unit="character" extent="unknown"/> Markian[os  . . . ]kos <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>Aurelia Tertulla's funerary property was clearly part of a funerary area shared with others, so that she is unlikely to be of high social status. The family no doubt acquired Roman citizenship under the Edict of Caracalla, and the Greek form of genealogy may indicate that the inscription was drafted not too long after A.D. 212. The two persons in l. 13 who shared her personal name were probably her children and Apollodoros (<seg cert="low">Apollodotos</seg>) was therefore her husband. L. Antonius Hermas, from whom she bought the funerary property, should be connected with an élite family of Antonii but in what degree is not known. Claudia Paulina was certainly of an élite family, and held her first stephanephorate in A.D. 119 (see <ref type="inscription" n="1320" target="110412.xml"/>,  ll. 1, 3); her fifth tenure was clearly post mortem.</p>
+         </div>
+         <div type="bibliography" sample="complete" org="uniform">
+            <p>(a) published by <bibl n="jmr2003">Isik and Reynolds, no. <citedRange>194</citedRange>
+               </bibl>; (b) unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

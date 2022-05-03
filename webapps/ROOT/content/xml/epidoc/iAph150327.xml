@@ -1,87 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150327" n="iAph0690 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Second <rs type="textType">decree</rs> of the synod of athletes in honour of Kallikrates</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-17</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Fragment (<measure dim="height" unit="metre" type="length">0.22</measure> x <measure dim="width" unit="metre" type="length">0.36</measure> x <measure dim="depth" unit="metre" type="length">0.18</measure>) broken on all sides, from a block, perhaps part of a composite monument which bore another copy of the same text as <xref type="inscription" n="689" href="120719">12.719</xref></p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Second decree of the synod of athletes in honour of Kallikrates</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150327</idno>
+            <idno type="IAph2007">iAph150327</idno>
+            <idno type="JMR2004">iAph0690</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>70.217</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment (<height unit="metre">0.22</height> x <width unit="metre">0.36</width> x <depth unit="metre">0.18</depth>) broken on all sides, from a block, perhaps part of a composite monument which bore another copy of the same text as <ref type="inscription" n="689" target="120719.xml"/>
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face; the text must have been c. 2.20 in length.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Letters standard second-/third-century forms, <height unit="metre">0.015</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0117" notAfter="0138" evidence="reign">
+A.D. 117-138 (<rs type="criteria">reign</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Stray</rs>
+                  </provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-17" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_R_11A.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="δοκέω"><supplied reason="lost">ἔδοξεν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w>  <w lemma="ἱερός"><supplied reason="lost">ἱε</supplied>ρᾷ</w>  <w lemma="ξυστικός">ξυστικ<supplied reason="lost">ῇ</supplied></w>  <w lemma="περιπολιστικός"><supplied reason="lost">περιπολιστικῇ</supplied></w>  <w><supplied reason="lost">κτλ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="αὐτοκράτωρ"><supplied reason="lost">αὐ</supplied>τοκράτορα</w> <persName type="emperor"><w lemma="ξαεσαρ">Καίσαρα</w> <name nymRef="#Τραιανός">Τραιαν<supplied reason="lost">ὸν</supplied></name>  <name nymRef="#Ἁδριανός"><supplied reason="lost">Ἁδριανὸν</supplied></name></persName>  κτλ  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῷ</w> <w lemma="δῆμος">δήμῳ</w> <g ref="#stop"/> <w lemma="ἐπεί">ἐπεὶ</w> <persName type="attested"><name nymRef="#Καλλικράτης">Καλλι<supplied reason="lost">κράτης</supplied></name></persName>  κτλ  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><supplied reason="lost">-</supplied>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὰς</supplied></w>  <w lemma="ὁδός"><supplied reason="lost">ὁδοὺς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῆς</w> <w lemma="ἀρετή">ἀρετῆς</w> <w lemma="τρέπω">τραπεὶς</w> <w lemma="ἱδρώς">ἱ<unclear reason="damage">δ</unclear><supplied reason="lost">ρῶσι</supplied></w>  κτλ  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/>  <gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="οἰκουμένη"><supplied reason="lost">οἰκ</supplied>ουμένης</w>  <w lemma="γείνομαι">γείνετα<unclear reason="damage">ι</unclear></w>  <w lemma="διά"><supplied reason="lost">διά</supplied></w>  <w lemma="τε"><supplied reason="lost">τε</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="ὁλόκληρος"><supplied reason="lost">ὁλόκληρον</supplied></w>  κτλ  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ἅπας"><supplied reason="lost">ἅπαντας</supplied></w>  <w lemma="ἀρχαῖος"><supplied reason="lost">ἀρ</supplied>χαίους</w> <w lemma="θαυμάζω">ἐθαυμάσθη</w> <w lemma="ὁ"><unclear reason="damage">τ</unclear><supplied reason="lost">ὴν</supplied></w>  <w lemma="φύσις"><supplied reason="lost">φύσιν</supplied></w>  κτλ  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="7"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="πρός"><supplied reason="lost">πρὸς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <w lemma="ὑπερβάλλω">ὑπερβάλλον</w> <w lemma="ὁ">τῆς</w> <w lemma="δόξα">δ<supplied reason="lost">όξης</supplied></w>  <w lemma="ἑρπύζω"><supplied reason="lost">ἑρπύσας</supplied></w>  κτλ  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="8"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ἐγχειρίζω"><supplied reason="lost">ἐν</supplied>ειρείσας</w> <w lemma="εἰς">εἰς</w> <w lemma="μέρος">μέρη</w> <w lemma="ὁ">το<unclear reason="damage">ῦ</unclear></w>  <w lemma="σῶμα"><supplied reason="lost">σώματος</supplied></w>  κτλ  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="9"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="αἰτέω"><supplied reason="lost">αἰτήσα</supplied><unclear reason="damage">σθαι</unclear></w>  <w lemma="ὁ"><supplied reason="lost">τὴ</supplied><unclear reason="damage">ν</unclear></w>  <w lemma="Ἀφροδεισιεύς"><unclear reason="damage">Ἀφρο</unclear><supplied reason="lost">δεισιέων</supplied></w>  <w lemma="πόλις"><supplied reason="lost">πόλιν</supplied></w>  κτλ  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="9a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face; the text must have been c. 2.20 in length.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Letters standard second-/third-century forms, <measure dim="height" type="length" unit="metre">0.015</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0138" notBefore="0117" exact="both">A.D. 117-138</date> (<rs type="criteria">reign</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="δοκέω"><supplied reason="lost">ἔδοξεν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w>  <w lemma="ἱερός"><supplied reason="lost">ἱε</supplied>ρᾷ</w>  <w lemma="ξυστικός">ξυστικ<supplied reason="lost">ῇ</supplied></w>  <w lemma="περιπολιστικός"><supplied reason="lost">περιπολιστικῇ</supplied></w>  <w><supplied reason="lost">κτλ</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="αὐτοκράτωρ"><supplied reason="lost">αὐ</supplied>τοκράτορα</w> <persName type="emperor"><w lemma="ξαεσαρ">Καίσαρα</w> <name reg="Τραιανός">Τραιαν<supplied reason="lost">ὸν</supplied></name>  <name reg="Ἁδριανός"><supplied reason="lost">Ἁδριανὸν</supplied></name></persName>  κτλ  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῷ</w> <w lemma="δῆμος">δήμῳ</w> <g type="stop"/> <w lemma="ἐπεί">ἐπεὶ</w> <persName type="aphrodisian"><name reg="Καλλικράτης">Καλλι<supplied reason="lost">κράτης</supplied></name></persName>  κτλ  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4"/><supplied reason="lost">-</supplied>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὰς</supplied></w>  <w lemma="ὁδός"><supplied reason="lost">ὁδοὺς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῆς</w> <w lemma="ἀρετή">ἀρετῆς</w> <w lemma="τρέπω">τραπεὶς</w> <w lemma="ἱδρώς">ἱ<unclear reason="damage">δ</unclear><supplied reason="lost">ρῶσι</supplied></w>  κτλ  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="5"/>  <gap reason="lost" extent="unknown" unit="character"/>  <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="οἰκουμένη"><supplied reason="lost">οἰκ</supplied>ουμένης</w>  <w lemma="γείνομαι">γείνετα<unclear reason="damage">ι</unclear></w>  <w lemma="διά"><supplied reason="lost">διά</supplied></w>  <w lemma="τε"><supplied reason="lost">τε</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="ὁλόκληρος"><supplied reason="lost">ὁλόκληρον</supplied></w>  κτλ  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="6"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="ἅπας"><supplied reason="lost">ἅπαντας</supplied></w>  <w lemma="ἀρχαῖος"><supplied reason="lost">ἀρ</supplied>χαίους</w> <w lemma="θαυμάζω">ἐθαυμάσθη</w> <w lemma="ὁ"><unclear reason="damage">τ</unclear><supplied reason="lost">ὴν</supplied></w>  <w lemma="φύσις"><supplied reason="lost">φύσιν</supplied></w>  κτλ  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="7"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="πρός"><supplied reason="lost">πρὸς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <w lemma="ὑπερβάλλω">ὑπερβάλλον</w> <w lemma="ὁ">τῆς</w> <w lemma="δόξα">δ<supplied reason="lost">όξης</supplied></w>  <w lemma="ἑρπύζω"><supplied reason="lost">ἑρπύσας</supplied></w>  κτλ  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="8"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="ἐγχειρίζω"><supplied reason="lost">ἐν</supplied>ειρείσας</w> <w lemma="εἰς">εἰς</w> <w lemma="μέρος">μέρη</w> <w lemma="ὁ">το<unclear reason="damage">ῦ</unclear></w>  <w lemma="σῶμα"><supplied reason="lost">σώματος</supplied></w>  κτλ  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="9"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="αἰτέω"><supplied reason="lost">αἰτήσα</supplied><unclear reason="damage">σθαι</unclear></w>  <w lemma="ὁ"><supplied reason="lost">τὴ</supplied><unclear reason="damage">ν</unclear></w>  <w lemma="Ἀφροδεισιεύς"><unclear reason="damage">Ἀφρο</unclear><supplied reason="lost">δεισιέων</supplied></w>  <w lemma="πόλις"><supplied reason="lost">πόλιν</supplied></w>  κτλ  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="9a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>... </p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>For the restorations see <xref type="inscription" n="689" href="120719">12.719</xref>.</p>
-<p>- It was resolved by the] sacred xystic [travelling reverent august synod and the whole xystus under Herakles and the] emperor Caesar Traianus [Hadrianus Augustus, to send this decree to the most sacred Council and] the People of the Aphrodisians. Since Kalli[krates, son of Diogenes, from Aphrodisias, pancratiast, sacred victor, multiple victor, who from his earliest youth] having turned to the ways of virtue,[obtained by sweat and labour his noble reputation, and came to be ?admired by all men throughout] (5) the inhabited world [for the complete wisdom which he obtained by his labours; for, having excelled all the] ancients in his physique, he was admired [for his physique, and, taking care of his soul, he was congratulated on his conduct. On account of all these things malign Envy crept towards] his outstanding [reputation and, begrudging our common good, removed it], bearing down on the part of the [body most useful to pancratiasts, the shoulders. For this reason it was resolved, with good fortune,] to request the city of the Aphrodisians [for suitable locations, etc.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See bibliography.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Stray</rs> </rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1977)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcriptions (Reynolds, Roueché).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p> </p>
-<p>Recorded by the NYU expedition, inventory no. <rs type="invNo">70.217</rs>.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from the NYU records, <bibl n="wankel">H. Wankel, <title>I. Eph</title>. Ia, no. 11</bibl>. Published by <bibl n="PPA">Roueché, PPA <biblScope>90</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p> <figure href="77_R_11A"><figDesc>Face (1977)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>... </p>
+         </div>
+         <div type="translation">
+            <p>For the restorations see <ref type="inscription" n="689" target="120719.xml"/>.</p>
+            <p>- It was resolved by the] sacred xystic [travelling reverent august synod and the whole xystus under Herakles and the] emperor Caesar Traianus [Hadrianus Augustus, to send this decree to the most sacred Council and] the People of the Aphrodisians. Since Kalli[krates, son of Diogenes, from Aphrodisias, pancratiast, sacred victor, multiple victor, who from his earliest youth] having turned to the ways of virtue,[obtained by sweat and labour his noble reputation, and came to be ?admired by all men throughout] (5) the inhabited world [for the complete wisdom which he obtained by his labours; for, having excelled all the] ancients in his physique, he was admired [for his physique, and, taking care of his soul, he was congratulated on his conduct. On account of all these things malign Envy crept towards] his outstanding [reputation and, begrudging our common good, removed it], bearing down on the part of the [body most useful to pancratiasts, the shoulders. For this reason it was resolved, with good fortune,] to request the city of the Aphrodisians [for suitable locations, etc.</p>
+         </div>
+         <div type="commentary">
+            <p>See bibliography.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from the NYU records, <bibl n="wankel">H. Wankel, <title>I. Eph</title>. Ia, no. 11</bibl>. Published by <bibl n="PPA">Roueché, PPA <citedRange>90</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

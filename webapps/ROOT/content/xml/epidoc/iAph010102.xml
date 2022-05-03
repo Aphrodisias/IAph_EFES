@@ -1,140 +1,214 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010102" n="iAph1278 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building dedication</rs> to the Divine Augustus by Eusebes son of Menandros</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor> <date>1980</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1980">Reynolds (<date>1980</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-30</date><respStmt><name>cmr</name></respStmt><item>DONE273</item></change><change><date>2007-01-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building dedication to the Divine Augustus by Eusebes son of Menandros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010102</idno>
+            <idno type="IAph2007">iAph010102</idno>
+            <idno type="JMR2004">iAph1278</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three fragments (one lost) from a <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> block cornice or lintel; a broken at both sides (<width unit="metre">0.49</width> × <height unit="metre">0.36</height> × <depth unit="metre">0.25</depth>); b: no measurements; c: (<width unit="metre">0.75</width> × <height unit="metre">0.38</height> × <depth unit="metre">0.75</depth>) right edge, which is the end of the cornice, survives</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on two fasciae</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.05</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0027"
+                               notAfter="0068"
+                               precision="medium"
+                               evidence="content lettering">
+Julio-Claudian
+(<rs type="criteria">content</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>: b and c: 'Non procul a Veneris templo haec fragmenta colligebantur litteris majusculis' (Picenini)</provenance>
+                  <provenance type="observed">a and c in the Temple; b not found again.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); Sherard papers; Gaudin's squeeze; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-30" who="cmr">DONE273</change>
+         <change when="2007-01-30" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_J_23A.jpg">
+            <desc>Fragment a (1976)</desc>
+         </graphic>
+         <graphic url="76_G_00.jpg">
+            <desc>Fragment c (1976)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Three fragments (one lost) from a <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> block cornice or lintel; a broken at both sides (<measure type="length" unit="metre" dim="width">0.49</measure> × <measure type="length" unit="metre" dim="height">0.36</measure> × <measure type="length" unit="metre" dim="depth">0.25</measure>); b: no measurements; c: (<measure type="length" unit="metre" dim="width">0.75</measure> × <measure type="length" unit="metre" dim="height">0.38</measure> × <measure type="length" unit="metre" dim="depth">0.75</measure>) right edge, which is the end of the cornice, survives</p>
-</div><div n="text" type="description"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on two fasciae</p></div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.05</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="-0027" notAfter="0068" exact="none">Julio-Claudian</date>
-(<rs type="criteria">content</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="emperor" full="yes"><w lemma="αὐτοκράτωρ"><supplied reason="lost">Αὐ</supplied>τοκράτο<app type="previouslyread">
+<ab><lb n="1"/>  <persName type="emperor"><w lemma="αὐτοκράτωρ"><supplied reason="lost">Αὐ</supplied>τοκράτο<app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="2" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="2"/>
 </rdg>
 <rdg resp="previous"><unclear reason="damage">ρι</unclear>
 </rdg>
 </app></w> <w lemma="θεός"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="3" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="3"/>
 </rdg>
 <rdg resp="previous">θεῷ
 </rdg>
 </app></w> <w lemma="σεβαστός"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="7" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="7"/>
 </rdg>
 <rdg resp="previous">
 Σεβαστῷ</rdg>
-</app></w> <name reg="Καῖσαρ"><app type="previouslyread">
+</app></w> <name nymRef="#Καῖσαρ"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="7" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="7"/>
 </rdg>
 <rdg resp="previous">Καίσαρι
 </rdg>
 </app></name></persName>    <rs type="subject" key="paterpatriae"><w lemma="πατήρ"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="5" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="5"/>
 </rdg>
 <rdg resp="previous">πατρὶ
 </rdg>
-</app></w>  <w lemma="πατρίς">πατρίδο<unclear reason="damage">ς</unclear></w></rs><lb n="2"/><persName type="aphrodisian" full="yes"><name reg="Εὐσεβής"><supplied reason="lost">Εὐσ</supplied>εβὴς</name>  <space extent="1" unit="character" dim="horizontal"/>  <persName type="aphrodisian"><name reg="Μένανδρος"><app type="previouslyread">
+</app></w>  <w lemma="πατρίς">πατρίδο<unclear reason="damage">ς</unclear></w></rs><lb n="2"/><persName type="attested"><name nymRef="#Εὐσεβής"><supplied reason="lost">Εὐσ</supplied>εβὴς</name>  <space extent="1" unit="character" dim="horizontal"/>  <persName type="attested"><name nymRef="#Μένανδρος"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="9" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="9"/>
 </rdg>
 <rdg resp="previous">
 Μενάνδρου</rdg>
 </app></name></persName></persName> <w lemma="φιλόπατρις"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="10" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="10"/>
 </rdg>
 <rdg resp="previous">
 φιλόπατρις</rdg>
 </app></w> <w lemma="καί"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="3" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="3"/>
 </rdg>
 <rdg resp="previous">καὶ
 </rdg>
-</app></w> <persName type="aphrodisian" full="yes"><name reg="Εὔνικος"><app type="previouslyread">
+</app></w> <persName type="attested"><name nymRef="#Εὔνικος"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="7" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="7"/>
 </rdg>
 <rdg resp="previous">
 Εὔνικος</rdg>
 </app></name><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="1" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="1"/>
 </rdg>
-<rdg resp="previous"><g type="leaf"/>
+<rdg resp="previous"><g ref="#leaf"/>
 </rdg>
-</app>  <persName type="aphrodisian"><name reg="Μένανδρος">Μενάνδρου</name></persName></persName></ab>
+</app>  <persName type="attested"><name nymRef="#Μένανδρος">Μενάνδρου</name></persName></persName></ab>
 </div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); Sherard papers; Gaudin's squeeze; publications.</p>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>The letters seen only by Sherard are highlighted.</p><p>l. 1,  <foreign lang="grc">ΟΗΘΕΩ</foreign> Sherard. The final sigma was read by MAMA but not by Reinach.</p><p>l.2 Sherard showed a dotted line between ll. 1 and 2 (perhaps indicated the stepping of the fasciae), and a leaf after <foreign lang="grc">Εὔνικος</foreign>.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>To Imperator the god Augustus Caesar, <term lang="la">pater patriae</term>, Eusebes son of Menandros, (entitled) lover of his country, and Eunikos, son of Menandros (?gave this)</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The extensive re-use of material in the area of the Temple means that the findspot may not be significant. But see the discussion by <bibl n="jmr1990">Reynolds, 'Inscriptions and the Building of the Temple', , 38.</bibl></p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Temple/Church</rs>: b and c: 'Non procul a Veneris templo haec fragmenta colligebantur litteris majusculis' (Picenini)</rs>
-; <rs type="lastLocation">a and c in the Temple; b not found again.</rs>
-<rs type="origLocation">Unknown</rs></p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>b and c were copied in 1705 by Picenini (BM Add 10102, 20 and, from Tisser, 56v), whence Sherard (BM Add 10101 f.31) and ; a and c recorded by Gaudin (72, 73); c recorded by the MAMA expedition; a and c found by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>a and c published (from Gaudin) by <bibl type="primary" n="reinach"><author>Reinach</author>, <biblScope>192</biblScope> and <biblScope>191</biblScope></bibl>. B and c published by <bibl type="primary" n="CIGII"><author>Boeckh</author>, from Sherard, CIG <biblScope>2738</biblScope> and <biblScope>2773</biblScope></bibl>. C published, from the MAMA records by <bibl type="primary" n="MAMA8"><author>Cormack</author>, MAMA <biblScope>433</biblScope></bibl>; discussed by <bibl n="jmr1980">Reynolds, PCPS 206, 1980, 78, no. <biblScope>8</biblScope></bibl>, whence <bibl n="seg">SEG <biblScope>1980.1244</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="256972">94</biblScope></bibl>; </p><p>discussed by <bibl n="jmr1990"><author>Reynolds</author>, 'Inscriptions and the Building of the Temple', <title>Aphrodisias Papers </title>(Ann Arbor, 1990), 37-40, 38</bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="76_J_23A"><figDesc>Fragment a (1976)</figDesc></figure><figure href="76_G_00"><figDesc>Fragment c (1976)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>The letters seen only by Sherard are highlighted.</p>
+            <p>l. 1,  <foreign xml:lang="grc">ΟΗΘΕΩ</foreign> Sherard. The final sigma was read by MAMA but not by Reinach.</p>
+            <p>l.2 Sherard showed a dotted line between ll. 1 and 2 (perhaps indicated the stepping of the fasciae), and a leaf after <foreign xml:lang="grc">Εὔνικος</foreign>.</p>
+         </div>
+         <div type="translation">
+            <p>To Imperator the god Augustus Caesar, <term xml:lang="la">pater patriae</term>, Eusebes son of Menandros, (entitled) lover of his country, and Eunikos, son of Menandros (?gave this)</p>
+         </div>
+         <div type="commentary">
+            <p>The extensive re-use of material in the area of the Temple means that the findspot may not be significant. But see the discussion by <bibl n="jmr1990">Reynolds, 'Inscriptions and the Building of the Temple', , 38.</bibl>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>a and c published (from Gaudin) by <bibl type="primary" n="reinach">
+                  <author>Reinach</author>, <citedRange>192</citedRange> and <citedRange>191</citedRange>
+               </bibl>. B and c published by <bibl type="primary" n="CIGII">
+                  <author>Boeckh</author>, from Sherard, CIG <citedRange>2738</citedRange> and <citedRange>2773</citedRange>
+               </bibl>. C published, from the MAMA records by <bibl type="primary" n="MAMA8">
+                  <author>Cormack</author>, MAMA <citedRange>433</citedRange>
+               </bibl>; discussed by <bibl n="jmr1980">Reynolds, PCPS 206, 1980, 78, no. <citedRange>8</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1980.1244</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256972">94</citedRange>
+               </bibl>; </p>
+            <p>discussed by <bibl n="jmr1990">
+                  <author>Reynolds</author>, 'Inscriptions and the Building of the Temple', <title>Aphrodisias Papers </title>(Ann Arbor, 1990), 37-40, 38</bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,87 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050202" n="iAph1117 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Column dedication</rs> to Demos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Column dedication to Demos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050202</idno>
+            <idno type="IAph2007">iAph050202</idno>
+            <idno type="JMR2004">iAph1117</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment, broken at both sides, of a simple <material>white marble</material>
+                              <objectType>moulding</objectType> or <objectType cert="low">column base</objectType> (<width unit="metre">0.21</width> × <height unit="metre">0.135</height> × <depth unit="metre">0.175</depth>) with one simple fascia</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed in two lines on the fascia.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.028</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Hadrianic Baths, East Court</rs>
+                     </origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+Second to third centuries A.D. (<rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Hadrianic Baths, East Court</rs>: ; ' Portique O(uest), s(ud). 2e entrée à p(art) du N(ord)' (notebook A); Boulanger conjectured that it might be from the third base in the south section of the west portico (notebook B)</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-30" who="cmr">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="83_A_36.jpg">
+            <desc>Surviving part (1983)</desc>
+         </graphic>
+         <graphic url="Boulanger_A_78.jpg">
+            <desc>Boulanger A, 78</desc>
+         </graphic>
+         <graphic url="Boulanger_B_21.jpg">
+            <desc>Boulanger B, 21</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-30</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-
-<p>Fragment, broken at both sides, of a simple <rs type="material">white marble</rs> <rs type="objectType">moulding</rs> or <rs type="objectType" cert="low">column base</rs> (<measure type="length" unit="metre" dim="width">0.21</measure> × <measure type="length" unit="metre" dim="height">0.135</measure> × <measure type="length" unit="metre" dim="depth">0.175</measure>) with one simple fascia</p></div><div type="description" n="text"><head>Description of Text</head><p>Inscribed in two lines on the fascia.</p>
+<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied><app type="previouslyread"><rdg resp="previous"><unclear reason="damage">ν</unclear></rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app></w>  <w lemma="κίων"><app type="previouslyread"><rdg resp="previous">κει</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app>ονα</w>  <w lemma="ὗς">σῦ<app type="previouslyread"><rdg resp="previous">ν</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app></w>  <w lemma="ὁ">  <app type="previouslyread"><rdg resp="previous">τ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app><gap reason="lost" unit="character" extent="unknown"/></w><lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="ἀνατίθημι"><supplied reason="lost">ἀνέθ</supplied><app type="previouslyread"><rdg resp="previous">ηκεν</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app></w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">Δή<app type="previouslyread"><rdg resp="previous">μῳ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app></w>  <app type="previouslyread"><rdg resp="previous"><space extent="1" unit="character" dim="horizontal"/></rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="1"/></rdg></app>  <gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure type="length" unit="metre" dim="height">0.028</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><gap extent="unknown" dim="left" reason="lost" unit="character"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied><app type="previouslyread"><rdg resp="previous"><unclear reason="damage">ν</unclear></rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app></w>  <w lemma="κίων"><app type="previouslyread"><rdg resp="previous">κει</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app>ονα</w>  <w lemma="ὗς">σῦ<app type="previouslyread"><rdg resp="previous">ν</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app></w>  <w lemma="ὁ">  <app type="previouslyread"><rdg resp="previous">τ</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app><gap extent="unknown" dim="right" reason="lost" unit="character"/></w><lb n="2"/><gap extent="unknown" dim="left" reason="lost" unit="character"/><w lemma="ἀνατίθημι"><supplied reason="lost">ἀνέθ</supplied><app type="previouslyread"><rdg resp="previous">ηκεν</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app></w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">Δή<app type="previouslyread"><rdg resp="previous">μῳ</rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app></w>  <app type="previouslyread"><rdg resp="previous"><space extent="1" unit="character" dim="horizontal"/></rdg><rdg resp="autopsy"><gap extent="1" reason="lost" unit="character"/></rdg></app>  <gap extent="unknown" dim="right" reason="lost" unit="character"/></ab>
-</div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Letters highlighted were seen by Boulanger but not by us</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>. . . ] the column with [ . . .] dedicated to the People [ . . .</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of the column base dedications from west portico of the East Court of the Hadrianic Baths. From north section: <xref type="inscription" n="1114" href="050206">5.206</xref> (MiItal 8 i and ii), <xref type="inscription" n="1116" href="050201">5.201</xref> (=Haussoullier1), <xref type="iAph">1119</xref> (=Boulanger A 73, no.11); from the south section <xref type="iAph">1115</xref> (=Boulanger B, 21 no.28), ?<xref type="inscription" n="1117" href="050202">5.202</xref> (=Museum 154), ?<xref type="iAph">1120</xref> (=Museum 158); cf also <xref type="iAph">1118</xref> (=68.272)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation"><rs type="monuList">Hadrianic Baths, East Court</rs></rs>
-Found: <rs type="found"><rs type="monuList">Hadrianic Baths, East Court</rs>: ; ' Portique O(uest), s(ud). 2e entrée à p(art) du N(ord)' (notebook A); Boulanger conjectured that it might be from the third base in the south section of the west portico (notebook B)</rs>
-; Last known location: <rs type="lastLocation">Museum</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); publications.</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Found by Boulanger, 5 November 1913 (notebook A 78, 25, whence B.21, 28, C5, 6). Found by the NYU expedition among the old museum holdings, with an early museum inventory number (<rs type="siteNo">Museum 154</rs>).</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>
-<figure href="83_A_36"><figDesc>Surviving part (1983)</figDesc></figure>
-</p>
-</div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p>
-<figure href="Boulanger_A_78"><figDesc>Boulanger A, 78</figDesc></figure><figure href="Boulanger_B_21"><figDesc>Boulanger B, 21</figDesc></figure>
-</p>
-</div></body></text>
+         <div type="apparatus">
+            <p>Letters highlighted were seen by Boulanger but not by us</p>
+         </div>
+         <div type="translation">
+            <p>. . . ] the column with [ . . .] dedicated to the People [ . . .</p>
+         </div>
+         <div type="commentary">
+            <p>One of the column base dedications from west portico of the East Court of the Hadrianic Baths. From north section: <ref type="inscription" n="1114" target="050206.xml"/> (MiItal 8 i and ii), <ref type="inscription" n="1116" target="050201.xml"/> (=Haussoullier1), <ref type="iAph" target=".xml"/> (=Boulanger A 73, no.11); from the south section <ref type="iAph" target=".xml"/> (=Boulanger B, 21 no.28), ?<ref type="inscription" n="1117" target="050202.xml"/> (=Museum 154), ?<ref type="iAph" target=".xml"/> (=Museum 158); cf also <ref type="iAph" target=".xml"/> (=68.272)</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

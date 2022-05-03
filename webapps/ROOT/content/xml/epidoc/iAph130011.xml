@@ -1,97 +1,127 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130011" n="iAph0375 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><seg cert="low"><rs type="textType" reg="curse">Imprecation</rs></seg> formula from <rs type="textType" reg="funerary">funerary</rs> text</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Imprecation</seg> formula from funerary text</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130011</idno>
+            <idno type="IAph2007">iAph130011</idno>
+            <idno type="JMR2004">iAph0375</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>No description.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> No description.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.027</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering"> Second to third centuries A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North</rs>: '100 mètres au delà (Nord) de la porte ouest' (Gaudin)</provenance>
+                  <provenance type="observed" when="1904">Findspot (1904)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publication; Gaudin's squeeze (grey book 6v, red book 41v).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-07-27" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-07-27</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>No description.</p>
+<ab><lb n="0"/><supplied reason="lost"><note place="not  specified" xml:lang=""/> <w lemma="ἀποτίνω">ἀποτείσει</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸν</w> <w lemma="φίσκος">φίσκον</w></supplied>]  <lb n="1"/><gap reason="lost" unit="character" quantity="2"/>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <w lemma="κύριος">κυρίου</w>  <w lemma="αὐτοκράτωρ">α<supplied reason="lost">ὐτοκράτορος</supplied></w>  <w lemma="ἀργύριον"><supplied reason="lost">ἀργυρίου</supplied></w>  <w lemma="δηνάριον"><supplied reason="lost"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></supplied></w>                                        <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/><gap reason="lost" unit="character" quantity="3"/>  <w lemma="εἰμί">ὧν</w>  <w lemma="ὁ">τὸ</w>  <w lemma="τρίτος">τρίτο<supplied reason="lost">ν</supplied></w>  <supplied reason="lost"><w lemma="εἰμί">ἔσται</w>  <w lemma="ὁ">τοῦ</w>  <w lemma="ἐκδικέω">ἐγδικήσαντος</w></supplied>  <supplied reason="lost" cert="low"><w lemma="ὁ">ὁ</w> <w lemma="δέ">δὲ</w> <w lemma="παρά">παρὰ</w></supplied><lb n="3"/>  <w lemma="ὁ">τὸ</w>  <w lemma="μνημεῖον"><w lemma="μνημεῖον"><supplied reason="lost">μνη</supplied>μεῖον</w></w>  <w lemma="πλάτας">πλάτα<supplied reason="lost" cert="low">ς</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/><lb n="4"/><w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="ἐπιγραφή">ἐπιγραφῆς</w>  <w lemma="οὗτος">ταύ<unclear reason="damage">τ</unclear><supplied reason="lost">ης</supplied></w>  <supplied reason="lost"><w lemma="ἀποτίθημι">ἀπετέθη</w>  <w lemma="ἀντίγραφον">ἀντίγραφον</w>  <w lemma="εἰς">εἰς</w>  <w lemma="ὁ">τὸ</w>  <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w>  <w lemma="ἐπί">ἐπὶ</w>  <w lemma="στεφανηφόρος">στεφανηφόρου</w></supplied>  <gap reason="lost" unit="character" extent="unknown"/><lb n="5"/>  <w><gap reason="lost" unit="character" quantity="3"/>υ</w>  <persName type="attested"><name nymRef="#Ἀπολλώνιος">Ἀπολλωνί<supplied reason="lost">ου</supplied></name></persName>  <gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> No description.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.027</measure>.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p> <date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="0"/><supplied reason="lost"><note place="not  specified" anchored="yes">e.g.</note> <w lemma="ἀποτίνω">ἀποτείσει</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸν</w> <w lemma="φίσκος">φίσκον</w></supplied>]  <lb n="1"/><gap dim="left" extent="2" reason="lost" unit="character"/>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <w lemma="κύριος">κυρίου</w>  <w lemma="αὐτοκράτωρ">α<supplied reason="lost">ὐτοκράτορος</supplied></w>  <w lemma="ἀργύριον"><supplied reason="lost">ἀργυρίου</supplied></w>  <w lemma="δηνάριον"><supplied reason="lost"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></supplied></w>                                        <gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><gap dim="left" extent="3" reason="lost" unit="character"/>  <w lemma="εἰμί">ὧν</w>  <w lemma="ὁ">τὸ</w>  <w lemma="τρίτος">τρίτο<supplied reason="lost">ν</supplied></w>  <supplied reason="lost"><w lemma="εἰμί">ἔσται</w>  <w lemma="ὁ">τοῦ</w>  <w lemma="ἐκδικέω">ἐγδικήσαντος</w></supplied>  <supplied reason="lost" cert="low"><w lemma="ὁ">ὁ</w> <w lemma="δέ">δὲ</w> <w lemma="παρά">παρὰ</w></supplied><lb n="3"/>  <w lemma="ὁ">τὸ</w>  <w lemma="μνημεῖον"><w lemma="μνημεῖον"><supplied reason="lost">μνη</supplied>μεῖον</w></w>  <w lemma="πλάτας">πλάτα<supplied reason="lost" cert="low">ς</supplied></w>  <gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="4"/><w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="ἐπιγραφή">ἐπιγραφῆς</w>  <w lemma="οὗτος">ταύ<unclear reason="damage">τ</unclear><supplied reason="lost">ης</supplied></w>  <supplied reason="lost"><w lemma="ἀποτίθημι">ἀπετέθη</w>  <w lemma="ἀντίγραφον">ἀντίγραφον</w>  <w lemma="εἰς">εἰς</w>  <w lemma="ὁ">τὸ</w>  <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w>  <w lemma="ἐπί">ἐπὶ</w>  <w lemma="στεφανηφόρος">στεφανηφόρου</w></supplied>  <gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="5"/>  <w><gap dim="left" extent="3" reason="lost" unit="character"/>υ</w>  <persName type="aphrodisian" full="yes"><name reg="Ἀπολλώνιος">Ἀπολλωνί<supplied reason="lost">ου</supplied></name></persName>  <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab>
-</div>
-
-
-
-<div type="apparatus"><head>Apparatus</head><p>...</p></div><div type="translation">
-<head>Translation</head>
-<p>...</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>No commentary.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Necropolis, North</rs>: '100 mètres au delà (Nord) de la porte ouest' (Gaudin)</rs>.  <rs type="origLocation">Unknown</rs>. Last recorded: <rs type="lastLocation">Findspot (1904)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded    by Gaudin (127); not reported subsequently.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Gaudin's squeeze by <bibl n="reinach" type="primary">Reinach, REG 19, 1906, 287, no <biblScope>185</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257448">568</biblScope></bibl>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publication; Gaudin's squeeze (grey book 6v, red book 41v).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p>No photographs</p></div></body>
-</text>
-
+         <div type="apparatus">
+            <p>...</p>
+         </div>
+         <div type="translation">
+            <p>...</p>
+         </div>
+         <div type="commentary">
+            <p>No commentary.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Gaudin's squeeze by <bibl n="reinach" type="primary">Reinach, REG 19, 1906, 287, no <citedRange>185</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257448">568</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

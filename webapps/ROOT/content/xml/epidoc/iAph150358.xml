@@ -1,105 +1,141 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150358" n="iAph0237 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType" reg="funerary">Funerary</rs> inscription for Epiphanios, bull-rearer</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-		<language id="en">English</language>
-		<language id="fr">French</language>
-		<language id="de">German</language>
-		<language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-		<language id="el">Modern Greek</language>
-		
-		<language id="it">Italian</language>
-		<language id="la">Latin</language>
-		<language id="es">Spanish</language>
-		<language id="tr">Turkish</language>
-	  </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-09</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change><change><date>2003-06-02</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Tidied and regularised</item></change><change><date>2003-01-22</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Typed and tagged Greek</item></change><change>
-  <date>2003-09-03</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged, lemmatised and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A <rs type="material" key="marmor">white marble</rs> <rs type="objectType">panel</rs> (<measure type="length" unit="metre" dim="height">0.46</measure> × <measure type="length" unit="metre" dim="width">0.34</measure> × <measure type="length" unit="metre" dim="depth">0.13</measure>) with worn edges; only the right side survives intact. A groove has been cut in the back.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>Cut on the face.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>lunate, irregular, but carefully cut, av. <measure type="length" unit="metre" dim="height">0.03</measure>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p>Probably <date exact="none" cert="low" notBefore="0401" notAfter="0600">fifth/sixth century</date> (<rs type="criteria">lettering</rs>).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for Epiphanios, bull-rearer</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150358</idno>
+            <idno type="IAph2007">iAph150358</idno>
+            <idno type="JMR2004">iAph0237</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material>
+                              <objectType>panel</objectType> (<height unit="metre">0.46</height> × <width unit="metre">0.34</width> × <depth unit="metre">0.13</depth>) with worn edges; only the right side survives intact. A groove has been cut in the back.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Cut on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>lunate, irregular, but carefully cut, av. <height unit="metre">0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering">Probably fifth/sixth century (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">Stray.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-09" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">Tidied and regularised</change>
+         <change when="2003-01-22" who="#GB">Typed and tagged Greek</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="89_C_05.jpg">
+            <desc>Face (1989)</desc>
+         </graphic>
+         <graphic url="HS_3605.jpg">
+            <desc>Face (2000)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<ab>
-		<lb n="1"/><g type="cross"/> <w lemma="ἐνθάδε">ἐνθάδε</w> <w lemma="κατάκειμαι"><orig reg="κατάκειται">κα
-		<lb n="2" type="worddiv"/>τάκιτε</orig></w> <persName key="epiphanios1" reg="Ἐπιφάνιος" type="aphrodisian" full="yes"><name reg="Ἐπιφάνιος">Ἐπι
-		<lb n="3" type="worddiv"/>φάνις</name></persName> <rs type="profession" key="taurotrophos"><w lemma="ταυρωτρόφος">ταυρ
-		<lb n="4" type="worddiv"/>ωτρόφος</w></rs>
+		<lb n="1"/><g ref="#cross"/> <w lemma="ἐνθάδε">ἐνθάδε</w> <w lemma="κατάκειμαι"><orig reg="κατάκειται">κα
+		<lb n="2" break="no"/>τάκιτε</orig></w> <persName key="epiphanios1" nymRef="#Ἐπιφάνιος" type="attested"><name nymRef="#Ἐπιφάνιος">Ἐπι
+		<lb n="3" break="no"/>φάνις</name></persName> <rs type="profession" key="taurotrophos"><w lemma="ταυρωτρόφος">ταυρ
+		<lb n="4" break="no"/>ωτρόφος</w></rs>
 		</ab>
 	  </div>
-
-	  <div type="translation">
-        <head>Translation</head>
-        <ab>Here lies Epiphani<supplied reason="omitted">o</supplied>s, bull-rearer</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="IX.40">IX.40</xref>, and for the phrasing, <xref type="eAla-text" n="IX.39">IX.39</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found">Stray.</rs>. Original location: <rs type="origLocation">Unknown.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU expedition in 1989.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" rend="primary" n="PPA"><author>Roueché</author>, <title level="m" type="abbreviated">PPA</title> <biblScope>44</biblScope></bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi"><author>Roueché</author> (2004), <biblScope>237</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-            <head>Photographs</head>
-			<p><figure href="89_C_05"><figDesc>Face (1989)</figDesc></figure><figure href="HS_3605"><figDesc>Face (2000)</figDesc></figure></p></div>
-		 
-         
-
-      
-
-    </body>
-  </text>
+         <div type="translation">
+            <ab>Here lies Epiphani<supplied reason="omitted">o</supplied>s, bull-rearer</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="IX.40" target=".xml"/>, and for the phrasing, <ref type="eAla-text" n="IX.39" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" rend="primary" n="PPA">
+                  <author>Roueché</author>, <title level="m" type="abbreviated">PPA</title>
+                  <citedRange>44</citedRange>
+               </bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi">
+                  <author>Roueché</author> (2004), <citedRange>237</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,85 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120904" n="iAph0563 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Senatus Consultum</rs> de Aphrodisiensibus or Lex de Aphrodisiensibus</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1982</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr1982">Reynolds (<date>1982</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-04-02</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-03-15</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">Blue marble</rs> <rs type="objectType">panel</rs> fragment broken on all sides (<measure dim="width" type="length" unit="metre">0.12</measure> x <measure dim="height" type="length" unit="metre">0.12</measure> x <measure dim="depth" type="length" unit="metre">0.038</measure>) </p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>inscribed on the face</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>late Republican-Augustan; <measure type="length" unit="metre" dim="height">0.012</measure>
-</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="-0038" notBefore="-0039">39/38 B.C.</date> (<rs type="criteria">content</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/> <gap dim="top" extent="unknown" reason="lost" unit="line"/> <lb n="1"/><w lemma="καί"><supplied reason="lost">κ</supplied><unclear reason="damage">α</unclear>ὶ</w> <w lemma="ὁ">τ<unclear reason="damage">ὴ</unclear><supplied reason="lost">ν</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="2"/>  <gap dim="left" extent="unknown" reason="lost" unit="character"/> <w lemma="καλός"><supplied reason="lost">καλλί</supplied>στῳ</w> <w lemma="τε">τε</w> νόμ<supplied reason="lost">ῳ</supplied>  <gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="3"/><gap dim="left" extent="unknown" reason="lost" unit="character"/> <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w> <w lemma="δῆμος"><supplied reason="lost">δή</supplied>μου</w> <w lemma="ὁ">τοῦ</w> <placeName type="ethnic" reg="Ῥωμαῖος">Ῥω<supplied reason="lost">μαίων</supplied></placeName>  <gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="4"/> <gap dim="left" extent="unknown" reason="lost" unit="character"/> <w lemma="τέμενος"><supplied reason="lost">τέμεν</supplied>ος</w>  <w lemma="ἄσυλος">ἄσυλο<supplied reason="lost">ν</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="5"/> <gap dim="left" extent="unknown" reason="lost" unit="character"/> <w lemma="πολίτης"><supplied reason="lost">πο</supplied>λεῖται</w> <w lemma="ὁ">ο<supplied reason="lost">ἱ</supplied></w> <placeName type="ethnic" reg="Πλαρασεύς"><supplied reason="lost">Πλαρασέων</supplied></placeName> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <placeName type="ethnic" reg="Ἀφροδεισιεύς"><supplied reason="lost">Ἀφροδεισιέων</supplied></placeName> <gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="5a"/> <gap dim="bottom" extent="unknown" reason="lost" unit="character"/></ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Senatus Consultum de Aphrodisiensibus or Lex de Aphrodisiensibus</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120904</idno>
+            <idno type="IAph2007">iAph120904</idno>
+            <idno type="JMR2004">iAph0563</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>77.70</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Blue marble</material>
+                              <objectType>panel</objectType> fragment broken on all sides (<width unit="metre">0.12</width> x <height unit="metre">0.12</height> x <depth unit="metre">0.038</depth>) </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>inscribed on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>late Republican-Augustan; <height unit="metre">0.012</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>unknown</origPlace>
+                     <origDate notBefore="-0039" notAfter="-0038" evidence="content lettering">
+39/38 B.C. (<rs type="criteria">content</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, West</rs>: Lying loose on the eastern face of the western city wall, a little south of the presumed location of <ref type="inscription" n="508" target="080027.xml"/>.</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-02" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-15" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_U_08.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="77_U_09.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p><gap extent="unknown" reason="lost" unit="character"/> and the <gap extent="unknown" reason="lost" unit="character"/>most correct law <gap extent="unknown" reason="lost" unit="character"/> the Roman people [ . . . precinct] asy;um <gap extent="unknown" reason="lost" unit="character"/>citizens <gap extent="unknown" reason="lost" unit="character"/></p>
+<ab><lb n="0"/> <gap reason="lost" unit="line" extent="unknown"/> <lb n="1"/><w lemma="καί"><supplied reason="lost">κ</supplied><unclear reason="damage">α</unclear>ὶ</w> <w lemma="ὁ">τ<unclear reason="damage">ὴ</unclear><supplied reason="lost">ν</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/>  <gap reason="lost" unit="character" extent="unknown"/> <w lemma="καλός"><supplied reason="lost">καλλί</supplied>στῳ</w> <w lemma="τε">τε</w> νόμ<supplied reason="lost">ῳ</supplied>  <gap reason="lost" unit="character" extent="unknown"/><lb n="3"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w> <w lemma="δῆμος"><supplied reason="lost">δή</supplied>μου</w> <w lemma="ὁ">τοῦ</w> <placeName nymRef="#Ῥωμαῖος">Ῥω<supplied reason="lost">μαίων</supplied></placeName>  <gap reason="lost" unit="character" extent="unknown"/><lb n="4"/> <gap reason="lost" unit="character" extent="unknown"/> <w lemma="τέμενος"><supplied reason="lost">τέμεν</supplied>ος</w>  <w lemma="ἄσυλος">ἄσυλο<supplied reason="lost">ν</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/><lb n="5"/> <gap reason="lost" unit="character" extent="unknown"/> <w lemma="πολίτης"><supplied reason="lost">πο</supplied>λεῖται</w> <w lemma="ὁ">ο<supplied reason="lost">ἱ</supplied></w> <placeName nymRef="#Πλαρασεύς"><supplied reason="lost">Πλαρασέων</supplied></placeName> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <placeName nymRef="#Ἀφροδεισιεύς"><supplied reason="lost">Ἀφροδεισιέων</supplied></placeName> <gap reason="lost" unit="character" extent="unknown"/><lb n="5a"/> <gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Part of a contemporary copy of <xref type="inscription" n="508" href="080027">8.27</xref>. See<title> Aphrodisias and Rome</title>, 92. </p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, West</rs>: Lying loose on the eastern face of the western city wall, a little south of the presumed location of <xref type="inscription" n="508" href="080027">8.27</xref>.</rs>
-<rs type="origLocation">unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1977 (<rs type="invNo">77.70</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="jmr1982">Reynolds, A&amp;R <biblScope>8a</biblScope></bibl> whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title>  <biblScope n="256951">73</biblScope>
-</bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_U_08"><figDesc>Face (1977)</figDesc></figure><figure href="77_U_09"><figDesc>Face (1977)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/> and the <gap reason="lost" unit="character" extent="unknown"/>most correct law <gap reason="lost" unit="character" extent="unknown"/> the Roman people [ . . . precinct] asy;um <gap reason="lost" unit="character" extent="unknown"/>citizens <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>Part of a contemporary copy of <ref type="inscription" n="508" target="080027.xml"/>. See<title> Aphrodisias and Rome</title>, 92. </p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="jmr1982">Reynolds, A&amp;R <citedRange>8a</citedRange>
+               </bibl> whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256951">73</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

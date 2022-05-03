@@ -1,181 +1,171 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120706" n="iAph1007 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">
-          <rs type="textType">
-            Honours</rs> for  Aristokles Molossos</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="de">German</language>
-        <language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+          
+            Honours for  Aristokles Molossos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120706</idno>
+            <idno type="IAph2007">iAph120706</idno>
+            <idno type="JMR2004">iAph1007</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType key="statue base">statue base</objectType> without moulding (<height unit="metre">0.545</height> × <width unit="metre">0.92</width> × depth not measurable); the block is broken across the lower face and the surface is badly weathered.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">
+Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.0225</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0034"
+                               notAfter="0067"
+                               precision="medium"
+                               evidence="prosopography"> 
+Mid-first century A.D. (<rs type="criteria">prosopography</rs>; but the lettering looks later)</origDate>
+                  </origin>
+                  <provenance type="found">reused, upside down, in the  <rs type="monuList">Walls, South (west part)</rs>, near <ref type="inscription" n="1525" target="120801.xml"/> (=MAMA 532) </provenance>
+                  <provenance type="observed" when="1973">Findspot (1973)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation> Preliminary transcription (Reynolds), publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="&#xA;----------Charlotte-Tupman&#xA;--------">hand tidied</change>
+         <change when="2005-01-06" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_S_29.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-        <language id="grc-Latn">Transliterated Greek</language>
-        <language id="el">Modern Greek</language>
-        <language id="it">Italian</language>
-        <language id="la">Latin</language>
-        <language id="es">Spanish</language>
-        <language id="tr">Turkish</language>
-      </langUsage>
-      <textClass>
-        <keywords><term>
-            <geogName type="ancientRegion" key="Asia">Asia</geogName>
-          </term><term>
-            <geogName type="modernCountry" key="TR">Turkey</geogName>
-          </term><term>
-            <placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName>
-          </term><term>
-            <placeName type="modernFindspot" key="Geyre">Geyre</placeName>
-          </term></keywords>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change>
-        <date>2007-01-19</date>
-        <respStmt>
-          <name>Charlotte Tupman</name>
-        </respStmt>
-        <item>hand tidied</item>
-      </change>
-
-      <change>
-        <date>2005-01-06</date>
-        <respStmt>
-          <name>Gabriel Bodard</name>
-        </respStmt>
-        <item>transferred to XML</item>
-      </change>
-
-      <change>
-        <date>2004-11-18</date>
-        <respStmt>
-          <name>Gabriel Bodard</name>
-        </respStmt>
-        <item>Created dummy file</item>
-      </change>
-    </revisionDesc>
-  </teiHeader>
-
-  <text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType" reg="statue base">statue base</rs> without moulding (<measure type="length" unit="metre" dim="height">0.545</measure> × <measure type="length" unit="metre" dim="width">0.92</measure> × depth not measurable); the block is broken across the lower face and the surface is badly weathered.</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">
-Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure type="length" unit="metre" dim="height">0.0225</measure>.</p>
-</div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p> 
-<date exact="none" notBefore="0034" notAfter="0067" cert="low">Mid-first century A.D.</date> (<rs type="criteria">prosopography</rs>; but the lettering looks later)</p>
-</div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
 
 <ab><lb n="1"/>
-          <w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="τιμάω"><orig reg="ἐτίμησαν">ἐτείμη<lb n="2" type="worddiv"/>σαν</orig>
-          </w>  <w lemma="ὁ">ταῖς</w>  <w lemma="καλός">καλλίσταις</w>  <w lemma="καί">καὶ</w>  <w lemma="μέγας">με<lb n="3" type="worddiv"/>γίσταις</w>  <w lemma="τιμή"><orig reg="τιμαῖς">τει<unclear reason="damage">μ</unclear>
+          <w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="τιμάω"><orig reg="ἐτίμησαν">ἐτείμη<lb n="2" break="no"/>σαν</orig>
+          </w>  <w lemma="ὁ">ταῖς</w>  <w lemma="καλός">καλλίσταις</w>  <w lemma="καί">καὶ</w>  <w lemma="μέγας">με<lb n="3" break="no"/>γίσταις</w>  <w lemma="τιμή"><orig reg="τιμαῖς">τει<unclear reason="damage">μ</unclear>
               <supplied reason="lost">αῖ</supplied>ς</orig>
-          </w>  <w lemma="καί">καὶ</w>  <w lemma="μεταλλάζω">μετηλ<lb n="4" type="worddiv"/>λακχό<unclear rend="damage" reason="undefined">τ</unclear>
+          </w>  <w lemma="καί">καὶ</w>  <w lemma="μεταλλάζω">μετηλ<lb n="4" break="no"/>λακχό<unclear rend="damage" reason="undefined">τ</unclear>
             <supplied reason="lost">α</supplied>
-          </w>  <persName type="aphrodisian"><name reg="Ἀριστοκλῆς"><supplied reason="lost">Ἀ</supplied>ρισ<supplied reason="lost">τοκ</supplied>λέα</name>  <persName type="aphrodisian"><name reg="Ἀριστοκλῆς">Ἀρισ<lb n="5" type="worddiv"/>τοκλέο<supplied reason="lost">υς</supplied>
+          </w>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς"><supplied reason="lost">Ἀ</supplied>ρισ<supplied reason="lost">τοκ</supplied>λέα</name>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀρισ<lb n="5" break="no"/>τοκλέο<supplied reason="lost">υς</supplied>
               </name>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>
                 <unclear reason="damage">οῦ</unclear>
-              </w>  <persName type="aphrodisian"><name reg="Ἀρτεμίδωρος"><unclear reason="damage">Ἀρτ</unclear>εμιδώ<lb n="6" type="worddiv"/>ρου</name>
+              </w>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος"><unclear reason="damage">Ἀρτ</unclear>εμιδώ<lb n="6" break="no"/>ρου</name>
               </persName>
-            </persName>  <name reg="Μολοσσός">Μολ<unclear reason="damage">ο</unclear>
+            </persName>  <name nymRef="#Μολοσσός">Μολ<unclear reason="damage">ο</unclear>
               <supplied reason="lost">σσ</supplied>ὸν</name>
           </persName>  <w lemma="ἱππικός">ἱππικόν</w>  <lb n="7"/>
-          <w lemma="νεανίας">νεανίαν</w>  <w lemma="γίγνομαι">γενόμενον</w>  <w lemma="γένος">γέ<lb n="8" type="worddiv"/>νους</w>  <w lemma="ὁ">τοῦ</w>  <w lemma="πρῶτος">πρώτου</w>  <w lemma="καί">καὶ</w>  <w lemma="συνκτίζω">συν<lb n="9" type="worddiv"/>εκτικότος</w>  <w lemma="ὁ">τὴν</w>  <w lemma="πατρίς">πατρίδα</w>  <lb n="10"/>
+          <w lemma="νεανίας">νεανίαν</w>  <w lemma="γίγνομαι">γενόμενον</w>  <w lemma="γένος">γέ<lb n="8" break="no"/>νους</w>  <w lemma="ὁ">τοῦ</w>  <w lemma="πρῶτος">πρώτου</w>  <w lemma="καί">καὶ</w>  <w lemma="συνκτίζω">συν<lb n="9" break="no"/>εκτικότος</w>  <w lemma="ὁ">τὴν</w>  <w lemma="πατρίς">πατρίδα</w>  <lb n="10"/>
           <w lemma="καί">καὶ</w>  <w lemma="ἐν">ἐν</w>  <w lemma="γυμνασιαρχία">γυμνα<unclear reason="damage">σ</unclear>
             <supplied reason="lost">ι</supplied>αρχίαις</w>  <w lemma="καί">καὶ</w>  <lb n="11"/>
-          <w lemma="στεφανηφορία">στεφανηφορ<supplied reason="lost">ίαι</supplied>ς</w>  <w lemma="γίγνομαι">γεγονό<lb n="12" type="worddiv"/>τος</w>  <w lemma="ὁ">τὴν</w>  <w lemma="τιμή"><supplied reason="lost"><orig reg="τιμὴν">τειμὴν</orig>
+          <w lemma="στεφανηφορία">στεφανηφορ<supplied reason="lost">ίαι</supplied>ς</w>  <w lemma="γίγνομαι">γεγονό<lb n="12" break="no"/>τος</w>  <w lemma="ὁ">τὴν</w>  <w lemma="τιμή"><supplied reason="lost"><orig reg="τιμὴν">τειμὴν</orig>
             </supplied>
           </w>  <w lemma="ἀνατίθημι"><supplied reason="lost">ἀνα</supplied>
-            <unclear reason="damage">τ</unclear>ε<lb n="13" type="worddiv"/>
-            <unclear reason="damage">θεικυ</unclear>ία<supplied reason="lost">ς</supplied></w>  <persName type="aphrodisian"><name reg="Ἀμμία"><supplied reason="lost">Ἀμ</supplied>
-              <unclear reason="damage">μί</unclear>ας</name>  <w lemma="ὁ">τῆς</w>  <lb n="14"/>  <persName type="aphrodisian"><supplied reason="lost"><name reg="Ἀριστοκλῆς">Ἀριστοκλέους</name>
-              </supplied>  <w lemma="ὁ">τοῦ</w>  <persName type="aphrodisian"><name reg="Ἀρτεμίδωρος">Ἀρτεμι<lb n="15" type="worddiv"/>
+            <unclear reason="damage">τ</unclear>ε<lb n="13" break="no"/>
+            <unclear reason="damage">θεικυ</unclear>ία<supplied reason="lost">ς</supplied></w>  <persName type="attested"><name nymRef="#Ἀμμία"><supplied reason="lost">Ἀμ</supplied>
+              <unclear reason="damage">μί</unclear>ας</name>  <w lemma="ὁ">τῆς</w>  <lb n="14"/>  <persName type="attested"><supplied reason="lost"><name nymRef="#Ἀριστοκλῆς">Ἀριστοκλέους</name>
+              </supplied>  <w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος">Ἀρτεμι<lb n="15" break="no"/>
                   <supplied reason="lost">δ</supplied>
                   <unclear reason="damage">ώρ</unclear>ο<supplied reason="lost">υ</supplied>
                 </name>
               </persName>
             </persName>
           </persName>  <w lemma="γυνή"><supplied reason="lost">γυναικός</supplied>
-          </w>  <w lemma="ὁ">τῆς</w>  <w lemma="μήτηρ">μη<lb n="16" type="worddiv"/>
+          </w>  <w lemma="ὁ">τῆς</w>  <w lemma="μήτηρ">μη<lb n="16" break="no"/>
             <supplied reason="lost">τ</supplied>
-            <unclear reason="damage">ρ</unclear>ὸς</w>  <w lemma="αὐτός">αὐτοῦ</w>  <g type="leaf"/>
+            <unclear reason="damage">ρ</unclear>ὸς</w>  <w lemma="αὐτός">αὐτοῦ</w>  <g ref="#leaf"/>
         </ab>
       </div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p> Preliminary transcription (Reynolds), publications.</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>The council and the people honoured Aristokles Molossos, horseman, son of Aristokles the son of Artemidoros, also after his death, a young man of the foremost family and one which had shared in the foundation of his city, and participated in tenures of the gymnasiarchy and stephanephoria. Ammia, wife of Aristokles son of Artemidoros his mother set up the honour.</p>
-</div>
-
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-
-<p>No commentary yet (2007)</p>
-      </div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found">reused, upside down, in the  <rs type="monuList">Walls, South (west part)</rs>, near <xref type="inscription" n="1525" href="120801">12.801</xref> (=MAMA 532) </rs>;  <rs type="lastLocation" reg="findspot">Findspot (1973)</rs> <rs type="origLocation">Unknown</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Radet; by the MAMA expedition; and by the NYU expedition in 1973. On each occasion the stone had become more damaged.</p>
-</div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl><author>Radet</author>, <title level="j">BCH</title> 14 (1890), 236-237, no. <biblScope>11</biblScope>
-          </bibl>; from the MAMA records by <bibl n="MAMA8" rend="primary" type="hbi"><author>Cormack</author>, <title level="m">MAMA</title> 8, no. <biblScope>468</biblScope>
-          </bibl> whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257118">239</biblScope>
-          </bibl>
-        </p>
-</div>
-
-<div type="figure" n="photographs"><head>Photographs</head>
-        <p>
-          <figure href="73_S_29">
-            <figDesc>Face (1973)</figDesc>
-          </figure>
-        </p>
-      </div>
-
-
-
-</body>
-</text>
-
+         <div type="translation">
+            <p>The council and the people honoured Aristokles Molossos, horseman, son of Aristokles the son of Artemidoros, also after his death, a young man of the foremost family and one which had shared in the foundation of his city, and participated in tenures of the gymnasiarchy and stephanephoria. Ammia, wife of Aristokles son of Artemidoros his mother set up the honour.</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl>
+                  <author>Radet</author>, <title level="j">BCH</title> 14 (1890), 236-237, no. <citedRange>11</citedRange>
+               </bibl>; from the MAMA records by <bibl n="MAMA8" rend="primary" type="hbi">
+                  <author>Cormack</author>, <title level="m">MAMA</title> 8, no. <citedRange>468</citedRange>
+               </bibl> whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257118">239</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,65 +1,125 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120325" n="iAph1031 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for  M. Fl. Antonius Lysimachos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Posthumous honours for  M. Fl. Antonius Lysimachos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120325</idno>
+            <idno type="IAph2007">iAph120325</idno>
+            <idno type="JMR2004">iAph1031</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper part of a <material key="marmor">white marble</material>
+                              <objectType key="base">base</objectType> without moulding (<width unit="metre">0.48</width>   × <height unit="metre">0.42</height>   × <depth unit="metre">0.38</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face. The upper edge is complete; the text must have begun on a crowning feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.03-0.325</height>; <foreign xml:lang="grc">ΗΝ</foreign> in ligature, ll. 3, 7</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0181" notAfter="0300" evidence="contests">II-III, ?after 181 (<rs type="criteria">contests</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs>: re-used just north of the South-east Gate, on the inside, and north of <ref type="inscription" n="1308" target="120326.xml"/> (=MAMA 451)</provenance>
+                  <provenance type="observed" when="1975">Findspot (1975)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); publications; Sherard papers; Deering; Gaudin's squeeze.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Deering_02v.jpg">
+            <desc>Deering page 2v</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Upper part of a <rs type="material" key="marmor">white marble</rs> <rs type="objectType" reg="base">base</rs> without moulding (<measure type="length" unit="metre" dim="width">0.48</measure>   × <measure type="length" unit="metre" dim="height">0.42</measure>   × <measure type="length" unit="metre" dim="depth">0.38</measure>).</p>
-</div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face. The upper edge is complete; the text must have begun on a crowning feature.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.03-0.325</measure>; <foreign lang="grc">ΗΝ</foreign> in ligature, ll. 3, 7</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notBefore="0181" notAfter="0300">II-III, ?after 181</date> (<rs type="criteria">contests</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
 
 <ab>
  <lb n="0"/>
- <supplied reason="lost"><note>e.g.</note>
+ <supplied reason="lost"><note xml:lang=""/>
   <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w>
   <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="τιμάω">ἐτείμησεν</w></supplied>
  <lb n="1"/>
- <persName type="aphrodisian" full="yes"><name reg="Μᾶρκος"><expan><abbr><unclear reason="damage">Μ</unclear></abbr><supplied reason="abbreviation">ᾶρκον</supplied></expan></name>
-  <name reg="Φλάβιος"><expan><abbr>Φλ</abbr><supplied reason="abbreviation">άβιον</supplied></expan></name>
-  <name reg="Ἀντώνιος">Ἀντώνιον</name>
-  <lb n="2"/><name reg="Λυσίμαχος">Λυσίμαχον</name></persName>
- <w lemma="σοφιστής">σο<lb n="3" type="worddiv"/>φιστ<hi rend="ligature">ὴν</hi></w>
+ <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr><unclear reason="damage">Μ</unclear></abbr><ex>ᾶρκον</ex></expan></name>
+  <name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>άβιον</ex></expan></name>
+  <name nymRef="#Ἀντώνιος">Ἀντώνιον</name>
+  <lb n="2"/><name nymRef="#Λυσίμαχος">Λυσίμαχον</name></persName>
+ <w lemma="σοφιστής">σο<lb n="3" break="no"/>φιστ<hi rend="ligature">ὴν</hi></w>
  <w lemma="ἀρχιερεύς">ἀρχιερέα</w>  
  <lb n="4"/>
  <w lemma="γυμνασίαρχος">γυμνασίαρχον</w>  
@@ -67,7 +127,7 @@
  <w lemma="στεφανηφόρος">στεφανηφόρον</w>
  <lb n="6"/>
  <w lemma="νεοποιός">νεοποιὸν</w>  
- <w lemma="ἀγωνοθέτης">ἀγωνο<lb n="7" type="worddiv"/>θέτ<hi rend="ligature">ην</hi></w>
+ <w lemma="ἀγωνοθέτης">ἀγωνο<lb n="7" break="no"/>θέτ<hi rend="ligature">ην</hi></w>
  <w lemma="διά">δι'</w>  <w lemma="αἰών">αἰῶνος</w>  
  <lb n="8"/>
  <rs type="festival">
@@ -83,55 +143,39 @@
  <w lemma="ἀγωνοθεσία">ἀγωνοθεσίας</w>  
  <space extent="1" unit="character" dim="horizontal"/>
  <lb n="11"/>
- <persName type="aphrodisian" full="yes"><name reg="Μᾶρκος">Μάρ<unclear reason="damage">κ</unclear>ου</name>
-  <name reg="Ἀντώνιος">Ἀντωνίου</name>
+ <persName type="attested"><name nymRef="#Μᾶρκος">Μάρ<unclear reason="damage">κ</unclear>ου</name>
+  <name nymRef="#Ἀντώνιος">Ἀντωνίου</name>
   <lb n="12"/>
   <space extent="1" unit="character" dim="horizontal"/>
-  <name reg="Ἐπίνεικος">Ἐπινείκου</name></persName>
+  <name nymRef="#Ἐπίνεικος">Ἐπινείκου</name></persName>
  <space extent="1" unit="character" dim="horizontal"/></ab></div>
+         <div type="apparatus">
+            <p>l. 1, Η Sherard 1705, <foreign xml:lang="grc">ΤΙ</foreign> Picenini; <foreign xml:lang="grc">I</foreign> Sherard 1716; <foreign xml:lang="grc">Μ</foreign> added in pencil in Deering's copy.  Traces of two uprights now visible.</p>
+            <p>ll. 9-12 were read with some difficulty by Sherard, but more clearly by Deering; by 1904 they were lost.</p>
+            <p>l.11, At the beginning <foreign xml:lang="grc">ΚΑΙ</foreign> Picenini, <foreign xml:lang="grc">ΚΟΥ</foreign> Sherard 1705, <foreign xml:lang="grc">ΝΑΠΟΥ</foreign> 1716;  <foreign xml:lang="grc">ΜΑΡΧΟΥ</foreign> Deering.</p>
+         </div>
+         <div type="translation">
+            <p>
 
-
-
-<div type="apparatus"><head>Apparatus</head><p>l. 1, Η Sherard 1705, <foreign lang="grc">ΤΙ</foreign> Picenini; <foreign lang="grc">I</foreign> Sherard 1716; <foreign lang="grc">Μ</foreign> added in pencil in Deering's copy.  Traces of two uprights now visible.</p><p>ll. 9-12 were read with some difficulty by Sherard, but more clearly by Deering; by 1904 they were lost.</p><p>l.11, At the beginning <foreign lang="grc">ΚΑΙ</foreign> Picenini, <foreign lang="grc">ΚΟΥ</foreign> Sherard 1705, <foreign lang="grc">ΝΑΠΟΥ</foreign> 1716;  <foreign lang="grc">ΜΑΡΧΟΥ</foreign> Deering.</p></div><div type="translation">
-<head>Translation</head>
-<p>
-
-[? Public bodies honoured  ] M(arcus) Fl(avius) Antonius Lysimachos, sophistes, high priest, gymnasiarch, stephanephorus, neopoios, contest-president in perpetuity of the Lysimachean contests: in the year when Marcus Antonius Epineikos was contest-president.</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>This text is obviously later than the establishment of the contest, but not more precisely dateable. M. Fl. Antonius Lysimachos must have been closely connected with Flavius Lysimachos, the founder of the Lysimachea (<xref type="inscription" n="650" href="120538">12.538</xref> and <xref type="inscription" n="653" href="110021">11.21</xref>); he is also honoured in a fragmentary text, <xref type="inscription" n="1857" href="110513">11.513</xref> (=Reinach 63). The fact that Antonius Lysimachos is named as 'contest-president in perpetuity' (l.6) while the inscription also refers to a current contest-presidency (l.10-) implies that he had given money for a foundation to provide perpetual funding for the contest-presidency (see L. Robert, <title>Documents de l'Asie Mineure méridionale</title> (Paris, 1966), 83-5). Epineikos (a name not otherwise attested at Aphrodisias) was presumably carrying out the practical duties (compare <xref type="inscription" n="677" href="130616">13.616</xref>).</p><p>For this contest see Roueché PPA 174ff.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, East (south part)</rs>: re-used just north of the South-east Gate, on the inside, and north of <xref type="inscription" n="1308" href="120326">12.326</xref> (=MAMA 451)</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot (1975)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); publications; Sherard papers; Deering; Gaudin's squeeze.</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Copied in 1705 by Picenini (10102 18 and, from Tisser, 53v) whence Sherard (1010, 16) and in 1716 by Sherard (10101, 121); copied by Deering (f. 2v, no. 9); recorded by Gaudin (163); by the MAMA expedition; by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="CIGII">Boeckh, from Sherard, CIG <biblScope>2785</biblScope></bibl>, whence <bibl n="liermann1889">Liermann 116-117, no. <biblScope>20b</biblScope></bibl>; mentioned by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 134, no. <biblScope>64</biblScope></bibl>; published by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8, no. <biblScope>501</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257197">318</biblScope></bibl>; published by <bibl n="PPA">Roueché, PPA <biblScope>54</biblScope></bibl></p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>?</p></div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Deering_02v"><figDesc>Deering page 2v</figDesc></figure></p></div></body>
-</text>
-
+[? Public bodies honoured  ] M(arcus) Fl(avius) Antonius Lysimachos, sophistes, high priest, gymnasiarch, stephanephorus, neopoios, contest-president in perpetuity of the Lysimachean contests: in the year when Marcus Antonius Epineikos was contest-president.</p>
+         </div>
+         <div type="commentary">
+            <p>This text is obviously later than the establishment of the contest, but not more precisely dateable. M. Fl. Antonius Lysimachos must have been closely connected with Flavius Lysimachos, the founder of the Lysimachea (<ref type="inscription" n="650" target="120538.xml"/> and <ref type="inscription" n="653" target="110021.xml"/>); he is also honoured in a fragmentary text, <ref type="inscription" n="1857" target="110513.xml"/> (=Reinach 63). The fact that Antonius Lysimachos is named as 'contest-president in perpetuity' (l.6) while the inscription also refers to a current contest-presidency (l.10-) implies that he had given money for a foundation to provide perpetual funding for the contest-presidency (see L. Robert, <title>Documents de l'Asie Mineure méridionale</title> (Paris, 1966), 83-5). Epineikos (a name not otherwise attested at Aphrodisias) was presumably carrying out the practical duties (compare <ref type="inscription" n="677" target="130616.xml"/>).</p>
+            <p>For this contest see Roueché PPA 174ff.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="CIGII">Boeckh, from Sherard, CIG <citedRange>2785</citedRange>
+               </bibl>, whence <bibl n="liermann1889">Liermann 116-117, no. <citedRange>20b</citedRange>
+               </bibl>; mentioned by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 134, no. <citedRange>64</citedRange>
+               </bibl>; published by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8, no. <citedRange>501</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257197">318</citedRange>
+               </bibl>; published by <bibl n="PPA">Roueché, PPA <citedRange>54</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

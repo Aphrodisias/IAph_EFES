@@ -1,83 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph121014" n="iAph1135 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building inscription</rs>, by a man and wife</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building inscription, by a man and wife</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph121014</idno>
+            <idno type="IAph2007">iAph121014</idno>
+            <idno type="JMR2004">iAph1135</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> blocks (<height unit="metre">0.045</height>, <depth unit="metre">0.55-0.60</depth>); a, complete <width unit="metre">1.15</width> long; b, broken at right end <width unit="metre">1.47</width> long, c. ?complete. <width unit="metre">1.26</width> long</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in one line on the singe fascia,  <height unit="metre">0.14</height>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.07-0.09</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+Second to third centuries A.D. (<rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, West Gate</rs>: a. and b. reused adjacent to one another (b. to the right of a.), with the inscribed face inwards, to form a course, in the upper part of the West Gate</provenance>
+                  <provenance type="observed" when="2001">Findspot (2001)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; notebooks; Preliminary transcription (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="2001_A_18.jpg">
+            <desc>Stone a (2001)</desc>
+         </graphic>
+         <graphic url="2001_A_19.jpg">
+            <desc>Stone a (2001)</desc>
+         </graphic>
+         <graphic url="2001_A_17.jpg">
+            <desc>Stone b (2001)</desc>
+         </graphic>
+         <graphic url="K_V_12.jpg">
+            <desc>Kubitschek notebook, K.V.12</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Three <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> blocks (<measure type="length" unit="metre" dim="height">0.045</measure>, <measure type="length" unit="metre" dim="depth">0.55-0.60</measure>); a, complete <measure type="length" unit="metre" dim="width">1.15</measure> long; b, broken at right end <measure type="length" unit="metre" dim="width">1.47</measure> long, c. ?complete. <measure type="length" unit="metre" dim="width">1.26</measure> long</p>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">α</orig>  <w lemma="ὁ">τῇ</w>  <w lemma="γυνή">γυναικὶ</w>  <w lemma="ἐκ">ἐκ</w>  <w lemma="ὁ">τῶν</w>  <w>φιδίων</w>  <w lemma="κατασκευάζω">κατασκ<milestone unit="block" n="b"/>ευάσας</w>  <w lemma="ὁ">τὴν</w>  <w lemma="μεσημβρινός">μεση<supplied reason="lost">μβρινὴν</supplied></w>  <w lemma="στοά"><supplied reason="lost">στοαν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">το</supplied><milestone unit="block" n="c"/>ῦ</w>  <w lemma="γραμματοφυλάκιον">γραμματαφυλακ<supplied reason="lost">ίου</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> in one line on the singe fascia,  <measure dim="height" type="length" unit="metre">0.14</measure>.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.07-0.09</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none" cert="low">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">α</orig>  <w lemma="ὁ">τῇ</w>  <w lemma="γυνή">γυναικὶ</w>  <w lemma="ἐκ">ἐκ</w>  <w lemma="ὁ">τῶν</w>  <w>φιδίων</w>  <w lemma="κατασκευάζω">κατασκ<milestone unit="block" n="b"/>ευάσας</w>  <w lemma="ὁ">τὴν</w>  <w lemma="μεσημβρινός">μεση<supplied reason="lost">μβρινὴν</supplied></w>  <w lemma="στοά"><supplied reason="lost">στοαν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">το</supplied><milestone unit="block" n="c"/>ῦ</w>  <w lemma="γραμματοφυλάκιον">γραμματαφυλακ<supplied reason="lost">ίου</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/></ab>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p><gap reason="lost" extent="unknown" unit="character" dim="left"/> <supplied reason="lost">with so-and-so</supplied> his wife from his own resources having constructed the south <supplied reason="lost">stoa</supplied> of the archive <gap reason="lost" extent="unknown" unit="character" dim="right"/></p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The association of c with the other fragments, originally made by Robert, appears very likely.  It is very probable that these blocks come from the same building as <xref type="inscription" n="1028" href="121006">12.1006</xref> (=MAMA 498) (which was also reused in the construction of the West gate) and come from one of the buildings constructed by Jason Prabreus and his wife, Julia Paula.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, West Gate</rs>: a. and b. reused adjacent to one another (b. to the right of a.), with the inscribed face inwards, to form a course, in the upper part of the West Gate</rs>
-<rs type="origLocation">Unknown</rs>  <rs type="lastLocation">Findspot (2001)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; notebooks; Preliminary transcription (Reynolds, Roueché).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>c. recorded by Kubitschek and Reichel (K.V.12; Abklatsch 43); a. recorded by the MAMA expedition. All three. found by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>c. published from K&amp;R by <bibl n="cormack1964">Cormack, ABSA 59, 1964, 26, no. <biblScope>34</biblScope></bibl>;  b. published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <biblScope>498bis</biblScope></bibl>; the association of the two made by <bibl>Robert, AC 35, 1966, 391-394</bibl>, whence <bibl n="be">BE <biblScope>1967.548</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="256988">110</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>
-<figure href="2001_A_18"><figDesc>Stone a (2001)</figDesc></figure>
-<figure href="2001_A_19"><figDesc>Stone a (2001)</figDesc></figure><figure href="2001_A_17"><figDesc>Stone b (2001)</figDesc></figure>
-</p>
-</div><div type="figure" n="transcriptions"><head>Transcriptions</head><p><figure href="K_V_12"><figDesc>Kubitschek notebook, K.V.12</figDesc></figure></p></div></body></text>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost">with so-and-so</supplied> his wife from his own resources having constructed the south <supplied reason="lost">stoa</supplied> of the archive <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>The association of c with the other fragments, originally made by Robert, appears very likely.  It is very probable that these blocks come from the same building as <ref type="inscription" n="1028" target="121006.xml"/> (=MAMA 498) (which was also reused in the construction of the West gate) and come from one of the buildings constructed by Jason Prabreus and his wife, Julia Paula.</p>
+         </div>
+         <div type="bibliography">
+            <p>c. published from K&amp;R by <bibl n="cormack1964">Cormack, ABSA 59, 1964, 26, no. <citedRange>34</citedRange>
+               </bibl>;  b. published by <bibl n="MAMA8">Cormack, from the MAMA records, MAMA 8, no. <citedRange>498bis</citedRange>
+               </bibl>; the association of the two made by <bibl>Robert, AC 35, 1966, 391-394</bibl>, whence <bibl n="be">BE <citedRange>1967.548</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256988">110</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

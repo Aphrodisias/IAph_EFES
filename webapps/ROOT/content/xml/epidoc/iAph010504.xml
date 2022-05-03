@@ -1,107 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010504" n="iAph0152 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">i: Elements of a <rs type="textType">funerary</rs> formula; ii: <rs type="textType" reg="funerary">Epitaph</rs> of Biktorinos, <term lang="la">praefectus vehiculorum</term></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-06-02</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-29</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2004-02-27</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A <rs type="material" key="marmor">white marble</rs> <rs type="objectType">sarcophagus</rs> (<measure type="length" unit="metre" dim="height">0.30</measure> x <measure type="length" unit="metre" dim="width">1.80</measure>) from which
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>i: Elements of a funerary formula; ii: Epitaph of Biktorinos, <term xml:lang="la">praefectus vehiculorum</term>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010504</idno>
+            <idno type="IAph2007">iAph010504</idno>
+            <idno type="JMR2004">iAph0152</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material>
+                              <objectType>sarcophagus</objectType> (<height unit="metre">0.30</height> x <width unit="metre">1.80</width>) from which
 part of the front and of the lower sides has been carefully removed.
 It seems likely, but not certain, that this second inscription should
 be associated with the cutting away of the front, although it is
 difficult to envisage how the stone was then used - perhaps to support
 a coffin?</p>
-      </div>
-
-      <div n="text" type="description">
-        <head>Description of Text</head>
-        <p>i:  lines 1-2 on the lower part of the
-inscribed <term lang="la"><rs type="decoration">Tabella ansata</rs></term>, and in one line on the lower moulding.</p> <p>ii, published here, was cut along the upper edge of the back of the
-sarcophagus.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Standard forms, except for cursive <term>omega</term> and
-<term>sigma</term>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0333" exact="none" notBefore="0268">Late third/early fourth century</date> (titulature).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
-        <div type="textpart_section" n="i"><ab><lb n="0"/><gap extent="7" reason="lost" unit="character"/> <w lemma="ἀντίγραφον"><supplied reason="lost">ἀντίγ</supplied><lb n="1"/><supplied reason="lost">ρα</supplied>φον</w> <w lemma="ἀνατίθημι">ἀνετέθη</w> <w lemma="εἰς">εις</w>      <lb n="2"/><w lemma="βεκούλον">εις</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w><lb n="3"/><w lemma="στεφανηφόρος"><supplied reason="lost">στεφα</supplied>νηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="3">γ</num> <persName type="aphrodisian"><name reg="Ὑψικλῆς">Ὑψικλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name> <persName type="aphrodisian"><name reg="Νικότιμος">Νεικοτείμου</name> <name reg="Ἱέραξ">Ἱέρακος</name></persName></persName></persName> <w lemma="μείς">μηνὸς</w> <w lemma="Γορπιαῖος">Γορπιήου</w> <num value="9">θ</num>.</ab> 
-      </div><div type="textpart_section" n="ii"><ab><lb n="1"/><w lemma="ἐνθάδε">ἐνθάδε</w> <w lemma="κεῖμαι">κεῖτε</w> <persName key="victorinus1" type="aphrodisian" full="yes"><name reg="Βικτωρεῖνος">Βικτωρεῖνος</name></persName> <w lemma="ἀπό">ἀπὸ</w> <rs type="official-secul" key="protector"><w lemma="πρωτήκτορ">πρωτηκτόρων</w></rs> <rs type="official-secul" key="praefvehic"><w lemma="ἔπαρχος">ἔπαρχος</w> <space dim="horizontal"/><lb n="2"/><w lemma="βεκούλον">βεκούλων</w>.</rs></ab> 
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i:  lines 1-2 on the lower part of the
+inscribed <term xml:lang="la">
+                              <rs type="decoration">Tabella ansata</rs>
+                           </term>, and in one line on the lower moulding.ii, published here, was cut along the upper edge of the back of the
+sarcophagus.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard forms, except for cursive <term>omega</term> and
+<term>sigma</term>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0268" notAfter="0333" precision="medium">Late third/early fourth century (titulature).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Tetrapylon">Tetrapylon</rs>: in the Byzantine cemetery.</provenance>
+                  <provenance type="observed">On site.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-27" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-29" who="#CMR">tagged and corrected</change>
+         <change when="2003-06-02" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="85_J_13.jpg">
+            <desc>ii: Face (1985)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+        <div n="i" type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="character" quantity="7"/> <w lemma="ἀντίγραφον"><supplied reason="lost">ἀντίγ</supplied><lb n="1"/><supplied reason="lost">ρα</supplied>φον</w> <w lemma="ἀνατίθημι">ἀνετέθη</w> <w lemma="εἰς">εις</w>      <lb n="2"/><w lemma="βεκούλον">εις</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w><lb n="3"/><w lemma="στεφανηφόρος"><supplied reason="lost">στεφα</supplied>νηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="3">γ</num> <persName type="attested"><name nymRef="#Ὑψικλῆς">Ὑψικλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <persName type="attested"><name nymRef="#Νικότιμος">Νεικοτείμου</name> <name nymRef="#Ἱέραξ">Ἱέρακος</name></persName></persName></persName> <w lemma="μείς">μηνὸς</w> <w lemma="Γορπιαῖος">Γορπιήου</w> <num value="9">θ</num>.</ab> 
+      </div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><w lemma="ἐνθάδε">ἐνθάδε</w> <w lemma="κεῖμαι">κεῖτε</w> <persName key="victorinus1" type="attested"><name nymRef="#Βικτωρεῖνος">Βικτωρεῖνος</name></persName> <w lemma="ἀπό">ἀπὸ</w> <rs type="official-secul" key="protector"><w lemma="πρωτήκτορ">πρωτηκτόρων</w></rs> <rs type="official-secul" key="praefvehic"><w lemma="ἔπαρχος">ἔπαρχος</w> <space dim="horizontal"/><lb n="2"/><w lemma="βεκούλον">βεκούλων</w>.</rs></ab> 
       </div></div>
-
-      <div type="translation"><head>Translation</head><ab>i: [ . . . the copy ] was places in the Property archive when Hypsikles the son of Adrastos Neikotimos Hierax was stephanephoros for the third time, 9th day of the month Gorpieos.</ab><ab>ii: Here lies Biktorinos, former <term lang="la">protector</term>, <term lang="la">praefectus vehiculorum</term>.</ab></div><div type="commentary">
-        <head>Commentary</head>
-        <p>i:  a standard funerary text of the
-second century; for the stephanephoros see Name index.</p><p>ii: See discussion at <xref type="eAla-text" n="IX.12">IX.12</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p><rs type="found"><rs type="monuList" key="Tetrapylon">Tetrapylon</rs>: in the Byzantine cemetery.</rs><rs type="origLocation">Unknown.</rs>. <rs type="lastLocation">On site.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition in <date value="1984" notBefore="1984" notAfter="1984" exact="both">1984</date>.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias
-in Late Antiquity</title> no <biblScope>152</biblScope> and plate xxxv</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257394">516</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="85_J_13"><figDesc>ii: Face (1985)</figDesc></figure></p></div>
-
-    
-
-      
-
+         <div type="translation">
+            <ab>i: [ . . . the copy ] was places in the Property archive when Hypsikles the son of Adrastos Neikotimos Hierax was stephanephoros for the third time, 9th day of the month Gorpieos.</ab>
+            <ab>ii: Here lies Biktorinos, former <term xml:lang="la">protector</term>, <term xml:lang="la">praefectus vehiculorum</term>.</ab>
+         </div>
+         <div type="commentary">
+            <p>i:  a standard funerary text of the
+second century; for the stephanephoros see Name index.</p>
+            <p>ii: See discussion at <ref type="eAla-text" n="IX.12" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias
+in Late Antiquity</title> no <citedRange>152</citedRange> and plate xxxv</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257394">516</citedRange>
+               </bibl>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

@@ -1,74 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150240" n="iAph1216 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Votive</rs> offering to Asklepios</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-04-20</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Votive offering to Asklepios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150240</idno>
+            <idno type="IAph2007">iAph150240</idno>
+            <idno type="JMR2004">iAph1216</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>70.551</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Small <material key="marmor">white marble</material>
+                              <objectType>plaque</objectType>/<objectType>votive relief</objectType> (<width unit="metre">0.10</width> × <height unit="metre">0.08</height> × <depth unit="metre">0.03</depth>) with a relief of <rs type="decoration">two eyes</rs>. Perhaps cut down to left; broken away at right.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face, below the eyes.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No measurements; square sigma.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering">
+Perhaps first century A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Stray</rs> find</provenance>
+                  <provenance type="observed" when="1980">Museum, on display (1980)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-20" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="80_G_08.jpg">
+            <desc>Face (1980)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Small <rs type="material" key="marmor">white marble</rs> <rs type="objectType">plaque</rs>/<rs type="objectType">votive relief</rs> (<measure type="length" unit="metre" dim="width">0.10</measure> × <measure type="length" unit="metre" dim="height">0.08</measure> × <measure type="length" unit="metre" dim="depth">0.03</measure>) with a relief of <rs type="decoration">two eyes</rs>. Perhaps cut down to left; broken away at right.</p>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" quantity="3"/>    <persName type="attested"><name nymRef="#Ἐλευθέριος">Ἐλευθερ<supplied reason="lost">ίος</supplied></name></persName><lb n="2"/><w lemma="θεός"><supplied reason="lost">θε</supplied>ῷ</w>  <persName type="divine"><name nymRef="#Ἀσκλήπιος">Ἀσκλ<unclear reason="damage">η</unclear><supplied reason="lost">πίῳ</supplied></name></persName><lb n="3"/><supplied reason="lost"><space unit="character" extent="2" id="space3" dim="horizontal"/><certainty target="space3" locus="#gi" degree="low"/></supplied>  <space unit="character" extent="2" dim="horizontal"/>    <w lemma="εὐχή">εὐχ<supplied reason="lost">ὴν</supplied></w>  <space unit="character" extent="2" dim="horizontal"/></ab>
 </div>
-<div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the face, below the eyes.</p></div><div type="description" n="letters">
-<head>Letters</head>
-<p>No measurements; square sigma.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-Perhaps <date notBefore="0001" notAfter="0100" exact="none">first century A.D.</date> (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="3" unit="character"/>    <persName type="aphrodisian" full="yes"><name reg="Ἐλευθέριος">Ἐλευθερ<supplied reason="lost">ίος</supplied></name></persName><lb n="2"/><w lemma="θεός"><supplied reason="lost">θε</supplied>ῷ</w>  <persName type="divine" full="yes"><name reg="Ἀσκλήπιος">Ἀσκλ<unclear reason="damage">η</unclear><supplied reason="lost">πίῳ</supplied></name></persName><lb n="3"/><supplied reason="lost"><space unit="character" extent="2" id="space3" dim="horizontal"/><certainty target="space3" locus="#gi" degree="low"/></supplied>  <space unit="character" extent="2" dim="horizontal"/>    <w lemma="εὐχή">εὐχ<supplied reason="lost">ὴν</supplied></w>  <space unit="character" extent="2" dim="horizontal"/></ab>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p><gap extent="unknown" reason="lost" unit="character"/> Eleuther[ios] to the god Asklepios (in payment of) a vow.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of a group of votive offerings dedicated to Asclepius: three reliefs, <xref type="inscription" n="1214" href="050112">5.112</xref> (=63.568), <xref type="inscription" n="1215" href="050117">5.117</xref> (=63.570), <xref type="inscription" n="1216" href="150240">15.240</xref> (=70.551), and a base, <xref type="inscription" n="1224" href="040113">4.113</xref> (=90.26); the other three were found in or near the Baths of Hadrian.</p><p>Presumably the dedicator, whose gender is not clear, hoped for a cure for his/her eyes.  Several dedications to Asclepius have been found in or near the Hadrianic Baths where there may have been a cult-place in which this stone too could have originated.  All the dedications known are comparatively simple and suggest dedicators of no great wealth or status.  The dedicator's name may be feminine (Eleutheria) instead of the masculine supplied here, but while neither is at all common, the masculine is overall the commoner.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">Stray</rs> find</rs>
-;  <rs type="lastLocation">Museum, on display (1980)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Brought by a farmer to the NYU expedition in 1970 (<rs type="invNo">70.551</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="80_G_08"><figDesc>Face (1980)</figDesc></figure></p><p>?KTE</p>
-</div></body></text>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/> Eleuther[ios] to the god Asklepios (in payment of) a vow.</p>
+         </div>
+         <div type="commentary">
+            <p>One of a group of votive offerings dedicated to Asclepius: three reliefs, <ref type="inscription" n="1214" target="050112.xml"/> (=63.568), <ref type="inscription" n="1215" target="050117.xml"/> (=63.570), <ref type="inscription" n="1216" target="150240.xml"/> (=70.551), and a base, <ref type="inscription" n="1224" target="040113.xml"/> (=90.26); the other three were found in or near the Baths of Hadrian.</p>
+            <p>Presumably the dedicator, whose gender is not clear, hoped for a cure for his/her eyes.  Several dedications to Asclepius have been found in or near the Hadrianic Baths where there may have been a cult-place in which this stone too could have originated.  All the dedications known are comparatively simple and suggest dedicators of no great wealth or status.  The dedicator's name may be feminine (Eleutheria) instead of the masculine supplied here, but while neither is at all common, the masculine is overall the commoner.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

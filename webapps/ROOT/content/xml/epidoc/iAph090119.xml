@@ -1,76 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph090119" n="iAph1277 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Dedication</rs> for Hadrian Soter</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-04</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedication for Hadrian Soter</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph090119</idno>
+            <idno type="IAph2007">iAph090119</idno>
+            <idno type="JMR2004">iAph1277</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>81.98</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Right edge fragment from a <material key="marmor">white marble</material>
+                              <seg cert="low">
+                                 <objectType>altar</objectType> or <objectType>base</objectType>
+                              </seg> without side moulding, but with a decorative <rs type="decoration">swag</rs> in relief below (<width unit="metre">0.10</width> × <height unit="metre">0.22</height> × <depth unit="metre">0.09</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout/>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>elongated, <height unit="metre">0.03</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0128" notAfter="0138" evidence="Reign titulature">
+A.D. 129  - 138
+ (<rs type="criteria">Reign</rs>, <rs type="criteria">titulature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Sebasteion</rs>: NE Por., -1.20</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-04" who="cmr">DONE</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="81_B_32.jpg">
+            <desc>Face (1981)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Right edge fragment from a <rs type="material" key="marmor">white marble</rs> <seg cert="low"><rs type="objectType">altar</rs> or <rs type="objectType">base</rs></seg> without side moulding, but with a decorative <rs type="decoration">swag</rs> in relief below (<measure type="length" unit="metre" dim="width">0.10</measure> × <measure type="length" unit="metre" dim="height">0.22</measure> × <measure type="length" unit="metre" dim="depth">0.09</measure>).</p>
+<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/><lb n="1"/><persName type="emperor"><name nymRef="#Ἁδριανός"><supplied reason="lost">Ἁδριαν</supplied>ῷ</name><lb n="2"/>      <w lemma="σωτήρ"><supplied reason="lost">Σωτῆ</supplied>ρι</w><lb n="3"/>      <w lemma="Ὀκτωβρίων"><supplied reason="lost">Ὀλυμ</supplied>πίῳ</w></persName><lb n="3a"/>                <gap reason="lost" unit="character" extent="unknown"/><space extent="3" unit="character" dim="horizontal"/></ab>
 </div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>elongated, <measure dim="height" type="length" unit="metre">0.03</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0128" notAfter="0138" exact="both">A.D. 129  - 138</date>
- (<rs type="criteria">Reign</rs>, <rs type="criteria">titulature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/>  <gap dim="top" extent="unknown" reason="lost" unit="line"/><lb n="1"/><persName type="emperor"><name reg="Ἁδριανός"><supplied reason="lost">Ἁδριαν</supplied>ῷ</name><lb n="2"/>      <w lemma="σωτήρ"><supplied reason="lost">Σωτῆ</supplied>ρι</w><lb n="3"/>      <w lemma="Ὀκτωβρίων"><supplied reason="lost">Ὀλυμ</supplied>πίῳ</w></persName><lb n="3a"/>                <gap reason="lost" dim="left" extent="unknown" unit="character"/><space extent="3" unit="character" dim="horizontal"/></ab>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p>[For Hadrian] Saviour, Olympian</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The restoration seems likely, on the model of <xref type="inscription" n="1267" href="080708">8.708</xref> (74.73), <xref type="inscription" n="1266" href="080256">8.256</xref> (70.254).</p><p>The title Olympios is thought to follow from the dedication of the Olympieion at Athens in autumn 129.</p><p/>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
- <rs type="found"><rs type="monuList">Sebasteion</rs>: NE Por., -1.20</rs> <rs type="lastLocation">Museum</rs>
-<rs type="origLocation">Unknown</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1981 (<rs type="invNo">81.98</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p> <figure href="81_B_32"><figDesc>Face (1981)</figDesc></figure></p>
-<p>**NOT FOUND** 82.B.18</p>
-</div></body></text>
+         <div type="translation">
+            <p>[For Hadrian] Saviour, Olympian</p>
+         </div>
+         <div type="commentary">
+            <p>The restoration seems likely, on the model of <ref type="inscription" n="1267" target="080708.xml"/> (74.73), <ref type="inscription" n="1266" target="080256.xml"/> (70.254).</p>
+            <p>The title Olympios is thought to follow from the dedication of the Olympieion at Athens in autumn 129.</p>
+            <p/>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

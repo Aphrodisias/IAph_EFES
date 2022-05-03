@@ -1,102 +1,174 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120703" n="iAph1134 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Dedication</rs> of trapeza by Kallikrates son of Molossos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedication of trapeza by Kallikrates son of Molossos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120703</idno>
+            <idno type="IAph2007">iAph120703</idno>
+            <idno type="JMR2004">iAph1134</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A long low <material key="marmor">white marble</material>
+                              <objectType>block</objectType> (<width unit="metre">1.31</width> × <height unit="metre">0.27</height> × <depth unit="metre">0.70</depth>) with moulding above and below the face.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the moulding which is badly worn and flaking.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025-0.03</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="prosopography lettering">
+First to second centuries A.D.
+(<rs type="criteria">prosopography</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (west part)</rs>, near <ref type="inscription" n="1507" target="120704.xml"/> (=MAMA 412), <ref type="inscription" n="1006" target="120707.xml"/> (=467).</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds, Beard);  publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-30" who="cmr">DONE</change>
+         <change when="2007-01-24" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_L_01.jpg">
+            <desc>Face (1975)</desc>
+         </graphic>
+         <graphic url="K_V_01a.jpg">
+            <desc>Kubitschek notebook V, 1a</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-07-30</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change><change><date>2007-01-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-
-<p>A long low <rs type="material" key="marmor">white marble</rs> <rs type="objectType">block</rs> (<measure type="length" unit="metre" dim="width">1.31</measure> × <measure type="length" unit="metre" dim="height">0.27</measure> × <measure type="length" unit="metre" dim="depth">0.70</measure>) with moulding above and below the face.</p>
-</div>
-<div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the moulding which is badly worn and flaking.</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p> <measure dim="height" type="length" unit="metre">0.025-0.03</measure></p>
-
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date exact="none" notAfter="0200" notBefore="0001">First to second centuries A.D.</date>
-(<rs type="criteria">prosopography</rs>, <rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>          <persName type="divine" full="yes"><name>Ἡρακλεῖ</name></persName>  <w lemma="καί"><unclear reason="damage">κ</unclear><app type="previouslyread">
+<ab><lb n="1"/>          <persName type="divine"><name>Ἡρακλεῖ</name></persName>  <w lemma="καί"><unclear reason="damage">κ</unclear><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="2" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="2"/>
 </rdg>
 <rdg resp="previous">αὶ
 </rdg>
-</app></w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος"><supplied reason="lost">Δ</supplied>ή<unclear reason="damage">μ</unclear><supplied reason="lost">ῳ</supplied></w>  <space unit="character" dim="horizontal"/> <w lemma="ὁ">τὴν</w> <w lemma="τράπεζα"><unclear reason="damage">τ</unclear><supplied reason="lost">ρά</supplied><unclear reason="damage">πε</unclear>ζαν</w><lb n="2"/><persName type="aphrodisian" full="yes"><name reg="Καλλικράτης">Καλλικράτης</name>  <persName type="aphrodisian"><name reg="Μολοσσός"><app type="previouslyread">
+</app></w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος"><supplied reason="lost">Δ</supplied>ή<unclear reason="damage">μ</unclear><supplied reason="lost">ῳ</supplied></w>  <space unit="character" dim="horizontal"/> <w lemma="ὁ">τὴν</w> <w lemma="τράπεζα"><unclear reason="damage">τ</unclear><supplied reason="lost">ρά</supplied><unclear reason="damage">πε</unclear>ζαν</w><lb n="2"/><persName type="attested"><name nymRef="#Καλλικράτης">Καλλικράτης</name>  <persName type="attested"><name nymRef="#Μολοσσός"><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="1" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="1"/>
 </rdg>
 <rdg resp="previous">
 Μ</rdg>
 </app>ολο<supplied reason="lost">σσοῦ</supplied></name></persName></persName>  <w lemma="ἱερεύς"><supplied reason="lost">ἱε</supplied><unclear reason="damage">ρε</unclear>ὺ<supplied reason="lost">ς</supplied></w>  <persName type="divine"><name>Μηνὸς<lb n="3"/><app type="previouslyread">
 <rdg resp="autopsy">
-<gap extent="1" reason="lost" unit="character"/>
+<gap reason="lost" unit="character" quantity="1"/>
 </rdg>
 <rdg resp="previous">Ἀ
 </rdg>
-</app><supplied reason="lost">σκ</supplied><unclear reason="damage">αιν</unclear>οῦ</name></persName> <w lemma="καί">καὶ</w> <persName type="divine" full="yes"><name reg="Ἑρμῆς">Ἑ<unclear reason="damage">ρμ</unclear>οῦ  </name><w lemma="ἀγοραῖος"><supplied reason="lost">Ἀγο</supplied>ραίου</w></persName></ab>
+</app><supplied reason="lost">σκ</supplied><unclear reason="damage">αιν</unclear>οῦ</name></persName> <w lemma="καί">καὶ</w> <persName type="divine"><name nymRef="#Ἑρμῆς">Ἑ<unclear reason="damage">ρμ</unclear>οῦ  </name><w lemma="ἀγοραῖος"><supplied reason="lost">Ἀγο</supplied>ραίου</w></persName></ab>
 </div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>Letters seen by MAMA but not by us are highlighted.</p><p>l. 1, <foreign lang="grc"><supplied reason="lost">δή</supplied><unclear reason="damage">μ</unclear><supplied reason="lost">ῳ</supplied></foreign> MAMA;  <foreign lang="grc"><supplied reason="lost">τ</supplied><unclear reason="damage">ὴ</unclear>ν</foreign> MAMA;   <foreign lang="grc"><supplied reason="lost">τρά</supplied><unclear reason="damage">πε</unclear>ζαν</foreign> MAMA</p><p>l. 2, <foreign lang="grc"><supplied reason="lost">ἱε</supplied><unclear reason="damage">ρε</unclear><supplied reason="lost">ὺς</supplied></foreign> MAMA</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>For Herakles and the People, the table: Kallikrates son of Molossos priest of Men Askainos and Hermes of the Agora.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>For the dedicator, see names index.</p>
-
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"> <rs type="monuList">Walls, South (west part)</rs>, near <xref type="inscription" n="1507" href="120704">12.704</xref> (=MAMA 412), <xref type="inscription" n="1006" href="120707">12.707</xref> (=467).</rs><rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, Beard);  publications.</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by K&amp;R (KV.facing 1); by the MAMA expedition in 1934; recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8. <biblScope>445</biblScope></bibl> whence <bibl>Lane, <title level="m">Berytus</title> 15, 1964, 27, no. 2</bibl>, <bibl>Lane, <title level="m">Corpus Mon. Dei Menis</title> I no. 119 (PH)</bibl>, <bibl n="seg">SEG <biblScope>1980.1245</biblScope></bibl>, <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257044">165</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>
-<figure href="75_L_01"><figDesc>Face (1975)</figDesc></figure>
-</p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="K_V_01a"><figDesc>Kubitschek notebook V, 1a</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>Letters seen by MAMA but not by us are highlighted.</p>
+            <p>l. 1, <foreign xml:lang="grc">
+                  <supplied reason="lost">δή</supplied>
+                  <unclear reason="damage">μ</unclear>
+                  <supplied reason="lost">ῳ</supplied>
+               </foreign> MAMA;  <foreign xml:lang="grc">
+                  <supplied reason="lost">τ</supplied>
+                  <unclear reason="damage">ὴ</unclear>ν</foreign> MAMA;   <foreign xml:lang="grc">
+                  <supplied reason="lost">τρά</supplied>
+                  <unclear reason="damage">πε</unclear>ζαν</foreign> MAMA</p>
+            <p>l. 2, <foreign xml:lang="grc">
+                  <supplied reason="lost">ἱε</supplied>
+                  <unclear reason="damage">ρε</unclear>
+                  <supplied reason="lost">ὺς</supplied>
+               </foreign> MAMA</p>
+         </div>
+         <div type="translation">
+            <p>For Herakles and the People, the table: Kallikrates son of Molossos priest of Men Askainos and Hermes of the Agora.</p>
+         </div>
+         <div type="commentary">
+            <p>For the dedicator, see names index.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8. <citedRange>445</citedRange>
+               </bibl> whence <bibl>Lane, <title level="m">Berytus</title> 15, 1964, 27, no. 2</bibl>, <bibl>Lane, <title level="m">Corpus Mon. Dei Menis</title> I no. 119 (PH)</bibl>, <bibl n="seg">SEG <citedRange>1980.1245</citedRange>
+               </bibl>, <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257044">165</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

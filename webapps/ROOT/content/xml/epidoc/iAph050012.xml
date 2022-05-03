@@ -1,116 +1,171 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph050012" n="iAph0233 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">i. <rs type="textType" reg="building inscription">Fragment of <rs type="textType">verse</rs></rs>. ii. <rs type="textType">Place inscription</rs> of Synodios</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change><change><date>2003-06-02</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Tidied and regularised</item></change><change><date>2002-11-01</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Typed and tagged Greek</item></change><change>
-  <date>2003-09-03</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged, lemmatised and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A <rs type="material" key="marmor">white marble</rs> <seg cert="low"><rs type="objectType">base capital</rs></seg> fragment, with moulding on three sides, smooth surface on fourth. Broken at one side. (<measure type="length" unit="metre" dim="height">0.35</measure> × <measure type="length" unit="metre" dim="width">0.49</measure> × <measure type="length" unit="metre" dim="depth">0.69</measure>).</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>i: Inscribed on the smooth face; ii: Inscribed upside down on lower moulding of central moulded side (so secondary use) opposite 233 (and the other way up).</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>i: Careful, ornate lettering.</p>
-		<p>ii: Letters very irregular, <measure type="length" unit="metre" dim="height">0.015</measure>–<measure type="length" unit="metre" dim="height">0.04</measure>. Cursive <term>delta</term>, lunate <term>sigma</term>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p>i: <date exact="none" cert="low" notBefore="0301" notAfter="0600">Fourth to sixth century</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">metre</rs>); ii; later than i.</p>
-      </div>
-
-      <div lang="grc" n="text" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>i. Fragment of verse. ii. Place inscription of Synodios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050012</idno>
+            <idno type="IAph2007">iAph050012</idno>
+            <idno type="JMR2004">iAph0233</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material>
+                              <seg cert="low">
+                                 <objectType>base capital</objectType>
+                              </seg> fragment, with moulding on three sides, smooth surface on fourth. Broken at one side. (<height unit="metre">0.35</height> × <width unit="metre">0.49</width> × <depth unit="metre">0.69</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i: Inscribed on the smooth face; ii: Inscribed upside down on lower moulding of central moulded side (so secondary use) opposite 233 (and the other way up).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i: Careful, ornate lettering.ii: Letters very irregular, <height unit="metre">0.015</height>–<height unit="metre">0.04</height>. Cursive <term>delta</term>, lunate <term>sigma</term>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList" key="HadrBath" cert="low">Hadrianic Baths</rs>.</origPlace>
+                     <origDate notBefore="0301"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering metre">i: Fourth to sixth century (<rs type="criteria">lettering</rs>, <rs type="criteria">metre</rs>); ii; later than i.</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="HadrBath">Hadrianic Baths</rs>: '<foreign xml:lang="fr">grande salle de l'al<ex>eipterion</ex>
+                     </foreign>' (Boulanger). Chamber at east side of the east court (NYU).</provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publication; notebook; transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">Tidied and regularised</change>
+         <change when="2002-11-01" who="#GB">Typed and tagged Greek</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="88_E_23A.jpg">
+            <desc>Back of block (1988)</desc>
+         </graphic>
+         <graphic url="88_E_22A.jpg">
+            <desc>233: Face (1988)</desc>
+         </graphic>
+         <graphic url="88_E_24A.jpg">
+            <desc>234: Face (1988)</desc>
+         </graphic>
+         <graphic url="Boulanger_A_67.jpg">
+            <desc>Transcription by Boulanger, notebook A, p.67</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		<div n="iAph0233" type="inscrNo">
 		<ab>
-		<lb n="1"/><gap dim="left" extent="9" unit="character" reason="lost"/> <w lemma="δύναμαι">δ<g type="cross"/>υναμ<unclear reason="damage">ε</unclear></w><gap dim="right" extent="5" unit="character" reason="lost"/>
-		<lb n="2"/><gap dim="left" extent="9" unit="character" reason="lost"/> <space dim="horizontal"/> <g type="cross"/> <orig n="unresolved">ατε</orig> <space dim="horizontal"/>
+		<lb n="1"/><gap unit="character" reason="lost" quantity="9"/> <w lemma="δύναμαι">δ<g ref="#cross"/>υναμ<unclear reason="damage">ε</unclear></w><gap unit="character" reason="lost" quantity="5"/>
+		<lb n="2"/><gap unit="character" reason="lost" quantity="9"/> <space dim="horizontal"/> <g ref="#cross"/> <orig n="unresolved">ατε</orig> <space dim="horizontal"/>
 		<lb n="3"/><space dim="vertical"/>
 		</ab>
 		</div>
 		<div n="iAph0234" type="inscrNo">
 		<ab>
-		<lb n="1"/><persName key="synodius1" type="aphrodisian" full="yes"><name reg="Συνόδιος">Συνοδίου</name></persName> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
+		<lb n="1"/><persName key="synodius1" type="attested"><name nymRef="#Συνόδιος">Συνοδίου</name></persName> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
 		</ab>
 		</div>
       </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-        <p>234: Boulanger read <foreign lang="grc">ΕΡΝΟΔΙΟΝ</foreign></p>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab n="233">233. <gap dim="left" reason="lost"/> <seg cert="low">with power</seg> <gap dim="right" reason="lost"/></ab>
-        <ab n="234">234. Place of Synodios.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>i: see discussion at <xref type="eAla-text" n="IV.37">IV.37</xref>.</p>
-        <p>ii: See discussion at <xref type="eAla-text" n="XI.10">XI.10</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="HadrBath">Hadrianic Baths</rs>: '<foreign lang="fr">grande salle de l'al<supplied reason="abbreviation">eipterion</supplied></foreign>' (Boulanger). Chamber at east side of the east court (NYU).</rs>. Original location: <rs type="origLocation"><rs type="monuList" key="HadrBath" cert="low">Hadrianic Baths</rs>.</rs>. Last recorded location: <rs type="lastLocation">Findspot.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>First found by <rs type="visitor" key="mendel">Mendel</rs>; recorded by <rs type="visitor" key="boulanger">Boulanger</rs>, <date value="1913" notBefore="1913" notAfter="1913" exact="both">15 October 1913</date> (notebook A, 67 no. 3, whence B, 3); recorded by the NYU expedition in <date value="1988" notBefore="1988" notAfter="1988" exact="both">September 1988</date>.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="IGC"><author>Grégoire</author> <title level="m">IGC</title> <biblScope>278</biblScope></bibl>, from Mendel, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257528">646</biblScope></bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi"><author>Roueché</author> (2004), <biblScope>233</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Publication; notebook; transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="88_E_23A"><figDesc>Back of block (1988)</figDesc></figure><figure href="88_E_22A"><figDesc>233: Face (1988)</figDesc></figure><figure href="88_E_24A"><figDesc>234: Face (1988)</figDesc></figure></p></div>
-
-    <div type="figure" n="transcriptions">
-        <head>Representations</head>
-        <p><figure href="Boulanger_A_67"><figDesc>Transcription by Boulanger, notebook A, p.67</figDesc></figure></p></div>
-
-    
-
-      
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <p>234: Boulanger read <foreign xml:lang="grc">ΕΡΝΟΔΙΟΝ</foreign>
+            </p>
+         </div>
+         <div type="translation">
+            <ab n="233">233. <gap reason="lost" unit="character" extent="unknown"/>
+               <seg cert="low">with power</seg>
+               <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
+            <ab n="234">234. Place of Synodios.</ab>
+         </div>
+         <div type="commentary">
+            <p>i: see discussion at <ref type="eAla-text" n="IV.37" target=".xml"/>.</p>
+            <p>ii: See discussion at <ref type="eAla-text" n="XI.10" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="IGC">
+                  <author>Grégoire</author>
+                  <title level="m">IGC</title>
+                  <citedRange>278</citedRange>
+               </bibl>, from Mendel, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257528">646</citedRange>
+               </bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi">
+                  <author>Roueché</author> (2004), <citedRange>233</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

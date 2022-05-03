@@ -1,78 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph100103" n="iAph1247 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Votive</rs> offering to a goddess (<seg cert="low">Aphrodite</seg>)</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-04-04</date><respStmt><name>GB</name></respStmt><item>DONE</item></change><change><date>2007-01-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> round <rs type="objectType" cert="low">altar</rs>  or <rs type="objectType">base</rs> (diam. <measure dim="diameter" type="length" unit="metre" precision="circa">0.35</measure> × <measure type="length" unit="metre" dim="height">0.45</measure>) with moulding above; broken below, and damaged at the back. There is a dowel hole in the top for an attachment.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> below the moulding.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Well-cut; <measure dim="height" type="length" unit="metre">0.028-0.03</measure>; square <foreign lang="grc">Σ</foreign>, <foreign lang="grc">Υ</foreign> with a cross-bar.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-Perhaps <date notBefore="0101" notAfter="0200" exact="none" cert="low">second century A.D.</date>
- (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="θεά">Θεᾷ</w> <w lemma="ἐπήκοος">ἐπηκόῳ</w><lb n="2"/><persName type="aphrodisian"><name reg="Εὔδαμος" type="        ">Εὔδαμος</name></persName><lb n="3"/>  <g type="bird"/> <w lemma="εὐχή">εὐχὴν</w> <g type="dolphin"/><lb n="4"/><g type="scroll"/><lb n="4a"/><space extent="1" unit="line" dim="vertical"/></ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Votive offering to a goddess (<seg cert="low">Aphrodite</seg>)</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph100103</idno>
+            <idno type="IAph2007">iAph100103</idno>
+            <idno type="JMR2004">iAph1247</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>85.154</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material> round <objectType cert="low">altar</objectType>  or <objectType>base</objectType> (diam. <dim unit="metre" type="diameter">0.35</dim> × <height unit="metre">0.45</height>) with moulding above; broken below, and damaged at the back. There is a dowel hole in the top for an attachment.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> below the moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Well-cut; <height unit="metre">0.028-0.03</height>; square <foreign xml:lang="grc">Σ</foreign>, <foreign xml:lang="grc">Υ</foreign> with a cross-bar.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">
+Perhaps second century A.D.
+ (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Stadium</rs>: a loose find, beside the track</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds) </creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-04" who="GB">DONE</change>
+         <change when="2007-01-24" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="2001_B_14A.jpg">
+            <desc>Face (2001)</desc>
+         </graphic>
+         <graphic url="2001_B_15A.jpg">
+            <desc>Left of face (2001)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-
-<div type="translation">
-<head>Translation</head>
-<p>To the goddess who hears, Eudamos (pays his) vow</p>
+<ab><lb n="1"/> <w lemma="θεά">Θεᾷ</w> <w lemma="ἐπήκοος">ἐπηκόῳ</w><lb n="2"/><persName type="attested"><name nymRef="#Εὔδαμος">Εὔδαμος</name></persName><lb n="3"/>  <g ref="#bird"/> <w lemma="εὐχή">εὐχὴν</w> <g ref="#dolphin"/><lb n="4"/><g ref="#scroll"/><lb n="4a"/><space extent="1" unit="line" dim="vertical"/></ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p> The decoration of a <rs type="decoration">bird</rs> and a <rs type="decoration">dolphin</rs> presumably refers to the wide authority over nature of Aphrodite Epekoos.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Stadium</rs>: a loose find, beside the track</rs> <rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds) </p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1985 (<rs type="siteNo">Museum 112</rs>; <rs type="invNo">85.154</rs>; SBI <rs type="sbi">88</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="2001_B_14A"><figDesc>Face (2001)</figDesc></figure><figure href="2001_B_15A"><figDesc>Left of face (2001)</figDesc></figure></p><p>KTE85.69.2-3</p>
-</div></body></text>
+         <div type="translation">
+            <p>To the goddess who hears, Eudamos (pays his) vow</p>
+         </div>
+         <div type="commentary">
+            <p> The decoration of a <rs type="decoration">bird</rs> and a <rs type="decoration">dolphin</rs> presumably refers to the wide authority over nature of Aphrodite Epekoos.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,86 +1,148 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph130111" n="iAph1445 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> inscription for Marcus Aurelius Zotikos son of Dionysios</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="jmr2003">Reynolds and Isik (<date>2007</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-20</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material" key="marmor">white marble</rs> <rs type="objectType">sarcophagus</rs>, with lid, decorated with <rs type="decoration">swag</rs>s between <rs type="decoration">pilaster</rs>s.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary inscription for Marcus Aurelius Zotikos son of Dionysios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130111</idno>
+            <idno type="IAph2007">iAph130111</idno>
+            <idno type="JMR2004">iAph1445</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material>
+                              <objectType>sarcophagus</objectType>, with lid, decorated with <rs type="decoration">swag</rs>s between <rs type="decoration">pilaster</rs>s.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>ll. 1-3 <rs type="execution" ref="scalpro">inscribed</rs> on the lid, on the lower moulding, including the projections, ll. 4-6 on the sarcophagus, on the lower edge of the chest.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02-0.03</height>; l. 1, lettercutter avoids crack in the stone; ligatures: l. 2, <foreign xml:lang="grc">ΜΜ</foreign>; l. 3, <foreign xml:lang="grc">ΗΕ</foreign>; l. 4, <foreign xml:lang="grc">ΤΗ</foreign> (both); l. 5, <foreign xml:lang="grc">ΤΗ</foreign>; l. 6, <foreign xml:lang="grc">ΝΗ</foreign>, <foreign xml:lang="grc">ΗΝ</foreign>, <foreign xml:lang="grc">ΜΗΝ</foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0212"
+                               notAfter="0225"
+                               precision="medium"
+                               evidence="lettering">
+After 212; perhaps first quarter of the third century
+ (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, North-east</rs> in chamber tomb, 1994, with <ref type="inscription" n="1446" target="130108.xml"/> (411), <ref type="iAph" target=".xml"/> (412), <ref type="inscription" n="1448" target="130110.xml"/> (414), <ref type="inscription" n="1449" target="130101.xml"/> (415).</provenance>
+                  <provenance type="observed" when="1994">Museum (1994).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-20" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="94_C_10.jpg">
+            <desc>Sarcophagus (1994)</desc>
+         </graphic>
+         <graphic url="94_C_11.jpg">
+            <desc>Sarcophagus (1994)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w> <w lemma="σορός">σ<unclear reason="damage">ο</unclear>ρὸς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="τόπος">τόπος</w> <w lemma="κατά">καθ'</w> <w lemma="ὅς">ὁς</w>  <w lemma="ἐγκεῖμαι">ἐνκεῖται</w> <w lemma="εἰμί">ἐστιν</w> <persName type="attested"><name nymRef="#Μᾶρκος">Μάρκου</name> <name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <name nymRef="#Ζωτικός">Ζωτικοῦ</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσ<choice><sic>τ</sic><corr>ί</corr></choice>ου</name></persName></persName> <w lemma="εἰς">εἰς</w> <w lemma="ὅς">ἣν</w> <w lemma="σορός">σορὸν</w> <w lemma="θάπτω">ταφή<lb n="2" break="no"/>σονται</w> <w lemma="αὐτός">αὐτὸς</w> <persName type="attested"><name nymRef="#Ζωτικός">Ζωτικὸς</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="προγράφω">προγεγρα<hi rend="ligature">μμ</hi>ένος</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Αὐρηλία">Αὐρηλία</name> <name nymRef="#Τατία">Τατία</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="γυνή">γυνὴ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἕτερος">ἕτερος</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἔχω">ἕξει</w> <lb n="3"/> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <w lemma="τις">τινα</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="ὁ">τῶν</w> <w lemma="προγράφω">προγεγραμμένων</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσεβὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w><w lemma="τυμβωρύχος"> τυμβωρύ<lb n="4" break="no"/>χος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσαποτείσει</w> <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w> <w lemma="θεός">θεῷ</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφροδεί<hi rend="ligature">τῃ</hi></name></persName> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="2500">βφ</num> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="σεμνός">σεμνοτάτῃ</w> <w lemma="συντεχνία">συντεχνίᾳ</w> <w lemma="ὁ">τῶν</w> <w lemma="τέκτων">τε<lb n="5" break="no"/>κτόνων</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="1000">α</num> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐγδική<supplied reason="omitted">σαν</supplied>τος</w> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <lb n="6"/> <w lemma="ἐπί">ἐπί</w> <w lemma="στεφανηφόρος">στεφα<hi rend="ligature">νη</hi>φόρου</w> <persName type="attested"><name nymRef="#Ζήνων">Ζ<hi rend="ligature">ήν</hi>ωνος</name> <persName type="attested"><name nymRef="#Μυλλέας"><unclear reason="damage">Μ</unclear>υλλέου</name></persName></persName> <w lemma="ὁ">τὸ</w> <num value="2">β</num> <w lemma="μείς"><hi rend="ligature">μην</hi>ὸς</w> <rs type="month"><w>Καισαρεῶνος</w></rs> <space extent="3" unit="character" dim="horizontal"/> <g ref="#scroll"/> <space extent="3" unit="character" dim="horizontal"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>ll. 1-3 <rs type="execution" key="scalpro">inscribed</rs> on the lid, on the lower moulding, including the projections, ll. 4-6 on the sarcophagus, on the lower edge of the chest.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02-0.03</measure>; l. 1, lettercutter avoids crack in the stone; ligatures: l. 2, <foreign lang="grc">ΜΜ</foreign>; l. 3, <foreign lang="grc">ΗΕ</foreign>; l. 4, <foreign lang="grc">ΤΗ</foreign> (both); l. 5, <foreign lang="grc">ΤΗ</foreign>; l. 6, <foreign lang="grc">ΝΗ</foreign>, <foreign lang="grc">ΗΝ</foreign>, <foreign lang="grc">ΜΗΝ</foreign>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0212" notAfter="0225" exact="notBefore">After 212; perhaps first quarter of the third century</date>
- (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w> <w lemma="σορός">σ<unclear reason="damage">ο</unclear>ρὸς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="τόπος">τόπος</w> <w lemma="κατά">καθ'</w> <w lemma="ὅς">ὁς</w>  <w lemma="ἐγκεῖμαι">ἐνκεῖται</w> <w lemma="εἰμί">ἐστιν</w> <persName type="aphrodisian"><name reg="Μᾶρκος">Μάρκου</name> <name reg="Αὐρήλιος" type="nomen">Αὐρηλίου</name> <name reg="Ζωτικός">Ζωτικοῦ</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυσ<choice type="correction"><sic>τ</sic><corr>ί</corr></choice>ου</name></persName></persName> <w lemma="εἰς">εἰς</w> <w lemma="ὅς">ἣν</w> <w lemma="σορός">σορὸν</w> <w lemma="θάπτω">ταφή<lb n="2" type="worddiv"/>σονται</w> <w lemma="αὐτός">αὐτὸς</w> <persName type="aphrodisian"><name reg="Ζωτικός" type="        ">Ζωτικὸς</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="προγράφω">προγεγρα<hi rend="ligature">μμ</hi>ένος</w> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Αὐρηλία">Αὐρηλία</name> <name reg="Τατία">Τατία</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="γυνή">γυνὴ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἕτερος">ἕτερος</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἔχω">ἕξει</w> <lb n="3"/> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <w lemma="τις">τινα</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθάψαι</w> <w lemma="ὁ">τῶν</w> <w lemma="προγράφω">προγεγραμμένων</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσεβὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w><w lemma="τυμβωρύχος"> τυμβωρύ<lb n="4" type="worddiv"/>χος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσαποτείσει</w> <w lemma="ὁ"><hi rend="ligature">τῇ</hi></w> <w lemma="θεός">θεῷ</w> <persName type="divine"><name reg="Ἀφροδίτη">Ἀφροδεί<hi rend="ligature">τῃ</hi></name></persName> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="2500">βφ</num> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῇ</w> <w lemma="σεμνός">σεμνοτάτῃ</w> <w lemma="συντεχνία">συντεχνίᾳ</w> <w lemma="ὁ">τῶν</w> <w lemma="τέκτων">τε<lb n="5" type="worddiv"/>κτόνων</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="1000">α</num> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐγδική<supplied reason="omitted">σαν</supplied>τος</w> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <lb n="6"/> <w lemma="ἐπί">ἐπί</w> <w lemma="στεφανηφόρος">στεφα<hi rend="ligature">νη</hi>φόρου</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζ<hi rend="ligature">ήν</hi>ωνος</name> <persName type="aphrodisian"><name reg="Μυλλέας"><unclear reason="damage">Μ</unclear>υλλέου</name></persName></persName> <w lemma="ὁ">τὸ</w> <num value="2">β</num> <w lemma="μείς"><hi rend="ligature">μην</hi>ὸς</w> <rs type="month"><w>Καισαρεῶνος</w></rs> <space extent="3" unit="character" dim="horizontal"/> <g type="scroll"/> <space extent="3" unit="character" dim="horizontal"/></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p> l. 1, <foreign lang="grc">ΔΙΟΝΥΣΤΟΥ</foreign>, <term lang="la">lapis</term>.</p><p>l. 5, <foreign lang="grc">ΣΑΝ</foreign> omitted.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>The sarcophagus and the plot on which it stands belong to Marcus Aurelius Zotikos son of Dionysios, in which sarcophagus shall be buried Zotikos himself, the aforementioned, and Aurelia Tatia his wife; but no one else shall have the right to bury anyone in it or remove any of the aforementioned, since he is to be (considered) sacrilegious and accursed and a tomb-breaker and in addition shall pay to the goddess Aphrodite 2500 silver denarii, and to the worshipful company of builders 1000 denarii, of which one third shall belong to the prosecutor. A copy of the inscription was deposited in the property-archive in the second stephanephorate of Zenon son of <seg cert="low">Mylleas</seg>, month Caesareon.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The sarcophagus was found in the same tomb-chamber as <xref type="inscription" n="1446" href="130108">13.108</xref>, <xref type="inscription" n="1447" href="130109">13.109</xref>, <xref type="inscription" n="1448" href="130110">13.110</xref> (Isik 116, 178, 179), and another of a different type <xref type="inscription" n="1449" href="130101">13.101</xref> (unpublished), which should all be approximately of the same period. In fact the owners are all Aurelii, and the texts all show features suggestive of the first half of the third century. For the reckoning of part of the fine in silver denarii see Introduction.</p><p>The text is notable for its reference to the syntechnia of builders who are to receive part of the funerary fine. It points to the probable associates of the owning family—Zotikos may have been a builder himself—and so to its modest social status. Husband and wife were Roman citizens, probably enfranchised in A.D. 212.  It is possible that the owner is related to the M. Aurelius Zotikos father of the owner of <xref type="inscription" n="1448" href="130110">13.110</xref>, but the two men have different patronymics so could not be closer than cousins. The curse is formulated in terms standard at Aphrodisias; it is not uncommon that the fine should be divided between two recipients and Aphrodite is commonly one.  Zotikos in fact has interestingly combined a feature appropriate to a tradesman with elements in use by persons of high as well as lower social status. </p><p>The stephanephoros is not otherwise known at present; he was not apparently a Roman citizen so his tenure was presumably post mortem. Of his names, Zenon is very common in the city but Mylleas is otherwise unattested so far.</p><p>The funerary   fine is a little under average.</p><p>See further Reynolds, loc. cit..</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Findspot</rs>
-<rs type="found"><rs type="monuList">Necropolis, North-east</rs> in chamber tomb, 1994, with <xref type="inscription" n="1446" href="130108">13.108</xref> (411), <xref type="iAph"> 1447</xref> (412), <xref type="inscription" n="1448" href="130110">13.110</xref> (414), <xref type="inscription" n="1449" href="130101">13.101</xref> (415).</rs>
-<rs type="lastLocation">Museum (1994).</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Found by the Aphrodisias Museum in winter 1993-4 (Sarcophagus <rs type="sarcCat">410</rs>).</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl type="primary" n="jmr1998"><author>Reynolds</author>, in G. Schmeling ed., Qui miscuit utile dulci, Festschrift for Paul MacKendrick (Wauconda Illinois, 1998), <biblScope>287-296</biblScope></bibl> whence <bibl n="anep"><title level="j">An.Ép.</title> <biblScope>1998.1372</biblScope></bibl><bibl n="seg"><title level="j">SEG</title> 48 <biblScope>1998.1326</biblScope>.</bibl>; by <bibl n="jmr2003">Reynolds and Isik, no. <biblScope>173</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="94_C_10"><figDesc>Sarcophagus (1994)</figDesc></figure><figure href="94_C_11"><figDesc>Sarcophagus (1994)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p> l. 1, <foreign xml:lang="grc">ΔΙΟΝΥΣΤΟΥ</foreign>, <term xml:lang="la">lapis</term>.</p>
+            <p>l. 5, <foreign xml:lang="grc">ΣΑΝ</foreign> omitted.</p>
+         </div>
+         <div type="translation">
+            <p>The sarcophagus and the plot on which it stands belong to Marcus Aurelius Zotikos son of Dionysios, in which sarcophagus shall be buried Zotikos himself, the aforementioned, and Aurelia Tatia his wife; but no one else shall have the right to bury anyone in it or remove any of the aforementioned, since he is to be (considered) sacrilegious and accursed and a tomb-breaker and in addition shall pay to the goddess Aphrodite 2500 silver denarii, and to the worshipful company of builders 1000 denarii, of which one third shall belong to the prosecutor. A copy of the inscription was deposited in the property-archive in the second stephanephorate of Zenon son of <seg cert="low">Mylleas</seg>, month Caesareon.</p>
+         </div>
+         <div type="commentary">
+            <p>The sarcophagus was found in the same tomb-chamber as <ref type="inscription" n="1446" target="130108.xml"/>, <ref type="inscription" n="1447" target="130109.xml"/>, <ref type="inscription" n="1448" target="130110.xml"/> (Isik 116, 178, 179), and another of a different type <ref type="inscription" n="1449" target="130101.xml"/> (unpublished), which should all be approximately of the same period. In fact the owners are all Aurelii, and the texts all show features suggestive of the first half of the third century. For the reckoning of part of the fine in silver denarii see Introduction.</p>
+            <p>The text is notable for its reference to the syntechnia of builders who are to receive part of the funerary fine. It points to the probable associates of the owning family—Zotikos may have been a builder himself—and so to its modest social status. Husband and wife were Roman citizens, probably enfranchised in A.D. 212.  It is possible that the owner is related to the M. Aurelius Zotikos father of the owner of <ref type="inscription" n="1448" target="130110.xml"/>, but the two men have different patronymics so could not be closer than cousins. The curse is formulated in terms standard at Aphrodisias; it is not uncommon that the fine should be divided between two recipients and Aphrodite is commonly one.  Zotikos in fact has interestingly combined a feature appropriate to a tradesman with elements in use by persons of high as well as lower social status. </p>
+            <p>The stephanephoros is not otherwise known at present; he was not apparently a Roman citizen so his tenure was presumably post mortem. Of his names, Zenon is very common in the city but Mylleas is otherwise unattested so far.</p>
+            <p>The funerary   fine is a little under average.</p>
+            <p>See further Reynolds, loc. cit..</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="primary" n="jmr1998">
+                  <author>Reynolds</author>, in G. Schmeling ed., Qui miscuit utile dulci, Festschrift for Paul MacKendrick (Wauconda Illinois, 1998), <citedRange>287-296</citedRange>
+               </bibl> whence <bibl n="anep">
+                  <title level="j">An.Ép.</title>
+                  <citedRange>1998.1372</citedRange>
+               </bibl>
+               <bibl n="seg">
+                  <title level="j">SEG</title> 48 <citedRange>1998.1326</citedRange>.</bibl>; by <bibl n="jmr2003">Reynolds and Isik, no. <citedRange>173</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

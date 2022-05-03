@@ -1,108 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph060103" n="iAph0253 ">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="m"><rs type="textType">Honours</rs> for P. Aelius Septimius Mannus, <rs type="personType">governor</rs></title>
-            </titleStmt>
-         <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-         <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
+            <title>Honours for P. Aelius Septimius Mannus, governor</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph060103</idno>
+            <idno type="IAph2007">iAph060103</idno>
+            <idno type="JMR2004">iAph0253</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>88.24</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper part of a simple <material key="marmor">white marble</material>
+                              <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> without moulding (<height unit="metre">0.52</height> × <width unit="metre">0.455</width> × <depth unit="metre">0.42</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face; the text must have begun on an upper feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard third century forms, <height unit="metre">0.025-0.03</height>. Ligature: <foreign xml:lang="grc">ΝΗ</foreign> (l.5). There are apices over initial aspirated vowels, including the initial <foreign xml:lang="grc">Α</foreign> of <foreign xml:lang="grc">ἁπάσης</foreign> (l. 9).</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0234"
+                               notAfter="0267"
+                               precision="medium"
+                               evidence="lettering titulature language">Mid third century (<rs type="criteria">lettering</rs>, <rs type="criteria">titulature</rs>, <rs type="criteria">language</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Basilica">Basilica</rs>: Loose find in a field wall west of Basilica.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language id="en">English</language>
-            <language id="fr">French</language>
-            <language id="de">German</language>
-            <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-            <language id="el">Modern Greek</language>
-            <language id="it">Italian</language>
-            <language id="la">Latin</language>
-            <language id="es">Spanish</language>
-            <language id="tr">Turkish</language>
-         </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-   <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change><change><date>2003-06-02</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Tidied and regularised</item></change><change><date>2002-10-31</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Typed and tagged Greek</item></change><change><date>2003-06-22</date><respStmt><name>CMR</name></respStmt><item>tagged, tidied and corrected</item></change><change>
-  <date>2003-09-03</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged, lemmatised and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-06-02" who="#GB">Tidied and regularised</change>
+         <change when="2002-10-31" who="#GB">Typed and tagged Greek</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="88_E_02A.jpg">
+            <desc>Face (1988)</desc>
+         </graphic>
+         <graphic url="NY_93_101_30.jpg">
+            <desc>Top of block (1993)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
    <text>
       <body>
-         <div type="description" n="monument">
-            <head>Description of Monument</head>
-            <p>Upper part of a simple <rs type="material" key="marmor">white marble</rs> <rs type="objectType"><rs type="objectType">statue base</rs> shaft</rs> without moulding (<measure type="length" unit="metre" dim="height">0.52</measure> × <measure type="length" unit="metre" dim="width">0.455</measure> × <measure type="length" unit="metre" dim="depth">0.42</measure>).</p>
-         </div>
-         <div type="description" n="text">
-            <head>Description of Text</head>
-            <p><rs type="execution" key="scalpro">Inscribed</rs> on the face; the text must have begun on an upper feature.</p>
-         </div>
-         <div type="description" n="letters">
-            <head>Description of Letters</head>
-            <p>Standard third century forms, <measure type="length" unit="metre" dim="height">0.025-0.03</measure>. Ligature: <foreign lang="grc">ΝΗ</foreign> (l.5). There are apices over initial aspirated vowels, including the initial <foreign lang="grc">Α</foreign> of <foreign lang="grc">ἁπάσης</foreign> (l. 9).</p>
-         </div>
-         <div type="description" n="date">
-            <head>Date</head>
-            <p><date notAfter="0267" exact="none" notBefore="0234">Mid third century</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">titulature</rs>, <rs type="criteria">language</rs>).</p>
-         </div>
-         <div n="text" lang="grc" type="edition">
-            <head lang="en">Edition</head>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            
             <ab>
               <lb n="0"/><supplied cert="low" reason="lost"><w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></supplied>
-			  <lb n="1"/><persName reg="Πόπλοις Αἴλιος Σεπτίμιος Μάννος" key="Mannus" type="aphrodisian" full="yes"><name reg="Πόπλιος">Πόπλιον</name> <name reg="Αἴλιος">Αἴλιον</name>
-			  <lb n="2"/><name reg="Σεπτίμιος">Σεπτίμιον</name>
-			  <lb n="3"/><name reg="Μάννος">Μάννον</name></persName> <g type="stop"/> <w lemma="ὁ">τὸν</w>
-			  <lb n="4"/><w lemma="λαμπρός"><rs type="dignity" key="clarissimus">λαμπρότατο<hi rend="ligature" id="lig1.1">ν</hi></rs></w> <rs key="conspraes" type="official-secul"><w lemma="ἡγεμών"><hi rend="ligature" id="lig1.2">ἡ</hi><lb n="5" type="worddiv"/>γεμόνα</w></rs><link targets="lig1.1 lig1.2" targOrder="U"/> <w lemma="ὑπατικός"><hi rend="apex">ὑ</hi>πατι<lb n="6" type="worddiv"/>κόν</w><g type="stop"/> <w lemma="ἔνδοξος"><rs type="dignity" key="endoxos">ἔνδοξον</rs></w>
+			  <lb n="1"/><persName key="Mannus" nymRef="#Πόπλοις Αἴλιος Σεπτίμιος Μάννος" type="attested"><name nymRef="#Πόπλιος">Πόπλιον</name> <name nymRef="#Αἴλιος">Αἴλιον</name>
+			  <lb n="2"/><name nymRef="#Σεπτίμιος">Σεπτίμιον</name>
+			  <lb n="3"/><name nymRef="#Μάννος">Μάννον</name></persName> <g ref="#stop"/> <w lemma="ὁ">τὸν</w>
+			  <lb n="4"/><w lemma="λαμπρός"><rs type="dignity" key="clarissimus">λαμπρότατο<hi rend="ligature" id="lig1.1">ν</hi></rs></w> <rs key="conspraes" type="official-secul"><w lemma="ἡγεμών"><hi rend="ligature" id="lig1.2">ἡ</hi><lb n="5" break="no"/>γεμόνα</w></rs><link targets="lig1.1 lig1.2" targOrder="U"/> <w lemma="ὑπατικός"><hi rend="apex">ὑ</hi>πατι<lb n="6" break="no"/>κόν</w><g ref="#stop"/> <w lemma="ἔνδοξος"><rs type="dignity" key="endoxos">ἔνδοξον</rs></w>
 			  <lb n="7"/><w lemma="ἀνδρεῖος">ἀνδρεῖον</w> <w lemma="ἁγνός"><hi rend="apex">ἁ</hi>γνὸν</w>
-			  <lb n="8"/><w lemma="φιλάνθρωπος">φιλάνθρωπον</w><g type="stop"/> <w lemma="διά">δι'</w>
+			  <lb n="8"/><w lemma="φιλάνθρωπος">φιλάνθρωπον</w><g ref="#stop"/> <w lemma="διά">δι'</w>
 			  <lb n="9"/><w lemma="πᾶς"><hi rend="apex">ἁ</hi>πάσης</w> <w lemma="ἥκω">ἥκοντα</w>
-			  <lb n="10"/><w lemma="ἀρετή">ἀρετῆς</w> <w lemma="ὁ">τὸν</w> <w lemma="ἑαυτός"><hi rend="apex">ἑ</hi>αυ<lb n="11" type="worddiv"/>τοῦ</w> <w lemma="εὐεργέτης">εὐεργέτη<supplied reason="lost">ν</supplied></w>
-              <lb n="12"/><gap dim="bottom" extent="unknown" reason="lost" unit="line"/>
+			  <lb n="10"/><w lemma="ἀρετή">ἀρετῆς</w> <w lemma="ὁ">τὸν</w> <w lemma="ἑαυτός"><hi rend="apex">ἑ</hi>αυ<lb n="11" break="no"/>τοῦ</w> <w lemma="εὐεργέτης">εὐεργέτη<supplied reason="lost">ν</supplied></w>
+              <lb n="12"/><gap reason="lost" unit="line" extent="unknown"/>
             </ab>
          </div>
-
          <div type="translation">
-            <head>Translation</head>
-            <ab><supplied reason="lost">So-and-so honoured</supplied> Publius Aelius Septimius Mannus, the <term lang="la">clarissimus</term>, governor (<term lang="la">praeses</term>), consular, distinguished, brave, pure, generous, having achieved all virtue, his/its benefactor <gap dim="bottom" extent="unknown" reason="lost"/></ab>
+            <ab>
+               <supplied reason="lost">So-and-so honoured</supplied> Publius Aelius Septimius Mannus, the <term xml:lang="la">clarissimus</term>, governor (<term xml:lang="la">praeses</term>), consular, distinguished, brave, pure, generous, having achieved all virtue, his/its benefactor <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
          </div>
-
          <div type="commentary">
-            <head>Commentary</head>
             <p>The honouring body was a single masculine entity; while this could have been a grateful individual, it is perhaps more likely that such an important text was put up by the demos.</p>
-
-            <p>See discussion at <xref type="eAla-text" n="I.15">I.15</xref>.</p>
-            
+            <p>See discussion at <ref type="eAla-text" n="I.15" target=".xml"/>.</p>
          </div>
-
-         <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList" key="Basilica">Basilica</rs>: Loose find in a field wall west of Basilica.</rs>. Original location: <rs type="origLocation">Unknown.</rs>. Last recorded location: <rs type="lastLocation">Museum.</rs>. </p></div>
-
-         
-
-         
-
-         <div type="history" n="record">
-            <head>History of Recording</head>
-            <p>Found by the NYU expedition in 1988 (<rs type="invNo">88.24</rs>, SBI <rs type="sbi">87</rs>).</p>
-         </div>
-
          <div type="bibliography">
-            <head>Bibliography</head>
-            <p>Published by <bibl type="hbi" rend="primary" n="cmr1996"><author>Roueché</author> (1996) <biblScope>231</biblScope></bibl>, whence <bibl n="seg"><title level="j">SEG</title> <biblScope>1996.1394</biblScope></bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi"><author>Roueché</author> (2004), <biblScope>253</biblScope></bibl>.</p>
+            <p>Published by <bibl type="hbi" rend="primary" n="cmr1996">
+                  <author>Roueché</author> (1996) <citedRange>231</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title level="j">SEG</title>
+                  <citedRange>1996.1394</citedRange>
+               </bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi">
+                  <author>Roueché</author> (2004), <citedRange>253</citedRange>
+               </bibl>.</p>
          </div>
-
-         <div type="history" n="text-constituted-from">
-            <head>Text Constituted From</head>
-            <p>Transcription (Roueché).</p>
-         </div>
-
-         <div type="figure" n="photographs">
-            <head>Photographs</head>
-            <p><figure href="88_E_02A"><figDesc>Face (1988)</figDesc></figure><figure href="NY_93_101_30"><figDesc>Top of block (1993)</figDesc></figure></p></div>
-
-         
-
-         
-
       </body>
    </text>
 </TEI>

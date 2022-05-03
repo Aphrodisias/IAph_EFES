@@ -1,96 +1,142 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020308" n="iAph1353 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">  <rs type="textType" reg="curse"><rs type="textType">Funerary</rs></rs> for Publius Aelius Klaudius Smaragdos Julianos and his father</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>  Funerary for Publius Aelius Klaudius Smaragdos Julianos and his father</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020308</idno>
+            <idno type="IAph2007">iAph020308</idno>
+            <idno type="JMR2004">iAph1353</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>67.554</idno>
+                  <idno>64.359</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Four joining fragments from a large <material key="marmor">marble</material>
+                              <objectType>block</objectType>: a. without edges (<width unit="metre">0.57</width>   × <height unit="metre">0.85</height>   × <depth unit="metre">0.23</depth>); b. right edge fragment, with lower edge surviving (<width unit="metre">0.32</width>   × <height unit="metre">1.10</height>   × <depth unit="metre">0.67</depth>); c. small triangular fragment, (<foreign xml:lang="la">circa</foreign>
+                              <width unit="metre">0.145</width>   × <height unit="metre">0.18</height>); d. left edge fragment (<width unit="metre">0.20</width>   × <height unit="metre">0.45</height>   × <depth unit="metre">0.14</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro"> Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.035</height>; <foreign xml:lang="grc">Β</foreign> with closed lower bowl; diaeretic dots around <foreign xml:lang="grc">Ι</foreign> of <foreign xml:lang="grc">ἱερώτατον</foreign>, l. 11.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering prosopography"> second to third centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">a.  <rs type="monuList">Bouleuterion/Odeon, North Area</rs>, North West, Str. 1, in 1967; b. stray find in <rs type="monuList">City, Village</rs>; c. Unknown; d. <rs type="monuList">Bouleuterion/Odeon, West Area</rs>: W. Bou, rear of Ch. 4, Str. 3</provenance>
+                  <provenance type="observed" when="1977">a+b, ?opposite Museum (1983); d. Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-02" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-07-28" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_Y_30.jpg">
+            <desc>Fragments a+c (1973)</desc>
+         </graphic>
+         <graphic url="78_J_24.jpg">
+            <desc>Fragment a (1978)</desc>
+         </graphic>
+         <graphic url="83_E_35.jpg">
+            <desc>Fragment b (1983)</desc>
+         </graphic>
+         <graphic url="77_R_34A.jpg">
+            <desc>Fragment d (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-04-02</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2005-07-28</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Four joining fragments from a large <rs type="material" key="marmor">marble</rs> <rs type="objectType">block</rs>: a. without edges (<measure type="length" unit="metre" dim="width">0.57</measure>   × <measure type="length" unit="metre" dim="height">0.85</measure>   × <measure type="length" unit="metre" dim="depth">0.23</measure>); b. right edge fragment, with lower edge surviving (<measure type="length" unit="metre" dim="width">0.32</measure>   × <measure type="length" unit="metre" dim="height">1.10</measure>   × <measure type="length" unit="metre" dim="depth">0.67</measure>); c. small triangular fragment, (<foreign lang="la">circa</foreign> <measure type="length" unit="metre" dim="width">0.145</measure>   × <measure type="length" unit="metre" dim="height">0.18</measure>); d. left edge fragment (<measure type="length" unit="metre" dim="width">0.20</measure>   × <measure type="length" unit="metre" dim="height">0.45</measure>   × <measure type="length" unit="metre" dim="depth">0.14</measure>).</p>
+<ab><lb n="0"/><gap unit="line" reason="lost" extent="unknown"/><lb n="1"/>    <gap reason="lost" unit="character" quantity="10"/> <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="ἐπίκειμαι"><unclear reason="damage">ἐπι</unclear>κε<supplied reason="lost">ι</supplied><unclear reason="damage">μ</unclear>έν<unclear reason="damage">η</unclear><supplied reason="lost">ν</supplied></w>  <lb n="2"/>    <w lemma="σορός"><supplied reason="lost" cert="low">σορὸν</supplied></w> <w lemma="οὔτε"><supplied reason="lost">ο</supplied>ὔτε</w> <w lemma="διά">διὰ</w> <w lemma="παραχώρησις">παραχωρήσεως</w><lb n="3"/><w lemma="οὔτε">ο<supplied reason="lost">ὔτ</supplied><unclear reason="damage">ε</unclear></w> <w lemma="διά">διὰ</w> <w lemma="συγχώρησις">συνχωρήσεως</w> <w lemma="οὔτε">οὔτε</w> <w lemma="ἄλλος">ἄλ<lb n="4" break="no"/>λῳ</w>  <w lemma="τις"><supplied reason="lost">τι</supplied>νι</w> <w lemma="τρόπος">τρόπῳ</w> <w lemma="μόνος">μόνοι</w> <w lemma="δέ">δὲ</w> <w lemma="ἐγκηδεύω">ἐνκηδε<supplied reason="lost">υ</supplied><lb n="5" break="no"/>θήσονται</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <persName type="attested"><name nymRef="#Πόπλιος">Πό<unclear reason="damage">π</unclear>λιος</name>  <name nymRef="#Αἴλιος">Αἴλι<lb n="6" break="no"/>ος</name>  <name nymRef="#Κλαύδιος">Κλαύδιος</name>  <name nymRef="#Σμάραγδος">Σμάραγδος</name>  <name nymRef="#Ἰουλιανός"><supplied reason="lost">Ἰ</supplied>ουλιανὸ<unclear reason="damage">ς</unclear></name></persName><lb n="7"/> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Πόπλιος">Πόπλιος</name>  <name nymRef="#Αἴλιος">Αἴλιος</name>  <name nymRef="#Ἄτταλος">Ἄττ<supplied reason="lost">αλ</supplied>ος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="πατήρ">πα<space unit="character" extent="1"/><lb n="8" break="no"/>τὴρ</w> <w lemma="αὐτός">αὐτοῦ</w> <g ref="#stop"/> <w lemma="ἐάν">ἐὰν</w> <w lemma="δέ">δέ</w> <w lemma="τις">τι<supplied reason="lost">ς</supplied></w>  <w lemma="τολμάω"><supplied reason="lost">το</supplied>λμήσε<supplied reason="lost">ι</supplied></w><lb n="9"/><w lemma="ἐγκηδεύω"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ν</unclear>κ<unclear reason="damage">η</unclear>δεύσαι</w> <w lemma="τις">τινα</w> <w lemma="ἕτερος">ἕτε[ρο]ν</w> <w lemma="εἰμί">ἔσται</w><lb n="10"/><w lemma="ἀσεβής"><supplied reason="lost">ἀσε</supplied>βὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">κα<unclear reason="damage">ὶ</unclear></w>  <w lemma="ἀποτίνω"><supplied reason="lost">ἀπ</supplied>οτει<lb n="11" break="no"/><supplied reason="lost">σει</supplied></w>  <w lemma="πρόστιμον"><supplied reason="lost">π</supplied>ροστείμου</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἱερός">ἱε<supplied reason="lost">ρ</supplied>ώτ<space unit="character" extent="1"/>ατον</w><lb n="12"/><w lemma="ταμεῖον"><supplied reason="lost">ταμεῖ</supplied>ον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w>  <w lemma="μυρίος">μύρ<unclear reason="damage">ι</unclear><supplied reason="lost">α</supplied></w>  <space unit="character" extent="4" dim="horizontal"/><lb n="13"/><w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <w lemma="χίλιοι"><supplied reason="lost">χί</supplied><unclear reason="damage">λ</unclear>ια</w>  <w lemma="πεντακόσιοι">πεντακόσ<unclear reason="damage">ια</unclear></w>  <w lemma="ὁρίζω">ὡρισ<lb n="14" break="no"/><supplied reason="lost" cert="low">μένα</supplied></w>  <w lemma="ὑπό"><supplied reason="lost">ὑπὸ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <persName type="attested"><name nymRef="#Σμάραγδος">Σμαράγδου</name></persName>  <w lemma="καί">καὶ</w>  <orig n="unresolved">εκ</orig><lb n="14a"/><gap reason="lost" unit="character" quantity="18"/><space unit="character" extent="5" dim="horizontal"/><lb n="14b"/><space unit="line" extent="1" dim="vertical"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro"> Inscribed</rs> on one face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.035</measure>; <foreign lang="grc">Β</foreign> with closed lower bowl; diaeretic dots around <foreign lang="grc">Ι</foreign> of <foreign lang="grc">ἱερώτατον</foreign>, l. 11.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p> <date notAfter="0300" notBefore="0101" exact="none" cert="low">second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">prosopography</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="0"/><gap unit="line" reason="lost" extent="unknown" dim="top"/><lb n="1"/>    <gap dim="left" extent="10" reason="lost" unit="character"/> <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="ἐπίκειμαι"><unclear reason="damage">ἐπι</unclear>κε<supplied reason="lost">ι</supplied><unclear reason="damage">μ</unclear>έν<unclear reason="damage">η</unclear><supplied reason="lost">ν</supplied></w>  <lb n="2"/>    <w lemma="σορός"><supplied reason="lost" cert="low">σορὸν</supplied></w> <w lemma="οὔτε"><supplied reason="lost">ο</supplied>ὔτε</w> <w lemma="διά">διὰ</w> <w lemma="παραχώρησις">παραχωρήσεως</w><lb n="3"/><w lemma="οὔτε">ο<supplied reason="lost">ὔτ</supplied><unclear reason="damage">ε</unclear></w> <w lemma="διά">διὰ</w> <w lemma="συγχώρησις">συνχωρήσεως</w> <w lemma="οὔτε">οὔτε</w> <w lemma="ἄλλος">ἄλ<lb n="4" type="worddiv"/>λῳ</w>  <w lemma="τις"><supplied reason="lost">τι</supplied>νι</w> <w lemma="τρόπος">τρόπῳ</w> <w lemma="μόνος">μόνοι</w> <w lemma="δέ">δὲ</w> <w lemma="ἐγκηδεύω">ἐνκηδε<supplied reason="lost">υ</supplied><lb n="5" type="worddiv"/>θήσονται</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w> <persName type="aphrodisian" full="yes"><name reg="Πόπλιος" type="praenomen">Πό<unclear reason="damage">π</unclear>λιος</name>  <name reg="Αἴλιος" type="gentilicium">Αἴλι<lb n="6" type="worddiv"/>ος</name>  <name reg="Κλαύδιος" type="gentilicium">Κλαύδιος</name>  <name reg="Σμάραγδος">Σμάραγδος</name>  <name reg="Ἰουλιανός"><supplied reason="lost">Ἰ</supplied>ουλιανὸ<unclear reason="damage">ς</unclear></name></persName><lb n="7"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian" full="yes"><name reg="Πόπλιος" type="praenomen">Πόπλιος</name>  <name reg="Αἴλιος" type="gentilicium">Αἴλιος</name>  <name type="  " reg="Ἄτταλος">Ἄττ<supplied reason="lost">αλ</supplied>ος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="πατήρ">πα<space unit="character" extent="1"/><lb n="8" type="worddiv"/>τὴρ</w> <w lemma="αὐτός">αὐτοῦ</w> <g type="stop"/> <w lemma="ἐάν">ἐὰν</w> <w lemma="δέ">δέ</w> <w lemma="τις">τι<supplied reason="lost">ς</supplied></w>  <w lemma="τολμάω"><supplied reason="lost">το</supplied>λμήσε<supplied reason="lost">ι</supplied></w><lb n="9"/><w lemma="ἐγκηδεύω"><supplied reason="lost">ἐ</supplied><unclear reason="damage">ν</unclear>κ<unclear reason="damage">η</unclear>δεύσαι</w> <w lemma="τις">τινα</w> <w lemma="ἕτερος">ἕτε[ρο]ν</w> <w lemma="εἰμί">ἔσται</w><lb n="10"/><w lemma="ἀσεβής"><supplied reason="lost">ἀσε</supplied>βὴς</w> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">κα<unclear reason="damage">ὶ</unclear></w>  <w lemma="ἀποτίνω"><supplied reason="lost">ἀπ</supplied>οτει<lb n="11" type="worddiv"/><supplied reason="lost">σει</supplied></w>  <w lemma="πρόστιμον"><supplied reason="lost">π</supplied>ροστείμου</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἱερός">ἱε<supplied reason="lost">ρ</supplied>ώτ<space unit="character" extent="1"/>ατον</w><lb n="12"/><w lemma="ταμεῖον"><supplied reason="lost">ταμεῖ</supplied>ον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w>  <w lemma="μυρίος">μύρ<unclear reason="damage">ι</unclear><supplied reason="lost">α</supplied></w>  <space unit="character" extent="4" dim="horizontal"/><lb n="13"/><w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <w lemma="χίλιοι"><supplied reason="lost">χί</supplied><unclear reason="damage">λ</unclear>ια</w>  <w lemma="πεντακόσιοι">πεντακόσ<unclear reason="damage">ια</unclear></w>  <w lemma="ὁρίζω">ὡρισ<lb n="14" type="worddiv"/><supplied reason="lost" cert="low">μένα</supplied></w>  <w lemma="ὑπό"><supplied reason="lost">ὑπὸ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w>  <persName type="aphrodisian"><name reg="Σμάραγδος">Σμαράγδου</name></persName>  <w lemma="καί">καὶ</w>  <orig n="unresolved">εκ</orig><lb n="14a"/><gap dim="left" extent="18" reason="lost" unit="character"/><space unit="character" extent="5" dim="horizontal"/><lb n="14b"/><space unit="line" extent="1" dim="vertical"/></ab>
-</div>
-
-
-
-<div type="apparatus"><head>Apparatus</head><p>l. 1, this line must describe the objects which are not to be disposed of, i.e. the tomb and all its appertinances including probably <foreign lang="grc">τὴν ἐπικε<supplied reason="lost">ι</supplied>μένη<supplied reason="lost">ν</supplied> <supplied reason="lost" cert="low">σορὸν</supplied></foreign>. Final letters, only the  uprights visible.</p><p>l. 6, the final <foreign lang="grc">Σ</foreign> is uncertainly read.</p></div><div type="translation">
-<head>Translation</head>
-<p>[...] no-one is to dispose of the tomb and its burial places and the sarcophagus lying (on it),  either by surrendering it or by legal conveyance or in any other way; but in the sarcophagus there shall be placed only  Publius Aelius Claudius Smaragdos Julianos and Publius Aelius Attalos his father, and if anyone should dare to bury anyone else in it, he will be (treated as) sacrilegious and accursed and will pay a penalty to the most sacred treasury of 15,000 silver denarii, as laid down by Smaragdos and [...]</p></div>
-
- <div type="commentary">
-<head>Commentary</head>
-<p>...</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found">a.  <rs type="monuList">Bouleuterion/Odeon, North Area</rs>, North West, Str. 1, in 1967; b. stray find in <rs type="monuList">City, Village</rs>; c. Unknown; d. <rs type="monuList">Bouleuterion/Odeon, West Area</rs>: W. Bou, rear of Ch. 4, Str. 3</rs>.  <rs type="origLocation">Unknown </rs>. <rs type="lastLocation">a+b, ?opposite Museum (1983); d. Museum (1977)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition, a. in 1967 (<rs type="invNo">67.554</rs>), b in 1983, d. in 1964 (<rs type="invNo">64.359</rs>; SBI <rs type="sbi">17</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p><figure href="73_Y_30"><figDesc>Fragments a+c (1973)</figDesc></figure><figure href="78_J_24"><figDesc>Fragment a (1978)</figDesc></figure><figure href="83_E_35"><figDesc>Fragment b (1983)</figDesc></figure><figure href="77_R_34A"><figDesc>Fragment d (1977)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="apparatus">
+            <p>l. 1, this line must describe the objects which are not to be disposed of, i.e. the tomb and all its appertinances including probably <foreign xml:lang="grc">τὴν ἐπικε<supplied reason="lost">ι</supplied>μένη<supplied reason="lost">ν</supplied>
+                  <supplied reason="lost" cert="low">σορὸν</supplied>
+               </foreign>. Final letters, only the  uprights visible.</p>
+            <p>l. 6, the final <foreign xml:lang="grc">Σ</foreign> is uncertainly read.</p>
+         </div>
+         <div type="translation">
+            <p>[...] no-one is to dispose of the tomb and its burial places and the sarcophagus lying (on it),  either by surrendering it or by legal conveyance or in any other way; but in the sarcophagus there shall be placed only  Publius Aelius Claudius Smaragdos Julianos and Publius Aelius Attalos his father, and if anyone should dare to bury anyone else in it, he will be (treated as) sacrilegious and accursed and will pay a penalty to the most sacred treasury of 15,000 silver denarii, as laid down by Smaragdos and [...]</p>
+         </div>
+         <div type="commentary">
+            <p>...</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,100 +1,170 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010011" n="iAph0187 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType">Place inscription</rs> of Loukas, <term lang="la">philoponus</term></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-06-02</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change><date>2003-08-29</date><respStmt><name>CMR</name></respStmt><item>tagged, lemmatised and corrected</item></change><change><date>2004-02-28</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">column</rs> (diam. <measure dim="diameter">0.61</measure>).</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p>The inscription is <rs type="execution" key="scalpro">cut</rs> just below the fluting on the east
-face.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Deep, irregular; <measure type="length" unit="metre" dim="height">0.035-0.065</measure>.</p>
-      </div>
-
-      <div type="description" n="date"><head>Date</head><p><date notBefore="0401" notAfter="0600" exact="none">Fifth to sixth centuries A.D.</date> or later (<rs type="criteria">content</rs>, <rs type="criteria">location</rs>)</p></div><div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Place inscription of Loukas, <term xml:lang="la">philoponus</term>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010011</idno>
+            <idno type="IAph2007">iAph010011</idno>
+            <idno type="JMR2004">iAph0187</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>column</objectType> (diam. <dim type="diameter">0.61</dim>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>The inscription is <rs type="execution" ref="scalpro">cut</rs> just below the fluting on the east
+face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Deep, irregular; <height unit="metre">0.035-0.065</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="content location">Fifth to sixth centuries A.D. or later (<rs type="criteria">content</rs>, <rs type="criteria">location</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>: temenos, east side, south end,  just south of
+<ref type="inscription" n="188" target="010035.xml"/>: .</provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-28" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-29" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_S_33.jpg">
+            <desc>Column (1977)</desc>
+         </graphic>
+         <graphic url="72_C_07.jpg">
+            <desc>Detail (1972)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
         <ab>
-		  		<lb n="1"/><g type="cross"/> <abbr>ΧΜΓ</abbr><lb n="2"/> <w lemma="τόπος">τόπος</w> <persName type="aphrodisian" key="lucas1" full="yes"><name reg="Λουκᾶς">Λου<lb n="3" type="worddiv"/>κᾶ</name></persName> <rs type="subject" key="philoponoi"><w lemma="φιλόπονος">φιλο<lb n="4" type="worddiv"/>πόνου</w></rs></ab> 
+		  		<lb n="1"/><g ref="#cross"/> <abbr>ΧΜΓ</abbr><lb n="2"/> <w lemma="τόπος">τόπος</w> <persName key="lucas1" type="attested"><name nymRef="#Λουκᾶς">Λου<lb n="3" break="no"/>κᾶ</name></persName> <rs type="subject" key="philoponoi"><w lemma="φιλόπονος">φιλο<lb n="4" break="no"/>πόνου</w></rs></ab> 
       </div>
-
-      <div type="apparatus"><head>Apparatus</head><p>l. 1, perhaps <foreign lang="grc"><persName key="Christ" type="divine" full="yes">Χ<supplied reason="abbreviation">ριστὸν</supplied></persName> <persName key="Mary" type="divine" full="yes">Μ<supplied reason="abbreviation">αρία</supplied></persName> Γ<supplied reason="abbreviation">εννᾷ</supplied></foreign></p></div><div type="translation">
-        <head>Translation</head>
-        <ab>M<supplied reason="abbreviation">ary</supplied> b<supplied reason="abbreviation">ore</supplied> Ch<supplied reason="abbreviation">rist</supplied>. Place of Loukas, <term lang="la">philoponus</term>.</ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="XI.5">XI.5</xref> - <xref type="eAla-text" n="XI. 6">XI. 6</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList">Temple/Church</rs>: temenos, east side, south end,  just south of
-<xref type="inscription" n="188" href="010035">1.35</xref>: .</rs>. Original location: <rs type="origLocation">Findspot.</rs>. Last recorded location: <rs type="lastLocation">Findspot.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Copied by <rs type="visitor" key="fellows">Fellows</rs>; recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (113); by the NYU
-expedition.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="fellows1841"><author>Fellows</author>, <title level="m">Acct</title>. 360, no. <biblScope>70</biblScope></bibl>, whence <bibl type="hbi" n="CIGIV"><author>Kirchhoff</author>,
-<title level="m">CIG</title> <biblScope>9273</biblScope></bibl>, <bibl type="hbi" n="ramsay1897"><author>Ramsay</author>, <title level="m">Cities &amp; Bishoprics</title> 554, no. <biblScope>427</biblScope></bibl>; by <bibl type="hbi" n="reinach"><author>Reinach</author>, no. <biblScope>217</biblScope></bibl>,
-from Gaudin, whence <bibl type="hbi" n="IGC"><author>Grégoire</author>, <title level="m">IGC</title> <biblScope>268</biblScope></bibl>,
-<bibl><author>Cabrol</author>, <title level="m">DACL</title> 14, col. 795, no. <biblScope>21</biblScope></bibl>; by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in
-Late Antiquity</title> no. <biblScope>187</biblScope> and plate xli</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257568">681</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché); publications.</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="77_S_33"><figDesc>Column (1977)</figDesc></figure><figure href="72_C_07"><figDesc>Detail (1972)</figDesc></figure></p></div>
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <p>l. 1, perhaps <foreign xml:lang="grc">
+                  <persName key="Christ" type="divine" full="yes">Χ<ex>ριστὸν</ex>
+                  </persName>
+                  <persName key="Mary" type="divine" full="yes">Μ<ex>αρία</ex>
+                  </persName> Γ<ex>εννᾷ</ex>
+               </foreign>
+            </p>
+         </div>
+         <div type="translation">
+            <ab>M<ex>ary</ex> b<ex>ore</ex> Ch<ex>rist</ex>. Place of Loukas, <term xml:lang="la">philoponus</term>.</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="XI.5" target=".xml"/> - <ref type="eAla-text" n="XI. 6" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="fellows1841">
+                  <author>Fellows</author>, <title level="m">Acct</title>. 360, no. <citedRange>70</citedRange>
+               </bibl>, whence <bibl type="hbi" n="CIGIV">
+                  <author>Kirchhoff</author>,
+<title level="m">CIG</title>
+                  <citedRange>9273</citedRange>
+               </bibl>, <bibl type="hbi" n="ramsay1897">
+                  <author>Ramsay</author>, <title level="m">Cities &amp; Bishoprics</title> 554, no. <citedRange>427</citedRange>
+               </bibl>; by <bibl type="hbi" n="reinach">
+                  <author>Reinach</author>, no. <citedRange>217</citedRange>
+               </bibl>,
+from Gaudin, whence <bibl type="hbi" n="IGC">
+                  <author>Grégoire</author>, <title level="m">IGC</title>
+                  <citedRange>268</citedRange>
+               </bibl>,
+<bibl>
+                  <author>Cabrol</author>, <title level="m">DACL</title> 14, col. 795, no. <citedRange>21</citedRange>
+               </bibl>; by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in
+Late Antiquity</title> no. <citedRange>187</citedRange> and plate xli</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257568">681</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

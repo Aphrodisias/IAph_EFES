@@ -1,101 +1,134 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120104" n="iAph1021 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for  Theodotos son of Andronikos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Posthumous honours for  Theodotos son of Andronikos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120104</idno>
+            <idno type="IAph2007">iAph120104</idno>
+            <idno type="JMR2004">iAph1021</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType key="base">base</objectType> without moulding (<width unit="metre">0.55</width> ×  <depth>0.77</depth>), in two fragments: Upper part, a, lines 1-11,  <height unit="metre">0.55</height>; lower part, b,  lines 12-16, <height unit="metre">0.80</height>. The lower fragment had a deep groove in it when recorded in 1934; by 1973 the fragment to the right of this groove, in lines 14-15, had broken off.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.0275–0.035</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0050"
+                               precision="medium"
+                               evidence="lettering">First half of second century A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North-east</rs>: fallen from the wall just inside the north-east gate.</provenance>
+                  <provenance type="observed" when="1961">Findspot (1961)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); Publications; Gaudin's squeeze.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2006-12-19" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Aph2004_138.jpg">
+            <desc>a (2004)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2006-12-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-  
-  <change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType" reg="base">base</rs> without moulding (<measure type="length" unit="metre" dim="width">0.55</measure> ×  <measure type="depth" dim="depth">0.77</measure>), in two fragments: Upper part, a, lines 1-11,  <measure dim="height" type="length" unit="metre">0.55</measure>; lower part, b,  lines 12-16, <measure dim="height" type="length" unit="metre">0.80</measure>. The lower fragment had a deep groove in it when recorded in 1934; by 1973 the fragment to the right of this groove, in lines 14-15, had broken off.</p>
+<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="καί">καὶ</w>  <lb n="2"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="γερουσία"><supplied reason="lost">γ</supplied>ερουσία</w> <w lemma="τιμάω">ἐτείμησαν</w> <w lemma="ὁ">τα<supplied reason="lost">ῖς</supplied></w>  <lb n="3"/><w lemma="καλός"><supplied reason="lost">κα</supplied>λλίσταις</w> <w lemma="καί">καὶ</w> <w lemma="μέγας">μεγίσταις</w> <lb n="4"/><w lemma="τιμή"><supplied reason="lost">τ</supplied><unclear reason="damage">ε</unclear>ιμαῖς</w>  <persName type="attested"><name nymRef="#Θεόδοτος">Θεόδοτον</name>  <persName type="attested"><name nymRef="#Ἀνδρόνικος">Ἀνδ<unclear reason="damage">ρ</unclear><supplied reason="lost">ο</supplied><lb n="5" break="no"/>νίκου</name>  <w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Παρδαλᾶς">Παρδαλᾶ</name>  <w lemma="ὁ">το<unclear reason="damage">ῦ</unclear></w><lb n="6"/><persName type="attested"><name nymRef="#Παπίας"><supplied reason="lost">Π</supplied><unclear reason="damage">α</unclear>πίου</name></persName></persName></persName></persName> <w lemma="ἥρως">ἥρωα</w> <w lemma="ἀνδρεῖος">ἀνδρεῖον</w> <w lemma="ἀγαθός"><unclear reason="damage">ἀ</unclear><supplied reason="lost">γα</supplied><lb n="7" break="no"/><supplied reason="lost">θ</supplied>ὸν</w> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="πατήρ"><unclear reason="damage">π</unclear><supplied reason="lost">α</supplied><lb n="8" break="no"/><supplied reason="lost">τ</supplied><unclear reason="damage">ρ</unclear>ὸς</w> <w lemma="καί">καὶ</w> <w lemma="πρόγονος">προγόνων</w> <w lemma="λειτουργός">λειτο<unclear reason="damage">υ</unclear><supplied reason="lost">ρ</supplied><lb n="9" break="no"/><supplied reason="lost">γ</supplied><unclear reason="damage">ῶ</unclear>ν</w> <w lemma="καί">καὶ</w> <w lemma="ζάω">ζήσαντα</w> <w lemma="κόσμιος">κοσμίως</w> <lb n="10"/>  <w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w> <w lemma="αἰδήμων">αἰδημόνως</w> <w lemma="καί">καὶ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα"><unclear reason="damage">ὑ</unclear>πό<lb n="11" break="no"/>δειγμα</w>  <w lemma="ἀρετή">ἀρε<supplied reason="lost">τῆ</supplied>ς</w><lb n="12"/><w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="ἀνάστασις"><supplied reason="lost">ἀν</supplied>άστασιν</w>  <w lemma="τις">τ<supplied reason="lost">ο</supplied><unclear reason="damage">υ</unclear></w>  <w lemma="ἀνδρίας">ἀνδρ<supplied reason="lost">ι</supplied><lb n="13" break="no"/><supplied reason="lost">άν</supplied>τος</w>  <w lemma="ποιέω">ποησαμέ<unclear reason="damage">ν</unclear><supplied reason="lost">ο</supplied>υ</w>  <persName type="attested"><name nymRef="#Ἀνδρόνεικος">Ἀν<lb n="14" break="no"/><supplied reason="lost">δρ</supplied>ονείκου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Παρδαλᾶς">Π<supplied reason="lost">αρ</supplied><app type="previouslyread"><rdg resp="previous"><unclear reason="damage">δ</unclear>αλᾶ</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="4"/></rdg></app></name>  <lb n="15"/>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <persName type="attested"><name nymRef="#Παπίας">Παπίου</name></persName></persName></persName>  <w lemma="ὁ">τοῦ</w>  <w lemma="πατήρ"><unclear reason="damage">π</unclear><supplied reason="lost">α</supplied><app type="previouslyread"><rdg resp="previous"><unclear reason="damage">τρ</unclear>ὸς</rdg><rdg resp="autopsy"><gap reason="lost" unit="character" quantity="4"/></rdg></app></w><lb n="16"/>  <space extent="3" unit="character" dim="horizontal"/>                <w lemma="αὐτός">αὐτοῦ</w>  <space extent="3" unit="character" dim="horizontal"/><lb n="16a"/>                            <space unit="line" extent="1" dim="vertical"/></ab> 
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> <rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.0275–0.035</measure></p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notAfter="0050" notBefore="0001" exact="none">First half of second century A.D.</date> (<rs type="criteria">lettering</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="καί">καὶ</w>  <lb n="2"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="γερουσία"><supplied reason="lost">γ</supplied>ερουσία</w> <w lemma="τιμάω">ἐτείμησαν</w> <w lemma="ὁ">τα<supplied reason="lost">ῖς</supplied></w>  <lb n="3"/><w lemma="καλός"><supplied reason="lost">κα</supplied>λλίσταις</w> <w lemma="καί">καὶ</w> <w lemma="μέγας">μεγίσταις</w> <lb n="4"/><w lemma="τιμή"><supplied reason="lost">τ</supplied><unclear reason="damage">ε</unclear>ιμαῖς</w>  <persName type="aphrodisian" full="yes"><name reg="Θεόδοτος">Θεόδοτον</name>  <persName type="aphrodisian" full="yes"><name reg="Ἀνδρόνικος">Ἀνδ<unclear reason="damage">ρ</unclear><supplied reason="lost">ο</supplied><lb n="5" type="worddiv"/>νίκου</name>  <w lemma="ὁ">τοῦ</w>  <persName type="aphrodisian" full="yes"><name reg="Παρδαλᾶς">Παρδαλᾶ</name>  <w lemma="ὁ">το<unclear reason="damage">ῦ</unclear></w><lb n="6"/><persName type="aphrodisian" full="yes"><name reg="Παπίας"><supplied reason="lost">Π</supplied><unclear reason="damage">α</unclear>πίου</name></persName></persName></persName></persName> <w lemma="ἥρως">ἥρωα</w> <w lemma="ἀνδρεῖος">ἀνδρεῖον</w> <w lemma="ἀγαθός"><unclear reason="damage">ἀ</unclear><supplied reason="lost">γα</supplied><lb n="7" type="worddiv"/><supplied reason="lost">θ</supplied>ὸν</w> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="πατήρ"><unclear reason="damage">π</unclear><supplied reason="lost">α</supplied><lb n="8" type="worddiv"/><supplied reason="lost">τ</supplied><unclear reason="damage">ρ</unclear>ὸς</w> <w lemma="καί">καὶ</w> <w lemma="πρόγονος">προγόνων</w> <w lemma="λειτουργός">λειτο<unclear reason="damage">υ</unclear><supplied reason="lost">ρ</supplied><lb n="9" type="worddiv"/><supplied reason="lost">γ</supplied><unclear reason="damage">ῶ</unclear>ν</w> <w lemma="καί">καὶ</w> <w lemma="ζάω">ζήσαντα</w> <w lemma="κόσμιος">κοσμίως</w> <lb n="10"/>  <w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w> <w lemma="αἰδήμων">αἰδημόνως</w> <w lemma="καί">καὶ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα"><unclear reason="damage">ὑ</unclear>πό<lb n="11" type="worddiv"/>δειγμα</w>  <w lemma="ἀρετή">ἀρε<supplied reason="lost">τῆ</supplied>ς</w><lb n="12"/><w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w lemma="ἀνάστασις"><supplied reason="lost">ἀν</supplied>άστασιν</w>  <w lemma="τις">τ<supplied reason="lost">ο</supplied><unclear reason="damage">υ</unclear></w>  <w lemma="ἀνδρίας">ἀνδρ<supplied reason="lost">ι</supplied><lb n="13" type="worddiv"/><supplied reason="lost">άν</supplied>τος</w>  <w lemma="ποιέω">ποησαμέ<unclear reason="damage">ν</unclear><supplied reason="lost">ο</supplied>υ</w>  <persName type="aphrodisian" full="yes"><name reg="Ἀνδρόνεικος">Ἀν<lb n="14" type="worddiv"/><supplied reason="lost">δρ</supplied>ονείκου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian" full="yes"><name reg="Παρδαλᾶς">Π<supplied reason="lost">αρ</supplied><app type="previouslyread"><rdg resp="previous"><unclear reason="damage">δ</unclear>αλᾶ</rdg><rdg resp="autopsy"><gap extent="4" reason="lost" unit="character"/></rdg></app></name>  <lb n="15"/>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <persName type="aphrodisian" full="yes"><name reg="Παπίας">Παπίου</name></persName></persName></persName>  <w lemma="ὁ">τοῦ</w>  <w lemma="πατήρ"><unclear reason="damage">π</unclear><supplied reason="lost">α</supplied><app type="previouslyread"><rdg resp="previous"><unclear reason="damage">τρ</unclear>ὸς</rdg><rdg resp="autopsy"><gap extent="4" reason="lost" unit="character"/></rdg></app></w><lb n="16"/>  <space extent="3" unit="character" dim="horizontal"/>                <w lemma="αὐτός">αὐτοῦ</w>  <space extent="3" unit="character" dim="horizontal"/><lb n="16a"/>                            <space unit="line" extent="1" dim="vertical"/></ab> 
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); Publications; Gaudin's squeeze.</p>
-</div>
-
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-
-<p>No translation yet (2007)</p></div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Walls, North-east</rs>: fallen from the wall just inside the north-east gate.</rs><rs type="origLocation">Unknown</rs><rs type="lastLocation">Findspot (1961)</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Upper fragment recorded by Gaudin (95); both parts recorded by the MAMA expedition; by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="reinach" type="primary"><author>Reinach</author>, REG 19, 1906, 128-129, no. <biblScope>56</biblScope> (part)</bibl>; by <bibl n="MAMA8" type="primary"><author>Cormack</author>, from the MAMA records, MAMA 8, no. <biblScope>490</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257416">536</biblScope></bibl>.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="Aph2004_138"><figDesc>a (2004)</figDesc></figure></p></div></body>
-</text>
-
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div type="commentary">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="reinach" type="primary">
+                  <author>Reinach</author>, REG 19, 1906, 128-129, no. <citedRange>56</citedRange> (part)</bibl>; by <bibl n="MAMA8" type="primary">
+                  <author>Cormack</author>, from the MAMA records, MAMA 8, no. <citedRange>490</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257416">536</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

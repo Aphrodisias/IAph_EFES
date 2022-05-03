@@ -1,113 +1,153 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020313" n="iAph0214 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">Storage jar of Polychronios: <rs type="textType">measurement</rs></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-06-02</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change>
-  <date>2003-08-30</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>A large <rs type="material" key="marmor">white marble</rs> <rs type="objectType">storage jar</rs> (H. <measure type="length" unit="metre" dim="height">0.895</measure>, maximum diam.
-<measure dim="diameter">0.77</measure>), which is cracked.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> in one line along the shoulder.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Av. <measure type="length" unit="metre" dim="height">0.04</measure>,
-<foreign>omicron</foreign> <measure type="length" unit="metre" dim="height">0.03</measure>,
-<foreign>tau</foreign> <measure type="length" unit="metre" dim="height">0.05</measure>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notAfter="0600" cert="low" notBefore="0301">Fourth-sixth century</date> (<rs type="criteria">content</rs>)</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Storage jar of Polychronios: measurement</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020313</idno>
+            <idno type="IAph2007">iAph020313</idno>
+            <idno type="JMR2004">iAph0214</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A large <material key="marmor">white marble</material>
+                              <objectType>storage jar</objectType> (H. <height unit="metre">0.895</height>, maximum diam.
+<dim type="diameter">0.77</dim>), which is cracked.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in one line along the shoulder.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Av. <height unit="metre">0.04</height>,
+<foreign>omicron</foreign>
+                        <height unit="metre">0.03</height>,
+<foreign>tau</foreign>
+                        <height unit="metre">0.05</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0301" notAfter="0600" evidence="content">Fourth-sixth century (<rs type="criteria">content</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Boul">Bouleuterion/Odeon, North Area</rs>: in the area north of the Bouleuterion
+and south of the Temple-Church.</provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-30" who="#CMR">tagged and corrected</change>
+         <change when="2003-06-02" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="rosen025.jpg">
+            <desc>Text (1966)</desc>
+         </graphic>
+         <graphic url="DSCN0221.jpg">
+            <desc>Jar (2004)</desc>
+         </graphic>
+         <graphic url="DSCN0223.jpg">
+            <desc>Jar (2004)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
 		 <ab>
-		 	<lb n="1"/> <persName key="polychronius3" type="aphrodisian" full="yes"><name reg="Πολυχρόνιος">Πολυχρονίου</name></persName> <rs type="profession" key="boxer"><w lemma="πύκτης">πύκτου</w></rs> <w lemma="νόμισμα">νομισμάτων</w> <w lemma="δύο">δύο</w> <w lemma="τρίτος">τρίτου</w>. 
-			<lb n="2"/><g type="cross"/></ab>
+		 	<lb n="1"/> <persName key="polychronius3" type="attested"><name nymRef="#Πολυχρόνιος">Πολυχρονίου</name></persName> <rs type="profession" key="boxer"><w lemma="πύκτης">πύκτου</w></rs> <w lemma="νόμισμα">νομισμάτων</w> <w lemma="δύο">δύο</w> <w lemma="τρίτος">τρίτου</w>. 
+			<lb n="2"/><g ref="#cross"/></ab>
       </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>Of Polychronios, <seg cert="low">boxer</seg>, at 2 1/3 <term lang="la">nomismata</term></ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head><p>See discussion at <xref type="eAla-text" n="XI.21">XI.21</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p><rs type="found"><rs type="monuList" key="Boul">Bouleuterion/Odeon, North Area</rs>: in the area north of the Bouleuterion
-and south of the Temple-Church.</rs>. <rs type="origLocation">Unknown.</rs>. <rs type="lastLocation">Findspot.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Recorded by the NYU expedition.</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>
-no. <biblScope>214</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257755">869</biblScope></bibl>; republished by <bibl type="hbi" n="PPA"><author>Roueché</author>, <title type="abbreviated" level="m">PPA</title> <biblScope>87</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="rosen025"><figDesc>Text (1966)</figDesc></figure><figure href="DSCN0221"><figDesc>Jar (2004)</figDesc></figure><figure href="DSCN0223"><figDesc>Jar (2004)</figDesc></figure></p></div>
-
-  
-
-      
-
-      
-		  
-		</body></text>
+         <div type="translation">
+            <ab>Of Polychronios, <seg cert="low">boxer</seg>, at 2 1/3 <term xml:lang="la">nomismata</term>
+            </ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="XI.21" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>
+no. <citedRange>214</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257755">869</citedRange>
+               </bibl>; republished by <bibl type="hbi" n="PPA">
+                  <author>Roueché</author>, <title type="abbreviated" level="m">PPA</title>
+                  <citedRange>87</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

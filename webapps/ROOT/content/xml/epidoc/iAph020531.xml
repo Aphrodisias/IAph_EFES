@@ -1,112 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020531" n="iAph0222 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m">Table/dish fragment: <seg cert="low"><rs type="textType">Dedication</rs></seg></title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="ala2004">Roueché (<date>2004</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change><date>2004-04-06</date><respStmt><name>Juan Garcés</name></respStmt><item>Completed lemmatisation, checked figure ids, tagged keywords</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  <change>
-  <date>2003-06-02</date>
-  <respStmt><name>Gabriel Bodard</name></respStmt>
-  <item>tidied and corrected</item>
-  </change>
-  <change>
-  <date>2003-04-30</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>tagged Greek; tidied</item>
-  </change>
-  <change>
-  <date>2003-09-03</date>
-  <respStmt><name>CMR</name></respStmt>
-  <item>tagged, lemmatised and corrected</item>
-  </change>
-  <change><date>2004-02-29</date><respStmt><name>CMR</name></respStmt><item>checked; image refs.</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>Two fragments, which do not join, from a <rs type="material" key="marmor">white marble</rs> <rs type="objectType">dish</rs>
-or <rs type="objectType">table</rs> with a raised rim (depth at rim <measure type="length" unit="metre" dim="depth">0.06</measure>); a: <measure type="length" unit="metre" dim="height">0.33</measure> × <measure type="length" unit="metre" dim="width">0.16</measure>;
-b: <measure type="length" unit="metre" dim="height">0.13</measure> × <measure type="length" unit="metre" dim="width">0.215</measure>.</p>
-      </div>
-
-      <div type="description" n="text">
-        <head>Description of Text</head>
-        <p><rs type="execution" key="scalpro">Inscribed</rs> on the rim.</p>
-      </div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>Irregular, cursive; <measure type="length" unit="metre" dim="height">0.02-0.03</measure>.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date notBefore="0401" notAfter="0600" exact="none">Fifth or sixth century</date> or later (<rs type="criteria">lettering</rs>).</p>
-      </div>
-
-      <div n="text" lang="grc" type="edition">
-        <head lang="en">Edition</head>
-        <ab><cb n="a"/><lb n="1"/>
-        <gap dim="left" reason="lost" extent="unknown" unit="character"/><persName key="eulamius1" type="aphrodisian" full="yes"><name reg="Εὐλάμιος"><supplied reason="lost" cert="low">Ε</supplied>ὐλαμίου</name></persName> <orig n="unresolved"><unclear reason="undefined">ο</unclear></orig><gap dim="right" reason="lost" extent="unknown" unit="character"/>
-		<cb n="b"/><lb n="1"/>        
-        <persName key="*orus1" type="aphrodisian" full="yes"><name><gap dim="left" reason="lost" extent="unknown" unit="character"/>ορου</name></persName> <w lemma="καί">καὶ</w> <persName key="moschus1" type="aphrodisian" full="init"><name reg="Μόσχος">Μόσ<supplied reason="lost">χου</supplied></name></persName><gap dim="right" reason="lost" extent="unknown" unit="character"/></ab>
-      </div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <ab>a. 
-        <gap dim="left" reason="lost"/> of <persName full="yes"><seg cert="low">Eulamios</seg></persName> <note place="not specified" anchored="yes">or <gap dim="left" reason="lost"/> <supplied reason="lost">son</supplied> of <persName full="yes">Lamios</persName>.</note></ab><ab>b. of <persName full="yes"><gap dim="left" reason="lost"/>oros</persName> and <persName full="yes">Mos<supplied cert="low" reason="lost">chos</supplied></persName> <gap dim="right" reason="lost"/></ab>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head><p>See discussion at <xref type="eAla-text" n="XI.27">XI.27</xref></p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p> <rs type="found"><rs key="Boul" type="monuList">Bouleuterion/Odeon, West area</rs>: a: south-west Odeon area, Tr. 3,
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Table/dish fragment: <seg cert="low">Dedication</seg>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020531</idno>
+            <idno type="IAph2007">iAph020531</idno>
+            <idno type="JMR2004">iAph0222</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>65.368</idno>
+                  <idno>66.278</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two fragments, which do not join, from a <material key="marmor">white marble</material>
+                              <objectType>dish</objectType>
+or <objectType>table</objectType> with a raised rim (depth at rim <depth unit="metre">0.06</depth>); a: <height unit="metre">0.33</height> × <width unit="metre">0.16</width>;
+b: <height unit="metre">0.13</height> × <width unit="metre">0.215</width>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the rim.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Irregular, cursive; <height unit="metre">0.02-0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0401"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering">Fifth or sixth century or later (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs key="Boul" type="monuList">Bouleuterion/Odeon, West area</rs>: a: south-west Odeon area, Tr. 3,
 near north wall; b: 'Bishop's Palace': St.I, west
-part.</rs> <rs type="origLocation">Unknown.</rs> <rs type="lastLocation">Museum.</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated by the NYU expedition (<rs type="invNo">65.368</rs>, <rs type="invNo">66.278</rs>).</p>
+part.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_J_31A.jpg">
+            <desc>Both fragments (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+        <ab><cb n="a"/><lb n="1"/>
+        <gap reason="lost" unit="character" extent="unknown"/><persName key="eulamius1" type="attested"><name nymRef="#Εὐλάμιος"><supplied reason="lost" cert="low">Ε</supplied>ὐλαμίου</name></persName> <orig n="unresolved"><unclear reason="undefined">ο</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
+		<cb n="b"/><lb n="1"/>        
+        <persName key="*orus1" type="attested"><name><gap reason="lost" unit="character" extent="unknown"/>ορου</name></persName> <w lemma="καί">καὶ</w> <persName key="moschus1" type="attested"><name nymRef="#Μόσχος">Μόσ<supplied reason="lost">χου</supplied></name></persName><gap reason="lost" unit="character" extent="unknown"/></ab>
       </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>
-no. <biblScope>222</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257762">876</biblScope>, <biblScope n="257763">877</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-        <head>Photographs</head>
-        <p><figure href="77_J_31A"><figDesc>Both fragments (1977)</figDesc></figure></p></div>
-
-    
-
-      
-
+         <div type="translation">
+            <ab>a. 
+        <gap reason="lost" unit="character" extent="unknown"/> of <persName full="yes">
+                  <seg cert="low">Eulamios</seg>
+               </persName>
+               <note place="not specified" xml:lang=""/>
+            </ab>
+            <ab>b. of <persName full="yes">
+                  <gap reason="lost" unit="character" extent="unknown"/>oros</persName> and <persName full="yes">Mos<supplied cert="low" reason="lost">chos</supplied>
+               </persName>
+               <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="XI.27" target=".xml"/>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title>
+no. <citedRange>222</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257762">876</citedRange>, <citedRange n="257763">877</citedRange>
+               </bibl>.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

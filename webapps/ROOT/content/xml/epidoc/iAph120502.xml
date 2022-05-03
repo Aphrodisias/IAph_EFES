@@ -1,104 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120502" n="iAph1003 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs reg="funerary" type="textType">Funerary</rs> <rs type="textType">honours</rs> for Epainetos</title>
-</titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary honours for Epainetos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120502</idno>
+            <idno type="IAph2007">iAph120502</idno>
+            <idno type="JMR2004">iAph1003</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType key="block">block</objectType> (<height unit="metre">1.37</height> × <width unit="metre">0.59</width> × <depth unit="metre">
+0.39</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in a prepared area with a roughly dressed border approximately in the centre.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">
+0.03</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0100" notAfter="-0001" evidence="lettering">Perhaps 
+first century B.C. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">reused in the <rs type="monuList">Walls, South-east</rs> ( near <ref type="inscription" n="1534" target="120524.xml"/> (=MAMA 559), <ref type="inscription" n="525" target="080114.xml"/> (=MAMA 424))</provenance>
+                  <provenance type="observed" when="1983">Findspot (1983)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); publications; Sherard papers; Wood; Gaudin; Kubitschek.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-01-05" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_T_22.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="83_D_11A.jpg">
+            <desc>Face (1983)</desc>
+         </graphic>
+         <graphic url="Wood_14_45v.jpg">
+            <desc>Wood notebook 14, page 45v</desc>
+         </graphic>
+         <graphic url="K_III_61.jpg">
+            <desc>Kubitschek notebook III, 61</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-  
-  <change><date>2005-01-05</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
-
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>
-<rs type="material" key="marmor">White marble</rs> <rs type="objectType" reg="block">block</rs> (<measure type="length" unit="metre" dim="height">1.37</measure> × <measure type="length" unit="metre" dim="width">0.59</measure> × <measure type="length" unit="metre" dim="depth">
-0.39</measure>).</p>
+<ab><lb n="1"/><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="θάπτω">ἔθαψεν</w>  <lb n="2"/><persName nymRef="#Ἐπαίνετος  Φιλοδήμου" type="attested"><name nymRef="#Ἐπαίνετος">Ἐπαίνετον</name>  <persName type="attested"><name nymRef="#Φιλόδημος">Φιλοδήμου</name></persName></persName>  <w lemma="γίγνομαι">γε<lb n="3" break="no"/>νόμενον</w>  <w lemma="ἀγαθός">ἀγαθὸν</w>  <w lemma="ἀνήρ">ἄνδρα</w>  <w lemma="καί">καὶ</w><lb n="4"/><w lemma="διαφέρω">διενέγκαντα</w>  <w lemma="εὐταξία">εὐταξίᾳ</w>  <w lemma="καί">καὶ</w><lb n="5"/><w lemma="ἀρετή">ἀρετῇ</w>  <w lemma="ἔτι">ἔτι</w>  <w lemma="παντάπασι">παντάπασι</w>  <space extent="1" unit="character" dim="horizontal"/>  <w lemma="εἰμί">ὄν<lb n="6" break="no"/>τα</w>  <w lemma="νέος">νέον</w>  <w lemma="στεφανόω">ἐστεφάνωσεν</w>  <lb n="7"/><w lemma="δέ">δὲ</w>  <w lemma="καί">καὶ</w>  <w lemma="χρυσός">χρυσῷ</w>  <w lemma="στέφανος">στεφάνῳ</w>  </ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>
-<rs type="execution" key="scalpro">Inscribed</rs> in a prepared area with a roughly dressed border approximately in the centre.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure type="length" unit="metre" dim="height">
-0.03</measure></p>
-</div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p>Perhaps 
-<date cert="low" notBefore="-0100" notAfter="-0001">first century B.C.</date> (<rs type="criteria">lettering</rs>)</p>
-</div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="θάπτω">ἔθαψεν</w>  <lb n="2"/><persName reg="Ἐπαίνετος  Φιλοδήμου" full="yes" type="aphrodisian"><name type="        " reg="Ἐπαίνετος">Ἐπαίνετον</name>  <persName type="aphrodisian"><name reg="Φιλόδημος">Φιλοδήμου</name></persName></persName>  <w lemma="γίγνομαι">γε<lb n="3" type="worddiv"/>νόμενον</w>  <w lemma="ἀγαθός">ἀγαθὸν</w>  <w lemma="ἀνήρ">ἄνδρα</w>  <w lemma="καί">καὶ</w><lb n="4"/><w lemma="διαφέρω">διενέγκαντα</w>  <w lemma="εὐταξία">εὐταξίᾳ</w>  <w lemma="καί">καὶ</w><lb n="5"/><w lemma="ἀρετή">ἀρετῇ</w>  <w lemma="ἔτι">ἔτι</w>  <w lemma="παντάπασι">παντάπασι</w>  <space extent="1" unit="character" dim="horizontal"/>  <w lemma="εἰμί">ὄν<lb n="6" type="worddiv"/>τα</w>  <w lemma="νέος">νέον</w>  <w lemma="στεφανόω">ἐστεφάνωσεν</w>  <lb n="7"/><w lemma="δέ">δὲ</w>  <w lemma="καί">καὶ</w>  <w lemma="χρυσός">χρυσῷ</w>  <w lemma="στέφανος">στεφάνῳ</w>  </ab>
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); publications; Sherard papers; Wood; Gaudin; Kubitschek.</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>The council and the people buried Epainetos son of Philodemos, who was a good man still excelling everyone in discipline and virtue; and when he was young they also crowned him with a gold crown.</p>
-</div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>This appears to be the only text at Aphrodisias which was copied by Picenini, but not transcribed by Sherard.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found">reused in the <rs type="monuList">Walls, South-east</rs> ( near <xref type="inscription" n="1534" href="120524">12.524</xref> (=MAMA 559), <xref type="inscription" n="525" href="080114">8.114</xref> (=MAMA 424))</rs>  <rs type="lastLocation" reg="findspot">Findspot (1983)</rs> <rs type="origLocation">Unknown</rs></p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Picenini (no. 57: BM Add. 10102, 7, 26, and, from Tisser, 54); by Wood (14, f45v); by Kubitschek (III.61; Abklatsch 29); by Gaudin (146); by the MAMA expedition; and by the NYU expedition in 1975.</p>
-</div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="kubreich1893" rend="primary" type="hbi"><author>Kubitschek and Reichel</author>, <title level="j">AAWW</title> 1893, 102, no. <biblScope>10</biblScope></bibl>; <bibl n="reinach" rend="primary" type="hbi"><author>Reinach</author>, <title level="j">REG</title> 19, 1906, 123, no. <biblScope>50</biblScope></bibl>; from the MAMA records by <bibl n="MAMA8" rend="primary" type="hbi"><author>Cormack</author>, <title level="m">MAMA</title> 8, no. <biblScope>464</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257351">473</biblScope></bibl></p>
-</div>
-
-<div type="figure" n="photographs"><head>Photographs</head><p><figure href="73_T_22"><figDesc>Face (1973)</figDesc></figure><figure href="83_D_11A"><figDesc>Face (1983)</figDesc></figure></p></div>
-
-
-
-<div type="figure" n="transcriptions"><head>Representations</head><p><figure href="Wood_14_45v"><figDesc>Wood notebook 14, page 45v</figDesc></figure><figure href="K_III_61"><figDesc>Kubitschek notebook III, 61</figDesc></figure></p></div></body>
-</text>
-
+         <div type="translation">
+            <p>The council and the people buried Epainetos son of Philodemos, who was a good man still excelling everyone in discipline and virtue; and when he was young they also crowned him with a gold crown.</p>
+         </div>
+         <div type="commentary">
+            <p>This appears to be the only text at Aphrodisias which was copied by Picenini, but not transcribed by Sherard.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="kubreich1893" rend="primary" type="hbi">
+                  <author>Kubitschek and Reichel</author>, <title level="j">AAWW</title> 1893, 102, no. <citedRange>10</citedRange>
+               </bibl>; <bibl n="reinach" rend="primary" type="hbi">
+                  <author>Reinach</author>, <title level="j">REG</title> 19, 1906, 123, no. <citedRange>50</citedRange>
+               </bibl>; from the MAMA records by <bibl n="MAMA8" rend="primary" type="hbi">
+                  <author>Cormack</author>, <title level="m">MAMA</title> 8, no. <citedRange>464</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257351">473</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

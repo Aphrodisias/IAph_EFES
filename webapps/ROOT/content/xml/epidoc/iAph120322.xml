@@ -1,87 +1,158 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120322" n="iAph1531 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> inscription for Neikomachos and others </title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-02-20</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Right side of a <rs type="material">white marble</rs> <rs type="objectType">block</rs> damaged also at the upper and lower right corners (<measure dim="width" type="length" unit="metre">1.02</measure> x <measure dim="height" type="length" unit="metre">0.64</measure> x <measure dim="depth" type="length" unit="metre">0.31</measure>).</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary inscription for Neikomachos and others </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120322</idno>
+            <idno type="IAph2007">iAph120322</idno>
+            <idno type="JMR2004">iAph1531</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Right side of a <material>white marble</material>
+                              <objectType>block</objectType> damaged also at the upper and lower right corners (<width unit="metre">1.02</width> x <height unit="metre">0.64</height> x <depth unit="metre">0.31</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the exposed face within a moulded panel with narrow rebates along the right and lower edges. The upper edge is plain, and the opening of the text was presumably cut on the block which adjoined it above.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>ll. 1-14, c.<height unit="metre">0.033</height>; ll. 15-17, c.<height unit="metre">0.03</height>; l.11, ligature<foreign xml:lang="grc">HN</foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown: Aphrodisias necropolis</origPlace>
+                     <origDate notBefore="0168"
+                               notAfter="0233"
+                               precision="medium"
+                               evidence="lettering">
+Later second to early third  century A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, East (south part)</rs>:on the inside face, very near <ref type="inscription" n="112" target="120328.xml"/> (=MAMA 428).</provenance>
+                  <provenance type="observed" when="1989">Findspot (1989)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); publication.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-02-20" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="89_C_25.jpg">
+            <desc>Face (1989)</desc>
+         </graphic>
+         <graphic url="89_C_26.jpg">
+            <desc>Face (1989)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="0"/>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ὑπό"><supplied reason="lost">ὑ</supplied>πὸ</w>  <persName type="attested"><name nymRef="#Νεικόμαχος">Νε<unclear reason="damage">ι</unclear><supplied reason="lost">κομάχου</supplied></name></persName>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ἀρχιερεύς"><unclear reason="damage">ἀ</unclear>ρχιερέως</w> <w lemma="καί"><supplied reason="lost" cert="low">καὶ  </supplied></w> <w lemma="ἐν">ἐν</w>  <w lemma="ὁ">τ<supplied reason="lost">ῇ</supplied></w>  <gap reason="lost" unit="character" quantity="2"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Μηνόδοτος"><supplied reason="lost">Μην</supplied>όδοτος</name>  <persName type="attested"><name nymRef="#Νεικόμαχος">Νε<supplied reason="lost">ικο</supplied>μάχου</name></persName></persName>  <lb n="4"/><w><gap reason="lost" unit="character" extent="unknown"/>ου</w> <w lemma="ἀρχιερεύς">ἀρχιερεὺς</w> <w lemma="ταμίας">ταμίας</w> <w lemma="νεοποιός">νε<lb n="5" break="no"/>  <supplied reason="lost">οποιὸς</supplied></w>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <gap reason="lost" unit="character" quantity="13"/> <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="γυνή"><supplied reason="lost">γυν</supplied><unclear reason="damage">ὴ</unclear></w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Νεικόμαχος">Νεικομάχου</name></persName> <w lemma="ἀρχιέρεια">ἀρχιέρεια</w> <lb n="6"/>  <gap reason="lost" unit="character" quantity="16"/><w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <persName type="attested"><name nymRef="#Μηνόδοτος">Μηνοδότου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀπφία">Ἀπφία</name></persName> <lb n="7"/>  <gap reason="lost" unit="character" quantity="12"/> <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w> <w lemma="ἀριστερός"><supplied reason="lost">ἀρι</supplied><unclear reason="damage">σ</unclear>τέρᾳ</w> <w lemma="σορός">σορῷ</w> <persName type="attested"><name nymRef="#Φλαβία"><expan><g ref="#stop"/> <abbr>Φλ</abbr><g ref="#stop"/><ex>αβία</ex></expan></name> <name nymRef="#Σεκούνδιλλα">Σεκούνδιλλα</name></persName><lb n="8"/><gap reason="lost" unit="character" quantity="14"/><persName type="attested"><name nymRef="#Μηνόδοτος"><supplied reason="lost">Μηνο</supplied><unclear reason="damage">δ</unclear>ότου</name></persName>  <g ref="#stop"/> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Νικομαχίς">Νεικομαχὶς</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Νεικόμαχος">Νει<lb n="9" break="no"/><supplied reason="lost" cert="low">κόμαχος</supplied></name></persName>    <supplied reason="lost">τὰ</supplied>  <supplied reason="lost"><w lemma="τέκνον">τέκνα</w> <g ref="#stop"/> <w lemma="αὐτός">αὐτῶν</w></supplied>  <w lemma="ἐν"><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ὅς">αἷς</w> <w lemma="σορός">σοροῖς</w> <w lemma="ἀφηρωίζω">ἀφηρωισμέναις</w> <lb n="10"/><w lemma="ἕτερος"><supplied reason="lost">ἑτέρῳ</supplied></w>  <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w>  <w lemma="οὐδείς"><supplied reason="lost">οὐδενὶ</supplied></w>  <w lemma="ἔξεστι"><supplied reason="lost">ἐξέσται</supplied></w>  <w lemma="ἐνθάπτω"><supplied reason="lost">ἐνθ</supplied><unclear reason="damage">ά</unclear>ψαι</w> <w lemma="τις">τινὰ</w> <g ref="#stop"/><w lemma="οὐδέ">οὐδὲ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">ταῖς</w> <w lemma="εἰμί">ὲν</w> <w lemma="ὁ">τῷ</w> <w lemma="βωμός">βω<lb n="11" break="no"/><supplied reason="lost">μῷ</supplied></w>  <w lemma="εἰσώστη"><supplied reason="lost">εἰσωσταῖς</supplied></w>  <gap reason="lost" unit="character" quantity="9"/>  <w lemma="χωρίς"><supplied reason="lost">χωρ</supplied>ὶς</w> <w lemma="ὁ">τῶν</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="διαθήκη">διαθήκ<hi rend="ligature" id="lig1">ῃ</hi></w><link targets="lig1 lig2"/> <persName type="attested"><name nymRef="#Νικόμαχος"><hi rend="ligature" id="lig2">Ν</hi>εικομα<lb n="12" break="no"/><supplied reason="lost">χου</supplied></name></persName>  <supplied reason="lost">δηλουμένων</supplied>  <supplied reason="lost">ἐπεὶ</supplied>  <w lemma="ἐάν"><supplied reason="lost">ἐ</supplied>άν</w> <w lemma="τις">τι</w> <w lemma="παρά">παρὰ</w> <w lemma="οὗτος">ταῦτα</w> <w lemma="τολμάω">τολ<hi rend="ligature">μή</hi>σῃ</w> <w lemma="τις">τις</w> <w lemma="εἰσφέρω">εἰσοίσε<supplied reason="lost">ι</supplied></w>  <lb n="13"/><supplied reason="lost">εἰς</supplied>  <supplied reason="lost">τὸν</supplied>  <supplied reason="lost">κυριακὸν</supplied>  <w lemma="φίσκος"><supplied reason="lost">φίσκο</supplied><unclear reason="damage">ν</unclear></w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <g ref="#stop"/> <w lemma="μυρίος">μύρια</w> <w lemma="ὁ">τὰ</w> <w lemma="δηλόω">δηλούμενα</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τῆς</w> <persName type="attested"><name nymRef="#Νεικόμαχος"><unclear reason="damage">Ν</unclear><supplied reason="lost">ει</supplied><lb n="14" break="no"/><supplied reason="lost">κομάχου</supplied></name></persName>  <w lemma="διαθήκη"><supplied reason="lost">διαθήκης</supplied></w>  <w lemma="ἐξουσία"><supplied reason="lost">ἐξ</supplied>ουσίας</w> <w lemma="εἰμί">οὔσης</w> <w lemma="πᾶς">παντὶ</w> <w lemma="ἐκδικέω">ἐκγδικεῖν</w> <w lemma="ἐπί">ἐπ<supplied reason="lost">ὶ</supplied></w>  <supplied reason="lost">τῷ</supplied>  <lb n="15"/><supplied reason="lost">τρίτῳ</supplied>  <supplied reason="lost">μέρει</supplied>  <supplied reason="lost">ταύτης</supplied>  <w lemma="ὁ"><supplied reason="lost">τῆ</supplied><unclear reason="damage">ς</unclear></w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίτυπος">ἀντίτυπον</w> <supplied reason="lost">εἰς</supplied>  <supplied reason="lost">τὸ</supplied>  <lb n="16"/><supplied reason="lost">χρεοφυλάκιον</supplied>  <supplied reason="lost">ἐπὶ</supplied>  <persName type="attested"><name nymRef="#Ἱεροκλῆς"><supplied reason="lost">Ἱ</supplied>ε<g ref="#stop"/>ροκλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀπολλώνιος ">Ἀπολλωνίου</name></persName></persName><unclear reason="damage"> </unclear><w lemma="μείς">μ<unclear reason="damage">η</unclear><supplied reason="lost" cert="low">νὸς</supplied></w>  <lb n="17"/><supplied reason="lost">κήδησονται</supplied>  <supplied reason="lost">δὲ</supplied>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <g ref="#stop"/><w lemma="ἡρῶος">ἡρώου</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλ<unclear reason="damage">ή</unclear></w> <gap reason="lost" unit="character" quantity="8"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the exposed face within a moulded panel with narrow rebates along the right and lower edges. The upper edge is plain, and the opening of the text was presumably cut on the block which adjoined it above.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>ll. 1-14, c.<measure dim="height" type="length" unit="metre">0.033</measure>; ll. 15-17, c.<measure dim="height" type="length" unit="metre">0.03</measure>; l.11, ligature<foreign lang="grc">HN</foreign>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0168" notAfter="0233" exact="none">Later second to early third  century A.D.</date> (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="character" dim="top"/>  <lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="ὑπό"><supplied reason="lost">ὑ</supplied>πὸ</w>  <persName type="aphrodisian"><name reg="Νεικόμαχος">Νε<unclear reason="damage">ι</unclear><supplied reason="lost">κομάχου</supplied></name></persName>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="ἀρχιερεύς"><unclear reason="damage">ἀ</unclear>ρχιερέως</w> <w lemma="καί"><supplied reason="lost" cert="low">καὶ  </supplied></w> <w lemma="ἐν">ἐν</w>  <w lemma="ὁ">τ<supplied reason="lost">ῇ</supplied></w>  <gap reason="lost" extent="2" unit="character"/>  <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <persName type="aphrodisian"><name reg="Μηνόδοτος"><supplied reason="lost">Μην</supplied>όδοτος</name>  <persName type="aphrodisian"><name reg="Νεικόμαχος">Νε<supplied reason="lost">ικο</supplied>μάχου</name></persName></persName>  <lb n="4"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/>ου</w> <w lemma="ἀρχιερεύς">ἀρχιερεὺς</w> <w lemma="ταμίας">ταμίας</w> <w lemma="νεοποιός">νε<lb n="5" type="worddiv"/>  <supplied reason="lost">οποιὸς</supplied></w>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>  <gap reason="lost" extent="13" unit="character"/> <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="γυνή"><supplied reason="lost">γυν</supplied><unclear reason="damage">ὴ</unclear></w> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Νεικόμαχος">Νεικομάχου</name></persName> <w lemma="ἀρχιέρεια">ἀρχιέρεια</w> <lb n="6"/>  <gap dim="left" extent="16" reason="lost" unit="character"/><w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <persName type="aphrodisian"><name reg="Μηνόδοτος">Μηνοδότου</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ἀπφία">Ἀπφία</name></persName> <lb n="7"/>  <gap reason="lost" extent="12" unit="character" dim="left"/> <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w> <w lemma="ἀριστερός"><supplied reason="lost">ἀρι</supplied><unclear reason="damage">σ</unclear>τέρᾳ</w> <w lemma="σορός">σορῷ</w> <persName type="aphrodisian"><name reg="Φλαβία"><expan><g type="stop"/> <abbr>Φλ</abbr><g type="stop"/><supplied reason="abbreviation">αβία</supplied></expan></name> <name reg="Σεκούνδιλλα">Σεκούνδιλλα</name></persName><lb n="8"/><gap reason="lost" extent="14" unit="character" dim="left"/><persName type="aphrodisian"><name reg="Μηνόδοτος"><supplied reason="lost">Μηνο</supplied><unclear reason="damage">δ</unclear>ότου</name></persName>  <g type="stop"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Νικομαχίς">Νεικομαχὶς</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Νεικόμαχος">Νει<lb n="9" type="worddiv"/><supplied reason="lost" cert="low">κόμαχος</supplied></name></persName>    <supplied reason="lost">τὰ</supplied>  <supplied reason="lost"><w lemma="τέκνον">τέκνα</w> <g type="stop"/> <w lemma="αὐτός">αὐτῶν</w></supplied>  <w lemma="ἐν"><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ὅς">αἷς</w> <w lemma="σορός">σοροῖς</w> <w lemma="ἀφηρωίζω">ἀφηρωισμέναις</w> <lb n="10"/><w lemma="ἕτερος"><supplied reason="lost">ἑτέρῳ</supplied></w>  <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w>  <w lemma="οὐδείς"><supplied reason="lost">οὐδενὶ</supplied></w>  <w lemma="ἔξεστι"><supplied reason="lost">ἐξέσται</supplied></w>  <w lemma="ἐνθάπτω"><supplied reason="lost">ἐνθ</supplied><unclear reason="damage">ά</unclear>ψαι</w> <w lemma="τις">τινὰ</w> <g type="stop"/><w lemma="οὐδέ">οὐδὲ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">ταῖς</w> <w lemma="εἰμί">ὲν</w> <w lemma="ὁ">τῷ</w> <w lemma="βωμός">βω<lb n="11" type="worddiv"/><supplied reason="lost">μῷ</supplied></w>  <w lemma="εἰσώστη"><supplied reason="lost">εἰσωσταῖς</supplied></w>  <gap reason="lost" extent="9" unit="character"/>  <w lemma="χωρίς"><supplied reason="lost">χωρ</supplied>ὶς</w> <w lemma="ὁ">τῶν</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="διαθήκη">διαθήκ<hi rend="ligature" id="lig1">ῃ</hi></w><link targets="lig1 lig2"/> <persName type="aphrodisian"><name reg="Νικόμαχος"><hi rend="ligature" id="lig2">Ν</hi>εικομα<lb n="12" type="worddiv"/><supplied reason="lost">χου</supplied></name></persName>  <supplied reason="lost">δηλουμένων</supplied>  <supplied reason="lost">ἐπεὶ</supplied>  <w lemma="ἐάν"><supplied reason="lost">ἐ</supplied>άν</w> <w lemma="τις">τι</w> <w lemma="παρά">παρὰ</w> <w lemma="οὗτος">ταῦτα</w> <w lemma="τολμάω">τολ<hi rend="ligature">μή</hi>σῃ</w> <w lemma="τις">τις</w> <w lemma="εἰσφέρω">εἰσοίσε<supplied reason="lost">ι</supplied></w>  <lb n="13"/><supplied reason="lost">εἰς</supplied>  <supplied reason="lost">τὸν</supplied>  <supplied reason="lost">κυριακὸν</supplied>  <w lemma="φίσκος"><supplied reason="lost">φίσκο</supplied><unclear reason="damage">ν</unclear></w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <g type="stop"/> <w lemma="μυρίος">μύρια</w> <w lemma="ὁ">τὰ</w> <w lemma="δηλόω">δηλούμενα</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τῆς</w> <persName type="aphrodisian"><name reg="Νεικόμαχος"><unclear reason="damage">Ν</unclear><supplied reason="lost">ει</supplied><lb n="14" type="worddiv"/><supplied reason="lost">κομάχου</supplied></name></persName>  <w lemma="διαθήκη"><supplied reason="lost">διαθήκης</supplied></w>  <w lemma="ἐξουσία"><supplied reason="lost">ἐξ</supplied>ουσίας</w> <w lemma="εἰμί">οὔσης</w> <w lemma="πᾶς">παντὶ</w> <w lemma="ἐκδικέω">ἐκγδικεῖν</w> <w lemma="ἐπί">ἐπ<supplied reason="lost">ὶ</supplied></w>  <supplied reason="lost">τῷ</supplied>  <lb n="15"/><supplied reason="lost">τρίτῳ</supplied>  <supplied reason="lost">μέρει</supplied>  <supplied reason="lost">ταύτης</supplied>  <w lemma="ὁ"><supplied reason="lost">τῆ</supplied><unclear reason="damage">ς</unclear></w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίτυπος">ἀντίτυπον</w> <supplied reason="lost">εἰς</supplied>  <supplied reason="lost">τὸ</supplied>  <lb n="16"/><supplied reason="lost">χρεοφυλάκιον</supplied>  <supplied reason="lost">ἐπὶ</supplied>  <persName type="aphrodisian"><name reg="Ἱεροκλῆς"><supplied reason="lost">Ἱ</supplied>ε<g type="stop"/>ροκλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀπολλώνιος ">Ἀπολλωνίου</name></persName></persName><unclear reason="damage"> </unclear><w lemma="μείς">μ<unclear reason="damage">η</unclear><supplied reason="lost" cert="low">νὸς</supplied></w>  <lb n="17"/><supplied reason="lost">κήδησονται</supplied>  <supplied reason="lost">δὲ</supplied>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <g type="stop"/><w lemma="ἡρῶος">ἡρώου</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλ<unclear reason="damage">ή</unclear></w> <gap reason="lost" extent="8" dim="right" unit="character"/></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>We have recorded variant readings (we can read slighly more than MAMA), but not variant conjectures.</p><p>l.2. c. 3 ]ΕΝ[ c. 3] MAMA </p><p>l.3. Ν[εικο]μάχου MAMA</p><p> l.6. ...]ΟΥ MAMA</p><p> l.7. ἀρισ]τέρᾳ MAMA</p><p>l.8. Μηνοδ]ότου MAMA</p><p>  l.11. χωρὶ]ς MAMA</p><p>l.12. ἐά]ν MAMA</p><p>  l.13. φίσκον] <w><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> μύρια MAMA. At end τῆς [ .. ] MAMA</p><p>  l.17. ταύτης] ἐπιγραφῆς MAMA</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>[The tomb (described in some detail) was built] by Nikomachos [ son of .. ? .. and grandson of .. ? .. ] highpriest, [and] in [?the right hand sarcophagus ? there has been buried] Menodotos son of Nikomachos [and there will be buried Nikomachos himself, son of ?, ] high priest, city treasurer, templebuilder [ and .. ? .. the wife of Nikomachos, high priestess [and .. ? .. ] of the son of Menodotos, and Apphia [ .. ? .. , and] in the left hand sarcophagus Flavia Secundilla [? daughter of .. ? .. and ? wife] of Menodotos, and Nikomachis and Nikomachos [?their children]. When these sarcophagi have been declared a Heroon [no-one else shall have the right to bury anyone in them nor in the burial places in the altar [.. ? .. except] those [whose names are set out] in the will of Nikomachos [since] if anyone dares anything contrary he shall pay a fine of 10.000 denarii [to the imperial fiscus] as set out in the [will of Nikomachos] which gives a right to everyone to bring him to justice to be recompensed with a third of the fine. A copy of [this] inscription was lodged [in the property archive] in the stephanephorate of Hierokles, son of Apollonios, [month ?]. The People and the Council will have the care of the Heroon.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>This family is also represented at Aphrodisias by <xref type="inscription" n="1185" href="050007">5.7</xref>, in which Attalis, d. of Menodotos the son of Nikomachos the high priest, being herself priestess of Arete, makes a dedication (?of a caryatid) to the Demos. The family is clearly wealthy and eminent, since the builder was noted as a high priest and his wife as a high priestess, and he lists, in the Roman manner, the high offices that he had held in the city. The Menodotos who had probably predeceased him might well have been his father, but his son cannot be excluded, since the name Menodotos subsequently occurs only in the genitive case. It is unclear what was the relationship of Apphia (l.6) and Flavia Secundilla (l.7) to the family, although Secundilla seems likely to have been the wife of a Menodotos, and mother of the Nikomachis and Nikomachos whose names follow (ll.8-9). It is reasonable to guess that the name of the Attalis of Jacopi's inscription stood in one of the lost areas - perhaps in l.9. At present, however, only a limited family tree is possible - and in that the precise position of Attalis is uncertain.</p><p>Nicomachus = Ignota</p><p>archiereus | archiereiaMenodotus = ? Flavia Secundilla|________________________________| | |Attalis Nicomachis Nicomachus hiereia Aretes</p><p>Clearly the tomb was of some complexity - with two sarcophagi and further burial places in the bomos (for which, surprisingly, no users are named). The heroised status of burial places once filled features in a number of other Aphrodisian funeraries, although we have no evidence to show what rituals and genuine beliefs were involved. Unusual features are the size of the fine for infringement of the provisions of the builder's will (10,000 denarii, as against a norm of around 5,000), the use of the word ἀντίτυπον for the normal ἀντίγραφον, the arrangements for care of the tomb, which was apparently undertaken by the city (l.17), for which we have no other example (but note that, at about the date of this text, we hear of the assumption of the care of some tombs by craft associations), and the inversion of the normal order of Council and people in the description thereof. The size of the fine and the involvement of the city should be linked to the family's eminence.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, East (south part)</rs>:on the inside face, very near <xref type="inscription" n="112" href="120328">12.328</xref> (=MAMA 428).</rs>
-<rs type="origLocation">Unknown: Aphrodisias necropolis</rs>
-<rs type="lastLocation">Findspot (1989)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); publication.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the MAMA expedition; by the NYU expedition in 1989, and again in 1995, when more was exposed.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8, no. <biblScope>546</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257391">513</biblScope>
-</bibl>
-</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="89_C_25"><figDesc>Face (1989)</figDesc></figure><figure href="89_C_26"><figDesc>Face (1989)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>We have recorded variant readings (we can read slighly more than MAMA), but not variant conjectures.</p>
+            <p>l.2. c. 3 ]ΕΝ[ c. 3] MAMA </p>
+            <p>l.3. Ν[εικο]μάχου MAMA</p>
+            <p> l.6. ...]ΟΥ MAMA</p>
+            <p> l.7. ἀρισ]τέρᾳ MAMA</p>
+            <p>l.8. Μηνοδ]ότου MAMA</p>
+            <p>  l.11. χωρὶ]ς MAMA</p>
+            <p>l.12. ἐά]ν MAMA</p>
+            <p>  l.13. φίσκον] <w>
+                  <expan>
+                     <abbr>
+                        <am>
+                           <g ref="#denarius"/>
+                        </am>
+                     </abbr>
+                     <ex>δηνάρια</ex>
+                  </expan>
+               </w> μύρια MAMA. At end τῆς [ .. ] MAMA</p>
+            <p>  l.17. ταύτης] ἐπιγραφῆς MAMA</p>
+         </div>
+         <div type="translation">
+            <p>[The tomb (described in some detail) was built] by Nikomachos [ son of .. ? .. and grandson of .. ? .. ] highpriest, [and] in [?the right hand sarcophagus ? there has been buried] Menodotos son of Nikomachos [and there will be buried Nikomachos himself, son of ?, ] high priest, city treasurer, templebuilder [ and .. ? .. the wife of Nikomachos, high priestess [and .. ? .. ] of the son of Menodotos, and Apphia [ .. ? .. , and] in the left hand sarcophagus Flavia Secundilla [? daughter of .. ? .. and ? wife] of Menodotos, and Nikomachis and Nikomachos [?their children]. When these sarcophagi have been declared a Heroon [no-one else shall have the right to bury anyone in them nor in the burial places in the altar [.. ? .. except] those [whose names are set out] in the will of Nikomachos [since] if anyone dares anything contrary he shall pay a fine of 10.000 denarii [to the imperial fiscus] as set out in the [will of Nikomachos] which gives a right to everyone to bring him to justice to be recompensed with a third of the fine. A copy of [this] inscription was lodged [in the property archive] in the stephanephorate of Hierokles, son of Apollonios, [month ?]. The People and the Council will have the care of the Heroon.</p>
+         </div>
+         <div type="commentary">
+            <p>This family is also represented at Aphrodisias by <ref type="inscription" n="1185" target="050007.xml"/>, in which Attalis, d. of Menodotos the son of Nikomachos the high priest, being herself priestess of Arete, makes a dedication (?of a caryatid) to the Demos. The family is clearly wealthy and eminent, since the builder was noted as a high priest and his wife as a high priestess, and he lists, in the Roman manner, the high offices that he had held in the city. The Menodotos who had probably predeceased him might well have been his father, but his son cannot be excluded, since the name Menodotos subsequently occurs only in the genitive case. It is unclear what was the relationship of Apphia (l.6) and Flavia Secundilla (l.7) to the family, although Secundilla seems likely to have been the wife of a Menodotos, and mother of the Nikomachis and Nikomachos whose names follow (ll.8-9). It is reasonable to guess that the name of the Attalis of Jacopi's inscription stood in one of the lost areas - perhaps in l.9. At present, however, only a limited family tree is possible - and in that the precise position of Attalis is uncertain.</p>
+            <p>Nicomachus = Ignota</p>
+            <p>archiereus | archiereiaMenodotus = ? Flavia Secundilla|________________________________| | |Attalis Nicomachis Nicomachus hiereia Aretes</p>
+            <p>Clearly the tomb was of some complexity - with two sarcophagi and further burial places in the bomos (for which, surprisingly, no users are named). The heroised status of burial places once filled features in a number of other Aphrodisian funeraries, although we have no evidence to show what rituals and genuine beliefs were involved. Unusual features are the size of the fine for infringement of the provisions of the builder's will (10,000 denarii, as against a norm of around 5,000), the use of the word ἀντίτυπον for the normal ἀντίγραφον, the arrangements for care of the tomb, which was apparently undertaken by the city (l.17), for which we have no other example (but note that, at about the date of this text, we hear of the assumption of the care of some tombs by craft associations), and the inversion of the normal order of Council and people in the description thereof. The size of the fine and the involvement of the city should be linked to the family's eminence.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="MAMA8">Cormack from the MAMA records, MAMA 8, no. <citedRange>546</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257391">513</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

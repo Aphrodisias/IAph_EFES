@@ -1,94 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110050" n="iAph0429 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Claudia Paulina</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Claudia Paulina</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110050</idno>
+            <idno type="IAph2007">iAph110050</idno>
+            <idno type="JMR2004">iAph0429</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>63.434</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Plain <material key="marmor">white marble</material>
+                              <objectType>base</objectType> with a very slight offsetting down both sides, lacking a moulded top which might have carried the first line of the text. Broken above and below, but the lower left corner survives, and without any moulding (<width unit="metre">0.505</width> × <height unit="metre">0.83</height> × <depth unit="metre">0.57</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.035–0.04</height>; diaeretic dots around the second <term xml:lang="grc-Latn">iota</term> in l. 3, final <term xml:lang="grc-Latn">epsilon</term> in l. 8, and final <term xml:lang="grc-Latn">alpha</term> in l. 12; dot after the final <term xml:lang="grc-Latn">alpha</term> in l. 6, between the <term xml:lang="grc-Latn">sigma</term> and <term xml:lang="grc-Latn">zeta</term> in l. 9, and at beginning and end of letters in l. 13.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0167"
+                               notAfter="0233"
+                               precision="medium"
+                               evidence="lettering">    Probably later second to early third centuries A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, Village</rs>: Stray find near Tea House</provenance>
+                  <provenance type="observed" when="1978">Museum (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-08" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-10-28" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_B_29.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-03-08</date><respStmt><name>Charlotte Tupman</name></respStmt><item>DONE</item></change><change><date>2005-10-28</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Plain <rs type="material" key="marmor">white marble</rs>  <rs type="objectType">base</rs> with a very slight offsetting down both sides, lacking a moulded top which might have carried the first line of the text. Broken above and below, but the lower left corner survives, and without any moulding (<measure dim="width" unit="metre" type="length">0.505</measure> × <measure dim="height" type="length" unit="metre">0.83</measure> × <measure dim="depth" type="length" unit="metre">0.57</measure>).</p>
+<ab><lb n="0"/><supplied reason="lost"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w></supplied>  <w lemma="δῆμος"><supplied reason="lost">δῆ</supplied><lb n="1" break="no"/><unclear reason="damage">μ</unclear>ο<supplied reason="lost">ς</supplied></w>  <w lemma="τιμάω"><supplied reason="lost">ἐτείμησαν</supplied></w>  <lb n="2"/><persName nymRef="#Κλαυδία  Παυλείνα" type="attested"><name nymRef="#Κλαυδία">Κλαυδί<unclear reason="damage">α</unclear><supplied reason="lost">ν</supplied></name>  <persName nymRef="#Τιβέριος  Κλαύδιος  Ισε[..." type="attested"><supplied reason="lost"><name nymRef="#Τιβέριος"><expan><abbr>Τιβ</abbr><ex>ερίου</ex></expan></name></supplied><lb n="3"/><name nymRef="#Κλαύδιος">Κλαυδίου</name>  <name>Ἰσε<gap reason="lost" unit="character" quantity="4"/></name></persName><lb n="4"/><w lemma="καί">καὶ</w>  <w lemma="ὁ">τῆς</w>  <w lemma="πόλις">πόλεω<supplied reason="lost">ς</supplied></w><lb n="5"/><w lemma="θυγάτηρ">θυγατέρα</w>  <name nymRef="#Παυλεῖνα">Παυλε<supplied reason="lost">ί</supplied><lb n="6" break="no"/>ναν</name></persName> <w lemma="γυνή">γυναῖκα</w>  <space extent="2" unit="character" dim="horizontal"/><lb n="7"/><persName nymRef="#Τιβέριος  Κλαύδιος  Παυλεῖνος" type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name>  <name nymRef="#Κλαύδιος">Κλαυδίου</name><lb n="8"/><name nymRef="#Παυλεῖνος">Παυλείνου</name></persName>  <w lemma="ἀρχιερεύς">ἀρχιε<lb n="9" break="no"/>ρέως</w>  <w lemma="ζάω">ζήσασαν</w><lb n="10"/><w lemma="κόσμιος"><unclear reason="damage">κ</unclear>οσμίως</w>  <w lemma="καί">καὶ</w> <w lemma="σώφρων">σω<lb n="11" break="no"/><supplied reason="lost">φ</supplied>ρόνως</w>  <w lemma="καί">καὶ</w>  <w lemma="πρός">πρὸς</w>  <lb n="12"/><w lemma="παράδειγμα">παράδειγμα</w>  <w lemma="ἀρετή">ἀ<lb n="13" break="no"/><supplied reason="lost"><space extent="1" unit="character" dim="horizontal"/></supplied>  <g ref="#scroll"/>ρετῆς</w>  <g ref="#leaf"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p> <measure dim="height" type="length" unit="metre">0.035–0.04</measure>; diaeretic dots around the second <term lang="grc-Latn">iota</term> in l. 3, final <term lang="grc-Latn">epsilon</term> in l. 8, and final <term lang="grc-Latn">alpha</term> in l. 12; dot after the final <term lang="grc-Latn">alpha</term> in l. 6, between the <term lang="grc-Latn">sigma</term> and <term lang="grc-Latn">zeta</term> in l. 9, and at beginning and end of letters in l. 13.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>    Probably <date notBefore="0167" notAfter="0233" exact="none">later second to early third centuries A.D.</date> (<rs type="criteria">lettering</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="0"/><supplied reason="lost"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w></supplied>  <w lemma="δῆμος"><supplied reason="lost">δῆ</supplied><lb n="1" type="worddiv"/><unclear reason="damage">μ</unclear>ο<supplied reason="lost">ς</supplied></w>  <w lemma="τιμάω"><supplied reason="lost">ἐτείμησαν</supplied></w>  <lb n="2"/><persName reg="Κλαυδία  Παυλείνα" type="aphrodisian" full="yes"><name reg="Κλαυδία">Κλαυδί<unclear reason="damage">α</unclear><supplied reason="lost">ν</supplied></name>  <persName reg="Τιβέριος  Κλαύδιος  Ισε[..." type="aphrodisian" full="yes"><supplied reason="lost"><name reg="Τιβέριος" type="praenomen"><expan><abbr>Τιβ</abbr><supplied reason="abbreviation">ερίου</supplied></expan></name></supplied><lb n="3"/><name reg="Κλαύδιος" type="nomen">Κλαυδίου</name>  <name>Ἰσε<gap extent="4" dim="right" reason="lost" unit="character"/></name></persName><lb n="4"/><w lemma="καί">καὶ</w>  <w lemma="ὁ">τῆς</w>  <w lemma="πόλις">πόλεω<supplied reason="lost">ς</supplied></w><lb n="5"/><w lemma="θυγάτηρ">θυγατέρα</w>  <name reg="Παυλεῖνα">Παυλε<supplied reason="lost">ί</supplied><lb n="6" type="worddiv"/>ναν</name></persName> <w lemma="γυνή">γυναῖκα</w>  <space extent="2" unit="character" dim="horizontal"/><lb n="7"/><persName reg="Τιβέριος  Κλαύδιος  Παυλεῖνος" type="aphrodisian" full="yes"><name reg="Τιβέριος" type="praenomen">Τιβερίου</name>  <name reg="Κλαύδιος" type="nomen">Κλαυδίου</name><lb n="8"/><name reg="Παυλεῖνος">Παυλείνου</name></persName>  <w lemma="ἀρχιερεύς">ἀρχιε<lb n="9" type="worddiv"/>ρέως</w>  <w lemma="ζάω">ζήσασαν</w><lb n="10"/><w lemma="κόσμιος"><unclear reason="damage">κ</unclear>οσμίως</w>  <w lemma="καί">καὶ</w> <w lemma="σώφρων">σω<lb n="11" type="worddiv"/><supplied reason="lost">φ</supplied>ρόνως</w>  <w lemma="καί">καὶ</w>  <w lemma="πρός">πρὸς</w>  <lb n="12"/><w lemma="παράδειγμα">παράδειγμα</w>  <w lemma="ἀρετή">ἀ<lb n="13" type="worddiv"/><supplied reason="lost"><space extent="1" unit="character" dim="horizontal"/></supplied>  <g type="scroll"/>ρετῆς</w>  <g type="leaf"/></ab>
-</div>
-
-<div type="apparatus"><head>Apparatus</head><p>l. 2, there is insufficient space for the unabbreviated praenomen.</p></div><div type="translation">
-<head>Translation</head>
-<p><supplied reason="lost">The council and the People honoured</supplied> Claudia Paulina, daughter of <supplied reason="lost">Tiberius</supplied> Claudius Ise<gap extent="4" dim="right" reason="lost" unit="character"/> and Daughter of the City, wife of Tiberius Claudius Paulinus high priest; she lived in an orderly and self-controlled manner and with a view to demonstrating virtue.</p></div>
-
- <div type="commentary">
-<head>Commentary</head>
-<p>A number of Claudii are attested in Aphrodisias, some very eminent; Claudius Ise[—], his daughter Paulina, and her husband Tib(erius) Claudius Paulinus may be related to them, as the shared cognomen Paulina and Paulinus suggests that husband and wife were (marriage of cousins being one device for keeping family properties together). Ise[—] and Paulinus are not at present otherwise known; but an eminent woman Paulina is known—she was a stephanephorus in the reign of Hadrian [[...]] and is perhaps also the Paulina apparently concerned in the foundation of the basilica [[...]]. This identification would square with her title here—"Daughter of the City" indicates the probability that she had given money for civic purposes.</p><p>The tense of the participle <foreign lang="grc">ζήσασαν</foreign> probably indicates that she was dead when the inscription was drafted, and that squares with the otherwise slightly surprising fact that while her husband was high priest (of the civic imperial cult) she is not called high priestess, although a wife usually played some part in a high priest's function—in relation to females of the imperial family—and shared the title). Her qualities are the standard ones for which Aphrodisian women are praised.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p>Found: <rs type="found"><rs type="monuList">City, Village</rs>: Stray find near Tea House</rs>. Original location: <rs type="origLocation">Unknown</rs>. Last recorded: <rs type="lastLocation">Museum (1978)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU excavation in 1963 (<rs type="invNo">63.434</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p><figure href="78_B_29"><figDesc>Face (1978)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="apparatus">
+            <p>l. 2, there is insufficient space for the unabbreviated praenomen.</p>
+         </div>
+         <div type="translation">
+            <p>
+               <supplied reason="lost">The council and the People honoured</supplied> Claudia Paulina, daughter of <supplied reason="lost">Tiberius</supplied> Claudius Ise<gap reason="lost" unit="character" quantity="4"/> and Daughter of the City, wife of Tiberius Claudius Paulinus high priest; she lived in an orderly and self-controlled manner and with a view to demonstrating virtue.</p>
+         </div>
+         <div type="commentary">
+            <p>A number of Claudii are attested in Aphrodisias, some very eminent; Claudius Ise[—], his daughter Paulina, and her husband Tib(erius) Claudius Paulinus may be related to them, as the shared cognomen Paulina and Paulinus suggests that husband and wife were (marriage of cousins being one device for keeping family properties together). Ise[—] and Paulinus are not at present otherwise known; but an eminent woman Paulina is known—she was a stephanephorus in the reign of Hadrian [[...]] and is perhaps also the Paulina apparently concerned in the foundation of the basilica [[...]]. This identification would square with her title here—"Daughter of the City" indicates the probability that she had given money for civic purposes.</p>
+            <p>The tense of the participle <foreign xml:lang="grc">ζήσασαν</foreign> probably indicates that she was dead when the inscription was drafted, and that squares with the otherwise slightly surprising fact that while her husband was high priest (of the civic imperial cult) she is not called high priestess, although a wife usually played some part in a high priest's function—in relation to females of the imperial family—and shared the title). Her qualities are the standard ones for which Aphrodisian women are praised.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

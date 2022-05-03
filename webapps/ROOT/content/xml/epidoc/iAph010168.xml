@@ -1,86 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010168" n="iAph1790 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Hieratikos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Hieratikos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010168</idno>
+            <idno type="IAph2007">iAph010168</idno>
+            <idno type="JMR2004">iAph1790</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>None; presumably a <objectType>statue base</objectType> shaft</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard II-III forms; no measurements</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="nomenclature">
+Second to third centuries A.D.
+(<rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">'near the Temple' (naher am grossen Tempel zu Geireh) von Richter; 'on a marble in the <rs type="monuList">Temple/Church</rs>' Deering.</provenance>
+                  <provenance type="observed" when="1812">findspot (1812)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Deering; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Deering_03v.jpg">
+            <desc>Deering notebook, page 3v</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>None; presumably a <rs type="objectType">statue base</rs> shaft</p>
+<ab><lb n="0"/>   <persName type="attested"><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><orig n="unresolved">ον</orig> <name nymRef="#Κυρείνα">Κυρείνᾳ</name> <name nymRef="#Ἱερατικός">Ἱ<unclear reason="damage">ε</unclear>ρα<lb n="3" break="no"/>τικὸν</name></persName>   <w lemma="ἐκ"><g ref="#stop"/>ἐ<g ref="#stop"/>ξ</w>  <w lemma="ἱππικός">ἱππι<lb n="4" break="no"/>κοῦ</w> <w lemma="τάγμα">τάγματος</w> <lb n="5"/> <w lemma="ἑκατόνταρχος">ἑκατόνταρχον</w> <lb n="6"/><space extent="3" unit="character" dim="horizontal"/> <w lemma="λεγιωνάριοs">λεγιωνάριον</w> <lb n="7"/> <persName type="attested"><name nymRef="#Λούκιος">Λούκιοι</name> <name nymRef="#Αὐρήλιος">Αὐρήλιοι</name> <lb n="8"/><name nymRef="#Ζήνων"><supplied reason="lost">Ζ</supplied>ήνων</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ὑψικλῆς">Ὑψι<lb n="9" break="no"/><supplied reason="lost">κ</supplied>λῆς</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="ἑαυτός">ἑαυ<lb n="10" break="no"/>τῶν</w> <w lemma="φίλος">φίλον</w> <g ref="#leaf"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Standard II-III forms; no measurements</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date>
-(<rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/>   <persName type="aphrodisian"><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><orig n="unresolved">ον</orig> <name type="demotic" reg="Κυρείνα">Κυρείνᾳ</name> <name reg="Ἱερατικός">Ἱ<unclear reason="damage">ε</unclear>ρα<lb n="3" type="worddiv"/>τικὸν</name></persName>   <w lemma="ἐκ"><g type="stop"/>ἐ<g type="stop"/>ξ</w>  <w lemma="ἱππικός">ἱππι<lb n="4" type="worddiv"/>κοῦ</w> <w lemma="τάγμα">τάγματος</w> <lb n="5"/> <w lemma="ἑκατόνταρχος">ἑκατόνταρχον</w> <lb n="6"/><space extent="3" unit="character" dim="horizontal"/> <w lemma="λεγιωνάριοs">λεγιωνάριον</w> <lb n="7"/> <persName type="aphrodisian"><name reg="Λούκιος">Λούκιοι</name> <name reg="Αὐρήλιος">Αὐρήλιοι</name> <lb n="8"/><name reg="Ζήνων"><supplied reason="lost">Ζ</supplied>ήνων</name></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ὑψικλῆς">Ὑψι<lb n="9" type="worddiv"/><supplied reason="lost">κ</supplied>λῆς</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="ἑαυτός">ἑαυ<lb n="10" type="worddiv"/>τῶν</w> <w lemma="φίλος">φίλον</w> <g type="leaf"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 1, At beginning Richter shows letters missing before <foreign lang="grc">ΟΝ</foreign>, but Deering shows none.</p><p>Ι. 2, <foreign lang="grc">ΙΕΡΑ</foreign> Richter. <foreign lang="grc">ΙΙΡΑ</foreign> Deering,</p><p> l. 3,  <foreign lang="grc"><gap reason="lost" unit="character" extent="unknown"/>ΟΥ</foreign> Richter. </p><p>l. 4, At beginning Richter shows letters missing before <foreign lang="grc">ΕΚ</foreign>, but Deering shows none.</p><p> l. 5, <foreign lang="grc">ΙΩΝ</foreign> Richter, <foreign lang="grc">ΙΟΝ</foreign> Deering</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found">'near the Temple' (naher am grossen Tempel zu Geireh) von Richter; 'on a marble in the <rs type="monuList">Temple/Church</rs>' Deering.</rs>
-<rs type="lastLocation">findspot (1812)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Deering; publications.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by von Richter; by Deering (p. 3v, 15). Not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl><author>von Richter</author>, p. 421 no 72</bibl>, and <bibl><author>J. P. Ewers</author> p. 596, no. 48</bibl>, whence <bibl n="CIGII"><author>Boeckh</author>, CIG <biblScope>2803</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257157">278</biblScope>
-</bibl>.</p>
-</div><div type="figure" n="Preliminary transcriptions">
-<head>Representations</head>
-<p><figure href="Deering_03v"><figDesc>Deering notebook, page 3v</figDesc></figure></p></div></body></text>
+         <div type="apparatus">
+            <p>l. 1, At beginning Richter shows letters missing before <foreign xml:lang="grc">ΟΝ</foreign>, but Deering shows none.</p>
+            <p>Ι. 2, <foreign xml:lang="grc">ΙΕΡΑ</foreign> Richter. <foreign xml:lang="grc">ΙΙΡΑ</foreign> Deering,</p>
+            <p> l. 3,  <foreign xml:lang="grc">
+                  <gap reason="lost" unit="character" extent="unknown"/>ΟΥ</foreign> Richter. </p>
+            <p>l. 4, At beginning Richter shows letters missing before <foreign xml:lang="grc">ΕΚ</foreign>, but Deering shows none.</p>
+            <p> l. 5, <foreign xml:lang="grc">ΙΩΝ</foreign> Richter, <foreign xml:lang="grc">ΙΟΝ</foreign> Deering</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl>
+                  <author>von Richter</author>, p. 421 no 72</bibl>, and <bibl>
+                  <author>J. P. Ewers</author> p. 596, no. 48</bibl>, whence <bibl n="CIGII">
+                  <author>Boeckh</author>, CIG <citedRange>2803</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257157">278</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,102 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120005" n="iAph1049 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for Ammia daughter of Attalos</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Posthumous honours for Ammia daughter of Attalos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120005</idno>
+            <idno type="IAph2007">iAph120005</idno>
+            <idno type="JMR2004">iAph1049</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material key="marmor">white marble</material>
+                              <objectType key="block">statue base</objectType>, without moulding, of which only fragments survive.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height>0.025</height>-<height>0.028</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering">First century A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North</rs>: reused in the wall north of the Stadium</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Publications; Preliminary transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-19" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_W_05.jpg">
+            <desc>Fragment a</desc>
+         </graphic>
+         <graphic url="73_W_04.jpg">
+            <desc>Fragment b</desc>
+         </graphic>
+         <graphic url="73_W_06.jpg">
+            <desc>Fragment c</desc>
+         </graphic>
+         <graphic url="K_III_13.jpg">
+            <desc>Fragment c: Kubitschek notebook III, 13</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-19</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material" key="marmor">white marble</rs> <rs type="objectType" reg="block">statue base</rs>, without moulding, of which only fragments survive.</p>
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <seg type="autopsy"><w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></seg> <lb n="2"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="γερουσία">γερο<seg type="autopsy">υσία</seg></w> <w lemma="τιμάω"><seg type="autopsy">ἐτεί</seg><lb n="3" break="no"/>μησαν</w> <w lemma="ὁ">ταῖ<seg type="autopsy">ς</seg></w> <w lemma="καλός"><seg type="autopsy">καλλίσ</seg><lb n="4" break="no"/>ταις</w> <w lemma="τιμή">τειμαῖ<seg type="autopsy">ς</seg></w> <persName type="attested"><seg type="autopsy"><name nymRef="#Ἀμμία">Ἀμμίαν</name></seg><lb n="5"/> <persName type="attested"><name nymRef="#Ἄτταλος">Ἀττάλου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Πυθέας"><seg type="autopsy">Πυθ</seg>έ<lb n="6" break="no"/>ου</name></persName></persName></persName> <w lemma="γένος">γένους</w> <w lemma="πρῶτος"><seg type="autopsy">πρώτου</seg></w> <lb n="7"/> <w lemma="καί">καὶ</w> <w lemma="συνκτίζω">συνεκτ<seg type="autopsy">ικότος</seg></w> <lb n="8"/> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <seg type="autopsy"><w lemma="ἐν">ἐν</w></seg> <w lemma="γυμνασιαρχία"><seg type="autopsy">γυ</seg><lb n="9" break="no"/>μνασιαρχία<seg type="autopsy">ις</seg></w> <seg type="autopsy"><w lemma="καί">καὶ</w></seg> <w lemma="στεφανηφορία"><seg type="autopsy">στε</seg><lb n="10" break="no"/>φανηφορίαις</w>  <w lemma="γίγνομαι"><seg type="autopsy">γεγο</seg>νό<lb n="11" break="no"/>τος</w> <w lemma="γυνή">γυναῖκα</w> <w lemma="γίγνομαι">γενομέ<lb n="12" break="no"/>νην</w> <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <lb n="13"/> <persName type="attested"><name nymRef="#Νεικότειμος">Νεικοτείμου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀρτεμίδωρος">Ἀρ<lb n="14" break="no"/>τεμιδόρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων"><seg type="autopsy">Ζή</seg>νω<lb n="15"/> νος</name> <name nymRef="#Ἱέραξ">Ἱέρακος</name></persName></persName></persName></persName> <w lemma="ὁ">το<seg type="autopsy">ῦ</seg></w> <w lemma="στεφανηφόρος"><seg type="autopsy">στε</seg>φ<lb n="16" break="no"/>ανηφόρου</w> <w lemma="καί">καὶ</w> <seg type="autopsy"><w lemma="φιλόδοξος">φιλοδόξου</w></seg> <lb n="17"/> <w lemma="ζάω">ζήσασαν</w> <w lemma="σώφρων">σ<seg type="autopsy">ωφρόνως</seg></w> <lb n="18"/> <w lemma="καί">καὶ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑπό<seg type="autopsy">δειγμα</seg></w> <w lemma="ἀρετή">ἀ<lb n="19" break="no"/>ρετῆς</w>  <g ref="#stop"/> <w lemma="ὁ">τὰς</w> <w lemma="δέ">δ<seg type="autopsy">ὲ</seg></w> <w lemma="τιμή"><seg type="autopsy">τειμὰ</seg>ς</w> <lb n="20"/> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <persName type="attested"><name nymRef="#Ἄδραστος"><seg type="autopsy"> Ἄδραστος</seg></name><lb n="21"/> <persName type="attested"><name nymRef="#Νεικότειμος">Νεικοτείμο<seg type="autopsy">υ</seg></name></persName></persName> <seg type="autopsy"><w lemma="ὁ">ὁ</w> <w lemma="ἀνήρ">ἀνὴρ</w></seg> <lb n="22"/><space extent="unknown" unit="character" dim="horizontal"/> <w lemma="αὐτός">αὐτῆ<seg type="autopsy">ς</seg></w> <space extent="unknown" unit="character" dim="horizontal"/></ab> 
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure type="length" dim="none">0.025</measure>-<measure type="length" dim="none">0.028</measure></p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notBefore="0001" notAfter="0100" exact="none">First century A.D.</date> (<rs type="criteria">lettering</rs>)</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <seg type="autopsy"><w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></seg> <lb n="2"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="γερουσία">γερο<seg type="autopsy">υσία</seg></w> <w lemma="τιμάω"><seg type="autopsy">ἐτεί</seg><lb n="3" type="worddiv"/>μησαν</w> <w lemma="ὁ">ταῖ<seg type="autopsy">ς</seg></w> <w lemma="καλός"><seg type="autopsy">καλλίσ</seg><lb n="4" type="worddiv"/>ταις</w> <w lemma="τιμή">τειμαῖ<seg type="autopsy">ς</seg></w> <persName type="aphrodisian"><seg type="autopsy"><name reg="Ἀμμία">Ἀμμίαν</name></seg><lb n="5"/> <persName type="aphrodisian"><name reg="Ἄτταλος">Ἀττάλου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Πυθέας"><seg type="autopsy">Πυθ</seg>έ<lb n="6" type="worddiv"/>ου</name></persName></persName></persName> <w lemma="γένος">γένους</w> <w lemma="πρῶτος"><seg type="autopsy">πρώτου</seg></w> <lb n="7"/> <w lemma="καί">καὶ</w> <w lemma="συνκτίζω">συνεκτ<seg type="autopsy">ικότος</seg></w> <lb n="8"/> <w lemma="ὁ">τὴν</w> <w lemma="πατρίς">πατρίδα</w> <seg type="autopsy"><w lemma="ἐν">ἐν</w></seg> <w lemma="γυμνασιαρχία"><seg type="autopsy">γυ</seg><lb n="9" type="worddiv"/>μνασιαρχία<seg type="autopsy">ις</seg></w> <seg type="autopsy"><w lemma="καί">καὶ</w></seg> <w lemma="στεφανηφορία"><seg type="autopsy">στε</seg><lb n="10" type="worddiv"/>φανηφορίαις</w>  <w lemma="γίγνομαι"><seg type="autopsy">γεγο</seg>νό<lb n="11" type="worddiv"/>τος</w> <w lemma="γυνή">γυναῖκα</w> <w lemma="γίγνομαι">γενομέ<lb n="12" type="worddiv"/>νην</w> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <lb n="13"/> <persName type="aphrodisian"><name reg="Νεικότειμος">Νεικοτείμου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀρτεμίδωρος">Ἀρ<lb n="14" type="worddiv"/>τεμιδόρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων"><seg type="autopsy">Ζή</seg>νω<lb n="15"/> νος</name> <name reg="Ἱέραξ">Ἱέρακος</name></persName></persName></persName></persName> <w lemma="ὁ">το<seg type="autopsy">ῦ</seg></w> <w lemma="στεφανηφόρος"><seg type="autopsy">στε</seg>φ<lb n="16" type="worddiv"/>ανηφόρου</w> <w lemma="καί">καὶ</w> <seg type="autopsy"><w lemma="φιλόδοξος">φιλοδόξου</w></seg> <lb n="17"/> <w lemma="ζάω">ζήσασαν</w> <w lemma="σώφρων">σ<seg type="autopsy">ωφρόνως</seg></w> <lb n="18"/> <w lemma="καί">καὶ</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑπό<seg type="autopsy">δειγμα</seg></w> <w lemma="ἀρετή">ἀ<lb n="19" type="worddiv"/>ρετῆς</w>  <g type="stop"/> <w lemma="ὁ">τὰς</w> <w lemma="δέ">δ<seg type="autopsy">ὲ</seg></w> <w lemma="τιμή"><seg type="autopsy">τειμὰ</seg>ς</w> <lb n="20"/> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <persName type="aphrodisian"><name reg="Ἄδραστος"><seg type="autopsy"> Ἄδραστος</seg></name><lb n="21"/> <persName type="aphrodisian"><name reg="Νεικότειμος">Νεικοτείμο<seg type="autopsy">υ</seg></name></persName></persName> <seg type="autopsy"><w lemma="ὁ">ὁ</w> <w lemma="ἀνήρ">ἀνὴρ</w></seg> <lb n="22"/><space extent="unknown" unit="character" dim="horizontal"/> <w lemma="αὐτός">αὐτῆ<seg type="autopsy">ς</seg></w> <space extent="unknown" unit="character" dim="horizontal"/></ab> 
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Publications; Preliminary transcription (Reynolds).</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>The Council and the People and the gerousia honoured with the finest honours Ammia daughter of Attalos the son of Pytheas, of a foremost family and one which participated in the foundation of their country, engaged in gymnasiarchies and stephanephorates. She was the wife of Adrastos son of Neikotimos Hierax, the son of Artemidoros the son of Zenon, stephanephorus and public servant, and she lived with discretion and so as to demonstrate virtue. Adrastos son of Neikotimos, her husband, set up her honours.</p></div>
-
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, North</rs>: reused in the wall north of the Stadium</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>The complete stone was copied by Sherard in 1705 (10101, 43) and by Falkener; one fragment, c (ends of lines 12-22) was copied by Kubitschek (KIII.13a, Abklatsch 1) and recorded by Gaudin (92); b (ends of lines 5-10), and a small fragment of c were recorded by the MAMA expedition; b, c, and a further fragment, a  (ends of lines 1-4), were recorded by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Complete text published by <bibl n="CIGII">Boeckh, from Sherard, CIG <biblScope>2814</biblScope></bibl>, corrected by <bibl n="henzen1852">Henzen, from Falkener, Ann. d. Inst. 23, 1852, 120, no. <biblScope>3</biblScope></bibl>, republished by <bibl n="liermann1889">Liermann 100-101, no. <biblScope>18</biblScope></bibl>; b published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 214-215, no. <biblScope>102</biblScope></bibl>, discussed by Cormack, Notes 13-14 and 59 fig. 7; full text published by <bibl n="MAMA8">Cormack, from the MAMA records and from K&amp;R, MAMA 8, no. <biblScope>528</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257110">231</biblScope></bibl></p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="73_W_05"><figDesc>Fragment a</figDesc></figure><figure href="73_W_04"><figDesc>Fragment b</figDesc></figure><figure href="73_W_06"><figDesc>Fragment c</figDesc></figure></p></div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p><figure href="K_III_13"><figDesc>Fragment c: Kubitschek notebook III, 13</figDesc></figure></p>
-</div></body>
-</text>
-
+         <div type="translation">
+            <p>The Council and the People and the gerousia honoured with the finest honours Ammia daughter of Attalos the son of Pytheas, of a foremost family and one which participated in the foundation of their country, engaged in gymnasiarchies and stephanephorates. She was the wife of Adrastos son of Neikotimos Hierax, the son of Artemidoros the son of Zenon, stephanephorus and public servant, and she lived with discretion and so as to demonstrate virtue. Adrastos son of Neikotimos, her husband, set up her honours.</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Complete text published by <bibl n="CIGII">Boeckh, from Sherard, CIG <citedRange>2814</citedRange>
+               </bibl>, corrected by <bibl n="henzen1852">Henzen, from Falkener, Ann. d. Inst. 23, 1852, 120, no. <citedRange>3</citedRange>
+               </bibl>, republished by <bibl n="liermann1889">Liermann 100-101, no. <citedRange>18</citedRange>
+               </bibl>; b published by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 214-215, no. <citedRange>102</citedRange>
+               </bibl>, discussed by Cormack, Notes 13-14 and 59 fig. 7; full text published by <bibl n="MAMA8">Cormack, from the MAMA records and from K&amp;R, MAMA 8, no. <citedRange>528</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257110">231</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

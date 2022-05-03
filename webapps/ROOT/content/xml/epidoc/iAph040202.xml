@@ -1,139 +1,214 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph040202" n="iAph0038 ">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="m"><rs type="textType">Verse</rs> <rs type="textType">honours</rs>: i. for Ampelios, father of the city; ii. and iii. for Doulkitios, <rs type="personType">governor</rs>, on the Agora Gate</title>
-        </titleStmt>
-      <publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-      <sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-    </fileDesc>
-    <profileDesc>
-      <langUsage>
-        <language id="en">English</language>
-        <language id="fr">French</language>
-        <language id="grc">Ancient Greek</language>
-
-<language id="grc-Latn">Transliterated Greek</language>
-        <language id="la">Latin</language> </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-  <revisionDesc><change><date>2004-06-08</date><respStmt><name>Juan Garcés</name></respStmt><item>Marked up inventory number(s)</item></change><change><date>2004-06-08</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Checked and fixed all image divs and refs</item></change><change>
-  <date>2004-03-22</date>
-  <respStmt>
-    <name>Gabriel Bodard</name>
-  </respStmt>
-  <item>Completed lemmatisation, checked figure ids, tagged keywords</item>
-</change>
-<change>
-  <date>2003-11-04</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Corrected errors in Greek</item></change><change><date>2003-11-04</date><respStmt><name>John Lavagnino</name></respStmt><item>Converted beta code to Unicode</item></change>
-  
-  
-  <change>
-  <date>2003-07-16</date>
-  <respStmt><name>Juan Garcés</name></respStmt>
-  <item>lemmatised</item>
-  </change><change><date>2003-08-16</date><respStmt><name>CMR</name></respStmt><item>tagged and corrected</item></change><change><date>2003-08-20</date><respStmt><name>CMR</name></respStmt><item>name tags reduced</item></change><change><date>2004-01-23</date><respStmt><name>CMR</name></respStmt><item>tidied; image refs</item></change></revisionDesc></teiHeader>
-  <text>
-    <body>
-
-      <div type="description" n="monument">
-        <head>Description of Monument</head>
-        <p>'Agora Gate', at the east end of the South Agora.</p>
-        </div><div type="description" n="text"><head>Description of Text</head><p> i., ii. and iii are all cut, clearly set out as a group, on the <rs type="objectType">façade</rs>, on the highest remaining course of blocks, which was capped above by a moulded course. i. is cut on the northernmost of a series of projecting bastions; ii. is on the next bastion to the south, whose surface is largely lost; three loose fragments were found in 1983. The third bastion shows no sign of any inscription; iii. is cut on the fourth. i. and ii. are on a smooth face, but iii. is cut partly on a rough surface. </p></div>
-
-      <div type="description" n="letters">
-        <head>Description of Letters</head>
-        <p>The lettering of all three is elongated, elegant and lunate, but the scripts are all slightly different. i: av. <measure type="length" unit="metre" dim="height" precision="circa">0.04</measure>; ii: <measure dim="height" type="length" unit="metre">0.055</measure>-<measure dim="height" type="length" unit="metre">0.06</measure>, with traces of red paint in letters; iii: <measure dim="height" type="length" unit="metre">0.04</measure>-<measure dim="height" type="length" unit="metre">0.05</measure>, <term>phi</term> <measure type="length" unit="metre" dim="height">0.09</measure>, with traces of red paint in letters.</p>
-      </div>
-
-      <div type="description" n="date">
-        <head>Date</head>
-        <p><date exact="none" cert="low" notBefore="0434" notAfter="0467">Mid fifth century</date> (<rs type="criteria">titulature</rs>).</p>
-      </div>
-
-      <div lang="grc" n="text" type="edition">
-        <head lang="en">Edition</head>
-		<div n="i" type="textpart_section">
-			<ab><g type="cross"/></ab>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Verse honours: i. for Ampelios, father of the city; ii. and iii. for Doulkitios, governor, on the Agora Gate</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph040202</idno>
+            <idno type="IAph2007">iAph040202</idno>
+            <idno type="JMR2004">iAph0038</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>80.28</idno>
+                  <idno>80.29</idno>
+                  <idno>80.53</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>'Agora Gate', at the east end of the South Agora.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> i., ii. and iii are all cut, clearly set out as a group, on the <objectType>façade</objectType>, on the highest remaining course of blocks, which was capped above by a moulded course. i. is cut on the northernmost of a series of projecting bastions; ii. is on the next bastion to the south, whose surface is largely lost; three loose fragments were found in 1983. The third bastion shows no sign of any inscription; iii. is cut on the fourth. i. and ii. are on a smooth face, but iii. is cut partly on a rough surface. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>The lettering of all three is elongated, elegant and lunate, but the scripts are all slightly different. i: av. <height unit="metre">0.04</height>; ii: <height unit="metre">0.055</height>-<height unit="metre">0.06</height>, with traces of red paint in letters; iii: <height unit="metre">0.04</height>-<height unit="metre">0.05</height>, <term>phi</term>
+                        <height unit="metre">0.09</height>, with traces of red paint in letters.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0434"
+                               notAfter="0467"
+                               precision="medium"
+                               evidence="titulature">Mid fifth century (<rs type="criteria">titulature</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">South Agora, Agora Gate</rs>: on the façade, and three further loose fragments fallen from it; .</provenance>
+                  <provenance type="observed" when="1983">Findspot (1983)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-22" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-23" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">name tags reduced</change>
+         <change when="2003-08-16" who="#CMR">tagged and corrected</change>
+         <change when="2003-07-16" who="Juan-Garcés">lemmatised</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="80_D_03.jpg">
+            <desc>i., ii., &amp; iii. View (1980)</desc>
+         </graphic>
+         <graphic url="80_A_28.jpg">
+            <desc>i. Face (1980)</desc>
+         </graphic>
+         <graphic url="80_A_26.jpg">
+            <desc>ii. Main text (1980)</desc>
+         </graphic>
+         <graphic url="83_B_30A.jpg">
+            <desc>ii. Upper left fragment (1983)</desc>
+         </graphic>
+         <graphic url="83_B_36A.jpg">
+            <desc>ii. Fragment. lines 1-3 (1983)</desc>
+         </graphic>
+         <graphic url="83_B_37A.jpg">
+            <desc>ii. Fragment, line 4 (1983)</desc>
+         </graphic>
+         <graphic url="80_H_23.jpg">
+            <desc>iii. Face (1980)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+		<div n="i" type="textpart" subtype="section">
+			<ab><g ref="#cross"/></ab>
 			<lg met="dactylic hexameter">
 			<lb n="1"/><l n="1"><w lemma="ἴδμων">ἴδμονι</w> <w lemma="θεσμοσύνη">θεσμοσύνης</w> <w lemma="γλυκύς">γλυκερῷ</w> <w lemma="γενετήρ">γενετῆρι</w> <w lemma="τιθήνη">τιθήνης</w></l>
-			<lb n="2"/><l n="2"><persName key="Ampelius" type="aphrodisian" reg="Ἀμπέλιος" full="yes"><name reg="Ἀμπέλιος">Ἀμπελίῳ</name></persName> <persName type="divine" full="yes"><name reg="Νύμφη"><w lemma="νύμφη">Νύμφαι</w></name></persName> <w lemma="χάρις">χάριν</w> <w lemma="ἔχω">ἴσχομεν</w> <w lemma="ὁ ἕνεκα" type="crasis">οὕνεκα</w> <w lemma="θάμβος">θάμβος</w></l>
+			<lb n="2"/><l n="2"><persName key="Ampelius" nymRef="#Ἀμπέλιος" type="attested"><name nymRef="#Ἀμπέλιος">Ἀμπελίῳ</name></persName> <persName type="divine"><name nymRef="#Νύμφη"><w lemma="νύμφη">Νύμφαι</w></name></persName> <w lemma="χάρις">χάριν</w> <w lemma="ἔχω">ἴσχομεν</w> <w lemma="ὁ ἕνεκα" type="crasis">οὕνεκα</w> <w lemma="θάμβος">θάμβος</w></l>
 			<lb n="3"/><l n="3"><w lemma="χῶρος">χώρῳ</w> <w lemma="φοινικόεις">φυνικόεντι</w> <w lemma="καί">καὶ</w> <w lemma="ἀγλαός">ἀγλαὸν</w> <w lemma="ὀπάζω">ὤπασε</w> <w lemma="κάλλος">κάλλος</w></l>
 			<lb n="4"/><l n="4"><w lemma="ὄφρα">ὄφρα</w> <w lemma="καί">καὶ</w> <w lemma="ἡμέτερος">ἡμετέροις</w> <w lemma="τις">τις</w> <w lemma="ἐν">ἐν</w> <w lemma="ὕδωρ">ὕδασιν</w> <w lemma="ὄμμα">ὄμμα</w> <w lemma="τιταίνω">τιταίνων</w></l>
-			<lb n="5"/><l n="5"><w lemma="αὐτός">αὐτὸν</w> <w lemma="ἀεί">ἀεὶ</w> <w lemma="καί">καὶ</w> <w lemma="χῶρος">χῶρον</w> <w lemma="ὁμοῦ">ὁμοῦ</w> <persName key="Nymphs" type="divine" full="yes"><name reg="Νύμφη"><w lemma="νύμφη">Νύμφας</w></name></persName> <w lemma="τε">τε</w> <w lemma="λιγαίνω">λιγαίνοι</w>.</l>
-			<lb n="6"/><l n="6"><placeName type="ethnic" full="yes" reg="Τραλλιανός">Τραλλιανὸς</placeName> <w lemma="ῥητήρ"><rs type="profession" key="rhetor">ῥητὴρ</rs></w> <w lemma="ὅδε">τάδ'</w> <w lemma="γράφω">ἐγράψατο</w> <persName key="Pythiodorus" type="aphrodisian" full="yes"><name reg="Πυθιόδωρος">Πυθιόδωρος</name></persName></l>
+			<lb n="5"/><l n="5"><w lemma="αὐτός">αὐτὸν</w> <w lemma="ἀεί">ἀεὶ</w> <w lemma="καί">καὶ</w> <w lemma="χῶρος">χῶρον</w> <w lemma="ὁμοῦ">ὁμοῦ</w> <persName key="Nymphs" type="divine"><name nymRef="#Νύμφη"><w lemma="νύμφη">Νύμφας</w></name></persName> <w lemma="τε">τε</w> <w lemma="λιγαίνω">λιγαίνοι</w>.</l>
+			<lb n="6"/><l n="6"><placeName nymRef="#Τραλλιανός">Τραλλιανὸς</placeName> <w lemma="ῥητήρ"><rs type="profession" key="rhetor">ῥητὴρ</rs></w> <w lemma="ὅδε">τάδ'</w> <w lemma="γράφω">ἐγράψατο</w> <persName key="Pythiodorus" type="attested"><name nymRef="#Πυθιόδωρος">Πυθιόδωρος</name></persName></l>
 			</lg>
 		</div>
-		<div n="ii" type="textpart_section">
+		<div n="ii" type="textpart" subtype="section">
 			<lg>
-			<lb n="1"/><l n="1"><w lemma="καί">καὶ</w> <w lemma="ὅδε">τόδε</w> <persName type="divine" full="yes"><name reg="Νύμφη"><w lemma="νύμφη"><supplied reason="lost">Νυμφάων</supplied></w></name></persName> <w lemma="τέμενος"><supplied reason="lost">τ</supplied>έμενος</w> <orig n="unresolved">κ</orig><gap extent="5" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">λ</unclear></orig><gap extent="1" reason="illegible" unit="character"/> <w lemma="ἐγείρω">ἔγειρε</w></l>
-			<lb n="2"/><l n="2" met="pentameter"><persName key="Dulcitius" type="aphrodisian" full="yes"><name reg="Δουλκίτιος">Δουλκί<supplied cert="low" reason="lost">τιος</supplied></name></persName> <w lemma="κτίστης"><supplied reason="lost" cert="low">κτίστη</supplied>ς</w> <w lemma="ὁ">τῆς</w> <placeName full="yes" reg="Ἀφροδισίας"><choice><corr>Ἀ</corr><sic>Λ</sic></choice>φ<supplied reason="lost">ρ</supplied><unclear reason="damage">ο</unclear>δισιάδος</placeName></l>
+			<lb n="1"/><l n="1"><w lemma="καί">καὶ</w> <w lemma="ὅδε">τόδε</w> <persName type="divine"><name nymRef="#Νύμφη"><w lemma="νύμφη"><supplied reason="lost">Νυμφάων</supplied></w></name></persName> <w lemma="τέμενος"><supplied reason="lost">τ</supplied>έμενος</w> <orig n="unresolved">κ</orig><gap reason="lost" unit="character" quantity="5"/><orig n="unresolved"><unclear reason="damage">λ</unclear></orig><gap reason="illegible" unit="character" quantity="1"/> <w lemma="ἐγείρω">ἔγειρε</w></l>
+			<lb n="2"/><l n="2" met="pentameter"><persName key="Dulcitius" type="attested"><name nymRef="#Δουλκίτιος">Δουλκί<supplied cert="low" reason="lost">τιος</supplied></name></persName> <w lemma="κτίστης"><supplied reason="lost" cert="low">κτίστη</supplied>ς</w> <w lemma="ὁ">τῆς</w> <placeName nymRef="#Ἀφροδισίας"><choice><corr>Ἀ</corr><sic>Λ</sic></choice>φ<supplied reason="lost">ρ</supplied><unclear reason="damage">ο</unclear>δισιάδος</placeName></l>
 			<lb n="3"/><l n="3"><w lemma="οὐδείς">οὐδὲν</w> <w lemma="φείδομαι"><supplied reason="lost">φεισάμενος</supplied></w> <w lemma="πλοῦτος">πλούτου</w> <w lemma="δόξα">δόξης</w> <w lemma="χάρις">χάριν</w> <w lemma="ἐσθλός">ἐσθλῆς</w>·</l>
 			<lb n="4"/><l n="4" met="pentameter"><w lemma="ὅδε">ἥδε</w> <w lemma="γάρ">γὰρ</w> <w lemma="ἀίδιος"><supplied reason="lost">ἀίδ</supplied><unclear reason="damage">ι</unclear>ον</w> <w lemma="μνῆμα">μ<supplied reason="lost">ν</supplied>ῆμα</w> <w lemma="βροτός">βροτοῖσιν</w> <w lemma="πέλω">πέλει</w>.</l>
 			</lg>
 		</div>
-		<div n="iii" type="textpart_section">
+		<div n="iii" type="textpart" subtype="section">
 			<lg>
 			<lb n="1"/><l n="1"><w lemma="ὁ">τὸν</w> <w lemma="καί">καὶ</w> <rs type="official-secul" key="agonothete"><w lemma="ἀγωνοθέτης">ἀγωνοθέτην</w></rs> <w lemma="καί">καὶ</w> <w lemma="κτίστης">κτίστην</w> <w lemma="καί">καὶ</w> <w lemma="φιλότιμος">φιλότιμον</w> <w lemma="καί">καὶ</w> <w lemma="Μαιουμάρχης"><rs key="Maioumarch" type="official-secul">Μαιουμάρχην</rs></w></l>
-			<lb n="2"/><l n="2" met="pentameter"><persName key="Dulcitius" type="aphrodisian" full="yes"><name reg="Δουλκίτιος">Δουλκίτιον</name></persName>, <w lemma="ξένος">ξεῖνε</w>, <w lemma="μέλπω">μέλπε</w> <w lemma="ὁ">τὸν</w> <w lemma="ἡγεμών"><rs key="praeses" type="official-secul">ἡγεμόνα</rs></w></l>
+			<lb n="2"/><l n="2" met="pentameter"><persName key="Dulcitius" type="attested"><name nymRef="#Δουλκίτιος">Δουλκίτιον</name></persName>, <w lemma="ξένος">ξεῖνε</w>, <w lemma="μέλπω">μέλπε</w> <w lemma="ὁ">τὸν</w> <w lemma="ἡγεμών"><rs key="praeses" type="official-secul">ἡγεμόνα</rs></w></l>
 			<lb n="3"/><l n="3"><w lemma="ὅστις">ὅστις</w> <w lemma="καί ἐγώ" type="crasis">κἀμὲ</w> <w lemma="κάμνω">καμοῦσαν</w> <w lemma="ἀμετρήτος">ἀμετρήτοις</w> <w lemma="ἐνιαυτός">ἐνιαυτοῖς</w></l>
 			<lb n="4"/><l n="4" met="pentameter"><w lemma="ἐγείρω">ἤγειρεν</w> <w lemma="κρατερός">κρατερὴν</w> <w lemma="χείρ">χεῖρ'</w> <w lemma="ἐπορέγω">ἐπορεξάμενος</w>.</l>
 			</lg>
 		</div>
       </div>
-
-      <div type="apparatus">
-        <head>Apparatus</head>
-		<div n="39">
-		<p>ii. l. 1,  <foreign lang="grc"><supplied reason="lost">Νυμφάων τ</supplied>έμενος</foreign> cj. Feissel</p>
-        <p>ii. l. 2,  The initial <foreign lang="grc">Α</foreign> in <foreign lang="grc">Ἀφροδισίαδος</foreign> is written <foreign lang="grc">Λ</foreign>. and the remaining traces of the first <foreign lang="grc">Ο</foreign> look more like an <foreign lang="grc">Α</foreign>.</p>
-        <p>ii. l. 3,  <foreign lang="grc"><supplied reason="lost">φεισάμενος</supplied></foreign> conjectured by Merkelbach</p>
-        <p>ii. l. 4,  <foreign lang="grc"><supplied reason="lost">ἀίδ</supplied><unclear reason="damage">ι</unclear>ον</foreign> conjectured by Merkelbach</p>
-		</div>
-	</div>
-
-      <div type="translation">
-        <head>Translation</head>
-        <p n="38">i. To Ampelios, learned in law, sweet father of his motherland, we Nymphs are grateful, because he gave wonder and splendid beauty to <supplied reason="subaudible">this</supplied> place of palms, so that anyone who, among our waters, turns his glance around, may always sing the praise both of him, and of the place, and of the Nymphs as well. Pythiodoros, the speaker from Tralles, wrote this.</p>
-        <p n="39">ii. Doulkitios, <supplied reason="lost" cert="low">founder</supplied> of Aphrodisias, raised up this <supplied reason="lost">work</supplied> also <gap reason="lost"/>; he <supplied reason="lost">was unsparing</supplied> of wealth for the sake of good reputation, which is <supplied reason="lost" cert="low">a permanent</supplied> memorial for mortals.</p>
-        <p n="40">iii.: Stranger, sing of Doulkitios, the governor, giver of games and founder and lover of honour and Maioumarch, who, stretching out his strong hand, raised me too, who had suffered for unnumbered years.</p>
-      </div>
-
-      <div type="commentary">
-        <head>Commentary</head>
-        <p>See discussion at <xref type="eAla-text" n="IV.19">IV.19</xref>.</p>
-        <p>For Ampelios, see also <xref type="iAph" n="042">42</xref>, <xref type="inscription" n="43" href="020019">2.19</xref>, <xref type="inscription" n="44" href="080609">8.609</xref>.</p>
-        <p>For Dulcitius, see also <xref type="inscription" n="41" href="080608">8.608</xref>.</p>
-      </div>
-
-      <div type="history" n="locations"><head>Locations</head><p>Found: <rs type="found"><rs type="monuList">South Agora, Agora Gate</rs>: on the façade, and three further loose fragments fallen from it; .</rs>. Original location: <rs type="origLocation">Findspot</rs>. Last recorded location: <rs type="lastLocation">Findspot (1983)</rs>. </p></div>
-
-      
-
-      
-
-      <div type="history" n="record">
-        <head>History of Recording</head>
-        <p>Excavated in <date value="1980" notBefore="1980" notAfter="1980" exact="both">1980</date> by the NYU expedition (<rs type="invNo">80.28</rs>, <rs type="invNo">80.29</rs> and <rs type="invNo">80.53</rs>).</p>
-      </div>
-
-      <div type="bibliography">
-        <head>Bibliography</head>
-        <p>Published by <bibl type="hbi" rend="primary" n="ALA"><author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> nos. <biblScope>38</biblScope>, <biblScope>39</biblScope>, <biblScope>40</biblScope> and plates x and xi</bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257601">714</biblScope>, <biblScope n="257591">704</biblScope>, <biblScope n="257604">717</biblScope></bibl>, <bibl type="hbi" n="steinepig"><title level="m">Steinepigramme</title> <biblScope>02/09/03</biblScope>, <biblScope>02/09/08</biblScope>, <biblScope>02/09/07</biblScope></bibl>; iii. republished by <bibl type="hbi" rend="primary" n="PPA"><author>Roueché</author>, <title level="m">PPA</title> <biblScope>65</biblScope></bibl> whence <bibl><author>Mentzou-Meimares</author> <title level="j">BZ</title> 89 (<date>1996</date>), <biblScope>58-73</biblScope></bibl>, whence <bibl n="seg"><title level="j">SEG</title> <biblScope>1996.1395</biblScope></bibl>.</p>
-      </div>
-
-      <div type="history" n="text-constituted-from">
-        <head>Text Constituted From</head>
-        <p>Transcription (Roueché).</p>
-      </div>
-
-      <div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="80_D_03"><figDesc>i., ii., &amp; iii. View (1980)</figDesc></figure><figure href="80_A_28"><figDesc>i. Face (1980)</figDesc></figure><figure href="80_A_26"><figDesc>ii. Main text (1980)</figDesc></figure><figure href="83_B_30A"><figDesc>ii. Upper left fragment (1983)</figDesc></figure><figure href="83_B_36A"><figDesc>ii. Fragment. lines 1-3 (1983)</figDesc></figure><figure href="83_B_37A"><figDesc>ii. Fragment, line 4 (1983)</figDesc></figure><figure href="80_H_23"><figDesc>iii. Face (1980)</figDesc></figure> </p>
-</div>
-
-
-
-      
-
-    </body>
-  </text>
+         <div type="apparatus">
+            <div n="39">
+               <p>ii. l. 1,  <foreign xml:lang="grc">
+                     <supplied reason="lost">Νυμφάων τ</supplied>έμενος</foreign> cj. Feissel</p>
+               <p>ii. l. 2,  The initial <foreign xml:lang="grc">Α</foreign> in <foreign xml:lang="grc">Ἀφροδισίαδος</foreign> is written <foreign xml:lang="grc">Λ</foreign>. and the remaining traces of the first <foreign xml:lang="grc">Ο</foreign> look more like an <foreign xml:lang="grc">Α</foreign>.</p>
+               <p>ii. l. 3,  <foreign xml:lang="grc">
+                     <supplied reason="lost">φεισάμενος</supplied>
+                  </foreign> conjectured by Merkelbach</p>
+               <p>ii. l. 4,  <foreign xml:lang="grc">
+                     <supplied reason="lost">ἀίδ</supplied>
+                     <unclear reason="damage">ι</unclear>ον</foreign> conjectured by Merkelbach</p>
+            </div>
+         </div>
+         <div type="translation">
+            <p n="38">i. To Ampelios, learned in law, sweet father of his motherland, we Nymphs are grateful, because he gave wonder and splendid beauty to <supplied reason="subaudible">this</supplied> place of palms, so that anyone who, among our waters, turns his glance around, may always sing the praise both of him, and of the place, and of the Nymphs as well. Pythiodoros, the speaker from Tralles, wrote this.</p>
+            <p n="39">ii. Doulkitios, <supplied reason="lost" cert="low">founder</supplied> of Aphrodisias, raised up this <supplied reason="lost">work</supplied> also <gap reason="lost" unit="character" extent="unknown"/>; he <supplied reason="lost">was unsparing</supplied> of wealth for the sake of good reputation, which is <supplied reason="lost" cert="low">a permanent</supplied> memorial for mortals.</p>
+            <p n="40">iii.: Stranger, sing of Doulkitios, the governor, giver of games and founder and lover of honour and Maioumarch, who, stretching out his strong hand, raised me too, who had suffered for unnumbered years.</p>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="IV.19" target=".xml"/>.</p>
+            <p>For Ampelios, see also <ref type="iAph" n="042" target=".xml"/>, <ref type="inscription" n="43" target="020019.xml"/>, <ref type="inscription" n="44" target="080609.xml"/>.</p>
+            <p>For Dulcitius, see also <ref type="inscription" n="41" target="080608.xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" rend="primary" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> nos. <citedRange>38</citedRange>, <citedRange>39</citedRange>, <citedRange>40</citedRange> and plates x and xi</bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257601">714</citedRange>, <citedRange n="257591">704</citedRange>, <citedRange n="257604">717</citedRange>
+               </bibl>, <bibl type="hbi" n="steinepig">
+                  <title level="m">Steinepigramme</title>
+                  <citedRange>02/09/03</citedRange>, <citedRange>02/09/08</citedRange>, <citedRange>02/09/07</citedRange>
+               </bibl>; iii. republished by <bibl type="hbi" rend="primary" n="PPA">
+                  <author>Roueché</author>, <title level="m">PPA</title>
+                  <citedRange>65</citedRange>
+               </bibl> whence <bibl>
+                  <author>Mentzou-Meimares</author>
+                  <title level="j">BZ</title> 89 (<date>1996</date>), <citedRange>58-73</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title level="j">SEG</title>
+                  <citedRange>1996.1395</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

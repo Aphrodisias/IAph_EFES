@@ -1,96 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph150271" n="iAph0341 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType" reg="funerary">Funerary</rs> fragment</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary fragment</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph150271</idno>
+            <idno type="IAph2007">iAph150271</idno>
+            <idno type="JMR2004">iAph0341</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>63.442</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment of a  <material key="marmor">white marble</material>
+                              <objectType>panel</objectType> or <objectType>sarcophagus</objectType> front, back surviving but without edges (<width unit="metre">0.215</width> × <height unit="metre">0.21</height> × <depth unit="metre">0.05</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs>  on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.027</height>; <term>beta</term> with open lower bowl.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering"> Second to third centuries A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Stray</rs> find</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-01" who="#GB">DONE</change>
+         <change when="2005-05-24" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_I_23.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-03-01</date><respStmt><name>Gabriel Bodard</name></respStmt><item>DONE</item></change><change><date>2005-05-24</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Fragment of a  <rs type="material" key="marmor">white marble</rs> <rs type="objectType">panel</rs> or <rs type="objectType">sarcophagus</rs> front, back surviving but without edges (<measure type="length" unit="metre" dim="width">0.215</measure> × <measure type="length" unit="metre" dim="height">0.21</measure> × <measure type="length" unit="metre" dim="depth">0.05</measure>).</p>
+<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/><lb n="1"/><gap reason="lost" unit="character" quantity="11"/><gap reason="illegible" unit="character" quantity="1"/>  <persName type="attested"><name nymRef="#Ἀπολλώνιος">Ἀπο<supplied cert="low" reason="lost">λλώνιος</supplied></name></persName><lb n="2"/><gap reason="lost" unit="character" quantity="9"/><w lemma="διάδοχος">διάδο<supplied reason="lost">χος</supplied></w>  <w lemma="αὐτός"><supplied reason="lost" cert="low">αὐτοῦ</supplied></w><lb n="3"/><supplied reason="lost"><w lemma="καί">καὶ</w>  <w lemma="ὅς">οὓς</w>  <w lemma="ἐάν">ἂν</w></supplied>  <w lemma="αὐτός">αὐτὸς</w>  <w lemma="βούλομαι">β<supplied reason="lost">ουληθῇ</supplied></w><lb n="4"/><w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="ἐπιγραφή"><supplied reason="lost">ἐπιγρα</supplied>φῆς</w>  <w lemma="ἀντίγραφον">ἀν<unclear reason="damage">τ</unclear><supplied reason="lost">ίγραφον</supplied></w><lb n="5"/><w lemma="ἀποτίθημι"><supplied reason="lost">ἀπετέθη</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰ</supplied>ς</w>  <w lemma="ὁ">τὸ</w>  <w lemma="χρεωφυλάκιον">χρ<unclear reason="damage">ε</unclear><supplied reason="lost">οφυλάκιον</supplied></w><lb n="6"/><w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>  <w lemma="στεφανηφόρος"><supplied reason="lost">στεφαν</supplied><unclear reason="damage">η</unclear>φ<unclear reason="damage">ό</unclear><supplied reason="lost">ρου</supplied></w>  <supplied reason="lost"><w lemma="ὁ">τοῦ</w>  <w lemma="δεῖνα">δεῖνος</w></supplied><lb n="6a"/><gap reason="lost" unit="line" extent="unknown"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs>  on one face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.027</measure>; <term>beta</term> with open lower bowl.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p> <date exact="none" notAfter="0300" notBefore="0101">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="0"/><gap reason="lost" dim="top" extent="unknown" unit="line"/><lb n="1"/><gap reason="lost" dim="left" extent="11" unit="character"/><gap reason="illegible" extent="1" unit="character"/>  <persName type="aphrodisian" full="yes"><name reg="Ἀπολλώνιος">Ἀπο<supplied cert="low" reason="lost">λλώνιος</supplied></name></persName><lb n="2"/><gap reason="lost" dim="left" extent="9" unit="character"/><w lemma="διάδοχος">διάδο<supplied reason="lost">χος</supplied></w>  <w lemma="αὐτός"><supplied reason="lost" cert="low">αὐτοῦ</supplied></w><lb n="3"/><supplied reason="lost"><w lemma="καί">καὶ</w>  <w lemma="ὅς">οὓς</w>  <w lemma="ἐάν">ἂν</w></supplied>  <w lemma="αὐτός">αὐτὸς</w>  <w lemma="βούλομαι">β<supplied reason="lost">ουληθῇ</supplied></w><lb n="4"/><w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <w lemma="ἐπιγραφή"><supplied reason="lost">ἐπιγρα</supplied>φῆς</w>  <w lemma="ἀντίγραφον">ἀν<unclear reason="damage">τ</unclear><supplied reason="lost">ίγραφον</supplied></w><lb n="5"/><w lemma="ἀποτίθημι"><supplied reason="lost">ἀπετέθη</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰ</supplied>ς</w>  <w lemma="ὁ">τὸ</w>  <w lemma="χρεωφυλάκιον">χρ<unclear reason="damage">ε</unclear><supplied reason="lost">οφυλάκιον</supplied></w><lb n="6"/><w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>  <w lemma="στεφανηφόρος"><supplied reason="lost">στεφαν</supplied><unclear reason="damage">η</unclear>φ<unclear reason="damage">ό</unclear><supplied reason="lost">ρου</supplied></w>  <supplied reason="lost"><w lemma="ὁ">τοῦ</w>  <w lemma="δεῖνα">δεῖνος</w></supplied><lb n="6a"/><gap reason="lost" dim="bottom" extent="unknown" unit="line"/></ab>
-</div>
-
-<div type="apparatus"><head>Apparatus</head><p>l. 2, or <foreign lang="grc">διάδο<supplied reason="lost">χοι</supplied></foreign>.</p></div><div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>...] ?Apollonios [... and ... his] heir [and theose whom he wishes.] A copy of the inscribed text [was deposited in] the archive [in the year of the] stephanephorus [... month? ...].</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>l. 1, given the standard character of the class of funerary texts to which this belongs a name such as Apollonios is very likely at this point.</p><p>l. 2, the text follows from the parallels, e.g. [[...]]</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Stray</rs> find</rs>. <rs type="origLocation">Unknown</rs>. <rs type="lastLocation">Museum (1977)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1963 (<rs type="invNo">63.442</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs"><head>Photographs</head><p><figure href="77_I_23"><figDesc>Face (1977)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="apparatus">
+            <p>l. 2, or <foreign xml:lang="grc">διάδο<supplied reason="lost">χοι</supplied>
+               </foreign>.</p>
+         </div>
+         <div type="translation">
+            <p>...] ?Apollonios [... and ... his] heir [and theose whom he wishes.] A copy of the inscribed text [was deposited in] the archive [in the year of the] stephanephorus [... month? ...].</p>
+         </div>
+         <div type="commentary">
+            <p>l. 1, given the standard character of the class of funerary texts to which this belongs a name such as Apollonios is very likely at this point.</p>
+            <p>l. 2, the text follows from the parallels, e.g. [[...]]</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,97 +1,151 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph120028" n="iAph1027 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Posthumous <rs type="textType">honours</rs></rs> for Tiberius Claudius Ktesias, who established a <rs type="textType">foundation</rs></title>
-     </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Posthumous honours for Tiberius Claudius Ktesias, who established a foundation</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120028</idno>
+            <idno type="IAph2007">iAph120028</idno>
+            <idno type="JMR2004">iAph1027</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType key="block">block</objectType>, with moulding (later cut away for re-use) below, perhaps cut away to the left (<width unit="metre">0.90</width>   × <height unit="metre">1.32</height> x depth not measurable).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>The text is inscribed on the face and must have begun on an adjacent block, or on a section of this block which has been cut away.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.03-0.035</height>; small circle for abbreviations.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0151"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">Second half of the second century, perhaps already into the third century, on the basis of the <foreign xml:lang="grc">β</foreign> (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, North</rs>: re-used in the  wall, north of the Stadium, just west of <ref type="inscription" n="1022" target="120029.xml"/> (=MAMA 492).</provenance>
+                  <provenance type="observed" when="1973">Findspot (1973)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); Gaudin; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-02-16" who="Artemis-Papakostouli">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_V_03.jpg">
+            <desc>Face (1973)</desc>
+         </graphic>
+         <graphic url="73_P_34A.jpg">
+            <desc>Wall (1973)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-02-16</date><respStmt><name>Artemis Papakostouli</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType" reg="block">block</rs>, with moulding (later cut away for re-use) below, perhaps cut away to the left (<measure dim="width" type="length" unit="metre">0.90</measure>   × <measure dim="height" type="length" unit="metre">1.32</measure> x depth not measurable).</p>
+<ab><lb n="1"/><supplied reason="lost"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w></supplied>  <supplied reason="lost" cert="low"><w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></supplied>  <w lemma="καί"><supplied reason="lost">κ</supplied><unclear reason="damage">α</unclear>ὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="γερουσία">γερουσία</w> <w lemma="τιμάω">ἐτείμησαν</w> <g ref="#star"/><lb n="2"/><gap reason="lost" unit="character" quantity="5"/>  <w lemma="ἀνάστασις"><supplied reason="lost" cert="low">ἀναστάσεσιν</supplied></w>  <w lemma="ἀνδριάς"><supplied reason="lost">ἀ</supplied>νδριάντων</w> <persName type="attested"><name nymRef="#Τιβέριος"><expan><abbr>Τιβ</abbr><ex>έριον</ex></expan></name> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name> <name nymRef="#Κτησίας">Κτησίαν</name></persName> <lb n="3"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <persName type="attested"><gap reason="lost" unit="character" quantity="14"/><name>ίαν</name></persName> <w lemma="ὁ">τὴν</w> <w lemma="γυνή">γυναῖκα</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <lb n="4"/><persName type="attested"><name nymRef="#Τιβέριος"><expan><abbr>Τιβ</abbr><ex>έριον</ex></expan></name> <name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name> <gap unit="character" reason="lost" quantity="8"/></persName>  <w lemma="ὁ"><supplied reason="lost">τὸν</supplied></w> <w lemma="υἱός">υἱὸν</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τοῦ</w> <w lemma="βίος">βί<lb n="5" break="no"/><supplied reason="lost">ου</supplied></w>  <gap unit="character" reason="lost" quantity="13"/>  <w lemma="σεμνός"><supplied reason="lost">σεμν</supplied>ότητα</w> <w lemma="ἀνατίθημι">ἀναθέντας</w> <w lemma="εἰς">εἰς</w> <w lemma="διανομή">δια<lb n="6" break="no"/><supplied reason="lost">νομὰς</supplied></w>  <w lemma="αἰώνιος"><supplied reason="lost" cert="low">αἰωνίους</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="στεφάνωσις"><supplied reason="lost">σ</supplied>τεφανώσεις</w> <w lemma="ὁ">τῇ</w> <w lemma="τε">τε</w> <w lemma="βουλή">Βουλῇ</w> <lb n="7"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <gap unit="character" reason="lost" quantity="11"/>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ταῖ</supplied>ς</w> <w lemma="φυλή">Φυλαῖς</w> <w lemma="καί">καὶ</w> <w lemma="πρόκληροι">Προκλήροις</w><lb n="8"/><supplied reason="lost" cert="low"> <w lemma="ὁ">τὸν</w> <w lemma="κατά">κατ'</w> <w lemma="ἔτος">ἔτος</w> <w lemma="τόκος">τόκον</w></supplied>  <w lemma="ἀπό"><supplied reason="lost" cert="low">  ἀ</supplied>πὸ</w>  <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w>  <w lemma="μυρίος">μυρίων</w>  <w lemma="χεῖλος">χειλίων</w>    <space extent="2" unit="character" dim="horizontal"/>  <g ref="#star"/><lb n="8a"/>          <space unit="line" dim="horizontal"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>The text is inscribed on the face and must have begun on an adjacent block, or on a section of this block which has been cut away.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.03-0.035</measure>; small circle for abbreviations.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p><date notBefore="0151" notAfter="0200" exact="none">Second half of the second century</date>, perhaps already into the third century, on the basis of the <foreign lang="grc">β</foreign> (<rs type="criteria">lettering</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><supplied reason="lost"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w></supplied>  <supplied reason="lost" cert="low"><w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w></supplied>  <w lemma="καί"><supplied reason="lost">κ</supplied><unclear reason="damage">α</unclear>ὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="γερουσία">γερουσία</w> <w lemma="τιμάω">ἐτείμησαν</w> <g type="star"/><lb n="2"/><gap reason="lost" unit="character" extent="5"/>  <w lemma="ἀνάστασις"><supplied reason="lost" cert="low">ἀναστάσεσιν</supplied></w>  <w lemma="ἀνδριάς"><supplied reason="lost">ἀ</supplied>νδριάντων</w> <persName type="aphrodisian"><name type="praenomen" reg="Τιβέριος"><expan><abbr>Τιβ</abbr><supplied reason="abbreviation">έριον</supplied></expan></name> <name type="gentilicium" reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αύδιον</supplied></expan></name> <name reg="Κτησίας">Κτησίαν</name></persName> <lb n="3"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <persName type="aphrodisian"><gap reason="lost" unit="character" dim="internal" extent="14"/><name>ίαν</name></persName> <w lemma="ὁ">τὴν</w> <w lemma="γυνή">γυναῖκα</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="καί">καὶ</w> <lb n="4"/><persName type="aphrodisian"><name type="praenomen" reg="Τιβέριος"><expan><abbr>Τιβ</abbr><supplied reason="abbreviation">έριον</supplied></expan></name> <name type="gentilicium" reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αύδιον</supplied></expan></name> <gap unit="character" reason="lost" extent="8"/></persName>  <w lemma="ὁ"><supplied reason="lost">τὸν</supplied></w> <w lemma="υἱός">υἱὸν</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τοῦ</w> <w lemma="βίος">βί<lb n="5" type="worddiv"/><supplied reason="lost">ου</supplied></w>  <gap extent="13" dim="internal" unit="character" reason="lost"/>  <w lemma="σεμνός"><supplied reason="lost">σεμν</supplied>ότητα</w> <w lemma="ἀνατίθημι">ἀναθέντας</w> <w lemma="εἰς">εἰς</w> <w lemma="διανομή">δια<lb n="6" type="worddiv"/><supplied reason="lost">νομὰς</supplied></w>  <w lemma="αἰώνιος"><supplied reason="lost" cert="low">αἰωνίους</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="στεφάνωσις"><supplied reason="lost">σ</supplied>τεφανώσεις</w> <w lemma="ὁ">τῇ</w> <w lemma="τε">τε</w> <w lemma="βουλή">Βουλῇ</w> <lb n="7"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <gap dim="internal" extent="11" unit="character" reason="lost"/>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ταῖ</supplied>ς</w> <w lemma="φυλή">Φυλαῖς</w> <w lemma="καί">καὶ</w> <w lemma="πρόκληροι">Προκλήροις</w><lb n="8"/><supplied reason="lost" cert="low"> <w lemma="ὁ">τὸν</w> <w lemma="κατά">κατ'</w> <w lemma="ἔτος">ἔτος</w> <w lemma="τόκος">τόκον</w></supplied>  <w lemma="ἀπό"><supplied reason="lost" cert="low">  ἀ</supplied>πὸ</w>  <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w>  <w lemma="μυρίος">μυρίων</w>  <w lemma="χεῖλος">χειλίων</w>    <space extent="2" unit="character" dim="horizontal"/>  <g type="star"/><lb n="8a"/>          <space unit="line" dim="horizontal"/></ab>
-</div>
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); Gaudin; publications.</p>
-</div>
-
-<div type="apparatus"><head>Apparatus</head><p>l. 2, <foreign lang="grc"><supplied reason="lost">ἀναστάσεσιν ἀ</supplied>νδριάντων</foreign>  Cormack.</p><p>l. 4, <foreign lang="grc">αὐτοῦ</foreign>  Cormack; but <foreign lang="grc">αὐτῶν</foreign> is clear in the MAMA photograph.</p><p>l. 7, <foreign lang="grc"><supplied reason="lost">καὶ τῷ δήμῳ καὶ ταῖ</supplied>ς</foreign> Cormack (but the <foreign lang="grc">φυλαί</foreign> and the <foreign lang="grc">δῆμος</foreign> are surely one and the same).</p></div><div type="translation">
-<head>Translation</head>
-<p><supplied reason="lost">The Council</supplied> <supplied reason="lost" cert="low">and the People</supplied> and the Gerousia honoured <supplied reason="lost" cert="low">with the erection</supplied> of statues Tib<supplied reason="abbreviation">erius</supplied> Cl<supplied reason="abbreviation">audius</supplied> Ktesias <gap reason="lost"/> <supplied reason="lost">and</supplied> <name><gap reason="lost"/>ia</name> his wife and <supplied reason="lost">Tib<supplied reason="abbreviation">erius</supplied> Cl<supplied reason="abbreviation">audius</supplied></supplied>  their son, on account of their lives <supplied reason="lost">of</supplied> <supplied reason="lost" cert="low">virtue and</supplied> dignity, since they dedicated for <supplied reason="lost">perpetual</supplied> distributions and crownings both to the Council <supplied reason="lost">and</supplied> to the Tribes and <seg cert="low">those who drew lots first</seg> [? the annual interest] on 11,000 denarii.</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>Waddington restored <foreign lang="grc"><supplied reason="lost">ἡ βουλὴ καὶ</supplied> ἡ γερουσία</foreign> in the first line, consequently shortening the supplement required on the left.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Walls, North</rs>: re-used in the  wall, north of the Stadium, just west of <xref type="inscription" n="1022" href="120029">12.29</xref> (=MAMA 492).</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Findspot (1973)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Falkener; by Waddington; by K&amp;R (no notebook reference); by Gaudin (101); by the MAMA expedition; by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="henzen1852">Henzen, from Falkener, Ann. d. Inst. 23, 1852,  132-133, no. <biblScope>8</biblScope></bibl>; by <bibl n="LBW">Waddington, LBW <biblScope>1603</biblScope></bibl>, whence <bibl n="ziebarth1903">Ziebarth, ZVRW 16, 1903, 292, no. 63</bibl>, <bibl n="laum1914">Laum, no. <biblScope>110</biblScope></bibl>; mentioned by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 131-132, no. <biblScope>60</biblScope></bibl>; published by <bibl n="MAMA8">Cormack from the MAMA records and from Kubitschek and Reichel, MAMA 8, no.  <biblScope>497</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257177">298</biblScope></bibl>.</p>
-</div>
-
-
-
-
-
-<div type="figure" n="photographs"><head>Photographs</head><p><figure href="73_V_03"><figDesc>Face (1973)</figDesc></figure><figure href="73_P_34A"><figDesc>Wall (1973)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="apparatus">
+            <p>l. 2, <foreign xml:lang="grc">
+                  <supplied reason="lost">ἀναστάσεσιν ἀ</supplied>νδριάντων</foreign>  Cormack.</p>
+            <p>l. 4, <foreign xml:lang="grc">αὐτοῦ</foreign>  Cormack; but <foreign xml:lang="grc">αὐτῶν</foreign> is clear in the MAMA photograph.</p>
+            <p>l. 7, <foreign xml:lang="grc">
+                  <supplied reason="lost">καὶ τῷ δήμῳ καὶ ταῖ</supplied>ς</foreign> Cormack (but the <foreign xml:lang="grc">φυλαί</foreign> and the <foreign xml:lang="grc">δῆμος</foreign> are surely one and the same).</p>
+         </div>
+         <div type="translation">
+            <p>
+               <supplied reason="lost">The Council</supplied>
+               <supplied reason="lost" cert="low">and the People</supplied> and the Gerousia honoured <supplied reason="lost" cert="low">with the erection</supplied> of statues Tib<ex>erius</ex> Cl<ex>audius</ex> Ktesias <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost">and</supplied>
+               <name>
+                  <gap reason="lost" unit="character" extent="unknown"/>ia</name> his wife and <supplied reason="lost">Tib<ex>erius</ex> Cl<ex>audius</ex>
+               </supplied>  their son, on account of their lives <supplied reason="lost">of</supplied>
+               <supplied reason="lost" cert="low">virtue and</supplied> dignity, since they dedicated for <supplied reason="lost">perpetual</supplied> distributions and crownings both to the Council <supplied reason="lost">and</supplied> to the Tribes and <seg cert="low">those who drew lots first</seg> [? the annual interest] on 11,000 denarii.</p>
+         </div>
+         <div type="commentary">
+            <p>Waddington restored <foreign xml:lang="grc">
+                  <supplied reason="lost">ἡ βουλὴ καὶ</supplied> ἡ γερουσία</foreign> in the first line, consequently shortening the supplement required on the left.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="henzen1852">Henzen, from Falkener, Ann. d. Inst. 23, 1852,  132-133, no. <citedRange>8</citedRange>
+               </bibl>; by <bibl n="LBW">Waddington, LBW <citedRange>1603</citedRange>
+               </bibl>, whence <bibl n="ziebarth1903">Ziebarth, ZVRW 16, 1903, 292, no. 63</bibl>, <bibl n="laum1914">Laum, no. <citedRange>110</citedRange>
+               </bibl>; mentioned by <bibl n="reinach">Reinach, from Gaudin's squeeze, REG 19, 1906, 131-132, no. <citedRange>60</citedRange>
+               </bibl>; published by <bibl n="MAMA8">Cormack from the MAMA records and from Kubitschek and Reichel, MAMA 8, no.  <citedRange>497</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257177">298</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

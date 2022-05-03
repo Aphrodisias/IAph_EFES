@@ -1,84 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080088" n="iAph0675 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">i. <rs type="textType">Honours</rs> for Piseas, circuit-victor. ii. <rs type="textType">Sculptor's signature</rs>: Polyneikes</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>1991</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="ktejmr1991">Erim and Reynolds (<date>1991</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-04-17</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="objectType">statue</rs> (for description see bibliography)  and <rs type="material">blue marble</rs> <rs type="objectType">statue  base</rs> with simple moulding above, broken below and to the right (<measure dim="height" unit="metre" type="length">0.25</measure> x <measure dim="width" unit="metre" type="length">0.57</measure> x <measure dim="depth" unit="metre" type="length">0.28</measure>).</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>i. <rs type="execution" key="scalpro">Inscribed</rs> on the face of the base; ii inscribed on the plinth of the statue.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>i.: Letters square, probably third century; <measure dim="height" type="length" unit="metre">0.04</measure></p><p>ii: cursive, l.1, <measure dim="height" type="length" unit="metre">0.03</measure>; l.2. <measure dim="height" type="length" unit="metre">0.025</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date cert="low" notAfter="0300" notBefore="0200">Third century</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">sculpture</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<cb n="i"/><ab><lb n="1"/> <persName type="aphrodisian"><name reg="Πίσεας">Πίσεαν</name> <persName type="aphrodisian"><name reg="Πίσεας">Πισέου</name></persName></persName> <lb n="2"/> <w lemma="περιοδονίκης">περιοδονίκην</w> <lb n="3"/><g type="leaf"/> <w lemma="ὁ">ἡ</w> <w lemma="πατρίς">πατρίς</w> <g type="leaf"/>  </ab>
-<cb n="ii"/><ab><lb n="1"/><persName type="aphrodisian"><name reg="Πολυνείκης">Πολυνείκ<supplied reason="lost">ης</supplied></name> <w lemma="Ἀφροδεισιεύς"><supplied reason="lost">Ἀφρ</supplied>οδεισιεὺς</w></persName><lb n="2"/><space extent="5"/> <w lemma="ποιέω">ἐποί<supplied reason="lost">ει</supplied></w> <space extent="8"/></ab></div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>i. Honours for Piseas, circuit-victor. ii. Sculptor's signature: Polyneikes</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080088</idno>
+            <idno type="IAph2007">iAph080088</idno>
+            <idno type="JMR2004">iAph0675</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>71.337</idno>
+                  <idno>70.509</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <objectType>statue</objectType> (for description see bibliography)  and <material>blue marble</material>
+                              <objectType>statue  base</objectType> with simple moulding above, broken below and to the right (<height unit="metre">0.25</height> x <width unit="metre">0.57</width> x <depth unit="metre">0.28</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i. <rs type="execution" ref="scalpro">Inscribed</rs> on the face of the base; ii inscribed on the plinth of the statue.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i.: Letters square, probably third century; <height unit="metre">0.04</height>ii: cursive, l.1, <height unit="metre">0.03</height>; l.2. <height unit="metre">0.025</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Theatre</rs>, south analemma</origPlace>
+                     <origDate notBefore="0200" notAfter="0300" evidence="lettering sculpture">
+Third century (<rs type="criteria">lettering</rs>, <rs type="criteria">sculpture</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>, near the Porta Regia.</provenance>
+                  <provenance type="observed" when="2004">Museum (with statue) (2004)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcriptions (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-17" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Aph2004_65.jpg">
+            <desc>i and ii displayed (2004)</desc>
+         </graphic>
+         <graphic url="Aph2004_65i.jpg">
+            <desc>Text i  (2004)</desc>
+         </graphic>
+         <graphic url="HS_3544.jpg">
+            <desc>Text i (2000)</desc>
+         </graphic>
+         <graphic url="Aph2004_65ii.jpg">
+            <desc>Text ii (2004)</desc>
+         </graphic>
+         <graphic url="78_K_37.jpg">
+            <desc>Text ii (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>i: The fatherland (honours) Piseas, son of Piseas, circuit-victor.</p><p>ii: Polyneikes, Aphrodisian, made (this) </p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See bibliography.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"><rs type="monuList">Theatre</rs>, near the Porta Regia.</rs>
-<rs type="origLocation"><rs type="monuList">Theatre</rs>, south analemma</rs>
-<rs type="lastLocation">Museum (with statue) (2004)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcriptions (Reynolds, Roueché).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-
-<p>Recorded by the NYU expedition (<rs type="invNo">71.337</rs>, <rs type="invNo">70.509</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>i published by <bibl n="PPA">Roueché, PPA <biblScope>75</biblScope></bibl>;</p><p>ii published by <bibl n="ktejmr1991">Erim-Reynolds, 'Sculptors' no.<biblScope>8</biblScope></bibl>, whence <bibl n="seg"><title level="j">SEG</title> 40 <biblScope>1990.931</biblScope></bibl>. Both published, with the statue, by <bibl n="rrrs2006"> <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, no. <biblScope>39</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="Aph2004_65"><figDesc>i and ii displayed (2004)</figDesc></figure><figure href="Aph2004_65i"><figDesc>Text i  (2004)</figDesc></figure><figure href="HS_3544"><figDesc>Text i (2000)</figDesc></figure><figure href="Aph2004_65ii"><figDesc>Text ii (2004)</figDesc></figure><figure href="78_K_37"><figDesc>Text ii (1978)</figDesc></figure></p>
-</div></body></text>
+<cb n="i"/><ab><lb n="1"/> <persName type="attested"><name nymRef="#Πίσεας">Πίσεαν</name> <persName type="attested"><name nymRef="#Πίσεας">Πισέου</name></persName></persName> <lb n="2"/> <w lemma="περιοδονίκης">περιοδονίκην</w> <lb n="3"/><g ref="#leaf"/> <w lemma="ὁ">ἡ</w> <w lemma="πατρίς">πατρίς</w> <g ref="#leaf"/>  </ab>
+<cb n="ii"/><ab><lb n="1"/><persName type="attested"><name nymRef="#Πολυνείκης">Πολυνείκ<supplied reason="lost">ης</supplied></name> <w lemma="Ἀφροδεισιεύς"><supplied reason="lost">Ἀφρ</supplied>οδεισιεὺς</w></persName><lb n="2"/><space extent="5"/> <w lemma="ποιέω">ἐποί<supplied reason="lost">ει</supplied></w> <space extent="8"/></ab></div>
+         <div type="translation">
+            <p>i: The fatherland (honours) Piseas, son of Piseas, circuit-victor.</p>
+            <p>ii: Polyneikes, Aphrodisian, made (this) </p>
+         </div>
+         <div type="commentary">
+            <p>See bibliography.</p>
+         </div>
+         <div type="bibliography">
+            <p>i published by <bibl n="PPA">Roueché, PPA <citedRange>75</citedRange>
+               </bibl>;</p>
+            <p>ii published by <bibl n="ktejmr1991">Erim-Reynolds, 'Sculptors' no.<citedRange>8</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title level="j">SEG</title> 40 <citedRange>1990.931</citedRange>
+               </bibl>. Both published, with the statue, by <bibl n="rrrs2006">
+                  <author>Smith</author>, <title>Roman Portrait Statuary from Aphrodisias</title>, no. <citedRange>39</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

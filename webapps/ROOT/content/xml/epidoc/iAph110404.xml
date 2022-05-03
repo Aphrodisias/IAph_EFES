@@ -1,90 +1,139 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110404" n="iAph1853 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Ateimetos Petignas</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Joyce M. <name type="surname">Reynolds</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-13</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>
-A <rs type="material" key="marmor">white marble</rs> columnar <rs type="objectType">statue base</rs> shaft with moulding at top and bottom (<measure dim="height" type="length" unit="metre" precision="circa">1.12</measure>, diam. <measure dim="width" type="length" unit="metre" precision="circa">0.48</measure>); there is a channel (<measure dim="width" type="length" unit="metre">0.095</measure>) down one side from just below the upper moulding to the bottom, and a clamp hole cut in the lower moulding approximately opposite it.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on two sides with almost identical texts each within a raised <rs type="decoration">tabella ansata</rs>.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02-0.022</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Ateimetos Petignas</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110404</idno>
+            <idno type="IAph2007">iAph110404</idno>
+            <idno type="JMR2004">iAph1853</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>88.6</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+A <material key="marmor">white marble</material> columnar <objectType>statue base</objectType> shaft with moulding at top and bottom (<height unit="metre">1.12</height>, diam. <width unit="metre">0.48</width>); there is a channel (<width unit="metre">0.095</width>) down one side from just below the upper moulding to the bottom, and a clamp hole cut in the lower moulding approximately opposite it.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on two sides with almost identical texts each within a raised <rs type="decoration">tabella ansata</rs>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02-0.022</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0100"
+                               precision="medium"
+                               evidence="lettering">
+First century A.D.
+ possibly Julio-Claudian (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, South-west</rs>: Gaudin described i as on a column found in a vineyard near the baths, but ii as being on a sarcophagus in a vineyard outside the walls. Found in 1988 in a field wall west of the Hadrianic Baths.</provenance>
+                  <provenance type="observed" when="1988">Museum (1988)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); publication; Gaudin.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-13" who="cmr">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="88_E_01A.jpg">
+            <desc>Face i. (1988)</desc>
+         </graphic>
+         <graphic url="NY_93_86_08.jpg">
+            <desc>Face ii. (1993)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>
-<date notAfter="0100" notBefore="0001" exact="none" cert="low">First century A.D.</date>
- possibly Julio-Claudian (<rs type="criteria">lettering</rs>)</p>
+<div n="i" type="textpart" subtype="section"><ab><lb n="1"/>  <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="τιμάω">ἐτείμη<lb n="2" break="no"/>σεν</w> <persName type="attested"><name nymRef="#Ἀτίμητος">Ἀτείμητον</name> <persName type="attested"><name nymRef="#Χαρίδημος">Χα<lb n="3" break="no"/>ριδήμου</name></persName> <name nymRef="#Πετινγας">Πετινγαν</name></persName> <lb n="4"/> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="καί">καὶ</w> <lb n="5"/> <w lemma="ἡμέτερος">ἡμέτερον</w> <w lemma="πολίτης">πολεί<lb n="6" break="no"/>την</w> <w lemma="καί">καὶ</w> <w lemma="ζάω">ζήσαν<lb n="7" break="no"/>τα</w> <w lemma="εὔτακτος">εὐτάκτως</w></ab></div><div n="ii" type="textpart" subtype="section"><ab> <lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="τιμάω">ἐτίμησεν</w> <lb n="2"/> <persName type="attested"><name nymRef="#Ἀτίμητος">Ἀτίμητον</name> <persName type="attested"><name nymRef="#Χαρίδημος">Χαριδή<lb n="3" break="no"/>μου</name></persName> <placeName nymRef="#Πετιγνα"><name nymRef="#Πετινγας">Πετινγαν</name></placeName></persName> <w lemma="γίγνομαι">γενό<lb n="4" break="no"/>μενον</w> <w lemma="καί">καὶ</w> <w lemma="ἡμέτερος">ἡμέτε <lb n="5"/> ρον</w> <w lemma="πολίτης">πολείτην</w> <w lemma="καί">καὶ</w> <lb n="6"/> <w lemma="ζάω">ζήσαντα</w> <w lemma="εὔκτως">εὔκτως</w> <note xml:lang=""/> </ab></div>
 </div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="i"><ab><lb n="1"/>  <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="τιμάω">ἐτείμη<lb n="2" type="worddiv"/>σεν</w> <persName type="aphrodisian"><name reg="Ἀτίμητος">Ἀτείμητον</name> <persName type="aphrodisian"><name reg="Χαρίδημος">Χα<lb n="3" type="worddiv"/>ριδήμου</name></persName> <name reg="Πετινγας">Πετινγαν</name></persName> <lb n="4"/> <w lemma="γίγνομαι">γενόμενον</w> <w lemma="καί">καὶ</w> <lb n="5"/> <w lemma="ἡμέτερος">ἡμέτερον</w> <w lemma="πολίτης">πολεί<lb n="6" type="worddiv"/>την</w> <w lemma="καί">καὶ</w> <w lemma="ζάω">ζήσαν<lb n="7" type="worddiv"/>τα</w> <w lemma="εὔτακτος">εὐτάκτως</w></ab></div><div type="textpart_section" n="ii"><ab> <lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="τιμάω">ἐτίμησεν</w> <lb n="2"/> <persName type="aphrodisian"><name reg="Ἀτίμητος">Ἀτίμητον</name> <persName type="aphrodisian"><name reg="Χαρίδημος">Χαριδή<lb n="3" type="worddiv"/>μου</name></persName> <placeName reg="Πετιγνα"><name reg="Πετινγας">Πετινγαν</name></placeName></persName> <w lemma="γίγνομαι">γενό<lb n="4" type="worddiv"/>μενον</w> <w lemma="καί">καὶ</w> <w lemma="ἡμέτερος">ἡμέτε <lb n="5"/> ρον</w> <w lemma="πολίτης">πολείτην</w> <w lemma="καί">καὶ</w> <lb n="6"/> <w lemma="ζάω">ζήσαντα</w> <w lemma="εὔκτως">εὔκτως</w> <note>sic</note> </ab></div>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>i. l. 3, <foreign lang="grc">ΠΕΡΙΝΓΑΝ</foreign> Reinach</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>The People honoured Atimetos Petingas son of Charidemos, who became our citizen as well, and lived in good order.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The differences in spelling are interesting. It is just possible that ii, with its clear mistake in l. 6, as well as other variants, was meant to be hidden. </p><p>No explanation for Petingas has ever been proposed, but it is probably an ethnic from a very small town. If so, Atimetos will have had a second citizenship at Aphrodisias.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">City, South-west</rs>: Gaudin described i as on a column found in a vineyard near the baths, but ii as being on a sarcophagus in a vineyard outside the walls. Found in 1988 in a field wall west of the Hadrianic Baths.</rs>
-<rs type="lastLocation">Museum (1988)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); publication; Gaudin.</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Gaudin, 61 and 64; by the NYU expedition (<rs type="invNo">88.6</rs>; SBI <rs type="sbi">39</rs>)</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Gaudin by <bibl n="reinach">Reinach, i <biblScope>41</biblScope>, ii <biblScope>42</biblScope></bibl> (whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257310">432</biblScope>
- and <biblScope n="257311">433</biblScope></bibl>)</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="88_E_01A"><figDesc>Face i. (1988)</figDesc></figure><figure href="NY_93_86_08"><figDesc>Face ii. (1993)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>i. l. 3, <foreign xml:lang="grc">ΠΕΡΙΝΓΑΝ</foreign> Reinach</p>
+         </div>
+         <div type="translation">
+            <p>The People honoured Atimetos Petingas son of Charidemos, who became our citizen as well, and lived in good order.</p>
+         </div>
+         <div type="commentary">
+            <p>The differences in spelling are interesting. It is just possible that ii, with its clear mistake in l. 6, as well as other variants, was meant to be hidden. </p>
+            <p>No explanation for Petingas has ever been proposed, but it is probably an ethnic from a very small town. If so, Atimetos will have had a second citizenship at Aphrodisias.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Gaudin by <bibl n="reinach">Reinach, i <citedRange>41</citedRange>, ii <citedRange>42</citedRange>
+               </bibl> (whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257310">432</citedRange>
+ and <citedRange n="257311">433</citedRange>
+               </bibl>)</p>
+         </div>
+      </body>
+   </text>
 </TEI>

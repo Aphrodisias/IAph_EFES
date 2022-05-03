@@ -1,78 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph110403" n="iAph1467 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for Zenon</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-02-06</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">block</rs>: fragment <measure dim="height" type="length" unit="metre">0.31</measure> x <measure dim="width" type="length" unit="metre">0.78</measure> x <measure dim="depth" type="length" unit="metre">0.30</measure></p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for Zenon</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph110403</idno>
+            <idno type="IAph2007">iAph110403</idno>
+            <idno type="JMR2004">iAph1467</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>block</objectType>: fragment <height unit="metre">0.31</height> x <width unit="metre">0.78</width> x <depth unit="metre">0.30</depth>
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>According to Fellows, the missing letters were at the left side. <height unit="metre">0.07-0.075</height> (Kubitschek). Ligatures: l. 5,  ΗΝ; l. 6,  ΗΡ; l.11 ; second ΤΗ</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0400"
+                               precision="medium"
+                               evidence="terminology">First to fourth centuries A.D. (<rs type="criteria">terminology</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, South-west</rs>: seen by Bailie high in the wall of a building near the SW walls; inside the West Gate (Kubitschek)</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-02-06" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_V_08.jpg">
+            <desc>Lines 1-4:  Kubitschek, Notebook V, 8</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐ<lb n="2" break="no"/>τῷ</w> <w lemma="σορός">σορὸν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="εἰσώστη">εἰσώστας</w> <w lemma="κατασκευάζω">κα<lb n="3" break="no"/>τεσκεύασεν</w>  <g ref="#stop"/>  <persName type="attested"><name nymRef="#Ζήνων">Ζήνων</name>  <persName type="attested"><name nymRef="#Ἀπολλώνιος ">Ἀπολ<lb n="4" break="no"/><g ref="#scroll"/>λωνίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Γάμος">Γάμου</name></persName></persName></persName> <g ref="#leaf"/>  <lb n="5"/>  <space extent="3" unit="character" dim="horizontal"/>  <lb n="6"/>  <gap reason="lost" unit="character" quantity="3"/> <w lemma="κηδεύω">κεκήδευται</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνων</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="προγράφω">προγεγραμμένος</w> <w lemma="ἀνατίθημι">ἀνατ<lb n="7" break="no"/><supplied reason="lost">εθεικὼς</supplied></w>  <supplied reason="lost" cert="low">  </supplied>  <gap reason="lost" unit="character" quantity="3"/>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="αἰώνιος"><supplied reason="lost">α</supplied>ἰωνίους</w> <w lemma="κλῆρος">κλήρους</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="5000">ε</num> <w lemma="κηδεύω">κηδευ<gap reason="lost" unit="character" extent="unknown"/></w><lb n="8"/><gap reason="lost" unit="character" quantity="3"/> <w>ΟΥ</w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Γάμος">Γάμου</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀδελφός">ἀδελφοῦ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="υἱός">υἱὸ<supplied reason="lost">ς</supplied></w>  <lb n="9"/><gap reason="lost" unit="character" quantity="3"/> <w lemma="ὁ">τοῖς</w> <w lemma="χρυσοφόρος">χρυσοφόροις</w> <w lemma="νεοποιός">νεοπυοῖς</w> <w lemma="εἰς">εἰς</w> <w lemma="αἰώνιος">αἰωνίου<supplied reason="lost">ς</supplied></w>  <lb n="10"/><w lemma="κλῆρος"><supplied reason="lost">κλήρους</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  <w lemma="δηλόω"><supplied reason="lost">δ</supplied><unclear reason="damage">η</unclear>λοῦται</w> <w lemma="ἔτι">ἔτι</w> <w lemma="κηδεύω">κηδευθήσεται</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σ<supplied reason="lost">ορῷ</supplied></w>  <lb n="11"/>  <gap reason="lost" unit="character" quantity="3"/>ΟΥ <w lemma="ἕτερος">ἕτερος</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἔχω">ἕξει</w> <lb n="12"/><gap reason="lost" unit="character" quantity="3"/> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορ'</w> <w lemma="οὔτε">οὔτε</w> <w lemma="ἀνοίγνυμι">ἀνῦξαι</w> <w lemma="αὐτός">αὐτὴν</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ἀποτίνω">ἀπ<supplied reason="lost">ο</supplied><lb n="13" break="no"/><supplied reason="lost">τείσει</supplied></w>  <supplied reason="lost">εἰς</supplied>  <supplied reason="lost">τὸ</supplied><gap reason="lost" unit="character" quantity="2"/><w lemma="φίσκος"><supplied reason="lost">φί</supplied>σκον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="3000">γ</num> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸν</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσ<lb n="14" break="no"/><supplied reason="lost">τω</supplied></w>  <supplied reason="lost">τοῦ</supplied>  <supplied reason="lost">ἐκδικήσαντος</supplied><gap reason="lost" unit="character" quantity="3"/>Ρ <w lemma="κηδεύω">κηδευθήσονται</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <persName type="attested"><name nymRef="#Χρήσιμος">Χρήσιμο<supplied reason="lost">ς</supplied></name></persName>  <lb n="15"/><gap reason="lost" unit="character" quantity="3"/> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφ<lb n="16" break="no"/><supplied reason="lost">ανηφόρου</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>According to Fellows, the missing letters were at the left side. <measure dim="height" type="length" unit="metre">0.07-0.075</measure> (Kubitschek). Ligatures: l. 5,  ΗΝ; l. 6,  ΗΡ; l.11 ; second ΤΗ</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date notBefore="0001" notAfter="0400" exact="none">First to fourth centuries A.D.</date> (<rs type="criteria">terminology</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖον">μνημεῖον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐ<lb n="2" type="worddiv"/>τῷ</w> <w lemma="σορός">σορὸν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="εἰσώστη">εἰσώστας</w> <w lemma="κατασκευάζω">κα<lb n="3" type="worddiv"/>τεσκεύασεν</w>  <g type="stop"/>  <persName type="aphrodisian"><name reg="Ζήνων">Ζήνων</name>  <persName type="aphrodisian"><name reg="Ἀπολλώνιος ">Ἀπολ<lb n="4" type="worddiv"/><g type="scroll"/>λωνίου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Γάμος">Γάμου</name></persName></persName></persName> <g type="leaf"/>  <lb n="5"/>  <space extent="3" unit="character" dim="horizontal"/>  <lb n="6"/>  <gap reason="lost" extent="3" unit="character"/> <w lemma="κηδεύω">κεκήδευται</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνων</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="προγράφω">προγεγραμμένος</w> <w lemma="ἀνατίθημι">ἀνατ<lb n="7" type="worddiv"/><supplied reason="lost">εθεικὼς</supplied></w>  <supplied reason="lost" cert="low">  </supplied>  <gap reason="lost" extent="3" unit="character"/>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="αἰώνιος"><supplied reason="lost">α</supplied>ἰωνίους</w> <w lemma="κλῆρος">κλήρους</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="5000">ε</num> <w lemma="κηδεύω">κηδευ<gap reason="lost" extent="unknown" unit="character"/></w><lb n="8"/><gap reason="lost" extent="3" unit="character"/> <w>ΟΥ</w> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Γάμος">Γάμου</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀδελφός">ἀδελφοῦ</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="υἱός">υἱὸ<supplied reason="lost">ς</supplied></w>  <lb n="9"/><gap reason="lost" extent="3" unit="character"/> <w lemma="ὁ">τοῖς</w> <w lemma="χρυσοφόρος">χρυσοφόροις</w> <w lemma="νεοποιός">νεοπυοῖς</w> <w lemma="εἰς">εἰς</w> <w lemma="αἰώνιος">αἰωνίου<supplied reason="lost">ς</supplied></w>  <lb n="10"/><w lemma="κλῆρος"><supplied reason="lost">κλήρους</supplied></w>  <gap reason="lost" extent="3" unit="character"/>  <w lemma="δηλόω"><supplied reason="lost">δ</supplied><unclear reason="damage">η</unclear>λοῦται</w> <w lemma="ἔτι">ἔτι</w> <w lemma="κηδεύω">κηδευθήσεται</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σ<supplied reason="lost">ορῷ</supplied></w>  <lb n="11"/>  <gap reason="lost" extent="3" unit="character"/>ΟΥ <w lemma="ἕτερος">ἕτερος</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδείς">οὐδεὶς</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἔχω">ἕξει</w> <lb n="12"/><gap reason="lost" extent="3" unit="character"/> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορ'</w> <w lemma="οὔτε">οὔτε</w> <w lemma="ἀνοίγνυμι">ἀνῦξαι</w> <w lemma="αὐτός">αὐτὴν</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ἀποτίνω">ἀπ<supplied reason="lost">ο</supplied><lb n="13" type="worddiv"/><supplied reason="lost">τείσει</supplied></w>  <supplied reason="lost">εἰς</supplied>  <supplied reason="lost">τὸ</supplied><gap reason="lost" extent="2" unit="character"/><w lemma="φίσκος"><supplied reason="lost">φί</supplied>σκον</w> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <num value="3000">γ</num> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸν</w> <w lemma="τρίτος">τρίτον</w> <w lemma="εἰμί">ἔσ<lb n="14" type="worddiv"/><supplied reason="lost">τω</supplied></w>  <supplied reason="lost">τοῦ</supplied>  <supplied reason="lost">ἐκδικήσαντος</supplied><gap reason="lost" extent="3" unit="character"/>Ρ <w lemma="κηδεύω">κηδευθήσονται</w> <w lemma="ὅς">οὓς</w> <w lemma="ἐάν">ἂν</w> <persName type="aphrodisian"><name reg="Χρήσιμος">Χρήσιμο<supplied reason="lost">ς</supplied></name></persName>  <lb n="15"/><gap reason="lost" extent="3" unit="character"/> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφ<lb n="16" type="worddiv"/><supplied reason="lost">ανηφόρου</supplied></w>  <gap reason="lost" extent="3" unit="character"/>  </ab>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">City, South-west</rs>: seen by Bailie high in the wall of a building near the SW walls; inside the West Gate (Kubitschek)</rs>
-<rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Fellows. Bailie gives a location not in Fellows, which suggests that he did see this stone; K&amp;R saw a fragment of lines 1-4 ( K V.8, Abklatsch ; see Cormack, <title>Notes</title>, fig. 10) ;  not reported subsequently.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl type="hbi" rend="primary" n="fellows1841"><author>Fellows</author>, no. <biblScope>53</biblScope></bibl>, whence <bibl n="CIGIIc"><title>CIG</title> <biblScope>2836b</biblScope></bibl>; by <bibl n="bailie1846">Bailie, Fasc. ii 56-58 and 324-325, no. <biblScope>80</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257418">538</biblScope></bibl> ; by <bibl n="laum1914"><author>Laum</author>, <biblScope>109</biblScope></bibl>; referred to, <bibl><title type="abbreviated">Arch. Delt.</title> 1921/22, 294</bibl>.</p>
-</div><div type="figure" n="transcriptions"><head>Representations</head><p><figure href="K_V_08"><figDesc>Lines 1-4:  Kubitschek, Notebook V, 8</figDesc></figure></p></div>
-         
-         </body></text>
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" rend="primary" n="fellows1841">
+                  <author>Fellows</author>, no. <citedRange>53</citedRange>
+               </bibl>, whence <bibl n="CIGIIc">
+                  <title>CIG</title>
+                  <citedRange>2836b</citedRange>
+               </bibl>; by <bibl n="bailie1846">Bailie, Fasc. ii 56-58 and 324-325, no. <citedRange>80</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257418">538</citedRange>
+               </bibl> ; by <bibl n="laum1914">
+                  <author>Laum</author>, <citedRange>109</citedRange>
+               </bibl>; referred to, <bibl>
+                  <title type="abbreviated">Arch. Delt.</title> 1921/22, 294</bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

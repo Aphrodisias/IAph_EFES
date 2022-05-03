@@ -1,97 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph010175" n="iAph0378 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">  <rs type="textType" reg="funerary">Funerary</rs> text</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor> and <editor>Gabriel <name type="surname">Bodard</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PHI">McCabe (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>  Funerary text</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010175</idno>
+            <idno type="IAph2007">iAph010175</idno>
+            <idno type="JMR2004">iAph0378</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material>white marble</material> fragment, perhaps from a <objectType>sarcophagus</objectType> front, very damaged and worn.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.023</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0166"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="prosopography"> Late second to third centuries A.D. (<rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>: 'dallage du narthex' (Gaudin)</provenance>
+                  <provenance type="observed" when="1978">Findspot (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Preliminary transcription (Reynolds); publication; Gaudin's squeeze (red book 45v).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-17" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-07-27" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_K_14.jpg">
+            <desc>Part (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-04-17</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date>2005-07-27</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>A <rs type="material">white marble</rs> fragment, perhaps from a <rs type="objectType">sarcophagus</rs> front, very damaged and worn.</p>
+<ab><lb n="1"/><gap reason="lost" unit="character" quantity="3"/><orig n="unresolved">υστ<unclear reason="damage">αμεν</unclear>ουσθε</orig><gap reason="lost" unit="character" quantity="3"/>κ<unclear reason="damage">ΟΥΟΣΕΝΔΕΣΙΟ</unclear></ab><ab>ΣΠΙΘΕΝ<gap reason="lost" unit="character" extent="unknown"/><lb n="2"/><persName type="attested"><name nymRef="#Νεικόμαχος">Νεικόμαχος</name>  <name nymRef="#Βλάστος">Βλάστος</name>  <w lemma="υἱός">υἱὸς</w>  <persName type="attested"><name nymRef="#Λούκιος">Λ<supplied reason="lost">ο</supplied>υκίου</name>  <name nymRef="#Ἀντώνιος">Ἀντωνίου</name>  <name nymRef="#Νεικόμαχος">Νεικομάχου</name>  <name nymRef="#Βλάστος"><supplied reason="lost">Βλάστου</supplied></name></persName></persName> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Ἀντώνιος"><supplied reason="lost">Ἀντώ</supplied><lb n="3" break="no"/>νιος</name></persName>  <gap reason="lost" unit="character" quantity="13"/>  <w lemma="υἱός">υ<supplied reason="lost">ἱ</supplied>ὸς</w>  <w lemma="αὐτός">αὐ<unclear reason="damage">τ</unclear>οῦ</w>  <w lemma="πρόμοιρος">προμο<supplied reason="lost">ίρ</supplied>ως</w>  <w lemma="τελευτάω">τελευτή<supplied reason="lost">σας</supplied></w><lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ου</orig>  <persName type="attested"><name nymRef="#Κλαύδιος">Κλαυδίου</name></persName>  <orig n="unresolved">συ</orig><gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> <rs type="execution" key="scalpro">Inscribed</rs> on one face.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.023</measure></p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p> <date notAfter="0300" notBefore="0166" exact="none" cert="low">Late second to third centuries A.D.</date> (<rs type="criteria">prosopography</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><gap extent="3" dim="left" reason="lost" unit="character"/><orig n="unresolved">υστ<unclear reason="damage">αμεν</unclear>ουσθε</orig><gap extent="3" dim="internal" reason="lost" unit="character"/>κ<unclear reason="damage">ΟΥΟΣΕΝΔΕΣΙΟ</unclear></ab><ab>ΣΠΙΘΕΝ<gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><persName type="aphrodisian"><name reg="Νεικόμαχος">Νεικόμαχος</name>  <name reg="Βλάστος">Βλάστος</name>  <w lemma="υἱός">υἱὸς</w>  <persName type="aphrodisian"><name reg="Λούκιος" type="praenomen">Λ<supplied reason="lost">ο</supplied>υκίου</name>  <name reg="Ἀντώνιος">Ἀντωνίου</name>  <name reg="Νεικόμαχος">Νεικομάχου</name>  <name reg="Βλάστος"><supplied reason="lost">Βλάστου</supplied></name></persName></persName> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <gap dim="internal" extent="unknown" reason="lost" unit="character"/>  <persName type="aphrodisian"><name reg="Ἀντώνιος"><supplied reason="lost">Ἀντώ</supplied><lb n="3" type="worddiv"/>νιος</name></persName>  <gap extent="13" dim="internal" reason="lost" unit="character"/>  <w lemma="υἱός">υ<supplied reason="lost">ἱ</supplied>ὸς</w>  <w lemma="αὐτός">αὐ<unclear reason="damage">τ</unclear>οῦ</w>  <w lemma="πρόμοιρος">προμο<supplied reason="lost">ίρ</supplied>ως</w>  <w lemma="τελευτάω">τελευτή<supplied reason="lost">σας</supplied></w><lb n="4"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">ου</orig>  <persName type="aphrodisian"><name reg="Κλαύδιος">Κλαυδίου</name></persName>  <orig n="unresolved">συ</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab>
-</div>
-
-
-
-<div type="translation">
-<head>Translation</head>
-<p><gap extent="unknown" reason="lost" unit="character"/> Neikomachos Blastos son of Lucius Antonius Neikomachos [? Blastos  . . . ?Anto]nius <gap extent="unknown" reason="lost" unit="character"/> his son, having died prematurely <gap extent="unknown" reason="lost" unit="character"/> Cladius SU <gap extent="unknown" reason="lost" unit="character"/>.</p></div>
-
-<div type="commentary">
-<head>Commentary</head>
-<p>No commentary.</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found"><rs type="monuList">Temple/Church</rs>: 'dallage du narthex' (Gaudin)</rs>.  <rs type="origLocation">Unknown</rs>.  <rs type="lastLocation">Findspot (1978)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by Gaudin (166); further damaged fragment found by the NYU expedition.</p>
-  </div>
-
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published from Gaudin's squeeze by <bibl n="reinach" type="primary">Reinach, REG 19, 1906, 289, no <biblScope>189</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257392">514</biblScope></bibl>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Preliminary transcription (Reynolds); publication; Gaudin's squeeze (red book 45v).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p><figure href="78_K_14"><figDesc>Part (1978)</figDesc></figure></p></div></body>
-</text>
-
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/> Neikomachos Blastos son of Lucius Antonius Neikomachos [? Blastos  . . . ?Anto]nius <gap reason="lost" unit="character" extent="unknown"/> his son, having died prematurely <gap reason="lost" unit="character" extent="unknown"/> Cladius SU <gap reason="lost" unit="character" extent="unknown"/>.</p>
+         </div>
+         <div type="commentary">
+            <p>No commentary.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published from Gaudin's squeeze by <bibl n="reinach" type="primary">Reinach, REG 19, 1906, 289, no <citedRange>189</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257392">514</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

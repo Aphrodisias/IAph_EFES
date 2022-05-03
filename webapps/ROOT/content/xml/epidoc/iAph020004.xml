@@ -1,102 +1,157 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph020004" n="iAph0713 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title>Graffiti on plaster</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-<textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-03-23</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">Wall plaster</rs> fragments. An area of plaster with several designs and traces of letters.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Scratched into the plaster. i. Upper register. ii. Lower register.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>graffito: i: <measure type="length" unit="metre" dim="height">0.01-0.02</measure>; there is perhaps an abbreviation mark over <foreign lang="grc">ΑΥ</foreign>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0600" exact="none">First to sixth centuries A.D.</date> (<rs type="criteria">context</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="i"><note lang="en">Above, outline for a face; below, a face with curly hair and ?a moustache and beard.</note><ab>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Graffiti on plaster</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph020004</idno>
+            <idno type="IAph2007">iAph020004</idno>
+            <idno type="JMR2004">iAph0713</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>64.448</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Wall plaster</material> fragments. An area of plaster with several designs and traces of letters.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Scratched into the plaster. i. Upper register. ii. Lower register.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>graffito: i: <height unit="metre">0.01-0.02</height>; there is perhaps an abbreviation mark over <foreign xml:lang="grc">ΑΥ</foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="context">
+First to sixth centuries A.D. (<rs type="criteria">context</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon</rs>: the easternmost recess behind the backstage corridor.</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Τranscription (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-23" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="NY_64_100_109.jpg">
+            <desc>Face (1964)</desc>
+         </graphic>
+         <graphic url="77_AA_01.jpg">
+            <desc>i (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_02.jpg">
+            <desc>ii (1977)</desc>
+         </graphic>
+         <graphic url="77_AA_11.jpg">
+            <desc>Left side (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="i" type="textpart" subtype="section"><note xml:lang="en"/><ab>
 
  
 <lb n="1"/>
-<persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation" cert="low">άρκος</supplied></expan></name> <name reg="Αὐρήλιος"><expan><abbr>Αὐ</abbr><supplied reason="abbreviation" cert="low">ρήλιος</supplied></expan></name> <name reg="Κομητις">Κομ<unclear reason="damage">η</unclear>τις</name></persName> ?<w lemma="καί">κα<unclear reason="damage">ὶ</unclear></w> <w lemma="ὁ">τὰ</w> <w><unclear reason="damage">τε</unclear>κν<gap reason="lost" extent="1" unit="character"/>α</w> 
+<persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex cert="low">άρκος</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐ</abbr><ex cert="low">ρήλιος</ex></expan></name> <name nymRef="#Κομητις">Κομ<unclear reason="damage">η</unclear>τις</name></persName> ?<w lemma="καί">κα<unclear reason="damage">ὶ</unclear></w> <w lemma="ὁ">τὰ</w> <w><unclear reason="damage">τε</unclear>κν<gap reason="lost" unit="character" quantity="1"/>α</w> 
 
  
 
  
-<lb n="2"/><note lang="en">There are further letters below and to the left, which have been erased:</note>
+<lb n="2"/><note xml:lang="en"/>
 <orig n="unresolved">κ<unclear reason="damage">ω</unclear></orig>
-<gap reason="illegible" extent="1" unit="character"/> <orig n="unresolved">μ<unclear reason="damage">οτμλ</unclear></orig> 
-</ab></div><div type="textpart_section" n="ii"><note lang="en">To the left, the upper part of a facing figure, with shaggy hair, and slanting lines (? wings) rising from his shoulders. To the left, some indecipherable letters; further left, a squat figure, in a loose tunic, with no hair; perhaps a stupidus - - a buffoon.There are other faces on this panel.</note></div>
+<gap reason="illegible" unit="character" quantity="1"/> <orig n="unresolved">μ<unclear reason="damage">οτμλ</unclear></orig> 
+</ab></div><div n="ii" type="textpart" subtype="section"><note xml:lang="en"/></div>
 </div>
-<div type="apparatus" n="none">
-<head>Apparatus</head>
-<p>... </p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>i: perhaps: M(arcus) Au(relius) Kometis (? for Kometas, a fairly well-attested name, or Kometes) had the nickname κεστροπος ‘?sharp-faced’</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See Performers and Partisans, ad loc.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Bouleuterion/Odeon</rs>: the easternmost recess behind the backstage corridor.</rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Museum</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Τranscription (Reynolds, Roueché).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1964 (<rs type="invNo">64.448</rs>.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="ALA">Roueché, ALA <biblScope>218</biblScope></bibl>, whence <bibl n="PHI"><author>McCabe</author> <title level="m">PHI Aphrodisias</title> <biblScope n="257670">784</biblScope>, </bibl>  and again <bibl n="PPA">PPA <biblScope>11.B</biblScope></bibl></p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="NY_64_100_109"><figDesc>Face (1964)</figDesc></figure><figure href="77_AA_01"><figDesc>i (1977)</figDesc></figure><figure href="77_AA_02"><figDesc>ii (1977)</figDesc></figure><figure href="77_AA_11"><figDesc>Left side (1977)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus" n="none">
+            <p>... </p>
+         </div>
+         <div type="translation">
+            <p>i: perhaps: M(arcus) Au(relius) Kometis (? for Kometas, a fairly well-attested name, or Kometes) had the nickname κεστροπος ‘?sharp-faced’</p>
+         </div>
+         <div type="commentary">
+            <p>See Performers and Partisans, ad loc.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="ALA">Roueché, ALA <citedRange>218</citedRange>
+               </bibl>, whence <bibl n="PHI">
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257670">784</citedRange>, </bibl>  and again <bibl n="PPA">PPA <citedRange>11.B</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>

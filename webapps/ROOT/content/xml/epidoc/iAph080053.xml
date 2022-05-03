@@ -1,127 +1,270 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" id="iAph080053" n="iAph0759 ">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title><rs type="textType">Seat inscriptions</rs>: Theatre, Block A</title>
- </titleStmt>
-<publicationStmt><p><bibl><editor>Charlotte M. <name type="surname">Roueché</name></editor><date>2007</date></bibl></p><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></publicationStmt>
-<sourceDesc><p>Originally published in <bibl n="PPA">Roueché (<date>1993</date>)</bibl>.</p></sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
-</langUsage>
-<textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="cetera">Agonistic</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-3-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Theatre, seats</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Row 2.iii: On one seat, at right angles to edge. Row 5.ii, on one seat. Row 7: on one seat. Row 9.ii: on one seat. Row 24.i on edge of seat at west end;. Row 26: on one seat; the text probably once continued on the next; </p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Row 2.iii: Careful letters, ave. <measure type="length" unit="metre" dim="height">0.05</measure>, with seriphs; o over T, and apostrophe after D as abbreviations. Row 5.ii: very thin and worn, <measure type="length" unit="metre" dim="height">0.05</measure> - <measure type="length" unit="metre" dim="height">0.07</measure>. Row 7: <measure type="length" unit="metre" dim="height">0.04</measure>. Row 9.ii: l Large letters , <measure type="length" unit="metre" dim="height">0.09</measure>- <measure type="length" unit="metre" dim="height">0.10</measure>. Row 24.i: <measure type="length" unit="metre" dim="height">0.015</measure>-<measure type="length" unit="metre" dim="height">0.025</measure>. Row 26:: <measure type="length" unit="metre" dim="height">0.06</measure>.</p><p>Designs: 2.i:  <measure dim="diameter">0.42</measure>. 2.ii: <measure dim="height" type="length" unit="metre" precision="circa">0.22</measure>. 3: <measure dim="width" type="length" unit="metre">0.425</measure> x <measure dim="height" type="length" unit="metre">0.17</measure>. 5.i: <measure dim="width" type="length" unit="metre">0.41</measure> x <measure dim="height" type="length" unit="metre">0.18</measure>. 6: <measure dim="width" type="length" unit="metre">0.36</measure> x <measure dim="height" type="length" unit="metre">0.17</measure>. 9.i: <measure dim="width" type="length" unit="metre">0.42</measure> x <measure dim="height" type="length" unit="metre">0.22</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0600" exact="none">Second to sixth centuries A.D.</date> (<rs type="criteria">context</rs>)
-</p>
-</div>
-<div type="textpart_section" n="text" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="1"><note>Letters 
-</note></div><div type="textpart_section" n="2"><div type="textpart_column" n="i"><note>Design, type C1</note></div><div type="textpart_column" n="ii"><note>  
-
- Two cross designs </note></div><div type="textpart_column" n="iii"><ab><lb n="1"/><w><expan><abbr>τό</abbr><supplied reason="abbreviation">πος</supplied></expan></w> <w>μανδ<supplied reason="abbreviation" cert="low">άτορος</supplied></w></ab></div></div><div type="textpart_section" n="3"><note> 
-
-Design, type R1, with central line omitted </note></div><div type="textpart_section" n="5"><div type="textpart_column" n="i"><note>Design, type R6 </note></div><div type="textpart_column" n="ii"><ab> 
-
-<lb n="1"/><supplied reason="lost">5-6</supplied> <supplied reason="lost">letters</supplied> <supplied reason="lost">erased</supplied>Υ<unclear reason="damage">Γ</unclear>
-<unclear reason="damage">Ι</unclear>Ζ<unclear reason="damage">Ι</unclear> 
-<lb n="2"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Seat inscriptions: Theatre, Block A</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080053</idno>
+            <idno type="IAph2007">iAph080053</idno>
+            <idno type="JMR2004">iAph0759</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Theatre, seats</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Row 2.iii: On one seat, at right angles to edge. Row 5.ii, on one seat. Row 7: on one seat. Row 9.ii: on one seat. Row 24.i on edge of seat at west end;. Row 26: on one seat; the text probably once continued on the next; </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Row 2.iii: Careful letters, ave. <height unit="metre">0.05</height>, with seriphs; o over T, and apostrophe after D as abbreviations. Row 5.ii: very thin and worn, <height unit="metre">0.05</height> - <height unit="metre">0.07</height>. Row 7: <height unit="metre">0.04</height>. Row 9.ii: l Large letters , <height unit="metre">0.09</height>- <height unit="metre">0.10</height>. Row 24.i: <height unit="metre">0.015</height>-<height unit="metre">0.025</height>. Row 26:: <height unit="metre">0.06</height>.Designs: 2.i:  <dim type="diameter">0.42</dim>. 2.ii: <height unit="metre">0.22</height>. 3: <width unit="metre">0.425</width> x <height unit="metre">0.17</height>. 5.i: <width unit="metre">0.41</width> x <height unit="metre">0.18</height>. 6: <width unit="metre">0.36</width> x <height unit="metre">0.17</height>. 9.i: <width unit="metre">0.42</width> x <height unit="metre">0.22</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="context">
+Second to sixth centuries A.D. (<rs type="criteria">context</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: seats, block A, Row</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera">Agonistic</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds, Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_H_27.jpg">
+            <desc>Row 2.i, ii and iii (1975)</desc>
+         </graphic>
+         <graphic url="75_H_26.jpg">
+            <desc>Row 2.iii (1975)</desc>
+         </graphic>
+         <graphic url="75_H_29.jpg">
+            <desc>Row 5.i (1975)</desc>
+         </graphic>
+         <graphic url="75_H_28.jpg">
+            <desc>Row 5.ii (1975)</desc>
+         </graphic>
+         <graphic url="75_H_30.jpg">
+            <desc>Row 7 (1975)</desc>
+         </graphic>
+         <graphic url="75_H_31.jpg">
+            <desc>Row 8 (1975)</desc>
+         </graphic>
+         <graphic url="88_Ε30Α.jpg">
+            <desc>Row24 (1988)</desc>
+         </graphic>
+         <graphic url="75_H_33.jpg">
+            <desc>Row 26 (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div n="text" lang="grc" type="textpart" subtype="section">
+            <div n="1" type="textpart" subtype="section">
+               <note xml:lang=""/>
+            </div>
+            <div n="2" type="textpart" subtype="section">
+               <div n="i" type="textpart" subtype="column">
+                  <note xml:lang=""/>
+               </div>
+               <div n="ii" type="textpart" subtype="column">
+                  <note xml:lang=""/>
+               </div>
+               <div n="iii" type="textpart" subtype="column">
+                  <ab>
+                     <lb n="1"/>
+                     <w>
+                        <expan>
+                           <abbr>τό</abbr>
+                           <ex>πος</ex>
+                        </expan>
+                     </w>
+                     <w>μανδ<ex cert="low">άτορος</ex>
+                     </w>
+                  </ab>
+               </div>
+            </div>
+            <div n="3" type="textpart" subtype="section">
+               <note xml:lang=""/>
+            </div>
+            <div n="5" type="textpart" subtype="section">
+               <div n="i" type="textpart" subtype="column">
+                  <note xml:lang=""/>
+               </div>
+               <div n="ii" type="textpart" subtype="column">
+                  <ab>
+                     <lb n="1"/>
+                     <supplied reason="lost">5-6</supplied>
+                     <supplied reason="lost">letters</supplied>
+                     <supplied reason="lost">erased</supplied>Υ<unclear reason="damage">Γ</unclear>
+                     <unclear reason="damage">Ι</unclear>Ζ<unclear reason="damage">Ι</unclear>
+                     <lb n="2"/>
 Ο<unclear reason="damage">Π</unclear>Υο<unclear reason="damage">Λ</unclear>
-<unclear reason="damage">Λ</unclear>ΤΝΙΡΟΥ 
+                     <unclear reason="damage">Λ</unclear>ΤΝΙΡΟΥ 
 <lb n="3"/>
-ΝΙΑ ΤΟΥΝ<unclear reason="damage">Ι</unclear> <gap reason="lost" extent="2" unit="character"/>
-<unclear reason="damage">Ι</unclear>Ε<unclear reason="damage">Α</unclear>Ο<unclear reason="damage">σ</unclear></ab></div></div><div type="textpart_section" n="6"><note>Design, type R6 </note></div><div type="textpart_section" n="7"><ab>
- 
-
- <lb n="1"/>Ι 
+ΝΙΑ ΤΟΥΝ<unclear reason="damage">Ι</unclear>
+                     <gap reason="lost" unit="character" quantity="2"/>
+                     <unclear reason="damage">Ι</unclear>Ε<unclear reason="damage">Α</unclear>Ο<unclear reason="damage">σ</unclear>
+                  </ab>
+               </div>
+            </div>
+            <div n="6" type="textpart" subtype="section">
+               <note xml:lang=""/>
+            </div>
+            <div n="7" type="textpart" subtype="section">
+               <ab>
+                  <lb n="1"/>Ι 
 
 <lb n="2"/>ΓΙΖ 
 
  <lb n="3"/>Λ 
-</ab></div><div type="textpart_section" n="8"><note>on one seat there is a figure, holding a ?stick, with a forked end, in his right hand, and a shorter object in his left 
-</note></div><div type="textpart_column" n="9"><div type="textpart_column" n="i"><note>
-Design, type R6 </note></div><div type="textpart_column" n="ii"><lb n="1"/><ab>
+</ab>
+            </div>
+            <div n="8" type="textpart" subtype="section">
+               <note xml:lang=""/>
+            </div>
+            <div n="9" type="textpart" subtype="column">
+               <div n="i" type="textpart" subtype="column">
+                  <note xml:lang=""/>
+               </div>
+               <div n="ii" type="textpart" subtype="column">
+                  <lb n="1"/>
+                  <ab>
  
 
 Ω Ε 
 
- <w>κ<space extent="3" unit="character"/>α<milestone unit="block"/><supplied reason="lost">τέχεται</supplied></w> <supplied reason="lost">?</supplied> 
-</ab></div></div><div type="textpart_section" n="18"><div type="textpart_column" n="i"><note>Design, type C2</note></div><div type="textpart_column" n="ii"><note>Design, type C2</note></div></div><div type="textpart_section" n="19"><note>Design</note></div><div type="textpart_section" n="20"><note>Design</note></div><div type="textpart_column" n="24"><div type="textpart_column" n="i"><ab><lb n="1"/> 
-
-<persName type="aphrodisian"><name reg="Αἰνείας">Αἰνείου</name></persName> <w>τόπος</w> 
-
-</ab></div><div type="textpart_column" n="ii"><note>Scattered letters</note></div></div><div type="textpart_section" n="26"><ab><lb n="1"/><milestone unit="block"/> <space extent="3" unit="character"/> <w>τόπ<milestone unit="block"/><supplied reason="lost">ος</supplied></w>
-</ab>
-</div></div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>5.ii: For line 1, Professor Herrmann suggests π]υγίξι compare below, <xref type="inscription" n="768" href="080062">8.62</xref>.9.</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Row 2, iii: Place of (the) mand(ator?). </p>
-<p>Row 24: Place of Aeneas</p>
-<p>Row 26: Place [ ? of -</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>See bibliography.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: seats, block A, Row</rs>
-<rs type="origLocation">Findspot</rs>
-<rs type="lastLocation">Findspot</rs>
-
-
-
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds, Roueché)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition.</p>
-</div>
-<div type="bibliography">
-<head>Bibliography</head>
-<p>Published by <bibl n="PPA">Roueché, PPA <biblScope>46.A</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p> <figure href="75_H_27"><figDesc>Row 2.i, ii and iii (1975)</figDesc></figure><figure href="75_H_26"><figDesc>Row 2.iii (1975)</figDesc></figure><figure href="75_H_29"><figDesc>Row 5.i (1975)</figDesc></figure><figure href="75_H_28"><figDesc>Row 5.ii (1975)</figDesc></figure><figure href="75_H_30"><figDesc>Row 7 (1975)</figDesc></figure><figure href="75_H_31"><figDesc>Row 8 (1975)</figDesc></figure><figure href="88_Ε30Α"><figDesc>Row24 (1988)</figDesc></figure><figure href="75_H_33"><figDesc>Row 26 (1975)</figDesc></figure></p>
-</div></body></text>
+ <w>κ<space extent="3" unit="character"/>α<milestone unit="block"/>
+                        <supplied reason="lost">τέχεται</supplied>
+                     </w>
+                     <supplied reason="lost">?</supplied>
+                  </ab>
+               </div>
+            </div>
+            <div n="18" type="textpart" subtype="section">
+               <div n="i" type="textpart" subtype="column">
+                  <note xml:lang=""/>
+               </div>
+               <div n="ii" type="textpart" subtype="column">
+                  <note xml:lang=""/>
+               </div>
+            </div>
+            <div n="19" type="textpart" subtype="section">
+               <note xml:lang=""/>
+            </div>
+            <div n="20" type="textpart" subtype="section">
+               <note xml:lang=""/>
+            </div>
+            <div n="24" type="textpart" subtype="column">
+               <div n="i" type="textpart" subtype="column">
+                  <ab>
+                     <lb n="1"/>
+                     <persName type="aphrodisian">
+                        <name reg="Αἰνείας">Αἰνείου</name>
+                     </persName>
+                     <w>τόπος</w>
+                  </ab>
+               </div>
+               <div n="ii" type="textpart" subtype="column">
+                  <note xml:lang=""/>
+               </div>
+            </div>
+            <div n="26" type="textpart" subtype="section">
+               <ab>
+                  <lb n="1"/>
+                  <milestone unit="block"/>
+                  <space extent="3" unit="character"/>
+                  <w>τόπ<milestone unit="block"/>
+                     <supplied reason="lost">ος</supplied>
+                  </w>
+               </ab>
+            </div>
+         </div>
+         <div type="apparatus">
+            <p>5.ii: For line 1, Professor Herrmann suggests π]υγίξι compare below, <ref type="inscription" n="768" target="080062.xml"/>.9.</p>
+         </div>
+         <div type="translation">
+            <p>Row 2, iii: Place of (the) mand(ator?). </p>
+            <p>Row 24: Place of Aeneas</p>
+            <p>Row 26: Place [ ? of -</p>
+         </div>
+         <div type="commentary">
+            <p>See bibliography.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl n="PPA">Roueché, PPA <citedRange>46.A</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>
