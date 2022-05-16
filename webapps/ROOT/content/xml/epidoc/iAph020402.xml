@@ -10,6 +10,7 @@
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="FT" role="encoding">Francesco Tecca</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
@@ -96,6 +97,7 @@ ii: 0.008. iii: above, <height unit="metre">0.055</height>; below, <height unit=
          <creation>Transcriptions (Reynolds, Roueché).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-05-16" who="#FT">Added auth list and LGPN ids ref</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
          <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
@@ -137,17 +139,17 @@ ii: 0.008. iii: above, <height unit="metre">0.055</height>; below, <height unit=
          <div type="edition" xml:lang="grc" xml:space="preserve">
         
         
-		<div n="i" type="textpart" subtype="section"><ab><lb n="1"/> <persName key="Lord" type="divine"><w lemma="κύριος"><expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan></w></persName> <w lemma="βοηθέω">βοΐθη</w> <orig n="unresolved"><unclear reason="damage">κατ</unclear>α<unclear reason="damage">κ</unclear><hi rend="ligature">ο<unclear reason="damage">υ</unclear></hi>λων</orig> <w lemma="ἁμαρτωλός">ἁμαρτολών</w> <g ref="#cross"/></ab></div>
+		<div n="i" type="textpart" subtype="section"><ab><lb n="1"/> <persName key="Lord" type="divine" ref="divine.xml#christiangod"><w lemma="κύριος"><expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan></w></persName> <w lemma="βοηθέω">βοΐθη</w> <orig n="unresolved"><unclear reason="damage">κατ</unclear>α<unclear reason="damage">κ</unclear><hi rend="ligature">ο<unclear reason="damage">υ</unclear></hi>λων</orig> <w lemma="ἁμαρτωλός">ἁμαρτολών</w> <g ref="#cross"/></ab></div>
 			        
-	<div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><space dim="horizontal"/> <persName key="Lord" type="divine"><w lemma="κύριος"><expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan></w></persName> <w lemma="βοηθέω">βοΐθησον</w> <space dim="horizontal"/></ab></div>
+	<div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><space dim="horizontal"/> <persName key="Lord" type="divine" ref="divine.xml#christiangod"><w lemma="κύριος"><expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan></w></persName> <w lemma="βοηθέω">βοΐθησον</w> <space dim="horizontal"/></ab></div>
         
-		<div n="iii" type="textpart" subtype="section"><ab><lb n="1"/><orig n="unresolved">βα</orig><lb n="2"/><persName type="attested"><name nymRef="#Θεοφάνης">Θεοφάνης</name></persName>.</ab></div> 
+		<div n="iii" type="textpart" subtype="section"><ab><lb n="1"/><orig n="unresolved">βα</orig><lb n="2"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-7517"><name nymRef="#Θεοφάνης">Θεοφάνης</name></persName>.</ab></div> 
         
-		<div n="iv" type="textpart" subtype="section"><ab><lb n="1"/><g ref="#cross"/><g ref="#cross"/> <persName key="romanus1" type="attested"><name nymRef="#Ῥωμανός"><expan><abbr>Ῥωμ</abbr><ex>α</ex><abbr>ν</abbr><ex>ός</ex></expan></name></persName>.</ab></div> 
+		<div n="iv" type="textpart" subtype="section"><ab><lb n="1"/><g ref="#cross"/><g ref="#cross"/> <persName key="romanus1" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-12192"><name nymRef="#Ῥωμανός"><expan><abbr>Ῥωμ</abbr><ex>α</ex><abbr>ν</abbr><ex>ός</ex></expan></name></persName>.</ab></div> 
         
-		<div n="v" type="textpart" subtype="section"><ab><lb n="1"/><persName key="philip4" type="attested"><name nymRef="#Φίλιππος">Φήλιππος</name></persName>.</ab></div>
+		<div n="v" type="textpart" subtype="section"><ab><lb n="1"/><persName key="philip4" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-13285"><name nymRef="#Φίλιππος">Φήλιππος</name></persName>.</ab></div>
 			
-		<div n="vi" type="textpart" subtype="section"><ab><lb n="1"/><persName key="Christ" type="divine"><name nymRef="#Ἰησοῦς"><expan><abbr>Ἰ</abbr><ex>ησοῦ</ex><abbr>ς</abbr></expan></name> <g ref="#cross"/> <name nymRef="#Χριστός"><expan><abbr>Χ</abbr><ex>ριστὸ</ex><abbr>ς</abbr></expan></name></persName><lb n="2"/><w lemma="νικάω">νι<g ref="#cross"/>κᾷ</w> <link targets="c1 c2" targOrder="U"/></ab></div>
+		<div n="vi" type="textpart" subtype="section"><ab><lb n="1"/><persName key="Christ" type="divine" ref="divine.xml#jesus"><name nymRef="#Ἰησοῦς"><expan><abbr>Ἰ</abbr><ex>ησοῦ</ex><abbr>ς</abbr></expan></name> <g ref="#cross"/> <name nymRef="#Χριστός"><expan><abbr>Χ</abbr><ex>ριστὸ</ex><abbr>ς</abbr></expan></name></persName><lb n="2"/><w lemma="νικάω">νι<g ref="#cross"/>κᾷ</w> <link targets="c1 c2" targOrder="U"/></ab></div>
       </div>
          <div type="translation">
             <p>i. Lord help <gap reason="lost" unit="character" extent="unknown"/>  a sinner.</p>
