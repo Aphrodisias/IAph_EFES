@@ -10,6 +10,7 @@
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="MB" role="encoding">Michele Butini</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
@@ -98,6 +99,7 @@ Julio-Claudian
          <creation>Transcription (Reynolds); Sherard papers; Gaudin's squeeze; publications.</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-05-17" who="#MB">Tagged LGPN ids, added auth list refs</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-07-30" who="cmr">DONE273</change>
          <change when="2007-01-30" who="Charlotte-Tupman">Hand tidied</change>
@@ -118,7 +120,7 @@ Julio-Claudian
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<ab><lb n="1"/>  <persName type="emperor"><w lemma="αὐτοκράτωρ"><supplied reason="lost">Αὐ</supplied>τοκράτο<app type="previouslyread">
+<ab><lb n="1"/>  <persName type="emperor" ref="emperors.xml#augustus"><w lemma="αὐτοκράτωρ"><supplied reason="lost">Αὐ</supplied>τοκράτο<app type="previouslyread">
 <rdg resp="autopsy">
 <gap reason="lost" unit="character" quantity="2"/>
 </rdg>
@@ -148,7 +150,7 @@ Julio-Claudian
 </rdg>
 <rdg resp="previous">πατρὶ
 </rdg>
-</app></w>  <w lemma="πατρίς">πατρίδο<unclear reason="damage">ς</unclear></w></rs><lb n="2"/><persName type="attested"><name nymRef="#Εὐσεβής"><supplied reason="lost">Εὐσ</supplied>εβὴς</name>  <space extent="1" unit="character" dim="horizontal"/>  <persName type="attested"><name nymRef="#Μένανδρος"><app type="previouslyread">
+</app></w>  <w lemma="πατρίς">πατρίδο<unclear reason="damage">ς</unclear></w></rs><lb n="2"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6578"><name nymRef="#Εὐσεβής"><supplied reason="lost">Εὐσ</supplied>εβὴς</name>  <space extent="1" unit="character" dim="horizontal"/>  <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-9519"><name nymRef="#Μένανδρος"><app type="previouslyread">
 <rdg resp="autopsy">
 <gap reason="lost" unit="character" quantity="9"/>
 </rdg>
@@ -166,7 +168,7 @@ Julio-Claudian
 </rdg>
 <rdg resp="previous">καὶ
 </rdg>
-</app></w> <persName type="attested"><name nymRef="#Εὔνικος"><app type="previouslyread">
+</app></w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6488"><name nymRef="#Εὔνικος"><app type="previouslyread">
 <rdg resp="autopsy">
 <gap reason="lost" unit="character" quantity="7"/>
 </rdg>
@@ -178,7 +180,7 @@ Julio-Claudian
 </rdg>
 <rdg resp="previous"><g ref="#leaf"/>
 </rdg>
-</app>  <persName type="attested"><name nymRef="#Μένανδρος">Μενάνδρου</name></persName></persName></ab>
+</app>  <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-9519"><name nymRef="#Μένανδρος">Μενάνδρου</name></persName></persName></ab>
 </div>
          <div type="apparatus">
             <p>The letters seen only by Sherard are highlighted.</p>
