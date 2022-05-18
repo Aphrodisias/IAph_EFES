@@ -10,6 +10,7 @@
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="MB" role="encoding">Michele Butini</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
@@ -90,6 +91,7 @@
          <creation>Transcription (Roueché).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-05-18" who="#MB">Tagged LGPN ids, added scansion</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
          <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
@@ -118,15 +120,15 @@
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
         
-		<lg met="dactylic hexameter">
+		<lg met="dactylic hexameters" >
 		<lb n="1"/>
-		<l><g ref="#cross"/> <w lemma="πατρίς">Πατρὶς</w>
-		<lb n="2"/><persName key="Ioannes3" type="attested"><name nymRef="#Ἰωάννης">Ἰωάν<hi rend="ligature">νη</hi>ν</name></persName>
+		<l met="dactylic hexameter" real="++|++|++|+--|+--|++"><g ref="#cross"/> <w lemma="πατρίς">Πατρὶς</w>
+		<lb n="2"/><persName key="Ioannes3" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8247"><name nymRef="#Ἰωάννης">Ἰωάν<hi rend="ligature">νη</hi>ν</name></persName>
 		<lb n="3"/><w lemma="πρωτόθρονος">πρωτόθρο
 		<lb n="4" break="no"/>νον</w> <w lemma="ἀνήρ">ἀνέρα</w>
 		<lb n="5"/><rs type="subject" key="boule"><w lemma="βουλή">βουλῆς</w></rs></l>
 		<lb n="6"/>
-		<l><w lemma="ἵστημι">στῆσεν</w>
+		<l met="dactylic hexameter" real="++|+--|++|+--|+--|+-"><w lemma="ἵστημι">στῆσεν</w>
 		<lb n="7"/><w lemma="δέχομαι">δεξαμένη</w>
 		<lb n="8"/><w lemma="θρεπτήριος">θρεπτήρια</w>
 		<lb n="9"/><w lemma="πολλάκις">πολλάκι</w>
