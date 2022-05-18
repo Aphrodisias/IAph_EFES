@@ -10,6 +10,7 @@
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="FT" role="encoding">Francesco Tecca</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
@@ -94,6 +95,7 @@ First to second century A.D. (<rs type="criteria">terminology</rs>, <rs type="cr
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-05-18" who="#FT">Tagged LGPN id, added persName element and auth list ref</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
       </revisionDesc>
@@ -107,7 +109,7 @@ First to second century A.D. (<rs type="criteria">terminology</rs>, <rs type="cr
    </facsimile>
    <text>
       <body>
-         <div type="edition" xml:lang="grc" xml:space="preserve"><ab><lb n="1"/>    <space extent="1" unit="character" dim="horizontal"/>  <persName type="emperor"><w lemma="αὐτοκράτωρ">Αὐτοκράτορι</w>  <name nymRef="#Καῖσαρ">Καίσαρι</name>  <w lemma="θεός">θεῷ</w>  <w lemma="σεβαστός">Σεβαστῷ</w>  <orig n="unresolved">π</orig><milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/></persName><lb n="2"/>    <space extent="2" unit="character" dim="horizontal"/>    <persName type="attested"><name nymRef="#Ἀντίπατρος">Ἀντίπατρος</name></persName> <w lemma="πριμιπιλάριος">πριμοπειλάριος</w> <w lemma="σύν">συ<milestone unit="block"/><supplied reason="lost">ν</supplied><gap reason="lost" unit="character" extent="unknown"/></w>  </ab></div>
+         <div type="edition" xml:lang="grc" xml:space="preserve"><ab><lb n="1"/>    <space extent="1" unit="character" dim="horizontal"/>  <persName type="emperor"><w lemma="αὐτοκράτωρ">Αὐτοκράτορι</w>  <name nymRef="#Καῖσαρ">Καίσαρι</name> <persName type="divine" ref="divine.xml#theos-sebastos"> <w lemma="θεός">θεῷ</w>  <w lemma="σεβαστός">Σεβαστῷ</w> </persName>  <orig n="unresolved">π</orig><milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/></persName><lb n="2"/>    <space extent="2" unit="character" dim="horizontal"/>    <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-2019"><name nymRef="#Ἀντίπατρος">Ἀντίπατρος</name></persName> <w lemma="πριμιπιλάριος">πριμοπειλάριος</w> <w lemma="σύν">συ<milestone unit="block"/><supplied reason="lost">ν</supplied><gap reason="lost" unit="character" extent="unknown"/></w>  </ab></div>
          <div type="translation" n="notyet">
             <p> [[...]]</p>
          </div>
