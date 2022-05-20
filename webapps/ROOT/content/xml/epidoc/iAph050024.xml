@@ -10,6 +10,7 @@
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="MB" role="encoding">Michele Butini</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
@@ -97,6 +98,7 @@
          <creation>Transcription (Roueché).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-05-20" who="#MB">Tagged LGPN ids, added auth list refs</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
          <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
@@ -146,15 +148,15 @@
 		<lb n="2"/><g ref="#cross"/> <rs type="subject" key="acclamations"><w lemma="νικάω">νι<supplied reason="lost">κᾷ</supplied></w> <w lemma="ὁ">ἡ</w> <w lemma="τύχη">τύχη</w></rs>
 		<lb n="3"/><w lemma="ὁ">τοῦ</w> <rs type="official-secul" key="princeps"><w lemma="βασιλεύς">β<supplied reason="lost">ασι</supplied>λέως</w></rs>·
 		<lb n="4"/><rs key="acclamations" type="subject"><w lemma="νικάω">νικᾷ</w> <w lemma="ὁ">ἡ</w> <w lemma="τύχη">τ<supplied reason="lost">ύ</supplied>χη</w></rs> <w lemma="ὁ">τῆς</w>
-		<lb n="5"/><rs key="despoin" type="official-secul"><w lemma="δέσποινα">δεσπ<unclear reason="damage">ο</unclear>ί<supplied reason="lost">ν</supplied>ης</w></rs>· <w lemma="ὁ">τοῦ</w> <rs type="subject" key="newTheod"><w lemma="νέος">νέου</w>
-		<lb n="6"/><persName key="TheodosiusMaur" type="emperor"><name nymRef="#Θεοδόσιος">Θεοδ<unclear reason="damage">ο</unclear><supplied reason="lost">σί</supplied>ου</name></persName></rs> <rs key="acclamations" type="subject"><w lemma="πολύς">πολ
+		<lb n="5"/><rs key="despoin" type="official-secul"><w lemma="δέσποινα">δεσπ<unclear reason="damage">ο</unclear>ί<supplied reason="lost">ν</supplied>ης</w></rs>· <w lemma="ὁ">τοῦ</w> <persName type="emperor" ref="emperors.xml#unknownemperor"><rs type="subject" key="newTheod"><w lemma="νέος">νέου</w>
+		<lb n="6"/><persName key="TheodosiusMaur" type="emperor" ref="emperors.xml#theodosius1"><name nymRef="#Θεοδόσιος">Θεοδ<unclear reason="damage">ο</unclear><supplied reason="lost">σί</supplied>ου</name></persName></rs></persName> <rs key="acclamations" type="subject"><w lemma="πολύς">πολ
 		<lb n="7" break="no"/>λὰ</w> <w lemma="ὁ"><supplied reason="lost">τὰ</supplied></w> <w lemma="ἔτος"><supplied reason="lost">ἔτ</supplied>η</w></rs> <g ref="#scroll"/></ab></div>
 		
 		
 		<div n="ii" type="textpart" subtype="section"><note place="not specified" xml:lang=""/><ab>
 		<lb n="0"/><gap unit="line" reason="lost" quantity="2"/>
 		<lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">λιι</unclear>ου</orig> <rs type="subject" key="acclamations"><w lemma="πολύς"><unclear reason="damage">π</unclear>ο<supplied reason="lost">λλὰ</supplied></w>
-		<lb n="2"/><w lemma="ὁ"><supplied reason="lost">τὰ</supplied></w> <w lemma="ἔτος"><supplied reason="lost">ἔτ</supplied><unclear reason="damage">η</unclear></w></rs>· <persName key="Christ" type="divine"><w lemma="υἱός">υἱὲ</w> <w lemma="θεός">θεοῦ</w></persName> <w lemma="ζωή">ζ<supplied reason="lost">ωὴν</supplied></w>
+		<lb n="2"/><w lemma="ὁ"><supplied reason="lost">τὰ</supplied></w> <w lemma="ἔτος"><supplied reason="lost">ἔτ</supplied><unclear reason="damage">η</unclear></w></rs>· <persName key="Christ" type="divine" ref="divine.xml#jesus"><w lemma="υἱός">υἱὲ</w> <w lemma="θεός">θεοῦ</w></persName> <w lemma="ζωή">ζ<supplied reason="lost">ωὴν</supplied></w>
 		<lb n="3"/><w lemma="αὐτός"><supplied reason="lost">αὐτ</supplied>ῷ</w> <g ref="#stop"/> <rs type="subject" key="acclamations"><w lemma="νικάω">νικᾷ</w> <w lemma="ὁ">ἡ</w> <w lemma="πίστις">π<unclear reason="damage">ίσ</unclear><supplied reason="lost">τις</supplied></w>
 		<lb n="4"/><w lemma="ὁ"><supplied reason="lost">τῶν</supplied></w> <w lemma="χριστιανός">Χριστιανῶν</w></rs> <gap unit="character" reason="lost" quantity="1"/>
 		<lb n="4a"/><gap reason="lost" unit="character" extent="unknown"/> <space dim="horizontal"/></ab></div>
@@ -162,7 +164,7 @@
 		
 		<div n="iii" type="textpart" subtype="section"><note place="not specified" xml:lang=""/><ab>
 		<lb n="0"/><gap unit="line" reason="lost" quantity="2"/>
-		<lb n="1"/><w lemma="ἐπί"><unclear reason="damage">ἐπ</unclear>ὶ</w> <persName key="o1" type="attested"><name><orig n="unresolved">ο</orig></name><gap unit="character" reason="lost" quantity="1"/></persName>
+		<lb n="1"/><w lemma="ἐπί"><unclear reason="damage">ἐπ</unclear>ὶ</w> <persName key="o1" type="attested"><!-- LGPN doesn't have an entry for this individual --><name><orig n="unresolved">ο</orig></name><gap unit="character" reason="lost" quantity="1"/></persName>
 		<lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="πατήρ"><supplied reason="lost">πα</supplied>τρός</w>, <date><w lemma="ἰνδικτιών">ἰνδικτίωνος</w> <gap reason="lost" unit="character" extent="unknown"/></date>
 		<lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ρασ</orig> <space dim="horizontal"/>
 		<lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιλ</unclear></orig> <space dim="horizontal"/> <g ref="#scroll"/>
