@@ -10,6 +10,7 @@
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="FT" role="encoding">Francesco Tecca</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
@@ -91,6 +92,7 @@
          <creation>Transcription (Roueché).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-05-20" who="#FT">Added metrical scansion</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
          <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
@@ -122,14 +124,14 @@
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
         
-        <div n="i" type="textpart" subtype="section"><lg met="elegaic">
-       <lb n="1"/><l met="hexameter"><orig n="unresolved"><unclear reason="damage">θεμ</unclear><gap agent="damage" reason="lost" unit="character" quantity="1"/><unclear reason="damage">ιι</unclear>ι<gap agent="damage" reason="lost" unit="character" quantity="1"/><unclear reason="damage">καιιι</unclear>ιν</orig> <w lemma="σύ">σε</w> <w lemma="φάλαγξ">φάλαγξ</w> <w lemma="ἵστημι">ἔστησεν</w>, <rs type="official-secul" key="PPO"><w lemma="ὕπαρχος">ὕπαρχε</w></rs>,</l>
-       <lb n="2"/><l met="pentameter"><w lemma="ἀντί">ἀντ'</w> <w lemma="εὐεργεσία">εὐεργεσιῶν</w> <w lemma="μικρός">μικρὰ</w> <w lemma="δίδωμι">δίδουσα</w> <w lemma="γέρας">γέρα</w></l>
-       <lb n="3"/><l met="hexameter"><persName key="Anthemius" type="attested"><name nymRef="#Ἀνθέμιος">Ἀν<unclear reason="damage">θ</unclear>έμ<unclear reason="damage">ι</unclear>ε</name></persName>, <w lemma="σῴζω"><supplied reason="lost">σ</supplied><unclear reason="damage">ῴ</unclear>ζων</w> <w lemma="γάρ">γὰρ</w> <w lemma="ὁμοῦ">ὁμοῦ</w> <w lemma="δῆμος">δήμους</w> <w lemma="τε">τε</w> <w lemma="πόλις">πόλεις</w> <w lemma="τε">τε</w></l>
-       <lb n="4"/><l met="pentameter"><w lemma="ἐρύω">ῥύσαο</w> <w lemma="καί">κ<unclear reason="damage">α</unclear>ὶ</w> <rs reg="provincial council" key="koinon" type="subject"><w lemma="Κᾶρ"><placeName nymRef="#Κάρ">Καρῶν</placeName></w></rs> <w lemma="τάξις">τάξιν</w> <w lemma="ἀπόλλυμι">ἀπολλυμένην</w>,</l>
-       <lb n="5"/><l met="hexameter"><w lemma="ὅς">ἣν</w> <persName key="Beronicianus" type="attested"><name nymRef="#Βερονικιανός">Βερο<unclear reason="damage">νικ</unclear>ι<unclear reason="damage">αν</unclear>ὸς</name></persName> <w lemma="διέπω">διέπων</w> <w lemma="θρόνος">θρόνον</w>
+        <div n="i" type="textpart" subtype="section"><lg met="elegiac couplets">
+       <lb n="1"/><l n="1" met="dactylic hexameter"><seg met="+--|+--|+"><orig n="unresolved"><unclear reason="damage">θεμ</unclear><gap agent="damage" reason="lost" unit="character" quantity="1"/><unclear reason="damage">ιι</unclear>ι<gap agent="damage" reason="lost" unit="character" quantity="1"/><unclear reason="damage">καιιι</unclear>ιν</orig> </seg> <seg real="--|+||+|+--|+-"><w lemma="σύ">σε</w> <w lemma="φάλαγξ">φάλαγξ</w> <w lemma="ἵστημι">ἔστησεν</w>, <rs type="official-secul" key="PPO"><w lemma="ὕπαρχος">ὕπαρχε</w></rs></seg>,</l>
+       <lb n="2"/><l n="2" met="dactylic pentameter" real="++|+--|+||+--|+--|+"><w lemma="ἀντί">ἀντ'</w> <w lemma="εὐεργεσία">εὐεργεσιῶν</w> <w lemma="μικρός">μικρὰ</w> <w lemma="δίδωμι">δίδουσα</w> <w lemma="γέρας">γέρα</w></l>
+       <lb n="3"/><l n="3" met="dactylic hexameter" real="+--|-+|+||--|+||+|+--|+-"><persName key="Anthemius" type="attested"><name nymRef="#Ἀνθέμιος">Ἀν<unclear reason="damage">θ</unclear>έμ<unclear reason="damage">ι</unclear>ε</name></persName>, <w lemma="σῴζω"><supplied reason="lost">σ</supplied><unclear reason="damage">ῴ</unclear>ζων</w> <w lemma="γάρ">γὰρ</w> <w lemma="ὁμοῦ">ὁμοῦ</w> <w lemma="δῆμος">δήμους</w> <w lemma="τε">τε</w> <w lemma="πόλις">πόλεις</w> <w lemma="τε">τε</w></l>
+       <lb n="4"/><l n="4" met="dactylic pentameter" real="+--|++|+||+--|+--|+"><w lemma="ἐρύω">ῥύσαο</w> <w lemma="καί">κ<unclear reason="damage">α</unclear>ὶ</w> <rs reg="provincial council" key="koinon" type="subject"><w lemma="Κᾶρ"><placeName nymRef="#Κάρ">Καρῶν</placeName></w></rs> <w lemma="τάξις">τάξιν</w> <w lemma="ἀπόλλυμι">ἀπολλυμένην</w>,</l>
+       <lb n="5"/><l n="5" met="dactylic hexameter" real="+--|+--|+||--|+||--|+--|+-"><w lemma="ὅς">ἣν</w> <persName key="Beronicianus" type="attested"><name nymRef="#Βερονικιανός">Βερο<unclear reason="damage">νικ</unclear>ι<unclear reason="damage">αν</unclear>ὸς</name></persName> <w lemma="διέπω">διέπων</w> <w lemma="θρόνος">θρόνον</w>
          <lb n="6"/><space dim="horizontal"/> <rs type="official-secul" key="praeses"><w lemma="ἡγεμονεύς">ἡγεμον<unclear reason="damage">ῆ</unclear>ος</w></rs> <space dim="horizontal"/></l>
-       <lb n="7"/><l met="pentameter"><w lemma="ἄνωγα">ἤνωγεν</w> <w lemma="τεύχω">τε<unclear reason="damage">ύ</unclear>χειν</w> <w lemma="εἰκών">εἰκόνα</w> <w lemma="μαρμάρεος">μαρμαρέη<supplied reason="lost">ν</supplied></w></l>
+       <lb n="7"/><l n="6" met="dactylic pentameter" real="++|++|+||+--|+--|+"><w lemma="ἄνωγα">ἤνωγεν</w> <w lemma="τεύχω">τε<unclear reason="damage">ύ</unclear>χειν</w> <w lemma="εἰκών">εἰκόνα</w> <w lemma="μαρμάρεος">μαρμαρέη<supplied reason="lost">ν</supplied></w></l>
         </lg></div>
 		<div n="ii" type="textpart" subtype="section"><ab>
 		<lb n="1"/><w lemma="φῶς">Φῶς</w> <g ref="#cross"/> <w lemma="ΧΜΓ"><abbr>Χ</abbr><abbr>Μ</abbr><abbr>Γ</abbr></w>·
