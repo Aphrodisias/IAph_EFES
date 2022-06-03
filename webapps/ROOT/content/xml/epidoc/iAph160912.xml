@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI.2 SYSTEM "../../dtd/epidoc/tei-epidoc.dtd">
-<TEI.2 lang="en" id="iAph160912">
+
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160912">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -14,16 +17,16 @@
 </fileDesc>
 <profileDesc>
 <langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
+<language xml:id="en">English</language>
+<language xml:id="fr">French</language>
+<language xml:id="de">German</language>
+<language xml:id="grc">Ancient Greek</language>
+<language xml:id="grc-Latn">Transliterated Greek</language>
+<language xml:id="el">Modern Greek</language>
+<language xml:id="it">Italian</language>
+<language xml:id="la">Latin</language>
+<language xml:id="es">Spanish</language>
+<language xml:id="tr">Turkish</language>
 </langUsage>
 </profileDesc>
 <revisionDesc>
@@ -54,7 +57,7 @@ Modelled on official forms of the second century A.D.; <measure type="length" un
 <head lang="en">Edition</head>
 <ab><lb n="1"/>  <supplied reason="lost" cert="low"><w>ἡ</w>  <w>βουλὴ</w>  <w>καὶ</w>  <w>ὁ</w>  <w>δῆμος</w></supplied>  <lb n="2"/> <w>ἐτείμη<lb type="worddiv" n="3"/>σαν</w>  <w>ταῖς</w> <lb n="4"/><w>καλ<unclear reason="damage">λ</unclear>ισ  <lb type="worddiv" n="5"/>ταις</w> <w>καὶ</w> <lb n="6"/><w>πρ<unclear reason="damage">ε</unclear>πού  <lb type="worddiv" n="7"/>σαις</w> <w>τει<lb type="worddiv" n="8"/>μαῖς</w>  <persName type="aphrodisian"><name>Τῖ<lb type="worddiv" n="9"/>τον</name>  <name reg="Αὐρήλιος" type="nomen">Αὐρή<lb type="worddiv" n="10"/>λιον</name>  <name reg="Μητρόδωρος">Μη<lb type="worddiv" n="11"/>τ<supplied reason="lost">ρ</supplied>ό<unclear reason="damage">δ</unclear>ωρον</name>   <lb n="12"/> <w>ὑιὸν</w> <persName type="aphrodisian"><name>Τ.</name> <name>Αὐρ.</name> <lb n="13"/> <name reg="Μένιππος" type="
 
-      ">Μενίππου</name></persName></persName> <lb n="14"/> <w>ἀρχιατροῦ</w> <lb n="15"/> <w>τ<hi rend="ligature">ὴν</hi></w> <w>δὲ</w> <w>ἀνά<lb type="worddiv" n="16"/>στασιν</w>  <w>τοῦ</w> <lb n="17"/> <w>ἀνδρίαν<lb type="worddiv" n="18"/>τος</w>  <w>ἐποιή<lb type="worddiv" n="19"/>σατο</w>  <persName type="aphrodisian"><name reg="Αἰλία">Αἰλί<lb type="worddiv" n="20"/>α</name>  <name>Λακινιλ<lb type="worddiv" n="21"/>λα</name></persName>  <w><hi rend="ligature" id="lig2">ἡ</hi></w> <link targets="lig2 lig3"/><w><hi rend="ligature" id="lig3">μη</hi>τὴρ</w> <lb n="22"/> <w>τοῦ</w> <persName type="aphrodisian"><name reg="Μητρόδωρος" type="
+      ">Μενίππου</name></persName></persName> <lb n="14"/> <w>ἀρχιατροῦ</w> <lb n="15"/> <w>τ<hi rend="ligature">ὴν</hi></w> <w>δὲ</w> <w>ἀνά<lb type="worddiv" n="16"/>στασιν</w>  <w>τοῦ</w> <lb n="17"/> <w>ἀνδρίαν<lb type="worddiv" n="18"/>τος</w>  <w>ἐποιή<lb type="worddiv" n="19"/>σατο</w>  <persName type="aphrodisian"><name reg="Αἰλία">Αἰλί<lb type="worddiv" n="20"/>α</name>  <name>Λακινιλ<lb type="worddiv" n="21"/>λα</name></persName>  <w><hi rend="ligature" xml:id="lig2">ἡ</hi></w> <link targets="lig2 lig3"/><w><hi rend="ligature" xml:id="lig3">μη</hi>τὴρ</w> <lb n="22"/> <w>τοῦ</w> <persName type="aphrodisian"><name reg="Μητρόδωρος" type="
 
       "><hi rend="ligature">Μη</hi>τρο<lb type="worddiv" n="23"/><space extent="3" unit="character"/>δώρου</name></persName>  <g type="leaf"/>  </ab>
 </div>
@@ -87,4 +90,4 @@ Modelled on official forms of the second century A.D.; <measure type="length" un
 <head>Bibliography</head>
 <p>Unpublished</p></div><div type="figure" n="photographs"><head>Photographs</head><p><figure href="85_E_04"><figDesc>Face (1985)</figDesc></figure><figure href="88_F_23"><figDesc>Face (1988)</figDesc></figure></p>
 </div></body></text>
-</TEI.2>
+</TEI>

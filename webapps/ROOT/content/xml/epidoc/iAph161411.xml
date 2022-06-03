@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI.2 SYSTEM "../../dtd/epidoc/tei-epidoc.dtd">
-<TEI.2 lang="en" id="iAph161411">
+
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161411">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -13,16 +16,16 @@
 </fileDesc>
 <profileDesc>
 <langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
+<language xml:id="en">English</language>
+<language xml:id="fr">French</language>
+<language xml:id="de">German</language>
+<language xml:id="grc">Ancient Greek</language>
+<language xml:id="grc-Latn">Transliterated Greek</language>
+<language xml:id="el">Modern Greek</language>
+<language xml:id="it">Italian</language>
+<language xml:id="la">Latin</language>
+<language xml:id="es">Spanish</language>
+<language xml:id="tr">Turkish</language>
 </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
 <revisionDesc>
 <change><date>2007-01-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
@@ -47,7 +50,7 @@
 </div>
 <div type="edition" lang="grc">
 <head lang="en">Edition</head>
-<ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="line" dim="top" id="gap1"/><certainty target="gap1" locus="#gi" degree="low"/>  <lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="4" unit="character" dim="right"/>  <lb n="2"/><persName type="aphrodisian"><name><gap reason="lost" extent="unknown" unit="character" dim="left"/>ανου</name></persName>  <orig n="unresolved"><unclear reason="damage">πιι</unclear></orig><lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <persName type="aphrodisian" full="yes"><name reg="Τιβέριος" type="praenomen"><supplied reason="lost">Τ</supplied>ιβερίου</name>  <lb n="4"/><name reg="Κλαύδιος"><supplied reason="lost">Κλαυδίου</supplied></name>  <name reg="Ἀντώνιος"><supplied reason="lost" cert="low">Ἀντωνίου</supplied></name>  <name reg="Ἄτταλος"><supplied reason="lost">Ἀτ</supplied><unclear reason="damage">τ</unclear>άλου</name></persName>  <w lemma="σύν">σὺν</w>  <lb n="5"/><w><supplied reason="lost">τέκνοις</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="internal"/>  <w><supplied reason="lost">μ</supplied><unclear reason="damage">η</unclear>δενὶ</w>  <w lemma="δέ">δὲ</w>  <w>ἑ<lb n="6" type="worddiv"/><supplied reason="lost" cert="low">τερῳ</supplied></w>  <gap reason="lost" extent="3" unit="character"/>  <w><supplied reason="lost">ἀνο</supplied><unclear reason="damage">ῖ</unclear>ξαι</w>  <w lemma="αὐτός">αὐτὸν</w>  <lb n="7"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <persName full="yes" type="aphrodisian"><supplied reason="lost">Τρ</supplied>οφίμης</persName>  <lb n="8"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/><supplied reason="lost">ο</supplied><unclear reason="damage">ι</unclear>ξας</w>  <lb n="9"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig>  <lb n="9a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/></ab>
+<ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="line" dim="top" xml:id="gap1"/><certainty target="gap1" locus="#gi" degree="low"/>  <lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="4" unit="character" dim="right"/>  <lb n="2"/><persName type="aphrodisian"><name><gap reason="lost" extent="unknown" unit="character" dim="left"/>ανου</name></persName>  <orig n="unresolved"><unclear reason="damage">πιι</unclear></orig><lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <persName type="aphrodisian" full="yes"><name reg="Τιβέριος" type="praenomen"><supplied reason="lost">Τ</supplied>ιβερίου</name>  <lb n="4"/><name reg="Κλαύδιος"><supplied reason="lost">Κλαυδίου</supplied></name>  <name reg="Ἀντώνιος"><supplied reason="lost" cert="low">Ἀντωνίου</supplied></name>  <name reg="Ἄτταλος"><supplied reason="lost">Ἀτ</supplied><unclear reason="damage">τ</unclear>άλου</name></persName>  <w lemma="σύν">σὺν</w>  <lb n="5"/><w><supplied reason="lost">τέκνοις</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="internal"/>  <w><supplied reason="lost">μ</supplied><unclear reason="damage">η</unclear>δενὶ</w>  <w lemma="δέ">δὲ</w>  <w>ἑ<lb n="6" type="worddiv"/><supplied reason="lost" cert="low">τερῳ</supplied></w>  <gap reason="lost" extent="3" unit="character"/>  <w><supplied reason="lost">ἀνο</supplied><unclear reason="damage">ῖ</unclear>ξαι</w>  <w lemma="αὐτός">αὐτὸν</w>  <lb n="7"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <persName full="yes" type="aphrodisian"><supplied reason="lost">Τρ</supplied>οφίμης</persName>  <lb n="8"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/><supplied reason="lost">ο</supplied><unclear reason="damage">ι</unclear>ξας</w>  <lb n="9"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig>  <lb n="9a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/></ab>
 </div>
 <div type="apparatus">
 <head>Apparatus</head>
@@ -84,4 +87,4 @@
 <head>Photographs</head>
 <p><figure href="75_K_15A"><figDesc>Face (1975)</figDesc></figure><figure href="77_R_35A"><figDesc>Face (1977)</figDesc></figure></p>
 </div></body></text>
-</TEI.2>
+</TEI>

@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE TEI.2 SYSTEM "../../dtd/epidoc/tei-epidoc.dtd"><TEI.2 lang="en" id="iAph161327">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161327">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -11,16 +14,16 @@
 </fileDesc>
 <profileDesc>
 <langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
+<language xml:id="en">English</language>
+<language xml:id="fr">French</language>
+<language xml:id="de">German</language>
+<language xml:id="grc">Ancient Greek</language>
+<language xml:id="grc-Latn">Transliterated Greek</language>
+<language xml:id="el">Modern Greek</language>
+<language xml:id="it">Italian</language>
+<language xml:id="la">Latin</language>
+<language xml:id="es">Spanish</language>
+<language xml:id="tr">Turkish</language>
 </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
 <revisionDesc>
 <change><date>2007-03-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
@@ -47,7 +50,7 @@
 </div>
 <div type="edition" lang="grc">
 <head lang="en">Edition</head>
-<ab><lb n="0"/>    <gap reason="lost" extent="unknown" unit="line" dim="top" id="gap01"/><certainty target="gap01" locus="#gi" degree="low"/><lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="σορός"><supplied reason="lost">σο</supplied>ρός</w> <orig n="unresolved"><unclear reason="damage">λ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">εδ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  </ab>
+<ab><lb n="0"/>    <gap reason="lost" extent="unknown" unit="line" dim="top" xml:id="gap01"/><certainty target="gap01" locus="#gi" degree="low"/><lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="σορός"><supplied reason="lost">σο</supplied>ρός</w> <orig n="unresolved"><unclear reason="damage">λ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">εδ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  </ab>
 </div>
 <div type="apparatus">
 <head>Apparatus</head>
@@ -83,4 +86,4 @@
 <head>Photographs</head>
 <p><figure href="77_T_18A"><figDesc>Face (1977)</figDesc></figure></p><p>66.1.43</p>
 </div></body></text>
-</TEI.2>
+</TEI>

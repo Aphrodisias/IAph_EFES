@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE TEI.2 SYSTEM "../../dtd/epidoc/tei-epidoc.dtd"><TEI.2 lang="en" id="iAph160903">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160903">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -12,16 +15,16 @@
 </fileDesc>
 <profileDesc>
 <langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
+<language xml:id="en">English</language>
+<language xml:id="fr">French</language>
+<language xml:id="de">German</language>
+<language xml:id="grc">Ancient Greek</language>
+<language xml:id="grc-Latn">Transliterated Greek</language>
+<language xml:id="el">Modern Greek</language>
+<language xml:id="it">Italian</language>
+<language xml:id="la">Latin</language>
+<language xml:id="es">Spanish</language>
+<language xml:id="tr">Turkish</language>
 </langUsage>
 </profileDesc>
 <revisionDesc>
@@ -48,7 +51,7 @@ i: <date>First to second centuries A.D.</date> (<rs type="criteria">lettering</r
 </div>
 <div type="edition" lang="grc">
 <head lang="en">Edition</head>
-<div type="textpart_section" n="i"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied><unclear reason="damage">ν</unclear></w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσ<supplied reason="lost">μον</supplied></w>  <supplied reason="lost"><space extent="unknown" unit="character" id="space1175-01" dim="horizontal"/><certainty target="space1175-01" locus="#gi" degree="low" assertedValue="gap"/></supplied><lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><w lemma="ὁ"><supplied reason="lost">τῷ</supplied></w>  <w><supplied reason="lost">Δήμ</supplied>ῳ</w>  <space extent="10" unit="character" dim="horizontal"/>  <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab>
+<div type="textpart_section" n="i"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied><unclear reason="damage">ν</unclear></w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσ<supplied reason="lost">μον</supplied></w>  <supplied reason="lost"><space extent="unknown" unit="character" xml:id="space1175-01" dim="horizontal"/><certainty target="space1175-01" locus="#gi" degree="low" assertedValue="gap"/></supplied><lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><w lemma="ὁ"><supplied reason="lost">τῷ</supplied></w>  <w><supplied reason="lost">Δήμ</supplied>ῳ</w>  <space extent="10" unit="character" dim="horizontal"/>  <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab>
 
 </div><div type="textpart_section" n="ii"><ab><lb n="1"/><name>Ἀσκωνί<supplied reason="lost">αν</supplied></name>  <gap reason="lost" extent="18" unit="character" precision="circa" dim="right"/>  <lb n="2"/> <w>τὴν</w> <w>ἑαυτῆς</w> <w>μητέρα</w> <w>κατὰ</w> <w>τὴν</w> <persName type="aphrodisian"><name>Ἀσκωνίου</name> <lb n="3"/> <name reg="Δημήτριος">Δημητρίου</name></persName> <w>τοῦ</w> <w>πάππου</w> <w>αὐτῆς</w> <lb n="4"/>  <space extent="3" unit="character"/> <w>διαταγήν</w> <w><g type="arabesque"/></w> <space extent="3" unit="character"/>  </ab>
 </div></div>
@@ -90,4 +93,4 @@ i: <date>First to second centuries A.D.</date> (<rs type="criteria">lettering</r
 <head>Photographs</head>
 <p>77.BB.11; 78.B.15; 80.E.11, 12<figure href="81_E_12"><figDesc>ii: Face (1981)</figDesc></figure></p>
 </div></body></text>
-</TEI.2>
+</TEI>

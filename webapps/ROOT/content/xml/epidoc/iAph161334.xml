@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI.2 SYSTEM "../../dtd/epidoc/tei-epidoc.dtd">
-<TEI.2 lang="en" id="iAph161334">
+
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161334">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -13,16 +16,16 @@
 </fileDesc>
 <profileDesc>
 <langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
+<language xml:id="en">English</language>
+<language xml:id="fr">French</language>
+<language xml:id="de">German</language>
+<language xml:id="grc">Ancient Greek</language>
+<language xml:id="grc-Latn">Transliterated Greek</language>
+<language xml:id="el">Modern Greek</language>
+<language xml:id="it">Italian</language>
+<language xml:id="la">Latin</language>
+<language xml:id="es">Spanish</language>
+<language xml:id="tr">Turkish</language>
 </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
 <revisionDesc>
 <change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-01-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
@@ -50,7 +53,7 @@
 </div>
 <div type="edition" lang="grc">
 <head lang="en">Edition</head>
-<ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/> <w>ἀντίγραφον</w> <w>ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w>χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <w lemma="ὁ">τὸ</w> <w>τέταρτον</w> <persName type="aphrodisian"><name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name></persName>  <persName type="aphrodisian"><name reg="Διογένης">Διογένους</name>  <persName type="aphrodisian"><name reg="Δομετῖνος">Δομετείνου</name></persName></persName> <w>φανερὸν</w> <w>ποιῶ</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w>ταύτης</w> <lb n="2"/> <w lemma="ὁ">τῆς</w> <w>ἐπιγραφῆς</w> <w>ὅτι</w> <w>καταλέλοιπα</w> <w lemma="διά">δι'</w><w>ἧς</w> <w>τέθειμαι</w> <w>διαθήκης</w> <w lemma="ὁ">τῇ</w> <w>γερουσίᾳ</w> <w><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <w>χείλια</w> <w lemma="ὁ">τὸ</w> <w lemma="δέ">δὲ</w> <w lemma="πόθεν">πόθεν</w> <w>δεῖ</w> <w>δοθῆναι</w> <w>αὐτὰ</w> <w>δεδήλωκα</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τῆς</w> <w>διαθήκης</w> <w lemma="πρός">πρὸς</w><lb n="3"/> <w lemma="ὁ">τὸ</w> <w>ἐκδανεισθῆναι</w> <w>αὐτὰ</w> <w lemma="καί">καὶ</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τοῦ</w> <w>ἀπ'</w><w>αὐτῶν</w> <w>τόκου</w> <w>γείνεσθαι</w> <w>κλῆρον</w> <w>ὀνομάτων</w> <num value="120">ρκ</num> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺς</w> <note place="not  specified" anchored="yes">sic</note> <w>λάχουσιν</w> <w>δίδοσθαι</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w>ἡρῶό<hi rend="ligature" id="hi1">ν</hi></w><link targets="hi1  hi2"/>  <w lemma="ἐγώ"><hi rend="ligature" id="hi2">μ</hi>ου</w> <w>ἀσσάρια</w> <w lemma="ἐννέα">ἐ<hi rend="ligature">νν</hi>έα</w>  <num value="505">φε</num>  <space extent="1" unit="character" dim="horizontal"/>  </ab>
+<ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/> <w>ἀντίγραφον</w> <w>ἀπετέθη</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w>χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <w lemma="ὁ">τὸ</w> <w>τέταρτον</w> <persName type="aphrodisian"><name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name></persName>  <persName type="aphrodisian"><name reg="Διογένης">Διογένους</name>  <persName type="aphrodisian"><name reg="Δομετῖνος">Δομετείνου</name></persName></persName> <w>φανερὸν</w> <w>ποιῶ</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w>ταύτης</w> <lb n="2"/> <w lemma="ὁ">τῆς</w> <w>ἐπιγραφῆς</w> <w>ὅτι</w> <w>καταλέλοιπα</w> <w lemma="διά">δι'</w><w>ἧς</w> <w>τέθειμαι</w> <w>διαθήκης</w> <w lemma="ὁ">τῇ</w> <w>γερουσίᾳ</w> <w><expan><abbr><orig><g type="denarius"/></orig></abbr><supplied reason="abbreviation">δηνάρια</supplied></expan></w> <w>χείλια</w> <w lemma="ὁ">τὸ</w> <w lemma="δέ">δὲ</w> <w lemma="πόθεν">πόθεν</w> <w>δεῖ</w> <w>δοθῆναι</w> <w>αὐτὰ</w> <w>δεδήλωκα</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τῆς</w> <w>διαθήκης</w> <w lemma="πρός">πρὸς</w><lb n="3"/> <w lemma="ὁ">τὸ</w> <w>ἐκδανεισθῆναι</w> <w>αὐτὰ</w> <w lemma="καί">καὶ</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τοῦ</w> <w>ἀπ'</w><w>αὐτῶν</w> <w>τόκου</w> <w>γείνεσθαι</w> <w>κλῆρον</w> <w>ὀνομάτων</w> <num value="120">ρκ</num> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺς</w> <note place="not  specified" anchored="yes">sic</note> <w>λάχουσιν</w> <w>δίδοσθαι</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w>ἡρῶό<hi rend="ligature" xml:id="hi1">ν</hi></w><link targets="hi1  hi2"/>  <w lemma="ἐγώ"><hi rend="ligature" xml:id="hi2">μ</hi>ου</w> <w>ἀσσάρια</w> <w lemma="ἐννέα">ἐ<hi rend="ligature">νν</hi>έα</w>  <num value="505">φε</num>  <space extent="1" unit="character" dim="horizontal"/>  </ab>
 </div>
 
 <div n="notyet" type="translation">
@@ -84,4 +87,4 @@
 <head>Photographs</head>
 <p><figure href="78_F_02"><figDesc>Left side (1978)</figDesc></figure><figure href="78_F_03"><figDesc>Right side (1978)</figDesc></figure></p><p>KTE 65.21.10, 11</p>
 </div></body></text>
-</TEI.2>
+</TEI>

@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE TEI.2 SYSTEM "../../dtd/epidoc/tei-epidoc.dtd"><TEI.2 lang="en" id="iAph161218">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161218">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -11,15 +14,15 @@
 </fileDesc>
 <profileDesc>
 <langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
+<language xml:id="en">English</language>
+<language xml:id="fr">French</language>
+<language xml:id="de">German</language>
+<language xml:id="grc">Ancient Greek</language>
+<language xml:id="el">Modern Greek</language>
+<language xml:id="it">Italian</language>
+<language xml:id="la">Latin</language>
+<language xml:id="es">Spanish</language>
+<language xml:id="tr">Turkish</language>
 </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
 <revisionDesc><change><date>2007-01-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
 <text>
@@ -41,7 +44,7 @@
 </div>
 <div type="edition" lang="grc">
 <head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="aphrodisian"><name>Ἡρακλείδης</name>  <lb n="2"/><persName type="aphrodisian"><name reg="Ἡρακλίδης">Ἡρακλείδου</name></persName></persName><lb n="3"/><persName type="divine" full="yes"><name>Μορσύνῳ</name></persName>  <w lemma="εὐχή">εὐ<lb n="4" type="worddiv"/><space extent="2" unit="character" dim="horizontal"/>χήν</w>  <space extent="2" unit="character" dim="horizontal"/>  <lb n="5"/><supplied reason="lost"><space extent="1" unit="line" id="space3" dim="horizontal"/><certainty target="space3" locus="#gi" degree="low"/></supplied></ab>
+<ab><lb n="1"/>  <persName type="aphrodisian"><name>Ἡρακλείδης</name>  <lb n="2"/><persName type="aphrodisian"><name reg="Ἡρακλίδης">Ἡρακλείδου</name></persName></persName><lb n="3"/><persName type="divine" full="yes"><name>Μορσύνῳ</name></persName>  <w lemma="εὐχή">εὐ<lb n="4" type="worddiv"/><space extent="2" unit="character" dim="horizontal"/>χήν</w>  <space extent="2" unit="character" dim="horizontal"/>  <lb n="5"/><supplied reason="lost"><space extent="1" unit="line" xml:id="space3" dim="horizontal"/><certainty target="space3" locus="#gi" degree="low"/></supplied></ab>
 </div>
 
 
@@ -73,4 +76,4 @@ Found: <rs type="found"><rs type="monuList">Theatre</rs>: loose find</rs>
 <head>Photographs</head>
 <p><figure href="77_X_17"><figDesc>Face (1977)</figDesc></figure></p><p>KTE 67.60.8</p>
 </div></body></text>
-</TEI.2>
+</TEI>

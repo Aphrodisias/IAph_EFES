@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI.2 SYSTEM "../../dtd/epidoc/tei-epidoc.dtd">
-<TEI.2 lang="en" id="iAph161155">
+
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161155">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -13,17 +16,17 @@
 </fileDesc>
 <profileDesc>
 <langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<language xml:id="en">English</language>
+<language xml:id="fr">French</language>
+<language xml:id="de">German</language>
+<language xml:id="grc">Ancient Greek</language>
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
+<language xml:id="grc-Latn">Transliterated Greek</language>
+<language xml:id="el">Modern Greek</language>
+<language xml:id="it">Italian</language>
+<language xml:id="la">Latin</language>
+<language xml:id="es">Spanish</language>
+<language xml:id="tr">Turkish</language>
 </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
 <revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
 <text>
@@ -45,7 +48,7 @@
 <div type="edition" lang="grc">
 <head lang="en">Edition</head>
 
-<div type="textpart_fragment" n="a"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">α<unclear reason="damage">ι</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">α<unclear reason="damage">σ</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>  <name reg="Σεβαστός" id="name01"><supplied reason="lost">Σεβ</supplied>άστῳ</name><certainty target="name01" locus="#gi" degree="low" assertedValue="w"/>  <gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><w><gap dim="left" extent="unknown" reason="lost" unit="character"/>τεύον<supplied reason="lost" cert="low">τος</supplied></w>  <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="c"><ab><lb n="0"/><gap dim="top" extent="1" reason="lost" unit="line"/><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">τ</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="d"><ab><lb n="0"/><gap dim="top" extent="1" reason="lost" unit="line"/><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">ο</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div>
+<div type="textpart_fragment" n="a"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">α<unclear reason="damage">ι</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">α<unclear reason="damage">σ</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>  <name reg="Σεβαστός" xml:id="name01"><supplied reason="lost">Σεβ</supplied>άστῳ</name><certainty target="name01" locus="#gi" degree="low" assertedValue="w"/>  <gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><w><gap dim="left" extent="unknown" reason="lost" unit="character"/>τεύον<supplied reason="lost" cert="low">τος</supplied></w>  <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="c"><ab><lb n="0"/><gap dim="top" extent="1" reason="lost" unit="line"/><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved">τ</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="d"><ab><lb n="0"/><gap dim="top" extent="1" reason="lost" unit="line"/><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">ο</unclear></orig><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div>
 
 
 </div>
@@ -83,4 +86,4 @@ Found: <rs type="found"><rs type="monuList">Bouleuterion/Odeon, West area</rs>: 
 <head>Photographs</head>
 <p><figure href="72_F_20A"><figDesc>Fragment a reconstructed (1972)</figDesc></figure><figure href="72_F_21A"><figDesc>Fragment b reconstructed (1972)</figDesc></figure><figure href="77_I_22"><figDesc>Assorted fragments (1977)</figDesc></figure><figure href="77_I_21"><figDesc>Assorted fragments (1977)</figDesc></figure></p><!--<p>66.1.58</p>-->
 </div></body></text>
-</TEI.2>
+</TEI>

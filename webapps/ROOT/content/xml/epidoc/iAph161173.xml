@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI.2 SYSTEM "../../dtd/epidoc/tei-epidoc.dtd">
-<TEI.2 lang="en" id="iAph161173">
+
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161173">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -13,17 +16,17 @@
 </fileDesc>
 <profileDesc>
 <langUsage>
-<language id="en">English</language>
-<language id="fr">French</language>
-<language id="de">German</language>
-<language id="grc">Ancient Greek</language>
+<language xml:id="en">English</language>
+<language xml:id="fr">French</language>
+<language xml:id="de">German</language>
+<language xml:id="grc">Ancient Greek</language>
 
-<language id="grc-Latn">Transliterated Greek</language>
-<language id="el">Modern Greek</language>
-<language id="it">Italian</language>
-<language id="la">Latin</language>
-<language id="es">Spanish</language>
-<language id="tr">Turkish</language>
+<language xml:id="grc-Latn">Transliterated Greek</language>
+<language xml:id="el">Modern Greek</language>
+<language xml:id="it">Italian</language>
+<language xml:id="la">Latin</language>
+<language xml:id="es">Spanish</language>
+<language xml:id="tr">Turkish</language>
 </langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
 <revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
 <text>
@@ -40,11 +43,11 @@
 <div type="description" n="date">
 <head>Date</head>
 <p>
-<date notBefore="041" notAfter="100">Julio-Claudian</date> (<rs type="criteria">prosopography</rs>, <rs type="criteria">terminology</rs>)</p>
+<date notBefore="0041" notAfter="0100">Julio-Claudian</date> (<rs type="criteria">prosopography</rs>, <rs type="criteria">terminology</rs>)</p>
 </div>
 <div type="edition" lang="grc">
 <head lang="en">Edition</head>
-<ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="line" dim="top"/><lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ου</orig>  <space extent="1" unit="character" dim="horizontal"/>  <w>ἐργε<unclear reason="damage">π</unclear><supplied reason="lost">ιστατήσαντος</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="2"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/>τος</w> <w lemma="καί">καὶ</w> <orig n="unresolved">τ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="2a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom" id="gap06"/><certainty target="gap06" assertedValue="space" degree="low" locus="#gi"/></ab>
+<ab><lb n="0"/>  <gap reason="lost" extent="unknown" unit="line" dim="top"/><lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ου</orig>  <space extent="1" unit="character" dim="horizontal"/>  <w>ἐργε<unclear reason="damage">π</unclear><supplied reason="lost">ιστατήσαντος</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="2"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/>τος</w> <w lemma="καί">καὶ</w> <orig n="unresolved">τ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="2a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom" xml:id="gap06"/><certainty target="gap06" assertedValue="space" degree="low" locus="#gi"/></ab>
 </div>
 <div type="history" n="text-constituted-from">
 <head>Text Constituted From</head>
@@ -79,4 +82,4 @@
 <!--<figure href="89_G_06A"><figDesc>MISSING Fragments (1989)</figDesc></figure>-->
 </p>
 </div></body></text>
-</TEI.2>
+</TEI>
