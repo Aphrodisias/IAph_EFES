@@ -10,6 +10,13 @@
       <xsl:choose>
          <xsl:when test="$parm-edn-structure='inslib' or $parm-edn-structure='sample'">
             <xsl:choose>
+               <xsl:when test="starts-with(@target, 'iAph') and not(node())"> <!-- this is the approach used in IAph -->
+                  <a href="{@target}.html" target="_blank">
+                     <xsl:number value="number(substring(@target, 5, 2))" format="1" />
+                     <xsl:text>.</xsl:text>
+                     <xsl:number value="number(substring(@target, 7, 4))" format="1" />
+                  </a> 
+               </xsl:when>
                <xsl:when test="@target">
                   <a href="{@target}" target="_blank"><xsl:apply-templates/></a>
                </xsl:when>

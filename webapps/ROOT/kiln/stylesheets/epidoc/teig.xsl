@@ -21,15 +21,54 @@
       <xsl:param name="parm-glyph-variant" tunnel="yes" required="no"></xsl:param>
       
       <xsl:choose>
-<!--         if text-display set, give priority to the content of g, if any-->
+         <!-- **** TEMPORARY FIX FOR INSLIB TEMPLATE **** -->
+         <xsl:when test="$parm-edn-structure='inslib'">
+            <xsl:variable name="symbol" select="substring-after(@ref,'#')"/>
+            <!-- if you are running this template outside EFES, change the path to the symbols authority list accordingly -->
+            <xsl:variable name="symbols-al" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/symbols.xml')"/>
+            <xsl:choose>
+               <xsl:when test="doc-available($symbols-al) = fn:true() and document($symbols-al)//t:glyph[@xml:id=$symbol]">
+                  <xsl:variable name="symbol-id" select="document($symbols-al)//t:glyph[@xml:id=$symbol]"/>
+                  <xsl:choose>
+                     <xsl:when test="$parm-edition-type='diplomatic' and $symbol-id//t:charProp[descendant::t:localName='glyph-display']//t:value">
+                        <xsl:value-of select="$symbol-id//t:charProp[descendant::t:localName='glyph-display']//t:value"/>
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <xsl:value-of select="$symbol-id//t:charProp[descendant::t:localName='text-display']//t:value"/>
+                     </xsl:otherwise>
+                  </xsl:choose>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:choose>
+                     <xsl:when test="@ref">
+                        <xsl:value-of select="@ref"/>
+                     </xsl:when>
+                     <xsl:when test="ancestor::t:num and @type='acrophonic'">
+                        <xsl:value-of select="upper-case(.)"/>
+                     </xsl:when>
+                     <xsl:when test="ancestor::t:num and @type='alphabetic' and $parm-edition-type='interpretive'">
+                        <xsl:value-of select="lower-case(.)"/><xsl:text>´</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="ancestor::t:num and @type='alphabetic' and $parm-edition-type='diplomatic'">
+                        <xsl:value-of select="upper-case(.)"/>
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <xsl:value-of select="."/>
+                     </xsl:otherwise>
+                  </xsl:choose>
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:when>
+         <!-- **** TEMPORARY FIX FOR INSLIB TEMPLATE - END **** -->
+         <!--         if text-display set, give priority to the content of g, if any-->
          <xsl:when test="$parm-glyph-variant = 'text-display'">
             <xsl:choose>
                <xsl:when test="text()"><xsl:value-of select="."/></xsl:when>
                <xsl:otherwise>
-<!--                  because the value is alternative to project specific lists, this will use defaults.-->
+                  <!--                  because the value is alternative to project specific lists, this will use defaults.-->
                   <xsl:call-template name="chardecl">
-                  <xsl:with-param name="g" select="."/>
-               </xsl:call-template>
+                     <xsl:with-param name="g" select="."/>
+                  </xsl:call-template>
                </xsl:otherwise>
             </xsl:choose>
          </xsl:when>
@@ -42,8 +81,8 @@
          </xsl:when>
          <xsl:otherwise>
             <xsl:call-template name="chardecl">
-         <xsl:with-param name="g" select="."/>
-      </xsl:call-template>
+               <xsl:with-param name="g" select="."/>
+            </xsl:call-template>
          </xsl:otherwise>
       </xsl:choose>
       
