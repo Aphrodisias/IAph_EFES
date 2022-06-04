@@ -75,7 +75,8 @@
     </section>
   </xsl:template>
 
-  <!-- Display a facet's name. -->
+  <!-- Display a facet's name. To rename facets, provide translations in 'webapps/ROOT/assets/translations/messages_xx.xml', 
+    using as value of @key 'facet-' followed by the facet name, e.g. <message key="facet-source_repository">Repository</message> -->
   <xsl:template match="lst[@name='facet_fields']/lst/@name"
                 mode="search-results">
     <i18n:text key="facet-{.}">
