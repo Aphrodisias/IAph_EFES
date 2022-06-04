@@ -40,8 +40,11 @@
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
       <xsl:apply-templates select="str[@name='index_numeral_value']"/>
       <xsl:apply-templates select="arr[@name='language_code']"/>
+      <xsl:apply-templates select="str[@name='index_attested_form']" />
+      <xsl:apply-templates select="arr[@name='index_epithet']" />
       <xsl:apply-templates select="str[@name='index_item_type']" />
       <xsl:apply-templates select="str[@name='index_item_role']" />
+      <xsl:apply-templates select="str[@name='index_external_resource']" />
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
     </tr>
   </xsl:template>
@@ -96,6 +99,40 @@
     </td>
   </xsl:template>
 
+  <xsl:template match="str[@name='index_attested_form']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="arr[@name='index_epithet']">
+    <td>
+      <xsl:variable name="epithets">
+        <xsl:for-each select="str">
+          <xsl:value-of select="."/>
+          <xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+        </xsl:for-each>
+      </xsl:variable>
+      <xsl:value-of select="string-join(distinct-values(tokenize($epithets, ', ')), ', ')"/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_external_resource']">
+    <td>
+      <xsl:choose>
+        <xsl:when test="contains(., 'http')">
+          <xsl:for-each select="tokenize(., ' ')">
+            <a target="_blank" href="{.}"><xsl:value-of select="."/></a>
+            <xsl:text> </xsl:text>
+          </xsl:for-each>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="."/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </td>
+  </xsl:template>
+  
   <xsl:template match="str[@name='index_numeral_value']">
     <td>
       <xsl:value-of select="."/>

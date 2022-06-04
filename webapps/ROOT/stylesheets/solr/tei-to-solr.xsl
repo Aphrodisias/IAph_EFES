@@ -22,9 +22,10 @@
     </add>
   </xsl:template>
   
-    <xsl:template match="tei:summary/@corresp" mode="facet_inscription_type">
+  <xsl:template match="tei:rs[@type='textType']" mode="facet_inscription_type">
     <field name="inscription_type">
-      <xsl:value-of select="."/>
+      <xsl:value-of select="upper-case(substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 1, 1))" />
+      <xsl:value-of select="substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 2)" />
     </field>
   </xsl:template>
   
@@ -58,7 +59,7 @@
   </xsl:template>
   
   <xsl:template name="field_inscription_type">
-    <xsl:apply-templates mode="facet_inscription_type" select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:summary/@corresp"/>
+    <xsl:apply-templates mode="facet_inscription_type" select="/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords/tei:term//tei:rs[@type='textType']"/>
   </xsl:template>
   
   <xsl:template name="field_mentioned_institutions">

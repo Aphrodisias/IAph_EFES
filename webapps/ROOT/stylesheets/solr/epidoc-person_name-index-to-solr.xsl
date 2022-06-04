@@ -25,7 +25,7 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="@nymRef" />
+            <xsl:value-of select="translate(@nymRef, '#', '')" />
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>

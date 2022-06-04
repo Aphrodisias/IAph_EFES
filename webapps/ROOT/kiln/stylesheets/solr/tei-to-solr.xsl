@@ -156,23 +156,26 @@
     </doc>
   </xsl:template>
 
-  <xsl:template match="tei:repository[@ref]" mode="facet_source_repository">
+  <xsl:template match="tei:repository" mode="facet_source_repository">
     <field name="source_repository">
-      <xsl:value-of select="@ref"/>
+      <xsl:value-of select="upper-case(substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 1, 1))" />
+      <xsl:value-of select="substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 2)" />
     </field>
   </xsl:template>
 
-  <xsl:template match="tei:material[@ref]" mode="facet_support_material">
+  <xsl:template match="tei:material" mode="facet_support_material">
     <field name="support_material">
-      <xsl:value-of select="@ref" />
+      <xsl:value-of select="upper-case(substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 1, 1))" />
+      <xsl:value-of select="substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 2)" />
     </field>
   </xsl:template>
 
-  <xsl:template match="tei:origPlace[@ref]" mode="facet_origin_place">
+  <xsl:template match="tei:origPlace" mode="facet_origin_place">
     <!-- This does nothing to prevent duplicate instances of the same
          @ref value being recorded. -->
     <field name="origin_place">
-      <xsl:value-of select="@ref" />
+      <xsl:value-of select="upper-case(substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 1, 1))" />
+      <xsl:value-of select="substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 2)" />
     </field>
   </xsl:template>
   
@@ -184,9 +187,10 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="tei:objectType[@ref]" mode="facet_support_object_type">
+  <xsl:template match="tei:objectType" mode="facet_support_object_type">
     <field name="support_object_type">
-      <xsl:value-of select="@ref" />
+      <xsl:value-of select="upper-case(substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 1, 1))" />
+      <xsl:value-of select="substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 2)" />
     </field>
   </xsl:template>
 
@@ -258,15 +262,15 @@
   </xsl:template>
 
   <xsl:template name="field_origin_place">
-    <xsl:apply-templates mode="facet_origin_place" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:origin/tei:origPlace[@ref]" />
+    <xsl:apply-templates mode="facet_origin_place" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:origin//tei:origPlace" />
   </xsl:template>
 
   <xsl:template name="field_source_repository">
-    <xsl:apply-templates mode="facet_source_repository" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:repository[@ref]"/>
+    <xsl:apply-templates mode="facet_source_repository" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:repository"/>
   </xsl:template>
 
   <xsl:template name="field_support_material">
-    <xsl:apply-templates mode="facet_support_material" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support/tei:material[@ref]" />
+    <xsl:apply-templates mode="facet_support_material" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support//tei:material" />
   </xsl:template>
   
   <xsl:template name="field_origin_date_evidence">
@@ -274,7 +278,7 @@
   </xsl:template>
 
   <xsl:template name="field_support_object_type">
-    <xsl:apply-templates mode="facet_support_object_type" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support/tei:objectType[@ref]" />
+    <xsl:apply-templates mode="facet_support_object_type" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support//tei:objectType" />
   </xsl:template>
 
   <xsl:template name="field_text">
