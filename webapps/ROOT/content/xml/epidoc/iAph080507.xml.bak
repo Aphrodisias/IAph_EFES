@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Place inscription of Heortasios</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph080507</idno>
+            <idno type="IAph2007">iAph080507</idno>
+            <idno type="JMR2004">iAph0195</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A small <material key="marmor">white marble</material>
+                              <objectType>column</objectType> base (<height unit="metre">0.88</height> × <width unit="metre">0.50</width> × <depth unit="metre">0.48</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Cut on north face of base.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Very irregular, <height unit="metre">0.025-0.046</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0300" notAfter="0500" evidence="lettering context">Third-fourth centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">context</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Tetrastoon">Tetrastoon</rs>: north portico.</provenance>
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="cetera" cert="low">jewish</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-28" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-30" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">tidied and corrected</change>
+         <change when="2003-04-30" who="Juan-Garcés">tagged Greek; tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_G_37.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+		<ab>
+			<lb n="1"/> <persName key="heortasius1" type="attested"><name nymRef="#Ἑορτάσιος">Ἑορτασίου</name></persName>  <w lemma="κονιορτός">κο<lb n="2" break="no"/>νιορτοῦ</w> 
+			<lb n="3"/><w lemma="τόπος">τόπος</w>. </ab>
+      </div>
+         <div type="translation">
+            <ab>Place of Heortasios, dirty rogue.</ab>
+         </div>
+         <div type="commentary">
+            <p>See <ref type="eAla-text" n="XI.13" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" n="JandG">
+                  <author>Reynolds</author> &amp; <author>Tannenbaum</author>, <title level="m">Jews &amp;
+God-Fearers</title> 135-136, no. <citedRange>8</citedRange> and plate</bibl>, whence <bibl n="seg">
+                  <title level="m">SEG</title>
+                  <citedRange>1987.850</citedRange>,</bibl>
+               <bibl n="be">
+                  <title level="m">BE</title>
+                  <citedRange>1988.888</citedRange>
+               </bibl>;
+by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>195</citedRange>
+               </bibl>, whence <bibl><ptr target="phi"/>
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257563">676</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

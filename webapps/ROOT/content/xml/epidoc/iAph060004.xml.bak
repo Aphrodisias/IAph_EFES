@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building inscription by Fl. Co<supplied reason="omitted">n</supplied>stantius, governor</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph060004</idno>
+            <idno type="IAph2007">iAph060004</idno>
+            <idno type="JMR2004">iAph0235</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>88.21</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Black and white <objectType>floor <objectType>mosaic</objectType>
+                              </objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Set within <term xml:lang="la">
+                              <rs type="decoration">Tabella ansata</rs>
+                           </term> (<height unit="metre">0.47</height> × <width unit="metre">1.42</width>), which is broken away to left.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lunate <height unit="metre">0.07-0.08</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList" key="Basilica">Basilica</rs>.</origPlace>
+                     <origDate notBefore="0365" notAfter="0370" evidence="prosopography">A.D. 365/370 (<rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="Basilica">Basilica</rs>: at the north-west corner, in the floor of niche at the 7th intercolumniation from the north. .</provenance>
+                  <provenance type="observed">Museum.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-22" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-06-02" who="#GB">Tidied and regularised</change>
+         <change when="2002-11-15" who="#GB">Typed and tagged Greek</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="NY_pr_053.jpg">
+            <desc>Face (1988)</desc>
+         </graphic>
+         <graphic url="NY_pr_081.jpg">
+            <desc>Face (1988)</desc>
+         </graphic>
+         <graphic url="DSCN0170.jpg">
+            <desc>Basilica: west portico, from north (2004)</desc>
+         </graphic>
+         <graphic url="DSCN0171.jpg">
+            <desc>Basilica, from north (2004)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            
+            <ab>
+              <lb n="1"/><persName key="FlConstantius" nymRef="#Φλάβιος Κωνστάντιος" type="attested"><name nymRef="#Φλάβιος"><supplied reason="lost"><expan><abbr>Φλ</abbr><ex>άβιος</ex></expan></supplied></name> <name nymRef="#Κωνστάντιος"><supplied reason="lost">Κ</supplied><unclear reason="damage">ω</unclear>νστάντιος</name></persName>
+			  <lb n="2"/><supplied reason="lost"><w lemma="ὁ">ὁ</w></supplied> <w lemma="λαμπρός"><rs type="dignity" key="clarissimus"><supplied reason="lost">λ</supplied>α<unclear reason="damage">μ</unclear>πρότατος</rs></w>
+			  <lb n="3"/><w lemma="ἡγεμών"><rs key="praeses" type="official-secul"><supplied reason="lost">ἡ</supplied><unclear reason="damage">γ</unclear>εμὼν</rs></w> <w lemma="καί">καὶ</w> <w lemma="οὗτος">τοῦτο</w> <w lemma="ὁ">τὸ</w>
+			  <lb n="4"/><w lemma="ἔργον"><supplied reason="lost">ἔ</supplied>ργ<unclear reason="damage">ον</unclear></w> <w lemma="ποιέω">ἐποίησεν</w>
+			</ab>
+         </div>
+         <div type="translation">
+            <p>
+               <supplied reason="lost">Flavius C</supplied>onstantius, the <term xml:lang="la">clarissimus praeses</term>, made this work also.</p>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="III.16" target=".xml"/>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" rend="primary" n="AphPap1">
+                  <author>K. T. Erim</author>, <title level="s">Aphrodisias Papers</title> 27, p. 28</bibl> whence <bibl n="seg">
+                  <title level="j">SEG</title>
+                  <citedRange>1996.1398</citedRange>
+               </bibl>, <bibl><ptr target="phi"/>
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257490">609</citedRange>
+               </bibl>, cited <bibl>
+                  <title level="j">Anatolian Studies</title> 39 (<date value="1989" notBefore="1989" notAfter="1989" exact="both">1989</date>), 175-7, 177</bibl>, whence <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1989.138</citedRange>, <citedRange>1989.517</citedRange>
+               </bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi">
+                  <author>Roueché</author> (2004), <citedRange>235</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

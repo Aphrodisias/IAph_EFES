@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Licinius Valerianus</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="MB" role="encoding">Michele Butini</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010189</idno>
+            <idno type="IAph2007">iAph010189</idno>
+            <idno type="JMR2004">iAph0004</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+Three adjoining fragments of a <material key="marmor">white marble</material>
+                              <objectType>
+                                 <objectType>statue base</objectType> shaft</objectType> with a moulded panel on one face. a, an upper right corner fragment, has lines 1-6 (<height unit="metre">0.23</height> × <width unit="metre">0.33</width> × <depth unit="metre">0.30</depth>);
+b, a fragment with the left side moulding surviving has lines 6-20 (<height unit="metre">0.38</height> × <width unit="metre">0.53</width> × <depth unit="metre">0.34</depth>);
+c, the lower part of the block, with moulding surviving on both sides and below, has lines 16-20 (<height unit="metre">0.46</height> × <width unit="metre">0.46</width> × <depth unit="metre">0.54</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> within the panel; the last letter is cut on the moulding in lines 5, 6, 17, 18 and (presumably) 10.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+ll. 1-15. <height unit="metre">0.025</height>; ll 16-20, <height unit="metre">0.022-0.023</height>.
+Ligatures: <foreign xml:lang="grc">ΗΝ</foreign>, l.8; <foreign xml:lang="grc">ΤΗ</foreign>, l.9; <foreign xml:lang="grc">ΝΕ</foreign>, l. 19.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+Unknown.</origPlace>
+                     <origDate notBefore="0253" notAfter="0260" evidence="content">
+A.D. 253-260
+(<rs type="criteria">content</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Temple/Church</rs>: loose finds, probably from a base re-used in the bema wall.</provenance>
+                  <provenance type="observed" when="&#xA;1980">
+Museum and findspot (1980).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>
+Transcriptions (Reynolds, Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-18" who="#MB">Tagged LGPN ids, added auth list refs</change>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs; Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-16" who="#CMR">tidied; images entered</change>
+         <change when="2003-11-04" who="#GB">Corrected errors in Greek</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-20" who="#CMR">name tags reduced</change>
+         <change when="2003-07-14" who="JLG">Lemmatised</change>
+         <change when="2003-06-21" who="#CMR">tagged, tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">tidied and corrected</change>
+         <change when="2003-05-27" who="#GB">Typed and marked-up Greek</change>
+         <change when="2003-04-30" who="Juan-Garcés">tidied and corrected</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_D_26.jpg">
+            <desc>a: Upper right corner (1976)
+</desc>
+         </graphic>
+         <graphic url="80_H_22.jpg">
+            <desc>a: Upper right corner (1980)</desc>
+         </graphic>
+         <graphic url="76_D_23.jpg">
+            <desc>b: Centre right (1976)</desc>
+         </graphic>
+         <graphic url="76_D_21.jpg">
+            <desc>c: Lower left corner (1976)</desc>
+         </graphic>
+         <graphic url="80_H_28.jpg">
+            <desc>c: Lower left corner (1980)</desc>
+         </graphic>
+         <graphic url="K_V_18.jpg">
+            <desc>b. Kubitschek notebook V, 18</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab><lb n="0"/><supplied reason="lost"><w lemma="ὁ">ἡ</w> <rs reg="city" key="city" type="subject"><w lemma="πόλις">πόλις</w></rs></supplied><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>ον <persName key="LiciniusValerianus" nymRef="#Λικίννιος Οὐαλεριανός" type="emperor" ref="emperors.xml#valerian"><name nymRef="#Λικίννιος">Λι<lb n="2" break="no"/><supplied reason="lost">κίννιο</supplied><unclear reason="damage">ν</unclear></name> <name nymRef="#Οὐαληριανός">Οὐα<lb n="3" break="no"/><supplied reason="lost">λεριαν</supplied>ὸν</name></persName> <w lemma="υἱός">υἱ<lb n="4"/><supplied reason="lost">ὸν</supplied></w><supplied reason="lost"> <w lemma="καί">καὶ</w></supplied> <w lemma="ἀδελφός"><supplied reason="lost">ἀ</supplied>δελ<lb n="5" break="no"/><supplied reason="lost">φὸν</supplied></w> <w lemma="ὁ"><supplied reason="lost">τῶ</supplied>ν</w> <rs type="dignity" key="augustus" reg="Augustus"><w lemma="σεβαστός">Σεβα<lb n="6" break="no"/><supplied reason="lost">στῶν</supplied></w></rs> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸν</w> <w lemma="ἑαυτοῦ">ἑαυ-<lb n="7"/><supplied reason="lost">τ</supplied><unclear reason="damage">ῆ</unclear>ς</w> <w lemma="εὐεργέτης">εὐεργέ<lb n="8" break="no"/>τ<hi rend="ligature">ην</hi></w>, <w lemma="προνοέομαι">προνο<unclear reason="damage">η</unclear><lb n="9" break="no"/>σαμένου</w> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w><lb n="10"/><w lemma="ἀνάστασις">ἀναστάσεω<supplied reason="lost">ς</supplied></w><lb n="11"/><w lemma="ὁ">τοῦ</w> <rs key="axiologotatos" reg="axiologotatos" type="dignity"><w lemma="ἀξιόλογος">ἀξιολο<lb n="12" break="no"/>γωτάτου</w></rs> <persName key="Nicomachus1" nymRef="#Ἀντώνιος Νεικόμαχος" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-10871"><name nymRef="#Ἀντώνιος">Ἀν<lb n="13" break="no"/>τωνίου</name> <name nymRef="#Νεικόμαχος">Νει<lb n="14" break="no"/><unclear reason="damage">κ</unclear>ομάχου</name></persName> <w lemma="ὁ">τοῦ</w><lb n="15"/><w lemma="πατήρ">πατρὸς</w> <w lemma="ὁ">τοῦ</w> <rs type="official-secul" key="archon" reg="archon"><w lemma="πρῶτος">πρώ<lb n="16" break="no"/><unclear reason="damage">τ</unclear>ου</w> <w lemma="ἄρχων">ἄρχοντος</w></rs><lb n="17"/><persName key="Nicomachus2" nymRef="#Ἀντώνιος Κλαύδιος Νεικόμαχος" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-10870"><name nymRef="#Ἀντώνιος">Ἀντωνίου</name> <name nymRef="#Κλαύδιος">Κλαυ<lb n="18" break="no"/>δίου</name> <name nymRef="#Νεικόμαχος">Νεικομάχου</name></persName><lb n="19"/><rs type="official-relig" key="highpriest" reg="high priest"><w lemma="ἀρχιερεύς">ἀρχιερέω<hi rend="ligature" xml:id="hi5">ν</hi></w></rs> <w lemma="ἔκγονος"><hi rend="ligature" xml:id="hi6">ἐ</hi>κγό<lb n="20" break="no"/><g ref="#scroll"/> νου</w> <g ref="#scroll"/>
+<link targets="hi5 hi6" targOrder="U"/></ab>
+</div>
+         <div type="translation">
+            <ab>
+               <supplied reason="lost">The city <supplied reason="subaudible">has honoured</supplied>
+               </supplied>
+               <gap reason="lost" unit="character" extent="unknown"/>us Li<supplied reason="lost">cinius</supplied> Va<supplied reason="lost">lerian</supplied>us, son and brother of the Augusti, her benefactor; the most worthy Antonius Neikomachos, father of the first archon Antonius Claudius Neikomachos, offspring of high-priests, supervised the erection <supplied reason="subaudible">of the monument</supplied>.</ab>
+         </div>
+         <div type="commentary">
+            <p>
+See discussion at <ref type="eAla-text" n="I.10" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>
+Fragment published by <bibl type="hbi" rend="primary" n="reinach">
+                  <author>Reinach</author>, no. <citedRange>90</citedRange>
+               </bibl>, from Gaudin and by <bibl type="hbi" rend="primary" n="MAMA8">
+                  <author>Cormack</author>, from the MAMA records, <title level="m">MAMA</title> 8, <citedRange>509</citedRange>
+               </bibl>; all fragments published by <bibl type="hbi" rend="primary" n="cmr1981">
+                  <author>Roueché</author> (<date value="1981" notBefore="1981" notAfter="1981" exact="both">1981</date>), no. <citedRange>3</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title level="j">SEG</title>
+                  <citedRange>1981.906</citedRange>
+               </bibl>, <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1982.357</citedRange>
+               </bibl>; <bibl n="anep">
+                  <title level="j">An.Ép.</title>
+                  <citedRange>1981.767</citedRange>
+               </bibl>; republished by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>4</citedRange>
+               </bibl>, whence <bibl><ptr target="phi"/>
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257090">211</citedRange>
+               </bibl>.</p>
+            <p>Discussion: <bibl>
+                  <author>Christol &amp; Drew-Bear</author>, <title level="m">Travaux &amp; Recherches</title>
+                  <date value="1982" notBefore="1982" notAfter="1982" exact="both">1982</date>, 35 no. 32</bibl>, <bibl>
+                  <author>Zaccaria</author>, <title level="m">Sodalitas (Festschrift Guarino)</title> vol. 2, 697-709</bibl>, <bibl n="anep">
+                  <title level="j">An.Ép.</title> 1984.884</bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

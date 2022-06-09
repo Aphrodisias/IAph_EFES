@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedication and restoration of statues after an earthquake, authorised by Trajan, undertaken by Kallikrates Grypos. </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="FT" role="encoding">Francesco Tecca</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph040308</idno>
+            <idno type="IAph2007">iAph040308</idno>
+            <idno type="JMR2004">iAph0555</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>77.134</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>statue base</objectType> shaft.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribed on two adjoining faces; b to left, a to right.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>standard forms; no measurements.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0102" notAfter="0116" evidence="titulature">
+A.D. 102-116  (<rs type="criteria">titulature</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">South Agora, Agora Gate</rs>: Trench 5; reused in a wall.</provenance>
+                  <provenance type="observed" when="1983">Findspot (1983)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-19" who="#FT">Tagged LGPN ids and auth lists refs</change>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-11" who="cmr">DONE</change>
+         <change when="2007-03-15" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="83_D_36A.jpg">
+            <desc>a, view (1983)</desc>
+         </graphic>
+         <graphic url="83_D_35A.jpg">
+            <desc>a, face (1983)</desc>
+         </graphic>
+         <graphic url="83_E_04.jpg">
+            <desc>b (1983)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<div n="a" type="textpart" subtype="section"><ab><lb n="1"/>   <w lemma="ὁ">τῇ</w> <w lemma="προμήτωρ">προμήτορι</w> <persName type="divine" ref="divine.xml#aphrodite"><name nymRef="#Ἀφροδίτη">Ἀφροδ<unclear reason="damage">ε</unclear><supplied reason="lost">ίτῃ</supplied></name></persName>  <lb n="2"/>  <space extent="3" unit="character"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="δῆμος">Δήμῳ</w> <space extent="3" unit="character"/>  <lb n="3"/> <persName type="emperor" ref="emperors.xml#trajan"><w lemma="αὐτοκράτωρ">Ἀυτοκράτωρ</w> <name nymRef="#Καῖσαρ">Καῖσαρ</name> <name nymRef="#Νέρβα">Νέρου<lb n="4" break="no"/>ας</name>  <name nymRef="#Τραιανός">Τραϊανὸς</name> <w lemma="σεβαστός">Σεβαστὸς</w> <lb n="5"/> <name nymRef="#Γερμανικός"><w lemma="Γερμανικός">Γερμανικὸς</w></name> <name nymRef="#Δακικός"><w lemma="Δακικός">Δακικὸς</w></name></persName> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῆς</w> <lb n="6"/> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-1212"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-11627 http://www.lgpn.ox.ac.uk/id/V5b-4192"><name nymRef="#Περείτας">Περείτου</name> <name nymRef="#Γρύπος">Γρύ<lb n="7" break="no"/>που</name></persName></persName>  <w lemma="διαθήκη">διαθήκης</w> <w lemma="ἀποκαθίστημι">ἀποκαθέστη<lb n="8" break="no"/>σεν</w>  <w lemma="διά">διὰ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8324"><name nymRef="#Καλλικράτης">Καλλικράτους</name> <w lemma="ὁ">τοῦ</w> <lb n="9"/> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-11627 http://www.lgpn.ox.ac.uk/id/V5b-4192"><name nymRef="#Περείτας">Περείτου</name> <name nymRef="#Γρύπος">Γρύπου</name></persName></persName> <w lemma="ἱερεύς">ἱερέως</w> <lb n="10"/>  <space extent="3" unit="character"/> <w lemma="ἐργεπιστάτης">ἐργεπιστάτου</w>    <space extent="3" unit="character"/></ab></div><div n="b" type="textpart" subtype="section"><ab>  <lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="ὁ">τοὺς</w> <w lemma="ἀνδριάς">ἀνδριάντας</w> <w lemma="ὁ">τοῦ</w> <lb n="2"/> <persName type="divine" ref="divine.xml#cyclopes"><w lemma="Κύκλωψ">Κύκλωπος</w></persName> <w lemma="καταφέρω">κατενεχθέντας</w> <w lemma="ὑπό">ὑπὸ</w> <lb n="3"/> <w lemma="σεισμός">σεισμοῦ</w> <w lemma="καί">καὶ</w> <w lemma="συντρίβω">συντριβέντας</w> <w lemma="καί">καὶ</w> <w lemma="ἀχρειόω">ἀ<lb n="4" break="no"/>χρειωθέντας</w>  <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="ἐπισκευάζω">ἐπισ<lb n="5" break="no"/>κευάσας</w>  <w lemma="ἀποκαθίστημι">ἀποκαθέστησεν</w> <g ref="#scroll"/> </ab></div>
+</div>
+         <div type="translation">
+            <p>a: For the first mother Aphrodite and the People. Imperator Caesar Nerva Trajanus Augustus restored (this) from the will of Adrastos son of Pereitas ? Grypos, through Kallikrates son of Pereitas Grypos, priest, supervisor of the work.</p>
+            <p>b: The People prepared and restored the statues of the Cyclops, thrown down, shattered and made useless by an earthquake, at its own expense.</p>
+         </div>
+         <div type="commentary">
+            <p>See Reynolds, op. cit., with <bibl n="jmr1986">Reynolds, ‘Further information’ 111-2.</bibl>
+            </p>
+         </div>
+         <div type="bibliography">
+            <p>a and b published by <bibl n="jmr1980">
+                  <author>Reynolds</author>, <title>PCPS</title> 206, 1980, 73-74, no. <citedRange>3a</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title>SEG</title>
+                  <citedRange>1980.1254</citedRange>
+               </bibl>, <bibl n="be">
+                  <title>BullEp</title>
+                  <citedRange>1982.355</citedRange>
+               </bibl>, <bibl n="anep">
+                  <title>AnnEpig</title>
+                  <citedRange>1980.868</citedRange>
+               </bibl>; a republished by  <bibl type="primary" n="jmr1982">
+                  <author>Reynolds</author>, <title level="m">Aphrodisias &amp; Rome</title>, doc. <citedRange>55</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1097</citedRange>
+               </bibl>, <bibl n="be">BullEp <citedRange>1983.391</citedRange>
+               </bibl>; from all these <bibl><ptr target="phi"/>
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257034">155</citedRange> and <citedRange n="257063">184</citedRange>.</bibl> .</p>
+         </div>
+      </body>
+   </text>
+</TEI>

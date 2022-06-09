@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Boundary marker, set up by <supplied reason="lost">C. Julius Zoilos</supplied>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="MB" role="encoding">Michele Butini</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010001</idno>
+            <idno type="IAph2007">iAph010001</idno>
+            <idno type="JMR2004">iAph0535</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>63.596</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper right corner of a <material>white marble</material>
+                              <objectType>block</objectType> (<width unit="metre">0.36</width> x <height unit="metre">0.24</height> x <depth unit="metre">0.34</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Late Republican or Augustan; ave <height unit="metre">0.02</height>. rho in ll. 1, 3, 6 has a very small stroke slanting rightwards from the junction of the bowl with the vertical.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Temple/Church</rs> temenos.</origPlace>
+                     <origDate notBefore="-0050"
+                               notAfter="0014"
+                               precision="medium"
+                               evidence="lettering content">
+Late Republican or Augustan
+ (<rs type="criteria">lettering</rs>, <rs type="criteria">content</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">Stray find. </provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-10" who="#MB">added Augustus and Aphrodite authority list refs</change>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-04" who="cmr">DONE</change>
+         <change when="2007-04-02" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-15" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_R_12A.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+               <lb n="1"/><w lemma="οὗτος"><supplied reason="lost" cert="low">οὗτος</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w> <w lemma="τόπος"><supplied reason="lost">τόπο</supplied><unclear reason="damage">ς</unclear></w> <w lemma="ἱερός">ἱερὸς</w> <w lemma="ἄσυλος">ἄσυ<lb
+                  n="2" break="no"/><supplied reason="lost">λος</supplied></w> <w lemma="ὡς"><supplied reason="lost" cert="low">ὡς</supplied></w>  <w lemma="κρίνω"><supplied reason="lost">ἔκριναν</supplied></w> <space unit="character" extent="1"/> <w lemma="ὁ">ὁ</w> <w lemma="μέγας">μέγας</w>
+               <lb n="3"/><persName type="emperor" ref="emperors.xml#augustus"> <!--please Gabby take a look if this is the correct way to point at the emperors authority list--><name nymRef="#Καῖσαρ"><supplied reason="lost" cert="low">Καῖσαρ</supplied></name></persName>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <w lemma="δικτάτωρ"><supplied reason="lost">δικ</supplied><unclear reason="damage">τ</unclear>άτωρ</w> <w lemma="καί">καὶ</w>
+               <lb n="4"/><w lemma="ὁ"><supplied reason="lost" cert="low">ὁ</supplied></w>  <w lemma="υἱός"><supplied reason="lost">υἱὸς</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">αὐτοῦ</supplied></w>  <w lemma="αὐτοκράτωρ"><supplied reason="lost">αὐ</supplied>τοκράτωρ</w>
+               <lb n="5"/> <persName type="emperor"><name nymRef="#Καῖσαρ"><supplied reason="lost">Καῖσαρ</supplied></name></persName>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>    <w lemma="σύγκλητος"><supplied reason="lost">σύ</supplied>νκλητος</w>
+               <lb n="6"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <w lemma="δῆμος"><supplied reason="lost">δῆμος</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <placeName nymRef="#Ῥωμαῖος"><supplied reason="lost">Ῥ</supplied>ωμαίων</placeName>
+               <lb n="7"/><w lemma="καθώς"><supplied reason="lost">καθὼς</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὰ</supplied></w> <w lemma="φιλάνθρωπος">φιλάνθρω<lb
+                  n="8" break="no"/><supplied reason="lost">πα</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="δελτογράφημα"><supplied reason="lost">δελτογρα</supplied>φή<lb
+                  n="9" break="no"/><supplied reason="lost">ματα</supplied></w>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ἐπίκριμα"><supplied reason="lost">ἐπικρίματα</supplied></w>
+               <lb n="10"/> <w lemma="περιέχω"><supplied reason="lost">περιέχει</supplied></w>  <w lemma="ἀνίστημι"><supplied reason="lost">ἀνέστησεν</supplied></w>
+               <lb n="11"/><w lemma="δέ"><supplied reason="lost">δὲ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τοὺς</supplied></w>  <w lemma="ὅρος"><supplied reason="lost">ὅρους</supplied></w>  <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6961"><name nymRef="#Γάϊος"><supplied reason="lost">Γάϊος</supplied></name>
+                  <lb n="12"/><name nymRef="#Ἰούλιος"><supplied reason="lost">Ἰούλιος</supplied></name>  <name nymRef="#Ζωΐλος"><supplied reason="lost">Ζωΐλος</supplied></name></persName>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <w lemma="ἱερεύς"><supplied reason="lost">ἱερεὺς</supplied></w>
+               <lb n="13"/><w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w>  <persName type="divine" ref="divine.xml#aphrodite"><name nymRef="#Ἀφροδίτη"><supplied reason="lost">Ἀφροδείτης</supplied></name></persName></ab>
+</div>
+         <div type="apparatus">
+            <p>For the supplements, compare the partner inscription <ref type="inscription" n="1581" target="iAph010038"/>.</p>
+         </div>
+         <div type="translation">
+            <p>[?This area is] the sacred asylum [?as defined by] the great [?Caesar, the] Dictator, and [?his son] Imperator [Caesar and the ] Senate [and People] of Rome, [as is also contained in the] grants of privilege, the public documents [and decrees. C. Iulius Zoilos priest of Aphrodite set up the boundary stones.]</p>
+         </div>
+         <div type="commentary">
+            <p>See <title>Aphrodisias and Rome</title>, 159-160.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by  <bibl n="jmr1982">Reynolds, <title level="m">Aphrodisias &amp; Rome</title>, doc. <citedRange>35</citedRange>
+               </bibl>, whence <bibl n="seg">SEG <citedRange>1982.1097</citedRange>
+               </bibl>, <bibl n="be">BE <citedRange>1983.388</citedRange>
+               </bibl>,<bibl n="anep">
+                  <title level="j">An.Ép.</title>
+                  <citedRange>1984.878</citedRange>
+               </bibl>, <bibl><ptr target="phi"/>
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257257">379</citedRange>
+               </bibl>, <bibl n="rrrs1993">
+                  <author>R. R. R. Smith</author>, <title>Aphrodisias I. The monument of C. Julius Zoilos</title> (Mainz, 1993) <citedRange>T5</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

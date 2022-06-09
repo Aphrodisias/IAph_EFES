@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Titles on philosopher portraits</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph090125</idno>
+            <idno type="IAph2007">iAph090125</idno>
+            <idno type="JMR2004">iAph0251</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>81.115</idno>
+                  <idno>81.136</idno>
+                  <idno>81.97</idno>
+                  <idno>81.135</idno>
+                  <idno>81.114</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A group of nine '<objectType key="sculpture">
+                                 <objectType>shield <objectType>bust</objectType>
+                                 </objectType>s</objectType>', of which numbers 1, 3, 5, 6 and 7 are inscribed; 5 is <material key="marmor">grey marble</material>; the rest are <material key="marmor">white marble</material>. For full description see <bibl type="hbi" n="rrrs1990">Smith (1990), especially 132-147</bibl>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the rim below the bust.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>1, 3, 7, <height unit="metre">0.045</height>; 6, <height unit="metre">0.04</height>; 5, <height unit="metre">0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Mounted in the apse: Smith (1990), 129-30</origPlace>
+                     <origDate notBefore="0468"
+                               notAfter="0500"
+                               precision="medium"
+                               evidence="style lettering context">Late fifth century (<rs type="criteria">style</rs>, <rs type="criteria">lettering</rs>, <rs type="criteria">context</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Sebasteion</rs> excavations: lying behind apse in Atrium House</provenance>
+                  <provenance type="observed" when="1985">Museum (1985)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2004-06-08" who="Juan-Garcés">Marked up inventory number(s)</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">Tidied and regularised</change>
+         <change when="2002-11-02" who="#GB">Typed and tagged Greek</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="81_G_11.jpg">
+            <desc>Text 1 (1981)</desc>
+         </graphic>
+         <graphic url="85_G_23.jpg">
+            <desc> Text 3 (1985)</desc>
+         </graphic>
+         <graphic url="81_D_21.jpg">
+            <desc>Text 5 (1981)</desc>
+         </graphic>
+         <graphic url="85_G_22.jpg">
+            <desc>Text 6 (1985)</desc>
+         </graphic>
+         <graphic url="85_G_24.jpg">
+            <desc>Text 7 (1985)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+		<cb n="1"/><ab n="1">
+		<lb n="1"/><persName key="Pindar" type="other"><name nymRef="#Πίνδαρος">Πίνδαρος</name></persName></ab>
+		<cb n="3"/><ab n="3"><lb n="1"/>
+		<persName key="Alcibiades" type="other"><name nymRef="#Ἀλκιβιάδης">Ἀλκιβιάδης</name></persName></ab>
+		<cb n="5"/><ab n="5"><lb n="1"/>
+		<persName key="Aristotle" type="other"><name nymRef="#Ἀριστοτέλης">Ἀριστοτέλης</name></persName></ab>
+		<cb n="6"/><ab n="6"><lb n="1"/>
+		<persName key="Pythagoras" type="other"><name nymRef="#Πυθαγόρας">Πυθαγόρας</name></persName></ab>
+		<cb n="7"/><ab n="7"><lb n="1"/>
+		<persName key="ApolloniusTyan" type="other"><name nymRef="#Ἀπολλώνιος ">Ἀπολλώνιος</name></persName></ab>
+      </div>
+         <div type="translation">
+            <ab>1. Pindar</ab>
+            <ab>3. Alcibiades</ab>
+            <ab>5. Aristotle</ab>
+            <ab>6. Pythagoras</ab>
+            <ab>7. Apollonius</ab>
+         </div>
+         <div type="commentary">
+            <p>See discussion at <ref type="eAla-text" n="V.14" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl type="hbi" rend="primary" n="rrrs1990">
+                  <author>R. R. R. Smith</author> (1990) <citedRange>127</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title level="j">SEG</title>
+                  <citedRange>1990.950</citedRange>
+               </bibl>, <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1991.519</citedRange>
+               </bibl>, <bibl><ptr target="phi"/>
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257394">516</citedRange>
+               </bibl> (1 only); discussed, <bibl type="hbi" n="AphPap2">
+                  <author>R. R. R. Smith</author>, '<title level="a">Late Roman philosophers</title>', <title level="s">Aphrodisias Papers</title> 2, 144-167</bibl>; republished by <bibl n="ala2004" rend="primary" type="hbi">
+                  <author>Roueché</author> (2004), <citedRange>251</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

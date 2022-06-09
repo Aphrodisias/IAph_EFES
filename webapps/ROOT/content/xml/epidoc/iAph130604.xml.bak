@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary inscription for Aemilius Aristeas</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130604</idno>
+            <idno type="IAph2007">iAph130604</idno>
+            <idno type="JMR2004">iAph1443</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>sarcophagus</objectType> complete with lid and an iron clamp repairing an ancient break; total (<height unit="metre">0.96</height> x <width unit="metre">2.38</width> x <depth unit="metre">0.91</depth>); chest (<height unit="metre">0.73</height> x <width unit="metre">2.38</width>), lid (<height unit="metre">0.24</height> x <width unit="metre">2.36</width>). For a full description see Smith, l.c.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Line 1 is <rs type="execution" ref="scalpro">inscribed</rs> on the front moulding of the lid; line 2 along the upper front edge of the sarcophagus, but leaving a substantial area blank at the right-hand end, where the sarcophagus is damaged; lines 3-19 in the area between the two busts, from which an earlier inscription has been erased; line 20 on the flange below.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote> Reasonably good examples of the second-to-fourth-century style, a little uneven in height, <height unit="metre">0.015-0.025</height>. Ligatured <foreign xml:lang="grc">ΗΜ</foreign> (ll. 1, 4), <foreign xml:lang="grc">ΜΗΝ</foreign> (ll. 2, 19), <foreign xml:lang="grc">ΝΗ</foreign> (ll. 1, 3, 5, 7, 18). Star for denarius. Slanting stroke before the figure in l.14, after it in l.18.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0268"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="hairstyles nomenclature lettering">Late third century A.D.
+ (<rs type="criteria">hairstyles</rs>)<rs type="criteria">nomenclature</rs>, <rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Necropolis, West</rs>:  excavated during repair work on the road from the site to the village of new Geyre.  Found with <ref type="inscription" n="1441" target="iAph130602"/> (S.8) and <ref type="inscription" n="1442" target="iAph130603"/> (10).</provenance>
+                  <provenance type="observed" when="1990">Museum (1990) (museum inv. no. 5624)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation> Transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-18" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="90_E_06.jpg">
+            <desc>Face (1990)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σο<unclear reason="damage">ρ</unclear>ός</w> <w lemma="εἰμί">ἐστιν</w> <persName type="attested"><name nymRef="#Αἰμίλιος">Αἰμιλίου</name>  <name nymRef="#Ἀριστέας">Ἀ<unclear reason="damage">ρ</unclear>ιστέου</name></persName>  <g ref="#stop"/> <w lemma="παραχωρέω">παρακεχωρημένη</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="ὑπό">ὑπὸ</w> <persName type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλαβ</abbr><ex>ίων</ex></expan></name>  <name nymRef="#Ἀντώνιος"><expan><abbr>Ἀν<unclear reason="damage">τ</unclear>ων</abbr><ex>ίων</ex></expan></name>  <name nymRef="#Πυθέας">Πυθέου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Διογένης">Διογένους</name></persName> <w lemma="υἱός">υἱῶν</w> <lb n="2"/><persName type="attested"><name nymRef="#Ἀπολλώνιος ">Ἀπολλω<supplied reason="lost">ν</supplied>ίου</name></persName> <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τοῦ</w> <w lemma="χρεωφυλάκιον">χρεοφυλακίου</w> <w lemma="ἐπί">ἐπὶ</w> <persName type="attested"><name nymRef="#Διογένης">Διογένους</name>  <name nymRef="#Δομετῖνος">Δομετείνου</name></persName> <w lemma="καί">καὶ</w> <w lemma="μείς">μηνὸς</w> <rs type="month"><w lemma="Γορπιαῖος">Γορ<lb n="3" break="no"/>πιαίου</w></rs>  <space extent="1" unit="character" dim="horizontal"/> <w lemma="ἐν">ἐν</w> <w lemma="ὅς">ᾗ</w> <w lemma="σορός">σορῷ</w> <w lemma="θάπτω">τεθά<lb n="4" break="no"/>πται</w>  <persName type="attested"><name nymRef="#Καρμινία">Καρμινία</name>  <name nymRef="#Φιλημάτιον">Φιλημάτιον</name></persName>  <lb n="5"/> <w lemma="ὁ">ἡ</w> <w lemma="γυνή">γυνὴ</w> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀριστέας">Ἀριστέου</name></persName>  <w lemma="ἐνθάπτω">ἐν<lb n="6" break="no"/>ταφήσεται</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <persName type="attested"><name nymRef="#Ἀριστέας">Ἀρισ<lb n="7" break="no"/>τέας</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Αὐρηλία"><expan><abbr>Αὐρ</abbr><ex>ηλία</ex></expan></name>  <name nymRef="#Ἰασόνη">Ἰασόνη</name></persName>  <w lemma="ἕτερος">ἕτε<lb n="8" break="no"/>ρος</w> <w lemma="δέ">δὲ</w> <w lemma="οὐ">οὐχ</w> <w lemma="ἔχω">ἕξει</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <lb n="9"/> <w lemma="οὔτε">οὔτε</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <w lemma="οὔτε">οὔτε</w> <w lemma="ἐκθάπτω">ἐκθά<lb n="10" break="no"/>ψαι</w> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="παρά">παρὰ</w> <w lemma="οὗτος">ταῦτά</w> <w lemma="τις">τι</w> <lb n="11"/> <w lemma="ποιέω">ποιήσας</w> <w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσεβὴς</w> <lb n="12"/> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσ<lb n="13" break="no"/>αποτεισάτω</w> <w lemma="θεά">θεᾷ</w> <persName type="divine"><name nymRef="#Ἀφροδίτη">Ἀφρο<lb n="14" break="no"/>δείτῃ</name></persName> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="2500">ΒΦ</num> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος">τρίτον</w> <lb n="15"/> <w lemma="εἰμί">ἔστω</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐγδικήσαντος</w><lb n="16"/> <w lemma="οὗτος">τούτου</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="ἀποτίθημι">ἀ  <lb n="17" break="no"/>πετέθη</w> <w lemma="καί">καὶ</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυ<lb n="18" break="no"/>λάκιον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφανηφόρου</w> <w lemma="ὁ">το</w> <num value="7">ζ</num>  <lb n="19"/><rs type="office" key="stephanephoros"><persName type="attested"><name nymRef="#Διογένης">Διογένους</name>  <name nymRef="#Δομετῖνος">Δομετείνου</name></persName></rs> <w lemma="μείς">μηνὸς</w> <lb n="20"/>  <space extent="3" unit="character" dim="horizontal"/>  <rs type="month"><w lemma="Κλαυδιῆος">Κλαυδιήου</w></rs>    <space extent="3" unit="character" dim="horizontal"/>  </ab>
+</div>
+         <div type="apparatus">
+            <p>l. 2, <foreign xml:lang="grc">Ἀπολλ<supplied reason="lost">ω</supplied>νίου</foreign>, SEG wrongly</p>
+            <p>l. 6, <foreign xml:lang="grc">Ἀριστ</foreign>, SEG wrongly.</p>
+         </div>
+         <div type="translation">
+            <p>The sarcophagus is the property of Aemilius Aristeas, ceded to him by Flavius Antonius Pytheas and Flavius Antonius Diogenes, sons of Apollonios the high-priest, a transaction registered in the civic archive in the year of Diogenes Dometinos, month Gorpiaios. In this sarcophagus Carminia Philemation wife of Aristeas has been buried, and Aristeas and Aurelia Iasone will be buried; but no-one else shall have the right to place (a body) in it or to remove (a body) from it, since whoever acts in any way contrary to these provisions is to be (considered) sacrilegious and accursed and furthermore is to pay to the goddess Aphrodite 2500 denarii, of which one third is to belong to the prosecutor. A copy of this (text) was also deposited in the civic archive in the seventh stephanephorate of Diogenes Dometinos, in the month Claudieios.</p>
+         </div>
+         <div type="commentary">
+            <p>There is no indication that Aristeas owned more than the sarcophagus, which may, therefore, have been located in a funerary area which did not belong to him (see Introduction). The comparatively small funerary fine would accord with this.</p>
+            <p>The sarcophagus was not bought by Aristeas from the workshop, but was ceded to him by its previous owners. Since it was damaged when the inscription was cut, it may be that the previous owners had let him have it (?cheaply) for that reason; but it is also possible that the damage was done when it was moved from its original position, or in the course of adaptation for its new owner, or at the funeral of Carminia Philemation.The year of registration of the two documents is, no doubt, the same; Gorpiaos, the month of the first was the eleventh month of the year, Claudieos, the month of the second should then be the twelfth; so one month (or less) intervened between the two.</p>
+            <p>Of the persons mentioned</p>
+            <p>1. Pytheas and Diogenes, being sons of a high-priest at Aphrodisias (the chief-priest of the imperial cult for a year), were members of the élite class, as is suggested by their Roman nomina, which indicate that the family had received Roman citizenship already in the first century A.D., when it was rare in the city.</p>
+            <p>2. Aristeas bears a personal name which appears in the élite nomenclature of the city, and his nomen again suggests a family enfranchised in the first or second centuries. His wife has the nomen of a family (belonging to the city of Attouda as well as to Aphrodisias), which actually achieved Roman senatorial rank in the later second century (c.f. also on no. 175). That Aristeas and Philemation are not themselves grandees, however, is clear from the comparative modesty of their funerary property. They were perhaps of a dependent family, possibly derived from freed slaves of élite families. It should be remembered, however, that although the sarcophagus was acquired second-hand, Aristeas spent good money on remodelling its decoration.</p>
+            <p>3. Aurelia Iasone's connection with the owner is not explained.</p>
+            <p>4. Diogenes Dometinos, stephanephoros for the seventh time, is known from a number of other inscriptions of this type, and is almost certainly to be identified with the L. Antonius Claudius Diogenes Dometinos, an eminent figure in the city in the second to early third century. If this inscription is rightly dated it shows him to have held post-mortem stephanephorates, no doubt in virtue of a fund for the purpose bequeathed by his will.</p>
+         </div>
+         <div type="bibliography">
+            <p>Published by <bibl>C. P. Jones and R. R. R. Smith, 'Two inscribed monuments of Aphrodisias', Arch. Anz. (1994), 455-72, 461-72</bibl>, whence <bibl n="be">BullEp <citedRange>1995.514</citedRange>
+               </bibl>, <bibl n="seg">SEG <citedRange>1994.866</citedRange>
+               </bibl>; by <bibl n="jmr2003">Reynolds and Isik, no. <citedRange>6</citedRange>
+               </bibl>
+            </p>
+         </div>
+      </body>
+   </text>
+</TEI>

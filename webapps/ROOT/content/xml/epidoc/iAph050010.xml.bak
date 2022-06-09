@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>i. Honours for Marcus Antonius Popillius Andronikos; ii. Fl. Photios gives a <objectType>gameboard</objectType>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="MB" role="encoding">Michele Butini</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050010</idno>
+            <idno type="IAph2007">iAph050010</idno>
+            <idno type="JMR2004">iAph0068</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A rectangular <material key="marmor">white marble</material>
+                              <objectType>statue base</objectType> shaft (<width unit="metre">0.57</width> × <height unit="metre">1.20</height> × <depth unit="metre">0.55</depth>) with panels within moulded edges on all four sides; the upper left corner of face i., including most of text ii., has been broken off, but survives.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i. <rs type="execution" ref="scalpro">Inscribed</rs> on the front panel; the text must have begun on a crowning feature now lost. ii. On the opposite face, upside down to i., is a gameboard (type 3Rows.4, <height unit="metre">0.47</height>  × <width unit="metre">0.97</width>, carefully cut, with circles <dim type="diameter">0.03</dim>, central <rs type="decoration">rosette</rs>s in circles <dim type="diameter">0.085</dim>); the text is on the lower moulding, which is now broken away.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. <height unit="metre">0.025</height>. Ligatures: l. 1,  <foreign xml:lang="grc">ΝΤ</foreign>; l.9, <foreign xml:lang="grc">ΝΚ</foreign>; l. 12,  <foreign xml:lang="grc">ΗΝ</foreign>; l. 14,  <foreign xml:lang="grc">ΤΗ</foreign>; l. 16,  <foreign xml:lang="grc">ΗΝ</foreign>; the final letters of ll. 4, 8 are cut on the moulding. ii. Av. <height unit="metre">0.025</height>, 0, <height unit="metre">0.005</height>, first 1, <height unit="metre">0.027</height>; irregular; scroll and letter above line for abbreviations.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList" key="HadrBath" cert="low">Hadrianic Baths</rs>.</origPlace>
+                     <origDate notBefore="0468"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering titulature">i. Probably       late second to third centuries A.D. (<rs type="criteria">lettering</rs>); ii. Late fifth/sixth century (<rs type="criteria">titulature</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList" key="HadrBath">Hadrianic Baths</rs>: at the northern entrance; 'Thermes, porte d'accès côté du Temple.  Dégagé par les travaux' (Reinach)</provenance>
+                  <provenance type="observed" when="1993">Museum (1993)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds, Roueché); Gaudin's squeeze; publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-19" who="#MB">Tagged LGPN ids, added auth list refs</change>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-11" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-06-06" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-01-28" who="#CMR">tidied; image refs</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-08-23" who="#CMR">tagged and corrected</change>
+         <change when="2003-07-17" who="Juan-Garcés">lemmatised</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="80_G_11.jpg">
+            <desc> Face i. (1980)</desc>
+         </graphic>
+         <graphic url="80_G_27.jpg">
+            <desc>Face i. (1980)</desc>
+         </graphic>
+         <graphic url="NY_93_76_01.jpg">
+            <desc>Face i (1993)</desc>
+         </graphic>
+         <graphic url="91_E_14A.jpg">
+            <desc>Face ii. main block (1991)</desc>
+         </graphic>
+         <graphic url="77_U_15.jpg">
+            <desc>Face ii. fragment (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+		<div n="i" type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/><lb n="1"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-1802 http://www.lgpn.ox.ac.uk/id/V5b-13420"><name nymRef="#Μᾶρκος">Μᾶρκον</name>  <name nymRef="#Ἀντώνιος">Ἀντώνι<lb n="2" break="no"/>ον</name>  <name nymRef="#Ποπίλλιος">Ποπίλλιον</name>  <lb n="3"/><persName nymRef="#Ἀγέλαος" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-1079"><name nymRef="#Ἀγέλαος">Ἀγελάου</name></persName>  <w lemma="ἀρχιερεύς">ἀρχιε<lb n="4" break="no"/>ρέως</w> <w lemma="υἱός">υἱὸν</w>  <name nymRef="#Ἀνδρόνεικος">Ἀνδρό<lb n="5" break="no"/>νεικον</name>  <name nymRef="#Φλαβιανός">Φλαβια<lb n="6" break="no"/>  νόν</name></persName>  <w lemma="ἔγγονος">ἔγγονον</w>  <lb n="7"/><placeName nymRef="#Ἀσία">Ἀσίας</placeName>  <w lemma="ἀρχιερεύς">ἀρχιερέ<lb n="8" break="no"/>ων</w>  <w lemma="καί">καὶ</w>  <w lemma="ἀρχιερεύς">ἀρχιερέων</w>  <lb n="9"/><w lemma="ἀνεψιός">ἀνεψιὸν</w>  <w lemma="συνκλητικός">συνκλη<lb n="10" break="no"/>τικῶν</w>  <w lemma="καί">καὶ</w>  <w lemma="ὑπατικός">ὑπατι<lb n="11" break="no"/>κῶν</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">τῶν</w>  <w lemma="συγκτίζω">συν<lb n="12" break="no"/>κτισάντων</w>  <w lemma="ὁ">τὴν</w>  <lb n="13"/><w lemma="πόλις">πόλιν</w>  <w lemma="ὁ">τὸν</w>  <w lemma="ἀρχινεωποιός">ἀρχι<lb n="14" break="no"/>νεωποιὸν</w> <w lemma="ὁ">τῆς</w>    <w lemma="θεός">θε<lb n="15" break="no"/>οῦ</w>  <persName type="divine" ref="divine.xml#aphrodite"><name nymRef="#Ἀφροδίτη">Ἀφροδείτης</name></persName>  <lb n="16"/><w lemma="καί">καὶ</w>  <w lemma="εὐεργέτης">εὐεργέτην</w></ab></div><div n="ii" type="textpart" subtype="section"><ab>
+		<lb n="1"/><g ref="#cross"/> <w lemma="ἐπί">ἐπὶ</w> <rs type="profession" key="scholasticus"><persName key="photius1" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-13472"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αβίου</ex></expan></name> <name nymRef="#Φώτιος">Φωτίου</name></persName> <w lemma="σχολαστικός"><expan><abbr>σχο</abbr><ex>λαστικοῦ</ex></expan></w></rs> <g ref="#cross"/>
+		</ab></div>
+      </div>
+         <div type="apparatus">
+            <p>ii. l. 1, The first cross, which is very abraded, was not read by Reinach.</p>
+         </div>
+         <div type="translation">
+            <p>i. <supplied reason="lost" cert="low">The city honoured</supplied> Marcus Antonius Popillius Andronikos Flavianos, son of Agelaos the high priest, descendant of high priests of Asia and of high priests <supplied reason="explanation">at Aphrodisias</supplied>, cousin of senators and consulars, and <supplied reason="explanation">descendant</supplied> of those who joined in the foundation of the city, the chief of the temple-builders of the goddess Aphrodite and a benefactor.</p>
+            <ab>ii. Under Flavius Photios, <term xml:lang="la">scholasticus</term>.</ab>
+         </div>
+         <div type="commentary">
+            <p>i. The honouring body or bodies were presumably named on a base capital.</p>
+            <p>ii. This is the first of the gameboards given by Flavius Photios; see <ref type="inscription" n="69" target="iAph050014"/>, <ref type="inscription" n="238" target="iAph050015"/>, and discussion at <ref type="eAla-text" n="V.44" target=".xml"/> and <ref type="eAla-text" n="V.47" target=".xml"/>.</p>
+         </div>
+         <div type="bibliography">
+            <p>i. Published from Gaudin's squeeze by <bibl type="primary" n="reinach">
+                  <author>Reinach</author>, <citedRange>71</citedRange>
+               </bibl>, whence <bibl><ptr target="phi"/>
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="256949">71</citedRange>
+               </bibl>; cited from Reinach by <bibl>Oikonomos, <title level="j">Arch Delt</title> 1921/22, 294</bibl>. ii. Published by <bibl type="hbi" n="reinach">
+                  <author>Reinach</author>, no. <citedRange>213</citedRange>
+               </bibl>, from Gaudin, whence <bibl><ptr target="igc"/>
+                  <author>Grégoire</author>, <title level="m">IGC</title>
+                  <citedRange>264</citedRange>
+               </bibl>; cited by <bibl type="hbi" n="cmr1979">
+                  <author>Roueché</author> (<date>1979</date>), 176, <foreign xml:lang="la">ad</foreign> no. <citedRange>1</citedRange>
+               </bibl>, whence <bibl n="seg">
+                  <title level="s">SEG</title>
+                  <citedRange>1979.1071</citedRange>
+               </bibl>, <bibl n="be">
+                  <title level="j">BE</title>
+                  <citedRange>1980.473</citedRange>
+               </bibl>; published by <bibl type="hbi" n="ALA">
+                  <author>Roueché</author>, <title level="m">Aphrodisias in Late Antiquity</title> no. <citedRange>68</citedRange> and plate xvii</bibl>, whence <bibl><ptr target="phi"/>
+                  <author>McCabe</author>
+                  <title level="m">PHI Aphrodisias</title>
+                  <citedRange n="257504">622</citedRange>
+               </bibl>; republished by <bibl type="hbi" n="cmr2004">
+                  <author>Roueché </author>, <title level="m">Gameboards</title>, no. <citedRange>2.i</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>
