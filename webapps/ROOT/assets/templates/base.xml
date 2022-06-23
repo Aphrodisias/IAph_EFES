@@ -19,7 +19,7 @@
           <meta content="width=device-width" name="viewport" />
           <meta content="IE=edge,chrome=IE8" http-equiv="X-UA-Compatible" />
           <title>
-            <kiln:block name="title">EFES: </kiln:block>
+            <kiln:block name="title">IAph: </kiln:block>
           </title>
           <kiln:block name="css">
             <link href="{$kiln:assets-path}/foundation/css/normalize.css"
@@ -31,10 +31,16 @@
             <link href="{$kiln:assets-path}/styles/site.css" rel="stylesheet"
                   type="text/css" />
             <link href="{$kiln:assets-path}/images/favicon.png" rel="shortcut icon" type="image/png"/>
+          <!-- <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" rel="stylesheet" type="text/css" />
+            <link href="{$kiln:assets-path}/styles/Control.Geocoder.css" rel="stylesheet" type="text/css" />
+            <link href="{$kiln:assets-path}/styles/leaflet.fullscreen.css" rel="stylesheet" type="text/css" />-->
           </kiln:block>
           <kiln:block name="js">
             <script src="{$kiln:assets-path}/foundation/js/vendor/custom.modernizr.js">&#160;</script>
             <script src="{$kiln:assets-path}/scripts/cookieinfo.min.js" type="text/javascript" id="cookieinfo"></script>
+          <!-- <script src="{$kiln:assets-path}/foundation/js/vendor/jquery.js"></script>
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+            <script src="{$kiln:assets-path}/scripts/leaflet-providers.js"></script> -->
           </kiln:block>
           <kiln:block name="head-extra"></kiln:block>
         </head>
@@ -42,11 +48,14 @@
       <kiln:block name="body">
         <body>
           <kiln:block name="navigation">
+            <div id="site-heading">
+              <h1 id="site-title">Inscriptions of Aphrodisias 2025</h1>
+            </div>
             <nav class="top-bar">
               <kiln:block name="main-navigation">
                 <ul class="title-area">
                   <li class="name">
-                    <h1><a href="{kiln:url-for-match('local-language-home-page', ($language), 0)}">EFES</a></h1>
+                    <h1><a href="{kiln:url-for-match('local-language-home-page', ($language), 0)}">Home</a></h1>
                   </li>
                   <li class="toggle-topbar menu-icon">
                     <a href="#"><span>Menu</span></a>
@@ -85,8 +94,7 @@
           </kiln:block>
           <kiln:block name="footer">
             <footer>
-              <p>Powered by <a href="http://kcl-ddh.github.io/kiln/">Kiln</a></p>
-              <p>Theme by <a href="http://foundation.zurb.com/">Foundation</a></p>
+              <p>Powered by <a href="http://kcl-ddh.github.io/kiln/">Kiln</a>/<a href="https://github.com/EpiDoc/EFES">EFES</a>. Theme by <a href="http://foundation.zurb.com/">Foundation</a>.</p>
             </footer>
           </kiln:block>
           <kiln:block name="end-js">
