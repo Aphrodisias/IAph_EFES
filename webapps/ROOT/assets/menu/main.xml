@@ -2,6 +2,12 @@
 <?oxygen RNGSchema="../schema/menu/menu.rng" type="xml"?>
 <root xmlns="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
       xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+  <menu label="About" match="local-home-page">
+    <item label="About" match="local-tei-display-html" params="about"/>
+    <item label="The team" match="local-tei-display-html" params="team"/>
+    <item label="Sponsors" match="local-tei-display-html" params="sponsors"/>
+    <item label="Contact" match="local-tei-display-html" params="contact"/>
+  </menu>
   <menu label="Inscriptions" match="local-epidoc-index-display"
         i18n:key="menu-inscriptions" />
   <menu label="Indices" match="local-indices-type-display" params="epidoc" i18n:key="menu-indices">

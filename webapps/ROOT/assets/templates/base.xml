@@ -55,7 +55,7 @@
               <kiln:block name="main-navigation">
                 <ul class="title-area">
                   <li class="name">
-                    <h1><a href="{kiln:url-for-match('local-language-home-page', ($language), 0)}">Home</a></h1>
+                    <h1 id="home"><a href="{kiln:url-for-match('local-language-home-page', ($language), 0)}">Home</a></h1>
                   </li>
                   <li class="toggle-topbar menu-icon">
                     <a href="#"><span>Menu</span></a>
@@ -66,14 +66,13 @@
                     <xsl:apply-templates mode="main-menu"
                                          select="/aggregation/kiln:nav" />
                   </ul>
-                  <ul class="right">
+                  <!--<ul class="right">
                     <li class="has-form search">
                       <form action="{kiln:url-for-match('local-search', ($language), 0)}" method="get">
-                        <input name="q" placeholder="Search"
-                               required="required" type="search" />
+                        <input name="q" placeholder="Search" required="required" type="search" />
                       </form>
                     </li>
-                  </ul>
+                  </ul>-->
                 </section>
               </kiln:block>
             </nav>
