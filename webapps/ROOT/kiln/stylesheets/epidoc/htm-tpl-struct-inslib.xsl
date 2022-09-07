@@ -95,7 +95,14 @@
             <p><b>Findspot: </b>
               <xsl:choose>
                 <xsl:when test="//t:provenance[@type='found'][string(translate(normalize-space(.),' ',''))]">
-                  <xsl:apply-templates select="//t:provenance[@type='found']//t:p/node()" mode="inslib-placename"/>
+                  <xsl:choose>
+                    <xsl:when test="//t:provenance[@type='found']//t:p">
+                      <xsl:apply-templates select="//t:provenance[@type='found']//t:p/node()" mode="inslib-placename"/> 
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:apply-templates select="//t:provenance[@type='found']" mode="inslib-placename"/>
+                    </xsl:otherwise>
+                  </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>Unknown</xsl:otherwise>
               </xsl:choose>
@@ -578,8 +585,8 @@
     <xsl:if test="doc-available(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/lists/all_inscriptions.xml')) = fn:true()">
       <xsl:variable name="list" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/lists/all_inscriptions.xml'))//t:list"/>
       <xsl:variable name="filename"><xsl:value-of select="lower-case(string(//t:idno[@type='filename'][1]))"/></xsl:variable>
-      <xsl:variable name="prev" select="$list/t:item[substring-before(lower-case(@n),'.xml')=$filename]/preceding-sibling::t:item[1]/substring-before(@n,'.xml')"/>
-      <xsl:variable name="next" select="$list/t:item[substring-before(lower-case(@n),'.xml')=$filename]/following-sibling::t:item[1]/substring-before(@n,'.xml')"/>
+      <xsl:variable name="prev" select="$list/t:item[substring-before(lower-case(@n),'.xml')=$filename][1]/preceding-sibling::t:item[1]/substring-before(@n,'.xml')"/>
+      <xsl:variable name="next" select="$list/t:item[substring-before(lower-case(@n),'.xml')=$filename][1]/following-sibling::t:item[1]/substring-before(@n,'.xml')"/>
       
       <div class="row">
         <div class="large-12 columns">
