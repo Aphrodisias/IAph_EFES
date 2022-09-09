@@ -1,91 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160873">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType" reg="honours">Honours</rs>  for anonymous</title>
-  <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc>
-<p>Unpublished inscription.  This version born digital</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2006-12-11</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-  
-  <change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Rectangular<rs type="material">  white marble</rs> <rs type="objectType">statue base</rs> shaft with moulded panels on three sides (<measure type="length" unit="metre" dim="width">0.48</measure>   × <measure type="length" unit="metre" dim="height">1.07</measure>   × <measure type="length" unit="metre" dim="depth">0.415</measure>) , clamp hole on top.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on central panel and (l.1) on moulding above; broken at upper right corner. Lines 8, 10, 15 and 26 run onto right moulding.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>l.1, <measure type="length" unit="metre" dim="height">0.028</measure>; l.2, <measure type="length" unit="metre" dim="height">0.024</measure>; l.3ff, <measure type="length" unit="metre" dim="height">0.022</measure>. Ligatures: l.3, <foreign lang="grc">ΤΗ</foreign>; l.4, <foreign lang="grc">ΗΝ</foreign>; l.5, <foreign lang="grc">ΗΝ</foreign>, <foreign lang="grc">ΝΤ</foreign>; l.6, <foreign lang="grc">ΝΕ</foreign>, <foreign lang="grc">ΤΗ</foreign>; l.7, <foreign lang="grc">ΤΗ</foreign>, <foreign lang="grc">ΝΕ</foreign>; l.9, <foreign lang="grc">ΤΗΝ</foreign>; l.15, <foreign lang="grc">ΝΤΗ</foreign>; l.21, <foreign lang="grc">ΗΝ</foreign>; l.25, <foreign lang="grc">ΜΕ</foreign>;, l.26, <foreign lang="grc">ΜΕ</foreign>; Abbreviations: horizontal over Μ in l.24.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0201" exact="none">Third century A.D.</date>
-(<rs type="criteria">lettering</rs>, <rs type="criteria">prosopography</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>οσ<unclear reason="damage">ε</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><w lemma="προνοέομαι">προνοησ<unclear reason="damage">α</unclear><supplied reason="lost" cert="low">μένου</supplied></w>  <lb n="3"/> <w lemma="ὁ">τῆς</w> <w lemma="ἀνάστασις">ἀναστά<supplied reason="lost">σεως</supplied></w>  <lb n="4"/><persName type="aphrodisian"><name reg="Οὔλπιος"><expan><abbr>Οὐλ</abbr><supplied reason="abbreviation">πίου</supplied></expan></name> <name reg="Ζήνων">Ζήνωνος</name></persName> <w lemma="ὁ"><supplied reason="lost" cert="low">τοῦ</supplied></w>  <lb n="5"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Ζηνᾶς">Ζηνᾶ</name></persName> <w>ἀντιπ<unclear reason="damage">ρ</unclear><supplied reason="lost">ω</supplied>  <lb type="worddiv" n="6"/>τονεοποιοῦ</w> <w lemma="ὁ">τῆς</w> <lb n="7"/> <w>τρίτης</w> <w>νεοποιίας</w> <lb n="8"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name>Ποσειδωνίου</name></persName> <lb n="9"/> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὴν</w> <persName type="aphrodisian"><name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name> <name reg="Ἀπολλώνιος ">Ἀπολ<lb type="worddiv" n="10"/>λωνίου</name>  <name>Μαρκιανοῦ</name></persName> <lb n="11"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίας</supplied></expan></name> <name>Σελευκεί <lb type="worddiv" n="12"/>ας</name> <name>Τιβερείνης</name></persName> <lb n="13"/> <placeName>Ἀσίας</placeName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρίς">πα<lb type="worddiv" n="14"/>τρίδος</w> <w>ἀρχιερεί<lb type="worddiv" n="15"/>ας</w>  <w lemma="ὁ">τῶν</w> <w>ἱερέων</w> <lb n="16"/> <w lemma="ὁ">τῆς</w> <w lemma="θεός">θεοῦ</w> <w>βούλησιν</w> <lb n="17"/> <w>καθὰ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <lb n="18"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w>ἐπε<lb type="worddiv" n="19"/>κύρωσαν</w> <w lemma="καί">καὶ</w> <w>νε<lb type="worddiv" n="20"/>οποιῶν</w> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name>  <lb n="21"/> <name reg="Ζηνόβιος">Ζηνοβίου</name> <num value="5">ε</num> <persName type="aphrodisian"><name reg="Ἐπαφρόδειτος">Ἐπα<lb type="worddiv" n="22"/>φροδείτου</name></persName></persName> <w lemma="καί">καὶ</w>  <lb n="23"/> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name> <name reg="Κράτερος">Κρατέρου</name> <num value="5">ε</num> <lb n="24"/> <persName type="aphrodisian"><name reg="Ἀθηναγόρας">Ἀθηναγόρου</name></persName></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <lb n="25"/><name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name>  <name reg="Ἀντώνιος"><expan><abbr>Ἀν</abbr><supplied reason="abbreviation">τωνίου</supplied></expan></name> <name reg="Μενεσθεύς">Μενεσθέως</name> <lb n="26"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Μένανδρος">Μενάνδρου</name></persName></persName> <w lemma="καί">καὶ</w> <lb n="27"/> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">άρκου</supplied></expan></name> <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name> <name reg="Ἐπίγονος">Ἐπιγόνου</name> <num value="2">β</num> <lb n="28"/><space extent="1" unit="character" dim="horizontal"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name></persName></persName> <lb n="28a"/><space dim="vertical" unit="line"/></ab>
-</div>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours  for anonymous</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160873</idno>
+            <idno type="IAph2007">iAph160873</idno>
+            <idno type="JMR2004">873</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>77.124</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Rectangular<material>  white marble</material>
+                              <objectType>statue base</objectType> shaft with moulded panels on three sides (<width unit="metre">0.48</width>   × <height unit="metre">1.07</height>   × <depth unit="metre">0.415</depth>) , clamp hole on top.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on central panel and (l.1) on moulding above; broken at upper right corner. Lines 8, 10, 15 and 26 run onto right moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>l.1, <height unit="metre">0.028</height>; l.2, <height unit="metre">0.024</height>; l.3ff, <height unit="metre">0.022</height>. Ligatures: l.3, <foreign xml:lang="grc">ΤΗ</foreign>; l.4, <foreign xml:lang="grc">ΗΝ</foreign>; l.5, <foreign xml:lang="grc">ΗΝ</foreign>, <foreign xml:lang="grc">ΝΤ</foreign>; l.6, <foreign xml:lang="grc">ΝΕ</foreign>, <foreign xml:lang="grc">ΤΗ</foreign>; l.7, <foreign xml:lang="grc">ΤΗ</foreign>, <foreign xml:lang="grc">ΝΕ</foreign>; l.9, <foreign xml:lang="grc">ΤΗΝ</foreign>; l.15, <foreign xml:lang="grc">ΝΤΗ</foreign>; l.21, <foreign xml:lang="grc">ΗΝ</foreign>; l.25, <foreign xml:lang="grc">ΜΕ</foreign>;, l.26, <foreign xml:lang="grc">ΜΕ</foreign>; Abbreviations: horizontal over Μ in l.24.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering prosopography">
+Third century A.D.
+(<rs type="criteria">lettering</rs>, <rs type="criteria">prosopography</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">South Agora, Agora Gate</rs>, Trench 5</provenance>
+                  <provenance type="observed" when="1978">Museum (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2006-12-11" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_A_01.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+         <graphic url="HUMS003755.jpg">
+            <desc>Face (2001)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation" n="notyet">
-<head>Translation</head>
-<p>[[ ...]]</p>
+<ab><lb n="1"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>οσ<unclear reason="damage">ε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><w lemma="προνοέομαι">προνοησ<unclear reason="damage">α</unclear><supplied reason="lost" cert="low">μένου</supplied></w>  <lb n="3"/> <w lemma="ὁ">τῆς</w> <w lemma="ἀνάστασις">ἀναστά<supplied reason="lost">σεως</supplied></w>  <lb n="4"/><persName type="attested"><name nymRef="#Οὔλπιος"><expan><abbr>Οὐλ</abbr><ex>πίου</ex></expan></name> <name nymRef="#Ζήνων">Ζήνωνος</name></persName> <w lemma="ὁ"><supplied reason="lost" cert="low">τοῦ</supplied></w>  <lb n="5"/> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ζηνᾶς">Ζηνᾶ</name></persName> <w>ἀντιπ<unclear reason="damage">ρ</unclear><supplied reason="lost">ω</supplied>  <lb n="6" break="no"/>τονεοποιοῦ</w> <w lemma="ὁ">τῆς</w> <lb n="7"/> <w>τρίτης</w> <w>νεοποιίας</w> <lb n="8"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name>Ποσειδωνίου</name></persName> <lb n="9"/> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὴν</w> <persName type="attested"><name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name> <name nymRef="#Ἀπολλώνιος ">Ἀπολ<lb n="10" break="no"/>λωνίου</name>  <name>Μαρκιανοῦ</name></persName> <lb n="11"/> <w lemma="καί">καὶ</w> <persName type="attested"><name><expan><abbr>Κλ</abbr><ex>αυδίας</ex></expan></name> <name>Σελευκεί <lb n="12" break="no"/>ας</name> <name>Τιβερείνης</name></persName> <lb n="13"/> <placeName>Ἀσίας</placeName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρίς">πα<lb n="14" break="no"/>τρίδος</w> <w>ἀρχιερεί<lb n="15" break="no"/>ας</w>  <w lemma="ὁ">τῶν</w> <w>ἱερέων</w> <lb n="16"/> <w lemma="ὁ">τῆς</w> <w lemma="θεός">θεοῦ</w> <w>βούλησιν</w> <lb n="17"/> <w>καθὰ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <lb n="18"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w>ἐπε<lb n="19" break="no"/>κύρωσαν</w> <w lemma="καί">καὶ</w> <w>νε<lb n="20" break="no"/>οποιῶν</w> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name>  <lb n="21"/> <name nymRef="#Ζηνόβιος">Ζηνοβίου</name> <num value="5">ε</num> <persName type="attested"><name nymRef="#Ἐπαφρόδειτος">Ἐπα<lb n="22" break="no"/>φροδείτου</name></persName></persName> <w lemma="καί">καὶ</w>  <lb n="23"/> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name> <name nymRef="#Κράτερος">Κρατέρου</name> <num value="5">ε</num> <lb n="24"/> <persName type="attested"><name nymRef="#Ἀθηναγόρας">Ἀθηναγόρου</name></persName></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <lb n="25"/><name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name>  <name nymRef="#Ἀντώνιος"><expan><abbr>Ἀν</abbr><ex>τωνίου</ex></expan></name> <name nymRef="#Μενεσθεύς">Μενεσθέως</name> <lb n="26"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μένανδρος">Μενάνδρου</name></persName></persName> <w lemma="καί">καὶ</w> <lb n="27"/> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name> <name nymRef="#Ἐπίγονος">Ἐπιγόνου</name> <num value="2">β</num> <lb n="28"/><space extent="1" unit="character"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name></persName></persName> <lb n="28a"/><space unit="line" quantity="1"/></ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The father of Zenobios (l. 21) appears in <xref type="iAph">1901</xref> (=Walls 9), under Septimius Severus.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">South Agora, Agora Gate</rs>, Trench 5</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1978)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1977 (<rs type="invNo">77.124</rs>)</p>
-</div>
-<div type="bibliography" n="none"> <head>Bibliography</head> <p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_A_01"><figDesc>Face (1978)</figDesc></figure><figure href="HUMS003755"><figDesc>Face (2001)</figDesc></figure></p><p>Squeeze in Cambridge.</p>
-</div></body></text>
+         <div type="translation" n="notyet">
+            <p>[[ ...]]</p>
+         </div>
+         <div type="commentary">
+            <p>The father of Zenobios (l. 21) appears in <ref type="iAph" target="">1901</ref> (=Walls 9), under Septimius Severus.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

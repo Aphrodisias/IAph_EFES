@@ -1,87 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161200">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType" reg="statue dedication">Dedication</rs>  of a <seg cert="low">caryatid</seg>, by Ulpia Apollonia.</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><date>2007</date><availability status="unknown"><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></availability></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedication  of a <seg cert="low">caryatid</seg>, by Ulpia Apollonia.</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161200</idno>
+            <idno type="IAph2007">iAph161200</idno>
+            <idno type="JMR2004">1200</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>84.55</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>statue base</objectType> with simple moulding above on three sides (<width unit="metre">0.61</width> × <height unit="metre">0.50</height> × <depth unit="metre">0.51</depth>), broken away below; there is a rectangular hole in the top.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on upper moulding, which is chipped (l. 1), on lower moulding (l.2) and on face, which is damaged.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.045</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Hadrianic Baths</rs>: ?Caryatid portico</origPlace>
+                     <origDate notBefore="0151"
+                               notAfter="0200"
+                               evidence="lettering monument group prosopography">
+Second half of second century A.D.
+(<rs type="criteria">lettering</rs>, <rs type="criteria">monument group</rs>, <rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">South Agora</rs>: Portico of Tiberius: 'P. of T. SW.'</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-24" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="85_H_24A.jpg">
+            <desc>Face (1985)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">statue base</rs> with simple moulding above on three sides (<measure type="length" unit="metre" dim="width">0.61</measure> × <measure type="length" unit="metre" dim="height">0.50</measure> × <measure type="length" unit="metre" dim="depth">0.51</measure>), broken away below; there is a rectangular hole in the top.</p>
+<ab><lb n="1"/>  <persName type="attested"><name nymRef="#Οὐλπία">Οὐλπία</name>  <persName type="attested"><name nymRef="#Ἀπολλώνιος">Ἀπολλων<supplied reason="lost">ί</supplied><lb n="2" break="no"/>ου</name></persName>  <w>πρειμοπειλαρί<lb n="3" break="no"/>ου</w> <w lemma="καί">καὶ</w> <w>ἀπο</w> <w>στρα<lb n="4" break="no"/>τοπεδαρχίας</w>  <lb n="5"/><w><unclear reason="damage">θυγ</unclear>ατὴρ</w>  <name nymRef="#Ἀπολλωνία">Ἀπολ<lb n="6" break="no"/>  λωνία</name></persName> <w lemma="ὁ">τῇ</w> <w>Πα<lb n="7" break="no"/><g ref="#scroll"/>τρίδι</w>    <g ref="#scroll"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on upper moulding, which is chipped (l. 1), on lower moulding (l.2) and on face, which is damaged.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.045</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0151" notAfter="0200">Second half of second century A.D.</date>
-(<rs type="criteria">lettering</rs>, <rs type="criteria">monument group</rs>, <rs type="criteria">prosopography</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="aphrodisian"><name reg="Οὐλπία">Οὐλπία</name>  <persName type="aphrodisian"><name reg="Ἀπολλώνιος">Ἀπολλων<supplied reason="lost">ί</supplied><lb n="2" type="worddiv"/>ου</name></persName>  <w>πρειμοπειλαρί<lb n="3" type="worddiv"/>ου</w> <w lemma="καί">καὶ</w> <w>ἀπο</w> <w>στρα<lb n="4" type="worddiv"/>τοπεδαρχίας</w>  <lb n="5"/><w><unclear reason="damage">θυγ</unclear>ατὴρ</w>  <name reg="Ἀπολλωνία">Ἀπολ<lb n="6" type="worddiv"/>  λωνία</name></persName> <w lemma="ὁ">τῇ</w> <w>Πα<lb n="7" type="worddiv"/><g type="scroll"/>τρίδι</w>    <g type="scroll"/>  </ab>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p>Ulpia Apollonia, daughter of Apollonios, <term lang="la">primipilarius</term>, and former camp prefect, to her homeland</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of the series of dedications from the East Court of the Hadrianic Baths: <xref type="iAph">1184</xref>, <xref type="iAph">1186</xref>, <xref type="iAph">1187</xref>, <xref type="iAph">1188</xref>, <xref type="iAph">1189</xref>, <xref type="iAph">1190</xref>, <xref type="iAph">1191</xref>, <xref type="iAph">1192</xref>, <xref type="iAph">1193</xref>, <xref type="iAph">1194</xref>, <xref type="iAph">1195</xref>, <xref type="iAph">1196</xref>, <xref type="iAph">1197</xref>, <xref type="iAph">1198</xref>, <xref type="iAph">1199</xref>, , <xref type="iAph">1201</xref>, <xref type="iAph">1202</xref>, <xref type="iAph">1203</xref>, <xref type="iAph">1204</xref>, <xref type="iAph">1205</xref>, <xref type="iAph">1206</xref>, <xref type="iAph">1207</xref>, <xref type="iAph">1208</xref>, <xref type="iAph">1209</xref>, <xref type="iAph">1210</xref> ; all are by women, and apparently bore caryatids (see <xref type="iAph">1198</xref>).</p><p><xref type="iAph">1199</xref> (=66.425) is the same text, but with a different layout.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation"><rs type="monuList">Hadrianic Baths</rs>: ?Caryatid portico</rs>
-Found: <rs type="found"><rs type="monuList">South Agora</rs>: Portico of Tiberius: 'P. of T. SW.'</rs>
-; Last known location: <rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1984 (<rs type="invNo">84.55</rs>; SBI <rs type="sbi">75</rs>).</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="85_H_24A"><figDesc>Face (1985)</figDesc></figure></p><p>KTE Images</p>
-</div></body></text>
+         <div type="translation">
+            <p>Ulpia Apollonia, daughter of Apollonios, <term xml:lang="la">primipilarius</term>, and former camp prefect, to her homeland</p>
+         </div>
+         <div type="commentary">
+            <p>One of the series of dedications from the East Court of the Hadrianic Baths: <ref type="iAph" target="">1184</ref>, <ref type="iAph" target="">1186</ref>, <ref type="iAph" target="">1187</ref>, <ref type="iAph" target="">1188</ref>, <ref type="iAph" target="">1189</ref>, <ref type="iAph" target="">1190</ref>, <ref type="iAph" target="">1191</ref>, <ref type="iAph" target="">1192</ref>, <ref type="iAph" target="">1193</ref>, <ref type="iAph" target="">1194</ref>, <ref type="iAph" target="">1195</ref>, <ref type="iAph" target="">1196</ref>, <ref type="iAph" target="">1197</ref>, <ref type="iAph" target="">1198</ref>, <ref type="iAph" target="">1199</ref>, , <ref type="iAph" target="">1201</ref>, <ref type="iAph" target="">1202</ref>, <ref type="iAph" target="">1203</ref>, <ref type="iAph" target="">1204</ref>, <ref type="iAph" target="">1205</ref>, <ref type="iAph" target="">1206</ref>, <ref type="iAph" target="">1207</ref>, <ref type="iAph" target="">1208</ref>, <ref type="iAph" target="">1209</ref>, <ref type="iAph" target="">1210</ref> ; all are by women, and apparently bore caryatids (see <ref type="iAph" target="">1198</ref>).</p>
+            <p>
+               <ref type="iAph" target="">1199</ref> (=66.425) is the same text, but with a different layout.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

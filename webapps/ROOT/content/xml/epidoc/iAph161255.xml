@@ -1,86 +1,139 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161255">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building dedication</rs> with <rs type="personType" reg="emperor">imperial reference</rs></title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><date>2007</date><availability status="unknown"><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></availability></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building dedication with imperial reference</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161255</idno>
+            <idno type="IAph2007">iAph161255</idno>
+            <idno type="JMR2004">1255</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>architrave</objectType> block, damaged along all edges, from which the cornice and part of the right side of the first fascia have been erased in adaptation for a secondary use (<width unit="metre">2.42</width>   × <height unit="metre">0.38</height>   × <depth unit="metre">0.54</depth>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on each of the three fasciae.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>l.1, <height unit="metre">0.095</height>; l.2, <height unit="metre">0.085</height>; l.3, <height unit="metre">0.06</height> (no letter complete).</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0037" notAfter="0041" evidence="emperor">
+A.D. 37-41
+(<rs type="criteria">emperor</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">north of the Museum, south of the <rs type="monuList">City, Water Channel area</rs> excavations.</provenance>
+                  <provenance type="observed">behind the dighouse (Sebasteion entrance); has a painted 230 on it</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="90_D_23.jpg">
+            <desc>Whole stone (1990)</desc>
+         </graphic>
+         <graphic url="90_D_24.jpg">
+            <desc>Left part (1990)</desc>
+         </graphic>
+         <graphic url="90_D_25.jpg">
+            <desc>Centre part (1990)</desc>
+         </graphic>
+         <graphic url="90_D_26.jpg">
+            <desc>Right part (1990)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">architrave</rs> block, damaged along all edges, from which the cornice and part of the right side of the first fascia have been erased in adaptation for a secondary use (<measure dim="width" type="length" unit="metre" precision="circa">2.42</measure>   × <measure dim="height" type="length" unit="metre" precision="circa">0.38</measure>   × <measure dim="depth" type="length" unit="metre">0.54</measure>)</p></div><div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on each of the three fasciae.</p>
+<ab><space extent="3" unit="character"/><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w>Δήμωι</w> <del status="unremarkable"><gap reason="lost" unit="character" quantity="12"/></del><lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="divine">Ὁμονοίας</persName> <w lemma="καί">καὶ</w> <persName type="emperor"><name nymRef="#Γάϊος">Γαίου</name>  <name nymRef="#Καῖσαρ">Καίσαρος</name></persName>  <space unit="character" extent="4"/><lb n="3"/><gap reason="lost" unit="character" extent="unknown"/>  <space unit="character" extent="4"/>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w> <w lemma="ὁ">τὰ</w> <w lemma="ἐν">ἐν</w> <w>αὐτῶι</w> <w>ἀνέ<unclear reason="damage">θ</unclear>ηκ<unclear reason="damage">α</unclear>ν</w>      <space unit="character" extent="4"/></ab>
 </div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>l.1, <measure dim="height" type="length" unit="metre">0.095</measure>; l.2, <measure dim="height" type="length" unit="metre">0.085</measure>; l.3, <measure dim="height" type="length" unit="metre" precision="circa">0.06</measure> (no letter complete).</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0037" notAfter="0041" exact="both" cert="low">A.D. 37-41</date>
-(<rs type="criteria">emperor</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><space extent="3" unit="character" dim="horizontal"/><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w>Δήμωι</w> <del status="unremarkable"><gap extent="12" reason="lost" unit="character"/></del><lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>  <persName type="divine" full="yes">Ὁμονοίας</persName> <w lemma="καί">καὶ</w> <persName type="emperor" full="yes"><name reg="Γάϊος">Γαίου</name>  <name reg="Καῖσαρ">Καίσαρος</name></persName>  <space unit="character" extent="4" dim="horizontal"/><lb n="3"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>  <space unit="character" extent="4" dim="horizontal"/>  <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w> <w lemma="ὁ">τὰ</w> <w lemma="ἐν">ἐν</w> <w>αὐτῶι</w> <w>ἀνέ<unclear reason="damage">θ</unclear>ηκ<unclear reason="damage">α</unclear>ν</w>      <space unit="character" extent="4" dim="horizontal"/></ab>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-
-<div type="translation">
-<head>Translation</head>
-<p>. . .] and for the People [ . . .] of Homonoia and Gaius Caesar [ . . .] and the things )?decorations, statues) on it, they set up.</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>l. 2 perhaps indicates a priest, but the genitives might just be explained as indicating the functions of the monument (<foreign lang="grc">τὸν νάον</foreign>, etc.)</p><p>Is Gaius Caesar Caligula?  [[[Check the association of his sister with Homonoia.]]]</p><p>There is no doubt that at Aphrodisias the reign of Caligula was of some significance in the development of the Imperial cult.</p><p>See <bibl>Reynolds, 'Ruler-cult', 43</bibl></p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-; Original location: <rs type="origLocation">Unknown</rs>
-Found: <rs type="found">north of the Museum, south of the <rs type="monuList">City, Water Channel area</rs> excavations.</rs>
-; Last known location: <rs type="lastLocation">behind the dighouse (Sebasteion entrance); has a painted 230 on it</rs>
-</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1990 (<rs type="siteNo">90.j</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>
-<figure href="90_D_23"><figDesc>Whole stone (1990)</figDesc></figure>
-<figure href="90_D_24"><figDesc>Left part (1990)</figDesc></figure>
-<figure href="90_D_25"><figDesc>Centre part (1990)</figDesc></figure>
-<figure href="90_D_26"><figDesc>Right part (1990)</figDesc></figure>
-</p>
-</div></body></text>
+         <div type="translation">
+            <p>. . .] and for the People [ . . .] of Homonoia and Gaius Caesar [ . . .] and the things )?decorations, statues) on it, they set up.</p>
+         </div>
+         <div type="commentary">
+            <p>l. 2 perhaps indicates a priest, but the genitives might just be explained as indicating the functions of the monument (<foreign xml:lang="grc">τὸν νάον</foreign>, etc.)</p>
+            <p>Is Gaius Caesar Caligula?  [[[Check the association of his sister with Homonoia.]]]</p>
+            <p>There is no doubt that at Aphrodisias the reign of Caligula was of some significance in the development of the Imperial cult.</p>
+            <p>See <bibl>Reynolds, 'Ruler-cult', 43</bibl>
+            </p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

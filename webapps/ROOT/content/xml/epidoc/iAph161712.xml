@@ -1,90 +1,168 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161712">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for anonymous</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-03-13</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date>2007-03-05</date><respStmt><name>GB</name></respStmt><item>tidied</item></change><change><date>2007-02-28</date><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for anonymous</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161712</idno>
+            <idno type="IAph2007">iAph161712</idno>
+            <idno type="JMR2004">1712</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>63.357</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Approx. seventeen  fragments of a plain <material>white marble</material>
+                              <objectType>statue base</objectType> shaft (maximum  <height unit="metre">0.70</height>,  approx. <width unit="metre">0.75</width>, maximum  <depth unit="metre">0.35</depth>); non-adjoining fragment k. (no dimensions).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Distinctive; <height unit="metre">0.03</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">
+ First to second centuries A.D.
+(<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, Water Channel area</rs>: excavations</provenance>
+                  <provenance type="observed" when="1981">Museum (1981)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-13" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2007-03-05" who="#GB">tidied</change>
+         <change when="2007-02-28" who="#GB">hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Approx. seventeen  fragments of a plain <rs type="material">white marble</rs> <rs type="objectType">statue base</rs> shaft (maximum  <measure dim="height" type="length" unit="metre">0.70</measure>,  approx. <measure dim="width" type="length" unit="metre">0.75</measure>, maximum  <measure dim="depth" type="length" unit="metre">0.35</measure>); non-adjoining fragment k. (no dimensions).</p>
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλ<supplied reason="lost">ὴ</supplied></w>  <w lemma="καί"><supplied reason="lost">κ</supplied><unclear reason="damage">αὶ</unclear></w> <w lemma="ὁ"><unclear reason="damage">ὁ</unclear></w> <w lemma="δῆμος"><supplied reason="lost">δῆ</supplied>μος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w>γε<lb n="2" break="no"/>ρουσία</w>  <w>ἐτε<supplied reason="lost">ίμη</supplied>σ<unclear reason="damage">α</unclear>ν</w> <w lemma="καί">καὶ</w> <w>μετηλ<lb n="3" break="no"/><unclear reason="damage">λ</unclear>ακ<unclear reason="damage">χ</unclear><supplied reason="lost">ότ</supplied>α</w>  <w>π<supplied reason="lost">άσ</supplied>αι<supplied reason="lost">ς</supplied></w>  <w><unclear reason="damage">τ</unclear>α<supplied reason="lost">ῖ</supplied>ς</w>  <w>μέγισ<lb n="4" break="no"/><unclear reason="damage">τ</unclear><supplied reason="lost">αις</supplied></w>  <w><supplied reason="lost">τείμαις</supplied></w>  <g ref="#star"/>  <orig n="unresolved"><unclear reason="damage">λ</unclear></orig><name><gap reason="lost" unit="character" quantity="5"/>δρον</name>  <lb n="5"/><name>Εὐ<gap reason="lost" unit="character" quantity="16"/></name><w><gap reason="lost" unit="character" extent="0"/>νους</w>  <lb n="6"/><name>Εὐσ<gap reason="lost" unit="character" quantity="3"/></name> <orig n="unresolved"><unclear reason="damage">ρ</unclear></orig><gap reason="lost" unit="character" quantity="10"/><orig n="unresolved"><unclear reason="damage">υ</unclear></orig> <g ref="#stop"/> <w>παῖδα</w> <lb n="7"/> <w lemma="ὁ">τὴν</w> <w><supplied reason="lost">ἡ</supplied><unclear reason="damage">λ</unclear>ικ<supplied reason="lost">ί</supplied>αν</w> <orig n="unresolved">ε</orig><gap reason="lost" unit="character" quantity="6"/><orig n="unresolved">α<unclear reason="damage">σ</unclear></orig> <w>ὁμοί<lb n="8" break="no"/>ας</w> <w lemma="ὁ">τοῖς</w> <w>π<unclear reason="damage">α</unclear>π<unclear reason="damage">π</unclear>οι<supplied reason="lost">ς</supplied></w>  <w><supplied reason="lost">ἐνδ</supplied><unclear reason="damage">ε</unclear>ίξαντα</w>  <lb n="9"/> <w lemma="περί">περὶ</w> <w lemma="ὁ">τὴν</w> <w>πατρίδ<supplied reason="lost">α</supplied></w>  <w><supplied reason="lost">εὐ</supplied><unclear reason="damage">ε</unclear>ργ<supplied reason="lost">ε</supplied>σίας</w>  <lb n="10"/> <w>φθασθέντα</w> <w><supplied reason="lost">ὑ</supplied><unclear reason="damage">πὸ</unclear></w> <w lemma="ὁ">τοῦ</w> <w>δαί<supplied reason="lost">μ</supplied>ονος</w>  <lb n="10a"/>  <space extent="3" unit="character"/>   </ab><div n="k" type="textpart" subtype="fragment"><ab> <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">τ</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">σ</unclear>τ</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">σκ</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">λ</unclear>π</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab></div>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Distinctive; <measure dim="height" type="length" unit="metre">0.03</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0200" exact="none"> First to second centuries A.D.</date>
-(<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλ<supplied reason="lost">ὴ</supplied></w>  <w lemma="καί"><supplied reason="lost">κ</supplied><unclear reason="damage">αὶ</unclear></w> <w lemma="ὁ"><unclear reason="damage">ὁ</unclear></w> <w lemma="δῆμος"><supplied reason="lost">δῆ</supplied>μος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w>γε<lb n="2" type="worddiv"/>ρουσία</w>  <w>ἐτε<supplied reason="lost">ίμη</supplied>σ<unclear reason="damage">α</unclear>ν</w> <w lemma="καί">καὶ</w> <w>μετηλ<lb n="3" type="worddiv"/><unclear reason="damage">λ</unclear>ακ<unclear reason="damage">χ</unclear><supplied reason="lost">ότ</supplied>α</w>  <w>π<supplied reason="lost">άσ</supplied>αι<supplied reason="lost">ς</supplied></w>  <w><unclear reason="damage">τ</unclear>α<supplied reason="lost">ῖ</supplied>ς</w>  <w>μέγισ<lb n="4" type="worddiv"/><unclear reason="damage">τ</unclear><supplied reason="lost">αις</supplied></w>  <w><supplied reason="lost">τείμαις</supplied></w>  <g type="star"/>  <orig n="unresolved"><unclear reason="damage">λ</unclear></orig><name><gap reason="lost" extent="5" unit="character"/>δρον</name>  <lb n="5"/><name>Εὐ<gap reason="lost" extent="16" unit="character"/></name><w><gap reason="lost" extent="0" unit="character"/>νους</w>  <lb n="6"/><name>Εὐσ<gap reason="lost" extent="3" unit="character"/></name> <orig n="unresolved"><unclear reason="damage">ρ</unclear></orig><gap reason="lost" extent="10" unit="character"/><orig n="unresolved"><unclear reason="damage">υ</unclear></orig> <g type="stop"/> <w>παῖδα</w> <lb n="7"/> <w lemma="ὁ">τὴν</w> <w><supplied reason="lost">ἡ</supplied><unclear reason="damage">λ</unclear>ικ<supplied reason="lost">ί</supplied>αν</w> <orig n="unresolved">ε</orig><gap reason="lost" extent="6" unit="character"/><orig n="unresolved">α<unclear reason="damage">σ</unclear></orig> <w>ὁμοί<lb n="8" type="worddiv"/>ας</w> <w lemma="ὁ">τοῖς</w> <w>π<unclear reason="damage">α</unclear>π<unclear reason="damage">π</unclear>οι<supplied reason="lost">ς</supplied></w>  <w><supplied reason="lost">ἐνδ</supplied><unclear reason="damage">ε</unclear>ίξαντα</w>  <lb n="9"/> <w lemma="περί">περὶ</w> <w lemma="ὁ">τὴν</w> <w>πατρίδ<supplied reason="lost">α</supplied></w>  <w><supplied reason="lost">εὐ</supplied><unclear reason="damage">ε</unclear>ργ<supplied reason="lost">ε</supplied>σίας</w>  <lb n="10"/> <w>φθασθέντα</w> <w><supplied reason="lost">ὑ</supplied><unclear reason="damage">πὸ</unclear></w> <w lemma="ὁ">τοῦ</w> <w>δαί<supplied reason="lost">μ</supplied>ονος</w>  <lb n="10a"/>  <space extent="3" unit="character" dim="horizontal"/>   </ab><div type="textpart_fragment" n="k"><ab> <lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">τ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">σ</unclear>τ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">σκ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">λ</unclear>π</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  </ab></div>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 2, a lower cross-bar: <foreign lang="grc">Σ</foreign> or <foreign lang="grc">Ε</foreign> or <seg cert="low"><foreign lang="grc">Ω</foreign></seg></p><p>l. 4, <seg cert="low"><foreign lang="grc">Ἀ<supplied reason="lost">λέξαν</supplied>δρον</foreign>, <foreign lang="grc"><unclear reason="damage">Μ</unclear><supplied reason="lost">έναν</supplied>δρον</foreign></seg></p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p> ...</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>... </p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="origLocation">Unknown</rs>
-<rs type="found"><rs type="monuList">City, Water Channel area</rs>: excavations</rs>
-<rs type="lastLocation">Museum (1981)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Fragments found over several years from 1961 by the NYU expedition (<rs type="invNo">63.357</rs> (fragment d) and unnumbered fragments)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>[[Also: 66.1.97]]</p>
-</div><figure href="78_B_19"><figDesc>a: Right side fragment, lines 1-10 (1978)</figDesc></figure><figure href="78_B_30"><figDesc>a: Right side fragment, lines 1-10 (1978)</figDesc></figure><figure href="77_J_26A"><figDesc>b: Left hand fragment, lines 4-10 (1977)</figDesc></figure><figure href="77_R_26A"><figDesc>c: Fragment, lines 6-10 (1977)</figDesc></figure><figure href="77_O_13"><figDesc>d: Fragment, lines 8-10 (1977)</figDesc></figure><figure href="77_Q_37"><figDesc>e: Fragment, lines 1-3 (1977)</figDesc></figure><figure href="77_Q_23"><figDesc>f: Fragment, lines 1-3 (1977)</figDesc></figure><figure href="77_Q_35"><figDesc>g: Fragment, unassigned (1977)</figDesc></figure><figure href="77_Q_09"><figDesc>h: Fragment, line 10 (1977)</figDesc></figure><figure href="78_E_04A"><figDesc>i: Fragment, lines 3-4 (1978)</figDesc></figure><figure href="81_D_17"><figDesc>j: Fragment, lines 1-3 (1981)</figDesc></figure></body></text>
+         <div type="apparatus">
+            <p>l. 2, a lower cross-bar: <foreign xml:lang="grc">Σ</foreign> or <foreign xml:lang="grc">Ε</foreign> or <seg cert="low">
+                  <foreign xml:lang="grc">Ω</foreign>
+               </seg>
+            </p>
+            <p>l. 4, <seg cert="low">
+                  <foreign xml:lang="grc">Ἀ<supplied reason="lost">λέξαν</supplied>δρον</foreign>, <foreign xml:lang="grc">
+                     <unclear reason="damage">Μ</unclear>
+                     <supplied reason="lost">έναν</supplied>δρον</foreign>
+               </seg>
+            </p>
+         </div>
+         <div n="notyet" type="translation">
+            <p> ...</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>... </p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+         <figure href="78_B_19">
+            <figDesc>a: Right side fragment, lines 1-10 (1978)</figDesc>
+         </figure>
+         <figure href="78_B_30">
+            <figDesc>a: Right side fragment, lines 1-10 (1978)</figDesc>
+         </figure>
+         <figure href="77_J_26A">
+            <figDesc>b: Left hand fragment, lines 4-10 (1977)</figDesc>
+         </figure>
+         <figure href="77_R_26A">
+            <figDesc>c: Fragment, lines 6-10 (1977)</figDesc>
+         </figure>
+         <figure href="77_O_13">
+            <figDesc>d: Fragment, lines 8-10 (1977)</figDesc>
+         </figure>
+         <figure href="77_Q_37">
+            <figDesc>e: Fragment, lines 1-3 (1977)</figDesc>
+         </figure>
+         <figure href="77_Q_23">
+            <figDesc>f: Fragment, lines 1-3 (1977)</figDesc>
+         </figure>
+         <figure href="77_Q_35">
+            <figDesc>g: Fragment, unassigned (1977)</figDesc>
+         </figure>
+         <figure href="77_Q_09">
+            <figDesc>h: Fragment, line 10 (1977)</figDesc>
+         </figure>
+         <figure href="78_E_04A">
+            <figDesc>i: Fragment, lines 3-4 (1978)</figDesc>
+         </figure>
+         <figure href="81_D_17">
+            <figDesc>j: Fragment, lines 1-3 (1981)</figDesc>
+         </figure>
+      </body>
+   </text>
 </TEI>

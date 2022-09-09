@@ -1,104 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160400">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">   <rs type="textType">Honours</rs>  for Peritianos Dometinos</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>   Honours  for Peritianos Dometinos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160400</idno>
+            <idno type="IAph2007">iAph160400</idno>
+            <idno type="JMR2004">400</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>70.216</idno>
+                  <idno>70.223</idno>
+                  <idno>76.52</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two joining fragments (a. approx. <width unit="metre">0.31</width>), and a third (b.) possibly from the same monument, from a <material>white marble</material> feature with a smooth, long, inscibed fascia, with mouldings above and below; the lower moulding is also the bottom of the feature—perhaps a  low <objectType cert="low">statue base</objectType> or a <objectType cert="low">statue base capital</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> Inscribed in two lines on the fascia.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>; ligatured <foreign xml:lang="grc">ΤΕ</foreign> in a. l. 1.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">   Second to third centuries A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">a: Stray; b: <rs type="monuList">Walls, South (east part)</rs>: in excavation of south wall gap, Tr. 1. a stray. </provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-09-01" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_U_32.jpg">
+            <desc>Fragment a (1977)</desc>
+         </graphic>
+         <graphic url="76_A_29A.jpg">
+            <desc>Fragment b (1976)</desc>
+         </graphic>
+         <graphic url="77_U_33.jpg">
+            <desc>Fragment b (1977)</desc>
+         </graphic>
+         <graphic url="KTE_7252.jpg">
+            <desc>KTE photo</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-09-01</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two joining fragments (a. approx. <measure type="length" unit="metre" dim="width">0.31</measure>), and a third (b.) possibly from the same monument, from a <rs type="material">white marble</rs> feature with a smooth, long, inscibed fascia, with mouldings above and below; the lower moulding is also the bottom of the feature—perhaps a  low <rs type="objectType" cert="low">statue base</rs> or a <rs type="objectType" cert="low">statue base capital</rs>.</p>
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Περειτιανός">Περειτιανὸν</name>  <name nymRef="#Δομετῖνος">Δομετεῖν<unclear reason="damage">ο</unclear><supplied reason="lost">ν</supplied></name></persName>  <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <w><supplied reason="lost" cert="low">ῥήτο</supplied>ρα</w>  <w>σοφίστην</w>  <w>ἀρχιερέ<supplied reason="lost">α</supplied></w><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ρ</unclear>ατει</orig><gap reason="lost" unit="character" extent="unknown"/><lb n="2"/><persName type="attested"><name><gap reason="lost" unit="character" extent="unknown"/>ιανον</name></persName>  <gap reason="lost" unit="character" extent="unknown"/></ab></div>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> Inscribed in two lines on the fascia.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02</measure>; ligatured <foreign lang="grc">ΤΕ</foreign> in a. l. 1.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>   <date notAfter="0300" notBefore="0101" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<div type="textpart_fragment" n="a"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>  <persName type="aphrodisian" full="yes"><name reg="Περειτιανός">Περειτιανὸν</name>  <name reg="Δομετῖνος">Δομετεῖν<unclear reason="damage">ο</unclear><supplied reason="lost">ν</supplied></name></persName>  <gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/>  <w><supplied reason="lost" cert="low">ῥήτο</supplied>ρα</w>  <w>σοφίστην</w>  <w>ἀρχιερέ<supplied reason="lost">α</supplied></w><gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><orig n="unresolved"><unclear reason="damage">ρ</unclear>ατει</orig><gap dim="right" extent="unknown" reason="lost" unit="character"/><lb n="2"/><persName type="aphrodisian"><name type=" "><gap dim="left" extent="unknown" reason="lost" unit="character"/>ιανον</name></persName>  <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab></div>
-</div>
-
-<div type="apparatus"><head>Apparatus</head><p>b. l. 1, <foreign lang="grc"><unclear reason="damage">Ρ</unclear></foreign> or <foreign lang="grc"><unclear reason="damage">Ι</unclear></foreign></p></div>
-
-
-
-<div type="translation">
-<head>Translation</head>
-<p>a. <gap reason="lost" dim="left"/> Peritianos Dometinos (?) <gap reason="lost"/> rhetor, sophist, high priest <gap reason="lost" dim="right"/></p></div>
-
- <div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>...</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p><rs type="found">a: Stray; b: <rs type="monuList">Walls, South (east part)</rs>: in excavation of south wall gap, Tr. 1. a stray. </rs>. <rs type="origLocation">Unknown</rs>. <rs type="lastLocation">Museum (1977)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition  (<rs type="invNo">70.216</rs>, <rs type="invNo">70.223</rs>, <rs type="invNo">76.52</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p><figure href="77_U_32"><figDesc>Fragment a (1977)</figDesc></figure><figure href="76_A_29A"><figDesc>Fragment b (1976)</figDesc></figure><figure href="77_U_33"><figDesc>Fragment b (1977)</figDesc></figure><figure href="KTE_7252"><figDesc>KTE photo</figDesc></figure></p></div></body>
-</text>
-
+         <div type="apparatus">
+            <p>b. l. 1, <foreign xml:lang="grc">
+                  <unclear reason="damage">Ρ</unclear>
+               </foreign> or <foreign xml:lang="grc">
+                  <unclear reason="damage">Ι</unclear>
+               </foreign>
+            </p>
+         </div>
+         <div type="translation">
+            <p>a. <gap reason="lost" unit="character" extent="unknown"/> Peritianos Dometinos (?) <gap reason="lost" unit="character" extent="unknown"/> rhetor, sophist, high priest <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>...</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

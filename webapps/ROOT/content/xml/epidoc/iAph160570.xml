@@ -1,92 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160570">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for Attalos Adrastos</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc>
-<p>Unpublished inscription.  This version born digital</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-01-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Three blocks, in 5 fragments. The first block, which is complete (0.99) has the assembly mark ΕΑ; the second, which is in two fragments (together, 1.67) has the assembly mark <unclear reason="damage">Ϲ</unclear>Α; the third, also in two fragments (together 0.985) has the assembly mark ΖΑ.</p>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for Attalos Adrastos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160570</idno>
+            <idno type="IAph2007">iAph160570</idno>
+            <idno type="JMR2004">570</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>71.179</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three blocks, in 5 fragments. The first block, which is complete (0.99) has the assembly mark ΕΑ; the second, which is in two fragments (together, 1.67) has the assembly mark <unclear reason="damage">Ϲ</unclear>Α; the third, also in two fragments (together 0.985) has the assembly mark ΖΑ.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in three lines on the fascia</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>second century; <height unit="metre">0.03</height>; dot for stop; diairetic dots on Α in γερουσία, on first Α in Ἄδραστον (l.1); on first Α in ἀναθέντα (l.2) Ligatures: ΗΜ, ΜΗ, ΗΝ l.1; ΝΗ, l.2; ΝΗ, l.3</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Theatre</rs> proskenion frieze. Inscribed on the blocks which make up the cornice, of the Doric order, above the inscription of Zoilos, across the back of the Theatre stage. The blocks have simple moulding above, supporting water spouts in the form of lions' heads; the underside has a decoration of mutules. </origPlace>
+                     <origDate>
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Theatre</rs>: stage area</provenance>
+                  <provenance type="observed">Findspot: reassembled and restored along the front of the proskenion, next to 565 (which, despite the assembly marks, may be correct).</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="80_H_01.jpg">
+            <desc>a (1980)</desc>
+         </graphic>
+         <graphic url="80_C_36.jpg">
+            <desc>b, left end (1980) </desc>
+         </graphic>
+         <graphic url="80_H_05.jpg">
+            <desc>b, right end (1980)</desc>
+         </graphic>
+         <graphic url="80_A_37.jpg">
+            <desc>c, left end (1980)</desc>
+         </graphic>
+         <graphic url="80_A_36.jpg">
+            <desc>c, right end (1980)</desc>
+         </graphic>
+         <graphic url="89_E_12A.jpg">
+            <desc>Assembled, in situ (1989)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<cb n="1"/><ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w>γερουσία</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">οἱ</w> <w>νέ<milestone unit="block"/>οι</w> <w lemma="τιμάω">ἐτείμησαν</w> <persName type="attested"><name nymRef="#Ἄτταλος">Ἄτταλον</name> <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Νεικότειμος">Νεικοτείμου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἀρτεμίδωρος">Ἀρτεμιδώρου</name> <w lemma="ὁ">τ<milestone unit="block"/>οῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name> <persName type="attested"><name nymRef="#Ἱέραξ">Ἱέρακος</name></persName></persName></persName></persName></persName> <name nymRef="#Ἄδραστος">Ἄδραστον</name></persName> <w>γυμνασιαρχὸν</w> <cb n="2"/><lb n="2"/><w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w>στεφανήφορον</w> <w>δι᾿</w> <w>αἰῶνος</w> <w lemma="πολύς">πολλὰ</w> <w lemma="καί">καὶ</w> <w>μεγ<milestone unit="block"/>άλα</w> <w lemma="καί">καὶ</w> <w>παρ᾿</w> <w>ὃν</w> <w>ἔζη</w> <w>χρόνον</w> <w>παρασχόντα</w> <w lemma="καί">καὶ</w> <w>ἀναθέντα</w> <w lemma="ὁ">τῇ</w> <w lemma="τε">τε</w> <w lemma="θεός">θεῷ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ"><unclear reason="damage">τῇ</unclear></w>  <milestone unit="block"/> <w lemma="πατρίς">πατρίδι</w> <w>εἴς</w> <w lemma="τε">τε</w> <w>θυσίας</w> <w lemma="καί">καὶ</w> <w>ἑστιάσεις</w> <w lemma="ὁ">τῶν</w> <space extent="3" unit="character"/>  <cb n="3"/><lb n="3"/><w><supplied reason="lost">π</supplied>ολειτῶν</w> <w lemma="καί">καὶ</w> <w lemma="εἰς">εἰς</w> <w>τὰς</w> <w>αἰωνίους</w> <w>γυμνασιαρ<milestone unit="block"/>χίας</w> <w lemma="καί">καὶ</w> <w>στεφανηφορίας</w> <w lemma="καί">καὶ</w> <w lemma="διά"><unclear reason="damage">δ</unclear><supplied reason="lost">ιὰ</supplied></w> <w lemma="ὁ">τῆς</w> <w>διαθηκῆς</w> <g ref="#stop"/> <w>σχεδὸν</w> <w lemma="πᾶς">πᾶσ<supplied reason="lost">αν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w><supplied reason="lost">οὐσία</supplied><milestone unit="block"/>ν</w>  <w>κα<unclear reason="damage">ταλιπ</unclear>όντα</w> <w lemma="ὁ">τῇ</w> <w>π<supplied reason="lost">α</supplied>τρίδ</w>ι  <g ref="#leaf"/>    <space extent="3" unit="character"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> in three lines on the fascia</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>second century; <measure type="length" unit="metre" dim="height">0.03</measure>; dot for stop; diairetic dots on Α in γερουσία, on first Α in Ἄδραστον (l.1); on first Α in ἀναθέντα (l.2) Ligatures: ΗΜ, ΜΗ, ΗΝ l.1; ΝΗ, l.2; ΝΗ, l.3</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date> </date>
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<cb n="1"/><ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w>γερουσία</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">οἱ</w> <w>νέ<milestone unit="block"/>οι</w> <w lemma="τιμάω">ἐτείμησαν</w> <persName type="aphrodisian"><name reg="Ἄτταλος">Ἄτταλον</name> <persName type="aphrodisian"><name reg="Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Νεικότειμος">Νεικοτείμου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ἀρτεμίδωρος">Ἀρτεμιδώρου</name> <w lemma="ὁ">τ<milestone unit="block"/>οῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name> <persName type="aphrodisian"><name reg="Ἱέραξ">Ἱέρακος</name></persName></persName></persName></persName></persName> <name reg="Ἄδραστος">Ἄδραστον</name></persName> <w>γυμνασιαρχὸν</w> <cb n="2"/><lb n="2"/><w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w>στεφανήφορον</w> <w>δι᾿</w> <w>αἰῶνος</w> <w lemma="πολύς">πολλὰ</w> <w lemma="καί">καὶ</w> <w>μεγ<milestone unit="block"/>άλα</w> <w lemma="καί">καὶ</w> <w>παρ᾿</w> <w>ὃν</w> <w>ἔζη</w> <w>χρόνον</w> <w>παρασχόντα</w> <w lemma="καί">καὶ</w> <w>ἀναθέντα</w> <w lemma="ὁ">τῇ</w> <w lemma="τε">τε</w> <w lemma="θεός">θεῷ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ"><unclear reason="damage">τῇ</unclear></w>  <milestone unit="block"/> <w lemma="πατρίς">πατρίδι</w> <w>εἴς</w> <w lemma="τε">τε</w> <w>θυσίας</w> <w lemma="καί">καὶ</w> <w>ἑστιάσεις</w> <w lemma="ὁ">τῶν</w> <space extent="3" unit="character" dim="horizontal"/>  <cb n="3"/><lb n="3"/><w><supplied reason="lost">π</supplied>ολειτῶν</w> <w lemma="καί">καὶ</w> <w lemma="εἰς">εἰς</w> <w>τὰς</w> <w>αἰωνίους</w> <w>γυμνασιαρ<milestone unit="block"/>χίας</w> <w lemma="καί">καὶ</w> <w>στεφανηφορίας</w> <w lemma="καί">καὶ</w> <w lemma="διά"><unclear reason="damage">δ</unclear><supplied reason="lost">ιὰ</supplied></w> <w lemma="ὁ">τῆς</w> <w>διαθηκῆς</w> <g type="stop"/> <w>σχεδὸν</w> <w lemma="πᾶς">πᾶσ<supplied reason="lost">αν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>  <w><supplied reason="lost">οὐσία</supplied><milestone unit="block"/>ν</w>  <w>κα<unclear reason="damage">ταλιπ</unclear>όντα</w> <w lemma="ὁ">τῇ</w> <w>π<supplied reason="lost">α</supplied>τρίδ</w>ι  <g type="leaf"/>    <space extent="3" unit="character" dim="horizontal"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>The Council and the People and the Gerousia and the Young Men honoured Attalos Adrastos, son of Adrastos son of Neikoteimos son of Artemidoros son of Zenon Hierax, gymnasiarch, and stephanephorus in perpetuity, having given and dedicated, during his life time, many and great things to both the Goddess and his fatherland, for both sacrifices and feasts for the citizens, and for perpetual gymnasiarchies and stephanephorates, and, by his will, having left nearly all his wealth to his fatherland.</p>
-</div>
-<div type="translation" n="notyet">
-<head>Translation</head>
-<p>...</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>The text is identical with <xref type="iAph">565</xref></p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Theatre</rs>: stage area</rs>
-<rs type="origLocation"><rs type="monuList">Theatre</rs> proskenion frieze. Inscribed on the blocks which make up the cornice, of the Doric order, above the inscription of Zoilos, across the back of the Theatre stage. The blocks have simple moulding above, supporting water spouts in the form of lions' heads; the underside has a decoration of mutules. </rs>
-<rs type="lastLocation">Findspot: reassembled and restored along the front of the proskenion, next to 565 (which, despite the assembly marks, may be correct).</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1970-71 (<rs type="invNo">71.179</rs> and unnumbered)</p>
-</div>
-<div type="bibliography" n="none"> <head>Bibliography</head> <p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="80_H_01"><figDesc>a (1980)</figDesc></figure><figure href="80_C_36"><figDesc>b, left end (1980) </figDesc></figure><figure href="80_H_05"><figDesc>b, right end (1980)</figDesc></figure><figure href="80_A_37"><figDesc>c, left end (1980)</figDesc></figure><figure href="80_A_36"><figDesc>c, right end (1980)</figDesc></figure><figure href="89_E_12A"><figDesc>Assembled, in situ (1989)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>The Council and the People and the Gerousia and the Young Men honoured Attalos Adrastos, son of Adrastos son of Neikoteimos son of Artemidoros son of Zenon Hierax, gymnasiarch, and stephanephorus in perpetuity, having given and dedicated, during his life time, many and great things to both the Goddess and his fatherland, for both sacrifices and feasts for the citizens, and for perpetual gymnasiarchies and stephanephorates, and, by his will, having left nearly all his wealth to his fatherland.</p>
+         </div>
+         <div type="translation" n="notyet">
+            <p>...</p>
+         </div>
+         <div type="commentary">
+            <p>The text is identical with <ref type="iAph" target="">565</ref>
+            </p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,84 +1,134 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161292">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Statue dedication</rs> to 
-<rs type="textType" reg="Imperial reference">Hadrianus</rs></title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><date>2007</date><availability status="unknown"><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></availability></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Statue dedication to 
+Hadrianus</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161292</idno>
+            <idno type="IAph2007">iAph161292</idno>
+            <idno type="JMR2004">1292</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>83.75</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>statue base</objectType> with a large moulded capital which is damaged (<width unit="metre">0.61</width>   × <height unit="metre">1.02</height>   × <depth unit="metre">0.66</depth>: capital, width lost x <height unit="metre">0.27</height>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.055-0.06</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0117" notAfter="0138" evidence="reign">
+A.D. 117-138
+(<rs type="criteria">reign</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">South Agora, Agora Gate</rs>.</provenance>
+                  <provenance type="observed">Dighouse garden</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); publications.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-30" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="83_C_08.jpg">
+            <desc>Face (1983)</desc>
+         </graphic>
+         <graphic url="85_J_16.jpg">
+            <desc>Face (1985)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p><rs type="material" key="marmor">White marble</rs> <rs type="objectType">statue base</rs> with a large moulded capital which is damaged (<measure type="length" unit="metre" dim="width">0.61</measure>   × <measure type="length" unit="metre" dim="height">1.02</measure>   × <measure type="length" unit="metre" dim="depth">0.66</measure>: capital, width lost x <measure dim="height" type="length" unit="metre">0.27</measure>).</p></div><div type="description" n="text"><head>Description of Text</head><p><rs type="execution" key="scalpro">Inscribed</rs> on the face. </p>
+<ab><lb n="1"/>  <persName type="emperor"><w>Αὐτοκράτο<lb n="2" break="no"/>ρα</w>  <name nymRef="#Καῖσαρ">Καίσαρα</name>    <space extent="1" unit="character"/>  <lb n="3"/> <persName type="emperor"><w lemma="θεός">θεοῦ</w> <name nymRef="#Τραιανός">Τραια<space extent="1" unit="character"/>  <lb n="4" break="no"/>νοῦ</name>  <name nymRef="#Παρθικός">Παρθι<space extent="1" unit="character"/>  <lb n="5" break="no"/>κοῦ</name> <add place="overstrike"><w lemma="υἱός">υἱὸν</w></add> <persName type="emperor"><w lemma="θεός">θεοῦ</w>  <lb n="6"/><name nymRef="#Νέρβα">Νέρουα</name></persName></persName> <w>υἱω<space extent="1" unit="character"/>  <lb n="7" break="no"/>νὸν</w>  <persName type="emperor"><name nymRef="#Τραιανός">Τραια<space extent="1" unit="character"/>  <lb n="8" break="no"/>νον</name>  <name nymRef="#Ἁδριανός">Ἁδρια<space extent="1" unit="character"/>  <lb n="9" break="no"/>νὸν</name>  <w lemma="σεβαστός">Σεβασ<space extent="1" unit="character"/>  <lb n="10" break="no"/>τὸν</w></persName></persName>  <w lemma="ὁ">ὁ</w>  <w>Δῆμος</w></ab>
 </div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.055-0.06</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date cert="low" exact="both" notAfter="0138" notBefore="0117">A.D. 117-138</date>
-(<rs type="criteria">reign</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <persName type="emperor"><w>Αὐτοκράτο<lb n="2" type="worddiv"/>ρα</w>  <name reg="Καῖσαρ">Καίσαρα</name>    <space extent="1" unit="character" dim="horizontal"/>  <lb n="3"/> <persName type="emperor"><w lemma="θεός">θεοῦ</w> <name reg="Τραιανός">Τραια<space extent="1" unit="character" dim="horizontal"/>  <lb n="4" type="worddiv"/>νοῦ</name>  <name reg="Παρθικός">Παρθι<space extent="1" unit="character" dim="horizontal"/>  <lb n="5" type="worddiv"/>κοῦ</name> <add place="overstrike"><w lemma="υἱός">υἱὸν</w></add> <persName type="emperor" full="yes"><w lemma="θεός">θεοῦ</w>  <lb n="6"/><name reg="Νέρβα">Νέρουα</name></persName></persName> <w>υἱω<space extent="1" unit="character" dim="horizontal"/>  <lb n="7" type="worddiv"/>νὸν</w>  <persName type="emperor" full="yes"><name reg="Τραιανός">Τραια<space extent="1" unit="character" dim="horizontal"/>  <lb n="8" type="worddiv"/>νον</name>  <name reg="Ἁδριανός">Ἁδρια<space extent="1" unit="character" dim="horizontal"/>  <lb n="9" type="worddiv"/>νὸν</name>  <w lemma="σεβαστός">Σεβασ<space extent="1" unit="character" dim="horizontal"/>  <lb n="10" type="worddiv"/>τὸν</w></persName></persName>  <w lemma="ὁ">ὁ</w>  <w>Δῆμος</w></ab>
-</div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 5, <foreign lang="grc">ΥΙΟΝ</foreign> cut over <foreign lang="grc">ΥΙΩ</foreign></p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>Imperator Caesar Trajanus Hadrianus Augustus, son of (the) god Trajanus conqueror of the Parthians, grandson of (the) god Nerva. The People (put up his statue).</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>This base is approximately a pair with <xref type="iAph">1311</xref> (=77.34) (dedication to Nerva). A further dedication from the same building, to Antoninus Pius (<xref type="iAph">1300</xref>=80.24) is a little different in style. Were all these among the <foreign lang="grc">τειμαὶ Σεβαστῶν</foreign> claimed by Diogenes, who built the gate? If so, he was precipitate in claiming to have dedicated them. Should the Nerva be taken to be as late as the latest in the group? If so, which—Antoninus Pius?</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-Found: <rs type="found"><rs type="monuList">South Agora, Agora Gate</rs>.</rs>
-<rs type="lastLocation">Dighouse garden</rs><rs type="origLocation">Findspot.</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); publications.</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1983 (<rs type="invNo">83.75</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>
-<figure href="83_C_08"><figDesc>Face (1983)</figDesc></figure><figure href="85_J_16"><figDesc>Face (1985)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 5, <foreign xml:lang="grc">ΥΙΟΝ</foreign> cut over <foreign xml:lang="grc">ΥΙΩ</foreign>
+            </p>
+         </div>
+         <div type="translation">
+            <p>Imperator Caesar Trajanus Hadrianus Augustus, son of (the) god Trajanus conqueror of the Parthians, grandson of (the) god Nerva. The People (put up his statue).</p>
+         </div>
+         <div type="commentary">
+            <p>This base is approximately a pair with <ref type="iAph" target="">1311</ref> (=77.34) (dedication to Nerva). A further dedication from the same building, to Antoninus Pius (<ref type="iAph" target="">1300</ref>=80.24) is a little different in style. Were all these among the <foreign xml:lang="grc">τειμαὶ Σεβαστῶν</foreign> claimed by Diogenes, who built the gate? If so, he was precipitate in claiming to have dedicated them. Should the Nerva be taken to be as late as the latest in the group? If so, which—Antoninus Pius?</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

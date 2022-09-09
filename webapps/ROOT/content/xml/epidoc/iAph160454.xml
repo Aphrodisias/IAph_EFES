@@ -1,99 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160454">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Fragments, ? late Republican </title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt>
-<date>2007</date>
-<availability status="unknown">
-	<p>
-Creative Commons licence Attribution 2.5 (
-<xref>http://creativecommons.org/licenses/by/2.5/</xref>
-)
-</p>
-	<p>
-All reuse or distribution of this work must contain somewhere a link back to the URL 
-<xref>http://insaph.kcl.ac.uk/</xref>
-</p>
-</availability>
-</publicationStmt>
-<sourceDesc>
-<p>Unpublished inscription.  This version born digital</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two fragments ? from the left side of the same <rs type="material">white marble</rs> <rs type="objectType">panel</rs>. a: <measure type="length" unit="metre" dim="width">0.08</measure>   × <measure type="length" unit="metre" dim="height">0.11</measure>   × <measure type="length" unit="metre" dim="depth">0.05</measure>; b: <measure type="length" unit="metre" dim="width">0.09</measure>   × <measure type="length" unit="metre" dim="height">0.08</measure>   × <measure type="length" unit="metre" dim="depth">0.03</measure>.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Late Republican/Augustan; <measure type="length" unit="metre" dim="height">0.01</measure> - <measure type="length" unit="metre" dim="height">0.02</measure>; rho with tail.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date>Late Republican/Augustan</date> (<rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_fragment" n="a"><ab>  <lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><space extent="1" unit="character" dim="horizontal"/>  <orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><space extent="1" unit="character" dim="horizontal"/>  <orig n="unresolved">τα</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><space extent="1" unit="character" dim="horizontal"/>  <orig n="unresolved">γρα</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4"/><orig n="unresolved">ενοισ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="4a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/></ab></div><div type="textpart_fragment" n="b"><ab>  <lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><orig n="unresolved">ονι<unclear reason="damage">δ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><orig n="unresolved">αριω</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  </ab></div>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragments, ? late Republican </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160454</idno>
+            <idno type="IAph2007">iAph160454</idno>
+            <idno type="JMR2004">454</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>66.129</idno>
+                  <idno>70.550</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two fragments ? from the left side of the same <material>white marble</material>
+                              <objectType>panel</objectType>. a: <width unit="metre">0.08</width>   × <height unit="metre">0.11</height>   × <depth unit="metre">0.05</depth>; b: <width unit="metre">0.09</width>   × <height unit="metre">0.08</height>   × <depth unit="metre">0.03</depth>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Late Republican/Augustan; <height unit="metre">0.01</height> - <height unit="metre">0.02</height>; rho with tail.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate evidence="lettering">
+Late Republican/Augustan (<rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon, West area</rs>: a in MAB precinct, Str.1; b stray find.</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_E_04.jpg">
+            <desc>a (1977)</desc>
+         </graphic>
+         <graphic url="77_E_31.jpg">
+            <desc>b (1977)</desc>
+         </graphic>
+         <graphic url="77_J_00A.jpg">
+            <desc>a and b, bottom left (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation" n="none">
-<head>Translation</head>
-<p>no translation possible.</p>
+<div n="a" type="textpart" subtype="fragment"><ab>  <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><space extent="1" unit="character"/>  <orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><space extent="1" unit="character"/>  <orig n="unresolved">τα</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><space extent="1" unit="character"/>  <orig n="unresolved">γρα</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><orig n="unresolved">ενοισ</orig><gap reason="lost" unit="character" extent="unknown"/><lb n="4a"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div n="b" type="textpart" subtype="fragment"><ab>  <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><orig n="unresolved">ονι<unclear reason="damage">δ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><orig n="unresolved">αριω</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab></div>
 </div>
-<div type="commentary" n="none">
-<head>Commentary</head>
-<p>no useful comment</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Bouleuterion/Odeon, West area</rs>: a in MAB precinct, Str.1; b stray find.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1977)</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Found by the NYU expedition in 1966 and 1970 (a, <rs type="invNo">66.129</rs> and b, <rs type="invNo">70.550</rs>)</p>
-</div>
-<div type="bibliography" n="none"> <head>Bibliography</head> <p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_E_04"><figDesc>a (1977)</figDesc></figure><figure href="77_E_31"><figDesc>b (1977)</figDesc></figure><figure href="77_J_00A"><figDesc>a and b, bottom left (1977)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation" n="none">
+            <p>no translation possible.</p>
+         </div>
+         <div type="commentary" n="none">
+            <p>no useful comment</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

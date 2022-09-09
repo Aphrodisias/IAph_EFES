@@ -1,96 +1,109 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160903">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title>i. Fragment of <rs type="textType">building inscription</rs>; ii. <rs type="textType">Honours</rs>  for Asconia</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc>
-<p>Unpublished inscription.  This version born digital</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage>
-</profileDesc>
-<revisionDesc>
-<change><date>2007-04-23</date><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2007-04-19</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">frieze</rs> block  (<measure type="length" unit="metre" dim="width">0.71</measure> x <measure type="length" unit="metre" dim="height">0.345</measure> x <measure type="length" unit="metre" dim="depth">0.56</measure>) originally from a composite frieze, bearing i. It was later re-used; the moulding above the fasciae was cut away, and the block cut down to create a <rs type="objectType">statue base</rs> moulded on three sides , chipped along the upper moulding.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>i. <rs type="execution" key="scalpro">Inscribed</rs> on two fasciae. ii.  inscribed, upside down to i, on a prepared face (<measure type="length" unit="metre" dim="width">0.665</measure> x <measure type="length" unit="metre" dim="height">0.145</measure>).</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>i: <measure dim="height" type="length" unit="metre">0.045</measure>. ii: ave. <measure type="length" unit="metre" dim="height">0.02</measure>; l.1 on moulding; ligatured ΗΝΕ, ΜΗ, ΗΝ in l.2; guidelines.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-i: <date>First to second centuries A.D.</date> (<rs type="criteria">lettering</rs>); ii. <date notBefore="0101" notAfter="0300" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">context</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="i"><ab><lb n="1"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied><unclear reason="damage">ν</unclear></w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσ<supplied reason="lost">μον</supplied></w>  <supplied reason="lost"><space extent="unknown" unit="character" xml:id="space1175-01" dim="horizontal"/><certainty target="space1175-01" locus="#gi" degree="low" assertedValue="gap"/></supplied><lb n="2"/><gap dim="left" extent="unknown" reason="lost" unit="character"/><w lemma="ὁ"><supplied reason="lost">τῷ</supplied></w>  <w><supplied reason="lost">Δήμ</supplied>ῳ</w>  <space extent="10" unit="character" dim="horizontal"/>  <gap dim="right" extent="unknown" reason="lost" unit="character"/></ab>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>i. Fragment of building inscription; ii. Honours  for Asconia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160903</idno>
+            <idno type="IAph2007">iAph160903</idno>
+            <idno type="JMR2004">903</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>73.378</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>frieze</objectType> block  (<width unit="metre">0.71</width> x <height unit="metre">0.345</height> x <depth unit="metre">0.56</depth>) originally from a composite frieze, bearing i. It was later re-used; the moulding above the fasciae was cut away, and the block cut down to create a <objectType>statue base</objectType> moulded on three sides , chipped along the upper moulding.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i. <rs type="execution" ref="scalpro">Inscribed</rs> on two fasciae. ii.  inscribed, upside down to i, on a prepared face (<width unit="metre">0.665</width> x <height unit="metre">0.145</height>).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i: <height unit="metre">0.045</height>. ii: ave. <height unit="metre">0.02</height>; l.1 on moulding; ligatured ΗΝΕ, ΜΗ, ΗΝ in l.2; guidelines.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering context">
+i: First to second centuries A.D. (<rs type="criteria">lettering</rs>); ii. Second to third centuries A.D. (<rs type="criteria">context</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Bouleuterion/Odeon, East Area</rs>: E. Odeon 73c, at -1.30, East path</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-23" who="#GB">hand tidied</change>
+         <change when="2007-04-19" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="81_E_12.jpg">
+            <desc>ii: Face (1981)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-</div><div type="textpart_section" n="ii"><ab><lb n="1"/><name>Ἀσκωνί<supplied reason="lost">αν</supplied></name>  <gap reason="lost" extent="18" unit="character" precision="circa" dim="right"/>  <lb n="2"/> <w>τὴν</w> <w>ἑαυτῆς</w> <w>μητέρα</w> <w>κατὰ</w> <w>τὴν</w> <persName type="aphrodisian"><name>Ἀσκωνίου</name> <lb n="3"/> <name reg="Δημήτριος">Δημητρίου</name></persName> <w>τοῦ</w> <w>πάππου</w> <w>αὐτῆς</w> <lb n="4"/>  <space extent="3" unit="character"/> <w>διαταγήν</w> <w><g type="arabesque"/></w> <space extent="3" unit="character"/>  </ab>
+<div n="i" type="textpart" subtype="section"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied><unclear reason="damage">ν</unclear></w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσ<supplied reason="lost">μον</supplied></w>  <supplied reason="lost"><space extent="unknown" unit="character" xml:id="space1175-01"/><certainty target="space1175-01" locus="#gi" degree="low" assertedValue="gap"/></supplied><lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="ὁ"><supplied reason="lost">τῷ</supplied></w>  <w><supplied reason="lost">Δήμ</supplied>ῳ</w>  <space extent="10" unit="character"/>  <gap reason="lost" unit="character" extent="unknown"/></ab>
+
+</div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><name>Ἀσκωνί<supplied reason="lost">αν</supplied></name>  <gap reason="lost" unit="character" precision="low" quantity="18"/>  <lb n="2"/> <w>τὴν</w> <w>ἑαυτῆς</w> <w>μητέρα</w> <w>κατὰ</w> <w>τὴν</w> <persName type="attested"><name>Ἀσκωνίου</name> <lb n="3"/> <name nymRef="#Δημήτριος">Δημητρίου</name></persName> <w>τοῦ</w> <w>πάππου</w> <w>αὐτῆς</w> <lb n="4"/>  <space extent="3" unit="character"/> <w>διαταγήν</w> <w><g ref="#arabesque"/></w> <space extent="3" unit="character"/>  </ab>
 </div></div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>i: It is very probable that this block came at the end of the text, judging by the layout of similar inscriptions.</p>
-</div>
-<div type="translation" n="notyet">
-<head>Translation</head>
-<p>i: <gap dim="left" extent="unknown" reason="lost" unit="character"/> <supplied reason="lost">the architrave and the</supplied> decoration on it <gap dim="left" extent="unknown" reason="lost" unit="character"/> <supplied reason="lost">dedicated to the people</supplied>.</p><p>ii: No translation yet (2007)</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Bouleuterion/Odeon, East Area</rs>: E. Odeon 73c, at -1.30, East path</rs>
-<rs type="lastLocation">Museum</rs>
-
-
-
-<rs type="origLocation">Unknown</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1973 (<rs type="invNo">73.378</rs>)</p>
-</div>
-<div type="bibliography" n="none">
-<head>Bibliography</head>
-<p>Unpublished</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>77.BB.11; 78.B.15; 80.E.11, 12<figure href="81_E_12"><figDesc>ii: Face (1981)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>i: It is very probable that this block came at the end of the text, judging by the layout of similar inscriptions.</p>
+         </div>
+         <div type="translation" n="notyet">
+            <p>i: <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost">the architrave and the</supplied> decoration on it <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost">dedicated to the people</supplied>.</p>
+            <p>ii: No translation yet (2007)</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished</p>
+         </div>
+      </body>
+   </text>
 </TEI>

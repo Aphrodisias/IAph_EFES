@@ -1,104 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160409">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">   Honours</rs> for Tiberius Claudius Antonius son of Attalos</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>   Honours for Tiberius Claudius Antonius son of Attalos</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160409</idno>
+            <idno type="IAph2007">iAph160409</idno>
+            <idno type="JMR2004">409</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>75.329</idno>
+                  <idno>75.18</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Plain <material key="marmor">marble</material>
+                              <objectType>base</objectType>, broken below (<width unit="metre">0.56</width> × <height unit="metre">1.04</height> × <depth unit="metre">0.54</depth>), with one adjoining fragment of the lower left side (<width unit="metre">0.12</width> × <height unit="metre">0.18</height> × <depth unit="metre">0.06</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on one face, which has an unpolished surface.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.035</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">     Probably third century A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (east part)</rs>, in the excavated stretch, north face</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
+         <change when="2005-09-01" who="#GB">transferred to XML</change>
+         <change when="2004-11-18" who="#GB">Created dummy file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_F_33.jpg">
+            <desc>Main part (1977)</desc>
+         </graphic>
+         <graphic url="HUMS003440.jpg">
+            <desc>Main part (2001)</desc>
+         </graphic>
+         <graphic url="77_O_36.jpg">
+            <desc>Fragment (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date>2005-09-01</date><respStmt><name>Gabriel Bodard</name></respStmt><item>transferred to XML</item></change>
-  
-  <change><date>2004-11-18</date><respStmt><name>Gabriel Bodard</name></respStmt><item>Created dummy file</item></change></revisionDesc></teiHeader>
 
-<text>
-<body>
-
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Plain <rs type="material" key="marmor">marble</rs> <rs type="objectType">base</rs>, broken below (<measure type="length" unit="metre" dim="width">0.56</measure> × <measure type="length" unit="metre" dim="height">1.04</measure> × <measure type="length" unit="metre" dim="depth">0.54</measure>), with one adjoining fragment of the lower left side (<measure type="length" unit="metre" dim="width">0.12</measure> × <measure type="length" unit="metre" dim="height">0.18</measure> × <measure type="length" unit="metre" dim="depth">0.06</measure>).</p>
+<ab><lb n="1"/><w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆ<lb n="2" break="no"/>μος</w>  <persName type="attested"><name nymRef="#Τιβέριος">Τιβέριον</name>  <name nymRef="#Κλαύδιος">Κλ<supplied reason="lost">αύ</supplied><lb n="3" break="no"/>διον</name>  <name nymRef="#Ἀντώνιος">Ἀντώνιον</name><lb n="4"/><persName type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name>  <name nymRef="#Κλαύδιος">Κλαυδίο<supplied reason="lost">υ</supplied></name><lb n="5"/><name nymRef="#Ἀντώνιος">Ἀντωνίου</name>  <name nymRef="#Ἄτταλος">Ἀττάλο<supplied reason="lost">υ</supplied></name></persName></persName><lb n="6"/> <w>συνκλητικοῦ</w> <w lemma="υἱός">υἱὸν</w><lb n="7"/><persName type="attested"><name nymRef="#Διονδένης">Διογένην</name>  <name nymRef="#Ἰουλιανός">Ἰουλία<lb n="8" break="no"/>νον</name></persName> <w>συνκλητικὸν</w><lb n="9"/> <w>γενόνοτα</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="πρόγονος">προ<lb n="10" break="no"/>γόνων</w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσι</w> <w lemma="εὐεργέτης">εὐ<lb n="11" break="no"/>εργέτην</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρίς">πα<lb n="12" break="no"/><space extent="3" unit="character"/>  τρίδος</w>  <space extent="4" unit="character"/><lb n="13"/> <w lemma="ἐπιμελέω">ἐπιμεληθέντος</w> <lb n="14"/><w lemma="ὁ">τῆ<supplied reason="lost">ς</supplied></w>  <w lemma="ἀνάστασις"><unclear reason="damage">ἀ</unclear>ναστά<unclear reason="damage">σ</unclear>εως</w>    <lb n="15"/><w lemma="ὁ"><unclear reason="damage">τ</unclear>ο<supplied reason="lost">ῦ</supplied></w>  <w><supplied reason="lost">ἀν</supplied><unclear reason="damage">δ</unclear>ρ<supplied reason="lost">ιάντ</supplied>ος</w>  <lb n="16"/><gap unit="character" reason="lost" quantity="10"/><orig n="unresolved">ου</orig><lb n="17"/><gap unit="character" reason="lost" quantity="10"/><orig n="unresolved">ου</orig><lb n="17a"/><gap unit="character" reason="lost" quantity="10"/><space extent="3" unit="character"/></ab>
 </div>
-
-<div type="description" n="text">
-<head>Description of Text</head>
-<p> <rs type="execution" key="scalpro">Inscribed</rs> on one face, which has an unpolished surface.</p>
-</div>
-
-<div type="description" n="letters">
-<head>Description of Letters</head>
-<p> <measure dim="height" type="length" unit="metre">0.035</measure>.</p>
-</div>
-
-<div type="description" n="date">
- <head>Date</head>
-
-<p>     Probably <date notAfter="0300" notBefore="0201" exact="none" cert="low">third century A.D.</date> (<rs type="criteria">lettering</rs>).</p></div>
-
-<div n="text" lang="grc" type="edition">
-<head lang="en">Edition</head>
-
-<ab><lb n="1"/><w lemma="ὁ"><unclear reason="damage">ἡ</unclear></w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆ<lb n="2" type="worddiv"/>μος</w>  <persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen">Τιβέριον</name>  <name reg="Κλαύδιος">Κλ<supplied reason="lost">αύ</supplied><lb n="3" type="worddiv"/>διον</name>  <name reg="Ἀντώνιος">Ἀντώνιον</name><lb n="4"/><persName type="aphrodisian"><name reg="Τιβέριος" type="praenomen">Τιβερίου</name>  <name reg="Κλαύδιος">Κλαυδίο<supplied reason="lost">υ</supplied></name><lb n="5"/><name reg="Ἀντώνιος">Ἀντωνίου</name>  <name reg="Ἄτταλος">Ἀττάλο<supplied reason="lost">υ</supplied></name></persName></persName><lb n="6"/> <w>συνκλητικοῦ</w> <w lemma="υἱός">υἱὸν</w><lb n="7"/><persName type="aphrodisian"><name reg="Διονδένης">Διογένην</name>  <name reg="Ἰουλιανός">Ἰουλία<lb n="8" type="worddiv"/>νον</name></persName> <w>συνκλητικὸν</w><lb n="9"/> <w>γενόνοτα</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="πρόγονος">προ<lb n="10" type="worddiv"/>γόνων</w> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσι</w> <w lemma="εὐεργέτης">εὐ<lb n="11" type="worddiv"/>εργέτην</w> <w lemma="ὁ">τῆς</w> <w lemma="πατρίς">πα<lb n="12" type="worddiv"/><space extent="3" unit="character" dim="horizontal"/>  τρίδος</w>  <space extent="4" unit="character" dim="horizontal"/><lb n="13"/> <w lemma="ἐπιμελέω">ἐπιμεληθέντος</w> <lb n="14"/><w lemma="ὁ">τῆ<supplied reason="lost">ς</supplied></w>  <w lemma="ἀνάστασις"><unclear reason="damage">ἀ</unclear>ναστά<unclear reason="damage">σ</unclear>εως</w>    <lb n="15"/><w lemma="ὁ"><unclear reason="damage">τ</unclear>ο<supplied reason="lost">ῦ</supplied></w>  <w><supplied reason="lost">ἀν</supplied><unclear reason="damage">δ</unclear>ρ<supplied reason="lost">ιάντ</supplied>ος</w>  <lb n="16"/><gap unit="character" reason="lost" extent="10" dim="left"/><orig n="unresolved">ου</orig><lb n="17"/><gap unit="character" reason="lost" extent="10" dim="left"/><orig n="unresolved">ου</orig><lb n="17a"/><gap unit="character" reason="lost" extent="10" dim="left"/><space extent="3" unit="character" dim="horizontal"/></ab>
-</div>
-
-
-
-
-
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>No translation yet (2007)</p></div>
-
- <div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>No commentary yet (2007)</p>
-</div>
-
-<div type="history" n="locations">
-<head>Locations</head>
-<p> <rs type="found"> <rs type="monuList">Walls, South (east part)</rs>, in the excavated stretch, north face</rs> <rs type="origLocation">Unknown</rs> <rs type="lastLocation">Museum (1977)</rs>.</p>
-</div>
-
-
-
-
-
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition  (<rs type="invNo">75.329</rs>, <rs type="invNo">75.18</rs>).</p>
-  </div>
-
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-
-
-
-
-
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="figure" n="photographs"><head>Photographs</head><p><figure href="77_F_33"><figDesc>Main part (1977)</figDesc></figure><figure href="HUMS003440"><figDesc>Main part (2001)</figDesc></figure><figure href="77_O_36"><figDesc>Fragment (1977)</figDesc></figure></p></div></body>
-</text>
-
+         <div n="notyet" type="translation">
+            <p>No translation yet (2007)</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>No commentary yet (2007)</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

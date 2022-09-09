@@ -1,96 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160466">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="personType" cert="low" reg="emperor">Imperial</rs> <rs type="textType">document</rs></title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc>
-<p>Unpublished inscription.  This version born digital</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-01-12</date><respStmt><name>Charlotte Tupman</name></respStmt><item>tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Six fragments (some composite) from an inscribed panel, part of whose surface was later plastered. a: fragment with upper edge surviving and a small upper moulding on the back; there is a space above the lettering (<measure type="length" unit="metre" dim="width">0.21</measure>   × <measure type="length" unit="metre" dim="height">0.22</measure>   × <measure type="length" unit="metre" dim="depth">0.035</measure>). b: Two joining pieces (<measure type="length" unit="metre" dim="width">0.165</measure>   × <measure type="length" unit="metre" dim="height">0.14</measure>   × <measure type="length" unit="metre" dim="depth">0.03</measure>-0.035) from upper left corner, with upper corner of moulding on back. Edges chipped. c: Three joining pieces (<measure type="length" unit="metre" dim="width">0.165</measure>   × <measure type="length" unit="metre" dim="height">0.18</measure>   × <measure type="length" unit="metre" dim="depth">0.03</measure>) from left edge, which is chipped; moulding survives on back. d: Fragment with lower edge surviving (<measure type="length" unit="metre" dim="width">0.195</measure>   × <measure type="length" unit="metre" dim="height">0.05</measure>   × <measure type="length" unit="metre" dim="depth">0.03</measure>); on the back there is moulding at the left edge, suggesting that this is from a lower left corner. e: Fragment without edges (<measure type="length" unit="metre" dim="width">0.11</measure>   × <measure type="length" unit="metre" dim="height">0.125</measure>   × <measure type="length" unit="metre" dim="depth">0.03</measure>). f: fragment with right side surviving (0.16 x .172 x 0.035) there is a margin and a slightly raised border at the right. There is also a hole in the right edge for a pin to attach the panel to something.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Distinctive, with large seriphs; probably based on a written hand; cut with a very fine point; <measure precision="circa" type="length" unit="metre" dim="height">0.008-0.01</measure>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0200" exact="none">First to second centuries A.D.</date>
- (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_fragment" n="a">
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Imperial document</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160466</idno>
+            <idno type="IAph2007">iAph160466</idno>
+            <idno type="JMR2004">466</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>67.583</idno>
+                  <idno>76.26</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Six fragments (some composite) from an inscribed panel, part of whose surface was later plastered. a: fragment with upper edge surviving and a small upper moulding on the back; there is a space above the lettering (<width unit="metre">0.21</width>   × <height unit="metre">0.22</height>   × <depth unit="metre">0.035</depth>). b: Two joining pieces (<width unit="metre">0.165</width>   × <height unit="metre">0.14</height>   × <depth unit="metre">0.03</depth>-0.035) from upper left corner, with upper corner of moulding on back. Edges chipped. c: Three joining pieces (<width unit="metre">0.165</width>   × <height unit="metre">0.18</height>   × <depth unit="metre">0.03</depth>) from left edge, which is chipped; moulding survives on back. d: Fragment with lower edge surviving (<width unit="metre">0.195</width>   × <height unit="metre">0.05</height>   × <depth unit="metre">0.03</depth>); on the back there is moulding at the left edge, suggesting that this is from a lower left corner. e: Fragment without edges (<width unit="metre">0.11</width>   × <height unit="metre">0.125</height>   × <depth unit="metre">0.03</depth>). f: fragment with right side surviving (0.16 x .172 x 0.035) there is a margin and a slightly raised border at the right. There is also a hole in the right edge for a pin to attach the panel to something.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Distinctive, with large seriphs; probably based on a written hand; cut with a very fine point; <height unit="metre">0.008-0.01</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">
+First to second centuries A.D.
+ (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Hadrianic Baths</rs>: a.-e. in Ch.7, Str.1; f. stray.</provenance>
+                  <provenance type="observed" when="1978">Museum (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_A_21.jpg">
+            <desc>Fragment a. (1978)</desc>
+         </graphic>
+         <graphic url="78_A_19.jpg">
+            <desc>Fragment b. (1978)</desc>
+         </graphic>
+         <graphic url="78_A_20.jpg">
+            <desc>Fragment c. (1978)</desc>
+         </graphic>
+         <graphic url="78_A_24.jpg">
+            <desc>Fragment d. (1978)</desc>
+         </graphic>
+         <graphic url="78_A_23.jpg">
+            <desc>Fragment e. (1978)</desc>
+         </graphic>
+         <graphic url="76_A_32A.jpg">
+            <desc>Fragment f. (1976)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="a" type="textpart" subtype="fragment">
  <ab>  
  <lb n="1"/>
- <gap reason="lost" extent="unknown" unit="character" dim="left"/>
+ <gap reason="lost" unit="character" extent="unknown"/>
  <w lemma="ἄξιος"><unclear reason="damage">ἄ</unclear>ξιον</w> <w>ἀργύρεον</w>
-  <orig n="unresolved">τ<unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ι</unclear>ησει</orig> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w>σηκοῖς</w> <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ν</orig> <w>κειμένων</w> <space extent="3" unit="character" dim="horizontal"/>  <w>ἐξουσ<gap reason="lost" extent="unknown" unit="character" dim="right"/></w>    <lb n="4"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ιασ</orig> <w>εὐχὰς</w> <w lemma="καί">καὶ</w> <w lemma="κατά">κατὰ</w> <orig n="unresolved">τη</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="5"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">οσ</orig> <w lemma="καί">καὶ</w> <w>δοκιμάζοντος</w> <orig n="unresolved">τ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="6"/><gap reason="lost" extent="unknown" unit="character" dim="left"/> <w><supplied reason="lost">ἐ</supplied><unclear reason="damage">π</unclear>ιμελητὴς</w> <w>εἰκόνας</w> <orig n="unresolved">ιδ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="7"/><w><gap reason="lost" extent="2" unit="character"/>ετωσαν</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w>συνκεχω<supplied reason="lost">ρημένοις</supplied></w>  <w><supplied reason="lost" cert="low">τόποις</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="8"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ων</orig>  <w>διαλεχθ<unclear reason="damage">η</unclear>σομένω<unclear reason="damage">ν</unclear></w>  <orig n="unresolved">α</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="9"/>  <w lemma="τίθημι"><gap reason="lost" extent="unknown" unit="character" dim="left"/><supplied reason="lost">τ</supplied><unclear reason="damage">ι</unclear>θέναι</w> <w lemma="εἰκών">εἰκόνα</w> <w>ἰδίαν</w> <orig n="unresolved">η</orig> <w>ἀνα<gap reason="lost" extent="unknown" unit="character" dim="right"/></w>  <lb n="10"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w><supplied reason="lost">ἐπ</supplied><unclear reason="damage">ι</unclear>μελητοῦ</w> <w>δεῖν</w> <w>αὐτῷ</w> <w>συνχω<supplied reason="lost">ρεῖν</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="11"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ο</unclear></orig>  <w><unclear reason="damage">ἅπ</unclear>ερ</w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <placeName>Ἀλ<unclear reason="damage">ε</unclear>ξανδρείᾳ</placeName>  <orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="12"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>οσ</orig> <w>ἔστω</w> <w>ὅς</w> <orig n="unresolved">αντι<unclear reason="damage">α</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="13"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ι</unclear>υ<unclear reason="damage">οιι</unclear></orig> <w lemma="καί">καὶ</w> <orig n="unresolved">δε<unclear reason="damage">δ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="14"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ιλκ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="14a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  </ab></div><div type="textpart_fragment" n="b"><ab>  <lb n="1"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved"><unclear reason="damage">τισ</unclear></orig>  <w><unclear reason="damage">δώρου</unclear></w>  <w>χαρὶν</w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/><lb n="2"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved">ων</orig> <persName type="emperor"><name>Καισάρων</name></persName> <orig n="unresolved">α</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><w><gap reason="lost" extent="2" unit="character"/><unclear reason="damage">τή</unclear>σοντα</w>  <gap reason="lost" extent="1" unit="character"/>  <orig n="unresolved">σ<unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4"/><gap reason="lost" extent="1" unit="character"/><w><supplied reason="lost">χ</supplied>αριστήρια</w>  <orig n="unresolved"><unclear reason="damage">λι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="5"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved"><unclear reason="damage">ια</unclear>νδω<unclear reason="damage">ξι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="6"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved"><unclear reason="damage">η</unclear>του</orig>  <orig n="unresolved"><unclear reason="damage">κ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="7"/><gap reason="lost" extent="1" unit="character"/> <w lemma="γυνή"><supplied reason="lost">γ</supplied><space extent="1" unit="character" dim="horizontal"/>υναικῶν<gap reason="lost" extent="unknown" unit="character" dim="right"/></w>  <lb n="8"/><gap reason="lost" extent="1" unit="character"/><w lemma="θυσία"><unclear reason="damage">θ</unclear>υσίας</w>  <w lemma="καί">καὶ</w><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="9"/><gap reason="lost" extent="1" unit="character"/><w><unclear reason="damage">ξέ</unclear>νῳ</w> <w lemma="καί">καὶ</w> <orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="10"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/></ab></div><div type="textpart_fragment" n="c"><ab> <lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><w><gap reason="lost" extent="unknown" unit="character" dim="left"/><unclear reason="damage">Ι</unclear>ημενον</w> <w lemma="περί">περὶ</w> <orig n="unresolved">το</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved">ι</orig> <w lemma="καί">καὶ</w> <w lemma="περί">περὶ</w> <w lemma="οὗτος">τούτου</w> <orig n="unresolved">ε<unclear reason="damage">π</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><gap reason="lost" extent="2" unit="character"/><w>ἐνχειρεῖν</w> <w>τι</w> <w lemma="παρά">παρὰ</w> <orig n="unresolved">τ<unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4"/><gap reason="lost" extent="2" unit="character"/><unclear reason="damage">Ι</unclear> <w>μηδὲ</w> <w lemma="μετά">μετὰ</w> <w>νομο<gap reason="lost" extent="unknown" unit="character" dim="right"/></w>    <lb n="5"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved">δε</orig> <w>παρευρέσει</w> <orig n="unresolved"><unclear reason="damage">μη</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="6"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved">τα</orig>  <w>διαταξασσ<unclear reason="damage">θα</unclear><supplied reason="lost">ι</supplied></w>  <gap reason="lost" extent="4" unit="character"/><lb n="7"/><w><gap reason="lost" extent="2" unit="character"/>τινος</w>  <w lemma="αὐτός">αὐ<unclear reason="damage">τὸ</unclear>ν</w><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="8"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">υ<unclear reason="damage">μ</unclear>ημερ<unclear reason="damage">ο</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="9"/><gap reason="lost" extent="1" unit="character"/><w><supplied reason="lost">ἑ</supplied>πτακις</w>  <w>χειλ<supplied reason="lost">ι</supplied><gap reason="lost" extent="unknown" unit="character" dim="right"/></w>    <lb n="10"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved">ν</orig>  <w>μεταγωγή</w> <gap reason="lost" extent="unknown" unit="character" dim="right"/>    <lb n="11"/><gap reason="lost" extent="1" unit="character"/><w lemma="ἄγω">ἀγεῖν</w> <w lemma="ἤ">ἢ</w> <orig n="unresolved">μ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="12"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved"><unclear reason="damage">γ</unclear>ησαν<unclear reason="damage">Τ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="12a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/></ab></div><div type="textpart_fragment" n="d"><ab> <lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved"><unclear reason="damage">ει</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><w><supplied reason="lost">τα</supplied>ῦτα</w>  <w>ἐκδανεισθήσ<unclear reason="damage">ετ</unclear><supplied reason="lost">αι</supplied></w>  ?  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><w><gap reason="lost" extent="2" unit="character"/>ομένου</w> <w lemma="μετά">μετὰ</w> <w lemma="οὗτος">τοῦτον</w> <w lemma="ἐπιμελ-">ἐπ<unclear reason="damage">ιμε</unclear><supplied reason="lost">λ</supplied><gap reason="lost" extent="unknown" unit="character" dim="right"/></w>    <lb n="4"/><gap reason="lost" extent="2" unit="character"/><orig n="unresolved">ουσ<unclear reason="damage">ιιι</unclear></orig> <w lemma="ὁ">τῶν</w> <w>νέω<unclear reason="damage">ν</unclear></w>  <orig n="unresolved"><unclear reason="damage">κοτοιι</unclear></orig><gap reason="lost" extent="2" unit="character"/><orig n="unresolved">ορ</orig><gap reason="lost" extent="unknown" unit="character"/><lb n="4a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/></ab></div><div type="textpart_fragment" n="e"><ab>  <lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ιε</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ε</unclear>ντοπ<unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">τ</unclear>ω</orig> <w lemma="πρός">πρὸς</w> <orig n="unresolved">τ<unclear reason="damage">α</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">τασ</orig>  <w>ὅπω<unclear reason="damage">ς</unclear></w>  <orig n="unresolved">τ</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="5"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ρ</unclear>ων</orig> <w>ἱερὰς</w> <orig n="unresolved">τε</orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="6"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ε</unclear>ν</orig> <w lemma="ὁ">τῶν</w> <w>προδ<supplied reason="lost" cert="low">ηλουμένων</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="7"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">τι</unclear>οισ</orig> <w lemma="ὁ">τοῖς</w> <gap reason="lost" extent="1" unit="character"/>  <orig n="unresolved">γρ<unclear reason="damage">α</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="8"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ιλ</unclear></orig>  <w>ἐπιχειρ<gap reason="lost" extent="unknown" unit="character" dim="right"/></w>    <lb n="9"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ον</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="9a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  </ab></div><div type="textpart_fragment" n="f"><ab>  <lb n="0"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="1"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ε</unclear></orig><gap reason="lost" extent="2" unit="character"/> <w>λαμβανέτωσαν</w> <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῷ</w> <w>τεμένει</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺς</w> <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><w><unclear reason="damage">γ</unclear>ενεσίοις</w>  <space extent="3" unit="character" dim="horizontal"/> <w lemma="ὁ">τῶν</w> <lb n="4"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ι</unclear>ενοι</orig> <w>εὐσεβοῦσιν</w> <lb n="5"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">τ</unclear>αισ</orig> <w lemma="ὁ">τὴν</w> <persName type="divine">Ὑγεῖαν</persName> <lb n="6"/><gap reason="lost" extent="unknown" unit="character" dim="left"/> <w lemma="νῦν">νῦν</w> <w lemma="ὑπερετ-">ὑπερετη<lb n="7" type="worddiv"/><gap reason="lost" extent="unknown" unit="character" dim="left"/></w>   <w lemma="ὁ"><supplied reason="lost">το</supplied>ῦ</w> <w>τεμένους</w> <w lemma="ὑπό">ὑπὸ</w> <lb n="8"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ον</orig> <w>ἀργύριον</w> <space extent="1" unit="character" dim="horizontal"/>  <lb n="9"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">ων</orig> <w>Γερμανι<lb n="10" type="worddiv"/></w>   <w><gap reason="lost" extent="unknown" unit="character" dim="left"/>μένης</w> <w>προ<lb n="11" type="worddiv"/><gap reason="lost" extent="unknown" unit="character" dim="left"/></w> <orig n="unresolved">νοσ</orig>  <w lemma="ὁ">το<unclear reason="damage">ῖς</unclear></w>  <lb n="11a"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  </ab></div>
+  <orig n="unresolved">τ<unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ι</unclear>ησει</orig> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w>σηκοῖς</w> <gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ν</orig> <w>κειμένων</w> <space extent="3" unit="character"/>  <w>ἐξουσ<gap reason="lost" unit="character" extent="unknown"/></w>    <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ιασ</orig> <w>εὐχὰς</w> <w lemma="καί">καὶ</w> <w lemma="κατά">κατὰ</w> <orig n="unresolved">τη</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">οσ</orig> <w lemma="καί">καὶ</w> <w>δοκιμάζοντος</w> <orig n="unresolved">τ</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/> <w><supplied reason="lost">ἐ</supplied><unclear reason="damage">π</unclear>ιμελητὴς</w> <w>εἰκόνας</w> <orig n="unresolved">ιδ</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="7"/><w><gap reason="lost" unit="character" quantity="2"/>ετωσαν</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τοῖς</w> <w>συνκεχω<supplied reason="lost">ρημένοις</supplied></w>  <w><supplied reason="lost" cert="low">τόποις</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="8"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ων</orig>  <w>διαλεχθ<unclear reason="damage">η</unclear>σομένω<unclear reason="damage">ν</unclear></w>  <orig n="unresolved">α</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="9"/>  <w lemma="τίθημι"><gap reason="lost" unit="character" extent="unknown"/><supplied reason="lost">τ</supplied><unclear reason="damage">ι</unclear>θέναι</w> <w lemma="εἰκών">εἰκόνα</w> <w>ἰδίαν</w> <orig n="unresolved">η</orig> <w>ἀνα<gap reason="lost" unit="character" extent="unknown"/></w>  <lb n="10"/><gap reason="lost" unit="character" extent="unknown"/>  <w><supplied reason="lost">ἐπ</supplied><unclear reason="damage">ι</unclear>μελητοῦ</w> <w>δεῖν</w> <w>αὐτῷ</w> <w>συνχω<supplied reason="lost">ρεῖν</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="11"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ο</unclear></orig>  <w><unclear reason="damage">ἅπ</unclear>ερ</w> <w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <placeName>Ἀλ<unclear reason="damage">ε</unclear>ξανδρείᾳ</placeName>  <orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="12"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιι</unclear>οσ</orig> <w>ἔστω</w> <w>ὅς</w> <orig n="unresolved">αντι<unclear reason="damage">α</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="13"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ι</unclear>υ<unclear reason="damage">οιι</unclear></orig> <w lemma="καί">καὶ</w> <orig n="unresolved">δε<unclear reason="damage">δ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="14"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιλκ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="14a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab></div><div n="b" type="textpart" subtype="fragment"><ab>  <lb n="1"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved"><unclear reason="damage">τισ</unclear></orig>  <w><unclear reason="damage">δώρου</unclear></w>  <w>χαρὶν</w>  <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved">ων</orig> <persName type="emperor"><name>Καισάρων</name></persName> <orig n="unresolved">α</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><w><gap reason="lost" unit="character" quantity="2"/><unclear reason="damage">τή</unclear>σοντα</w>  <gap reason="lost" unit="character" quantity="1"/>  <orig n="unresolved">σ<unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><gap reason="lost" unit="character" quantity="1"/><w><supplied reason="lost">χ</supplied>αριστήρια</w>  <orig n="unresolved"><unclear reason="damage">λι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved"><unclear reason="damage">ια</unclear>νδω<unclear reason="damage">ξι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved"><unclear reason="damage">η</unclear>του</orig>  <orig n="unresolved"><unclear reason="damage">κ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="7"/><gap reason="lost" unit="character" quantity="1"/> <w lemma="γυνή"><supplied reason="lost">γ</supplied><space extent="1" unit="character"/>υναικῶν<gap reason="lost" unit="character" extent="unknown"/></w>  <lb n="8"/><gap reason="lost" unit="character" quantity="1"/><w lemma="θυσία"><unclear reason="damage">θ</unclear>υσίας</w>  <w lemma="καί">καὶ</w><gap reason="lost" unit="character" extent="unknown"/>  <lb n="9"/><gap reason="lost" unit="character" quantity="1"/><w><unclear reason="damage">ξέ</unclear>νῳ</w> <w lemma="καί">καὶ</w> <orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="10"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div n="c" type="textpart" subtype="fragment"><ab> <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><w><gap reason="lost" unit="character" extent="unknown"/><unclear reason="damage">Ι</unclear>ημενον</w> <w lemma="περί">περὶ</w> <orig n="unresolved">το</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved">ι</orig> <w lemma="καί">καὶ</w> <w lemma="περί">περὶ</w> <w lemma="οὗτος">τούτου</w> <orig n="unresolved">ε<unclear reason="damage">π</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" quantity="2"/><w>ἐνχειρεῖν</w> <w>τι</w> <w lemma="παρά">παρὰ</w> <orig n="unresolved">τ<unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><gap reason="lost" unit="character" quantity="2"/><unclear reason="damage">Ι</unclear> <w>μηδὲ</w> <w lemma="μετά">μετὰ</w> <w>νομο<gap reason="lost" unit="character" extent="unknown"/></w>    <lb n="5"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved">δε</orig> <w>παρευρέσει</w> <orig n="unresolved"><unclear reason="damage">μη</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved">τα</orig>  <w>διαταξασσ<unclear reason="damage">θα</unclear><supplied reason="lost">ι</supplied></w>  <gap reason="lost" unit="character" quantity="4"/><lb n="7"/><w><gap reason="lost" unit="character" quantity="2"/>τινος</w>  <w lemma="αὐτός">αὐ<unclear reason="damage">τὸ</unclear>ν</w><gap reason="lost" unit="character" extent="unknown"/>  <lb n="8"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">υ<unclear reason="damage">μ</unclear>ημερ<unclear reason="damage">ο</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="9"/><gap reason="lost" unit="character" quantity="1"/><w><supplied reason="lost">ἑ</supplied>πτακις</w>  <w>χειλ<supplied reason="lost">ι</supplied><gap reason="lost" unit="character" extent="unknown"/></w>    <lb n="10"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved">ν</orig>  <w>μεταγωγή</w> <gap reason="lost" unit="character" extent="unknown"/>    <lb n="11"/><gap reason="lost" unit="character" quantity="1"/><w lemma="ἄγω">ἀγεῖν</w> <w lemma="ἤ">ἢ</w> <orig n="unresolved">μ</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="12"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved"><unclear reason="damage">γ</unclear>ησαν<unclear reason="damage">Τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="12a"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div n="d" type="textpart" subtype="fragment"><ab> <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved"><unclear reason="damage">ει</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><w><supplied reason="lost">τα</supplied>ῦτα</w>  <w>ἐκδανεισθήσ<unclear reason="damage">ετ</unclear><supplied reason="lost">αι</supplied></w>  ?  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><w><gap reason="lost" unit="character" quantity="2"/>ομένου</w> <w lemma="μετά">μετὰ</w> <w lemma="οὗτος">τοῦτον</w> <w lemma="ἐπιμελ-">ἐπ<unclear reason="damage">ιμε</unclear><supplied reason="lost">λ</supplied><gap reason="lost" unit="character" extent="unknown"/></w>    <lb n="4"/><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved">ουσ<unclear reason="damage">ιιι</unclear></orig> <w lemma="ὁ">τῶν</w> <w>νέω<unclear reason="damage">ν</unclear></w>  <orig n="unresolved"><unclear reason="damage">κοτοιι</unclear></orig><gap reason="lost" unit="character" quantity="2"/><orig n="unresolved">ορ</orig><gap reason="lost" unit="character" extent="unknown"/><lb n="4a"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div n="e" type="textpart" subtype="fragment"><ab>  <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ε</unclear>ντοπ<unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">τ</unclear>ω</orig> <w lemma="πρός">πρὸς</w> <orig n="unresolved">τ<unclear reason="damage">α</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">τασ</orig>  <w>ὅπω<unclear reason="damage">ς</unclear></w>  <orig n="unresolved">τ</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ρ</unclear>ων</orig> <w>ἱερὰς</w> <orig n="unresolved">τε</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ε</unclear>ν</orig> <w lemma="ὁ">τῶν</w> <w>προδ<supplied reason="lost" cert="low">ηλουμένων</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="7"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">τι</unclear>οισ</orig> <w lemma="ὁ">τοῖς</w> <gap reason="lost" unit="character" quantity="1"/>  <orig n="unresolved">γρ<unclear reason="damage">α</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="8"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιλ</unclear></orig>  <w>ἐπιχειρ<gap reason="lost" unit="character" extent="unknown"/></w>    <lb n="9"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ον</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="9a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab></div><div n="f" type="textpart" subtype="fragment"><ab>  <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ε</unclear></orig><gap reason="lost" unit="character" quantity="2"/> <w>λαμβανέτωσαν</w> <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῷ</w> <w>τεμένει</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺς</w> <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><w><unclear reason="damage">γ</unclear>ενεσίοις</w>  <space extent="3" unit="character"/> <w lemma="ὁ">τῶν</w> <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ι</unclear>ενοι</orig> <w>εὐσεβοῦσιν</w> <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">τ</unclear>αισ</orig> <w lemma="ὁ">τὴν</w> <persName type="divine">Ὑγεῖαν</persName> <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="νῦν">νῦν</w> <w lemma="ὑπερετ-">ὑπερετη<lb n="7" break="no"/><gap reason="lost" unit="character" extent="unknown"/></w>   <w lemma="ὁ"><supplied reason="lost">το</supplied>ῦ</w> <w>τεμένους</w> <w lemma="ὑπό">ὑπὸ</w> <lb n="8"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ον</orig> <w>ἀργύριον</w> <space extent="1" unit="character"/>  <lb n="9"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">ων</orig> <w>Γερμανι<lb n="10" break="no"/></w>   <w><gap reason="lost" unit="character" extent="unknown"/>μένης</w> <w>προ<lb n="11" break="no"/><gap reason="lost" unit="character" extent="unknown"/></w> <orig n="unresolved">νοσ</orig>  <w lemma="ὁ">το<unclear reason="damage">ῖς</unclear></w>  <lb n="11a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab></div>
 </div>
- 
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p> ...</p>
-</div>
- 
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p> ...</p>
-</div>
- 
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Hadrianic Baths</rs>: a.-e. in Ch.7, Str.1; f. stray.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1978)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Found by the NYU expedition in 1967 and 1976 (a.-e. <rs type="invNo">67.583</rs>; f. <rs type="invNo">76.26</rs>)</p>
-</div>
-<div type="bibliography" n="none"> <head>Bibliography</head> <p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_A_21"><figDesc>Fragment a. (1978)</figDesc></figure><figure href="78_A_19"><figDesc>Fragment b. (1978)</figDesc></figure><figure href="78_A_20"><figDesc>Fragment c. (1978)</figDesc></figure><figure href="78_A_24"><figDesc>Fragment d. (1978)</figDesc></figure><figure href="78_A_23"><figDesc>Fragment e. (1978)</figDesc></figure><figure href="76_A_32A"><figDesc>Fragment f. (1976)</figDesc></figure></p>
-</div></body></text>
+         <div n="notyet" type="translation">
+            <p> ...</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p> ...</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

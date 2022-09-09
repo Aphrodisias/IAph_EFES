@@ -1,83 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161413">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">  <rs type="textType">Funerary</rs> for Aurelius Artemidoros</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-03-06</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change><change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Two joining fragments, and an associable one, from the upper, moulded front of a <rs type="objectType">sarcophagus</rs>. a: no edges (<measure type="length" unit="metre" dim="width">0.36</measure>   × <measure type="length" unit="metre" dim="height">0.26</measure>   × <measure type="length" unit="metre" dim="depth">0.24</measure>). b, no edges, (<measure type="length" unit="metre" dim="width">0.28</measure>   × <measure type="length" unit="metre" dim="height">0.13</measure>   × <measure type="length" unit="metre" dim="depth">0.29</measure>). c upper edge survives (<measure type="length" unit="metre" dim="width">0.57</measure>   × <measure type="length" unit="metre" dim="height">0.20</measure>   × <measure type="length" unit="metre" dim="depth">0.23</measure>).</p>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>  Funerary for Aurelius Artemidoros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161413</idno>
+            <idno type="IAph2007">iAph161413</idno>
+            <idno type="JMR2004">1413</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>75.214</idno>
+                  <idno>75.238a</idno>
+                  <idno>75.238b</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two joining fragments, and an associable one, from the upper, moulded front of a <objectType>sarcophagus</objectType>. a: no edges (<width unit="metre">0.36</width>   × <height unit="metre">0.26</height>   × <depth unit="metre">0.24</depth>). b, no edges, (<width unit="metre">0.28</width>   × <height unit="metre">0.13</height>   × <depth unit="metre">0.29</depth>). c upper edge survives (<width unit="metre">0.57</width>   × <height unit="metre">0.20</height>   × <depth unit="metre">0.23</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>l. 1 <rs type="execution" ref="scalpro">inscribed</rs> on the moulding; ll. 2-5, below.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>ll. 1-2, <height unit="metre">0.28</height>; ll. 3-4, <height unit="metre">0.02</height>; l. 5, <height unit="metre">0.024</height>. standard II-III forms. Stop for abbreviation, l.3.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">Second to third centuries A.D. (<rs type="criteria">lettering</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (west part)</rs>: S. Wall excavations, Tr. 3 (a); Mid-area, surface (b); Tr. 4 (c)</provenance>
+                  <provenance type="observed" when="1980">Museum (1980)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-06" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_K_25A.jpg">
+            <desc>Fragment a. (1975)</desc>
+         </graphic>
+         <graphic url="77_V_05A.jpg">
+            <desc>Fragment a. (1977)</desc>
+         </graphic>
+         <graphic url="78_F_25.jpg">
+            <desc>Fragment b. (1978)</desc>
+         </graphic>
+         <graphic url="80_F_19.jpg">
+            <desc>Fragments b.+c. (1980)</desc>
+         </graphic>
+         <graphic url="75_K_26A.jpg">
+            <desc>Fragment c. (1975)</desc>
+         </graphic>
+         <graphic url="77_V_10A.jpg">
+            <desc>Fragment c. (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/>  <supplied reason="lost"><w>ἕτερος</w> <w>δὲ</w> <w>οὐδεὶς</w> <w>ἕξει</w></supplied> <w>ἐξουσίαν</w> <supplied reason="lost"><w>ἐvθαψαι</w> <w>τινα</w> <w>ἢ</w> <w>ἐνθαψαι</w></supplied><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> <g ref="#scroll"/> <orig n="unresolved"><unclear reason="damage">ωιιιθ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/> <w><supplied reason="lost">ἐ</supplied><unclear reason="damage">π</unclear>ε<unclear reason="damage">ὶ</unclear></w>  <w><unclear reason="damage">ἀ</unclear>πο<unclear reason="damage">τ</unclear>είσει</w> <w lemma="ὁ">τῷ</w> <w lemma="ἱερός">ἱερω<supplied reason="lost">τάτῳ</supplied></w>  <w lemma="ταμεῖον"><supplied reason="lost" cert="low">ταμείῳ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved">υ</orig>  <w>ἐπι<gap reason="lost" unit="character" extent="unknown"/></w>  <w><supplied reason="lost">συν</supplied><unclear reason="damage">χ</unclear>ώρησιν</w>  <persName type="attested"><name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλί<gap reason="lost" unit="character" quantity="2"/></ex></expan></name>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος"><unclear reason="damage">Ἀ</unclear><supplied reason="lost">ρ</supplied>τεμιδώ<supplied reason="lost">ρ</supplied><gap reason="lost" unit="character" extent="unknown"/></name></persName></persName>    <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig n="unresolved"><unclear reason="damage">ιυ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <w><supplied reason="lost">προ</supplied>υδήλουτ<supplied reason="lost">αι</supplied></w>  <gap reason="lost" unit="character" quantity="4"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <supplied reason="lost"><w>χωρις</w> <w>ὧν</w> <w>ἀν</w></supplied><lb n="5"/><gap reason="lost" unit="character" extent="unknown"/>  <w><supplied reason="lost">ἀ</supplied>ντίγ<supplied reason="lost">ραφον</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  </ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>l. 1 <rs type="execution" key="scalpro">inscribed</rs> on the moulding; ll. 2-5, below.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>ll. 1-2, <measure dim="height" type="length" unit="metre">0.28</measure>; ll. 3-4, <measure dim="height" type="length" unit="metre">0.02</measure>; l. 5, <measure dim="height" type="length" unit="metre">0.024</measure>. standard II-III forms. Stop for abbreviation, l.3.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date exact="none" notAfter="0300" notBefore="0101">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <gap reason="lost" extent="unknown" unit="character" dim="left"/>  <supplied reason="lost"><w>ἕτερος</w> <w>δὲ</w> <w>οὐδεὶς</w> <w>ἕξει</w></supplied> <w>ἐξουσίαν</w> <supplied reason="lost"><w>ἐvθαψαι</w> <w>τινα</w> <w>ἢ</w> <w>ἐνθαψαι</w></supplied><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="unknown" unit="character" dim="left"/> <g type="scroll"/> <orig n="unresolved"><unclear reason="damage">ωιιιθ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="internal"/> <w><supplied reason="lost">ἐ</supplied><unclear reason="damage">π</unclear>ε<unclear reason="damage">ὶ</unclear></w>  <w><unclear reason="damage">ἀ</unclear>πο<unclear reason="damage">τ</unclear>είσει</w> <w lemma="ὁ">τῷ</w> <w lemma="ἱερός">ἱερω<supplied reason="lost">τάτῳ</supplied></w>  <w lemma="ταμεῖον"><supplied reason="lost" cert="low">ταμείῳ</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved">υ</orig>  <w>ἐπι<gap reason="lost" extent="unknown" unit="character" dim="internal"/></w>  <w><supplied reason="lost">συν</supplied><unclear reason="damage">χ</unclear>ώρησιν</w>  <persName type="aphrodisian"><name reg="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλί<gap reason="lost" dim="internal" extent="2" unit="character"/></supplied></expan></name>  <persName type="aphrodisian"><name reg="Ἀρτεμίδωρος"><unclear reason="damage">Ἀ</unclear><supplied reason="lost">ρ</supplied>τεμιδώ<supplied reason="lost">ρ</supplied><gap reason="lost" extent="unknown" dim="right" unit="character"/></name></persName></persName>    <lb n="4"/><gap reason="lost" extent="unknown" unit="character" dim="left"/><orig n="unresolved"><unclear reason="damage">ιυ</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="internal"/>  <w><supplied reason="lost">προ</supplied>υδήλουτ<supplied reason="lost">αι</supplied></w>  <gap reason="lost" extent="4" unit="character"/><orig n="unresolved"><unclear reason="damage">ι</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <supplied reason="lost"><w>χωρις</w> <w>ὧν</w> <w>ἀν</w></supplied><lb n="5"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w><supplied reason="lost">ἀ</supplied>ντίγ<supplied reason="lost">ραφον</supplied></w>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  </ab>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p> ...</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p> ...</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, South (west part)</rs>: S. Wall excavations, Tr. 3 (a); Mid-area, surface (b); Tr. 4 (c)</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1980)</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1975 (a. <rs type="invNo">75.214</rs>, b. <rs type="invNo">75.238a</rs>, &amp; c. <rs type="invNo">75.238b</rs>).</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="75_K_25A"><figDesc>Fragment a. (1975)</figDesc></figure><figure href="77_V_05A"><figDesc>Fragment a. (1977)</figDesc></figure><figure href="78_F_25"><figDesc>Fragment b. (1978)</figDesc></figure><figure href="80_F_19"><figDesc>Fragments b.+c. (1980)</figDesc></figure><figure href="75_K_26A"><figDesc>Fragment c. (1975)</figDesc></figure><figure href="77_V_10A"><figDesc>Fragment c. (1977)</figDesc></figure></p></div></body></text>
+         <div n="notyet" type="translation">
+            <p> ...</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p> ...</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

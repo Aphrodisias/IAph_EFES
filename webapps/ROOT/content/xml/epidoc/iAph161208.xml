@@ -1,92 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161208">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType" reg="statue dedication">Dedication</rs> of a <seg cert="low">caryatid</seg> by Cocceia Maxima.</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><date>2007</date><availability status="unknown"><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></availability></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-24</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Lower part of a damaged <rs type="material" key="marmor">white marble</rs> <rs type="objectType">Statue base</rs> (<measure type="length" unit="metre" dim="width">0.53</measure>   × <measure type="length" unit="metre" dim="height">0.465</measure> (<measure type="length" unit="metre" dim="height">0.63</measure> with upper moulding) x <measure type="length" unit="metre" dim="depth">0.53</measure>) with <rs type="decoration">egg and dart</rs> moulding.
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedication of a <seg cert="low">caryatid</seg> by Cocceia Maxima.</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161208</idno>
+            <idno type="IAph2007">iAph161208</idno>
+            <idno type="JMR2004">1208</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower part of a damaged <material key="marmor">white marble</material>
+                              <objectType>Statue base</objectType> (<width unit="metre">0.53</width>   × <height unit="metre">0.465</height> (<height unit="metre">0.63</height> with upper moulding) x <depth unit="metre">0.53</depth>) with <rs type="decoration">egg and dart</rs> moulding.
 
 </p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on one face. An upper fragment of the moulding, inscribed with line 1, survives separately.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure type="length" unit="metre" dim="height">0.035-0.04</measure>; circular outlined stops before and after abbreviation in l. 2.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on one face. An upper fragment of the moulding, inscribed with line 1, survives separately.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.035-0.04</height>; circular outlined stops before and after abbreviation in l. 2.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">Hadrianic Baths</rs>: ?Caryatid portico</origPlace>
+                     <origDate notBefore="0151"
+                               notAfter="0200"
+                               evidence="lettering monument group prosopography">
 
-<date notBefore="0151" notAfter="0200">Second half of second century A.D.</date>
-(<rs type="criteria">lettering</rs>, <rs type="criteria">monument group</rs>, <rs type="criteria">prosopography</rs>).</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="0"/><gap extent="unknown" dim="left" reason="lost" unit="character"/>  <persName type="aphrodisian"><name><supplied reason="lost">Κοκ</supplied><lb n="1" type="worddiv"/>  <supplied reason="lost">κεῖ</supplied>α</name>  <name>Μαξιμ<supplied reason="lost">α</supplied></name><lb n="2"/><w><unclear reason="damage">θυγ</unclear><supplied reason="lost">α</supplied><unclear reason="damage">τη</unclear>ρ</w>  <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr><orig><g type="stop"/></orig>Μ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">άρκου</supplied></expan></name>  <lb n="3"/><name><supplied reason="lost">Κ</supplied>οκκείου</name>  <name>Ἀν<lb n="4" type="worddiv"/>τιπάτρου</name>  <name>Οὐλ<lb n="5" type="worddiv"/>πιανοῦ</name></persName></persName>  <w>πρει<lb n="6" type="worddiv"/>μοπειλαρίου</w>  <lb n="7"/><space extent="1" unit="character" dim="horizontal"/> <w lemma="ὁ">τῷ</w> <w>δήμῳ</w> <space extent="2" unit="character" dim="horizontal"/>  </ab>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds); Boulanger notebooks.</p>
-</div>
+Second half of second century A.D.
+(<rs type="criteria">lettering</rs>, <rs type="criteria">monument group</rs>, <rs type="criteria">prosopography</rs>).</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Hadrianic Baths, East Court</rs>: 'Portique O(uest)' ? Southern sector.</provenance>
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds); Boulanger notebooks.</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-24" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_J_22.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+         <graphic url="Boulanger_A_73.jpg">
+            <desc>Boulanger A 73</desc>
+         </graphic>
+         <graphic url="Boulanger_B_36.jpg">
+            <desc>Boulanger B 36</desc>
+         </graphic>
+         <graphic url="Boulanger_B_37.jpg">
+            <desc>Boulanger B 37</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>[Cocceia] Maxima daughter of M(arcus) Cocceius Antipatros Ulpianos, primipilarius, to the People</p>
+<ab><lb n="0"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name><supplied reason="lost">Κοκ</supplied><lb n="1" break="no"/>  <supplied reason="lost">κεῖ</supplied>α</name>  <name>Μαξιμ<supplied reason="lost">α</supplied></name><lb n="2"/><w><unclear reason="damage">θυγ</unclear><supplied reason="lost">α</supplied><unclear reason="damage">τη</unclear>ρ</w>  <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr><am><g ref="#stop"/></am>Μ<am><g ref="#stop"/></am></abbr><ex>άρκου</ex></expan></name>  <lb n="3"/><name><supplied reason="lost">Κ</supplied>οκκείου</name>  <name>Ἀν<lb n="4" break="no"/>τιπάτρου</name>  <name>Οὐλ<lb n="5" break="no"/>πιανοῦ</name></persName></persName>  <w>πρει<lb n="6" break="no"/>μοπειλαρίου</w>  <lb n="7"/><space extent="1" unit="character"/> <w lemma="ὁ">τῷ</w> <w>δήμῳ</w> <space extent="2" unit="character"/>  </ab>
 </div>
-<div type="commentary">
-<head>Commentary</head>
-<p>One of the series of dedications from the East Court of the Hadrianic Baths: <xref type="iAph">1183</xref>, <xref type="iAph">1184</xref>, <xref type="iAph">1186</xref>, <xref type="iAph">1187</xref>, <xref type="iAph">1188</xref>, <xref type="iAph">1189</xref>, <xref type="iAph">1190</xref>, <xref type="iAph">1191</xref>, <xref type="iAph">1192</xref>, <xref type="iAph">1193</xref>, <xref type="iAph">1194</xref>, <xref type="iAph">1195</xref>, <xref type="iAph">1196</xref>, <xref type="iAph">1197</xref>, <xref type="iAph">1198</xref>, <xref type="iAph">1199</xref>, <xref type="iAph">1200</xref>, <xref type="iAph">1201</xref>, <xref type="iAph">1202</xref>, <xref type="iAph">1203</xref>, <xref type="iAph">1204</xref>, <xref type="iAph">1205</xref>, <xref type="iAph">1206</xref>, <xref type="iAph">1207</xref>, <xref type="iAph">1209</xref>, <xref type="iAph">1210</xref> ; all are by women, and apparently bore caryatids (see <xref type="iAph">1198</xref>).</p><p>For the father cf. <xref type="iAph">1250</xref> (=Portico 2), a dedication by<foreign lang="grc"> . . . ] Ἀντίπατρος πριμοπειλάριος</foreign></p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-; Original location: <rs type="origLocation"><rs type="monuList">Hadrianic Baths</rs>: ?Caryatid portico</rs>
-Found: <rs type="found"><rs type="monuList">Hadrianic Baths, East Court</rs>: 'Portique O(uest)' ? Southern sector.</rs>
-; Last known location: <rs type="lastLocation">Findspot</rs>
-</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by Boulanger, 19 October 1913 (notebook A 73, nos. 9 and 10, whence B 36-7, 9 and 10); both fragments found by the NYU expedition (lower fragment inventory <rs type="siteNo">Baths 2</rs>,  SBI <rs type="sbi">139</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_J_22"><figDesc>Face (1978)</figDesc></figure></p>
-</div><div type="figure" n="transcriptions">
-<head>Representations</head>
-<p> <figure href="Boulanger_A_73"><figDesc>Boulanger A 73</figDesc></figure><figure href="Boulanger_B_36"><figDesc>Boulanger B 36</figDesc></figure>
-<figure href="Boulanger_B_37"><figDesc>Boulanger B 37</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>[Cocceia] Maxima daughter of M(arcus) Cocceius Antipatros Ulpianos, primipilarius, to the People</p>
+         </div>
+         <div type="commentary">
+            <p>One of the series of dedications from the East Court of the Hadrianic Baths: <ref type="iAph" target="">1183</ref>, <ref type="iAph" target="">1184</ref>, <ref type="iAph" target="">1186</ref>, <ref type="iAph" target="">1187</ref>, <ref type="iAph" target="">1188</ref>, <ref type="iAph" target="">1189</ref>, <ref type="iAph" target="">1190</ref>, <ref type="iAph" target="">1191</ref>, <ref type="iAph" target="">1192</ref>, <ref type="iAph" target="">1193</ref>, <ref type="iAph" target="">1194</ref>, <ref type="iAph" target="">1195</ref>, <ref type="iAph" target="">1196</ref>, <ref type="iAph" target="">1197</ref>, <ref type="iAph" target="">1198</ref>, <ref type="iAph" target="">1199</ref>, <ref type="iAph" target="">1200</ref>, <ref type="iAph" target="">1201</ref>, <ref type="iAph" target="">1202</ref>, <ref type="iAph" target="">1203</ref>, <ref type="iAph" target="">1204</ref>, <ref type="iAph" target="">1205</ref>, <ref type="iAph" target="">1206</ref>, <ref type="iAph" target="">1207</ref>, <ref type="iAph" target="">1209</ref>, <ref type="iAph" target="">1210</ref> ; all are by women, and apparently bore caryatids (see <ref type="iAph" target="">1198</ref>).</p>
+            <p>For the father cf. <ref type="iAph" target="">1250</ref> (=Portico 2), a dedication by<foreign xml:lang="grc"> . . . ] Ἀντίπατρος πριμοπειλάριος</foreign>
+            </p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

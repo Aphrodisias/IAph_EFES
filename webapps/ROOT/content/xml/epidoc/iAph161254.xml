@@ -1,91 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161254">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building dedication</rs> of the Agora Gate by Diogenes son of Menandros</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building dedication of the Agora Gate by Diogenes son of Menandros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161254</idno>
+            <idno type="IAph2007">iAph161254</idno>
+            <idno type="JMR2004">1254</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>77.48</idno>
+                  <idno>77.47</idno>
+                  <idno>80.32</idno>
+                  <idno>80.30</idno>
+                  <idno>80.31</idno>
+                  <idno>80.15</idno>
+                  <idno>80.27</idno>
+                  <idno>83.294</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>13 fragments of 8 <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> blocks from a series (standard length <width unit="metre">2.50</width>   × <height unit="metre">0.49</height>   × <depth unit="metre">0.76</depth>+). Of the blocks, lettered from left to right, a (copied in 1975), c (80.32 &amp; 30),  d (80.31), g (83?), and h (83?) are cut with frieze and architrave in one; the frieze bears a design of <rs type="decoration">heads</rs> and <rs type="decoration">masks</rs> joined by <rs type="decoration">swags</rs> (<height unit="metre">0.90</height>). Three blocks, b, f, and i are simple architrave blocks (<height unit="metre">0.49</height>); e is assumed as a missing block.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>The <rs type="execution" ref="scalpro">inscription</rs> runs in one line on the upper fascia of the entablature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.09-0.10</height>; ligatured <foreign xml:lang="grc">ΝΗ</foreign>, b.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <rs type="monuList">South Agora, Agora Gate</rs>: along the west face of the Agora Gate</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering emperor">
+Second century A.D.
+(<rs type="criteria">lettering</rs>, <rs type="criteria">emperor</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">South Agora, Agora Gate</rs>: in excavation of area</provenance>
+                  <provenance type="observed" when="1983">Museum or on site (1983)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_Y_21.jpg">
+            <desc>Fragment b. (1977)</desc>
+         </graphic>
+         <graphic url="77_Y_22.jpg">
+            <desc>Fragment b. (1977)</desc>
+         </graphic>
+         <graphic url="78_L_32.jpg">
+            <desc>Fragment b. (1978)</desc>
+         </graphic>
+         <graphic url="80_G_29.jpg">
+            <desc>Fragment b. (1980)</desc>
+         </graphic>
+         <graphic url="80_A_25.jpg">
+            <desc>Fragment c. (1980)</desc>
+         </graphic>
+         <graphic url="80_E_05A.jpg">
+            <desc>Fragment c. (1980)</desc>
+         </graphic>
+         <graphic url="80_F_06.jpg">
+            <desc>Fragment c. (1980)</desc>
+         </graphic>
+         <graphic url="80_B_13.jpg">
+            <desc>Fragment d. (1980)</desc>
+         </graphic>
+         <graphic url="80_B_14.jpg">
+            <desc>Fragment d. (1980)</desc>
+         </graphic>
+         <graphic url="80_B_23.jpg">
+            <desc>Fragment f. (1980)</desc>
+         </graphic>
+         <graphic url="83_D_32A.jpg">
+            <desc>Fragment f. (1983)</desc>
+         </graphic>
+         <graphic url="83_E_26.jpg">
+            <desc>Fragment f. (1983)</desc>
+         </graphic>
+         <graphic url="83_E_03.jpg">
+            <desc>Fragment g. (1983)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
 
-
-<p>13 fragments of 8 <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> blocks from a series (standard length <measure dim="width" type="length" unit="metre" precision="circa">2.50</measure>   × <measure dim="height" type="length" unit="metre">0.49</measure>   × <measure dim="depth" type="length" unit="metre">0.76</measure>+). Of the blocks, lettered from left to right, a (copied in 1975), c (80.32 &amp; 30),  d (80.31), g (83?), and h (83?) are cut with frieze and architrave in one; the frieze bears a design of <rs type="decoration">heads</rs> and <rs type="decoration">masks</rs> joined by <rs type="decoration">swags</rs> (<measure dim="height" type="length" unit="metre">0.90</measure>). Three blocks, b, f, and i are simple architrave blocks (<measure dim="height" type="length" unit="metre">0.49</measure>); e is assumed as a missing block.</p></div><div type="description" n="text"><head>Description of Text</head><p>The <rs type="execution" key="scalpro">inscription</rs> runs in one line on the upper fascia of the entablature.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.09-0.10</measure>; ligatured <foreign lang="grc">ΝΗ</foreign>, b.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0101" notAfter="0200" exact="none" cert="low">Second century A.D.</date>
-(<rs type="criteria">lettering</rs>, <rs type="criteria">emperor</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-
-<div type="textpart_fragment" n="a"><ab><lb n="1"/><w><supplied reason="lost">Θεᾷ</supplied></w>  <persName type="divine" full="yes"><supplied reason="lost">Ἀφροδεί</supplied>τῃ</persName> <w lemma="καί">καὶ</w> <w>θεοῖς</w> <w lemma="σεβαστός">Σεβασ<supplied reason="lost">τοῖς</supplied></w>  </ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w>Δήμῳ</w> <persName type="aphrodisian" full="yes"><name reg="Διογένης">Διο<unclear reason="damage">γ</unclear>ένης</name>  <persName type="aphrodisian" full="yes"><name reg="Μένανδρος">Μενάνδρ<supplied reason="lost">ου</supplied></name></persName></persName></ab></div><div type="textpart_fragment" n="c"><ab><lb n="1"/> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian" full="yes"><name reg="Διογένης">Διογένους</name></persName> <w>νεώτερος</w> <space unit="character" extent="2" dim="horizontal"/>  </ab></div><div type="textpart_fragment" n="d"><ab><lb n="1"/> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <w lemma="καί">καὶ</w> <w>ἔκτισε<unclear reason="damage">ν</unclear></w>  <orig n="unresolved"><unclear reason="damage">ο</unclear></orig><gap extent="2" dim="right" reason="lost" unit="character"/>  </ab></div><div type="textpart_fragment" n="e"><ab><lb n="1"/><gap extent="15" dim="left" reason="lost" unit="character" extentmax="20"/><supplied reason="lost"><w lemma="ἐκ">ἐκ</w>  <w lemma="ὁ">τῶν</w></supplied>  </ab></div><div type="textpart_fragment" n="f"><ab><lb n="1"/> <w>ἰδίων</w> <w lemma="ὁ">τὸ</w> <w>πρόπυλον</w> <w lemma="ἐκ">ἐκ</w> <w lemma="θεμέλιος">θεμε<supplied reason="lost">λίων</supplied></w>  </ab></div><div type="textpart_fragment" n="g"><ab><lb n="1"/> <w lemma="σύν">σὺν</w> <w lemma="ὁ">τοῖς</w> <w lemma="πύργος">πύργοις</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ταῖς</w> <space unit="character" extent="4" dim="horizontal"/>  </ab></div><div type="textpart_fragment" n="h"><ab><lb n="1"/> <w>τείμαις</w> <w lemma="ὁ">τῶν</w> <w lemma="σεβαστός">Σεβαστῶν</w> <space unit="character" extent="2" dim="horizontal"/>  <gap reason="lost" extent="5" unit="character" dim="right"/>  </ab></div><div type="textpart_fragment" n="i"><ab><lb n="1"/><gap reason="lost" extent="5" unit="character" dim="left"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w>λοιπῷ</w> <w>κόσμῳ</w> <w>παντ<supplied reason="lost">ί</supplied></w>  <gap reason="lost" extent="5" unit="character" dim="right"/></ab></div>
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><w><supplied reason="lost">Θεᾷ</supplied></w>  <persName type="divine"><supplied reason="lost">Ἀφροδεί</supplied>τῃ</persName> <w lemma="καί">καὶ</w> <w>θεοῖς</w> <w lemma="σεβαστός">Σεβασ<supplied reason="lost">τοῖς</supplied></w>  </ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w>Δήμῳ</w> <persName type="attested"><name nymRef="#Διογένης">Διο<unclear reason="damage">γ</unclear>ένης</name>  <persName type="attested"><name nymRef="#Μένανδρος">Μενάνδρ<supplied reason="lost">ου</supplied></name></persName></persName></ab></div><div n="c" type="textpart" subtype="fragment"><ab><lb n="1"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διογένης">Διογένους</name></persName> <w>νεώτερος</w> <space unit="character" extent="2"/>  </ab></div><div n="d" type="textpart" subtype="fragment"><ab><lb n="1"/> <w lemma="ἀνατίθημι">ἀνέθηκεν</w> <w lemma="καί">καὶ</w> <w>ἔκτισε<unclear reason="damage">ν</unclear></w>  <orig n="unresolved"><unclear reason="damage">ο</unclear></orig><gap reason="lost" unit="character" quantity="2"/>  </ab></div><div n="e" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" atLeast="15" atMost="20"/><supplied reason="lost"><w lemma="ἐκ">ἐκ</w>  <w lemma="ὁ">τῶν</w></supplied>  </ab></div><div n="f" type="textpart" subtype="fragment"><ab><lb n="1"/> <w>ἰδίων</w> <w lemma="ὁ">τὸ</w> <w>πρόπυλον</w> <w lemma="ἐκ">ἐκ</w> <w lemma="θεμέλιος">θεμε<supplied reason="lost">λίων</supplied></w>  </ab></div><div n="g" type="textpart" subtype="fragment"><ab><lb n="1"/> <w lemma="σύν">σὺν</w> <w lemma="ὁ">τοῖς</w> <w lemma="πύργος">πύργοις</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ταῖς</w> <space unit="character" extent="4"/>  </ab></div><div n="h" type="textpart" subtype="fragment"><ab><lb n="1"/> <w>τείμαις</w> <w lemma="ὁ">τῶν</w> <w lemma="σεβαστός">Σεβαστῶν</w> <space unit="character" extent="2"/>  <gap reason="lost" unit="character" quantity="5"/>  </ab></div><div n="i" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" quantity="5"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w>λοιπῷ</w> <w>κόσμῳ</w> <w>παντ<supplied reason="lost">ί</supplied></w>  <gap reason="lost" unit="character" quantity="5"/></ab></div>
 
 
 </div>
-
-<div type="apparatus">
-<head>Apparatus</head>
-<p>... note on vacat (g) ...</p>
-</div>
-<div type="translation" n="notyet">
-<head>Translation</head>
-<p>For <supplied reason="lost">the goddess Aphrodi</supplied>te and the gods Augusti and the People: Diogenes the younger, son of Menandros son of Diogenes at his own expense set up and built <gap reason="lost"/> from the foundations the Propylon together with the towers and the statues of the Augusti and all the rest of the decoration.</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>For the imperial honours see the statues of  Nerva (<xref type="iAph">1311</xref>=77.34), Hadrian (<xref type="iAph">1292</xref>=83.75), and Antoninus Pius (<xref type="iAph">1300</xref>=80.24)</p><p>[[[Action: To discuss with NdeC and DTh]]]</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-; Original location: <rs type="origLocation"><rs type="monuList">South Agora, Agora Gate</rs>: along the west face of the Agora Gate</rs>
-Found: <rs type="found"><rs type="monuList">South Agora, Agora Gate</rs>: in excavation of area</rs>
-; Last known location: <rs type="lastLocation">Museum or on site (1983)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition between 1975 and 1983 (b: <rs type="invNo">77.48</rs>+ <rs type="invNo">77.47</rs>; c: <rs type="invNo">80.32</rs> + <rs type="invNo">80.30</rs>; d: <rs type="invNo">80.31</rs>; f: <rs type="invNo">80.15</rs> + <rs type="invNo">80.27</rs>; g: 83?, i: <rs type="invNo">83.294</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_Y_21"><figDesc>Fragment b. (1977)</figDesc></figure><figure href="77_Y_22"><figDesc>Fragment b. (1977)</figDesc></figure><figure href="78_L_32"><figDesc>Fragment b. (1978)</figDesc></figure><figure href="80_G_29"><figDesc>Fragment b. (1980)</figDesc></figure><figure href="80_A_25"><figDesc>Fragment c. (1980)</figDesc></figure><figure href="80_E_05A"><figDesc>Fragment c. (1980)</figDesc></figure><figure href="80_F_06"><figDesc>Fragment c. (1980)</figDesc></figure><figure href="80_B_13"><figDesc>Fragment d. (1980)</figDesc></figure><figure href="80_B_14"><figDesc>Fragment d. (1980)</figDesc></figure><figure href="80_B_23"><figDesc>Fragment f. (1980)</figDesc></figure><figure href="83_D_32A"><figDesc>Fragment f. (1983)</figDesc></figure><figure href="83_E_26"><figDesc>Fragment f. (1983)</figDesc></figure><figure href="83_E_03"><figDesc>Fragment g. (1983)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>... note on vacat (g) ...</p>
+         </div>
+         <div type="translation" n="notyet">
+            <p>For <supplied reason="lost">the goddess Aphrodi</supplied>te and the gods Augusti and the People: Diogenes the younger, son of Menandros son of Diogenes at his own expense set up and built <gap reason="lost" unit="character" extent="unknown"/> from the foundations the Propylon together with the towers and the statues of the Augusti and all the rest of the decoration.</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>For the imperial honours see the statues of  Nerva (<ref type="iAph" target="">1311</ref>=77.34), Hadrian (<ref type="iAph" target="">1292</ref>=83.75), and Antoninus Pius (<ref type="iAph" target="">1300</ref>=80.24)</p>
+            <p>[[[Action: To discuss with NdeC and DTh]]]</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

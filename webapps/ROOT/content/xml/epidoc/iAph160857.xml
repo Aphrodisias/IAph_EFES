@@ -1,93 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160857">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for M. Aur. Cl. Ant. Dioskoros</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc>
-<p>Unpublished inscription.  This version born digital</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-24</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-  
-  <change><date>2006-12-11</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-  
-  <change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Moulded capital for a <rs type="objectType">base</rs> with a circular feature on top on which feet marks are visible for the statue (bronze); there is a short area of plain base below (<measure dim="width" type="length" unit="metre">0.87</measure>-<measure dim="width" type="length" unit="metre">0.59</measure> x <measure precision="circa" dim="height" type="length" unit="metre">0.40</measure>   × <measure dim="depth" type="length" unit="metre">0.83</measure>).</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for M. Aur. Cl. Ant. Dioskoros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160857</idno>
+            <idno type="IAph2007">iAph160857</idno>
+            <idno type="JMR2004">857</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>75.335</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Moulded capital for a <objectType>base</objectType> with a circular feature on top on which feet marks are visible for the statue (bronze); there is a short area of plain base below (<width unit="metre">0.87</width>-<width unit="metre">0.59</width> x <height unit="metre">0.40</height>   × <depth unit="metre">0.83</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on four <term>fasciae</term> and one curved surface of the moulding and on the face below; both upper corners are chipped away, and the surface is damaged in many places.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Ave. <height unit="metre">0.02</height>; abbreviation marks. Ligatured ΝΤ l. 4.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering nomenclature">
+Second to third centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (east part)</rs>: excavations, Trench 3</provenance>
+                  <provenance type="observed" when="1978">Museum (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-24" who="cmr">DONE</change>
+         <change when="2006-12-11" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_C_17.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+         <graphic url="78_G_17.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή"><supplied reason="lost">βο</supplied><unclear reason="damage">υ</unclear>λὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w>γερουσία</w> <w lemma="καί"><unclear reason="damage">κ</unclear><supplied reason="lost">αὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">οἱ</supplied></w>  <w><supplied reason="lost">χρυσ</supplied>  <lb n="2" break="no"/><unclear reason="damage">ο</unclear>φόροι</w> <w>νεοποιόι</w> <w lemma="τιμάω">ἐτείμησαν</w> <w lemma="ὁ">ταῖς</w> <w>κα<supplied reason="lost">λλίσται</supplied>  <lb n="3" break="no"/><unclear reason="damage">ς</unclear></w> <w lemma="καί">καὶ</w> <w>μεγίσταις</w> <w>τειμαῖς</w> <g ref="#stop"/> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκον</ex></expan></name>  <orig><g ref="#stop"/></orig><name nymRef="#Αὐρήλιος"><expan><abbr><unclear reason="damage">Αὐρ</unclear></abbr><ex>ήλιον</ex></expan></name>  <name><expan><abbr><supplied reason="lost">Αντ</supplied></abbr><supplied reason="lost"><ex>ώνιον</ex></supplied></expan></name>  <lb n="4"/><name><supplied reason="lost">Δι</supplied>όσκορον</name></persName> <g ref="#stop"/> <w lemma="υἱός">υ<g ref="#stop"/>ἱὸν</w> <g ref="#stop"/> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr>Μ<am><g ref="#stop"/></am></abbr><ex>άρκου</ex></expan></name>  <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name>  <orig><g ref="#stop"/></orig><name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name></persName><orig><g ref="#stop"/></orig> <persName type="attested"><name nymRef="#Τίτος"><expan><abbr>Τ</abbr><ex>ίτου</ex></expan></name> <name><expan><abbr>Α<hi rend="ligature">ντ</hi></abbr><ex>ωνίου</ex></expan></name>  <name nymRef="#Ζήνων">Ζήν<unclear reason="damage">ωνος</unclear><lb n="5" break="no"/></name></persName> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name></persName> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυ<unclear reason="damage">σ</unclear><supplied reason="lost">ίου</supplied></name></persName>  <supplied reason="lost">τοῦ</supplied>  <persName type="attested"><name><supplied reason="lost">Ἀ</supplied><lb n="6" break="no"/>γαθόποδος</name> <name>Διοσκόρου</name></persName> <unclear reason="damage">Ι</unclear><gap reason="lost" unit="character" extent="unknown"/>  <w><supplied reason="lost" cert="low">βου</supplied>  <lb n="7" break="no"/>λευτοῦ</w> <w lemma="καί">καὶ</w> <orig n="unresolved"><unclear reason="damage">γα</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="8"/>  <orig n="unresolved"><unclear reason="damage">τας</unclear>υνι<unclear reason="damage">γι</unclear></orig>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="9"/><gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on four <term>fasciae</term> and one curved surface of the moulding and on the face below; both upper corners are chipped away, and the surface is damaged in many places.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Ave. <measure type="length" unit="metre" dim="height">0.02</measure>; abbreviation marks. Ligatured ΝΤ l. 4.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0101" exact="none">Second to third centuries A.D.</date> (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="βουλή"><supplied reason="lost">βο</supplied><unclear reason="damage">υ</unclear>λὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w>γερουσία</w> <w lemma="καί"><unclear reason="damage">κ</unclear><supplied reason="lost">αὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">οἱ</supplied></w>  <w><supplied reason="lost">χρυσ</supplied>  <lb type="worddiv" n="2"/><unclear reason="damage">ο</unclear>φόροι</w> <w>νεοποιόι</w> <w lemma="τιμάω">ἐτείμησαν</w> <w lemma="ὁ">ταῖς</w> <w>κα<supplied reason="lost">λλίσται</supplied>  <lb type="worddiv" n="3"/><unclear reason="damage">ς</unclear></w> <w lemma="καί">καὶ</w> <w>μεγίσταις</w> <w>τειμαῖς</w> <g type="stop"/> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ</abbr><supplied reason="abbreviation">ᾶρκον</supplied></expan></name>  <orig><g type="stop"/></orig><name reg="Αὐρήλιος" type="nomen"><expan><abbr><unclear reason="damage">Αὐρ</unclear></abbr><supplied reason="abbreviation">ήλιον</supplied></expan></name>  <name><expan><abbr><supplied reason="lost">Αντ</supplied></abbr><supplied reason="lost"><supplied reason="abbreviation">ώνιον</supplied></supplied></expan></name>  <lb n="4"/><name><supplied reason="lost">Δι</supplied>όσκορον</name></persName> <g type="stop"/> <w lemma="υἱός">υ<g type="stop"/>ἱὸν</w> <g type="stop"/> <persName type="aphrodisian"><name reg="Μᾶρκος"><expan><abbr>Μ<orig><g type="stop"/></orig></abbr><supplied reason="abbreviation">άρκου</supplied></expan></name>  <name reg="Αὐρήλιος" type="nomen"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλίου</supplied></expan></name>  <orig><g type="stop"/></orig><name reg="Κλαύδιος"><expan><abbr>Κλ</abbr><supplied reason="abbreviation">αυδίου</supplied></expan></name></persName><orig><g type="stop"/></orig> <persName type="aphrodisian"><name reg="Τίτος" type="praenomen"><expan><abbr>Τ</abbr><supplied reason="abbreviation">ίτου</supplied></expan></name> <name><expan><abbr>Α<hi rend="ligature">ντ</hi></abbr><supplied reason="abbreviation">ωνίου</supplied></expan></name>  <name reg="Ζήνων">Ζήν<unclear reason="damage">ωνος</unclear><lb n="5" type="worddiv"/></name></persName> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνωνος</name></persName> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Διονύσιος">Διονυ<unclear reason="damage">σ</unclear><supplied reason="lost">ίου</supplied></name></persName>  <supplied reason="lost">τοῦ</supplied>  <persName type="aphrodisian"><name><supplied reason="lost">Ἀ</supplied><lb type="worddiv" n="6"/>γαθόποδος</name> <name>Διοσκόρου</name></persName> <unclear reason="damage">Ι</unclear><gap reason="lost" extent="unknown" unit="character"/>  <w><supplied reason="lost" cert="low">βου</supplied>  <lb type="worddiv" n="7"/>λευτοῦ</w> <w lemma="καί">καὶ</w> <orig n="unresolved"><unclear reason="damage">γα</unclear></orig><gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="8"/>  <orig n="unresolved"><unclear reason="damage">τας</unclear>υνι<unclear reason="damage">γι</unclear></orig>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="9"/><gap reason="lost" extent="unknown" unit="character" dim="right"/></ab>
-</div>
-<div type="apparatus" n="none">
-<head>Apparatus</head>
-<p>... </p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p>The Council and the People and the Gerousia and the gold-bearing neopoioi honoured with the finest and greatest honours M. Aur. Ant. Dioskoros, son of M. Aur. Cl. T. Ant. Zenon, the son of Zenon the son of Dionysios the son of Agathopous Dioskoros [ . . .] a town councillor [ . . .</p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>For the synedrion of the Chrysophoroi Neopoioi see <xref type="iAph">1044</xref> (=MAMA 523), <xref type="iAph">1046</xref> (=MAMA 525) (where again they are linked with Council and Gerousia), <xref type="iAph">1484</xref>  (=MAMA 555),   <xref type="iAph">1566</xref> (=MAMA 579), <xref type="iAph">1467</xref> (= CIG 2836b)</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, South (east part)</rs>: excavations, Trench 3</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1978)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1975 (<rs type="invNo">75.335</rs>)</p>
-</div>
-<div type="bibliography" n="none"> <head>Bibliography</head> <p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_C_17"><figDesc>Face (1978)</figDesc></figure><figure href="78_G_17"><figDesc>Face (1978)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus" n="none">
+            <p>... </p>
+         </div>
+         <div n="notyet" type="translation">
+            <p>The Council and the People and the Gerousia and the gold-bearing neopoioi honoured with the finest and greatest honours M. Aur. Ant. Dioskoros, son of M. Aur. Cl. T. Ant. Zenon, the son of Zenon the son of Dionysios the son of Agathopous Dioskoros [ . . .] a town councillor [ . . .</p>
+         </div>
+         <div type="commentary">
+            <p>For the synedrion of the Chrysophoroi Neopoioi see <ref type="iAph" target="">1044</ref> (=MAMA 523), <ref type="iAph" target="">1046</ref> (=MAMA 525) (where again they are linked with Council and Gerousia), <ref type="iAph" target="">1484</ref>  (=MAMA 555),   <ref type="iAph" target="">1566</ref> (=MAMA 579), <ref type="iAph" target="">1467</ref> (= CIG 2836b)</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

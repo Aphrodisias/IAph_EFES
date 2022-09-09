@@ -1,95 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160875">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Funerary</rs> inscription for Aurelia Ammia</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc>
-<p>Unpublished inscription.  This version born digital</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-08-07</date><respStmt><name>Eleonora Litta</name></respStmt><item>tidied expan</item></change><change><date>2007-03-11</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-  
-  <change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">sarcophagus</rs> front (<measure type="length" unit="metre" dim="width">0.005</measure>   × <measure type="length" unit="metre" dim="height">0.44</measure>   × <measure type="length" unit="metre" dim="depth">0.086</measure>-0.12) broken to left and right and moulded above.</p>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Funerary inscription for Aurelia Ammia</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160875</idno>
+            <idno type="IAph2007">iAph160875</idno>
+            <idno type="JMR2004">875</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>77.139</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>sarcophagus</objectType> front (<width unit="metre">0.005</width>   × <height unit="metre">0.44</height>   × <depth unit="metre">0.086</depth>-0.12) broken to left and right and moulded above.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>ll. 1-3, <rs type="execution" ref="scalpro">inscribed</rs> on <term>fasciae</term> of moulding, l. 4ff, on face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>; ligatures: l.1, <foreign xml:lang="grc">ΜΜ</foreign>; l.2, <foreign xml:lang="grc">ΗΝ</foreign>; l.3, <foreign xml:lang="grc">ΜΗΝ</foreign>, <foreign xml:lang="grc">ΝΗΡ</foreign>; l.7, <foreign xml:lang="grc">ΤΗ</foreign>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering nomenclature">
+ Τhird century A.D.
+(<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">City, North-west</rs> : serving as a bridge over a stream just E. of W. wall.</provenance>
+                  <provenance type="observed" when="1978">Museum (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
+         <change when="2007-03-11" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_J_23.jpg">
+            <desc>Face (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="σορός"><supplied reason="lost" cert="low">σορὸς</supplied></w> <w lemma="εἰμί">ἐστιν</w> <persName type="attested"><name>Αὐρη<g ref="#stop"/>λ<g ref="#stop"/>ία<unclear reason="damage">ς</unclear></name> <name nymRef="#Ἀμμία"><unclear reason="damage">Ἀ</unclear><hi rend="ligature">μμ</hi>ίας</name></persName> <orig n="unresolved">δ<unclear reason="damage">ι</unclear><g ref="#stop"/>νς</orig> <gap reason="lost" unit="character" quantity="33"/>  <lb n="2"/><gap reason="lost" unit="character" quantity="5"/> <w lemma="εἰς">εἰς</w> <w lemma="ὅς">ἣν</w> <w lemma="σορός">σορὸν</w> <w>τεθάπται</w> <persName type="attested"><name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλι<gap reason="lost" unit="character" quantity="2"/></ex></expan></name> <name nymRef="#Ὑάκινθος">Ὑάκινθ<gap reason="lost" unit="character" extent="unknown"/></name></persName>  <gap reason="lost" unit="character" quantity="30"/>  <lb n="3"/><gap reason="lost" unit="character" quantity="5"/> <persName type="attested"><name><unclear reason="damage">Ἀ</unclear>σκληπιόδοτος</name> <persName type="attested"><name nymRef="#Μηνόδοτος">Μηνοδότου</name></persName></persName> <w lemma="ὁ">ὁ</w> <w>ἀνὴρ</w> <w>ἀ<supplied reason="lost">υτῆς</supplied></w> <gap reason="lost" unit="character" quantity="30"/>  <lb n="4"/><gap reason="lost" unit="character" quantity="5"/><supplied reason="lost">υ</supplied><unclear reason="damage">ἰ</unclear>ου <w lemma="καί">καὶ</w> <persName type="attested"><name>Ἀσκληπιόδοτος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="ἕτερος">ἕτερος</w> <w>υἱ<supplied reason="lost">ος</supplied></w>  <gap reason="lost" unit="character" quantity="30"/>  <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ἐνθάπτω"><supplied reason="lost">ἐν</supplied><unclear reason="damage">θ</unclear>άψαι</w> <w lemma="τις">τινα</w> <w lemma="ἤ">ἢ</w> <w>ἐκθάψαι</w> <w lemma="ὁ">τῶν</w> <w><unclear reason="damage">ἐ</unclear>νγεγο<supplied reason="lost" cert="low">νότων</supplied></w>  <gap reason="lost" unit="character" quantity="28"/>    <lb n="6"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w><supplied reason="lost">τυ</supplied><unclear reason="damage">μ</unclear>βωρύχος</w> <w lemma="καί">καὶ</w> <w>προσαποτείσει</w> <w lemma="ὁ">τῷ</w> <w lemma="ἱερός">ἱερωτ<unclear reason="damage">ά</unclear>τ<unclear reason="damage">ῳ</unclear></w>  <w lemma="ταμεῖον"><supplied reason="lost">ταμείῳ</supplied></w>  <gap reason="lost" unit="character" quantity="27"/><supplied reason="lost"><w>ὡν</w> <w>το</w> <w>τριτον</w> <w>εσται</w></supplied><lb n="7"/><w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <w><supplied reason="lost">ἐκ</supplied>δικήσαντος</w> <w lemma="ὁ">τῆς</w> <w>ἐπιγραφῆς</w> <w>ἀπετέθη</w> <w>ἀν<supplied reason="lost">τίγραφον</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w><supplied reason="lost">χρεοφυλάκιον</supplied></w>  <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>  <w lemma="στεφανηφόρος"><supplied reason="lost">στεφα</supplied>  <lb n="8" break="no"/><space extent="11" unit="character"/>νηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="2">β</num> <persName type="attested"><name nymRef="#Ζήνων">Ζήνω<unclear reason="damage">ν</unclear>ο<supplied reason="lost">ς</supplied></name></persName> <w>Π<gap reason="lost" unit="character" quantity="15"/></w></ab>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>ll. 1-3, <rs type="execution" key="scalpro">inscribed</rs> on <term>fasciae</term> of moulding, l. 4ff, on face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>
-<measure type="length" unit="metre" dim="height">0.02</measure>; ligatures: l.1, <foreign lang="grc">ΜΜ</foreign>; l.2, <foreign lang="grc">ΗΝ</foreign>; l.3, <foreign lang="grc">ΜΗΝ</foreign>, <foreign lang="grc">ΝΗΡ</foreign>; l.7, <foreign lang="grc">ΤΗ</foreign>.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0201" notAfter="0300" exact="none"> Τhird century A.D.</date>
-(<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><w lemma="ὁ"><supplied reason="lost">ἡ</supplied></w>  <w lemma="σορός"><supplied reason="lost" cert="low">σορὸς</supplied></w> <w lemma="εἰμί">ἐστιν</w> <persName type="aphrodisian"><name>Αὐρη<g type="stop"/>λ<g type="stop"/>ία<unclear reason="damage">ς</unclear></name> <name reg="Ἀμμία"><unclear reason="damage">Ἀ</unclear><hi rend="ligature">μμ</hi>ίας</name></persName> <orig n="unresolved">δ<unclear reason="damage">ι</unclear><g type="stop"/>νς</orig> <gap reason="lost" extent="33" unit="character" dim="right"/>  <lb n="2"/><gap reason="lost" extent="5" unit="character"/> <w lemma="εἰς">εἰς</w> <w lemma="ὅς">ἣν</w> <w lemma="σορός">σορὸν</w> <w>τεθάπται</w> <persName type="aphrodisian"><name reg="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><supplied reason="abbreviation">ηλι<gap reason="lost" extent="2"/></supplied></expan></name> <name reg="Ὑάκινθος">Ὑάκινθ<gap reason="lost" extent="unknown" unit="character"/></name></persName>  <gap reason="lost" extent="30" unit="character" dim="right"/>  <lb n="3"/><gap reason="lost" extent="5" unit="character"/> <persName type="aphrodisian"><name><unclear reason="damage">Ἀ</unclear>σκληπιόδοτος</name> <persName type="aphrodisian"><name reg="Μηνόδοτος">Μηνοδότου</name></persName></persName> <w lemma="ὁ">ὁ</w> <w>ἀνὴρ</w> <w>ἀ<supplied reason="lost">υτῆς</supplied></w> <gap reason="lost" extent="30" unit="character" dim="right"/>  <lb n="4"/><gap reason="lost" extent="5" unit="character"/><supplied reason="lost">υ</supplied><unclear reason="damage">ἰ</unclear>ου <w lemma="καί">καὶ</w> <persName type="aphrodisian"><name>Ἀσκληπιόδοτος</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="ἕτερος">ἕτερος</w> <w>υἱ<supplied reason="lost">ος</supplied></w>  <gap reason="lost" extent="30" unit="character" dim="right"/>  <lb n="5"/><gap reason="lost" extent="unknown" unit="character" dim="left"/>  <w lemma="ἐνθάπτω"><supplied reason="lost">ἐν</supplied><unclear reason="damage">θ</unclear>άψαι</w> <w lemma="τις">τινα</w> <w lemma="ἤ">ἢ</w> <w>ἐκθάψαι</w> <w lemma="ὁ">τῶν</w> <w><unclear reason="damage">ἐ</unclear>νγεγο<supplied reason="lost" cert="low">νότων</supplied></w>  <gap reason="lost" extent="28" unit="character"/>    <lb n="6"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w><supplied reason="lost">τυ</supplied><unclear reason="damage">μ</unclear>βωρύχος</w> <w lemma="καί">καὶ</w> <w>προσαποτείσει</w> <w lemma="ὁ">τῷ</w> <w lemma="ἱερός">ἱερωτ<unclear reason="damage">ά</unclear>τ<unclear reason="damage">ῳ</unclear></w>  <w lemma="ταμεῖον"><supplied reason="lost">ταμείῳ</supplied></w>  <gap reason="lost" extent="27" unit="character"/><supplied reason="lost"><w>ὡν</w> <w>το</w> <w>τριτον</w> <w>εσται</w></supplied><lb n="7"/><w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  <w><supplied reason="lost">ἐκ</supplied>δικήσαντος</w> <w lemma="ὁ">τῆς</w> <w>ἐπιγραφῆς</w> <w>ἀπετέθη</w> <w>ἀν<supplied reason="lost">τίγραφον</supplied></w>  <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w>  <w><supplied reason="lost">χρεοφυλάκιον</supplied></w>  <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>  <w lemma="στεφανηφόρος"><supplied reason="lost">στεφα</supplied>  <lb type="worddiv" n="8"/><space extent="11" unit="character" dim="horizontal"/>νηφόρου</w> <w lemma="ὁ">τὸ</w> <num value="2">β</num> <persName type="aphrodisian"><name reg="Ζήνων">Ζήνω<unclear reason="damage">ν</unclear>ο<supplied reason="lost">ς</supplied></name></persName> <w>Π<gap reason="lost" extent="15" unit="character"/></w></ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p> ...</p>
-</div>
-<div n="notyet" type="translation">
-<head>Translation</head>
-<p> ...</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p> ...</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">City, North-west</rs> : serving as a bridge over a stream just E. of W. wall.</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1978)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1977 (<rs type="invNo">77.139</rs>)</p>
-</div>
-<div type="bibliography" n="none"> <head>Bibliography</head> <p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="78_J_23"><figDesc>Face (1978)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p> ...</p>
+         </div>
+         <div n="notyet" type="translation">
+            <p> ...</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p> ...</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

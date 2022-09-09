@@ -1,87 +1,151 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161260">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><seg cert="low"><rs type="textType">Building dedication</rs></seg> to the People and Hadrian</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><date>2007</date><availability status="unknown"><p>Creative Commons licence Attribution 2.5 (<xref>http://creativecommons.org/licenses/by/2.5/</xref>)</p><p>All reuse or distribution of this work must contain somewhere a link back to the URL <xref>http://insaph.kcl.ac.uk/</xref></p></availability></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Building dedication</seg> to the People and Hadrian</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161260</idno>
+            <idno type="IAph2007">iAph161260</idno>
+            <idno type="JMR2004">1260</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>67.530</idno>
+                  <idno>68.366</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragments from <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> blocks with plain moulding above: a.  chipped and broken at upper L. corner and below (<width unit="metre">0.39</width> × <height unit="metre">0.52</height> × <depth unit="metre">0.25</depth>); b.  broken on all sides (<width unit="metre">0.35</width> × <height unit="metre">0.39</height> × <depth unit="metre">0.40</depth>); c. broken at both ends, no measurements; d. broken at both ends, no measurements.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in a single line on one fascia.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Worked trenches, strong serifs; <height unit="metre">0.065</height>; bar on <foreign xml:lang="grc">Υ</foreign>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown, in the <rs type="monuList">Hadrianic Baths</rs>
+                     </origPlace>
+                     <origDate notBefore="0117" notAfter="0138" evidence="reign">
+A.D. 117-138
+(<rs type="criteria">reign</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Hadrianic Baths</rs>: a. in Chamber 7, Str. 1, b. in tepidarium, c. and d. loose</provenance>
+                  <provenance type="observed">a and b, Museum; c and d, Hadrianic Baths</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Τranscription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="80_G_25.jpg">
+            <desc>Fragment a. (1980)</desc>
+         </graphic>
+         <graphic url="78_B_33.jpg">
+            <desc>Fragment b. (1978)</desc>
+         </graphic>
+         <graphic url="78_L_08.jpg">
+            <desc>Fragment c. (1978)</desc>
+         </graphic>
+         <graphic url="75_L_28.jpg">
+            <desc>Fragment c. (1975)</desc>
+         </graphic>
+         <graphic url="73_V_18.jpg">
+            <desc>Fragment d. (1973)</desc>
+         </graphic>
+         <graphic url="75_L_29.jpg">
+            <desc>Fragment d. (1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-
-
-
-<p>Fragments from <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> blocks with plain moulding above: a.  chipped and broken at upper L. corner and below (<measure type="length" unit="metre" dim="width">0.39</measure> × <measure type="length" unit="metre" dim="height">0.52</measure> × <measure type="length" unit="metre" dim="depth">0.25</measure>); b.  broken on all sides (<measure type="length" unit="metre" dim="width">0.35</measure> × <measure type="length" unit="metre" dim="height">0.39</measure> × <measure type="length" unit="metre" dim="depth">0.40</measure>); c. broken at both ends, no measurements; d. broken at both ends, no measurements.</p>
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="ὁ"><supplied reason="lost">τῷ</supplied></w>  <w><supplied reason="lost">Δή</supplied>μῳ</w>  <orig n="unresolved">π<unclear reason="damage">ε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="emperor"><name nymRef="#Νέρβα"><supplied reason="lost">Ν</supplied><unclear reason="damage">ερ</unclear>βα</name></persName>  <w>ὑ<supplied reason="lost">ιωνῷ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="cd" type="textpart" subtype="fragment"><ab><lb n="1"/><persName type="emperor"><name><gap reason="lost" unit="character" extent="unknown"/>ῳ</name>  <name nymRef="#Τραιανός">Τρα<unclear reason="damage">ι</unclear>ανῷ</name>  <name nymRef="#Ἁδριανός">Ἁδριανῷ</name></persName>  <gap reason="lost" unit="character" extent="unknown"/></ab></div>
 </div>
-<div type="description" n="text"><head>Description of Text</head><p> <rs type="execution" key="scalpro">Inscribed</rs> in a single line on one fascia.</p>
-</div><div type="description" n="letters">
-<head>Letters</head>
-<p>Worked trenches, strong serifs; <measure dim="height" type="length" unit="metre">0.065</measure>; bar on <foreign lang="grc">Υ</foreign></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0117" notAfter="0138" exact="both">A.D. 117-138</date>
-(<rs type="criteria">reign</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_fragment" n="a"><ab><lb n="1"/><gap reason="lost" unit="character" dim="left" extent="unknown"/><w lemma="ὁ"><supplied reason="lost">τῷ</supplied></w>  <w><supplied reason="lost">Δή</supplied>μῳ</w>  <orig n="unresolved">π<unclear reason="damage">ε</unclear></orig><gap reason="lost" unit="character" dim="right" extent="unknown"/></ab></div><div type="textpart_fragment" n="b"><ab><lb n="1"/><gap reason="lost" unit="character" dim="left" extent="unknown"/>  <persName type="emperor"><name reg="Νέρβα"><supplied reason="lost">Ν</supplied><unclear reason="damage">ερ</unclear>βα</name></persName>  <w>ὑ<supplied reason="lost">ιωνῷ</supplied></w>  <gap reason="lost" unit="character" dim="right" extent="unknown"/></ab></div><div type="textpart_fragment" n="cd"><ab><lb n="1"/><persName type="emperor"><name type=" "><gap reason="lost" unit="character" dim="left" extent="unknown"/>ῳ</name>  <name reg="Τραιανός">Τρα<unclear reason="damage">ι</unclear>ανῷ</name>  <name reg="Ἁδριανός">Ἁδριανῷ</name></persName>  <gap reason="lost" unit="character" dim="right" extent="unknown"/></ab></div>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p>
-a. <gap reason="lost" unit="character" dim="left" extent="unknown"/> the People <gap reason="lost" unit="character" dim="right" extent="unknown"/></p><p>
-b. <gap reason="lost" unit="character" dim="left" extent="unknown"/> Nerva <supplied reason="lost">grandson</supplied><gap reason="lost" unit="character" dim="right" extent="unknown"/></p><p>
-c. <gap reason="lost" unit="character" dim="left" extent="unknown"/>us  Traianus Hadrianus <gap reason="lost" unit="character" dim="right" extent="unknown"/></p>
-</div>
-<div type="commentary">
-<head>Commentary</head>
-<p>Reference is to Traianus Hadrianus, grandson of Nerva.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-; Original location: <rs type="origLocation">Unknown, in the <rs type="monuList">Hadrianic Baths</rs></rs>
-Found: <rs type="found"><rs type="monuList">Hadrianic Baths</rs>: a. in Chamber 7, Str. 1, b. in tepidarium, c. and d. loose</rs>
-; Last known location: <rs type="lastLocation">a and b, Museum; c and d, Hadrianic Baths</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Τranscription (Reynolds)</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>a. and b. excavated by the NYU expedition in 1967-68 (a, <rs type="invNo">67.530</rs>, b <rs type="invNo">68.366</rs>); c and d loose finds.</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="80_G_25"><figDesc>Fragment a. (1980)</figDesc></figure><figure href="78_B_33"><figDesc>Fragment b. (1978)</figDesc></figure><figure href="78_L_08"><figDesc>Fragment c. (1978)</figDesc></figure><figure href="75_L_28"><figDesc>Fragment c. (1975)</figDesc></figure><figure href="73_V_18"><figDesc>Fragment d. (1973)</figDesc></figure><figure href="75_L_29"><figDesc>Fragment d. (1975)</figDesc></figure></p><p>b: KTE</p>
-</div></body></text>
+         <div type="translation">
+            <p>
+a. <gap reason="lost" unit="character" extent="unknown"/> the People <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+            <p>
+b. <gap reason="lost" unit="character" extent="unknown"/> Nerva <supplied reason="lost">grandson</supplied>
+               <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+            <p>
+c. <gap reason="lost" unit="character" extent="unknown"/>us  Traianus Hadrianus <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>Reference is to Traianus Hadrianus, grandson of Nerva.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

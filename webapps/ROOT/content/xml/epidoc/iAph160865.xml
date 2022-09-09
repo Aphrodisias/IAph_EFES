@@ -1,94 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph160865">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Honours</rs> for M. Aur. Zenon</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc>
-<p>Unpublished inscription.  This version born digital</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date>2007-07-24</date><respStmt><name>cmr</name></respStmt><item>DONE</item></change>
-  
-  <change><date>2007-02-22</date><respStmt><name>Charlotte Tupman</name></respStmt><item>hand tidied</item></change>
-  
-  <change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p><rs type="material">White marble</rs> <rs type="objectType">statue base</rs> with moulded <rs type="objectType">panel</rs>s on three sides (<measure type="length" unit="metre" dim="width">0.55</measure>   × <measure type="length" unit="metre" dim="height">1.11</measure>   × <measure type="length" unit="metre" dim="depth">0.54</measure>) broken below and at the upper left corner of the front face, which is also worn.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honours for M. Aur. Zenon</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160865</idno>
+            <idno type="IAph2007">iAph160865</idno>
+            <idno type="JMR2004">865</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>76.148</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>statue base</objectType> with moulded <objectType>panel</objectType>s on three sides (<width unit="metre">0.55</width>   × <height unit="metre">1.11</height>   × <depth unit="metre">0.54</depth>) broken below and at the upper left corner of the front face, which is also worn.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> (a) on the front face, (b) on the right side. The moulding is complete above; the text must have begun on a crowning feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second to third centuries A.D.; <height unit="metre">0.025</height>; very similar to those of <ref type="iAph" target="">1045</ref> (=MAMA 524); apices on the numerals in b. 3.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0212"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering nomenclature">
+Third century A.D.
+(<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <rs type="monuList">Walls, South (east part)</rs>: S. wall excavation, mid area</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-24" who="cmr">DONE</change>
+         <change when="2007-02-22" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_F_34.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="77_F_35.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+         <graphic url="78_F_35.jpg">
+            <desc>Face and right side (1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<div n="a" type="textpart" subtype="section"><ab>  <lb n="0"/><supplied reason="lost" cert="low"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="τιμάω">ἐτείμησαν</w>  <w lemma="κατά">κατὰ</w>  <w lemma="ὁ">τὰ</w></supplied>  <lb n="2"/><w><supplied reason="lost" cert="low">δόξαντα</supplied></w>  <w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="διά">διὰ</w> <lb n="3"/><w><supplied reason="lost">ψηφίσματ</supplied>ος</w> <w lemma="ὁ">ταῖς</w> <lb n="4"/><w><supplied reason="lost">καλλίστ</supplied><unclear reason="damage">α</unclear>ις</w> <w lemma="καί">καὶ</w> <w>με<lb n="5" break="no"/><supplied reason="lost">γίσταις</supplied></w>  <w><unclear reason="damage">τ</unclear>ειμαῖς</w>  <space extent="1" unit="character"/>  <lb n="6"/><persName type="attested"><name nymRef="#Μᾶρκος"><supplied reason="lost">Μᾶρκο</supplied>ν</name> <name nymRef="#Αὐρήλιος">Αὐρήλιον</name> <lb n="7"/><name nymRef="#Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνα</name> <w lemma="υἱός">υἱὸν</w> <persName type="attested"><name nymRef="#Πόπλιος">Πο <lb n="8" break="no"/><supplied reason="lost">π</supplied><unclear reason="damage">λί</unclear>ου</name> <name>Καλτίου</name> <name nymRef="#Διονύσιος">Δι <lb n="9" break="no"/><unclear reason="damage">ο</unclear>νυσίου</name><w>υἱοῦ</w> <persName type="attested"><name>Ζη <lb n="10" break="no"/><unclear reason="damage">ν</unclear>ωνος</name></persName></persName></persName> <w lemma="ἀνήρ">ἄνδρα</w> <space extent="1" unit="character"/>  <lb n="11"/> <w lemma="ὁ"><unclear reason="damage">τῶ</unclear>ν</w> <w>εὖ</w> <w>γεγονότων</w> <lb n="12"/> <w><supplied reason="lost">π</supplied>αρ'</w> <w>ἡμεῖν</w> <w>βίῳ</w> <w>κε<lb n="13" break="no"/> <unclear reason="damage">χρ</unclear>ημένον</w> <w lemma="καί">καὶ</w> <w>χρώ<lb n="14" break="no"/>μενον</w> <w>ἐπεικεῖ</w> <w lemma="καί">καὶ</w> <lb n="15"/> <w><unclear reason="damage">α</unclear>ἰδήμον<unclear reason="damage">ι</unclear></w> <w lemma="πρός">πρὸς</w> <w>ὑ<lb n="16" break="no"/><supplied reason="lost">π</supplied>οδεῖγμα</w> <w lemma="ἀρετή">ἀρετ<unclear reason="damage">ῆς</unclear></w> <lb n="17"/><supplied reason="lost">καὶ</supplied>  <supplied reason="lost">τε</supplied>λευτ<unclear reason="damage">ή</unclear><supplied reason="lost" cert="low">σαντα</supplied>  <lb n="18"/><gap reason="lost" unit="character" quantity="6"/><orig n="unresolved"><unclear reason="damage">ιι</unclear></orig><gap reason="lost" unit="character" quantity="7"/>  <lb n="19"/><gap reason="lost" unit="line" extent="unknown"/></ab></div><div n="b" type="textpart" subtype="section"><ab><lb n="1"/> <w>προθεσμία</w> <w>κλή<lb n="2" break="no"/>ρου</w> <w lemma="μείς">μηνὸς</w> <lb n="3"/> <space extent="4"/> <num value="5">ε</num><space unit="character" extent="1"/><num value="20">κ</num><space extent="4"/></ab></div>
 </div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> (a) on the front face, (b) on the right side. The moulding is complete above; the text must have begun on a crowning feature.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>Second to third centuries A.D.; <measure type="length" unit="metre" dim="height">0.025</measure>; very similar to those of <xref type="iAph">1045</xref> (=MAMA 524); apices on the numerals in b. 3.</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notAfter="0300" notBefore="0212" exact="none">Third century A.D.</date>
-(<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="a"><ab>  <lb n="0"/><supplied reason="lost" cert="low"><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="τιμάω">ἐτείμησαν</w>  <w lemma="κατά">κατὰ</w>  <w lemma="ὁ">τὰ</w></supplied>  <lb n="2"/><w><supplied reason="lost" cert="low">δόξαντα</supplied></w>  <w lemma="καί"><unclear reason="damage">κ</unclear>αὶ</w> <w lemma="διά">διὰ</w> <lb n="3"/><w><supplied reason="lost">ψηφίσματ</supplied>ος</w> <w lemma="ὁ">ταῖς</w> <lb n="4"/><w><supplied reason="lost">καλλίστ</supplied><unclear reason="damage">α</unclear>ις</w> <w lemma="καί">καὶ</w> <w>με<lb type="worddiv" n="5"/><supplied reason="lost">γίσταις</supplied></w>  <w><unclear reason="damage">τ</unclear>ειμαῖς</w>  <space extent="1" unit="character" dim="horizontal"/>  <lb n="6"/><persName type="aphrodisian"><name reg="Μᾶρκος"><supplied reason="lost">Μᾶρκο</supplied>ν</name> <name reg="Αὐρήλιος" type="nomen">Αὐρήλιον</name> <lb n="7"/><name reg="Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνα</name> <w lemma="υἱός">υἱὸν</w> <persName type="aphrodisian"><name reg="Πόπλιος" type="praenomen">Πο <lb type="worddiv" n="8"/><supplied reason="lost">π</supplied><unclear reason="damage">λί</unclear>ου</name> <name>Καλτίου</name> <name reg="Διονύσιος">Δι <lb type="worddiv" n="9"/><unclear reason="damage">ο</unclear>νυσίου</name><w>υἱοῦ</w> <persName type="aphrodisian"><name>Ζη <lb type="worddiv" n="10"/><unclear reason="damage">ν</unclear>ωνος</name></persName></persName></persName> <w lemma="ἀνήρ">ἄνδρα</w> <space extent="1" unit="character" dim="horizontal"/>  <lb n="11"/> <w lemma="ὁ"><unclear reason="damage">τῶ</unclear>ν</w> <w>εὖ</w> <w>γεγονότων</w> <lb n="12"/> <w><supplied reason="lost">π</supplied>αρ'</w> <w>ἡμεῖν</w> <w>βίῳ</w> <w>κε<lb n="13" type="worddiv"/> <unclear reason="damage">χρ</unclear>ημένον</w> <w lemma="καί">καὶ</w> <w>χρώ<lb type="worddiv" n="14"/>μενον</w> <w>ἐπεικεῖ</w> <w lemma="καί">καὶ</w> <lb n="15"/> <w><unclear reason="damage">α</unclear>ἰδήμον<unclear reason="damage">ι</unclear></w> <w lemma="πρός">πρὸς</w> <w>ὑ<lb type="worddiv" n="16"/><supplied reason="lost">π</supplied>οδεῖγμα</w> <w lemma="ἀρετή">ἀρετ<unclear reason="damage">ῆς</unclear></w> <lb n="17"/><supplied reason="lost">καὶ</supplied>  <supplied reason="lost">τε</supplied>λευτ<unclear reason="damage">ή</unclear><supplied reason="lost" cert="low">σαντα</supplied>  <lb n="18"/><gap reason="lost" extent="6" unit="character"/><orig n="unresolved"><unclear reason="damage">ιι</unclear></orig><gap reason="lost" extent="7" unit="character"/>  <lb n="19"/><gap reason="lost" extent="unknown" unit="line" dim="top"/></ab></div><div type="textpart_section" n="b"><ab><lb n="1"/> <w>προθεσμία</w> <w>κλή<lb type="worddiv" n="2"/>ρου</w> <w lemma="μείς">μηνὸς</w> <lb n="3"/> <space extent="4"/> <num value="5">ε</num><space unit="character" extent="1"/><num value="20">κ</num><space extent="4"/></ab></div>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>L.2 ? one word</p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>a: [The Council and the People by a decision ] and a [decree} honoured [Marcus] Aurelius [Zen]on, son of Publius Celtius Zenon, the son of Dionysios, with the [finest] and greatest honours - a man of the well-born among us, one whose life style has benn and is seemly and worthy of respect to the point of being a demonstration of virtue; and [?on becoming a ] town councillor [?he instituted a fund for distributions of money [ . . .</p><p>b: The appointed day for the lottery is the 20th day of the fifth month.</p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p>The opening was apparently more formal than is often the case, probably referring to decisions of the Council (δόξαντα) and decrees of the people (ψηφίσματα).</p><p>The honorand's name suggests that he took <term lang="la">praenomen</term> and <term lang="la">nomen</term> as a result of Caracalla's Edict of Citizenship in 212 A.D., but, here at least, dropped the different <term lang="la">praenomen</term> and <term lang="la">nomen</term> of his father. M. Aurelius Zenon is praised in terms commonly used for those who dies young before holding many - or any - public offices; χρώμενον, in l.14-15 however implies that he is still alive, so we cannot fill line 18 with [καὶ τἐλευτήσαντα; perhaps then with [καὶ βοὐλευτἣν γενόμενον.</p><p>The formula in text b implies that he gave a sum of money for annual division among a lot-selected group (probably of town-councillors), so εις αἰωνίους κλήρουσ (vel. sim.) a procedure which is recorded in several other texts (see word index).</p>
-                                                   </div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found"><rs type="monuList">Walls, South (east part)</rs>: S. wall excavation, mid area</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum (1977)</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1976 (<rs type="invNo">76.148</rs>)</p>
-</div>
-<div type="bibliography" n="none"> <head>Bibliography</head> <p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>a: <figure href="77_F_34"><figDesc>Face (1977)</figDesc></figure><figure href="77_F_35"><figDesc>Face (1977)</figDesc></figure>; b:<figure href="78_F_35"><figDesc>Face and right side (1978)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>L.2 ? one word</p>
+         </div>
+         <div type="translation">
+            <p>a: [The Council and the People by a decision ] and a [decree} honoured [Marcus] Aurelius [Zen]on, son of Publius Celtius Zenon, the son of Dionysios, with the [finest] and greatest honours - a man of the well-born among us, one whose life style has benn and is seemly and worthy of respect to the point of being a demonstration of virtue; and [?on becoming a ] town councillor [?he instituted a fund for distributions of money [ . . .</p>
+            <p>b: The appointed day for the lottery is the 20th day of the fifth month.</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p>The opening was apparently more formal than is often the case, probably referring to decisions of the Council (δόξαντα) and decrees of the people (ψηφίσματα).</p>
+            <p>The honorand's name suggests that he took <term xml:lang="la">praenomen</term> and <term xml:lang="la">nomen</term> as a result of Caracalla's Edict of Citizenship in 212 A.D., but, here at least, dropped the different <term xml:lang="la">praenomen</term> and <term xml:lang="la">nomen</term> of his father. M. Aurelius Zenon is praised in terms commonly used for those who dies young before holding many - or any - public offices; χρώμενον, in l.14-15 however implies that he is still alive, so we cannot fill line 18 with [καὶ τἐλευτήσαντα; perhaps then with [καὶ βοὐλευτἣν γενόμενον.</p>
+            <p>The formula in text b implies that he gave a sum of money for annual division among a lot-selected group (probably of town-councillors), so εις αἰωνίους κλήρουσ (vel. sim.) a procedure which is recorded in several other texts (see word index).</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

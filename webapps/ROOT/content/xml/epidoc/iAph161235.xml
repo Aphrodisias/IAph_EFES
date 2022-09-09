@@ -1,87 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161235">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m">Fragment</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc>
-<p>Unpublished inscription.  This version born digital</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2006-11-07</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Fragment from the left side of a <rs type="material">white marble</rs> <rs type="objectType">block</rs> without moulding (<measure type="length" unit="metre" dim="width">0.28</measure>   × <measure type="length" unit="metre" dim="height">0.215</measure>   × <measure type="length" unit="metre" dim="depth">0.85</measure>).</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on the face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p>standard forms</p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date notBefore="0001" notAfter="0300" exact="none">First to third centuries A.D.</date> (<rs type="criteria">lettering</rs>)
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/><gap reason="lost" extent="unknown" unit="line" dim="top"/>  <lb n="2"/><unclear reason="damage">Σ</unclear>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="3"/>Μ<gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="4"/><unclear reason="damage">Γ</unclear>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="5"/><unclear reason="damage">Σ</unclear>  <gap reason="lost" extent="unknown" unit="character" dim="right"/>  <lb n="6"/><gap reason="lost" extent="unknown" unit="line" dim="bottom"/>  </ab>
-</div>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragment</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161235</idno>
+            <idno type="IAph2007">iAph161235</idno>
+            <idno type="JMR2004">1235</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>92.46</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment from the left side of a <material>white marble</material>
+                              <objectType>block</objectType> without moulding (<width unit="metre">0.28</width>   × <height unit="metre">0.215</height>   × <depth unit="metre">0.85</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>standard forms</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001"
+                               notAfter="0300"
+                               precision="medium"
+                               evidence="lettering">
+First to third centuries A.D. (<rs type="criteria">lettering</rs>)
+</origDate>
+                  </origin>
+                  <provenance type="found">Stray</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="91_E_12A.jpg">
+            <desc>Face (1991)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<div type="translation">
-<head>Translation</head>
-<p>no translation possible.</p>
+<ab><lb n="1"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="2"/><unclear reason="damage">Σ</unclear>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/>Μ<gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><unclear reason="damage">Γ</unclear>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/><unclear reason="damage">Σ</unclear>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p> </p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found">Stray</rs>
-<rs type="origLocation">Unknown</rs>
-<rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded by the NYU expedition in 1992 (<rs type="invNo">92.46</rs>)</p>
-</div>
-<div type="bibliography" n="none"> <head>Bibliography</head> <p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="91_E_12A"><figDesc>Face (1991)</figDesc></figure></p>
-</div></body></text>
+         <div type="translation">
+            <p>no translation possible.</p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p> </p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

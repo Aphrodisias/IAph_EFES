@@ -1,86 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161272">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType">Building <rs type="textType">restoration</rs></rs> of the Sebasteion, by Eusebes and Menandros</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="personType" key="imperatorius">Imperial</rs></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2007-01-30</date><respStmt><name>Charlotte Tupman</name></respStmt><item>Hand tidied</item></change><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building restoration of the Sebasteion, by Eusebes and Menandros</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161272</idno>
+            <idno type="IAph2007">iAph161272</idno>
+            <idno type="JMR2004">1272</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>…</repository>
+                  <idno>81.182</idno>
+                  <idno>82.129a</idno>
+                  <idno>82.129b</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three <material key="marmor">white marble</material>
+                              <objectType>architrave</objectType> blocks, complete or in fragments, with architrave and <rs type="decoration">frieze</rs> cut in one on both faces; lettered from left to right: a two fragments, <width unit="metre">1.58</width>   × <height unit="metre">0.647</height>   × <depth unit="metre">0.60</depth>; b <width unit="metre">3.20</width>   × <height unit="metre">0.66</height>   × <depth unit="metre">0.66</depth>; c two joining fragments (<width unit="metre">1.05</width> × <height unit="metre">0.66</height> × <depth unit="metre">0.41</depth>). On one face, the frieze area is decorated with <rs type="decoration">faces</rs> and <rs type="decoration">masks</rs> in relief, but no inscription.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> The opposite side has no decoration, but the first line of the inscription is cut in the area of the frieze; the second line is cut on the uppermost of the three fasciae of the architrave. On block B a further text was cut, probably in the fourth century, on the lower two fasciae, and subsequently efficiently erased.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.07-0.08</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate>
+ ...
+</origDate>
+                  </origin>
+                  <provenance type="found">In <rs type="monuList">Sebasteion</rs> Propylon area: a, NW Seb, surface; b, no provenance; c, W.Pr.I-82, IVa, 0.70.</provenance>
+                  <provenance type="observed">a and c in Museum, B on site</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="personType" key="imperatorius">Imperial</rs>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-01-30" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="83_F_08.jpg">
+            <desc>Fragment b (1983)</desc>
+         </graphic>
+         <graphic url="83_D_07A.jpg">
+            <desc>Fragment c, part (1983)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p>Three <rs type="material" key="marmor">white marble</rs> <rs type="objectType">architrave</rs> blocks, complete or in fragments, with architrave and <rs type="decoration">frieze</rs> cut in one on both faces; lettered from left to right: a two fragments, <measure type="length" unit="metre" dim="width">1.58</measure>   × <measure type="length" unit="metre" dim="height">0.647</measure>   × <measure type="length" unit="metre" dim="depth">0.60</measure>; b <measure type="length" unit="metre" dim="width">3.20</measure>   × <measure type="length" unit="metre" dim="height">0.66</measure>   × <measure type="length" unit="metre" dim="depth">0.66</measure>; c two joining fragments (<measure type="length" unit="metre" dim="width">1.05</measure> × <measure type="length" unit="metre" dim="height">0.66</measure> × <measure type="length" unit="metre" dim="depth">0.41</measure>). On one face, the frieze area is decorated with <rs type="decoration">faces</rs> and <rs type="decoration">masks</rs> in relief, but no inscription.</p></div><div type="description" n="text"><head>Description of Text</head><p> The opposite side has no decoration, but the first line of the inscription is cut in the area of the frieze; the second line is cut on the uppermost of the three fasciae of the architrave. On block B a further text was cut, probably in the fourth century, on the lower two fasciae, and subsequently efficiently erased.</p>
+<ab><lb n="1"/>  <space extent="3" unit="character"/>  <persName type="divine"><supplied reason="lost">Ἀφροδί</supplied>τηι</persName>  <persName type="divine"><w>θεοῖς</w>  <persName type="emperor">Σ<supplied reason="lost">εβ</supplied>α<supplied reason="lost">σ</supplied><milestone unit="block" n="b"/><supplied reason="lost">τ</supplied>οῖς</persName></persName>  <g ref="#stop"/> <w lemma="ὁ">τῶι</w> <w>Δήμωι</w> <g ref="#stop"/> <w lemma="ὁ">τὸ</w> <w>πρόπυλον</w> <g ref="#stop"/>  <w lemma="καί">κα<unclear reason="damage">ὶ</unclear></w>  <milestone unit="block" n="c"/> <w>τὰς</w> <w lemma="ἐν">ἐν</w> <w>αὐτῷ</w> <w>τιμὰ<unclear reason="damage">ς</unclear></w>  <gap reason="lost" unit="character" extent="unknown"/>    <supplied reason="lost" cert="low"><space extent="3" unit="character"/></supplied><lb n="2"/><space extent="3" unit="character"/>    <persName nymRef="#Εὐσεβὴς  Μενάνδρου  Εὐνίκου" type="attested"><name nymRef="#Εὐσεβής">Εὐσεβὴ<supplied reason="lost">ς</supplied></name>  <w><supplied reason="lost">φιλόπ</supplied>ατρις</w></persName> <w lemma="καί">καὶ</w> <persName nymRef="#Μένανδρος  Μενάνδρου  Εὐνίκου" type="attested"><name nymRef="#Μένανδρος">Μένα<milestone unit="block" n="b"/>νδρος</name> <w lemma="ὁ">οἱ</w> <persName type="attested"><name nymRef="#Μένανδρος">Μενάνδρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Εὔνικος">Εὐνίκου</name></persName></persName></persName>  <milestone unit="block" n="c"/> <w lemma="καί">καὶ</w> <persName type="attested"><supplied reason="lost"><name nymRef="#Ἀπφία">Ἀπφίας</name></supplied>  <persName type="attested"><name nymRef="#Μένανδρος"><supplied reason="lost">Μ</supplied><unclear reason="damage">ε</unclear>νάνδρου</name></persName>  <w>γ<supplied reason="lost">υν</supplied>ὴ</w>  <persName type="attested"><name nymRef="#Εὐσεβής">Εὐσεβοῦς</name></persName></persName></ab>
 </div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.07-0.08</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p>
-<date> ...</date>
-</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <space extent="3" unit="character" dim="horizontal"/>  <persName type="divine" full="yes"><supplied reason="lost">Ἀφροδί</supplied>τηι</persName>  <persName type="divine" full="yes"><w>θεοῖς</w>  <persName type="emperor" full="yes">Σ<supplied reason="lost">εβ</supplied>α<supplied reason="lost">σ</supplied><milestone unit="block" n="b"/><supplied reason="lost">τ</supplied>οῖς</persName></persName>  <g type="stop"/> <w lemma="ὁ">τῶι</w> <w>Δήμωι</w> <g type="stop"/> <w lemma="ὁ">τὸ</w> <w>πρόπυλον</w> <g type="stop"/>  <w lemma="καί">κα<unclear reason="damage">ὶ</unclear></w>  <milestone unit="block" n="c"/> <w>τὰς</w> <w lemma="ἐν">ἐν</w> <w>αὐτῷ</w> <w>τιμὰ<unclear reason="damage">ς</unclear></w>  <gap extent="unknown" reason="lost" unit="character"/>    <supplied reason="lost" cert="low"><space extent="3" unit="character" dim="horizontal"/></supplied><lb n="2"/><space extent="3" unit="character" dim="horizontal"/>    <persName type="aphrodisian" reg="Εὐσεβὴς  Μενάνδρου  Εὐνίκου" full="yes"><name reg="Εὐσεβής">Εὐσεβὴ<supplied reason="lost">ς</supplied></name>  <w><supplied reason="lost">φιλόπ</supplied>ατρις</w></persName> <w lemma="καί">καὶ</w> <persName type="aphrodisian" reg="Μένανδρος  Μενάνδρου  Εὐνίκου" full="yes"><name reg="Μένανδρος">Μένα<milestone unit="block" n="b"/>νδρος</name> <w lemma="ὁ">οἱ</w> <persName type="aphrodisian"><name reg="Μένανδρος">Μενάνδρου</name> <w lemma="ὁ">τοῦ</w> <persName type="aphrodisian"><name reg="Εὔνικος" type="
-
-      ">Εὐνίκου</name></persName></persName></persName>  <milestone unit="block" n="c"/> <w lemma="καί">καὶ</w> <persName type="aphrodisian" full="yes"><supplied reason="lost"><name reg="Ἀπφία">Ἀπφίας</name></supplied>  <persName type="aphrodisian"><name reg="Μένανδρος"><supplied reason="lost">Μ</supplied><unclear reason="damage">ε</unclear>νάνδρου</name></persName>  <w>γ<supplied reason="lost">υν</supplied>ὴ</w>  <persName type="aphrodisian"><name reg="Εὐσεβής">Εὐσεβοῦς</name></persName></persName></ab>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p>For Aphrodite, the gods Augusti, the People: the propylon and the honorific statues on it [ . . . . . ] Eusebes (entitled) lover of his country and Menandros the sons of Menandros son of Eunikos, and Apphias daughter of Menandros, wife of Eusebes</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p>For the family see <xref type="iAph">1271</xref> (=81.173+), a shortened version of this text. For discussion see Reynolds, loc. cit.</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-Found: <rs type="found">In <rs type="monuList">Sebasteion</rs> Propylon area: a, NW Seb, surface; b, no provenance; c, W.Pr.I-82, IVa, 0.70.</rs>
-; Last known location: <rs type="lastLocation">a and c in Museum, B on site</rs>
-<rs type="origLocation">Unknown</rs></p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition (a: <rs type="invNo">81.182</rs>, b uncatalogued, c <rs type="invNo">82.129a</rs> &amp; <rs type="invNo">82.129b</rs>),</p>
-</div>
-<div type="bibliography" n="none">
-<head>Bibliography</head>
-<p>Mentioned by <bibl n="jmr1986"><author>Reynolds</author>, <title level="j">StudClas</title> 24, 1986, 111</bibl>, <bibl n="rrrs1987"><author>Smith</author>, <title level="j">JRS</title> 77, 1987, 90</bibl>, whence  <bibl><ptr target="mccabePHI"/> <biblScope>97</biblScope></bibl>.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="83_F_08"><figDesc>Fragment b (1983)</figDesc></figure><figure href="83_D_07A"><figDesc>Fragment c, part (1983)</figDesc></figure></p><p>a: 82.27a, 28a (part); b: 83.F.8; c: 83.D.7 (part)</p>
-</div></body></text>
+         <div type="translation">
+            <p>For Aphrodite, the gods Augusti, the People: the propylon and the honorific statues on it [ . . . . . ] Eusebes (entitled) lover of his country and Menandros the sons of Menandros son of Eunikos, and Apphias daughter of Menandros, wife of Eusebes</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p>For the family see <ref type="iAph" target="">1271</ref> (=81.173+), a shortened version of this text. For discussion see Reynolds, loc. cit.</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Mentioned by <bibl n="jmr1986">
+                  <author>Reynolds</author>, <title level="j">StudClas</title> 24, 1986, 111</bibl>, <bibl n="rrrs1987">
+                  <author>Smith</author>, <title level="j">JRS</title> 77, 1987, 90</bibl>, whence  <bibl>
+                  <ptr target="mccabePHI"/>
+                  <citedRange>97</citedRange>
+               </bibl>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

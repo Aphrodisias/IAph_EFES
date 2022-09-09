@@ -1,88 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161367">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"> <rs type="textType">Funerary</rs> formula, II cent.</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term></keywords></textClass></profileDesc>
-<revisionDesc>
-<change><date/><respStmt><name>GB</name></respStmt><item>hand tidied</item></change>
-<change><date>2005-12-13</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change>
-</revisionDesc></teiHeader><text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
-<p>Small fragment (<measure type="length" unit="metre" dim="width">0.26</measure>   × <measure type="length" unit="metre" dim="height">0.06</measure>   × <measure type="length" unit="metre" dim="depth">0.22</measure>) from a <rs type="objectType"><rs type="objectType">sarcophagus</rs> lid</rs>, re-used.</p>
-</div>
-<div type="description" n="text">
-<head>Description of Text</head>
-<p>Inscribd on one face.</p>
-</div>
-<div type="description" n="letters">
-<head>Letters</head>
-<p><measure dim="height" type="length" unit="metre">0.02</measure></p>
-</div>
-<div type="description" n="date">
-<head>Date</head>
-<p><date notBefore="0101" notAfter="0200" exact="none">Second century A.D.</date> (<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<ab><lb n="1"/>  <w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <lb n="2"/><w lemma="τόπος"><supplied reason="lost">τό</supplied>πος</w><w>  καθ</w><w>ὅ<supplied reason="lost">ν</supplied></w>  <gap reason="lost" extent="3" unit="character" xml:id="gap01"/><certainty target="gap01" locus="#gi" degree="low"/>  </ab>
-</div>
-<div type="apparatus">
-<head>Apparatus</head>
-<p>l. 1, <foreign lang="grc"><supplied reason="lost" cert="low">αὑτ</supplied><unclear reason="damage">ὴ</unclear></foreign></p>
-</div>
-<div type="translation">
-<head>Translation</head>
-<p>[Both] the sarcophagus and the place on which <gap extent="unknown" reason="lost" unit="character"/></p>
-</div>
-<div n="notyet" type="commentary">
-<head>Commentary</head>
-<p> ...</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
-<rs type="found">stray in <rs type="monuList">Theatre</rs></rs>
-<rs type="lastLocation">Museum</rs>
-<rs type="origLocation">Unknown</rs>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Funerary formula, II cent.</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161367</idno>
+            <idno type="IAph2007">iAph161367</idno>
+            <idno type="JMR2004">1367</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno>69.388</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Small fragment (<width unit="metre">0.26</width>   × <height unit="metre">0.06</height>   × <depth unit="metre">0.22</depth>) from a <objectType>
+                                 <objectType>sarcophagus</objectType> lid</objectType>, re-used.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Inscribd on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">Second century A.D. (<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">stray in <rs type="monuList">Theatre</rs>
+                  </provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="77_V_03A.jpg">
+            <desc>Face (1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-</p>
+<ab><lb n="1"/>  <w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="σορός">σορὸς</w> <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">ὁ</supplied></w>  <lb n="2"/><w lemma="τόπος"><supplied reason="lost">τό</supplied>πος</w><w>  καθ</w><w>ὅ<supplied reason="lost">ν</supplied></w>  <gap reason="lost" unit="character" xml:id="gap01" quantity="3"/><certainty target="gap01" locus="#gi" degree="low"/>  </ab>
 </div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds)</p>
-</div>
-<div type="history" n="record">
-<head>History of Recording</head>
-<p>Excavated by the NYU expedition in 1969 (<rs type="invNo">69.388</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p><figure href="77_V_03A"><figDesc>Face (1977)</figDesc></figure></p>
-</div></body></text>
+         <div type="apparatus">
+            <p>l. 1, <foreign xml:lang="grc">
+                  <supplied reason="lost" cert="low">αὑτ</supplied>
+                  <unclear reason="damage">ὴ</unclear>
+               </foreign>
+            </p>
+         </div>
+         <div type="translation">
+            <p>[Both] the sarcophagus and the place on which <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div n="notyet" type="commentary">
+            <p> ...</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

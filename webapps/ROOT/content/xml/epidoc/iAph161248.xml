@@ -1,84 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
- <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-     <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="iAph161248">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title level="m"><rs type="textType" cert="low">Invocation</rs>s to the winds</title>
- <editor role="editor">Joyce Reynolds</editor>
-</titleStmt>
-<publicationStmt><p><bibl>IAph <date>2008</date></bibl></p></publicationStmt>
-<sourceDesc><p>Unpublished inscription. This version born digital.</p>
-</sourceDesc>
-</fileDesc>
-<profileDesc>
-<langUsage>
-<language xml:id="en">English</language>
-<language xml:id="fr">French</language>
-<language xml:id="de">German</language>
-<language xml:id="grc">Ancient Greek</language>
-<language xml:id="grc-Latn">Transliterated Greek</language>
-<language xml:id="el">Modern Greek</language>
-<language xml:id="it">Italian</language>
-<language xml:id="la">Latin</language>
-<language xml:id="es">Spanish</language>
-<language xml:id="tr">Turkish</language>
-</langUsage><textClass><keywords><term><geogName type="ancientRegion" key="Asia">Asia</geogName></term><term><geogName type="modernCountry" key="TR">Turkey</geogName></term><term><placeName type="ancientFindspot" key="Aphrodisias">Aphrodisias</placeName></term><term><placeName type="modernFindspot" key="Geyre">Geyre</placeName></term><term><rs type="textType" key="sacer">Religious</rs></term></keywords></textClass></profileDesc>
-<revisionDesc><change><date>2005-04-7</date><respStmt><name>Elliott Hall</name></respStmt><item>Batch converted Word2XML</item></change></revisionDesc></teiHeader>
-<text>
-<body>
-<div type="description" n="monument">
-<head>Description of Monument</head>
+<?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Invocations to the winds</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161248</idno>
+            <idno type="IAph2007">iAph161248</idno>
+            <idno type="JMR2004">1248</idno>
+            <availability>
+               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <idno/>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <seg cert="low">
+                                 <objectType>altar</objectType>
+                              </seg> (<width unit="metre">0.22</width> × <height unit="metre">0.66</height> × <depth unit="metre">0.175</depth>) with simple moulding above on all four sides and below on three (a, c and d); on face a there is a relief of <rs type="decoration">busts</rs> of <rs type="decoration">sun</rs> and <rs type="decoration">moon</rs> above and an <rs type="decoration">eagle</rs> below.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on three faces, in each case above an area which shows signs of erasure,</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>; lunate <term xml:lang="grc-Latn">sigma</term>, <term xml:lang="grc-Latn">omega</term>, lunate and square <term xml:lang="grc-Latn">epsilon</term>; poorly aligned.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101"
+                               notAfter="0200"
+                               precision="medium"
+                               evidence="lettering">Perhaps
+second century A.D.
+(<rs type="criteria">lettering</rs>)</origDate>
+                  </origin>
+                  <provenance type="found">Unknown</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry"
+                            key="TR"
+                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot"
+                             key="Aphrodisias"
+                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot"
+                             key="Geyre"
+                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<p><rs type="material" key="marmor">White marble</rs> <seg cert="low"><rs type="objectType">altar</rs></seg> (<measure type="length" unit="metre" dim="width">0.22</measure> × <measure type="length" unit="metre" dim="height">0.66</measure> × <measure type="length" unit="metre" dim="depth">0.175</measure>) with simple moulding above on all four sides and below on three (a, c and d); on face a there is a relief of <rs type="decoration">busts</rs> of <rs type="decoration">sun</rs> and <rs type="decoration">moon</rs> above and an <rs type="decoration">eagle</rs> below.</p>
-</div><div type="description" n="text">
-<head>Description of Text</head>
-<p><rs type="execution" key="scalpro">Inscribed</rs> on three faces, in each case above an area which shows signs of erasure,</p>
-</div><div type="description" n="letters"><head>Description of Letters</head><p><measure dim="height" type="length" unit="metre">0.02</measure>; lunate <term lang="grc-Latn">sigma</term>, <term lang="grc-Latn">omega</term>, lunate and square <term lang="grc-Latn">epsilon</term>; poorly aligned.</p>
+<div n="a" type="textpart" subtype="section"><ab><lb n="1"/>  <persName type="divine">Νο<lb n="2" break="no"/>τος</persName>  </ab></div><div n="b" type="textpart" subtype="section"><div n="i" type="textpart" subtype="section"><ab><lb n="1"/><persName type="divine">Ζέφυ<lb n="2" break="no"/>ρος</persName></ab></div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><persName type="divine">Βορέ<lb n="2" break="no"/>ας</persName></ab></div></div><div n="c" type="textpart" subtype="section"><ab><lb n="1"/><persName type="divine">Ἀφηλι<lb n="2" break="no"/>ωτης</persName></ab></div>
 </div>
-
-<div type="description" n="date">
-<head>Date</head>
-<p>Perhaps
-<date notBefore="0101" notAfter="0200" exact="none" cert="low">second century A.D.</date>
-(<rs type="criteria">lettering</rs>)</p>
-</div>
-<div type="edition" lang="grc">
-<head lang="en">Edition</head>
-<div type="textpart_section" n="a"><ab><lb n="1"/>  <persName type="divine" full="yes">Νο<lb n="2" type="worddiv"/>τος</persName>  </ab></div><div type="textpart_section" n="b"><div type="textpart_section" n="i"><ab><lb n="1"/><persName type="divine" full="yes">Ζέφυ<lb n="2" type="worddiv"/>ρος</persName></ab></div><div type="textpart_section" n="ii"><ab><lb n="1"/><persName type="divine" full="yes">Βορέ<lb n="2" type="worddiv"/>ας</persName></ab></div></div><div type="textpart_section" n="c"><ab><lb n="1"/><persName type="divine" full="yes">Ἀφηλι<lb n="2" type="worddiv"/>ωτης</persName></ab></div>
-</div>
-
-
-<div type="translation">
-<head>Translation</head>
-<p>a:South wind</p><p>b:North Wind, West Wind</p><p>c:East Wind</p>
-</div>
-<div type="commentary" n="notyet">
-<head>Commentary</head>
-<p> [[...]]</p>
-</div>
-<div type="history" n="locations">
-<head>Locations</head>
-<p>
- <rs type="found">Unknown</rs> <rs type="origLocation">Unknown</rs>
- <rs type="lastLocation">Museum</rs>
-</p>
-</div>
-<div type="history" n="text-constituted-from">
-<head>Text Constituted From</head>
-<p>Transcription (Reynolds).</p>
-</div><div type="history" n="record">
-<head>History of Recording</head>
-<p>Recorded in the Museum by the NYU expedition (<rs type="siteNo">Museum 106</rs>)</p>
-</div>
-<div type="bibliography" n="none"><head>Bibliography</head><p>Unpublished.</p>
-</div>
-<div type="figure" n="photographs">
-<head>Photographs</head>
-<p>[[66.1.62, 66.2.23, 38, 39]]</p>
-
-</div></body></text>
+         <div type="translation">
+            <p>a:South wind</p>
+            <p>b:North Wind, West Wind</p>
+            <p>c:East Wind</p>
+         </div>
+         <div type="commentary" n="notyet">
+            <p> [[...]]</p>
+         </div>
+         <div type="bibliography" n="none">
+            <p>Unpublished.</p>
+         </div>
+      </body>
+   </text>
 </TEI>
