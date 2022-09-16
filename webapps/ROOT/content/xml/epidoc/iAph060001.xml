@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Title</rs> s for relief sculptures</title>
+            <title><rs type="textType">Title</rs>s for relief sculptures</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -53,7 +53,9 @@
                                notAfter="0096"
                                precision="medium"
                                evidence="lettering sculpture probable text">
-probably Flavian (<rs type="criteria">lettering</rs>, <rs type="criteria">sculpture</rs>, <rs type="criteria">probable text</rs>).When the panels were first found, many thought the reliεfs to be of the third century A.D., a view abandoned after their detailed study. Yildirim, however, still regards the lettering as post-Flavian; it is indeed not quite standard in form for the Flavian period, but it is often the case that the lettering of captions is not quite standard for their period, since they were cut, commonly, by the sculptors rather than by professional letterers.</origDate>
+probably Flavian. <!-- When the panels were first found, many thought the reliεfs to be of the third century A.D., a view abandoned after their detailed study. 
+Yildirim, however, still regards the lettering as post-Flavian; it is indeed not quite standard in form for the Flavian period, but it is often the case that the lettering 
+of captions is not quite standard for their period, since they were cut, commonly, by the sculptors rather than by professional letterers. --></origDate>
                   </origin>
                   <provenance type="found">
                      <rs type="monuList">Basilica</rs>: during excavation</provenance>
@@ -97,30 +99,42 @@ probably Flavian (<rs type="criteria">lettering</rs>, <rs type="criteria">sculpt
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <div n="a" type="textpart" subtype="block"><div n="i" type="textpart" subtype="section"><note xml:lang=""/><lb n="1"/><ab>
-<lb n="1"/><persName type="divine"><name>Πέγα<lb n="2"/>σος    </name></persName></ab></div>
-<div n="ii" type="textpart" subtype="section"><note xml:lang=""/><ab><lb n="1"/><persName type="divine"><name>Βελλερο<lb n="2"/>φόντης</name></persName> </ab></div>
-<div n="iii" type="textpart" subtype="section"><note xml:lang=""/><ab><lb n="1"/><persName type="divine"><name>Ἀπόλ<lb n="2"/> λων</name></persName></ab></div>
-</div><div n="b" type="textpart" subtype="block"><note xml:lang=""/><ab><lb n="1"/><persName type="divine"><name>Νίνος</name></persName> </ab></div><div n="c" type="textpart" subtype="block"><div n="i" type="textpart" subtype="section"><note xml:lang=""/><ab>
-<lb n="1"/><persName type="divine"><name>Σεμειρα<lb n="2"/>μις</name></persName>    </ab></div>
-<div n="ii" type="textpart" subtype="section"><note xml:lang=""/><ab><lb n="1"/><persName type="divine"><name>Γόρδις</name></persName>  </ab></div></div></div>
+<lb n="1"/><persName type="divine" ref="#pegasus"><name>Πέγα
+   <lb n="2"/>σος    </name></persName></ab></div>
+<div n="ii" type="textpart" subtype="section"><note xml:lang=""/><ab>
+   <lb n="1"/><persName type="divine" ref="#bellerophon"><name>Βελλερο
+      <lb n="2"/>φόντης</name></persName> </ab></div>
+<div n="iii" type="textpart" subtype="section"><note xml:lang=""/><ab>
+   <lb n="1"/><persName type="divine" ref="#apollo"><name>Ἀπόλ
+      <lb n="2"/> λων</name></persName></ab></div>
+</div><div n="b" type="textpart" subtype="block"><note xml:lang=""/><ab>
+   <lb n="1"/><persName type="divine" ref="#ninus"><name>Νίνος</name></persName> </ab></div>
+            <div n="c" type="textpart" subtype="block">
+               <div n="i" type="textpart" subtype="section"><note xml:lang=""/><ab>
+<lb n="1"/><persName type="divine" ref="#semiramis"><name>Σεμείρα<lb n="2"/>μις</name></persName>    </ab></div>
+<div n="ii" type="textpart" subtype="section"><note xml:lang=""/><ab>
+   <lb n="1"/><persName type="divine" ref="#gordias"><name>Γόρδις</name></persName>  </ab></div></div></div>
          <div type="translation">
             <p>a.i Pegasos, ii Bellerophon. iii Apollo.</p>
             <p> b.Ninos</p>
             <p>c.Semiramis, ii Gordi(o)s</p>
          </div>
          <div type="commentary">
-            <p>Captions appear only on these three of the forty-six relief panels found in the Basilica (it is calculated that thre were originally seventy-six) from which it is argued, plausibly, that they were of special significance. Unfortunately, no obvioulsy relevant written accounts of the episides illustrated have survived, so that we can only guess at what was being represented. Yildirim has proposed that they are episodes from Aphrodisian ancient history, probably taken from the Carian History of the Aphrodisian Apolllonios. In support, it can be said that a number of their features appear on other local monumnets and on coins (so Apollo, Bellerophon, Pegasos, the Eagle and the Barren Tree) that Bellerophon appears as a founder in <ref type="iAph" target=".xml"/>, that Ninos is said by Stephanus of Byzantium to have given it his name, in the form Ninoe, and that Gordios' name was attached to a settlement in the area, Gordiouteichos.</p>
+          <!--   <p>Captions appear only on these three of the forty-six relief panels found in the Basilica (it is calculated that thre were originally seventy-six) from which it is argued, plausibly, that they were of special significance. Unfortunately, no obvioulsy relevant written accounts of the episides illustrated have survived, so that we can only guess at what was being represented. Yildirim has proposed that they are episodes from Aphrodisian ancient history, probably taken from the Carian History of the Aphrodisian Apolllonios. In support, it can be said that a number of their features appear on other local monumnets and on coins (so Apollo, Bellerophon, Pegasos, the Eagle and the Barren Tree) that Bellerophon appears as a founder in <ref type="iAph" target=".xml"/>, that Ninos is said by Stephanus of Byzantium to have given it his name, in the form Ninoe, and that Gordios' name was attached to a settlement in the area, Gordiouteichos.</p>
             <p>On Bellerophon see above (Pegasos may have been simply his natural accompaniment). A number of Aphrodisian families in the Roman period claimed ancestors involved in the foundation of the city (e.g. <ref type="inscription" n="1007" target="iAph120706"/>, <ref type="inscription" n="1008" target="iAph120306"/>, <ref type="inscription" n="1049" target="iAph120005"/>); Bellerophon must have been seen as 'founder' in a different sense. </p>
             <p>Ninos, given the presence of Semiramis, must be her husband, the supposed founder of Nineveh, and conqueror of most of Asia (for a Greek account see Diodorus Siculus II.2). C.P. Jones, op. cit., has recently connected him with Plarasa, which was linked with Aphrodisias in the second and first centuries B.C. and in some sense absorbed into it subsequently; Plarasan coins in fact frequently show an eagle which is to be associated with the Zeus who is named as Nineudios at Aphrodisias (<ref type="inscription" n="1105" target="iAph120304"/>, <ref type="inscription" n="1286" target="iAph110104"/>). That is an interesting possibility, if speculative at present.</p>
             <p>Semiramis was thought of as the effective successor to Ninos, and founder of cities in Asia (e.g. Thyatira). Gordios is probably the son rather than the father of Midas of Phrygia, who is said to have named his foundation of Gordioupolis for him.</p>
             <p>Of course if Gordioupolis was another name for Aphrodisias - and Professor M.H.Crawford beleives that at present the evidence for it can best be explained in this way - and given the apparent subordination of Plarasa to Aphrodisias in the Roman period, all three panels can be seen as illustrating the origins of the Aphrodisians. There is an unproven argument here, however, so tha we should also bear in mind the possibility, put forward originally by Charlotte Roueché, that the intention was to illustrate not simply Aphrodisian but Carian history. In that case the building may - but need not - have had a function following from the city's relation to its Carian neighbours, rathr than one directed essentially by its own affairs.</p>
             <p>It is of course the case that stories of the kind may have little ground in reality. The prehistoric excavations at Aphrodisias showed settlement there of great antiquity, but serious evidence for the presence of Greek speakers is late. It should also be noted that all figures in thses reliefs are dressed as Greeks, however foreign their names, and that to our knowledge Aphrodisias did not seek to enter Hadrian's Hellenic League.</p>
-         </div>
+        -->  </div>
          <div type="bibliography">
-            <p>Published by <bibl>Erim, <title>Aphrodisias</title> (London, 1986), 26-7, 99-101</bibl>.; id, <title>Aphrodisias, a guide to the site</title> (Izmir, 1989), 49-51; Reynolds, in Ratté (<title>Basilica of Aphrodisias</title>, forthcoming)</p>
-            <p>Note, among many published comments, <bibl>R. R. R. Smith in <title>Aphrodisias Papers</title> 3, 10-72</bibl>; <bibl>L. Robert, <title>À Travers l'Asie Mineure</title> (Paris, 1980)</bibl>, <bibl>C.P. Jones, <title>Kinship Diplomacy in the Ancient World</title> (Harvard, 1999)</bibl>, 139-43; Yildirim, and Stinson, in Ratté (<title>Basilica of Aphrodisias</title>, forthcoming); and the articles on Bellerophon, Gordios, Ninos, Semiramis in <bibl>
-                  <title>LIMC</title>
-               </bibl>. <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph060001.html">6.1</ref></citedRange></bibl>.</p>
+            <p>Published by <bibl><ptr target="kte1986"/> <citedRange>26-7, 99-101</citedRange></bibl>.; <bibl><ptr target="kte1989"/> <citedRange>49-51</citedRange></bibl>; 
+               <bibl><ptr target="jmr2008a"/> <citedRange><!-- check --></citedRange></bibl>,
+              ; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph060001.html">6.1</ref></citedRange></bibl>.</p>
+            <!-- <p>Note, among many published comments, <bibl>R. R. R. Smith in <title>Aphrodisias Papers</title> 3, 10-72</bibl>; <bibl>L. Robert, 
+               <title>À Travers l'Asie Mineure</title> (Paris, 1980)</bibl>, <bibl>C.P. Jones, <title>Kinship Diplomacy in the Ancient World</title> (Harvard, 1999)</bibl>, 139-43; 
+               Yildirim, and Stinson, in Ratté (<title>Basilica of Aphrodisias</title>, forthcoming); and the articles on Bellerophon, Gordios, Ninos, Semiramis in <bibl>
+                  <title>LIMC</title></bibl> -->
          </div>
       </body>
    </text>
