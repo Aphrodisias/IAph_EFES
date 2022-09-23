@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Funerary inscription for anonymi</title>
+            <title>Building inscription from a church of St. Michael</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -15,8 +15,8 @@
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
             <idno type="filename">iAph140021</idno>
-            <idno type="IAph2007">iAph161502</idno>
-            <idno type="JMR2004">1502</idno>
+            <idno type="IAph2007">iAph160236</idno>
+            <idno type="JMR2004">236</idno>
             <availability>
                <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -33,29 +33,30 @@
                      <supportDesc>
                         <support>
                            <p>
-                              <material>White marble</material> garland <objectType>sarcophagus</objectType>; for further description see Isik 138</p>
+                              <material key="marmor">White marble</material>
+                              <objectType>architrave</objectType> block, broken to right (<height unit="metre">1.98</height> × <width unit="metre">0.35</width> × <depth unit="metre">0.555</depth>) with a plain moulding, interrupted by <term xml:lang="la">mutules</term>, above a single plain <term xml:lang="la">fascia</term>. Probably Hellenistic.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>On the <rs type="decoration">tabella</rs> (l.1 on the upper moulding, parts of l.6 in the handles on either side). The text must have begun on the lid and was concluded on the lower moulding of the tabella and/or along the bottom edge of the chest.</layout>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> in two lines on the <term>fascia</term>, which is rough, perhaps from the erasure of another text, but more probably because it was never prepared for an inscription.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote> Distinct from Aphrodisian norms, reasonably well designed, cut and aligned, probably third century. for sigma, W for omega, small omicron in ll.1, 6, 10, 12, 13; ligatured ΗΛ (l.3), ΗΜ (l.8), ΗΝ (l.6), ΝΕ (l.13), WΝ (ll.2, 10). Star for denarius; slanting stroke before the figure.</handNote>
+                     <handNote>Clear, angular; <height unit="metre">0.05</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0212"
-                               notAfter="0250"
-                               evidence="lettering spelling nomenclature">
- Perhaps first half of the third century (<rs type="criteria">lettering</rs>, <rs type="criteria">spelling</rs>, <rs type="criteria">nomenclature</rs>)
-</origDate>
+                     <origPlace>Unknown: the block is probably Hellenistic, re-used presumably in a church dedicated to St. Michael.</origPlace>
+                     <origDate notBefore="0501"
+                               notAfter="0600"
+                               precision="medium"
+                               evidence="lettering formula">Sixth century (<rs type="criteria">lettering</rs>, <rs type="criteria">formula</rs>).</origDate>
                   </origin>
                   <provenance type="found">
-                     <placeName type="ancientFindspot" ref="mastaura">Mastaura</placeName>: so not seen. </provenance>
-                  <provenance type="observed">Findspot</provenance>
+                     <placeName type="ancientFindspot" ref="plarasa">Plarasa</placeName>  (Bingeç ): stray.</provenance>
+                  <provenance type="observed">Museum.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -64,6 +65,7 @@
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
          </langUsage>
          <textClass>
             <keywords>
@@ -85,69 +87,81 @@
                              key="Geyre"
                              ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+               <term>
+                  <rs type="textType">Christian</rs>
+               </term>
             </keywords>
          </textClass>
-         <creation>Transcription (Reynolds).</creation>
+         <creation>Transcription (Roueché).</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2007-07-03" who="#CMR">DONE</change>
-         <change when="2007-02-08" who="Charlotte-Tupman">Hand tidied</change>
-         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
-         <change when="2007-01-01" who="#GB">hand tidied</change>
+         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
+         <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
+         <change when="2004-02-29" who="#CMR">checked; image refs.</change>
+         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
+         <change when="2003-09-03" who="#CMR">tagged, lemmatised and corrected</change>
+         <change when="2003-06-02" who="#GB">Tidied and regularised</change>
+         <change when="2002-11-21" who="#GB">Typed and tagged Greek</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <surface/>
+      <surface>
+         <graphic url="94_B_21A.jpg">
+            <desc>Left fragment (Roueché, 1994)</desc>
+         </graphic>
+         <graphic url="94_C_15.jpg">
+            <desc>Right fragment (Roueché, 1994)</desc>
+         </graphic>
+         <graphic url="94_E_14A.jpg">
+            <desc>Assembled (Roueché, 1994)</desc>
+         </graphic>
+      </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <cb n="i"/>
-            <ab>
-               <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
-               <lb n="1"/><w>γυναικὸς</w> <w lemma="αὐτός">αὐτοῦ</w>
-               <lb n="2"/><w lemma="καί">καὶ</w> <w>τέκνω<unclear>ν</unclear></w> <w lemma="αὐτός">αὐτῶν</w>
-               <lb n="3"/><persName type="attested"><name nymRef="#Αὐρήλιος">Αὐρ<sic n="superfluous">ρ</sic>ηλίων</name> <name nymRef="#Ἀρτεμίδωρος">Ἀρτεμιδώ<lb
-                  n="4" break="no"/>ρου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name>Ζω<unclear>σ</unclear>ίμου</name></persName> <w>οὐ<lb
-                     n="5" break="no"/>δενὶ</w> <w>ἐξέσται</w> <w>ἀλλῳ</w>
-               <lb n="6"/><w lemma="θάπτω">ταφῆναι </w><w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὴν</w> <w lemma="σορός">σορόν</w>
-               <lb n="7"/><w lemma="εἰ">εἰ</w> <w lemma="δέ">δέ</w> <w lemma="τις">τις</w> <w lemma="παρά">παρὰ</w> <w lemma="ὁ">τοὺς</w> <w>γε<lb
-                  n="8" break="no"/>γραφημένους</w> <w>θάψῇ</w> <w>εἰ<lb
-                     n="9" break="no"/>σοίσει</w> <w lemma="ὁ">τῇ</w> <w>κρατίστῃ</w> <g ref="#stop"/>
-               <lb n="10"/><w>βούλῃ</w> <g ref="#stop"/> <placeName>Μασταυρειτῶν</placeName>
-               <lb n="11"/><w><expan><ex>δηνάρια</ex></expan></w> <num value="3000">γ</num> <g ref="#stop"/> <w>ταύτης</w> <w lemma="ὁ">τῆς</w> <w>ἐπι<lb
-                  n="12" break="no"/>γράφης</w> <w>ἀποκεῖται</w> <w lemma="ὁ">τὸ</w>
-               <lb n="13"/><w>ἀντίγραφον</w><w lemma="ἐν"> ἐν</w> <w lemma="ὁ">τοῖς</w>
-               <lb n="13a"/><gap reason="lost" unit="line" extent="unknown"/>
-            </ab>
-            <cb n="ii"/>
-            <ab>
-               <lb n="1"/><w><unclear>Ζῶ</unclear><milestone unit="block"/>σιν</w>
-            </ab>
-         </div>
-         
-         <div type="apparatus">
-            <p>l.3, <foreign xml:lang="grc">ΑΥΡΡΗΛΙΩΝ</foreign>, lapis.</p>
-         </div>
-         <div type="translation" xml:lang="en" source="#jmr2007">
-            <p>a. [? The sarcophagus belongs to (male name) and to (female name)] his wife, and their children, the Aurelii Artemidoros and Zosimos. No one else may be buried in the sarcophagus and if anyone buries anyone apart from those named he shall pay to the most eminent council of the People of Mastaura three thousand denarii. The copy of this inscription is filed in the [?city's archive - - -</p>
-            <p>b. They are still living.</p>
+        
+		<ab>
+		<lb n="1"/><space unit="character" quantity="3"/><g ref="symbols.xml#cross"/> <persName key="Michael" type="divine"><name nymRef="#Μιχαήλ">Μιχαὴλ</name></persName> <w lemma="βοηθέω">βοήθι</w> <w lemma="πᾶς">πᾶσι</w> <supplied reason="lost"><space unit="character" quantity="3"/></supplied>
+		<lb n="2"/><space unit="character" quantity="3"/> <w lemma="ὁ">τοῖς</w> <w lemma="καρποφορέω">καρποφοροῦσιν</w> <space unit="character" quantity="3"/>
+		</ab>
+		</div>
+         <div type="translation">
+            <ab>Michael, help all those who contribute.</ab>
          </div>
          <div type="commentary">
-            <p>Since formulae as well as lettering are a little different from those of Aphrodisias, the text was clearly drafted and cut at Mastaura (in the foothills on the north side of the Maeander Valley, between Nysa and Antioch on the Maeander). The owning family had probably received Roman citizenship under the Edict of Caracalla in A.D. 212. Although their funerary fine is not a high one, they may have been a family of some local consequence since their tomb was under the protection of the city council.</p>
+            <p>See discussion at <ref type="eAla-text" n="VII.21" target="VII.html#VII.21">VII.21</ref>
+            </p>
          </div>
          <div type="bibliography">
-            <p>
-               <bibl>
-                  <ptr target="jmr2007"/>
-                  <citedRange>138</citedRange>
+            <p>Published by <bibl rend="primary">
+                  <author>Smith and Ratté</author> (<date>1995</date>), <citedRange>40-1</citedRange>
                </bibl>, whence 
-  <bibl>
-                  <ptr target="seg"/>
-                  <citedRange>2007.1098</citedRange>
-               </bibl>
-            </p>
+          <bibl>
+                  <ptr target="BE"/>
+                  <title level="j">BE</title>
+                  <citedRange>1995.731</citedRange>
+               </bibl>; 
+          <bibl>
+                  <author>Smith</author>
+                  <title level="a">Aphrodisias 1992</title>
+               </bibl>, <bibl>KST XV-2 (<date>1994</date>), 192</bibl>, whence 
+          <bibl>
+                  <ptr target="BE"/>
+                  <title level="j">BE</title>
+                  <citedRange>1996.385</citedRange>
+               </bibl>; 
+               http://csla.history.ox.ac.uk/record.php?recid=E00830
+          <bibl>
+                  <ptr target="ala2004"/>
+                  <citedRange>
+                     <ref target="https://insaph.kcl.ac.uk/ala2004/inscription/eAla236.html">236</ref>
+                  </citedRange>
+               </bibl>.</p>
          </div>
       </body>
    </text>
