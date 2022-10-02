@@ -560,9 +560,10 @@
     <xsl:variable name="ref-id" select="substring-after(@ref, '#')"/>
     <!-- if you are running this template outside EFES, change the path to the institutions authority list accordingly -->
     <xsl:variable name="institutions-list" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/institution.xml')"/>
+    <xsl:variable name="findspots-list" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/findspot.xml')"/>
     <xsl:choose>
       <xsl:when test="contains(@ref,'institution.xml') and doc-available($institutions-list) = fn:true() and document($institutions-list)//t:place[@xml:id=$ref-id]//t:idno[1]">
-        <a target="_blank" href="{document($institutions-list)//t:place[@xml:id=$ref-id]//t:idno[1]}"><xsl:apply-templates/></a>
+        <a target="_blank" href="{document($institutions-list)//t:place[@xml:id=$ref-id][1]//t:idno[1]}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:when test="starts-with(@ref, 'http') and starts-with(@key, 'http')">
         <a href="{@ref}" target="_blank"><xsl:apply-templates/></a>
@@ -573,6 +574,9 @@
       </xsl:when>
       <xsl:when test="starts-with(@key, 'http') and not(starts-with(@ref, 'http'))">
         <a href="{@key}" target="_blank"><xsl:apply-templates/></a>
+      </xsl:when>
+      <xsl:when test="starts-with(@ref, '#') and doc-available($findspots-list) = fn:true() and document($findspots-list)//t:place[@xml:id=$ref-id]//t:idno">
+        <a target="_blank" href="{document($findspots-list)//t:place[@xml:id=$ref-id][1]//t:idno[1]}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise>
         <xsl:apply-templates/>
