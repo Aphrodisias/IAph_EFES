@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -19,7 +19,7 @@
             <idno type="IAph2007">iAph010037</idno>
             <idno type="JMR2004">iAph0099</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -58,17 +58,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>
-           <placeName ref="#aphtemple">Temple/Church</placeName>.</origPlace>
+
+                     <origPlace>           <placeName ref="#aphtemple">Temple/Church</placeName>.</origPlace>
                      <origDate notBefore="0901"
                                notAfter="1000"
                                precision="medium"
                                evidence="architecture terminology">Tenth century A.D. (<rs type="criteria">architecture</rs>, <rs type="criteria">terminology</rs>)</origDate>
+
                   </origin>
 
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName ref="#aphtemple">Temple/Church</placeName>: various locations, over several years.</provenance>
                   <provenance type="observed">Museum.</provenance>
+                  <provenance type="observed" subtype="autopsied">Part of a, and k recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (30); a-j excavated by the NYU expedition in 1962, 1963, 1964, or recorded as stray finds (<rs type="invNo">62.104</rs>, <rs type="invNo">62.110</rs>, <rs type="invNo">62.174</rs>, <rs type="invNo">62.175</rs>, <rs type="invNo">62.176</rs>, <rs type="invNo">62.177</rs>, <rs type="invNo">62.178</rs>, <rs type="invNo">62.196</rs>, <rs type="invNo">62.197</rs>, <rs type="invNo">62.198</rs>, <rs type="invNo">62.199</rs>, <rs type="invNo">63.637</rs>, <rs type="invNo">64.129</rs>, and unnumbered).</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -84,19 +86,13 @@
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="textType" key="sacer">Religious</rs>
