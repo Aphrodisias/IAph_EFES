@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph080031</idno>
             <idno type="JMR2004">iAph0512</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -47,10 +47,7 @@
                   <origin>
                      <origPlace>
                         <placeName type="monuList">Theatre</placeName>: north parodos wall</origPlace>
-                     <origDate notBefore="-0039"
-                               notAfter="-0038"
-                               precision="medium"
-                               evidence="lettering context content prosopography">
+                     <origDate notBefore="-0039" notAfter="-0038" precision="medium" evidence="lettering context content prosopography">
 Inscription: second to third centuries A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">context</rs>).
 Document: 39/38 B.C.
  (<rs type="criteria">content</rs>, <rs type="criteria">prosopography</rs>).</origDate>
@@ -58,6 +55,7 @@ Document: 39/38 B.C.
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName type="monuList" ref="#aphtheatre">Theatre</placeName>: north parodos wall</provenance>
                   <provenance type="observed">Findspot</provenance>
+                  <provenance type="observed" subtype="autopsied">Recorded by the NYU expedition in 1967.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -95,7 +93,7 @@ Document: 39/38 B.C.
 
 <ab><lb n="1"/>  <persName nymRef="#octavian" type="emperor"><w lemma="αὐτοκράτωρ">αὐτοκράτωρ</w> <name nymRef="#Καῖσαρ">Καῖσαρ</name> <w lemma="θεός">θεοῦ</w> <name nymRef="#Ἰούλιος">Ἰουλίου</name> <w lemma="υἱός">υἱὸς</w></persName> <placeName nymRef="#Ἐφέσιος">Ἐφεσίων</placeName> <w lemma="ἄρχων">ἄρχουσι</w> <lb n="2"/> <w lemma="βουλή">βουλῇ</w> <w lemma="δῆμος">δήμῳ</w> <w lemma="χαίρω">χαίρειν</w> <w lemma="εἰ">εἰ</w> <w lemma="ῤώννυμι">ἔρρωσθε</w> <w lemma="εὖ">εὖ</w> <w lemma="ἐάν">ἂν</w> <w lemma="ἔχω">ἔχοι</w> <w lemma="ὑγιαίνω">ὑγιαί
    <lb n="3" break="no"/>νω</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτὸς</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τοῦ</w> <w lemma="στράτευμα">στρατεύματος</w> <space quantity="3" unit="character"/>  
-   <lb n="4"/> <persName type="attested"><name nymRef="#Σόλων">Σόλων</name> <persName type="attested"><name nymRef="#Δημήτριος">Δημητρίου</name></persName> <w lemma="υἱός">υἱὸς</w></persName> <w lemma="πρεσβευτής">πρεσβευτὴς</w> <placeName type="ethnic"  ref="#plarasa" nymRef="#Πλαρασεύς">Πλαρασέων</placeName>  
+   <lb n="4"/> <persName type="attested"><name nymRef="#Σόλων">Σόλων</name> <persName type="attested"><name nymRef="#Δημήτριος">Δημητρίου</name></persName> <w lemma="υἱός">υἱὸς</w></persName> <w lemma="πρεσβευτής">πρεσβευτὴς</w> <placeName type="ethnic" ref="#plarasa" nymRef="#Πλαρασεύς">Πλαρασέων</placeName>  
    <lb n="5"/> <w lemma="καί">καὶ</w> <placeName type="ethnic" ref="#aphrodisias" nymRef="#Ἀφροδεισιεύς"><del rend="erasure"><unclear>Ἀ</unclear>φροδεισιέων</del></placeName> <w lemma="ἐμφανίζω">ἐνεφάνισέν</w> <w lemma="ἐγώ">μοι</w> <w lemma="ὅσος">ὅσα</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="πόλεμος">πο<lb n="6" break="no"/>λέμῳ</w> <w lemma="ὁ">τῷ</w> <w lemma="κατά">κατὰ</w> <persName type="attested"><name nymRef="#Λαβιῆνος">Λαβιῆνον</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="πόλις">πόλις</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="πάσχω">πέπονθεν</w> <lb n="7"/> <w lemma="ὅσος">ὅσα</w> <w lemma="τε">τε</w> <w lemma="διαρπάζω">διηρπάγη</w> <w lemma="δημόσιος">δημόσιά</w> <w lemma="τε">τε</w> <w lemma="καί">καὶ</w> <w lemma="ἰδιωτικός">ἰδιωτικά</w> <w lemma="περί">περὶ</w> <w lemma="εἰμί">ὧν</w> <lb n="8"/> <w lemma="πᾶς">πάντων</w> <persName n="markantony" type="emperor"><name nymRef="#Ἀντώνιος">Ἀντωνίῳ</name></persName> <w lemma="τε">τε</w> <w lemma="ὁ">τῷ</w> <w lemma="συνάρχω">συνάρχοντι</w> <w lemma="ἐντολή">ἐντολὰς</w> <lb n="9"/> <w lemma="δίδωμι">δέδωκα</w> <w lemma="ὅπως">ὅπως</w> <w lemma="ὅσος">ὅσα</w> <w lemma="ποτε">ποτὲ</w> <w lemma="ἐάν">ἂν</w> <w lemma="δύναμαι">δύνηται</w> <w lemma="ὁ">ὃ</w> <w lemma="ἐάν">ἂν</w> <w lemma="εὑρίσκω">εὕρῃ</w> <w lemma="ἀποκαθίστημι">ἀ<lb n="10" break="no"/> ποκαταστήσῃ</w> <w lemma="αὐτός">αὐτοῖς</w> <w lemma="ὑμεῖς">ὑμεῖν</w> <w lemma="τε">τε</w> <w lemma="κρίνω">ἔκρεινα</w> <w lemma="γράφω">γράψαι</w> <lb n="11"/> <w lemma="ἐπεί">ἐπεὶ</w> <w lemma="ἔχω">ἔχετε</w> <w lemma="πόλις">πόλιν</w> <w lemma="εὔκαιρος">εὔκαιρον</w> <w lemma="ἐπιβοηθεῖα">ἐπιβοηθεῖ<sic>α</sic>ν</w> <w lemma="αὐτός">αὐτοῖς</w> <lb n="12"/> <w lemma="ἐάν">ἐὰν</w> <w lemma="σῶμα">σώματος</w> <w lemma="ἤ">ἢ</w> <w lemma="ἕτερος">ἑτέρου</w> <w lemma="τις">τινὸς</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="ἐπιλαμβάνω">ἐπιλαμβάνωνται</w> 
    <lb n="13"/> <w lemma="ἀπαγγέλλω">ἀπηνγέλη</w> <w lemma="δέ">δέ</w> <w lemma="ἐγώ">μοι</w> <w lemma="ὅτι">ὅτι</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῆς</w> <w lemma="διαρπαγή">διαρπαγῆς</w> <persName type="divine" ref="#eros"><name nymRef="#Ἔρως">Ἔρως</name></persName> <w lemma="χρύσεος">χρυσοῦς</w> <w lemma="ὅς">ὅ</w> <w lemma="ὑπό">ὑ
       <lb n="14" break="no"/>πὸ</w> <w lemma="ὁ">τοῦ</w> <w lemma="πατήρ">πατρὸς</w> <w lemma="ὁ">τῇ</w> <persName type="divine" ref="#aphrodite"><name nymRef="#Ἀφροδίτη"><del rend="erasure"><unclear>Ἀφροδε</unclear>ίτῃ</del></name></persName> <w lemma="εἰμί">ἦν</w> <w lemma="ἀνατίθημι">ἀνατεθεὶς</w> <w lemma="εἰς">εἰς</w> <w lemma="ὑμεῖς">ὑμᾶς</w> 
@@ -124,7 +122,7 @@ Document: 39/38 B.C.
                   
                   <citedRange><ref target="https://epigraphy.packhum.org/text/256918">40</ref></citedRange>
                </bibl>, <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph080031.html">8.31</ref></citedRange></bibl>.
-              <!-- Think -->Discussed by <bibl n="millar1973">F. Millar, JRS 63 (1973), 56, no. <citedRange>10</citedRange></bibl>. --> </p>
+              <!-- Think -->Discussed by <bibl n="millar1973">F. Millar, JRS 63 (1973), 56, no. <citedRange>10</citedRange></bibl>. --&gt; </p>
          </div>
       </body>
    </text>

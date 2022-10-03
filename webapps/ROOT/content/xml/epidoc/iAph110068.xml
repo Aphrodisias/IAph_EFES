@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph110068</idno>
             <idno type="JMR2004">iAph0053</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -52,14 +52,12 @@
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="0468"
-                               notAfter="0500"
-                               precision="medium"
-                               evidence="prosopography">Late fifth century (<rs type="criteria">prosopography</rs>).</origDate>
+                     <origDate notBefore="0468" notAfter="0500" precision="medium" evidence="prosopography">Late fifth century (<rs type="criteria">prosopography</rs>).</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName type="monuList">City, Village</placeName>: '<foreign xml:lang="la">In muro apud Turcam domum in orientali pagi parte</foreign>' (Picenini); 'built into a village house, which has since been demolished' (NYU).</provenance>
                   <provenance type="observed" when="2004">Museum (Roueché, 2004).</provenance>
+                  <provenance type="observed" subtype="autopsied">Apparently copied in the Byzantine period; copied by <rs type="visitor" key="picenini">Picenini</rs> (BL Add. 10102, 20v, no. 39) whence <rs key="sherard" type="visitor">Sherard</rs> (BL Add. 10101 f. 31); recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (9); by the <rs type="visitor" key="calder">MAMA expedition</rs>; by <rs type="visitor" key="robert">J and L. Robert</rs>; recorded by the NYU expedition (SBI <rs type="sbi">70</rs>).</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -76,19 +74,13 @@
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
             </keywords>
          </textClass>

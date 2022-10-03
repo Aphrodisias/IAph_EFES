@@ -37,6 +37,9 @@
   <xsl:template match="result/doc">
     <tr>
       <xsl:apply-templates select="str[@name='index_item_name']" />
+      <xsl:apply-templates select="arr[@name='index_findspot_upper_level']" />
+      <xsl:apply-templates select="arr[@name='index_findspot_intermediate_level']" />
+      <xsl:apply-templates select="arr[@name='index_findspot_lower_level']" />
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
       <xsl:apply-templates select="str[@name='index_numeral_value']"/>
       <xsl:apply-templates select="arr[@name='language_code']"/>
@@ -44,7 +47,7 @@
       <xsl:apply-templates select="arr[@name='index_epithet']" />
       <xsl:apply-templates select="str[@name='index_item_type']" />
       <xsl:apply-templates select="str[@name='index_item_role']" />
-      <xsl:apply-templates select="str[@name='index_external_resource']" />
+      <xsl:apply-templates select="arr[@name='index_external_resource']" />
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
     </tr>
   </xsl:template>
@@ -61,6 +64,24 @@
   <xsl:template match="str[@name='index_abbreviation_expansion']">
     <td>
       <xsl:value-of select="." />
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="arr[@name='index_findspot_upper_level']">
+    <td class="larger_cell">
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="arr[@name='index_findspot_intermediate_level']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="arr[@name='index_findspot_lower_level']">
+    <td>
+      <xsl:value-of select="."/>
     </td>
   </xsl:template>
 
@@ -117,8 +138,9 @@
     </td>
   </xsl:template>
   
-  <xsl:template match="str[@name='index_external_resource']">
+  <xsl:template match="arr[@name='index_external_resource']">
     <td>
+      <xsl:for-each select="str">
       <xsl:choose>
         <xsl:when test="contains(., 'http')">
           <xsl:for-each select="tokenize(., ' ')">
@@ -130,6 +152,7 @@
           <xsl:value-of select="."/>
         </xsl:otherwise>
       </xsl:choose>
+      </xsl:for-each>
     </td>
   </xsl:template>
   

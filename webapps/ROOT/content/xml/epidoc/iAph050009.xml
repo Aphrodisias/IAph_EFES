@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -20,7 +20,7 @@
             <idno type="IAph2007">iAph050009</idno>
             <idno type="JMR2004">iAph1262</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -28,7 +28,7 @@
             <msDesc>
                <msIdentifier>
                   <repository>…</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -59,6 +59,7 @@ A.D. 117/138
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. a-e, g <placeName type="monuList" ref="#aphbaths">Hadrianic Baths</placeName>, a-e 'grande salle' of the aleipterion, g 'Thermes, façade'; f <placeName type="monuList" ref="#aphwalls">Walls, West Gate</placeName>: 'near the West Gate, partly buried' (Kubitschek); </provenance>
                   <provenance type="observed">stone pile in the east court of the Hadrianic Baths</provenance>
+                  <provenance type="observed" subtype="autopsied">f copied by Kubitschek (K iii. facing 1); g recorded by Gaudin (126); a-e excavated by Mendel in 1905 (notebook A.5). a-c, and fragments of d and g recorded by the NYU expedition.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -74,19 +75,13 @@ A.D. 117/138
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="personType" key="imperatorius">Imperial</rs>
@@ -138,7 +133,7 @@ A.D. 117/138
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><persName type="divine" ref="#aphrodite"><w lemma="θεά">Θεᾷ</w>  <name nymRef="#Ἀφροδίτη">Ἀφροδείτῃ</name></persName>  <w lemma="καί">καὶ</w>  <gap reason="lost" unit="character" extent="unknown"/></ab></div>
             <div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="emperor" ref="emperors.xml#hadrian"><w lemma="αὐτοκράτωρ">αὐτοκράτορι</w>  <name nymRef="#Καῖσαρ">Καίσαρι</name>  <persName type="emperor" ref="emperors.xml#trajan"><w lemma="θεός">Θεοῦ</w>  <name nymRef="#Τραιανός">Τραϊανοῦ</name>  <name nymRef="#Παρθικός">Π<supplied reason="lost">αρθικοῦ</supplied></name></persName>  <w lemma="υἱός"><supplied reason="lost">υἱῷ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <name nymRef="#Τραιανός">Τραϊανῷ</name>  <name nymRef="#Ἁδριανός">Ἁδριανῷ</name></persName>  <gap reason="lost" unit="character" extent="unknown"/></ab></div>
-            <div n="c" type="textpart" subtype="fragment"><ab><lb n="1"/>                                            <gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Εὔδαμος" ref="http://www.lgpn.ox.ac.uk/id/V5b-6377">Εὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6836"><name nymRef="#Ζήνων">Ζήνωνος</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"  ref="http://www.lgpn.ox.ac.uk/id/V5b-6385"><name nymRef="#Εὔδαμος"><unclear>Ε</unclear><milestone unit="block"/>ὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8284"><name nymRef="#Καλλίας">Καλλίου</name></persName> <w lemma="ὁ">τῶν</w> <milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/><lb n="2"/>                                            <gap reason="lost" unit="character" extent="unknown"/>      <space unit="character" quantity="3"/> <w lemma="καί">καὶ</w> <w lemma="λουτήρ">λουτῆρσιν</w> <space unit="character" quantity="5"/>      <milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/></ab></div>
+            <div n="c" type="textpart" subtype="fragment"><ab><lb n="1"/>                                            <gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Εὔδαμος" ref="http://www.lgpn.ox.ac.uk/id/V5b-6377">Εὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6836"><name nymRef="#Ζήνων">Ζήνωνος</name></persName> <w lemma="καί">καὶ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6385"><name nymRef="#Εὔδαμος"><unclear>Ε</unclear><milestone unit="block"/>ὐδάμου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8284"><name nymRef="#Καλλίας">Καλλίου</name></persName> <w lemma="ὁ">τῶν</w> <milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/><lb n="2"/>                                            <gap reason="lost" unit="character" extent="unknown"/>      <space unit="character" quantity="3"/> <w lemma="καί">καὶ</w> <w lemma="λουτήρ">λουτῆρσιν</w> <space unit="character" quantity="5"/>      <milestone unit="block"/><gap reason="lost" unit="character" extent="unknown"/></ab></div>
             <div n="d" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6781"><name nymRef="#Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6377"><name nymRef="#Εὔδαμος">Εὐδάμου</name></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-2799"><name nymRef="#Ἀπφίων">Ἀπφ<supplied reason="lost">ί</supplied>ω<supplied reason="lost">νος</supplied></name></persName>  <gap reason="lost" unit="character" extent="unknown"/></ab></div>
             <div n="e" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="ὑπισχνέομαι"><supplied reason="lost">ὑπέ</supplied>σχετο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀλειπτήριον">ἀλειπτήριον</w> <gap reason="lost" unit="character" extent="unknown"/></ab></div>
             <div n="f" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6781"><name nymRef="#Ζήνων"><supplied reason="lost">Ζήνω</supplied><seg type="autopsy">νος</seg></name>  <seg type="autopsy"><w lemma="ὁ">τοῦ</w></seg>  <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6377"><name nymRef="#Εὔδαμος"><seg type="autopsy">Εὐδάμ</seg>ου</name></persName></persName> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-2799"><name nymRef="#Ἄπφιος">Ἀπφ<unclear>ίω</unclear><gap reason="lost" unit="character" extent="unknown"/></name></persName><lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6781"><name nymRef="#Ζήνων"><supplied reason="lost">Ζήν</supplied>ωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6377"><name nymRef="#Εὔδαμος">Εὐ<supplied reason="lost">δάμου</supplied></name></persName></persName></ab></div>

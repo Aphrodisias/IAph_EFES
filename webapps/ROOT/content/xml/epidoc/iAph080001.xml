@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph080001</idno>
             <idno type="JMR2004">iAph0536</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -52,6 +52,7 @@ i. 28 B.C. (<rs type="criteria">prosopography</rs>); ii. &amp; iii. First – si
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. In the area of the <placeName type="monuList" ref="#aphtheatre">Theatre</placeName> stage</provenance>
                   <provenance type="observed">Restored on the Theatre stage</provenance>
+                  <provenance type="observed" subtype="autopsied">Excavated by the NYU expedition (Block 8 <rs type="invNo">71.164b</rs>; Block 10 <rs type="invNo">71.172</rs>)</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -67,19 +68,13 @@ i. 28 B.C. (<rs type="criteria">prosopography</rs>); ii. &amp; iii. First – si
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="personType" key="imperatorius">Imperial</rs>
@@ -139,7 +134,7 @@ i. 28 B.C. (<rs type="criteria">prosopography</rs>); ii. &amp; iii. First – si
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <div n="i" type="textpart" subtype="section"><ab><lb n="1"/>  <persName type="attested"><name nymRef="#Γάϊος">Γάϊος</name>  <name nymRef="#Ἰούλιος">Ἰούλιος</name>  <name nymRef="#Ζωΐλος">Ζω<unclear>ΐ</unclear><milestone unit="block"/>λος</name></persName>  <persName type="emperor"><w lemma="θεός">θεοῦ</w>  <name nymRef="#Ἰούλιος">Ἰουλίου</name>  <w lemma="υἱός">υ<supplied reason="lost">ἱ</supplied><milestone unit="block"/>οῦ</w>  <name nymRef="#Καῖσαρ">Καίσαρος</name></persName>  <w lemma="ἀπελεύθερος">ἀπελε<milestone unit="block"/>ύθερος</w>  <w lemma="στεφανηφορέω">στεφανοφο<milestone unit="block"/>ρήσας</w> <w lemma="ὁ">τὸ</w> <w lemma="δέκατος">δέκατον</w> <w lemma="ἔχω">ἑξῆς</w><milestone unit="block"/> <w lemma="ὁ">τὸ</w> <w lemma="λογήιον">λογήιον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="προσκήνιον">προ<milestone unit="block"/>σκήνιον</w> <w lemma="σύν">σὺν</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἐν">ἐν</w> <w lemma="αὐτός">αὐ<milestone unit="block"/>τῶι</w>  <w lemma="προσκόσμημα">προσκοσμή<unclear>μ</unclear>ασιν</w>  
-   <milestone unit="block"/><w lemma="πᾶς">πᾶσιν</w>  <persName type="divine"  ref="#aphrodite"><name nymRef="#Ἀφροδίτη">Ἀφ<unclear>ρ</unclear><supplied reason="lost">οδίτῃ</supplied></name></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δήμωι</w> <space unit="character" extent="unknown"/></ab></div>
+   <milestone unit="block"/><w lemma="πᾶς">πᾶσιν</w>  <persName type="divine" ref="#aphrodite"><name nymRef="#Ἀφροδίτη">Ἀφ<unclear>ρ</unclear><supplied reason="lost">οδίτῃ</supplied></name></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δήμωι</w> <space unit="character" extent="unknown"/></ab></div>
             <div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><gap reason="lost" unit="character" quantity="2"/>  <orig><unclear>μ</unclear></orig> <persName type="divine" ref="#ourania"><name nymRef="#Οὐρανία">Οὐρανία</name></persName> <orig><unclear>ι</unclear></orig><gap reason="lost" unit="character" quantity="5"/><orig><unclear>ρτιιλ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
                <lb n="2"/><gap reason="lost" unit="character" quantity="2"/> <w lemma="βοηθέω">βοηθι</w> <w lemma="ὁ">τῷ</w> <w lemma="δοῦλος">δουλῳ</w> <w lemma="σύ"><unclear>σ</unclear><supplied reason="lost">ου</supplied></w>  <persName type="attested"><name nymRef="#Νικηφόρος"><unclear>Ν</unclear>ικη<unclear>φόρ</unclear>ῳ</name></persName>  <gap reason="lost" unit="character" extent="unknown"/></ab></div>
             <div n="iii" type="textpart" subtype="section"><ab><lb n="1"/> <w lemma="νικάω">Νικᾷ</w> <w lemma="ὁ">ἡ</w> <w lemma="τύχη">τύχη</w> 
