@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph080410</idno>
             <idno type="JMR2004">iAph0062</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -50,14 +50,12 @@
                <history>
                   <origin>
                      <origPlace>Findspot.</origPlace>
-                     <origDate notBefore="0468"
-                               notAfter="0533"
-                               precision="medium"
-                               evidence="titulature">Late fifth/early sixth century (<rs type="criteria">titulature</rs>).</origDate>
+                     <origDate notBefore="0468" notAfter="0533" precision="medium" evidence="titulature">Late fifth/early sixth century (<rs type="criteria">titulature</rs>).</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName type="monuList" ref="#aphtetrastoon">Tetrastoon</placeName>: standing against the east side of the northernmost column of the west colonnade; several other inscribed bases (<ref type="inscription" n="64" target="iAph080407"/>, and probably <ref type="inscription" n="20" target="iAph080405"/> and <ref type="inscription" n="21" target="iAph080406"/>) stood in similar positions against other columns of this colonnade; </provenance>
                   <provenance type="observed">Findspot; statue in Museum.</provenance>
+                  <provenance type="observed" subtype="autopsied" when="1972">Excavated by the NYU expedition in 1972 (SBI <rs type="sbi">1</rs>) together with its accompanying statue.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -74,19 +72,13 @@
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="textType" key="sacer">Religious</rs>

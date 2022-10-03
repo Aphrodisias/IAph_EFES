@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph110055</idno>
             <idno type="JMR2004">iAph0701</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -72,6 +72,7 @@
                      <placeName type="monuList">City, Village</placeName>: New Museum excavations, east of what is
                   now the entrance.</provenance>
                   <provenance type="observed">Museum</provenance>
+                  <provenance type="observed" subtype="autopsied">Found in the winter of 1975-6; recorded by the NYU expedition in 1976 (<rs type="invNo">76.1</rs>).</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -89,19 +90,13 @@
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="textType" key="cetera">jewish</rs>
@@ -114,8 +109,7 @@
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-01-17" who="&#xA;---------------Charlotte-Tupman&#xA;------------">hand tidied</change>
          <change when="2004-12-14" who="#GB">Transferred descriptions and bibliography from publication</change>
-         <change when="2004-12-10"
-                 who="&#xA;---------------Artemis-Papakostoulis&#xA;------------">further encoding</change>
+         <change when="2004-12-10" who="&#xA;---------------Artemis-Papakostoulis&#xA;------------">further encoding</change>
          <change when="2004-12-10" who="&#xA;---------------JG&#xA;------------">further encoding</change>
          <change when="2004-12-09" who="#GB">Converted to EpiDoc XML</change>
          <change when="2004-07-15" who="&#xA;---------------Juan-Garcés&#xA;------------">typed Greek in unicode</change>

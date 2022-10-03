@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph050214</idno>
             <idno type="JMR2004">iAph0672</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -49,16 +49,14 @@
                      <origPlace>
                         <placeName type="monuList">Hadrianic Baths, East court</placeName>
                      </origPlace>
-                     <origDate notBefore="0212"
-                               notAfter="0300"
-                               precision="medium"
-                               evidence="nomenclature">
+                     <origDate notBefore="0212" notAfter="0300" precision="medium" evidence="nomenclature">
 Third century (after 212)
  (<rs type="criteria">nomenclature</rs>)</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName type="monuList" ref="#aphbaths">Hadrianic Baths, East court</placeName>: found 'dans le 3e' (corrected to 4e in fair copy) 'entrée du portique nord'; 'Dans le 3e entrecolonnement du portique N(ord) (Boulanger).</provenance>
                   <provenance type="observed">Findspot</provenance>
+                  <provenance type="observed" subtype="autopsied">Excavated by Boulanger, 26 October 1913 (notebook A, 75-6, no. 18, whence B 25-29, no. 18); recorded by the NYU expedition.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -74,19 +72,13 @@ Third century (after 212)
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="textType" key="cetera">Agonistic</rs>
@@ -239,8 +231,8 @@ Third century (after 212)
             <p>See the full discussion by Jones, 'Two inscriptions from Aphrodisias', HSCP 85 (1981), 107-29; see alsocommentary at Roueché, PPA 72.</p>
          </div>
          <div type="bibliography">
-            <p>i: <bibl><ptr target="robert1939"/><citedRange></citedRange></bibl>, whence republished by <bibl n="merkelbach1974">R. Merkelbach, ZPE 14 (1974), 91-4</bibl><!-- check -->, and  I.Eph. I, 12<!-- check -->. 
-               i and ii published by <bibl><ptr target="jones1981"/><citedRange></citedRange></bibl>; from this i <bibl><ptr target="seg"/> <citedRange>1981.903</citedRange>
+            <p>i: <bibl><ptr target="robert1939"/><citedRange/></bibl>, whence republished by <bibl n="merkelbach1974">R. Merkelbach, ZPE 14 (1974), 91-4</bibl><!-- check -->, and  I.Eph. I, 12<!-- check -->. 
+               i and ii published by <bibl><ptr target="jones1981"/><citedRange/></bibl>; from this i <bibl><ptr target="seg"/> <citedRange>1981.903</citedRange>
                </bibl>, and ii, with the comments of <!-- check --><bibl n="merkelback1981">R. Merkelbach, ZPE 49 (1982), 282-3</bibl>, and <bibl n="ebert1981">J. Ebert, Stadion 7 (1981), 203-10</bibl>, as <bibl><ptr target="seg"/> <citedRange>1981.904</citedRange>
                </bibl>; further comments <bibl><ptr target="robertBE"/> <citedRange>1984.410</citedRange>, <citedRange>1984.411</citedRange>
                </bibl>, whence <bibl><ptr target="seg"/> <citedRange>1984.1045</citedRange>

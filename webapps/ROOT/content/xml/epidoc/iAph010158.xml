@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -19,7 +19,7 @@
             <idno type="IAph2007">iAph010158</idno>
             <idno type="JMR2004">iAph1036</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -50,13 +50,12 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0101"
-                               notAfter="0300"
-                               precision="medium"
-                               evidence="nomenclature lettering">Second to third centuries A.D. (<rs type="criteria">nomenclature</rs>, <rs type="criteria">lettering</rs>)</origDate>
+                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="nomenclature lettering">Second to third centuries A.D. (<rs type="criteria">nomenclature</rs>, <rs type="criteria">lettering</rs>)</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. Four fragments, a, d,and f found in the <placeName type="monuList" ref="#aphtemple">Temple/Church</placeName>, reused in the Byzantine bema; two fragments, b and c found reused in a village house ('Maison Khamil', Boulanger). One fragment, e, seen in the Temple in 1874, but found re-used in a <placeName type="monuList">City, Village</placeName> house in 1983.</provenance>
                   <provenance type="observed">b, c and e in the Museum; a and d in the Temple Church.</provenance>
+                  <provenance type="observed" subtype="autopsied">e copied by Hirschfeld in 1874;  b and c copied by Kubitschek (K.18, Abklatsch 10), when they still formed a single stone; b recorded by Boulanger (notebook B, 41, no.45), and by the MAMA expedition; all were found by the NYU expedition: a <rs type="siteNo">Temple 23</rs>; b <rs type="invNo">83.71</rs>, SBI <rs type="sbi">113</rs>; c <rs type="invNo">72.489</rs>; d <rs type="siteNo">Temple 9</rs>, SBI <rs type="sbi">94</rs>; e  <rs type="invNo">83.83</rs>; f <rs type="siteNo">Temple 26</rs>; g: <rs type="siteNo">Temple  44</rs>
+      </provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -72,19 +71,13 @@
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
             </keywords>
          </textClass>

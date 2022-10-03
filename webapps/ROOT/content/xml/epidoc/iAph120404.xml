@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph120404</idno>
             <idno type="JMR2004">iAph1133</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -47,15 +47,13 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="-0100"
-                               notAfter="0100"
-                               precision="medium"
-                               evidence="lettering">
+                     <origDate notBefore="-0100" notAfter="0100" precision="medium" evidence="lettering">
 Perhaps first century B.C. to first century A.D. (<rs type="criteria">lettering</rs>)</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName type="monuList" ref="#aphwalls">Walls, South-east Gate</placeName>: '<foreign xml:lang="fr">au dégagement de la statue de femme</foreign>' Gaudin; reused together to create a course on top of elements of a  tomb at the East gate (which bears <ref type="inscription" n="1009" target="iAph130301"/> [=MAMA 472-3], <ref type="inscription" n="1010" target="iAph130302"/> 474-6], <ref type="inscription" n="1012" target="iAph120609"/> and <ref type="inscription" n="1527" target="iAph120411"/>)</provenance>
                   <provenance type="observed" when="1976">Findspot (1976)</provenance>
+                  <provenance type="observed" subtype="autopsied">i recorded by K&amp;R (K III.55, Abklatsch 62); i and ii recorded by Gaudin (49 and 50);both found again by the NYU expedition.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -72,19 +70,13 @@ Perhaps first century B.C. to first century A.D. (<rs type="criteria">lettering<
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
             </keywords>
          </textClass>
@@ -122,10 +114,8 @@ Perhaps first century B.C. to first century A.D. (<rs type="criteria">lettering<
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<div n="i" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Ἀντίπατρος">Ἀντίπατρος</name>  <persName type="attested"><name nymRef="#Μῆνις">Μήνιδος</name></persName></persName> <w lemma="ὁ">τὸ</w> <w lemma="ἐπιστύλιον">ἐπιστύλιον</w> <lb n="2"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δήμωι</w> <space quantity="1" unit="character"/></ab></div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Διονύσιος">Διονύσ<supplied reason="lost">ιο</supplied>ς</name>  <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name></persName></persName></persName>  <w lemma="ὁ"><supplied reason="undefined" evidence="previouseditor">τὸ</supplied></w>  <w lemma="ἐπιστύλιον"><supplied reason="undefined" evidence="previouseditor">ἐπιστύ</supplied><lb
-   n="2" break="no"/>λιον</w>  <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δή<supplied reason="undefined" evidence="previouseditor">μωι</supplied></w></ab></div>
-<div n="i" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Ἀντίπατρος">Ἀντίπατρος</name>  <persName type="attested"><name nymRef="#Μῆνις">Μήνιδος</name></persName></persName> <w lemma="ὁ">τὸ</w> <w lemma="ἐπιστύλιον">ἐπιστύλιον</w> <lb n="2"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δήμωι</w> <space quantity="1" unit="character"/></ab></div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Διονύσιος">Διονύσ<supplied reason="lost">ιο</supplied>ς</name>  <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name></persName></persName></persName>  <w lemma="ὁ"><supplied reason="undefined" evidence="previouseditor">τὸ</supplied></w>  <w lemma="ἐπιστύλιον"><supplied reason="undefined" evidence="previouseditor">ἐπιστύ</supplied><lb
-   n="2" break="no"/>λιον</w>  <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δή<supplied reason="undefined" evidence="previouseditor">μωι</supplied></w></ab></div>
+<div n="i" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Ἀντίπατρος">Ἀντίπατρος</name>  <persName type="attested"><name nymRef="#Μῆνις">Μήνιδος</name></persName></persName> <w lemma="ὁ">τὸ</w> <w lemma="ἐπιστύλιον">ἐπιστύλιον</w> <lb n="2"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δήμωι</w> <space quantity="1" unit="character"/></ab></div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Διονύσιος">Διονύσ<supplied reason="lost">ιο</supplied>ς</name>  <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name></persName></persName></persName>  <w lemma="ὁ"><supplied reason="undefined" evidence="previouseditor">τὸ</supplied></w>  <w lemma="ἐπιστύλιον"><supplied reason="undefined" evidence="previouseditor">ἐπιστύ</supplied><lb n="2" break="no"/>λιον</w>  <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δή<supplied reason="undefined" evidence="previouseditor">μωι</supplied></w></ab></div>
+<div n="i" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Ἀντίπατρος">Ἀντίπατρος</name>  <persName type="attested"><name nymRef="#Μῆνις">Μήνιδος</name></persName></persName> <w lemma="ὁ">τὸ</w> <w lemma="ἐπιστύλιον">ἐπιστύλιον</w> <lb n="2"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δήμωι</w> <space quantity="1" unit="character"/></ab></div><div n="ii" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested"><name nymRef="#Διονύσιος">Διονύσ<supplied reason="lost">ιο</supplied>ς</name>  <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Διονύσιος">Διονυσίου</name></persName></persName></persName>  <w lemma="ὁ"><supplied reason="undefined" evidence="previouseditor">τὸ</supplied></w>  <w lemma="ἐπιστύλιον"><supplied reason="undefined" evidence="previouseditor">ἐπιστύ</supplied><lb n="2" break="no"/>λιον</w>  <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸν</w> <w lemma="ἐπί">ἐπ'</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κόσμος">κόσμον</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δή<supplied reason="undefined" evidence="previouseditor">μωι</supplied></w></ab></div>
 </div>
          <div type="apparatus">
             <p>Letters highlighted were seen by Reinach but not by us</p>

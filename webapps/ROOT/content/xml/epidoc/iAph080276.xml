@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph080276</idno>
             <idno type="JMR2004">iAph0108</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -55,15 +55,13 @@ moulding, which is chipped away above.</layout>
                   <origin>
                      <origPlace>
                         <seg cert="low">An unidentified church</seg>.</origPlace>
-                     <origDate notBefore="0801"
-                               notAfter="1000"
-                               precision="medium"
-                               evidence="lettering metre">Ninth to tenth centuries A.D.</origDate>
+                     <origDate notBefore="0801" notAfter="1000" precision="medium" evidence="lettering metre">Ninth to tenth centuries A.D.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. One block found during the excavation of the <placeName ref="#aphtheatre">Theatre</placeName> in
                      <date type="found">1969</date>, another a stray find in <date type="found">1970</date>, a third excavated in the
                      <placeName ref="#aphsebast">Sebasteion</placeName> portico in <date type="found">1979</date>.</provenance>
                   <provenance type="observed">Museum.</provenance>
+                  <provenance type="observed" subtype="autopsied">Recorded by the NYU expedition (<rs type="invNo">69.354</rs>, <rs type="invNo">70.224</rs>, <rs type="invNo">79.190</rs>).</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -79,19 +77,13 @@ moulding, which is chipped away above.</layout>
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="textType" key="sacer">Religious</rs>
@@ -136,7 +128,7 @@ moulding, which is chipped away above.</layout>
         <lg><lb n="1"/><l n="1"><w lemma="ἔνθα"><supplied cert="low" reason="lost">ἔνθ'</supplied></w> <w lemma="ὁράω"><supplied reason="lost">ἴ</supplied>δε</w> <w lemma="ναός">ναὸν</w> <w lemma="ὁ"><unclear>τ</unclear>ῶν</w> 
            <persName type="divine"><addName nymRef="ἅγιος"><w lemma="ἅγιος">ἁ<unclear>γ</unclear>ίων</w></addName>
            <addName nymRef="μάρτυς"><w lemma="μάρτυς">μαρ<unclear>τ</unclear>ύρων</w></addName></persName></l>
-           <l n="2"><persName ref="barbara" type="divine" ><name nymRef="#Βαρβάρα">Βα<unclear>ρ</unclear>βα<unclear>ρ</unclear>ας</name></persName> <w lemma="τε">τε</w> <w lemma="φημί">φῆμι</w> 
+           <l n="2"><persName ref="barbara" type="divine"><name nymRef="#Βαρβάρα">Βα<unclear>ρ</unclear>βα<unclear>ρ</unclear>ας</name></persName> <w lemma="τε">τε</w> <w lemma="φημί">φῆμι</w> 
               <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w> <persName ref="anastasia" type="divine"><name nymRef="#Ἀναστασία"><supplied reason="lost">Ἀ</supplied>ναστασίας</name></persName> <g ref="symbols.xml#cross"/><space unit="character" quantity="3"/></l></lg>
 </div>
          <div type="translation">

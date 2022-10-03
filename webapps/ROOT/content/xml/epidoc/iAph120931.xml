@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph120931</idno>
             <idno type="JMR2004">iAph1034</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -48,13 +48,12 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0201"
-                               notAfter="0300"
-                               evidence="lettering nomenclature content">Third century A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>, <rs type="criteria">content</rs>)</origDate>
+                     <origDate notBefore="0201" notAfter="0300" evidence="lettering nomenclature content">Third century A.D. (<rs type="criteria">lettering</rs>, <rs type="criteria">nomenclature</rs>, <rs type="criteria">content</rs>)</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName type="monuList" ref="#aphwalls">Walls, West</placeName>: fallen from the  streach south of the West gate, near <ref type="inscription" n="659" target="iAph120925"/> (=CIG 2763) and <ref type="inscription" n="663" target="iAph120929"/> (=2765), <ref type="inscription" n="658" target="iAph120924"/> (=MAMA 512).</provenance>
                   <provenance type="observed" when="1994">Findspot (1994)</provenance>
+                  <provenance type="observed" subtype="autopsied">Recorded by Gaudin (39); by the MAMA expedition; by the NYU expedition.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -70,19 +69,13 @@
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
             </keywords>
          </textClass>
@@ -109,7 +102,7 @@
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<ab><lb n="0"/><supplied reason="lost"><seg cert="low"><w lemma="ὁ">ἡ</w>  <w lemma="πόλις">πόλις</w></seg></supplied><lb n="1"/>  <persName type="attested"><name nymRef="#Αὐρήλιος"><expan><abbr><supplied reason="lost">Α</supplied>ὐρ<am><g ref="#stop"/></am></abbr><ex>ήλιον</ex></expan></name>  <space unit="character" quantity="1"/>  <name nymRef="#Γάϊος">Γάϊον</name></persName>  <w lemma="ἑκατόνταρχος"><supplied reason="lost">ἑκα</supplied><lb n="2" break="no"/>  τόνταρχον</w>  <w lemma="φρουμεντάριος">φ<unclear>ρ</unclear><supplied reason="lost">ου</supplied><lb n="3" break="no"/>  μεντάριον</w>  <g ref="#stop"/>  <w lemma="ἁγνῶς">ἁ<lb n="4" break="no"/>  γνῶς</w>  <w lemma="καί">καὶ</w>  <w lemma="ἀνδρείως">ἀνδρεί<lb n="5" break="no"/>  ως</w>  <w lemma="ἀναστρέφω">ἀναστραφέν<lb n="6" break="no"/>  τα</w>  <w lemma="ἐν">ἐν</w>  <w lemma="ὁ">τῷ</w>  <w lemma="ὁ">τῆς</w>  <placeName  ref="#asia" nymRef="#Ἀσία">Ἀσί<lb n="7" break="no"/>  ας</placeName>  <w lemma="ἔθνος">ἔθνει  </w><g ref="#stop"/>    <w lemma="εὔνοια">εὐνοί<lb n="8" break="no"/>  ας</w>  <w lemma="καί">καὶ</w>  <w lemma="στοργή">στοργῆς</w>  <w lemma="ἕνεκεν">ἕ<lb n="9" break="no"/>  νεκεν</w>  <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w>  <w lemma="εἰς">εἰς</w>  <w lemma="αὐτός">αὑ<lb n="10" break="no"/>  τὴν</w>  <w lemma="ἀμείβω">ἠμείψατο</w>  <lb n="10a"/>                <space unit="line" quantity="1"/><lb n="11"/>  <w lemma="ἐπιμελέομαι">ἐπε<hi rend="ligature">με</hi>λήσατο</w>  <w lemma="ὁ">τῆς</w>  <lb n="12"/>  <w lemma="ἀνάστασις">ἀναστάσεως</w>  <w lemma="ὁ">τοῦ</w>  <lb n="13"/>  <w lemma="ἀνδρίας">ἀνδριάντος</w>  <w lemma="ὁ">ὁ</w>  <w lemma="ἀξιόλογος">ἀξι<lb n="14" break="no"/>  ολογώτατος</w>  <g ref="#stop"/>  <persName type="attested"><name nymRef="#Ἀντώνιος"><expan><abbr>Ἀντ<am><g ref="#stop"/></am></abbr><ex>ώνιος</ex></expan></name><lb n="15"/>  <g ref="#scroll"/>  <name nymRef="#Νεικόμαχος">Νεικόμαχος</name></persName>  <g ref="#scroll"/>.</ab></div>
+<ab><lb n="0"/><supplied reason="lost"><seg cert="low"><w lemma="ὁ">ἡ</w>  <w lemma="πόλις">πόλις</w></seg></supplied><lb n="1"/>  <persName type="attested"><name nymRef="#Αὐρήλιος"><expan><abbr><supplied reason="lost">Α</supplied>ὐρ<am><g ref="#stop"/></am></abbr><ex>ήλιον</ex></expan></name>  <space unit="character" quantity="1"/>  <name nymRef="#Γάϊος">Γάϊον</name></persName>  <w lemma="ἑκατόνταρχος"><supplied reason="lost">ἑκα</supplied><lb n="2" break="no"/>  τόνταρχον</w>  <w lemma="φρουμεντάριος">φ<unclear>ρ</unclear><supplied reason="lost">ου</supplied><lb n="3" break="no"/>  μεντάριον</w>  <g ref="#stop"/>  <w lemma="ἁγνῶς">ἁ<lb n="4" break="no"/>  γνῶς</w>  <w lemma="καί">καὶ</w>  <w lemma="ἀνδρείως">ἀνδρεί<lb n="5" break="no"/>  ως</w>  <w lemma="ἀναστρέφω">ἀναστραφέν<lb n="6" break="no"/>  τα</w>  <w lemma="ἐν">ἐν</w>  <w lemma="ὁ">τῷ</w>  <w lemma="ὁ">τῆς</w>  <placeName ref="#asia" nymRef="#Ἀσία">Ἀσί<lb n="7" break="no"/>  ας</placeName>  <w lemma="ἔθνος">ἔθνει  </w><g ref="#stop"/>    <w lemma="εὔνοια">εὐνοί<lb n="8" break="no"/>  ας</w>  <w lemma="καί">καὶ</w>  <w lemma="στοργή">στοργῆς</w>  <w lemma="ἕνεκεν">ἕ<lb n="9" break="no"/>  νεκεν</w>  <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w>  <w lemma="εἰς">εἰς</w>  <w lemma="αὐτός">αὑ<lb n="10" break="no"/>  τὴν</w>  <w lemma="ἀμείβω">ἠμείψατο</w>  <lb n="10a"/>                <space unit="line" quantity="1"/><lb n="11"/>  <w lemma="ἐπιμελέομαι">ἐπε<hi rend="ligature">με</hi>λήσατο</w>  <w lemma="ὁ">τῆς</w>  <lb n="12"/>  <w lemma="ἀνάστασις">ἀναστάσεως</w>  <w lemma="ὁ">τοῦ</w>  <lb n="13"/>  <w lemma="ἀνδρίας">ἀνδριάντος</w>  <w lemma="ὁ">ὁ</w>  <w lemma="ἀξιόλογος">ἀξι<lb n="14" break="no"/>  ολογώτατος</w>  <g ref="#stop"/>  <persName type="attested"><name nymRef="#Ἀντώνιος"><expan><abbr>Ἀντ<am><g ref="#stop"/></am></abbr><ex>ώνιος</ex></expan></name><lb n="15"/>  <g ref="#scroll"/>  <name nymRef="#Νεικόμαχος">Νεικόμαχος</name></persName>  <g ref="#scroll"/>.</ab></div>
          <div type="translation">
             <p>[?The city has honoured] Aur(elius) Gaius, centurio frumentarius, who has conducted himself decently and bravely in the province of Asia, for his goodwill and affection towards her.  The most worthy Ant(onius) Neikomachos oversaw the erection of the statue.</p>
          </div>

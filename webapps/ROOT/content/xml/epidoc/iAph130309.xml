@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph130309</idno>
             <idno type="JMR2004">iAph0164</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -56,6 +56,7 @@ dimensions).</p>
 droite, 20 m. avant la porte Est</foreign>' (Grégoire interpreted this as
 meaning 20 minutes, but 20 metres seems more likely).</provenance>
                   <provenance type="observed">Findspot.</provenance>
+                  <provenance type="observed" subtype="autopsied">Recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (46); not reported subsequently.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -72,19 +73,13 @@ meaning 20 minutes, but 20 metres seems more likely).</provenance>
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="personType" key="imperatorius">Imperial</rs>
@@ -123,7 +118,7 @@ Collège de France.</desc>
        <ab>
 		<lb n="1"/><g ref="symbols.xml#cross"/> <w lemma="τελειόω">ἐτελιώθι</w> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <w lemma="ἀναπαύω">ἀνεπάη</w> <w lemma="ὁ">ὁ</w> <w lemma="μακάριος">μακ<supplied reason="lost">άριος</supplied></w> <w lemma="ὁ">ὁ</w> <w lemma="κηδεστής"><expan><abbr>κη</abbr><ex>δεστής</ex></expan></w><lb n="2"/><w lemma="ἐγώ">μου</w> <persName key="aristolaus1" type="attested"><name nymRef="#Ἀριστόλαος"><expan><abbr>Ἀρ</abbr><ex>ι</ex><abbr>στόλαος</abbr></expan></name></persName> <date><w lemma="ἰνδικτιών"><expan><abbr><supplied reason="lost">ἰ</supplied>νδ</abbr><ex>ικτίωνος</ex></expan></w> <num value="1">α</num>, <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὸς</ex></expan></w> <num value="2">β</num>, <num value="14">ιδ</num> <w lemma="ἡμέρα"><expan><abbr>ἡμέ</abbr><ex>ρᾳ</ex></expan></w> <w lemma="πρῶτος"><supplied reason="lost" cert="low">πρώ</supplied>τῃ</w></date> <g ref="symbols.xml#cross"/>
           <lb n="3"/><g ref="symbols.xml#cross"/> <w lemma="ἀναπαύω">ἀνεπάη</w> <w lemma="δέ">δὲ</w> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <w lemma="ὁ">ἡ</w> <w lemma="τρισεύμοιρος">τρισεύμοιρος</w> <w lemma="ὁ">ἡ</w> <w lemma="μακάριος"><expan><abbr>μακαρ</abbr><ex>ία</ex></expan></w><lb n="4"/><w lemma="ὁ">ἡ</w> <w lemma="γίγνομαι"><expan><abbr>γεναμέ</abbr><ex>νη</ex></expan></w> <rs type="dignity" key="dominus"><w lemma="κυρά">κυρὰ</w></rs> <w lemma="ὁ">τῶν</w> <w lemma="ὧδε"><w lemma="ὧδε">ὧδε</w></w>, <w lemma="ὁ">ἡ</w> <w lemma="κηδεστρία">κηδεστρία</w> <w lemma="ἐγώ">μου</w><lb n="5"/><persName key="theodoreta1" type="attested"><name nymRef="#Θεοδωρήτα">Θεοδωρήτα</name></persName><date> <w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτίωνος</ex></expan></w> <num value="4">δ</num>, <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὸς</ex></expan></w> <num value="4">δ</num>, <num value="13">ιγ</num> <w lemma="ἡμέρα"><expan><abbr>ἡμέ</abbr><ex>ρᾳ</ex></expan></w> <w lemma="ἕκτος">ἕκτῃ</w> </date><g ref="symbols.xml#cross"/><lb n="6"/><g ref="symbols.xml#cross"/> <w lemma="τίκτω">ἐτέχθη</w> <w lemma="ὁ">ἡ</w> <rs type="dignity" key="dominus"><w lemma="κυρά">κυρὰ</w></rs> <persName key="philosophia1" type="attested"><name>Φιλοσοφία</name></persName> <w lemma="ὁ">ἡ</w> <w lemma="θυγάτηρ">θυγάτηρ</w><lb n="7"/><w lemma="μέν">μὲν</w> <persName key="aristolaus1" type="attested"><name nymRef="#Ἀριστόλαος">Ἀριστολάου</name></persName> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <persName key="theodoreta1" type="attested"><name nymRef="#Θεοδωρήτα">Θεοδωρήτας</name></persName> <w lemma="ὁ">τῶν</w> <w lemma="μακάριος"><expan><abbr>μα<lb n="8" break="no"/>καρ</abbr><ex>ίων</ex></expan></w>, <w lemma="γαμετή"><expan><abbr>γαμε</abbr><ex>τὴ</ex></expan></w> <w lemma="δέ">δὲ</w> <w lemma="γίγνομαι"><expan><abbr>γεναμέ</abbr><ex>νη</ex></expan></w> <w lemma="γνήσιος">γνησία</w> <w lemma="ἐγώ">ἐμοῦ</w> <persName key="johnphiladelphus" type="attested"><name nymRef="#Ἰωάννης">Ἰωάννου</name><lb n="9"/><name nymRef="#Φιλάδελφος">Φιλαδέλφου</name></persName>, <date><w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτίωνος</ex></expan></w> <num value="15">ιε</num>, <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὸς</ex></expan></w> <num value="4">δ</num>, <num value="5">ε</num>, <w lemma="ὑπατεία"><expan><abbr>ὑπ</abbr><ex>ατείας</ex></expan></w> <persName key="rusticius" type="other"><name nymRef="#Ῥουστίκιος">Ῥουστικίου</name></persName></date>, <w lemma="καί">καὶ</w><lb n="10"/><w lemma="ζάω">ἔζησεν</w>, <w lemma="ἐκβιόω">ἐξεβίου</w> <sic n="superfluous">ου</sic> <w lemma="ἄχρι">ἄχρι</w> <date><w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτίωνος</ex></expan></w> <num value="14">ιδ</num> <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὸς</ex></expan></w> <num value="7">ζ</num>, <num value="20">κ</num>, <w lemma="ἡμέρα"><expan><abbr>ἡμέ</abbr><ex>ρα</ex></expan></w><lb n="11"/><w lemma="τετράς">τετράδι</w>, <w lemma="βασιλία">βασιλίας</w> <w lemma="ὁ">τοῦ</w> <rs type="dignity" key="sanctissimus"><w lemma="θεῖος"><expan><abbr>θ<supplied reason="lost">ι</supplied>οτά</abbr><ex>του</ex></expan></w></rs> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <rs type="dignity" key="piissimus"><w lemma="εὐσεβής"><expan><abbr>εὐσεβε</abbr><ex>στάτου</ex></expan></w></rs> <w lemma="ἐγώ">ἡμῶν</w><lb n="12"/><rs type="official-secul" key="despot"><w lemma="δεσπότης"><expan><abbr>δεσπό</abbr><ex>του</ex></expan></w></rs> <persName key="Justinian" type="emperor"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αουίου</ex></expan></name> <name nymRef="#Ἰουστινιανός">Ἰουστινια<supplied reason="lost">ν</supplied>οῦ</name></persName></date> <w lemma="ἔτος">ἔτους</w> <num value="25">κε</num>, <w lemma="μετά"><expan><abbr>μ</abbr><ex>ε</ex><abbr>τ</abbr><ex>ὰ</ex></expan></w> <w lemma="ὑπατεία"><expan><abbr>ὑπ</abbr><ex>ατείαν</ex></expan></w> <persName key="basilius" type="other"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αουίου</ex></expan></name> <name nymRef="#Βασίλιος"><expan><abbr>Βασι</abbr><ex>λίου</ex></expan></name></persName><lb n="13"/><w lemma="ἔτος">ἔτους</w> <num value="10">ι</num>.  <w lemma="χρή">χρὴ</w> <w lemma="οὖν">οὖν</w> <w lemma="οἶδα">εἰδένε</w> <w lemma="ὁ">τοὺς</w> <w lemma="ζάω">ζῶντας</w> <w lemma="ὡς">ὡς</w><lb n="14"/><w lemma="ζάω">ἔζησεν</w> <w lemma="ὁ">ἡ</w> <w lemma="μακάριος">μακαρί<supplied reason="lost">α</supplied></w> <persName type="attested"><name>Φιλοσοφία</name></persName> <w lemma="ὁ">τὰ</w> <w lemma="πᾶς"><expan><abbr>πά</abbr><ex>ντα</ex></expan></w> <w lemma="ἔτος">ἔτη</w><lb n="15"/><num value="29">κθ</num> <w lemma="μείς"><expan><abbr>μῆ</abbr><ex>νας</ex></expan></w> <num value="2">β</num>, <w lemma="ἡμέρα"><expan><abbr>ἡ</abbr><supplied reason="lost"><abbr>μέ</abbr><ex>ρας</ex></supplied></expan></w> <supplied reason="lost" cert="low"><num value="15">ιε</num></supplied>.  <w lemma="δέχομαι"><supplied reason="lost">δεχ</supplied>έσθω</w> <w lemma="οὖν">οὖν</w> <w lemma="αὐτός"><expan><abbr>αὐτῶ</abbr><ex>ν</ex></expan></w> <w lemma="ὁ">τὰ</w> <w lemma="ψύχιον">ψυχία</w>
-          <lb n="16"/><supplied cert="low" reason="lost"><w lemma="ὁ">ὁ</w> <persName  ref="#deus" type="divine"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>εό</ex><abbr>ς</abbr></expan></w></persName>,</supplied> <supplied reason="lost"><w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w></supplied> <w lemma="αἰών">ἐῶ<supplied reason="lost">να</supplied></w> <w lemma="ὁ">ταῖς</w> <w lemma="ψυχή">ψυχε͂ς</w> <w lemma="αὐτός">αὐτῶν</w><lb n="17"/><space unit="character" quantity="3"/> <w lemma="χαρίζομαι">χαρίσε</w> <g ref="symbols.xml#cross"/> </ab>
+          <lb n="16"/><supplied cert="low" reason="lost"><w lemma="ὁ">ὁ</w> <persName ref="#deus" type="divine"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>εό</ex><abbr>ς</abbr></expan></w></persName>,</supplied> <supplied reason="lost"><w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w></supplied> <w lemma="αἰών">ἐῶ<supplied reason="lost">να</supplied></w> <w lemma="ὁ">ταῖς</w> <w lemma="ψυχή">ψυχε͂ς</w> <w lemma="αὐτός">αὐτῶν</w><lb n="17"/><space unit="character" quantity="3"/> <w lemma="χαρίζομαι">χαρίσε</w> <g ref="symbols.xml#cross"/> </ab>
       </div>
          <div type="apparatus">
             <p>l.10. <foreign xml:lang="grc">ἐξεβίου</foreign> Reinach,

@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -19,7 +19,7 @@
             <idno type="IAph2007">iAph150214</idno>
             <idno type="JMR2004">iAph0901</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -51,10 +51,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="-0199"
-                               notAfter="-0001"
-                               precision="medium"
-                               evidence="lettering">
+                     <origDate notBefore="-0199" notAfter="-0001" precision="medium" evidence="lettering">
 Second or first century B.C.
  (<rs type="criteria">lettering</rs>)</origDate>
                   </origin>
@@ -62,6 +59,7 @@ Second or first century B.C.
                      <placeName type="monuList">Stray</placeName>
                   </provenance>
                   <provenance type="observed">Museum</provenance>
+                  <provenance type="observed" subtype="autopsied">Recorded by the NYU expedition in 1973 (<rs type="invNo">73.153</rs>)</provenance>
                </history>
             </msDesc>
          </sourceDesc>

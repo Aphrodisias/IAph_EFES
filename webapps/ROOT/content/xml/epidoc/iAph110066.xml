@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph110066</idno>
             <idno type="JMR2004">iAph0010</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -52,14 +52,12 @@ slightly concave (together, <height unit="metre">1.35</height> × <width unit="m
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="0326"
-                               notAfter="0350"
-                               precision="medium"
-                               evidence="titulature">Second quarter of the fourth century (<rs type="criteria">titulature</rs>).</origDate>
+                     <origDate notBefore="0326" notAfter="0350" precision="medium" evidence="titulature">Second quarter of the fourth century (<rs type="criteria">titulature</rs>).</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName type="monuList">City, Village</placeName>: in excavation of Museum area.</provenance>
                   <provenance type="observed" when="1994">Museum (1994).</provenance>
+                  <provenance type="observed" subtype="autopsied">Excavated by the NYU expedition in 1974 (<rs type="invNo">74.262</rs>).</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -77,19 +75,13 @@ slightly concave (together, <height unit="metre">1.35</height> × <width unit="m
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="textType" key="sacer">Religious</rs>
@@ -134,10 +126,10 @@ slightly concave (together, <height unit="metre">1.35</height> × <width unit="m
          <div type="edition" xml:lang="grc" xml:space="preserve">
         
 		<ab>
-		<lb n="1"/><persName  ref="#deus" type="divine"><w lemma="θεός"><del status="unremarkable"><gap unit="character" reason="lost" quantity="1"/></del><add place="overstrike">Θε</add><del status="unremarkable"><gap unit="character" reason="lost" quantity="1"/></del>ῷ</w> <addName nymRef="ἐπήκοος">ἐπηκόῳ</addName></persName> <persName key="eusebius1" type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>άβιος</ex></expan></name>
+		<lb n="1"/><persName ref="#deus" type="divine"><w lemma="θεός"><del status="unremarkable"><gap unit="character" reason="lost" quantity="1"/></del><add place="overstrike">Θε</add><del status="unremarkable"><gap unit="character" reason="lost" quantity="1"/></del>ῷ</w> <addName nymRef="ἐπήκοος">ἐπηκόῳ</addName></persName> <persName key="eusebius1" type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>άβιος</ex></expan></name>
 		<lb n="2"/><name nymRef="#Εὐσέβιος">Εὐσέβιος</name></persName> <rs key="eprimipil" type="dignity"><w lemma="ἀπό">ἀπὸ</w> <w lemma="πριμιπιλάριος">πριμι
 		<lb n="3" break="no"/>πιλαρίων</w></rs> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w>
-		<lb n="4"/><persName  ref="#deus" type="divine"><w lemma="ὁ">τοῦ</w> <w lemma="θεός">θεοῦ</w></persName> <w lemma="δόμα">δομάτων</w>
+		<lb n="4"/><persName ref="#deus" type="divine"><w lemma="ὁ">τοῦ</w> <w lemma="θεός">θεοῦ</w></persName> <w lemma="δόμα">δομάτων</w>
 		<lb n="5"/><w lemma="ὁ">τὸ</w> <w lemma="πρῶτος">πρῶτον</w> <w lemma="καί">καὶ</w> <w lemma="τρίτος">τρίτον</w>
 		<lb n="6"/><w lemma="διάστυλος">διάστυλον</w> <w lemma="ποιέω">ἐποίησεν</w>.</ab>
 	  </div>

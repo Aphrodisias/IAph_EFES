@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph150102</idno>
             <idno type="JMR2004">iAph0145</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository>…</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -54,13 +54,11 @@ line.</handNote>
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="0301"
-                               notAfter="0500"
-                               precision="medium"
-                               evidence="content location">Fourth to fifth centuries A.D. (<rs type="criteria">content</rs>, <rs type="criteria">location</rs>).</origDate>
+                     <origDate notBefore="0301" notAfter="0500" precision="medium" evidence="content location">Fourth to fifth centuries A.D. (<rs type="criteria">content</rs>, <rs type="criteria">location</rs>).</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. No details; in <placeName type="monuList">collection</placeName>.</provenance>
                   <provenance type="observed" when="1988">Musée du Cinquentenaire, Brussels (1988)</provenance>
+                  <provenance type="observed" subtype="autopsied">Excavated by <rs type="visitor" key="gaudin">Gaudin</rs>: on the provenance see <bibl><author>K. T. Erim</author>, 'De Aphrodisiade', <title level="m">AM</title> 71 (<date>1967</date>), 236</bibl>.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -76,19 +74,13 @@ line.</handNote>
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="textType" key="sacer">Religious</rs>
@@ -120,7 +112,7 @@ J.-C. Balty.</creation>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
         
-		<ab><lb n="1"/><w lemma="ΧΜΓ">ΧΜΓ</w> <lb n="2"/><persName  ref="#deus" type="divine"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>ε</ex><abbr>ὲ</abbr></expan></w></persName> <w lemma="βοηθέω">βοήθι</w>.</ab>
+		<ab><lb n="1"/><w lemma="ΧΜΓ">ΧΜΓ</w> <lb n="2"/><persName ref="#deus" type="divine"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>ε</ex><abbr>ὲ</abbr></expan></w></persName> <w lemma="βοηθέω">βοήθι</w>.</ab>
       </div>
          <div type="apparatus">
             <p>l. 1, perhaps <foreign xml:lang="grc">

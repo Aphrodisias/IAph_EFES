@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -19,7 +19,7 @@
             <idno type="IAph2007">iAph020523</idno>
             <idno type="JMR2004">iAph1335</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -53,16 +53,14 @@
                <history>
                   <origin>
                      <origPlace>Unknown </origPlace>
-                     <origDate notBefore="0168"
-                               notAfter="0233"
-                               precision="medium"
-                               evidence="lettering">
+                     <origDate notBefore="0168" notAfter="0233" precision="medium" evidence="lettering">
  Perhaps late second to early third centuries
  (<rs type="criteria">lettering</rs>).</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName type="monuList" ref="#aphodeon">Bouleuterion/Odeon, West Area</placeName>:  W. Bou. Ch. 5, Str. 1.</provenance>
                   <provenance type="observed">Museum</provenance>
+                  <provenance type="observed" subtype="autopsied">Excavated by the NYU expedition in 1964 (<rs type="invNo">64.235</rs>; sarc. catalogue <rs type="sarcCat">35</rs>)</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -78,19 +76,13 @@
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="personType" key="imperatorius">Imperial</rs>
@@ -124,8 +116,7 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
- <div n="a" type="textpart" subtype="section"><ab><lb n="1"/> <w lemma="ζάω">ζῶ</w> </ab></div
-            ><div n="b" type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="character" quantity="3"/>  <lb n="1"/> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσαποτεισάτω</w> <w lemma="ὁ">τῇ</w> 
+ <div n="a" type="textpart" subtype="section"><ab><lb n="1"/> <w lemma="ζάω">ζῶ</w> </ab></div><div n="b" type="textpart" subtype="section"><ab><lb n="0"/><gap reason="lost" unit="character" quantity="3"/>  <lb n="1"/> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσαποτεισάτω</w> <w lemma="ὁ">τῇ</w> 
                <lb n="2"/> <persName type="divine" ref="#aphrodite"><w lemma="θεός">θεῷ</w> <name nymRef="#Ἀφροδίτη">Ἀφροδείτῃ</name></persName> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w>  <num value="3000">γ</num>  <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω"><hi rend="ligature">πρ</hi>οσαποτεισάτω</w>  <lb n="4"/> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἱερός">ἱερώτατο<hi rend="ligature" xml:id="hi2">ν</hi></w><link target="#hi2 #hi3"/>  <w lemma="ταμεῖον"><hi rend="ligature" xml:id="hi3">τ</hi>α<hi rend="ligature">με</hi>ῖ<lb n="5" break="no"/>ον</w>  <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w>  <num value="6000">Ϛ</num>  <w lemma="εἰμί">ὧ<hi rend="ligature" xml:id="hi4">ν</hi></w><link target="#hi4 #hi5"/>  <w lemma="ὁ"><hi rend="ligature" xml:id="hi5">τ</hi>ὸ</w> <w lemma="τρίτος">τρίτον</w> <lb n="6"/> <w lemma="εἰμί">ἔσται</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσα<supplied reason="lost">ν</supplied><lb n="7" break="no"/>τος</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆς</w> <lb n="8"/> <w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <lb n="9"/> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκι<lb n="10" break="no"/>ον</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφα<hi rend="ligature">νη</hi>φόρο<supplied reason="lost">υ</supplied></w>  <lb n="11"/> <w lemma="ὁ">τὸ</w> <num value="11">ια</num>  <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-2486"><name nymRef="#Ἀπολλώνιος ">Ἀπολλωνίου</name>  <lb n="12"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-11370"><name nymRef="#Παπίας">Παπίου</name></persName></persName>  <w lemma="μείς"><hi rend="ligature">μην</hi>ὸς</w>  <lb n="13"/><space quantity="2" unit="character"/>  <persName type="emperor"><name nymRef="#Καῖσαρ">Καίσαρος</name></persName>  <space quantity="2" unit="character"/>  </ab></div>
 </div>
          <div type="apparatus" sample="complete" org="uniform">

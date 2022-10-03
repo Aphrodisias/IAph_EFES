@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -20,7 +20,7 @@
             <idno type="IAph2007">iAph050005</idno>
             <idno type="JMR2004">iAph1259</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -28,7 +28,7 @@
             <msDesc>
                <msIdentifier>
                   <repository>…</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -58,6 +58,8 @@ A.D. 117/138
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. In the east court of the <placeName type="monuList" ref="#aphbaths">Hadrianic Baths</placeName>
                   </provenance>
                   <provenance type="observed">In various locations in the east court of the Hadrianic Baths</provenance>
+                  <provenance type="observed" subtype="autopsied">Excavated by the French expeditions in 1904, 1905 and 1913. Boulanger published fragmentary versions, but gives a fuller account in his notebook, put together after Mendel's publication: "M. Mendel qui n'avait pu rapprocher sur le terrain les fragments de l'architrave du portique E., n'a transcrit seulement la 1ere partie du texte de la dédicace" (<bibl>
+            <title level="m">CRAI</title> 1906 p. 167</bibl>). Several blocks or fragments (indicated by highlighting) have been found again by the NYU expedition.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -74,19 +76,13 @@ A.D. 117/138
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="personType" key="imperatorius">Imperial</rs>
@@ -123,7 +119,7 @@ A.D. 117/138
 <div n="i" type="textpart" subtype="section"><note place="not specified" xml:lang="en"/>
    <div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <persName type="divine" ref="#aphrodite"><name nymRef="#Ἀφροδίτη">Ἀφ<milestone unit="block"/><seg type="autopsy">ροδείτη</seg></name></persName>  <persName type="emperor" ref="#hadrian"><w lemma="αὐτοκράτωρ"><seg type="autopsy">Α</seg><milestone unit="block"/><seg type="autopsy">ὐτοκράτορι</seg></w>  
    <milestone unit="block"/><addName nymRef="#Καῖσαρ"><seg type="autopsy">Καίσαρι</seg> </addName> <name nymRef="Τραιανός"><seg type="autopsy">Τραι</seg><milestone unit="block"/><supplied reason="lost">α</supplied><seg type="autopsy">νῷ</seg></name>  <name nymRef="#Ἁδριανός"><seg type="autopsy">Ἁδριαν</seg><milestone unit="block"/><seg type="autopsy">ῷ</seg></name>  <addName nymRef="Σεβαστός"><seg type="autopsy">Σεβαστῷ</seg></addName>  <addName nymRef="Ὀλύμπιος"><seg type="autopsy">Ὀλυ</seg><milestone unit="block"/><supplied reason="lost">μπ</supplied><seg type="autopsy">ίῳ</seg></addName>  <addName nymRef="Πανελλήνιος"><seg type="autopsy">Παν</seg><milestone unit="block"/><supplied reason="lost">ελ</supplied>λη<milestone unit="block"/><seg type="autopsy">νίῳ</seg></addName></persName>  <seg type="autopsy">καὶ</seg>  <seg type="autopsy">τῷ  </seg><seg type="autopsy">Δ</seg><milestone unit="block"/><seg type="autopsy">ήμῳ</seg>  <seg type="autopsy">τὸν</seg>  <w lemma="ἐπιφέρω"><seg type="autopsy">ἐπιφερ</seg><milestone unit="block"/><seg type="autopsy">όμενον</seg></w>  <w><seg type="autopsy">τ</seg><milestone unit="block"/><seg type="autopsy">οῖς</seg></w>  <abbr><seg type="autopsy">κειοσιν</seg></abbr>  <seg type="autopsy">κα</seg><milestone unit="block"/>  <gap reason="lost" unit="character" extent="unknown"/><milestone unit="block"/>εφαλα<milestone unit="block"/>ις  λε<gap reason="lost" unit="character" extent="unknown"/>θον  κόσ<supplied reason="lost">μ</supplied>ον  πα<gap reason="lost" unit="character" extent="unknown"/></ab></div><div n="b" type="textpart" subtype="fragment"><note place="not  specified" xml:lang="en"/><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>  <supplied reason="lost">κατ</supplied>αλειφθέντων  α<unclear>ὐ</unclear><supplied reason="lost">τῇ</supplied>  <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/>      <gap reason="lost" unit="character" extent="unknown"/><unclear>τ</unclear>οῦ  Διοσκουριδ<unclear>ο</unclear><supplied reason="lost">υ</supplied>  <gap reason="lost" unit="character" extent="unknown"/></ab></div></div><div n="ii" type="textpart" subtype="section"><note place="not  specified" xml:lang="fr"/><ab>
-   <lb n="1"/><g ref="#fleuron"/>  <seg type="autopsy"><w>ἡ</w></seg>  <persName type="divine" ref="#aphrodite"><name nymRef="#Ἀφροδίτη" ><seg type="autopsy">Ἀφρο</seg><milestone unit="block"/>δείτη</name></persName>  <orig>Αὐ</orig><milestone unit="block"/>  <gap reason="lost" unit="character" quantity="30"/><orig>ασ</orig><gap reason="lost" unit="character" quantity="3"/>ῳ  Ὀλυ<milestone unit="block"/>    <gap reason="lost" unit="character" quantity="21"/><milestone unit="block"/><seg type="autopsy">μῳ</seg>  <seg type="autopsy">τὸν</seg>  <seg type="autopsy">ἐπιφερόμε</seg><milestone unit="block"/>  <gap reason="lost" unit="character" extent="unknown"/><milestone unit="block"/><seg type="autopsy">ς</seg>  <w lemma="κίων"><seg type="autopsy">κείοσι</seg><milestone unit="block"/>ν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ταῖς</w> <w lemma="κεφαλή">κεφαλαῖς</w> <w lemma="λευκόλιθος">λ<milestone unit="block"/>ευκό<milestone unit="block"/><seg type="autopsy">λιθον</seg></w>  <seg type="autopsy">κόσμον</seg><milestone unit="block"/>  <gap reason="lost" unit="character" quantity="60"/><milestone unit="block"/>  <seg type="autopsy"><w lemma="ἀνατίθημι">ἀνέθηκεν</w></seg>  <seg type="autopsy"><g ref="#scroll"/>  <space unit="character" quantity="3"/></seg></ab></div><div n="iii" type="textpart" subtype="section"><ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><orig><unclear>α</unclear>ρατ<unclear>ο</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>ΚΑΙ<gap reason="lost" unit="character" extent="unknown"/>  <seg type="autopsy"><supplied reason="lost">κ</supplied>αὶ</seg>  <seg type="autopsy">τῷ</seg><milestone unit="block"/>Δήμῳ    <g ref="#fleuron"/></ab></div><div n="iv" type="textpart" subtype="section"><note place="not  specified" xml:lang="fr"/><ab><lb n="1"/>  <space unit="character" quantity="3"/>  κόσμ<milestone unit="block"/>ὸν <w lemma="πᾶς">πάντα</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰ<milestone unit="block"/><seg type="autopsy">δίων</seg></w>  <seg type="autopsy">καὶ</seg>  <w lemma="ἐκ"><seg type="autopsy">ἐ</seg><milestone unit="block"/>κ</w> <w lemma="ὁ">τῶν</w> <w lemma="καταλείπω">κατ<supplied reason="lost">αλειφθέν</supplied><milestone unit="block"/><seg type="autopsy">των</seg></w>  <seg type="autopsy">αὐτ</seg><supplied reason="lost">ῇ</supplied>  <seg type="autopsy">ὑπὸ</seg>  <seg type="autopsy">Ἐπιγ</seg><supplied reason="lost">όνου</supplied><milestone unit="block"/>  <seg type="autopsy">τοῦ</seg>  <seg type="autopsy">Διοσκορίδου</seg>  <note place="not  specified" xml:lang=""/>  <w lemma="ἀνατίθημι"><seg type="autopsy">ἀν</seg><milestone unit="block"/><seg type="autopsy">έθηκεν</seg></w>  <seg type="autopsy"><g ref="#scroll"/></seg></ab></div></div>
+   <lb n="1"/><g ref="#fleuron"/>  <seg type="autopsy"><w>ἡ</w></seg>  <persName type="divine" ref="#aphrodite"><name nymRef="#Ἀφροδίτη"><seg type="autopsy">Ἀφρο</seg><milestone unit="block"/>δείτη</name></persName>  <orig>Αὐ</orig><milestone unit="block"/>  <gap reason="lost" unit="character" quantity="30"/><orig>ασ</orig><gap reason="lost" unit="character" quantity="3"/>ῳ  Ὀλυ<milestone unit="block"/>    <gap reason="lost" unit="character" quantity="21"/><milestone unit="block"/><seg type="autopsy">μῳ</seg>  <seg type="autopsy">τὸν</seg>  <seg type="autopsy">ἐπιφερόμε</seg><milestone unit="block"/>  <gap reason="lost" unit="character" extent="unknown"/><milestone unit="block"/><seg type="autopsy">ς</seg>  <w lemma="κίων"><seg type="autopsy">κείοσι</seg><milestone unit="block"/>ν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ταῖς</w> <w lemma="κεφαλή">κεφαλαῖς</w> <w lemma="λευκόλιθος">λ<milestone unit="block"/>ευκό<milestone unit="block"/><seg type="autopsy">λιθον</seg></w>  <seg type="autopsy">κόσμον</seg><milestone unit="block"/>  <gap reason="lost" unit="character" quantity="60"/><milestone unit="block"/>  <seg type="autopsy"><w lemma="ἀνατίθημι">ἀνέθηκεν</w></seg>  <seg type="autopsy"><g ref="#scroll"/>  <space unit="character" quantity="3"/></seg></ab></div><div n="iii" type="textpart" subtype="section"><ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><orig><unclear>α</unclear>ρατ<unclear>ο</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>ΚΑΙ<gap reason="lost" unit="character" extent="unknown"/>  <seg type="autopsy"><supplied reason="lost">κ</supplied>αὶ</seg>  <seg type="autopsy">τῷ</seg><milestone unit="block"/>Δήμῳ    <g ref="#fleuron"/></ab></div><div n="iv" type="textpart" subtype="section"><note place="not  specified" xml:lang="fr"/><ab><lb n="1"/>  <space unit="character" quantity="3"/>  κόσμ<milestone unit="block"/>ὸν <w lemma="πᾶς">πάντα</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰ<milestone unit="block"/><seg type="autopsy">δίων</seg></w>  <seg type="autopsy">καὶ</seg>  <w lemma="ἐκ"><seg type="autopsy">ἐ</seg><milestone unit="block"/>κ</w> <w lemma="ὁ">τῶν</w> <w lemma="καταλείπω">κατ<supplied reason="lost">αλειφθέν</supplied><milestone unit="block"/><seg type="autopsy">των</seg></w>  <seg type="autopsy">αὐτ</seg><supplied reason="lost">ῇ</supplied>  <seg type="autopsy">ὑπὸ</seg>  <seg type="autopsy">Ἐπιγ</seg><supplied reason="lost">όνου</supplied><milestone unit="block"/>  <seg type="autopsy">τοῦ</seg>  <seg type="autopsy">Διοσκορίδου</seg>  <note place="not  specified" xml:lang=""/>  <w lemma="ἀνατίθημι"><seg type="autopsy">ἀν</seg><milestone unit="block"/><seg type="autopsy">έθηκεν</seg></w>  <seg type="autopsy"><g ref="#scroll"/></seg></ab></div></div>
          <div type="apparatus">
             <p>Blocks or fragments found again by the NYU expedition are highlighted.</p>
             <p>iv. <foreign xml:lang="grc">ΚΑΤ| . . . . . . . . |ΤΩΝ ΑΥΤ| . |</foreign> Boulanger; <foreign xml:lang="grc">κατ[αλειφθέν]|των αὐτ[ῇ]</foreign> Robert</p>

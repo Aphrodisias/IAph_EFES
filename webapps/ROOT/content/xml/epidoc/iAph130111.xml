@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph130111</idno>
             <idno type="JMR2004">iAph1445</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -48,16 +48,14 @@
                <history>
                   <origin>
                      <origPlace>Findspot</origPlace>
-                     <origDate notBefore="0212"
-                               notAfter="0225"
-                               precision="medium"
-                               evidence="lettering">
+                     <origDate notBefore="0212" notAfter="0225" precision="medium" evidence="lettering">
 After 212; perhaps first quarter of the third century
  (<rs type="criteria">lettering</rs>).</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
                      <placeName type="monuList">Necropolis, North-east</placeName> in chamber tomb, 1994, with <ref type="inscription" n="1446" target="iAph130108"/> (411), <ref type="iAph" target=".xml"/> (412), <ref type="inscription" n="1448" target="iAph130110"/> (414), <ref type="inscription" n="1449" target="iAph130101"/> (415).</provenance>
                   <provenance type="observed" when="1994">Museum (1994).</provenance>
+                  <provenance type="observed" subtype="autopsied">Found by the Aphrodisias Museum in winter 1993-4 (Sarcophagus <rs type="sarcCat">410</rs>).</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -74,19 +72,13 @@ After 212; perhaps first quarter of the third century
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="textType" key="sacer">Religious</rs>
@@ -132,7 +124,7 @@ After 212; perhaps first quarter of the third century
             <p>See further Reynolds, loc. cit..</p>
          </div>
          <div type="bibliography">
-            <p><bibl><ptr target="jmr1998"/> <citedRange></citedRange>
+            <p><bibl><ptr target="jmr1998"/> <citedRange/>
                </bibl> whence <bibl><ptr target="AE"/> <citedRange>1998.1372</citedRange>
                </bibl>,
                <bibl><ptr target="seg"/> <citedRange>1998.1326</citedRange>.</bibl>; 

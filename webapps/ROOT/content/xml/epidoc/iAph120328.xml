@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,7 +18,7 @@
             <idno type="IAph2007">iAph120328</idno>
             <idno type="JMR2004">iAph0112</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -26,7 +26,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -66,6 +66,8 @@ clear, cursive; in l.3. cross as an abbreviation mark over <foreign xml:lang="gr
                      <placeName type="monuList" ref="#aphwalls">Walls, East (south part)</placeName>: 'dans un mur du jardin' (Paris and
 Holleaux); 'Maison Hussein Chaous' (Reinach); re-used on the southern face of a bastion.</provenance>
                   <provenance type="observed">Findspot.</provenance>
+                  <provenance type="observed" subtype="autopsied">Copied by <rs type="visitor" key="paris">Paris</rs> and <rs type="visitor" key="holleaux">Holleaux</rs>; recorded by <rs type="visitor" key="gaudin">Gaudin</rs> (10); by
+the <rs type="visitor" key="calder">MAMA expedition</rs>; by the NYU expedition.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -81,19 +83,13 @@ Holleaux); 'Maison Hussein Chaous' (Reinach); re-used on the southern face of a 
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
                <term>
                   <rs type="textType" key="sacer">Religious</rs>
@@ -128,7 +124,7 @@ Holleaux); 'Maison Hussein Chaous' (Reinach); re-used on the southern face of a 
         <ab>
 		  		<lb n="1"/><g ref="symbols.xml#cross"/> <w lemma="ὁ">ὁ</w> <w lemma="ῥίπτω">ῥίπτων</w> <w lemma="χῶμα">χώματα</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <g ref="symbols.xml#cross"/> <w lemma="τείχιον">τιχίῳ</w> <supplied reason="lost"><w lemma="ἔχω">ἔχει</w> <w lemma="ὁ">τὸ</w></supplied>
 				 <w lemma="ἀνάθεμα"><supplied reason="lost">ἀνά</supplied><lb n="2" break="no"/>θεμα</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="ὁ">τῶν</w> <num value="318"><hi rend="supraline">τιη</hi></num> <w lemma="πατήρ">πατέ<g ref="symbols.xml#cross"/>ρων</w> <w lemma="ὡς">ὡ<supplied reason="lost">ς</supplied></w> <w lemma="ἐχθρός"><supplied reason="lost">ἐκθρὸς</supplied></w>
-           <lb n="3"/> <w lemma="ὁ">τοῦ</w> <g ref="symbols.xml#cross"/> <persName  ref="#deus" type="divine"><w lemma="θεός"><expan><abbr>θ</abbr><ex>εο</ex><abbr>ῦ</abbr></expan></w></persName> <g ref="symbols.xml#cross"/>
+           <lb n="3"/> <w lemma="ὁ">τοῦ</w> <g ref="symbols.xml#cross"/> <persName ref="#deus" type="divine"><w lemma="θεός"><expan><abbr>θ</abbr><ex>εο</ex><abbr>ῦ</abbr></expan></w></persName> <g ref="symbols.xml#cross"/>
 			</ab>        
       </div>
          <div type="translation">

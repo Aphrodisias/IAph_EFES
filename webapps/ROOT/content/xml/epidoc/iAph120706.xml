@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -20,7 +20,7 @@
             <idno type="IAph2007">iAph120706</idno>
             <idno type="JMR2004">iAph1007</idno>
             <availability>
-               <p xmlns:t="http://www.tei-c.org/ns/1.0">Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -28,7 +28,7 @@
             <msDesc>
                <msIdentifier>
                   <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
-                  <idno xmlns:t="http://www.tei-c.org/ns/1.0"/>
+                  <idno/>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -53,14 +53,12 @@ Inscribed</rs> on the face.</layout>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0034"
-                               notAfter="0067"
-                               precision="medium"
-                               evidence="prosopography"> 
+                     <origDate notBefore="0034" notAfter="0067" precision="medium" evidence="prosopography"> 
 Mid-first century A.D. (<rs type="criteria">prosopography</rs>; but the lettering looks later)</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. reused, upside down, in the  <placeName type="monuList" ref="#aphwalls">Walls, South (west part)</placeName>, near <ref type="inscription" n="1525" target="iAph120801"/> (=MAMA 532) </provenance>
                   <provenance type="observed" when="1973">Findspot (1973)</provenance>
+                  <provenance type="observed" subtype="autopsied">Recorded by Radet; by the MAMA expedition; and by the NYU expedition in 1973. On each occasion the stone had become more damaged.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -76,19 +74,13 @@ Mid-first century A.D. (<rs type="criteria">prosopography</rs>; but the letterin
                   <geogName type="ancientRegion" key="Asia">Asia</geogName>
                </term>
                <term>
-                  <geogName type="modernCountry"
-                            key="TR"
-                            ref="https://sws.geonames.org/298795/">Turkey</geogName>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
                </term>
                <term>
-                  <placeName type="ancientFindspot"
-                             key="Aphrodisias"
-                             ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="Geyre"
-                             ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
             </keywords>
          </textClass>
@@ -112,22 +104,11 @@ Mid-first century A.D. (<rs type="criteria">prosopography</rs>; but the letterin
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-               <lb n="1"/><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="τιμάω"><choice><orig>ἐτείμη<lb
-                  n="2" break="no"/>σαν</orig><reg>ἐτίμησαν</reg></choice></w>  <w lemma="ὁ">ταῖς</w>  <w lemma="καλός">καλλίσταις</w>  <w lemma="καί">καὶ</w>  <w lemma="μέγας">με<lb
-                     n="3" break="no"/>γίσταις</w>  <w lemma="τιμή"><choice><orig>τει<unclear>μ</unclear><supplied reason="lost">αῖ</supplied>ς</orig><reg>τιμαῖς</reg></choice></w>  <w lemma="καί">καὶ</w>  <w lemma="μεταλλάζω">μετηλ<lb
-                        n="4" break="no"/>λακχό<unclear>τ</unclear><supplied reason="lost">α</supplied></w>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς"><supplied reason="lost">Ἀ</supplied>ρισ<supplied reason="lost">τοκ</supplied>λέα</name>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀρισ<lb
-                        n="5" break="no"/>τοκλέο<supplied reason="lost">υς</supplied></name>  <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear>οῦ</unclear></w>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος"><unclear>Ἀρτ</unclear>εμιδώ<lb
-                           n="6" break="no"/>ρου</name></persName></persName> <name nymRef="#Μολοσσός">Μολ<unclear>ο</unclear><supplied reason="lost">σσ</supplied>ὸν</name></persName> <w lemma="ἱππικός">ἱππικόν</w>
-               <lb n="7"/><w lemma="νεανίας">νεανίαν</w>  <w lemma="γίγνομαι">γενόμενον</w>  <w lemma="γένος">γέ<lb
-                                 n="8" break="no"/>νους</w>  <w lemma="ὁ">τοῦ</w>  <w lemma="πρῶτος">πρώτου</w>  <w lemma="καί">καὶ</w>  <w lemma="συνκτίζω">συν<lb
-                                    n="9" break="no"/>εκτικότος</w>  <w lemma="ὁ">τὴν</w>  <w lemma="πατρίς">πατρίδα</w>
+               <lb n="1"/><w lemma="ὁ">ἡ</w>  <w lemma="βουλή">βουλὴ</w>  <w lemma="καί">καὶ</w>  <w lemma="ὁ">ὁ</w>  <w lemma="δῆμος">δῆμος</w>  <w lemma="τιμάω"><choice><orig>ἐτείμη<lb n="2" break="no"/>σαν</orig><reg>ἐτίμησαν</reg></choice></w>  <w lemma="ὁ">ταῖς</w>  <w lemma="καλός">καλλίσταις</w>  <w lemma="καί">καὶ</w>  <w lemma="μέγας">με<lb n="3" break="no"/>γίσταις</w>  <w lemma="τιμή"><choice><orig>τει<unclear>μ</unclear><supplied reason="lost">αῖ</supplied>ς</orig><reg>τιμαῖς</reg></choice></w>  <w lemma="καί">καὶ</w>  <w lemma="μεταλλάζω">μετηλ<lb n="4" break="no"/>λακχό<unclear>τ</unclear><supplied reason="lost">α</supplied></w>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς"><supplied reason="lost">Ἀ</supplied>ρισ<supplied reason="lost">τοκ</supplied>λέα</name>  <persName type="attested"><name nymRef="#Ἀριστοκλῆς">Ἀρισ<lb n="5" break="no"/>τοκλέο<supplied reason="lost">υς</supplied></name>  <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear>οῦ</unclear></w>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος"><unclear>Ἀρτ</unclear>εμιδώ<lb n="6" break="no"/>ρου</name></persName></persName> <name nymRef="#Μολοσσός">Μολ<unclear>ο</unclear><supplied reason="lost">σσ</supplied>ὸν</name></persName> <w lemma="ἱππικός">ἱππικόν</w>
+               <lb n="7"/><w lemma="νεανίας">νεανίαν</w>  <w lemma="γίγνομαι">γενόμενον</w>  <w lemma="γένος">γέ<lb n="8" break="no"/>νους</w>  <w lemma="ὁ">τοῦ</w>  <w lemma="πρῶτος">πρώτου</w>  <w lemma="καί">καὶ</w>  <w lemma="συνκτίζω">συν<lb n="9" break="no"/>εκτικότος</w>  <w lemma="ὁ">τὴν</w>  <w lemma="πατρίς">πατρίδα</w>
                <lb n="10"/><w lemma="καί">καὶ</w>  <w lemma="ἐν">ἐν</w>  <w lemma="γυμνασιαρχία">γυμνα<unclear>σ</unclear><supplied reason="lost">ι</supplied>αρχίαις</w>  <w lemma="καί">καὶ</w>
-               <lb n="11"/><w lemma="στεφανηφορία">στεφανηφορ<supplied reason="lost">ίαι</supplied>ς</w>  <w lemma="γίγνομαι">γεγονό<lb
-                  n="12" break="no"/>τος</w>  <w lemma="ὁ">τὴν</w>  <w lemma="τιμή"><supplied reason="lost"><choice><orig>τειμὴν</orig><reg>τιμὴν</reg></choice></supplied></w>  <w lemma="ἀνατίθημι"><supplied reason="lost">ἀνα</supplied><unclear>τ</unclear>ε<lb
-                     n="13" break="no"/><unclear>θεικυ</unclear>ία<supplied reason="lost">ς</supplied></w>  <persName type="attested"><name nymRef="#Ἀμμία"><supplied reason="lost">Ἀμ</supplied><unclear>μί</unclear>ας</name>  <w lemma="ὁ">τῆς</w>
-                        <lb n="14"/><persName type="attested"><supplied reason="lost"><name nymRef="#Ἀριστοκλῆς">Ἀριστοκλέους</name></supplied>  <w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος">Ἀρτεμι<lb
-                           n="15" break="no"/><supplied reason="lost">δ</supplied><unclear>ώρ</unclear>ο<supplied reason="lost">υ</supplied></name></persName></persName></persName>  <w lemma="γυνή"><supplied reason="lost">γυναικός</supplied></w>  <w lemma="ὁ">τῆς</w>  <w lemma="μήτηρ">μη<lb
-             n="16" break="no"/><supplied reason="lost">τ</supplied><unclear>ρ</unclear>ὸς</w>  <w lemma="αὐτός">αὐτοῦ</w>  <g ref="#leaf"/>
+               <lb n="11"/><w lemma="στεφανηφορία">στεφανηφορ<supplied reason="lost">ίαι</supplied>ς</w>  <w lemma="γίγνομαι">γεγονό<lb n="12" break="no"/>τος</w>  <w lemma="ὁ">τὴν</w>  <w lemma="τιμή"><supplied reason="lost"><choice><orig>τειμὴν</orig><reg>τιμὴν</reg></choice></supplied></w>  <w lemma="ἀνατίθημι"><supplied reason="lost">ἀνα</supplied><unclear>τ</unclear>ε<lb n="13" break="no"/><unclear>θεικυ</unclear>ία<supplied reason="lost">ς</supplied></w>  <persName type="attested"><name nymRef="#Ἀμμία"><supplied reason="lost">Ἀμ</supplied><unclear>μί</unclear>ας</name>  <w lemma="ὁ">τῆς</w>
+                        <lb n="14"/><persName type="attested"><supplied reason="lost"><name nymRef="#Ἀριστοκλῆς">Ἀριστοκλέους</name></supplied>  <w lemma="ὁ">τοῦ</w>  <persName type="attested"><name nymRef="#Ἀρτεμίδωρος">Ἀρτεμι<lb n="15" break="no"/><supplied reason="lost">δ</supplied><unclear>ώρ</unclear>ο<supplied reason="lost">υ</supplied></name></persName></persName></persName>  <w lemma="γυνή"><supplied reason="lost">γυναικός</supplied></w>  <w lemma="ὁ">τῆς</w>  <w lemma="μήτηρ">μη<lb n="16" break="no"/><supplied reason="lost">τ</supplied><unclear>ρ</unclear>ὸς</w>  <w lemma="αὐτός">αὐτοῦ</w>  <g ref="#leaf"/>
             </ab>
          </div>
          
