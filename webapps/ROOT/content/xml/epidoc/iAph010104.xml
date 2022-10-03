@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -56,8 +57,10 @@
                                precision="medium"
                                evidence="lettering"> Perhaps late Republican or Augustan (<rs type="criteria">lettering</rs>).</origDate>
                   </origin>
-                  <provenance type="found">
-                     <placeName ref="aphtemple">Temple/Church</placeName>: a. 'T.Aph XV', b. 'N. Tem., Tr. 24</provenance>
+
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>. 
+                     <placeName ref="#aphtemple">Temple/Church</placeName>: a. '<placeName type="monuList" ref="aphtempxv">T.Aph XV</placeName>', 
+                     b. 'North <placeName type="monuList" ref="aphtemptemenos">Temenos</placeName>, Tr. 24</provenance>
                   <provenance type="observed">Museum</provenance>
                </history>
             </msDesc>

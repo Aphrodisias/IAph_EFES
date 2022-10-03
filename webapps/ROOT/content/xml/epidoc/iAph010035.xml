@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -56,8 +57,10 @@ illegible.</handNote>
                      <origPlace>Findspot.</origPlace>
                      <origDate notBefore="0401" notAfter="0600" evidence="content location">Fifth-sixth century or later (<rs type="criteria">content</rs>, <rs type="criteria">location</rs>)</origDate>
                   </origin>
-                  <provenance type="found">
-                     <placeName ref="aphtemple">Temple/Church</placeName>: temenos, east side, south end; just north of
+
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphtemple">Temple/Church</placeName>: <placeName type="monuList" ref="aphtemptemenos"> Temenos</placeName>, east side, south end; just north of
+
 <ref type="inscription" n="187" target="iAph010011"/>.</provenance>
                   <provenance type="observed">Findspot.</provenance>
                </history>
