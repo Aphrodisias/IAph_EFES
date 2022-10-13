@@ -59,13 +59,24 @@
          <!-- @rend='ligature'                                                   -->
          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
          <xsl:when test="@rend='ligature'">
+            <xsl:variable name="xmlid" select="@xml:id"/>
+            <xsl:variable name="prevLig" select="ancestor::t:w/preceding-sibling::t:w[1]/descendant::t:*[@rend and @xml:id]"/>
+            <xsl:variable name="nextLig" select="ancestor::t:w/following-sibling::t:w[1]/descendant::t:*[@rend and @xml:id]"/>
             <xsl:element name="span">
                <xsl:choose>
                   <xsl:when test="$parm-leiden-style=('petrae','iospe')">
                      <xsl:attribute name="class">petraeligature</xsl:attribute>
                   </xsl:when>
-                  <xsl:when test="$parm-edn-structure = 'inslib'">
+                  <xsl:when test="$parm-edn-structure = 'inslib' and not($xmlid)">
                      <xsl:attribute name="class">inslibligature</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="$parm-edn-structure = 'inslib' and $xmlid">
+                     <xsl:choose>
+                        <xsl:when test="$nextLig and not($prevLig)"><xsl:attribute name="class">inslibligatureI</xsl:attribute></xsl:when>
+                        <xsl:when test="$prevLig and $nextLig"><xsl:attribute name="class">inslibligatureM</xsl:attribute></xsl:when>
+                        <xsl:when test="$prevLig and not($nextLig)"><xsl:attribute name="class">inslibligatureF</xsl:attribute></xsl:when>
+                        <xsl:otherwise><xsl:attribute name="class">ligature</xsl:attribute></xsl:otherwise>
+                     </xsl:choose>
                   </xsl:when>
                   <xsl:otherwise>
                      <xsl:attribute name="class">ligature</xsl:attribute>
