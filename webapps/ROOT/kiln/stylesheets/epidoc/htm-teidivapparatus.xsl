@@ -182,7 +182,7 @@
         <xsl:value-of select="@loc"/>
       </xsl:attribute>
       <xsl:if
-        test="@loc and (not(preceding-sibling::t:app) or @loc != preceding-sibling::t:app[1]/@loc)">
+        test="@loc and (not(preceding-sibling::t:app[@loc]) or @loc != preceding-sibling::t:app[1]/@loc)"> <!-- edited for IAph to display t:app[not(@loc)] on a separate line -->
         <xsl:value-of select="translate(@loc, ' ', '.')"/>
         <xsl:text>: </xsl:text>
       </xsl:if>
@@ -190,7 +190,7 @@
     </span>
 
     <xsl:choose>
-      <xsl:when test="@loc != following-sibling::t:app[1]/@loc">
+      <xsl:when test="@loc != following-sibling::t:app[1]/@loc or not(@loc)"> <!-- edited for IAph to display t:app[not(@loc)] on a separate line -->
         <br/>
       </xsl:when>
       <xsl:when test="following-sibling::t:app">
