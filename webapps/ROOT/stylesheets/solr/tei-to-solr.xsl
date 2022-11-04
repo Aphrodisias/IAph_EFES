@@ -47,6 +47,16 @@
     </field>
   </xsl:template>
   
+  <xsl:template match="tei:div[@type='bibliography']" mode="facet_previously_unpublished">
+    <field name="previously_unpublished">
+      <xsl:choose>
+        <xsl:when test="not(descendant::tei:ptr[contains(@target, 'iaph2007')])"><xsl:text>Not published in IAph2007</xsl:text></xsl:when>
+        <xsl:when test="descendant::tei:ptr[contains(@target, 'iaph2007')][@type='rev']"><xsl:text>Significantly revised since IAph2007</xsl:text></xsl:when>
+        <xsl:otherwise><xsl:text>Published in IAph2007</xsl:text></xsl:otherwise>
+      </xsl:choose>
+    </field>
+  </xsl:template>
+  
   <!-- This template is called by the Kiln tei-to-solr.xsl as part of
        the main doc for the indexed file. Put any code to generate
        additional Solr field data (such as new facets) here. -->
@@ -56,6 +66,7 @@
     <xsl:call-template name="field_mentioned_institutions"/>
     <xsl:call-template name="field_mentioned_divinities"/>
     <xsl:call-template name="field_person_name"/>
+    <xsl:call-template name="field_previously_unpublished"/>
   </xsl:template>
   
   <xsl:template name="field_inscription_type">
@@ -72,6 +83,10 @@
   
   <xsl:template name="field_person_name">
     <xsl:apply-templates mode="facet_person_name" select="//tei:text/tei:body/tei:div[@type='edition']" />
+  </xsl:template>
+  
+  <xsl:template name="field_previously_unpublished">
+    <xsl:apply-templates mode="facet_previously_unpublished" select="/tei:TEI/tei:text/tei:body/tei:div[@type='bibliography']"/>
   </xsl:template>
 
 </xsl:stylesheet>
