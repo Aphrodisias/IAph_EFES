@@ -202,10 +202,12 @@
 
   <xsl:template match="text()" mode="facet_mentioned_people" />
 
-  <xsl:template match="tei:placeName[@type='monuList'] | tei:provenance[@type='found'][not(descendant::tei:placeName[@type='monuList'])]//tei:placeName[@type='ancientFindspot'][1]" mode="facet_found_provenance">
+  <xsl:template match="tei:provenance[@type='found']" mode="facet_found_provenance">
     <field name="found_provenance">
-      <xsl:value-of select="upper-case(substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 1, 1))" />
-      <xsl:value-of select="substring(normalize-space(translate(translate(translate(., '?', ''), '_', ' '), '/', '／')), 2)" />
+      <xsl:value-of select="normalize-space(translate(translate(translate(descendant::tei:placeName[1], '?', ''), '_', ' '), '/', '／'))" />
+      <xsl:if test="descendant::tei:placeName[2]"><xsl:text>, </xsl:text>
+        <xsl:value-of select="normalize-space(translate(translate(translate(descendant::tei:placeName[2], '?', ''), '_', ' '), '/', '／'))" />
+      </xsl:if>
     </field>
   </xsl:template>
 
