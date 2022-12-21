@@ -329,7 +329,14 @@
           </div>
         </xsl:if>
         
-        <xsl:if test="//t:div[@type='bibliography'] and $inslib-corpus!='IGCyr'">
+        <xsl:if test="//t:div[@type='bibliography'] and $inslib-corpus='IAph'">
+          <h3>Bibliography</h3>
+            <xsl:for-each select="//t:div[@type='bibliography']">
+              <p><xsl:apply-templates select="t:p/node()"/></p>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <xsl:if test="//t:div[@type='bibliography'] and $inslib-corpus!=('IGCyr') and $inslib-corpus!=('IAph')">
           <p><b>Bibliography: </b>
             <xsl:apply-templates select="//t:div[@type='bibliography']/t:p/node()"/>
             
