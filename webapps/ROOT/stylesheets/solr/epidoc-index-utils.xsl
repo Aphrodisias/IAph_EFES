@@ -67,6 +67,11 @@
           <xsl:text>0</xsl:text>
         </xsl:otherwise>
       </xsl:choose>
+    <!-- for contextual index of words; NB: this impacts not only the lemmata index, but all indices dealing with tei:w[@lemma] (words, fragments) -->
+        <xsl:if test="self::tei:w[@lemma]">
+          <xsl:text>#</xsl:text>
+          <xsl:value-of select="self::tei:w"/>
+        </xsl:if>
     </field>
   </xsl:template>
 
