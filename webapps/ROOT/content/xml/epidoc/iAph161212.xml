@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Dedication of an image of Bellerophon</title>
+            <title>Dedication <!-- think -->of an image of Bellerophon</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -50,13 +50,12 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0300" precision="medium" evidence="lettering">First to third centuries C.E.</origDate>
+                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second to third centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName type="monuList" ref="#aphtetrapylon">Tetrapylon</placeName>: stray find to the west</provenance>
+                     <placeName ref="#aphtetrapylon">Tetrapylon</placeName> area: stray find to the west</provenance>
                   <provenance type="observed">Museum</provenance>
-                  <provenance type="observed" subtype="autopsied">Recorded by the NYU expedition in 1991 (<rs type="invNo">91.2</rs>)</provenance>
-               </history>
+                   </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -102,19 +101,26 @@
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<ab><lb n="1"/><persName type="divine"><name>Βελλεροφοντ<supplied reason="lost">α</supplied></name></persName>  <w><supplied reason="lost">τὸν</supplied></w>  
+<ab><lb n="1"/><persName type="divine"><name>Βελλεροφοντ<supplied reason="lost">ην</supplied></name></persName>  <w><supplied reason="lost" cert="low">τὸν</supplied></w>  
    <lb n="2"/> <w>κτιστην</w> <w lemma="ὁ">ὁ</w> <w>δῆμ<supplied reason="lost">ος</supplied></w>  </ab>
 </div>
          <div type="translation">
             <p>The people (honoured) Bellerophon, [the] founder</p>
          </div>
          <div n="notyet" type="commentary">
-            <p> <!-- ADD See SEG 53 1194 -->
+            <p>
             </p>
          </div>
-         <div type="bibliography" n="none">
-            <p>Unpublished.</p>
+         <div type="bibliography" subtype="transcription">
+            <p>Recorded:  <bibl><ptr target="nyu"/> in 1991, <citedRange>91.2</citedRange></bibl>
+            </p>
          </div>
+         <div type="bibliography" subtype="publication">
+            <p>Mentioned: <bibl><ptr target="rrrs1996"/> <citedRange>56</citedRange></bibl>; 
+               Published: <bibl><ptr target="chaniotis2003"/> <citedRange>80, n.60</citedRange></bibl> whence <bibl><ptr target="seg"/> <citedRange>53.1194</citedRange></bibl>
+            </p>
+         </div>
+         
       </body>
    </text>
 </TEI>
