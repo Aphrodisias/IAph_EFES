@@ -38,11 +38,11 @@
                         </support>
                      </supportDesc>
                      <layoutDesc><layout>
-                        <rs type="execution" ref="scalpro">Inscribed</rs> on one face which has been badly damaged above</layout>
+                        <rs type="execution" ref="scalpro">Inscribed</rs> on the upper moulding (line 1), and on the face which has been badly damaged above</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>0.035 - 0.04</handNote>
+                     <handNote><height>0.035 - 0.04</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -51,10 +51,8 @@
                      <origDate evidence="lettering">perhaps Augustan-I A.D.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphtheatre">Theatre</placeName>, Porta Regia North.</provenance>
-                  <provenance type="observed">Museum</provenance>
-                  <provenance type="observed" subtype="autopsied">Excavated by the NYU expedition in 1971 (<rs type="invNo">71.336</rs>; SBI <rs type="sbi">71</rs>)</provenance>
-               </history>
+                     <placeName ref="#aphtheatre">Theatre</placeName>, <placeName type="monuList" ref="#aphtheatrestage">stage</placeName>, Porta Regia North.</provenance>
+                  <provenance type="observed">Museum</provenance></history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -89,11 +87,12 @@
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="78_G_09.jpg">
-            <desc>View showing left side (Roueché, 1978)</desc>
-         </graphic>
+         
          <graphic url="78_J_31.jpg">
             <desc>Face (Roueché, 1978)</desc>
+         </graphic>
+         <graphic url="78_G_09.jpg">
+            <desc>View showing left side (Roueché, 1978)</desc>
          </graphic>
       </surface>
    </facsimile>
@@ -101,30 +100,31 @@
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-               <lb n="0"/><gap reason="lost" unit="line" extent="unknown"><certainty locus="name" cert="low"/></gap>
-               <lb n="1"/><orig>ΔΟ</orig><gap reason="lost" unit="character" quantity="3"/>
-               <lb n="2"/><orig><unclear>Π</unclear>Ε<unclear>Ρ</unclear></orig><gap reason="lost" unit="character" atLeast="9" atMost="10"/><orig><unclear>ΙΓ</unclear>ΟΝ</orig>
+               <lb n="0"/><gap reason="lost" unit="line" extent="unknown" cert="low"/>
+               <lb n="1"/><orig>δο</orig><gap reason="lost" unit="character" quantity="12"/>
+               <lb n="2"/><orig>γερ</orig><gap reason="lost" unit="character" quantity="10"/><orig><unclear>ιγ</unclear>ον</orig>
                <lb n="3"/><w lemma="ὁ">ὁ</w> <w>δῆμ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w>  <w lemma="ἀφιερόω">ἀ<supplied reason="lost">φιέ</supplied>ρωσεν</w>
-               <lb n="4"/><w lemma="ἐπιμελέω">ἐπιμεληθέντος</w> <persName type="attested"><name nymRef="#Μένιππος">Με<lb n="5" break="no"/>νίππου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μένιππος">Μενίπ<lb n="6" break="no"/>που</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="φύσις">φύσει</w> <persName type="attested"><name>Ἀδράτου</name></persName></persName>
+               <lb n="4"/><w lemma="ἐπιμελέω">ἐπιμεληθέντος</w> <persName type="attested"><name nymRef="#Μένιππος">Με<lb n="5" break="no"/>νίππου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μένιππος">Μενίπ
+                  <lb n="6" break="no"/>που</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="φύσις">φύσει</w> <persName type="attested"><name>Ἀδράτου</name></persName></persName>
             </ab>
          </div>
          
          <div type="apparatus">
            <listApp>
             <app><note>Above line 1, it is not certain that this area was inscribed</note></app>
-            <app loc="2"><note><foreign xml:lang="grc">Γ</foreign> might be <foreign xml:lang="grc">Τ</foreign>, but, if correct, suggests <foreign xml:lang="grc">στρατηγόν</foreign>.</note></app>
+              <app loc="2"><note>At the end Γ might be Τ, but, if correct, suggests στρατηγόν</note></app>
             <app loc="6"><note>The final name may be miscut for <foreign xml:lang="grc">Ἀδράστου</foreign>
             </note></app>
            </listApp>
          </div>
-         <div n="notyet" type="translation">
-            <p> ...</p>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            
          </div>
          <div n="notyet" type="commentary">
-            <p> ...</p>
+            
          </div>
-         <div type="bibliography" n="none">
-            <p>Unpublished.</p>
+         <div type="bibliography" subtype="transcription">
+            <p>Recorded: <bibl><ptr target="nyu"/> in 1971, <citedRange>71.336</citedRange>, <citedRange>SBI 71</citedRange></bibl></p>
          </div>
       </body>
    </text>
