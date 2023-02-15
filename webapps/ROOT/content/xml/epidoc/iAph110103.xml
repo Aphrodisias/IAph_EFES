@@ -32,7 +32,7 @@
                      <supportDesc>
                         <support>
                            <p>A <material>white marble</material>
-                              <objectType>block</objectType> broken at the back (<height unit="metre">0.38</height> x <width unit="metre"> 0.50</width> x <depth unit="metre">0.24</depth>).</p>
+                              <objectType>block</objectType> broken at the back (<dimensions><height unit="metre">0.38</height> <width unit="metre"> 0.50</width> <depth unit="metre">0.24</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc><layout>
@@ -40,7 +40,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Standard forms; <height unit="metre">0.02</height>. Ligatures: <foreign xml:lang="grc">HN</foreign>, l.3.; <foreign xml:lang="grc">NH</foreign>, line 7</handNote>
+                     <handNote>Standard forms; <height unit="metre">0.02</height>. Ligatures: <foreign xml:lang="grc">HN</foreign>, line 3.; <foreign xml:lang="grc">NH</foreign>, line 7</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -49,7 +49,7 @@
                      <origDate notBefore="0050" notAfter="0200" precision="medium" evidence="terminology nomenclature">First to second centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName type="monuList">City, North-east</placeName>: 'inside the ancient city near the Stadium and the East Gate'.</provenance>
+                     <placeName ref="#aphcity">City</placeName>, <placeName type="monuList" ref="#aphcityne">North-East</placeName>: 'inside the ancient city near the Stadium and the East Gate'.</provenance>
                   <provenance type="observed" when="1893">Findspot (1893)</provenance>
                   <provenance type="observed" subtype="autopsied">Recorded by Kubitschek (K III.51, Abklatsch 103); not reported subsequently</provenance>
                </history>
@@ -95,27 +95,37 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="πλάτας">πλάτας</w> <w lemma="εἰμί">ἐστιν</w> <persName type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name> <lb n="2"/> <name nymRef="#Κλαύδιος">Κλαυδίου</name> <name nymRef="#Διαδουμενός">Διαδουμένου</name></persName> <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="ἴδιος"><supplied reason="omitted">ἰ</supplied>δίων</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τ<hi rend="ligature"><unclear>ὴ</unclear>ν</hi></w> <w lemma="δίδωμι">δο<lb n="4" break="no"/>θεῖσαν</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="συγχώρησις">συν<unclear>χ</unclear>ώρησιν</w> <w lemma="ὑπό">ὑ<lb n="5" break="no"/><unclear>π</unclear>ὸ</w> <persName type="attested"><name nymRef="#Σάλβιος">Σαλβίου</name> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ο<supplied reason="lost">ῦ</supplied></w> <persName type="attested"><name nymRef="#Ἑρμογένης">Ἑρμογένους</name></persName></persName> <lb n="6"/> <w lemma="διά">δι<unclear>ὰ</unclear></w> <w lemma="ὁ">τοῦ</w> <w lemma="χρεωφυλάκιον"><supplied reason="lost">χ</supplied>ρ<unclear>ε</unclear>οφυλακίου</w> <w lemma="εἰμί">ὧν</w> <w lemma="ἄν">ἄν</w> <lb n="7"/> <w lemma="τις">τ<unclear>ις</unclear></w> <w lemma="μετακινέω">με<unclear>τα</unclear><supplied reason="lost">κι</supplied><hi rend="ligature">νή</hi><unclear>σ</unclear>ει</w> <w lemma="οὗτος">τούτων</w> <w lemma="τις">τι<lb n="8" break="no"/><unclear>ν</unclear>ὰ</w>  <w lemma="μήτε">μ<unclear>ή</unclear><supplied reason="lost">τε</supplied></w> <w lemma="ὁ"><unclear>ἡ</unclear></w> <w lemma="γῆ">γῆ</w> <w lemma="καρποφόρος"><unclear>κ</unclear>αρποφόρο<supplied reason="lost">ς</supplied></w>  <w lemma="μήτε">μή<lb n="9" break="no"/>τε</w>  <w lemma="θάλασσα"><unclear>θ</unclear>ά<unclear>λ</unclear><supplied reason="lost">α</supplied>σσα</w> <w lemma="πλωτός">π<unclear>λ</unclear>ωτὴ</w> <w lemma="εἰμί">ἔστ<supplied reason="lost">ω</supplied></w>  <w lemma="αὐτός">αὐ<lb n="10" break="no"/>τῷ</w> <w lemma="ὁ">τῷ</w> <w lemma="ἐπιχειρέω">ἐπι<supplied reason="lost">χ</supplied>ειρήσαντι</w>  <g ref="#leaf"/>  </ab>
+<ab><lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="πλάτας">πλάτας</w> <w lemma="εἰμί">ἐστιν</w> <persName type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name> <lb n="2"/> <name nymRef="#Κλαύδιος">Κλαυδίου</name> <name nymRef="#Διαδουμενός">Διαδουμένου</name></persName> 
+   <lb n="3"/> <w lemma="καί">καὶ</w> <w lemma="ἴδιος"><supplied reason="omitted">ἰ</supplied>δίων</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τ<hi rend="ligature"><unclear>ὴ</unclear>ν</hi></w> <w lemma="δίδωμι">δο
+      <lb n="4" break="no"/>θεῖσαν</w> <w lemma="αὐτός">αὐτῷ</w> <w lemma="συγχώρησις">συν<unclear>χ</unclear>ώρησιν</w> <w lemma="ὑπό">ὑ
+         <lb n="5" break="no"/><unclear>π</unclear>ὸ</w> <persName type="attested"><name nymRef="#Σάλβιος">Σαλβίου</name> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ο<supplied reason="lost">ῦ</supplied></w> <persName type="attested"><name nymRef="#Ἑρμογένης">Ἑρμογένους</name></persName></persName> 
+   <lb n="6"/> <w lemma="διά">δι<unclear>ὰ</unclear></w> <w lemma="ὁ">τοῦ</w> <w lemma="χρεωφυλάκιον"><supplied reason="lost">χ</supplied>ρ<unclear>ε</unclear>οφυλακίου</w> <w lemma="εἰμί">ὧν</w> <w lemma="ἄν">ἄν</w> 
+   <lb n="7"/> <w lemma="τις">τ<unclear>ις</unclear></w> <w lemma="μετακινέω">με<unclear>τα</unclear><supplied reason="lost">κι</supplied><hi rend="ligature">νή</hi><unclear>σ</unclear>ει</w> <w lemma="οὗτος">τούτων</w> <w lemma="τις">τι
+      <lb n="8" break="no"/><unclear>ν</unclear>ὰ</w>  <w lemma="μήτε">μ<unclear>ή</unclear><supplied reason="lost">τε</supplied></w> <hi rend="ligature"><w lemma="ὁ"><unclear>ἡ</unclear></w>  <w lemma="γῆ">γῆ</w></hi> <w lemma="καρποφόρος"><unclear>κ</unclear>αρποφόρο<supplied reason="lost">ς</supplied></w>  <w lemma="μήτε">μή
+         <lb n="9" break="no"/>τε</w>  <w lemma="θάλασσα"><unclear>θ</unclear>ά<unclear>λ</unclear><supplied reason="lost">α</supplied>σσα</w> <w lemma="πλωτός">π<unclear>λ</unclear>ωτὴ</w> <w lemma="εἰμί">ἔστ<supplied reason="lost">ω</supplied></w>  <w lemma="αὐτός">αὐ<lb n="10" break="no"/>τῷ</w> <w lemma="ὁ">τῷ</w> <w lemma="ἐπιχειρέω">ἐπι<supplied reason="lost">χ</supplied>ειρήσαντι</w>  <g ref="#leaf"/>  </ab>
 </div>
          <div type="apparatus">
            <listApp>
             <app loc="3"><note>On the squeeze Cormack read small letters above the delta, including <foreign xml:lang="grc">T</foreign> and <foreign xml:lang="grc">N</foreign>, and restored <foreign xml:lang="grc">καὶ <supplied reason="omitted">τῶν ἰ</supplied>δίων</foreign>
             </note></app>
+              
             <app loc="10"><note><foreign xml:lang="grc">ΕΠΙΣΙΡΗΣΑΝΤΙ</foreign> lapis, presumably, as Robert pointed out, an error for the normal verb, not a new term, as supposed by Cormack.</note></app>
            </listApp>
          </div>
          <div type="translation" n="notyet">
-            <p>...</p>
+            
          </div>
          <div type="commentary" n="notyet">
-            <p>...</p>
+            
          </div>
          <div type="bibliography">
-            <p>Published from K's notebook by <bibl><ptr target="cormack1964"/>Cormack, no. <citedRange>29</citedRange>
-               </bibl> (whence  <bibl><ptr target="mccabePHI"/>
-                  
+            <p>Published: <bibl><ptr target="cormack1964"/> <citedRange>29</citedRange>
+            </bibl>, whence  <bibl><ptr target="robert1966"/> <citedRange>385-6</citedRange>
+            </bibl>, <bibl><ptr target="robertBE"/> <citedRange>1967.545</citedRange>
+            </bibl>, 
+               <bibl><ptr target="mccabePHI"/>
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257375">497</ref></citedRange>
-               </bibl>), on which see L. Robert, Ant. Class. (1966) 385-6, BE 1967:545. <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph110103.html">11.103</ref></citedRange></bibl>.</p>
+               </bibl>); <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph110103.html">11.103</ref></citedRange></bibl>.</p>
          </div>
       </body>
    </text>
