@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Consolatory</rs> <rs type="textType">decree</rs></title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph161926</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>block</objectType> (<dimensions><height>0.585</height><width>0.904</width><depth>0.39</depth></dimensions>) which 
+                              must have formed part of a larger structure. Two deep holes on the upper part may have been made in secondary use.</p> </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face, which is slightly damaged on the upper and left sides.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard forms, <height>0.02</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notBefore="-0101" notAfter="-0001" precision="medium" evidence="lettering">First century BCE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName> 
+                     <placeName ref="#aphnecropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropoliss">South area</placeName>: Balkar Mevkii at Çayin Karsısı (Museum excavations)</provenance>
+                     <provenance type="observed">Museum </provenance></history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               
+            </keywords>
+         </textClass>
+         
+         <creation></creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-09-09" who="#CMR">Encoded</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                        <lb n="1"/><w><supplied reason="lost">Ἔ</supplied>δοξεν</w> <w><unclear>τ</unclear>ῆι</w> <w>βουλῆι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶι</w> <w>δ<unclear>ήμ</unclear><supplied reason="lost">ωι</supplied></w>
+               <gap reason="lost" quantity="9" unit="character"/><orig>ΤΗ</orig><gap reason="lost" quantity="5" unit="character"/><orig>Ι</orig> <persName type="attested"><name>Μα
+	<lb n="2" break="no"/><supplied reason="lost">ρσ</supplied><unclear>ύ</unclear>ου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name>Ἀπολλωνίου</name> <w>τοῦ</w> <persName type="attested"><name>Μαρσύ<unclear>ου</unclear></name></persName></persName></persName> <unclear>γ</unclear>ρα<unclear>μμα</unclear>τέως δήμου καὶ
+	<lb n="3"/><gap reason="lost" quantity="1" unit="character"/><orig>ΑΥ</orig> <w>ἐπὶ</w> <w lemma="ὁ">τῆς</w> <w>χώρας</w> <w>στρατηγοῦ</w>· <w>Ἐπεὶ</w> <persName type="attested"><name>Ἑρμογένης</name><persName type="attested"><name> Ἡφαιστίωνος</name></persName>
+	<lb n="4"/><name><unclear>Θ</unclear>εόδοτος</name></persName>, <w lemma="ὁ">τῶν</w> <w>πρώτων</w> <w lemma="καί">καὶ</w> <w>ἐνδοξοτάτων</w> <w>πολειτῶν</w>, <w>προγόνων</w>
+	<lb n="5"/><w>ὑπάρχων</w> <w lemma="ὁ">τῶν</w> <w>μεγίστων</w> <w lemma="καί">καὶ</w> <w>συνεκτικότων</w> <w lemma="ὁ">τὸν</w> δῆμον <w lemma="καί">καὶ</w> <w>ἐν</w> <w>ἀ
+	<lb n="6" break="no"/><unclear>ρ</unclear>ετῆι</w> <w lemma="καί">καὶ</w> <w>φιλοδοξίαις</w> <w lemma="καί">καὶ</w> <w>ἐπανγελίαις</w> <w>πλείσταις</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> <w>καλ
+	<lb n="7" break="no"/>λίστοις</w> <w>ἔργοις</w> <w>πρὸς</w> <w lemma="ὁ">τὴν</w> <w>πατρίδα</w> <w>βε⟨βι⟩ωκότων</w>, <w lemma="καί">καὶ</w> <w>αὐτὸς</w> <w>γεγο
+	<lb n="8" break="no"/>νὼς</w> <w>ἀνὴρ</w> <w>καλὸς</w> <w lemma="καί">καὶ</w> <w>ἀγαθὸς</w> <w lemma="καί">καὶ</w> <w>φιλόπατρις</w> <w lemma="καί">καὶ</w> <w>κτίστης</w> <w lemma="καί">καὶ</w> <w>εὐερ
+	<lb n="9" break="no"/>γ̣̣̣έτης</w> <w lemma="ὁ">τῆς</w> <w>πόλεως</w> <w lemma="καί">καὶ</w> <w>σωτὴρ</w> <w lemma="καί">καὶ</w> <w>εὐνόως</w> <w lemma="καί">καὶ</w> <w>σωφρόνως</w> <w>ἀνεσ
+	<lb n="10" break="no"/>τραμμένος</w> <w>πρός</w> <w>τε</w> <w lemma="ὁ">τὸν</w> <w>σύνπαντα</w> <w>δῆμον</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺς</w> <w>καθένα</w> <w lemma="ὁ">τῶν</w> <w>πο
+	<lb n="11" break="no"/><unclear>λ</unclear>ειτῶν</w> <w lemma="καί">καὶ</w> <w>πρὸς</w> <w>θεοὺς</w> <w>εὐσεβέστατα</w> <w>διακείμενος</w> <w lemma="καί">καὶ</w> <w>πρὸς</w> <w lemma="ὁ">τὴν</w>
+	<lb n="12"/><w><supplied reason="lost">π</supplied>ατρίδα</w>, <w>φιλοδοξότατα</w> <w>κοσμήσας</w> <w>αὐτὴν</w> <w>ἐπανγελίαις</w> <w>καλλίσ
+	<lb n="13" break="no"/>
+               <supplied reason="lost">τ</supplied><unclear>α</unclear>ις</w> <w lemma="καί">καὶ</w> <w>ἀναθήμασιν</w>, <w>εἰς</w> <w>πολλὰς</w> <w>δὲ</w> <w>πρεσβήας</w> <w lemma="καί">καὶ</w> <w>ἀνανκαιοτάτας</w>
+	<lb n="14"/><w><supplied reason="lost">πρ</supplied>οχειρισθεὶς</w> <w lemma="καί">καὶ</w> <w>εἰς</w> <w>ἀγώνας</w> <w>κατὰ</w> <w lemma="ὁ">τὸ</w> <w>κάλλιστον</w> <w>ἐτέλεσεν</w>
+	<lb n="15"/><w><supplied reason="lost">π</supplied>άντα</w>, <w lemma="ὁ">τάς</w> <w>τε</w> <w>ἀρχὰς</w> <w>πάσας</w> <w>ἐπιδεξάμενος</w> <w lemma="καί">καὶ</w> <w>χιροτονηθεὶς</w>
+	<lb n="16"/><w><unclear>π</unclear>λεονάκις</w> <w>ἐπισήμως</w> <w>ἀνεστράφη</w> <w>δικαίως</w> <w lemma="καί">καὶ</w> <w>καθαρῶς</w>, <w>παρά</w> <w>τε</w>
+	<lb n="17"/><w>ταῖς</w> <w>ἐξουσίαις</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> <w>ἡγουμένοις</w> <w>πλείστην</w> <w>γνῶσιν</w> <w lemma="καί">καὶ</w> <w>σύστ
+	<lb n="18" break="no"/><supplied reason="lost">α</supplied>σιν</w> <w>σχὼν</w> <w>εὐεργέτησεν</w> <w lemma="καί">καὶ</w> <w>διὰ</w> τούτων μέγιστα <w lemma="ὁ">τὴν</w> πόλιν, αἱρε
+	<lb n="19" break="no"/>θεὶς δὲ <w lemma="καί">καὶ</w> στεφανηφόρος ἐτέλεσεν <w lemma="καί">καὶ</w> αὐτὴν <w lemma="ὁ">τὴν</w> λειτουργίαν
+<lb n="20"/>	<supplied reason="lost">ἱ</supplied>εροπρεπῶς <w lemma="καί">καὶ</w> κοσμίως̣̣, ἐφ’ οἷς πᾶσιν ἀποδεξάμενος αὐτὸν <w>ὁ</w>
+	<lb n="21"/>δῆμος ἀπέδωκεν αὐτῶι <w lemma="ὁ">τὰς</w> καταξίας χάριτας: <w lemma="ὁ">τὰ</w> δὲ νῦν με
+	<lb n="22" break="no"/>τ<unclear>ή</unclear>λ<unclear>λ</unclear>ακχεν <w lemma="ὁ">τὸν</w> βίον, καθήκει δὲ ἐπίσημον <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w> ἐκκομιδὴν γενέσ
+	<lb n="23" break="no"/><unclear>θ</unclear>αι αὐτοῦ, δεδόχθαι <w lemma="ὁ">τῇ</w> βουλῇ <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶι</w> δήμωι ἐπῃνῆσθαι αὐτὸν <w lemma="καί">καὶ</w> μετηλ
+24	<lb n="24" break="no"/><unclear>λα</unclear>χότα <w lemma="καί">καὶ</w> στεφανωθῆναι ὑπὸ <w lemma="ὁ">τῆς</w> βουλῆς <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῦ</w> δήμου
+	<lb n="25"/><space quantity="5" unit="character"/> στεφάνωι ἀριστήωι ἀπὸ χρυσῶν ἑκατόν.<space quantity="5" unit="character"/>
+	     <lb n="26"/> <space quantity="5" unit="character"/> <persName type="attested"><name>Ἑρμογένη</name> <persName type="attested"><name>Ἡφαιστίωνος</name></persName> <name>Θεόδοτε</name></persName>, χαῖρε.<space quantity="5" unit="character"/>
+
+                    </ab>
+         </div>
+         
+         <div type="translation" xml:lang="en" resp="#AC">
+            <p>Decision of the council and the people [proposed by
+               the strategoi ? (and)] Ma[rs]yas, son of Apollonios,
+               grandson of Marsyas, secretary of the people and (?)
+               general in charge of the territory. Since Hermogenes
+               Theodotos, son of Hephaistion, one of the first and
+               most illustrious citizens, a man who has as his ancestors
+               men among the greatest and among those who
+               built together the community and have lived in virtue,
+               love of glory, many promises (of benefactions),
+               and the fairest deeds for the fatherland; a man who
+               has been himself good and virtuous, a lover of the
+               fatherland, a constructor, a benefactor of the polis,
+               and a savior; a man who has shown benevolence and
+               prudence/moderation in his conduct toward the
+               entire people and toward each one of the citizens; a
+               man who has always shown the utmost reverence for
+               the gods and the fatherland; who has adorned the
+               fatherland most generously by (the execution of) the
+               most noble promises and with dedications; who has
+               been elected to many and most crucial embassies and
+               contests and has accomplished everything in the best
+               possible way; a man who having accepted all the magistracies
+               and having been elected in an outstanding
+               way many times has shown a just and pure/honest
+               conduct; a man who has established relationships and
+               has received appreciation (recommendation) by the
+               authorities and the commanders becoming a great
+               benefactor of the polis through these as well; who
+               having been elected as a stephanephoros has fulfilled
+               this liturgy as well in the manner appropriate to a
+               religious office and in decency; whom the people has
+               acknowledged for all these (services) rewarding him
+               with appropriate acts of gratitude; (since) he has now
+               passed away and it is the proper thing to conduct his
+               funeral as well in an outstanding manner, let the council
+               and the people resolve that he is to be praised also
+               after his death and that he is to be crowned by the
+               council and the demos with the crown of merit, at an
+               expense of one hundred golden coins.
+               Hermogenes Theodotos, son of Hephaistion, farewell!</p>
+         </div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="7"><rdg>ΒΕΝΩΚΟΤΩΝ</rdg></app>
+            </listApp>
+         </div>
+         <div type="commentary" n="notyet">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p>Recorded: <bibl><ptr target="nyu"/> in 1998, <citedRange>I 98.001</citedRange></bibl></p>
+         </div>
+         <div type="bibliography" subtype="publication">
+            <p>Published: <bibl><ptr target="smithratte2003"/>, <citedRange>328</citedRange> (mention)</bibl>; <bibl><ptr target="smithratte2004"/> <citedRange>174</citedRange> (mention) and fig. 31</bibl>; 
+               <bibl><ptr target="chaniotis2004"/> <citedRange>1</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>2004.1020</citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>
