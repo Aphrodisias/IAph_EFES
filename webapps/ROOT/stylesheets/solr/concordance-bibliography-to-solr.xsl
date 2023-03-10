@@ -79,7 +79,7 @@
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:variable>
-              <xsl:value-of select="lower-case(translate($abbreviation, 'Łł', 'Ll'))"/>
+              <xsl:value-of select="lower-case(translate($abbreviation, 'ŁłŠš', 'LlSs'))"/>
             </field>
             <xsl:apply-templates select="current-group()/../tei:citedRange" />
           </doc>
@@ -147,7 +147,7 @@
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:variable>
-              <xsl:value-of select="lower-case(translate($abbreviation, 'Łł', 'Ll'))"/>
+              <xsl:value-of select="lower-case(translate($abbreviation, 'ŁłŠš', 'LlSs'))"/>
             </field>
             <xsl:apply-templates select="current-group()" />
           </doc>

@@ -332,7 +332,11 @@
         <xsl:if test="//t:div[@type='bibliography'] and $inslib-corpus='IAph'">
           <h3>Bibliography</h3>
             <xsl:for-each select="//t:div[@type='bibliography']">
-              <p><xsl:apply-templates select="t:p/node()"/></p>
+              <p>
+                <xsl:if test="@subtype='transcription'"><b>Transcription: </b></xsl:if>
+                <xsl:if test="@subtype='publication'"><b>Publication: </b></xsl:if>
+                <xsl:apply-templates select="t:p/node()"/>
+              </p>
             </xsl:for-each>
         </xsl:if>
         
