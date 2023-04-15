@@ -48,10 +48,11 @@
                <history>
                   <origin>
                      <origPlace>Findspot</origPlace>
-                     <origDate notBefore="0181" notAfter="0300" evidence="contests">>Second to third , ?after 181.</origDate>
+                     <origDate notBefore="0181" notAfter="0300" evidence="contests">Second to third century, ?after 181.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwalles">East stretch (south part)</placeName>: re-used just north of the South-east Gate, on the inside, and north of <ref type="inscription" n="1308" target="iAph120326"/> (=MAMA 451)</provenance>
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwalles">East stretch (south part)</placeName>: re-used just north of 
+                     the South-east Gate, on the inside, and north of <ref type="inscription" n="1308" target="iAph120326"/> (=MAMA 451)</provenance>
                   <provenance type="observed" when="1975">Findspot (1975)</provenance>
                </history>
             </msDesc>
@@ -95,7 +96,7 @@
          <graphic url="Deering_02v.jpg">
             <desc>Deering page 2v</desc>
          </graphic>
-      </surface>
+      </surface><!-- FIND photo 75_C_07-->
    </facsimile>
    <text>
       <body>
@@ -125,8 +126,8 @@
  <rs type="festival">
   <w lemma="Λυσιμαχῆον">Λυσιμαχήων</w>
   <lb n="9"/>
-  <space quantity="1" unit="character"/>
-  <w lemma="ἀγών">ἀγώνων</w></rs>
+  <supplied reason="lost" evidence="previouseditor"><space quantity="1" unit="character"/>
+  <w lemma="ἀγών">ἀγώνων</w></supplied></rs> <supplied reason="lost" evidence="previouseditor">
  <space quantity="1" unit="character"/>
  <lb n="9a"/>
  <space quantity="1" unit="line"/>
@@ -140,35 +141,48 @@
   <lb n="12"/>
   <space quantity="1" unit="character"/>
   <name nymRef="#Ἐπίνεικος">Ἐπινείκου</name></persName>
- <space quantity="1" unit="character"/></ab></div>
+ <space quantity="1" unit="character"/></supplied></ab></div>
          <div type="apparatus">
            <listApp>
-            <app loc="1"><note>Η Sherard 1705, <foreign xml:lang="grc">ΤΙ</foreign> Picenini; <foreign xml:lang="grc">I</foreign> Sherard 1716; <foreign xml:lang="grc">Μ</foreign> added in pencil in Deering's copy.  Traces of two uprights now visible.</note></app>
+              <app loc="1"><rdg resp="#sherard05">Η</rdg> <rdg resp="#picenini">ΤΙ</rdg> <rdg resp="#sherard16">I</rdg>  <note>Μ added in pencil in Deering's copy.  Traces of two uprights now visible</note></app>
             <app loc="9-12"><note>were read with some difficulty by Sherard, but more clearly by Deering; by 1904 they were lost.</note></app>
-            <app loc="11"><note>At the beginning <foreign xml:lang="grc">ΚΑΙ</foreign> Picenini, <foreign xml:lang="grc">ΚΟΥ</foreign> Sherard 1705, <foreign xml:lang="grc">ΝΑΠΟΥ</foreign> 1716;  <foreign xml:lang="grc">ΜΑΡΧΟΥ</foreign> Deering.</note></app>
+              <app loc="11"><rdg resp="#picenini">ΚΑΙ</rdg>  <rdg resp="#sherard05">ΚΟΥ</rdg> <rdg resp="#sherard16">ΝΑΠΟΥ</rdg> <rdg resp="#cigII #mama8">Κου(ίντου)</rdg> <rdg resp="#deering">ΜΑΡΧΟΥ</rdg></app>
            </listApp>
          </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" source="#roueche1993">
             <p>
-[? Public bodies honoured  ] M(arcus) Fl(avius) Antonius Lysimachos, sophistes, high priest, gymnasiarch, stephanephorus, neopoios, contest-president in perpetuity of the Lysimachean contests: in the year when Marcus Antonius Epineikos was contest-president.</p>
+[? Public bodies honoured] M(arcus) Fl(avius) Antonius Lysimachos, sophistes, high priest, gymnasiarch, stephanephorus, neopoios, contest-president in perpetuity of the Lysimachean contests: in the year when Marcus Antonius Epineikos was contest-president.</p>
+         </div>
+         <div type="translation" xml:lang="fr" source="#puech2002">
+            <p>. . . [a/ont élevé la statue de] M(arcus) Fl(avius) Antonius Lysimachos, sophiste, grand-prêtre, gymnasiarque, stéphanèphore, néope, agonothète perpétuel des concours <hi rend="italic">Lysimacheia</hi>, 
+            sous l'agonothésie de Marcus Antonius Éponicos.</p>
          </div>
          <div type="commentary">
-            <p>This text is obviously later than the establishment of the contest, but not more precisely dateable. M. Fl. Antonius Lysimachos must have been closely connected with Flavius Lysimachos, the founder of the Lysimachea (<ref type="inscription" n="650" target="iAph120538"/> and <ref type="inscription" n="653" target="iAph110021"/>); he is also honoured in a fragmentary text, <ref type="inscription" n="1857" target="iAph110513"/> (=Reinach 63). The fact that Antonius Lysimachos is named as 'contest-president in perpetuity' (l.6) while the inscription also refers to a current contest-presidency (line 10-) implies that he had given money for a foundation to provide perpetual funding for the contest-presidency (see L. Robert, <title>Documents de l'Asie Mineure méridionale</title> (Paris, 1966), 83-5). Epineikos (a name not otherwise attested at Aphrodisias) was presumably carrying out the practical duties (compare <ref type="inscription" n="677" target="iAph130616"/>).</p>
-            <p>For this contest see Roueché PPA 174ff.</p>
+            <!--<p>This text is obviously later than the establishment of the contest, but not more precisely dateable. M. Fl. Antonius Lysimachos must have been closely connected with Flavius Lysimachos, 
+               the founder of the Lysimachea (<ref type="inscription" n="650" target="iAph120538"/> and <ref type="inscription" n="653" target="iAph110021"/>); he is also honoured in a fragmentary text, 
+               <ref type="inscription" n="1857" target="iAph110513"/> (=Reinach 63). The fact that Antonius Lysimachos is named as 'contest-president in perpetuity' (l.6) while the inscription also refers to a current contest-presidency (line 10-) implies that he had given money for a foundation to provide perpetual funding for the contest-presidency (see L. Robert, <title>Documents de l'Asie Mineure méridionale</title> (Paris, 1966), 83-5). Epineikos (a name not otherwise attested at Aphrodisias) was presumably carrying out the practical duties (compare <ref type="inscription" n="677" target="iAph130616"/>).</p>
+            <p>For this contest see Roueché PPA 174ff.</p>  -->
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Copied in 1705 by Picenini (10102 18 and, from Tisser, 53v) whence Sherard (1010, 16) and in 1716 by Sherard (10101, 121); copied by Deering (f. 2v, no. 9); recorded by Gaudin (163); by the MAMA expedition; by the NYU expedition.</bibl></p>
+            <p>Recorded: <bibl><ptr target="picenini"/> <citedRange>18</citedRange> and from Tisser, <citedRange>53v</citedRange></bibl>, 
+               whnce <bibl><ptr target="sherard05"/> <citedRange>16</citedRange></bibl>; 
+               <bibl><ptr target="sherard16"/> <citedRange>121</citedRange></bibl>; 
+               <bibl><ptr target="deering"/> <citedRange>2v, no. 9</citedRange></bibl>;
+               <bibl><ptr target="gaudin"/> <citedRange>163</citedRange></bibl>;
+               <bibl><ptr target="calder"/><citedRange></citedRange></bibl>; 
+               <bibl><ptr target="nyu"/><citedRange></citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published by  <bibl><ptr target="cigII"/>Boeckh, from Sherard, CIG <citedRange>2785</citedRange>
-               </bibl>, whence <bibl><ptr target="liermann1889"/>Liermann 116-117, no. <citedRange>20b</citedRange>
-               </bibl>; mentioned by <bibl><ptr target="reinach1906"/>  from Gaudin's squeeze, REG 19, 1906, 134, no. <citedRange>64</citedRange>
-               </bibl>; published by  <bibl><ptr target="mama8"/>Cormack from the MAMA records, MAMA 8, no. <citedRange>501</citedRange>
+            <p>Published:  <bibl><ptr target="cigII"/> <citedRange>2785</citedRange>
+               </bibl>, whence <bibl><ptr target="liermann1889"/> <citedRange>20b</citedRange>
+               </bibl>; <bibl><ptr target="reinach1906"/>  <citedRange>64</citedRange> (mention)
+               </bibl>; <bibl><ptr target="mama8"/> <citedRange>501</citedRange>
                </bibl>, whence  <bibl><ptr target="mccabePHI"/>
-                  
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257197">318</ref></citedRange>
                </bibl>; published by <bibl><ptr target="roueche1993"/>  <citedRange>54</citedRange>
-               </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120325.html">12.325</ref></citedRange></bibl>.</p>
+               </bibl>, whence <bibl><ptr target="puech2002"/>, <citedRange>167</citedRange></bibl>, 
+               <bibl><ptr target="phi"/> <citedRange><ref target="https://epigraphy.packhum.org/text/265145">PPAphr 54</ref></citedRange></bibl>; 
+               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120325.html">12.325</ref></citedRange></bibl>.</p>
          </div>
       </body>
    </text>
