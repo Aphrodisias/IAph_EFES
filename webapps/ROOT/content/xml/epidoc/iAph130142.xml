@@ -53,7 +53,7 @@
                      <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering nomenclature">Second to third centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphnecropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropolisne">North-east</placeName>: lying just north of the Kara硳u/Tabai road, east of the turn to Aphrodisias.</provenance>
+                     <placeName ref="#aphnecropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropolisne">North-east</placeName>: lying just north of the Karaçasu/Tabai road, east of the turn to Aphrodisias.</provenance>
                   <provenance type="observed">Findspot</provenance>
                </history>
             </msDesc>
@@ -83,6 +83,7 @@
          <creation>Publication; notebook; Preliminary transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-04-20" who="CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
          <change when="2007-01-01" who="GB">hand tidied</change>
@@ -98,15 +99,18 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>  <gap reason="lost" unit="character" precision="low" quantity="12"/><orig>α<unclear>σ</unclear></orig> <w lemma="εἰμί">ἐστι<hi rend="ligature">ν</hi></w> <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr><hi rend="ligature">Μ</hi><unclear>άρ</unclear></abbr><ex>κου</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr><unclear>Α</unclear>ὐρ</abbr><ex>ηλίου</ex></expan></name> <name nymRef="#Τατιανός">Τατιανοῦ</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Παπίας">Παπίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μενεσθεύς">Μενεσθέως</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Δέξιππος">Δε<supplied reason="lost">ξ</supplied>ίππου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μένιππος">Μενίππου</name></persName></persName></persName></persName></persName> <space quantity="3" unit="character"/>  
-<lb n="1a"/><gap reason="lost" unit="line" precision="low" quantity="4"/>
-   <lb n="2"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μενεσθεύς">Μενεσ<supplied reason="lost" cert="low">θεως</supplied></name></persName> <gap reason="lost" unit="character" extent="unknown"/></ab>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" precision="low" quantity="12"/><orig>α<unclear>σ</unclear></orig> <w lemma="εἰμί">ἐστι<hi rend="ligature">ν</hi></w> 
+   <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr><hi rend="ligature">Μ</hi><unclear>άρ</unclear></abbr><ex>κου</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr><unclear>Α</unclear>ὐρ</abbr><ex>ηλίου</ex></expan></name> 
+      <name nymRef="#Τατιανός">Τατιανοῦ</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Παπίας">Παπίου</name> <w lemma="ὁ">τοῦ</w> 
+         <persName type="attested"><name nymRef="#Μενεσθεύς">Μενεσθέως</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Δέξιππος">Δε<supplied reason="lost">ξ</supplied>ίππου</name> 
+            <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μενεσθεύς">Μενε<unclear>σ</unclear><supplied reason="lost">θεως</supplied></name></persName></persName></persName></persName></persName> <gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
          <div type="apparatus">
            <listApp>
             <app loc="1">
-               <rdg resp="#mama8">... ἐ]στιν</rdg> <note>They also saw further traces at the end of the text, in an area which appears to us to be blank</note></app>
-              <app loc="2"><note> The location of this line, only attested by Kubitschek, is far from clear; omitted by MAMA and IAph2007</note></app>
+               <rdg resp="#mama8">... ἐ]στιν Μ</rdg><rdg resp="#kubreich">. . . ΕΣ.Ι<hi rend="ligature">ΝΜ</hi></rdg>
+               <rdg resp="#mama8 #iaph2007">Δε[ξ]ίππου τοῦ Μενίππου ( vac. 3)</rdg>
+               <rdg resp="#kubreich">Δ _ . <unclear>ΠΠ</unclear>ΟΥΤΟΥΜΕΝΕΣ . . .</rdg> <note>The layout in the notebook is confusing</note></app>
            </listApp>
          </div>
          <div n="notyet" type="translation">
@@ -116,7 +120,7 @@
             <p> No commentary yet (2007)</p>
          </div>
          <div type="bibliography" subtype="transcription">
-            <p>Recorded: <bibl><ptr target="kubreich"/> <citedRange>K.V.1</citedRange></bibl>; 
+            <p><bibl><ptr target="kubit"/> <citedRange>K.V.1</citedRange></bibl>; 
                <bibl><ptr target="calder"/><citedRange></citedRange></bibl>; 
                <bibl><ptr target="nyu"/><citedRange></citedRange></bibl></p>
           </div>
