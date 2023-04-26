@@ -33,7 +33,7 @@
                         <support>
                            <p>
                               <material key="marmor">White marble</material>
-                              <objectType key="block">block</objectType> with moulding chipped away above (<height unit="metre">0.515</height> × <width unit="metre">0.75</width> × <depth unit="metre">0.46</depth>).</p>
+                              <objectType key="block">block</objectType> with moulding chipped away above (<dimensions><height unit="metre">0.515</height> <width unit="metre">0.75</width> <depth unit="metre">0.46</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -51,7 +51,7 @@ Inscribed</rs> on the face.</layout>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Findspot</origPlace>
+                     <origPlace>Unknown</origPlace>
                      <origDate notBefore="0101" notAfter="0200" precision="medium" evidence="lettering">Second century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
@@ -111,12 +111,16 @@ Inscribed</rs> on the face.</layout>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<ab><lb n="0"/><gap xml:id="iaph2005-gap01" reason="lost" unit="line" extent="unknown"/><certainty cert="low" locus="name" target="#iaph2005-gap01"/><lb n="1"/><w lemma="τιμάω"><choice><orig><supplied reason="lost">ἐ</supplied><unclear>τ</unclear><supplied reason="lost">είμησεν</supplied></orig><reg>ἐτίμησεν</reg></choice></w><lb n="2"/><persName nymRef="#Χαιρέας" type="attested"><name nymRef="#Χαιρέας"><supplied reason="lost">Χ</supplied>αιρέαν</name></persName>  <lb n="3"/><w lemma="ὁ">τὸν</w> <w lemma="στεφανηφόρος">στε<lb n="4" break="no"/>φανηφό<lb n="5" break="no"/>ρον</w>.</ab></div>
+<ab><lb n="0"/><gap xml:id="iaph2005-gap01" reason="lost" unit="line" extent="unknown"/><certainty cert="low" locus="name" target="#iaph2005-gap01"/>
+   <lb n="1"/><w lemma="τιμάω"><choice><orig><supplied reason="lost">ἐ</supplied><unclear>τ</unclear><supplied reason="lost">είμησεν</supplied></orig><reg>ἐτίμησεν</reg></choice></w>
+   <lb n="2"/><persName nymRef="#Χαιρέας" type="attested"><name nymRef="#Χαιρέας"><supplied reason="lost">Χ</supplied>αιρέαν</name></persName>  
+   <lb n="3"/><w lemma="ὁ">τὸν</w> <w lemma="στεφανηφόρος">στε<lb n="4" break="no"/>φανηφό
+      <lb n="5" break="no"/> <space quantity="2" unit="character"/> ρον</w> <space quantity="2" unit="character"/></ab></div>
          <div type="apparatus">
            <listApp>
-            <app loc="1"><note>Cormack saw the trace of an upright in line 1, and so read <foreign xml:lang="grc">
+            <app loc="1"><note>Kubitschek and Cormack saw traces of uprights in line 1, and so suggested <foreign xml:lang="grc">
                   <supplied reason="lost">ἐ</supplied>τ<supplied reason="lost">είμησεν</supplied>
-               </foreign>; but this might be a trace left by the moulding.</note></app>
+               </foreign>; but these may be traces left by the moulding.</note></app>
            </listApp>
          </div>
          <div type="translation">
@@ -128,13 +132,14 @@ Inscribed</rs> on the face.</layout>
             <p>There may have been a verb of honouring on an upper feature; but the two texts, <ref type="inscription" n="1004" target="iAph120602"/> and <ref type="inscription" n="1005" target="iAph110409"/> (= MAMA 466, 467), both very similar, may perhaps be complete.</p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by Kubitschek (III, 44) and noted by Reichel (I, 16v)l; by the MAMA expedition; and by the NYU expedition in 1973.</bibl></p>
+            <p>  <bibl><ptr target="kubit"/> <citedRange>K.III.44</citedRange></bibl>, 
+                <bibl><ptr target="reich"/>, <citedRange>R.I.16v</citedRange> (sketch)</bibl>
+                <bibl><ptr target="calder"/><citedRange></citedRange></bibl>; 
+                <bibl><ptr target="nyu"/>in 1973<citedRange></citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published from the MAMA records by <bibl><ptr target="mama8"/>
-                  <author>Cormack</author>, <title level="m">MAMA</title> 8, no. <citedRange>466</citedRange>
+            <p><bibl><ptr target="mama8"/> <citedRange>466</citedRange>
                </bibl> whence  <bibl><ptr target="mccabePHI"/>
-                  
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257142">263</ref></citedRange>
                </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph110409.html">11.409</ref></citedRange></bibl>.</p>
          </div>
