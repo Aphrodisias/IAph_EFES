@@ -34,13 +34,12 @@
                      <supportDesc>
                         <support>
                            <p>A <material key="marmor">marble</material>
-                              <objectType>masonry block</objectType>, broken above and to right (<height unit="metre">0.32</height> × <width unit="metre">0.69</width> × <depth unit="metre">0.09</depth>).</p>
+                              <objectType>masonry block</objectType>, broken above and to right (<dimensions><height unit="metre">0.32</height> <width unit="metre">0.69</width> <depth unit="metre">0.09</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face; an iron clamp obscures part of the
-text.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face; an iron clamp obscures part of the text.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -86,6 +85,7 @@ text.</layout>
          <creation>Publications; Kubitschek notebook.</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-05-08" who="#CMR">emended markup</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
          <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
@@ -99,7 +99,7 @@ text.</layout>
    <facsimile>
       <surface>
          <graphic url="K_III_02.jpg">
-            <desc>Transcription by Kubitschek (1893) notebook 3, p.2</desc>
+            <desc>Kubitschek (1893) notebook III, p.2</desc>
          </graphic>
       </surface>
    </facsimile>
@@ -109,7 +109,7 @@ text.</layout>
         
         <ab>
 		  	<lb n="1"/><gap reason="lost" unit="line" extent="unknown"/>
-			<lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> <rs key="bishop" type="official-relig"><w lemma="ἐπίσκοπος"><expan><abbr><supplied reason="lost">ἐπι</supplied>σκόπ</abbr><ex>ου</ex></expan></w></rs> <placeName ref="stratonicea" nymRef="#Στρατονικεία">Στ<supplied reason="lost">ρ</supplied>ατονικείας</placeName> <w lemma="ὁ"><expan><abbr>τ</abbr><ex>οῦ</ex></expan></w> <space unit="character" quantity="3"/>
+			<lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> <rs key="bishop" type="official-relig"><w lemma="ἐπίσκοπος"><expan><abbr><supplied reason="lost">ἐπι</supplied><unclear>ϲ</unclear>κόπ</abbr><ex>ου</ex></expan></w></rs> <placeName ref="stratonicea" nymRef="#Στρατονικεία"><hi rend="ligature">Ϲτ</hi><supplied reason="lost">ρ</supplied>α<unclear>τ</unclear>ονικείαϲ</placeName> <w lemma="ὁ">το<hi rend="superscript">ῦ</hi></w> <space unit="character" quantity="3"/>
 			<lb n="3"/><space unit="line" extent="unknown"/></ab>
 	  </div>
          <div type="translation">
@@ -120,13 +120,12 @@ text.</layout>
             
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Copied by <rs type="visitor" key="kubitschek">Kubitschek</rs> (K.III.2, <foreign lang="de">Abklatsch</foreign> 97);
-not reported subsequently.</bibl></p>
+             <p><bibl><ptr target="kubit"/> <citedRange>K.III.2</citedRange>, <citedRange>Abklatsch 97</citedRange></bibl>.</p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published from Kubitschek by <bibl><ptr target="cormack1964"/> <citedRange> 2</citedRange>, and p. 18</bibl>, whence 
+            <p><bibl><ptr target="cormack1964"/> <citedRange> 2</citedRange>, and p. 18</bibl>, whence 
                <bibl><ptr target="robert1966"/> <citedRange>381 n. 4</citedRange></bibl>; 
-<bibl><ptr target="roueche1989"/>  <citedRange>167</citedRange>
+               <bibl><ptr target="roueche1989"/>  <citedRange>167</citedRange>
                </bibl>; not in <bibl>
                   <title level="m">PHI</title>
                </bibl>; 
