@@ -51,7 +51,8 @@
                      <origDate notBefore="0201" notAfter="0400" precision="medium" evidence="terminology">Third to fourth centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwalles">East stretch (south part)</placeName> stretch 'entre la maison Hussein Chaous et l'angle' (Gaudin); this is the findspot for <ref type="inscription" n="1002" target="iAph120403"/>, now just n. of the east gate.</provenance>
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwalles">East stretch (south part)</placeName> stretch 'entre la maison Hussein Chaous et l'angle' (Gaudin); 
+                     this is the findspot for <ref type="inscription" target="iAph120403"/>, now just north of the east gate.</provenance>
                   <provenance type="observed" when="1904">Findspot (1904).</provenance>
                </history>
             </msDesc>
@@ -81,6 +82,7 @@
          <creation>Deering; Gaudin;  publications.</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-05-24" who="CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
          <change when="2007-01-01" who="GB">hand tidied</change>
@@ -96,11 +98,14 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="ἰσώστη">ἰσώστη</w> <w lemma="εἰμί">ἐστὶν</w> <persName type="attested"><name nymRef="#Μᾶρκος">Μάρκου</name> <name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <name nymRef="#Διονύσιος">Διονυσίου</name> <lb n="2"/> <w>ου</w> <persName type="attested"><name nymRef="#Ἀντίοχος">Ἀντιόχου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Σώπολις">Σωπόλεως</name></persName></persName></persName> <w lemma="ὁ">ἡ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="βαθρικόν">βαθρικῷ</w> <gap reason="lost" unit="character" quantity="3"/>  </ab>
+<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="ἰσώστη">ἰσώστη</w> <w lemma="εἰμί">ἐστὶν</w> <persName type="attested"><name nymRef="#Μᾶρκος">Μάρκου</name> <name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <name nymRef="#Διονύσιος">Διονυϲίου</name> 
+   <lb n="2"/> <w lemma="ὁ">του</w> <persName type="attested"><name nymRef="#Ἀντίοχος">Ἀντιόχου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Σώπολις">Σωπόλεως</name></persName></persName></persName> <w lemma="ὁ">ἡ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="βαθρικόν">βαθρικῷ</w> 
+   <lb n="2α"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="1"><note>after <foreign xml:lang="grc">ΜΑΡ</foreign>, is written over a rasura; the erased letters presumably went with line 2.</note></app>
+            <app loc="1"><note>The letters after ΜΑΡ are written over a rasura, in smaller and less formal letters.</note></app>
+              <app loc="2"><note>At the beginning, </note><rdg resp="#deering">ΤΟΥ</rdg> <rdg resp="#gaudin">ΟΥ</rdg> </app>
            </listApp>
          </div>
          <div type="translation">
@@ -110,19 +115,17 @@
             <p>No commentary</p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p>
-                Recorded: <bibl><ptr target="deering"/>, <citedRange>2, no. 5</citedRange></bibl>; 
-                <bibl><ptr target="kubreich"/><citedRange><!-- check --></citedRange></bibl>;
+             <p><bibl><ptr target="deering"/>, <citedRange>2, no. 5</citedRange></bibl>; 
+                <bibl><ptr target="kubreich"/><citedRange>???<!-- check --></citedRange></bibl>;
                 <bibl><ptr target="gaudin"/>, <citedRange>41</citedRange></bibl>.</p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published:  <bibl><ptr target="leake1843"/> <citedRange>2</citedRange>
+            <p><bibl><ptr target="leake1843"/> <citedRange>2</citedRange>
                </bibl>, whence <bibl><ptr target="lbw"/> <citedRange>1643a</citedRange>
                </bibl>; <bibl><ptr target="reinach1906"/> <citedRange>160</citedRange>
                </bibl>, whence  <bibl><ptr target="mccabePHI"/>
-                  
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257325">447</ref></citedRange>
-               </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120327.html">12.327</ref></citedRange></bibl>.</p>
+               </bibl>, <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120327.html">12.327</ref></citedRange></bibl>.</p>
          </div>
       </body>
    </text>
