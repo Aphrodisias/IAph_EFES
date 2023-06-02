@@ -47,11 +47,11 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Findspot</origPlace>
+                     <origPlace>Unknown</origPlace>
                      <origDate notBefore="0100" notAfter="0200" evidence="nomenclature prosopography">First to second centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallse">South-east stretch</placeName>: in the southeastern stretch (Sherard).</provenance>
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallse">South-east stretch</placeName>: 'in the southeastern stretch' (Sherard). 'In the east wall' (Fellows</provenance>
                   <provenance type="observed" when="1850">Findspot (1850)</provenance>
                </history>
             </msDesc>
@@ -92,26 +92,35 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <lb n="2"/> <persName type="attested"><name nymRef="#Μύων">Μύωνα</name> <persName type="attested"><name nymRef="#Ἀγέλαος">Ἀγελάου</name></persName> <lb n="3"/> <w lemma="φύσις">φύσει</w> <w lemma="δέ">δὲ</w> <persName type="attested"><name nymRef="#Εὐσεβής">Εὐσέβους</name></persName> <lb n="4"/> <name nymRef="#Μένανδρος">Μένανδρον</name></persName> </ab>
+<ab><lb n="1"/> <space quantity="2" unit="character"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <space quantity="2" unit="character"/>  
+   <lb n="2"/> <persName type="attested"><name nymRef="#Μύων">Μύωνα</name> <persName type="attested"><name nymRef="#Ἀγέλαος">Ἀγελάου</name></persName> 
+      <lb n="3"/> <w lemma="φύσις">φύσει</w> <w lemma="δέ">δὲ</w> <persName type="attested"><name nymRef="#Εὐσεβής">Εὐσέβους</name></persName> 
+      <lb n="4"/> <space quantity="2" unit="character"/>  <name nymRef="#Μένανδρος">Μένανδρον</name></persName> <space quantity="2" unit="character"/>  </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="2"><note>Waddington transcribed <foreign xml:lang="grc">ΑΓΕΛΛΟΥ</foreign>, corrected in the text.</note></app>
+              <app loc="1"><rdg resp="#fellows">ΟΔΑΥΙΟΣ</rdg> <rdg resp="#fellows1841">ὁ δῆμος</rdg></app>
+              <app loc="2"><rdg resp="#waddington">ΑΓΕΛΛΟΥ</rdg> <rdg resp="#lbw">Ἀγελάου</rdg></app>
            </listApp>
          </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" source="#fellows1841">
+            <p>The People [honoured] Myo Menander, the son of Agelaus, but by birth son of Eusebes.</p>
+         </div>
+         <div type="translation" xml:lang="en" source="#iaph2007">
             <p>The People honoured Myon Menandros, (adoptive) son of Agelaos, by birth son of Eusebes.</p>
          </div>
          <div type="commentary">
-            <p>For the family see name index </p>
+           <!-- <p>For the family see name index </p> --> 
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Transcribed by Sherard in 1716 (10101, 120); by Fellows; by Waddington; not reported subsequently</bibl></p>
+             <p><bibl><ptr target="sherard16"/> <citedRange>120</citedRange></bibl>; 
+                <bibl><ptr target="fellows"/><citedRange></citedRange></bibl>;
+                <bibl><ptr target="waddington"/><citedRange></citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="cigII"/> <citedRange>2772</citedRange>
-               </bibl>; by  <bibl><ptr target="fellows1841"/> <citedRange>34</citedRange>
-               </bibl>; from these <bibl><ptr target="bailie1846"/><citedRange>60</citedRange>
+               </bibl>; <bibl><ptr target="fellows1841"/> <citedRange>34</citedRange>
+               </bibl>, from these <bibl><ptr target="bailie1846"/> <citedRange>60</citedRange>
                </bibl>; <bibl><ptr target="lbw"/> <citedRange>1613</citedRange>
                </bibl>, whence  <bibl><ptr target="mccabePHI"/>
                   
