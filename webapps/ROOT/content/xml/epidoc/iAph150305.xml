@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title> <rs type="textType">Funerary</rs> <seg cert="low">verse</seg>
+            <title> <rs type="textType"><rs type="textType">Funerary</rs> verse</rs>
             </title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
@@ -80,6 +80,7 @@
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-06-23" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-04-20" who="Charlotte-Tupman">DONE</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -98,17 +99,16 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>α</unclear>κα</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ε</unclear>δεμο</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig>ω<unclear>ζ</unclear>αινο</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="κεῖμαι"><supplied reason="lost">κ</supplied>εῖμαι</w>  δυ<gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><unclear>ο</unclear>υ <unclear>σ</unclear>εμ<unclear>ν</unclear><supplied reason="lost">ου</supplied><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>νο</unclear>σο<unclear>τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  </ab>
+<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>  
+   <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>α</unclear>κα</orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="ἔνθαδε"><supplied reason="lost" cert="low">ἔνθ</supplied>αδε</w> <w lemma="μοῖρα">μο<supplied reason="lost" cert="low">ῖρα</supplied></w> <gap reason="lost" unit="character" extent="unknown"/> 
+   <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ω</unclear></orig> <persName type="attested"><name nymRef="Ζενόβιος" cert="low"><unclear>Ζ</unclear>αινό<supplied reason="lost" cert="low">βιος</supplied></name></persName><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="κεῖμαι"><supplied reason="lost">κ</supplied>εῖμαι</w>  <w part="I">δυ</w><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><w part="F"><unclear>ο</unclear>υ</w> <w lemma="σέμνο-" part="I"><unclear>σ</unclear>έμ<unclear>ν</unclear><supplied reason="lost">ο</supplied></w><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>νο</unclear>σο<unclear>τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="2"><note><foreign xml:lang="grc">
-                  <supplied reason="lost" cert="low">ἔνθ</supplied>αδε μο<supplied reason="lost" cert="low">ιρα</supplied>
-               </foreign>
-            </note></app>
-            <app loc="3"><note><foreign xml:lang="grc">Ζαινο<supplied reason="lost" cert="low">βιος</supplied>
-               </foreign>
-            </note></app>
+            
             <app loc="5"><note>suggests praise of the life lived.</note></app>
            </listApp>
          </div>
@@ -116,10 +116,10 @@
             <p> None possible.</p>
          </div>
          <div type="commentary">
-            <p>Probably a funerary verse.</p>
+           <!-- <p>Probably a funerary verse.</p> --> 
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Excavated by the NYU expedition in 1972 (<rs type="invNo">72.494</rs>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> in 1972 <citedRange>72.494</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph150305.html">15.305</ref></citedRange></bibl>.</p>
