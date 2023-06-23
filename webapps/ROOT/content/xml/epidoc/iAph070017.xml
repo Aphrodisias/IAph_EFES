@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Votive</rs> offering to divinity</title>
+            <title>Fragment of <rs type="textType">funerary</rs> text</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,9 +14,9 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph161217</idno>
-            <idno type="IAph2007">iAph161217</idno>
-            <idno type="JMR2004">1217</idno>
+            <idno type="filename">iAph070017</idno>
+            <idno type="IAph2007">iAph161321</idno>
+            <idno type="JMR2004">1321</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -31,29 +31,31 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Rectangular <material key="marmor">white marble</material> base/<objectType>votive relief</objectType> (<dimensions unit="metre"><width>0.36</width><height>0.15</height><depth>0.14</depth></dimensions>) with face chipped to right and to left. Above, a pair of <rs type="decoration">ears</rs> in relief.</p>
+                           <p>
+                              <material key="marmor">White marble</material> fragment with lower moulding, probably from a <seg cert="low">
+                                 <objectType>sarcophagus</objectType>
+                              </seg>: 
+                              <dimensions unit="metre"><width>0.11</width><height>0.13</height><depth>0.05</depth></dimensions>.
+</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face, the last line on the moulding.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.02</height>
-                     </handNote>
+                     <handNote>lines 1, 3, <height unit="metre">0.015</height>; lines 2, 4, <height unit="metre">0.02</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Findspot</origPlace>
-                     <origDate notAfter="0299" notBefore="-0100" evidence="lettering">  First century BCE to third century CE</origDate>
+                     <origDate notBefore="0001" notAfter="0200" precision="medium" evidence="lettering">Probably first to second centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphtheatrebaths">Theatre Baths</placeName>: during clearing.</provenance>
-                  <provenance type="observed">Museum</provenance>
-               </history>
+                     <placeName ref="#aphmartyrion">Martyrion</placeName>: S.W.Complex 4c</provenance>
+                  <provenance type="observed">Museum</provenance></history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -76,24 +78,22 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
-               <term>
-                  <rs type="textType" key="sacer">Religious</rs>
-               </term>
             </keywords>
          </textClass>
-         <creation>Transcription (Reynolds) </creation>
+         <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="73_S_03.jpg">
-            <desc>Face (Roueché, 1973)</desc>
+         <graphic url="77_E_21.jpg">
+            <desc>Face (Roueché, 1977)</desc>
          </graphic>
-         <graphic url="77_L_01A.jpg">
+         <graphic url="77_T_17A.jpg">
             <desc>Face (Roueché, 1977)</desc>
          </graphic>
       </surface>
@@ -102,18 +102,30 @@
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<ab><lb n="1"/>  <persName type="attested"><name><supplied reason="lost">Εὐ</supplied>πρέπη<unclear>ς</unclear></name></persName>  <space quantity="1" unit="character"/>  <persName type="divine" ref="#anonymus"><w lemma="θεός">θε<supplied reason="lost">ῷ</supplied></w>
-  </persName>  <lb n="2"/> <space extent="unknown" unit="character" cert="low"/> <w lemma="εὐχή">εὐχή<supplied reason="lost">ν</supplied></w></ab>
+<ab><lb n="1"/>  <gap reason="lost" unit="line" extent="unknown"/>  
+   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="κηδεύω"><supplied reason="lost" cert="low">κηδευθήσο</supplied>ντα<unclear>ι</unclear></w>  <gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ὁ"><supplied reason="lost" cert="low">τὰ</supplied>ς</w>  <w lemma="παρακεῖμαι">παρα<supplied reason="lost" cert="low">κειμένας</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ὁ"><supplied reason="lost" cert="low">τῆς</supplied></w>  <w lemma="ἐπιγραφή"><unclear>ἐ</unclear>πιγ<unclear>ρ</unclear><supplied reason="lost" cert="low">αφῆς</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ο</unclear>νο<unclear>σ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="6"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
-         <div type="translation">
-            <p>[Eu]prepes to the god [?who listens] (in payment of) a vow.</p>
+         <div type="apparatus">
+           <listApp>
+            <app loc="1"><note> or ?<foreign xml:lang="grc">
+                  <supplied reason="lost">ἐ</supplied>ντα<unclear>φ</unclear>
+                  <supplied reason="lost">ῆναι</supplied>
+               </foreign>
+            </note></app>
+           </listApp>
          </div>
-         <div type="commentary">
-           <!-- <p>For representations of ears, in thanks for hearing, cf. L. Robert , <title level="m">Rev. Phil</title>. 1974, 198 (= OMS V, 285) and the references cited there.</p>
-          --> </div>
+         <div type="translation" xml:lang="en" resp="#JMR">
+            <p>References to burial, to ?adjacent sarcophagi, to the inscription</p>
+         </div>
+         <div n="notyet" type="commentary">
+           
+         </div>
          <div type="bibliography" subtype="transcription">
-            <p>Recorded: <bibl><ptr target="nyu"/> in 1968 <citedRange>68.360</citedRange></bibl>.
-            </p>
+            <p><bibl><ptr target="nyu"/> in 1962, <citedRange>62.183</citedRange></bibl></p>
          </div>
       </body>
    </text>

@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragment of funerary text</title>
+            <title> <rs type="textType">Funerary</rs> inscription for Hypsikles, third generation from Menandros</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,9 +14,9 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph161321</idno>
-            <idno type="IAph2007">iAph161321</idno>
-            <idno type="JMR2004">1321</idno>
+            <idno type="filename">iAph080713</idno>
+            <idno type="IAph2007">iAph161356</idno>
+            <idno type="JMR2004">1356</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -31,31 +31,26 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>
-                              <material key="marmor">White marble</material> fragment with lower moulding, probably from a <seg cert="low">
-                                 <objectType>sarcophagus</objectType>
-                              </seg>: 
-                              <dimensions unit="metre"><width>0.11</width><height>0.13</height><depth>0.05</depth></dimensions>.
-</p>
+                           <p>Fragment, with upper edge, from <objectType>sarcophagus</objectType> front (<dimensions unit="metre"><width>0.25</width><height>0.265</height><depth>0.85</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face, the last line on the moulding.</layout>
+                        <layout>One line of inscription above a <rs type="decoration">Medusa head</rs> in <rs type="decoration">relief</rs>.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>lines 1, 3, <height unit="metre">0.015</height>; lines 2, 4, <height unit="metre">0.02</height>.</handNote>
+                     <handNote>
+                        <height unit="metre">0.025</height>
+                     </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Findspot</origPlace>
-                     <origDate notBefore="0001" notAfter="0200" precision="medium" evidence="lettering">Probably first to second centuries C.E.</origDate>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" evidence="lettering">Second to third centuries C.E.</origDate>
                   </origin>
-                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphmartyrion">Martyrion</placeName>: S.W.Complex 4c</provenance>
-                  <provenance type="observed">Museum</provenance></history>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: clearing <placeName ref="#aphtheatrebaths">Theatre Baths</placeName> area.</provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance> </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -80,7 +75,7 @@
                </term>
             </keywords>
          </textClass>
-         <creation>Transcription (Reynolds)</creation>
+         <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
@@ -90,10 +85,7 @@
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="77_E_21.jpg">
-            <desc>Face (Roueché, 1977)</desc>
-         </graphic>
-         <graphic url="77_T_17A.jpg">
+         <graphic url="77_X_11.jpg">
             <desc>Face (Roueché, 1977)</desc>
          </graphic>
       </surface>
@@ -101,26 +93,20 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-
-<ab><lb n="1"/>  <gap reason="lost" unit="line" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <w><supplied reason="lost" cert="low">κηδευθήσο</supplied>ντα<unclear>ι</unclear></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/>  <w><supplied reason="lost" cert="low">τὰ</supplied>ς</w>  <w>παρα<supplied reason="lost" cert="low">κειμένας</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ὁ"><supplied reason="lost" cert="low">τῆς</supplied></w>  <w><unclear>ἐ</unclear>πιγ<unclear>ρ</unclear><supplied reason="lost" cert="low">αφῆς</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ο</unclear>νο<unclear>σ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
-</div>
-         <div type="apparatus">
-           <listApp>
-            <app loc="1"><note>? <foreign xml:lang="grc">
-                  <supplied reason="lost">ἐ</supplied>ντα<unclear>φ</unclear>
-                  <supplied reason="lost">ῆναι</supplied>
-               </foreign>
-            </note></app>
-           </listApp>
+            <ab>
+               <lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><orig>υ</orig>  <space quantity="1" unit="character"/>  <persName type="attested"><name nymRef="#Ὑψικλῆς">Ὑψικλῆς</name></persName>  <num value="3">γ</num>  <w lemma="ὁ"><unclear>τ</unclear><supplied reason="lost">οῦ</supplied></w>  <persName type="attested"><name nymRef="#Μένανδρος"><supplied reason="lost" cert="low">Μενάνδρου</supplied></name></persName>  <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
          </div>
-         <div type="translation" xml:lang="en" resp="#JMR">
-            <p>References to burial, to ?adjacent sarcophagi, to the inscription</p>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/> Hypsikles (son of Hypsikles son of Hypsikles) son of [Menandros <gap reason="lost" unit="character" extent="unknown"/><!-- check patronymic -->
+            </p>
          </div>
          <div n="notyet" type="commentary">
-           
+            
          </div>
          <div type="bibliography" subtype="transcription">
-            <p>Recorded: <bibl><ptr target="nyu"/> in 1962, <citedRange>62.183</citedRange></bibl></p>
+            <p><bibl><ptr target="nyu"/> in 1968, <citedRange>68.359</citedRange></bibl></p>
          </div>
       </body>
    </text>
