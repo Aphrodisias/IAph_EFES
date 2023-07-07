@@ -40,7 +40,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Ligatures: ΗΜΝ, line 1</handNote>
+                     <handNote><!-- Ligatures: ΗΜΝ, line 1 --></handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -49,7 +49,8 @@
                      <origDate notBefore="0001" notAfter="0300" evidence="formulae">First to third centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallnw">North-west stretch</placeName>: in NW stretch, near the stadium, near <ref type="inscription" n="1466" target="iAph120032"/>, <ref type="inscription" n="1470" target="iAph121105"/> (= CIG 2835, 2841) (Sherard)</provenance>
+                     <placeName ref="#aphwalls">Walls</placeName>, in <placeName type="monuList" ref="#aphwallnw">North-west stretch</placeName>, near the stadium, near <ref type="inscription" target="iAph120032"/>, 
+                     <ref type="inscription" target="iAph121105"/> (Sherard)</provenance>
                   <provenance type="observed">Findspot</provenance>
                </history>
             </msDesc>
@@ -79,22 +80,30 @@
          <creation>Sherard papers; publications</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-07-07" who="CMR">emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
          <change when="2007-01-01" who="GB">hand tidied</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <surface/>
+      <graphic url="http://www.bl.uk/manuscripts/Viewer.aspx?ref=harley_ms_7509_f012v">
+         <desc>Sherard, fair copy, f.12v, at British Library</desc>
+      </graphic>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="1"/> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσιν</w> <w lemma="εὐεργέτης"><unclear>ε</unclear>ὐεργέτην</w> <orig>μνιμ</orig> <lb n="2"/> <orig>πατ</orig><gap reason="lost" unit="character" quantity="1"/><orig>δοσ</orig> <w lemma="καί">καὶ</w> <w lemma="κατά">καθ'</w> <w lemma="εἷς">ἕνα</w> <w lemma="καί">καὶ</w> <lb n="3"/> <w lemma="κοινός">κοινῇ</w> <w lemma="ζάω">ζήσαντα</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑ<lb n="4" break="no"/>ποδειγμα</w> <w lemma="ἀρετή">ἀρετῆς</w> <gap reason="lost" unit="character" extent="unknown"/>  </ab>
+<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>  
+   <lb n="1"/> <w lemma="ἐν">ἐν</w> <w lemma="πᾶς">πᾶσιν</w> <w lemma="εὐεργέτης"><unclear>ε</unclear>ὐεργέ<hi rend="ligature">τη</hi>ν</w> <orig><hi rend="ligature">μν</hi>ιμ</orig> 
+   <lb n="2"/> <w>πατ<supplied reason="lost">ρ</supplied><unclear>ί</unclear>δος</w> <w lemma="καί">καὶ</w> <w lemma="κατά">καθ'</w><w lemma="εἷς">ἕνα</w> <w lemma="καί">καὶ</w> 
+   <lb n="3"/> <w lemma="κοινός">κοινῇ</w> <w lemma="ζάω">ζήσαντα</w> <w lemma="πρός">πρὸς</w> <w lemma="ὑπόδειγμα">ὑ
+      <lb n="4" break="no"/>ποδειγμα</w> <w lemma="ἀρετή">ἀρετῆς</w> <gap reason="lost" unit="character" extent="unknown"/>  </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="1"><note>ΣΥΝΕΡΓΕΤΗΜΝΙΜ. <unclear>ε</unclear>ὐεργέτην [ἡ]μ[ῶν τῆς?] πατ[ρί]δος cj. Boeckh</note></app>
+              <app loc="1"><rdg resp="#sherard05">ΣΥΝΕΡΓΕΤΗΜΝΙΜ</rdg><!-- check --> <rdg resp="#cigII"><unclear>ε</unclear>ὐεργέτην [ἡ]μ[ῶν τῆς?] πατ[ρί]δος</rdg></app>
+              <app loc="1"><rdg resp="#iaph2007">ΠΑΤ[.]ΔΟΣ</rdg></app>
            </listApp>
          </div>
          <div n="notyet" type="translation">
@@ -104,10 +113,11 @@
             <p>No translation yet (2007)</p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Copied by Sherard (10101, 25) and Picenini (10102, 14 and 53) in 1705). Not reported subsequently.</bibl></p>
+             <p><bibl><ptr target="picenini"/> <citedRange>14</citedRange>, and, from Tisser, <citedRange>53</citedRange></bibl>, whence 
+                <bibl><ptr target="sherard05"/> <citedRange>25</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published by  <bibl><ptr target="cigII"/>Boeckh, from Sherard papers CIG <citedRange>2807</citedRange>
+            <p><bibl><ptr target="cigII"/> <citedRange>2807</citedRange>
                </bibl>, whence  <bibl><ptr target="mccabePHI"/>
                   
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257459">579</ref></citedRange>
