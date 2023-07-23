@@ -31,7 +31,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Piece from the top left corner of a <objectType>sarcophagus</objectType> front <dimensions unit="metre"><width>0.18</width><height>0.19</height><depth>0.08</depth></dimensions>
+                           <p>Piece from the top left corner of a <objectType>sarcophagus</objectType> front, <dimensions unit="metre"><width>0.18</width><height>0.19</height><depth>0.08</depth></dimensions>
                            </p>
                         </support>
                      </supportDesc>
@@ -48,8 +48,8 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0200" precision="medium" evidence="lettering">First to second centuries C.E.</origDate>
+                     <origPlace>Unknown Necropolis</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second-third centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphstray">Stray</placeName>
@@ -83,6 +83,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-07-23" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-07-26" who="cmr">DONE</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -103,13 +104,16 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>  <orig>επιβ<unclear>ο</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  </ab>
+<ab><lb n="1"/>  <w lemma="ἐπί" cert="low">ἐπὶ</w> <orig>β<unclear>ο</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  </ab>
 </div>
          <div type="translation">
-            <p> No words discernible.</p>
+            <p>Not usefully translatable</p>
+         </div>
+         <div type="apparatus">
+            <listApp><app><note>A slight space aftet the first thre letters seems to indicate a word division here; the text may wel have begun on the lid of the sarcophagus</note></app></listApp>
          </div>
          <div type="commentary">
-            <p>cf. ? <ref type="inscription" n="1029" target="iAph130105"/>.i (=MAMA 499A): ἐπεβόησαν τειμηθῆναι αὐτὸν (on a sarcophagus)</p>
+           <!--<p>cf. ? <ref type="inscription" n="1029" target="iAph130105"/>.i (=MAMA 499A): ἐπεβόησαν τειμηθῆναι αὐτὸν (on a sarcophagus)</p>  --> 
          </div>
          <div type="bibliography" subtype="transcription">
              <p><bibl><ptr target="nyu"/> in 1964 (<citedRange>64.1</citedRange>)</bibl></p>
