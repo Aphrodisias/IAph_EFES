@@ -47,7 +47,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second to third centuries C.E.</origDate>
+                     <origDate notBefore="0175" notAfter="0250" precision="medium" evidence="lettering">Late second to early third century C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: <placeName ref="#aphstray">Stray</placeName></provenance>
                   <provenance type="observed" when="1981">Museum (1981)</provenance>
@@ -79,6 +79,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-07-24" who="#CMR">Emended from JMR</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-04-04" who="GB">DONE</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -97,16 +98,27 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" quantity="7"/><orig><unclear>λη</unclear></orig>  <lb n="2"/><gap reason="lost" unit="character" quantity="7"/><orig>οσσυ</orig>  <gap reason="lost" unit="character" quantity="1"/>  <lb n="3"/><gap reason="lost" unit="character" quantity="7"/> <w lemma="δημόσιος"><supplied reason="lost">δ</supplied>ημόσιος</w> <orig>βου</orig> <lb n="4"/><gap reason="lost" unit="character" quantity="7"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὰς</w>  <w lemma="πρέπω">πρεπού<lb n="5" break="no"/><supplied reason="lost">σας</supplied></w>  <w lemma="τιμή"><supplied reason="lost">τείμας</supplied></w>    <space quantity="3" unit="character"/>  </ab>
+<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>  
+   <lb n="1"/><gap reason="lost" unit="character" quantity="7"/><orig><unclear>λη</unclear></orig>
+   <lb n="2"/><gap reason="lost" unit="character" quantity="7"/><orig><unclear>ο</unclear>υι<unclear>υ</unclear></orig>
+   <lb n="3"/><gap reason="lost" unit="character" quantity="7"/><orig>οσσυ</orig>  <gap reason="lost" unit="character" quantity="1"/>  
+   <lb n="4"/><gap reason="lost" unit="character" quantity="7"/> <w lemma="δημόσιος"><supplied reason="lost">δ</supplied>ημόσιοις</w> <w part="I">βο</w> 
+   <lb n="5" break="no"/><gap reason="lost" unit="character" quantity="7"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὰς</w>  <w lemma="πρέπω">πρεπού
+      <lb n="6" break="no"/><supplied reason="lost">σας</supplied></w>  <w lemma="τιμή"><supplied reason="lost">τείμας</supplied></w>    <space quantity="3" unit="character"/> 
+   <lb n="6a" />    <space extent="unknown" unit="character"/></ab>
 </div>
+         <div type="apparatus">
+            <listApp><app loc="2"><rdg resp="#iaph2007"><note>This line omitted</note></rdg></app>
+               <app loc="4"><rdg resp="#iaph2007"><supplied reason="lost">δ</supplied>ημόσιος ΒΟΥ</rdg></app></listApp>
+         </div>
          <div type="translation">
-            <p> not usefully translatable</p>
+            <p>Not usefully translatable</p>
          </div>
          <div type="commentary">
-            <p>Reference to a public entiti; to fitting <seg cert="low">honours</seg>.</p>
+            <p>Reference to a public entity; to fitting <seg cert="low">honours</seg>.</p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1980 (<rs type="siteNo">Museum 63</rs>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> in 1980 (<citedRange>Museum 63</citedRange>)</bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph150325.html">15.325</ref></citedRange></bibl>.</p>
