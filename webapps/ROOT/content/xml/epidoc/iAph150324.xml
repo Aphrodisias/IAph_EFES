@@ -44,7 +44,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
+                     <handNote>Probably second century CE; 
                         <height unit="metre">0.022</height>
                      </handNote>
                   </handDesc>
@@ -52,7 +52,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0101" notAfter="0200" precision="medium" evidence="lettering">probably second century CE</origDate>
+                     <origDate notBefore="0101" notAfter="0200" precision="medium" evidence="lettering">Probably second century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphstray">Stray</placeName> find in 1979/80</provenance>
@@ -85,6 +85,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-07-27" who="CMR">~Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-04-02" who="GB">DONE</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -92,6 +93,9 @@
    </teiHeader>
    <facsimile>
       <surface>
+         <graphic url="80_C_13.jpg">
+            <desc>Face (Roueché, 1980)</desc>
+         </graphic>
          <graphic url="81_A_31.jpg">
             <desc>Face (Roueché, 1981)</desc>
          </graphic>
@@ -100,23 +104,25 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="1"/><persName type="attested"><name><gap reason="lost" unit="character" quantity="3"/>ίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἄτταλος">Ἀττά<supplied reason="lost">λου</supplied></name></persName></persName>  <gap reason="lost" unit="character" quantity="3"/><lb n="2"/><persName type="attested"><name><gap reason="lost" unit="character" quantity="3"/><unclear>ε</unclear>σσου</name></persName>  <g ref="#stop"/> <persName type="attested"><name>Ἀντ<gap reason="lost" unit="character" quantity="3"/></name></persName></ab>
+<ab><lb n="0"/>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="1"/><persName type="attested"><name><gap reason="lost" unit="character" quantity="3"/><unclear>ι</unclear>ου</name> <w lemma="ὑιός"><unclear>ὑ</unclear>οῦ</w> <persName type="attested"><name nymRef="#Ἄτταλος">Ἀττά<supplied reason="lost">λου</supplied></name></persName></persName>  <gap reason="lost" unit="character" quantity="3"/>
+   <lb n="2"/><persName type="attested"><name><gap reason="lost" unit="character" quantity="3"/>σσου</name></persName>  <g ref="#stop"/> <persName type="attested"><name>Ἀντ<gap reason="lost" unit="character" quantity="3"/></name></persName></ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="2"><note>perhaps <foreign xml:lang="grc">
+              <app loc="1"><rdg resp="#iaph2007">τοῦ</rdg></app>
+              <app loc="2"><rdg resp="#iaph2007"><unclear>ε</unclear>σσου</rdg><note>Perhaps <foreign xml:lang="grc">
                   <supplied reason="lost">Μολο</supplied>σσοῦ</foreign>
             </note></app>
            </listApp>
          </div>
          <div type="translation">
-            <p>No translation possible</p>
-         </div>
-         <div type="commentary">
             <p>Names; ?a son of Attalos; perhaps a Molossos, an Ant[-</p>
          </div>
+         <div type="commentary">
+           
+         </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition (<rs type="siteNo">Museum 54</rs>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>Museum 54</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph150324.html">15.324</ref></citedRange></bibl>.</p>
