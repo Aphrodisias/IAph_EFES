@@ -41,7 +41,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote>
-                        <height unit="metre"> 0.035</height>; ligatured ΗΜ in line 9; deliberate erasure in line 11.</handNote>
+                        <height unit="metre"> 0.035</height>;<!--  ligatured ΗΜ in line 9; --> deliberate erasure in line 11.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -50,7 +50,7 @@
                      <origDate notBefore="0222" notAfter="0235" evidence="reign">A.D. 222/235</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwalln">North stretch</placeName>, found with <ref type="inscription" n="548" target="iAph120034"/>
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwalln">North stretch</placeName>, found with <ref type="inscription" target="iAph120034"/>
                   </provenance>
                   <provenance type="observed" when="1904">Findspot (1904)</provenance>
                </history>
@@ -96,23 +96,41 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <lb n="2"/> <w lemma="ὁ">τῆς</w> <w lemma="λαμπρός">λαμπροτάτης</w> <lb n="3"/> <w lemma="Ἀφροδεισιεύς">Ἀφροδεισιέων</w> <lb n="4"/> <w lemma="πόλις">πόλεως</w> <persName type="attested"><name nymRef="#Σουλπίκιος">Σουλπίκιον</name> <lb n="5"/> <name nymRef="#Πρείσκος">Πρεῖσκον</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="διάσημος">δια<lb n="6" break="no"/>σημότατον</w>  <w lemma="ἀνθύπατος">ἀνθύ<lb n="7" break="no"/>πατον</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰς</w> <w lemma="ὁ">τοῦ</w> <lb n="8"/> <w lemma="μέγας">μεγίστου</w> <w lemma="καί">καὶ</w> <w lemma="θεῖοσ1">θειο<lb n="9" break="no"/>τάτου </w><w lemma="κύριος">κυρίου</w> <w lemma="ἐγώ">ἡμῶν</w> <lb n="10"/> <persName type="emperor"><w lemma="αὐτοκράτωρ">αὐτοκράτορος</w> <name nymRef="#Σεουῆρος">Σεου<lb n="11" break="no"/><supplied reason="lost">ή</supplied>ρου</name> <name nymRef="#Ἀλέξανδρος">Ἀλεξάνδρου</name></persName> <lb n="12"/><w lemma="ἐντολή"><supplied reason="lost" cert="low">ἐντολάς</supplied></w>  </ab>
+<ab><lb n="1"/> <space quantity="4" unit="character"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> <space quantity="2" unit="character"/> 
+   <lb n="2"/> <w lemma="ὁ">τῆς</w> <w lemma="λαμπρός">λαμπροτάτης</w> 
+   <lb n="3"/> <space quantity="2" unit="character"/> <w lemma="Ἀφροδεισιεύς">Ἀφροδεισιέων</w> <space quantity="2" unit="character"/> 
+   <lb n="4"/> <w lemma="πόλις">πόλεως</w> <persName type="attested"><name nymRef="#Σουλπίκιος">Σουλπίκιον</name> 
+      <lb n="5"/> <name nymRef="#Πρείσκος">Πρεῖσκον</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="διάσημος">δια
+         <lb n="6" break="no"/>σημότατον</w>  <w lemma="ἀνθύπατος">ἀνθύ
+            <lb n="7" break="no"/>πατον</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰς</w> <w lemma="ὁ">τοῦ</w> 
+   <lb n="8"/> <w lemma="μέγας">μεγίστου</w> <w lemma="καί">καὶ</w> <w lemma="θεῖοσ1">θειο <!-- check lemma -->
+      <lb n="9" break="no"/>τάτου </w><w lemma="κύριος">κυρίου</w> <w lemma="ἐγώ"><hi rend="ligature">ἡμ</hi>ῶν</w> 
+   <lb n="10"/> <persName type="emperor"><w lemma="αὐτοκράτωρ">αὐτοκράτορος</w> <name nymRef="#Σεουῆρος">Σεου
+      <lb n="11" break="no"/><supplied reason="lost">ή</supplied>ρου</name> <del rend="erasure"><name nymRef="#Ἀλέξανδρος">Ἀλεξάνδρου</name></del></persName> 
+   <lb n="12"/><w lemma="ἐντολή"><supplied reason="lost" cert="low">ἐντολάς</supplied></w>  </ab>
 </div>
-         <div type="translation">
-            <p>The People of the most splendid city of the Aphrodisians (set up a statue of) Sulpicius Priscus, perfectissimus vir, proconsul, according to [?the instructions] of our greatest and most revered lord Imperator Severus [Alexander].</p>
+         <div type="apparatus"><listApp>
+            <app loc="12"><rdg resp="#reinach1906">?ἐντολάς</rdg> <rdg resp="#veyne1966">?κρίσεις, ?ἐπιστολάς</rdg></app>
+         </listApp></div>
+         
+         
+         <div type="translation" xml:lang="en" source="#jmr1982">
+            <p>The People of the most splendid city of the Aphrodisians (set up a statue of) Sulpicius Priscus, <foreign xml:lang="la">perfectissimus vir</foreign>, proconsul, according to [?the instructions] of our 
+               greatest and most revered lord Imperator Severus [Alexander].</p>
          </div>
          <div type="commentary">
-            <p>See Reynolds, loc. cit.</p>
+            <p>Q. Virius Egnatius Sulpicius Priscus vel Q. Vibius Egnatius Sulpicius Priscus, PIR V 0477 https://pir.bbaw.de/id/14518 </p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by Gaudin (161); not reported subsequently.</bibl></p>
+             <p><bibl><ptr target="gaudin"/> <citedRange>161</citedRange>.</bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p>Published by <bibl><ptr target="reinach1906"/>  from Gaudin's squeeze, REG 19, 1906, 84, no. <citedRange>4</citedRange>
-               </bibl>, whence <bibl>Abbott &amp; Johnson, no. 138</bibl>, <bibl>Veyne, <title>Mél. Piganiol</title> 1395-1396</bibl>, <bibl><ptr target="BE"/>  <citedRange>1967.554</citedRange>
-               </bibl>; by <bibl> <ptr target="jmr1982"/>Reynolds, from Gaudin, <title>Aphrodisias &amp; Rome</title>, doc. <citedRange>47</citedRange>
+            </bibl>, whence  <bibl><ptr target="abbjohn1926"/>  <citedRange>138</citedRange></bibl> <bibl><ptr target="veyne1966"/><citedRange></citedRange></bibl>, 
+               <bibl><ptr target="robertBE"/>  <citedRange>1967.554</citedRange>
+               </bibl>; <bibl> <ptr target="jmr1982"/> <citedRange>47</citedRange>
                </bibl>, whence <bibl><ptr target="seg"/> <citedRange>1982.1097</citedRange>
-               </bibl>, <bibl><ptr target="BE"/>  <citedRange>1983.391</citedRange>
+               </bibl>, <bibl><ptr target="robertBE"/>  <citedRange>1983.391</citedRange>
                </bibl>,  <bibl><ptr target="mccabePHI"/>
                   
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257205">327</ref></citedRange>
