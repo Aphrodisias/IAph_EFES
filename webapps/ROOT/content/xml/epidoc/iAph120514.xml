@@ -32,7 +32,7 @@
                      <supportDesc>
                         <support>
                            <p> Upper part of a <material key="marmor">white marble</material>
-                              <objectType>statue base</objectType> with upper moulding on at least three sides (shaft <dimensions unit="metre"><width>0.62</width> - top <width unit="metre">0.70</width><height>0.40</height><depth>0.70</depth></dimensions>), broken below; the moulding has been chipped away roughly for re-use.</p>
+                              <objectType><objectType>statue base</objectType> shaf</objectType>t with upper moulding on at least three sides (<width>0.62</width> wide - top <width unit="metre">0.70</width> x <dimensions unit="metre"><height>0.40</height><depth>0.70</depth></dimensions>), broken below; the moulding has been chipped away roughly for re-use.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -51,8 +51,10 @@
                      <origPlace>Unknown</origPlace>
                      <origDate notBefore="0014" notAfter="0037" evidence="reign">14-37 A.D.</origDate>
                   </origin>
-                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: Reused in the south east stretch of the <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallse">South-east stretch</placeName>, south of the South-east gate, near <ref type="inscription" n="1282" target="iAph120515"/> (MAMA 447), <ref type="inscription" n="1515" target="iAph120510"/> (430), <ref type="inscription" n="209" target="iAph120516"/> (599).</provenance>
-                  <provenance type="observed">in situ</provenance>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: Reused in the south east stretch of the <placeName ref="#aphwalls">Walls</placeName>, 
+                     <placeName type="monuList" ref="#aphwallse">South-east stretch</placeName>, south of the South-east gate, near <ref type="inscription" target="iAph120515"/>, <ref type="inscription" target="iAph120510"/>, 
+                     <ref type="inscription" target="iAph120516"/>.</provenance>
+                  <provenance type="observed">Findspot</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -101,34 +103,37 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>          <persName type="emperor"><name nymRef="#Τιβέριος">Τιβέριον</name>  <name nymRef="#Καῖσαρ">Καίσαρα</name>  <lb n="2"/>        <w lemma="θεός">θεοῦ</w>  <w lemma="υἱός">υἱὸν</w>  <w lemma="σεβαστός">Σεβαστὸν</w></persName>  <lb n="3"/><persName type="attested"><name nymRef="#Ἰουλία"><supplied reason="lost">Ἰ</supplied>ουλία</name>  <name nymRef="#Παῦλα">Παῦλα</name></persName>  <w lemma="καί">καὶ</w>  <persName type="attested"><name nymRef="#Ἰουλία">Ἰ<unclear>ου</unclear><supplied reason="lost">λ</supplied><unclear>ία</unclear></name></persName>  <lb n="4"/><gap reason="lost" unit="character" quantity="9"/>  <w><supplied reason="lost">θ</supplied><unclear>υ</unclear></w></ab><ab><w><unclear>γάτ</unclear><supplied reason="lost">ερες</supplied></w>  <gap reason="lost" unit="character" quantity="3"/><lb n="4a"/><gap unit="line" reason="lost" extent="unknown"/></ab>
+<ab><lb n="1"/>          <persName type="emperor"><name nymRef="#Τιβέριος">Τιβέριον</name>  <name nymRef="#Καῖσαρ">Καίσαρα</name>  
+   <lb n="2"/>        <w lemma="θεός">θεοῦ</w>  <w lemma="υἱός">υἱὸν</w>  <addName nymRef="σεβαστός">Σεβαστὸν</addName></persName>  
+   <lb n="3"/><persName type="attested"><name nymRef="#Ἰουλία"><supplied reason="lost">Ἰ</supplied>ουλία</name>  <name nymRef="#Παῦλα">Παῦλα</name></persName>  <w lemma="καί">καὶ</w>  <persName type="attested"><name nymRef="#Ἰουλία">Ἰ<unclear>ου</unclear><supplied reason="lost">λ</supplied><unclear>ία</unclear></name></persName>  
+   <lb n="4"/><gap reason="lost" unit="character" quantity="9"/>  <w lemma="θυγάτηρ"><supplied reason="lost">θ</supplied><unclear>υ</unclear><unclear>γάτ</unclear><supplied reason="lost">ερες</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>
+   <lb n="4a"/><gap unit="line" reason="lost" extent="unknown"/></ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="3"><note><foreign xml:lang="grc">Ι<unclear>ου</unclear>
+              <app loc="3"><rdg resp="#reinach1906 #mama8">Ι<unclear>ου</unclear>
                   <supplied reason="lost">λια</supplied>
-               </foreign> R, MAMA; only the top serifs of the last letters are visible.</note></app>
-            <app loc="4"><note>Only the tops of the letters are visible.</note></app>
+               </rdg> <note>only the top serifs of the last letters are visible</note></app>
+              <app loc="4"><rdg resp="#reinach1906 #mama8">θ]<unclear>υγάτ</unclear>[ηρ</rdg><note>Only the tops of the letters are visible.</note></app>
            </listApp>
          </div>
          <div type="translation">
             <p>Tiberius Caesar Augustus son of (the) god: Julia Paula and Julia [ . .? . . ] daughters [of . . ? . . put up his statue]</p>
          </div>
          <div type="commentary">
-            <p> The layout suggests two sisters (the cognomen of the second at the beginning of line 3) whose father's name appeared in line 5.</p>
+           <!--   <p> The layout suggests two sisters (the cognomen of the second at the beginning of line 3) whose father's name appeared in line 5.</p>
             <p>A Julia Paula of the early third century CE is described on her tomb (<ref type="inscription" n="1585" target="iAph120909"/> =MAMA 564) as a descendant of those responsible for the city's autonomy, <foreign xml:lang="grc">τῶν συναιτίων τῇ πόλει τῆς αὐτονομία</foreign>, in view of which it is tempting to relate her to Julius Zoilos, together, perhaps, with this earlier Julia Paula.
-</p>
+</p>-->
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by Gaudin (75); by the MAMA expedition; by the NYU expedition in 1977.</bibl></p>
+             <p><bibl><ptr target="gaudin"/> <citedRange>75</citedRange></bibl>
+                <bibl><ptr target="calder"/><citedRange></citedRange></bibl>; 
+                <bibl><ptr target="nyu"/> in <citedRange>1977</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published by <bibl><ptr target="reinach1906"/> 
-                  <author>Reinach</author>, from Gaudin, <citedRange>25</citedRange>
-               </bibl>; published by <bibl><ptr target="mama8"/>
-                  <author>Cormack</author>, from the MAMA records, MAMA 8, <citedRange>434</citedRange>
+            <p><bibl><ptr target="reinach1906"/>  <citedRange>25</citedRange>
+               </bibl>; <bibl><ptr target="mama8"/> <citedRange>434</citedRange>
                </bibl>, whence  <bibl><ptr target="mccabePHI"/>
-                  
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257079">200</ref></citedRange>
                </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120514.html">12.514</ref></citedRange></bibl>.</p>
          </div>
