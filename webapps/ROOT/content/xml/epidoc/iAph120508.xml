@@ -35,11 +35,11 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>No description</layout>
+                        <layout></layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Ligatures: line 2,  ΤΗΝ; line 7,  ΝΗ (twice); line 17,  ΝΜ</handNote>
+                     <handNote>No description <!-- Ligatures: line 2,  ΤΗΝ; line 7,  ΝΗ (twice); line 17,  ΝΜ --></handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -48,7 +48,7 @@
                      <origDate notBefore="0001" notAfter="0200" precision="medium" evidence="nomenclature">First to second centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallse">South-east stretch</placeName>: 'in muro' Sherard, near <ref type="inscription" n="1534" target="iAph120524"/> (=MAMA 559)</provenance>
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallse">South-east stretch</placeName>: 'in muro' Sherard, near <ref type="inscription" n="1534" target="iAph120524"/></provenance>
                   <provenance type="observed" when="1841">Findspot (1841)</provenance>
                </history>
             </msDesc>
@@ -89,6 +89,9 @@
    </teiHeader>
    <facsimile>
       <surface>
+         <graphic url="http://www.bl.uk/manuscripts/Viewer.aspx?ref=harley_ms_7509_f045r">
+            <desc>Sherard, fair copy (Harley MS 7509), f.45r, at British Library</desc>
+         </graphic>
          <graphic url="Deering_12.jpg">
             <desc>Deering notebook, p. 12</desc>
          </graphic>
@@ -114,14 +117,16 @@
     <lb n="14"/> <w lemma="καί">καὶ</w> <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> <w lemma="τυμβωρύχος">τυμβωρύχος</w> <w lemma="καί">καὶ</w> 
     <lb n="15"/> <w lemma="προσαποτίνω">προσαποτεισάτω</w> <w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὸ</w> <w lemma="ἱερός">ἱερώτατον</w> 
     <lb n="16"/> <w lemma="ταμεῖον">ταμεῖον</w> <w lemma="ὁ">τοῦ</w> <w lemma="κύριος">κυρίου</w> <persName type="emperor"><w lemma="αὐτοκράτωρ">Αὐτοκράτορος</w> <name nymRef="#Καῖσαρ">Καί
-       <lb n="17" break="no"/>σαρος</name></persName> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="6">Ϛ</num> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸν</w> <w lemma="τρίτος">τρίτο<hi rend="ligature">ν</hi></w> <w lemma="μέρος"><hi rend="ligature">μ</hi>έρος</w> 
-    <lb n="18"/> <w lemma="εἰμί">ἔστω</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσαντος</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφ<supplied reason="lost">ῆς</supplied></w>  
- <lb n="18"/><gap reason="lost" unit="line" precision="low" extent="unknown"/></ab>
+       <lb n="17" break="no"/>σαρος</name></persName> <w lemma="ἀργύριον">ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> 
+    <num value="6">Ϛ</num> <w lemma="εἰμί">ὧν</w> <w lemma="ὁ">τὸν</w> <w lemma="τρίτος">τρίτο<hi rend="ligature" xml:id="lig1">ν</hi></w> <link target="#lig1 #lig2"/> <w lemma="μέρος"><hi rend="ligature" xml:id="lig2">μ</hi>έρος</w> 
+    <lb n="18"/> <w lemma="εἰμί">ἔστω</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσαντος</w> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγραφῆ<supplied reason="lost">ς</supplied></w>  
+ <lb n="18a"/><gap reason="lost" unit="line" precision="low" extent="unknown"/></ab>
 </div>
          <div type="apparatus">
            <listApp>
             <app loc="1"><note>The version given here is that of Deering; the other copyists only saw fragments;</note> <rdg resp="#deering">ΑΥΤΟΙΣ</rdg></app>
             <app loc="7"><rdg resp="#deering">ΕΙΝΑΙΗ</rdg></app>
+              <app loc="18"><rdg resp="#deering">ΕΠΙΓΡΑΦ</rdg><rdg resp="#sherard05">ΕΠΙΓΡΑΦΗ</rdg></app>
            </listApp>
          </div>
          <div type="translation" xml:lang="en" source="#fellows1841">
