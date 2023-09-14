@@ -91,6 +91,7 @@
          <creation>Preliminary transcription (Reynolds); Gaudin; publication.</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-14" who="#CMR">Emended</change>
          <change when="2022-05-19" who="#MB">Tagged LGPN ids</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-01-30" who="Charlotte-Tupman">Hand tidied</change>
@@ -109,8 +110,10 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                <lb n="1"/><gap unit="character" reason="lost" extent="unknown"/> <persName type="emperor" ref="anonymi"><w><supplied reason="lost">Σ</supplied>εβαστοῖς</w></persName>
-               <lb n="2"/><w><gap unit="character" reason="lost" extent="unknown"/>α</w>  <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8314"><name nymRef="#Καλλικράτης">Καλλικ<unclear>ρ</unclear><supplied reason="lost" cert="low">ατ</supplied>
-                  <lb n="2a"/><gap unit="line" reason="lost" extent="unknown"/></name></persName>
+               <lb n="2"/><gap unit="character" reason="lost" extent="unknown"/><orig>α</orig>  
+               <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8314"><name nymRef="#Καλλικράτης"><seg part="I">Καλλικ<unclear>ρ</unclear>
+                  <lb n="2a" break="no"/><supplied reason="lost" cert="low">ατ</supplied></seg></name></persName><gap unit="line" reason="lost" extent="unknown"/>
+               <lb n="2b"/><gap unit="line" reason="lost" extent="unknown"/>
             </ab>
          </div>
          <div type="translation">
@@ -124,7 +127,8 @@
             <p> No commentary</p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by Gaudin (29c); found by the NYU expedition.</bibl></p>
+             <p><bibl><ptr target="gaudin"/> <citedRange>29c</citedRange></bibl>; 
+                <bibl><ptr target="nyu"/><citedRange></citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="reinach1906"/> <citedRange>113</citedRange>
