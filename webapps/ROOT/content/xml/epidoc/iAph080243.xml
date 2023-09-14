@@ -38,18 +38,18 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on face (<width unit="metre">0.685</width>   × <height unit="metre">0.34</height>), which is cracked down the middle, badly abraded to the right and broken away to left.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on face (<dimensions><width unit="metre">0.685</width> <height unit="metre">0.34</height></dimensions>), which is cracked down the middle, badly abraded to the right and broken away to left.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>? second century; line 2, <height unit="metre">0.045</height>, line 3, <height unit="metre">0.035</height>; l.4, <height unit="metre">0.03</height>
+                     <handNote>? Second century CE; line 2, <height unit="metre">0.045</height>; line 3, <height unit="metre">0.035</height>; line 4, <height unit="metre">0.03</height>
                      </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0101" notAfter="0200" precision="medium" evidence="lettering">? second century CE</origDate>
+                     <origDate notBefore="0101" notAfter="0200" precision="medium" evidence="lettering">? Second century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphtheatre">Theatre</placeName>, relocating fragments</provenance>
@@ -82,6 +82,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-14" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-07-05" who="cmr">DONE</change>
          <change when="2006-12-11" who="Charlotte-Tupman">hand tidied</change>
@@ -95,20 +96,22 @@
             <desc>Face (M. Roueché, 1981)</desc>
          </graphic>
          <graphic url="NY_pr_093.jpg">
-            <desc>Face (M. Roueché, 1974)</desc>
+            <desc>Face (NYU, 1974)</desc>
          </graphic>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><unclear>Δ</unclear><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>ΙΑΣ  <persName type="attested"><name nymRef="#Ὑψικλίδης">Ὑψικλίδ<unclear>ης</unclear></name></persName>  <lb n="3"/><gap reason="lost" unit="character" quantity="1"/>  <persName type="attested"><name nymRef="#Αὐρηλία"><supplied reason="lost" cert="low">Αυρ</supplied><unclear>η</unclear>λίας</name>  <name nymRef="#Ἰουλία">Ἰουλία<unclear>ς</unclear></name>  <name nymRef="#Ἀπφία"><supplied reason="lost">Ἀ</supplied><unclear>π</unclear>φ<supplied reason="lost">ί</supplied><unclear>α</unclear>ς</name></persName>  <space quantity="2" unit="character"/><lb n="4"/><gap reason="lost" unit="character" extent="unknown"/>Σ <w lemma="θυγάτηρ">θυγατρός</w> <space quantity="3" unit="character"/>  </ab>
+<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>Δ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><persName type="attested" ref="#http://www.lgpn.ox.ac.uk/id/V5b-13110"><name><seg part="F">ιας</seg></name>  <persName type="attested"><name nymRef="#Ὑψικλίς">Ὑψικλίδ<unclear>ο</unclear>ς</name></persName></persName>  
+   <lb n="3"/><gap reason="lost" unit="character" quantity="1"/>  <persName type="attested"><name nymRef="#Αὐρηλία"><supplied reason="lost" cert="low">Αυρ</supplied><unclear>η</unclear>λίας</name>  <name nymRef="#Ἰουλία">Ἰουλία<unclear>ς</unclear></name>  <name nymRef="#Ἀπφία"><supplied reason="lost">Ἀ</supplied><unclear>π</unclear>φ<supplied reason="lost">ί</supplied><unclear>α</unclear>ς</name></persName>  <space quantity="2" unit="character"/>
+   <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig>Σ</orig> <w lemma="θυγάτηρ">θυγατρός</w> <space quantity="3" unit="character"/>  </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="1"><note>Above line 1, letter 4, there may be a trace of another letter, but it is very uncertain.</note></app>
-            <app loc="2"><note>at end ΔΗΣ or ΔΕΥΣ , but neither are attested. ? Δ[Ο]Σ ?</note></app>
-            <app loc="3"><note>after Ἰουλίας perhaps nothing.</note></app>
+            <app loc="1"><note>Above line 2, letter 4, there may be a trace of another letter, but it is very uncertain.</note></app>
+              <app loc="2"><rdg resp="#iaph2007">Ὑψικλίδ<unclear>η</unclear>ς</rdg></app>
             <app loc="4"><note>? καὶ τῆς πόλεω]ς</note></app>
            </listApp>
          </div>
@@ -116,10 +119,10 @@
             <p>[...] of –ia Hypsiklis [...] of [Aur]elia Julia Apphia [...] daughter</p>
          </div>
          <div type="commentary">
-            <p>For an Ammia Hypsikles see 1228 (=Reinach 29)</p>
+            <!-- <p>For an Ammia Hypsikles see 1228 (=Reinach 29)</p> -->
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1974 (<rs type="invNo">74.7</rs>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> in 1974, <citedRange>74.7</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph080243.html">8.243</ref></citedRange></bibl>.</p>
