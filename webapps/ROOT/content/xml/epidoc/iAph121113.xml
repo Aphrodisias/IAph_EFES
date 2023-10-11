@@ -40,7 +40,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote>
-                        <height unit="metre">0.025</height>; ligatures, <foreign xml:lang="grc">ΤΕ</foreign>, line 2, <foreign xml:lang="grc">ΝΗ</foreign> line 7.</handNote>
+                        <height unit="metre">0.025</height><!--  ligatures, ΤΕ</foreign>, line 2,ΝΗ</foreign> line 7. --></handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -80,6 +80,7 @@
          <creation>Sherard papers; Gaudin squeeze, transcribed Reynolds; publications.</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-10-11" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2005-12-13" who="&#xA;-----Elliott-Hall&#xA;----">Batch converted Word2XML</change>
          <change when="2007-01-01" who="&#xA;-----GB&#xA;----">hand tidied</change>
@@ -129,7 +130,7 @@
      <gap reason="lost" unit="character" extent="unknown"/>
      <lb n="4"/>
      <persName type="attested">
-      <name nymRef="#Σέξτιος"><supplied reason="lost">Σ</supplied><supplied reason="lost" evidence="previouseditor">εξστί</supplied>ου</name>
+      <name nymRef="#Σέξτιος"><supplied reason="lost">Σ</supplied><supplied reason="lost" evidence="previouseditor">εσστί</supplied>ου</name>
       <name nymRef="#Διαδουμενός">Διαδουμένου</name>
      </persName>
      <w lemma="κατά">κατὰ</w>
@@ -171,33 +172,31 @@
      <persName type="attested">
       <name nymRef="#Μενιππιανή">Μενιππια<hi rend="ligature">νὴ</hi></name>
      </persName><w lemma="θυγάτηρ">θυγά
-        <lb n="7a" break="no"/><supplied reason="lost">τηρ</supplied></w> <supplied reason="lost"><w lemma="αὐτός">αὐτοῦ</w></supplied>
+        <lb n="7a" break="no"/><supplied reason="lost">τηρ</supplied></w> <supplied reason="lost"><w lemma="αὐτός">αὐτοῦ</w></supplied> <gap reason="lost" extent="unknown" unit="line"/>
      
     </ab>
    </div>
          <div type="apparatus">
            <listApp>
             <app><note>The letters highlighted were recorded by Sherard but do not appear on Gaudin's squeeze.</note></app>
-            <app loc="5"><note><foreign xml:lang="grc">
-                  <supplied reason="lost">Σ</supplied>εσστίου</foreign> Sherard</note></app>
+              <app loc="4"><rdg resp="#iaph2007">[Σ]εξστίου</rdg><!-- check --></app>
+              <app loc="4"><rdg resp="#sherard16">ΚΑΤΕΓΕ</rdg><rdg resp="#gaudin">ΚΑΤΑΓ</rdg></app>
            </listApp>
          </div>
          <div type="translation" n="notyet">
             
          </div>
          <div type="commentary">
-            <p>Boeckh notes that Adrastos and Alexandros are the names of two known Aphrodisian doctors (see
-      <ref type="inscription" n="1548" target="iAph121112"/> (2846)).</p>
+            <!-- <p>Boeckh notes that Adrastos and Alexandros are the names of two known Aphrodisian doctors (see
+      <ref type="inscription" n="1548" target="iAph121112"/> (2846)).</p> -->
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="sherard1716"/> <citedRange>127</citedRange></bibl>; 
+             <p><bibl><ptr target="sherard16"/> <citedRange>127</citedRange></bibl>; 
                 <bibl><ptr target="gaudin"/> <citedRange>4</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published by  <bibl><ptr target="cigII"/>Boeckh, from Sherard, CIG <citedRange>2850</citedRange>
-               </bibl>; by
-      <bibl><ptr target="reinach1906"/>  from Gaudin's squeeze, REG 19, 1906, 257-258, no.
-      <citedRange>150</citedRange>
+            <p><bibl><ptr target="cigII"/> <citedRange>2850</citedRange>
+               </bibl>; <bibl><ptr target="reinach1906"/> <citedRange>150</citedRange>
                </bibl>, whence  <bibl><ptr target="mccabePHI"/>
                   
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257284">406</ref></citedRange>
