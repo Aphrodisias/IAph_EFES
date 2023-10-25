@@ -39,8 +39,9 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.020-0.023</height>
+                     <handNote>i: 
+                        <height unit="metre">0.020</height>;
+                        ii: <height unit="metre">0.023</height>
                      </handNote>
                   </handDesc>
                </physDesc>
@@ -80,6 +81,7 @@
          <creation>Publication</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-10-25" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
          <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -92,22 +94,29 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/><persName type="attested"><name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίῳ</ex></expan></name>  <name nymRef="#Ἀντώνιος"><expan><abbr>Ἀντ</abbr><ex>ωνίῳ</ex></expan></name> <name nymRef="#Ἑρμίας">Ἑρμείῳ</name></persName> <orig>υδ</orig> <gap reason="lost" unit="character" extent="unknown"/>  </ab>
+<div type="textpart" n="i"><ab><lb n="1"/> <gap reason="lost" unit="character" extent="unknown"/> <orig>υδ</orig> <gap reason="lost" unit="character" extent="unknown"/>  </ab></div>
+            <div type="textpart" n="ii"><ab><lb n="1"/><persName type="attested"><name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίῳ</ex></expan></name>  <name nymRef="#Ἀντώνιος"><expan><abbr>Ἀντ</abbr><ex>ωνίῳ</ex></expan></name> 
+   <name nymRef="#Ἑρμίας">Ἑρμείῳ</name></persName> <gap reason="lost" unit="character" extent="unknown"/>  </ab></div>
 </div>
-         <div type="translation">
+         <div type="textpart"><listApp><app><rdg resp="#iaph2007">Κλ(αυδίῳ) Ἀντ(ωνίῳ) Ἑρμείῳ ΥΔ [---]</rdg></app></listApp></div>
+         
+         <div type="translation" xml:lang="en" source="#iaph2007">
             <p>For Cl(audius) Ant(onius) Hermias <gap reason="lost" unit="character" extent="unknown"/>
             </p>
          </div>
-         <div n="notyet" type="commentary">
-            <p> ...</p>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p><note>i</note>: <gap reason="lost" unit="character" extent="unknown"/> Not usefully translatable<gap reason="lost" unit="character" extent="unknown"/></p>
+               <p><note>ii</note>: For Cl(audius) Ant(onius) Hermias <gap reason="lost" unit="character" extent="unknown"/></p>
+            
+         </div>
+         <div type="commentary">
+            <p>Reinach suggested that the change in hands indicated that text i had been erased to accomodate text ii.</p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by Gaudin (no number); not reported subsequently</bibl></p>
+             <p><bibl><ptr target="gaudin"/> <citedRange>158</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published by <bibl><ptr target="reinach1906"/>  from Gaudin's squeeze, <citedRange>195</citedRange>
-              </bibl>, whence  <bibl><ptr target="mccabePHI"/>
-                  
+            <p><bibl><ptr target="reinach1906"/> <citedRange>195</citedRange></bibl>, whence  <bibl><ptr target="mccabePHI"/>
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257822">935</ref></citedRange>
               </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph130010.html">13.10</ref></citedRange></bibl>.</p>
          </div>
