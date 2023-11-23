@@ -32,13 +32,14 @@
                      <supportDesc>
                         <support>
                            <p>
-                              <material key="marmor">White marble</material>
-                              <objectType>block</objectType>, complete, without moulding (<dimensions unit="metre"><width>0.67</width><height>0.42</height><depth>0.70</depth></dimensions>).</p>
+                              <material key="marmor">White marble</material> corner 
+                              <objectType>block</objectType>, complete, without moulding (<dimensions unit="metre"><width>0.69</width><height>0.42</height><depth>0.68</depth></dimensions>); 
+                           the block sjows marks of reuse, perhaps more than once.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> at far left side of block; the text, at least of line 6, must have continued onto an adjacent block.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> at the far left side of block; the text must have begun on an adjacent block, and there is no indication of how long the lines might have been.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -50,10 +51,10 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0300" precision="medium" evidence="lettering">First to third centuries C.E.</origDate>
+                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second to third centuries C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallse">South-east stretch</placeName>:  just south of the South-east gate, west of <ref type="inscription" n="209" target="iAph120516"/> (=MAMA 599)</provenance>
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallse">South-east stretch</placeName>:  just south of the South-east gate, west of <ref type="inscription" target="iAph120516"/></provenance>
                   <provenance type="observed">Findspot</provenance>
                </history>
             </msDesc>
@@ -83,6 +84,7 @@
          <creation>Publications, notebooks, Preliminary transcription (Beard, Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-11-22" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
          <change when="2007-01-01" who="GB">hand tidied</change>
@@ -101,16 +103,35 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/> <w lemma="κωλύω">κωλύ<lb n="2" break="no"/>ει</w>  <w lemma="ὁ">ὁ</w> <w lemma="τόπος">τό<lb n="3" break="no"/>πος</w>  <w lemma="ὁ">τοῦ</w> <lb n="4"/> <w lemma="σίδηρος">σιδήρου</w> <lb n="5"/> <w lemma="ὁ">τὴν</w> <w lemma="δέσις">δέ<lb n="6" break="no"/>σιν</w>  ΕΠΙ <lb n="7"/>  <space quantity="3" unit="character"/>  </ab>
+<ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="κωλύω" part="I">κωλύ
+   <lb n="2" break="no"/><supplied cert="low" reason="lost">ει</supplied></w> <gap reason="lost" extent="unknown" unit="character"/><orig>ειοτο</orig>
+   <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="ἐπίτροπος"><supplied reason="lost" cert="low">ἐπίτρο</supplied>πος</w>  <w lemma="ὁ">τοῦ</w> 
+   <lb n="4"/><supplied reason="lost"><w lemma="Σεβαστός">Σεβαστοῦ</w></supplied><gap reason="lost" extent="unknown" unit="character"/> <w lemma="σίδηρος">σιδήρου</w> 
+   <lb n="5"/><supplied reason="lost"> <w lemma="χρήσις">χρήσεως</w></supplied> <gap reason="lost" extent="unknown" unit="character"/><orig>τ<hi rend="ligature">ὴν</hi>δέ</orig>
+      <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="χρήσις"><supplied reason="lost" cert="low">χρή</supplied>σιν</w>  <orig>ΕΠΙ </orig>
+   <lb n="7" break="no"/>  <space extent="unknown" unit="line"/>  </ab>
 </div>
-         <div type="translation">
+         <div type="apparatus"><listApp>
+            <app><rdg resp="#mama8 #iaph2007">κωλύ/ει ὁ τό/πος τοῦ/σιδήρου/τὴν δέ/σιν ΕΠΙ ( vac)</rdg>
+            
+         </app></listApp></div>
+         <div type="translation" xml:lang="en" source="#kokkinia2005">
+            <p>References to prohibition; to ?an [imperial] procurator; to [?the use] of iron.
+            </p>
+         </div>
+         <div type="translation" xml:lang="en" source="#iaph2007">
             <p>The place prohibits the binding of iron under <gap reason="lost" unit="character" extent="unknown"/>
             </p>
          </div>
          <div type="commentary">
-            <p>CF SEG 1975.984, <foreign xml:lang="grc">μὴ φέρειν σίδηρον ἐς τὸ ἱερόν</foreign>
+            <p>Kokkinia (loc cit) after examining the block, concludes that these are the ends of longer lines, probably from a document dealing with the city's exemption from taxes on iron or nails, 
+               for which see <ref type="inscription" target="iAph080034"/>, <ref type="inscription" target="iAph110412"/> and perhaps <ref type="inscription" target="iAph020307"/>
+               .
             </p>
-            <p><!-- ADD -->SEG 11_1108 MAMA VIII 430. C.Kokkinia, ZPE 151 (2005) 259-262 (ph.), re-examines the inscription, arguing contra MAMA that the text is not complete. It rather preserves ‘the ends, or in any case the right parts, of six lines belonging to a longer text’ (261). She suggests placing the inscription in the context of a series of documents from Aphrodisias dealing with exemption from taxes on iron or nails (cf. Aphrodisias and Rome 15 [with SEG 33 855] and 51; SEG 50 1096]): ‘MAMA VIII 430 most likely carried yet another document, the fourth such text from Aphrodisias, relating to an important privilege of tax-exemption’ (262). The following reconstruction is suggested:
+            <p><!-- ADD SEG 11_1108 MAMA VIII 430. C.Kokkinia, ZPE 151 (2005) 259-262 (ph.), re-examines the inscription, arguing contra MAMA that the text is not complete. 
+               It rather preserves ‘the ends, or in any case the right parts, of six lines belonging to a longer text’ (261). She suggests placing the inscription in the context of a series of documents 
+               from Aphrodisias dealing with exemption from taxes on iron or nails (cf. Aphrodisias and Rome 15 [with SEG 33 855] and 51; SEG 50 1096]): ‘MAMA VIII 430 most likely carried yet another document, 
+               the fourth such text from Aphrodisias, relating to an important privilege of tax-exemption’ (262). The following reconstruction is suggested:
                
                [· · ? · ·] κωλύ-
                [ει · · ? · ·]ΕΙ Ο ΤΟ
@@ -118,21 +139,23 @@
                [Σεβαστοῦ · · ? · ·] σιδήρου
                [χρήσεως · · ? · ·]ΤΗΝΔΕ
                [· · ? · · χρή?]σιν ΕΠΙ
-               [· · ? · ·]</p>
+               [· · ? · ·]--></p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Copied by Deering (f.2v); copied by the MAMA expedition in 1934; recorded by the NYU expedition in 1977.</bibl></p>
+            <p><bibl><ptr target="deering"/> in <citedRange>f.2v</citedRange>.</bibl>; 
+               <bibl><ptr target="calder"/><citedRange></citedRange></bibl>; 
+               <bibl><ptr target="nyu"/> in <citedRange>1977</citedRange>.</bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="mama8"/> <citedRange>430</citedRange>
-              </bibl>, whence <bibl><ptr target="robert1965"/>Hellenica 13, 171-172</bibl>, <bibl><ptr target="BE"/>  <citedRange>1966.395</citedRange>
-              </bibl>, <bibl n="robert1983"><ptr target="robert1983"/> <citedRange>510-511</citedRange></bibl>, 
+              </bibl>, whence <bibl><ptr target="robert1965"/> <citedRange>171-172</citedRange></bibl>, <bibl><ptr target="robertBE"/>  <citedRange>1966.395</citedRange>
+              </bibl>, <bibl><ptr target="robert1983"/> <citedRange>510-511</citedRange></bibl>, 
                <bibl><ptr target="seg"/> <citedRange>1983.855</citedRange></bibl>, 
-               <bibl n="robert1984"> <citedRange>457</citedRange></bibl>, <bibl><ptr target="robertBE"/>  <citedRange>1984.409</citedRange>
+               <bibl><ptr target="robert1984"/> <citedRange>457</citedRange></bibl>, <bibl><ptr target="robertBE"/>  <citedRange>1984.409</citedRange>
               </bibl>,  <bibl><ptr target="mccabePHI"/>
-                  
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257261">383</ref></citedRange>
-              </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120510.html">12.510</ref></citedRange></bibl>.</p>
+              </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120510.html">12.510</ref></citedRange></bibl>; 
+               <bibl><ptr target="kokkinia2005"/><citedRange></citedRange></bibl>, whence <bibl><ptr target="seg"/> <citedRange>55.1108</citedRange></bibl></p>
          </div>
       </body>
    </text>
