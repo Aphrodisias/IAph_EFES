@@ -10,6 +10,7 @@
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
@@ -55,7 +56,7 @@
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwgate">West Gate</placeName>: re-used, upside down, in the southern pier.</provenance>
-                  <provenance type="observed">Findspot</provenance>
+                  <provenance type="observed">Findspot (2002)</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -92,6 +93,7 @@
    </teiHeader>
    <facsimile>
       <surface>
+         <!-- PHOTO 2002 02.014 (3-6) -->
          <graphic url="2002_A_22.jpg">
             <desc>Face (2002)</desc>
          </graphic>
@@ -105,13 +107,13 @@
    </facsimile>
    <text>
       <body>
-         <div type="edition" xml:lang="grc" xml:space="preserve"><!-- check 2002 report -->
+         <div type="edition" xml:lang="grc" xml:space="preserve"><!--  Ask AC-->
 
 <ab><lb n="0"/>    <supplied reason="lost" cert="low"><w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w></supplied>
    <lb n="1"/><space unit="character" quantity="2"/> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆ<unclear>μ</unclear><supplied reason="lost">ος</supplied></w>  <supplied reason="lost"><space unit="character" quantity="2"/></supplied>
    <lb n="2"/><persName type="attested"><name nymRef="#Τιβέριος"><supplied reason="lost">Τι</supplied>βέριον</name>  <name nymRef="#Κλαύδιος">Κλ<supplied reason="lost">αύδιον</supplied></name>  
-      <lb n="3"/><name nymRef="#Ἀντώνιος"><supplied reason="lost">Ἀ</supplied>ντώνιον</name>  <name nymRef="#Διογένης">Δ<supplied reason="lost" cert="low">ιογένην</supplied></name>
-      <lb n="4" break="no"/><name nymRef="#Ἀμμιανός"><supplied reason="lost">Ἀ</supplied><unclear>μ</unclear>μιανὸν</name>  <g ref="#stop"/>  <w lemma="υἱός">υ<supplied reason="lost">ἱὸν</supplied></w>  <supplied reason="lost"><space unit="character" quantity="1"/></supplied>
+      <lb n="3"/><name nymRef="#Ἀντώνιος"><supplied reason="lost">Ἀ</supplied>ντώνιον</name>  <name nymRef="#Διογένης">Δ<supplied reason="lost">ο</supplied>
+      <lb n="4" break="no"/><supplied reason="lost">κ</supplied><unclear>ι</unclear>μιανὸν</name>  <g ref="#stop"/>  <w lemma="υἱός">υ<supplied reason="lost">ἱὸν</supplied></w> 
       <lb n="5"/><persName type="attested"><name nymRef="#Τιβέριος"><supplied reason="lost">Τι</supplied>βερίου</name>  <name nymRef="#Κλαύδιος">Κλα<supplied reason="lost">υδίου</supplied></name>  
          <lb n="6"/><name nymRef="#Ἀντώνιος"><supplied reason="lost">Ἀ</supplied>ντωνίου</name>  <name nymRef="#Δομετῖνος">Δο<supplied reason="lost" cert="low">μετι</supplied>
             <lb n="7" break="no"/>  <g ref="#leaf"/>  <g ref="#stop"/>  νοῦ</name>  <name nymRef="#Ἑρμίας">Ἑρμί<unclear>ο</unclear><supplied reason="lost" cert="low">υ</supplied></name></persName></persName>  </ab>
@@ -119,24 +121,23 @@
          <div type="apparatus">
            <listApp>
             <app><note>Fellows had considerable difficulty in reading this stone, which was more easily understood from a squeeze, before the clearing of the West Gate in 2002</note></app>
-            <app loc="4-5"><note>Cormack read an upright at the beginning of line 4 and so restored <foreign xml:lang="grc">Δ<supplied reason="lost">ο</supplied>
-                  <lb/>
-                  <supplied reason="lost">κ</supplied>ιμιανὸν</foreign>. and, in lines 6-7 <foreign xml:lang="grc">Δο<supplied reason="lost">κιμια</supplied>νοῦ</foreign>; but there is no parallel to support this 
-               conjecture.  We do not read the upright on the squeeze. </note></app>
-<app loc="7"><note>Cormack proposed <foreign xml:lang="grc">Ἕρμιο<supplied reason="lost">ν</supplied>
-               </foreign>, a further name for the son; but the accusative would probably be written with an alpha</note></app>
-
-           </listApp>
+              <app loc="0"><rdg resp="#iaph2007">[ἡ βουλὴ καὶ?]</rdg> <note>Kubitschek indicated a vacat</note></app>
+              <app loc="3"><rdg resp="#iaph2007">[Ἀ]ντώνιον Δ[ιογένην?]</rdg></app>
+              <app loc="4"><rdg resp="#iaph2007">[Ἀ]μ̣μιανὸν</rdg></app>
+              <app loc="6-7"><rdg resp="#iaph2007">Δο[μετι?-]/νοῦ Ἑρμίο̣[υ?] </rdg></app> </listApp>
          </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" source="#iaph2007">
             <p>[? The Council and] the People (honoured) [Ti]berius Cl[audius A]ntonius D[iogenes? ?Am]mianos [son of] [Ti]berius Cla[udius A]ntonius Do[meti]nos Hermias.</p>
+         </div>
+         <div type="translation" xml:lang="en" resp="#AC">
+            <p>The people (set up the statue) of Tiberius Claudius Antonius Dociminanus Hermios, the son of Tiberius Claudius Antonius Dociminianus.</p>
          </div>
          <div type="commentary">
             </div>
          <div type="bibliography" subtype="transcription">
             <p><bibl><ptr target="kubit"/> <citedRange>K.III.3b</citedRange>, <citedRange>Abklatsch 114</citedRange></bibl>; 
                <bibl><ptr target="calder"/><citedRange></citedRange></bibl>; 
-               <bibl><ptr target="nyu"/><citedRange></citedRange></bibl></p>
+               <bibl><ptr target="nyu"/> <citedRange>02.004 </citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="fellows1841"/> <citedRange>66</citedRange>
