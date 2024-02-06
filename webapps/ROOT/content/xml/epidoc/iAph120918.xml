@@ -32,7 +32,8 @@
                      <supportDesc>
                         <support>
                            <p>Four adjoining fragments of a <material>white marble</material>
-                              <objectType>block</objectType> (together <width unit="metre">1.34</width> <height unit="metre">0.395</height> <depth unit="metre">0.36</depth>).</p>
+                              <objectType>block</objectType> (together <dimensions><width unit="metre">1.34</width> <height unit="metre">0.395</height> <depth unit="metre">0.36</depth></dimensions>), 
+                           with the right side surviving.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -42,7 +43,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote>
-                        <height unit="metre">0.03</height>. Ligatures <foreign xml:lang="grc">NH</foreign>, lines 1, 4; <foreign xml:lang="grc">MH</foreign>, line 5; <foreign xml:lang="grc">HN</foreign>, line 8</handNote>
+                        <height unit="metre">0.03</height>. <!-- Ligatures NH, lines 1, 4; MH, line 5; HN, line 8 --></handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -85,6 +86,7 @@
          <creation>Preliminary transcription (Reynolds);  publications.</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-06" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-04-04" who="Charlotte-Tupman">tidied, corrected,  and brought up to date</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -96,7 +98,7 @@
             <desc>Upper and lower left fragments  (M. Roueché, 1975)</desc>
          </graphic>
          <graphic url="75_K_08A.jpg">
-            <desc>Upper right fragment  (M. Roueché, 1975)</desc>
+            <desc>Upper and lower right fragments  (M. Roueché, 1975)</desc>
          </graphic>
          <graphic url="73_S_28.jpg">
             <desc>Lower fragments  (M. Roueché, 1973)</desc>
@@ -118,8 +120,7 @@
  <w lemma="ὁ">τοῦ</w>
  <w lemma="βωμός">βωμοῦ</w>
  <w lemma="σορός">σ<supplied reason="lost">ορὸς</supplied></w>
- <w lemma="ἐν"><unclear>ἐ</unclear>ν</w>
- <w lemma="ὁ"><unclear>ἧ</unclear></w>
+ <w lemma="ἐν"><unclear>ἐ</unclear><hi rend="ligature" xml:id="lig1">ν</hi></w><link target="#lig1 #lig2"/> <w lemma="ὅς"><hi rend="ligature" xml:id="lig2"><unclear>ἧ</unclear></hi></w>
  <w lemma="κηδεύω">κεκήδευται</w> <space unit="character" quantity="3"/>
  <lb n="2"/>
 <gap reason="lost" unit="character" extent="unknown"/>
@@ -137,61 +138,58 @@
  <gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ε</unclear></orig>
  <space quantity="4" unit="character"/>
  <w lemma="ὁ">τοῦ</w> <w lemma="βωμός">βώμοῦ</w> <w lemma="ἤ">ἢ</w> <w lemma="ὁ">τῶν</w>
- <w lemma="εἰσώστη">εἰσώστω<hi rend="ligature" xml:id="lig1">ν</hi></w>
- <link target="#lig1 #lig2"/><w lemma="ἤ"><hi rend="ligature" xml:id="lig2">ἢ</hi></w>
+ <w lemma="εἰσώστη">εἰσώστω<hi rend="ligature" xml:id="lig3">ν</hi></w>
+ <link target="#lig3 #lig4"/><w lemma="ἤ"><hi rend="ligature" xml:id="lig4">ἢ</hi></w>
  <w lemma="ὁ">τῆς</w> 
  <lb n="5"/>
  <w lemma="σορός"><supplied reason="lost">σοροῦ</supplied></w>
  <gap reason="lost" unit="character" extent="unknown"/>
  <w lemma="μηδείς"><hi rend="ligature">μη</hi>δένα</w> <w lemma="τρόπος">τρόπον</w> <w lemma="ἐπεί">ἐπεὶ</w>
  <w lemma="ὁ">ὁ</w> <w lemma="ἐπιχειρέω">ἐπιχειρήσας</w>
- <w>διε<space quantity="1" unit="character"/><lb n="6" break="no"/><gap reason="lost" unit="character" extent="unknown"/></w>
- <w lemma="ἀσεβής"><supplied reason="lost">ἀσεβὴς</supplied></w> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>
- <w lemma="τυμβωρύχος"><supplied reason="lost">τυμβωρύχος</supplied></w>
+ <w>διε</w><space quantity="1" unit="character"/>
+    <lb n="6" break="no"/><gap reason="lost" unit="character" extent="unknown"/> <supplied reason="lost"><w lemma="εἰμί">ἔστω</w> <w lemma="ἀσεβής">ἀσεβὴς</w> <w lemma="καί">καὶ</w> <w lemma="τυμβωρύχος">τυμβωρύχος</w></supplied>
  <w lemma="καί"><supplied reason="lost">κ</supplied><unclear>α</unclear>ὶ</w>
  <w lemma="ἐπάρατος">ἐπάρατος</w> <w lemma="καί">καὶ</w> <w lemma="προσαποτίνω">προσαποτεισάτω</w> <persName type="divine" ref="#aphrodite"><w lemma="θεά">θεᾷ</w>
  <space quantity="1" unit="character"/>
  <lb n="7"/>
- <name nymRef="#Ἀφροδίτη"><supplied reason="lost">Ἀφροδίτῃ</supplied></name></persName>
+ <name nymRef="#Ἀφροδίτη"><supplied reason="lost">Ἀφροδείτῃ</supplied></name></persName>
  <gap reason="lost" unit="character" extent="unknown"/>
  <w lemma="καί">καὶ</w>  <w lemma="δισχειλιος"><supplied reason="lost">δι</supplied><unclear>σχειλια</unclear></w>
  <w lemma="εἰμί">ἐστιν</w> <w lemma="δέ"><unclear>δ</unclear>ὲ</w>
- <w lemma="καί">καὶ</w> <w lemma="μέρος">μέρος</w> <w lemma="ὁ">τῇς</w> <w lemma="ὁ">τοῦ</w>
+ <w lemma="καί">καὶ</w> <w lemma="μέρος">μέρος</w> <w lemma="ὁ">τῆς</w> <w lemma="ὁ">τοῦ</w>
  <persName type="attested"><name nymRef="#Παπίας">Πάπ<lb n="8" break="no"/><supplied reason="lost">ίου</supplied></name></persName>
  <w lemma="σορός"><supplied reason="lost">σοροῦ</supplied></w>
  <gap reason="lost" unit="character" extent="unknown"/>
  <w lemma="τίθημι"><supplied reason="lost">τε</supplied>θ<hi rend="ligature">ῆν</hi>αι</w>
- <w lemma="βούλομαι">βούλομα<supplied reason="lost">ι</supplied></w>
- <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w>  <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w>
- <w lemma="σορός"><supplied reason="lost">σορῷ</supplied></w>
- <w lemma="μετά"><supplied reason="lost">με</supplied><unclear>τ</unclear>ὰ</w>
- <w lemma="ὁ">τοῦ</w> <w lemma="υἱός">υἱ<lb n="9" break="no"/><supplied reason="lost">οῦ</supplied></w>
- <w lemma="μηδείς"><supplied reason="lost">μηδεὶς</supplied></w>  <w lemma="ἔχω"><supplied reason="lost">ἐχέ</supplied>τω</w>
- <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="θάπτω">θάψαι</w> <w lemma="σωματεῖον">σωμάτειον</w>
- <orig>ε</orig><gap reason="lost" unit="character" quantity="4"/>
+ <w lemma="βούλομαι">βούλομα<supplied reason="lost" evidence="previouseditor">ι</supplied></w>
+ <supplied reason="lost" evidence="previouseditor"><w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῇ</w> <w lemma="σορός">σορῷ</w></supplied>
+ <w lemma="μετά"><supplied reason="lost" evidence="previouseditor">με</supplied><unclear>τ</unclear>ὰ</w>
+ <w lemma="ὁ">τοῦ</w> <w lemma="υἱός">υἱ
+    <lb n="9" break="no"/><supplied reason="lost">οῦ</supplied></w><gap reason="lost" unit="character" extent="unknown"/> <supplied reason="lost"><w lemma="ἕτερος">ἕτερος</w> <w lemma="δέ">δὲ</w> 
+ <w lemma="μηδείς">μηδεὶς</w></supplied>  <w lemma="ἔχω"><supplied reason="lost">ἐχέ</supplied>τω</w>
+ <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="θάπτω">θά<unclear>ψαι</unclear></w> <w lemma="σωματεῖον"><unclear>σωμάτειον</unclear></w>
+ <orig><unclear>ε</unclear></orig><gap reason="lost" unit="character" quantity="4"/>
  <lb n="10"/>
  <gap reason="lost" unit="character" extent="unknown"/> 
  <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w>
 
- <placeName type="ethnic" ref="#aphrodisias" nymRef="#Ἀφροδεισιεύς">Ἀφροδε<supplied reason="lost">ισιέω</supplied><unclear>ν</unclear></placeName>
+ <persName type="divine" ref="#aphrodite" nymRef="#Ἀφροδεισιεύς">Ἀφροδε<supplied reason="lost">ίτῃ</supplied><gap reason="lost" unit="character" quantity="2"/><orig><unclear>ν</unclear></orig></persName>
 
  <w lemma="ἑξάκις"><supplied reason="lost">ἑξα</supplied>κὶς</w>
  <w lemma="χίλιοι">χίλια</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>
- <w lemma="τυμβωρύχος"><supplied reason="lost">τυμβωρύχος</supplied></w>
+ <w lemma="τυμβωρύχος"><supplied reason="lost" evidence="previouseditor">τυμβω</supplied><supplied reason="lost">ρύχος</supplied></w>
  <gap reason="lost" unit="character" extent="unknown"/>
  <lb n="11"/>
- <gap reason="lost" unit="character" extent="unknown"/><orig>τω</orig>
+ <gap reason="lost" unit="character" extent="unknown"/><w lemma="εἰμί"><supplied reason="lost">ἔσ</supplied>τω</w>
  <space quantity="3" unit="character"/>
  <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπ<unclear>ι</unclear>γραφῆς</w>
- <w lemma="ἀντίγραφον">ἀντί<unclear>γ</unclear><supplied reason="lost">ραφον</supplied></w>
- <w lemma="ἀποτίθημι"><supplied reason="lost">ἀπετέθη</supplied></w>
- <lb n="12"/>
- <w lemma="εἰς"><supplied reason="lost">εἰς</supplied></w> 
- <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> 
- <w lemma="ἀρχεῖον"><supplied reason="lost">ἀρχεῖον</supplied></w> 
- <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>
- <w lemma="στεφανηφόρος"><supplied reason="lost">στεφανηφόρου</supplied></w> 
- <w><gap reason="lost" unit="character" extent="unknown"/>ωνος</w>
+ <w lemma="ἀντίγραφον">ἀντί<unclear>γ</unclear><supplied reason="lost" evidence="previouseditor">ραφον</supplied></w>
+ <w lemma="ἀποτίθημι"><supplied reason="lost" evidence="previouseditor">ἀπε</supplied><supplied reason="lost">τέθη</supplied></w>
+ <lb n="12"/><supplied reason="lost">
+ <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεοφυλάκιον">χρεοφυλάκιον</w> 
+ <w lemma="ἐπί">ἐπὶ</w> 
+ <w lemma="στεφανηφόρος">στεφανηφόρου</w> </supplied>
+ <gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="-ων"><seg part="F">ωνος</seg></name></persName>
  <w lemma="μείς"><supplied reason="lost">μ</supplied>ηνὸς</w>
  <persName type="attested"><name>Ξανδικ<supplied reason="lost">οῦ</supplied></name></persName>
  <supplied reason="lost" cert="low"><space quantity="10" unit="character"/></supplied>
@@ -199,17 +197,20 @@
 </div>
          <div type="apparatus">
            <listApp>
-            <app><note>Some letters read by Loew but not by MAMA are now readable again.</note></app>
+            <app><note>Some letters read by Loew but not by MAMA are now readable again; others are underlined</note></app>
+              <app loc="10"><rdg resp="#iaph2007">[--- τῇ] Ἀφροδε[ισιέω]ν̣</rdg></app>
            </listApp>
          </div>
          <div n="notyet" type="translation">
-            <p>No translation yet (2007)</p>
+            
          </div>
          <div n="notyet" type="commentary">
-            <p>No commentary yet (2007)</p>
+            
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Copied by Loew; recorded by the MAMA expedition; by the NYU expedition, together with three further fragments (<rs type="invNo">75.138</rs>, <rs type="invNo">75.139</rs>, <rs type="invNo">75.140</rs>).</bibl></p>
+            <p>Lines 7-12: <bibl><ptr target="loew"/><citedRange></citedRange> </bibl>; 
+               <bibl><ptr target="calder"/><citedRange></citedRange></bibl>; 
+               <bibl><ptr target="nyu"/> together with three further fragments <citedRange>75.138</citedRange>, <citedRange>75.139</citedRange>, <citedRange>75.140</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="franz1847"/> <citedRange>b.11</citedRange>
