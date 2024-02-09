@@ -33,7 +33,7 @@
                      <supportDesc>
                         <support>
                            <p>Nine fragments of six <material key="marmor">white marble</material>
-                              <objectType>architrave</objectType> blocks.</p>
+                              <objectType>architrave</objectType> blocks.</p><!-- add dimensions from photo -->
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -47,13 +47,12 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Findspot
-                     </origPlace>
+                     <origPlace><placeName ref="#aphsebast">Sebasteion</placeName>, <placeName type="monuList" ref="#aphsebastsport">South Portico</placeName>, west end</origPlace>
                      <origDate notBefore="0041" notAfter="0054" evidence="reign">A.D. 41-54</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>:
-                     <placeName ref="#aphsebast">Sebasteion</placeName>, <placeName type="monuList" ref="#aphsebastsport">South Portico</placeName></provenance>
-                  <provenance type="observed" when="1980">Museum (1980)</provenance>
+                     <placeName ref="#aphsebast">Sebasteion</placeName>, near west end of <placeName type="monuList" ref="#aphsebastsport">South Portico</placeName></provenance>
+                  <provenance type="observed" when="1980">Museum </provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -89,6 +88,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-09" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-03-05" who="GB">DONE</change>
          <change when="2007-01-19" who="Charlotte-Tupman">hand tidied</change>
@@ -129,23 +129,31 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/> <milestone unit="block" n="a"/> <persName type="divine" ref="#aphrodite"><name>Ἀφροδίτηι</name></persName> <g ref="#star"/>  <w>θε<gap reason="omitted" unit="character" quantity="1"/>ι</w>  <persName type="divine">Σεβαστ<milestone unit="block" n="b"/><gap reason="omitted" unit="character" extent="unknown"/></persName>  <persName type="emperor"><name nymRef="#Τιβέριος"><supplied reason="omitted">Τιβερ</supplied>ίωι</name> <name nymRef="#Κλαύδιος">Κλαυδίωι</name> <w lemma="καῖσαρ">Κ<milestone unit="block" n="c"/><supplied reason="lost">αί</supplied>σαρι</w></persName><g ref="#star"/> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δήμωι</w> <g ref="#dolphin"/><milestone unit="block" n="d"/> <persName type="attested"><name nymRef="#Τιβέριος">Τιβέριος</name> <name nymRef="#Κλαύδιος">Κλαύδιος</name> <milestone unit="block" n="e"/><name nymRef="#Διογένης">Διογένης</name></persName> <w lemma="φιλοπολίτης">φιλοπολίτης</w>  <milestone unit="block" n="f"/><w lemma="ὅς">ἃ</w> <w lemma="ἐπαγγέλλω">ἐπηνγείλατο</w> <lb n="2"/>   <milestone unit="block" n="a"/><space quantity="3" unit="character"/> <persName type="attested"><name nymRef="#Διογένης">Διογένης</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="πατήρ">πατὴ<milestone unit="block" n="b"/><supplied reason="lost">ρ</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">α</supplied>ὐτοῦ</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀτταλίς">Ἀτταλὶς</name></persName> <space unit="character" quantity="1"/>  <milestone unit="block" n="c"/> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <persName type="attested"><name nymRef="#Ἄτταλος">Ἀττάλ<milestone unit="block" n="d"/>ου</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="θεῖοσ1">θείου</w> <w lemma="ὁ">τὸ</w> <w lemma="κατά">καθ'</w> <w lemma="ἑαυτοῦ">ἑαυτὸν</w> <w lemma="μέρος">μέρος</w> <space unit="character" quantity="1"/> <w>ἀποκα</w>  <w><supplied reason="lost">θ</supplied>έσστησεν</w>    <space quantity="3" unit="character"/></ab>
+<ab><lb n="1"/> <milestone unit="block" n="a"/> <persName type="divine" ref="#aphrodite"><name>Ἀφροδίτηι</name></persName> <g ref="#star"/>  <w>θε<gap reason="omitted" unit="character" quantity="1"/>ι</w>  <persName type="divine">Σεβαστ<milestone unit="block" n="b"/><gap reason="omitted" unit="character" extent="unknown"/></persName>  <persName type="emperor"><name nymRef="#Τιβέριος"><supplied reason="omitted">Τιβερ</supplied>ίωι</name> <name nymRef="#Κλαύδιος">Κλαυδίωι</name> <w lemma="καῖσαρ">Κ<milestone unit="block" n="c"/><supplied reason="lost">αί</supplied>σαρι</w></persName><g ref="#star"/> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δήμωι</w> <g ref="#dolphin"/><milestone unit="block" n="d"/> <persName type="attested"><name nymRef="#Τιβέριος">Τιβέριος</name> <name nymRef="#Κλαύδιος">Κλαύδιος</name> <milestone unit="block" n="e"/><name nymRef="#Διογένης">Διογένης</name></persName> <w lemma="φιλοπολίτης">φιλοπολίτης</w>  <milestone unit="block" n="f"/><w lemma="ὅς">ἃ</w> <w lemma="ἐπαγγέλλω">ἐπηνγείλατο</w> 
+   <lb n="2"/>   <milestone unit="block" n="a"/><space/> <persName type="attested"><name nymRef="#Διογένης">Διογένης</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="πατήρ">πατὴ<milestone unit="block" n="b"/><supplied reason="lost">ρ</supplied></w>  <w lemma="αὐτός"><supplied reason="lost">α</supplied>ὐτοῦ</w> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ἀτταλίς">Ἀτταλὶς</name></persName> <space unit="character" quantity="1"/>  <milestone unit="block" n="c"/> <w lemma="καί">καὶ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <persName type="attested"><name nymRef="#Ἄτταλος">Ἀττάλ<milestone unit="block" n="d"/>ου</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="θεῖοσ1">θείου</w> <w lemma="ὁ">τὸ</w> <w lemma="κατά">κα<milestone unit="block" n="e"/>θ'</w><w lemma="ἑαυτοῦ">ἑαυτὸν</w> <w lemma="μέρος">μέρος</w> <space unit="character" quantity="1"/> <w>ἀποκα<milestone unit="block" n="f"/><supplied reason="lost">θ</supplied>έσστησεν</w>    <space/></ab>
 </div>
          <div type="apparatus">
            <listApp>
             <app loc="1"><note>The first letters of the second block were never incised, although traces of an ordinator's tool may be detected.</note></app>
            </listApp>
          </div>
-         <div type="translation">
-            <p>For Aphrodite, for the God (?Goddess) Augustus (?Augusta), for Tiberius Claudius Caesar, for the People, Tiberius Claudius Diogenes, friend of the citizens, restored what Diogenes his father promised, and Attalis, and also on behalf of his uncle Attalos his part.</p>
+         <div type="translation" xml:lang="en" source="#rrrs2013">
+            <p>To Aphrodite, <note>star</note> (the) The() Sebast(), (Tiber)ius Claudius Caesar, <note>star</note> (and) the Demos, 
+               Tiberios Klaudius Diogenes Philopolites restored <note>singular</note>
+               what his father Diogenes and Attalis (had) pledged <note>singular!</note>, and (he also restored) on behalf of his uncle Attalos his own part.</p>
          </div>
+         <div type="translation" xml:lang="en" source="#iaph2007">
+            <p>For Aphrodite, for the God (?Goddess) Augustus (?Augusta), for Tiberius Claudius Caesar, for the People, Tiberius Claudius Diogenes, 
+               friend of the citizens, restored what Diogenes his father promised, and Attalis, and also on behalf of his uncle Attalos his part.</p>
+         </div>
+         
          <div type="commentary">
             <p>It cannot be determined with certainty whether this is a dedication to a god Augustus—so Augustus himself–or a goddess Augusta—refering to Livia. </p>
          </div>
          <div type="bibliography" subtype="transcription">
              <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1979 and 1980 
-                     (a.  <rs type="invNo">79.109</rs>; b.  <rs type="invNo">80.66</rs> + <rs type="invNo">80.67</rs>; c.  <rs type="invNo">80.60</rs>; d.  
-                     <rs type="invNo">80.62</rs> + <rs type="invNo">80.65</rs>; e. <rs type="invNo">80.64</rs> + <rs type="invNo">80.63</rs>. f. <rs type="invNo">80.91</rs>)</bibl></p>
+                (a.  <citedRange>79.109</citedRange>; b:  <citedRange>80.66</citedRange> + <citedRange>80.67</citedRange>; c:  <citedRange>80.60</citedRange>; d.:  
+                <citedRange>80.62</citedRange> + <citedRange>80.65</citedRange>; e: <citedRange>80.64</citedRange> + <citedRange>80.63</citedRange>. f: <citedRange>80.91</citedRange>)</bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="jmr1981b"/> <citedRange>1</citedRange></bibl>, whence 
@@ -154,8 +162,10 @@
               </bibl>,  <bibl><ptr target="mccabePHI"/>
                   <citedRange><ref target="https://epigraphy.packhum.org/text/256984">106</ref></citedRange>
               </bibl>; 
-               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph090025.html">9.25</ref></citedRange></bibl>.
-               mentioned Erim, RA (1982) I, 165 <!-- check -->, <bibl><ptr target="kte1982"/> <citedRange>278</citedRange></bibl> .<!-- check --></p>
+               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph090025.html">9.25</ref></citedRange></bibl>;
+               <bibl><ptr target="rrrs2013"/> <citedRange>Ded. 6</citedRange></bibl>, 
+               whence <bibl><ptr target="seg"/>63.848</bibl>.
+             <!--   mentioned Erim, RA (1982) I, 165 check , <bibl><ptr target="kte1982"/> <citedRange>278</citedRange></bibl>  --></p>
          </div>
       </body>
    </text>
