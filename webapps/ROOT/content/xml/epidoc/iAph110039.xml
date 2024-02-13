@@ -81,6 +81,7 @@
          <creation>Preliminary transcription (Reynolds);  publications</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-12" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
          <change when="2007-01-01" who="GB">hand tidied</change>
@@ -99,25 +100,28 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>  <gap reason="lost" unit="character" quantity="19"/>  <supplied reason="lost"><w>ψυχὴ</w> <w>γὰρ</w></supplied>  
-   <lb n="2"/><supplied reason="lost"><w>σώματος</w> <w>οὐκέτι</w> <w>νῦν</w></supplied>  <w lemma="ἄλυτος"><supplied reason="lost">ἀλ</supplied>ύτο<supplied reason="lost">ις</supplied></w>  
-   <lb n="3"/>  <space quantity="3" unit="character"/> <w lemma="δεσμός">δεσμοῖσι</w> <w lemma="κρατέω">κρατεῖται</w> 
-   <lb n="4"/> <w lemma="εἰς">εἰς</w> <w lemma="αἰών">αἰῶνα</w> <w lemma="μένω">μένουσα</w> <w lemma="πάλαι">πάλαι</w> 
-   <lb n="5"/>  <space quantity="3" unit="character"/> <w lemma="ὁ">τὸν</w> <w lemma="λυσιμέριμνος">λυσιμέριμνον</w> </ab>
+<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>   
+   <lb n="1"/>  <gap reason="lost" unit="character" quantity="20"/> <w lemma="ἄλυτος"><supplied reason="lost">ἀλ</supplied>ύτο<supplied reason="lost">ις</supplied></w>  
+   <lb n="2"/>  <space quantity="3" unit="character"/> <w lemma="δεσμός">δεσμοῖσι</w> <w lemma="κρατέω">κρατεῖται</w> 
+   <lb n="3"/> <w lemma="εἰς">εἰς</w> <w lemma="αἰών">αἰῶνα</w> <w lemma="μένω">μένουσα</w> <w lemma="πάλαι">πάλαι</w> 
+   <lb n="4"/>  <space quantity="3" unit="character"/> <w lemma="ὁ">τὸν</w> <w lemma="λυσιμέριμνος">λυσιμέρι<hi rend="ligature">μν</hi>ον</w> </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="1-2"><note>The supplements are suggested by Peek; MAMA conjectured <foreign xml:lang="grc">καμάτων ἀλ]ύτο[ις]</foreign>
-            </note></app>
+              
+              <app loc="1"><rdg source="#kaibel1878 #ramsay1897 #mama8">καμάτων ἀλ]ύτο[ις]</rdg> <rdg source="#peek1980 #iaph2007">[ψυχὴ γὰρ]/[σώματος οὐκέτι νῦν ἀλ]ύτο[ις] </rdg>
+                 <rdg source="#steinepig">ἀλ]ύτο[ις]</rdg>
+            </app>
+              
            </listApp>
          </div>
          <div type="translation" n="notyet">
             <p>No translation yet (2007)</p>
          </div>
          <div type="commentary">
-            <p>A funerary inscription in hexameters</p>
+         <!--    <p>A funerary inscription in hexameters</p>
             <p>The contents may be Christian (as assumed by earlier editors) but the lettering is not later than the third century</p>
-         </div>
+         --> </div>
          <div type="bibliography" subtype="transcription">
             <p> <bibl><ptr target="waddington"/><citedRange></citedRange></bibl>; 
                 <bibl><ptr target="kubit"/> <citedRange>???</citedRange></bibl>; 
@@ -126,8 +130,10 @@
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="lbw"/> <citedRange unit="entry">1648</citedRange>
-              </bibl>, whence <bibl><ptr target="ramsay1897"/> <citedRange>430</citedRange>
-              </bibl>, <bibl><ptr target="kaibel1878"/> <citedRange>429</citedRange></bibl>, <bibl><ptr target="igc"/> <citedRange>279</citedRange>
+              </bibl>, whence <bibl><ptr target="kaibel1878"/> <citedRange>429</citedRange></bibl>, 
+               <bibl><ptr target="ramsay1897"/> <citedRange>430</citedRange>
+               </bibl>, 
+               <bibl><ptr target="igc"/> <citedRange>279</citedRange>
               </bibl><!-- , <bibl>Cabrol, <title>Dict</title>. vol. 14, col. 796, no. 24</bibl> -->; 
                <bibl><ptr target="mama8"/> <citedRange unit="entry">601</citedRange>
               </bibl>, whence <bibl><ptr target="peek1980"/> <citedRange>12</citedRange></bibl>, 
