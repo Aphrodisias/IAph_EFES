@@ -34,7 +34,8 @@
                            <p>
 Two adjoining fragments of a <material key="marmor">white marble</material>
                               <objectType>
-                                 <objectType>statue base</objectType> shaft</objectType>, without moulding (together <height unit="metre">0.46</height> × <width unit="metre">1.08</width> × <depth unit="metre">0.42</depth>). The upper left corner survives as a separate fragment.</p>
+                                 <objectType>statue base</objectType> shaft</objectType>, without moulding (together <dimensions><height unit="metre">0.46</height> <width unit="metre">1.08</width> <depth unit="metre">0.42</depth></dimensions>). 
+                              The upper left corner survives as a separate fragment.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -44,7 +45,7 @@ Inscribed on the face; the text must have begun on a crowning feature.</layout>
                   </objectDesc>
                   <handDesc>
                      <handNote>
-                        <height unit="metre">0.025</height>; ligature, <foreign xml:lang="grc">ΤΗ</foreign> line 3.</handNote>
+                        <height unit="metre">0.025</height><!-- ; ligature, <foreign xml:lang="grc">ΤΗ</foreign> line 3. --></handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -55,8 +56,8 @@ Unknown.</origPlace>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallses">South (east part)</placeName>: reused in the excavated area.</provenance>
-                  <provenance type="observed" when="&#xA;1980">
-Fragment a in Museum, b (the main block) at findspot (1980).</provenance>
+                  <provenance type="observed">
+Fragment a in Museum, b (the main block) at findspot.</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -121,7 +122,14 @@ Transcriptions (Reynolds, Roueché).</creation>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/><lb n="1"/><w lemma="ὁ">τὸν</w> <rs type="dignity" key="epiphan"><w lemma="ἐπιφανής">ἐπ<supplied reason="lost">ι</supplied>φα<supplied reason="lost">νέστα</supplied><lb n="2" break="no"/>τoν</w></rs> <rs key="caesar" type="official-secul"><persName type="emperor"><name nymRef="#Καῖσαρ">Καίσα<supplied reason="lost">ρα</supplied></name></persName></rs><lb n="2a"/><space quantity="1" unit="line"/><lb n="3"/><w lemma="ὁ">ἡ</w> <rs key="clarissimus" type="dignity"><w lemma="λαμπρός">λαμπροτά<hi rend="ligature">τη</hi></w></rs> <w lemma="Ἀφροδεισιεύς"><placeName type="ethnic" ref="#aphrodisias" nymRef="#Ἀφροδεισιεύς">Ἀ<lb n="4" break="no"/>φροδεισιέων</placeName></w> <rs key="city" type="subject"><w lemma="πόλις">πό<lb n="5" break="no"/> <g ref="#scroll"/>λις</w></rs> <g ref="#scroll"/>
+<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+   <lb n="1"/><w lemma="ὁ">τὸν</w> <persName type="emperor"><addName nymRef="ἐπιφανής">ἐπ<supplied reason="lost">ι</supplied>φα<supplied reason="lost">νέστα</supplied>
+   <lb n="2" break="no"/>τoν</addName> <addName nymRef="#Καῖσαρ">Καίσα<supplied reason="lost">ρα</supplied></addName></persName>
+   <lb n="2a"/><space quantity="1" unit="line"/>
+   <lb n="3"/><w lemma="ὁ">ἡ</w> <rs key="clarissimus" type="dignity"><w lemma="λαμπρός">λαμπροτά<hi rend="ligature">τη</hi></w></rs> <placeName type="ethnic" ref="#aphrodisias" nymRef="#Ἀφροδεισιεύς"><w lemma="Ἀφροδεισιεύς">Ἀ
+      <lb n="4" break="no"/>φροδεισιέων</w></placeName> <w lemma="πόλις">πό
+         <lb n="5" break="no"/> 
+         <g ref="#scroll"/>λις</w> <g ref="#scroll"/>
 </ab>
 </div>
          <div type="translation" xml:lang="en" source="#ala2004">
@@ -129,15 +137,15 @@ Transcriptions (Reynolds, Roueché).</creation>
                <gap reason="lost" unit="line" extent="unknown"/> the most renowned Caesar; the most splendid city of the Aphrodisians <supplied reason="subaudible">put up his statue</supplied>.</p>
          </div>
          <div type="commentary">
-            <p>
+          <!--  <p> 
 See discussion at <ref type="eAla-text" n="I.10" target=".xml"/>.</p>
-         </div>
+        -->  </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Excavated by the NYU expedition in 1976 (a, <rs type="invNo">76.54</rs>; b, unnumbered).</bibl></p>
+            <p><bibl><ptr target="nyu"/>, a: <citedRange>76.54</citedRange>, b: unnumbered.</bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="roueche1981"/> <citedRange>2</citedRange>
-              </bibl>, whence <bibl><ptr target="seg"/> <citedRange>1981.907</citedRange>
+              </bibl>, whence <bibl><ptr target="seg"/> <citedRange>31.907</citedRange>
               </bibl>, <bibl><ptr target="AE"/> <citedRange>1981.766</citedRange>
               </bibl>; <bibl><ptr target="roueche1989"/> <citedRange>3</citedRange>
               </bibl>, whence  <bibl><ptr target="mccabePHI"/>
