@@ -77,6 +77,7 @@
          <creation>Published text.</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-21" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
          <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
@@ -93,33 +94,42 @@
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
         
-		<lg met="alegaic?">
-		<l n="1" met="hexameter"><w lemma="μνήμων">μνήμονες</w> <w lemma="ὁ">οἱ</w> <rs type="subject" key="koinon"><placeName type="ethnic" nymRef="#Κάρ"><w lemma="Κᾶρ">Κᾶρες</w></placeName></rs> <w lemma="πολύς">πολλέων</w> <w lemma="εὐεργεσία">εὐεργεσιάων</w> <space unit="character" quantity="3"/></l>
-		<l n="2" met="pentameter?"><persName key="Palmatus" type="attested"><name nymRef="#Παλμᾶτος">Παλμᾶτον</name></persName> <w lemma="ἰθυδίκης">ἰθυδίκην</w> <w lemma="τόσος">τόσσον</w> <w lemma="ἄγαμαι">ἀγασσάμενοι</w>.</l>
+		<lg met="elegaic">
+		<l n="1" met="dactylic hexameter"><w lemma="μνήμων">μνήμονες</w> <w lemma="ὁ">οἱ</w> <rs type="subject" key="koinon"><placeName type="ethnic" nymRef="#Κάρ"><w lemma="Κᾶρ">Κᾶρες</w></placeName></rs> <w lemma="πολύς">πολλέων</w> <w lemma="εὐεργεσία">εὐεργεσιάων</w> <space unit="character" quantity="3"/></l>
+		<l n="2" met="pentameter"><persName key="Palmatus" type="attested"><name nymRef="#Παλμᾶτος">Παλμᾶτον</name></persName> <w lemma="ἰθυδίκης">ἰθυδίκην</w> <w lemma="τίνω">τῖσαν</w> <w lemma="ἄγαμαι">ἀγασσάμενοι</w>.</l>
 		</lg>
       </div>
          <div type="apparatus">
            <listApp>
-            <app loc="2"><rdg resp="#cameron1973"><note>Although editors have regularly printed the conjecture <foreign xml:lang="grc">Παλμᾶν</foreign>, Cameron showed that the original reading, 
-               <foreign xml:lang="grc">Παλμᾶτον</foreign>, was to be preferred.</note></rdg></app>
+              <app loc="1"> <rdg resp="#steinepig">πολέων</rdg></app>
+              <app loc="2"><rdg resp="#anthpal #cameron1973"><note>Although editors had regularly printed the conjecture Παλμᾶν, Cameron showed that the original reading, 
+               Παλμᾶτον, was to be preferred.</note></rdg></app>
+              <app loc="2"><rdg resp="#anthpal #iaph2007">τόσσον</rdg> <rdg resp="#cpj1997 #steinepig">τῖσαν</rdg></app>
            </listApp>
          </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" source="#ala2004">
             <p>The Carians, remembering many benefits, and greatly admiring the rightly just Palmatos, <supplied reason="subaudible">set up this statue</supplied>.</p>
          </div>
+         <div type="translation" xml:lang="de" source="#steinepig">
+            <p>Eingedenk der vielen Wohltaten haben die Karer den gerechten Palmatos in staunender Bewunderung geehrt</p>
+         </div>
+         <div type="translation" xml:lang="en" source="#CMR">
+            <p>The Carians, remembering many benefits, admired and rewarded Palmatos, of upright judgement.</p>
+         </div>
+         
          <div type="commentary">
-            <p>See also <ref type="inscription" target="iAph080410"/>.</p>
+            <p>For Palmatus see also <ref type="inscription" target="iAph080410"/>.</p>
          </div>
          <div type="bibliography" subtype="transcription">
              <p> An epigram either recorded, almost certainly at Aphrodisias, by a Byzantine copyist, or intended for inscription at Aphrodisias.</p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="anthpal"/> <citedRange>16.35</citedRange></bibl>, whence 
-               <bibl><ptr target="robert1948"/> <citedRange>14</citedRange>
-              </bibl>, <bibl><ptr target="cameron1973"/> <citedRange>p.194</citedRange></bibl>, <bibl><ptr target="roueche1989"/>
+             <p><bibl><ptr target="anthpal"/> <citedRange unit="entry">16.35</citedRange></bibl>, whence 
+               <bibl><ptr target="robert1948"/> <citedRange unit="page">148-9</citedRange>
+               </bibl>, <bibl><ptr target="cameron1973"/> <citedRange unit="page">194</citedRange></bibl>, <bibl><ptr target="roueche1989"/>
                    <citedRange>63</citedRange>
-              </bibl>, <bibl><ptr target="steinepig"/> <citedRange>02/09/11</citedRange></bibl>, 
-               <bibl><ptr target="ala2004"/> <citedRange><ref target="https://insaph.kcl.ac.uk/ala2004/inscription/eAla063.html">63</ref></citedRange></bibl>; 
+              </bibl>, <bibl><ptr target="cpj1997"/> <citedRange unit="page"></citedRange>209</bibl>, whence <bibl><ptr target="steinepig"/> <citedRange>02/09/17</citedRange></bibl>; 
+               <bibl><ptr target="ala2004"/> <citedRange><ref target="https://insaph.kcl.ac.uk/ala2004/inscription/eAla063.html">63</ref></citedRange></bibl>, whence  
                <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph150360.html">15.360</ref></citedRange></bibl>.</p>
          </div>
       </body>
