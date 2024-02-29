@@ -48,8 +48,8 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0054" notAfter="0068" precision="medium" evidence="lettering emperor">54-68 A.D.</origDate>
+                     <origPlace><placeName ref="#aphsebast">Sebasteion</placeName>, <placeName type="monuList" ref="#aphsebastsport">South Portico</placeName></origPlace>
+                     <origDate notBefore="0054" notAfter="0068" precision="medium" evidence="reign">54-68 A.D.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphsebast">Sebasteion</placeName>, <placeName type="monuList" ref="#aphsebastsport">South Portico</placeName></provenance>
@@ -100,20 +100,26 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<cb n="a"/><ab>  <lb n="1"/><persName type="emperor"><del rend="erasure"><name nymRef="#Νέρων">Νέρων</name></del> <name nymRef="#Κλαύδιος">Κλαύδιος</name> <lb n="2"/> <name nymRef="#Δροῦσος">Δροῦσος</name> <name nymRef="#Καῖσαρ">Καῖσαρ</name><lb n="3"/> <w lemma="σεβαστός">Σεβασστός</w></persName>    <cb n="b"/><lb n="1"/> <persName type="divine"><name>Ἥλιος</name></persName> </ab>
+<cb n="a"/><ab>  <lb n="1"/><persName type="emperor"><del rend="erasure"><name nymRef="#Νέρων">Νέρων</name></del> <name nymRef="#Κλαύδιος">Κλαύδιος</name> 
+   <lb n="2"/> <name nymRef="#Δροῦσος">Δροῦσος</name> <name nymRef="#Καῖσαρ">Καῖσαρ</name>
+   <lb n="3"/> <w lemma="σεβαστός">Σεβασστός</w></persName>    
+   <cb n="b"/><lb n="1"/> <persName type="divine"><name>Ἥλιος</name></persName> </ab><!-- check layout -->
 </div>
          <div type="apparatus">
            <listApp>
             <app loc="b 1"><note>Nero's name was later erased but remains legible.</note></app>
            </listApp>
          </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" source="#rrrs2013">
+            <p>Nero Claudius Drusus, Caesar Augustus.  Helios</p>
+         </div>
+         <div type="translation" xml:lang="en" source="#iaph2007">
             <p><note>a</note>: Nero Claudius Drusus, Caesar Augustus. <note>b</note>: Helios</p>
          </div>
          <div type="commentary">
             </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1980 (<citedRange>80.?</citedRange>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>80.156</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="jmr1981b"/> <citedRange>9</citedRange>
@@ -121,7 +127,9 @@
               </bibl>, <bibl><ptr target="robertBE"/> <citedRange>1982.356</citedRange>
               </bibl>,  <bibl><ptr target="mccabePHI"/>
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257805">918</ref></citedRange>
-              </bibl>; mentioned SEG 35.1082. <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph090042.html">9.42</ref></citedRange></bibl>.</p>
+              </bibl>; mentioned SEG 35.1082 <!-- check -->
+               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph090042.html">9.42</ref></citedRange></bibl>; 
+               <bibl><ptr target="rrrs2013"/> <citedRange>C-base 8</citedRange></bibl>, whence <bibl><ptr target="seg"/> <citedRange>63.853</citedRange></bibl>.</p>
          </div>
       </body>
    </text>

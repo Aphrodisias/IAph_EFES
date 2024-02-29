@@ -47,8 +47,8 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0044" notAfter="0054" precision="medium" evidence="lettering reign">A.D. 44/54</origDate>
+                     <origPlace><placeName ref="#aphsebast">Sebasteion</placeName>, <placeName type="monuList" ref="#aphsebastsport">South Portico</placeName></origPlace>
+                     <origDate notBefore="0044" notAfter="0054" precision="medium" evidence="lettering reign">44/54 CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphsebast">Sebasteion</placeName>, <placeName type="monuList" ref="#aphsebastsport">South Portico</placeName>
@@ -101,10 +101,14 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<cb n="a"/><ab>  <lb n="1"/> <persName type="emperor"><name nymRef="#Τιβέριος">Τιβέριος</name> <name nymRef="#Κλαύδιος">Κλαύδιος</name>
-   <lb n="2"/> <name nymRef="#Καῖσαρ">Καῖσαρ</name></persName>   <cb n="b"/><lb n="1"/> <placeName nymRef="#Βρεττανία">Βρεττανία</placeName> </ab>
+<div type="textpart" n="a"><ab>  <lb n="1"/> <persName type="emperor"><name nymRef="#Τιβέριος">Τιβέριος</name> <name nymRef="#Κλαύδιος">Κλαύδιος</name>
+   <lb n="2"/> <name nymRef="#Καῖσαρ">Καῖσαρ</name></persName>   </ab></div>
+   <div type="textpart" n="b"><ab><lb n="1"/> <placeName nymRef="#Βρεττανία">Βρεττανία</placeName></ab></div> 
 </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" source="#rrrs2013">
+            <p>Tiberius Claudius Caesar. Britannia</p>
+         </div>
+         <div type="translation" xml:lang="en" source="#iaph2007">
             <p><note>a</note>: Tiberius Claudius Caesar. <note>b</note>: Britannia</p>
          </div>
          <div type="commentary">
@@ -113,7 +117,7 @@
              <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1980 (<citedRange>80.159</citedRange>)</bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published by <bibl><ptr target="jmr1981b"/> <citedRange>8</citedRange>
+            <p><bibl><ptr target="jmr1981b"/> <citedRange>8</citedRange>
               </bibl>, whence <bibl><ptr target="seg"/>  <citedRange>1981.918</citedRange>
               </bibl>, <bibl><ptr target="robertBE"/> <citedRange>1982.356</citedRange>
               </bibl>, whence mentioned <bibl><ptr target="seg"/>  <citedRange>1982.1082</citedRange>
@@ -121,7 +125,8 @@
               </bibl>,  <bibl><ptr target="mccabePHI"/>
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257804">917</ref></citedRange>
               </bibl>; <bibl><ptr target="rrrs1988"/> <citedRange>6</citedRange>
-              </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph090041.html">9.41</ref></citedRange></bibl>.</p>
+              </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph090041.html">9.41</ref></citedRange></bibl>; 
+               <bibl><ptr target="rrrs2013"/> <citedRange>C-base 12</citedRange></bibl>, whence <bibl><ptr target="seg"/> <citedRange>63.853</citedRange></bibl>.</p>
          </div>
       </body>
    </text>
