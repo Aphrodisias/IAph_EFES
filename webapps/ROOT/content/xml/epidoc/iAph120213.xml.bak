@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> text for Tiberius Claudius M<gap reason="lost" unit="character" extent="unknown"/>
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120213</idno>
+            <idno type="IAph2007">iAph120213</idno>
+            <idno type="JMR2004">iAph1685</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragments (not joining) from the top of a <material>white marble</material>
+                              <objectType cert="low">panel</objectType> or <objectType cert="low">sarcophagus</objectType> front (<depth unit="metre">0.27</depth> thick). a from centre, b from right corner.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Incribed</rs> on a single surface.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.03</height>. Ligatures: b:, <foreign xml:lang="grc">ΝΗ</foreign>, line 1</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second to third centuries C.E.</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallen">East stretch (north part)</placeName>: re-used in east stretch north of East Gate.</provenance>
+                  <provenance type="observed" when="1973">Findspot (1973)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-10" who="cmr">DONE</change>
+         <change when="2007-04-24" who="Charlotte-Tupman">hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="73_X_03A.jpg">
+            <desc>a (M. Roueché, 1973)</desc>
+         </graphic>
+         <graphic url="73_W_02.jpg">
+            <desc>b (M. Roueché, 1973)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/> <gap reason="lost" unit="character" quantity="3"/><orig>ο<unclear>ι</unclear>σα</orig><gap reason="lost" unit="character" quantity="1"/><orig>ισ</orig> <w lemma="ὁ">τὸν</w> <w lemma="βωμός">βωμο<supplied reason="lost">ν</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="2"/><gap reason="lost" unit="character" quantity="3"/>ου <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τ<supplied reason="lost">ὴ</supplied>ν</w>  <w lemma="δίδωμι">δοθεῖσαν</w><gap reason="lost" unit="character" quantity="3"/>  <lb n="3"/><gap reason="lost" unit="character" quantity="3"/>ου <persName type="attested"><name nymRef="#Τιβέριος">Τιβερίου</name> <name nymRef="#Κλαύδιος"><supplied reason="lost">Κ</supplied>λαυδίου</name>  <orig><unclear>μ</unclear></orig><gap reason="lost" unit="character" quantity="3"/></persName>  <lb n="4"/><gap reason="lost" unit="character" quantity="3"/>  <w lemma="δηλόω"><supplied reason="lost">  δη</supplied>λουμένῳ</w>  <gap reason="lost" unit="character" quantity="1"/><orig>ουτ<unclear>οτ</unclear></orig><gap reason="lost" unit="character" quantity="3"/>  <lb n="5"/><gap reason="lost" unit="character" quantity="3"/>  <w lemma="ἐπί"><supplied reason="lost">ἐπὶ</supplied></w>  <w lemma="στεφανηφόρος"><supplied reason="lost">στεφαν</supplied>ηφόρου</w>  <orig>κα<unclear>ιτ</unclear></orig><gap reason="lost" unit="character" quantity="3"/>  <lb n="6"/><gap reason="lost" unit="character" quantity="3"/>    <persName type="attested"><name nymRef="#Ἀγαθόπους"><supplied reason="lost" cert="low">Ἀγαθ</supplied>όποδος</name></persName>  <w lemma="πρό">πρ<unclear>ο</unclear><gap reason="lost" unit="character" quantity="3"/></w>    <lb n="7"/>  <w><gap reason="lost" unit="character" quantity="3"/>υμενος</w>  <orig>ο</orig><gap reason="lost" unit="character" quantity="3"/>  <lb n="8"/><gap reason="lost" unit="character" quantity="3"/>  <supplied reason="lost"><w lemma="ἐν">ἐν</w> <w lemma="ὁ">ταῖς</w></supplied>    <w lemma="εἰσώστη"><supplied reason="lost">εἰσώ</supplied>σταις</w>  <w lemma="κηδεύω">κηδ<supplied reason="lost">ευθησ</supplied><gap reason="lost" unit="character" quantity="3"/></w>    <lb n="9"/><gap reason="lost" unit="character" quantity="3"/>  <w lemma="θάπτω"><supplied reason="lost">θά</supplied>ψαι</w> <w lemma="τις">τινα</w> <orig>ο</orig><gap reason="lost" unit="character" quantity="3"/>  <lb n="10"/><gap reason="lost" unit="character" quantity="3"/>  <w lemma="ἐπάρατος"><supplied reason="lost">ἐπάρατ</supplied>ος</w> <w lemma="καί">καὶ</w> <w lemma="τυμβωρύχος">τ<supplied reason="lost">υμβωρύχος</supplied></w>  <supplied reason="lost">κτλ</supplied><gap reason="lost" unit="character" quantity="1"/>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="11"/><gap reason="lost" unit="character" quantity="3"/><w lemma="ὅς">ὧν</w> <w lemma="ὁ">τὸ</w> <w lemma="τρίτος"><supplied reason="lost">τρίτον</supplied></w>  <supplied reason="lost">κτλ</supplied>  <gap reason="lost" unit="character" quantity="4"/>  <lb n="12"/><gap reason="lost" unit="character" quantity="3"/><orig>νατ</orig><gap reason="lost" unit="character" quantity="3"/>  <lb n="12a"/><gap reason="lost" unit="character" quantity="3"/></ab></div><div n="b" type="textpart" subtype="fragment"><ab> <lb n="1"/><gap reason="lost" unit="character" quantity="3"/><orig><unclear>ε</unclear>νοσ</orig> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Τατία">Τατία</name></persName> <w lemma="γυνή">γυ<hi rend="ligature">νὴ</hi></w> <w lemma="αὐτός">αὐ<lb n="2" break="no"/><supplied reason="lost">τοῦ</supplied></w>  <gap reason="lost" unit="character" quantity="6"/>  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>  <w lemma="ὅς"><supplied reason="lost">ο</supplied><unclear>ὓ</unclear>ς</w> <w lemma="ἄν">ἄν</w> <w lemma="ἐγώ">ἐγω</w> <w lemma="βούλομαι">βουλήθω</w> <w lemma="ἤ">ἢ</w> <lb n="3"/>  <gap reason="lost" unit="character" quantity="3"/>  <orig><unclear>ιιο</unclear></orig><gap reason="lost" unit="character" quantity="8"/>  <w lemma="εἰσώστη"><unclear>ε</unclear>ἰσωσ<lb n="4" break="no"/><supplied reason="lost">ταις</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  <orig><unclear>σ</unclear>τε<unclear>ι</unclear></orig>  <lb n="4a"/><gap reason="lost" unit="character" quantity="3"/></ab></div>
+</div>
+         <div type="translation">
+            <p>Elements of a funerary prohibition. a: mentions of an altar; of [permission] given;  of Tiberius Claudius M[- . . . ] and someone else aforementioned; of a stephanephoros, perhaps [Agatha]pous; further traces of the formula. </p>
+            <p>b: <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost" cert="low">in this sarcophagus there shall be buried <gap reason="lost" unit="character" extent="unknown"/> the aforesaid</supplied> and Tatia his wife <gap reason="lost" unit="character" extent="unknown"/>
+               <supplied reason="lost">and those</supplied> whom I wish or <supplied reason="lost" cert="low">prescribe <gap reason="lost" unit="character" extent="unknown"/> and in the</supplied> additional burial places <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>No useful comment</p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition (<rs type="siteNo">Walls 2</rs>)</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120213.html">12.213</ref></citedRange></bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

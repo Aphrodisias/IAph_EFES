@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <seg cert="low">Funerary</seg> text for Aurelii Zenon and Hypsikles</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120634</idno>
+            <idno type="IAph2007">iAph120634</idno>
+            <idno type="JMR2004">iAph1883</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Section of <material>white marble</material>
+                              <objectType>cornice</objectType> (<width unit="metre">2.33</width>  × <height unit="metre">0.23</height> x depth not measurable).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on two of the three fasciae.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second to third century forms; line 1, <height unit="metre">0.03</height>; line 2, <height unit="metre">0.028</height>. Ligatures: line 1, <foreign xml:lang="grc">ΗΝ</foreign> twice; line 2, <foreign xml:lang="grc">ΜΗ</foreign>, <foreign xml:lang="grc">ΗΝ</foreign>, <foreign xml:lang="grc">ΝΗ</foreign>. Apex on first <foreign xml:lang="grc">Υ</foreign>, line 1.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering nomenclature">Second to third centuries C.E.</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallses">South (east part)</placeName>: Found reused as part of a string course on the inner face of the excavated stretch. </provenance>
+                  <provenance type="observed" when="1978">Findspot (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-30" who="Charlotte-Tupman">DONE</change>
+         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_A_10.jpg">
+            <desc>Face (M. Roueché, 1978)</desc>
+         </graphic>
+         <graphic url="77_G_12.jpg">
+            <desc>Left end (M. Roueché, 1977)</desc>
+         </graphic>
+         <graphic url="77_G_11.jpg">
+            <desc>Right end (M. Roueché, 1977)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+<ab><lb n="1"/><persName type="attested"><name nymRef="#Αὐρήλιος"><supplied reason="lost">Αὐρήλιοι</supplied></name></persName> <gap reason="lost" unit="character" extent="unknown"/> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <persName type="attested"><name nymRef="#Ζήνων">Ζ<hi rend="ligature">ήν</hi>ων</name></persName> <w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="#Ὑψικλῆς">Ὑψικλῆς</name></persName> <w lemma="υἱός">υἱοὶ</w> <persName type="attested"><name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <name nymRef="#Ζήνων">Ζ<hi rend="ligature">ήν</hi>ωνος</name></persName> <w lemma="ἀρχιερεύς">ἀ<supplied reason="omitted">ρ</supplied>χιερέως</w> <num value="3">γ</num> <w lemma="ὁμοῦ">ὁμοῦ</w> <gap reason="illegible" unit="character" quantity="1"/> <w lemma="ἀδελφός">ἀδελφοὶ</w> <w lemma="δέ">δὲ</w> <persName type="attested"><name nymRef="#Αὐρήλιος">Αὐρηλίου</name> <name nymRef="#Ζήνων">Ζή<supplied reason="lost" cert="low">νωνος</supplied></name></persName> <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/>
+<gap reason="lost" unit="character" extent="unknown"/> <w lemma="κατά"><supplied reason="lost">κατὰ</supplied></w> <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w> <w lemma="διατάσσω"><supplied reason="lost">δια</supplied>τάγ<hi rend="ligature">ην</hi></w> <w lemma="δηλόω">δηλοῦσθαι</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀρχεῖον">ἀρχείων</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="στεφανηφόρος">στεφα<hi rend="ligature">νη</hi>φόρου</w> <rs type="office" key="stephanephoros"><persName type="attested"><name nymRef="#Ἀρίστων">Ἀρίστωνος</name> <w lemma="πεντάκις">πεντάκι</w> <w lemma="ὁ">τοῦ</w> <name nymRef="#Ἀρχιμήδης">Ἀρχιμ<supplied reason="omitted">ή</supplied>δου</name></persName></rs> <w lemma="μείς"><hi rend="ligature">μη</hi>νὸς</w> <space quantity="1" unit="character"/><gap reason="lost" unit="character" extent="unknown"/> </ab>
+
+</div>
+         <div type="apparatus">
+           <listApp>
+              <app><note>The text probably extended to the left, but not to the right</note></app>
+            <app loc="1"><note><foreign xml:lang="grc">ΑΙΧΕΡΕΩΣ</foreign>
+            </note></app>
+            <app loc="2"><note><foreign xml:lang="grc">ΑΡΧΙΜΜΔΟΥ</foreign>
+            </note></app>
+           </listApp>
+         </div>
+         <div type="translation">
+            <p>[Aurelii? ... and ] Zenon and Hypsikles sons of Aurelius Zenon, highpriest three times, as well as brothers of Aurelius Ze[non .... according to the] testament to be displayed in the archives in the stephanephorate of Ariston fifth (descendant of that name) of Archimedes, in the month [...]</p>
+         </div>
+         <div type="commentary">
+            <p>For the formula cf. <ref type="inscription" n="1542" target="iAph110033"/> (=MAMA 539)</p>
+            <p>For the stephanephorus cf. <ref type="inscription" n="1534" target="iAph120524"/> (=MAMA 559), under or after Trajan.</p>
+            <p>For the persons, cf. ? <ref type="inscription" n="1790" target="iAph010168"/> (=CIG 2803), <ref type="inscription" n="614" target="iAph110507"/> (=2759b), <ref type="inscription" n="1228" target="iAph120712"/> (=Reinach 29)</p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1975 (<rs type="siteNo">Walls 112</rs>).</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120634.html">12.634</ref></citedRange></bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

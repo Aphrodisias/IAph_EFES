@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription for M. Aurelius Agathopous</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120805</idno>
+            <idno type="IAph2007">iAph120805</idno>
+            <idno type="JMR2004">iAph1692</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material>
+                              <objectType>block</objectType> (<width unit="metre">0.93</width> <height unit="metre">0.70</height> x depth not measurable) from the right side of a composite monument.
+</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on a prepared area.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>lines 1, 2, <height unit="metre">0.03</height>; lines3, 4, 6, <height unit="metre">0.022</height>; lines5, 7, 8, <height unit="metre">0.025</height>. Apostrophe for abbreviation; Ligatures: line 2, ΗΜ; line 3, ΗΝ; line 5, ΝΗ; l.6, ΤΗ; l.8, ΜΗΝ</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second to third centuries C.E.</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallsw">Walls, South-west</placeName>: half buried on top of the southern stretch.</provenance>
+                  <provenance type="observed" when="1975">Findspot (1975)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-10" who="cmr">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="75_F_02A.jpg">
+            <desc>View (M. Roueché, 1975)</desc>
+         </graphic>
+         <graphic url="75_E_18.jpg">
+            <desc>Face (M. Roueché, 1975)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab><lb n="1"/>  <supplied reason="lost" cert="low">τὸ μνημεῖον ἐστιν</supplied> <persName type="attested"><supplied reason="lost"><name nymRef="#Μᾶρκος"><expan><abbr>Μάρ</abbr><ex>κου</ex></expan></name></supplied> <name nymRef="#Αὐρήλιος"><expan><abbr><supplied reason="lost">Αὐ</supplied>ρ</abbr><ex>ηλίου</ex></expan></name> <name nymRef="#Ἀγαθόπους">Ἀγαθόποδος</name> <w lemma="ὁ">τοῦ</w> <name nymRef="#Ἀγαθόπους">Ἀγαθόπο<lb n="2" break="no"/><supplied reason="lost">δος</supplied></name></persName> <w lemma="ὁ">τοῦ</w>  <gap reason="lost" unit="character" precision="low" quantity="11"/>  <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w><persName type="attested"><name nymRef="#Διονύσιος"><supplied reason="lost">Διο</supplied>νυσίου</name></persName> <w lemma="παραχωρέω">παρακεχωρημένου</w> <w lemma="αὐτός">αὐ<lb n="3" break="no"/><supplied reason="lost">τῷ</supplied></w><supplied reason="lost"><w lemma="διά">διὰ</w></supplied><supplied reason="lost"><w lemma="ὁ">τοῦ</w></supplied><supplied reason="lost"><w lemma="χρεωφυλάκιον">χρεοφυλακίου</w></supplied>  <supplied reason="lost"><w lemma="ὑπό">ὑπὸ</w></supplied>  <persName type="attested"><name nymRef="#Μᾶρκος"><expan><abbr><supplied reason="lost">Μ</supplied>άρ</abbr><ex>κου</ex></expan></name> <name nymRef="#Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name> <name nymRef="#Διονύσιος">Διονυσίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name></persName></persName> <lb n="4"/>  <supplied reason="lost"><w lemma="ἕτερος">ἕτερος</w></supplied><supplied reason="lost"><w lemma="δέ">δὲ</w></supplied><supplied reason="lost"><w lemma="οὐδείς">οὐδεὶς</w></supplied> <supplied reason="lost"><w lemma="ἔχω">ἕξει</w></supplied> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <w lemma="τις">τινα</w> <w lemma="ἤ">ἢ</w> <w lemma="ἐκθάπτω">ἐκθά<lb n="5" break="no"/><supplied reason="lost">ψαι</supplied></w>  <supplied reason="lost"><w lemma="χωρίς">χωρὶς</w></supplied> <supplied reason="lost"><w lemma="αὐτός">αὐτοῦ</w></supplied> <persName type="attested"><name nymRef="#Μᾶρκος"><supplied reason="lost"><expan><abbr>Μάρ</abbr><ex>κου</ex></expan></supplied></name>  <name nymRef="#Αὐρήλιος"><supplied reason="lost"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></supplied></name>  <name nymRef="#Ἀγαθόπους"><supplied reason="lost">Ἀγ</supplied>αθόποδος</name></persName> <w lemma="ἤ">ἢ</w> <w lemma="ὁ">τῶν</w> <w lemma="κληρονόμος">κληρονόμων</w> <w lemma="ἤ">ἢ</w> <lb n="6"/><supplied reason="lost"><w lemma="διάδοχος">διαδόχων</w></supplied>  <supplied reason="lost"><w lemma="ἐπεί">ἐπεὶ</w></supplied> <supplied reason="lost"><w lemma="ὁ">ὁ</w></supplied> <supplied reason="lost"><w lemma="ποιέω">ποιήσας</w></supplied> <w lemma="ἀποτίνω"><supplied reason="lost">ἀπο</supplied>τείσει</w> <w lemma="ὁ">τῷ</w> <w lemma="ταμεῖον">ταμείῳ</w> <num value="1000">α</num> <w lemma="ὁ">τῆς</w> <w lemma="ἐπιγραφή">ἐπιγρα<lb n="7" break="no"/><supplied reason="lost">φῆς</supplied></w> <supplied reason="lost"> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="ἀποτίθημι">ἀπετέθη</w></supplied> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί"><choice><corr>ἐ</corr><sic>ι</sic></choice>πὶ</w> <w lemma="στεφανηφόρος">στεφα<lb n="8" break="no"/><supplied reason="lost">νηφόρου</supplied></w>  <supplied reason="lost" cert="low"><w lemma="ὁ">τὸ</w></supplied>  <supplied reason="lost" cert="low"><gap reason="lost" unit="character" quantity="2"/></supplied><persName type="attested"><name nymRef="#Ἀτταλίς"><supplied reason="lost" cert="low">Ἀτταλίδος</supplied></name>  <supplied reason="lost">τῆς</supplied>  <persName type="attested"><name nymRef="#Μενεκράτης"><supplied reason="lost">Με</supplied>νεκράτους</name></persName></persName> <w lemma="μείς">μηνὸς</w> <rs type="month"><w lemma="Ἀπελλαῖος">Ἀπελλαίου</w></rs> <space quantity="3" unit="character"/>   </ab>
+</div>
+         <div type="apparatus">
+           <listApp>
+            <app><note>At the beginnings of the lines appropriate formulae have been supplied from standard funeraries, giving the sense of what is lost, although not necessarily the exact wording (in particular the word used for the tomb in line 1 is undertain.</note></app>
+            <app loc="2"><note>Since M. Aur. Agathopous is not identifiable, we cannot complete his genealogy.</note></app>
+            <app loc="7"><note><foreign xml:lang="grc">ΣΠΙ</foreign>
+            </note></app>
+            <app loc="8"><note>A number may have been given  for Attalis' stephanephorate, although there hardly seems space for it.</note></app>
+           </listApp>
+         </div>
+         <div type="translation">
+            <p>[The tomb is the property of Marcus Aur]elius Agathopous the son of Agathopous the son of [ name lost] the son of Dionysios, to whom it was ceded [in a transaction recorded in the Property-archive by] Marcus Aurelius Dionysios son of Zenon; and no-one else shall have the right to bury anyone (in it) or remove a body [except him, Marcus Aurelius Ag]athopous or his heirs [or successors since he who acts so] will pay to the treasurey (at Rome) 1000 denarii. [A copy of the inscription was deposited] in the Property-archive in the  stephanephorate [ ? for the xx time, of Attalis daughter of Me]nekrates, month of Apellaios.</p>
+         </div>
+         <div type="commentary">
+            <p>Agathopous and Dionysios are otherwise unknown to us, but being Marci Aurelii are reasonably taken to have received Roman citizenship as a result of the Edict of Caracalla (212), being the first citizens in their families. Nothing suggests that Agathopous belonged to the civic aristrocracy, since citation of genealogies seems to have been a widespread practice at Aphrodisias. The formal cession of a tomb by one owner to another is recorded in several other funerary inscriptions, and it may be that some men built tombs to cede in this way as afinancial speculation. The tomb here is unliekly to have been large since the fine specified for its violation is amoing the smaller fines recorded.</p>
+            <p>Attalis daughter of Menekrates is known to us as a member of a wealthy family, responsible for extensive public works in the first century CE (see e.g. <ref type="inscription" n="1124" target="iAph010007"/>, <ref type="inscription" n="1275" target="iAph090112"/>). When she died (in the reign of Vespasian, see <ref type="inscription" n="1314" target="iAph120614"/>) she bequeathed money to the city to finance stephanephorates after her death, and the reference here is clearly to one which was more than a century later. This stephanephorate may well have been numbered (cf. e.g.  <ref type="inscription" n="1450" target="iAph130203"/>, <ref type="inscription" n="1484" target="iAph130154"/>, <ref type="inscription" n="1487" target="iAph130147"/>) although the space for the number is limited.</p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1975 (<rs type="siteNo">Walls 119</rs>)</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120805.html">12.805</ref></citedRange></bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

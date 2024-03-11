@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription for Kallikrates</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120517</idno>
+            <idno type="IAph2007">iAph120517</idno>
+            <idno type="JMR2004">iAph1704</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower left side of a <material>white marble</material>
+                              <objectType>block</objectType> moulded below (c <width unit="metre">0.70</width> <height unit="metre">0.42</height> <depth unit="metre">0.64</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the visible face (a) within a moulded panel, and (b) on the lower moulding. There was already a faulty area on the face which the cutter avoided.
+</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Ave. <height unit="metre">0.015</height>. The serifs are exaggerated, but the forms not quite standard Second-third century</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0100" notAfter="0133" precision="medium" evidence="lettering">Probably early second century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallse">South-east stretch</placeName>: inside the south stretch, about half-way between the South-east gate and the Theatre break</provenance>
+                  <provenance type="observed" when="1990">Findspot (1990)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-30" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="90_E_11.jpg">
+            <desc>Face (M. Roueché, 1990)</desc>
+         </graphic>
+         <graphic url="90_E_12.jpg">
+            <desc>Face (M. Roueché, 1990)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab><lb n="0"/>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" precision="low" quantity="7"/><orig><unclear>νε</unclear></orig> <w lemma="δηνάριον">δηνάρια</w> <orig><unclear>ιιι</unclear></orig> <gap reason="lost" unit="character" quantity="3"/>  <lb n="2"/><gap reason="lost" unit="character" quantity="1"/> <w><unclear>Ι</unclear></w> <w lemma="ἔξεστι">ἔξεσται</w> <w lemma="δέ">δὲ</w> <w lemma="οὐδέ">οὐδὲ</w> <w lemma="ὑπό">ὑπὸ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἰσώστη">ἰσώ<unclear>στ</unclear><supplied reason="lost">ην</supplied></w>  <supplied reason="lost" cert="low">  </supplied>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="3"/> <w>νοις</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ἤ">ἢ</w> <w lemma="εἰ">εἴ</w> <w lemma="τις">τινι</w> <persName type="attested"><name nymRef="#Καλλικράτης">Καλλικράτης</name></persName> <w lemma="συγχωρέω">συνχωρή<unclear>σ</unclear><supplied reason="lost">ει</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="4"/> <w lemma="ἐπεί"><choice><orig>ἐπὶ</orig><reg>ἐπεὶ</reg></choice></w> <w lemma="ἐάν">ἐάν</w> <w lemma="τις">τις</w> <w lemma="παρά">παρὰ</w> <w lemma="οὗτος">ταῦτα</w> <w lemma="τις">τι</w> <w lemma="ποιέω">ποιήσῃ</w> <w lemma="ἀποτίνω">ἀποτείσε<supplied reason="lost">ι</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="5"/> <orig>ουτον</orig> <w lemma="ὁ">τῶν</w> <w lemma="ἐπιγραφή">ἐπιγραφῶν</w> <w lemma="ἀπό">ἀπο</w> <space quantity="3" unit="character"/> <w lemma="κεῖμαι">κεῖται</w> <orig>κα</orig><gap reason="lost" unit="character" quantity="3"/>  <lb n="6"/> <orig>ην</orig> <w lemma="εἰσώστη">ἰσώστην</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="εἰς">εἰς</w><w lemma="ὁ"> τ<space quantity="3" unit="character"/> ὸν</w> <w lemma="πλάτας"><unclear>πλά</unclear>τ<unclear>α</unclear><supplied reason="lost">ν</supplied></w>  <gap reason="lost" unit="character" quantity="3"/>  <lb n="7"/> <w lemma="ἡρωίς">ἡρωίδος</w> <w lemma="ὁ">τὸ</w> <w lemma="ἕκτος">ἕκτον</w> <w lemma="μείς">μηνὸς</w> <space quantity="3" unit="character"/>  <rs type="month"><w lemma="Δεῖος">Δείου</w></rs> <space quantity="3" unit="character"/>  <gap reason="lost" unit="character" quantity="3"/>  </ab>
+</div>
+         <div type="translation">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/> denarii <gap reason="lost" unit="character" extent="unknown"/> will be possible neither under the burial niche [ . . . ?chil]dren of them or if Kallikrates shall give permission to anyone <gap reason="lost" unit="character" extent="unknown"/>since if anyone should do anyhting contrary to this, he will pay <gap reason="lost" unit="character" extent="unknown"/> of the inscriptions is deposited [ . . . the] burial niche and the <gap reason="lost" unit="character" extent="unknown"/> on the platform <gap reason="lost" unit="character" extent="unknown"/> deceased (female), [stephanephoros for] the sixth time,  month Deios.</p>
+         </div>
+         <div type="commentary">
+            <p> ...</p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition (DM; <rs type="siteNo">Walls 160</rs>).</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120517.html">12.517</ref></citedRange></bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

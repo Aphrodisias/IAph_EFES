@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> <rs type="textType">Funerary</rs> fragment</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph130307</idno>
+            <idno type="IAph2007">iAph130307</idno>
+            <idno type="JMR2004">iAph1697</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Right hand side fragment  from a  <material>white marble</material>
+                              <objectType>sarcophagus</objectType> (<dimensions unit="metre"><width>0.42</width><height>0.53</height><depth>0.30</depth></dimensions>); no decoration visible.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard second to third century forms; ligatures: <foreign xml:lang="grc">ΜΜ</foreign> in line 1, <foreign xml:lang="grc">ΤΗ</foreign>, line 5, <foreign xml:lang="grc">ΗΜΗ</foreign>, line 6.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second to third centuries C.E.</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphnecropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropolisse">South-east area</placeName>: beside second field wall south of path east from South-east Gate.</provenance>
+                  <provenance type="observed" when="1976">Findspot (1976)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-30" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="76_E_05.jpg">
+            <desc>Face (M. Roueché, 1976)</desc>
+         </graphic>
+         <graphic url="76_E_06.jpg">
+            <desc>Face (M. Roueché, 1976)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab><lb n="0"/><gap unit="line" reason="lost" quantity="1"/>  <lb n="1"/><gap reason="lost" unit="character" precision="low" quantity="54"/>  <persName type="attested"><name nymRef="#Ἀμμιανός"><supplied reason="lost">Ἀ</supplied><hi rend="ligature"><unclear>μ</unclear>μ</hi>ιανὸν</name></persName>  <lb n="2"/><gap reason="lost" unit="character" precision="low" quantity="42"/>  <supplied reason="lost"><w lemma="οὐδείς">οὐδεὶς</w> <w lemma="δέ">δὲ</w></supplied>    <w lemma="ἕτερος"><supplied reason="lost">ἕτερ</supplied>ος</w>  <w lemma="ἐξουσία">ἐξουσί<lb n="3" break="no"/><supplied reason="lost">αν</supplied></w>  <w lemma="ἔξειμι"><supplied reason="lost">ἔξει</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ἐπιχειρέω"><supplied reason="lost">ἐπι</supplied>χειρήσας</w>  <lb n="4"/><supplied reason="lost"><w lemma="ἔχω">ἕξει</w> <w lemma="ἐνθάπτω">ἐνθάψαι</w> <gap reason="lost" unit="character" precision="low" quantity="35"/> <w lemma="ὅς">ὧν</w> <w lemma="ὁ">τὸ</w></supplied>    <w lemma="τρίτος"><supplied reason="lost">τρί</supplied>τον</w> <w lemma="εἰμί">ἔσται</w> <lb n="5"/>  <supplied reason="lost"><w lemma="ὁ">τοῦ</w> <w lemma="ἐκδικέω">ἐκδικήσαντος</w> <w lemma="καί">καὶ</w> <w lemma="οὐδείς">οὐδὲν</w> <w lemma="ἐλάσσων">ἔλαττον</w> <w lemma="μένω">μενεῖ</w> <w lemma="κύριος">κύρια</w> <w lemma="ὁ">τὰ</w> <w lemma="ὑπό">ὑπ</w>'<w lemma="ἐγώ">ἐμοῦ</w></supplied><w lemma="διατάσσω"><supplied reason="lost">διατεταγ</supplied>μενα</w> <w lemma="ὁ"><hi rend="ligature">τῆ</hi>ς</w> <w lemma="ἐπιγραφή">ἐπι<lb n="6" break="no"/><supplied reason="lost">γραφῆς</supplied></w> <supplied reason="lost"><w lemma="ἀποτίθημι">ἀπετέθη</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <w lemma="εἰς">εἰς</w> <w lemma="ὁ">τὸ</w> <w lemma="χρεωφυλάκιον">χρεοφυλάκιον</w> <w lemma="ἐπί">ἐπὶ</w></supplied> <w lemma="στεφανηφόρος"><supplied reason="lost">στεφανηφόρο</supplied>υ</w>  <w lemma="ὁ">τὸ</w>  <gap reason="illegible" unit="character" quantity="1"/> <persName type="attested"><name>Φλ.  <g ref="#stop"/> Δημη</name></persName>  <lb n="6a"/><supplied reason="lost">τρίου μήνος</supplied> <gap reason="lost" unit="character" extent="unknown"/> <space quantity="3" unit="character"/></ab>
+</div>
+         <div type="apparatus">
+           <listApp>
+            <app><note>Supplements embody the sense of the standard formulae, but not necessarily the precise wording used here.</note></app>
+           </listApp>
+         </div>
+         <div type="translation">
+            <p>. . . ]Ammianos [ . .c. 42 . . and no-one else shall have ] a right [ to bury here . . . c. 35 . . . since whoever] undertakes [ to do so shall pay . . .? . . . of which one third] shall be [for the prosecutor; and none the less shall my instructions remain valid. A copy of the] inscription [was deposited in the Property -archive in the stephanephorate] of Flavius (or Flavia) Deme[trios (or Demetria) month ?]</p>
+         </div>
+         <div type="commentary">
+            <p>Neither Ammianos notr the stephanephoros are identifiable at present.</p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition (<rs type="siteNo">Walls 140</rs>).</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph130307.html">13.307</ref></citedRange></bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs>  for anonymous</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph010172</idno>
+            <idno type="IAph2007">iAph010172</idno>
+            <idno type="JMR2004">iAph1887</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two joining<material key="marmor">white marble</material> fragments (from <objectType cert="low">statue base</objectType>), a. with left side and lower moulding (<dimensions unit="metre"><width>0.21</width><height>0.24</height><depth>0.22</depth></dimensions>); b. without edges (<dimensions unit="metre"><width>0.08</width><height>0.09</height><depth>0.06</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro"> Inscribed</rs> on surviving face (a. <width unit="metre">0.08</width>  × <height unit="metre">0.020</height>).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>; ligatured <foreign xml:lang="grc">MN</foreign>, a. line 4; apex on <foreign xml:lang="grc">Α</foreign>, line 5.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" evidence="lettering">Second to third centuries C.E.</origDate>
+                  </origin>
+
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphtemple">Temple/Church</placeName>
+
+                  </provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-03-06" who="GB">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="R_66_1_89.jpg">
+            <desc>Fragment a. (1966)</desc>
+         </graphic>
+         <graphic url="77_BB_22.jpg">
+            <desc>Fragment a. (M. Roueché, 1977)</desc>
+         </graphic>
+         <graphic url="R_66_1_85.jpg">
+            <desc>Fragment b. (1966)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/>  <orig>χ<unclear>ρ</unclear>εο<unclear>υ</unclear></orig> <gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><w lemma="θαυμάζω">θα<unclear>υ</unclear>μα<supplied reason="lost" cert="low">σθέντα</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><orig>τη<unclear>τ</unclear>ο<unclear>υ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><orig><hi rend="ligature">μν</hi>ο</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/><orig>αω</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><orig>μ<unclear>α</unclear></orig> <gap reason="lost" unit="character" extent="unknown"/></ab></div>
+</div>
+         <div type="apparatus">
+           <listApp>
+            <app loc="2"><note>e.g. <foreign xml:lang="grc">θαυμα<supplied reason="lost">σθέντα</supplied>
+               </foreign> (or <foreign xml:lang="grc">θαυμά<supplied reason="lost">σθεισαν</supplied>
+               </foreign>)  <foreign xml:lang="grc">
+                  <supplied reason="lost">ἐπὶ</supplied> τῇ τοῦ <supplied reason="lost">βίου σε</supplied>μνο<supplied reason="lost">τητι</supplied>
+               </foreign>.</note></app>
+           </listApp>
+         </div>
+         <div type="translation">
+            <p>a. <gap reason="lost" unit="line" extent="unknown"/>
+               <term>e.g</term>. admired for dignity of life <gap reason="lost" unit="character" extent="unknown"/>
+            </p>
+         </div>
+         <div type="commentary">
+            <p>L. 2 suggests that this is an honorary text. </p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> Excavated by the NYU expedition in 1962 (<rs type="siteNo">Temple 103</rs>)</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph010172.html">1.172</ref></citedRange></bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> List of names or graffiti</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120310</idno>
+            <idno type="IAph2007">iAph120310</idno>
+            <idno type="JMR2004">iAph1688</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Large <material>white marble</material>
+                              <objectType>block</objectType>
+                              <dimensions unit="metre"><width>0.96</width><height>0.55</height><depth>0.40</depth></dimensions>, chipped along all edges, the surface polished over approximately two thirds of its area, but roughened at the right side.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="litteris scariphatis">Scratched</rs>, beginning close to the upper edge, and perhaps commencing on an upper block.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>irregular in size and alignment; broad, shallow trenches; non-standard forms; ave. <height unit="metre">0.07</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0400" precision="medium" evidence="lettering">First to fourth centuries C.E.</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwalles">East stretch (south part)</placeName>: re-used in the stretch east of Museum Garden.</provenance>
+                  <provenance type="observed" when="1978">Findspot (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-04-30" who="Charlotte-Tupman">DONE</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_J_14.jpg">
+            <desc>Face (M. Roueché, 1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab><lb n="1"/> <orig>μην</orig><space quantity="5" unit="character"/> <lb n="2"/> <persName type="attested"><name nymRef="#Διογένης">Διογένης</name><gap reason="lost" unit="character" quantity="3"/> <unclear>ης</unclear> <lb n="3"/><persName type="attested"><name nymRef="#Διογένης">Διογέν<unclear>ο</unclear><supplied reason="lost">υς</supplied></name></persName></persName>  <lb n="4"/>  <space quantity="3" unit="character"/>  <lb n="5"/><space quantity="3" unit="character"/><lb n="6"/><gap reason="lost" unit="character" quantity="3"/><orig n="υνρεσολνεδ"><unclear>μσνης</unclear></orig> </ab>
+</div>
+         <div type="apparatus">
+           <listApp>
+            <app loc="1"><note>There are traces of a letter to the left of mu, perhaps, but not certainly, an alpha.</note></app>
+            <app loc="2, 4-6"><note>Lines 2, and 4-6 are in different hands, and much smaller than what precedes.</note></app>
+           </listApp>
+         </div>
+         <div type="translation">
+            <p>?Men[odotos, or son of Menodotos] Diogenes son of Diogenes [ . . .</p>
+         </div>
+         <div type="commentary">
+            <p>This may be from a list of names (its purpose unknown, but perhaps related to membership in a trade guild, since that could explain the rough execution); but the smaller lettering to the right and below suggests rather a series of graffiti.</p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition (<rs type="siteNo">Walls 12</rs>).</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120310.html">12.310</ref></citedRange></bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

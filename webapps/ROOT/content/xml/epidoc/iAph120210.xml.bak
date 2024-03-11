@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> <rs type="textType">Funerary</rs> fragment</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph120210</idno>
+            <idno type="IAph2007">iAph120210</idno>
+            <idno type="JMR2004">iAph1426</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment of a <material>white marble</material>
+                              <objectType>sarcophagus</objectType> front (<dimensions unit="metre"><width>0.46</width><height>0.305</height><depth>0.11</depth></dimensions>) with, apparently, top edge surviving and perhaps lower edge.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the surface of the surviving face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Irregular; <height unit="metre">0.02</height> (<foreign xml:lang="grc">o</foreign>) - <height unit="metre">0.025-0.028</height>; diairetic dots around first <foreign xml:lang="grc">I</foreign>, line 2; <foreign xml:lang="grc">o</foreign> for stops.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" evidence="lettering">Second to third centuries C.E.</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallen">East stretch (north part)</placeName>, lying just NE of water channel stretch.</provenance>
+                  <provenance type="observed" when="1978">Museum (1978)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2007-07-10" who="cmr">DONE</change>
+         <change when="2007-01-30" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="GB">hand tidied</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="78_G_10.jpg">
+            <desc>Face (M. Roueché, 1978)</desc>
+         </graphic>
+         <graphic url="78_G_11.jpg">
+            <desc>Face (M. Roueché, 1978)</desc>
+         </graphic>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Ζήνων"><supplied reason="lost" cert="low">Ζη</supplied>νων</name></persName> <orig><unclear>ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><w><gap reason="lost" unit="character" extent="unknown"/><unclear>κ</unclear>οῦ</w>  <orig>φιλο</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/>    <persName type="attested"><name nymRef="#Ἑρμόλαος"><supplied reason="lost" cert="low">Ἑρ</supplied><unclear>μ</unclear>ολαος</name></persName> <w lemma="μέν">μὲν</w> <g ref="#stop"/> <w lemma="εἶδον">ἰδεῖν</w> <gap reason="illegible" unit="character" quantity="1"/> <gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/>  <persName type="attested"><name nymRef="#Ζήνων"><supplied reason="lost">Ζ</supplied>ήνων</name></persName>  <g ref="#stop"/>  <w>ἐπικληθ<gap reason="lost" unit="character" extent="unknown"/></w>    <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><orig>υ</orig>  <persName type="attested"><w><name>Μοῖραι</name></w></persName> <w lemma="γάρ">γὰρ</w> <w lemma="ἐπικλώθω">ἐπέκλ<unclear>ω</unclear><supplied reason="lost">σαν</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" quantity="3"/><orig>ασ</orig>  <space quantity="1" unit="character"/> <w lemma="πᾶς">πάσῃ</w> <w lemma="τε">τε</w> <w lemma="πόλις">πόλει</w> <g ref="#stop"/>  <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="7"/><gap reason="lost" unit="character" extent="unknown"/>  <space quantity="3" unit="character"/> <orig>ου</orig> <w lemma="καί">κα<unclear>ὶ</unclear></w>  <w lemma="ἑαυτός">ἑαυτ<supplied reason="lost">ο</supplied><gap reason="lost" unit="character" extent="unknown"/></w>    <lb n="8"/><gap reason="lost" unit="character" extent="unknown"/>  <space quantity="3" unit="character"/>  <orig>π<unclear>α</unclear>υ<unclear>σ</unclear>α</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="9"/>  <gap reason="lost" unit="line" xml:id="gap17" extent="unknown"/><certainty target="#gap17" locus="name" cert="low"/></ab>
+</div>
+         <div type="apparatus">
+           <listApp>
+            <app loc="6"><note><seg cert="low">
+                  <foreign xml:lang="grc">Κ<unclear>Α</unclear>ΒΕ</foreign>
+               </seg> (JMR)</note></app>
+            <app loc="7"><note><foreign xml:lang="grc">ΚΛΩΕ</foreign> (JMR)</note></app>
+            <app loc="8"><note><foreign xml:lang="grc">Π<unclear>Λ</unclear>ΕΥ</foreign> (JMR)</note></app>
+           </listApp>
+         </div>
+         <div type="translation">
+            <p>References to a name, to the Fates, to the whole city</p>
+         </div>
+         <div type="commentary">
+            <p>Apparently a fragment from a funerary poem, for someone who died young, when the Fates cut short his or her life.</p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> Excavated by the NYU expedition in 1979 (<citedRange>79.16</citedRange>, <rs type="siteNo">Walls 11</rs>).</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120210.html">12.210</ref></citedRange></bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>
