@@ -6,19 +6,20 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>
-               <title>Part of a  statue <rs type="textType">dedication</rs></title>
-            </title>
-            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <title>Dedication to Zeus Nineudios</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
-            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
          </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph100040</idno>
-            <idno type="IAph2007">iAph100040</idno>
-            <idno type="JMR2004">iAph0758</idno>
+            <idno type="filename">iAph170012</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -33,28 +34,27 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Marble <objectType>console</objectType> for a statue base, broken to left: <dimensions><width>0.71</width> <height>0.43</height> <depth>0.48</depth></dimensions>.</p>
-                        </support>
+                           <p>Fragment of a <material>Marble</material> <objectType>base</objectType> broken at right and supporting a small statue of an eagle; 
+                              only the two claws and the lower part of his body are preserved:  
+                              <dimensions><height>0.085</height><width>0.19</width><depth>0.23</depth></dimensions>.</p> </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on side</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face, <dimensions><height>0.07</height><width>0.155</width></dimensions>.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height>0.05</height></handNote>
+                     <handNote><height>0.01-0.014</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0101" notAfter="0299" precision="medium" evidence="lettering">Second-third century CE</origDate>
+                     <origDate notBefore="0001" notAfter="0199" evidence="lettering">First-second century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphstadium">Stadium</placeName>, <placeName type="monuList" ref="#aphstadiumarena">arena</placeName>, 
-                     directly in front of the  southwest refuge (Chaniotis); 'on a seat in the Stadium' (Fellows) </provenance>
-                  <provenance type="observed">Findspot (1998)</provenance>
-               </history>
+                     <placeName ref="#aphodeon">Odeon/Bouleuterion</placeName>: in the odeon store, rear chamber 6.</provenance>
+                     <provenance type="observed">Museum</provenance></history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -77,53 +77,47 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
-               <term>
-                  <rs type="textType" key="cetera">Agonistic</rs>
-               </term>
+               
             </keywords>
          </textClass>
-         <creation>Publication; this edition: Roueché (2007).</creation>
+         
+         <creation></creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2007-03-24" who="Charlotte-Tupman">hand tidied</change>
-         <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
-         <change when="2007-01-01" who="GB">hand tidied</change>
+         <change when="2024-03-25" who="#CMR">Encoded</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <surface/>
+      <surface>
+         
+      </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>
-<w lemma="ὁ"><unclear>ἡ</unclear></w> <w lemma="πατρίς">πατρίς</w></ab>
-</div>
-         <div type="translation" xml:lang="en" source="#chaniotis2004">
-            <p>The Fatherland <supplied reason="explanation">set this up</supplied> . . .</p>
+            <ab>
+            <lb n="1"/>Μελέαγ<unclear>ρ</unclear><supplied reason="lost">ος <space quantity="5" unit="character" /></supplied> 
+            <lb n="2"/>χαλκεὺς Δι<supplied reason="lost">ὶ Νινευ</supplied>
+            <lb n="3" break="no"/>δίῳ εὐχήν<supplied reason="lost" cert="low"><space quantity="5" unit="character" /></supplied></ab>
+            
          </div>
-         <div type="translation" xml:lang="en" source="#iaph2007">
-            <p>The Fatherland <supplied reason="lost" cert="low"> . . .</supplied></p>
+         <div type="apparatus"><listApp><app><rdg resp="chaniotis2004">?Perhaps Δῆ[μ]ο[ς</rdg></app></listApp></div>
+         
+         <div type="translation" xml:lang="en" source="#CMR">
+            <p>The People?</p><!-- think about markup -->
+            <p><note>Underside, a mason's mark</note></p>
          </div>
-        <div type="translation" xml:lang="en" source="#fellows1841">
-            <p>The native city</p>
-         </div>
-         <div type="commentary">
+        
+         
+         <div type="commentary" n="notyet">
             
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="fellows"/></bibl>; <bibl><ptr target="nyu"/> <citedRange>98.9</citedRange></bibl>.
-            </p>
+            <p><bibl><ptr target="nyu"/> <citedRange>I 99.002</citedRange></bibl></p>
          </div>
          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="fellows1841"/> <citedRange>64</citedRange>
-              </bibl>, whence  <bibl><ptr target="cigIIc"/> <citedRange>2809c</citedRange>
-              </bibl>, <bibl><ptr target="roueche1993"/>  <citedRange>45.X.6</citedRange>
-              </bibl>, <bibl><ptr target="phi"/> <citedRange><ref target="https://epigraphy.packhum.org/text/265025">PPAphr 45.X.5</ref></citedRange></bibl>, 
-               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph100040.html">10.40</ref></citedRange></bibl>; 
-               <bibl><ptr target="chaniotis2004"/>  <citedRange>10</citedRange>
-              </bibl>, whence <bibl><ptr target="seg"/> <citedRange>54.1034</citedRange></bibl></p>
+            <p><bibl><ptr target="chaniotis2004"/> <citedRange>11</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>54.1037</citedRange></bibl></p>
          </div>
       </body>
    </text>
