@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph of M.Aurelius Apellas and family members</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170020</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository><idno>6528</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Garland sarcophagus with unfinished portrait busts; pedimental lid with two bosses and decorated with akroteria; 
+                              the sarcophagus has a <hi rend="italic">tabula ansata</hi> with inscription and double scallop handles 
+                              raised by Erotes at either side; in the corners, standing Nikai raising a garland above their heads; grape clusters hang from the garland; in the front roundels, 
+                              two unfinished portrait busts: at left a woman wearing chiton and mantle; at right a man with himation</p> </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> Lines 1-4 
+                           <rs type="execution" ref="scalpro">inscribed</rs> on the lid, line 5 on the upper rim, lines 6-17 in the panel.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.02</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201" notAfter="0299" evidence="lettering">third century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphnecropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropoliss">south area</placeName>
+                     south of the south gate.</provenance>
+                     <provenance type="observed">Museum</provenance></history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               
+            </keywords>
+         </textClass>
+         
+         <creation></creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-03-26" who="#CMR">Encoded</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+            <lb n="1"/>Ἡ σορός ἐστιν <persName type="attested"><name>Μάρ(κου)</name> <name>Αὐρ(ηλίου)</name> <name>Ἀπελλᾶ</name> τοῦ 
+               <persName type="attested"><name>Περείτου</name> τοῦ <persName type="attested"><name>Καλλικλέους</name> τοῦ <persName type="attested"><name>Ἐπ̣ι̣<supplied reason="lost">κ</supplied> v v ράτους</name>
+            <lb n="2"/>τοῦ <persName type="attested"><name>Ἀρτεμιδώρου</name></persName></persName></persName></persName></persName> · εἰς ἣ͜ν σορὸν ταφήσονται αὐτός τε ὁ Ἀπελλᾶς καὶ Τατιὰς Διονυσίου ἡ γ<supplied reason="lost">υ</supplied> v v ν͜ὴ αὐτοῦ 
+            <lb n="3"/>καὶ Διονύσιος καὶ Ἀπελλᾶς, οἱ υἱοὶ αὐτῶν · ἕτερος δὲ οὐδεὶς ἕξει ἐξουσίαν ἐνθά̣- 
+            <lb n="4"/>ψαι τινα ἢ ἐκθάψαι τῶν προγεγ̣ραμ͜μένων, μ͜ήτε διὰ ἄκτου βουλῆς μ͜ήτε διὰ <supplied reason="lost">ἡγεμο</supplied>- 
+            <lb n="5"/>νικῆς ἐντεύξεως, ἐπεὶ ἔστω ἀσεβής τε καὶ ἐπάρατος καὶ τυμβωρύχος καὶ προσαποτεισάτω̣ ̣τ̣ῷ̣ 
+            <lb n="6"/>ἱερωτάτῳ ταμείῳ ἀρ- 
+            <lb n="7"/>γυρίου (δηνάρια) ,γ, ὧν 
+            <lb n="8"/>τὸ τρίτον ἔστω 
+            <lb n="9"/>τοῦ ἐγδικήσαν- 
+            <lb n="10"/>τος · τῆ͜ς ἐπιγραφῆς 
+            <lb n="11"/>ἀπετέθη ἀ̣ντίγρα- 
+            <lb n="12"/>φον εἰς τὸ χρεοφυ- 
+            <lb n="13"/>λάκιον ἐπὶ στεφα- 
+            <lb n="14"/>ν͜ηφόρου τὸ β’ Ατ- 
+            <lb n="15"/>τάλου, υἱοῦ Με- 
+            <lb n="16"/>νάνδρου, μ͜η͜νὸς 
+            <lb n="17"/>Γορπιαίου 
+          </ab>
+         </div>
+         <div type="apparatus"><listApp>
+            <app loc="3"><rdg>ΑΙΑΠΕΛΛΑ: written on the left, ΕΞΟΥΣΙΑ on the right boss</rdg></app>
+            <app loc="4"><rdg>ΨΑΙΤΩΝΠ written on the left, ΗΣΜΗΤΕΔΙΑ on the right boss</rdg></app>
+         </listApp></div>
+        
+         
+         <div type="translation" xml:lang="en" source="#chaniotis2004">
+            <p>This sarcophagus belongs to Marcus Aurelius Apellas,
+               son of Pereitas, son of Kallikles, son of Epikrates,
+               son of Artemidoros. In this sarcophagus shall be buried
+               Apellas himself, his wife Tatias, daughter of Dionysios,
+               and their sons Dionysios and Apellas. No one
+               else shall have the authority to place another person
+               in it or to remove any of the aforemetioned persons
+               from it, not even as a result of an act of the council or an intercession by a provincial governor, because he
+               shall be impious and accursed and a grave-robber,
+               and in addition to this he shall pay to the most sacred
+               treasury 3,000 silver denarii, one third of which shall
+               belong to the prosecutor. A copy of this inscription
+               was deposited in the registry-office during the second
+               stephanephorate of Attalos, son of Menandros,
+               in the month Gorpiaios.</p>
+         </div>
+         <div type="translation" xml:lang="fr" source="#AE">
+            <p>Le sarcophage appartient à M. Aurelius Apellas, fils de Péritès,
+               petit-fils de Calliclès, arrière-petit-fils d'Épicratès, arrière-arrière-petit-fils
+               d'Artemidoros. Dans ce sarcophage seront ensevelis Apellas lui-même,
+               Tatias, fille de Dionysios, sa femme, ainsi que Dionysios et Apellas, leurs
+               fils ; personne d'autre n'aura l'autorisation d'y ensevelir quelqu'un ni
+               d'extraire le corps d'un des susnommés, ni en vertu d'un acte du Conseil
+               ni en vertu d'une intervention du gouverneur, car (dans ce cas), qu'il soit
+               impie, maudit et pilleur de tombes, et qu'il paie en outre au très sacré trésor une amende de 3 000 deniers d'argent, dont un tiers devra revenir à
+               celui qui l'aura poursuivi ; copie de cette inscription a été déposé au
+               bureau des débiteurs de l'état, sous le deuxième stéphanéphorat d'Atta
+               los, fils de Ménandros, au mois Gorpiaios. 
+            </p>
+         </div>
+         <div type="commentary" n="notyet">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="aphmuseum"/> <citedRange>I 00.005</citedRange>, <citedRange>sarcophagus 474-475</citedRange></bibl></p>
+         </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="smithratte2004"/> <citedRange unit="page">176</citedRange> (description) and <citedRange unit="page">179</citedRange>, figure 35</bibl>; 
+               <bibl><ptr target="chaniotis2004"/> <citedRange unit="entry">23</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>54.1056</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>2004.1455</citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>
