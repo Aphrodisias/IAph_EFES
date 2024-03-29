@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph of Poseidonios and family members</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170026</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository><idno>6042</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material>  <objectType>block</objectType>, broken below and at right: 
+                              <dimensions><height unit="metre">0.45</height> <width unit="metre">0.80</width> <depth unit="metre">0.18</depth></dimensions></p> </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.025-0.035</height> </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><placeName ref="#aphnecropolis">Necropolis</placeName></origPlace>
+                     <origDate notBefore="0101" notAfter="0199" evidence="lettering nomenclature">Second century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#karacasu">Karacasu</placeName></provenance>
+                     <provenance type="observed">Museum</provenance></history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               
+            </keywords>
+         </textClass>
+         
+         <creation></creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-03-28" who="#CMR">Encoded</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+ <lb n="1"/><w>Tὸ</w> <w>μνημεῖον</w> <w>καὶ</w> <w><unclear>α</unclear>ἱ</w> <w><unclear>ἐ</unclear><supplied reason="lost">ν</supplied></w> <w><supplied reason="lost">α</supplied><unclear>ὐτ</unclear>ῷ</w> <w>ἰσῶσται</w> <w>καὶ</w> <w><supplied reason="lost">ὁ</supplied></w> <w><supplied reason="lost" cert="low">παρα</supplied>
+<lb n="2" break="no"/><supplied reason="lost">κ</supplied>είμενος</w> <w>ὀπίσω</w> <w>τοῦ</w> <w><hi rend="ligature">μνημ</hi>είου</w> <w>πλάτα<supplied reason="lost">ς</supplied></w> <supplied reason="lost"><w>εἰσιν</w>/supplied>
+<lb n="3"/><name><supplied reason="lost">Π</supplied>οσειδωνίου</name> <w>τοῦ</w> <name>Ποσειδω<space quantity="1" unit="character"/>νίου</name> <orig>ΤΕ</orig> <gap reason="lost" quantity="5" unit="character"/>
+<lb n="4"/><w>καὶ</w> <name>Ἀπφίας</name> <w>τῆς</w> <w>Ἡρακλέοντος</w> <w>τῆς</w> <w>γυν<unclear>α</unclear><supplied reason="lost">ικὸς</supplied></w> <w><supplied reason="lost">αὐ</supplied>
+<lb n="5" break="no"/>τοῦ</w> <w>καὶ</w> <w>τέκνων</w> <w>καὶ</w> <w>ἐγόνων</w> <w>v</w> <space quantity="2" unit="character"/> <w>αὐτῶν</w> <w>κ<unclear>α</unclear><supplied reason="lost">ὶ</supplied></w> <w><supplied reason="lost">γυναι</supplied>
+<lb n="6" break="no"/>κῶν·</w> <w>εἰς</w> <w>δὲ</w> <w>τ<hi rend="ligature">ὴν</hi></w> <w>ἐπιτεθησομέ<hi rend="ligature">νην</hi></w> <w>ὑπὸ</w> <name><supplied reason="lost">Ποσειδω</supplied>
+<lb n="7" break="no"/>νίου</name> <w>σορὸν</w> <w>οὐδεὶς</w> <w>ἕτερος</w> <w>ἕξει</w> <w>ἐξουσίαν</w> <w><supplied reason="lost">ἐνθά</supplied>
+<lb n="8" break="no"/>ψαί</w> <w>τινα</w> <w>ἕτερον</w> <w>ἢ</w> <w>μόνους</w> <name>Ποσειδών<supplied reason="lost">ιον</supplied></name> <supplied reason="lost"><w>καὶ</w></supplied> <name><supplied reason="lost">Ἀπ</supplied>
+<lb n="9" break="no"/>φίαν</name>, <w>τοὺς</w> <w>προγεγραμ͜μένους</w> · <w>ἐπεὶ</w> <w>ὁ</w> <w><unclear>π</unclear><supplied reason="lost">αρὰ</supplied></w> <supplied reason="lost"><w>ταῦτα</w></supplied>
+<lb n="10"/><w>τι</w> <w>ποιήσας</w> <w>ἔστω</w> <w>ἀσεβὴς</w> <w>καὶ</w> <w>ἐπάρατο<supplied reason="lost">ς</supplied></w> <supplied reason="lost"><w>καὶ</w> <w><supplied reason="lost">τυμ</supplied>
+<lb n="11" break="no"/><supplied reason="lost">βωρύχος</supplied></w> <supplied reason="lost"><w>καὶ</w></supplied> <w><supplied reason="lost">προσ</supplied>αποτεισάτω</w> <w>τῷ</w> <w><unclear>ἱ</unclear><supplied reason="lost">ερωτάτῳ</supplied></w>
+<lb n="11a"/><supplied reason="lost"><w>ταμείῳ</w></supplied> <gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+         </div>
+         <div type="apparatus">
+         <app loc="2"><note>Two bosses are uninscribed</note></app>
+            <app loc="19"><note>The text is inscribed on the two bosses on the lid.</note></app>
+         
+         </div>
+        
+         
+         <div type="translation" xml:lang="en" source="#chaniotis2004">
+            <p> This monument and the niches in it and the platform which is behind the monument belong to Poseidonios, 
+               son of Poseidonios [—] andApphia, daughter of Herakleon, his wife, and to their children and their descendants 
+               and [their wives]. No one will have the au- thority to bury someone in the sarcophagus, which Poseidonios will place (on the platform), 
+               any other person than the aforementioned Poseidonios and Apphia alone, because the person who acts against this will be 
+               impious and accursed and a grave-robber, and in addition to this he will have to pay to the most sacred treasury . . .</p>
+         </div>
+         
+         
+         <div type="commentary" n="notyet">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="nyu"/> <citedRange>I 00.005</citedRange></bibl></p>
+         </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="chaniotis2004"/> <citedRange unit="entry">29</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>54.1062</citedRange></bibl>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

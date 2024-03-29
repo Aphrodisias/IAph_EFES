@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph of M. Aurelius Apollonios Damas</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170021</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Pedimental <objectType>sarcophagus lid</objectType> with akroteria, 
+                              <dimensions><height unit="metre">0.39</height> <width unit="metre">2.01</width> <depth unit="metre">0.88</depth></dimensions>. 
+                              The corner akroteria are carved: a sleeping Eros at right, a reclining female at left; the front of the roof has six sets of pan- and cover 
+                              tiles that terminate in 
+                              the corner akroteria and in four lions’ heads along the front edge; on the front of the lid two bosses.</p> </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> Line 1 <rs type="execution" ref="scalpro">inscribed</rs> on the upper rim, lines 2-3 below, interrupted by the bosses in the panel.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.02</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201" notAfter="0299" evidence="lettering">Third century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphnecropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropolise">East area</placeName></provenance>
+                     <provenance type="observed">Museum</provenance></history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               
+            </keywords>
+         </textClass>
+         
+         <creation></creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-03-26" who="#CMR">Encoded</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+            <lb n="1"/><supplied reason="lost"><w>Ἡ</w></supplied> <w>σορὸς</w> <w><supplied reason="lost">κατεσκε</supplied>υάσ<unclear>θη</unclear></w> <w><supplied reason="lost">ὑπ</supplied>ὸ</w> <w>κλη<unclear>ρον</unclear>όμω<unclear>ν</unclear></w> <persName type="attested"><name>Μ<supplied reason="lost">ά</supplied>ρ<unclear>κ</unclear>ο<unclear>υ</unclear></name> <name>Α<unclear>ὐρ</unclear>ηλίου</name> <name>Ἀπολλ<supplied reason="lost">ω</supplied><unclear>ν</unclear>ίου</name> <w>τοῦ</w>
+<supplied reason="lost">· · 7 · ·</supplied><persName type="attested"><name><seg part="F">ου</seg></name> <w>τοῦ</w> <persName type="attested"><name>Δη
+   <lb n="2" break="no"/><hi rend="ligature">μη</hi>τρίου</name> <num value="3">γ</num> <w>τοῦ</w> <persName type="attested"><name>Ὑψικλέου<space quantity="2" unit="character"/>ς</name></persName></persName></persName> <name>Δαμᾶ</name></persName>, <w>ἐν</w> <w>ᾗ</w> <w>σορῷ</w> <w>τέθαπται</w> <w>αὐτός</w> <w>τε</w> <space quantity="2" unit="character"/> <w>ὁ</w> 
+               <persName type="attested"><name>Ἀπολλώνιος</name></persName>, <w>κηδευ
+                  <lb n="3" break="no"/>θήσονται</w> <w>δὲ</w> <w>καὶ</w> <persName type="attested"><name>Αὐρη<space quantity="2" unit="character"/>λίαι</name> <name>Καλλιγενὶς</name></persName> <w>καὶ</w> <persName type="attested"><name>Φλαβίλλα</name> </persName><w>τὰ</w> <surplus><orig>τε</orig></surplus> <w>τέ<space quantity="2" unit="character"/>κνα</w>
+          </ab>
+         </div>
+         
+        
+         
+         <div type="translation" xml:lang="en" source="#chaniotis2004">
+            <p>This sarcophagus [was made/provided by] the heirs of Marcus Aurelius Apollonios Damas, son of — , son of Demetrios III, son of Hypsikles. 
+               In this sarcophagus is buried Apollonios himself and shall be buried Aurelia Kalligenis and Aurelia Flavilla, the children of Apollonios.
+            </p>
+         </div>
+         <div type="translation" xml:lang="fr" source="#AE">
+            <p>Le sarcophage a été réalisé par les héritiers de Marcus Aurelius Apollonios, fils de [?], (petit-fils) de Démétrios, 
+               (arrière-arrière-petit-fils de Demetrios fils) 
+               d'Hypsikles Damas. Dans ce sarcophage est enseveli Apollonios lui-même ; y seront également ensevelies 
+               Aurelia Kalligenis et Aurelia Flavilla, les enfants d'Apollonios.
+            </p>
+         </div>
+         <div type="apparatus">
+            <app loc="2–3"><rdg resp="chaniotis2004">Some space remained uninscribed because of the two bosses</rdg></app>
+         </div>
+         <div type="commentary" n="notyet">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="aphmuseum"/> <citedRange>I 00.006</citedRange>, <citedRange>Sarcophagus 467</citedRange></bibl></p>
+         </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="chaniotis2004"/> <citedRange unit="entry">24</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>54.1057</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>2004.1456</citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>

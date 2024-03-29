@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph of M. Aurelius Marsyas</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170024</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material>  <objectType>sarcophagus lid</objectType> 
+                              (<dimensions><height unit="metre">0.49</height> <width unit="metre">2.16</width> <depth unit="metre">1.03</depth></dimensions>). with akroteria and two bosses; 
+                              the front roof has six sets of pan- and cover tiles, two of which end in the corner akroteria, the others in uncarved elements at the edge of the roof; 
+                              both ends have a recessed tympanon, the right with an uncarved disc, the left with a phiale motif.</p> </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the front of the lid; the text must have continued on the body of the 
+                        sarcophagus.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.02</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0212" notAfter="0275" evidence="lettering nomenclature">Early third century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphnecropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropolise">East area</placeName></provenance>
+                     <provenance type="observed">Museum</provenance></history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               
+            </keywords>
+         </textClass>
+         
+         <creation></creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-03-28" who="#CMR">Encoded</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+<lb n="1"/><w>Ἡ</w> <w>σορός</w> <w><unclear>ἐ</unclear><supplied reason="lost">στιν</supplied></w> <persName type="attested"><supplied reason="lost"><name>Μάρκου</name></supplied> <name><supplied reason="lost">Α</supplied>ὐρηλ<supplied reason="lost">ίο</supplied><unclear>υ</unclear></name>
+               <name><unclear>Μ</unclear><supplied reason="lost">αρσύου</supplied></name></persName> <supplied reason="lost"><w>τοῦ</w></supplied> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w>εἰς</w> <w>ἣν</w></supplied>
+<lb n="2"/><w>σορὸν</w> <w>ταφήσονται</w> <w>αὐτός</w> <space quantity="2" unit="character"/> <w>τ<unclear>ε</unclear></w> <w>ὁ</w> <w>προγεγραμμένος</w> <persName type="attested"><name>Μαρσ<unclear>ύας</unclear></name></persName> <supplied reason="lost"><w>καὶ</w><space quantity="2" unit="character"/></supplied> 
+<lb n="3"/><persName type="attested"><name><expan><abbr>Μᾶρ</abbr><ex>κος</ex></expan></name> <name><expan><abbr>Αὐρ</abbr><ex>ήλιος</ex></expan></name> <name>Μαρσύας</name></persName> <w>ὁ</w> <w>υἱ<milestone unit="block"/>ὸς</w> <w>αὐτοῦ</w> <w>ὁ</w><milestone unit="block"/> <w>πρεσβύτερος</w> <w>καὶ</w> <persName type="attested"><name><expan><abbr>Αὐρ</abbr><ex>ηλία</ex></expan></name> 
+               <name>Μαρκια<hi rend="ligature" xml:id="lig1">νή</hi></name></persName><link target="#lig1 #lig2"/> <w><hi rend="ligature" xml:id="lig2">ἡ</hi></w> <w>γυ<unclear>ν</unclear><supplied reason="lost">ὴ</supplied></w> <milestone unit="block"/><w><unclear>τοῦ</unclear></w> <w><unclear>υἱοῦ</unclear></w><milestone unit="block"/> <w><unclear>τ</unclear>οῦ</w> <persName type="attested"><name>Μαρσύου</name></persName>· <w>ἕτε<supplied reason="lost">ρος</supplied></w>
+<lb n="4"/><w>δὲ</w> <w>οὐδεὶς</w> <w>ἕξει</w> <w>ἐξου<milestone unit="block"/>σίαν</w> <w><unclear>ἐ</unclear>νθ<unclear>ά</unclear><milestone unit="block"/>ψαί</w> <w>τινα</w> <w>ἢ</w> <w>ἐκθάψαι</w> <w>τ<unclear>ῶ</unclear>ν</w> <w>προγεγραμμέν<milestone unit="block"/>ων,</w> <w>ἐ<unclear>πε</unclear><milestone unit="block"/><supplied reason="lost">ὶ</supplied></w> <w><supplied reason="lost">ἔ</supplied>στω</w> <w>ἀσε<supplied reason="lost">β</supplied>ὴς</w> <w>καὶ</w> <supplied reason="lost"><w>ἐπάρατος</w></supplied>
+
+            </ab>
+         </div>
+         <div type="apparatus">
+         <app loc="2"><note>Two bosses are uninscribed</note></app>
+            <app loc="3-4"><note>The text continues on the bosses</note></app>
+         
+         </div>
+        
+         
+         <div type="translation" xml:lang="en" source="#chaniotis2004">
+            <p> This sarcophagus belongs to Marcus Aurelius Marsyas, son of —. In this sarcophagus shall be buried the aforementioned Marsyas 
+               and his elder son Marcus Aurelius Marsyas and Aurelia Markiane, the wife of Marsyas' son. No one else shall have the authority 
+               to place another person in it or to remove any of the aforementioned persons, because he shall be impious and accursed  . . . </p>
+         </div>
+         <div type="translation" xml:lang="fr" source="#AE">
+            <p>Le sarcophage appartient à Marcus Aurelius Marsyas, fils de [---] ;
+               dans ce sarcophage seront enterrés le susnommé Marsyas lui-même, ainsi
+               que M. Aurelius Marsyas, son fils aîné, et Aurelia Marciana, la femme
+               du fils de Marsyas ; personne d'autre ne sera autorisé? à y ensevelir quel
+               qu'un ni à retirer le corps de l'un des susnommés, car (dans ce cas), qu'il
+               soit impie et [maudit ---]. 
+            </p>
+         </div>
+         
+         <div type="commentary" n="notyet">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="aphmuseum"/> <citedRange>I 00.008</citedRange>, <citedRange>Sarcophagus 466</citedRange></bibl></p>
+         </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="chaniotis2004"/> <citedRange unit="entry">27</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>54.1060</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>2004.1459</citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>

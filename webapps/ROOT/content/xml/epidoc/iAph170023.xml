@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph of Iulia (?)</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170023</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>sarcophagus</objectType>, 
+                              (<dimensions><height unit="metre">0.57</height> <width unit="metre">1.98</width> <depth unit="metre">0.575-0.67</depth></dimensions>) 
+                              with <objectType>sarcophagus lid</objectType> 
+                              (<dimensions><height unit="metre">0.37</height> <width unit="metre">2.06</width> <depth unit="metre">0.68</depth></dimensions>). On the front of the lid two bosses; 
+                              on the front of the body of the sarcophagus a raised panel; 
+                              on both narrow sides of the lid a disc within a pediment.</p> </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the front of the lid (lines 1-4), the upper part of the body (lines 5/6), 
+                           the frame of the panel (line 7), and the panel itself (lines 7-13)</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.025</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0129" notAfter="0199" evidence="lettering prosopography">Second century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphnecropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropolise">East area</placeName></provenance>
+                     <provenance type="observed">Museum</provenance></history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               
+            </keywords>
+         </textClass>
+         
+         <creation></creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-03-28" who="#CMR">Encoded</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+<lb n="1"/><gap reason="lost" quantity="3" unit="character"/> <orig>ΩΤΟΥ<unclear>ΑΠ</unclear>ΩΝΟ<unclear>Σ</unclear></orig><gap reason="lost" quantity="2" unit="character"/>
+   <orig><unclear>Ο</unclear>Υ<unclear>Τ</unclear>ΟΠΩ<gap reason="lost" quantity="3" unit="character"/><unclear>ν</unclear><gap reason="lost" quantity="8" unit="character"/>NO<gap reason="lost" quantity="6" unit="character"/><unclear>νησ</unclear><gap reason="lost" quantity="4" unit="character"/><unclear>εκ</unclear><gap reason="lost" quantity="1" unit="character"/>ιλη</orig><gap reason="lost" quantity="9" unit="character"/>
+<lb n="2"/><persName type="attested"><name>Ἰουλία</name></persName> <space quantity="2" unit="character"/> <w>ἕτερος</w> <w>δὲ</w> <w>οὐδεὶς</w> <w>ἕξει</w> <w><unclear>ἐ</unclear>ξουσία<supplied reason="lost">ν</supplied></w><gap reason="lost" quantity="3" unit="character"/><orig>νο</orig><gap reason="lost" quantity="1" unit="character"/><w><supplied reason="lost">ἐ</supplied><unclear>ν</unclear>θάψ<space quantity="2" unit="character"/>αι</w> <w>τινὰ</w> <w>ἕ<unclear>τ</unclear><supplied reason="lost">ερον</supplied></w> <supplied reason="lost"><w>ἢ</w></supplied>
+<lb n="3"/><w>ἐκθάψαι</w> <space quantity="2" unit="character"/> <w>τὴν</w> <w>προγεγραμμένη͜ν</w> <w>οὐδὲ</w> <w>μετακομίσαί</w> <w>π<space quantity="2" unit="character"/>ου</w> <w>τὴν</w> <supplied reason="lost"><w>σορὸν</w> <w>εἰς</w></supplied>
+<lb n="4"/><w>ἕτερον</w> <w>τ<space quantity="2" unit="character"/>όπον</w> <w>οὔτε</w> <w>διὰ</w> <w>ψηφίσματος</w> <w>ἢ</w> <w>διὰ</w> <w>ἄκτου</w> <w>βου<space quantity="2" unit="character"/><unclear>λ</unclear>ῆς</w> <w>ἢ</w> <w><unclear>ἐ</unclear><supplied reason="lost">ντεύ</supplied>
+<lb n="5" break="no"/>ξεως</w> <w>ἡγεμόνων</w>· <w>ὁ</w> <w>δὲ</w> <w>παρὰ</w> <w>ταῦτα</w> <w>τι</w> <w>ποιήσας</w> <w>ἔστω</w> <w>ἀσεβὴς</w> <w>καὶ</w> <w>ἐπάρατος</w> <w>καὶ</w> <w>τυμβωρύχος</w>
+<lb n="6"/><w>καὶ</w> <w>προσαποτείσει</w> <w>εἰς</w> <w>τὸ</w> <w>ἱερώτατον</w> <w>ταμεῖον</w> <w>ἀργυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <w>ἑξακισχείλια,</w> <w>ὧν</w> <w>τὸ</w> <w>τρίτον</w> <w>ἔσ
+<lb n="7" break="no"/>τω</w> <w>τοῦ</w> <w>ἐκδικήσαντος</w>·
+<lb n="8"/><w>ταύτης</w> <w>τῆς</w> <w>ἐπιγραφῆς</w>
+<lb n="9"/><w>ἀντίγραφον</w> <w>ἀπετέθη</w>
+<lb n="10"/><w>εἰς</w> <w>τὸ</w> <w>χρεοφυλάκιον</w> <w>ἐ
+<lb n="11" break="no"/>πὶ</w> <w>στεφα<hi rend="ligature">νη</hi>φόρου</w> <persName type="attested"><name><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name> <name>Ὑ
+<lb n="12" break="no"/>ψικλέους</name> <persName type="attested"><name>Ὅπλωνος</name></persName></persName> <w>τὸ</w>
+<lb n="13"/><w>ἕκτον</w>, <w lemma="μείς">μηνὸς</w> <rs type="month" ref="#gorpiaeus"><w lemma="Γορπιαῖος">Γορπιήου</w></rs>
+            </ab>
+         </div>
+         <div type="apparatus">
+         <app loc="2-3"><note>Text interrupted by the two bosses</note></app>
+         <app loc="4"><rdg>ΒΟΥΑΗΣ</rdg></app>
+               <app loc="11"><note>apices above ΚΛ </note></app>
+         </div>
+        
+         
+         <div type="translation" xml:lang="en" source="#chaniotis2004">
+            <p> . . . ] Ioulia. No one else will have the authority [—] to place another person (in this sarcophagus), or to remove the aforementioned woman, 
+               or to move the sarcophagus to some other place, not even as a result of a decree of the assembly, an act of the council, or an intercession of the governors. 
+               Whoever does any of these things shall be impious and accursed and a grave-robber, and in addition to this he shall pay 
+               to the most sacred treasury 6,000 silver denarii, one third of which shall be received by the prosecutor. 
+               A copy of this inscription was deposited in the registry-office, during the sixth stephanephorate of Claudius Hypsikles, son of Hoplon, in the month Gorpiaios.
+            </p>
+         </div>
+         <div type="translation" xml:lang="fr" source="#AE">
+            <p>[ --- ] Iulia. Personne d'autre ne sera autorisé à y placer quelqu'un d'autre ni à retirer le corps de la susnommée ni à transporter le sarco
+               phage en un autre lieu, ni en vertu d'un décret, ni en vertu d'un acte du
+               Conseil, ni en vertu d'une intervention de gouverneur ; que celui qui aura
+               agi contre ces interdictions soit impie, maudit et pilleur de tombes, et il
+               paiera en outre au très sacré trésor 6 000 deniers d'argent, dont le tiers
+               devra revenir à celui qui aura porté plainte ; copie de cette inscription a
+               été déposé au bureau des débiteurs de l'état, sous la sixième stéphané
+               phorie de Claudius Hypsiklès, fils d'Hoplon (ou Hypsiklès Hoplon), au
+               mois Gorpiaios.
+            </p>
+         </div>
+         
+         <div type="commentary" n="notyet">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="aphmuseum"/> <citedRange>I 00.003</citedRange>, <citedRange>Sarcophagus 472-3</citedRange></bibl></p>
+         </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="smithratte2004"/> <citedRange unit="page">171</citedRange> (description) and <citedRange unit="page">181</citedRange>, figure 38</bibl>; 
+               <bibl><ptr target="chaniotis2004"/> <citedRange unit="entry">26</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>54.1059</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>2004.1458</citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>
