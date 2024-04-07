@@ -6,17 +6,20 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title> Heading for a document</title>
-            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <title>Invocation of Good Fortune</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
-            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
          </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph110207</idno>
-            <idno type="IAph2007">iAph110207</idno>
-            <idno type="JMR2004">iAph0342</idno>
+            <idno type="filename">iAph170041</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -31,28 +34,27 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Moulded capital of a fluted <objectType>pilaster</objectType>  (<dimensions unit="metre"><width>0.68</width><height>0.25</height><depth>0.68</depth></dimensions>).</p>
-                        </support>
+                           <p><material>Marble</material> square column <objectType>capital</objectType> broken to the left: 
+                              <dimensions><height>0.29</height><width>0.78</width><depth>0.45</depth></dimensions>.
+                           </p> </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs>  on one face below the moulding (surface <width unit="metre">0.64</width> × <height unit="metre">0.05</height>).</layout>
+                        <layout> 
+                           <rs type="execution" ref="scalpro">Inscribed</rs> within a moulded panel, <dimensions><height>0.14</height><width>0.42</width></dimensions>.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.035</height>.</handNote>
+                     <handNote><height>0.05</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0200" precision="medium" evidence="lettering">First to second centuries C.E.</origDate>
+                     <origDate notBefore="0301" notAfter="0399" evidence="lettering">Fourth century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName  ref="#aphcity">City</placeName>, <placeName type="monuList" ref="#aphcitywc">Water Channel area</placeName> : Wa. Ch. III, Tr. 1, at -2.70.</provenance>
-                  <provenance type="observed" when="1978">Museum (1978)</provenance>
-               </history>
+                     <placeName ref="#aphbispal">Bishop's Palace</placeName></provenance>
+                     <provenance type="observed">Museum</provenance></history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -75,47 +77,49 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
-               <term>
-                  <rs type="textType" key="sacer">Religious</rs>
-               </term>
+               
             </keywords>
          </textClass>
-         <creation>Transcription (Reynolds).</creation>
+         
+         <creation></creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2007-03-01" who="#GB">DONE</change>
-         <change when="2007-01-11" who="Charlotte-Tupman">tidied</change>
-         <change when="2005-05-24" who="#GB">transferred to XML</change>
-         <change when="2004-11-18" who="#GB">Created dummy file</change>
+         <change when="2024-03-26" who="#CMR">Encoded</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="78_A_17.jpg">
-            <desc>Face (M. Roueché, 1978)</desc>
-         </graphic>
+         <graphic url="72_K_00A.jpg">
+            <desc>Face (M. Roueché, 1972)</desc>
+         </graphic> 
+         <graphic url="76_E_09.jpg">
+            <desc>Face (M. Roueché, 1976)</desc>
+         </graphic> 
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-
-<ab><lb n="1"/><persName nymRef="#Ἀγαθὴ  Τύχη" type="divine"><w lemma="ἀγαθός">Ἀγαθῇ</w>  <w lemma="τύχη">Τύχῃ</w></persName>
-   <lb n="1a"/><gap reason="lost" unit="line" extent="unknown"/></ab>
-</div>
-         <div type="translation">
-            <p>With good fortune <gap reason="lost" unit="line" extent="unknown"/>
+            <ab><lb n="1"/><persName nymRef="#Ἀγαθὴ Τύχη" type="divine"><w lemma="ἀγαθός"><unclear>Ἀγ</unclear>αθῇ</w> <g ref="#crux" />  <w lemma="τύχη">Τύχῃ</w></persName>
+            </ab></div>
+         
+         
+         
+         <div type="translation" xml:lang="en" source="#CMR">
+            <p>With Good Fortune <gap reason="lost" unit="line" extent="unknown"/>
             </p>
          </div>
-         <div type="commentary">
-            <p>Clearly the capital of an inscribed stele. Any kind of public document may have followed.</p>
+        
+         
+         <div type="commentary" n="notyet">
+            
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> <citedRange>63.598</citedRange></bibl></p>
-          </div>
-          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph110207.html">11.207</ref></citedRange></bibl>.</p>
+            <p><bibl><ptr target="nyu"/> <citedRange>I 02.020</citedRange>, <citedRange>MAB 5</citedRange></bibl></p>
+         </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="chaniotis2008"/> <citedRange>8</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>58.1198</citedRange></bibl></p>
          </div>
       </body>
    </text>
