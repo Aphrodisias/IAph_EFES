@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honorific epigrams</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170047</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material key="marmor">Marble</material> 
+                              <objectType>block</objectType>
+                              (<dimensions><height unit="metre">1.80</height> <width unit="metre">0.47</width> <depth unit="metre">0.30</depth></dimensions>). 
+                              There are clamp holes on each side; the face is outlined by a drafted border.
+                              </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face; the text muxt have continued on a block to the right.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.022-0.035</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0250" notAfter="0300" evidence="lettering office">Second half of the third century CE</origDate>
+                  </origin>
+
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                    <placeName ref="#aphwalls">Walls</placeName>: reused in a bastion in the 
+                     <placeName type="monuList" ref="#aphwallne">North-east stretch</placeName>.</provenance>
+                
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Chaniotis).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-04-09" who="#CMR">Marked up</change>
+        
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <!-- PHOTO 02.139.36, 01.140.1-2 -->  
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+      <div type="textpart" n="A"><ab>  
+<lb n="1"/><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="2" unit="character"/><orig>ΕΟ</orig><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><persName type="attested"><name nymRef="Πωλλίων"><supplied reason="lost">Π</supplied>ωλλίω<supplied reason="lost">ν</supplied></name></persName> <gap reason="lost" quantity="5" unit="character"/><orig>Ο</orig><gap reason="lost" quantity="1" unit="character"/><orig><unclear>Ε</unclear>Φ</orig><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" quantity="2" unit="character"/><orig>ΓΕΝΕ</orig><gap reason="lost" quantity="5" unit="character"/><orig>ΤΑΔ</orig><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><w><supplied reason="lost">α</supplied>ὐτὸς</w> <w>δ᾿</w><w>ἐμ</w> <w lemma="μέσος">μέσσοις</w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><w>καὶ</w> <w>τῇ</w> <w>μὲν</w> <w lemma="φορέω">φορέει</w> <w lemma="στέφος">στ<supplied reason="lost" cert="low">έφος</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><w lemma="εὐφροσύνη">εὐφροσύνης</w> <w lemma="λήθη">λήθης</w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><w lemma="ζάω">ζώει</w> <w>μὲν</w> <w>γὰρ</w> <w lemma="ἀνήρ">ἀνὴρ</w> <supplied reason="lost" cert="low"><w lemma="ἀγαθός">ἀγαθός</w></supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><w>καὶ</w> <w lemma="φθίω">φθίμενος</w> <w lemma="λήθη">λήθην</w> <gap reason="lost" extent="unknown" unit="character"/>
+      </ab></div>
+            <div type="textpart" n="b"><ab>  
+<lb n="1"/><persName type="attested"><name nymRef="Πωλλίων">Πωλλίωνος</name></persName> <w lemma="τόδε">τόδε</w> <supplied reason="lost" cert="low"><w lemma="μνῆμα">μνῆμα</w></supplied> <supplied reason="lost">˘-˘˘-˘˘-x</supplied>
+<lb n="2"/><w lemma="δέρκομαι">δέρκεο</w> <w>δ᾿</w><w lemma="εἰκών">εἰκόνε</w> <space unit="character" quantity="2"/> <supplied reason="lost">-˘˘-˘˘-˘˘-x</supplied>
+<lb n="3"/><w lemma="λαΐνεος">λαΐνεον</w> <w lemma="θηητός">θηητὸν</w> <supplied reason="lost">˘<note>or</note>--˘˘-˘˘-x</supplied>
+<lb n="4"/><w lemma="δεξιτερός">δεξιτερῇ</w> <w lemma="στέφος">στέφος</w> <supplied reason="lost">- <note>or</note> ˘˘-˘˘-˘˘-x</supplied>
+<lb n="5"/><w lemma="ἐσθλός">ἐσθλὰ</w> <w>σαοφροσύ<supplied reason="lost">νης</supplied></w> <supplied reason="lost" cert="low"><w lemma="ἔργον">ἔργα</w></supplied> <supplied reason="lost">˘-˘˘-˘˘-x</supplied>
+<lb n="6"/><w lemma="πᾶς">πάντα</w> <w>δ᾿</w><w lemma="ἑκών">ἑκὼν</w> <orig>πα</orig><supplied reason="lost">-<note>or</note> ˘-˘˘-˘˘-x</supplied>
+<lb n="7"/><w lemma="ἰθύδικος">ἰθύδικος</w> <w>καὶ</w> <w lemma="πᾶς">πᾶσι</w><supplied reason="lost">˘ <note>or</note>-<note>or vice versa</note>-˘˘-˘˘-x</supplied>
+<lb n="8"/><w>σὺν</w> <w lemma="πᾶς">πάσῃ</w> <w lemma="γενεά">γενεῇ</w> <supplied reason="lost">- <note>or</note> ˘˘-˘˘-˘˘-x</supplied>
+<lb n="9"/><w lemma="οὔτε">οὔτε</w> <w lemma="φίλος">φίλων</w> <w lemma="παῖς">παίδ<supplied reason="lost">ων</supplied></w> <supplied reason="lost">˘˘-˘˘-˘˘-x</supplied>
+<lb n="10"/>vacat
+            </ab></div>
+      </div>
+         <div type="apparatus">
+            <listApp><app loc="A.6"><rdg resp="#Petrovic2010">? στ<supplied reason="lost">έφανος</supplied></rdg></app>
+               <app loc="B.3"><rdg resp="#Petrovic2010">? <supplied reason="lost">σῆμα</supplied>, <supplied reason="lost">ἄγαλμα</supplied>, or <supplied reason="lost">ἀνδριάς</supplied></rdg></app>
+               <app loc="B.6"><rdg resp="#Petrovic2010">? πά<supplied reason="lost">τρῃ</supplied> or πά<supplied reason="lost">τριδι</supplied></rdg></app></listApp>
+         </div>
+         
+         <div type="translation" xml:lang="en" source="#chaniotis2009">
+            <p> <note>Epigram A</note>: [...] (of ?) Pollion [...] these (?)[...] and he in their (?) midst [...] whereas in his hand he is holding the wreath (?) [...] good cheer, 
+               of the Oblivion [...] because a (noble?) man lives [...] and even after his death Oblivion (does not overcome him?) 
+               <note>Epigram B</note>: This is a statue (?) of Pollion [...]. Look at these (two flanking / groups of ) images [passer-by?,...], 
+               behold (?) the conspicuous agalma (?) made of stone [...]. His right hand holds a wreath (?) [...] noble deeds of wisdom 
+               [...] all for his fatherland (?) readily [...] righteous and towards all (citizens ?) [...] with all (his) descendants [...] 
+               neither did his beloved children ...</p>
+         </div>
+         <div type="commentary">
+            </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="nyu"/> <citedRange>I 02.009</citedRange></bibl></p><!--  -->
+          </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="Petrovic2010"/> <citedRange/></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>60.1076</citedRange></bibl></p>
+         
+         </div>
+      </body>
+   </text>
+</TEI>
