@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dedication to Zeus Spalaxios</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">IAph170052</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material key="marmor">Marble</material> 
+                              <objectType></objectType>, 
+                              <dimensions><height unit="metre">52</height> <width unit="metre">20</width> <depth unit="metre">10</depth></dimensions>, 
+                              with a relief on the front face of a double axe, later defaced.. 
+                              
+                              </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the two sides, a and b.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No measurements</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="-0200" notAfter="0300" evidence="lettering">?Hellenistic - Imperial period</origDate>
+                  </origin>
+
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#avdan">Avdan</placeName> 
+                     </provenance>
+                
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Avdan" ref="https://sws.geonames.org/322937/">Avdan</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Robert).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-04-09" who="#CMR">Marked up</change>
+        
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+           
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+           
+             <div type="textpart" n="a"><ab><lb n="1"/><persName type="divine"><name>Διὶ</name> <addName>Ϲπαλωξίῳ</addName></persName>
+            <lb n="2"/><w><supplied reason="lost">κ</supplied>ατὰ</w> <w>ἐπιταγὴ<supplied reason="lost">ν</supplied></w></ab></div>
+            <div type="textpart" n="b"><lb n="3"/><ab><persName type="attested"><name><supplied reason="lost">Φ</supplied>ιλόμουϲοϲ</name></persName></ab></div>  
+      </div>
+         
+         
+         <div type="translation" xml:lang="en" source="#chaniotis2010a">
+            <p>to Zeus Spaloxios, in accordance with his command, Philomousos</p>
+         </div>
+         <div type="commentary">
+            </div>
+         <div type="bibliography" subtype="transcription">
+            <p>Transcribed by Jeanne and Louis Robert, before 1983</p>
+          </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="robert1983"/> <citedRange unit="page">166, note 27</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>33.857</citedRange></bibl>, 
+               <bibl><ptr target="chaniotis2010a"/> <citedRange unit="entry">6</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>60.1078</citedRange></bibl></p>
+         
+         </div>
+      </body>
+   </text>
+</TEI>
