@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>?Place inscription</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph060007</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>paving stone</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Irregular <rs type="execution" ref="litteris scariphatis">graffito</rs>, <dimensions><width>0.51</width></dimensions> </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height unit="metre">0.035</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0201" notAfter="0299" cert="low" evidence="lettering">?Third century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphbasilica">Basilica</placeName>: in the paving of the South Hall, at the west wall. </provenance> 
+                  <provenance type="observed">Findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-04-19" who="#CMR">Marked up</change>
+         
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+        
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            
+            <ab><lb n="1"/><persName type="attested"><name nymRef="Τιμοκλῆς">Τειμοκλέους</name></persName>
+              
+			</ab>
+           </div>  
+         <div type="translation" xml:lang="en" source="#stinson2016">
+            <p>[Place] of Teimokles</p>
+         </div>
+         
+         <div type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> in <citedRange>2008</citedRange></bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+             <p> <bibl><ptr target="stinson2016"/> <citedRange>3</citedRange></bibl>, whence 
+                <bibl><ptr target="seg"/> <citedRange>67.713</citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>

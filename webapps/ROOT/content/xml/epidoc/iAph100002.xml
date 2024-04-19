@@ -82,6 +82,7 @@
          <creation>Transcription (Reynolds, Roueché). This edition: Roueché (2007)..</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-04-19" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-03-23" who="Charlotte-Tupman">hand tidied</change>
          <change when="2007-03-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -149,7 +150,7 @@
             </div>
             <div n="U" type="textpart" subtype="section">
                <div n="i" type="textpart" subtype="column">
-                  <ab> <lb n="1"/><w lemma="φρουμεντάριος"><expan><abbr>φ<unclear>ρ</unclear>ου<milestone unit="block"/>μ</abbr><ex cert="low">ενταρίων</ex></expan></w> <w lemma="τόπος"><expan><abbr>τόπο</abbr><ex>ς</ex></expan></w>  <space quantity="3" unit="character"/> 
+                  <ab> <lb n="1"/><w lemma="φρουμεντάριος"><expan><abbr>φ<unclear>ρ</unclear>ου<milestone unit="block"/>μ</abbr><ex cert="low">ενταρίου</ex></expan></w> <w lemma="τόπος">τόπος</w>  <space quantity="3" unit="character"/> 
 </ab></div><div n="ii" type="textpart" subtype="column"><note xml:lang="en"/> 
 </div><div n="iii" type="textpart" subtype="column"><note xml:lang="en"/></div></div> 
 <div n="W" type="textpart" subtype="section"><note xml:lang="en"/> 
@@ -158,27 +159,33 @@
            <listApp>
             <app loc="M"><note>The first <unclear>Κ</unclear> might be ΙΣ; the second might be Β, Ρ or Φ; the square brackets indicate spaces which may or may not have contained letters. </note></app>
             <app loc="T"><note><unclear>Φ</unclear> might be Β, <unclear>Υ</unclear> might be I. </note></app>
-            <app loc="U"><note><unclear>Ρ</unclear> might be Ι.</note></app>
+            <app loc="U.i"><rdg resp="#iaph2007">φρ̣ου | μ(ενταρίων?) τόπο(ς)</rdg> 
+                 <rdg resp="#chaniotis2013">φρ̣ου | μ(ενταρίου) τόπος</rdg></app>
            </listApp>
          </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" source="#roueche1993">
             <p>Row M: Place of [ -. </p>
             <p>Row T: Place of [ - </p>
             <p>Row U: Place of (the) frum(entarii)</p>
+         </div>
+         <div type="translation" xml:lang="en" source="#chaniotis2013">
+            <p>Row U: The place/seat of the <foreign xml:lang="la">frumentarius</foreign></p>
          </div>
          <div type="commentary">
              
          </div>
          <div type="bibliography" subtype="transcription">
-             <p>Recorded: <bibl><ptr target="nyu"/><citedRange></citedRange></bibl></p>
+             <p><bibl><ptr target="nyu"/><citedRange></citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p>Published by <bibl><ptr target="roueche1993"/>  <citedRange>45.2</citedRange>
+            <p><bibl><ptr target="roueche1993"/>  <citedRange>45.2</citedRange>
            </bibl>, whence <bibl><ptr target="phi"/> 
                <citedRange><ref target="https://epigraphy.packhum.org/text/264951">PPAphr 45.2, M</ref></citedRange>, 
                <citedRange><ref target="https://epigraphy.packhum.org/text/264952">PPAphr 45.2, Τ</ref></citedRange>’ 
-               <citedRange><ref target="https://epigraphy.packhum.org/text/264953">PPAphr 45.2, U</ref></citedRange></bibl>;
-               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph100002.html">10.2</ref></citedRange></bibl>.</p>
+               <citedRange><ref target="https://epigraphy.packhum.org/text/264953">PPAphr 45.2, U</ref></citedRange></bibl>,
+               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph100002.html">10.2</ref></citedRange></bibl>; 
+               <bibl><ptr target="chaniotis2013"/>  <citedRange>155-6</citedRange>
+               </bibl>.</p>
          </div>
       </body>
    </text>
