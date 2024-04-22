@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="AP" role="editions, translations">Andrej Petrovic</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170054</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material key="marmor">Marble</material> 
+                              <objectType>sarcophagus</objectType>,  with secondary <objectType>sarcophagus lid</objectType>: 
+                              <dimensions><height unit="metre">1.03</height> <width unit="metre">2.27</width> <depth unit="metre">1.04</depth></dimensions>. 
+                              The sarcophagus is decorated on all four sides; 
+                              on the long sides garlands in three swags with bunches of grapes hanging from them; the swags are supported by a pair of bulls’ heads (back) 
+                              and a pair of Herakles hip-herms (front); on the short sides single swags carrying a decorative motif above: on the left side a shield, 
+                              on the right a flower; at the corners of all four sides horned rams’ heads.
+                              </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> above the central swag on the front.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.02</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0210" notAfter="0280" evidence="material-context">Third century CE</origDate>
+                  </origin>
+
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#necropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropolisse">South-east area</placeName>, 
+                     <!-- check -->
+                    </provenance>
+                
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Chaniotis).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-04-09" who="#CMR">Marked up</change>
+        
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+           
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab> <lb n="1"/>ἕτερος δὲ οὐδὶ<supplied reason="omitted">ς</supplied> ἕξι ἐξουσίαν ἐθάψαί τινα ἢ ἐχθάψαι
+<lb n="2"/>τῶν προγεγραμμένων, ἐπὶ ὁ παρὰ ταῦτά τι ποιήσας ἔστ
+<lb n="3" break="no"/>ω ἀσεβὴς καὶ τυμ͜βωρύχος καὶ
+<lb n="4"/>π<supplied reason="omitted">ρ</supplied>οσαποτίσι τῷ ἱερωτάτ͜ῳ τα
+<lb n="5" break="no"/>μίῳ ἀργυρίου <expan><abbr>μυ</abbr><ex>ριάδας</ex></expan> βʹ, ὧν τὸ τρί
+<lb n="6" break="no"/>τον ἔσται τοῦ ἐγδικήσαντος
+</ab>
+      </div>
+         
+         
+         <div type="translation" xml:lang="en" source="#chaniotisrrrs2016">
+            <p>No other person will have the authorization to bury someone or to exhume someone of the aforementioned persons, because whoever acts contrary to this will
+             be impious and a tomb-robber and, in addition to this, he will pay to the most
+               sacred treasury 20,000 of silver, one third of which will belong to the prosecutor.</p>
+         </div>
+         <div type="commentary">
+            </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="aphmus"/>, in  a rescue excavation,  <citedRange>I 02-24</citedRange>,  <citedRange>Sarcophagus 479</citedRange></bibl></p><!--  -->
+          </div>
+         <div type="bibliography" subtype="publication">
+            <p> <bibl><ptr target="smithratte2008"/> <citedRange>p.742</citedRange> and fig. 30</bibl>
+               <bibl><ptr target="chaniotisrrrs2016"/> <citedRange>1</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>66.1157</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange> </citedRange></bibl>, 
+               <bibl><ptr target="BE"/> <citedRange> </citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>
