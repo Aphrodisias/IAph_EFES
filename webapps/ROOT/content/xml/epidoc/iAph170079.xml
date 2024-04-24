@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="AP" role="editions, translations">Andrej Petrovic</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170079</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material key="marmor">Marble</material> 
+                              <objectType>sarcophagus</objectType>, and <objectType>sarcophagus lid</objectType>: 
+                              <dimensions><height unit="metre">1.04</height> <width unit="metre">2.03</width> <depth unit="metre">0.70</depth></dimensions>. 
+                              oon the front a tabula ansata flanked by two Erotes and two garlands (with bunches of grapes hanging from them); 
+                              the swags carry the busts of a woman (left) and a man (right); in the corners two Nikai; on the short sides garland swags with gorgoneia. </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs>   on the lid (lines 1-3), above and in the tabula (lines 4-16) and along the lower border of the tabula (line 17)</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.02</height></handNote><!-- check -->
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0210" notAfter="0280" evidence="material-context">Third century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#necropolis">Necropolis</placeName>, <placeName type="monuList" ref="#aphnecropolisse">South-east area</placeName>
+                    </provenance>
+               <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Chaniotis).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-04-09" who="#CMR">Marked up</change>
+        
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+           
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+           <ab><lb n="1"/><w>Ἡ</w> <supplied reason="lost"><w>σορὸς</w></supplied> <w>κὲ</w> <w>ὁ</w> <w>περὶ</w> <w>αὐτ<supplied reason="lost">ὴν</supplied></w> 
+              <w><supplied reason="lost">τό</supplied><unclear>π</unclear>ος</w> <w>ἐστὶ<supplied reason="lost">ν</supplied></w><gap reason="lost" quantity="2" unit="character"/><orig><unclear>Τ</unclear></orig><gap reason="lost" quantity="6" unit="character"/><orig>ΤΑΤΕ</orig> <gap reason="lost" quantity="12" unit="character"/><persName type="attested"><name nymRef="-ΟΣΥΟΣ"><seg part="F">ΟΣΥΟΣ</seg></name> <persName type="attested"><name nymRef="Ἀπολλώνιος">Ἀπολλωνίου</name> <name nymRef="Κλαυδιανός">Κλαυδια
+<lb n="2" break="no"/>νοῦ</name></persName></persName> · <w>ἐν</w> <w>ᾗ</w> <w>σορῷ</w> <w>κηδευθήσεται</w> <w>αὐτὸς</w> <w>κὲ</w> <persName type="attested"><name nymRef="Ἀμμία">Ἀμμία</name></persName> <w>ἡ</w> <w>γυνὴ</w> <w>αὐτοῦ</w> 
+              <w>ἡ</w> <w>θυγάτηρ</w> <persName type="attested"><name nymRef="Γλυκωνίς">Γλυκωνίς</name></persName>·
+<lb n="3"/><w>οὐδ<unclear>εὶς</unclear></w> <w>ἕξει</w> <w>ἐ<unclear>ξο</unclear>υσία<unclear>ν</unclear></w>  <w>ο<unclear>ὐδὲ</unclear></w>  <w>ἐνθάψε</w> <w>οὐδὲ</w> <w><unclear>ἐκ</unclear>θάψαι</w> <w>οὐδὲ</w> <w>μ<unclear>εταθ</unclear>εῖ<unclear>νε</unclear></w>
+              <lb n="4"/><w>τὴν</w> <w>σορὸν</w>, <w>ἐπεὶ</w> <w>ἀπο
+<lb n="5" break="no"/>τείσει</w> <w>τῷ</w>
+<lb n="6"/><w>ἱερωτάτῳ</w>
+<lb n="7"/><w>φίσκῳ</w> <w>ἀργυ
+<lb n="8" break="no"/>ρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="2500">βφ</num>ʹ,
+<lb n="9"/><w>ὧν</w> <w>τὸ</w> <w>τρί
+<lb n="10" break="no"/>τον</w> <w>ἔστε</w>
+<lb n="11"/><w>τοῦ</w> <w>ἐκδι
+<lb n="12" break="no"/>κήσαντος</w>·
+<lb n="13"/><w>τούτου</w>
+<lb n="14"/><w>τοῦ</w> <w>γράμ
+<lb n="15" break="no"/>ματος</w> <w>ἀπετέθη</w>
+<lb n="16"/><w>ἀντίγραφον</w> <w>ἰς</w> <w>τὸ</w> <w>χρεο
+<lb n="17" break="no"/>φυλάκιον</w> <w>ἐπὶ</w> <surplus>Σ</surplus> <w>στεφανηφόρου</w> <persName type="attested"><name nymRef="Πύρος">Πύρου</name> <w>τοῦ</w> <persName type="attested"><name nymRef="Πύρος">Πύρου</name> <w>τοῦ</w> <persName type="attested"><name nymRef="Παπίας">Παπίου</name></persName></persName> <name nymRef="Κῶος">Κώου</name></persName>, <w>μηνὸς</w> <w>ἑνδεκάτου</w>
+           </ab></div>
+         
+         
+         <div type="translation" xml:lang="en" source="#chaniotisrrrs2016">
+            <p>The sarcophagus and the place around it belong to -- Apollonios Claudianus. He himself shall be buried in this sarcophagus and Ammia, his wife, and his daughter Glykonis. 
+               No one shall have authorisation either to bury (someone) or to remove (someone) or to move the sarcophagus, because (otherwise) 
+               he shall pay to the most holy <foreign>fiscus</foreign> 2500 <foreign>denarii</foreign> of silver, one-third of which shall belong to the <foreign>vindicator</foreign>. 
+               A copy of this document was deposited in the registry under the stephanephorate of Pyros Koos, son of Pyros, son of Papias, in the eleventh month.
+            </p>
+         </div>
+         <div type="commentary">
+            </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="aphmus"/>, in <citedRange>2006/2007</citedRange>, <citedRange>I-07-16</citedRange>, 
+               <citedRange>Sarcophagus 716</citedRange></bibl></p>
+          </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="chaniotisrrrs2016"/> <citedRange>6</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>66.1164</citedRange></bibl></p> 
+           
+         </div>
+      </body>
+   </text>
+</TEI>
