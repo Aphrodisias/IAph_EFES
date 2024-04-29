@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Commemoration of ephebes</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170084</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material key="marmor">Marble</material> 
+                              <objectType>block</objectType>: 
+                              <dimensions><height unit="metre">1.28</height> <width unit="metre">0.315</width> <depth unit="metre">0.29</depth></dimensions>. 
+                               </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> A, line 1 on lid, line 2 on the upper edge of the body;  
+                           B in the tabula.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.02</height></handNote><!-- check -->
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0180" notAfter="0250" evidence="material-context">Late second to early third century CE </origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>:  
+                     <placeName ref="#aphcity">City</placeName>, <placeName type="monuList" ref="#aphcityne">North-east area</placeName>, in a field east of the Temple</provenance>
+               <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Chaniotis).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-04-09" who="#CMR">Marked up</change>
+        
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+           
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+         <div  type="textpart" n="A"><ab>
+            <lb n="1"/><w lemma="μιμνῄσκομαι">Ἐμνήσθ<supplied reason="lost">η</supplied></w>
+<lb n="2"/><persName type="attested"><name nymRef="Ἀρτεμίδωρος">Ἀρτεμίδ<supplied reason="lost">ωρος</supplied></name></persName>
+<lb n="3"/><w>τῶν</w> <w lemma="συνέφηβος">συνε<supplied reason="lost">φή</supplied>
+<lb n="4" break="no"/>β<unclear>ω</unclear>ν</w> <orig>ΕΓΙ</orig>
+            </ab></div>
+         <div  type="textpart" n="B"><ab>
+            <lb n="1"/><w lemma="μιμνῄσκομαι"><unclear>Ἐμνήσ</unclear>θ<supplied reason="lost">η</supplied></w> .<gap reason="lost" quantity="1" unit="character"/>
+<lb n="2"/><persName type="attested"><name nymRef="Διονύσιος">Διονύσιο<supplied reason="lost">ς</supplied></name></persName>
+<lb n="3"/><gap reason="lost" quantity="4" unit="character"/><orig>Ν</orig><gap reason="lost" quantity="5" unit="character"/>
+<lb n="4"/><orig>ΒΟΝ</orig> <w>καὶ</w> <gap reason="lost" quantity="2" unit="character"/><orig>ΜΗ</orig>
+<lb n="5"/><gap reason="lost" quantity="1" unit="character"/><orig>Ε</orig><gap reason="lost" quantity="7" unit="character"/><orig>ΟΣΝ</orig>
+<lb n="6"/><orig>ΝΟΥ</orig><gap reason="lost" quantity="4" unit="character"/><orig>ΠΙ</orig>
+<lb n="7"/><orig>ΧΟΙ</orig><gap reason="lost" extent="unknown" unit="character"/>
+            </ab></div>
+            <div  type="textpart" n="C"><ab>
+               <lb n="1"/><w lemma="ἐφήβαρχος">Ἐφηβάρχου</w> <w><unclear>κα</unclear><supplied reason="lost" cert="low">λοῦ</supplied></w>
+<lb n="2"/><w lemma="μιμνῄσκομαι">ἐμνήσθησα<supplied reason="lost">ν</supplied></w>
+<lb n="3"/><w>οἱ</w> <w lemma="φιλοσυνέφηβος">φιλοσυνέφηβ<supplied reason="lost">οι</supplied></w>
+<lb n="4"/><persName type="attested"><name nymRef="Ζήνων">Ζήνων</name></persName>, <persName type="attested"><name nymRef="Ἄδραστος">Ἄδρασ
+<lb n="5" break="no"/>τος</name></persName>, <persName type="attested"><name nymRef="Ἐπίκτητος">Ἐπίκτητος</name></persName>,
+<lb n="6"/><persName type="attested"><name nymRef="Παπίας">Παπίας</name></persName>, <persName type="attested"><name nymRef="Ἀγαθόπους">Ἀγαθό
+<lb n="7" break="no"/>πους</name></persName>, <w>κατὰ</w> <w>τειμ<supplied reason="lost" cert="low">ὴν</supplied></w>
+<lb n="8"/><w>δὲ</w> <persName type="attested"><name nymRef="Νικόστρατος">Νεικοστράτου</name>
+<lb n="9"/><name nymRef="Ἡρακλῆς">Ἡρακλέους</name></persName>
+            </ab></div>
+         </div>
+         
+         
+         <div type="translation" xml:lang="en" source="#chaniotis2016">
+            <p></p>
+         </div>
+         <div type="commentary">
+            </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="nyu"/> <citedRange>2006</citedRange></bibl></p>
+          </div>
+         <div type="bibliography" subtype="publication">
+            <p><bibl><ptr target="chaniotis2015"/> <citedRange>3</citedRange> (C only)</bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>65.946</citedRange></bibl>;
+               <bibl><ptr target="chaniotis2016"/> <citedRange>3</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>66.1152</citedRange></bibl></p> 
+           
+         </div>
+      </body>
+   </text>
+</TEI>
