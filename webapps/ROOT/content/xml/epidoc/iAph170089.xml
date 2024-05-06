@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Honorary inscription for Fl. Aelius Aineias</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph170089</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material key="marmor">Marble</material>
+                              <objectType>statue base</objectType>, with moulded panels on three sides, the back plain:  
+                              <dimensions unit="metre"><width>0.525</width><height>1.30</height><depth>0.48</depth></dimensions></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the central panel</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lines 1-14: <height>0.03</height>; lines 15-24, <height>0.02</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0299" precision="medium" evidence="lettering">Second-third century CE</origDate>
+                  </origin>
+                  <provenance type="found">: 
+                     <placeName type="ancientFindspot" ref="#karacasu">Karacasu</placeName>
+                     </provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/310044/">Karacasu</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Chaniotis).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-05-03" who="#CMR">Marked up</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+		<ab><lb n="1"/><w>Τὸν</w> <w>ἀξιολογώ
+<lb n="2" break="no"/><space quantity="2" unit="character"/> τατον <space quantity="3" unit="character"/></w>
+<lb n="3"/><persName type="attested"><name>Αἰνείαν</name></persName> <w>ἱερα
+<lb n="4" break="no"/><space quantity="1" unit="character"/>τεύσαντα</w>
+<lb n="5"/><w>μεγαλοφρόνως</w>
+<lb n="6"/><w>τοῦ</w> <persName type="divine"><name>Διονύσου</name></persName>,
+<lb n="7"/><space quantity="2" unit="character"/> <w>εὔνουν</w> <space quantity="2" unit="character"/>
+<lb n="8"/><w>καὶ</w> <w>φιλόδοξον</w>
+<lb n="9"/><w>ἐν</w> <w>πᾶσιν</w> <w>περὶ</w>
+<lb n="10"/><w>τὴν</w> <w>πατρίδα</w>
+<lb n="11"/><orig>ΣΤΟΙΧΩ</orig> <w>ἀρχαίου</w>
+<lb n="12"/><w>καὶ</w> <w>ἐνδόξου</w>
+<lb n="13"/><w>ἐκ</w> <w>προγόνων</w>
+<lb n="14"/> <g ref="#leaf"/> <w>γένους</w> · <g ref="#leaf"/> 
+		   <lb n="14a"/><space quantity="1" unit="line"/>
+<lb n="15"/><w>προνοησαμένου</w>
+<lb n="16"/><w><hi rend="ligature">τῆ</hi>ς</w> <w>ἀναστάσεως</w>
+<lb n="17"/><persName type="attested"><name><expan><abbr>Φλ</abbr><ex>αβίου</ex></expan></name> <name><expan><abbr>Αἰλ</abbr><ex>ίου</ex></expan></name> <name>Φλαβιανοῦ</name></persName>
+<lb n="18"/><placeName>Ἀσίας</placeName> <w>ἀρχιερέων</w>
+<lb n="19"/><w>καὶ</w> <w>ἀρχιερέων</w>
+<lb n="20"/><w>ἐγγόνου</w>, <w>ἀνεψιοῦ</w>
+<lb n="21"/><w>καὶ</w> <w>συνγενοῦς</w>
+<lb n="22"/><w>συνκλητικῶν</w>,
+		<lb n="23"/><w>τοῦ</w> <w>πατρὸς</w>
+<lb n="24"/> <g ref="#leaf"/> <w>αὐτοῦ</w> <g ref="#leaf"/> </ab></div>
+         
+         <div type="translation" xml:lang="en" resp="#AC">
+            <p>The most honorable Aineias, who served as a priest of Dionysos in a generous manner, a benevolent man and a lover of glory in all affairs 
+               concerning the fatherland, --, member of an old and glorious family from the time of the forefathers; Flavius Aelius Flavianus, a descendant of high priests of Asia 
+               and of high priests, a cousin and relative of senators, his father, took care of the erection (of the statue). </p>
+         </div>
+         <div type="commentary">
+            </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="nyu"/> <citedRange>I 03.09</citedRange>.</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+             <p><bibl><ptr target="smithratte2005"/> <citedRange>337</citedRange> (description, photograph)</bibl>, whence 
+                <bibl><ptr target="seg"/> <citedRange>55.1104</citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>
