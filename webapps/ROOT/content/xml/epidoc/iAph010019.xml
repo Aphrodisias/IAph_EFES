@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Prayer</rs>  of Asterios</title>
+            <title><rs type="textType">Prayer</rs>s  of Asterios and Leon</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -37,18 +37,16 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Texts i and ii are disposed on either side of a design
-described previously as a table, but in fact a measure. There are
-three of these marked out on the wall: 1. To the left of ii, worn
-at the left; at least <height>0.60</height>. 2. To the right of i; well cut, <height>0.29</height>,
-surmounted by a cross. 3. 5th block to east with a central divide -
-<height>0.62</height>, divided into two spans of roughly <height>0.305</height>.Text i, to the left, impinges slightly on this; text ii is
-to the right.</layout>
+                        <layout>Block 2 is to the left/west of Block 1.  There are
+                           three measures marked out on the wall: Block 1, a: To the right of text i; well cut, <height>0.29</height>,
+                           surmounted by a cross. Block 2, b: To the left of text ii, worn
+at the left; at least <height>0.60</height>.  The third is on the 5th block to east with a central divide -
+<height>0.62</height>, divided into two spans of roughly <height>0.305</height>.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote> i: <height>0.04-0.09</height>, deep and clear; ii
-<height>0.045</height>, roughly cut.</handNote>
+                     <handNote>; i: <height>0.04-0.09</height>, deep and clear; ii
+                        <height>0.045</height>, roughly cut</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -90,6 +88,7 @@ wall, towards the east end.</provenance>
          <creation>Transcriptions (Reynolds, Roueché).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-05-16" who="#CMR">Emended</change>
          <change when="2022-05-11" who="#MB">Tagged LGPN ids</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
@@ -104,13 +103,16 @@ wall, towards the east end.</provenance>
    <facsimile>
       <surface>
          <graphic url="NY_pr_052.jpg">
-            <desc>i: Face</desc>
+            <desc>Block 1, with text i: Face (NYU)</desc>
+         </graphic>
+         <graphic url="72_B_05A.jpg">
+            <desc>Block 1, with text i: Face (M. Roueché, 1972)</desc>
          </graphic>
          <graphic url="72_B_06A.jpg">
-            <desc>Central design (M. Roueché, 1972)</desc>
+            <desc>Block 1, a: Measure (M. Roueché, 1972)</desc>
          </graphic>
          <graphic url="NY_pr_063.jpg">
-            <desc>ii: Face</desc>
+            <desc>Block 2, with text ii: Face (NYU)</desc>
          </graphic>
          <graphic url="DSCN0282.jpg">
             <desc>View
@@ -125,17 +127,27 @@ wall, towards the east end.</provenance>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-      
-			
-			<div n="i" type="textpart" subtype="section"><ab>
-			<lb n="1"/><g ref="symbols.xml#cross"/> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="εὐχή">εὐχῆς</w> 
-			<lb n="2"/><space quantity="1" unit="character"/> <persName key="asterius1" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-3641"><name nymRef="#Ἀστέριος">Ἀστερίου</name></persName>  
-			<lb n="3"/><space quantity="1" unit="character"/> <rs type="profession" key="pandouros"><w lemma="πανδοῦρος">πανδούρου</w></rs> <g ref="symbols.xml#cross"/> </ab></div>
-		
-			<div n="ii" type="textpart" subtype="section"><ab>
-			<lb n="1"/> <persName key="leon1" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8932"><name nymRef="#Λέων">Λέον</name></persName>
-			<lb n="2"/><w lemma="βοηθέω">βοήθη</w> <orig>τ</orig> <space unit="character" quantity="3"/>
+            <div type="textpart" n="Block 1">
+			   <div n="i" type="textpart" subtype="section"><ab>
+			<lb n="1"/><g ref="symbols.xml#cross"/> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="εὐχή">εὐχῆϲ</w> 
+			<lb n="2"/><space quantity="1" unit="character"/> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-3641"><name nymRef="#Ἀστέριος">Ἀϲτερίου</name></persName>  
+			<lb n="3"/><space quantity="1" unit="character"/> <rs key="pandouros"><w lemma="πανδοῦρος">πανδούρου</w></rs> <g ref="symbols.xml#cross"/> 
 			</ab></div>
+            <div type="textpart" n="a"><ab>
+			<lb n="1"/> <g ref="symbols.xml#cross"/> 
+			<lb n="2"/><note>Measure</note>
+			</ab></div></div>
+      <div n="Block 2" type="textpart">
+			<div type="textpart" n="b"><ab><lb n="1"/> <g ref="symbols.xml#cross"/> 
+			<lb n="2"/><note>Measure</note></ab></div>
+         <div n="ii" type="textpart"><ab>
+			<lb n="1"/> <persName key="leon1" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8932"><name nymRef="#Λέων">Λέον</name></persName>
+			<lb n="2"/><w lemma="βοηθέω">βοήθη</w> <orig>τ</orig> 
+			</ab></div>
+			</div>
+			
+			
+		
 		</div>
          <div type="apparatus">
            <listApp>
@@ -143,9 +155,9 @@ wall, towards the east end.</provenance>
            </listApp>
          </div>
          <div type="translation" xml:lang="en" source="#ala2004">
-            <p><note>i</note>. For the prayer of 
+            <p><note>i</note>: For the prayer of 
 		  		Asterios, lute-player.</p>
-            <p><note>ii</note>. Leon. Help<gap unit="line" reason="lost" extent="unknown"/>
+            <p><note>ii</note>: Leon. Help<gap unit="line" reason="lost" extent="unknown"/>
             </p>
          </div>
          <div type="commentary">
@@ -153,11 +165,12 @@ wall, towards the east end.</provenance>
 this type of text, and at <ref type="eAla-text" n="VIII.3" target=".xml"/>.</p> --> 
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/><citedRange></citedRange></bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>1972</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="roueche1989"/> <citedRange>113</citedRange>i and ii, and plate xxx</bibl>, whence 
-                <bibl><ptr target="mccabePHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/257517">635</ref></citedRange>, <citedRange><ref target="https://epigraphy.packhum.org/text/257537">654</ref></citedRange>
+                <bibl><ptr target="mccabePHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/257517">635</ref></citedRange>, 
+                   <citedRange><ref target="https://epigraphy.packhum.org/text/257537">654</ref></citedRange>
               </bibl>, 
                <bibl><ptr target="ala2004"/> <citedRange><ref target="https://insaph.kcl.ac.uk/ala2004/inscription/eAla113.html">113</ref></citedRange></bibl>; 
                <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph010019.html">1.19</ref></citedRange></bibl>.</p>
