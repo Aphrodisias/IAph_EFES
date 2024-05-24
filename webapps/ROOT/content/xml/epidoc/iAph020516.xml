@@ -33,16 +33,15 @@
                      <supportDesc>
                         <support>
                            <p>Two joining fragments forming a small rough <material key="marmor">white marble</material>
-                              <objectType key="altar">altar</objectType>   (<height unit="metre">0.10</height> × <width unit="metre">0.26</width> × <depth unit="metre">0.10</depth>), with moulding above and below.</p>
+                              <objectType key="altar">altar</objectType> (<dimensions><height unit="metre">0.10</height> <width unit="metre">0.26</width> <depth unit="metre">0.10</depth></dimensions>), with moulding above and below.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-Inscribed on two adjacent faces (lines 1-4 on a., 5-7 on  b) with a text that runs from one to the other.</layout>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on two adjacent faces (lines 1-4 on a., 5-7 on  b) with a text that runs from one to the other.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Very irregular and poorly cut; not dateable: <height unit="metre">0.015-0.025</height>; lunate <foreign xml:lang="grc">Σ</foreign>, <foreign xml:lang="grc">Ε</foreign>; cursive <foreign xml:lang="grc">Α</foreign>.</handNote>
+                     <handNote>Very irregular and poorly cut; not dateable: <height unit="metre">0.015-0.025</height>; lunate sigma, epsilon; cursive <foreign xml:lang="grc">Α</foreign>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -87,6 +86,7 @@ Inscribed on two adjacent faces (lines 1-4 on a., 5-7 on  b) with a text that ru
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-05-24" who="#CMR">Emended</change>
          <change when="2022-05-17" who="#FT">Added auth list ref</change>
          <change when="2022-05-16" who="#FT">Tagged LGPN id</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
@@ -107,14 +107,13 @@ Inscribed on two adjacent faces (lines 1-4 on a., 5-7 on  b) with a text that ru
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<div n="a" type="textpart" subtype="section"><ab><lb n="1"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-9197"><name nymRef="#Μαρκιανός">Μα
+<ab><milestone unit="section" n="a"/><note>a</note><lb n="1"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-9197"><name nymRef="#Μαρκιανός">Μα
    <lb n="2" break="no"/>ρκια
    <lb n="3" break="no"/><supplied reason="lost">ν</supplied>ὸϲ</name></persName>
-   <lb n="4"/><persName type="divine" ref="divine.xml#theoshypsistos"><w lemma="θεός">θεο</w> </persName></ab></div>
-            <div n="b" type="textpart" subtype="section"><ab>
-               <lb n="5"/><w lemma="ὕψιστος">ὑψιϲ
-                  <lb n="6" break="no"/>τοι</w>  <w lemma="εὐχή">ε<supplied reason="lost">ὐ</supplied>
-                  <lb n="7" break="no"/>χή</w></ab></div>
+   <lb n="4"/><persName type="divine" ref="#theoshypsistos"><w lemma="θεός">θεο</w> <milestone unit="section" n="b"/>
+                <lb n="5"/><note>b</note> <w lemma="ὕψιστος">ὑψίϲ
+                  <lb n="6" break="no"/>τοι</w></persName>  <w lemma="εὐχή">ε<supplied reason="lost">ὐ</supplied>
+                  <lb n="7" break="no"/>χή</w></ab>
 </div>
          <div type="translation" xml:lang="en" source="#chaniotis2010a">
             <p>Markianos to the Highest God, fulfilment of a vow</p>
