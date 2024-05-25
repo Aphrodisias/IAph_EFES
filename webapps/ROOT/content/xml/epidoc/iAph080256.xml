@@ -87,6 +87,7 @@
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-05-25" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-07-13" who="cmr">DONE</change>
          <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -105,21 +106,24 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/><space quantity="1" unit="line"/><lb n="1"/><space quantity="2" unit="character"/> <persName type="divine" ref="#zeus"><name nymRef="#Ζευς">Δὶ</name></persName> <g ref="#stop"/>  
-   <gap reason="lost" unit="character" extent="unknown"/><lb n="2"/><space quantity="2" unit="character"/><persName type="emperor" ref="#anonymus"> <addName nymRef="Μάξιμος"><seg part="I">Μαξιμ</seg><gap reason="lost" unit="character" extent="unknown"/></addName>
+<ab><lb n="0"/><space quantity="1" unit="line"/>
+   <lb n="1"/><space quantity="2" unit="character"/> <persName type="emperor" ref="#hadrianus"><persName type="divine" ref="#zeus"><name nymRef="#Ζευς">Δὶ</name> <g ref="#stop"/>  
+   <gap reason="lost" unit="character" extent="unknown"/>
+   <lb n="2"/><space quantity="2" unit="character"/> <addName nymRef="Μάξιμος"><seg part="I">Μαξιμ</seg><gap reason="lost" unit="character" extent="unknown"/></addName>
    <lb n="3"/><space quantity="1" unit="character"/> <addName nymRef="Ὀλύμπιος">Ὀλυμπ<supplied reason="lost">ίῳ</supplied></addName><gap reason="lost" unit="character" extent="unknown"/>
-   <lb n="4"/>  <addName nymRef="Σεβαστός">Σεβασ<supplied reason="lost">τῷ</supplied></addName></persName>  <gap reason="lost" unit="character" extent="unknown"/>
-   <lb n="4a"/><space quantity="1" unit="line"/></ab>
+   <lb n="4"/>  <addName nymRef="Σεβαστός">Ϲεβαϲ<supplied reason="lost">τῷ</supplied></addName></persName></persName>  <gap reason="lost" unit="character" extent="unknown"/>
+   <lb n="4a"/><space extent="unknown" unit="line"/></ab>
 </div>
-         <div type="translation">
-            <p>To Zeus; <note rend="italic" place="not specified" xml:lang=""/> Maxim<supplied reason="lost">us</supplied>, <note rend="italic" place="not specified" xml:lang=""/>  Olymp<supplied reason="lost" cert="low">ios</supplied>
-               <note rend="italic" place="not specified" xml:lang=""/> Augustus/i.</p>
+         <div type="translation"><!-- check, think -->
+            <p>To Zeus <supplied reason="lost" cert="low">Hadrian</supplied> Maxim<supplied reason="lost">us</supplied>,   Olymp<supplied reason="lost" cert="low">ios</supplied>
+                Augustus/i.</p>
          </div>
          <div type="commentary">
-            <p>Perhaps similar in construction to <ref type="inscription" n="1267" target="iAph080708"/> (=74.73), and so one of several small 'altars' dedicated to Hadrian: cf. also  <ref type="inscription" n="1277" target="iAph090119"/> (=81.98).</p>
+            <p>Perhaps similar in construction to <ref type="inscription" target="iAph080708"/>, 
+               and so one of several small 'altars' dedicated to Hadrian: cf. also  <ref type="inscription" n="1277" target="iAph090119"/> (=81.98).</p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Excavated by the NYU expedition in 1970 (<citedRange>70.254</citedRange>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>70.254</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph080256.html">8.256</ref></citedRange></bibl>.</p>
