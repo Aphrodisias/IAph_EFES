@@ -31,12 +31,13 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Re-used <material>white marble</material>
+                           <p>Lower edge of a <material>white marble</material>
                               <objectType>sarcophagus</objectType>.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>The front is almost completely lost, but one line of an inscribed panel survives at the bottom (<dimensions><width unit="metre">0.33</width> <height unit="metre">0.04</height></dimensions>).</layout>
+                        <layout>The front is almost completely lost but one line (a) of an <rs type="execution" ref="scalpro">inscribed</rs> panel survives at the bottom 
+                           (<dimensions><width unit="metre">0.33</width> <height unit="metre">0.04</height></dimensions>); b is roughly cut on the lower moulding..</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -79,6 +80,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-06-08" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-07-05" who="cmr">DONE</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -95,10 +97,20 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<cb n="a"/><ab><lb n="1"/>  <gap reason="lost" unit="character" quantity="3"/><orig><unclear>νουνω</unclear>νοσ</orig> <rs type="month"><w lemma="λαῖος"><unclear>Λα</unclear>ίου</w></rs></ab><cb n="b"/><ab> <lb n="1"/> <note xml:lang=""/> <orig>νικ</orig></ab>
-</div>
+<div type="textpart" n="a">
+            <ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>
+   <lb n="1"/><orig><unclear>νου</unclear></orig> <rs type="month" ref="#loios"><w lemma="μείς"><unclear>μη</unclear>νος</w> <w lemma="Λώιος"><unclear>Λω</unclear>ίου</w></rs></ab></div>
+         <div type="textpart" n="b"><ab> <lb n="1"/>  <orig>νικ</orig></ab></div>
+         </div>
+            <div type="apparatus"><listApp>
+               <app loc="a.1">
+               <rdg resp="#iaph2007">[...]ΝΟΥΝΩΝΟΣ <unclear>Λα</unclear>ίου</rdg>
+            </app>
+            </listApp>
+            </div>
+
          <div type="translation">
-            <p> ... (in the month) Laios</p>
+            <p> (a) ... (in the month) Loios</p>
          </div>
          <div type="commentary">
             
