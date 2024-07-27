@@ -32,7 +32,8 @@
                      <supportDesc>
                         <support>
                            <p>Rough <material>white marble</material>
-                              <objectType>block</objectType> with chipped upper edge (<dimensions unit="metre"><width>0.44</width><height>0.41</height><depth>0.23</depth></dimensions>); a rough raised edge surrounds the <rs type="decoration">bust</rs> of a young man in relief. See further Smith, loc. cit.</p>
+                              <objectType>block</objectType> with chipped upper edge (<dimensions unit="metre"><width>0.44</width><height>0.41</height><depth>0.23</depth></dimensions>); 
+                              a rough raised edge surrounds the <rs type="decoration">bust</rs> of a young man in relief.<!--  See further Smith, loc. cit. --></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -80,6 +81,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-07-27" who="cmr">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-07-26" who="cmr">DONE</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -96,26 +98,31 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>  <persName type="attested"><name nymRef="#Εὔτυχος">Εὔ<g ref="#bust"/>τυ<lb n="2" break="no"/>χος</name></persName> <w lemma="ἔνθαδε">ἔνθαδε</w> <w lemma="κεῖμαι"><choice><orig>κῖμε</orig><reg>κεῖμαι</reg></choice></w> <w lemma="ἔτος">ἔτων</w> <lb n="3"/> <w lemma="εἰμί">ὢν</w> <num value="18">ιη</num> <persName type="attested"><name nymRef="#Εὐνόη">Εὐνόε<choice><sic>ε</sic><corr>ς</corr></choice></name></persName> <w lemma="θρεπτός">θρεπτὸς</w> <lb n="4"/> <w lemma="νεώτερος">νεώτερος</w> <w lemma="εἰμί">ὢν</w> <w lemma="θνήσκω">ἔθανεν</w></ab>
+<ab><lb n="1"/>  <persName type="attested"><name nymRef="#Εὔτυχος">Εὔ<g ref="#bust"/>τυ
+   <lb n="2" break="no"/>χοϲ</name></persName> <w lemma="ἔνθαδε">ἔνθαδε</w> <w lemma="κεῖμαι"><choice><orig>κῖμε</orig><reg>κεῖμαι</reg></choice></w> <w lemma="ἔτος">ἔτων</w> 
+   <lb n="3"/> <w lemma="εἰμί">ὢν</w> <num value="18">ιη</num> <persName type="attested"><name nymRef="#Εὐνόη">Εὐνόεϲ</name></persName> <w lemma="θρεπτός">θρεπτὸϲ</w> 
+   <lb n="4"/> <w lemma="νεώτερος">νεώτεροϲ</w> <w lemma="εἰμί">ὢν</w> <w lemma="θνήσκω">ἔθανεν</w></ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="3"><note><foreign xml:lang="grc">ΕΥΝΟΕΕ</foreign>
-            </note></app>
+              <app loc="3"><rdg resp="#iaph2007">ΕΥΝΟΕΕ whence Εὐνόε⸢ς⸣</rdg></app>
            </listApp>
          </div>
-         <div type="translation">
-            <p>I Eutychos lie here, being 18 years old; foster child of Eunoe, he died a young man (Reynolds)</p>
-            <p>or</p>
-            <p>Eutychos lies here, [who died] at the age of 18. Eunoes (?), (his) alumnus, died even younger.
-(Smith)</p>
+         
+         <div type="translation" xml:lang="en" source="#iaph2007">
+            <p>I Eutychos lie here, being 18 years old; foster child of Eunoe, he died a young man. </p>
+         </div>
+         
+         <div type="translation" xml:lang="en" source="#rrrs2006">
+            <p> Eutychos lies here, [who died] at the age of 18. Eunoes (?), (his) alumnus, died even younger.</p>
          </div>
          <div n="notyet" type="commentary">
-            <p>
-               <foreign xml:lang="grc">νεώτερος</foreign> is used to describe an age class, apparently, but not certainly, interchageably with <foreign xml:lang="grc">νέος</foreign>  (see Roueché, PPA, p. 123), and is probably not a comparative.</p>
+           <!-- 
+               <p> <foreign xml:lang="grc">νεώτερος</foreign> is used to describe an age class, apparently, but not certainly, interchangeably with 
+               <foreign xml:lang="grc">νέος</foreign>  (see Roueché, PPA, p. 123), and is probably not a comparative.</p> -->
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Excavated by the NYU expedition in 1976 (<citedRange>76.182</citedRange>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>76.182</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="rrrs2006"/>  <citedRange>Relief 4</citedRange>

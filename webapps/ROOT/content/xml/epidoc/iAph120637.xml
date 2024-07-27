@@ -31,12 +31,14 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Round-headed <objectType>stele</objectType> (<dimensions unit="metre"><width>0.36</width><height>0.59</height><depth>0.32</depth></dimensions>) containing the <rs type="decoration">bust</rs> of a <rs type="decoration">boy</rs> (face damaged).</p>
+                           <p>Round-headed <objectType>stele</objectType> (<dimensions unit="metre"><width>0.36</width><height>0.59</height><depth>0.32</depth></dimensions>) 
+                              containing the <rs type="decoration">bust</rs> of a <rs type="decoration">boy</rs> (face damaged).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> below the bust (inscribed area <dimensions><width unit="metre">0.355</width> <height unit="metre">0.75</height></dimensions>).</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> below the bust 
+                           (inscribed area <dimensions><width unit="metre">0.355</width> <height unit="metre">0.75</height></dimensions>).</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -50,7 +52,7 @@
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphwalls">Walls</placeName>, <placeName type="monuList" ref="#aphwallses">South (east part)</placeName>: excavation, Tr. 4</provenance>
-                  <provenance type="observed" when="1975">Museum (1975)</provenance>
+                  <provenance type="observed" when="1975">Museum</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -87,28 +89,38 @@
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="KTE_75_284.jpg">
-            <desc>Face (M. Roueché, 1975)</desc>
+         <graphic url="KTE_75_284.jpg"><!-- Find -->
+            <desc>Face (NYU, 1975)</desc>
          </graphic>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>  <persName type="attested"><name nymRef="#Ζώσιμος">Ζώσιμος</name></persName>  <persName type="attested"><name nymRef="#Μητρόδωρος">Μητρο<lb n="2" break="no"/>δωρον</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="υἱός">υἱὸν</w> <w>μν<unclear>ῆ</unclear><supplied reason="lost">ς</supplied></w>  <lb n="3"/><space quantity="3" unit="character"/> <w lemma="χάρις">χάριν</w> <space quantity="3" unit="character"/>  </ab>
+<ab><lb n="1"/>  <persName type="attested"><name nymRef="#Ζώσιμος">Ζώϲιμος</name></persName>  <persName type="attested"><name nymRef="#Μητρόδωρος">Μητρο
+   <lb n="2" break="no"/>δωρον</name></persName> <w lemma="ὁ">τὸν</w> <w lemma="υἱός">υἱὸν</w> <w lemma="μνεία">μν<unclear>η</unclear><supplied reason="lost">ϲ</supplied></w>  
+   <lb n="3"/><space quantity="5" unit="character"/> <w lemma="χάρις">χάριν</w> <space quantity="5" unit="character"/>  </ab>
 </div>
-         <div type="translation">
+         <div type="apparatus"><listApp>
+            <app loc="3"><rdg resp="#rrrs2006">μν<unclear>ε</unclear><supplied reason="lost">ίαϲ</supplied></rdg></app></listApp></div>
+         
+         <div type="translation" xml:lang="en" source="#iaph2007">
             <p> Zosimos <supplied reason="subaudible">set this up</supplied> in grateful memory of his son Metrodoros.</p>
          </div>
+         
+         <div type="translation" xml:lang="en" source="#rrrs2006">
+            <p> Zosimos <supplied reason="subaudible">set this up</supplied> in memory of Metrodoros <supplied reason="subaudible">his</supplied> son.</p>
+         </div>
+         
          <div type="commentary">
-            <p>No useful comment</p>
+            
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> in 1975, <citedRange>75.284</citedRange></bibl></p>
+             <p><bibl><ptr target="nyu"/>, <citedRange>75.284</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p> <bibl><ptr target="rrrs2006"/>  <citedRange>Relief 3</citedRange>
-              </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120637.html">12.637</ref></citedRange></bibl>.</p>
+            <p> <bibl><ptr target="rrrs2006"/>  <citedRange>Relief 3</citedRange> (mention)</bibl>; 
+               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120637.html">12.637</ref></citedRange></bibl>.</p>
          </div>
       </body>
    </text>
