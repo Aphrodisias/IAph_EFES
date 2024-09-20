@@ -6,14 +6,14 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Acclamation</rs> for Reds</title>
+            <title><rs type="textType">Commemoration</rs> for Kolotron</title>
             <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph170093</idno>
+            <idno type="filename">iAph170095</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -28,15 +28,15 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><material>White marble</material> <objectType>paving stone</objectType>.</p>
+                           <p><material>White marble</material> <objectType>seat</objectType>.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" ref="litteris_scariphatis">Graffito</rs> , 0.28 long, on the surface.</layout>
+                        <layout><rs type="execution" ref="litteris_scariphatis">Graffito</rs> on the upper face; below, two busts.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height>0.025-0.05</height> </handNote>
+                     <handNote>No measurements</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -45,7 +45,7 @@
                      <origDate notBefore="0401" notAfter="0600"  precision="low" evidence="content, lettering">Fifth - seventh century C.E.</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>:
-                     <placeName ref="#aphsouthagora">South Agora</placeName>, on the floor of the <placeName type="monuList" ref="#aphsagorawportico">West Portico</placeName>
+                     <placeName ref="#aphsouthagora">South Agora</placeName>, on the south-east rim of the <placeName type="monuList" ref="#aphsagorapool">Pool/basin</placeName>
                      </provenance>
                   <provenance type="observed">Findspot</provenance>
                </history>
@@ -77,41 +77,33 @@
          <creation>Transcription (Chaniotis).</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2024-05-15" who="#CMR">Marked up</change>
+         <change when="2024-09-20" who="#CMR">Marked up</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="2002_A_33.jpg"><desc>Face (Roueché, 2002)</desc></graphic></facsimile>
+      <surface></surface></facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-               <ab><lb n="1"/> <w lemma="νικάω">Νικᾷ</w> <supplied reason="lost"><w lemma="ὁ">ἡ</w> <w lemma="τύχη">τύχη</w></supplied>
-  <lb n="2"/> <orgName ref="#red" nymRef="#οἱ Ῥούσεοι"><w lemma="ὁ">τῶ<supplied reason="lost">ν</supplied></w> <w lemma="Ῥούσεος">Ῥουϲέων</w></orgName>
-               </ab>
+               <ab><lb n="1"/><g ref="#crux"/> <persName type="attested"><name nymRef="Κολότρον">Κολότρον</name></persName> <w lemma="προταυράριος">προταυράριοϲ</w> 
+                  <lb n="2"/><w>οὗ</w> <persName type="divine" ref="#deus"><w>ὁ</w> <name nymRef="Θεός">θεὸς</name></persName> <w>μνήϲετε</w></ab>
                
              </div> 
-         <div type="apparatus">
-            <listApp>
-               <app loc="2"><rdg resp="#chaniotis2011">Ῥούσων</rdg>
-                  <rdg resp="#seg">Ῥουσέων</rdg></app>
-            </listApp>
+         
+         <div type="translation" xml:lang="tr" source="#smith2018"><p>Kolotron, baş altın ustası (protaurios), Tanrı tarafından hatırlanacaktır’</p>
          </div>
-         <div type="translation" xml:lang="en" resp="#cmr"><p> The fortune of the Reds triumphs!</p>
-         </div>
+         
          <div type="commentary">
             </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> in 2010</bibl></p>
+            <p><bibl><ptr target="nyu"/>, <citedRange>I 16.20</citedRange></bibl></p>
           </div>
-         <div type="bibliography">
-            <p><bibl><ptr target="chaniotis2011"/> <citedRange unit="page">202</citedRange> (mention)</bibl>, whence 
-               <bibl><ptr target="seg"/> <citedRange>61.847</citedRange></bibl>; 
-               <bibl><ptr target="chaniotisdestaeb2018"/> <citedRange>38, 41 no.16</citedRange><!-- check --></bibl>, whence 
-               <bibl><ptr target="AE"/> <citedRange>2018.1618</citedRange></bibl>, 
-               <bibl><ptr target="iam"/> <citedRange>2019.120</citedRange></bibl>,
-               <bibl><ptr target="seg"/> <citedRange>68.846</citedRange></bibl>
-               
-            </p>
+        
+            <div type="bibliography">
+               <p><bibl><ptr target="rrrs2018"/> <citedRange unit="page">265-6</citedRange> (photograph, plate 3)</bibl>, whence 
+                  <bibl><ptr target="iam"/> <citedRange>2019.124</citedRange></bibl>, 
+                  <bibl><ptr target="AE"/> <citedRange>2018.1616</citedRange></bibl>,
+                  <bibl><ptr target="seg"/> <citedRange>68.947</citedRange></bibl>.</p>
          
          </div>
       </body>
