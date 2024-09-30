@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Dedication of ? a statue</title>
+            <title>Dedication of a statue of Domitian</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -47,8 +47,8 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
-                     <origDate evidence="lettering">perhaps Augustan-I A.D.</origDate>
+                     <origPlace><placeName ref="#aphtheatre">Theatre</placeName></origPlace>
+                     <origDate notBefore="0081" notAfter="0096" evidence="reign">81-96 CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphtheatre">Theatre</placeName>, <placeName type="monuList" ref="#aphtheatrestage">stage</placeName>, Porta Regia North.</provenance>
@@ -100,9 +100,9 @@
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-               <lb n="0"/><gap reason="lost" unit="line" extent="unknown" cert="low"/>
-               <lb n="1"/><orig>δο</orig><gap reason="lost" unit="character" quantity="12"/>
-               <lb n="2"/><orig>γερ</orig><gap reason="lost" unit="character" quantity="10"/><orig><unclear>ιγ</unclear>ον</orig>
+               <lb n="0"/><persName type="emperor" ref="#domitian"><supplied reason="lost"><addName nymRef="Αὐτοκράτωρ">Αὐτοκράτορα</addName> <addName nymRef="Καῖσαρ">Καίσαρα</addName></supplied>
+               <lb n="1"/><name nymRef="Δομιτιανός">Δο<supplied reason="lost">μιτιανὸν</supplied></name> <supplied reason="lost"><addName nymRef="Σεβαστός">Σεβαστὸν</addName></supplied>
+               <lb n="2"/><addName nymRef="Γερμανικός">Γερ<supplied reason="lost">μανικὸν</supplied></addName> <addName nymRef="ἀνίκητος"><supplied reason="lost">ἀνίκ</supplied><unclear>ητ</unclear>ον</addName></persName>
                <lb n="3"/><w lemma="ὁ">ὁ</w> <w>δῆμ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w>  <w lemma="ἀφιερόω">ἀ<supplied reason="lost">φιέ</supplied>ρωσεν</w>
                <lb n="4"/><w lemma="ἐπιμελέω">ἐπιμεληθέντος</w> <persName type="attested"><name nymRef="#Μένιππος">Με<lb n="5" break="no"/>νίππου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Μένιππος">Μενίπ
                   <lb n="6" break="no"/>που</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="φύσις">φύσει</w> <persName type="attested"><name>Ἀδράτου</name></persName></persName>
@@ -111,20 +111,20 @@
          
          <div type="apparatus">
            <listApp>
-            <app><note>Above line 1, it is not certain that this area was inscribed</note></app>
-              <app loc="2"><note>At the end Γ might be Τ, but, if correct, suggests στρατηγόν</note></app>
-            <app loc="6"><note>The final name may be miscut for <foreign xml:lang="grc">Ἀδράστου</foreign>
+            <app loc="1"><note>Above line 1, one inscribed line is wholly lost</note></app>
+            <app loc="6"><note>The final name is presumably miscut for Ἀδράστου
             </note></app>
            </listApp>
          </div>
-         <div type="translation" xml:lang="en" resp="#CMR">
-            
+         <div type="translation" xml:lang="en" resp="#JMR">
+            <p>[The Emperor Caesar] Domitian Augustus Germanicus, unconquered. The people dedicated this; Menippos son of Menippos, natural son of Adra[s]tos, 
+            was responsible for its production.</p>
          </div>
          <div n="notyet" type="commentary">
             
          </div>
          <div type="bibliography" subtype="transcription">
-            <p>Recorded: <bibl><ptr target="nyu"/> in 1971, <citedRange>71.336</citedRange>, <citedRange>SBI 71</citedRange></bibl></p>
+            <p><bibl><ptr target="nyu"/> <citedRange>71.336</citedRange>, <citedRange>SBI 71</citedRange></bibl></p>
          </div>
       </body>
    </text>
