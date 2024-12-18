@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Honours</rs>  for an Emperor,  <seg cert="low">Justinian</seg>
+            <title><rs type="textType">Honours</rs>  for an Emperor,  Julian or Justinian
             </title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
@@ -52,7 +52,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="0501" notAfter="0600" precision="medium">Sixth century (lettering, ?emperor)</origDate>
+                     <origDate notBefore="0361" notAfter="0363" precision="medium" evidence="lettering reign">?361-363</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphsouthagora">South Agora</placeName>, <placeName type="monuList" ref="#aphagoragate">Agora Gate</placeName>: II.83. IV.C at c. 3.00.</provenance>
@@ -110,18 +110,24 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
         
 		<ab>
-		<lb n="1"/><w lemma="ὁ">τὸν</w> <persName type="emperor" ref="#justinianus"><addName nymRef="εὐσεβής">εὐϲεβέϲ<unclear>τ</unclear><supplied reason="lost">α</supplied>
+		<lb n="1"/><w lemma="ὁ">τὸν</w> <persName type="emperor" ref="#julian"><addName nymRef="εὐσεβής">εὐϲεβέϲ<unclear>τ</unclear><supplied reason="lost">α</supplied>
 		<lb n="2" break="no"/>τον</addName> <w lemma="καί">καὶ</w> <addName nymRef="καλλίνικος">καλλί
 		<lb n="3" break="no"/>νικον</addName> <w lemma="ἡμεῖς">ἡμῶν</w>
 		<lb n="4"/><addName nymRef="δεσπότης"><supplied reason="lost">δεϲπό</supplied><unclear>τ</unclear>ην</addName> <name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>άουιον</ex></expan></name>
-		<lb n="5"/><name nymRef="#Ἰουστινιανός"><supplied reason="lost" cert="low">Ἰουϲτινια</supplied>νόν</name></persName>
+		<lb n="5"/><supplied reason="lost"><name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name></supplied> <name nymRef="#Ἰουστινιανός"><supplied reason="lost" cert="low">Ἰουλια</supplied>νόν</name></persName>
 		<lb n="6"/><gap reason="lost" unit="line" extent="unknown"/>
 		</ab>
       </div>
+         <div type="apparatus"> <listApp>
+               <app loc="5"><rdg resp="#iaph2007"><supplied reason="lost" cert="low">Ἰουϲτινια</supplied>νόν</rdg>
+                  <rdg resp="#chaniotis2024"><supplied reason="lost" cert="low"> Κλ. Ἰουλια</supplied>νόν</rdg></app></listApp></div>
+         
+         <div type="translation" xml:lang="en" source="#chaniotis2024">
+            <p> [The city?] (set up the staue of) our most pious lord and winner of fair victories Flavius [ . .. -ia]nus.</p>
+         </div>
+         
          <div type="translation" xml:lang="en" source="#ala2004">
-            <p>
-               <supplied reason="lost">
-                  <note place="not specified" xml:lang=""/> The city honours</supplied> our most pious and splendidly victorious master, 
+            <p> [The city honours] our most pious and splendidly victorious master, 
                Flavius <supplied reason="lost" cert="low">Justinia</supplied>nus.</p>
          </div>
          <div type="commentary">
@@ -138,7 +144,8 @@
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257546">663</ref></citedRange>
               </bibl>, 
                <bibl><ptr target="ala2004"/> <citedRange><ref target="https://insaph.kcl.ac.uk/ala2004/inscription/eAla081.html">81</ref></citedRange></bibl>, 
-               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph040311.html">4.311</ref></citedRange></bibl>.</p>
+               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph040311.html">4.311</ref></citedRange></bibl>; 
+               <bibl><ptr target="chaniotis2024"/> <citedRange unit="entry">17</citedRange></bibl>.</p>
          </div>
       </body>
    </text>
