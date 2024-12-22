@@ -33,12 +33,14 @@
                      <supportDesc>
                         <support>
                            <p>Small <material key="marmor">white marble</material>
-                              <objectType>stele</objectType> (<dimensions unit="metre"><width>0.13</width><height>0.21</height><depth>0.95</depth></dimensions>), damaged above and at the bottom right corner, consisting of an inscribed base with oblique left side (right side lost) carrying a <rs type="decoration">nude male</rs> three-quarter figure with head surviving as far as the chin only, arms as far as the elbows and legs as far as the knees.</p>
+                              <objectType>stele</objectType> (<dimensions unit="metre"><width>0.13</width><height>0.21</height><depth>0.95</depth></dimensions>), 
+                             damaged above and below, with a square base carrying a 
+                              <rs type="decoration">nude male</rs> full frontal figure, shown from the knees up, arms broken away, with a thick neck and perhaps no head.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face of the base supporting the figure, which is damaged to left and right.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -84,6 +86,7 @@
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-12-21" who="#CMR">Emended</change>
          <change when="2022-05-19" who="#FT">Added auth list ref</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-04-03" who="GB">DONE</change>
@@ -103,23 +106,33 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>  <g ref="#stop"/>  <persName type="divine" ref="#aphrodite"><name nymRef="#Ἀφροδίτη">Ἀφρο<unclear>δ</unclear><supplied reason="lost">ίτῃ</supplied></name></persName>  <gap reason="lost" unit="character" quantity="2"/>  <lb n="2"/><space quantity="3" unit="character"/>  <orig>χηα<unclear>ν</unclear></orig><gap reason="lost" unit="character" quantity="4"/>  </ab>
+<ab>
+   <lb n="1"/><persName type="attested"><name nymRef="Ἐπαφρόδειτος"><supplied reason="lost" cert="low">Ἐπ</supplied>αφρό<unclear>δ</unclear><supplied reason="lost">ειτος</supplied></name></persName>  
+   <lb n="2"/> <persName type="divine" ref="#agathetyche"><name nymRef="Τύχη"><supplied reason="lost" cert="low">Τύ</supplied>χῃ</name> <addName nymRef="Ἀγαθός">Ἀγ<supplied reason="lost" cert="low">αθῇ</supplied></addName></persName>  </ab>
 </div>
-         <div type="translation">
-            <p>
-               <seg cert="low">To Aphrodite</seg>
-               <gap reason="lost" unit="character" extent="unknown"/>
-               <seg cert="low">dedicated</seg>
+         <div type="apparatus"><listApp>
+               <app loc="1"><rdg resp="#iaph2007">((stop)) Ἀφροδ̣[ίτῃ ..]</rdg> <rdg resp="#chaniotis2024">[Ἐπ?]αφρόδ̣[ειτος]</rdg><rdg resp="#CMR">[Ἐπ]αφρόδ̣[ειτος]</rdg></app>
+               <app loc="2"><rdg resp="#iaph2007">( vac. 3) ΧΗΑΝ̣[c. 4]</rdg> <rdg resp="#chaniotis2024">[Τύ?]χῃ Ἀγ[αθῇ?]</rdg></app>
+         </listApp></div>
+         
+         
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p> ? Epaphrodeitos, to Good Fortune</p>
+         </div>
+         <div type="translation" xml:lang="en" resp="#iaph2007">
+            <p><seg cert="low">To Aphrodite</seg> <gap reason="lost" unit="character" extent="unknown"/> <seg cert="low">dedicated</seg>
             </p>
          </div>
          <div type="commentary">
-            <p>Aphrodite's name may have been followed by a cult title, or by the name of a female dedicator, with <foreign xml:lang="grc">ἀνέθηκε</foreign> in full or incomplete</p>
+            <!-- <p>Aphrodite's name may have been followed by a cult title, or by the name of a female dedicator, with 
+               <foreign xml:lang="grc">ἀνέθηκε</foreign> in full or incomplete</p> -->
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Excavated by the NYU expedition in 1986 (<citedRange>86.28</citedRange>).</bibl></p>
+             <p><bibl><ptr target="nyu"/><citedRange>86.28</citedRange>.</bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph040109.html">4.109</ref></citedRange></bibl>.</p>
+             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph040109.html">4.109</ref></citedRange></bibl>; 
+                <bibl><ptr target="chaniotis2024"/> <citedRange>32</citedRange></bibl>.</p>
          </div>
       </body>
    </text>
