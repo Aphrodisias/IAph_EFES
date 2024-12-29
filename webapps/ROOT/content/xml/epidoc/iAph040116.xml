@@ -11,6 +11,7 @@
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
             <editor xml:id="FT" role="encoding">Francesco Tecca</editor>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
@@ -105,18 +106,21 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><orig>νιμα<unclear>π</unclear>αν<unclear>ιλ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><w lemma="μνῆμα"><supplied reason="lost">μ</supplied><hi rend="ligature">νῆ</hi>μα</w> <orig><unclear>π</unclear>αν<unclear>ιλ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
    <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ὁ"><supplied reason="lost">τ</supplied>οῦ</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-4788"><name nymRef="#Διόδωρος">Διοδώρου</name></persName> <orig>Ε<unclear>Ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
-   <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="καί"><unclear>κ</unclear>αὶ</w> <persName type="attested"><name nymRef="#Αὐρηλία">Αὐρηλία</name></persName> <orig><unclear>ε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
+   <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>τ</unclear>αὶ</orig> <persName type="attested"><name nymRef="#Αὐρηλία">Αὐρηλία</name></persName> <orig><unclear>ε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="1"><note><foreign xml:lang="grc">
-                  <supplied reason="lost">μ</supplied>νημα</foreign>
-            </note></app>
+              <app loc="1"><rdg resp="#boulanger">. . . ]ΝΗΜΑΠΑΝ[ . .</rdg> <rdg resp="#iaph2007"><note>[---]ΝΙΜΑ<unclear>Π</unclear>ΑΝ<unclear>ΙΛ</unclear>[ . ., perhaps <supplied reason="lost">μ</supplied>νῆμα</note></rdg></app>
+              <app loc="3"><rdg resp="#boulanger">. . . ]καὶ</rdg> <rdg resp="#iaph2007">. . . ]<unclear>κ</unclear>αὶ</rdg></app>
            </listApp>
          </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>[ . ,. .] memorial [ . . .] son of Diodoros [ . . ?will be buried] Aurelia [ . . .
+            </p>
+         </div>
+         <div type="translation" xml:lang="en" source="#iaph2007">
             <p>
                <gap reason="lost" unit="character" extent="unknown"/> son of Diodoros <gap reason="lost" unit="character" extent="unknown"/> and Aurelia <gap reason="lost" unit="character" extent="unknown"/>
             </p>
@@ -126,11 +130,12 @@
          </div>
          <div type="bibliography" subtype="transcription">
             <p><bibl><ptr target="mendel"/><citedRange/></bibl>;
-               <bibl><ptr target="boulager"/> <citedRange> A, 61, no. 21</citedRange>, whence <citedRange>B, 15, no. 21</citedRange></bibl>; 
+               <bibl><ptr target="boulanger"/> <citedRange> A, 61, no. 21</citedRange>, whence <citedRange>B, 15, no. 21</citedRange></bibl>; 
                <bibl><ptr target="nyu"/> in <citedRange>1973</citedRange>, <citedRange>Baths 6</citedRange>.</bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph040116.html">4.116</ref></citedRange></bibl>.</p>
+             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph040116.html">4.116</ref></citedRange></bibl>; 
+                <bibl><ptr target="chaniotis2024"/> <citedRange>46</citedRange></bibl>.</p>
          </div>
       </body>
    </text>
