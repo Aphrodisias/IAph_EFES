@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Funerary</rs> fragment</title>
+            <title><rs type="textType">Funerary?</rs> fragment</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -81,6 +81,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-01-02" who="CMR">emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-04-04" who="GB">DONE</change>
          <change when="2007-03-20" who="Charlotte-Tupman">hand tidied</change>
@@ -97,24 +98,29 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ιι</unclear></orig>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ρ</unclear>ισ</orig>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>δ</unclear>ηλου</orig>  <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig>κνι<unclear>ον</unclear></orig><gap reason="lost" unit="character" quantity="1"/>  <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>υιτ</unclear></orig>  <lb n="5a"/><gap reason="lost" unit="line" extent="unknown"/>   </ab>
+<ab><lb n="0"/>  <gap reason="lost" unit="line" extent="unknown"/>  
+   <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ιι</unclear></orig>  
+   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="σοφία"><supplied reason="lost" cert="low">σο</supplied><unclear>φ</unclear>ί<hi rend="ligature">ας</hi></w>  
+   <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><w part="I" lemma="δηλόω"><unclear>δ</unclear>ηλου</w>  
+   <lb n="4" break="no"/><gap reason="lost" unit="character" extent="unknown"/><w lemma="τέκνιον"><supplied reason="lost">τε</supplied>κνίο<unclear>υ</unclear></w> <gap reason="lost" unit="character" extent="unknown"/>
+   <lb n="4a"/><gap reason="lost" unit="line" extent="unknown"/>   </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="3"><note><foreign xml:lang="grc">Δ</foreign> might be <foreign xml:lang="grc">Ρ</foreign>
-            </note></app>
-            <app loc="4"><note>second <foreign xml:lang="grc">Ν</foreign> might be <foreign xml:lang="grc">Υ</foreign>
-            </note></app>
+              <app loc="2"><rdg resp="#iaph2007">[---]ΡΙΣ</rdg></app>
+              <app loc="3"><rdg resp="#iaph2007">[---]ΚΝΙΟΝ[.]</rdg></app>
+              <app loc="5"><rdg resp="#iaph2007">[---]<orig><unclear>υιτ</unclear></orig></rdg></app>
+            
            </listApp>
          </div>
-         <div type="translation">
-            <p>Not usefully translatable</p>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>.. . ] wisdom <note>or</note> philosophy [ . . . as is ] shown [ . . . ] child [? . .</p>
          </div>
          <div type="commentary">
-            <p>Probably a mention of 'the aforementioned'</p>
+            
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition ( <citedRange>Museum 62</citedRange>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>Museum 62</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph150268.html">15.268</ref></citedRange></bibl>.</p>
