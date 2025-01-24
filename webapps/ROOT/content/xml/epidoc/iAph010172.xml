@@ -31,7 +31,8 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Two joining<material key="marmor">white marble</material> fragments (from <objectType cert="low">statue base</objectType>), a. with left side and lower moulding (<dimensions unit="metre"><width>0.21</width><height>0.24</height><depth>0.22</depth></dimensions>); b. without edges (<dimensions unit="metre"><width>0.08</width><height>0.09</height><depth>0.06</depth></dimensions>).</p>
+                           <p>Two joining <material key="marmor">white marble</material> fragments (from <objectType cert="low">statue base</objectType>), 
+                              a. with left side moulding (<dimensions unit="metre"><width>0.21</width><height>0.24</height><depth>0.22</depth></dimensions>); b. without edges (<dimensions unit="metre"><width>0.08</width><height>0.09</height><depth>0.06</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -41,7 +42,7 @@
                   </objectDesc>
                   <handDesc>
                      <handNote>
-                        <height unit="metre">0.02</height>; ligatured <foreign xml:lang="grc">MN</foreign>, a. line 4; apex on <foreign xml:lang="grc">Α</foreign>, line 5.</handNote>
+                        <height unit="metre">0.02</height>;<!-- ligatured <foreign xml:lang="grc">MN</foreign>, a. line 4;  --> apex on <foreign xml:lang="grc">Α</foreign>, line 5.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -83,6 +84,7 @@
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-01-24" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-03-06" who="GB">DONE</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -90,11 +92,11 @@
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="R_66_1_89.jpg">
-            <desc>Fragment a. (1966)</desc>
+         <graphic url="rosen66_1_89a.jpg">
+            <desc>Fragment a (E. Alföldi-Rosenbaum, 1966)</desc>
          </graphic>
          <graphic url="77_BB_22.jpg">
-            <desc>Fragment a. (M. Roueché, 1977)</desc>
+            <desc>Fragment a (M. Roueché, 1977)</desc>
          </graphic>
          <graphic url="R_66_1_85.jpg">
             <desc>Fragment b. (1966)</desc>
@@ -104,27 +106,28 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<div n="a" type="textpart" subtype="fragment"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/>  <orig>χ<unclear>ρ</unclear>εο<unclear>υ</unclear></orig> <gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><w lemma="θαυμάζω">θα<unclear>υ</unclear>μα<supplied reason="lost" cert="low">σθέντα</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><orig>τη<unclear>τ</unclear>ο<unclear>υ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><orig><hi rend="ligature">μν</hi>ο</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/><orig>αω</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><orig>μ<unclear>α</unclear></orig> <gap reason="lost" unit="character" extent="unknown"/></ab></div>
+<div n="a" type="textpart" subtype="fragment"><ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  
+      <lb n="1"/>  <orig>χ<unclear>ρ</unclear>εο<unclear>υ</unclear></orig> <gap reason="lost" unit="character" extent="unknown"/>  
+      <lb n="2"/><w lemma="θαυμάζω">θα<unclear>υ</unclear>μα<supplied reason="lost">σθέντα</supplied></w>    
+      <lb n="3"/><w>τῇ</w> <w><unclear>τ</unclear>ο<unclear>ῦ</unclear></w> <supplied reason="lost"><w lemma="βίος">βίου</w></supplied> <w lemma="σεμνότης"><supplied reason="lost">σε</supplied>  
+      <lb n="4" break="no"/><hi rend="ligature">μν</hi>ο<supplied reason="lost">τητι</supplied></w> <gap reason="lost" unit="character" quantity="2"/>  
+      <lb n="5"/><orig>αω</orig><gap reason="lost" unit="character" extent="unknown"/>  
+      <lb n="6"/><orig>ν<unclear>α</unclear></orig> <gap reason="lost" unit="character" extent="unknown"/></ab></div><!-- think -->
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="2"><note>e.g. <foreign xml:lang="grc">θαυμα<supplied reason="lost">σθέντα</supplied>
-               </foreign> (or <foreign xml:lang="grc">θαυμά<supplied reason="lost">σθεισαν</supplied>
-               </foreign>)  <foreign xml:lang="grc">
-                  <supplied reason="lost">ἐπὶ</supplied> τῇ τοῦ <supplied reason="lost">βίου σε</supplied>μνο<supplied reason="lost">τητι</supplied>
-               </foreign>.</note></app>
+              <app loc="3-4"><rdg resp="#iaph2007">ΤΗΤ̣ΟΥ̣[---]/ΜΝΟ[---]</rdg></app>
            </listApp>
          </div>
          <div type="translation">
-            <p>a. <gap reason="lost" unit="line" extent="unknown"/>
-               <term>e.g</term>. admired for dignity of life <gap reason="lost" unit="character" extent="unknown"/>
+            <p> . . . ] admired for dignity of life <gap reason="lost" unit="character" extent="unknown"/>
             </p>
          </div>
          <div type="commentary">
-            <p>L. 2 suggests that this is an honorary text. </p>
+           
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Excavated by the NYU expedition in 1962 ( <citedRange>Temple 103</citedRange>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> in <citedRange>1962</citedRange>, <citedRange>Temple 103</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph010172.html">1.172</ref></citedRange></bibl>.</p>
