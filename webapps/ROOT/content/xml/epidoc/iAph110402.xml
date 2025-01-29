@@ -49,7 +49,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0099" precision="medium" evidence="lettering">Perhaps first century CE</origDate>
+                     <origDate notBefore="0001" notAfter="0125" precision="medium" evidence="lettering">Perhaps first - early second century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphcity">City</placeName>, <placeName type="monuList" ref="#aphcitysw">South-west</placeName>: stone dump near Theatre</provenance>
@@ -82,6 +82,7 @@
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-01-29" who="CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-07-05" who="cmr">DONE</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -98,12 +99,14 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ἐν"><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ὁ">τῷ</w> <w lemma="βαθρικόν">βαθρι<lb n="2" break="no"/><supplied reason="lost">κῷ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ελιιτ</unclear></orig><gap reason="lost" unit="character" quantity="4"/>  </ab>
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/>  <w lemma="ἐν"><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ὁ">τῷ</w> <w lemma="βαθρικόν">βαθρι
+      <lb n="2" break="no"/><supplied reason="lost">κῷ</supplied></w>  <gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ται</unclear></orig><gap reason="lost" unit="character" quantity="4"/> 
+   <lb n="2a"/> <gap reason="lost" unit="line" extent="unknown"/>
+</ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="2"><note><foreign xml:lang="grc">Ε</foreign> or <foreign xml:lang="grc">Τ</foreign>
-            </note></app>
+              <app loc="2"><rdg source="#iaph2007"><unclear>ΕΛΙΙΤΤ</unclear></rdg></app>
            </listApp>
          </div>
          <div type="translation">
@@ -112,10 +115,10 @@
             </p>
          </div>
          <div type="commentary">
-            <p>For the term cf. <ref type="inscription" n="1601" target="iAph120327"/> (=Reinach 160)</p>
+           <!--  <p>For the term cf. <ref type="inscription" n="1601" target="iAph120327"/> (=Reinach 160)</p> -->
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Excavated by the NYU expedition in 1974 (<citedRange>74.145</citedRange>).</bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>74.145</citedRange>.</bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph110402.html">11.402</ref></citedRange></bibl>.</p>
