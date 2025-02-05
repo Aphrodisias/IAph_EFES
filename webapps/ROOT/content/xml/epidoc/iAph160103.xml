@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragment from South Agora</title>
+            <title>Fragmentary <rs type="textType">honours</rs></title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,9 +14,9 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph040102</idno>
-            <idno type="IAph2007">iAph040102</idno>
-            <idno type="JMR2004">iAph0484</idno>
+            <idno type="filename">iAph160103</idno>
+            <idno type="IAph2007">iAph160103</idno>
+            
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -31,28 +31,29 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>
-                              <material>White marble</material> fragment (<dimensions unit="metre"><width>0.20</width><height>0.10</height><depth>0.22</depth></dimensions>).</p>
+                           <p>Fragment of  a thick <material key="marmor">white marble</material>  
+                              <objectType>panel</objectType>, <dimensions><width>0.06</width> <height>0.09</height><depth>0.13</depth></dimensions>, broken on all sides.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.07</height>
-                     </handNote>
+                     <handNote>Deep and irrefgular, perhaps first century CE 
+                        <height unit="metre">0.01</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0300" precision="medium" evidence="lettering">First to third centuries CE</origDate>
+                     <origDate notBefore="0001" notAfter="0099" precision="medium" evidence="lettering">First century CE</origDate>
                   </origin>
+
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphsouthagora">South Agora</placeName>: <placeName type="monuList" ref="#aphnagorawportico">West Portico</placeName>, south west corner, but possibly from French excavation of Baths.</provenance>
+                     <placeName ref="#aphsebast">Sebasteion</placeName>, near <placeName type="monuList" ref="#aphsebastprop">Propylon</placeName></provenance>
+
                   <provenance type="observed">Museum</provenance>
                </history>
             </msDesc>
@@ -82,32 +83,45 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2007-06-20" who="#CMR">DONE</change>
-         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
-         <change when="2007-01-01" who="GB">hand tidied</change>
+         <change when="2025-02-05" who="#CMR">Created</change>
+         
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <surface/>
+      
+         <graphic url="83_A_34.jpg">
+            <desc>Face (M. Roueché, 1983)</desc>
+         </graphic>
+      <!-- also 82.B16, 17: not usable -->
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig>ακ</orig><gap reason="lost" unit="character" extent="unknown"/>  </ab>
+
+
+<ab>
+   <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+   <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>
+   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig>ουσκ</orig><gap reason="lost" unit="character" extent="unknown"/>
+    <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><w part="I" lemma="ἐπιδ-">ἐπιδ</w><gap reason="lost" unit="character" extent="unknown"/>
+    <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><orig>ανειδ</orig><gap reason="lost" unit="character" extent="unknown"/>
+   <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/><orig>ς</orig> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τ<supplied reason="lost">ῶν</supplied></w> <supplied reason="lost" cert="low"><w lemma="ἰδίος">ἰδίων</w></supplied><gap reason="lost" unit="character" extent="unknown"/>
+   <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/><orig>επ</orig><gap reason="lost" unit="character" extent="unknown"/>
+    <lb n="6a"/><gap reason="lost" unit="character" extent="unknown"/>
+   
+</ab>
 </div>
-         <div type="translation">
-            <p>No translation possible.</p>
+         
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p> . . . ] ?gifts [ . . . ] ?from his own resources [ . . .</p>
          </div>
          <div type="commentary">
-           
+          
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> <citedRange>69.486</citedRange></bibl></p>
+             <p><bibl><ptr target="nyu"/>  <citedRange>81.154</citedRange>.</bibl></p>
           </div>
-          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph040102.html">4.102</ref></citedRange></bibl>.</p>
-         </div>
+          
       </body>
    </text>
 </TEI>
