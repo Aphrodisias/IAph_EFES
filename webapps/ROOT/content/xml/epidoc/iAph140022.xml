@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Building inscription from a church of St. Michael</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph140021</idno>
+            <idno type="IAph2007">iAph160236</idno>
+            <idno type="JMR2004">236</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>block</objectType> block, broken at upper left and chipped at the edges (<dimensions><height unit="metre">0.66</height> <width unit="metre">1.3</width> <depth unit="metre">0.3</depth></dimensions>) </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Hellenistic; <height unit="metre">0.017</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" precision="medium" evidence="lettering">First century BCE - first century CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <placeName type="ancientFindspot" ref="#plarasa">Plarasa</placeName> (Bingeç ): Stray.</provenance>
+                  <provenance type="observed">Museum.</provenance>
+                  <provenance/>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+               <term>
+                  <rs type="textType">Christian</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+         <revisionDesc>
+            <change when="2025-02-06" who="#CMR">Created</change>
+            
+         </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_V_51.jpg">
+            <desc>Kubitschek notebook V, 51</desc>
+         </graphic>
+         <graphic url="77_H_09A.jpg">
+            <desc>Face (M. Roueché, 1977)</desc>
+         </graphic>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+		<ab>
+		<lb n="1"/><supplied reason="lost"><w>ἔδοξεν</w> <w>τῇ</w> <w>βουλῇ</w> <w>καὶ</w> <w>τῷ</w></supplied> <w>δήμῳ·</w> <w>γνώμη</w> <w><supplied reason="lost">ἀρχόντων</supplied>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"> <w>ἐπεὶ</w></supplied> <name><supplied reason="lost">Διο</supplied>νύσιος</name> <name>Μηνοδότου</name></w> <w>τοῦ</w> <w><supplied reason="lost"><name>Ἡρῴδου</name></supplied>
+<lb n="3"/><supplied reason="lost"><w>τοῦ</w> <name>Διονυσίο</name>υ</supplied><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">ἐξαιρ</supplied>έτως</w> <w>καὶ</w> <w>κοσμίως,</w> <w>μετηλλ
+<lb n="4" break="no"/>αχ<supplied reason="lost">ὼς</supplied></w> <supplied reason="lost"><w>τὸν</w> <w>βίον</w></supplied><gap reason="lost" extent="unknown" unit="character"/><w><supplied reason="lost">τ</supplied>ῆς</w> <w>δὲ</w> <w>βουλῆς</w> <w><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><supplied reason="lost">․</supplied>μμένου</w> <w>καὶ</w> <w>τοῦ</w> <w>δήμου</w> <w>ἐπεβόησαν</w><supplied reason="lost"> <w>πάντες</w></supplied> <name><supplied reason="lost">Διονύσ</supplied>
+<lb n="6" break="no"/><supplied reason="lost">ι</supplied>ον</name> <w>τειμῆσαι</w> <w>καὶ</w> <w>μετηλλαχότα</w> <w>τ<supplied reason="lost">αῖς</supplied></w> <w>καλλίσταις</w> <w>τιμαῖς</w>
+<lb n="7"/><w>καὶ</w> <w>στεφανῶσαι·</w> <w>παραμυθήσασ<supplied reason="lost">θαι</supplied></w> <w><supplied reason="lost">δ’</supplied></w> <name><supplied reason="lost">Ἀπολ</supplied>
+<lb n="8"/>λώνιον</name> <w>καὶ</w> <name>Μηνόδοτον</name> <w>τὰ</w> <w>τέκνα</w> <w>αὐτοῦ</w> <w><supplied reason="lost">καὶ</supplied></w>
+<lb n="9"/><name>Μηνόδοτον</name> <name>Ἡρῴδου</name> <w>τοῦ</w> <name>Διονυσίου</name> <w>τὸν</w>
+<lb n="10"/> <w>πατέρα</w> <w>αὐτοῦ</w> <w>δεδόχθαι</w> <w>τῇ</w> <w>βουλῇ</w> <w><unclear>κ</unclear><supplied reason="lost">αὶ</supplied></w> <supplied reason="lost"><w>τῷ</w></supplied>
+<lb n="11"/> <w>δήμῳ</w> <w>τετειμῆσθαι</w> <w>μὲν</w> <w>καὶ</w> <w>μετηλλαχότα</w>
+<lb n="12"/><name>Διονύσιον</name> <w>καὶ</w> <w>ἐστεφανῶσθαι</w> <w>χρυσῷ</w> <w>στεφάνῳ</w>,
+<lb n="13"/> <w>παραμεμυθῆσθαι</w> <w>δὲ</w> <name>Ἀπολλώνιον</name> <w>καὶ</w> <name>Μηνό<supplied reason="lost">δο</supplied>
+<lb n="14" break="no"/>τον</name> <w>καὶ</w> <name>Μηνόδοτον</name> <w>τὸν</w> <w>πατέρα</w> <w>αὐτοῦ</w> <w>φέρειν</w> <w>γεν
+<lb n="15" break="no"/>ναίως</w> <w>τὴν</w> <w>περὶ</w> <w>τὸν</w> <w>βίον</w> <w>εἱμαρμένην</w>.</ab>
+		</div>
+         <div type="translation" xml:lang="en" source="#smithratte1995">
+            <p></p>
+         </div>
+         <div type="translation" xml:lang="de" source="#blumel2019">
+            <p>1 [Beschlossen von Rat und] Volk. Antrag [der archontes].
+               2 [Da] Dionysios Sohn des Mēnodotos Sohnes des [Hērōdēs, ein Mann aus] einer glänzenden
+               und angesehenen Familie, der tadellos und ehrbar [gelebt hat], verstorben ist, 5 (und da,) nach einer gesetzmäßig einberufenen Sitzung des Rats und nachdem die Volksversammlung
+               zusammengetreten war, sie einmütig laut ausgerufen haben, man solle den Mann
+               auch nach seinem Ableben ehren und bekränzen, trösten Apollōnios und Mēnodotos, seine Kinder,
+               [und] Mēnodotos Sohn des Hērōdēs Sohnes des Dionysios, seinen Vater,
+               11 möge von Rat und Volk beschlossen sein:
+               12 Geehrt soll sein Dionysios auch nach seinem Ableben und er soll bekränzt sein mit einem
+               goldenen Kranz; getröstet sollen sein Apollōnios und Mēnodotos und Mēnodotos, sein Vater.
+               15 Man muß das über das Leben verhängte Los mit Anstand ertragen.</p>
+         </div>
+         <div type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="dd"/> <citedRange></citedRange></bibl>; 
+               <bibl><ptr target="kubit"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="paton"/><citedRange></citedRange></bibl>;
+               <bibl><ptr target="nyu"/> in <citedRange>1977</citedRange>.</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+             <p><bibl><ptr target="dd1890"/> <citedRange unit="item">1</citedRange></bibl>; 
+               <bibl><ptr target="paton1900"/> <citedRange unit="item">2</citedRange></bibl>, and, from both,  
+                <bibl><ptr target="mccabePHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/256893">15</ref></citedRange></bibl>; 
+                <bibl><ptr target="blumel2019"/> <citedRange unit="item">1</citedRange></bibl>
+                 </p>
+         </div>
+      </body>
+   </text>
+</TEI>
