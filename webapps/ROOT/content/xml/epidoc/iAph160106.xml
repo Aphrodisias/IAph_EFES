@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>?Fragment mentioning  a M. Aur(elius) ?</title>
+            <title>Fragment</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,9 +14,9 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph070003</idno>
-            <idno type="IAph2007">iAph070003</idno>
-            <idno type="JMR2004">iAph0346</idno>
+            <idno type="filename">iAph160106</idno>
+            <idno type="IAph2007">iAph160106</idno>
+            
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -31,28 +31,31 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Moulded <material>white marble</material> fragment (<dimensions unit="metre"><width>0.16</width><height>0.10</height><depth>0.075</depth></dimensions>).</p>
+                           <p><material key="marmor">White marble</material>  
+                              <objectType>revetment</objectType> fragments: a, two joining pieces, broken at both ends <dimensions><width>0.27</width> <height>0.155</height><depth>0.0175</depth></dimensions>; 
+                              a, a single fragment, complete to right<dimensions><width>0.21</width> <height>0.16</height><depth>0.025</depth></dimensions></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on a smooth fascia (<dimensions><width unit="metre">0.16</width> <height unit="metre">0.06</height></dimensions>) between mouldings.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.025</height>
-                     </handNote>
+                     <handNote>Elaborate forms 
+                        <height unit="metre">0.095</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0300" precision="medium" evidence="lettering">First to third centuries CE</origDate>
+                     <origDate notBefore="0201" notAfter="0400" precision="medium" evidence="lettering">Third-fourth century CE</origDate>
                   </origin>
+
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphmartyrion">Martyrion</placeName>: S.W.Complex 4c</provenance>
-                  <provenance type="observed" when="1977">Museum (1977)</provenance>
+                     <placeName ref="#aphbispal">Bishop's Palace</placeName>: a: Precinct, Room 14, str 2; b: loose find.</provenance>
+
+                  <provenance type="observed">Museum</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -81,48 +84,48 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2007-03-01" who="#GB">DONE</change>
-         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
-         <change when="2007-01-01" who="GB">hand tidied</change>
+         <change when="2025-02-12" who="#CMR">Created</change>
+         
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <surface>
-         <graphic url="rosen66_1_95.jpg">
-            <desc><ref type="inscription" target="iAph010035"/>, <ref type="inscription" target="iAph010104"/>, <ref type="inscription" target="iAph020103"/>, <ref type="inscription" target="iAph070003"/> (E. Alföldi-Rosenbaum, 1966)</desc>
-         </graphic>
-         <graphic url="77_T_06A.jpg">
-            <desc>Face (M. Roueché, 1977)</desc>
-         </graphic>
-      </surface>
+      
+      <graphic url="78_K_03.jpg">
+         <desc>a. All fragments (M. Roueché, 1979)</desc>
+      </graphic>
+      <graphic url="72_E_19A.jpg">
+         <desc>a. Right side (M. Roueché, 1972)</desc>
+      </graphic>
+      <graphic url="rosen66_1_97.jpg">
+         <desc><ref type="inscription" target="iAph161712"/>, <ref type="inscription" target="iAph160106"/>.b, <ref type="inscription" target="iAph020505"/> (E. Alföldi-Rosenbaum, 1966)</desc>
+      </graphic>
+      <graphic url="73_Q_29A.jpg">
+         <desc>b. (M. Roueché, 1973)</desc>
+      </graphic>
+      <graphic url="77_D_25A.jpg">
+         <desc>b. (M. Roueché, 1977)</desc>
+      </graphic>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig>αραυ<unclear>ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  </ab>
+            <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+<div type="textpart" n="a"><ab>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig>θηναι</orig><gap reason="lost" unit="character" extent="unknown"/></ab>
 </div>
-         <div type="apparatus">
-           <listApp>
-            <app loc="1"><note>Perhaps <gap reason="lost" unit="character" extent="unknown"/>
-               <supplied reason="lost" cert="low">Μ</supplied>αρ<supplied reason="lost" cert="low">κος</supplied> <expan>Αὐ<supplied reason="lost">ρ</supplied><ex cert="low">ήλιος</ex></expan>
-               <gap reason="lost" unit="character" extent="unknown"/>
-            </note></app>
-           </listApp>
-         </div>
-         <div type="translation">
-            <p>
-               . . . M]ar(cus) Au[r(elius) . . .</p>
+            <div type="textpart" n="b"><ab>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig>ον</orig><gap reason="lost" unit="character" extent="unknown"/></ab>
+</div>
+</div>
+         
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p> Not translatable</p>
          </div>
          <div type="commentary">
-            <!-- <p> Presumably a name of which we have lost the cognomen.</p> -->
+          
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> <citedRange>62.184</citedRange></bibl></p>
+            <p><bibl><ptr target="nyu"/> a: <citedRange>66.274</citedRange>; b: <citedRange>63.607</citedRange>.</bibl></p>
           </div>
-          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph070003.html">7.3</ref></citedRange></bibl>.</p>
-         </div>
+          
       </body>
    </text>
 </TEI>
