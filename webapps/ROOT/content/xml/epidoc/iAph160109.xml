@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragment</title>
+            <title>Informal text</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,9 +14,8 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph150323</idno>
-            <idno type="IAph2007">iAph150323</idno>
-            <idno type="JMR2004">iAph1807</idno>
+            <idno type="filename">iAph160109</idno>
+            <idno type="IAph2007">iAph160109</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -31,25 +30,28 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment (<dimensions unit="metre"><width>0.19</width><height>0.11</height><depth>0.15</depth></dimensions>) from the left hand moulding of a <material>white marble</material>
-                              <objectType>statue base</objectType>, with two faces at an angle to one another, separated by drafting.</p>
+                           <p> <material key="marmor">White marble</material>  
+                              <objectType>block</objectType> (no measurements) severeley weathered.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>The text is inscribed across the drafting, but stops before moulding at right edge</layout>
+                        <layout>
+                           <rs type="execution" ref="litteris scariphatis">Scratched</rs> in one line on the protruding face</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Standard second to third  forms;  <height unit="metre">0.03</height>
+                     <handNote>
+                        <height unit="metre">0.007-0.018</height>
                      </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second to third centuries CE</origDate>
+                     <origDate notBefore="0201" notAfter="0600" precision="medium" evidence="archaeological-context">Third-fifth century CE</origDate>
                   </origin>
-                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: <placeName ref="#aphstray">Stray</placeName></provenance>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphodeon">Odeon</placeName> <placeName type="monuList" ref="#aphodeonnorth">North Portico</placeName>, 'Sculptor's Studio', jutting out of the rear, north, wall</provenance><!-- check voorhuis -->
                   <provenance type="observed">Museum</provenance>
                </history>
             </msDesc>
@@ -79,17 +81,18 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2007-04-04" who="GB">DONE</change>
-         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2025-02-14" who="#CMR">Created</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="81_A_33.jpg">
-            <desc>Face (M. Roueché, 1981)</desc>
+         <graphic url="JMR82_Α_18a.jpg">
+            <desc>Face (Reynolds, 1982)</desc>
          </graphic>
-         <graphic url="JMR82_C_11.jpg">
+         <graphic url="JMR82_Α_19a.jpg">
+            <desc>Face (Reynolds, 1982)</desc>
+         </graphic>
+         <graphic url="JMR82_Α_20a.jpg">
             <desc>Face (Reynolds, 1982)</desc>
          </graphic>
       </surface>
@@ -97,23 +100,20 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  
-   <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig>οω<unclear>θι</unclear></orig>  
-   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="ἔχω"><unclear>ἔ</unclear>χει</w>  
-   <lb n="2a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
+<ab>  
+   <lb n="1"/><orig>χωζκο<unclear>β</unclear> <space quantity="1" unit="character"/><hi rend="ligature">ου</hi><unclear>ξα</unclear> <gap reason="lost" quantity="2" unit="character"/><unclear>ρης</unclear></orig><unclear></unclear>  
+   </ab>
 </div>
          <div type="translation">
-            <p> No useful translation</p>
+            <p>No translation possible.</p>
          </div>
          <div type="commentary">
-            <p>No comment </p>
+            
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> <citedRange>1980/81</citedRange>, <citedRange>Museum 60</citedRange></bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>Odeon 26</citedRange></bibl></p>
           </div>
-          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph150323.html">15.323</ref></citedRange></bibl>.</p>
-         </div>
+          
       </body>
    </text>
 </TEI>
