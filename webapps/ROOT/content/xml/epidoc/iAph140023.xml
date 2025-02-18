@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Decree</rs> of <rs type="textType">consolation</rs></title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph140023</idno>
+            
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>block</objectType> block, chipped above (<dimensions><height unit="metre">0.66</height> <width unit="metre">1.45</width> <depth unit="metre">0.28</depth></dimensions>) </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Varying sizes <height unit="metre">0.022</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0100" notAfter="0200" precision="medium" evidence="nomenclature">Second century CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <placeName type="ancientFindspot" ref="#plarasa">Plarasa</placeName> (Bingeç) 'devant le Mussafir-oda d'Ali-Kiaoullak-Ibrahim'.</provenance>
+                  <provenance type="observed">Findspot (1900)</provenance>
+                  <provenance/>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+               <term>
+                  <rs type="textType">Christian</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+         <revisionDesc>
+            <change when="2025-02-06" who="#CMR">Created</change>
+            
+         </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_V_53.jpg">
+            <desc>Kubitschek notebook V, 53</desc>
+         </graphic>
+        
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+        
+		<ab>
+		<lb n="1"/><supplied reason="lost"> <w>ἔδοξεν</w> <w>τῇ</w></supplied> <w><supplied reason="lost">βο</supplied><unclear>υ</unclear>λ<unclear>ῇ</unclear></w> <w>καὶ</w> <w><unclear>τ</unclear><supplied reason="lost">ῷ</supplied></w> <w>δήμῳ·</w> <w>γνώμη</w> <w>ἀρχόντων</w> <w>καὶ</w> <w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2" break="no"/><name><seg part="F"><unclear>ν</unclear>ωνος</seg></name> <name>Οὐλπιανοῦ</name> <w>γραμματεὺς</w> <w>δήμου,</w> <w>καὶ</w> <name>Ἀπολλωνίου</name> <w>τοῦ</w> <w>․<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><orig>τη</orig><gap reason="lost" quantity="4" unit="character" precision="low"/><orig>ς</orig> <w>καὶ</w> <name>Ποπλίου</name> <name>Αἰλίου</name> <name>Σεκούνδου</name> <w>τῶν</w> <w>ἐπὶ</w> <w>τῆς</w> <w>χώρας</w> <w>στρατηγῶν</w>
+<lb n="4"/><w>ἐπεὶ</w> <name>Μένιππος,</name> <w>υἱὸς</w> <name>Μενίππου</name> <w>τοῦ</w> <name>Ζήνωνος</name> <w>τοῦ</w> <name>Καλλίου,</name> <w>γένους</w> <w>ὢν</w> <w><supplied reason="lost">ἐ</supplied>νδ<supplied reason="lost">ό</supplied>
+<lb n="5" break="no"/>ξου,</w> <w>πατρός</w> <w>τε</w> <w>καὶ</w> <w>προγόνων</w> <w>ἐν</w> <w>ἀρχαῖς</w> <w>καὶ</w> <w>λειτουργίαις</w> <w>γεγονότων</w> <w>ἔτι</w> <w><supplied reason="lost">θ</supplied><unclear>ά</unclear>λλω<supplied reason="lost">ν</supplied></w>
+<lb n="6"/><w>καὶ</w> <w>ἀσκούμενος</w> <w>τὰ</w> <w>κάλλιστα</w> <w>ἐπιτη<unclear>δε</unclear>ύματα,#⁹⁷³</w> <w>ὑπὸ</w> <w>τοῦ</w> <w><unclear>τ</unclear>ὰ</w> <w>καλὰ</w> <w>καὶ</w> <w>σεμνὰ</w> <w>λ<supplied reason="lost">υ</supplied>
+<lb n="7" break="no"/>μενομένου</w> <w>δαίμον<supplied reason="lost">ο</supplied>ς</w> <w>με<unclear>θ</unclear>ί<supplied reason="lost">σ</supplied>ταται</w> <w>το<supplied reason="lost">ῦ</supplied></w> <supplied reason="lost"><w>βίου</w></supplied> <w>π<supplied reason="lost">ρο</supplied>σήκει</w> <w>δὲ</w> <w>δημοσίας</w> <w>παρηγορίας</w> <w><unclear>ἀξ</unclear><supplied reason="lost">ι</supplied>
+<lb n="8" break="no"/>οῦσ<supplied reason="lost">θ</supplied><unclear>α</unclear>ι</w> <w>τοὺς</w> <w>πε<unclear>ιρ</unclear>α<supplied reason="lost">θ</supplied>έντα<unclear>ς</unclear></w> <w><unclear>γ</unclear>ονεῖς</w> <supplied reason="lost"><w>τῶν</w></supplied> <w>οἰ<supplied reason="lost">κεί</supplied>ων</w> <w>συν<unclear>φ</unclear><supplied reason="lost">ορ</supplied>ῶν</w> <w>εἰς</w> <w>τὸ</w> <w>ἐπικουφί
+<lb n="9" break="no"/>ζεσθαι</w> <w>αὐτοὺς</w> <w>διὰ</w> <w>τῆς</w> <w><supplied reason="lost">παρηγορ</supplied>ίας</w> <w>τῆς</w> <w>λύπης</w> <w>δεδόχθαι</w> <w>τ<supplied reason="lost">ῇ</supplied></w>
+<lb n="10" break="no"/><w>βουλῇ</w> <w>καὶ</w> <w>τῷ</w> <w>δήμῳ</w> <space extent="unknown" unit="character"/></ab>
+		</div>
+         <div type="apparatus"><app><note>The best readings from Paton and Blümel. </note></app><listApp>
+               <app loc="3"><rdg resp="#dd1890">ἐξαιρ]έτως</rdg><rdg resp="#paton1900">συν]έτως</rdg></app>
+               <app loc="3-4"><rdg resp="#dd1890">μετηλλ/αχ[ὼς</rdg><rdg resp="#paton1900">μετήλ/[λαχε]</rdg></app>
+               <app loc="6"><rdg></rdg></app><!-- add Wilhelm, KlS II, 1, 491-->
+               <app loc="5-6"><rdg resp="#dd #kubit">. . . ]/.ΜΜΕΝΟΥ</rdg><rdg resp="#paton">ΣΥΝ../ΗΓΜΕΝΟΥ</rdg><rdg resp="#paton1900 #blumel2019">συνει/[λ]εγμένου</rdg><note>But .ΜΜΕΝΟΥ is clear: perhaps <unclear>Γ</unclear>ΜΜΕΝΟΥ</note></app>
+               <app loc="17"><rdg resp="#dd #paton"><note>Not reported</note></rdg></app>
+         </listApp></div>
+         <div type="translation" xml:lang="en">
+            <p></p>
+         </div>
+         <div type="translation" xml:lang="de" source="#blumel2019">
+            <p>1.Von Rat und Volk [beschlossen. Antrag der archontes und des ---]iōn Ulpianos, des grammateus
+               des Demos, und des Apollōnios Sohnes des [---] und des Publius Aelius Secundus, der
+               stratēgoi (Militärkommandanten) über das Umland.
+               4 Da Menippos Sohn des Menippos Sohnes des Zēnōn Sohnes des Kallias, aus einer angesehenen
+               Familie, dessen Vater und Vorfahren in Ämtern und Leiturgien (Dienstleistungen) tätig gewesen sind, 
+               noch in der Blüte seiner Jahre und den schönsten Beschäftigungen frönend durch
+               den Daimon, der das Rechtschaffene und Ehrwürdige vernichtet, aus dem Leben geschieden ist,
+               7 und da es sich ziemt, daß für würdig des Trostes durch den Demos die durch den Trauerfall
+               im Familienkreis leidgeprüften Eltern erachtet werden, um sie von der Last zu befreien durch
+               die [Milderung] der Trauer durch den Demos,
+               9 möge von Rat und Volk beschlossen sein.</p>
+         </div>
+         <div type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="dd"/> <citedRange></citedRange></bibl>; 
+               <bibl><ptr target="kubit"/> <citedRange>V, 53</citedRange>, and a partial Abklatsch</bibl>;
+               <bibl><ptr target="paton"/><citedRange></citedRange></bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+             <p><bibl><ptr target="dd1890"/> <citedRange unit="item">2</citedRange></bibl>; 
+               <bibl><ptr target="paton1900"/> <citedRange unit="item">1</citedRange></bibl>, and, from both,  
+                <bibl><ptr target="mccabePHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/256897">19</ref></citedRange></bibl>; 
+                <bibl><ptr target="blumel2019"/>, from Kubitschek, <citedRange unit="item">2</citedRange></bibl>
+                 </p>
+         </div>
+      </body>
+   </text>
+</TEI>

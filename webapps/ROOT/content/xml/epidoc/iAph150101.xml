@@ -41,7 +41,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Rough; lunate epsilon, sigma, omega; unevenly aligned.</handNote>
+                     <handNote>Rough; lunate epsilon, sigma, omega; nu reversed; unevenly aligned.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -49,8 +49,7 @@
                      <origPlace>Unknown</origPlace>
                      <origDate notBefore="0001" notAfter="0200" precision="medium" evidence="lettering">Perhaps first to second century CE</origDate>
                   </origin>
-                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: Found in or before 1894, when it entered the collection of the Vienna Museum
-                  </provenance>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#plarasa">Bingeç</placeName>, in a house wall (1893).</provenance>
                   <provenance type="observed">Vienna Museum, Inv. I 711 (L)</provenance>
                </history>
             </msDesc>
@@ -84,6 +83,7 @@
          <creation>Preliminary transcription (Reynolds); publications.</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-02-18" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-01-11" who="Charlotte-Tupman">tidied</change>
          <change when="2005-05-24" who="#GB">transferred to XML</change>
@@ -118,23 +118,28 @@
             <app loc="2"><note><foreign xml:lang="grc">Ν</foreign> is written backwards.</note></app>
            </listApp>
          </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" source="#iaph2007">
             <p>Zotikos pays his vow to the deity who is kindly to meet <supplied reason="explanation">Hekate</supplied>.</p>
+         </div>
+         <div type="translation" xml:lang="de" source="#blumel2019">
+            <p>Zotikos (hat dies geweiht) der Gottheit, die man freundlich antrifft, in Erfüllung eines Geluübdes</p>
          </div>
          <div type="commentary">
           <!--    <p>This epithet for Hekate is discussed by Robert, loc. cit.; cf. <bibl>id <title level="m">Stele</title>, Festschrift Kontoleon, Athens, 1977, 4.</bibl>
             </p>-->
          </div>
          <div type="bibliography" subtype="transcription">
-            <p>Recorded: Museum Catalogue</p>
+            <p><bibl><ptr target="kubit"/> <citedRange>II.61</citedRange></bibl></p>
          </div>
          <div type="bibliography" subtype="publication">
-            <p>Published: <bibl><ptr target="noll1962"/> <citedRange>67</citedRange>
+            <p><bibl><ptr target="noll1962"/> <citedRange>67</citedRange>
               </bibl>, whence <bibl><ptr target="robert1965"/> <citedRange>285</citedRange> and pl. 25</bibl>, 
                <bibl><ptr target="robertBE"/>  <citedRange>1966.507</citedRange>
               </bibl>,  <bibl><ptr target="mccabePHI"/>
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257043">164</ref></citedRange>
-              </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph150101.html">15.101</ref></citedRange></bibl>.</p>
+              </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph150101.html">15.101</ref></citedRange></bibl>; 
+               <bibl><ptr target="blumel2019"/> <citedRange>8</citedRange></bibl>
+            </p>
          </div>
       </body>
    </text>
