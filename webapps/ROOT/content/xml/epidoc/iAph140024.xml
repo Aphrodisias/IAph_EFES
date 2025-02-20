@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Decree</rs> of <rs type="textType">consolation</rs></title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph140024</idno>
+            
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>block</objectType>, chipped above and complete to left (<dimensions><height unit="metre">0.67</height> <width unit="metre">1.72</width> <depth unit="metre">0.16</depth></dimensions>) </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face; the text must have begun on a block to the left</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Varying sizes <height unit="metre">0.017</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0100" notAfter="0200" precision="medium" evidence="nomenclature">Second century CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <placeName type="ancientFindspot" ref="#plarasa">Plarasa</placeName> (Bingeç) 'vor der Moschee'.</provenance>
+                  <provenance type="observed">Findspot (1977)</provenance>
+                  <provenance/>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/639063">Plarasa</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/321084/">Bingeç</placeName>
+               </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
+               <term>
+                  <rs type="textType">Christian</rs>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+         <revisionDesc>
+            <change when="2025-02-20" who="#CMR">Created</change>
+            
+         </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_V_50.jpg">
+            <desc>Kubitschek notebook V, 53</desc>
+         </graphic>
+         <graphic url="77_G_19.jpg">
+            <desc>Face (M. Roueché, 1977)</desc>
+         </graphic>
+         <graphic url="77_G_20.jpg">
+            <desc>Face (M. Roueché, 1977)</desc>
+         </graphic>
+        
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+		<ab>
+		<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>ΤΟΥ</orig> <persName type="attested"><name><supplied reason="lost">Ὑ</supplied><unclear>ψ</unclear>ικλέους</name>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>ου</orig></persName>, <w>καθ’</w><w>υἱοθεσίαν</w> 
+<lb n="3"/><supplied reason="lost"><w>δὲ</w></supplied><gap reason="lost" extent="unknown" unit="character"/><orig>Υ</orig> <w>ὑπάρχοντες</w> 
+<lb n="4"/><supplied reason="lost"><w>προγόνων</w> <w>καλῶν</w> <w>καὶ</w> <w>ἀγαθῶν</w> <w>καὶ</w> <w>ἐν</w></supplied> <w><supplied reason="lost">λειτ</supplied>ουργίαις</w> <w>γεγονό
+<lb n="5" break="no"/><supplied reason="lost">των</supplied></w> <supplied reason="lost"><w>καὶ</w> <w>γυμνασιαρχίαις</w> <w>καὶ</w> <w>ἱερωσύναις</w></supplied> <w><supplied reason="lost">κα</supplied>ὶ</w> <w>ἐργεπιστασί
+<lb n="6" break="no"/><supplied reason="lost">αις</supplied></w> <supplied reason="lost"><w>καὶ</w> </supplied><gap reason="lost" extent="unknown" unit="character"/><w><supplied reason="lost">κα</supplied>ὶ</w> <w>ζήσαντες</w> 
+<lb n="7"/><supplied reason="lost"><w>βίον</w> <w>σεμνὸν</w> <w>καὶ</w> <w>ἐνάρετον</w> <w>καὶ</w> <w>ἄξιον</w> <w>ἐπαίνου.</w> <w>τὰ</w> <w>νῦν</w> <w>ἐξ</w></supplied> <w>ἀνθρώπων</w> <w>ὑ
+<lb n="8"/><supplied reason="lost">πὸ</supplied></w><supplied reason="lost"> <w>τοῦ</w> <w>δαίμονος</w> <w>ὑπειλεμμένοι</w> <w>εἰσί</w>. <w>καθήκει</w> <w>δὲ</w> <w>τοῖς</w></supplied> <w><supplied reason="lost">τοιο</supplied>ύτοις</w> <w>ἀπονέ
+<lb n="9"/><supplied reason="lost">μειν</supplied></w> <supplied reason="lost"><w>τὰς</w> <w>καταξίας</w> <w>καὶ</w> <w>πρεπούσας</w> <w>τειμάς</w>·</supplied><w>δεδόχθαι</w> 
+<lb n="10"/><supplied reason="lost"><w>τῇ</w> <w>βουλῇ</w> <w>καὶ</w> <w>τῷ</w> <w>δήμῳ·</w> <w>τετειμῆσθαι</w> <w>μὲν</w></supplied><gap reason="lost" extent="unknown" unit="character"/><orig>ς</orig> <g ref="#stop"/> <persName type="attested"><name nymRef="#Μένανδρος"><hi rend="ligature">Μέ</hi>νανδρον</name></persName> 
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="#Γλύκων"><supplied reason="lost">Γ</supplied>λύκωνα</name></persName> <w>καὶ</w>
+<lb n="12"/><gap reason="lost" extent="unknown" unit="character"/><orig><supplied reason="lost">ο</supplied>υ</orig> <w>ἥρωας</w> <w>ταῖς</w>		   
+<lb n="13"/><supplied reason="lost"><w>μεγίσταις</w> <w>τειμαῖς</w>· <w>ἐξεῖναι</w> <w>δὲ</w> <w>καὶ</w> <w>τοῖς</w></supplied> <w><supplied reason="lost">κ</supplied>λ<hi rend="ligature">ηρ</hi>ονόμοις</w> <w>ἀνα
+<lb n="14" break="no"/><supplied reason="lost">θεῖναι</supplied></w> <supplied reason="lost"><w>εἰκόνας</w> <w>ἐν</w> <w>ὅπλοις</w> <w>ἐν</w> <w>οἷς</w> <w>ἂν</w></supplied> <w><supplied reason="lost">βούλω</supplied>νται</w> <w>ἱεροῖς</w> · <w>ἢ</w> <w>δη
+<lb n="15" break="no"/><supplied reason="lost">μοσίοις</supplied></w> <supplied reason="lost"><w>τόποις</w> <w>ἐπιγραφὴν</w> <w>δὲ</w> <w>γενέσθαι</w> <w>ἐφ’</w><w>ᾧ</w></supplied> <w><supplied reason="lost">κεκή</supplied>δευνται</w> <w>μνη
+<lb n="16" break="no"/><supplied reason="lost">μείῳ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/><w><supplied reason="lost">νε</supplied><supplied reason="lost">ώ</supplied>τερος</w> <w>ὑ<hi rend="ligature">μν</hi>ῳδός</w>, 
+<lb n="17"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w>ἄρχων</w>·</supplied><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="#Ἄτταλος"><supplied reason="lost">Ἀτ</supplied>τάλου</name></persName> · <w>ἄρχων</w> 
+<lb n="18"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w>ἄρχων</w>·</supplied> <gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="#Διογένης"><supplied reason="lost">Δι</supplied>ογένης</name></persName> <w>ἄρχων</w>· 
+<lb n="19"/><supplied reason="lost"><persName type="attested"><name nymRef="#Μαρσύας">Μαρσύας</name> <persName type="attested"><name nymRef="#Ἀρισ-">Ἀρισ</name></persName></persName></supplied><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w>γραμματεὺς</w> <w>δήμου</w> <w>τὸ</w></supplied> <w><supplied reason="lost">δεύτε</supplied>ρον·</w> <persName type="attested"><name nymRef="#Ἱέραξ">Ἱέραξ</name> <persName type="attested"><name nymRef="#Σκύλαξ">Σκύ
+<lb n="20" break="no"/><supplied reason="lost">λακος</supplied></name></persName></persName><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">παρα</supplied>φύλαξ</w> <g ref="#scroll"/>
+		</ab>
+		</div>
+         <div type="apparatus"><listApp>
+               <app><note>Supplements suggested by Robert</note></app>
+               <app loc="1"><rdg resp="#dd"><orig>ου  μηνουσ</orig></rdg><rdg resp="#paton"><orig>οθυ[πε]ρικλεουσ</orig></rdg></app>
+               <app loc="10"><rdg resp="#dd #paton">ΜΕΝΑΝΔΡΟΝ</rdg><rdg resp="#kubit">ΜΕΝΑΝΔΡΟΥ</rdg></app>
+               <app loc="20"><rdg resp="#robert1937">Ἱέραξ Σκύ/[λακος τοῦ Διονυσοκλέους Διογένης παρα]φύλαξ</rdg></app>
+               
+         </listApp></div>
+         <div type="translation" xml:lang="en">
+            <p></p>
+         </div>
+         
+         <div type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="dd"/> <citedRange></citedRange></bibl>; 
+               <bibl><ptr target="kubit"/> <citedRange>V, 50</citedRange>, and Abklatsch</bibl>;
+               <bibl><ptr target="paton"/><citedRange></citedRange></bibl>; 
+               <bibl><ptr target="nyu"/> in <citedRange>1977</citedRange></bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+             <p><bibl><ptr target="dd1890"/> <citedRange unit="item">4c</citedRange></bibl>; 
+               <bibl><ptr target="paton1900"/> <citedRange unit="item">3</citedRange></bibl>, whence 
+                <bibl><ptr target="robert1937"/> <citedRange>99-102</citedRange></bibl>, 
+                <bibl><ptr target="robertBE"/> <citedRange>1938.397</citedRange></bibl>;
+                <bibl><ptr target="mccabePHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/256896">18</ref></citedRange></bibl>; 
+                <bibl><ptr target="blumel2019"/>, from Kubitschek, <citedRange unit="item">3</citedRange></bibl>
+                 </p>
+         </div>
+      </body>
+   </text>
+</TEI>
