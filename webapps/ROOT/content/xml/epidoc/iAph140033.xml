@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragment</title>
+            <title><rs type="textType">Altar</rs> of <rs type="textType">dedication</rs></title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,7 +14,7 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph140031</idno>
+            <idno type="filename">iAph140033</idno>
             
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
@@ -24,33 +24,35 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <repository>Findspot</repository>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment of <material key="marmor">white marble</material>, possibly a lower right corner: 
-                              <dimensions><height unit="metre">0.10</height> <width unit="metre">0.32</width></dimensions></p>
+                           <p>A 
+                              <material key="marmor">white marble</material>
+                              <objectType>altar</objectType> (<dimensions><height unit="metre">0.42</height> <width unit="metre">0.27</width> <depth unit="metre">0.21</depth></dimensions>), 
+                           wihout moulding; the upper edge is damaged, the surface is rubbed and worn, and the upper and lower corners are lost. On the face, a <rs type="decoration">labrys</rs> in relief.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> above the relief</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height unit="metre">0.017</height></handNote>
+                     <handNote>Neat and round, <height unit="metre">0.01</height>; lunate sigma and omega</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0100" notAfter="0200" precision="medium" evidence="lettering">Second century CE</origDate>
+                     <origDate notBefore="-0100" notAfter="0100" precision="medium" evidence="lettering">First century BCE to first century CE</origDate>
                   </origin>
                   <provenance type="found">
-                     <placeName type="ancientFindspot" ref="#plarasa">Plarasa</placeName> (Bingeç) in the exterior wall of the Konak.</provenance>
-                  <provenance type="observed">Findspot (1893)</provenance>
+                     <placeName type="ancientFindspot" ref="#plarasa">Plarasa</placeName> (Bingeç) built into the corner of a house wall.</provenance>
+                  <provenance type="observed">Findspot (1977)</provenance>
                   <provenance/>
                </history>
             </msDesc>
@@ -76,25 +78,31 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/321084/">Bingeç</placeName>
                </term>
-               
                <term>
-                  <rs type="textType">Honours</rs>
+                  <rs type="textType">Religious</rs>
                </term>
+               
             </keywords>
          </textClass>
-         <creation>Transcription (Reichel).</creation>
+         <creation>Transcription (Reynolds).</creation>
       </profileDesc>
          <revisionDesc>
-            <change when="2025-03-01" who="#CMR">Created</change>
+            <change when="2025-03-02" who="#CMR">Created</change>
             
          </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         
-         <graphic url="R_I_62.jpg">
-            <desc>Reichel I, 62</desc>
+         <graphic url="77_H_06A.jpg">
+            <desc>Face (M. Roueché, 1977)</desc>
          </graphic>
+         <graphic url="77_H_07A.jpg">
+            <desc>Text (M. Roueché, 1977)</desc>
+         </graphic>
+         <graphic url="77_H_08A.jpg">
+            <desc>Text (M. Roueché, 1977)</desc>
+         </graphic>
+         
       </surface>
    </facsimile>
    <text>
@@ -103,29 +111,29 @@
         
 		<ab>
 		
-		<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>υ</orig> <persName type="attested"><name nymRef="#Σώτειρα">Σώ<unclear>τειρα</unclear>ν</name></persName> <orig>δη<unclear>λι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
-		<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>νος</orig> <w>οὖσαν</w> <w>καὶ</w> <orig>κα</orig> <space  quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
-		<lb n="2a" break="no"/><gap reason="lost" extent="unknown" unit="character"/>
-		  </ab>
+		<lb n="1"/><orig>ο</orig> <gap reason="lost" quantity="8" unit="character"/><orig>οϲ</orig>
+		<lb n="2"/> <persName type="attested"><name nymRef="#Ἀπολλόδωρος">Ἀπολλοδώρου</name></persName>
+		   <lb n="3"/><persName type="divine" ref="#zeus"><name nymRef="Ζεύς">Διὶ</name></persName> <w lemma="εὐχή">εὐχὴν</w>
+		   <lb n="4"/><orig>αθουϲιοϲ</orig>
+		   </ab>
 		</div>
          <div type="apparatus"><listApp>
-               <app loc="2"><note>?Καικα</note></app>
-         </listApp></div>
-         <div type="translation" xml:lang="en">
-            <p></p>
+               <app loc="3"><note>More roughly written - an addition?</note></app>
+               <app loc="4"><note>A name?</note></app>
+         </listApp>
+               
+         </div>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p> . . . ] Apollodoros, a prayer to Zeus [ . . .</p>
          </div>
          
          <div type="commentary">
             
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="reich"/> <citedRange>I, 62</citedRange></bibl></p>
+            <p><bibl><ptr target="nyu"/> in <citedRange>1977</citedRange></bibl></p>
           </div>
-         <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="blumel2019"/>, from Reichel, <citedRange unit="item">13</citedRange></bibl>, whence 
-               <bibl><ptr target="seg"/> <citedRange unit="item">69.737</citedRange></bibl>
-            </p>
-         </div>
+         
       </body>
    </text>
 </TEI>
