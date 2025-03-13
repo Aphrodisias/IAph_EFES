@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary dedication</title>
+            <title>Fragment</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,8 +14,8 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph160111</idno>
-            <idno type="IAph2007">iAph160111</idno>
+            <idno type="filename">iAph160113</idno>
+            <idno type="IAph2007">iAph160113</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -30,19 +30,17 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p> <material key="marmor">White marble</material> complete
-                              <objectType>revetment</objectType> panel (<dimensions unit="metre"><width>1.14</width><height>0.29</height></dimensions>) with two 
-                           fasciae, and divided by a groove, and another groove below.</p>
+                           <p> <material key="marmor">White marble</material> 
+                              <objectType>rim</objectType> of balustrade</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> in one line on the upper fascia</layout>
+                        <layout><rs type="execution" ref="litteris scariphatis">Graffito</rs>, a incomplete; b
+                           on either side of a hole (?for a support),apparently labelling an image, of ? a fountain to the left.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.12</height>; cursive omega; scroll for first abbreviation; final numeral written small.
+                     <handNote>a: <height unit="metre">0.04</height>; b: <height unit="metre">0.02-0.04</height>;.
                      </handNote>
                   </handDesc>
                </physDesc>
@@ -52,8 +50,8 @@
                      <origDate notBefore="0100" notAfter="0400" evidence="lettering">Second - fourth century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphbaths">Hadrianic Baths</placeName>, <placeName type="monuList" ref="#aphbaths6">Room 6</placeName>, 
-                     reused as flooring <!-- check room: chamber south of north court/second room from entrance --></provenance>
+                     <placeName ref="#aphbaths">Hadrianic Baths</placeName>, <placeName type="monuList" ref="#aphbaths14">Tetrastyle Court</placeName>, 
+                     on the rim of the pool: a on the north rim, b on the east rim.</provenance>
                   <provenance type="observed">Findspot</provenance>
                </history>
             </msDesc>
@@ -83,35 +81,41 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2025-03-11" who="#CMR">Created</change>
+         <change when="2025-03-12" who="#CMR">Created</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="73_W_28.jpg">
-            <desc>Face (M. Roueché, 1973)</desc>
+         <graphic url="72_C_36.jpg">
+            <desc>a: Face (M. Roueché, 1972)</desc>
          </graphic>
-         <graphic url="76_E_24.jpg">
-            <desc>Face (M. Roueché, 1976)</desc>
+         <graphic url="72_C_35.jpg">
+            <desc>b: Face (M. Roueché, 1972)</desc>
          </graphic>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab>  
-   <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><milestone unit="block"/><w part="F"><expan><abbr>τ</abbr><ex>-</ex></expan></w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶι</w> <w lemma="δῆμος">Δήμῳ</w> <hi rend="ligature"><w lemma="ὁ"><expan><abbr>τ</abbr><ex>ὸ</ex></expan></w> <num value="2">β</num></hi><milestone unit="block"/> <gap reason="lost" unit="character" extent="unknown"/>
-   
-   </ab>
+<div type="textpart" n="a"><ab>  
+   <lb n="1"/><w lemma="νικάω">Νικᾷ</w> <w lemma="ὁ">ἡ</w> <w part="I" lemma="τύχη">τυ</w></ab></div>
+            <div type="textpart" n="b"><ab>  
+   <lb n="1"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-11490"><name nymRef="#Πατρίκιος"><unclear>Π</unclear>ατρικ<space unit="character" quantity="1"/>ίου</name></persName></ab>
+            </div>
 </div>
+         <div type="apparatus"><listApp>
+               <app loc="a.1"><note>Never completed</note></app>
+               <app loc="b.1"><rdg>ΤΑΤΡΙΚΙΟΥ</rdg></app></listApp></div>
+         
          <div type="translation" xml:lang="en" resp="#CMR">
-            <p> . . ] and for the People, the second time [ . . .</p>
+            <p>a: The fortune tri[umphs . . .</p>
+            <p>b: Of ?Patrikios (?Tatrikios)</p>
          </div>
          <div type="commentary">
             
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> <citedRange>Baths 17G</citedRange></bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>Baths 19</citedRange></bibl></p>
           </div>
           
       </body>
