@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Funerary</rs> fragment</title>
+            <title>Christian invocation</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,9 +14,8 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph150295</idno>
-            <idno type="IAph2007">iAph150295</idno>
-            <idno type="JMR2004">iAph1324</idno>
+            <idno type="filename">iAph160127</idno>
+            <idno type="IAph2007">iAph16017</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -25,33 +24,32 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <repository>…</repository>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment fromthe upper edge of a <material>white marble</material>
-                              <objectType>sarcophagus</objectType> front, with elements of sculpting to left and right. </p>
+                           <p><material>White marble</material> <objectType>door post</objectType>.</p>
                         </support>
                      </supportDesc>
-                     <layoutDesc><layout>
-                        <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" ref="litteris scariphatis">Graffito</rs> at 1.30 above floor level; arranged round a cross, total height 0.20, with another cross below </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.025</height>
-                     </handNote>
+                     <handNote><height>0.015</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second to third centuries CE</origDate>
+                     <origDate notBefore="0400" notAfter="0800" cert="low"  evidence="textual-context">Fifth - seventh century CE</origDate>
                   </origin>
-                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: <placeName ref="#aphstray">Stray</placeName></provenance>
-                  <provenance type="observed">Museum</provenance>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: <placeName ref="#aphmartyrion">Martyrion</placeName>, 
+                  south doorpost of the door to the narthex, on the west face.</provenance>
+                  <provenance type="observed">Findspot</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -75,45 +73,45 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
+               <term>
+                  <rs type="textType" key="sacer">Religious</rs>
+               </term>
             </keywords>
          </textClass>
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2007-07-26" who="cmr">DONE</change>
-         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
-         <change when="2007-01-01" who="GB">hand tidied</change>
+         <change when="2025-03-15" who="#CMR">Created</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="94_D_30.jpg">
+         <graphic url="94_D_13.jpg">
             <desc>Face (M. Roueché, 1994)</desc>
          </graphic>
-         <graphic url="94_D_31.jpg">
-            <desc>Face (M. Roueché, 1994)</desc>
+         <graphic url="94_D_14.jpg">
+            <desc>View (M. Roueché, 1994)</desc>
          </graphic>
-         
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig>ΘΗ</orig> <gap reason="illegible" unit="character" quantity="2"/> <orig>ΕΤΕ</orig> <gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig>ΓΡΑΜ</orig> <gap reason="illegible" unit="character" quantity="1"/> <orig>ΜΕ</orig> <gap reason="lost" unit="character" extent="unknown"/>  </ab>
+
+<ab><lb n="1"/><persName type="divine" ref="#iesus"><name nymRef="#Ἰησοῦς"><expan><abbr>Ἰη</abbr><ex>σοῦ</ex><abbr>ϲ</abbr></expan></name> <g ref="symbols.xml#cross"/> <addName nymRef="#Χριστός"><expan><abbr>Χ</abbr><ex>ριστὸ</ex><abbr>ϲ</abbr></expan></addName></persName>
+		      <lb n="2"/><w lemma="νικάω">νη<g ref="symbols.xml#cross"/>κᾷ</w> 
+<lb n="3"/><g ref="symbols.xml#cross"/></ab>
 </div>
-         <div type="translation">
-            <p>Not translatable</p>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>Jesus Christ is victorious</p>
          </div>
          <div type="commentary">
-            <p></p>
+            <p> </p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> <citedRange>94.12</citedRange></bibl></p>
+            <p><bibl><ptr target="nyu"/> in <citedRange>1994</citedRange></bibl></p>
           </div>
-          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph150295.html">15.295</ref></citedRange></bibl>.</p>
-         </div>
+          
       </body>
    </text>
 </TEI>
