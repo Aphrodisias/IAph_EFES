@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Christian dedication?</title>
+            <title>Building dedication?</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,8 +14,8 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph160135</idno>
-            <idno type="JMR">255</idno>
+            <idno type="filename">iAph160137</idno>
+            <idno type="JMR">257</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -30,27 +30,29 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Upper left corner of a <material key="marmor">white marble</material>
-                              <objectType>block</objectType> (<dimensions> <width unit="metre">0.19</width><height unit="metre">0.155</height> <depth unit="metre">0.17</depth></dimensions>)
+                           <p>Two fragments, broken at both ends of a <material key="marmor">white marble</material>  
+                              <objectType>architrave</objectType> block with two fasciae, with a decoration on the underside of whorls and diamonds: 
+                              a: broken on all sides, both fasciae surviving, <dimensions> <width unit="metre">0.48</width><height unit="metre">0.33</height> <depth unit="metre">0.68</depth></dimensions>; 
+                              b: broken on all sides, lower fascia surviving, <dimensions> <width unit="metre">0.145</width><height unit="metre">0.19</height> <depth unit="metre">0.21</depth></dimensions>.
                            </p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the face, possibly only in one line.</layout>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> a on both fasciae (upper <height>0.135</height>, lower <height>0.105</height>; b on one fascia</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.055</height></handNote>
+                     <handNote>Ornate with large serifs, open bowled <foreign>rho</foreign>; upper line <height>0.085-0.095</height>; lower line <height>0.085</height>; 
+                        similar lettering to <ref type="inscription" target="iAph060005"/>, but not identical, and on a different monument.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0401" notAfter="0699" precision="medium" evidence="lettering content">Fifth-seventh century CE</origDate>
+                     <origDate notBefore="0401" notAfter="0600" precision="medium" evidence="lettering">Fourth-sixth century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphbasilica">Basilica</placeName>, reused in a wall.</provenance>
+                     <placeName ref="#aphsouthagora">South Agora/Place of Palms</placeName>, <placeName type="monuList" ref="#aphsagoranportico">North portico</placeName></provenance>
                   <provenance type="observed">Museum</provenance>
                </history>
             </msDesc>
@@ -85,23 +87,25 @@
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="NY_pr_194.jpg">
-            <desc>Fragment a (Mehmet Ali Döğenci, 1972)</desc>
+         <graphic url="73_S_31.jpg">
+            <desc>a: Face (M. Roueché, 1973)</desc>
          </graphic>
-         <graphic url="73_Q_35A.jpg">
-            <desc>Face (M. Roueché, 1973)</desc>
+         <graphic url="77_D_10A.jpg">
+            <desc>b: Face (M. Roueché, 1977)</desc>
          </graphic>
-         
-         
-         
+         <graphic url="77_J_150A.jpg">
+            <desc>b: Face (M. Roueché, 1977)</desc>
+         </graphic>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-		<ab>
-		<lb n="1"/><g ref="#crux"/> <orig>ω<unclear>τ</unclear></orig> <gap reason="lost" extent="unknown" unit="character"/>
-		<lb n="1a"/><gap reason="lost" extent="unknown" unit="line"/></ab></div>
+		<div type="textpart" n="a"><ab>
+		<lb n="1"/> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="πατρίς"><supplied reason="lost">π</supplied><unclear>α</unclear>τρίδ<unclear>ι</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+		      <lb n="1"/> <gap reason="lost" extent="unknown" unit="character"/><orig>λατ<unclear>ω</unclear></orig> <gap reason="lost" extent="unknown" unit="character"/>
+		</ab></div>
+         <div type="textpart" n="b"><ab><gap reason="lost" extent="unknown" unit="character"/><orig>ον</orig><gap reason="lost" extent="unknown" unit="character"/></ab></div></div>
      
         
          
@@ -114,7 +118,7 @@
             </p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> <citedRange>72.41</citedRange></bibl></p>
+             <p><bibl><ptr target="nyu"/> a unnumbered, b: <citedRange>72.249</citedRange></bibl></p>
           </div>
           
       </body>
