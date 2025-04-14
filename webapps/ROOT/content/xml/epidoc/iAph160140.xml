@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Epitaph</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160140</idno>
+            <idno type="JMR">259</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper part of a <material key="marmor">white marble</material>  
+                              <objectType>sarcophagus front</objectType>, broken on all other sides: 
+                             <dimensions> <width unit="metre">0.30</width><height unit="metre">0.155</height> <depth unit="metre">0.105</depth></dimensions>. 
+                              In the centre, a tabula ansata supported on either side by flying erotes.
+                               </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the upper edge (line 1) and within the tabula; 
+                           the text must have begun on the lid.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard forms; <height>0.03</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0299" precision="medium" evidence="lettering">Second-third century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
+                     <placeName ref="#aphtemple">Temple</placeName>: <placeName type="monuList" ref="#aphtempnorthaisle">North-west aisle</placeName>.</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2025-04-11" who="#CMR">Created</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="85_B_13.jpg">
+            <desc>Face (M. Roueché, 1985)</desc>
+         </graphic>
+         <graphic url="85_J_01.jpg">
+            <desc>Face (M. Roueché, 1985)</desc>
+         </graphic>
+         </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+		<ab><lb n="0"/> <gap reason="lost" extent="unknown" unit="line"/>
+		   <lb n="1"/><orig><unclear>ι</unclear>ν</orig> <w>βουληθῇ</w> <w>ὁ</w> <w>υἱὸς</w> <w>αὐτοῦ</w> <persName type="attested"><name nymRef="#Χρυσόγονος">Χρυσο
+		<lb n="2" break="no"/>γονος</name></persName> <w>ἕτερος</w> <w>δὲ</w> <w>οὐδις</w>
+<lb n="3"/><w>ἕξi</w> <w>ἐξουσίαν</w> <w>ἔνθαψε</w>
+<lb n="4"/><w>τινα</w> <w>ἤ</w> <w>ἔκθαψε</w> <w>τῶν</w>
+<lb n="5"/><w>προγεγρα<hi rend="ligature">μμ</hi>ένων</w>, <w>ἐ
+<lb n="6" break="no"/>πὶ</w> <w>ὁ</w> <w>παρὰ</w> <w>ταῦτα</w> <w>τι</w> <w>πύη
+<lb n="7" break="no"/>σας</w> <w>ἀπότισι</w> <w>τῳ</w> <w>ταμίῳ</w>
+<lb n="8"/><space quantity="3" unit="character"/> <w>ἀῤγυρίου</w> <w lemma="δηνάριον"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>δηνάρια</ex></expan></w> <num value="5000"><unclear>/Ε</unclear></num> <space quantity="4" unit="character"/>
+<lb n="8a"/><gap reason="lost" extent="unknown" unit="line"/>
+		</ab>
+</div>
+     
+        
+         
+               
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>: . . . ] or may wish his son, Chrysogonos; but no one else will have authority to bury anyone or to exhume (any) of those written above, 
+               since the person who does anything contrary to this will pay to the Treasury ?5000 denarii of silver [? . . .</p>
+         </div>
+         <div type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> <citedRange>84.222</citedRange></bibl></p>
+          </div>
+          
+      </body>
+   </text>
+</TEI>
