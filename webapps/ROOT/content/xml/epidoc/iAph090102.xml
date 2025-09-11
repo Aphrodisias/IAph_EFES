@@ -41,7 +41,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Standard forms; <height unit="metre">0.028</height>; ligatured <foreign xml:lang="grc">ΜΗ</foreign>, line 1; <foreign xml:lang="grc">ΤΗΝ</foreign>, line 2.</handNote>
+                     <handNote>Standard forms; <height unit="metre">0.028</height><!-- ; ligatured <foreign xml:lang="grc">ΜΗ</foreign>, line 1; <foreign xml:lang="grc">ΤΗΝ</foreign>, line 2. --></handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -80,6 +80,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-09-11" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-03-09" who="GB">DONE</change>
          <change when="2006-12-11" who="Charlotte-Tupman">hand tidied</change>
@@ -99,12 +100,15 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="ὁ">τοῦ</w> <w lemma="μείς"><hi rend="ligature">μη</hi>νὸς</w> <rs type="month"><w>Κ<gap reason="lost" unit="character" extent="unknown"/></w></rs>  
+<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="ὁ">τοῦ</w> <rs type="month" ref="#kaisar"><w lemma="μείς"><hi rend="ligature">μη</hi>νὸς</w> <w lemma="Καῖσαρ">Κ<supplied reason="lost" cert="low">αίσαρος</supplied><gap reason="lost" unit="character" extent="unknown"/></w></rs>  
    <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig>δε</orig><hi rend="ligature"><orig>την</orig></hi><orig><unclear>ι</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
    <lb n="3"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
-         <div type="translation">
+         <div type="translation" xml:lang="en" source="#CMR">
             <p>[...] of the month K[...]</p>
+         </div>
+         <div type="translation" xml:lang="en" resp="#iaph2007">
+            <p>[...] of the month of C[aesar . . .</p>
          </div>
          <div type="commentary">
            

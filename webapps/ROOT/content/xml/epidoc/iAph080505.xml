@@ -32,12 +32,13 @@
                      <supportDesc>
                         <support>
                            <p>Upper part of a <material>white marble</material>
-                              <objectType>panel-stele</objectType> (<height unit="metre">0.45</height> x <width unit="metre">0.46</width> x <depth unit="metre">0.16</depth>) broken below and chipped on all edges. The relief, which is broken at the waist, is of a facing <rs type="decoration">gladiator</rs>, with his head turned slightly to his right. He wears a highly decorated cuirass, with a rose and other designs on it in relief, and a decorated belt. On his left arm he holds a long shield with a decorated rim and the letter Γ in the top right corner. His right arm has an arm guard on the upper arm, which is all that survives. In the field on either side of the head are two wreaths, each decorated with a ribbon.</p>
+                              <objectType>panel-stele</objectType> (<dimensions><height unit="metre">0.45</height> <width unit="metre">0.46</width> <depth unit="metre">0.16</depth></dimensions>) broken below and chipped on all edges. The relief, which is broken at the waist, is of a facing <rs type="decoration">gladiator</rs>, with his head turned slightly to his right. He wears a highly decorated cuirass, with a rose and other designs on it in relief, and a decorated belt. On his left arm he holds a long shield with a decorated rim and the letter Γ in the top right corner. His right arm has an arm guard on the upper arm, which is all that survives. In the field on either side of the head are two wreaths, each decorated with a ribbon.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the upper moulding, which is broken</layout>
+                        <layout>a: 
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the upper moulding, which is broken. 
+                           b: in <rs type="execution" ref="#litteris eminentibus">relief</rs>, on the shield.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -84,6 +85,7 @@
          <creation>transcriptions (Reynolds, Roueché)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-09-11" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-08-07" who="Eleonora-Litta">tidied expan</change>
          <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
@@ -104,22 +106,28 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/><persName type="attested"><name><gap reason="lost" unit="character" quantity="5"/>ενις</name></persName>  <g ref="#stop"/>  <w lemma="πάλος"><expan><abbr>πά</abbr><ex>λου</ex></expan></w> <num value="1">α</num> </ab>
+            
+<div type="textpart" n="a"><ab><lb n="1"/><persName type="attested"><name><gap reason="lost" unit="character" quantity="5"/>ενις</name></persName>  <g ref="#stop"/>  
+   <w lemma="πάλος"><expan><abbr>πά</abbr><ex>λου</ex></expan></w> <num value="1">α</num> </ab></div>
+            <div type="textpart" n="b"><ab><lb n="1"/> <num value="3">Γ</num> </ab></div>
 </div>
-         <div type="translation">
-            <p>[.....]enis of brigade 1</p>
+         <div type="apparatus"><listApp><app loc="b"><rdg source="roueche1993, iaph2007"><note>Omitted</note></rdg></app></listApp></div>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>a: [.....]enis of brigade 1</p>
+            <p>b: 3</p>
          </div>
          <div type="commentary">
-            <p>The figure on the shield of the gladiator in the relief makes it clear that he belonged to the third brigade; this suggests that the name in the inscription is that of the man who put up the monument. 
-               </p>
+            <!--<p>The figure on the shield of the gladiator in the relief makes it clear that he belonged to the third brigade; 
+               this suggests that the name in the inscription is that of the man who put up the monument. 
+               </p>  -->
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1972 (excavation inventory no. <citedRange>72.140</citedRange>).</bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>72.140</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="roueche1993"/>  <citedRange>19</citedRange>
+            <p>a only: <bibl><ptr target="roueche1993"/>  <citedRange>19</citedRange>
            </bibl>, whence <bibl><ptr target="phi"/> 
-               <citedRange><ref target="https://epigraphy.packhum.org/text/264932">PPAphr 19</ref></citedRange></bibl>;
+               <citedRange><ref target="https://epigraphy.packhum.org/text/264932">PPAphr 19</ref></citedRange></bibl>, 
                <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph080505.html">8.505</ref></citedRange></bibl>.</p>
          </div>
       </body>
