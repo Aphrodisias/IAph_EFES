@@ -31,7 +31,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment from  a <objectType cert="low">panel</objectType>, without edges; (<width unit="metre">0.13</width> <height unit="metre">0.135</height>   × <depth unit="metre">0.038</depth>).</p>
+                           <p>Fragment from  a <objectType cert="low">panel</objectType>, without edges; (<dimensions><width unit="metre">0.13</width> <height unit="metre">0.135</height> <depth unit="metre">0.038</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -81,6 +81,7 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-09-09" who="CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-02-13" who="GB">DONE</change>
          <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -99,23 +100,31 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ι</unclear>σιε</orig>  <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig>λαυτοι<unclear>σ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig>συπαρχ<unclear>ε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/> <w><unclear>ἀ</unclear>ποδοθ<gap reason="lost" unit="character" extent="unknown"/></w>  <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="περί">περὶ</w> <w lemma="ὅς">ὧν</w> <orig>α</orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ο</unclear>σιαεισ<unclear>κ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="7"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>κλιπλησ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  <lb n="7a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
+<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  
+   <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ι</unclear>σιε</orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>λ</unclear></orig> <w lemma="αὐτός">αὐτοῖ<unclear>ς</unclear></w><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig>σ</orig> <w part="I" lemma="ὑπάρχω">ὑπαρχ<unclear>ε</unclear></w><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="ἀποδίδωμι" part="I"><unclear>ἀ</unclear>ποδοθ<gap reason="lost" unit="character" extent="unknown"/></w>  
+   <lb n="5"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="περί">περὶ</w> <w lemma="ὅς">ὧν</w> <orig>α</orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="6"/><gap reason="lost" unit="character" extent="unknown"/><w part="F" lemma="-οσια"><unclear>ο</unclear>σια</w> <w lemma="εἰς">εἰς</w> <orig><unclear>κ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="7"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>κλιπλησ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="7a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="3"><note>e.g. <foreign xml:lang="grc">ὑπάρχ<supplied reason="lost">ων γένους πρώτου</supplied>
-               </foreign>
-            </note></app>
+              <app loc="2"><rdg resp="#iaph2007">[---]ΛΑΥΤΟΙΣ̣[---]</rdg></app>
+              <app loc="3"><rdg resp="#iaph2007">[---]ΣΥΠΑΡΧΕ̣[---</rdg></app>
+              <app loc="6"><rdg resp="#iaph2007">[---]Ο̣ΣΙΑΕΙΣΚ̣[---</rdg></app>
            </listApp>
          </div>
          <div type="translation">
-            <p> none</p>
+            <p>Not usefully translatable: references to "them", "given away", "about which"</p>
          </div>
          <div type="commentary">
-            <p>none</p>
+           
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1994 (<citedRange>94.32</citedRange>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>94.32</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph050110.html">5.110</ref></citedRange></bibl>.</p>

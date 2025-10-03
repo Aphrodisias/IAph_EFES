@@ -31,7 +31,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Piece from lower left corner of a <material>white marble</material> moulded <objectType>panel</objectType> without edges (0.19 x<width unit="metre">0.30</width>   × <height unit="metre">0.095</height>).</p>
+                           <p>Piece from lower left corner of a <material>white marble</material> moulded <objectType>panel</objectType> without edges (<dimensions><width>0.19</width> <height unit="metre">0.30</height> <depth unit="metre">0.095</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -79,6 +79,7 @@
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-09-11" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-02-27" who="Charlotte-Tupman">DONE</change>
          <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -101,16 +102,33 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  <lb n="1"/>ΤΟ<unclear>Υ</unclear>Τ<gap reason="lost" unit="character" extent="unknown"/>  <lb n="2"/>ΡΟΥΤ<gap reason="lost" unit="character" extent="unknown"/>  <lb n="3"/>ΠΟΔΟ<gap reason="lost" unit="character" extent="unknown"/>  <lb n="4"/>ΜΕΝ<unclear>Τ</unclear><gap reason="lost" unit="character" extent="unknown"/>  <lb n="5"/>ΦΗΣΕ<gap reason="lost" unit="character" extent="unknown"/>  <lb n="6"/>ΜΟΝΟ<gap reason="lost" unit="character" extent="unknown"/>  <lb n="7"/>ΗΣ<unclear>Ε</unclear><gap reason="lost" unit="character" extent="unknown"/>  <lb n="7a"/><gap reason="lost" unit="line" extent="unknown"/></ab>
+<ab><lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>  
+   <lb n="1"/><orig>το<unclear>υ</unclear>τ</orig><gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="#Μένανδρος"><supplied reason="lost" cert="low">Μενάνδ</supplied>  
+   <lb n="2" break="no"/>ρου</name></persName> <w lemma="ὁ">τ<supplied reason="lost" cert="low">οῦ</supplied></w><gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="#Ἀγαθόπους"><supplied reason="lost">Ἀγαθό</supplied>  
+   <lb n="3" break="no"/>ποδος</name></persName><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="4"/><orig>μεν<unclear>τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/> <w lemma="θάπτω"><supplied reason="lost">τα</supplied>
+   <lb n="5" break="no"/>φήσε<supplied reason="lost">ται</supplied></w> <gap reason="lost" unit="character" extent="unknown"/> 
+   <lb n="6"/><orig>μονο</orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="7"/><orig>ησ<unclear>ε</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="7a"/><gap reason="lost" unit="line" extent="unknown"/></ab>
 </div>
+         <div type="apparatus">
+            <listApp>
+               
+               <app loc="2"><rdg source="#iaph2007">ΡΟΥΤ[---]</rdg></app>
+               <app loc="3"><rdg source="#iaph2007">ΠΟΔΟ[---]</rdg></app>
+               <app loc="5"><rdg source="#iaph2007">ΦΗΣΕ[---]</rdg></app>
+               
+            </listApp>
+         </div>
+         
          <div type="translation">
-            <p>No translation possible.</p>
+            <p>Apparently funerary, including the names Menandros and Agathopous.</p>
          </div>
          <div type="commentary">
-            <p>Perhaps a text which included the genitive case of the  name <foreign xml:lang="grc">Ἀγαθόπους</foreign>.</p>
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> Recorded by the NYU expedition in 1990 ( <citedRange>90.f</citedRange>)</bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>90.f</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph110504.html">11.504</ref></citedRange></bibl>.</p>

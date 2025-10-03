@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Epitaph</rs> for Damas
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160159</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>stele</objectType>, broken away above, with very simple moulding on three sides below 
+                              (<dimensions><width>0.29</width> <height>0.62</height> <depth>0.24</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the face which has been incompletely smoothed.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Rough, perhaps first century CE; lines 1-3, <height>0.04</height>, lines 4ff, <height>0.03</height>; o, l.2, <height>0.015</height>;
+                        lunate sigma, epsilon, angular omega;  diairesis on Y, l.4.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#antioch">Antiocheia</placeName>: 
+                      brought by villagers</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638748">Antiocheia</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://www.geonames.org/318551/">Başaran</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2025-09-13" who="#CMR">Transcribed</change>
+         
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="80_B_19.jpg">
+            <desc>Face (M. Roueché, 1980)</desc>
+         </graphic>
+         <graphic url="81_A_20.jpg">
+            <desc>Face (M. Roueché, 1981)</desc>
+         </graphic>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+         
+         <ab>
+            <lb n="1" break="no"/> <orig><unclear>αν</unclear></orig> <g ref="#stop"/> <persName type="attested"><name nymRef="#Ἀθηναγόρας">Ἀθ<hi rend="ligature">ην</hi>α
+           <lb n="2" break="no"/><hi rend="ligature">γό</hi>ραϲ</name></persName> <g ref="#stop"/> <persName type="attested"><name nymRef="#Δαμᾶς">Δαμᾶϲ</name></persName>
+         <lb n="3"/> <persName type="attested"><name nymRef="#Ἄτταλοϲ">Ἄτταλοϲ</name></persName>
+         <lb n="4"/><w lemma="ὁ">οἱ</w> <w lemma="υἱός">ὑοὶ</w> <g ref="#stop"/> <w lemma="ὁ">τῷ</w> <persName type="attested"><name nymRef="#Δαμᾶς">Δα
+         <lb n="5" break="no"/>μᾷ</name></persName> <g ref="#stop"/> <w lemma="ὁ">τῷ</w> <w lemma="πατήρ">πατρὶ</w>
+         <lb n="6"/><w lemma="μνεία"><hi rend="ligature">μν</hi>είαν</w>. <w lemma="ζάω">Ζῇ.</w>
+         <lb n="7"/><w lemma="χαίρω">Χαίρετε</w> <w lemma="πᾶς">πάν
+         <lb n="8" break="no"/><space unit="character" quantity="3"/>τεϲ</w> <space unit="character" quantity="3"/></ab>
+         </div>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p> . . . ] Athenagoras, Damas, Attalos, his sons a memorial for Damas, their father. He is alive. Greetings to all.</p>
+         </div>
+         <div type="commentary">
+          
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> <citedRange>79.13</citedRange></bibl></p>
+          </div>
+          
+      </body>
+   </text>
+</TEI>

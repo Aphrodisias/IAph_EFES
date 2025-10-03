@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> by Menekrates
+            </title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160162</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              cruciform <objectType>font</objectType> 
+                              (<dimensions><width>1.05</width> <height>0.60</height></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the upper rim, <dimensions><width>0.07</width></dimensions>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Clearly cut; <height>0.045-0.55</height>; lunate sigma.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0300" evidence="lettering">First- third century CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#antioch">Antiocheia</placeName>: 
+                      brought by villagers</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638748">Antiocheia</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://www.geonames.org/318551/">Başaran</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2025-09-17" who="#CMR">Transcribed</change>
+         
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="83_D_27A.jpg">
+            <desc>First segment (M. Roueché, 1983)</desc>
+         </graphic>
+         <graphic url="83_D_28A.jpg">
+            <desc>First segment (M. Roueché, 1983)</desc>
+         </graphic>
+         <graphic url="83_D_22A.jpg">
+            <desc>Second segment (M. Roueché, 1983)</desc>
+         </graphic>
+         <graphic url="83_D_26A.jpg">
+            <desc>Third segment (M. Roueché, 1983)</desc>
+         </graphic>
+         <graphic url="83_D_24A.jpg">
+            <desc>Fourth segment (M. Roueché, 1983)</desc>
+         </graphic>
+         
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+         
+         <ab> <lb n="1"/> <g ref="#crux"/>
+            <w lemma="εὔχομαι">εὔχεϲθε</w> <w lemma="ὁ">οἱ</w> <w lemma="ἀναγιγνώσκω">ἀναγινώϲκοντεϲ</w> <persName type="attested"><name nymRef="#Μιχαήλ">Μιχαὴλ</name></persName> 
+            <w lemma="εὐτελής"><expan><abbr>εὐτε<hi rend="superscript">λ</hi></abbr><ex>εϲτάτῳ</ex></expan></w> <milestone unit="block"/>
+            <w lemma="ἐπίσκοπος"><expan><abbr>ἐπιϲκό<hi rend="superscript">π</hi></abbr><ex>ῳ</ex></expan></w> <placeName ref="#antiochmae" nymRef="#Ἀντιοχεία"><expan><abbr>Ἀντιο<hi rend="superscript">χ</hi></abbr><ex>είαϲ</ex></expan></placeName> 
+            <w lemma="ὁ"><hi rend="ligature">τῷ</hi></w> <w lemma="πολίτης">πολίτῃ</w> <g ref="#crux"/>
+            <w lemma="ἐάν">ἐὰν</w> <w lemma="μή">μὴ</w> <w lemma="ἀναγεννάω">ἀνα<milestone unit="block"/>
+            γενηθῆτε</w> <w lemma="διά">δι’</w><w lemma="ὕδωρ">ὕδατοϲ</w> <w lemma="καί">καὶ</w> <w lemma="πνεῦμα"><expan><abbr>πνεύματ<hi rend="superscript">ο</hi></abbr><ex>ϲ</ex></expan></w> <milestone unit="block"/> 
+            <w lemma="οὐ">οὐ</w> <w lemma="μή">μὴ</w> <w>εἰϲέλθητε</w> <w lemma="εἰς">εἰϲ</w> <w lemma="ὁ">τὴν</w> <w lemma="βασιλεία">βαϲιλείαν</w> <w lemma="ὁ"><hi rend="ligature">τῶ</hi>ν</w> <w lemma="οὐρανός"><expan><abbr>ο</abbr><ex>ὐραν</ex><abbr>ῶν</abbr></expan></w><milestone unit="block"/></ab>
+         </div>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>You who read this, pray for Michael, unworthy bishop of Antiocheia <supplied reason="subaudible">and</supplied> citizen. Unless you are reborn through water and the spirit, 
+               you may not enter the kingdom of the heavens.</p>
+         </div>
+         <div type="commentary">
+            
+            <p>ἐὰν μὴ ἀναγεννηθῆτε δι’ ὕδατος καὶ πνεύματος, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν. Pseudo Clement 18.17</p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> <citedRange></citedRange></bibl></p>
+          </div>
+          
+      </body>
+   </text>
+</TEI>
