@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Ioannes undertakes restoration works in the Hadrianic Baths</title>
+            <title>Restoration works?</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -15,9 +15,7 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph050019</idno>
-            <idno type="IAph2007">iAph050019</idno>
-            <idno type="JMR2004">iAph0048</idno>
+            <idno type="filename">iAph160164</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -32,8 +30,8 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Several fragments, some joining, from a series of <material key="marmor">white marble</material>
-                              <objectType>revetment</objectType> panels, <height unit="metre">0.36</height> high.</p>
+                           <p>Fragments, some joining, from <material key="marmor">white marble</material>
+                              <objectType>revetment</objectType> panels.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -42,19 +40,18 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.26</height>; lunate omega; broad, flat trenches, painted black.</handNote>
+                     <handNote>No measurements; sharply cut.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>
-                        <placeName key="HadrBath" type="monuList">Hadrianic Baths</placeName>
+                        <placeName  ref="#aphbaths">Hadrianic Baths</placeName>
                      </origPlace>
                      <origDate notBefore="0301" notAfter="0600" precision="medium" evidence="lettering">Fourth to sixth centuries CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphbaths">Hadrianic Baths</placeName>: <placeName type="monuList" ref="#aphbaths05">North Tepidarium</placeName></provenance>
+                     <placeName ref="#aphbaths">Hadrianic Baths</placeName></provenance>
                   <provenance type="observed" when="1972">Museum (1972).</provenance>
                </history>
             </msDesc>
@@ -85,38 +82,30 @@
          <creation>Transcription (Roueché).</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-05-20" who="#MB">Tagged LGPN ids</change>
-         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
-         <change when="2004-03-24" who="#GB">Completed lemmatisation, checked figure ids, tagged keywords</change>
-         <change when="2004-01-25" who="#CMR">tidied; image refs</change>
-         <change when="2003-11-04" who="John-Lavagnino">Converted beta code to Unicode</change>
-         <change when="2003-08-20" who="#CMR">tagged and corrected</change>
-         <change when="2003-07-15" who="Juan-Garcés">lemmatised</change>
+         <change when="2025-11-04" who="#CMR">Transcribed</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="72_F_25A.jpg">
-            <desc>a: Face (M. Roueché, 1972)</desc>
+         <graphic url="72_F_23A.jpg">
+            <desc>a and b: Face (M. Roueché, 1972)</desc>
          </graphic>
-         <graphic url="72_F_24A.jpg">
-            <desc>b: Face (M. Roueché, 1972)</desc>
-         </graphic>
+         
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
         
-		<div n="a" type="textpart" subtype="fragment"><ab>
-		<lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ι</unclear></orig> <persName key="Ioannes4" type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8241"><name nymRef="#Ἰωάννης">Ἰωάν<unclear>ν</unclear><gap reason="lost" unit="character" extent="unknown"/></name></persName>
-		</ab></div><div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/><w><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ΙΙ</unclear></orig>ς</w> <w lemma="ἀνανεόω">ἀνα<supplied reason="lost">νεωσ</supplied><gap reason="lost" unit="character" extent="unknown"/></w></ab></div>
-       </div>
+		<div n="a" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <w lemma="ἀνανε-" part="I"><supplied reason="lost">ἀν</supplied><milestone unit="block"/>ανε<supplied reason="lost">ωσ-</supplied></w><gap reason="lost" unit="character" extent="unknown"/></ab></div>
+       <div n="b" type="textpart" subtype="fragment"><ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>υ</unclear>λαρ</orig><g ref="#scroll"/> <milestone unit="block"/> <gap reason="lost" unit="character" extent="unknown"/>  </ab></div></div>
          <div type="apparatus">
            <listApp>
-              <app><rdg resp="#iaph2007"><note><ref type="inscription" target="iAph160164"/>.b mistakenly included as a third fragment.</note></rdg>
-            </app>
+              <app loc="b"><rdg resp="#iaph2007"><note>Mistakenly presented as part of <ref type="inscription" target="iAph050019"/></note></rdg></app>
+            <app loc="b 1"><note>perhaps <foreign xml:lang="grc">
+                  <supplied reason="lost">βο</supplied>ύλαρ<supplied reason="lost">χος</supplied>
+               </foreign>
+            </note></app>
            </listApp>
          </div>
          <div type="translation" xml:lang="en" source="#ala2004">
@@ -130,16 +119,9 @@
          </div>
          
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> <citedRange>Baths 11</citedRange>.</bibl></p>
+             <p><bibl><ptr target="nyu"/> </bibl></p>
           </div>
-          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="roueche1989"/>
-                   <citedRange>48</citedRange>
-              </bibl>, whence  <bibl><ptr target="mccabePHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/257478">597</ref></citedRange>
-              </bibl>, 
-               <bibl><ptr target="ala2004"/> <citedRange><ref target="https://insaph.kcl.ac.uk/ala2004/inscription/eAla048.html">48</ref></citedRange></bibl>, 
-               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph050019.html">5.19</ref></citedRange></bibl>.</p>
-         </div>
+          
       </body>
    </text>
 </TEI>
