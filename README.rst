@@ -7,6 +7,8 @@ With Contributions from: Michele Butini, Francsco Tecca, Irene Vagionakis
 
 Based on the 2007 publication by Joyce M. Reynolds, Roueché and Bodard, the editors plan a revised and updated re-edition, based on the latest `EpiDoc <https://epidoc.stoa.org/>`_ and `EFES <https://github.com/EpiDoc/EFES>`_ technologies and standards, and including approximately 400 previously unpublished texts.
 
+If you're here looking for the EpiDoc XML of the Greek inscriptions in this corpus, they can be found in `/webapps/ROOT/content/xml/epidoc <https://github.com/Aphrodisias/IAph_EFES/tree/master/webapps/ROOT/content/xml/epidoc>`_.
+
 EFES: EpiDoc Front-End Services
 ====
 
