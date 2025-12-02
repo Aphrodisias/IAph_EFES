@@ -89,6 +89,7 @@
          <creation>transcriptions (Reynolds, Roueché)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-12-02"  who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2007-01-12" who="Charlotte-Tupman">tidied</change>
          <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -108,9 +109,14 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/><persName type="attested"><name nymRef="#Εὐπιθανός"><supplied reason="lost" cert="low">Ε</supplied>ὐπιθανὸς</name></persName> <w lemma="πάλος">πάλου</w> <num value="1">α</num> <lb n="2"/><persName type="attested"><name><gap reason="lost" unit="character" extent="unknown"/><unclear>φ</unclear>ιλυς</name></persName>  <space quantity="3" unit="character"/>  </ab>
+<ab><lb n="1"/><persName type="attested"><name nymRef="#Εὐπιθανός"><supplied reason="lost" cert="low">Ε</supplied>ὐπιθανὸς</name></persName> <w lemma="πάλος">πάλου</w> <num value="1">α</num> 
+   <lb n="2"/><gap reason="lost" unit="character" quantity="2"/><persName type="attested"><name nymRef="#Φιλυς"><unclear>Φ</unclear>ίλυς</name></persName>  <space quantity="3" unit="character"/>  </ab>
 </div>
-         <div type="translation">
+         
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>Eupithanos of brigade 1; Philys</p>
+         </div>
+         <div type="translation" xml:lang="en" source="#roueche1993">
             <p>Eupithanos of brigade 1; [ ? ]philos</p>
          </div>
          <div type="commentary">
