@@ -33,7 +33,7 @@
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:rs[@type='month']">
+  <xsl:template match="tei:rs">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 

@@ -176,11 +176,11 @@
     </li>
   </xsl:template>
 
-  <xsl:template match="arr[@name='index_instance_location']/str">
-    <!-- This template must be defined in the calling XSLT (eg,
+  <!-- <xsl:template match="arr[@name='index_instance_location']/str">
+    This template must be defined in the calling XSLT (eg,
          indices-epidoc.xsl) since the format of the location data is
-         not universal. -->
+         not universal. 
     <xsl:call-template name="render-instance-location" />
-  </xsl:template>
+  </xsl:template>-->
 
 </xsl:stylesheet>
