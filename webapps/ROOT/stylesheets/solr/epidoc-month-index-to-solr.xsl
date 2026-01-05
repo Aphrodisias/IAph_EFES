@@ -2,7 +2,8 @@
 <xsl:stylesheet exclude-result-prefixes="#all"
                 version="2.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fn="http://www.w3.org/2005/xpath-functions">
 
   <!-- This XSLT transforms a set of EpiDoc documents into a Solr
        index document representing an index of month names in those
@@ -24,8 +25,43 @@
             <xsl:text>_index</xsl:text>
           </field>
           <xsl:call-template name="field_file_path" />
+          <xsl:variable name="month" select="replace(@ref, '#', '')"/>
+          <xsl:variable name="monthsAL" select="'../../content/xml/authority/month.xml'"/>
+          <xsl:variable name="monthID" select="document($monthsAL)//tei:list/tei:item[@xml:id=$month]"/>
           <field name="index_item_name">
-            <xsl:value-of select="translate(@ref, '#', '')" />
+            <xsl:choose>
+              <xsl:when test="doc-available($monthsAL) = fn:true() and $monthID">
+                <xsl:value-of select="$monthID/tei:term[1]" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="$month"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </field>
+          <field name="index_attested_form">
+            <xsl:choose>
+              <xsl:when test="descendant::tei:w[@lemma] or descendant::tei:num">
+                <xsl:for-each select="descendant::tei:w[@lemma]|descendant::tei:num">
+                  <xsl:choose>
+                    <xsl:when test="@lemma">
+                      <xsl:value-of select="translate(translate(normalize-space(normalize-unicode(@lemma)), '_', '-'), '#', '')" />
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:value-of select="." />
+                    </xsl:otherwise>
+                  </xsl:choose>
+                  <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
+                </xsl:for-each>
+              </xsl:when>
+            </xsl:choose>
+          </field>
+          <field name="index_external_resource">
+            <xsl:if test="doc-available($monthsAL) = fn:true() and $monthID">
+              <xsl:for-each select="$monthID/tei:idno">
+                <xsl:value-of select="."/>
+                <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
+              </xsl:for-each>
+            </xsl:if>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
