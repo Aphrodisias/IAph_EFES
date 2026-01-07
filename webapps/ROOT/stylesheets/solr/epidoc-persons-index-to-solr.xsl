@@ -16,7 +16,8 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type!='divine'][ancestor::tei:div/@type='edition']" group-by="concat(string-join(descendant::tei:name/@nymRef, ''), '-', @key)"> <!-- TO BE ADJUSTED -->
+      <!-- PEOPLE (EMPERORS EXCLUDED) -->
+      <xsl:for-each-group select="//tei:persName[@type!='divine' and @type!='emperor'][ancestor::tei:div/@type='edition']" group-by="concat(string-join(descendant::tei:name/@nymRef, ''), '-', replace(@key, '#', ''), '-', replace(@ref, '#', ''))"> <!-- TO BE ADJUSTED -->
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,21 +26,64 @@
             <xsl:text>_index</xsl:text>
           </field>
           <xsl:call-template name="field_file_path" />
-          <field name="index_item_name"> <!-- TO BE ADJUSTED -->
+          <xsl:variable name="ref" select="replace(@ref, '#', '')"/>
+          <xsl:variable name="key" select="replace(@key, '#', '')"/>
+          <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="descendant::tei:name[@nymRef]">
+              <xsl:when test="descendant::tei:name[@nymRef]">  <!-- TO BE ADJUSTED -->
                 <xsl:for-each select="descendant::tei:name[@nymRef]">
                   <xsl:value-of select="translate(translate(normalize-space(normalize-unicode(@nymRef)), '_', '-'), '#', '')" />
                   <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
                 </xsl:for-each>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="@key"/>
+                <xsl:value-of select="$key"/>
               </xsl:otherwise>
             </xsl:choose>
           </field>
           <field name="index_external_resource">
-              <xsl:value-of select="@ref"/> <!-- in some cases also in @key: CHECK -->
+            <xsl:for-each select="tokenize($ref, '\s+')"> <!-- in some cases also in @key: CHECK -->
+                <xsl:value-of select="."/>
+                <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
+              </xsl:for-each>
+          </field>
+          <xsl:apply-templates select="current-group()" />
+        </doc>
+      </xsl:for-each-group>
+
+      <!-- EMPERORS -->
+      <xsl:for-each-group select="//tei:persName[@type='emperor'][ancestor::tei:div/@type='edition']" group-by="replace(@ref, '#', '')">
+        <doc>
+          <field name="document_type">
+            <xsl:value-of select="$subdirectory" />
+            <xsl:text>_</xsl:text>
+            <xsl:value-of select="$index_type" />
+            <xsl:text>_index</xsl:text>
+          </field>
+          <xsl:call-template name="field_file_path" />
+          <xsl:variable name="ref" select="replace(@ref, '#', '')"/>
+          <xsl:variable name="emperorsAL" select="'../../content/xml/authority/emperor.xml'"/>
+          <xsl:variable name="emperor" select="document($emperorsAL)//tei:listPerson/tei:person[@xml:id=$ref]"/>
+          <field name="index_item_name">
+            <xsl:choose>
+              <xsl:when test="doc-available($emperorsAL) = fn:true() and $emperor">
+                <xsl:for-each select="$emperor/tei:persName">
+                  <xsl:value-of select="."/>
+                  <xsl:if test="position()!=last()"><xsl:text> | </xsl:text></xsl:if>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="$ref"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </field>
+          <field name="index_external_resource">
+              <xsl:if test="doc-available($emperorsAL) = fn:true() and $emperor">
+                <xsl:for-each select="$emperor/tei:idno">
+                  <xsl:value-of select="."/>
+                  <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
+                </xsl:for-each>
+              </xsl:if>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
