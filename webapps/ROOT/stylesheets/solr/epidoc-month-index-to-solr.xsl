@@ -25,20 +25,23 @@
             <xsl:text>_index</xsl:text>
           </field>
           <xsl:call-template name="field_file_path" />
-          <xsl:variable name="month" select="replace(@ref, '#', '')"/>
+          <xsl:variable name="ref" select="replace(@ref, '#', '')"/>
           <xsl:variable name="monthsAL" select="'../../content/xml/authority/month.xml'"/>
-          <xsl:variable name="monthID" select="document($monthsAL)//tei:list/tei:item[@xml:id=$month]"/>
+          <xsl:variable name="month" select="document($monthsAL)//tei:list/tei:item[@xml:id=$ref]"/>
           <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="doc-available($monthsAL) = fn:true() and $monthID">
-                <xsl:value-of select="$monthID/tei:term[1]" />
+              <xsl:when test="doc-available($monthsAL) = fn:true() and $month">
+                <xsl:for-each select="$month/tei:term">
+                  <xsl:value-of select="."/>
+                  <xsl:if test="position()!=last()"><xsl:text> | </xsl:text></xsl:if>
+                </xsl:for-each>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="$month"/>
+                <xsl:value-of select="$ref"/>
               </xsl:otherwise>
             </xsl:choose>
           </field>
-          <field name="index_attested_form">
+          <!--<field name="index_attested_form">
             <xsl:choose>
               <xsl:when test="descendant::tei:w[@lemma] or descendant::tei:num">
                 <xsl:for-each select="descendant::tei:w[@lemma]|descendant::tei:num">
@@ -54,10 +57,10 @@
                 </xsl:for-each>
               </xsl:when>
             </xsl:choose>
-          </field>
+          </field>-->
           <field name="index_external_resource">
-            <xsl:if test="doc-available($monthsAL) = fn:true() and $monthID">
-              <xsl:for-each select="$monthID/tei:idno">
+            <xsl:if test="doc-available($monthsAL) = fn:true() and $month">
+              <xsl:for-each select="$month/tei:idno">
                 <xsl:value-of select="."/>
                 <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
               </xsl:for-each>
