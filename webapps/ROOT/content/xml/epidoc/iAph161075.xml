@@ -33,8 +33,10 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment from the top of a <material>white marble</material>
-                              <objectType>sarcophagus</objectType> front with upper rim and part of a head in relief (<dimensions unit="metre"><width>0.14</width><height>0.13</height><depth>0.12</depth></dimensions>).</p>
+                           <p>Fragments from the top of a <material>white marble</material>
+                              <objectType>sarcophagus</objectType> front with upper rim:
+                              a:  part of a head in relief below, <dimensions unit="metre"><width>0.14</width><height>0.13</height><depth>0.12</depth></dimensions>; 
+                              b: <dimensions unit="metre"><width>0.26</width><height>0.19</height><depth>0.12</depth></dimensions></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -53,7 +55,7 @@
                      <origDate notBefore="0101" notAfter="0300" precision="medium" evidence="lettering">Second to third centuries CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphsouthagora">South Agora/Place of Palms</placeName>, <placeName type="monuList" ref="aphsagoranportico">North portico</placeName> S.Port of Tib.<!-- check -->, SE 86-I</provenance>
+                     <placeName ref="#aphsouthagora">South Agora/Place of Palms</placeName>, <placeName type="monuList" ref="aphsagoranportico">Sorth portico</placeName>, SE 86-I</provenance>
                   <provenance type="observed">Museum</provenance> </history>
             </msDesc>
          </sourceDesc>
@@ -82,23 +84,28 @@
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-01-09"  who="#CMR">Transcribed b</change>
          <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
          <change when="2007-01-01" who="#GB">hand tidied</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <surface/>
-   </facsimile>
-   <text>
+      <surface><graphic url="88_D_26.jpg">
+            <desc>b: Face (M. Roueché, 1988)</desc>
+      </graphic></surface>
+   </facsimile>   <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <ab>
+            <div type="textpart" n="a"><ab>
                <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>σ</unclear>ομεν</orig><gap reason="lost" unit="character" extent="unknown"/>
-            </ab>
+            </ab></div>
+            <div type="textpart" n="b"><ab>
+               <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>δ</unclear>ρουτο</orig><gap reason="lost" unit="character" extent="unknown"/>
+            </ab></div>
          </div>
          <div type="apparatus">
-            <listApp><app loc="1"><rdg resp="#JMR">[---κηδευθη?]σ̣ομεν[---]</rdg></app></listApp>
+            <listApp><app loc="a.1"><rdg resp="#JMR">[---κηδευθη?]σ̣ομεν[---]</rdg></app></listApp>
          </div>
          <div type="translation">
             <p>Not usefully translatable</p>
@@ -107,10 +114,10 @@
           
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> <citedRange>86.62</citedRange></bibl>.</p>
+            <p><bibl><ptr target="nyu"/> <citedRange>86.62</citedRange>, <citedRange>86.63</citedRange></bibl>.</p>
          </div>
          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="chaniotis2024"/> <citedRange>43</citedRange></bibl>.</p>
+            <p>a: <bibl><ptr target="chaniotis2024"/> <citedRange>43</citedRange></bibl>.</p>
          </div>
       </body>
    </text>
