@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Warning against theft</title>
+            <title>Name</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -40,17 +40,17 @@
                   </objectDesc>
                   <handDesc>
                      <handNote>
-                        <height unit="metre">0.03-0.06</height>; second to third centuries C.E. standard forms</handNote>
+                        <height unit="metre">0.03-0.06</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Findspot</origPlace>
-                     <origDate notBefore="0117" notAfter="0138" precision="medium" evidence="lettering archaeological-context">Hadrianic, 117-138 CE</origDate>
+                     <origDate notBefore="0001" notAfter="0300" precision="medium" evidence="lettering">First to third centuries CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphbaths">Hadrianic Baths</placeName>: <placeName type="monuList" ref="#aphbaths14">Tetrastyle Court</placeName>, 
-                     north entrance, on the east face of the second square column from the East.</provenance>
+                     north entrance, on the wall.</provenance>
                   <provenance type="observed">Findspot</provenance>
                </history>
             </msDesc>
@@ -77,64 +77,36 @@
                </term>
             </keywords>
          </textClass>
-         <creation>Preliminary transcription (Reynolds); notebooks.</creation>
+         <creation>Transcription (Roueché)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
-         <change when="2007-01-01" who="GB">hand tidied</change>
+         <change when="2026-01-13"  who="#CMR">Transcribed</change>
+         
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="HUMS003596.jpg">
-            <desc>Face (2001)</desc>
-         </graphic>
-         <graphic url="HUMS003597.jpg">
-            <desc>Face (2001)</desc>
-         </graphic>
-         <graphic url="K_III_46.jpg">
-            <desc>Kubitschek notebook III, 46</desc>
-         </graphic>
-         <graphic url="gaudin_0053.jpg">
-            <desc>Face (Gaudin squeeze, 1904) </desc>
-         </graphic>
-         <graphic url="Boulanger_A_39.jpg">
-            <desc>Boulanger notebook A, 39</desc>
+         <graphic url="90_C_23A.jpg">
+            <desc>Face (M. Roueché, 1990)</desc>
          </graphic>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/> <w lemma="ἐάν">ἐάν</w> <w lemma="τις">τις</w> <w lemma="ἔχω">ἔχων</w> <lb n="2"/> <w lemma="χαλκός">χαλκὸν</w> <w lemma="μή">μὴ</w> <w lemma="παραδείκνυμι"><choice><sic resp="ιι"/><corr>π</corr></choice>α<lb n="3" break="no"/>ραδείξῃ</w>  <w lemma="ἤτε">ἢτε</w> <w lemma="ἐν">ἐν</w> <lb n="4"/> <w lemma="φοῦνδα">φούνδῃ</w> <w lemma="ἤτε">ἢτε</w> <w lemma="ἐν">ἐν</w> <lb n="5"/> <w lemma="κάμπιστρον">καμπίστρῳ</w> <w lemma="αὐτός">αὐ<lb n="6" break="no"/>τὸν</w>  <w lemma="αἰτιάομαι">αἰτιάσεται</w> </ab>
+<ab><lb n="1"/> <persName type="attested"><name nymRef="#Διογᾶς">Διογᾶϲ</name></persName></ab>
 </div>
-         <div type="apparatus">
-           <listApp>
-            <app loc="2"><note><foreign xml:lang="grc">ΙΙ</foreign> for <foreign xml:lang="grc">Π</foreign>.</note></app>
-           </listApp>
-         </div>
-         <div type="translation">
-            <p>If anyone having money (on him), whether in purse or belt, does not present it, it will be his own responsibility.</p>
+        
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>Diogas</p>
          </div>
          <div type="commentary">
-            <p>Another version of the text is <ref type="inscription" target="iAph050102"/>.</p>
+            
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="kubit"/>, <citedRange>K III, 46, Abklatsch 37</citedRange></bibl>; 
-               <bibl><ptr target="mendel"/> <citedRange></citedRange></bibl>;
-               <bibl><ptr target="gaudin"/> <citedRange>74</citedRange>, <citedRange>140</citedRange></bibl>; 
-               <bibl><ptr target="boulanger"/> <citedRange>A, 53</citedRange></bibl>;  
-                     <bibl><ptr target="nyu"/><citedRange></citedRange></bibl></p>
+            <p><bibl><ptr target="nyu"/><citedRange></citedRange></bibl></p>
           </div>
-          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="kubreich1893"/>, <citedRange>3</citedRange>
-              </bibl>, <bibl><ptr target="reinach1906"/>, <citedRange>17</citedRange>
-              </bibl>, whence  <bibl><ptr target="mccabePHI"/>
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/257817">930</ref></citedRange>
-              </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph050004.html">5.4</ref></citedRange></bibl>; 
-               <bibl><ptr target="wilson2016"/> <citedRange>p.180</citedRange></bibl>.</p>
-         </div>
+          
       </body>
    </text>
 </TEI>
