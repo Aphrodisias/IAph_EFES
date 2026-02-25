@@ -26,11 +26,11 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <xsl:variable name="ref" select="replace(@ref, '#', '')"/>
-          <xsl:variable name="designAL" select="'../../content/xml/authority/design.xml'"/>
-          <xsl:variable name="design" select="document($designAL)//tei:list/tei:item[@xml:id=$ref]"/>
+          <xsl:variable name="designsAL" select="'../../content/xml/authority/design.xml'"/>
+          <xsl:variable name="design" select="document($designsAL)//tei:list/tei:item[@xml:id=$ref]"/>
           <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="doc-available($designAL) = fn:true() and $design">
+              <xsl:when test="doc-available($designsAL) = fn:true() and $design">
                 <xsl:for-each select="$design/tei:term">
                   <xsl:value-of select="."/>
                   <xsl:if test="position()!=last()"><xsl:text> | </xsl:text></xsl:if>
@@ -59,7 +59,7 @@
             </xsl:choose>
           </field>-->
           <field name="index_external_resource">
-            <xsl:if test="doc-available($designAL) = fn:true() and $design">
+            <xsl:if test="doc-available($designsAL) = fn:true() and $design">
               <xsl:for-each select="$design/tei:idno">
                 <xsl:value-of select="."/>
                 <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
