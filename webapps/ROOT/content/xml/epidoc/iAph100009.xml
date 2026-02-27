@@ -38,7 +38,9 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the seats. Row C: on one seat, C.2 diameter 0.41, S.3 <width unit="metre">0.28</width> <height unit="metre">0.23</height>. Row P: on five seats at west end. Row X: on one seat. Row Y.i: at west end. Row Y. ii: on the rims of the seats, starting on the third from the west end. </layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the seats. Row C: on one seat, <dimensions> <dim type="diameter">0.41</dim></dimensions>,  
+                              <dimensions><height unit="metre">0.28</height> <width unit="metre">0.23</width></dimensions>. 
+                           Row P: on five seats at west end. Row X: on one seat. Row Y.i: on the seats. Row Y. ii: on the rims of the seats. </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -131,15 +133,15 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <div n="C" type="textpart" subtype="section">
-               <note>Designs <!-- ADD --></note>
-            </div>
-            <div n="P" type="textpart" subtype="section">
+            <div n="C" type="textpart" subtype="row">
+             <ab>  <note>steps</note><note>Design type <rs type="design" ref="#c02">C.2</rs></note> <note>Design type <rs type="design" ref="#s03">S.3</rs></note></ab></div>
+            
+            <div n="P" type="textpart" subtype="row">
                <ab>
                   <lb n="1"/>
-                  <w lemma="τόπος">τόπ<milestone unit="block"/>ος</w>
+                  <w lemma="τόπος">τόπ<milestone unit="block"/>οϲ</w>
                   <milestone unit="block"/>
-                  <w lemma="φιλοβ-">φ<unclear>ι</unclear> <milestone unit="block"/> <unclear>λοβ</unclear>
+                  <w part="I" lemma="φιλοβ-">φ<unclear>ι</unclear> <milestone unit="block"/> <unclear>λοβ</unclear>
                   </w>
                   <milestone unit="block"/>
                   <gap reason="lost" unit="character" quantity="1"/>
@@ -150,11 +152,11 @@
                   <gap reason="lost" unit="character" extent="unknown"/>
                </ab>
             </div>
-            <div n="X" type="textpart" subtype="section">
+            <div n="X" type="textpart" subtype="row">
                <ab>
                   <lb n="1"/>
-                  <orig>ουε</orig>
-                  <space quantity="3" unit="character"/>
+                 <space extent="unknown" unit="character"/> <orig>ουε</orig>
+                  <space extent="unknown" unit="character"/>
                   <milestone unit="block"/>
                   <note>steps</note> 
                   <lb n="2"/>
@@ -165,8 +167,8 @@
                   <note>steps</note> 
                </ab>
             </div>
-            <div n="Y" type="textpart" subtype="section">
-               <div n="i" type="textpart" subtype="column">
+            <div n="Y" type="textpart" subtype="row">
+               <div n="i" type="textpart" subtype="seat">
                   <ab>
                      <lb n="1"/>
                      <milestone unit="block"/>
@@ -181,26 +183,26 @@
                         <milestone unit="block"/>
                         <name nymRef="#Σελεύκεια">Σελευκεί<milestone unit="block"/>ας</name>
                      </persName>
-                     <w lemma="τόπος"><expan><abbr><hi rend="underline">τό</hi></abbr><ex>πος</ex></expan></w>
+                     <w lemma="τόπος"><expan><abbr><hi rend="underline">τό</hi></abbr><ex>ποϲ</ex></expan></w>
                      <milestone unit="block"/>
                      <gap reason="lost" unit="character" quantity="1"/>
                      <persName type="attested"><name nymRef="#Χρυσ-">
                         <unclear>Χ</unclear> <milestone unit="block"/> <unclear>ρ</unclear>
-                     <milestone unit="block"/> <unclear>υ</unclear> <unclear>σ</unclear>
+                     <milestone unit="block"/> <unclear>υ</unclear> <unclear>ϲ</unclear>
                      </name></persName>
                      <milestone unit="block"/>
                      <gap reason="lost" unit="character" extent="unknown"/>
                   </ab>
                </div>
-               <div n="ii" type="textpart" subtype="column">
-                  <ab>
-                     <lb n="1"/>
+               <div n="ii" type="textpart" subtype="seat">
+                  <ab><note>On seat rims: </note>
+                     <lb n="1"/><milestone unit="block"/> <milestone unit="block"/>
                      <w lemma="τόπος">
-                        <supplied reason="lost" cert="low">τόπος</supplied>
+                        <supplied reason="lost" cert="low">τόποϲ</supplied>
                      </w>
                      <milestone unit="block"/>
                      <w lemma="ὁ"><unclear>τ</unclear>ῆς</w>
-                     <w lemma="συντεχνία">συ<milestone unit="block"/><unclear>ντ</unclear>εχ<milestone unit="block"/><supplied reason="lost" cert="low">νίας</supplied>
+                     <w lemma="συντεχνία">ϲυ<milestone unit="block"/><unclear>ντ</unclear>εχ<milestone unit="block"/><supplied reason="lost" cert="low">νίαϲ</supplied>
                      </w>
                      <milestone unit="block"/>
                      <orig>
@@ -221,7 +223,8 @@
          </div>
          <div type="apparatus">
            <listApp>
-            <app loc="Y i"><note>ΤΟ is underlined, perhaps indicating an abbreviation for τόπος; the following letters are more widely spaced, 
+              <app loc="P"><rdg>Β or Κ</rdg></app>
+            <app loc="Y.i"><note>ΤΟ is underlined, perhaps indicating an abbreviation for τόπος; the following letters are more widely spaced, 
                and may belong to a different inscription.</note></app>
            </listApp>
          </div>
@@ -244,7 +247,8 @@
                <citedRange><ref target="https://epigraphy.packhum.org/text/264970">PPAphr 45.10, X(b)</ref></citedRange>, 
                <citedRange><ref target="https://epigraphy.packhum.org/text/264971">PPAphr 45.10, Y.i</ref></citedRange>, 
                <citedRange><ref target="https://epigraphy.packhum.org/text/264972">PPAphr 45.10, Y.ii</ref></citedRange></bibl>, 
-               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph100009.html">10.9</ref></citedRange></bibl>.</p>
+               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph100009.html">10.9</ref></citedRange></bibl>; 
+               see <bibl><ptr target="welch1998"/> <citedRange>549</citedRange> for numbering, <citedRange>551</citedRange> for a drawing</bibl>.</p>
          </div>
       </body>
    </text>
