@@ -36,16 +36,17 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the seats. Row F: diameter c. 0.30. Row W: 0.86 x c. 0.54.</layout><!-- check -->
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the seats. Row F:  <dimensions><dim type="diameter">0.30</dim></dimensions>, in a circle. 
+                           Row W: <dimensions><height>0.86</height> <width>0.54</width></dimensions>.</layout><!-- check -->
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote> ...</handNote>
+                     <handNote>No measurements</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
+                     <origPlace>Findspot</origPlace>
                      <origDate notBefore="0101" notAfter="0600" precision="medium" evidence="context">Second-sixth century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
@@ -79,7 +80,7 @@
                </term>
             </keywords>
          </textClass>
-         <creation>Transcription (Reynolds, Roueché). This edition: Roueché (2007)..</creation>
+         <creation>Transcription (Reynolds, Roueché). This edition: Roueché (2007).</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
@@ -101,7 +102,9 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<div n="F" type="textpart" subtype="section"><ab><lb n="1"/><note xml:lang=""/> <orig><unclear>ρ</unclear>τχανε</orig></ab></div><div n="W" type="textpart" subtype="section"><note xml:lang=""/></div>
+<div n="F" type="textpart" subtype="row"><ab>
+      <lb n="1"/><note xml:lang=""/> <persName type="attested"><name><expan><abbr><g ref="#monogram"/></abbr><ex><unclear>ρ</unclear>τχανε</ex></expan></name></persName></ab></div>
+            <div n="W" type="textpart" subtype="row"><ab><note>Design type <rs type="design" ref="#3r04">3Rows.4</rs>, with plain central circles</note></ab></div>
 </div>
          <div type="apparatus">
            <listApp>
@@ -119,7 +122,9 @@
           </div>
           <div type="bibliography" subtype="publication">
             <p><bibl><ptr target="roueche1993"/>  <citedRange>45.18</citedRange>
-              </bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph100017.html">10.17</ref></citedRange></bibl>.</p>
+            </bibl>, whence <bibl><ptr target="phi"/> 
+               <citedRange><ref target="https://epigraphy.packhum.org/text/264993">PPAphr 45.18.F</ref></citedRange></bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph100017.html">10.17</ref></citedRange></bibl>; 
+               see <bibl><ptr target="welch1998"/> <citedRange>549</citedRange> for numbering</bibl>.</p>
          </div>
       </body>
    </text>
