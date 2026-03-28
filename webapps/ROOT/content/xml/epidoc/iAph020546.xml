@@ -6,16 +6,21 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Epitaph of Ioulianos</title>
-            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <title>Invocation of Good Fortune</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
-            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
-            <editor xml:id="MB" role="encoding">Michele Butini</editor>
          </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph170043</idno>
+            <idno type="filename">iAph020546</idno>
+            <idno type="prevfilename">iAph170041</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -30,33 +35,27 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>The upper rim of a white <material key="marmor">marble</material>
-                              <objectType>plaque</objectType> 
-                              (<dimensions><height unit="metre">1.00</height> <width unit="metre">0.83</width> <depth unit="metre">0.14</depth></dimensions>) 
-                              </p>
-                        </support>
+                           <p><material>Marble</material> square column <objectType>capital</objectType> broken to the left: 
+                              <dimensions><height>0.29</height><width>0.78</width><depth>0.45</depth></dimensions>.
+                           </p> </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> in one line on the moulding.</layout>
+                        <layout> 
+                           <rs type="execution" ref="scalpro">Inscribed</rs> within a moulded panel, <dimensions><height>0.14</height><width>0.42</width></dimensions>.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>
-                        <height unit="metre">0.075</height>.</handNote>
+                     <handNote><height>0.05</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="0301" notAfter="0500" precision="medium" evidence="lettering">Fourth century CE or later.</origDate>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0301" notAfter="0399" evidence="lettering">Fourth century CE</origDate>
                   </origin>
-
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphbispal">Bishop's Palace</placeName>: reused in the east wall of Room 29.</provenance>
-                
-                  <provenance type="observed">Findspot.</provenance>
-               </history>
+                     <placeName ref="#aphbispal">Bishop's Palace</placeName></provenance>
+                     <provenance type="observed">Museum</provenance></history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -79,42 +78,49 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
+               
             </keywords>
          </textClass>
-         <creation>Transcription (Roueché).</creation>
+         
+         <creation></creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2024-04-07" who="#CMR">Marked up</change>
-        
+         <change when="2024-03-26" who="#CMR">Encoded</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         
+         <graphic url="72_K_00A.jpg">
+            <desc>Face (M. Roueché, 1972)</desc>
+         </graphic> 
+         <graphic url="76_E_09.jpg">
+            <desc>Face (M. Roueché, 1976)</desc>
+         </graphic> 
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-        
-        <ab><lb n="1"/> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-7403"><name nymRef="#Θεοδωρήτος">Θε<unclear>οδωρήτ</unclear><supplied reason="lost">ου</supplied></name></persName><gap reason="lost" unit="character" extent="unknown"/>  </ab>
-      </div>
-         <div type="apparatus"><app><rdg resp="#chaniotis2008">?Perhaps Θε<unclear>οδωρήτ</unclear>[ας]</rdg></app></div>
-         <div type="translation" xml:lang="en" source="#CMR">
-            <p>
-               <supplied reason="subaudible" cert="low">Tomb of</supplied> Theodoretos.</p>
+            <ab><lb n="1"/><persName   ref="#agathetyche" type="divine"><addName nymRef="Ἀγαθός"><unclear>Ἀγ</unclear>αθῇ</addName> <g ref="#crux" />  <name nymRef="Τύχη">Τύχῃ</name></persName>
+            </ab></div>
+         
+         
+         
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>With Good Fortune <gap reason="lost" unit="line" extent="unknown"/>
+            </p>
          </div>
-         <div type="commentary">
-            <p>Perhaps from a monument similar to <ref type="inscription" n="176" target="iAph080264"/>, <ref type="inscription" n="177" target="iAph020528"/>, 
-               <ref type="inscription" n="178" target="iAph010191"/>, <ref type="inscription" target="iAph170042"/><!--; see discussion at <ref type="eAla-text" n="IX.45" target=".xml"/>. --></p>
+        
+         
+         <div type="commentary" n="notyet">
+            
          </div>
          <div type="bibliography" subtype="transcription">
-             <p><bibl><ptr target="nyu"/> <citedRange>I 02.020</citedRange></bibl></p>
-          </div>
+            <p><bibl><ptr target="nyu"/> <citedRange>I 02.020</citedRange>, <citedRange>MAB 5</citedRange></bibl></p>
+         </div>
          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="chaniotis2008"/> <citedRange>10</citedRange></bibl>, whence 
-               <bibl><ptr target="seg"/> <citedRange>58.1200</citedRange></bibl></p>
-         
+            <p><bibl><ptr target="chaniotis2008"/> <citedRange>8</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>58.1198</citedRange></bibl></p>
          </div>
       </body>
    </text>
