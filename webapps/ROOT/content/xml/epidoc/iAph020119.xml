@@ -6,20 +6,17 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Invocation of Good Fortune</title>
-            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <title><rs type="textType">Consolatory</rs> <rs type="textType">honours</rs></title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
          </titleStmt>
-         <editionStmt>
-            <edition>
-               <title level="m">Inscriptions of Aphrodisias</title>
-               <title type="abbreviated" level="m">IAph</title>
-            </edition>
-         </editionStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph170040</idno>
+            <idno type="filename">iAph020119</idno>
+            <idno type="IAph2007">iAph161714</idno>
+            <idno type="JMR2004">1714</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -34,27 +31,27 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><material>Marble</material> base <objectType>capital</objectType> with moulding on three sides, broken at back: 
-                              <dimensions><height>0.27</height><width>0.42</width><depth>0.29-0.40</depth></dimensions>.
-                           </p> </support>
+                           <p>Right end of a white marble block <dimensions unit="metre"><width>0.45</width><height>0.175</height><depth>0.53</depth></dimensions></p>
+                        </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout> 
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the lower fascia.</layout>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height>0.045-0.05</height></handNote>
+                     <handNote>
+                        <height unit="metre">0.015</height>, with traces of red paint in the trenches</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace><placeName ref="#aphtemple">Temple-Church</placeName></origPlace>
-                     <origDate notBefore="0301" notAfter="0399" evidence="lettering">Fourth century CE</origDate>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0099" notAfter="-0001" precision="medium" evidence="lettering">First century BCE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphodeon">Odeon/Bouleuterion</placeName>: in the <placeName type="monuList" ref="#aphodeonstore">Odeon store</placeName>, rear chamber 6; perhaps from excavations in 1961-64</provenance>
-                     <provenance type="observed">Museum</provenance></history>
+                     <placeName ref="#aphodeon">Bouleuterion/Odeon</placeName>, <placeName type="monuList" ref="#aphodeonsouth">South Area</placeName>: 'So.Bu.6, at 1.77'</provenance>
+                  <provenance type="observed">Museum</provenance></history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -77,49 +74,40 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
-               
             </keywords>
          </textClass>
-         
-         <creation></creation>
+         <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2024-03-26" who="#CMR">Encoded</change>
+         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
+         <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-01" who="#GB">hand tidied</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="rosen66_1_72.jpg">
-            <desc>Face (E. Alföldi-Rosenbaum, 1966)</desc>
+         <graphic url="80_A_31.jpg">
+            <desc>Face (M. Roueché, 1980)</desc>
          </graphic>
-         <graphic url="76_J_07A.jpg">
-            <desc>Face (M. Roueché, 1976)</desc>
-         </graphic>   
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <ab><lb n="1"/><persName  ref="#agathetyche" type="divine"><addName  nymRef="Ἀγαθός">Ἀγαθῇ</addName>  <name nymRef="Τύχη">Τύχηι</name></persName>
-            </ab></div>
-         
-         
-         
-         <div type="translation" xml:lang="en" resp="#CMR">
-            <p>With good fortune <gap reason="lost" unit="line" extent="unknown"/>
-            </p>
+
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><!-- think -->  <w><supplied reason="lost">ἐτείμη</supplied><unclear>σ</unclear>εν</w> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6175"><name nymRef="#Ἑρμόλαος">Ἑρμόλαον</name> <space quantity="1" unit="character"/>  
+   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-6176"><name nymRef="#Ἑρμόλαος"><supplied reason="lost">Ἑρ</supplied>μολάου</name></persName></persName> <w>παῖδα</w> <w lemma="ὁ">τὴν</w> <space quantity="1" unit="character"/>  
+   <lb n="3"/><supplied reason="lost"><w lemma="ἡλικία">ἡλικίαν</w></supplied> <gap reason="lost" extent="unknown" unit="character"/><w><supplied reason="lost">μετηλ</supplied><unclear>λ</unclear>αχο<supplied reason="lost">τα</supplied></w>    <space extent="unknown" unit="character"/>  </ab>
+</div>
+         <div type="translation" xml:lang="en" resp="#JMR">
+            <p>
+               <gap reason="lost" unit="character" extent="unknown"/> honoured Hermolaos[ son of . . .   son of Her]molaos, a boy [in age  . . . ] deceased.</p>
          </div>
-        
-         
-         <div type="commentary" n="notyet">
+         <div n="notyet" type="commentary">
             
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> <citedRange>I 99.005</citedRange>, <citedRange>Odeon Store 21</citedRange>, <citedRange>MAB 6</citedRange></bibl></p>
-         </div>
-         <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="chaniotis2008"/> <citedRange>7</citedRange></bibl>, whence 
-               <bibl><ptr target="seg"/> <citedRange>58.1197</citedRange></bibl></p>
+            <p><bibl><ptr target="nyu"/> <citedRange>63.685</citedRange></bibl></p>
          </div>
       </body>
    </text>
