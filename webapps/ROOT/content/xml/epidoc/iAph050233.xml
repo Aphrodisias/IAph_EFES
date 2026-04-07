@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Dedication</rs> of a <seg cert="low">caryatid</seg></title>
+            <title>Fragment from <rs type="textType">dedication</rs> of  <seg cert="low">caryatid</seg>, </title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -14,9 +14,9 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph161197</idno>
-            <idno type="IAph2007">iAph161197</idno>
-            <idno type="JMR2004">1197</idno>
+            <idno type="filename">iAph050233</idno>
+            <idno type="IAph2007">iAph161204</idno>
+            <idno type="JMR2004">1204</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -31,7 +31,8 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>'Fragment', apparently with part of left side surviving. <objectType>Statue base</objectType>.</p>
+                           <p>
+                              <material key="marmor">White marble</material> fragment of <objectType>statue base</objectType> with traces of upper moulding (<dimensions unit="metre"><width>0.30</width><height>0.33</height><depth>0.32</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -41,17 +42,19 @@
                   </objectDesc>
                   <handDesc>
                      <handNote>
-                        <foreign xml:lang="grc">ΝΗ</foreign> in ligature, line 1</handNote>
+                        <height unit="metre">0.05</height>
+                     </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hadrianic Baths: ?Caryatid portico</origPlace>
+                     <origPlace><placeName ref="#aphbaths">Hadrianic Baths</placeName>, <placeName type="monuList" ref="#aphbathseastcourtcp">East Court, Caryatid portico</placeName></origPlace>
                      <origDate notBefore="0134" notAfter="0166" precision="medium" evidence="lettering monument group prosopography">Mid second century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphbaths">Hadrianic Baths</placeName>, <placeName type="monuList" ref="#aphbathseastcourt">East Court</placeName>: 'Cour de l'E(st) partie N.' (Boulanger)</provenance>
-                  <provenance type="observed" when="1905">Findspot (1905)</provenance></history>
+                     <placeName ref="#aphbaths">Hadrianic Baths</placeName>, <placeName type="monuList" ref="#aphbathseastcourt">East Court</placeName>: ?Caryatid portico: 'cour de l'E(st), partie sud' (Boulanger); South Agora, west portico in 1984.</provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -76,7 +79,7 @@
                </term>
             </keywords>
          </textClass>
-         <creation>Boulanger notebooks.</creation>
+         <creation>Transcription (Reynolds); Boulanger notebooks.</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
@@ -85,35 +88,41 @@
    </teiHeader>
    <facsimile>
       <surface>
+         <graphic url="85_A_18.jpg">
+            <desc>Face (M. Roueché, 1985)</desc>
+         </graphic>
+         <graphic url="85_A_19.jpg">
+            <desc>Face (M. Roueché, 1985)</desc>
+         </graphic>
          <graphic url="Boulanger_A_63.jpg">
             <desc>Boulanger notebook A, 63</desc>
-         </graphic>
-         <graphic url="Boulanger_B_13.jpg">
-            <desc>Boulanger notebook B, 13</desc>
          </graphic>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <ab>
-               <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
-               <lb n="1"/><hi rend="ligature"><orig>νη</orig></hi><orig><unclear>λ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
-               <lb n="2"/><orig>δω<unclear>λ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
-               <lb n="3"/><space quantity="2" unit="character"/>  <w lemma="">Δ<supplied reason="lost">ήμῳ</supplied></w>  <supplied reason="lost"><space quantity="2" unit="character"/></supplied>
-               <lb n="3a"/><gap reason="lost" unit="line" xml:id="gap1197-04" extent="unknown"><certainty target="#gap1197-04" locus="name" cert="low" assertedValue="space"/></gap></ab>
+
+<ab><lb n="1"/>  <gap reason="lost" unit="character" extent="unknown"/><orig>μμ</orig><gap reason="lost" unit="character" extent="unknown"/>
+   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ε</unclear>ικ</orig><gap reason="lost" unit="character" extent="unknown"/>
+   <lb n="2a"/><gap reason="lost" unit="line" extent="unknown"/></ab>
 </div>
-         <div type="translation" xml:lang="en" resp="#JMR">
-            <p>
-               <gap reason="lost" unit="character" extent="unknown"/> to the People <gap reason="lost" unit="character" extent="unknown"/>
-            </p>
+         <div type="apparatus">
+           <listApp>
+            <app loc="2"><note>Ε could be Γ or Π or Σ.</note></app>
+           </listApp>
+         </div>
+         <div type="translation">
+            <p>Reference to an Ammia, Ammiane or Ammianus?</p>
          </div>
          <div type="commentary">
-            <p>Fragment from one of the series of dedications from the East Court of the Hadrianic Baths: <ref type="iAph" target="#cmrcheck">1184</ref>, <ref type="iAph" target="#cmrcheck">1186</ref>, <ref type="iAph" target="#cmrcheck">1187</ref>, <ref type="iAph" target="#cmrcheck">1188</ref>, <ref type="iAph" target="#cmrcheck">1189</ref>, <ref type="iAph" target="#cmrcheck">1190</ref>, <ref type="iAph" target="#cmrcheck">1191</ref>, <ref type="iAph" target="#cmrcheck">1192</ref>, <ref type="iAph" target="#cmrcheck">1193</ref>, <ref type="iAph" target="#cmrcheck">1194</ref>, <ref type="iAph" target="#cmrcheck">1195</ref>, <ref type="iAph" target="#cmrcheck">1196</ref>, , <ref type="iAph" target="#cmrcheck">1198</ref>, <ref type="iAph" target="#cmrcheck">1199</ref>, <ref type="iAph" target="#cmrcheck">1200</ref>, <ref type="iAph" target="#cmrcheck">1201</ref>, <ref type="iAph" target="#cmrcheck">1202</ref>, <ref type="iAph" target="#cmrcheck">1203</ref>, <ref type="iAph" target="#cmrcheck">1204</ref>, <ref type="iAph" target="#cmrcheck">1205</ref>, <ref type="iAph" target="#cmrcheck">1206</ref>, <ref type="iAph" target="#cmrcheck">1207</ref>, <ref type="iAph" target="#cmrcheck">1208</ref>, <ref type="iAph" target="#cmrcheck">1209</ref>, <ref type="iAph" target="#cmrcheck">1210</ref>; all are by women, and apparently bore caryatids (see <ref type="iAph" target="#cmrcheck">1198</ref>).</p>
-         </div>
+           <!--  <p>Fragment from one of the series of dedications from the East Court of the Hadrianic Baths: <ref type="iAph" target="#cmrcheck">1184</ref>, <ref type="iAph" target="#cmrcheck">1186</ref>, <ref type="iAph" target="#cmrcheck">1187</ref>, <ref type="iAph" target="#cmrcheck">1188</ref>, <ref type="iAph" target="#cmrcheck">1189</ref>, <ref type="iAph" target="#cmrcheck">1190</ref>, <ref type="iAph" target="#cmrcheck">1191</ref>, <ref type="iAph" target="#cmrcheck">1192</ref>, <ref type="iAph" target="#cmrcheck">1193</ref>, <ref type="iAph" target="#cmrcheck">1194</ref>, <ref type="iAph" target="#cmrcheck">1195</ref>, <ref type="iAph" target="#cmrcheck">1196</ref>, <ref type="iAph" target="#cmrcheck">1197</ref>, <ref type="iAph" target="#cmrcheck">1198</ref>, <ref type="iAph" target="#cmrcheck">1199</ref>, <ref type="iAph" target="#cmrcheck">1200</ref>, <ref type="iAph" target="#cmrcheck">1201</ref>, <ref type="iAph" target="#cmrcheck">1202</ref>, <ref type="iAph" target="#cmrcheck">1203</ref>, <ref type="iAph" target="#cmrcheck">1205</ref>, <ref type="iAph" target="#cmrcheck">1206</ref>, <ref type="iAph" target="#cmrcheck">1207</ref>, <ref type="iAph" target="#cmrcheck">1208</ref>, <ref type="iAph" target="#cmrcheck">1209</ref>, <ref type="iAph" target="#cmrcheck">1210</ref>; all are by women, and apparently bore caryatids (see <ref type="iAph" target="#cmrcheck">1198</ref>).</p>
+        -->  </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="boulanger"/> <citedRange>A, p.63, no 26</citedRange> (1905), 
-               whence <citedRange>B 13, no.15</citedRange></bibl>. 
+            <p><bibl><ptr target="mendel"/><citedRange></citedRange></bibl>; 
+               <bibl><ptr target="boulanger"/> <citedRange>A, 63, no. 24</citedRange> 
+              <!-- check whence  <citedRange>C, 27</citedRange>--></bibl>;
+               <bibl><ptr target="nyu"/> <citedRange>84.74</citedRange></bibl>
             </p>
          </div>
       </body>
