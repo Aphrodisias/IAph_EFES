@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Christian prayer</title>
+            <title>Building restoration text</title>
             <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
          </titleStmt>
@@ -19,7 +19,8 @@
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph170038</idno>
+            <idno type="filename">iAph030106</idno>
+            <idno type="prevfilename">iAph170034</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -34,26 +35,25 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment of <material>marble</material> broken on all sides: 
-                              <dimensions><height>0.29</height><width>0.57</width><depth>0.135</depth></dimensions>.
-                           </p> </support>
+                           <p><material>Μarble</material> <objectType>plaque</objectType> broken at left: 
+                              <dimensions><height>0.272</height><width>0.45</width><depth>0.04</depth></dimensions> </p> </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Lightly 
-                           <rs type="execution" ref="scalpro">incised</rs> in a slanting line on the face.</layout>
+                        <layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face, within double guidelines.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Irregular, <height>0.035-0.065</height></handNote>
+                     <handNote><height>0.02-0.04</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0401" notAfter="0599" evidence="lettering">Fifth century CE or later</origDate>
+                     <origDate notBefore="0401" notAfter="0499" evidence="lettering titulature">Fifth century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphquarries">Quarries</placeName></provenance>
+                     <placeName ref="#aphnorthagora">North Agora</placeName>, at the southeast corner, reused in the pavement.</provenance>
                      <provenance type="observed">Museum</provenance></history>
             </msDesc>
          </sourceDesc>
@@ -95,12 +95,21 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <ab><lb n="1"/><persName type="divine" ref="#iesus"><addName nymRef="Κύριος">Κύριε</addName></persName> <w>βοήθ<supplied reason="lost">ι</supplied></w></ab></div>
+            <ab>
+            <lb n="1"/><g ref="#crux"/> <w>Εὐτυχῶϲ</w> <g ref="#crux"/>
+<lb n="2"/><w><supplied reason="lost">ἀνεν</supplied>εώθη</w> <w><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <w>τοῦτο</w> <w>τὸ</w> <w>ἔρ
+<lb n="3" break="no"/><supplied reason="lost">γον</supplied></w> <supplied reason="lost"><w>ἐκ</w></supplied> <w>θεμελίων</w> <w lemma="ἐπί">ἐπὶ</w> <persName type="attested"><name nymRef="#Φλάβιος"><expan><abbr>Φλ</abbr><ex>αβίου</ex></expan></name>
+<lb n="4"/><gap atLeast="4" atMost="5" reason="lost" unit="character"/><name nymRef="#-ος"><seg part="F">ου</seg></name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="περίβλεπτος"><expan><abbr>περιβλ</abbr><ex>έπτου</ex></expan></w> <w><expan><abbr>τριβ</abbr><ex>ούνου</ex></expan></w>
+<lb n="5"/><supplied reason="lost" cert="low"><w><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <w><expan><abbr>πατρ</abbr><ex>ὸϲ</ex></expan></w></supplied> <w><supplied reason="lost">τ</supplied>ῆς</w>
+                <w><expan><abbr>λα<supplied reason="lost">μ</supplied>πρ</abbr><ex>ᾶϲ</ex></expan></w> <placeName type="ethnic" ref="#aphrodisias" nymRef="#Ἀφροδεισιεύς"><expan><abbr>Ἀφροδ</abbr><ex>ιϲιέων</ex></expan></placeName> <w><expan><abbr>μητροπ</abbr><ex>όλεωϲ</ex></expan></w>
+</ab></div>
          
-         <div type="apparatus"><listApp><app loc="1"><rdg resp="chaniotis2008">or βοήθ<supplied reason="lost">ησον</supplied></rdg></app></listApp></div>
-         
-         <div type="translation" xml:lang="en" source="#CMR">
-            <p>Lord help [- - - </p>
+         <div type="translation" xml:lang="en" source="#chaniotis2008">
+            <p> With good fortune. This work too was renewed from the foundations up under Fl(avius) [ . . . . ]us, tribunus, 
+            [father?] of the most splendid metropolis of the Aphrodisieis.</p>
+         </div>
+         <div type="translation" xml:lang="fr" source="#AE">
+            <p> Bonheur! Ce bâtiment aussi a été rénové depuis ses fondation par Flauius [---] spectabilis, père (?) de la splendide métropole des Aphrodisiens.</p>
          </div>
         
          
@@ -108,11 +117,16 @@
             
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> <citedRange>01.013</citedRange>, <citedRange>I 01.030</citedRange></bibl></p>
+            <p><bibl><ptr target="nyu"/> <citedRange>I 02.003</citedRange> <citedRange>02.024</citedRange></bibl></p>
          </div>
          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="chaniotis2008"/> <citedRange>5</citedRange></bibl>, whence 
-               <bibl><ptr target="seg"/> <citedRange>58.1195</citedRange></bibl></p>
+            <p><bibl><ptr target="smithratte2004a"/> <citedRange>390</citedRange> (mention)</bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>54.1019</citedRange></bibl>; 
+               <bibl><ptr target="chaniotis2008"/> <citedRange>1</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>58.1191</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>2009.1446</citedRange></bibl>,
+               <bibl><ptr target="BE"/> <citedRange>2011.707</citedRange></bibl>.<!-- check -->
+            </p>
          </div>
       </body>
    </text>
