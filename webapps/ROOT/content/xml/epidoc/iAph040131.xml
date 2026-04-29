@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Honours</rs> for Hierokles</title>
+            <title>Dedication  of a <seg cert="low">caryatid</seg></title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -15,8 +15,8 @@
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
             <idno type="filename">iAph040131</idno>
-            <idno type="IAph2007">iAph160915</idno>
-            <idno type="JMR2004">915</idno>
+            <idno type="IAph2007">iAph161200</idno>
+            <idno type="JMR2004">1200</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -31,28 +31,31 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Plain <material>white marble</material>
-                              <objectType>statue base</objectType>, with a variety of clamp-holes on top (<dimensions><width unit="metre">0.73</width> <height unit="metre">0.265</height> <depth unit="metre">0.59</depth></dimensions>).</p>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>statue base</objectType> with simple moulding above on three sides (<dimensions unit="metre"><width>0.61</width><height>0.50</height><depth>0.51</depth></dimensions>), broken away below; there is a rectangular hole in the top.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on upper moulding, which is chipped (l. 1), on lower moulding (line 2) and (line 3 following) on the face, which is damaged.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Lines 4,5, <height unit="metre">0.025</height>; lines 2,3, <height unit="metre">0.02</height>; final omicron in lines 1, 2 smaller; last letter in line 4 crowded; dot for stop.</handNote>
+                     <handNote>
+                        <height unit="metre">0.045</height>
+                     </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0099" evidence="lettering">First century CE</origDate>
+                     <origPlace><placeName ref="#aphbaths">Hadrianic Baths</placeName>, <placeName type="monuList" ref="#aphbathseastcourt" cert="low">East Court</placeName>: ?Caryatid portico</origPlace>
+                     <origDate notBefore="0134" notAfter="0166" precision="medium" evidence="lettering monument group prosopography">Mid second century CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphsouthagora">South Agora/Place of Palms</placeName>, <placeName type="monuList" ref="#aphagoragate">Agora Gate/Propylon</placeName>, in the basin,  with <ref type="inscription" target="iAph160914">16.914</ref></provenance>
+                     <placeName ref="#aphsouthagora">South Agora/Place of Palms</placeName>: <placeName type="monuList" ref="#aphsagorawportico">West Portico</placeName>, south west corner.</provenance>
                   <provenance type="observed">Museum</provenance>
-                  </history>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -60,22 +63,39 @@
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
          </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
          <creation>Transcription (Reynolds)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2007-04-23" who="#GB">hand tidied</change>
-         <change when="2007-04-19" who="Elliott-Hall">Batch converted Word2XML</change>
+         <change when="2007-01-24" who="Charlotte-Tupman">Hand tidied</change>
+         <change when="2005-04-07" who="Elliott-Hall">Batch converted Word2XML</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="88_B_22.jpg">
-            <desc>Face (M. Roueché, 1988)</desc>
+         <graphic url="NY_pr_181.jpg">
+            <desc>Face (Mehmet Ali Döğenci, 1984)</desc>
          </graphic>
-         <graphic url="88_B_23.jpg">
-            <desc>Face (M. Roueché, 1988)</desc>
+         <graphic url="85_H_24A.jpg">
+            <desc>Face (M. Roueché, 1985)</desc>
          </graphic>
       </surface>
    </facsimile>
@@ -83,28 +103,36 @@
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
 
-<ab><lb n="1"/> <w lemma="ὁ">ἡ</w> <w lemma="γερουσία">γερουσία</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ἡ</w> <w lemma="βουλή">βουλὴ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="δῆμος">δῆμος</w> 
-   <lb n="2"/> <w lemma="τιμάω">ἐτείμησαν</w> <g ref="#stop"/> <persName type="attested"><name nymRef="#Ἱεροκλῆς">Ἱεροκλέα</name> <g ref="#stop"/> <persName type="attested"><name nymRef="#Ἱεροκλῆς">Ἱεροκλέους</name> 
-      <lb n="3"/> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Ἄδραστος">Ἀδράστου</name></persName></persName></persName> <g ref="#stop"/> <w lemma="ἀνήρ">ἄνδρα</w> <w lemma="καλός">καλὸν</w> <w lemma="καί">καὶ</w> 
-   <lb n="4"/> <w lemma="ἀγαθός">ἀγαθὸν</w> <w lemma="διά">διὰ</w> <w lemma="πρόγονος">προγόνων</w> <w lemma="φιλαγάθως">φιλαγάθως</w> 
-   <lb n="5"/> <w lemma="διατίθημι">διατεθέντα</w> <w lemma="ὁ">τῇ</w> <w lemma="γερουσία">γερουσίᾳ</w> <g ref="#scroll"/> </ab>
+<ab><lb n="1"/>  <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-2246"><name nymRef="#Οὐλπία">Οὐλπία</name>  <persName type="attested"  ref="http://www.lgpn.ox.ac.uk/id/V5b-2480"><name nymRef="#Ἀπολλώνιος">Ἀπολλων<supplied reason="lost">ί</supplied>
+            <lb n="2" break="no"/>ου</name></persName>  <w>πρειμοπειλαρί
+               <lb n="3" break="no"/>ου</w> <w lemma="καί">καὶ</w> <w>ἀπὸ</w> <w>στρα
+                  <lb n="4" break="no"/>τοπεδαρχίας</w>  
+      <lb n="5"/><w><unclear>θυγ</unclear>ατὴρ</w>  <name nymRef="#Ἀπολλωνία">Ἀπολ
+         <lb n="6" break="no"/>λωνία</name></persName> <w lemma="ὁ">τῇ</w> <w>Πα
+            <lb n="7" break="no"/><g ref="#scroll"/>τρίδι</w>    <g ref="#scroll"/>  </ab>
 </div>
-         <div n="notyet" type="translation">
-            <p>The Gerousia and the Council and the People honoured Hierokles son of Hierokles the son of Adrastos, a fine and good man by ancestral tradition, 
-               benevolently disposed to the Gerousia.</p>
-         </div><!-- check lgpn -->
+         <div type="translation" xml:lang="en" resp="#JMR">
+            <p>Ulpia Apollonia, daughter of Apollonios, <foreign xml:lang="la">primipilarius</foreign>, and former camp prefect, to her homeland</p>
+         </div>
+         <div type="translation" xml:lang="en" source="#rrrs2007">
+            <p>Ulpia Apollonia daughter of Apollonius, <foreign>primipilarius</foreign> and former camp prefect (<foreign>apostratopedarchias</foreign>) (set up the statue) to the <foreign>patris</foreign>.</p>
+         </div>
          <div type="commentary">
-            <!--<p>This man and his brother, honoured in  <ref type="iAph" target="#cmrcheck">914</ref> (= 87.371) are not otherwise known</p>
-          --> </div>
+            <!-- <p>One of the series of dedications from the East Court of the Hadrianic Baths: <ref type="iAph" target="#cmrcheck">1184</ref>, <ref type="iAph" target="#cmrcheck">1186</ref>, <ref type="iAph" target="#cmrcheck">1187</ref>, <ref type="iAph" target="#cmrcheck">1188</ref>, <ref type="iAph" target="#cmrcheck">1189</ref>, <ref type="iAph" target="#cmrcheck">1190</ref>, <ref type="iAph" target="#cmrcheck">1191</ref>, <ref type="iAph" target="#cmrcheck">1192</ref>, <ref type="iAph" target="#cmrcheck">1193</ref>, <ref type="iAph" target="#cmrcheck">1194</ref>, <ref type="iAph" target="#cmrcheck">1195</ref>, <ref type="iAph" target="#cmrcheck">1196</ref>, <ref type="iAph" target="#cmrcheck">1197</ref>, <ref type="iAph" target="#cmrcheck">1198</ref>, <ref type="iAph" target="#cmrcheck">1199</ref>, , <ref type="iAph" target="#cmrcheck">1201</ref>, <ref type="iAph" target="#cmrcheck">1202</ref>, <ref type="iAph" target="#cmrcheck">1203</ref>, <ref type="iAph" target="#cmrcheck">1204</ref>, <ref type="iAph" target="#cmrcheck">1205</ref>, <ref type="iAph" target="#cmrcheck">1206</ref>, <ref type="iAph" target="#cmrcheck">1207</ref>, <ref type="iAph" target="#cmrcheck">1208</ref>, <ref type="iAph" target="#cmrcheck">1209</ref>, <ref type="iAph" target="#cmrcheck">1210</ref>; all are by women, and apparently bore caryatids (see <ref type="iAph" target="#cmrcheck">1198</ref>).</p>
+            --> <p><ref type="inscription" target="iAph050030"/> is the same text, but with a different layout.</p><!-- add ref -->
+         </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> <citedRange>87.372</citedRange>, <citedRange>SBI 77</citedRange></bibl>.</p>
+            <p><bibl><ptr target="nyu"/> <citedRange>84.55</citedRange>, <citedRange>I-75</citedRange></bibl>.
+            </p>
          </div>
          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="rrrs2006"/> <citedRange>H.103 (listed)</citedRange></bibl>; 
-               <bibl><ptr target="thomas2024"/> <citedRange>171, 5</citedRange> (mention)</bibl> 
-            </p> 
-            
+            <p><bibl><ptr target="rrrs2007"/> <citedRange>B 25a</citedRange> (description)</bibl>; 
+               <bibl><ptr target="jmr2006"/><citedRange></citedRange></bibl>, whence 
+               <bibl><ptr target="AE"/> <citedRange>2008.1387</citedRange></bibl>, 
+               <bibl><ptr target="seg"/> <citedRange>58.1152a</citedRange></bibl>.
+            </p>
          </div>
+         
       </body>
    </text>
 </TEI>
