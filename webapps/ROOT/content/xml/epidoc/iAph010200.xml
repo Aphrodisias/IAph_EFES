@@ -6,20 +6,15 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Christian prayer</title>
+            <title>Epitaph of Ioulianos</title>
             <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
          </titleStmt>
-         <editionStmt>
-            <edition>
-               <title level="m">Inscriptions of Aphrodisias</title>
-               <title type="abbreviated" level="m">IAph</title>
-            </edition>
-         </editionStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph170037</idno>
+            <idno type="filename">iAph010200</idno>
+            <idno type="prevfilename">iAph170042</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -28,17 +23,17 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <repository><placeName ref="#aphtemple">Temple/Church</placeName></repository>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Three non-joining fragments of a <material>marble</material> <objectType>screen</objectType>: 
-                             a: Broken on the right and left, and below <dimensions><height>0.15</height><width>0.19</width><depth>0.19</depth></dimensions>; 
-                              a: Broken on the right and left, and below <dimensions><height>0.15</height><width>0.11</width><depth>0.19</depth></dimensions>;
-                              a: Broken on the right and left, below and at the back <dimensions><height>0.08</height><width>0.10</width><depth>0.11</depth></dimensions>.
-                           </p> </support>
+                           <p>The upper right corner of a white <material key="marmor">marble</material>
+                              <objectType>plaque</objectType> with flat surrounding moulding 
+                              (<dimensions><height unit="metre">0.41</height> <width unit="metre">0.66</width> <depth unit="metre">0.155</depth></dimensions>) 
+                              </p>
+                        </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
@@ -46,17 +41,21 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height>0.025-0.033</height>; hanging scroll for abbreviation</handNote>
+                     <handNote>
+                        <height unit="metre">0.03-0.04</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0401" notAfter="0599" evidence="lettering">Fifth century CE or later</origDate>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0301" notAfter="0400" precision="medium" evidence="lettering">Fourth century CE.</origDate>
                   </origin>
+
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
                      <placeName ref="#aphtemple">Temple/Church</placeName></provenance>
-                     <provenance type="observed">Museum</provenance></history>
+                
+                  <provenance type="observed">Findspot.</provenance>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -79,14 +78,13 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
-               
             </keywords>
          </textClass>
-         
-         <creation></creation>
+         <creation>Transcription (Roueché).</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2024-03-26" who="#CMR">Encoded</change>
+         <change when="2024-04-07" who="#CMR">Marked up</change>
+        
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -97,25 +95,24 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><expan><supplied reason="lost"><abbr></abbr></supplied><ex></ex></expan> <g ref="#crux"/> <milestone unit="block" n="a"/><w lemma="βοηθέω">βοήθη<unclear>ϲ</unclear><milestone unit="block" n="g"/><supplied reason="lost">ον</supplied></w> 
-               
-               <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w>τοῖϲ</w></supplied> <w lemma="ἀδελφός"><supplied reason="lost" cert="low">ἀδελ</supplied><milestone unit="block" n="c"/>φοῖϲ</w> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <orig>Π</orig><gap reason="lost" extent="unknown" unit="character"/></ab></div>
-         
-         <div type="apparatus"><listApp><app><note>There are traces of an abbreviation mark to the left of the cross.</note></app></listApp></div>
-         <div type="translation" xml:lang="en" source="#chaniotis2008">
-            <p>[Lord?] help [the brothers?] and P[- - - </p>
-         </div>
         
-         
-         <div type="commentary" n="notyet">
-            
+        <ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-8135"><name nymRef="#Ἰουλιανός">Ἰουλιανοῦ</name></persName>  </ab>
+      </div>
+         <div type="translation" xml:lang="en" source="#CMR">
+            <p>
+               <supplied reason="subaudible">Tomb of</supplied> Ioulianos.</p>
+         </div>
+         <div type="commentary">
+            <p> Very similar to <ref type="inscription" n="176" target="iAph080264"/>, <ref type="inscription" n="177" target="iAph020528"/>, 
+               <ref type="inscription" n="178" target="iAph010191"/><!--; see discussion at <ref type="eAla-text" n="IX.45" target=".xml"/>. --></p>
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> <citedRange>I 99.004</citedRange></bibl></p>
-         </div>
+             <p><bibl><ptr target="nyu"/> <citedRange>I 02.014</citedRange></bibl></p>
+          </div>
          <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="chaniotis2008"/> <citedRange>4</citedRange></bibl>, whence 
-               <bibl><ptr target="seg"/> <citedRange>58.1194</citedRange></bibl></p>
+            <p><bibl><ptr target="chaniotis2008"/> <citedRange>9</citedRange></bibl>, whence 
+               <bibl><ptr target="seg"/> <citedRange>58.1199</citedRange></bibl></p>
+         
          </div>
       </body>
    </text>
