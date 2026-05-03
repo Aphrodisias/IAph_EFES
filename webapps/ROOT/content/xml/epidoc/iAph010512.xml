@@ -6,17 +6,15 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragment</title>
-            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <title>Honorary inscription for Tiberius Gemellus</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
-            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph161063</idno>
-            <idno type="IAph2007">iAph161063</idno>
-            <idno type="JMR2004">1063</idno>
+            <idno type="filename">iAph010512</idno>
+            <idno type="prevfilename">iAph170090</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -31,28 +29,30 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment from the upper edge of a<material> white marble</material>
-                              <objectType>plaque</objectType> (<dimensions unit="metre"><width>0.225</width><height>0.17</height><depth>0.03</depth></dimensions>) with all other sides broken.</p>
+                           <p><material key="marmor">Marble</material>
+                              <objectType>statue base</objectType>, with moulding above, damaged on the face:  
+                             <!-- FIND  <dimensions unit="metre"><width>0.525</width><height>1.30</height><depth>0.48</depth></dimensions>--></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Square, ? 4th century; <height unit="metre">0.05</height>
-                     </handNote>
+                     <handNote></handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0301" notAfter="0499" evidence="lettering">Third-4th century CE</origDate>
+                     <origPlace><placeName ref="#aphsebast">Sebasteion</placeName>, <placeName type="monuList" ref="#aphsebastprop">Propylon</placeName></origPlace>
+                     <origDate notBefore="0019" notAfter="0037" evidence="prosopography">19-37 CE</origDate>
                   </origin>
-                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphtetrastoon">Tetrastoon</placeName>:<placeName type="monuList" ref="#aphbyzdefwall">Byzantine defence wall</placeName></provenance>
-                  <provenance type="observed">Museum</provenance> </history>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: reused in a wall in the
+                     <placeName ref="#aphtetrapylonstr">Tetrapylon Street</placeName>
+                     </provenance>
+                  <provenance type="observed">Museum</provenance>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -60,6 +60,7 @@
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
          </langUsage>
          <textClass>
             <keywords>
@@ -73,43 +74,49 @@
                   <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
                </term>
                <term>
-                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+                  <placeName type="modernFindspot" key="Karaçasu" ref="https://sws.geonames.org/310044/">Karaçasu</placeName>
                </term>
             </keywords>
          </textClass>
-         <creation>Transcription (Reynolds)</creation>
+         <creation>Transcription (Chaniotis).</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-09-09" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2006-11-07" who="Elliott-Hall">Batch converted Word2XML</change>
-         <change when="2007-01-01" who="#GB">hand tidied</change>
+         <change when="2024-05-03" who="#CMR">Marked up</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="83_A_27.jpg">
-            <desc>Face (M. Roueché, 1983)</desc>
-         </graphic>
+         
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <ab>
-               <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><w part="I"><supplied reason="lost">π</supplied>ροτερο</w><gap reason="lost" unit="character" extent="unknown"/>
-               <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>Τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
-               <lb n="3"/><gap reason="lost" unit="line" extent="unknown"/>
-            </ab>
+        
+		<ab><lb n="1"/> <persName type="emperor" ref="#gemellus"><name nymRef="Τιβέριος"><unclear>Τιβ</unclear><supplied reason="lost">έριον</supplied></name>
+           
+            <lb n="2"/><addName nymRef="Καῖσαρ">Καίσαρα</addName>
+            <lb n="3"/><persName type="emperor"><name nymRef="#Δροῦσος">Δρούσου</name></persName></persName>
+            <lb n="4"/><w lemma="υἱός">υἱόν</w></ab></div>
+         
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>Tiberius Caesar, son of Drusus</p>
          </div>
-         <div type="translation">
-            <p>[...] former [...]</p>
+         <div type="translation" xml:lang="fr" source="#AE">
+            <p>(Statue de) Tiberius César, fils de Drusus</p>
          </div>
          <div type="commentary">
-            <p> </p>
-         </div>
+            <p>PIR2 , I, 226</p>
+            </div>
          <div type="bibliography" subtype="transcription">
-            <p>Recorded: <bibl><ptr target="nyu"/> in 1982, <citedRange>82.222</citedRange></bibl>.</p>
-         </div>
+            <p><bibl><ptr target="nyu"/> <citedRange/>I 15.01</bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+             <p><bibl><ptr target="smithogus2017"/> <citedRange>25</citedRange> (description, photograph)</bibl>, whence 
+                <bibl><ptr target="iam"/> <citedRange>2018.166</citedRange> (lines 2-4)</bibl>, 
+                <bibl><ptr target="AE"/> <citedRange>2017.1512</citedRange></bibl>, 
+                <bibl><ptr target="seg"/> <citedRange>67.709</citedRange></bibl></p>
+          </div>
       </body>
    </text>
 </TEI>
