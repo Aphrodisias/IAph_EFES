@@ -47,12 +47,12 @@
     </field>
   </xsl:template>
   
-  <xsl:template match="tei:div[@type='bibliography']" mode="facet_previously_unpublished">
+    <xsl:template match="tei:TEI" mode="facet_previously_unpublished">
     <field name="previously_unpublished">
       <xsl:choose>
-        <xsl:when test="not(descendant::tei:ptr[contains(@target, 'iaph2007')])"><xsl:text>Not published in IAph2007</xsl:text></xsl:when>
-        <xsl:when test="descendant::tei:ptr[contains(@target, 'iaph2007')][@type='rev']"><xsl:text>Significantly revised since IAph2007</xsl:text></xsl:when>
-        <xsl:otherwise><xsl:text>Published in IAph2007</xsl:text></xsl:otherwise>
+          <xsl:when test="descendant::tei:div[@type='bibliography']//tei:ptr[contains(@target, 'iaph2007')][@type='rev']"><xsl:text>Significantly revised since IAph2007</xsl:text></xsl:when>
+          <xsl:when test="descendant::tei:div[@type='bibliography']//tei:ptr[contains(@target, 'iaph2007')]"><xsl:text>Published in IAph2007</xsl:text></xsl:when>
+          <xsl:when test="not(descendant::tei:div[@type='bibliography']//tei:ptr[contains(@target, 'iaph2007')])"><xsl:text>Not published in IAph2007</xsl:text></xsl:when>
       </xsl:choose>
     </field>
   </xsl:template>
@@ -86,7 +86,7 @@
   </xsl:template>
   
   <xsl:template name="field_previously_unpublished">
-    <xsl:apply-templates mode="facet_previously_unpublished" select="/tei:TEI/tei:text/tei:body/tei:div[@type='bibliography']"/>
+    <xsl:apply-templates mode="facet_previously_unpublished" select="/tei:TEI"/>
   </xsl:template>
 
 </xsl:stylesheet>
