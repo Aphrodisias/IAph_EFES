@@ -31,10 +31,10 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Seven <material key="marmor">white marble</material>
+                           <p>Six <material key="marmor">white marble</material>
                               <objectType>bench</objectType>es: i: <dimensions><height unit="metre">0.46</height> <width unit="metre">1.25</width> <depth unit="metre">0.335</depth></dimensions>. 
                               ii: Broken below, and to right, <dimensions><height unit="metre">0.45</height>
-<width unit="metre">1.35</width></dimensions> × depth not measurable. iii: No measurements. iv: <dimensions><height unit="metre">0.45</height> <width unit="metre">1.02</width> <depth unit="metre">0.39</depth></dimensions>. 
+<width unit="metre">1.35</width></dimensions> × depth not measurable. iii: <dimensions><height unit="metre">0.45</height> <width unit="metre">1.02</width> <depth unit="metre">0.39</depth></dimensions>. 
                               v: <dimensions><height unit="metre">0.44</height> <width unit="metre">0.98</width></dimensions> × depth not
 measurable. vi: <dimensions><height unit="metre">0.42</height>
 <width unit="metre">1.53</width>
@@ -58,10 +58,10 @@ hidden.</layout>
                      <origDate notBefore="0301" notAfter="0600" precision="medium" evidence="lettering re-use">Fourth to sixth centuries CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphtetrastoon">Tetrastoon</placeName>: i and iv stray finds; ii, iii, v, vi and re-used
+                     <placeName ref="#aphtetrastoon">Tetrastoon</placeName>: i a stray find; ii, iii, v, vi and re-used
                      in the Byzantine <placeName type="monuList"  ref="#aphbyzdefwall">Byzantine defence wall</placeName> across the east end; vii reused in the
 upper structure at the north-east end of the cavea.</provenance>
-                  <provenance type="observed">ii, iii, vii findspot; i, iv, v, vi loose in the Theatre
+                  <provenance type="observed">ii, iii, vii findspot; i, v, vi loose in the Theatre
 area.</provenance>
                </history>
             </msDesc>
@@ -91,6 +91,7 @@ area.</provenance>
          <creation>Transcription (Roueché).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-06-02" who="#CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2004-06-08" who="#GB">Checked and fixed all image divs and refs</change>
          <change when="2004-04-06" who="Juan-Garcés">Completed lemmatisation, checked figure ids, tagged keywords</change>
@@ -106,14 +107,15 @@ area.</provenance>
          <graphic url="72_J_03.jpg">
             <desc>i (M. Roueché, 1972)</desc>
          </graphic>
+         
+         <graphic url="72_F_15A.jpg">
+            <desc>ii and iii, in the wall (M. Roueché, 1972)</desc>
+         </graphic>
          <graphic url="75_J_19A.jpg">
-            <desc>ii and iii (M. Roueché, 1975)</desc>
+            <desc>ii and iii, in the wall (M. Roueché, 1975)</desc>
          </graphic>
          <graphic url="83_E_14.jpg">
-            <desc>iv (M. Roueché, 1983)</desc>
-         </graphic>
-         <graphic url="72_F_15A.jpg">
-            <desc>iv, detail (M. Roueché, 1972)</desc>
+            <desc>iii, after extraction (M. Roueché, 1983)</desc>
          </graphic>
          <graphic url="76_D_30.jpg">
             <desc>v and vi (M. Roueché, 1976)</desc>
@@ -134,7 +136,7 @@ area.</provenance>
 			        
 				<div n="iii" type="textpart" subtype="section"><ab><lb n="1"/><w lemma="Ἡρακλειταί"><expan><abbr> Ἡρακ</abbr><ex>λειτῶν</ex></expan></w></ab></div> 
 			        
-				<div n="iv" type="textpart" subtype="section"><ab><lb n="1"/> <w lemma="Ἡρακλειταί"><expan><abbr>Ἡρακ</abbr><ex>λειτῶν</ex></expan></w></ab></div> 
+				<div n="iv" type="textpart" subtype="section"><ab><note>This is item iii, recorded twice</note></ab></div> 
 			        
 				<div n="v" type="textpart" subtype="section"><ab><lb n="1"/> <w lemma="Ἡρακλειταί"><expan><abbr>Ἡρακ</abbr><ex>λειτῶν</ex></expan></w></ab></div>
 			        
@@ -142,11 +144,15 @@ area.</provenance>
 			        
 				<div n="vii" type="textpart" subtype="section"><ab><lb n="1"/> <w lemma="Θεοδωριταί"><expan><abbr>Θεο<supplied reason="lost" cert="low">δ</supplied></abbr><ex>ωριτῶν</ex></expan></w></ab></div>
       </div>
-         <div type="translation" xml:lang="en" source="#ala2004">
+         
+         <div type="apparatus"><listApp>
+               <app loc="iv"><rdg resp="#ala2004, #iaph2007"><note>The item recorded as number iv is in fact identical with number iii, after the dismantling of the wall.</note></rdg></app></listApp></div>
+         
+         <div type="translation" xml:lang="en" source="#CMR">
             <p><note>i</note>: Theod(oritai?)</p>
             <p><note>ii</note>: Eut(ychitai?)</p>
             <p><note>iii</note>: Herak(leitai?)</p>
-            <p><note>iv</note>: Herak(leitai?)</p>
+            <p><note>iv: a duplicate</note></p>
             <p><note>v</note>: Herak(leitai?)</p>
             <p><note>vi</note>: Herak(leitai?)</p>
             <p><note>vii</note>: Theo[d](oritai?)</p>
