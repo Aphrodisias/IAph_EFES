@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Caption</title>
+            <title>Name</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
-            
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph020706</idno>
+            <idno type="filename">iAph160182</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -29,27 +29,28 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>A <material>mosaic</material> floor panel, <dimensions><height>1.78</height> <width>1.58</width></dimensions>
-                              </p>
+                           <p>
+                              <objectType>Block</objectType>, complete above and below</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="tesseris">Mosaic</rs> lettering above one female figure in the centre, and traces of another to the right</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face; the text may have started on an upper block</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>No measurements</handNote>
+                     <handNote>
+                        <height unit="metre">0.03-0.06</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace><placeName ref="#aphodeon">Bouleuterion/Odeon</placeName>, <placeName type="monuList" ref="#aphodeoneast">East Area</placeName></origPlace>
-                     <origDate notBefore="0125" notAfter="0150" precision="medium" evidence="lettering">First-second centuries CE</origDate>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0300" precision="medium" evidence="lettering">First to third centuries CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="#aphrodisias">Aphrodisias</placeName>: 
-                     <placeName ref="#aphodeon">Bouleuterion/Odeon</placeName>, <placeName type="monuList" ref="#aphodeoneast">East Area</placeName>, in an unidentified building</provenance>
-                  <provenance type="observed">Museum</provenance>
+                     <placeName ref="#aphstray">Stray</placeName>?</provenance>
+                  <provenance type="observed">Museum (1983)</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -58,7 +59,6 @@
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Ancient Greek</language>
-            <language ident="grc-Latn">Transliterated Greek</language>
          </langUsage>
          <textClass>
             <keywords>
@@ -74,55 +74,46 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
-               <term>
-                  <rs type="textType" key="sacer">Religious</rs>
-               </term>
             </keywords>
          </textClass>
-         <creation>Transcription (Roueché).</creation>
+         <creation>Transcription (Roueché)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2026-03-17" who="#CMR">Transcribed</change>
+         <change when="2026-06-25"  who="#CMR">Transcribed</change>
+         
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="MediumFormat1973_27_04.jpg">
-         <desc>Upper part (Mehmet Ali Döğenci, 1973)</desc>
-      </graphic>
-      <graphic url="MediumFormat1983_002_08.jpg">
-         <desc>Face (Mehmet Ali Döğenci, 1983)</desc>
-      </graphic>
-      <graphic url="80_G_10.jpg">
-         <desc>Face (M. Roueché, 1980)</desc>
-      </graphic>
+      <surface>
+         <graphic url="MediumFormat1983_042_09.jpg">
+            <desc>Face (Mehmet Ali Döğenci, 1983)</desc>
+         </graphic>
+      </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-
-         <div type="textpart" n="Column 1"><ab><lb n="1"/> <gap reason="lost" extent="unknown" unit="character"/><orig>σ</orig>
-         <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/></ab></div>
-		
-		  <div type="textpart" n="Column 2"><ab><lb n="1"/> <persName type="divine" ref="#galene"><name nymRef="#Γαλήνη">Γαλή
-		    <lb n="2"/>νη</name></persName></ab></div>
-            <div type="textpart" n="Column 3">
-               <ab><lb n="1"/><g ref="#stop"/> <persName type="divine" ref="#aphrodite"><name nymRef="#Ἀφροδείτη">Ἀφ<unclear>ρ</unclear><supplied reason="lost">οδείτη</supplied></name></persName>
-		    </ab></div>
-	  
-         </div>
-
-         
+<ab><lb n="0"/>
+   <lb n="1"/> ιαν <w>τε</w> <w>ἀρχὴν</w> <w lemma="καί">καὶ</w> <w lemma="λειτουργία">λειτουργίαν</w>
+<lb n="2"/><w lemma="προθύμως">προθύμως</w> <w lemma="καί">καὶ</w> <w lemma="ἀνελλιπῶς">ἀνενλιπῶς</w> <w lemma="καί">καὶ</w>
+<lb n="3"/><w lemma="ἀνυπερβλήτως">ἀνυπερβλήτως</w> <w lemma="εὐεργέτης">εὐεργέτησαντα</w> λ
+<lb n="4"/><w lemma="καί">καὶ</w> <w lemma="μάλιστα">μάλιστα</w> <w lemma="ἐν">ἐν</w> <w>οἷς</w> <w>συνελαβε</w> τοτ
+<lb n="5"/> . ησαντα <w>δὲ</w> <w lemma="ὁμοίως">ὁμοίως</w> <w lemma="καί">καὶ</w> <w>διὰ</w> <w>τεκνα</w>
+<lb n="6"/> <w>οἵτινες</w> <w>διὰ</w> <w>πάσης</w> <w>ἀρχῆς</w> <w>κεκοσμη</w>
+<lb n="7"/> δα <w>τὴν</w> <w>δὲ</w> <w lemma="ἀνάστασις">ἀνάστασιν</w> <w>ποιησαμένης</w>
+<lb n="8"/>μων <persName type="attested"><name nymRef="#Ἀντωνία">Ἀντωνίας</name> <name nymRef="#Τατία">Τατιας</name></persName> <w>τῆς</w> <w lemma="θυγάτηρ">θυγατρός</w></ab>
+</div>
+        
          <div type="translation" xml:lang="en" resp="#CMR">
-            <p>Column 2: Calm. Column 3: Aphr[odite]</p>
+            <p></p>
          </div>
-         
+         <div type="commentary">
+            
+         </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> in <citedRange>1973</citedRange>, <citedRange>Odeon 23</citedRange></bibl></p>
+            <p><bibl><ptr target="nyu"/> in <citedRange>1983</citedRange></bibl></p>
           </div>
-         <div type="bibliography" subtype="publication">
-            <p><bibl><ptr target="campbell1991"/> <citedRange unit="entry">10-11</citedRange></bibl></p>
-            <!-- check Erim AJA 1974, 127, TAD 22.2 (1975) 77. Canpbell AIEMA bulletin 12, 1989, 305-312-->
-         </div>  
+          
       </body>
    </text>
 </TEI>
