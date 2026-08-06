@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://epidoc.stoa.org/schema/9.4/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Funerary fragment</title>
+            <title>Monumental fragment</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
          </titleStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph160186</idno>
+            <idno type="filename">iAph160209</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -22,33 +23,33 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <repository>Findspot</repository>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p> 
-                              <objectType>Block</objectType>, with only upper edge surviving. No measurements</p>
+                           <p>Fragment of a <objectType>panel</objectType> broken on all sides. No measurements</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face, within guidelines.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Square forms, wide but irregular. No measurements</handNote>
+                     <handNote>Distinctive and clearly cut, perhaps thrird-fourth century. No measurements</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0600" precision="medium" evidence="lettering">First to fifth centuries CE</origDate>
+                     <origDate notBefore="0201" notAfter="0400" precision="medium" evidence="lettering">Third to fourth centuries CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>: 
-                    built into a wall at an uncertain location in the survey area.</provenance>
-                  <provenance type="observed">Findspot (1993)</provenance>
+                     ? <placeName ref="#aphstray">Stray</placeName>
+                  </provenance>
+                  <provenance type="observed" when="1977">Museum (1977)</provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -74,40 +75,38 @@
                </term>
             </keywords>
          </textClass>
-         <creation>Transcription (Roueché)</creation>
+         <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2026-07-03"  who="#CMR">Transcribed from photograph</change>
-         
+         <change when="2026-08-06"  who="#CMR">Transcribed</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="35Neg1993_012_25.jpg">
-            <desc>Face (NYU, 1993)</desc>
-         </graphic>
          
+         <graphic url="77_E_09.jpg">
+            <desc>Face (M. Roueché, 1977)</desc>
+         </graphic>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab>  
-   <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig>νοϲμο</orig><gap reason="lost" unit="character" extent="unknown"/>
-    <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> <orig><unclear>γν</unclear>πα<unclear>τ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>
-
-</ab>
+            <lb n="0"/><gap reason="lost" unit="line" extent="unknown"/>
+<ab><lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ι</unclear><gap reason="lost" unit="character" quantity="1"/>  <unclear>λ</unclear></orig><gap reason="lost" unit="character" extent="unknown"/>  
+   <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><orig><unclear>ι</unclear>ον</orig><gap reason="lost" unit="character" extent="unknown"/> 
+   <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><orig>ηνιε</orig><gap reason="lost" unit="character" extent="unknown"/>
+   <lb n="3a"/><gap reason="lost" unit="line" extent="unknown"/>  </ab>
 </div>
          
-        
-         <div type="translation" xml:lang="en" resp="#CMR">
-            <p>Not usefully translatable</p>
+         <div type="translation">
+            <p>No translation possible.</p>
          </div>
          <div type="commentary">
             
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> in <citedRange>1993</citedRange></bibl></p>
+             <p><bibl><ptr target="nyu"/> <citedRange>68.151</citedRange></bibl></p>
           </div>
           
       </body>

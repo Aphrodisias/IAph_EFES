@@ -6,7 +6,7 @@
                 xmlns:fn="http://www.w3.org/2005/xpath-functions">
 
   <!-- This XSLT transforms a set of EpiDoc documents into a Solr
-       index document representing an index of month names in those
+       index document representing an index of festival names in those
        documents. -->
 
   <xsl:import href="epidoc-index-utils.xsl" />
