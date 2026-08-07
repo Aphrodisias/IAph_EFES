@@ -6,14 +6,19 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>?Paving stone</title>
+            <title><rs type="textType">Storage jar: measurement</rs> </title>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
-            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
          </titleStmt>
+         <editionStmt>
+            <edition>
+               <title level="m">Inscriptions of Aphrodisias</title>
+               <title type="abbreviated" level="m">IAph</title>
+            </edition>
+         </editionStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph160195</idno>
+            <idno type="filename">iAph160216</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -22,33 +27,32 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <repository>Findspot</repository>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><material>Blue marble</material> <objectType>paving slab</objectType>, with lower left corner broken. 
-                              No measurements.</p>
-                        </support>
+                           <p><material>White marble</material> <objectType>storage jar</objectType>. No measurement</p> </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <rs type="execution" ref="litteris scariphatis">Scratched</rs> in the centre of the surface, which is very pitted.</layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the shoulder.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>First to fourth centuries, clear and formal; no measurements
-                     </handNote>
+                     <handNote><height>0.04-0.05</height>
+                        </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0400" precision="medium" evidence="lettering">First to fourth centuries CE</origDate>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notBefore="0301" notAfter="0600" precision="medium" evidence="lettering">Fourth to sixth century CE</origDate>
                   </origin>
-                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>: <placeName ref="#aphstray">Stray</placeName> find?</provenance>
-                  <provenance type="observed">Museum (1986)</provenance> </history>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName> 
+                     <placeName ref="#aphcity">City</placeName>, <placeName type="monuList" ref="#aphvillage">Village</placeName>: on Pekmez Hill, southeast of the Han.</provenance>
+                     <provenance type="observed">Findspot</provenance></history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -71,43 +75,46 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
+               
             </keywords>
          </textClass>
-         <creation>Transcription (Roueché)</creation>
+         
+         <creation></creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2026-07-18"  who="#CMR">Transcribed</change>
-         
+         <change when="2026-08-07" who="#CMR">Encoded</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="35Neg1990_04_24.jpg">
-            <desc>Face (Mehmet Ali Döğenci, 1990)</desc>
+         <graphic url="85_F_02.jpg">
+            <desc>View (M. Roueché, 1985)</desc>
          </graphic>
-         
-         
+         <graphic url="85_F_88.jpg">
+            <desc>Detail (M. Roueché, 1985)</desc>
+         </graphic>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-               <lb n="1"/><rs type="acronym"><orig>ευ</orig></rs>
-               </ab>
+                        <lb n="1"/><w lemma="ζυγός"><expan><abbr>Ζ<hi rend="superscript">υ</hi></abbr><ex>υγά</ex></expan></w>
+                             <num value="837">ωλζ</num>
+                    </ab>
          </div>
-         
          
          <div type="translation" xml:lang="en" resp="#CMR">
-            <p>Not translatable</p>
-         </div>
-         <div type="commentary">
-          
-         </div>
-         <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> in <citedRange>1990</citedRange></bibl>.</p>
+            <p><supplied reason="explanation">Holds</supplied> 837 zuga</p>
          </div>
          
+         <div type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="nyu"/> <citedRange>1985</citedRange></bibl></p>
+         </div>
+        
       </body>
    </text>
 </TEI>
