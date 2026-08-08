@@ -6,19 +6,14 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Monumental inscription</rs> </title>
+            <title><rs type="textType">Place inscription of Theophylaktos</rs> </title>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
          </titleStmt>
-         <editionStmt>
-            <edition>
-               <title level="m">Inscriptions of Aphrodisias</title>
-               <title type="abbreviated" level="m">IAph</title>
-            </edition>
-         </editionStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph160217</idno>
+            <idno type="filename">iAph160218</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -27,32 +22,36 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+                  <repository>Findspot</repository>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><material>White marble</material> <objectType>revetment panel</objectType>, in fragments; <dimensions><height>0.36</height> <width>1.42</width></dimensions></p> </support>
+                           <p>
+                              <material key="marmor">White marble</material>
+                              <objectType>block</objectType> with one raised edge. No measurements</p>
+                        </support>
                      </supportDesc>
-                     <layoutDesc>
-                        <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> on face.</layout>
+                     <layoutDesc><layout>
+                        <rs type="execution" ref="litteris scariphatis">Graffito</rs> on the upper face.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Standard forms, first-third centuries, carefully cut, <height>0.26</height>
-                        </handNote>
+                     <handNote>Βroad and shallow, 
+                        <height unit="metre">0.05-0.09 (Φ)</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0300" precision="medium" evidence="lettering">First to third centuries CE</origDate>
+                     <origDate notBefore="0301" notAfter="0600" precision="medium" evidence="content lettering">Fourth to sixth century.</origDate>
                   </origin>
-                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName> 
-                     <placeName ref="#aphbaths">Hadrianic Baths</placeName> <!-- check --></provenance>
-                     <provenance type="observed">Museum (1985)</provenance></history>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>: 
+                     <placeName ref="#aphsouthagora">Place of Palms/South Agora</placeName>: loose in <placeName type="monuList" ref="#aphsagoranportico">North portico</placeName></provenance>
+                  
+                  <provenance type="observed">Findspot (1988)</provenance>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -75,20 +74,18 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
-               
             </keywords>
          </textClass>
-         
-         <creation></creation>
+         <creation>Transcription (Roueché).</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2026-08-07" who="#CMR">Encoded</change>
+         <change when="2026-08-06"  who="#CMR">Transcribed</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="85_C_06.jpg">
-            <desc>Face (M. Roueché, 1985)</desc>
+         <graphic url="88_C_33.jpg">
+            <desc>Face (M. Roueché, 1988)</desc>
          </graphic>
          
       </surface>
@@ -96,21 +93,21 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <ab>
-               <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><persName type="emperor" ref="#anonymus"><addName nymRef="αὐτοκράτωρ"><supplied reason="lost">Ἀυτ</supplied><milestone unit="block"/>οκρά<milestone unit="block"/><supplied reason="lost">τορ-</supplied></addName></persName><gap reason="lost" unit="character" extent="unknown"/></ab>
-         </div>
+        
+		<ab><lb n="1"/><persName type="attested"><name nymRef="#Θεοφύλακτος">Θεοφυλάκτου</name></persName>
+		<lb n="2"/><space quantity="2" unit="character"/> <w lemma="τόπος">τόποϲ</w></ab>
+      </div>
          
          <div type="translation" xml:lang="en" resp="#CMR">
-            <p> . . . ] emperor [ . . .</p>
+            <p>Place of Theophylaktos</p>
          </div>
-         
          <div type="commentary">
             
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> <citedRange>84.56</citedRange></bibl></p>
-         </div>
-        
+             <p><bibl><ptr target="nyu"/> in <citedRange>1988</citedRange></bibl></p>
+          </div>
+          
       </body>
    </text>
 </TEI>
