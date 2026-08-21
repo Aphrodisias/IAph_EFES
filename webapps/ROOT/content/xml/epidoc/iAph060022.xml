@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Edict of Maximum Prices: Chapter 24</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="MHC" role="editions, translations">Michael Crawford</editor>
+            <editor xml:id="BS" role="editions, translations, encoding">Benet Salway</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph060022</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>White marble</material> <objectType>panels</objectType></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the face of the panels.  Bay III, Upper Register, Right </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Measurements?</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><placeName ref="#aphbasilica">Basilica</placeName> façade, <placeName type="monuList" ref="#aphbasbayIII">Bay III</placeName></origPlace>
+                     <origDate notBefore="0301" notAfter="0301" evidence="internal-date">301 CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>: 
+                     <placeName ref="#aphbasilica">Basilica</placeName>: on the north façade.</provenance> 
+                  <provenance type="observed">Museum and findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-04-19" who="#CMR">Marked up</change>
+         
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+        
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="la" xml:space="preserve">
+ 
+   <div type="textpart" n="Edict Chapter 24">
+       <ab> <lb n="0"/> <gap reason="lost" extent="unknown" unit="character"/>
+          <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>
+        
+    <lb n="3"/><w lemma="tormentum"><supplied reason="lost">tormenta</supplied></w> <w lemma="in"><supplied reason="lost">in</supplied></w> <w lemma="longus"><supplied reason="lost">longum</supplied></w> <w lemma="cubitum"><supplied reason="lost">cubito</supplied><unclear>r</unclear>um</w> <w lemma="tres"><supplied reason="lost">trium</supplied></w>
+    <lb n="3a"/><supplied reason="lost"><space extent="unknown" unit="character"/></supplied> <w lemma="in"><supplied reason="lost"><expan><ex>in</ex></expan></supplied></w> <!-- check --> <w lemma="latus"><supplied reason="lost">latum</supplied></w> <w lemma="cubitum"><supplied reason="lost">cubi</supplied><unclear>t</unclear>i</w> <w lemma="unus">unius</w> <supplied reason="lost"><space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="centum"><supplied reason="lost">centum</supplied></w> <w lemma="uiginti"><supplied reason="lost">uiginti</supplied></w> <w lemma="quinque"><supplied reason="lost">quinque</supplied></w>
+    <lb n="4"/><w lemma="sella"><supplied reason="lost">sella</supplied></w> <w lemma="reclinatorius"><supplied reason="lost">r</supplied>eclinatori<unclear>a</unclear></w> <supplied reason="lost"><space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="septuaginta"><supplied reason="lost">septuaginta</supplied></w> <w lemma="quinque"><supplied reason="lost">quinque</supplied></w>
+    <lb n="5"/><w lemma="loculus"><supplied reason="lost">l</supplied><unclear>o</unclear>culus</w> <w lemma="latus"><supplied reason="omitted">latus</supplied></w> <w lemma="per">per</w> <w lemma="pes">ped<supplied reason="lost">em</supplied></w> <w lemma="unus">unum</w> <w lemma="longus">long<supplied reason="lost">us</supplied></w> <w lemma="per"><supplied reason="lost">per</supplied></w> <w lemma="pes"><supplied reason="lost"><expan><abbr>p</abbr><ex>edem</ex></expan></supplied></w> <num value="1"><supplied reason="lost">I</supplied></num> <supplied reason="lost"><space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="septuaginta"><supplied reason="lost">septuaginta</supplied></w> <w lemma="quinque"><supplied reason="lost">quinque</supplied></w>
+    <lb n="6"/><w lemma="codex">codicem</w> <w lemma="tabula">tab<supplied reason="lost">ularum</supplied></w> <w lemma="uiginti"><supplied reason="lost">uiginti</supplied></w> <w lemma="quinque"><supplied reason="lost">quinque</supplied></w> <w lemma="optimus"><supplied reason="lost">optimum</supplied></w> <supplied reason="lost"><space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="quinquaginta"><supplied reason="lost">quinquaginta</supplied></w>
+    <lb n="7"/><w lemma="sella">sella</w> <w lemma="quadratus">qu<supplied reason="lost">adrata</supplied></w> <w lemma="ligneus">lign<supplied reason="lost">ea</supplied></w> <supplied reason="lost"><space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="triginta"><supplied reason="lost">triginta</supplied></w> <w lemma="duo"><supplied reason="lost">duobus</supplied></w>
+    <lb n="8"/><w lemma="lignum">lign<supplied reason="lost">a</supplied></w> <w lemma="ad"><supplied reason="lost">ad</supplied></w> <w lemma="papilio"><supplied reason="lost">papiliones</supplied></w> <w lemma="sine"><supplied reason="lost">sine</supplied></w> <w lemma="ferrum"><supplied reason="lost">ferro</supplied></w> <supplied reason="lost"><space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="ducenti"><supplied reason="lost">ducentis</supplied></w>
+    <lb n="9"/><w lemma="cum">cum</w> <w lemma="ferrum"><supplied reason="lost">ferro</supplied></w> <supplied reason="lost"><space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="quadringenti"><supplied reason="lost">quadringentis</supplied></w>
+    <lb n="10"/><w lemma="paloredica">pal<supplied reason="lost">oredica</supplied></w> <w lemma="sine"><supplied reason="lost">sine</supplied></w> <w lemma="ferrum"><supplied reason="lost">ferro</supplied></w> <supplied reason="lost"><space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="decem"><supplied reason="lost">decem</supplied></w>
+    <lb n="11"/><w lemma="cum">c<supplied reason="lost">um</supplied></w> <w lemma="ferrum"><supplied reason="lost">ferro</supplied></w> <supplied reason="lost"><space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="quinquaginta"><supplied reason="lost">quinquaginta</supplied></w>
+</ab>
+</div>
+    
+            
+</div>
+
+
+ 
+ 
+
+         <div type="translation" xml:lang="en" resp="#mhc2023">
+            <p></p>
+         </div>
+         
+         <div type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="sherard05"/> <citedRange>CHECK</citedRange></bibl>; 
+               <bibl><ptr target="sherard16"/> <citedRange>CHECK</citedRange></bibl>; 
+               <bibl><ptr target="kubit"/> <citedRange>III.24, 25</citedRange>, <citedRange>V.15</citedRange></bibl>; 
+               <bibl><ptr target="gaudin"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="calder"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="jacopi"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="nyu"/> from <citedRange>1969</citedRange></bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+             <p> <bibl><ptr target="CIL"/> <citedRange>2208-2209</citedRange> (parts)</bibl>; 
+                <bibl><ptr target="reinach1906"/> <citedRange>6</citedRange></bibl> (part); 
+                <bibl><ptr target="jacopi1940"/> <citedRange>1-5</citedRange></bibl> (part); 
+                <bibl><ptr target="mama8"/> <citedRange>425</citedRange></bibl> (part); 
+                <bibl><ptr target="jmrkte1970"/> <citedRange></citedRange></bibl>; 
+                <bibl><ptr target="jmrkte1973"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="jmr1979a"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="mhcjmr1979"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="jmr1981a"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="jmr1989"/> <citedRange>231</citedRange></bibl>, whence  
+                <bibl><ptr target="phi"/> <citedRange><ref target="https://epigraphy.packhum.org/text/256955">Aphrodisias 77</ref></citedRange></bibl>;
+                <bibl><ptr target="jmr1995"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="mhc2023"/> <citedRange>Document 1</citedRange></bibl>,</p>
+         </div>
+      </body>
+   </text>
+</TEI>
