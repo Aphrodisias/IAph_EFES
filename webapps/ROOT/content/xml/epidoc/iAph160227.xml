@@ -6,19 +6,14 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Storage jar: measurement</rs> </title>
+            <title><rs type="textType">Funerary text</rs> </title>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
          </titleStmt>
-         <editionStmt>
-            <edition>
-               <title level="m">Inscriptions of Aphrodisias</title>
-               <title type="abbreviated" level="m">IAph</title>
-            </edition>
-         </editionStmt>
          <publicationStmt>
             <publisher>King's College London</publisher>
             <distributor>King's College London</distributor>
-            <idno type="filename">iAph160216</idno>
+            <idno type="filename">iAph160227</idno>
             <availability>
                <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
                </p>
@@ -33,26 +28,28 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><material>White marble</material> <objectType>storage jar</objectType>, half-buried. <dimensions><height>0.95+</height> <dim type="diameter">1.04</dim></dimensions></p> </support>
+                           <p> 
+                              <material key="marmor">White marble</material> <objectType>sarcophagus lid</objectType>; no measurements</p>
+                        </support>
                      </supportDesc>
-                     <layoutDesc>
-                        <layout>
-                           <rs type="execution" ref="scalpro">Inscribed</rs> twice, on opposite sides, on the shoulder. </layout>
+                     <layoutDesc><layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the two pendentives</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>a: <height>0.06-0.07</height>; b: <height>0.03-0.05</height>
-                        </handNote>
+                     <handNote>Square cursive; no measurements.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown </origPlace>
-                     <origDate notBefore="0301" notAfter="0600" precision="medium" evidence="lettering">Fourth to sixth century CE</origDate>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0500" precision="medium" evidence="lettering">First to fourth century.</origDate>
                   </origin>
-                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName> 
-                     <placeName ref="#aphcity">City</placeName>, <placeName type="monuList" ref="#aphvillage">Village</placeName>: on Pekmez Hill, southeast of the Han.</provenance>
-                     <provenance type="observed">Findspot</provenance></history>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>:  
+                     ? <placeName ref="#aphstray">Stray</placeName></provenance>
+                  
+                  <provenance type="observed">Museum Garden (1994)</provenance>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -75,50 +72,40 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
-               
             </keywords>
          </textClass>
-         
-         <creation></creation>
+         <creation>Transcription (Roueché).</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2026-08-07" who="#CMR">Encoded</change>
+         <change when="2026-08-23"  who="#CMR">Transcribed</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
-         <graphic url="85_F_02.jpg">
-            <desc>a: View (M. Roueché, 1985)</desc>
-         </graphic>
-         <graphic url="85_F_88.jpg">
-            <desc>a: Detail (M. Roueché, 1985)</desc>
-         </graphic>
+        
+         <graphic url="94_E_12A.jpg">
+            <desc>Face (M. Roueché, 1994)</desc>
+         </graphic>  
+         
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <div type="textpart" n="a"><ab>
-                        <lb n="1"/><w lemma="ζυγός"><expan><abbr>Ζ<hi rend="superscript">υ</hi></abbr><ex>υγά</ex></expan></w>
-                             <num value="837">ωλζ</num>
-                    </ab></div>
-            <div type="textpart" n="ba"><ab>
-                        <lb n="1"/><w lemma="ζυγός"><expan><abbr>Ζ<hi rend="superscript">υ</hi></abbr><ex>υγά</ex></expan></w>
-                             <num value="837">ωλζ</num>
-                    </ab></div>
-         </div>
+            <ab><lb n="1"/><w lemma="ζάω">ζῶ<milestone unit="block"/>ϲιν</w> </ab>
+        </div>
+         
          
          <div type="translation" xml:lang="en" resp="#CMR">
-            <p><supplied reason="explanation">Holds</supplied> 837 zuga</p>
+            <p>They are alive</p>
          </div>
-         
          <div type="commentary">
             
          </div>
          <div type="bibliography" subtype="transcription">
-            <p><bibl><ptr target="nyu"/> <citedRange>1985</citedRange></bibl></p>
-         </div>
-        
+             <p><bibl><ptr target="nyu"/> in <citedRange>1994</citedRange></bibl></p>
+          </div>
+          
       </body>
    </text>
 </TEI>
