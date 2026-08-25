@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Edict of Maximum Prices: Chapters 49</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="MHC" role="editions, translations">Michael Crawford</editor>
+            <editor xml:id="BS" role="editions, translations, encoding">Benet Salway</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph060032</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>White marble</material> <objectType>panels</objectType></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the face of the panels.  Bay IV, Attic Register, left </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Measurements?</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><placeName ref="#aphbasilica">Basilica</placeName> façade, <placeName type="monuList" ref="#aphbasbayIV">Bay IV</placeName></origPlace>
+                     <origDate notBefore="0301" notAfter="0301" evidence="internal-date">301 CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>: 
+                     <placeName ref="#aphbasilica">Basilica</placeName>: on the north façade.</provenance> 
+                  <provenance type="observed">Museum</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-04-19" who="#CMR">Marked up</change>
+         
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_V_15.jpg">
+            <desc>Lines 36-49: Kubitschek notebook V, 15</desc>
+         </graphic>   
+        
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="la" xml:space="preserve">
+
+<div type="textpart"  n="Edict Chapter 49">
+    <ab>
+        <lb n="0"/><gap reason="lost" extent="unknown" unit="character"/>
+   
+        <lb n="1"/>
+        <w lemma="chlamys"><supplied reason="lost">chlamys</supplied></w> 
+        <w lemma="militaris"><supplied reason="lost">mi</supplied>litaris</w> 
+        <w lemma="indictionalis">indictional<supplied reason="lost">is</supplied></w> 
+        <w lemma="optimus"><supplied reason="lost">optima</supplied></w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w> 
+        <w lemma="quattuor"><supplied reason="lost">quattuor</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="2"/>
+        <w lemma="strictoria"><supplied reason="lost">strictoria</supplied></w> 
+        <w lemma="indictionalis"><supplied reason="lost">ind</supplied>ictionalis</w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w> 
+        <w lemma="duo"><supplied reason="lost">duobus</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="3"/>
+        <w lemma="asemus"><supplied reason="lost">asema</supplied></w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w> 
+        <w lemma="mille"><supplied reason="lost">mille</supplied></w> 
+        <w lemma="ducenti"><supplied reason="lost">ducentis</supplied></w> 
+        <w lemma="quinquaginta"><supplied reason="lost">quinquaginta</supplied></w>
+        
+        <lb n="4"/>
+        <w lemma="rachana"><supplied reason="lost">rachana</supplied></w> 
+        <w lemma="ad"><supplied reason="lost">ad</supplied></w> 
+        <w lemma="papilio"><supplied reason="lost">papi</supplied>lionem</w> 
+        <w lemma="longitudo">longitudinis</w> 
+        <w lemma="et">et</w> 
+        <w lemma="latitudo"><expan><abbr>la</abbr><ex>titudinis</ex></expan></w> 
+        <w lemma="pes"><supplied reason="lost">pedum</supplied></w> 
+        <w lemma="sedecim"><supplied reason="lost">sedecim</supplied></w>
+        <lb n="4a"/>
+        <space extent="unknown" unit="character"/> 
+        <w lemma="tinctus">tincta</w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w> 
+        <w lemma="duo"><supplied reason="lost">duobus</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w> 
+        <w lemma="quingenti"><supplied reason="lost">quingentis</supplied></w>
+        
+        <lb n="5"/>
+        <w lemma="rachana"><supplied reason="lost">rachana</supplied></w> 
+        <w lemma="optimus"><supplied reason="lost">optima</supplied></w> 
+        <w lemma="grabatensis">grabattalis</w> 
+        <w lemma="albus">alua</w> <space extent="unknown" unit="character"/>
+        <w lemma="libra"><expan><abbr>librar</abbr><ex>um</ex></expan></w> 
+        <num value="12">xi<supplied reason="lost">i</supplied></num> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w> 
+        <w lemma="mille"><supplied reason="lost">mille</supplied></w> 
+        <w lemma="sescenti"><supplied reason="lost">sescentis</supplied></w>
+        
+        <lb n="6"/>
+        <w lemma="rachana"><supplied reason="lost">rachana</supplied></w> 
+        <w lemma="Arabicus"><supplied reason="lost">Arabica</supplied></w> 
+        <w lemma="sive">siue</w> 
+        <w lemma="Damascenus">Damascena</w> 
+        <w lemma="vel">uel</w> 
+        <w lemma="alter">alteriu<supplied reason="lost">s</supplied></w> 
+        <w lemma="civitas"><supplied reason="lost">ciuitatis</supplied></w> 
+        <w lemma="tinctus"><supplied reason="lost">tincta</supplied></w>
+        <lb n="6a"/>
+        <space extent="unknown" unit="character"/> 
+        <w lemma="habeo"><supplied reason="lost">habita</supplied></w> 
+        <w lemma="ratio"><supplied reason="lost">ratione</supplied></w> 
+        <w lemma="pondus"><supplied reason="lost">ponde</supplied>ris</w> 
+        <w lemma="lana">lanae</w> 
+        <w lemma="et">et</w> 
+        <w lemma="plumatura">plumaturae</w> 
+        <w lemma="distraho">distra<supplied reason="lost">hi</supplied></w> 
+        <w lemma="debeo"><supplied reason="lost">debet</supplied></w>
+        
+        <lb n="7"/>
+        <w lemma="rachana"><supplied reason="lost">rachana</supplied></w> 
+        <w lemma="rusticus"><supplied reason="lost">rustica</supplied></w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="pondus"><expan><abbr>p<hi rend="superscript">o</hi></abbr><ex>ndera</ex></expan></w> 
+        <w lemma="decem">decem</w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w> 
+        <w lemma="quingenti"><supplied reason="lost">quingentis</supplied></w>
+        
+        <lb n="8"/>
+        <w lemma="dalmaticomafortium"><supplied reason="lost">dalmaticomafor</supplied>tium</w> 
+        <w lemma="muliebris">muliebre</w> 
+        <w lemma="ex">ex</w> 
+        <w lemma="lana">lanis</w> 
+        <w lemma="grossus"><supplied reason="lost">grossioribus</supplied></w>
+        <lb n="8a"/>
+        <space extent="unknown" unit="character"/> 
+        <w lemma="clavans"><supplied reason="lost">clabans</supplied></w> 
+        <w lemma="purpura"><supplied reason="lost">p</supplied>urpurae</w> 
+        <w lemma="hysginus">isginae</w> 
+        <w lemma="libra">libra<supplied reason="lost">s</supplied></w> 
+        <w lemma="duo"><supplied reason="lost">duas</supplied></w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="duo"><supplied reason="lost">duobus</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="9"/>
+        <w lemma="dalmatica"><supplied reason="lost">dalmatica</supplied></w> 
+        <w lemma="virilis"><supplied reason="lost">uirilis</supplied></w> 
+        <w lemma="subsericus">supserica</w> 
+        <w lemma="clavans">clauans</w> 
+        <w lemma="hypoblatta">yp<supplied reason="lost">oblattae</supplied></w>
+        <lb n="9a"/>
+        <space extent="unknown" unit="character"/> 
+        <w lemma="uncia"><supplied reason="lost">uncias</supplied></w> 
+        <w lemma="sex"><supplied reason="lost">se</supplied>x</w> 
+        <space extent="unknown" unit="character"/>  
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <gap reason="lost" extent="unknown" unit="character"/>
+        
+        <lb n="10"/>
+        <w lemma="strictoria"><supplied reason="lost">strictoria</supplied></w> 
+        <w lemma="subsericus"><supplied reason="lost">subseri</supplied>ca</w> 
+        <w lemma="clavans">clauans</w> 
+        <w lemma="hypoblatta">y<supplied reason="lost">poblattae</supplied></w>
+        <lb n="10a"/>
+        <space extent="unknown" unit="character"/> 
+        <w lemma="uncia"><supplied reason="lost">uncias</supplied></w> 
+        <w lemma="tres"><supplied reason="lost">tres</supplied></w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <gap reason="lost" extent="unknown" unit="character"/>
+        
+        <lb n="11"/>
+        <w lemma="strictoria"><supplied reason="lost">strictoria</supplied></w> 
+        <w lemma="asemus"><supplied reason="lost">asema</supplied></w> 
+        <w lemma="clavans"><supplied reason="lost">cla</supplied><unclear>u</unclear>ans</w> 
+        <w lemma="hypoblatta">y<unclear>p</unclear><supplied reason="lost">oblattae</supplied></w> 
+        <w lemma="uncia"><supplied reason="lost">uncias</supplied></w> 
+        <gap reason="lost" extent="unknown" unit="character"/> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="sex"><supplied reason="lost">sex</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="12"/>
+        <w lemma="dalmaticomafortium"><supplied reason="lost">dalmaticomafortium</supplied></w> 
+        <w lemma="subsericus"><supplied reason="lost">s</supplied><unclear>u</unclear>b<unclear>s</unclear><supplied reason="lost">ericum</supplied></w> 
+        <w lemma="albus"><supplied reason="lost">aluum</supplied></w> 
+        <w lemma="clavans"><supplied reason="lost">clauans</supplied></w>
+        <lb n="12a"/>
+        <space extent="unknown" unit="character"/> 
+        <w lemma="purpura"><supplied reason="lost">purpurae</supplied></w> 
+        <w lemma="hypoblatta"><supplied reason="lost">hypoblattae</supplied></w> <space extent="unknown" unit="character"/>
+        <w lemma="libra"><supplied reason="lost"><expan><abbr>lib</abbr><ex>ram</ex></expan></supplied></w> 
+        <w lemma="unus"><supplied reason="lost">unam</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="quadraginta"><supplied reason="lost">quadraginta</supplied></w> 
+        <w lemma="quattuor"><supplied reason="lost">quattuor</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="13"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="13a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="14"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="15"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="15a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="16"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="16a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="17"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="17a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="18"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="19"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="20"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="21"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="22"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="22a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="23"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="24"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="24a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="25"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="25a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="26"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="26a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="27"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="27a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="28"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="29"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="30"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="31"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="32"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="33"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="34"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="35"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        
+        <lb n="36"/>
+        <w lemma="stragulum">stragula</w> 
+        <w lemma="secundum">secu<supplied reason="lost">ndum</supplied></w> 
+        <w lemma="pondus"><supplied reason="lost">pondus</supplied></w> 
+        <w lemma="plumatura"><supplied reason="lost">plumaturae</supplied></w> 
+        <w lemma="et"><supplied reason="lost">et</supplied></w> 
+        <w lemma="lana"><supplied reason="lost">lanae</supplied></w> 
+        <w lemma="et"><supplied reason="lost">et</supplied></w> 
+        <w lemma="tinctura"><supplied reason="lost">tincturam</supplied></w> 
+        <w lemma="distraho"><supplied reason="lost">distrahi</supplied></w> 
+        <w lemma="debeo"><supplied reason="lost">debent</supplied></w>
+        
+        <lb n="37"/>
+        <w lemma="birrus">byrrum</w> 
+        <w lemma="Laodicenus">Laodicen<supplied reason="lost">um</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="quattuor"><supplied reason="lost">quattuor</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w> 
+        <w lemma="quingenti"><supplied reason="lost">quingentis</supplied></w>
+        
+        <lb n="38"/>
+        <w lemma="birrus">byrrum</w> 
+        <w lemma="Laodicenus">Laodicenum</w> 
+        <w lemma="in">i<supplied reason="lost">n</supplied></w> 
+        <w lemma="similitudo"><supplied reason="lost">similitudinem</supplied></w> 
+        <w lemma="Nervius"><supplied reason="lost">Neruii</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="decem"><supplied reason="lost">decem</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="39"/>
+        <w lemma="asemus">asema</w> 
+        <w lemma="Laodicenus">Laodicena</w> 
+        <w lemma="triplex">tri<supplied reason="omitted">p</supplied>lex</w>
+       <supplied reason="lost"><space extent="unknown" unit="character"/></supplied>
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="duo"><supplied reason="lost">duobus</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="40"/>
+        <w lemma="paragauda">paragaudae</w> 
+        <w lemma="Laodicenus">Laodicenae</w> 
+        <w lemma="addo">a<supplied reason="lost">ddito</supplied></w> 
+        <w lemma="pretium"><supplied reason="lost">pretio</supplied></w> 
+        <w lemma="purpura"><supplied reason="lost">purpurae</supplied></w> 
+        <w lemma="reliquus"><supplied reason="lost">reliqua</supplied></w>
+        <lb n="40a"/>
+        <space extent="unknown" unit="character"/> 
+        <w lemma="imputo">inputanda</w> 
+        <w lemma="sum"><supplied reason="lost">sunt</supplied></w>
+        
+        <lb n="41"/>
+        <w lemma="birrus">byrrus</w> 
+        <w lemma="Nervicus">Nerbicus</w> 
+        <w lemma="sive">siue</w> 
+        <w lemma="leoninus">leonin<supplied reason="lost">us</supplied></w> 
+        <w lemma="optimus"><supplied reason="lost">optimus</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="quindecim"><supplied reason="lost">quindecim</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="42"/>
+        <w lemma="birrus">byrrus</w> 
+        <w lemma="Taurogastricus">Taurogastricu<supplied reason="lost">s</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="duodecim"><supplied reason="lost">duodecim</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="43"/>
+        <w lemma="birrus">byrrus</w> 
+        <w lemma="Ripensis">Ripensis</w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="octo"><supplied reason="lost">octo</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="44"/>
+        <w lemma="birrus">byrrus</w> 
+        <w lemma="Noricus">Noricus</w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="decem"><supplied reason="lost">decem</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="45"/>
+        <w lemma="birrus">byrrus</w> 
+        <w lemma="Britannicus">Britannic<supplied reason="lost">us</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="sex"><supplied reason="lost">sex</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="46"/>
+        <w lemma="birrus">byrrus</w> 
+        <w lemma="Meditomagensis"><supplied reason="omitted">M</supplied>editoma<supplied reason="lost">gensis</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="sex"><supplied reason="lost">sex</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="47"/>
+        <w lemma="birrus">byrrus</w> 
+        <w lemma="Canusinus">Canys<supplied reason="lost">inus</supplied></w> 
+        <w lemma="optimus"><supplied reason="lost">optimus</supplied></w> 
+        <w lemma="clavatus"><supplied reason="lost">clauatus</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="quattuor"><supplied reason="lost">quattuor</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="48"/>
+        <w lemma="birrus">byrrus</w> 
+        <w lemma="Numidicus">Numi<supplied reason="lost">dicus</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="tres"><supplied reason="lost">tribus</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="49"/>
+        <w lemma="birrus">byrrus</w> 
+        <w lemma="Argolicus">Argo<supplied reason="lost">licus</supplied></w> 
+        <w lemma="primus"><supplied reason="lost">primae</supplied></w> 
+        <w lemma="qualitas"><supplied reason="lost">qualitatis</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="sex"><supplied reason="lost">sex</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="50"/>
+        <w lemma="birrus"><supplied reason="lost">byrrhus</supplied></w> 
+        <w lemma="Achaicus"><supplied reason="lost">Achaicus</supplied></w> 
+        <w lemma="sive"><supplied reason="lost">siue</supplied></w> 
+        <w lemma="Phrygiacus"><supplied reason="lost">Phrygiacus</supplied></w> 
+        <w lemma="optimus"><supplied reason="lost">opti</supplied>mus</w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> 
+        <w lemma="duo">duobus</w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="51"/>
+        <w lemma="birrus"><supplied reason="lost">byrrhus</supplied></w> 
+        <w lemma="Afer"><supplied reason="lost">Afer</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> <!-- think --> 
+        <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> 
+        <w lemma="mille"><supplied reason="lost">mille</supplied></w> 
+        <w lemma="quingenti"><supplied reason="lost">quingentis</supplied></w>
+        
+        <lb n="52"/>
+        <w lemma="banata"><supplied reason="lost">banata</supplied></w> 
+        <w lemma="Noricus"><supplied reason="lost">Norica</supplied></w> 
+        <w lemma="duplex"><supplied reason="lost">duplex</supplied></w> 
+        <w lemma="sive"><supplied reason="lost">siue</supplied></w> 
+        <gap reason="lost" extent="unknown" unit="character"/> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> 
+        <w lemma="viginti"><supplied reason="lost">uiginti</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="53"/>
+        <w lemma="bedox"><supplied reason="lost">bedox</supplied></w> 
+        <w lemma="Noricus"><supplied reason="lost">Noricus</supplied></w> 
+        <w lemma="optimus"><supplied reason="lost">optimus</supplied></w> 
+        <w lemma="sive"><supplied reason="lost">siue</supplied></w> 
+        <w lemma="velum"><supplied reason="lost">uelum</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> 
+        <w lemma="decem">d<supplied reason="lost">ecem</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="54"/>
+        <w lemma="banata"><supplied reason="lost">banata</supplied></w> 
+        <w lemma="Gallicus"><supplied reason="lost">Gallica</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> 
+        <w lemma="quindecim"><supplied reason="lost">quindecim</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="55"/><gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="56"/><gap reason="lost" extent="unknown" unit="character"/>
+        
+        <lb n="57"/>
+        <w lemma="singilio">s<supplied reason="lost">ingilio</supplied></w> 
+        <w lemma="Gallicus"><supplied reason="lost">Gallicus</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="mille"><supplied reason="lost">mille</supplied></w> 
+        <w lemma="quingenti"><supplied reason="lost">quingentis</supplied></w> 
+        <w lemma="quinquaginta"><supplied reason="lost">quinquaginta</supplied></w>
+        
+        <lb n="58"/>
+        <w lemma="singilio">s<supplied reason="lost">ingilio</supplied></w> 
+        <w lemma="Numidicus"><supplied reason="lost">Numidicus</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="sescenti"><supplied reason="lost">sescentis</supplied></w>
+        
+        <lb n="69"/>
+        <w lemma="singilio">sin<supplied reason="lost">gilio</supplied></w> 
+        <w lemma="Phrygiacus"><supplied reason="lost">Frugiacus</supplied></w> 
+        <w lemma="sive"><supplied reason="lost">siue</supplied></w> 
+        <w lemma="Bessicus"><supplied reason="lost">Bessicus</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="sescenti"><supplied reason="lost">sescentis</supplied></w>
+        
+        <lb n="60"/>
+        <w lemma="paenula">paenu<supplied reason="lost">la</supplied></w> 
+        <w lemma="Laodicenus"><supplied reason="lost">Ladicena</supplied></w> 
+        <w lemma="optimus"><supplied reason="lost">optima</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="quinque"><supplied reason="lost">quinque</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="61"/>
+        <w lemma="paenula">paenu<supplied reason="lost">la</supplied></w> 
+        <w lemma="Balesinus"><supplied reason="lost">Balesina</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="quattuor"><supplied reason="lost">quattuor</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="62"/>
+        <w lemma="fibulatorium">fibulato<supplied reason="lost">rium</supplied></w> 
+        <w lemma="Rhaeticus"><supplied reason="lost">Rhaeticum</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="duodecim"><supplied reason="lost">duodecim</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w> 
+        <w lemma="quingenti"><supplied reason="lost">quingentis</supplied></w>
+        
+        <lb n="63"/>
+        <w lemma="fibulatorium">fibulato<supplied reason="lost">rium</supplied></w> 
+        <w lemma="Trevericus"><supplied reason="lost">Treuericum</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="octo"><supplied reason="lost">octo</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="64"/>
+        <w lemma="fibulatorium">fibulator<supplied reason="lost">ium</supplied></w> 
+        <w lemma="Petovionicus"><supplied reason="lost">Petouionicum</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="quinque"><supplied reason="lost">quinque</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="65"/>
+        <w lemma="fibulatorium">fibulator<supplied reason="lost">ium</supplied></w> 
+        <w lemma="Afer"><supplied reason="lost">Afrum</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="duo"><supplied reason="lost">duobus</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="66"/>
+        <w lemma="chlamys">chlamys</w> 
+        <w lemma="Dardanicus">Dar<supplied reason="lost">danica</supplied></w> 
+        <w lemma="duplex"><supplied reason="lost">duplex</supplied></w> 
+        <w lemma="optimus"><supplied reason="lost">optima</supplied></w> 
+        <space extent="unknown" unit="character"/> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="duodecim"><supplied reason="lost">duodecim</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w> 
+        <w lemma="quingenti"><supplied reason="lost">quingentis</supplied></w>
+        
+        <lb n="67"/>
+        <w lemma="chlamys">chlamys</w> 
+        <w lemma="Dardanicus">Da<supplied reason="lost">rdanica</supplied></w> 
+        <w lemma="simplex"><supplied reason="lost">simplex</supplied></w> 
+        <w lemma="optimus"><supplied reason="lost">optima</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="septem"><supplied reason="lost">septem</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="68"/>
+        <w lemma="mantula">mantula</w> <supplied reason="lost"><space extent="unknown" unit="character"/></supplied>
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="mille"><supplied reason="lost">mille</supplied></w>
+        
+        <lb n="69"/>
+        <w lemma="sagum">sagum</w> 
+        <w lemma="Afer">Afrum</w>
+       <supplied reason="lost"><space extent="unknown" unit="character"/></supplied>
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="quingenti"><supplied reason="lost">quingentis</supplied></w>
+        
+        <lb n="70"/>
+        <w lemma="sagum">sagum</w> 
+        <w lemma="Gallicus">Ga<supplied reason="lost">llicum,</supplied></w> 
+        <w lemma="hic"><supplied reason="lost">hoc</supplied></w> 
+        <w lemma="sum"><supplied reason="lost">est</supplied></w> 
+        <w lemma="Ambianensis"><supplied reason="lost">A</supplied>mbian<supplied reason="lost">ense</supplied></w> 
+        <w lemma="sive"><supplied reason="lost">siue</supplied></w> 
+        <w lemma="Biturigensis"><supplied reason="lost">Biturigense</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <w lemma="octo"><supplied reason="lost">octo</supplied></w> 
+        <w lemma="mille"><supplied reason="lost">milibus</supplied></w>
+        
+        <lb n="71"/>
+        <w lemma="strictoria"><supplied reason="lost">strictoria</supplied></w> 
+        <w lemma="leporinus"><supplied reason="lost">leporina</supplied></w> 
+        <w lemma="dorsualis"><supplied reason="lost">dur</supplied>sualis</w> 
+        <w lemma="purpura"><supplied reason="lost">purpurae</supplied></w> 
+        <w lemma="clavans"><supplied reason="lost">clauans</supplied></w>
+        <lb n="71a"/>
+        <space extent="unknown" unit="character"/> 
+        <w lemma="uncia"><supplied reason="lost">u</supplied>ncias</w> 
+        <w lemma="sex">s<supplied reason="lost">ex</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <gap reason="lost" extent="unknown" unit="character"/>
+        
+        <lb n="72"/>
+        <w lemma="dalmatica">dalmat<supplied reason="lost">ica</supplied></w> 
+        <w lemma="virilis"><supplied reason="lost">uirilis</supplied></w> 
+        <w lemma="leporinus"><supplied reason="lost">lepori</supplied>na</w> 
+        <w lemma="clavans">cla<supplied reason="lost">uans</supplied></w> 
+        <w lemma="hysginus"><supplied reason="lost">isginae</supplied></w> 
+        <w lemma="purpura"><supplied reason="lost">purpurae</supplied></w>
+        <lb n="72a"/>
+        <space extent="unknown" unit="character"/> 
+        <w lemma="uncia"><supplied reason="lost">unci</supplied>as</w> 
+        <w lemma="sex"><supplied reason="lost" cert="low">sex</supplied></w> 
+        <supplied reason="lost"><space extent="unknown" unit="character"/></supplied> 
+        <w lemma="denarius"><supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied></w>  
+        <gap reason="lost" extent="unknown" unit="character"/>
+        
+        <lb n="73"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="73a"/>
+        <gap reason="lost" extent="unknown" unit="character"/>
+    </ab>
+</div>
+</div>
+
+
+         <div type="translation" xml:lang="en" resp="#mhc2023">
+            <p></p>
+         </div>
+         
+         <div type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="sherard05"/> <citedRange>CHECK</citedRange></bibl>; 
+               <bibl><ptr target="sherard16"/> <citedRange>CHECK</citedRange></bibl>; 
+               <bibl><ptr target="kubit"/> <citedRange>V.15</citedRange></bibl>; 
+               <bibl><ptr target="gaudin"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="calder"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="jacopi"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="nyu"/> from <citedRange>1969</citedRange></bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+             <p> <bibl><ptr target="CIL"/> <citedRange>2209</citedRange></bibl>; 
+                <bibl><ptr target="reinach1906"/> <citedRange>6</citedRange>  (lines 36-49)</bibl>; 
+                <bibl><ptr target="jacopi1940"/> <citedRange>1-5</citedRange></bibl> (part);
+                <bibl><ptr target="mama8"/> <citedRange>425</citedRange> (lines 36-49)</bibl>;
+                <bibl><ptr target="jmrkte1970"/> <citedRange></citedRange></bibl>; 
+                <bibl><ptr target="jmrkte1973"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="jmr1979a"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="mhcjmr1979"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="jmr1981a"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="jmr1989"/> <citedRange>231</citedRange></bibl>, whence  
+                <bibl><ptr target="phi"/> <citedRange><ref target="https://epigraphy.packhum.org/text/256955">Aphrodisias 77</ref></citedRange></bibl>;
+                <bibl><ptr target="jmr1995"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="mhc2023"/> <citedRange>Chapter 3</citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>
