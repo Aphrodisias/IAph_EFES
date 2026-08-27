@@ -53,12 +53,14 @@
   </xsl:template>
 
   <xsl:template match="response/result">
+    <div class="index-table-wrapper">
     <table class="index tablesorter">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
         <xsl:apply-templates select="doc"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates>
       </tbody>
     </table>
+    </div>
   </xsl:template>
 
   <xsl:template match="str[@name='index_abbreviation_expansion']">
