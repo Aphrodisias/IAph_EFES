@@ -4,6 +4,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="response" mode="text-index">
+    <div class="table-scroll">
     <table class="tablesorter">
       <thead>
         <tr>
@@ -30,6 +31,7 @@
         <xsl:apply-templates mode="text-index" select="result" />
       </tbody>
     </table>
+    </div>
   </xsl:template>
 
   <xsl:template match="result[not(doc)]" mode="text-index">
