@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Edict of Maximum Prices: Chapter 31</title>
+            <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
+            <editor xml:id="MHC" role="editions, translations">Michael Crawford</editor>
+            <editor xml:id="BS" role="editions, translations, encoding">Benet Salway</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph063031</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>White marble</material> <objectType>panels</objectType></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the face of the panels.  Bay III, Lower Register, Right (lines 1-6) and Dado, Column 1 </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Measurements?</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><placeName ref="#aphbasilica">Basilica</placeName> façade, <placeName type="monuList" ref="#aphbasbayIII">Bay III</placeName></origPlace>
+                     <origDate notBefore="0301" notAfter="0301" evidence="internal-date">301 CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>: 
+                     <placeName ref="#aphbasilica">Basilica</placeName>: on the north façade.</provenance> 
+                  <provenance type="observed">Museum and findspot</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-04-19" who="#CMR">Marked up</change>
+         
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="K_III_25.jpg">
+            <desc>Chapter 31, 28-36, Chapter 32, 1-2, 3-7  (Kubitschek notebook III, 25)</desc>
+         </graphic>   
+        
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="la" xml:space="preserve">
+ 
+   <div type="textpart" n="Edict Chapter 31">
+       <ab> <lb n="0"/><gap reason="lost" extent="unknown" unit="character"/>
+          <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+          <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>
+          <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
+          <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>
+          <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>
+          <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="7"/><w lemma="sessio"><supplied reason="lost">session</supplied>es</w> <w lemma="fabricatus"><supplied reason="lost">fabricatae</supplied></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="centum"><supplied reason="lost">centum</supplied></w> <w lemma="quinquaginta"><supplied reason="lost">quin</supplied>qua<supplied reason="omitted">g</supplied>inta</w>
+    <lb n="8"/><w lemma="infabricatus"><supplied reason="lost">infabric</supplied>atae</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="septuaginta">se<supplied reason="lost">ptuagint</supplied>a</w> <w lemma="quinque">quinque</w>
+    <lb n="9"/><w lemma="furca"><supplied reason="lost">furca</supplied></w> <w lemma="tornatus"><supplied reason="lost">tor</supplied>nata</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="centum">cen<supplied reason="lost">tum</supplied></w> <w lemma="septuaginta"><supplied reason="lost">se</supplied>ptuaginta</w> <w lemma="quinque">quinque</w>
+    <lb n="10"/><w lemma="infabricatus"><supplied reason="lost">infabrica</supplied>ta</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="septuaginta">septu<unclear>a</unclear><supplied reason="lost">gin</supplied>ta</w> <w lemma="quinque">quinque</w>
+    <lb n="11"/><w lemma="temo"><supplied reason="lost">temo</supplied></w> <w lemma="tornatus"><supplied reason="lost">tor</supplied><unclear>natus</unclear></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="ducenti">ducentis</w>
+    <lb n="12"/><w lemma="infabricatus"><supplied reason="lost">inf</supplied>a<unclear>b</unclear>ricat<unclear>u</unclear>s</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="centum">centum</w>
+    <lb n="13"/><w lemma="regula">regula</w> <w lemma="fabricatus">fabri<unclear>c</unclear><supplied reason="lost">ata</supplied></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="septuaginta">septuaginta</w> <w lemma="quinque">quinque</w>
+    <lb n="14"/><w lemma="infabricatus">infabricata</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="triginta">triginta</w> <w lemma="duo">duobus</w>
+    <lb n="15"/><w lemma="catena">catena</w> <w lemma="fabricatus">fab<supplied reason="lost">ricata</supplied></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="viginti">uigin<supplied reason="lost">t</supplied>i</w>
+    <lb n="16"/><w lemma="infabricatus">infabric<unclear>a</unclear><supplied reason="lost">ta</supplied></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="decem">decem</w>
+    <lb n="17"/><w lemma="acontium">aconti<supplied reason="lost">um</supplied></w> <w lemma="vel"><supplied reason="lost">uel</supplied></w> <w lemma="masculus"><supplied reason="lost">masculu</supplied><unclear>s</unclear></w> <w lemma="fabricatus">fabricatus</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="sex">sex</w>
+    <lb n="18"/><w lemma="infabricatus">infab<unclear>r</unclear><supplied reason="lost">icatus</supplied></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="quattuor">quattuor</w>
+    <lb n="19"/><w lemma="costa">cost<supplied reason="lost">a</supplied></w> <w lemma="fabricatus"><supplied reason="lost">fabricata</supplied></w> <space extent="unknown" unit="character"/> <supplied reason="lost"><w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w></supplied> <w lemma="duo"><supplied reason="lost">du</supplied>obus</w>
+    <lb n="20"/><w lemma="infabricatus"><supplied reason="lost">infabricata</supplied></w> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denario</ex></expan></w> <w lemma="unus">uno</w>
+    <lb n="21"/><w lemma="fenicula"><supplied reason="lost">fenicula</supplied></w> <w lemma="fabricatus"><supplied reason="lost">fabricata</supplied></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="sedecim">sedecim</w>
+    <lb n="22"/><w lemma="infabricatus"><supplied reason="lost">infab</supplied><unclear>r</unclear>icata</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="octo">octo</w>
+    <lb n="23"/><w lemma="frontale"><supplied reason="lost">fro</supplied>ntalia</w> <w lemma="fabricatus">fabr<supplied reason="lost">icata</supplied></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="triginta">triginta</w> <w lemma="sex">s<unclear>e</unclear><supplied reason="lost">x</supplied></w>
+    <lb n="24"/><w lemma="infabricatus">infabricata</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="viginti">uiginti</w>
+    <lb n="25"/><w lemma="lateraria">lateraria</w> <w lemma="fabricatus">fabricat<supplied reason="lost">a</supplied></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="centum">centum</w>
+    <lb n="26"/><w lemma="caplofurca"><supplied reason="lost">caplofurcae</supplied></w> <w lemma="fabricatus">fabrica<unclear>t</unclear><supplied reason="lost">ae</supplied></w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="duodecim">duodecim</w>
+    <lb n="27"/><w lemma="infabricatus">infabricatae</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="sex">sex</w>
+    <lb n="28"/><w lemma="iugum">iugum</w> <w lemma="Italicus">Italicum</w> <w lemma="cum">cum</w> <w lemma="pesclum">pescl<supplied reason="lost">i</supplied>s</w> <w lemma="fabricatus">fabricatum</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="trecenti">tre<unclear>c</unclear><supplied reason="lost" cert="low">entis</supplied></w>
+    <lb n="29"/><w lemma="iugum">iugum</w> <w lemma="Graecanicus">Graecanicum</w> <w lemma="cum">cum</w> <w lemma="pesclum">pesclis</w> <w lemma="fabricatus">fabricatum</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="centum">c<supplied reason="lost">entum</supplied></w> <w lemma="quinquaginta"><supplied reason="lost">quinquaginta</supplied></w>
+    <lb n="30"/><w lemma="statumen">statumen</w> <w lemma="fabricatus">fabricatum</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="quadraginta"><supplied reason="lost">quadraginta</supplied></w>
+    <lb n="31"/><w lemma="infabricatus">infabricatum</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="viginti"><supplied reason="lost">uiginti</supplied></w>
+    <lb n="32"/><w lemma="columella">columella</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="septuaginta"><supplied reason="lost">septuaginta</supplied></w>
+    <lb n="33"/><w lemma="bitum">bitum</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="septingenti"><supplied reason="lost">septingentis</supplied></w> <w lemma="quinquaginta"><supplied reason="lost">quinquaginta</supplied></w>
+    <lb n="34"/><w lemma="cambigo">cambigines</w> <w lemma="quattuor">quattuor</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="septuaginta"><supplied reason="lost">septuaginta</supplied></w>
+    <lb n="35"/><w lemma="inductum">inductu<supplied reason="lost">m</supplied></w> <w lemma="rota">rotae</w> <w lemma="vehicularis">uehicularis</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="triginta">triginta</w>
+    <lb n="36"/><w lemma="inductum">inductum</w> <w lemma="rota">rotae</w> <w lemma="carralis">carralis</w> <space extent="unknown" unit="character"/> <w lemma="denarius"><expan><abbr><am><g ref="#denarius"/></am></abbr><ex>denariis</ex></expan></w> <w lemma="triginta">triginta</w> <w lemma="sex">s<supplied reason="lost">ex</supplied></w>
+
+</ab>
+
+</div>
+      
+    
+</div>
+
+
+ 
+ 
+
+         <div type="translation" xml:lang="en" resp="#mhc2023">
+            <p></p>
+         </div>
+         
+         <div type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="sherard05"/> <citedRange>CHECK</citedRange></bibl>; 
+               <bibl><ptr target="sherard16"/> <citedRange>CHECK</citedRange></bibl>; 
+               <bibl><ptr target="kubit"/> <citedRange>III.24, 25</citedRange>, <citedRange>V.15</citedRange></bibl>; 
+               <bibl><ptr target="gaudin"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="calder"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="jacopi"/> <citedRange></citedRange></bibl>;
+               <bibl><ptr target="nyu"/> from <citedRange>1969</citedRange></bibl></p>
+          </div>
+          <div type="bibliography" subtype="publication">
+             <p> <bibl><ptr target="CIL"/> <citedRange>2208-2209</citedRange> (parts)</bibl>; 
+                <bibl><ptr target="reinach1906"/> <citedRange>6</citedRange></bibl> (part); 
+                <bibl><ptr target="jacopi1940"/> <citedRange>1-5</citedRange></bibl> (part); 
+                <bibl><ptr target="mama8"/> <citedRange>425</citedRange></bibl> (part); 
+                <bibl><ptr target="jmrkte1970"/> <citedRange></citedRange></bibl>; 
+                <bibl><ptr target="jmrkte1973"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="jmr1979a"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="mhcjmr1979"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="jmr1981a"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="jmr1989"/> <citedRange>231</citedRange></bibl>, whence  
+                <bibl><ptr target="phi"/> <citedRange><ref target="https://epigraphy.packhum.org/text/256955">Aphrodisias 77</ref></citedRange></bibl>;
+                <bibl><ptr target="jmr1995"/> <citedRange></citedRange></bibl>;
+                <bibl><ptr target="mhc2023"/> <citedRange>Chapter 3</citedRange></bibl></p>
+         </div>
+      </body>
+   </text>
+</TEI>
