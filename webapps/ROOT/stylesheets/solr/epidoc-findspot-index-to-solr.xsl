@@ -19,8 +19,11 @@
         
         <xsl:variable name="lev1id">
           <xsl:choose>
-            <xsl:when test="@ref">
+            <xsl:when test="@ref and not(starts-with(@ref, 'http'))">
               <xsl:value-of select="replace(@ref, '#', '')"/>
+            </xsl:when>
+            <xsl:when test="@key">
+              <xsl:value-of select="lower-case(@key)"/>
             </xsl:when>
             <xsl:otherwise>
               <xsl:value-of select="."/>
@@ -37,6 +40,12 @@
               <xsl:value-of select="following-sibling::tei:placeName[not(@type)][1]"/>
             </xsl:otherwise>
           </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:variable name="lev3id">
+            <xsl:if test="following-sibling::tei:placeName[@type='monuList'][1]/@ref">
+              <xsl:value-of select="replace(following-sibling::tei:placeName[@type='monuList'][1]/@ref, '#', '')"/>
+            </xsl:if>
         </xsl:variable>
         
         <xsl:variable name="placeAL" select="document('../../content/xml/authority/findspot.xml')"/>
@@ -112,20 +121,19 @@
           
           
             <xsl:choose>
-              <xsl:when test="following-sibling::tei:placeName[@type='monuList'][@ref]">
+              <xsl:when test="following-sibling::tei:placeName[@type='monuList'][@ref] and $placeAL//tei:place[@xml:id=$lev3id]/tei:idno">
                 <xsl:for-each select="following-sibling::tei:placeName[@type='monuList']/@ref">
-                  <xsl:variable name="lev3id" select="replace(., '#', '')"/>
                   <xsl:for-each select="$placeAL//tei:place[@xml:id=$lev3id]/tei:idno">
                     <field name="index_external_resource"><xsl:value-of select="." /></field>
                   </xsl:for-each>
                 </xsl:for-each>
               </xsl:when>
-              <xsl:when test="following-sibling::tei:placeName[not(@type)][@ref] and $placeAL//tei:place[@xml:id=$lev2id]">
+              <xsl:when test="following-sibling::tei:placeName[not(@type)][@ref] and $placeAL//tei:place[@xml:id=$lev2id]/tei:idno">
                 <xsl:for-each select="$placeAL//tei:place[@xml:id=$lev2id]/tei:idno">
                   <field name="index_external_resource"><xsl:value-of select="." /></field>
                 </xsl:for-each>
               </xsl:when>
-              <xsl:when test="$placeAL//tei:place[@xml:id=$lev1id]">
+              <xsl:when test="$placeAL//tei:place[@xml:id=$lev1id] and $placeAL//tei:place[@xml:id=$lev1id]/tei:idno">
                 <xsl:for-each select="$placeAL//tei:place[@xml:id=$lev1id]/tei:idno">
                   <field name="index_external_resource"><xsl:value-of select="." /></field>
                 </xsl:for-each>
