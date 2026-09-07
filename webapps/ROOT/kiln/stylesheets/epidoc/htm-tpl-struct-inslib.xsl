@@ -336,7 +336,7 @@
           <h3>Bibliography</h3>
             <xsl:for-each select="//t:div[@type='bibliography']">
               <p>
-                <xsl:if test="@subtype='transcription'"><b>Transcription: </b></xsl:if>
+                <xsl:if test="@subtype='transcription'"><b>Recorded: </b></xsl:if>
                 <xsl:if test="@subtype='publication'"><b>Publication: </b></xsl:if>
                 <xsl:apply-templates select="t:p/node()"/>
               </p>
@@ -523,9 +523,36 @@
         <xsl:apply-templates select="//t:titleStmt/t:title"/>
       </xsl:when>
       <xsl:when test="//t:titleStmt/t:title and $inslib-corpus='IAph'">
-        <xsl:number value="number(substring(//t:publicationStmt/t:idno[@type='filename']/text(), 5, 2))" format="1" />
-        <xsl:text>.</xsl:text>
-        <xsl:number value="number(substring(//t:publicationStmt/t:idno[@type='filename']/text(), 7, 4))" format="1" />
+        <xsl:choose>
+          <xsl:when test="number(substring(//t:publicationStmt/t:idno[@type='filename']/text(), 5, 2))">
+            <xsl:number value="number(substring(//t:publicationStmt/t:idno[@type='filename']/text(), 5, 2))" format="1" />
+            <xsl:text>.</xsl:text>
+            <xsl:choose>
+              <xsl:when test="number(substring(//t:publicationStmt/t:idno[@type='filename']/text(), 7, 4))">
+                <xsl:number value="substring(//t:publicationStmt/t:idno[@type='filename']/text(), 7, 4)" format="1" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="substring(//t:publicationStmt/t:idno[@type='filename']/text(), 7, 4)" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:when>
+          <!-- the following is used for Diocletian’s Price Edict -->
+          <xsl:when test="not(number(substring(//t:publicationStmt/t:idno[@type='filename']/text(), 5, 3)))">
+            <xsl:value-of select="substring(//t:publicationStmt/t:idno[@type='filename']/text(), 5, 3)" />
+            <xsl:text>.</xsl:text>
+            <xsl:choose>
+              <xsl:when test="number(substring(//t:publicationStmt/t:idno[@type='filename']/text(), 8))">
+                <xsl:number value="substring(//t:publicationStmt/t:idno[@type='filename']/text(), 8)" format="1" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="substring(//t:publicationStmt/t:idno[@type='filename']/text(), 8)" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']/text()" />
+          </xsl:otherwise>
+        </xsl:choose>
         <xsl:text>. </xsl:text>
         <xsl:apply-templates select="//t:titleStmt/t:title"/>
       </xsl:when>

@@ -64,9 +64,36 @@
 
   <xsl:template match="str[@name='document_id']" mode="text-index">
     <td>
-      <xsl:number value="number(substring(., 5, 2))" format="1" />
-      <xsl:text>.</xsl:text>
-      <xsl:number value="number(substring(., 7, 4))" format="1" />
+      <xsl:choose>
+        <xsl:when test="number(substring(., 5, 2))">
+          <xsl:number value="number(substring(., 5, 2))" format="1" />
+          <xsl:text>.</xsl:text>
+          <xsl:choose>
+            <xsl:when test="number(substring(., 7, 4))">
+              <xsl:number value="substring(., 7, 4)" format="1" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="substring(., 7, 4)" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
+        <!-- the following is used for Diocletian’s Price Edict -->
+        <xsl:when test="not(number(substring(., 5, 3)))">
+          <xsl:value-of select="substring(., 5, 3)" />
+          <xsl:text>.</xsl:text>
+          <xsl:choose>
+            <xsl:when test="number(substring(., 8))">
+              <xsl:number value="substring(., 8)" format="1" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="substring(., 8)" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="." />
+        </xsl:otherwise>
+      </xsl:choose>
     </td>
   </xsl:template>
 
