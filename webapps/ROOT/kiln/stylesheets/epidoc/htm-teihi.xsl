@@ -180,6 +180,26 @@
                </xsl:otherwise>
             </xsl:choose>
          </xsl:when>
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!-- @rend='stacked'                                                -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <xsl:when test="@rend='stacked'">
+             <xsl:choose>
+                <xsl:when test="$parm-leiden-style = 'iospe'">
+                   <xsl:apply-templates/>
+                </xsl:when>
+                <xsl:when test="$parm-leiden-style = ('ddbdp','dclp','sammelbuch')">
+                   <span style="vertical-align:super;">
+                      <xsl:apply-imports/>
+                   </span>
+                </xsl:when>
+                <xsl:otherwise>
+                   <xsl:element name="sup">
+                      <xsl:apply-templates/>
+                   </xsl:element>
+                </xsl:otherwise>
+             </xsl:choose>
+          </xsl:when>
          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
          <!-- @rend='supraline'                                                  -->
          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
