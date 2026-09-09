@@ -47,7 +47,7 @@
                      <origDate notBefore="0301" notAfter="0301" evidence="internal-date">301 CE</origDate>
                   </origin>
                   <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>: 
-                     <placeName ref="#aphbasilica">Basilica</placeName> and elsewhere</provenance> 
+                     <placeName ref="#aphbasilica">Basilica</placeName> and <placeName ref="#aphbaths">Hadrianic Baths</placeName></provenance> 
                   <provenance type="observed">Museum</provenance>
                </history>
             </msDesc>
@@ -84,7 +84,12 @@
    </teiHeader>
    <facsimile>
       <surface>
-         
+         <graphic url="MediumFormat1970_39_11.jpg">
+            <desc>Chapter 56, Lines 241-265  (Mehmet Ali Döğenci, 1970)</desc>
+         </graphic> 
+         <graphic url="91_C_09A.jpg">
+            <desc>Chapter 56, Lines 252-265 (Mossman Roueché, 1991)</desc>
+         </graphic>
       </surface>
    </facsimile>
    <text>
@@ -158,8 +163,13 @@
             <lb type="rubric"/><gap reason="lost" extent="unknown" unit="character"/>
         </ab>
     </div>
- 
 </div>
+         <div type="apparatus"><listApp>
+               <app>
+                  <note>Where are lines 269 ff? Apparently a printing error</note></app>
+               <app loc="251"><rdg resp="#mhc2023">puluinum</rdg> <rdg resp="#jmr1989">pulbinum</rdg></app>
+               <app loc="251"><rdg resp="#mhc2023">masippocampstrium</rdg> <rdg resp="#jmr1989">masipocampestrium</rdg></app>
+         </listApp></div>
 
 
          <div type="translation" xml:lang="en" resp="#mhc2023">
@@ -170,15 +180,10 @@
             
          </div>
          <div type="bibliography" subtype="transcription">
-            <p>  
-                
-               
-               <bibl><ptr target="jacopi"/> <citedRange></citedRange></bibl>;
-               <bibl><ptr target="nyu"/> </bibl></p>
+            <p> <bibl><ptr target="nyu"/> <citedRange>68.268</citedRange>, <citedRange>89.x</citedRange></bibl></p>
           </div>
           <div type="bibliography" subtype="publication">
-             <p> <bibl><ptr target="CIL"/> <citedRange>2209</citedRange></bibl>;
-                <bibl><ptr target="jacopi1940"/> <citedRange>1-5</citedRange></bibl> (part);
+             <p>
                 <bibl><ptr target="jmrkte1970"/> <citedRange></citedRange></bibl>; 
                 <bibl><ptr target="jmrkte1973"/> <citedRange></citedRange></bibl>;
                 <bibl><ptr target="jmr1979a"/> <citedRange></citedRange></bibl>;
