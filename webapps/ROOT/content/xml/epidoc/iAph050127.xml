@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for anonymous</title>
+            <editor xml:id="AC" role="editions, translations">Angelos Chaniotis</editor>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph050127</idno>
+            <idno type="IAph2007">iAph161732</idno>
+            <idno type="JMR2004">1732</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://www.wikidata.org/wiki/Q108563899">Aphrodisias Museum</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>White marble</material> revetment
+                              <objectType>plaque</objectType>, broken to left and right, and cut down for re-use (<dimensions unit="metre"><width>0.35</width><height>0.72</height><depth>0.05</depth></dimensions>); 
+                              an upper moulding (perhaps inscribed) has been cut away.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc> <layout><rs type="execution" ref="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.035- 0.04</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0200" precision="medium" evidence="lettering">First to second centuries CE</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>: 
+                     <placeName ref="#aphbaths">Hadrianic Baths</placeName>: re-used in a late wall.</provenance>
+                  <provenance type="observed">Museum</provenance></history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Chaniotis)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2026-09-18" who="#CMR">Encoded</change>
+         
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            
+    <ab>
+        <lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
+        <lb n="0a"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w lemma="θεά">Θεᾷ</w></supplied> <w lemma="Ἀφροδίτη">Ἀφροδίτῃ</w> <w lemma="καί">καὶ</w> <w lemma="αὐτοκράτωρ">Αὐτοκράτορι</w> <w lemma="Καῖσαρ">Καίσαρι</w> <w lemma="Σεβαστός">Σεβαστῷ</w>
+        <lb n="1"/><supplied reason="lost"><w lemma="θεός">Θεοῦ</w> <w lemma="Τραϊανός">Τραϊαν</w></supplied><w lemma="Τραϊανός">oῦ</w> <w lemma="Παρθικός">Παρθικοῦ</w> <w lemma="υἱός">υἱῷ</w> <w lemma="θεός">Θεοῦ</w> <w lemma="Νερούας">Νε<supplied reason="lost">ρούα</supplied></w> <supplied reason="lost"><w lemma="υἱωνός">υἱωνῷ</w> <w lemma="Τραϊανός">Τραϊανῷ</w> <w lemma="Ἁδριανός">Ἁδριανῷ</w></supplied>
+        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Ἀρχιμήδης">Ἀ<supplied reason="lost"></supplied>ρχιμήδους</name></persName><c type="punctuation">,</c> <w lemma="δίς">δὶς</w> <w lemma="ἀρχιερεύς">ἀρχιερέ<unclear>ως</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested" nymRef="-δωρος Εὔφρων"><name nymRef="-δωρος"><seg part="F"><supplied reason="lost">δ</supplied>ώρου</seg></name> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="Εὔφρων">Εὔφρονος</name></persName> <w lemma="Εὔφρων">Εὔφρο<unclear>ν</unclear><supplied reason="lost" cert="low">ος</supplied></w></persName> <gap reason="lost" extent="unknown" unit="character"/>
+        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w lemma="ἀνεψιός">ἀ</w></supplied><w lemma="ἀνεψιός"><unclear>ν</unclear>εψιοῦ</w> <w lemma="καί">καὶ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἡμέτερος">ἡ<unclear>μετέραν</unclear></w> <supplied reason="lost" cert="low"><w lemma="ὑπόσχεσις">ὑπόσχεσιν</w></supplied>
+    </ab>
+</div>
+
+         
+         <div type="apparatus"><listApp>
+               <app></app>
+         </listApp></div>
+         
+         <div type="translation" xml:lang="fr" resp="#AE">
+            <p> À la déesse Aphrodite et à l’Empereur César Auguste, fils du divin Trajan parthique, petit-fils du divin Nerva, Trajan Hadrien [ . . . (étant responsables ?)]
+               Untel fils d’Untel fils d’Archimède, deux fois grand-prêtre, et . . . [---]doros fils d’Euphrôn fils de Euphrôn [ . . . ] et notre cousin aussi conformément à notre promesse [ . . .</p>
+         </div>
+         <div n="notyet" type="commentary">
+            
+         </div>
+         <div type="bibliography" subtype="transcription">
+            <p><bibl><ptr target="nyu"/> <citedRange>2017</citedRange></bibl></p>
+         </div>
+         <div type="bibliography" subtype="publication">
+            <p> <bibl><ptr target="chaniotis2021"/> <citedRange>p.189</citedRange></bibl>, whence 
+               <bibl><ptr target="AE"/> <citedRange>2021.1272</citedRange></bibl>; 
+               </p>
+         </div>
+      </body>
+   </text>
+</TEI>
