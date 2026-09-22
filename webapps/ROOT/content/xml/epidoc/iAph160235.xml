@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/EpiDoc/Source/main/schema/schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary text</rs> </title>
+            <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
+            <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>King's College London</publisher>
+            <distributor>King's College London</distributor>
+            <idno type="filename">iAph160235</idno>
+            <availability>
+               <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). You may redistribute and reuse this content, including creation of derivative works and commercial content, but you must acknowledge the original authors. All reuse or distribution of this and derived works must link back to the URL <ref>http://insaph.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Findspot</repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                           <material key="marmor">White marble</material> <objectType>block</objectType> in three fragments. A is broken on all sides, 
+                              but preserves part of the right edge. B and C join; they are broken away above and to the right. No measurements</p></support>
+                     </supportDesc>
+                     <layoutDesc><layout>
+                           <rs type="execution" ref="scalpro">Inscribed</rs> on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Standard forms, no measurements</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0001" notAfter="0300" precision="medium" evidence="lettering">First to third century.</origDate>
+                  </origin>
+                  <provenance type="found"><placeName type="ancientFindspot" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>:  
+                     <placeName ref="#aphwalls">Walls</placeName>, ?north east</provenance>
+                  
+                  <provenance type="observed">Findspot (1989)</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Ancient Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <term>
+                  <geogName type="ancientRegion" key="Asia">Asia</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="TR" ref="https://sws.geonames.org/298795/">Turkey</geogName>
+               </term>
+               <term>
+                  <placeName type="ancientFindspot" key="Aphrodisias" ref="https://pleiades.stoa.org/places/638753">Aphrodisias</placeName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
+               </term>
+               <term ref="https://ontology.inscriptiones.org/type_of_inscription/Funerary">Funerary</term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Roueché).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2026-09-22"  who="#CMR">Transcribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+        
+         <graphic url="89_C_15.jpg">
+            <desc>A , B and C (Mossman Roueché, 1989)</desc>
+         </graphic> 
+         <graphic url="89_C_15bis.jpg">
+            <desc>A  (Mossman Roueché, 1989)</desc>
+         </graphic> 
+         
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div type="textpart" n="A"><ab> 
+            <gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                  <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>λιι</unclear></orig><gap reason="lost" quantity="3" unit="character"/><orig><unclear>λοιιοιιι αν</unclear></orig><gap reason="lost"  quantity="4" unit="character"/>
+                  <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>του</orig> <w lemma="καί">καὶ</w> <w>ὧν</w> <w>ἂν</w> <w>αὐτὸ<supplied reason="lost">ς</supplied></w> <w><supplied reason="lost">βου</supplied>
+                  <lb n="3" break="no"/><supplied reason="lost">ληθῇ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/><w><supplied reason="lost">κατασκε</supplied>υασθέντα</w> <w>ὑπὸ</w> <orig>το</orig><gap reason="lost" quantity="3" unit="character"/>
+                  <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <persName type="attested"><name nymRef="#Κλαυδία">Κλαυδία</name> <name nymRef="#Ἰουλία">Ἰουλί<supplied reason="lost">α</supplied></name></persName>
+                  <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><w><unclear>ἐ</unclear>στιν</w> <w>δὲ</w> <w lemma="καί">καὶ</w> <w>ὁ</w> <w part="I">παρα</w>
+                  <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="πλάτας">πλάτας</w> <w>προγονι
+                  <lb n="7" break="no"/><supplied reason="lost" cert="low">κός</supplied></w> <gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ι</unclear>σ</orig>
+                  <lb n="7a"/><gap reason="lost" extent="unknown" unit="line"/>
+               </ab></div>
+            <div type="textpart" n="B"><ab> 
+            <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/><gap reason="lost" quantity="5" unit="character"/><orig><unclear>μαιισ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                   <lb n="2"/><gap reason="lost" quantity="3" unit="character"/><w><supplied reason="lost">ἀντ</supplied>ίγραφον</w> <w>εἰς</w> <w>τὸ</w> <supplied reason="lost"><w>χρεοφυλάκιον</w></supplied><gap reason="lost" extent="unknown" unit="character"/>
+                   <lb n="3"/><orig>ο<unclear>ι</unclear><unclear>ιι</unclear></orig> <persName type="attested"><name nymRef="#Πύρρος">Πύρρου</name> <persName type="attested"><name nymRef="#Ζήνων">Ζήνωνος</name></persName></persName> <w>το<supplied reason="lost">ῦ</supplied></w><gap reason="lost" quantity="8" unit="character"/><orig><unclear>ιν</unclear></orig>
+                   <lb n="4"/><space extent="unknown" unit="character"/> <rs type="month" ref="#xanthikos"><w lemma="μείς">μηνὸς</w> <w lemma="Ξανδικός">Ξανδικ<unclear>οῦ</unclear></w></rs> <g ref="#leaf"/> <space extent="unknown" unit="character"/> 
+               </ab></div>
+        </div>
+         
+         
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p><note>A</note>: . . . ] and whoever he may wish [ . . . ] having been constructed [ . . . ] and Claudia Julia [ . . . ] And the para- is 
+               [ . . . ] ?ancestral burying place [ . . . </p>
+            <p><note>B</note>: . . . ] the copy [has been deposited] in the [property archive [ . . .  in the stephanephorate of x ]? Pyrrhos son of Zenon [ . . . ] 
+            in the month Xandikos.</p>
+         </div>
+         <div type="commentary">
+            <p></p>
+         </div>
+         <div type="bibliography" subtype="transcription">
+             <p><bibl><ptr target="nyu"/> in <citedRange>1989</citedRange></bibl></p>
+          </div>
+          
+      </body>
+   </text>
+</TEI>
