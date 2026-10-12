@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Dedication</rs>  by <supplied reason="lost">M.. Fl. Antonius</supplied> Lysimachos</title>
+            <title><rs type="textType">Dedication</rs>  by <supplied reason="lost">M. Fl. Antonius</supplied> Lysimachos</title>
             <editor xml:id="JMR" role="editions, translations">Joyce M. Reynolds</editor>
             <editor xml:id="CMR" role="editions, translations, encoding">Charlotte M. Roueché</editor>
             <editor xml:id="GB" role="editions, encoding">Gabriel Bodard</editor>
@@ -79,11 +79,13 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
+               <term type="textType" ref=" https://ontology.inscriptiones.org/type_of_inscription/Dedication">Dedication</term>
             </keywords>
          </textClass>
          <creation>Preliminary transcription (Reynolds); Gaudin's squeeze; publications.</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-10-12" who="CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2006-11-27" who="GB">hand tidied</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
@@ -99,16 +101,22 @@
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/>  <persName type="attested"><name nymRef="#Μᾶρκος"><supplied reason="lost" cert="low"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></supplied></name> <supplied reason="lost"><g ref="#stop"/></supplied> <name nymRef="#Φλάβιος"><supplied reason="lost"><expan><abbr>Φλ</abbr><ex>άβιος</ex></expan></supplied></name> <supplied reason="lost"><g ref="#stop"/></supplied> <name nymRef="#Ἀντώνιος"><expan><abbr><supplied reason="lost">Ἀντώ</supplied>ν</abbr><ex>ιος</ex></expan></name> <g ref="#stop"/><name nymRef="#Λυσίμαχος">Λυσίμαχος</name></persName><g ref="#stop"/> <w lemma="σοφιστής">σοφιστὴς</w> <lb n="2"/>  <space quantity="3" unit="character"/> <w lemma="ἀρχιερεύς">ἀρχιερεύς</w> <space quantity="3" unit="character"/></ab>
+<ab><lb n="0"/>  <persName type="attested"><name nymRef="#Μᾶρκος"><supplied reason="lost" cert="low"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></supplied></name> <name nymRef="#Φλάβιος"><supplied reason="lost"><expan><abbr>Φλ</abbr><ex>άβιος</ex></expan></supplied></name> 
+<lb n="1"/><name nymRef="#Ἀντώνιος"><expan><abbr><supplied reason="lost">Ἀ</supplied>ν</abbr><ex>τώνιος</ex></expan></name> <g ref="#stop"/><name nymRef="#Λυσίμαχος">Λυσίμαχος</name></persName><g ref="#stop"/> <w lemma="σοφιστής">σοφιστὴς</w> 
+   <lb n="2"/>  <space quantity="3" unit="character"/> <w lemma="ἀρχιερεύς">ἀρχι<hi rend="diaeresis">ε</hi>ρεύς</w> <space quantity="3" unit="character"/></ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="1"><note>It is not clear where to locate the supplied text - presumably on an upper feature.</note></app>
+              <app loc="0"><rdg resp="#iaph2007">The supplied text was provided as part of line 1: but the layout does not allow for this, although it is not clear on what the text began</rdg></app>
+              <app loc="1"><rdg resp="#iaph2007"> Ἀντώ]ν(ιος)</rdg></app>
            </listApp>
+         </div>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>[M(arcus) Fl(avius) ? <hi rend="italic">patronymic</hi> A]n(tonius) Lysimachos the sophist, High priest [ . . .</p>
          </div>
          <div type="translation" xml:lang="en" source="#iaph2007">
             <p>
-               <supplied reason="lost">M(arcus) Fl(avius) Anto</supplied>n(ius) Lysimachos the sophist, High priest.</p>
+               <supplied reason="lost">M(arcus) Fl(avius) Anto</supplied>n(ius) Lysimachos the sophist, High priest [ . . .</p>
          </div>
          
          <div type="commentary" n="notyet">
