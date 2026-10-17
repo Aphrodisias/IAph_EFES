@@ -74,11 +74,13 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
+               <term><rs type="textType" ref="https://ontology.inscriptiones.org/type_of_inscription/Honorific">Honorific</rs></term>
             </keywords>
          </textClass>
          <creation>Sherard papers; publications</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-10-17" who="CMR">Emended</change>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
          <change when="2005-12-13" who="Elliott-Hall">Batch converted Word2XML</change>
          <change when="2007-01-01" who="GB">hand tidied</change>
@@ -86,15 +88,15 @@
    </teiHeader>
    <facsimile>
       <graphic url="https://iiif.bl.uk/uv/#?manifest=https://bl.digirati.io/iiif/ark:/81055/vdc_100192113854.0x000001">
-         <desc>Sherard, fair copy (Harley MS 7509), f.17v, and f.46r, at British Library</desc>
+         <desc>Sherard, fair copy (Harley MS 7509), f.17v, and f.46r (from 1705), at British Library</desc>
       </graphic>
       
    </facsimile>
    <text>
       <body>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab><lb n="1"/> <orig>αμ</orig><gap reason="lost" unit="character" quantity="8"/>  
-   <lb n="2"/><persName type="attested"><name nymRef="#-τεινος"><gap reason="lost" unit="character" quantity="2"/>τεινον</name>  <name nymRef="#Διογένης">Διογέ
+<ab><lb n="1"/><persName type="attested" ref="http://www.lgpn.ox.ac.uk/id/V5b-4672"><name nymRef="#Ἀντώνιος"><expan><abbr>Ἀ<unclear></unclear>ν</abbr><ex>τώνιον</ex></expan></name> <supplied reason="lost"><name nymRef="#Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name></supplied> <name nymRef="#Δομετῖνος"><supplied reason="lost">Δομε</supplied>
+   <lb n="2" break="no"/>τεινον</name>  <name nymRef="#Διογένης">Διογέ
       <lb n="3" break="no"/>νην</name></persName> <placeName ref="#asia" nymRef="#Ἀσία">Ἀσίας</placeName> <w lemma="ἀρχιερεύς">ἀρχ
          <lb n="4" break="no"/>ιερῆ</w>  <w lemma="νομοθέτης">νομοθέ
             <lb n="5" break="no"/>την</w>  <w lemma="γυμνασίαρχος">γυμνασί
@@ -104,19 +106,22 @@
    <lb n="9"/><w lemma="ἐπιμελέομαι">ἐπιμεληθεν
       <lb n="10" break="no"/>τος</w> <w lemma="ὁ">τῆς</w> <w lemma="ἀνάστασις">ἀναστά
          <lb n="11" break="no"/>σεως</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀνδριάς">ἀνδρι
-            <lb n="12"/> αντος</w> <persName type="attested"><name nymRef="#Ἡφαιστίων">Ἡφαιστι
-               <lb n="13" break="no"/>ωνος</name> <num value="2">β</num> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Δημήτριος">Δη
+            <lb n="12" break="no"/> αντος</w> <persName type="attested"><name nymRef="#Ἡφαιστίων">Ἡφαιστι
+               <lb n="13" break="no"/>ωνος</name> <num value="2">Β</num> <w lemma="ὁ">τοῦ</w> <persName type="attested"><name nymRef="#Δημήτριος">Δη
                   <lb n="14" break="no"/>μητρίου</name></persName></persName> <w lemma="ὁ">τοῦ</w> 
    <lb n="15"/> <w lemma="πρωτόλογος">πρωτολόγου</w> <w lemma="ἄρχων">ἄρ
-      <lb n="16" break="no"/>χοντος</w> <g ref="#scroll"/> <g ref="#leaf"/>  </ab>
+      <lb n="16" break="no"/>χοντος</w> <g ref="#leaf"/>  </ab>
 </div>
          <div type="apparatus">
            <listApp>
-            <app loc="1"><rdg resp="#sherard16 #cigII"> ΑΜ ......</rdg> <note>omitted in 1705</note></app>
-           </listApp><!-- check scrolls -->
+              <app loc="1"><rdg resp="#sherard16 #cigII #iaph2007"> ΑΜ ......</rdg> <rdg resp="#sherard05">omitted</rdg></app>
+              <app loc="8"><rdg resp="#sherard16">Scroll omitted</rdg></app>
+              <app loc="16"><rdg resp="#sherard05">Scroll</rdg> <rdg resp="#sherard16">Leaf</rdg> <rdg resp="#iaph2007">Scroll, Leaf</rdg></app>
+           </listApp>
          </div>
-         <div n="notyet" type="translation">
-            <p>No translation yet (2007)</p>
+         <div type="translation" xml:lang="en" resp="#CMR">
+            <p>The city <supplied reason="subaudible">honours</supplied> Antonius [Claudius Dome]teinos Diogenes, high priest of Asia, lawgiver, gymnasiarch for life, benefactor. 
+               Hephaistion II <supplied reason="explanation">son of Hephaistion</supplied> the son of Demetrios, the protologos archon, took care of the erection of the statue.</p>
          </div>
          <div n="notyet" type="commentary">
             
@@ -132,7 +137,8 @@
                <bibl><ptr target="liermann1889"/> <citedRange>10</citedRange></bibl><!-- check -->,  
                <bibl><ptr target="mccabePHI"/>
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257150">271</ref></citedRange>
-               </bibl>, <bibl><ptr target="rrrs2006"/> <citedRange>H.92 (listed)</citedRange></bibl>; <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120416.html">12.416</ref></citedRange></bibl>.</p>
+               </bibl>, <bibl><ptr target="rrrs2006"/> <citedRange>H.92 (listed)</citedRange></bibl>; 
+               <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120416.html">12.416</ref></citedRange></bibl>.</p>
          </div>
       </body>
    </text>
