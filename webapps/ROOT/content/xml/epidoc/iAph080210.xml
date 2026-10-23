@@ -75,16 +75,14 @@
                <term>
                   <placeName type="modernFindspot" key="Geyre" ref="https://sws.geonames.org/314519/">Geyre</placeName>
                </term>
-               <term>
-                  <rs type="textType" key="sacer">Religious</rs>
-               </term>
+               <term> <rs type="textType" ref="https://ontology.inscriptiones.org/type_of_inscription/Oath">Oath</rs></term>
             </keywords>
          </textClass>
          <creation>Publications; Transcription (Reynolds) </creation>
       </profileDesc>
       <revisionDesc>
          <change when="2022-05-03" who="#GB">Upgraded XML to EpiDoc version 9.3 (TEI P5)</change>
-         <change when="2006-01-16" who="#GB">Cconverted to XML</change>
+         <change when="2006-01-16" who="#GB">Converted to XML</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -129,10 +127,8 @@
               <app loc="2"><rdg resp="#jmr1982 #iaph2007">οἵ τε</rdg></app>
             <app loc="6-7"><note><foreign xml:lang="grc">σφάγια</foreign> seems inevitable here; the accusative case is imposed by the repetition of <foreign xml:lang="grc">καὶ</foreign> in this sentence</note></app>
             <app loc="7"><note><foreign xml:lang="grc">ΛΛ</foreign> appear to have been cut twice, the first attempt being partially erased</note></app>
-            <app loc="7-8"><note><foreign xml:lang="grc">φ<supplied reason="lost">ύ</supplied>
-                  <lb/>
-                  <supplied reason="lost">σει</supplied>
-               </foreign> suggested by L. Robert</note></app>
+              <app loc="7-8"><rdg resp="#jmr1982"><foreign xml:lang="grc">φ<supplied reason="lost">ύ/σει</supplied>
+              </foreign> suggested by L. Robert</rdg> <rdg resp="#hendriks1984">ο[ὔσ/ης]</rdg></app>
             <app loc="10"><note><foreign xml:lang="grc">Υ</foreign> is partially damaged and the subsequent <foreign xml:lang="grc">Π</foreign> written as if the cutter saw <foreign xml:lang="grc">ΤΓ</foreign>, but <foreign xml:lang="grc">ὑπεναντίον</foreign> in such contexts is so common that there can be no doubt that it was intended</note></app>
             <app loc="12"><note>for <foreign xml:lang="grc">Γ</foreign> the cutter originally wrote <foreign xml:lang="grc">Τ</foreign>
             </note></app>
@@ -158,10 +154,12 @@
                <bibl><ptr target="robertBE"/> <citedRange>1977.76</citedRange> (mention)</bibl>; 
                 <bibl><ptr target="jmr1980"/> <citedRange>p. 70</citedRange></bibl>;
                <bibl> <ptr target="jmr1982"/> <citedRange unit="entry">1</citedRange>
-              </bibl>, whence  <bibl><ptr target="mccabePHI"/>
-                  
+               </bibl>, whence <bibl><ptr target="robertBE"/> <citedRange>1983.362</citedRange></bibl>; 
+                <bibl><ptr target="hendriks1984"/> <citedRange></citedRange></bibl>, whence  
+                <bibl><ptr target="robertBE"/> <citedRange>1984.408</citedRange></bibl>; <bibl><ptr target="mccabePHI"/>
                   <citedRange><ref target="https://epigraphy.packhum.org/text/257058">179</ref></citedRange>
-              </bibl>, <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph080210.html">8.210</ref></citedRange></bibl>.</p>
+              </bibl>; <bibl><ptr target="seg"/> <citedRange>37.844</citedRange></bibl>; 
+                <bibl><ptr target="iaph2007"/> <citedRange unit="entry"><ref target="http://insaph.kcl.ac.uk/iaph2007/iAph080210.html">8.210</ref></citedRange></bibl>.</p>
          </div>
       </body>
    </text>
